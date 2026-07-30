@@ -1,0 +1,21 @@
+{
+  "candidate_run_id": "opportunity-clusters-2026-v0",
+  "default_action": "deny",
+  "destinations": [],
+  "enforcement_boundary": {
+    "boundary_id": "stage1-manual-runner",
+    "boundary_type": "sandbox_firewall",
+    "enforcement_policy_ref": {
+      "artifact_type": "egress_policy",
+      "digest": "sha256:3004b52ca493cdb24695b18aa56ff50397859f3e25b80137e0af7eee572989bd",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "preflight/opportunity-clusters-2026-v0/controls/egress-enforcement-policy.json"
+    }
+  },
+  "mode": "denied",
+  "policy_id": "opportunity-clusters-2026-v0-network",
+  "policy_owner": "TIBER-Research Stage 1 preflight candidate prepared under TIBER-Ops 54",
+  "policy_status": "proposed",
+  "recorded_at": "2026-07-30T17:10:11Z",
+  "schema_version": "research-network-policy/v1"
+}

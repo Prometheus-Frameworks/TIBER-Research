@@ -1,0 +1,31 @@
+{
+  "$id": "https://schemas.tiber.dev/research/v1/freshness-policy.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "chronology_rule": {
+      "const": "effective_at_lte_freshness_as_of_lte_verified_at"
+    },
+    "current_state_rule": {
+      "const": "current_requires_exact_governing_manifest_and_authority"
+    },
+    "cutoff_rule": {
+      "const": "freshness_as_of_lte_cutoff_at"
+    },
+    "policy_id": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+    },
+    "schema_version": {
+      "const": "research-freshness-policy/v1"
+    }
+  },
+  "required": [
+    "schema_version",
+    "policy_id",
+    "chronology_rule",
+    "cutoff_rule",
+    "current_state_rule"
+  ],
+  "title": "TIBER Research v1 governed artifact freshness policy",
+  "type": "object"
+}

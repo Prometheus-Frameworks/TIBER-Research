@@ -1,0 +1,43 @@
+{
+  "$id": "https://schemas.tiber.dev/research/v1/governing-manifest.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "artifact_id": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+    },
+    "blob_digest": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/digest"
+    },
+    "commit": {
+      "pattern": "^[a-f0-9]{40,64}$",
+      "type": "string"
+    },
+    "governance_status": {
+      "const": "promoted"
+    },
+    "path": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/relativePath"
+    },
+    "repository": {
+      "maxLength": 256,
+      "minLength": 3,
+      "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "research-governing-manifest/v1"
+    }
+  },
+  "required": [
+    "schema_version",
+    "artifact_id",
+    "governance_status",
+    "repository",
+    "commit",
+    "path",
+    "blob_digest"
+  ],
+  "title": "TIBER Research v1 governed input manifest",
+  "type": "object"
+}

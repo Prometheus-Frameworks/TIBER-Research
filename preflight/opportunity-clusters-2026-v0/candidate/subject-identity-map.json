@@ -1,0 +1,519 @@
+{
+  "audit_state": "candidate_identity_map_not_activated",
+  "candidate_run_id": "opportunity-clusters-2026-v0",
+  "limitations": [
+    "The population census is governed but not promoted.",
+    "Historical 2025 team fields do not establish a current 2026 roster.",
+    "For Carnell Tate and Jordyn Tyson, drafted_team_at_2026_event means drafted team at the cited draft event; it does not establish current roster membership.",
+    "Carnell Tate and Jordyn Tyson lack a governed cross-namespace canonical identifier.",
+    "The map resolves issue labels only; it supplies no ranking, role, opportunity, or market conclusion."
+  ],
+  "population_mode": "closed",
+  "source_pins": [
+    {
+      "artifact_status": "candidate_governed_artifact_not_promoted",
+      "blob_sha": "07cdc8fd6c855642091e96b4feb6382c4493b3b9",
+      "commit": "3393a8f0b7f4ffa640f63d712768beb1c52b917a",
+      "path": "exports/candidates/population_census/bounded_2026_population_census_v0.json",
+      "raw_sha256": "sha256:6057031bfc6dfedac1a5b2957ec194e738df5fbdb12dfec80d1e8ad773f0d1ea",
+      "repository": "Prometheus-Frameworks/TIBER-Data",
+      "source_id": "population-census"
+    },
+    {
+      "artifact_status": "frozen_operator_prior",
+      "blob_sha": "cc33e9321b71c752d3f8c840a2b076fb3294d7b7",
+      "commit": "26ba68ed8a9ba67fdd9543dbd0d4e8107ff4e71c",
+      "path": "pilots/bounded-goal/draft-assist-pilot-2/operator-draft-traces-v0.json",
+      "repository": "Prometheus-Frameworks/TIBER-Ops",
+      "source_id": "operator-traces"
+    },
+    {
+      "artifact_status": "promoted_governed_artifact",
+      "commit": "a825431402f89f7ec4fe69e72de073ca4b301ea3",
+      "path": "exports/promoted/rookie-transition-profile/2026_rookie_transition_profile_v0.json",
+      "raw_sha256": "sha256:c95b941c7855612daccfc2226fc51e0e34dbb2ebe8a2487596675d2522a22f37",
+      "repository": "Prometheus-Frameworks/TIBER-Rookies",
+      "source_id": "rookie-transition"
+    }
+  ],
+  "subject_count": 30,
+  "subjects": [
+    {
+      "canonical_id": "00-0035261",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Pollard",
+      "label_resolution_basis": [
+        "population-census",
+        "operator-traces"
+      ],
+      "name": "Tony Pollard",
+      "position": "RB",
+      "team_evidence": {
+        "classification": "historical_only",
+        "season": 2025,
+        "team": "TEN"
+      }
+    },
+    {
+      "canonical_id": "00-0036139",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Dowdle",
+      "label_resolution_basis": [
+        "population-census"
+      ],
+      "name": "Rico Dowdle",
+      "position": "RB",
+      "team_evidence": {
+        "classification": "historical_only",
+        "season": 2025,
+        "team": "CAR"
+      }
+    },
+    {
+      "canonical_id": "00-0040236",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Monangai",
+      "label_resolution_basis": [
+        "population-census",
+        "operator-traces"
+      ],
+      "name": "Kyle Monangai",
+      "position": "RB",
+      "team_evidence": {
+        "classification": "historical_only",
+        "season": 2025,
+        "team": "CHI"
+      }
+    },
+    {
+      "canonical_id": "00-0036158",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Dobbins",
+      "label_resolution_basis": [
+        "population-census"
+      ],
+      "name": "J.K. Dobbins",
+      "position": "RB",
+      "team_evidence": {
+        "classification": "historical_only",
+        "season": 2025,
+        "team": "DEN"
+      }
+    },
+    {
+      "canonical_id": "00-0040583",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Woody Marks",
+      "label_resolution_basis": [
+        "population-census"
+      ],
+      "name": "Woody Marks",
+      "position": "RB",
+      "team_evidence": {
+        "classification": "historical_only",
+        "season": 2025,
+        "team": "HOU"
+      }
+    },
+    {
+      "canonical_id": "00-0040730",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Harvey",
+      "label_resolution_basis": [
+        "population-census"
+      ],
+      "name": "RJ Harvey",
+      "position": "RB",
+      "team_evidence": {
+        "classification": "historical_only",
+        "season": 2025,
+        "team": "DEN"
+      }
+    },
+    {
+      "aliases": [
+        "Kenny Gainwell"
+      ],
+      "canonical_id": "00-0036919",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Gainwell",
+      "label_resolution_basis": [
+        "population-census",
+        "operator-traces"
+      ],
+      "name": "Kenneth Gainwell",
+      "position": "RB",
+      "team_evidence": {
+        "classification": "historical_only",
+        "season": 2025,
+        "team": "PIT"
+      }
+    },
+    {
+      "canonical_id": "00-0038606",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Parker Washington",
+      "label_resolution_basis": [
+        "population-census",
+        "operator-traces"
+      ],
+      "name": "Parker Washington",
+      "position": "WR",
+      "team_evidence": {
+        "classification": "historical_only",
+        "season": 2025,
+        "team": "JAX"
+      }
+    },
+    {
+      "canonical_id": null,
+      "drafted_team_at_2026_event": "TEN",
+      "issue_label": "Tate",
+      "label_resolution_basis": [
+        "operator-traces",
+        "rookie-transition"
+      ],
+      "name": "Carnell Tate",
+      "position": "WR",
+      "source_ids": {
+        "tiber_rookies": "wr-carnell-tate"
+      },
+      "team_evidence": {
+        "classification": "source_backed_drafted_team",
+        "season": 2026,
+        "team": "TEN"
+      }
+    },
+    {
+      "canonical_id": null,
+      "drafted_team_at_2026_event": "NO",
+      "issue_label": "Tyson",
+      "label_resolution_basis": [
+        "operator-traces",
+        "rookie-transition"
+      ],
+      "name": "Jordyn Tyson",
+      "position": "WR",
+      "source_ids": {
+        "tiber_rookies": "wr-jordyn-tyson"
+      },
+      "team_evidence": {
+        "classification": "source_backed_drafted_team",
+        "season": 2026,
+        "team": "NO"
+      }
+    },
+    {
+      "canonical_id": "00-0034960",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Meyers",
+      "label_resolution_basis": [
+        "population-census"
+      ],
+      "name": "Jakobi Meyers",
+      "position": "WR",
+      "team_evidence": {
+        "classification": "historical_only_multiple_teams",
+        "season": 2025,
+        "team": "JAX",
+        "teams_observed": [
+          "JAX",
+          "LV"
+        ]
+      }
+    },
+    {
+      "canonical_id": "00-0038997",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Downs",
+      "label_resolution_basis": [
+        "population-census",
+        "operator-traces"
+      ],
+      "name": "Josh Downs",
+      "position": "WR",
+      "team_evidence": {
+        "classification": "historical_only",
+        "season": 2025,
+        "team": "IND"
+      }
+    },
+    {
+      "canonical_id": "00-0033921",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Godwin",
+      "label_resolution_basis": [
+        "population-census"
+      ],
+      "name": "Chris Godwin Jr.",
+      "position": "WR",
+      "team_evidence": {
+        "classification": "historical_only",
+        "season": 2025,
+        "team": "TB"
+      }
+    },
+    {
+      "canonical_id": "00-0036252",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Pittman",
+      "label_resolution_basis": [
+        "population-census",
+        "operator-traces"
+      ],
+      "name": "Michael Pittman",
+      "position": "WR",
+      "team_evidence": {
+        "classification": "historical_only",
+        "season": 2025,
+        "team": "IND"
+      }
+    },
+    {
+      "canonical_id": "00-0037816",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Doubs",
+      "label_resolution_basis": [
+        "population-census",
+        "operator-traces"
+      ],
+      "name": "Romeo Doubs",
+      "position": "WR",
+      "team_evidence": {
+        "classification": "historical_only",
+        "season": 2025,
+        "team": "GB"
+      }
+    },
+    {
+      "canonical_id": "00-0039146",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Reed",
+      "label_resolution_basis": [
+        "population-census"
+      ],
+      "name": "Jayden Reed",
+      "position": "WR",
+      "team_evidence": {
+        "classification": "historical_only",
+        "season": 2025,
+        "team": "GB"
+      }
+    },
+    {
+      "canonical_id": "00-0037261",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Shakir",
+      "label_resolution_basis": [
+        "population-census"
+      ],
+      "name": "Khalil Shakir",
+      "position": "WR",
+      "team_evidence": {
+        "classification": "historical_only",
+        "season": 2025,
+        "team": "BUF"
+      }
+    },
+    {
+      "canonical_id": "00-0040130",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Higgins",
+      "label_resolution_basis": [
+        "operator-traces"
+      ],
+      "name": "Jayden Higgins",
+      "position": "WR",
+      "team_evidence": {
+        "classification": "historical_only",
+        "season": 2025,
+        "team": "HOU"
+      }
+    },
+    {
+      "canonical_id": "00-0038996",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Kraft",
+      "label_resolution_basis": [
+        "population-census",
+        "operator-traces"
+      ],
+      "name": "Tucker Kraft",
+      "position": "TE",
+      "team_evidence": {
+        "classification": "historical_only",
+        "season": 2025,
+        "team": "GB"
+      }
+    },
+    {
+      "canonical_id": "00-0040737",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Ferguson",
+      "label_resolution_basis": [
+        "operator-traces"
+      ],
+      "name": "Terrance Ferguson",
+      "position": "TE",
+      "team_evidence": {
+        "classification": "historical_only",
+        "season": 2025,
+        "team": "LA"
+      }
+    },
+    {
+      "canonical_id": "00-0034351",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Goedert",
+      "label_resolution_basis": [
+        "population-census"
+      ],
+      "name": "Dallas Goedert",
+      "position": "TE",
+      "team_evidence": {
+        "classification": "historical_only",
+        "season": 2025,
+        "team": "PHI"
+      }
+    },
+    {
+      "canonical_id": "00-0038933",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Kincaid",
+      "label_resolution_basis": [
+        "population-census"
+      ],
+      "name": "Dalton Kincaid",
+      "position": "TE",
+      "team_evidence": {
+        "classification": "historical_only",
+        "season": 2025,
+        "team": "BUF"
+      }
+    },
+    {
+      "canonical_id": "00-0038935",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Strange",
+      "label_resolution_basis": [
+        "population-census",
+        "operator-traces"
+      ],
+      "name": "Brenton Strange",
+      "position": "TE",
+      "team_evidence": {
+        "classification": "historical_only",
+        "season": 2025,
+        "team": "JAX"
+      }
+    },
+    {
+      "canonical_id": "00-0033090",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Henry",
+      "label_resolution_basis": [
+        "population-census"
+      ],
+      "name": "Hunter Henry",
+      "position": "TE",
+      "team_evidence": {
+        "classification": "historical_only",
+        "season": 2025,
+        "team": "NE"
+      }
+    },
+    {
+      "canonical_id": "00-0040189",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Gadsden",
+      "label_resolution_basis": [
+        "population-census"
+      ],
+      "name": "Oronde Gadsden II",
+      "position": "TE",
+      "team_evidence": {
+        "classification": "historical_only",
+        "season": 2025,
+        "team": "LAC"
+      }
+    },
+    {
+      "canonical_id": "00-0036971",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Trevor Lawrence",
+      "label_resolution_basis": [
+        "population-census",
+        "operator-traces"
+      ],
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team_evidence": {
+        "classification": "historical_only",
+        "season": 2025,
+        "team": "JAX"
+      }
+    },
+    {
+      "canonical_id": "00-0037834",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Purdy",
+      "label_resolution_basis": [
+        "population-census",
+        "operator-traces"
+      ],
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team_evidence": {
+        "classification": "historical_only",
+        "season": 2025,
+        "team": "SF"
+      }
+    },
+    {
+      "canonical_id": "00-0034855",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Baker Mayfield",
+      "label_resolution_basis": [
+        "population-census"
+      ],
+      "name": "Baker Mayfield",
+      "position": "QB",
+      "team_evidence": {
+        "classification": "historical_only",
+        "season": 2025,
+        "team": "TB"
+      }
+    },
+    {
+      "canonical_id": "00-0036355",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Herbert",
+      "label_resolution_basis": [
+        "population-census",
+        "operator-traces"
+      ],
+      "name": "Justin Herbert",
+      "position": "QB",
+      "team_evidence": {
+        "classification": "historical_only",
+        "season": 2025,
+        "team": "LAC"
+      }
+    },
+    {
+      "canonical_id": "00-0033106",
+      "drafted_team_at_2026_event": null,
+      "issue_label": "Goff",
+      "label_resolution_basis": [
+        "population-census"
+      ],
+      "name": "Jared Goff",
+      "position": "QB",
+      "team_evidence": {
+        "classification": "historical_only",
+        "season": 2025,
+        "team": "DET"
+      }
+    }
+  ]
+}

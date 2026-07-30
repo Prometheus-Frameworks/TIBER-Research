@@ -1,0 +1,356 @@
+{
+  "activation_ready": false,
+  "candidate_artifact_refs": [
+    {
+      "artifact_type": "operator_direction_record",
+      "digest": "sha256:a56ae4e0433f80bf2056da92ea9555f93a2076c33c613ea5cdad9350449949f0",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "preflight/opportunity-clusters-2026-v0/authority/ops-54-scope.json"
+    },
+    {
+      "artifact_type": "capability_map",
+      "digest": "sha256:d17cd8678fd6ad1c9c3fce986193354f6433141a9e1a55389731325bfe034e01",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "preflight/opportunity-clusters-2026-v0/candidate/capability-map.json"
+    },
+    {
+      "artifact_type": "operator_baseline_template",
+      "digest": "sha256:a40429b4628596df23b19df92439f938b7b39484582c8fd4feced85f10fb5a4f",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "preflight/opportunity-clusters-2026-v0/candidate/operator-baseline-template.json"
+    },
+    {
+      "artifact_type": "research_context_proposal",
+      "digest": "sha256:26fea65f1fd7299c4943a1ac9e4a3468b57da844e589b7d20bfc4068666ed29b",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "preflight/opportunity-clusters-2026-v0/candidate/research-context-proposal.json"
+    },
+    {
+      "artifact_type": "snapshot_index",
+      "digest": "sha256:4cfc43afef1925eee4fe127d00c06881ed970c0732f4ca16c316499f8ce33662",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "preflight/opportunity-clusters-2026-v0/candidate/snapshot-index.json"
+    },
+    {
+      "artifact_type": "source_envelope",
+      "digest": "sha256:3102740c3d4fa675a63a18b051abbb09d13352bcfc67867357298ec2071d688f",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "preflight/opportunity-clusters-2026-v0/candidate/source-envelope.json"
+    },
+    {
+      "artifact_type": "subject_identity_map",
+      "digest": "sha256:e895da15f3e53b029bd952c7c836406a29f18c3a81f22ac317e71fd5c61d179a",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "preflight/opportunity-clusters-2026-v0/candidate/subject-identity-map.json"
+    },
+    {
+      "artifact_type": "cost_rate_card",
+      "digest": "sha256:1b0f1153ad599d5a0e11423b544f89a14427525da652e6286854f2207270deb6",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "preflight/opportunity-clusters-2026-v0/controls/cost-rate-card.json"
+    },
+    {
+      "artifact_type": "egress_policy",
+      "digest": "sha256:3004b52ca493cdb24695b18aa56ff50397859f3e25b80137e0af7eee572989bd",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "preflight/opportunity-clusters-2026-v0/controls/egress-enforcement-policy.json"
+    },
+    {
+      "artifact_type": "ops_issue_snapshot",
+      "digest": "sha256:9b09baff27b471f00afbc123b2b487384ec36ada59789300fef24a74c1f3d233",
+      "digest_mode": "tiber-raw-sha256-v1",
+      "path": "preflight/opportunity-clusters-2026-v0/snapshots/ops-51-body.md"
+    },
+    {
+      "artifact_type": "ops_issue_comment_snapshot",
+      "digest": "sha256:16cd727bd672321ebaf3084ba3110c0e15bfeaef76e3e7df6520712f5d5c35b1",
+      "digest_mode": "tiber-raw-sha256-v1",
+      "path": "preflight/opportunity-clusters-2026-v0/snapshots/ops-51-redirect-comment.md"
+    },
+    {
+      "artifact_type": "ops_issue_snapshot",
+      "digest": "sha256:fb31fdec0a219932d2478f09d2735dc716345b4ba5ff371b06be92c2cd15ef93",
+      "digest_mode": "tiber-raw-sha256-v1",
+      "path": "preflight/opportunity-clusters-2026-v0/snapshots/ops-52-body.md"
+    },
+    {
+      "artifact_type": "strategy_issue_snapshot",
+      "digest": "sha256:aaa3ab61a3bdc13eb972d4f01c780850e14c1dc089ccd0bba88fec4fef8ee4be",
+      "digest_mode": "tiber-raw-sha256-v1",
+      "path": "preflight/opportunity-clusters-2026-v0/snapshots/strategy-8-body.md"
+    }
+  ],
+  "candidate_run_id": "opportunity-clusters-2026-v0",
+  "gate_artifacts": {
+    "cost_policy_ref": {
+      "artifact_type": "cost_policy",
+      "digest": "sha256:56f444115438f0ae8c36bd2e402a8e25d365bc7fa9a5cb58de983cc309054325",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "preflight/opportunity-clusters-2026-v0/controls/cost-policy.json"
+    },
+    "external_source_availability_receipt_refs": [],
+    "governed_artifact_provenance_receipt_refs": [],
+    "network_enforcement_receipt_ref": null,
+    "network_policy_ref": {
+      "artifact_type": "network_policy",
+      "digest": "sha256:10aafad7d90f24994a5c27ed81cb615ac1e296c728ce461019133c599c1c6b97",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "preflight/opportunity-clusters-2026-v0/controls/network-policy.json"
+    },
+    "trusted_usage_receipt_refs": []
+  },
+  "ops_decision": {
+    "decision_ref": "https://github.com/Prometheus-Frameworks/TIBER-Ops/issues/54",
+    "operator": "TIBER operator",
+    "quote_digest": "sha256:16f0681907b6b4606cf64f3ce0f379a3b6405644352d69a4988250367849630e",
+    "quote_digest_mode": "tiber-raw-sha256-v1",
+    "quote_observed_at": "2026-07-30T17:10:11Z"
+  },
+  "preflight_id": "opportunity-clusters-2026-v0-preflight",
+  "prepared_at": "2026-07-30T17:41:56Z",
+  "requirements": [
+    {
+      "description": "Frozen inputs require a confirmed baseline, context, cutoff, identity map, source envelope, and current evidence disposition.",
+      "evidence_refs": [
+        {
+          "artifact_type": "operator_baseline_template",
+          "digest": "sha256:a40429b4628596df23b19df92439f938b7b39484582c8fd4feced85f10fb5a4f",
+          "digest_mode": "tiber-canonical-json-v1",
+          "path": "preflight/opportunity-clusters-2026-v0/candidate/operator-baseline-template.json"
+        },
+        {
+          "artifact_type": "research_context_proposal",
+          "digest": "sha256:26fea65f1fd7299c4943a1ac9e4a3468b57da844e589b7d20bfc4068666ed29b",
+          "digest_mode": "tiber-canonical-json-v1",
+          "path": "preflight/opportunity-clusters-2026-v0/candidate/research-context-proposal.json"
+        },
+        {
+          "artifact_type": "source_envelope",
+          "digest": "sha256:3102740c3d4fa675a63a18b051abbb09d13352bcfc67867357298ec2071d688f",
+          "digest_mode": "tiber-canonical-json-v1",
+          "path": "preflight/opportunity-clusters-2026-v0/candidate/source-envelope.json"
+        },
+        {
+          "artifact_type": "subject_identity_map",
+          "digest": "sha256:e895da15f3e53b029bd952c7c836406a29f18c3a81f22ac317e71fd5c61d179a",
+          "digest_mode": "tiber-canonical-json-v1",
+          "path": "preflight/opportunity-clusters-2026-v0/candidate/subject-identity-map.json"
+        }
+      ],
+      "requirement_id": "candidate-inputs",
+      "status": "unresolved"
+    },
+    {
+      "description": "No job contract may be materialized until its baseline, context, cutoff, admitted evidence, and activation authority are complete.",
+      "evidence_refs": [
+        {
+          "artifact_type": "capability_map",
+          "digest": "sha256:d17cd8678fd6ad1c9c3fce986193354f6433141a9e1a55389731325bfe034e01",
+          "digest_mode": "tiber-canonical-json-v1",
+          "path": "preflight/opportunity-clusters-2026-v0/candidate/capability-map.json"
+        },
+        {
+          "artifact_type": "operator_baseline_template",
+          "digest": "sha256:a40429b4628596df23b19df92439f938b7b39484582c8fd4feced85f10fb5a4f",
+          "digest_mode": "tiber-canonical-json-v1",
+          "path": "preflight/opportunity-clusters-2026-v0/candidate/operator-baseline-template.json"
+        }
+      ],
+      "requirement_id": "candidate-job",
+      "status": "unresolved"
+    },
+    {
+      "description": "A proposed policy reserves at most one trusted-observed executor session and one trusted-observed reviewer session; operator approval remains required.",
+      "evidence_refs": [
+        {
+          "artifact_type": "cost_policy",
+          "digest": "sha256:56f444115438f0ae8c36bd2e402a8e25d365bc7fa9a5cb58de983cc309054325",
+          "digest_mode": "tiber-canonical-json-v1",
+          "path": "preflight/opportunity-clusters-2026-v0/controls/cost-policy.json"
+        }
+      ],
+      "requirement_id": "cost-accounting",
+      "status": "unresolved"
+    },
+    {
+      "description": "No external source family is admitted, so no external availability receipt may be invented.",
+      "evidence_refs": [
+        {
+          "artifact_type": "source_envelope",
+          "digest": "sha256:3102740c3d4fa675a63a18b051abbb09d13352bcfc67867357298ec2071d688f",
+          "digest_mode": "tiber-canonical-json-v1",
+          "path": "preflight/opportunity-clusters-2026-v0/candidate/source-envelope.json"
+        }
+      ],
+      "requirement_id": "external-source-availability",
+      "status": "not_applicable"
+    },
+    {
+      "description": "Potential governed evidence is identified but cannot receive a current provenance receipt before the cutoff and exact admission are declared.",
+      "evidence_refs": [
+        {
+          "artifact_type": "source_envelope",
+          "digest": "sha256:3102740c3d4fa675a63a18b051abbb09d13352bcfc67867357298ec2071d688f",
+          "digest_mode": "tiber-canonical-json-v1",
+          "path": "preflight/opportunity-clusters-2026-v0/candidate/source-envelope.json"
+        }
+      ],
+      "requirement_id": "governed-artifact-provenance",
+      "status": "unresolved"
+    },
+    {
+      "description": "The exact denied network policy exists, but no trusted runner has attested an effective execution environment.",
+      "evidence_refs": [
+        {
+          "artifact_type": "network_policy",
+          "digest": "sha256:10aafad7d90f24994a5c27ed81cb615ac1e296c728ce461019133c599c1c6b97",
+          "digest_mode": "tiber-canonical-json-v1",
+          "path": "preflight/opportunity-clusters-2026-v0/controls/network-policy.json"
+        }
+      ],
+      "requirement_id": "network-enforcement",
+      "status": "unresolved"
+    },
+    {
+      "description": "A new explicit Ops decision must activate an exact job and inputs bundle; preflight authority does not activate research.",
+      "evidence_refs": [
+        {
+          "artifact_type": "operator_direction_record",
+          "digest": "sha256:a56ae4e0433f80bf2056da92ea9555f93a2076c33c613ea5cdad9350449949f0",
+          "digest_mode": "tiber-canonical-json-v1",
+          "path": "preflight/opportunity-clusters-2026-v0/authority/ops-54-scope.json"
+        }
+      ],
+      "requirement_id": "operator-activation",
+      "status": "unresolved"
+    }
+  ],
+  "schema_version": "research-stage1-preflight/v1",
+  "stage0_base": {
+    "ci_status": "passed",
+    "commit": "8a8039eeaa2ba1b8cae65859d43746df6b949ecd",
+    "contract_inventory_ref": {
+      "artifact_type": "stage0_contract_inventory",
+      "digest": "sha256:bd61d895199b554145fa1e57052f4a6acb8ebff4fd30e6680fc0528a050ff553",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "preflight/opportunity-clusters-2026-v0/candidate/stage0-contract-inventory.json"
+    },
+    "pull_request_ref": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/1",
+    "repository": "Prometheus-Frameworks/TIBER-Research",
+    "schema_version": "tiber-research-schemas-v0",
+    "tree_sha": "582930f21d6fafafcfc55527e5aa9363c08ad417",
+    "validator_version": "tiber-research-validator-v0"
+  },
+  "status": "requires_operator_inputs",
+  "unresolved_inputs": [
+    {
+      "blocking": true,
+      "description": "A per-subject machine-readable opportunity-cluster and tier baseline with observation date is required.",
+      "disposition": "missing",
+      "input_id": "machine-readable-operator-baseline",
+      "requirement_refs": [
+        "candidate-inputs",
+        "candidate-job"
+      ]
+    },
+    {
+      "blocking": true,
+      "description": "The pilot needs confirmed scoring, roster, draft-market context, and an exact cutoff.",
+      "disposition": "missing",
+      "input_id": "research-context-and-cutoff",
+      "requirement_refs": [
+        "candidate-inputs",
+        "candidate-job",
+        "governed-artifact-provenance"
+      ]
+    },
+    {
+      "blocking": true,
+      "description": "No source-backed current-2026 role and opportunity artifact exists for the closed population.",
+      "disposition": "missing",
+      "input_id": "current-2026-role-evidence",
+      "requirement_refs": [
+        "candidate-inputs",
+        "candidate-job",
+        "governed-artifact-provenance"
+      ]
+    },
+    {
+      "blocking": true,
+      "description": "Carnell Tate and Jordyn Tyson need a governed cross-namespace identity decision or an explicit run-scoped identity exception.",
+      "disposition": "unverified",
+      "input_id": "rookie-canonical-identities",
+      "requirement_refs": [
+        "candidate-inputs"
+      ]
+    },
+    {
+      "blocking": true,
+      "description": "A trusted runner must bind the effective denied network profile to the execution environment and validity window.",
+      "disposition": "unverified",
+      "input_id": "trusted-network-enforcement-receipt",
+      "requirement_refs": [
+        "network-enforcement"
+      ]
+    },
+    {
+      "blocking": true,
+      "description": "The exact two-session cost policy remains proposed and must be operator-approved as part of the activation bundle.",
+      "disposition": "unverified",
+      "input_id": "cost-policy-approval",
+      "requirement_refs": [
+        "cost-accounting",
+        "operator-activation"
+      ]
+    },
+    {
+      "blocking": true,
+      "description": "Ops 54 authorizes preflight only; an exact job and inputs bundle still need activation authority.",
+      "disposition": "missing",
+      "input_id": "operator-activation-decision",
+      "requirement_refs": [
+        "candidate-job",
+        "operator-activation"
+      ]
+    },
+    {
+      "blocking": true,
+      "description": "The exact Stage 1 branch and repository write path must be frozen in the activation decision.",
+      "disposition": "missing",
+      "input_id": "stage1-branch-and-write-path",
+      "requirement_refs": [
+        "candidate-job",
+        "operator-activation"
+      ]
+    },
+    {
+      "blocking": true,
+      "description": "The independent reviewer role and fresh-context boundary must be named in the exact job and activation bundle.",
+      "disposition": "missing",
+      "input_id": "independent-reviewer-binding",
+      "requirement_refs": [
+        "candidate-job",
+        "operator-activation"
+      ]
+    },
+    {
+      "blocking": true,
+      "description": "Retention and reportability must be explicitly selected for every admitted evidence class and source object.",
+      "disposition": "missing",
+      "input_id": "retention-and-reportability-treatment",
+      "requirement_refs": [
+        "candidate-inputs",
+        "candidate-job"
+      ]
+    },
+    {
+      "blocking": false,
+      "description": "No admissible market snapshot exists; market questions may instead terminate blocked or remain out of scope.",
+      "disposition": "deferred",
+      "input_id": "admissible-market-snapshot",
+      "requirement_refs": [
+        "candidate-inputs"
+      ]
+    }
+  ]
+}

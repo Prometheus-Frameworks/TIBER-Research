@@ -1,0 +1,189 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.tiber.dev/research/v1/network-enforcement-receipt.schema.json",
+  "title": "TIBER Research v1 network enforcement receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "receipt_id",
+    "candidate_run_id",
+    "network_policy_ref",
+    "effective_mode",
+    "effective_destinations",
+    "default_action",
+    "observed_at",
+    "valid_from",
+    "valid_until",
+    "observer",
+    "observation_method",
+    "observation_policy_ref",
+    "enforcement_boundary",
+    "environment_identity",
+    "limitations"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "research-network-enforcement-receipt/v1"
+    },
+    "receipt_id": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+    },
+    "candidate_run_id": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+    },
+    "network_policy_ref": {
+      "allOf": [
+        {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/artifactDigest"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "artifact_type": {
+              "const": "network_policy"
+            }
+          }
+        }
+      ]
+    },
+    "effective_mode": {
+      "enum": [
+        "denied",
+        "allowlisted"
+      ]
+    },
+    "effective_destinations": {
+      "type": "array",
+      "items": {
+        "$ref": "https://schemas.tiber.dev/research/v1/network-policy.schema.json#/$defs/destination"
+      }
+    },
+    "default_action": {
+      "const": "deny"
+    },
+    "observed_at": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/timestamp"
+    },
+    "valid_from": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/timestamp"
+    },
+    "valid_until": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/timestamp"
+    },
+    "observer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "observer_id",
+        "role",
+        "trust_basis"
+      ],
+      "properties": {
+        "observer_id": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/nonEmptyString"
+        },
+        "role": {
+          "enum": [
+            "trusted_runner",
+            "trusted_connector",
+            "operator"
+          ]
+        },
+        "trust_basis": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "enforcement_boundary": {
+      "$ref": "https://schemas.tiber.dev/research/v1/network-policy.schema.json#/$defs/enforcementBoundary"
+    },
+    "environment_identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "environment_id",
+        "execution_surface",
+        "isolation_id",
+        "observed_capabilities_digest"
+      ],
+      "properties": {
+        "environment_id": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+        },
+        "execution_surface": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/nonEmptyString"
+        },
+        "isolation_id": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/nonEmptyString"
+        },
+        "observed_capabilities_digest": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/digest"
+        }
+      }
+    },
+    "limitations": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/stringList"
+    },
+    "observation_method": {
+      "const": "network_enforcement_observation"
+    },
+    "observation_policy_ref": {
+      "allOf": [
+        {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/artifactDigest"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "artifact_type": {
+              "const": "observation_policy"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "effective_mode": {
+            "const": "denied"
+          }
+        },
+        "required": [
+          "effective_mode"
+        ]
+      },
+      "then": {
+        "properties": {
+          "effective_destinations": {
+            "type": "array",
+            "maxItems": 0
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "effective_mode": {
+            "const": "allowlisted"
+          }
+        },
+        "required": [
+          "effective_mode"
+        ]
+      },
+      "then": {
+        "properties": {
+          "effective_destinations": {
+            "type": "array",
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ]
+}

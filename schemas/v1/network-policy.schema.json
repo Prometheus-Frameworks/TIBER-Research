@@ -1,0 +1,181 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.tiber.dev/research/v1/network-policy.schema.json",
+  "title": "TIBER Research v1 exact network policy",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "policy_id",
+    "candidate_run_id",
+    "mode",
+    "default_action",
+    "destinations",
+    "enforcement_boundary",
+    "policy_owner",
+    "policy_status",
+    "recorded_at"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "research-network-policy/v1"
+    },
+    "policy_id": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+    },
+    "candidate_run_id": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+    },
+    "mode": {
+      "enum": [
+        "denied",
+        "allowlisted"
+      ]
+    },
+    "default_action": {
+      "const": "deny"
+    },
+    "destinations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/destination"
+      }
+    },
+    "enforcement_boundary": {
+      "$ref": "#/$defs/enforcementBoundary"
+    },
+    "policy_owner": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/nonEmptyString"
+    },
+    "policy_status": {
+      "enum": [
+        "proposed",
+        "approved"
+      ]
+    },
+    "recorded_at": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/timestamp"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "const": "denied"
+          }
+        },
+        "required": [
+          "mode"
+        ]
+      },
+      "then": {
+        "properties": {
+          "destinations": {
+            "type": "array",
+            "maxItems": 0
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "const": "allowlisted"
+          }
+        },
+        "required": [
+          "mode"
+        ]
+      },
+      "then": {
+        "properties": {
+          "destinations": {
+            "type": "array",
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "destination": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "destination_id",
+        "scheme",
+        "host",
+        "port",
+        "methods",
+        "path_prefix",
+        "source_family_refs"
+      ],
+      "properties": {
+        "destination_id": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+        },
+        "scheme": {
+          "const": "https"
+        },
+        "host": {
+          "type": "string",
+          "pattern": "^(?=.{1,253}$)(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?$"
+        },
+        "port": {
+          "const": 443
+        },
+        "methods": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "enum": [
+              "GET",
+              "HEAD"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "path_prefix": {
+          "type": "string",
+          "pattern": "^(?!.*(?:^|/)\\.\\.(?:/|$))/(?:[A-Za-z0-9._~!$&'()*+,;=:@%/-]*)$",
+          "maxLength": 2048
+        },
+        "source_family_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "enforcementBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "boundary_id",
+        "boundary_type",
+        "enforcement_policy_ref"
+      ],
+      "properties": {
+        "boundary_id": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+        },
+        "boundary_type": {
+          "enum": [
+            "network_namespace",
+            "egress_proxy",
+            "connector_policy",
+            "sandbox_firewall"
+          ]
+        },
+        "enforcement_policy_ref": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/artifactDigest"
+        }
+      }
+    }
+  }
+}

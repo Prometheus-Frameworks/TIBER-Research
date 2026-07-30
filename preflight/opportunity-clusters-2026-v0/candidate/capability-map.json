@@ -1,0 +1,89 @@
+{
+  "candidate_run_id": "opportunity-clusters-2026-v0",
+  "decision": "no_complete_substantive_2026_claim_path",
+  "internal_only_terminal_path": [
+    "blocked_missing_evidence",
+    "inconclusive"
+  ],
+  "questions": [
+    {
+      "available": [
+        "Promoted source-backed 2021-2025 player-season production.",
+        "Committed 2025 weekly usage candidates after explicit admission and availability verification."
+      ],
+      "blocked_by": [
+        "No frozen operator cluster baseline.",
+        "No source-backed current 2026 depth-chart, role, routes, snaps, or red-zone evidence.",
+        "No admissible late-round market snapshot."
+      ],
+      "question_id": "rb-opportunity-tiers",
+      "state": "blocked_missing_evidence"
+    },
+    {
+      "available": [
+        "Historical veteran production.",
+        "Promoted rookie college and draft transition facts for Carnell Tate and Jordyn Tyson."
+      ],
+      "blocked_by": [
+        "No source-backed current 2026 role artifact.",
+        "No admissible market prices."
+      ],
+      "question_id": "wr-role-relative-mispricing",
+      "state": "blocked_missing_evidence"
+    },
+    {
+      "available": [
+        "Historical production, targets, shares, and WOPR for the closed TE population."
+      ],
+      "blocked_by": [
+        "No confirmed scoring context.",
+        "No frozen tier baseline or boundary method.",
+        "No source-backed current 2026 role evidence."
+      ],
+      "question_id": "te-tier-boundaries",
+      "state": "blocked_missing_evidence"
+    },
+    {
+      "available": [
+        "Promoted source-backed 2021-2025 quarterback production."
+      ],
+      "blocked_by": [
+        "No admissible market snapshot.",
+        "No confirmed scoring and draft context.",
+        "No governed executed 2026 forecast."
+      ],
+      "question_id": "qb-market-values",
+      "state": "blocked_missing_evidence"
+    }
+  ],
+  "repository_audit_pins": [
+    {
+      "commit": "3393a8f0b7f4ffa640f63d712768beb1c52b917a",
+      "repository": "Prometheus-Frameworks/TIBER-Data"
+    },
+    {
+      "commit": "a825431402f89f7ec4fe69e72de073ca4b301ea3",
+      "repository": "Prometheus-Frameworks/TIBER-Rookies"
+    },
+    {
+      "commit": "61485d1309484bad300378ef5d9aaa67365d3d62",
+      "repository": "Prometheus-Frameworks/TIBER-Teamstate"
+    },
+    {
+      "commit": "813eff8de0b4a8d4f29f5c37abe522fe3e792ca3",
+      "repository": "Prometheus-Frameworks/TIBER-Forecast"
+    },
+    {
+      "commit": "6435d8d3c2c4e53dc45ab57a05a2716e2b47598d",
+      "repository": "Prometheus-Frameworks/Role-and-opportunity-model"
+    }
+  ],
+  "safe_narrow_exercise": "A historical-2025 evidence and traceability exercise can test mechanics, but cannot answer the substantive 2026 questions.",
+  "traps": [
+    "Role-and-opportunity-model contains fictional, demo, or operator-seeded current files rather than real player-role truth.",
+    "TIBER-Teamstate 2026 artifacts are operator-seeded, pending, or unknown.",
+    "TIBER-Forecast contains no authorized executed 2026 forward forecast.",
+    "Rookies 2026 dynasty ADP lacks sufficient source identity and provenance and is not a generic current market.",
+    "Promoted-looking weekly or team exports must not be assumed to be football truth when their manifests identify fixtures."
+  ]
+}

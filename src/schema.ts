@@ -10,11 +10,11 @@ import addFormatsImport, { type FormatsPlugin } from "ajv-formats";
 import { decodeUtf8Strict, parseJsonStrict } from "./canonical.js";
 
 const moduleDir = dirname(fileURLToPath(import.meta.url));
-const sourceRelativeSchemaDir = join(moduleDir, "..", "schemas", "v0");
-const compiledRelativeSchemaDir = join(moduleDir, "..", "..", "schemas", "v0");
-const schemaDir = existsSync(sourceRelativeSchemaDir)
-  ? sourceRelativeSchemaDir
-  : compiledRelativeSchemaDir;
+const sourceRelativeSchemaRoot = join(moduleDir, "..", "schemas");
+const compiledRelativeSchemaRoot = join(moduleDir, "..", "..", "schemas");
+const schemaRoot = existsSync(sourceRelativeSchemaRoot)
+  ? sourceRelativeSchemaRoot
+  : compiledRelativeSchemaRoot;
 
 export interface SchemaFailure {
   instancePath: string;
@@ -43,20 +43,17 @@ function loadValidators(): Map<string, ValidateFunction> {
   });
   addFormats(ajv);
 
-  const schemas = readdirSync(schemaDir)
-    .filter((name) => name.endsWith(".schema.json"))
-    .sort()
-    .map((name) => {
-      const bytes = readFileSync(join(schemaDir, name));
-      try {
-        return parseJsonStrict(decodeUtf8Strict(bytes)) as {
-          $id?: string;
-          title?: string;
-        };
-      } catch (error) {
-        throw new Error(`${name}: invalid schema JSON`, { cause: error });
-      }
-    });
+  const schemas = schemaFiles(schemaRoot).map((path) => {
+    const bytes = readFileSync(path);
+    try {
+      return parseJsonStrict(decodeUtf8Strict(bytes)) as {
+        $id?: string;
+        title?: string;
+      };
+    } catch (error) {
+      throw new Error(`${path}: invalid schema JSON`, { cause: error });
+    }
+  });
 
   for (const schema of schemas) {
     ajv.addSchema(schema);
@@ -75,6 +72,18 @@ function loadValidators(): Map<string, ValidateFunction> {
   }
 
   return validators;
+}
+
+function schemaFiles(directory: string): string[] {
+  return readdirSync(directory, { withFileTypes: true })
+    .flatMap((entry) => {
+      const path = join(directory, entry.name);
+      if (entry.isDirectory()) {
+        return schemaFiles(path);
+      }
+      return entry.isFile() && entry.name.endsWith(".schema.json") ? [path] : [];
+    })
+    .sort();
 }
 
 export function validateSchema(schemaId: string, value: unknown): SchemaResult {

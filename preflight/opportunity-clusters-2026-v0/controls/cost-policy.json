@@ -1,0 +1,47 @@
+{
+  "accounting_mode": "fixed_session_reservation",
+  "candidate_run_id": "opportunity-clusters-2026-v0",
+  "ceiling": 2,
+  "checkpoint_rule": {
+    "overrun_behavior": "block",
+    "reconciliation": "ceiling_minus_cumulative_trusted_usage",
+    "rework": "carry_forward",
+    "scope": "cumulative_run"
+  },
+  "fixed_reservation": {
+    "accounting_basis": "one_unit_per_trusted_observed_provider_backed_actor_session_ref",
+    "accounting_limitation": "Bounds trusted-observed provider-backed actor session starts, not tokens, compute, or currency.",
+    "amount": 2,
+    "role_limits": [
+      {
+        "amount": 1,
+        "role": "executor"
+      },
+      {
+        "amount": 1,
+        "role": "reviewer"
+      }
+    ],
+    "roles": [
+      "executor",
+      "reviewer"
+    ]
+  },
+  "limitations": [
+    "Actor-session accounting does not measure tokens, compute, or currency.",
+    "No actor session is authorized by this candidate policy; activation remains separate."
+  ],
+  "policy_id": "opportunity-clusters-2026-v0-cost",
+  "policy_owner": "TIBER-Research Stage 1 preflight candidate prepared under TIBER-Ops 54",
+  "policy_status": "proposed",
+  "rate_card_ref": {
+    "artifact_type": "cost_rate_card",
+    "digest": "sha256:1b0f1153ad599d5a0e11423b544f89a14427525da652e6286854f2207270deb6",
+    "digest_mode": "tiber-canonical-json-v1",
+    "path": "preflight/opportunity-clusters-2026-v0/controls/cost-rate-card.json"
+  },
+  "recorded_at": "2026-07-30T17:10:11Z",
+  "schema_version": "research-cost-policy/v1",
+  "trusted_observation_required": true,
+  "unit": "tiber_actor_session_v1"
+}

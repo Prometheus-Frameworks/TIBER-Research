@@ -1,0 +1,11 @@
+{
+  "accounting_basis": "one_unit_per_trusted_observed_provider_backed_actor_session_ref",
+  "definition": "One provider-backed executor or reviewer session whose start is independently observed and bound to a unique actor_session_ref.",
+  "exclusions": [
+    "This unit is not a token count.",
+    "This unit is not a compute measure.",
+    "This unit is not a currency amount."
+  ],
+  "schema_version": "research-cost-rate-card/v1",
+  "unit": "tiber_actor_session_v1"
+}

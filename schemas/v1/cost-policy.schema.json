@@ -1,0 +1,226 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.tiber.dev/research/v1/cost-policy.schema.json",
+  "title": "TIBER Research v1 provider-neutral cost policy",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "policy_id",
+    "candidate_run_id",
+    "unit",
+    "ceiling",
+    "accounting_mode",
+    "rate_card_ref",
+    "trusted_observation_required",
+    "checkpoint_rule",
+    "fixed_reservation",
+    "policy_owner",
+    "policy_status",
+    "recorded_at",
+    "limitations"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "research-cost-policy/v1"
+    },
+    "policy_id": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+    },
+    "candidate_run_id": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+    },
+    "unit": {
+      "enum": [
+        "usd_micro",
+        "tiber_actor_session_v1"
+      ]
+    },
+    "ceiling": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "accounting_mode": {
+      "enum": [
+        "trusted_usage",
+        "fixed_session_reservation"
+      ]
+    },
+    "rate_card_ref": {
+      "allOf": [
+        {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/artifactDigest"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "artifact_type": {
+              "const": "cost_rate_card"
+            }
+          }
+        }
+      ]
+    },
+    "trusted_observation_required": {
+      "const": true
+    },
+    "checkpoint_rule": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scope",
+        "reconciliation",
+        "rework",
+        "overrun_behavior"
+      ],
+      "properties": {
+        "scope": {
+          "const": "cumulative_run"
+        },
+        "reconciliation": {
+          "const": "ceiling_minus_cumulative_trusted_usage"
+        },
+        "rework": {
+          "const": "carry_forward"
+        },
+        "overrun_behavior": {
+          "const": "block"
+        }
+      }
+    },
+    "fixed_reservation": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/fixedSessionReservation"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "policy_owner": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/nonEmptyString"
+    },
+    "policy_status": {
+      "enum": [
+        "proposed",
+        "approved"
+      ]
+    },
+    "recorded_at": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/timestamp"
+    },
+    "limitations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/nonEmptyString"
+      },
+      "uniqueItems": true
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "accounting_mode": {
+            "const": "trusted_usage"
+          }
+        },
+        "required": [
+          "accounting_mode"
+        ]
+      },
+      "then": {
+        "properties": {
+          "fixed_reservation": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "accounting_mode": {
+            "const": "fixed_session_reservation"
+          }
+        },
+        "required": [
+          "accounting_mode"
+        ]
+      },
+      "then": {
+        "properties": {
+          "unit": {
+            "const": "tiber_actor_session_v1"
+          },
+          "fixed_reservation": {
+            "$ref": "#/$defs/fixedSessionReservation"
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "fixedSessionReservation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "amount",
+        "roles",
+        "role_limits",
+        "accounting_basis",
+        "accounting_limitation"
+      ],
+      "properties": {
+        "amount": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "roles": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "enum": [
+              "executor",
+              "reviewer"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "role_limits": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 2,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "role",
+              "amount"
+            ],
+            "properties": {
+              "role": {
+                "enum": [
+                  "executor",
+                  "reviewer"
+                ]
+              },
+              "amount": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          }
+        },
+        "accounting_basis": {
+          "const": "one_unit_per_trusted_observed_provider_backed_actor_session_ref"
+        },
+        "accounting_limitation": {
+          "const": "Bounds trusted-observed provider-backed actor session starts, not tokens, compute, or currency."
+        }
+      }
+    }
+  }
+}

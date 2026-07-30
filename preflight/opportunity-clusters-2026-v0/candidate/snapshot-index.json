@@ -1,0 +1,44 @@
+{
+  "candidate_run_id": "opportunity-clusters-2026-v0",
+  "indexed_at": "2026-07-30T17:41:56Z",
+  "limitations": [
+    "This index freezes exact captured body bytes only; source title, state, author, created_at, updated_at, and historical capture time were not independently frozen.",
+    "Mutable issue URLs remain locator metadata and do not replace the retained byte digests."
+  ],
+  "record_freeze_scope": "exact_body_bytes_only",
+  "snapshots": [
+    {
+      "captured_file_raw_sha256": "sha256:9b09baff27b471f00afbc123b2b487384ec36ada59789300fef24a74c1f3d233",
+      "path": "preflight/opportunity-clusters-2026-v0/snapshots/ops-51-body.md",
+      "source_body_raw_sha256_without_terminal_lf": "sha256:efc81c844fe11e322b43370d3d9648665bd229096c32ed29d7c03b999e19d2db",
+      "source_record_id": "TIBER-Ops#51",
+      "source_record_type": "issue_body",
+      "source_ref": "https://github.com/Prometheus-Frameworks/TIBER-Ops/issues/51"
+    },
+    {
+      "captured_file_raw_sha256": "sha256:16cd727bd672321ebaf3084ba3110c0e15bfeaef76e3e7df6520712f5d5c35b1",
+      "path": "preflight/opportunity-clusters-2026-v0/snapshots/ops-51-redirect-comment.md",
+      "source_body_raw_sha256_without_terminal_lf": "sha256:5c9e631e1d5a3a47fa39c211a4bc303124655d3f13db7931d969c3a47c5d1741",
+      "source_record_id": "5123928564",
+      "source_record_type": "issue_comment",
+      "source_ref": "https://github.com/Prometheus-Frameworks/TIBER-Ops/issues/51#issuecomment-5123928564"
+    },
+    {
+      "captured_file_raw_sha256": "sha256:fb31fdec0a219932d2478f09d2735dc716345b4ba5ff371b06be92c2cd15ef93",
+      "path": "preflight/opportunity-clusters-2026-v0/snapshots/ops-52-body.md",
+      "source_body_raw_sha256_without_terminal_lf": "sha256:30a75923cc10c9c865335c87aaf90356a90ae413732ffb6f365275f913b81486",
+      "source_record_id": "TIBER-Ops#52",
+      "source_record_type": "issue_body",
+      "source_ref": "https://github.com/Prometheus-Frameworks/TIBER-Ops/issues/52"
+    },
+    {
+      "captured_file_raw_sha256": "sha256:aaa3ab61a3bdc13eb972d4f01c780850e14c1dc089ccd0bba88fec4fef8ee4be",
+      "path": "preflight/opportunity-clusters-2026-v0/snapshots/strategy-8-body.md",
+      "source_body_raw_sha256_without_terminal_lf": "sha256:36f701af1aa6b00d12119c81e37312b0cdace11256c734b58f50984b818d4abf",
+      "source_record_id": "TIBER-Strategy#8",
+      "source_record_type": "issue_body",
+      "source_ref": "https://github.com/Prometheus-Frameworks/TIBER-Strategy/issues/8"
+    }
+  ],
+  "status": "frozen_control_record_snapshots"
+}
