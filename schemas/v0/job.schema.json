@@ -362,7 +362,8 @@
           "const": true
         },
         "single_writer_required": {
-          "const": true
+          "const": true,
+          "description": "Require exclusive append authority. A replacement executor session may take over only immediately after a checkpoint."
         }
       }
     },

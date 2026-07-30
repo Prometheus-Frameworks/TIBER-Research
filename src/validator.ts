@@ -587,6 +587,215 @@ function validateAttemptInternal(
 }
 
 /**
+ * Validate the run-level transition that opens an attempt before any
+ * executor-authored ledger or packet artifact exists.
+ *
+ * This binds the start event to the frozen authority, inputs, sources, and
+ * complete run-event history without treating research output as a
+ * prerequisite for authorization.
+ */
+export function validateAttemptStart(
+  workspaceDir: string,
+  runId: string,
+  attemptId: string,
+): ValidationReport {
+  const report: ValidationReport = {
+    valid: false,
+    phase: "candidate",
+    end_to_end_ready: false,
+    archive_id: null,
+    errors: [],
+    warnings: [],
+    resume: null,
+  };
+  if (!isSafeId(runId) || !isSafeId(attemptId)) {
+    issue(
+      report,
+      "identity.invalid",
+      ".",
+      "run_id and attempt_id must be safe identifiers",
+    );
+    return finish(report, {});
+  }
+
+  try {
+    const runRoot = `runs/${runId}`;
+    const activationPath = `${runRoot}/activation.json`;
+    const inputsPath = `${runRoot}/inputs.json`;
+    const runEventsPath = `${runRoot}/run-events.jsonl`;
+    const activation = readNormalizedJson<Activation>(
+      workspaceDir,
+      activationPath,
+    );
+    const inputs = readNormalizedJson<Inputs>(workspaceDir, inputsPath);
+    const job = readYaml<Job>(workspaceDir, activation.job_ref.path);
+    schema(report, activationPath, SCHEMA.activation, activation);
+    schema(report, inputsPath, SCHEMA.inputs, inputs);
+    schema(report, activation.job_ref.path, SCHEMA.job, job);
+    validateIdentityPins(
+      workspaceDir,
+      runId,
+      attemptId,
+      job,
+      activation,
+      inputs,
+      null,
+      report,
+    );
+    validateCapabilities(
+      job,
+      activation,
+      attemptId,
+      report,
+      activationPath,
+    );
+    validateFrozenInputPopulation(job, inputs, report);
+    validatePinnedArtifacts(job, inputs, report);
+    const sourceMap = validateSources(
+      workspaceDir,
+      runRoot,
+      job,
+      activation,
+      inputs,
+      report,
+    );
+    if (sourceMap.size > activation.budget.evidence_objects) {
+      issue(
+        report,
+        "budget.evidence_exceeded",
+        "inputs.sources",
+        "admitted source-object count exceeds the activated evidence budget",
+      );
+    }
+    validateMarketSnapshots(inputs, activation, sourceMap, report);
+    validateRunLayout(workspaceDir, runRoot, inputs, report);
+    const runEvents = validateRunEvents(
+      workspaceDir,
+      runEventsPath,
+      runId,
+      activation,
+      attemptId,
+      report,
+    );
+    const attemptRoot = `${runRoot}/attempts/${attemptId}`;
+    if (exists(workspaceDir, attemptRoot)) {
+      const attemptAbsolute = resolveContained(workspaceDir, attemptRoot);
+      const attemptStats = lstatSync(attemptAbsolute);
+      if (
+        attemptStats.isSymbolicLink() ||
+        !attemptStats.isDirectory() ||
+        readdirSync(attemptAbsolute).length > 0
+      ) {
+        issue(
+          report,
+          "attempt_start.artifacts_present",
+          attemptRoot,
+          "a newly started attempt must not contain executor-authored artifacts",
+        );
+      }
+    }
+    const startIndex = runEvents.findIndex(
+      (event) =>
+        event.event_type === "attempt_started" &&
+        event.attempt_id === attemptId,
+    );
+    const startEvent = runEvents[startIndex];
+    if (
+      startEvent === undefined ||
+      startIndex !== runEvents.length - 1
+    ) {
+      issue(
+        report,
+        "attempt_start.not_current",
+        runEventsPath,
+        "the target attempt_started event must be the current run-event tail",
+      );
+    }
+    const predecessorLink =
+      startIndex > 0 ? runEvents[startIndex - 1] : undefined;
+    if (predecessorLink?.event_type === "successor_link") {
+      const predecessorAttemptId = predecessorLink.attempt_id;
+      if (
+        predecessorAttemptId === null ||
+        !isSafeId(predecessorAttemptId)
+      ) {
+        issue(
+          report,
+          "attempt_start.predecessor_invalid",
+          runEventsPath,
+          "successor start has no valid predecessor attempt reference",
+        );
+      } else {
+        const predecessor = validateAttempt(
+          workspaceDir,
+          runId,
+          predecessorAttemptId,
+          { phase: "sealed" },
+        );
+        if (!predecessor.valid) {
+          issue(
+            report,
+            "attempt_start.predecessor_invalid",
+            `runs/${runId}/attempts/${predecessorAttemptId}`,
+            `successor start requires a valid sealed predecessor; errors: ${[
+              ...new Set(
+                predecessor.errors.map((entry) => entry.code),
+              ),
+            ].join(", ")}`,
+          );
+        }
+      }
+    }
+    for (const privacyFinding of scanStructuralPrivacy({
+      activation,
+      inputs,
+      job,
+      runEvents,
+      sources: [...sourceMap.values()],
+    })) {
+      issue(
+        report,
+        "privacy.structural_violation",
+        privacyFinding.path,
+        privacyFinding.reason,
+      );
+    }
+    scanCoreContractPrivacy(
+      workspaceDir,
+      [
+        activation.job_ref.path,
+        activation.ops_decision_ref.path,
+        activationPath,
+        inputsPath,
+        runEventsPath,
+        ...inputs.sources.map((source) => source.metadata_path),
+      ],
+      report,
+    );
+    rejectPromotionInsideRun(workspaceDir, runRoot, report);
+    scanSourceContentPrivacy(workspaceDir, inputs, report);
+    report.resume = deriveResumeState(
+      runId,
+      attemptId,
+      [],
+      null,
+      runEvents,
+      null,
+      null,
+      null,
+    );
+  } catch (error) {
+    issue(
+      report,
+      "attempt_start.unreadable",
+      ".",
+      error instanceof Error ? error.message : String(error),
+    );
+  }
+  return finish(report, {});
+}
+
+/**
  * Validate and resume an in-progress attempt before packet synthesis.
  *
  * Once packet.json exists, the ordinary phase-aware validator remains the
@@ -691,6 +900,7 @@ export function validateResume(
       expectedAttemptId: attemptId,
       expectedRunId: runId,
       expectedSchemaVersion: "research-ledger-event/v0",
+      requireCheckpointSessionHandoff: job.gates.single_writer_required,
     });
     for (const ledgerIssue of ledgerResult.issues) {
       issue(
@@ -917,6 +1127,7 @@ function validateCandidate(
     expectedAttemptId: attemptId,
     expectedRunId: runId,
     expectedSchemaVersion: "research-ledger-event/v0",
+    requireCheckpointSessionHandoff: job.gates.single_writer_required,
   });
   for (const ledgerIssue of ledgerResult.issues) {
     issue(
@@ -1080,6 +1291,12 @@ function validateIdentityPins(
     ["inputs.job_id", inputs.job_ref.job_id, job.job_id],
     ["activation.job_version", activation.job_ref.job_version, job.job_version],
     ["inputs.job_version", inputs.job_ref.job_version, job.job_version],
+    ["inputs.job_path", inputs.job_ref.path, activation.job_ref.path],
+    [
+      "inputs.job_digest_mode",
+      inputs.job_ref.digest_mode,
+      activation.job_ref.digest_mode,
+    ],
     ["activation.cutoff_at", activation.cutoff_at, job.cutoff_at],
     ["inputs.cutoff_at", inputs.cutoff_at, job.cutoff_at],
     ["activation.synthetic_fixture", activation.synthetic_fixture, job.synthetic_fixture],
@@ -1832,6 +2049,11 @@ function validateSources(
     }
 
     const checks: Array<[string, unknown, unknown]> = [
+      [
+        "synthetic_fixture",
+        metadata.synthetic_fixture,
+        activation.synthetic_fixture,
+      ],
       ["run_id", metadata.run_id, activation.run_id],
       ["source_object_id", metadata.source_object_id, source.source_object_id],
       ["content_path", metadata.content_path, source.content_path],
@@ -2828,6 +3050,14 @@ function validateLedgerSemantics(
   let toolUseCount = 0;
   let previousRemaining = { ...activation.budget };
   for (const [index, event] of ledger.entries()) {
+    if (event.synthetic_fixture !== activation.synthetic_fixture) {
+      issue(
+        report,
+        "ledger.synthetic_mismatch",
+        `${path}:${index + 1}`,
+        "ledger event changes the activation synthetic-fixture classification",
+      );
+    }
     if (
       previousRecordedAt !== null &&
       isAfter(previousRecordedAt, event.recorded_at)
@@ -3227,6 +3457,25 @@ function validatePacketTraceability(
   const subjectIds = new Set(job.subjects.map((entry) => entry.subject_id));
   const negativeByQuestion = new Map<string, number>();
   for (const finding of packet.negative_findings) {
+    if (
+      finding.question_refs.length === 0 ||
+      finding.subject_refs.length === 0
+    ) {
+      issue(
+        report,
+        "packet.negative_scope_required",
+        `${path}.negative_findings.${finding.finding_id}`,
+        "negative findings must declare at least one governed question and subject",
+      );
+    }
+    if (finding.evidence_refs.length === 0) {
+      issue(
+        report,
+        "packet.negative_evidence_required",
+        `${path}.negative_findings.${finding.finding_id}.evidence_refs`,
+        "negative findings must cite at least one admitted current observation",
+      );
+    }
     reportDuplicateIds(
       finding.question_refs,
       report,
@@ -3333,11 +3582,23 @@ function validatePacketTraceability(
     }
     for (const challengeRef of finding.challenge_refs) {
       const challenge = eventMap.get(challengeRef);
+      const challengeQuestions = stringArray(
+        challenge?.applicable_scope?.question_refs,
+      );
+      const challengeSubjects = stringArray(
+        challenge?.applicable_scope?.subject_refs,
+      );
       if (
         challenge === undefined ||
         challenge.event_type !== "challenge" ||
         challenge.admissibility_state !== "admitted" ||
         challenge.freshness_state !== "current" ||
+        finding.question_refs.some(
+          (ref) => !challengeQuestions.includes(ref),
+        ) ||
+        finding.subject_refs.some(
+          (ref) => !challengeSubjects.includes(ref),
+        ) ||
         !stringArray(challenge.payload.negative_finding_refs).includes(
           finding.finding_id,
         ) ||
@@ -3351,6 +3612,33 @@ function validatePacketTraceability(
           `${path}.negative_findings.${finding.finding_id}`,
           `negative finding challenge is unresolved, out of scope, or lacks lineage: ${challengeRef}`,
         );
+      }
+      for (const counterevidenceRef of stringArray(
+        challenge?.payload?.counterevidence_event_refs,
+      )) {
+        const counterevidence = eventMap.get(counterevidenceRef);
+        const counterevidenceQuestions = stringArray(
+          counterevidence?.applicable_scope?.question_refs,
+        );
+        const counterevidenceSubjects = stringArray(
+          counterevidence?.applicable_scope?.subject_refs,
+        );
+        if (
+          counterevidence === undefined ||
+          finding.question_refs.some(
+            (ref) => !counterevidenceQuestions.includes(ref),
+          ) ||
+          finding.subject_refs.some(
+            (ref) => !counterevidenceSubjects.includes(ref),
+          )
+        ) {
+          issue(
+            report,
+            "packet.negative_challenge_counterevidence_scope",
+            `${path}.negative_findings.${finding.finding_id}`,
+            `challenge counterevidence is not scoped to the negative finding: ${counterevidenceRef}`,
+          );
+        }
       }
     }
   }

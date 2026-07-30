@@ -4,6 +4,7 @@ import {
   lstatSync,
   mkdirSync,
   mkdtempSync,
+  readdirSync,
   rmSync,
 } from "node:fs";
 import { tmpdir } from "node:os";
@@ -29,8 +30,13 @@ import {
   writeJsonCreateOnly,
   writeUtf8CreateOnly,
 } from "./io.js";
+import { isAfter } from "./protocol.js";
 import { renderPacketMarkdown, type ResearchPacket } from "./renderer.js";
-import { validateAttempt } from "./validator.js";
+import {
+  validateAttempt,
+  validateAttemptStart,
+  validateResume,
+} from "./validator.js";
 import { VERSIONS } from "./versions.js";
 
 interface ActivationForBuild {
@@ -183,6 +189,40 @@ export function createAttemptStart(
         "attempt start requires activation or the immediately preceding Ops-authorized successor_link",
       );
     }
+    if (hasPriorAttempt) {
+      const predecessorAttemptId = last?.attempt_id;
+      if (
+        typeof predecessorAttemptId !== "string" ||
+        !isSafeId(predecessorAttemptId)
+      ) {
+        throw new Error(
+          "successor attempt start requires a valid predecessor attempt reference",
+        );
+      }
+      requireValidLifecycle(
+        validateAttempt(
+          workspaceDir,
+          runId,
+          predecessorAttemptId,
+          { phase: "sealed" },
+        ),
+        "successor predecessor",
+      );
+    }
+    const attemptRoot = `runs/${runId}/attempts/${attemptId}`;
+    const attemptAbsolute = resolveContained(workspaceDir, attemptRoot);
+    if (existsSync(attemptAbsolute)) {
+      const attemptStats = lstatSync(attemptAbsolute);
+      if (
+        attemptStats.isSymbolicLink() ||
+        !attemptStats.isDirectory() ||
+        readdirSync(attemptAbsolute).length > 0
+      ) {
+        throw new Error(
+          "a new attempt cannot contain research artifacts before attempt_started",
+        );
+      }
+    }
   }
   const event: RunEventInput = {
     actor_session_ref: metadata.actor_session_ref,
@@ -191,18 +231,35 @@ export function createAttemptStart(
     payload: { attempt_ref: attemptId },
     recorded_at: metadata.started_at,
   };
+  if (existing !== undefined) {
+    ensureRunEvent(workspaceDir, runId, event);
+    const attemptRoot = `runs/${runId}/attempts/${attemptId}`;
+    const packetExists = existsSync(
+      resolveContained(workspaceDir, `${attemptRoot}/packet.json`),
+    );
+    const ledgerExists = existsSync(
+      resolveContained(workspaceDir, `${attemptRoot}/ledger.jsonl`),
+    );
+    const validation = packetExists
+      ? validateAttempt(workspaceDir, runId, attemptId)
+      : ledgerExists
+        ? validateResume(workspaceDir, runId, attemptId)
+        : validateAttemptStart(workspaceDir, runId, attemptId);
+    requireValidLifecycle(validation, "attempt start recovery");
+    return;
+  }
   preflightTransition(
     workspaceDir,
     runId,
     attemptId,
     null,
     event,
-    "candidate",
+    "started",
     "attempt start",
   );
   ensureRunEvent(workspaceDir, runId, event);
   requireValidLifecycle(
-    validateAttempt(workspaceDir, runId, attemptId, { phase: "candidate" }),
+    validateAttemptStart(workspaceDir, runId, attemptId),
     "attempt start",
   );
 }
@@ -571,8 +628,7 @@ export function buildSealObject(
     (successorDecisionRef === null ||
       successorDecisionRef.trim().length === 0 ||
       successorLinkedAt === null ||
-      Number.isNaN(Date.parse(successorLinkedAt)) ||
-      Date.parse(successorLinkedAt) < Date.parse(metadata.sealed_at))
+      isAfter(metadata.sealed_at, successorLinkedAt))
   ) {
     throw new Error(
       "successor link requires a non-empty Ops decision reference and a timestamp at or after sealed_at",
@@ -680,8 +736,7 @@ export function createSeal(
     (successorDecisionRef === null ||
       successorDecisionRef.trim().length === 0 ||
       successorLinkedAt === null ||
-      Number.isNaN(Date.parse(successorLinkedAt)) ||
-      Date.parse(successorLinkedAt) < Date.parse(metadata.sealed_at))
+      isAfter(metadata.sealed_at, successorLinkedAt))
   ) {
     throw new Error(
       "successor link requires a non-empty Ops decision reference and a timestamp at or after sealed_at",
@@ -873,7 +928,12 @@ interface ProspectiveJsonArtifact {
   value: Record<string, unknown>;
 }
 
-type TransitionPhase = "candidate" | "reviewed" | "sealed" | "submitted";
+type TransitionPhase =
+  | "candidate"
+  | "reviewed"
+  | "sealed"
+  | "started"
+  | "submitted";
 
 /**
  * Validate the exact prospective artifact/event pair in an isolated,
@@ -918,10 +978,11 @@ function preflightTransition(
     if (event !== null) {
       ensureRunEvent(shadow, runId, event);
     }
-    requireValidLifecycle(
-      validateAttempt(shadow, runId, attemptId, { phase }),
-      `${label} preflight`,
-    );
+    const validation =
+      phase === "started"
+        ? validateAttemptStart(shadow, runId, attemptId)
+        : validateAttempt(shadow, runId, attemptId, { phase });
+    requireValidLifecycle(validation, `${label} preflight`);
   } finally {
     rmSync(parent, { recursive: true, force: true });
   }
@@ -1003,7 +1064,7 @@ function ensureRunEvent(
   if (last === undefined) {
     throw new Error(`${path}: activation event is missing`);
   }
-  if (new Date(last.recorded_at).getTime() > new Date(input.recorded_at).getTime()) {
+  if (isAfter(last.recorded_at, input.recorded_at)) {
     throw new Error(
       `${path}: ${input.event_type} recorded_at would regress run chronology`,
     );

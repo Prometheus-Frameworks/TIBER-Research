@@ -21,14 +21,16 @@
     },
     "timestamp": {
       "type": "string",
-      "format": "date-time"
+      "format": "date-time",
+      "pattern": "^(?!.*\\.\\d{4,}(?:[zZ]|[+-]\\d{2}:\\d{2})$).+$"
     },
     "nullableTimestamp": {
       "type": [
         "string",
         "null"
       ],
-      "format": "date-time"
+      "format": "date-time",
+      "pattern": "^(?!.*\\.\\d{4,}(?:[zZ]|[+-]\\d{2}:\\d{2})$).+$"
     },
     "nonEmptyString": {
       "type": "string",

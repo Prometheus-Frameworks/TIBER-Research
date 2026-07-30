@@ -47,10 +47,24 @@ function checkSubset(
 }
 
 export function isAfter(left: string, right: string): boolean {
-  const leftMs = Date.parse(left);
-  const rightMs = Date.parse(right);
-  if (!Number.isFinite(leftMs) || !Number.isFinite(rightMs)) {
-    throw new Error(`invalid timestamp comparison: ${left} / ${right}`);
+  return parseTimestamp(left) > parseTimestamp(right);
+}
+
+export function parseTimestamp(value: string): number {
+  const fractionalSeconds = value.match(
+    /\.(\d+)(?:[zZ]|[+-]\d{2}:\d{2})$/u,
+  )?.[1];
+  if (
+    fractionalSeconds !== undefined &&
+    fractionalSeconds.length > 3
+  ) {
+    throw new Error(
+      `timestamp precision exceeds milliseconds: ${value}`,
+    );
   }
-  return leftMs > rightMs;
+  const parsed = Date.parse(value);
+  if (!Number.isFinite(parsed)) {
+    throw new Error(`invalid timestamp: ${value}`);
+  }
+  return parsed;
 }

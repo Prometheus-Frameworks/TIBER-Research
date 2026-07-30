@@ -47,10 +47,13 @@ observations are invented only to exercise the protocol.
 | `run_id` | One activation against frozen inputs, cutoff, authority, and budget | Any change to those pins creates a new run |
 | `attempt_id` | One frozen executor submission | Review rework with unchanged run inputs creates a successor attempt |
 
-An attempt ledger is single-writer and hash-chained. It freezes when
-`submission.json` is created. A reviewer writes only `review.json`; any candidate
-repair creates another attempt. Every terminal attempt receives `seal.json`.
-Promotion is always external to the sealed run.
+An attempt ledger is single-writer at append time and hash-chained. A cold
+resume may change `actor_session_ref` only immediately after a checkpoint;
+session identifiers record attribution but do not replace exclusive write
+authority. The ledger freezes when `submission.json` is created. A reviewer
+writes only `review.json`; any candidate repair creates another attempt. Every
+terminal attempt receives `seal.json`. Promotion is always external to the
+sealed run.
 
 ## Digest rules
 
@@ -119,8 +122,10 @@ publication, availability, retrieval, and cutoff times.
 Run-level events authorize attempt starts and record submission, review, seal,
 successor, and closure transitions. A `rework_required` seal does not invent its
 successor or close the run: a later successor link must identify a separate Ops
-decision, after which the named attempt may begin. Predecessor bundles are
-validated recursively before their pins are trusted.
+decision, after which the named attempt may begin. A new start requires an empty
+attempt path and validates the frozen run plus any sealed predecessor before it
+appends authorization. Predecessor bundles are validated recursively before
+their pins are trusted.
 
 A packet-free `resume` validates the frozen authority, inputs, source objects,
 run-event history, hash-chained ledger, and final checkpoint before deriving a

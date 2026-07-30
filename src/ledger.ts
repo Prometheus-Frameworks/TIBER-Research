@@ -200,6 +200,7 @@ export function finalizeLedgerEvent<T extends Record<string, unknown>>(
 
 export type LedgerIssueCode =
   | "actor_not_allowed"
+  | "actor_session_handoff_invalid"
   | "actor_session_changed"
   | "attempt_changed"
   | "duplicate_event_id"
@@ -233,6 +234,12 @@ export interface LedgerValidationOptions {
    */
   expectedActorSessionRef?: string;
   allowedActorSessionRefs?: readonly string[];
+  /**
+   * Permit a new sole executor session only immediately after a checkpoint.
+   * This preserves cold resume without treating session identity as proof of
+   * append authority.
+   */
+  requireCheckpointSessionHandoff?: boolean;
   /**
    * Require all records to share actor_session_ref. Defaults false because a
    * governed cold resume may create a new session for the same sole executor.
@@ -300,6 +307,8 @@ export function validateLedgerChain(
   let runId = options.expectedRunId;
   let attemptId = options.expectedAttemptId;
   let firstActorSession: string | undefined;
+  let previousActorSession: string | undefined;
+  let previousEventType: string | undefined;
   let previousDeclaredHash: Sha256Digest | null = null;
   let prefixValid = true;
   let lastValidatedHead: Sha256Digest | null = null;
@@ -451,6 +460,21 @@ export function validateLedgerChain(
         `Expected one actor_session_ref ${firstActorSession}; received ${String(event.actor_session_ref)}`,
       );
     }
+    if (
+      options.requireCheckpointSessionHandoff === true &&
+      previousActorSession !== undefined &&
+      actorSession !== undefined &&
+      actorSession !== previousActorSession &&
+      previousEventType !== "checkpoint"
+    ) {
+      recordIssue(
+        issues,
+        "actor_session_handoff_invalid",
+        eventIndex,
+        eventId,
+        `actor_session_ref may change only after a checkpoint; prior event type was ${String(previousEventType)}`,
+      );
+    }
 
     const declaredPrevious = event.previous_event_hash;
     if (index === 0) {
@@ -525,6 +549,8 @@ export function validateLedgerChain(
     } else {
       prefixValid = false;
     }
+    previousActorSession = actorSession;
+    previousEventType = stringMember(event, "event_type");
   }
 
   const valid = issues.length === 0;

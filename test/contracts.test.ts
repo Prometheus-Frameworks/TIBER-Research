@@ -31,6 +31,7 @@ import {
 } from "../src/renderer.js";
 import {
   validateAttempt,
+  validateAttemptStart,
   validateResume,
   type ValidationOptions,
   type ValidationReport,
@@ -580,6 +581,24 @@ test("immutable authority, job, input, and capability pins fail closed", async (
     });
   });
 
+  await t.test("frozen inputs bind the exact activated job path", () => {
+    withFixture((root) => {
+      mutateJson(root, INPUTS, (inputs) => {
+        inputs.job_ref.path = "alternate-job.yaml";
+      });
+      refreshFrozenInputAuthorization(root);
+      refreshTerminalBindings(root);
+      const report = assertInvalid(root, "identity.mismatch");
+      assert.ok(
+        report.errors.some(
+          (entry) =>
+            entry.code === "identity.mismatch" &&
+            entry.path === "inputs.job_path",
+        ),
+      );
+    });
+  });
+
   await t.test("frozen input population", () => {
     withFixture((root) => {
       mutateJson(root, INPUTS, (inputs) => {
@@ -634,6 +653,24 @@ test("immutable authority, job, input, and capability pins fail closed", async (
       });
       refreshTerminalBindings(root);
       assertInvalid(root, "activation.authority_after_activation");
+    });
+  });
+
+  await t.test("authority chronology rejects sub-millisecond precision", () => {
+    withFixture((root) => {
+      mutateJson(root, AUTHORITY_DECISION, (decision) => {
+        decision.approved_at = "2026-01-01T14:15:00.0009Z";
+      });
+      const decision = json(root, AUTHORITY_DECISION);
+      mutateJson(root, ACTIVATION, (activation) => {
+        activation.activated_at = "2026-01-01T14:15:00.0001Z";
+        activation.ops_decision_ref.approved_at =
+          "2026-01-01T14:15:00.0009Z";
+        activation.ops_decision_ref.digest =
+          sha256CanonicalJson(decision);
+      });
+      refreshTerminalBindings(root);
+      assertInvalid(root, "schema.invalid");
     });
   });
 
@@ -930,6 +967,22 @@ test("source, temporal, market, and retained-byte controls fail closed", async (
         metadata.source_class = "admitted_external_source";
       });
       assertInvalid(root, "source.evidence_class_not_admitted");
+    });
+  });
+
+  await t.test("source synthetic classification is pinned to the run", () => {
+    withFixture((root) => {
+      mutateJson(root, SOURCE_METADATA, (metadata) => {
+        metadata.synthetic_fixture = false;
+        metadata.provider = "Unadmitted external provider";
+        metadata.upstream_owner = "Unadmitted external owner";
+        metadata.locator = {
+          kind: "url",
+          value: "https://example.invalid/unadmitted-source",
+        };
+      });
+      refreshSourceMetadataBindings(root);
+      assertInvalid(root, "source.manifest_mismatch");
     });
   });
 
@@ -1246,6 +1299,33 @@ test("ledger chain, evidence state, calculations, and checkpoints are replayable
     });
   });
 
+  await t.test("writer-session handoff requires a checkpoint boundary", () => {
+    withFixture((root) => {
+      const events = readJsonl(root, LEDGER);
+      eventAt(events, 2).actor_session_ref = "actor-intruder-001";
+      writeCoherentRechainedLedger(root, LEDGER, events);
+      refreshTerminalBindings(root);
+
+      const report = assertInvalid(
+        root,
+        "ledger.actor_session_handoff_invalid",
+      );
+      assert.equal(report.end_to_end_ready, false);
+    });
+  });
+
+  await t.test("ledger synthetic classification is pinned to the run", () => {
+    withFixture((root) => {
+      const events = readJsonl(root, LEDGER);
+      eventAt(events, 2).synthetic_fixture = false;
+      writeCoherentRechainedLedger(root, LEDGER, events);
+      refreshTerminalBindings(root);
+
+      const report = assertInvalid(root, "ledger.synthetic_mismatch");
+      assert.equal(report.end_to_end_ready, false);
+    });
+  });
+
   await t.test("stale evidence cannot support a claim", () => {
     withFixture((root) => {
       const events = readJsonl(root, LEDGER);
@@ -1320,6 +1400,18 @@ test("ledger chain, evidence state, calculations, and checkpoints are replayable
         "2026-01-03T00:00:00Z";
       writeRechainedJsonl(root, LEDGER, events);
       assertInvalid(root, "ledger.observation_post_cutoff");
+    });
+  });
+
+  await t.test("ledger chronology rejects sub-millisecond precision", () => {
+    withFixture((root) => {
+      const events = readJsonl(root, LEDGER);
+      eventAt(events, 0).recorded_at =
+        "2026-01-01T14:17:00.0009Z";
+      eventAt(events, 1).recorded_at =
+        "2026-01-01T14:17:00.0001Z";
+      writeRechainedJsonl(root, LEDGER, events);
+      assertInvalid(root, "schema.invalid");
     });
   });
 
@@ -1545,6 +1637,87 @@ test("packet negative, unresolved, and freshness records are fully linked", asyn
     });
   });
 
+  await t.test("negative findings require admitted evidence", () => {
+    withFixture((root) => {
+      mutatePacket(root, (packet) => {
+        packet.negative_findings.push({
+          challenge_refs: ["event-005-challenge"],
+          evidence_refs: [],
+          finding_id: "finding-evidence-free",
+          hypothesis_refs: ["event-001-hypothesis"],
+          limitations: ["Synthetic invalid negative finding."],
+          question_refs: ["question-threshold"],
+          statement: "This intentionally cites no evidence.",
+          subject_refs: ["device-lantern"],
+        });
+      });
+      const report = assertInvalid(root, [
+        "schema.invalid",
+        "packet.negative_evidence_required",
+      ]);
+      assert.equal(report.end_to_end_ready, false);
+    });
+  });
+
+  await t.test("negative finding challenge must match its declared scope", () => {
+    withFixture((root) => {
+      mutatePacket(root, (packet) => {
+        packet.negative_findings.push({
+          challenge_refs: ["event-005-challenge"],
+          evidence_refs: ["event-004-counterevidence"],
+          finding_id: "finding-challenge-wrong-scope",
+          hypothesis_refs: ["event-001-hypothesis"],
+          limitations: ["Synthetic invalid negative finding."],
+          question_refs: ["question-threshold"],
+          statement: "This intentionally cites an out-of-scope challenge.",
+          subject_refs: ["device-lantern"],
+        });
+      });
+      const events = readJsonl(root, LEDGER);
+      const challenge = eventAt(events, 4);
+      challenge.applicable_scope.question_refs = [];
+      challenge.applicable_scope.subject_refs = [];
+      challenge.payload.claim_refs = [];
+      challenge.payload.negative_finding_refs = [
+        "finding-challenge-wrong-scope",
+      ];
+      writeRechainedJsonl(root, LEDGER, events);
+      refreshTerminalBindings(root);
+      assertInvalid(root, "packet.negative_challenge_link");
+    });
+  });
+
+  await t.test("negative finding challenge counterevidence must match its declared scope", () => {
+    withFixture((root) => {
+      mutatePacket(root, (packet) => {
+        packet.negative_findings.push({
+          challenge_refs: ["event-005-challenge"],
+          evidence_refs: ["event-002-observation"],
+          finding_id: "finding-counterevidence-wrong-scope",
+          hypothesis_refs: ["event-001-hypothesis"],
+          limitations: ["Synthetic invalid negative finding."],
+          question_refs: ["question-threshold"],
+          statement:
+            "This intentionally cites challenge counterevidence from another scope.",
+          subject_refs: ["device-lantern"],
+        });
+      });
+      const events = readJsonl(root, LEDGER);
+      const counterevidence = eventAt(events, 3);
+      counterevidence.applicable_scope.subject_refs = [];
+      const challenge = eventAt(events, 4);
+      challenge.payload.negative_finding_refs = [
+        "finding-counterevidence-wrong-scope",
+      ];
+      writeRechainedJsonl(root, LEDGER, events);
+      refreshTerminalBindings(root);
+      assertInvalid(
+        root,
+        "packet.negative_challenge_counterevidence_scope",
+      );
+    });
+  });
+
   await t.test("unresolved claim and question references must resolve", () => {
     withFixture((root) => {
       mutatePacket(root, (packet) => {
@@ -1562,6 +1735,56 @@ test("packet negative, unresolved, and freshness records are fully linked", asyn
         "packet.unresolved_question_link",
       ]);
     });
+  });
+});
+
+test("attempt start authorizes work before executor artifacts exist", () => {
+  withFixture((root) => {
+    rmSync(absolute(root, ATTEMPT_ROOT), {
+      recursive: true,
+      force: true,
+    });
+    retainRunEvents(root, 1);
+
+    createAttemptStart(root, RUN_ID, ATTEMPT_ID, {
+      actor_session_ref: "actor-orchestrator-001",
+      started_at: "2026-01-01T14:19:00Z",
+    });
+
+    const report = validateAttemptStart(root, RUN_ID, ATTEMPT_ID);
+    assert.equal(report.valid, true, JSON.stringify(report.errors, null, 2));
+    assert.equal(report.resume?.last_status, "attempt_started");
+    assert.equal(existsSync(absolute(root, ATTEMPT_ROOT)), false);
+    const runEvents = readJsonl(root, RUN_EVENTS);
+    assert.equal(runEvents.length, 2);
+    assert.equal(runEvents.at(-1)?.event_type, "attempt_started");
+  });
+});
+
+test("attempt start validation stays phase-exact while recovery is idempotent", () => {
+  withFixture((root) => {
+    const start = validateAttemptStart(root, RUN_ID, ATTEMPT_ID);
+    assert.equal(start.valid, false);
+    assert.ok(
+      start.errors.some(
+        (entry) => entry.code === "attempt_start.artifacts_present",
+      ),
+    );
+    assert.ok(
+      start.errors.some(
+        (entry) => entry.code === "attempt_start.not_current",
+      ),
+    );
+
+    const runEventsBefore = readFileSync(absolute(root, RUN_EVENTS), "utf8");
+    createAttemptStart(root, RUN_ID, ATTEMPT_ID, {
+      actor_session_ref: "actor-orchestrator-001",
+      started_at: "2026-01-01T14:19:00Z",
+    });
+    assert.equal(
+      readFileSync(absolute(root, RUN_EVENTS), "utf8"),
+      runEventsBefore,
+    );
   });
 });
 
@@ -1704,6 +1927,19 @@ test("submission, review, seal, and run-event lifecycle are exact bindings", asy
     });
   });
 
+  await t.test("terminal chronology rejects sub-millisecond precision", () => {
+    withFixture((root) => {
+      mutateJson(root, SUBMISSION, (submission) => {
+        submission.submitted_at = "2026-01-15T12:35:00.0009Z";
+      });
+      mutateJson(root, REVIEW, (review) => {
+        review.reviewed_at = "2026-01-15T12:35:00.0001Z";
+      });
+      refreshTerminalBindings(root);
+      assertInvalid(root, "schema.invalid");
+    });
+  });
+
   await t.test("seal cannot predate review", () => {
     withFixture((root) => {
       mutateJson(root, SEAL, (seal) => {
@@ -1764,6 +2000,47 @@ test("submission, review, seal, and run-event lifecycle are exact bindings", asy
         ),
         false,
         "untrusted predecessor pin lists must not reach the rework comparison",
+      );
+    });
+  });
+
+  await t.test("successor start revalidates the sealed predecessor before append", () => {
+    withFixture((root) => {
+      rmSync(absolute(root, REVIEW));
+      rmSync(absolute(root, SEAL));
+      retainRunEvents(root, 3);
+      createReview(root, RUN_ID, ATTEMPT_ID, {
+        ...lifecycleReviewMetadata("001", 35, "rework_required"),
+        reviewed_at: "2026-01-15T12:35:00Z",
+      });
+      createSeal(root, RUN_ID, ATTEMPT_ID, {
+        actor_session_ref: "actor-orchestrator-001",
+        predecessor_attempt_ref: null,
+        sealed_at: "2026-01-15T12:36:00Z",
+        successor_attempt_id: "attempt-002",
+        successor_decision_ref: "synthetic:ops-authorize-attempt-002",
+        successor_linked_at: lifecycleTime(0),
+      });
+      mutateJson(root, SEAL, (seal) => {
+        seal.authority_state = "tampered";
+      });
+      const runEventsBefore = readFileSync(absolute(root, RUN_EVENTS), "utf8");
+
+      assert.throws(
+        () =>
+          createAttemptStart(root, RUN_ID, "attempt-002", {
+            actor_session_ref: "actor-orchestrator-001",
+            started_at: lifecycleTime(1),
+          }),
+        /successor predecessor|schema\.invalid|lifecycle_mismatch/iu,
+      );
+      assert.equal(
+        readFileSync(absolute(root, RUN_EVENTS), "utf8"),
+        runEventsBefore,
+      );
+      assert.equal(
+        readJsonl(root, RUN_EVENTS).at(-1)?.event_type,
+        "successor_link",
       );
     });
   });
@@ -1863,6 +2140,10 @@ test("submission, review, seal, and run-event lifecycle are exact bindings", asy
         "synthetic:ops-authorize-attempt-002",
       );
 
+      createAttemptStart(root, RUN_ID, successorAttemptId, {
+        actor_session_ref: "actor-orchestrator-001",
+        started_at: lifecycleTime(1),
+      });
       prepareSuccessorCandidate(
         root,
         ATTEMPT_ID,
@@ -1870,10 +2151,6 @@ test("submission, review, seal, and run-event lifecycle are exact bindings", asy
         "002",
         2,
       );
-      createAttemptStart(root, RUN_ID, successorAttemptId, {
-        actor_session_ref: "actor-orchestrator-001",
-        started_at: lifecycleTime(1),
-      });
 
       const predecessorAfterStart = validateAttempt(
         root,
@@ -1926,6 +2203,10 @@ test("submission, review, seal, and run-event lifecycle are exact bindings", asy
         successor_linked_at: lifecycleTime(0),
       });
 
+      createAttemptStart(root, RUN_ID, "attempt-002", {
+        actor_session_ref: "actor-orchestrator-001",
+        started_at: lifecycleTime(1),
+      });
       prepareSuccessorCandidate(
         root,
         ATTEMPT_ID,
@@ -1933,10 +2214,6 @@ test("submission, review, seal, and run-event lifecycle are exact bindings", asy
         "002",
         2,
       );
-      createAttemptStart(root, RUN_ID, "attempt-002", {
-        actor_session_ref: "actor-orchestrator-001",
-        started_at: lifecycleTime(1),
-      });
       createSubmission(
         root,
         RUN_ID,
@@ -1973,6 +2250,10 @@ test("submission, review, seal, and run-event lifecycle are exact bindings", asy
         successor_decision_ref: "synthetic:ops-authorize-attempt-003",
         successor_linked_at: lifecycleTime(20),
       });
+      createAttemptStart(root, RUN_ID, "attempt-003", {
+        actor_session_ref: "actor-orchestrator-001",
+        started_at: lifecycleTime(21),
+      });
       prepareSuccessorCandidate(
         root,
         "attempt-002",
@@ -1980,10 +2261,6 @@ test("submission, review, seal, and run-event lifecycle are exact bindings", asy
         "003",
         22,
       );
-      createAttemptStart(root, RUN_ID, "attempt-003", {
-        actor_session_ref: "actor-orchestrator-001",
-        started_at: lifecycleTime(21),
-      });
       createSubmission(
         root,
         RUN_ID,
@@ -2198,6 +2475,53 @@ test("deterministic rendering and cold resume do not depend on session memory", 
     });
   });
 
+  await t.test("checkpoint permits a fresh executor session on cold resume", () => {
+    withFixture((root) => {
+      const events = readJsonl(root, LEDGER);
+      const priorCheckpoint = eventAt(events, events.length - 1);
+      const resumedCheckpoint = structuredClone(priorCheckpoint);
+      resumedCheckpoint.actor_session_ref = "actor-executor-002";
+      resumedCheckpoint.event_id = "event-007-resumed-checkpoint";
+      resumedCheckpoint.parent_event_refs = [priorCheckpoint.event_id];
+      resumedCheckpoint.recorded_at = "2026-01-01T14:29:00Z";
+      events.push(resumedCheckpoint);
+      writeCoherentRechainedLedger(root, LEDGER, events);
+      mutateJson(root, SUBMISSION, (submission) => {
+        submission.executor_session.actor_session_ref =
+          "actor-executor-002";
+      });
+      refreshTerminalBindings(root);
+
+      const report = validateAttempt(root, RUN_ID, ATTEMPT_ID, {
+        requireEndToEnd: true,
+      });
+      assert.equal(report.valid, true, JSON.stringify(report.errors, null, 2));
+      assert.equal(report.end_to_end_ready, true);
+    });
+  });
+
+  await t.test("packet-free resume rejects session handoff without a checkpoint", () => {
+    withFixture((root) => {
+      const events = readJsonl(root, LEDGER);
+      eventAt(events, 2).actor_session_ref = "actor-intruder-001";
+      writeCoherentRechainedLedger(root, LEDGER, events);
+      for (const path of [PACKET, PACKET_MD, SUBMISSION, REVIEW, SEAL]) {
+        rmSync(absolute(root, path));
+      }
+      retainRunEvents(root, 2);
+
+      const report = validateResume(root, RUN_ID, ATTEMPT_ID);
+      assert.equal(report.valid, false);
+      assert.ok(
+        report.errors.some(
+          (entry) =>
+            entry.code === "ledger.actor_session_handoff_invalid",
+        ),
+      );
+      assert.equal(report.end_to_end_ready, false);
+    });
+  });
+
   await t.test("packet-free resume rejects terminal artifacts", () => {
     withFixture((root) => {
       rmSync(absolute(root, PACKET));
@@ -2367,12 +2691,12 @@ test("invalid writer metadata leaves artifacts and run events unchanged", async 
 
   await t.test("invalid attempt start is not appended", () => {
     withFixture((root) => {
-      for (const path of [SUBMISSION, REVIEW, SEAL]) {
-        rmSync(absolute(root, path));
-      }
+      rmSync(absolute(root, ATTEMPT_ROOT), {
+        recursive: true,
+        force: true,
+      });
       retainRunEvents(root, 1);
       const runEventsBefore = readFileSync(absolute(root, RUN_EVENTS), "utf8");
-      const ledgerBefore = readFileSync(absolute(root, LEDGER), "utf8");
 
       assert.throws(
         () =>
@@ -2386,7 +2710,27 @@ test("invalid writer metadata leaves artifacts and run events unchanged", async 
         readFileSync(absolute(root, RUN_EVENTS), "utf8"),
         runEventsBefore,
       );
-      assert.equal(readFileSync(absolute(root, LEDGER), "utf8"), ledgerBefore);
+      assert.equal(readJsonl(root, RUN_EVENTS).length, 1);
+    });
+  });
+
+  await t.test("attempt start rejects pre-authority research artifacts", () => {
+    withFixture((root) => {
+      retainRunEvents(root, 1);
+      const runEventsBefore = readFileSync(absolute(root, RUN_EVENTS), "utf8");
+
+      assert.throws(
+        () =>
+          createAttemptStart(root, RUN_ID, ATTEMPT_ID, {
+            actor_session_ref: "actor-orchestrator-001",
+            started_at: "2026-01-01T14:19:00Z",
+          }),
+        /cannot contain research artifacts before attempt_started/iu,
+      );
+      assert.equal(
+        readFileSync(absolute(root, RUN_EVENTS), "utf8"),
+        runEventsBefore,
+      );
       assert.equal(readJsonl(root, RUN_EVENTS).length, 1);
     });
   });
@@ -2419,6 +2763,30 @@ test("invalid writer metadata leaves artifacts and run events unchanged", async 
         candidate.valid,
         true,
         JSON.stringify(candidate.errors, null, 2),
+      );
+    });
+  });
+
+  await t.test("sub-millisecond submission creates neither artifact nor event", () => {
+    withFixture((root) => {
+      for (const path of [SUBMISSION, REVIEW, SEAL]) {
+        rmSync(absolute(root, path));
+      }
+      retainRunEvents(root, 2);
+      const runEventsBefore = readFileSync(absolute(root, RUN_EVENTS), "utf8");
+
+      assert.throws(
+        () =>
+          createSubmission(root, RUN_ID, ATTEMPT_ID, {
+            ...validSubmissionMetadata,
+            submitted_at: "2026-01-15T12:30:00.0001Z",
+          }),
+        /precision|timestamp|submitted_at/iu,
+      );
+      assert.equal(existsSync(absolute(root, SUBMISSION)), false);
+      assert.equal(
+        readFileSync(absolute(root, RUN_EVENTS), "utf8"),
+        runEventsBefore,
       );
     });
   });
