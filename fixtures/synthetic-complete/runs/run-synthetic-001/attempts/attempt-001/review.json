@@ -1,0 +1,44 @@
+{
+  "attempt_id": "attempt-001",
+  "candidate_modifications_made": false,
+  "canonicalization_version": "tiber-canonical-json-v1",
+  "job_id": "synthetic-reliability-check",
+  "job_version": "v1",
+  "json_file_version": "tiber-json-file-v1",
+  "limitations": [
+    "This deterministic fixture is non-football-authoritative and grants no downstream authority."
+  ],
+  "overall_verdict": "pass",
+  "protocol": {
+    "findings": [],
+    "rationale": "The synthetic claim is traceable to admitted bytes, a calculation, and an explicit challenge.",
+    "verdict": "pass"
+  },
+  "review_id": "synthetic-review-001",
+  "reviewed_at": "2026-01-15T12:35:00Z",
+  "reviewer": {
+    "actor_session_ref": "actor-reviewer-001",
+    "fresh_context": true,
+    "independence_basis": "Fresh synthetic reviewer context receives only the frozen submission.",
+    "independence_limits": [
+      "The fixture tests protocol binding, not empirical truth or reviewer competence."
+    ],
+    "model_declared": "none",
+    "provider_declared": "deterministic-synthetic-fixture",
+    "role": "reviewer"
+  },
+  "run_id": "run-synthetic-001",
+  "schema_version": "research-review/v0",
+  "submission_ref": {
+    "digest": "sha256:ffa571716fb9d540d8b48d293db3dd24d99277b4d1034d4d377dfb8313d1853b",
+    "digest_mode": "tiber-canonical-json-v1",
+    "path": "runs/run-synthetic-001/attempts/attempt-001/submission.json"
+  },
+  "substantive": {
+    "findings": [],
+    "rationale": "The fictional threshold claim represents its admitted supporting and contrary observations.",
+    "verdict": "pass"
+  },
+  "synthetic_fixture": true,
+  "validator_version": "tiber-research-validator-v0"
+}

@@ -1,0 +1,200 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.tiber.dev/research/v0/review.schema.json",
+  "title": "TIBER Research v0 independent review",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "synthetic_fixture",
+    "review_id",
+    "job_id",
+    "job_version",
+    "run_id",
+    "attempt_id",
+    "reviewed_at",
+    "submission_ref",
+    "reviewer",
+    "substantive",
+    "protocol",
+    "overall_verdict",
+    "candidate_modifications_made",
+    "limitations",
+    "canonicalization_version",
+    "json_file_version",
+    "validator_version"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "research-review/v0"
+    },
+    "synthetic_fixture": {
+      "type": "boolean"
+    },
+    "review_id": {
+      "$ref": "common.schema.json#/$defs/safeId"
+    },
+    "job_id": {
+      "$ref": "common.schema.json#/$defs/safeId"
+    },
+    "job_version": {
+      "type": "string",
+      "pattern": "^v[1-9][0-9]*$"
+    },
+    "run_id": {
+      "$ref": "common.schema.json#/$defs/safeId"
+    },
+    "attempt_id": {
+      "$ref": "common.schema.json#/$defs/safeId"
+    },
+    "reviewed_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "submission_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "digest",
+        "digest_mode"
+      ],
+      "properties": {
+        "path": {
+          "$ref": "common.schema.json#/$defs/relativePath"
+        },
+        "digest": {
+          "$ref": "common.schema.json#/$defs/digest"
+        },
+        "digest_mode": {
+          "const": "tiber-canonical-json-v1"
+        }
+      }
+    },
+    "reviewer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actor_session_ref",
+        "role",
+        "provider_declared",
+        "model_declared",
+        "fresh_context",
+        "independence_basis",
+        "independence_limits"
+      ],
+      "properties": {
+        "actor_session_ref": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "role": {
+          "const": "reviewer"
+        },
+        "provider_declared": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "model_declared": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "fresh_context": {
+          "const": true
+        },
+        "independence_basis": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "independence_limits": {
+          "$ref": "common.schema.json#/$defs/stringList"
+        }
+      }
+    },
+    "substantive": {
+      "$ref": "#/$defs/reviewSection"
+    },
+    "protocol": {
+      "$ref": "#/$defs/reviewSection"
+    },
+    "overall_verdict": {
+      "enum": [
+        "pass",
+        "rework_required",
+        "reject",
+        "blocked"
+      ]
+    },
+    "candidate_modifications_made": {
+      "const": false
+    },
+    "limitations": {
+      "$ref": "common.schema.json#/$defs/stringList"
+    },
+    "canonicalization_version": {
+      "const": "tiber-canonical-json-v1"
+    },
+    "json_file_version": {
+      "const": "tiber-json-file-v1"
+    },
+    "validator_version": {
+      "const": "tiber-research-validator-v0"
+    }
+  },
+  "$defs": {
+    "reviewSection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "verdict",
+        "rationale",
+        "findings"
+      ],
+      "properties": {
+        "verdict": {
+          "enum": [
+            "pass",
+            "rework_required",
+            "reject",
+            "blocked"
+          ]
+        },
+        "rationale": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "findings": {
+          "$ref": "common.schema.json#/$defs/stringList"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "overall_verdict": {
+            "const": "pass"
+          }
+        },
+        "required": [
+          "overall_verdict"
+        ]
+      },
+      "then": {
+        "properties": {
+          "substantive": {
+            "type": "object",
+            "properties": {
+              "verdict": {
+                "const": "pass"
+              }
+            }
+          },
+          "protocol": {
+            "type": "object",
+            "properties": {
+              "verdict": {
+                "const": "pass"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

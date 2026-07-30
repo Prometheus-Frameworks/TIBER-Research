@@ -1,0 +1,177 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.tiber.dev/research/v0/activation.schema.json",
+  "title": "TIBER Research v0 activation receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "synthetic_fixture",
+    "run_id",
+    "activation_status",
+    "activated_at",
+    "job_ref",
+    "inputs_ref",
+    "ops_decision_ref",
+    "cutoff_at",
+    "effective_capabilities",
+    "budget",
+    "authority_ceiling",
+    "permitted_branch",
+    "permitted_path",
+    "idempotency_key"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "research-activation/v0"
+    },
+    "synthetic_fixture": {
+      "type": "boolean"
+    },
+    "run_id": {
+      "$ref": "common.schema.json#/$defs/safeId"
+    },
+    "activation_status": {
+      "const": "activated"
+    },
+    "activated_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "job_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "job_id",
+        "job_version",
+        "path",
+        "digest",
+        "digest_mode"
+      ],
+      "properties": {
+        "job_id": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "job_version": {
+          "type": "string",
+          "pattern": "^v[1-9][0-9]*$"
+        },
+        "path": {
+          "$ref": "common.schema.json#/$defs/relativePath"
+        },
+        "digest": {
+          "$ref": "common.schema.json#/$defs/digest"
+        },
+        "digest_mode": {
+          "const": "tiber-raw-sha256-v1"
+        }
+      }
+    },
+    "inputs_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "digest",
+        "digest_mode"
+      ],
+      "properties": {
+        "path": {
+          "$ref": "common.schema.json#/$defs/relativePath"
+        },
+        "digest": {
+          "$ref": "common.schema.json#/$defs/digest"
+        },
+        "digest_mode": {
+          "const": "tiber-canonical-json-v1"
+        }
+      }
+    },
+    "ops_decision_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "decision_ref",
+        "path",
+        "digest",
+        "digest_mode",
+        "approved_at",
+        "approved_by"
+      ],
+      "properties": {
+        "decision_ref": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "path": {
+          "$ref": "common.schema.json#/$defs/relativePath"
+        },
+        "digest": {
+          "$ref": "common.schema.json#/$defs/digest"
+        },
+        "digest_mode": {
+          "const": "tiber-canonical-json-v1"
+        },
+        "approved_at": {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        "approved_by": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "cutoff_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "effective_capabilities": {
+      "$ref": "common.schema.json#/$defs/capabilities"
+    },
+    "budget": {
+      "$ref": "common.schema.json#/$defs/budget"
+    },
+    "authority_ceiling": {
+      "const": "research_custody_only"
+    },
+    "permitted_branch": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._/-]*$",
+      "maxLength": 255
+    },
+    "permitted_path": {
+      "$ref": "common.schema.json#/$defs/relativePath"
+    },
+    "idempotency_key": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9:._-]*$",
+      "maxLength": 256
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "synthetic_fixture": {
+            "const": true
+          }
+        },
+        "required": [
+          "synthetic_fixture"
+        ]
+      },
+      "then": {
+        "properties": {
+          "ops_decision_ref": {
+            "type": "object",
+            "properties": {
+              "decision_ref": {
+                "type": "string",
+                "pattern": "^synthetic:"
+              },
+              "approved_by": {
+                "const": "synthetic-fixture-operator"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

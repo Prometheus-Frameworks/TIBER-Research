@@ -1,0 +1,167 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.tiber.dev/research/v0/submission.schema.json",
+  "title": "TIBER Research v0 immutable review submission",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "synthetic_fixture",
+    "job_id",
+    "job_version",
+    "run_id",
+    "attempt_id",
+    "submitted_at",
+    "executor_session",
+    "artifacts",
+    "sources",
+    "ledger_head",
+    "validation",
+    "canonicalization_version",
+    "raw_hash_version",
+    "json_file_version",
+    "validator_version",
+    "renderer_version"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "research-submission/v0"
+    },
+    "synthetic_fixture": {
+      "type": "boolean"
+    },
+    "job_id": {
+      "$ref": "common.schema.json#/$defs/safeId"
+    },
+    "job_version": {
+      "type": "string",
+      "pattern": "^v[1-9][0-9]*$"
+    },
+    "run_id": {
+      "$ref": "common.schema.json#/$defs/safeId"
+    },
+    "attempt_id": {
+      "$ref": "common.schema.json#/$defs/safeId"
+    },
+    "submitted_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "executor_session": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actor_session_ref",
+        "role",
+        "provider_declared",
+        "model_declared",
+        "observed_by"
+      ],
+      "properties": {
+        "actor_session_ref": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "role": {
+          "const": "executor"
+        },
+        "provider_declared": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "model_declared": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "observed_by": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "$ref": "common.schema.json#/$defs/artifactDigest"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source_object_id",
+          "metadata",
+          "content"
+        ],
+        "properties": {
+          "source_object_id": {
+            "$ref": "common.schema.json#/$defs/safeId"
+          },
+          "metadata": {
+            "$ref": "common.schema.json#/$defs/artifactDigest"
+          },
+          "content": {
+            "oneOf": [
+              {
+                "$ref": "common.schema.json#/$defs/artifactDigest"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "ledger_head": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "event_id",
+        "event_hash",
+        "event_count"
+      ],
+      "properties": {
+        "event_id": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "event_hash": {
+          "$ref": "common.schema.json#/$defs/digest"
+        },
+        "event_count": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "result",
+        "validated_at"
+      ],
+      "properties": {
+        "result": {
+          "const": "pass"
+        },
+        "validated_at": {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        }
+      }
+    },
+    "canonicalization_version": {
+      "const": "tiber-canonical-json-v1"
+    },
+    "raw_hash_version": {
+      "const": "tiber-raw-sha256-v1"
+    },
+    "json_file_version": {
+      "const": "tiber-json-file-v1"
+    },
+    "validator_version": {
+      "const": "tiber-research-validator-v0"
+    },
+    "renderer_version": {
+      "const": "tiber-packet-markdown-v1"
+    }
+  }
+}

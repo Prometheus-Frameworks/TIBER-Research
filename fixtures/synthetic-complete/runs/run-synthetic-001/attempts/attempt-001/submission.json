@@ -1,0 +1,91 @@
+{
+  "artifacts": [
+    {
+      "artifact_type": "authority_decision",
+      "digest": "sha256:345dbdd7c9a64d67a63ac3373247d89e589aedc1e67ac14992b865e84043a662",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "authority/decision.json"
+    },
+    {
+      "artifact_type": "activation",
+      "digest": "sha256:b815bf08814aba6ce09b70ebf4b9fb94f1d4bb2590ad9833b72debb1c492a4a1",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "runs/run-synthetic-001/activation.json"
+    },
+    {
+      "artifact_type": "inputs",
+      "digest": "sha256:c01f24e73732396585447e8a881e92b3222ddc9d2d1bfff338b9c6232286f7db",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "runs/run-synthetic-001/inputs.json"
+    },
+    {
+      "artifact_type": "job",
+      "digest": "sha256:4ef609ca1882429e7606e97bd6af67120c9eb332ae15f37574ac7de1a71f32b5",
+      "digest_mode": "tiber-raw-sha256-v1",
+      "path": "job.yaml"
+    },
+    {
+      "artifact_type": "ledger",
+      "digest": "sha256:bec1d5388f7bd98b9e639ee00a3a2b800b3b0aa0f7d1a17c562921422d159ef0",
+      "digest_mode": "tiber-raw-sha256-v1",
+      "path": "runs/run-synthetic-001/attempts/attempt-001/ledger.jsonl"
+    },
+    {
+      "artifact_type": "packet_json",
+      "digest": "sha256:a2401ae5bfcafb9c7353a0eebc48c4ef6370e97e83f102add88c0c259fa20a66",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "runs/run-synthetic-001/attempts/attempt-001/packet.json"
+    },
+    {
+      "artifact_type": "packet_markdown",
+      "digest": "sha256:0b2d3746ac5cb44c64f757a197f6950b3c965cdbf6f918253b8f5de21fb41d9b",
+      "digest_mode": "tiber-raw-sha256-v1",
+      "path": "runs/run-synthetic-001/attempts/attempt-001/packet.md"
+    }
+  ],
+  "attempt_id": "attempt-001",
+  "canonicalization_version": "tiber-canonical-json-v1",
+  "executor_session": {
+    "actor_session_ref": "actor-executor-001",
+    "model_declared": "none",
+    "observed_by": "fixture-builder",
+    "provider_declared": "deterministic-synthetic-fixture",
+    "role": "executor"
+  },
+  "job_id": "synthetic-reliability-check",
+  "job_version": "v1",
+  "json_file_version": "tiber-json-file-v1",
+  "ledger_head": {
+    "event_count": 6,
+    "event_hash": "sha256:dde1293ada34da6273b890b96ae6a9075e72d887c1c701d89d985d1ccf15067e",
+    "event_id": "event-006-checkpoint"
+  },
+  "raw_hash_version": "tiber-raw-sha256-v1",
+  "renderer_version": "tiber-packet-markdown-v1",
+  "run_id": "run-synthetic-001",
+  "schema_version": "research-submission/v0",
+  "sources": [
+    {
+      "content": {
+        "artifact_type": "source_content",
+        "digest": "sha256:5742641cc77c68dee4917a6377a3a7d284a7969ef60f2143684a59af532ff4d3",
+        "digest_mode": "tiber-raw-sha256-v1",
+        "path": "runs/run-synthetic-001/sources/source-synthetic-bench-001/content"
+      },
+      "metadata": {
+        "artifact_type": "source_metadata",
+        "digest": "sha256:0be2b2445d278f2bd962e27cef63a69bdf4abead94686ef46ee0d2211b4fffd9",
+        "digest_mode": "tiber-canonical-json-v1",
+        "path": "runs/run-synthetic-001/sources/source-synthetic-bench-001/metadata.json"
+      },
+      "source_object_id": "source-synthetic-bench-001"
+    }
+  ],
+  "submitted_at": "2026-01-15T12:30:00Z",
+  "synthetic_fixture": true,
+  "validation": {
+    "result": "pass",
+    "validated_at": "2026-01-15T12:29:00Z"
+  },
+  "validator_version": "tiber-research-validator-v0"
+}

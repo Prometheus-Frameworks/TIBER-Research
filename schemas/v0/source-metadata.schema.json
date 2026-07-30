@@ -1,0 +1,383 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.tiber.dev/research/v0/source-metadata.schema.json",
+  "title": "TIBER Research v0 source object metadata",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "synthetic_fixture",
+    "run_id",
+    "source_object_id",
+    "source_identifier",
+    "source_family_id",
+    "provider",
+    "upstream_owner",
+    "source_class",
+    "directness",
+    "locator",
+    "intended_use",
+    "rights_disposition_ref",
+    "acquisition_method",
+    "content_path",
+    "content_digest",
+    "retention_mode",
+    "reportability",
+    "context_match",
+    "replayability",
+    "admitted",
+    "admissibility",
+    "freshness",
+    "temporal",
+    "revision",
+    "limits",
+    "promotable"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "research-source-metadata/v0"
+    },
+    "synthetic_fixture": {
+      "type": "boolean"
+    },
+    "run_id": {
+      "$ref": "common.schema.json#/$defs/safeId"
+    },
+    "source_object_id": {
+      "$ref": "common.schema.json#/$defs/safeId"
+    },
+    "source_identifier": {
+      "$ref": "common.schema.json#/$defs/nonEmptyString"
+    },
+    "source_family_id": {
+      "$ref": "common.schema.json#/$defs/safeId"
+    },
+    "provider": {
+      "$ref": "common.schema.json#/$defs/nonEmptyString"
+    },
+    "upstream_owner": {
+      "$ref": "common.schema.json#/$defs/nonEmptyString"
+    },
+    "source_class": {
+      "enum": [
+        "governed_tiber_artifact",
+        "operator_provided_observation",
+        "admitted_external_source",
+        "synthetic_fixture"
+      ]
+    },
+    "directness": {
+      "enum": [
+        "direct",
+        "secondary"
+      ]
+    },
+    "locator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "value"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "repository_path",
+            "immutable_object",
+            "url",
+            "synthetic_fixture"
+          ]
+        },
+        "value": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "intended_use": {
+      "$ref": "common.schema.json#/$defs/nonEmptyString"
+    },
+    "rights_disposition_ref": {
+      "$ref": "common.schema.json#/$defs/nonEmptyString"
+    },
+    "acquisition_method": {
+      "$ref": "common.schema.json#/$defs/safeId"
+    },
+    "content_path": {
+      "oneOf": [
+        {
+          "$ref": "common.schema.json#/$defs/relativePath"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "content_digest": {
+      "oneOf": [
+        {
+          "$ref": "common.schema.json#/$defs/digest"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "retention_mode": {
+      "$ref": "common.schema.json#/$defs/retentionMode"
+    },
+    "reportability": {
+      "enum": [
+        "public_safe",
+        "internal",
+        "non_promotable",
+        "later_review_only"
+      ]
+    },
+    "context_match": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "context_ref",
+        "matched",
+        "rationale"
+      ],
+      "properties": {
+        "context_ref": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "matched": {
+          "type": "boolean"
+        },
+        "rationale": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "replayability": {
+      "$ref": "common.schema.json#/$defs/replayability"
+    },
+    "admitted": {
+      "type": "boolean"
+    },
+    "admissibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state",
+        "rationale"
+      ],
+      "properties": {
+        "state": {
+          "$ref": "common.schema.json#/$defs/admissibilityState"
+        },
+        "rationale": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "freshness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state",
+        "rationale"
+      ],
+      "properties": {
+        "state": {
+          "$ref": "common.schema.json#/$defs/freshnessState"
+        },
+        "rationale": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "temporal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "event_time",
+        "effective_at",
+        "published_at",
+        "source_available_at",
+        "retrieved_at",
+        "first_observed_at",
+        "admissible_at",
+        "cutoff_at"
+      ],
+      "properties": {
+        "event_time": {
+          "$ref": "common.schema.json#/$defs/nullableTimestamp"
+        },
+        "effective_at": {
+          "$ref": "common.schema.json#/$defs/nullableTimestamp"
+        },
+        "published_at": {
+          "$ref": "common.schema.json#/$defs/nullableTimestamp"
+        },
+        "source_available_at": {
+          "$ref": "common.schema.json#/$defs/nullableTimestamp"
+        },
+        "retrieved_at": {
+          "$ref": "common.schema.json#/$defs/nullableTimestamp"
+        },
+        "first_observed_at": {
+          "$ref": "common.schema.json#/$defs/nullableTimestamp"
+        },
+        "admissible_at": {
+          "$ref": "common.schema.json#/$defs/nullableTimestamp"
+        },
+        "cutoff_at": {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        }
+      }
+    },
+    "revision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "revision_id",
+        "supersedes_revision_id"
+      ],
+      "properties": {
+        "revision_id": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "supersedes_revision_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "maxLength": 4096
+        }
+      }
+    },
+    "limits": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "licensing",
+        "redistribution",
+        "privacy",
+        "reportability"
+      ],
+      "properties": {
+        "licensing": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "redistribution": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "privacy": {
+          "const": "contains_no_private_user_context"
+        },
+        "reportability": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "promotable": {
+      "type": "boolean"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "replayability": {
+            "const": "full_replay"
+          }
+        },
+        "required": [
+          "replayability"
+        ]
+      },
+      "then": {
+        "properties": {
+          "content_path": {
+            "$ref": "common.schema.json#/$defs/relativePath"
+          },
+          "content_digest": {
+            "$ref": "common.schema.json#/$defs/digest"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "replayability": {
+            "const": "lineage_only"
+          }
+        },
+        "required": [
+          "replayability"
+        ]
+      },
+      "then": {
+        "properties": {
+          "promotable": {
+            "const": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "admitted": {
+            "const": true
+          }
+        },
+        "required": [
+          "admitted"
+        ]
+      },
+      "then": {
+        "properties": {
+          "admissibility": {
+            "type": "object",
+            "properties": {
+              "state": {
+                "const": "admitted"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "synthetic_fixture": {
+            "const": true
+          }
+        },
+        "required": [
+          "synthetic_fixture"
+        ]
+      },
+      "then": {
+        "properties": {
+          "source_class": {
+            "const": "synthetic_fixture"
+          },
+          "provider": {
+            "const": "TIBER-Research synthetic fixture"
+          },
+          "upstream_owner": {
+            "const": "TIBER-Research synthetic fixture"
+          },
+          "locator": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "const": "synthetic_fixture"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

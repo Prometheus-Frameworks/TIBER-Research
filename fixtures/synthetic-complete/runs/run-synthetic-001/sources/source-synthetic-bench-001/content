@@ -1,0 +1,9 @@
+subject_id,cycle,outcome
+device-lantern,1,pass
+device-lantern,2,pass
+device-lantern,3,fail
+device-lantern,4,pass
+device-orbit,1,pass
+device-orbit,2,fail
+device-orbit,3,fail
+device-orbit,4,pass

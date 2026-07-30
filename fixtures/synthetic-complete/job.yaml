@@ -1,0 +1,127 @@
+schema_version: research-job/v0
+synthetic_fixture: true
+job_id: synthetic-reliability-check
+job_version: v1
+purpose: Exercise the Stage 0 protocol with invented device observations that have no football or real-world authority.
+questions:
+  - question_id: question-threshold
+    prompt: Did fictional Device Lantern meet the declared three-of-four synthetic bench threshold?
+mode: synthetic_conformance
+output_class: synthetic_conformance_fixture
+subjects:
+  - subject_id: device-lantern
+    label: Fictional Device Lantern
+    kind: synthetic-device
+    aliases: []
+comparison_population:
+  mode: closed
+  members:
+    - subject_id: device-orbit
+      label: Fictional Device Orbit
+      kind: synthetic-device
+      aliases: []
+baseline_ref: null
+cutoff_at: "2026-01-02T00:00:00Z"
+time_horizon: Four invented bench cycles completed before the synthetic cutoff.
+source_envelope:
+  families:
+    - source_family_id: synthetic-bench
+      intended_use: Exercise traceability and challenge controls with invented observations only.
+      acquisition_methods:
+        - fixture-file
+      retention_modes:
+        - full
+      reportability:
+        - public_safe
+      rights_disposition_ref: synthetic:rights-stage0-fixture
+  evidence_classes:
+    - synthetic_fixture_observation
+    - deterministic_calculation
+  default_retention_mode: full
+  required_replayability: full_replay
+research_context:
+  context_id: context-synthetic-bench-v1
+  context_class: synthetic_fixture
+  description: Four-cycle invented bench protocol for fictional devices.
+  dimensions:
+    cycle_count: 4
+    protocol: synthetic-pass-fail-v1
+    threshold_pass_count: 3
+context_policy:
+  allowed_context_classes:
+    - synthetic_fixture
+  prohibited_context_classes:
+    - private_user_context
+    - hidden_reasoning
+    - provider_memory
+  privacy_ceiling: public
+capabilities:
+  tools:
+    - fixture-reader
+    - deterministic-calculator
+  network: denied
+  repository_read:
+    - authority/decision.json
+    - job.yaml
+    - runs/run-synthetic-001
+  repository_write:
+    - runs/run-synthetic-001/run-events.jsonl
+    - runs/run-synthetic-001/attempts
+authority:
+  ceiling: research_custody_only
+  prohibited_actions:
+    - source_acquisition
+    - modify_source_repository
+    - modify_ops
+    - modify_harness
+    - modify_strategy
+    - modify_forecast
+    - modify_product
+    - promotion
+    - publication
+    - scheduling
+    - private_context_access
+    - live_research
+  human_decision_owner: synthetic-fixture-operator
+  amendment_owner: synthetic-fixture-operator
+  consumer_authority: none
+actor_roles:
+  executor: single_writer
+  reviewer: fresh_context_read_only
+budgets:
+  wall_clock_minutes: 10
+  tool_calls: 4
+  evidence_objects: 1
+gates:
+  checkpoint_required: true
+  cold_resume_required: true
+  self_challenge_required: true
+  independent_review_required: true
+  single_writer_required: true
+stop_conditions:
+  - Stop after one synthetic packet is submitted and sealed.
+cancellation_conditions:
+  - Cancel on an explicit synthetic operator cancellation record.
+blocked_conditions:
+  - Block if any required fixture file or digest is missing.
+inconclusive_conditions:
+  - Mark inconclusive if the invented observations cannot answer the bounded question.
+escalation_conditions:
+  - Escalate any request to use real data or grant downstream authority.
+terminal_states:
+  process:
+    - completed
+    - blocked
+    - cancelled
+    - budget_exhausted
+    - protocol_violation
+  completion:
+    - answered
+    - inconclusive
+    - blocked
+  review:
+    - pass
+    - rework_required
+    - reject
+    - not_reached
+reportability: public_safe
