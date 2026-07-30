@@ -1,0 +1,695 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.tiber.dev/research/v0/ledger-event.schema.json",
+  "title": "TIBER Research v0 attempt ledger event",
+  "$comment": "event_hash is the canonical-json-v1 SHA-256 digest of this object with only event_hash omitted.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "synthetic_fixture",
+    "event_id",
+    "run_id",
+    "attempt_id",
+    "sequence",
+    "previous_event_hash",
+    "event_type",
+    "actor_session_ref",
+    "authoring_role",
+    "provider_declared",
+    "model_declared",
+    "recorded_at",
+    "parent_event_refs",
+    "source_refs",
+    "epistemic_class",
+    "freshness_state",
+    "admissibility_state",
+    "applicable_scope",
+    "limitations",
+    "payload",
+    "event_hash"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "research-ledger-event/v0"
+    },
+    "synthetic_fixture": {
+      "type": "boolean"
+    },
+    "event_id": {
+      "$ref": "common.schema.json#/$defs/safeId"
+    },
+    "run_id": {
+      "$ref": "common.schema.json#/$defs/safeId"
+    },
+    "attempt_id": {
+      "$ref": "common.schema.json#/$defs/safeId"
+    },
+    "sequence": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "previous_event_hash": {
+      "oneOf": [
+        {
+          "$ref": "common.schema.json#/$defs/digest"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "event_type": {
+      "enum": [
+        "hypothesis",
+        "source_observation",
+        "calculation",
+        "challenge",
+        "checkpoint",
+        "intervention",
+        "tool_use",
+        "status_transition",
+        "amendment_proposal",
+        "out_of_scope_discovery"
+      ]
+    },
+    "actor_session_ref": {
+      "$ref": "common.schema.json#/$defs/safeId"
+    },
+    "authoring_role": {
+      "const": "executor"
+    },
+    "provider_declared": {
+      "$ref": "common.schema.json#/$defs/nonEmptyString"
+    },
+    "model_declared": {
+      "$ref": "common.schema.json#/$defs/nonEmptyString"
+    },
+    "recorded_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "parent_event_refs": {
+      "$ref": "common.schema.json#/$defs/idList"
+    },
+    "source_refs": {
+      "$ref": "common.schema.json#/$defs/idList"
+    },
+    "epistemic_class": {
+      "$ref": "common.schema.json#/$defs/epistemicClass"
+    },
+    "freshness_state": {
+      "$ref": "common.schema.json#/$defs/freshnessState"
+    },
+    "admissibility_state": {
+      "$ref": "common.schema.json#/$defs/admissibilityState"
+    },
+    "applicable_scope": {
+      "$ref": "#/$defs/applicableScope"
+    },
+    "limitations": {
+      "$ref": "common.schema.json#/$defs/stringList"
+    },
+    "payload": {
+      "type": "object"
+    },
+    "event_hash": {
+      "$ref": "common.schema.json#/$defs/digest"
+    }
+  },
+  "$defs": {
+    "applicableScope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "question_refs",
+        "subject_refs",
+        "comparison_refs"
+      ],
+      "properties": {
+        "question_refs": {
+          "$ref": "common.schema.json#/$defs/idList"
+        },
+        "subject_refs": {
+          "$ref": "common.schema.json#/$defs/idList"
+        },
+        "comparison_refs": {
+          "$ref": "common.schema.json#/$defs/idList"
+        }
+      }
+    },
+    "hypothesisPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "question_ref",
+        "subject_ref",
+        "claim",
+        "operator_prior",
+        "expected_supporting_observations",
+        "weakening_observations"
+      ],
+      "properties": {
+        "question_ref": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "subject_ref": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "claim": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "operator_prior": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 4096
+        },
+        "expected_supporting_observations": {
+          "allOf": [
+            {
+              "$ref": "common.schema.json#/$defs/stringList"
+            },
+            {
+              "type": "array",
+              "minItems": 1
+            }
+          ]
+        },
+        "weakening_observations": {
+          "allOf": [
+            {
+              "$ref": "common.schema.json#/$defs/stringList"
+            },
+            {
+              "type": "array",
+              "minItems": 1
+            }
+          ]
+        }
+      }
+    },
+    "sourceObservationPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "observation_id",
+        "statement",
+        "result",
+        "source_object_ref",
+        "query",
+        "observation_window"
+      ],
+      "properties": {
+        "observation_id": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "statement": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "result": {
+          "enum": [
+            "observed",
+            "not_found",
+            "unavailable",
+            "inadmissible"
+          ]
+        },
+        "source_object_ref": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "query": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "observation_window": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "start",
+            "end"
+          ],
+          "properties": {
+            "start": {
+              "$ref": "common.schema.json#/$defs/timestamp"
+            },
+            "end": {
+              "$ref": "common.schema.json#/$defs/timestamp"
+            }
+          }
+        }
+      }
+    },
+    "calculationPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "calculation_id",
+        "method",
+        "method_version",
+        "input_refs",
+        "input_hashes",
+        "parameters",
+        "exclusions",
+        "units",
+        "output",
+        "output_digest",
+        "reproducibility_limitations"
+      ],
+      "properties": {
+        "calculation_id": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "method": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "method_version": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "input_refs": {
+          "$ref": "common.schema.json#/$defs/idList"
+        },
+        "input_hashes": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/digest"
+          },
+          "uniqueItems": true
+        },
+        "parameters": {
+          "type": "object"
+        },
+        "exclusions": {
+          "$ref": "common.schema.json#/$defs/stringList"
+        },
+        "units": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "output": {
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "object"
+            },
+            {
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "output_digest": {
+          "$ref": "common.schema.json#/$defs/digest"
+        },
+        "reproducibility_limitations": {
+          "$ref": "common.schema.json#/$defs/stringList"
+        }
+      }
+    },
+    "challengePayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "challenge_id",
+        "claim_refs",
+        "negative_finding_refs",
+        "rival_explanations",
+        "counterevidence_event_refs",
+        "coverage_checks",
+        "operator_prior_survival_rationale"
+      ],
+      "properties": {
+        "challenge_id": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "claim_refs": {
+          "$ref": "common.schema.json#/$defs/idList"
+        },
+        "negative_finding_refs": {
+          "$ref": "common.schema.json#/$defs/idList"
+        },
+        "rival_explanations": {
+          "allOf": [
+            {
+              "$ref": "common.schema.json#/$defs/stringList"
+            },
+            {
+              "type": "array",
+              "minItems": 1
+            }
+          ]
+        },
+        "counterevidence_event_refs": {
+          "allOf": [
+            {
+              "$ref": "common.schema.json#/$defs/idList"
+            },
+            {
+              "type": "array",
+              "minItems": 1
+            }
+          ]
+        },
+        "coverage_checks": {
+          "allOf": [
+            {
+              "$ref": "common.schema.json#/$defs/stringList"
+            },
+            {
+              "type": "array",
+              "minItems": 1
+            }
+          ]
+        },
+        "operator_prior_survival_rationale": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "checkpointPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "frontier_question",
+        "evidence_gaps",
+        "ledger_head_before_checkpoint",
+        "budgets_remaining",
+        "blocked_items",
+        "out_of_scope_discoveries",
+        "next_permitted_actions"
+      ],
+      "properties": {
+        "frontier_question": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "evidence_gaps": {
+          "$ref": "common.schema.json#/$defs/stringList"
+        },
+        "ledger_head_before_checkpoint": {
+          "oneOf": [
+            {
+              "$ref": "common.schema.json#/$defs/digest"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "budgets_remaining": {
+          "$ref": "common.schema.json#/$defs/budget"
+        },
+        "blocked_items": {
+          "$ref": "common.schema.json#/$defs/stringList"
+        },
+        "out_of_scope_discoveries": {
+          "$ref": "common.schema.json#/$defs/stringList"
+        },
+        "next_permitted_actions": {
+          "$ref": "common.schema.json#/$defs/stringList"
+        }
+      }
+    },
+    "interventionPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "reason",
+        "authority_ref"
+      ],
+      "properties": {
+        "kind": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "reason": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "authority_ref": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 4096
+        }
+      }
+    },
+    "toolUsePayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tool",
+        "action",
+        "result",
+        "within_allowlist"
+      ],
+      "properties": {
+        "tool": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "action": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "result": {
+          "enum": [
+            "succeeded",
+            "failed",
+            "blocked"
+          ]
+        },
+        "within_allowlist": {
+          "type": "boolean"
+        }
+      }
+    },
+    "statusTransitionPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "from",
+        "to",
+        "rationale"
+      ],
+      "properties": {
+        "from": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "to": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "rationale": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "amendmentProposalPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "proposed_change",
+        "rationale",
+        "authority_status"
+      ],
+      "properties": {
+        "proposed_change": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "rationale": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "authority_status": {
+          "const": "proposed_only"
+        }
+      }
+    },
+    "outOfScopeDiscoveryPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "discovery",
+        "why_out_of_scope",
+        "disposition"
+      ],
+      "properties": {
+        "discovery": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "why_out_of_scope": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "disposition": {
+          "const": "parked"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "hypothesis"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/hypothesisPayload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "source_observation"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/sourceObservationPayload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "calculation"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/calculationPayload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "challenge"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/challengePayload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "checkpoint"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/checkpointPayload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "intervention"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/interventionPayload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "tool_use"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/toolUsePayload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "status_transition"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/statusTransitionPayload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "amendment_proposal"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/amendmentProposalPayload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "out_of_scope_discovery"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/outOfScopeDiscoveryPayload"
+          }
+        }
+      }
+    }
+  ]
+}

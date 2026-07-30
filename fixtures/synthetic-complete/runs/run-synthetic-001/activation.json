@@ -1,0 +1,53 @@
+{
+  "activated_at": "2026-01-01T14:15:00Z",
+  "activation_status": "activated",
+  "authority_ceiling": "research_custody_only",
+  "budget": {
+    "evidence_objects": 1,
+    "tool_calls": 4,
+    "wall_clock_minutes": 10
+  },
+  "cutoff_at": "2026-01-02T00:00:00Z",
+  "effective_capabilities": {
+    "network": "denied",
+    "repository_read": [
+      "authority/decision.json",
+      "job.yaml",
+      "runs/run-synthetic-001"
+    ],
+    "repository_write": [
+      "runs/run-synthetic-001/run-events.jsonl",
+      "runs/run-synthetic-001/attempts"
+    ],
+    "tools": [
+      "fixture-reader",
+      "deterministic-calculator"
+    ]
+  },
+  "idempotency_key": "synthetic-reliability-check:v1:run-synthetic-001",
+  "inputs_ref": {
+    "digest": "sha256:c01f24e73732396585447e8a881e92b3222ddc9d2d1bfff338b9c6232286f7db",
+    "digest_mode": "tiber-canonical-json-v1",
+    "path": "runs/run-synthetic-001/inputs.json"
+  },
+  "job_ref": {
+    "digest": "sha256:4ef609ca1882429e7606e97bd6af67120c9eb332ae15f37574ac7de1a71f32b5",
+    "digest_mode": "tiber-raw-sha256-v1",
+    "job_id": "synthetic-reliability-check",
+    "job_version": "v1",
+    "path": "job.yaml"
+  },
+  "ops_decision_ref": {
+    "approved_at": "2026-01-01T14:12:00Z",
+    "approved_by": "synthetic-fixture-operator",
+    "decision_ref": "synthetic:stage0-fixture-authorization",
+    "digest": "sha256:345dbdd7c9a64d67a63ac3373247d89e589aedc1e67ac14992b865e84043a662",
+    "digest_mode": "tiber-canonical-json-v1",
+    "path": "authority/decision.json"
+  },
+  "permitted_branch": "synthetic/stage0-fixture",
+  "permitted_path": "runs/run-synthetic-001/attempts",
+  "run_id": "run-synthetic-001",
+  "schema_version": "research-activation/v0",
+  "synthetic_fixture": true
+}

@@ -1,0 +1,56 @@
+{
+  "artifacts": [],
+  "blocked_inputs": [],
+  "comparisons": [
+    {
+      "aliases": [],
+      "kind": "synthetic-device",
+      "label": "Fictional Device Orbit",
+      "subject_id": "device-orbit"
+    }
+  ],
+  "cutoff_at": "2026-01-02T00:00:00Z",
+  "frozen_at": "2026-01-01T14:10:00Z",
+  "job_ref": {
+    "digest": "sha256:4ef609ca1882429e7606e97bd6af67120c9eb332ae15f37574ac7de1a71f32b5",
+    "digest_mode": "tiber-raw-sha256-v1",
+    "job_id": "synthetic-reliability-check",
+    "job_version": "v1",
+    "path": "job.yaml"
+  },
+  "market_snapshots": [],
+  "research_context": {
+    "context_class": "synthetic_fixture",
+    "context_id": "context-synthetic-bench-v1",
+    "description": "Four-cycle invented bench protocol for fictional devices.",
+    "dimensions": {
+      "cycle_count": 4,
+      "protocol": "synthetic-pass-fail-v1",
+      "threshold_pass_count": 3
+    }
+  },
+  "run_id": "run-synthetic-001",
+  "schema_version": "research-inputs/v0",
+  "sources": [
+    {
+      "admissibility": "admitted",
+      "content_digest": "sha256:5742641cc77c68dee4917a6377a3a7d284a7969ef60f2143684a59af532ff4d3",
+      "content_path": "runs/run-synthetic-001/sources/source-synthetic-bench-001/content",
+      "metadata_digest": "sha256:0be2b2445d278f2bd962e27cef63a69bdf4abead94686ef46ee0d2211b4fffd9",
+      "metadata_path": "runs/run-synthetic-001/sources/source-synthetic-bench-001/metadata.json",
+      "promotable": false,
+      "replayability": "full_replay",
+      "retention_mode": "full",
+      "source_object_id": "source-synthetic-bench-001"
+    }
+  ],
+  "subjects": [
+    {
+      "aliases": [],
+      "kind": "synthetic-device",
+      "label": "Fictional Device Lantern",
+      "subject_id": "device-lantern"
+    }
+  ],
+  "synthetic_fixture": true
+}

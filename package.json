@@ -1,0 +1,28 @@
+{
+  "name": "@tiber/research",
+  "version": "0.0.0-stage0",
+  "private": true,
+  "description": "Deterministic, file-backed contracts for governed TIBER research.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "cli": "npm run build --silent && node dist/src/cli.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build --silent && node --test dist/test/*.test.js",
+    "fixture:build": "npm run build --silent && node dist/src/cli.js fixture:build fixtures/synthetic-complete run-synthetic-001 attempt-001",
+    "fixture:check": "npm run build --silent && node dist/src/cli.js validate fixtures/synthetic-complete run-synthetic-001 attempt-001 --require-end-to-end",
+    "check": "npm run typecheck && npm test && npm run fixture:check"
+  },
+  "dependencies": {
+    "ajv": "8.17.1",
+    "ajv-formats": "3.0.1",
+    "yaml": "2.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.1.0",
+    "typescript": "5.8.3"
+  }
+}

@@ -1,0 +1,327 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.tiber.dev/research/v0/common.schema.json",
+  "title": "TIBER Research v0 common definitions",
+  "$defs": {
+    "safeId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9]*(?:[-_.][a-z0-9]+)*$",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "relativePath": {
+      "type": "string",
+      "pattern": "^(?!/)(?!.*(?:^|/)\\.{1,2}(?:/|$))(?!.*//)(?!.*\\\\)[A-Za-z0-9](?:[A-Za-z0-9._/-]*[A-Za-z0-9._-])?$",
+      "minLength": 1,
+      "maxLength": 512
+    },
+    "digest": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "nullableTimestamp": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4096,
+      "pattern": "^(?=.*\\S)[^\\u0000-\\u0008\\u000B\\u000C\\u000E-\\u001F\\u007F]+$"
+    },
+    "stringList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/nonEmptyString"
+      },
+      "uniqueItems": true
+    },
+    "idList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/safeId"
+      },
+      "uniqueItems": true
+    },
+    "epistemicClass": {
+      "enum": [
+        "observed",
+        "calculated",
+        "inferred",
+        "hypothesis",
+        "speculative",
+        "contradicted",
+        "unknown"
+      ]
+    },
+    "freshnessState": {
+      "enum": [
+        "current",
+        "stale",
+        "unresolved",
+        "not_applicable"
+      ]
+    },
+    "admissibilityState": {
+      "enum": [
+        "admitted",
+        "inadmissible",
+        "unresolved"
+      ]
+    },
+    "reportability": {
+      "enum": [
+        "public_safe",
+        "internal",
+        "private",
+        "non_promotable",
+        "later_review_only"
+      ]
+    },
+    "retentionMode": {
+      "enum": [
+        "full",
+        "excerpt",
+        "derived_only",
+        "reference_only"
+      ]
+    },
+    "replayability": {
+      "enum": [
+        "full_replay",
+        "lineage_only"
+      ]
+    },
+    "digestMode": {
+      "enum": [
+        "tiber-canonical-json-v1",
+        "tiber-raw-sha256-v1"
+      ]
+    },
+    "subject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "subject_id",
+        "label",
+        "kind"
+      ],
+      "properties": {
+        "subject_id": {
+          "$ref": "#/$defs/safeId"
+        },
+        "label": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "kind": {
+          "$ref": "#/$defs/safeId"
+        },
+        "aliases": {
+          "$ref": "#/$defs/stringList"
+        }
+      }
+    },
+    "researchContext": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "context_id",
+        "context_class",
+        "description",
+        "dimensions"
+      ],
+      "properties": {
+        "context_id": {
+          "$ref": "#/$defs/safeId"
+        },
+        "context_class": {
+          "enum": [
+            "stable_tiber_context",
+            "pinned_tiber_artifact",
+            "pilot_baseline",
+            "admitted_public_evidence",
+            "run_scoped_retrieved_material",
+            "synthetic_fixture"
+          ]
+        },
+        "description": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "dimensions": {
+          "type": "object",
+          "minProperties": 1,
+          "propertyNames": {
+            "$ref": "#/$defs/safeId"
+          },
+          "additionalProperties": {
+            "oneOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4096
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "boolean"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "capabilities": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tools",
+        "network",
+        "repository_read",
+        "repository_write"
+      ],
+      "properties": {
+        "tools": {
+          "$ref": "#/$defs/idList"
+        },
+        "network": {
+          "enum": [
+            "denied",
+            "allowlisted"
+          ]
+        },
+        "repository_read": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/relativePath"
+          },
+          "uniqueItems": true
+        },
+        "repository_write": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/relativePath"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "budget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "wall_clock_minutes",
+        "tool_calls",
+        "evidence_objects"
+      ],
+      "properties": {
+        "wall_clock_minutes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "tool_calls": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "evidence_objects": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "confidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "band",
+        "rationale"
+      ],
+      "properties": {
+        "band": {
+          "enum": [
+            "low",
+            "moderate",
+            "high",
+            "not_assessed"
+          ]
+        },
+        "rationale": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "freshness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state",
+        "as_of"
+      ],
+      "properties": {
+        "state": {
+          "$ref": "#/$defs/freshnessState"
+        },
+        "as_of": {
+          "$ref": "#/$defs/nullableTimestamp"
+        }
+      }
+    },
+    "artifactDigest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "artifact_type",
+        "path",
+        "digest",
+        "digest_mode"
+      ],
+      "properties": {
+        "artifact_type": {
+          "$ref": "#/$defs/safeId"
+        },
+        "path": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "digest": {
+          "$ref": "#/$defs/digest"
+        },
+        "digest_mode": {
+          "$ref": "#/$defs/digestMode"
+        }
+      }
+    },
+    "verdictDetail": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "verdict",
+        "rationale",
+        "findings"
+      ],
+      "properties": {
+        "verdict": {
+          "enum": [
+            "pass",
+            "rework_required",
+            "reject",
+            "blocked",
+            "not_reached"
+          ]
+        },
+        "rationale": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "findings": {
+          "$ref": "#/$defs/stringList"
+        }
+      }
+    }
+  }
+}

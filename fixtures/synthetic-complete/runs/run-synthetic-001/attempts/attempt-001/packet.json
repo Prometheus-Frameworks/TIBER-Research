@@ -1,0 +1,99 @@
+{
+  "attempt_id": "attempt-001",
+  "authority_state": "unpromoted",
+  "claims": [
+    {
+      "assessment": "supported",
+      "baseline_position": null,
+      "baseline_ref": null,
+      "calculation_refs": [
+        "event-003-calculation"
+      ],
+      "challenge_refs": [
+        "event-005-challenge"
+      ],
+      "claim_id": "claim-threshold-001",
+      "claim_type": "synthetic_threshold_finding",
+      "comparison_refs": [
+        "device-orbit"
+      ],
+      "confidence": {
+        "band": "moderate",
+        "rationale": "The calculation is exact for all four retained fictional rows, but the sample is deliberately tiny and has no external meaning."
+      },
+      "counterevidence_refs": [
+        "event-004-counterevidence"
+      ],
+      "epistemic_class": "inferred",
+      "evidence_refs": [
+        "event-002-observation"
+      ],
+      "freshness": {
+        "as_of": "2026-01-01T12:00:00Z",
+        "state": "current"
+      },
+      "hypothesis_refs": [
+        "event-001-hypothesis"
+      ],
+      "limitations": [
+        "The observations, device names, protocol, and threshold are invented.",
+        "The statement applies only to the four retained fixture rows."
+      ],
+      "market_inefficiency_claim": null,
+      "market_snapshot_ref": null,
+      "missing_evidence_refs": [],
+      "proposed_disposition": null,
+      "question_ref": "question-threshold",
+      "scope": {
+        "context": "Invented Stage 0 bench fixture.",
+        "context_ref": "context-synthetic-bench-v1",
+        "cutoff_at": "2026-01-02T00:00:00Z",
+        "population": "Only fictional Device Lantern.",
+        "time_horizon": "Four invented bench cycles completed before the synthetic cutoff."
+      },
+      "statement": "Within the fictional four-cycle fixture, Device Lantern met the declared three-of-four threshold exactly.",
+      "subject_ref": "device-lantern"
+    }
+  ],
+  "completion": "answered",
+  "downstream_authority": "none",
+  "followups": [
+    {
+      "followup_id": "followup-more-cycles",
+      "question": "Would a separately authorized synthetic run with more invented cycles produce the same bounded result?",
+      "rationale": "The current fixture contains only four invented observations.",
+      "requires_new_run": true
+    }
+  ],
+  "generated_at": "2026-01-01T14:30:00Z",
+  "job_id": "synthetic-reliability-check",
+  "job_version": "v1",
+  "limitations": [
+    "This packet is protocol test data, not empirical research.",
+    "It grants no authority outside the synthetic Stage 0 fixture."
+  ],
+  "negative_findings": [],
+  "output_class": "synthetic_conformance_fixture",
+  "process_terminal": "completed",
+  "questions": [
+    {
+      "assessment": "supported",
+      "blocker_reason": null,
+      "claim_refs": [
+        "claim-threshold-001"
+      ],
+      "completion": "answered",
+      "limitations": [
+        "The answer is valid only for the invented retained rows."
+      ],
+      "prompt": "Did fictional Device Lantern meet the declared three-of-four synthetic bench threshold?",
+      "question_id": "question-threshold"
+    }
+  ],
+  "reportability": "public_safe",
+  "run_id": "run-synthetic-001",
+  "schema_version": "research-packet/v0",
+  "synthetic_fixture": true,
+  "title": "Synthetic Device Threshold Research Packet",
+  "unresolved": []
+}

@@ -1,0 +1,59 @@
+{
+  "acquisition_method": "fixture-file",
+  "admissibility": {
+    "rationale": "The Stage 0 job admits this exact invented source family for synthetic conformance only.",
+    "state": "admitted"
+  },
+  "admitted": true,
+  "content_digest": "sha256:5742641cc77c68dee4917a6377a3a7d284a7969ef60f2143684a59af532ff4d3",
+  "content_path": "runs/run-synthetic-001/sources/source-synthetic-bench-001/content",
+  "context_match": {
+    "context_ref": "context-synthetic-bench-v1",
+    "matched": true,
+    "rationale": "The file contains only the two fictional devices and four-cycle context declared by the job."
+  },
+  "directness": "direct",
+  "freshness": {
+    "rationale": "All invented observations precede the synthetic cutoff and have no later revision.",
+    "state": "current"
+  },
+  "intended_use": "Exercise traceability and challenge controls with invented observations only.",
+  "limits": {
+    "licensing": "Invented by TIBER Research for this Stage 0 fixture.",
+    "privacy": "contains_no_private_user_context",
+    "redistribution": "May be redistributed only as an explicitly synthetic fixture.",
+    "reportability": "Public-safe synthetic fixture output; never represent it as empirical evidence."
+  },
+  "locator": {
+    "kind": "synthetic_fixture",
+    "value": "fixtures/synthetic-complete/runs/run-synthetic-001/sources/source-synthetic-bench-001/content"
+  },
+  "promotable": false,
+  "provider": "TIBER-Research synthetic fixture",
+  "replayability": "full_replay",
+  "reportability": "public_safe",
+  "retention_mode": "full",
+  "revision": {
+    "revision_id": "synthetic-bench-v1",
+    "supersedes_revision_id": null
+  },
+  "rights_disposition_ref": "synthetic:rights-stage0-fixture",
+  "run_id": "run-synthetic-001",
+  "schema_version": "research-source-metadata/v0",
+  "source_class": "synthetic_fixture",
+  "source_family_id": "synthetic-bench",
+  "source_identifier": "synthetic:bench-observations-v1",
+  "source_object_id": "source-synthetic-bench-001",
+  "synthetic_fixture": true,
+  "temporal": {
+    "admissible_at": "2026-01-01T14:05:00Z",
+    "cutoff_at": "2026-01-02T00:00:00Z",
+    "effective_at": "2026-01-01T12:00:00Z",
+    "event_time": "2026-01-01T12:00:00Z",
+    "first_observed_at": "2026-01-01T14:00:00Z",
+    "published_at": null,
+    "retrieved_at": "2026-01-01T14:00:00Z",
+    "source_available_at": "2026-01-01T13:00:00Z"
+  },
+  "upstream_owner": "TIBER-Research synthetic fixture"
+}

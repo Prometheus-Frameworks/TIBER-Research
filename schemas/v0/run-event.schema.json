@@ -1,0 +1,473 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.tiber.dev/research/v0/run-event.schema.json",
+  "title": "TIBER Research v0 run event",
+  "$comment": "event_hash is the canonical-json-v1 SHA-256 digest of this object with only event_hash omitted.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "synthetic_fixture",
+    "event_id",
+    "run_id",
+    "attempt_id",
+    "sequence",
+    "previous_event_hash",
+    "event_type",
+    "actor_session_ref",
+    "recorded_at",
+    "payload",
+    "event_hash"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "research-run-event/v0"
+    },
+    "synthetic_fixture": {
+      "type": "boolean"
+    },
+    "event_id": {
+      "$ref": "common.schema.json#/$defs/safeId"
+    },
+    "run_id": {
+      "$ref": "common.schema.json#/$defs/safeId"
+    },
+    "attempt_id": {
+      "oneOf": [
+        {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "sequence": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "previous_event_hash": {
+      "oneOf": [
+        {
+          "$ref": "common.schema.json#/$defs/digest"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "event_type": {
+      "enum": [
+        "activation",
+        "attempt_started",
+        "attempt_submitted",
+        "review_returned",
+        "cancellation",
+        "budget_exhausted",
+        "protocol_violation",
+        "successor_link",
+        "run_closed"
+      ]
+    },
+    "actor_session_ref": {
+      "$ref": "common.schema.json#/$defs/safeId"
+    },
+    "recorded_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "payload": {
+      "type": "object"
+    },
+    "event_hash": {
+      "$ref": "common.schema.json#/$defs/digest"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "activation"
+          }
+        },
+        "required": [
+          "event_type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "attempt_id": {
+            "type": "null"
+          },
+          "payload": {
+            "$ref": "#/$defs/activationPayload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "attempt_started"
+          }
+        },
+        "required": [
+          "event_type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "attempt_id": {
+            "$ref": "common.schema.json#/$defs/safeId"
+          },
+          "payload": {
+            "$ref": "#/$defs/attemptStartedPayload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "attempt_submitted"
+          }
+        },
+        "required": [
+          "event_type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "attempt_id": {
+            "$ref": "common.schema.json#/$defs/safeId"
+          },
+          "payload": {
+            "$ref": "#/$defs/attemptSubmittedPayload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "review_returned"
+          }
+        },
+        "required": [
+          "event_type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "attempt_id": {
+            "$ref": "common.schema.json#/$defs/safeId"
+          },
+          "payload": {
+            "$ref": "#/$defs/reviewReturnedPayload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "cancellation"
+          }
+        },
+        "required": [
+          "event_type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "attempt_id": {
+            "$ref": "common.schema.json#/$defs/safeId"
+          },
+          "payload": {
+            "$ref": "#/$defs/cancellationPayload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "budget_exhausted"
+          }
+        },
+        "required": [
+          "event_type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "attempt_id": {
+            "$ref": "common.schema.json#/$defs/safeId"
+          },
+          "payload": {
+            "$ref": "#/$defs/budgetExhaustedPayload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "protocol_violation"
+          }
+        },
+        "required": [
+          "event_type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "attempt_id": {
+            "$ref": "common.schema.json#/$defs/safeId"
+          },
+          "payload": {
+            "$ref": "#/$defs/protocolViolationPayload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "successor_link"
+          }
+        },
+        "required": [
+          "event_type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "attempt_id": {
+            "$ref": "common.schema.json#/$defs/safeId"
+          },
+          "payload": {
+            "$ref": "#/$defs/successorLinkPayload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "run_closed"
+          }
+        },
+        "required": [
+          "event_type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "attempt_id": {
+            "$ref": "common.schema.json#/$defs/safeId"
+          },
+          "payload": {
+            "$ref": "#/$defs/runClosedPayload"
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "activationPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "activation_ref",
+        "decision_ref",
+        "artifact_digest"
+      ],
+      "properties": {
+        "activation_ref": {
+          "$ref": "common.schema.json#/$defs/relativePath"
+        },
+        "decision_ref": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "artifact_digest": {
+          "$ref": "common.schema.json#/$defs/digest"
+        }
+      }
+    },
+    "attemptStartedPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "attempt_ref"
+      ],
+      "properties": {
+        "attempt_ref": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        }
+      }
+    },
+    "attemptSubmittedPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "attempt_ref",
+        "submission_ref",
+        "artifact_digest"
+      ],
+      "properties": {
+        "attempt_ref": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "submission_ref": {
+          "$ref": "common.schema.json#/$defs/relativePath"
+        },
+        "artifact_digest": {
+          "$ref": "common.schema.json#/$defs/digest"
+        }
+      }
+    },
+    "reviewReturnedPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "attempt_ref",
+        "review_ref",
+        "artifact_digest"
+      ],
+      "properties": {
+        "attempt_ref": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "review_ref": {
+          "$ref": "common.schema.json#/$defs/relativePath"
+        },
+        "artifact_digest": {
+          "$ref": "common.schema.json#/$defs/digest"
+        }
+      }
+    },
+    "cancellationPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "attempt_ref",
+        "terminal_state",
+        "reason",
+        "decision_ref"
+      ],
+      "properties": {
+        "attempt_ref": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "terminal_state": {
+          "const": "cancelled"
+        },
+        "reason": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "decision_ref": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "budgetExhaustedPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "attempt_ref",
+        "terminal_state",
+        "reason"
+      ],
+      "properties": {
+        "attempt_ref": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "terminal_state": {
+          "const": "budget_exhausted"
+        },
+        "reason": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "protocolViolationPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "attempt_ref",
+        "terminal_state",
+        "reason"
+      ],
+      "properties": {
+        "attempt_ref": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "terminal_state": {
+          "const": "protocol_violation"
+        },
+        "reason": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "successorLinkPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "predecessor_attempt_ref",
+        "successor_attempt_ref",
+        "decision_ref",
+        "artifact_digest"
+      ],
+      "properties": {
+        "predecessor_attempt_ref": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "successor_attempt_ref": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "decision_ref": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "artifact_digest": {
+          "$ref": "common.schema.json#/$defs/digest"
+        }
+      }
+    },
+    "runClosedPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "attempt_ref",
+        "terminal_state",
+        "artifact_digest"
+      ],
+      "properties": {
+        "attempt_ref": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "terminal_state": {
+          "enum": [
+            "completed",
+            "blocked",
+            "cancelled",
+            "budget_exhausted",
+            "protocol_violation"
+          ]
+        },
+        "artifact_digest": {
+          "$ref": "common.schema.json#/$defs/digest"
+        }
+      }
+    }
+  }
+}

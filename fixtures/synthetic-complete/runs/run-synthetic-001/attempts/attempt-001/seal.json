@@ -1,0 +1,38 @@
+{
+  "archive_policy": {
+    "redaction": "none_required",
+    "reportability": "public_safe",
+    "retention": "repository_history"
+  },
+  "attempt_id": "attempt-001",
+  "authority_state": "unpromoted",
+  "canonicalization_version": "tiber-canonical-json-v1",
+  "downstream_authority": "none",
+  "job_id": "synthetic-reliability-check",
+  "job_version": "v1",
+  "json_file_version": "tiber-json-file-v1",
+  "predecessor_attempt_ref": null,
+  "raw_hash_version": "tiber-raw-sha256-v1",
+  "renderer_version": "tiber-packet-markdown-v1",
+  "review_ref": {
+    "digest": "sha256:44f88d37fc2cf5fd4e69b6f76d508ee6c63c0ca8abde3169cffe4f4cefb01e3f",
+    "digest_mode": "tiber-canonical-json-v1",
+    "path": "runs/run-synthetic-001/attempts/attempt-001/review.json"
+  },
+  "run_id": "run-synthetic-001",
+  "schema_version": "research-seal/v0",
+  "sealed_at": "2026-01-15T12:36:00Z",
+  "submission_ref": {
+    "digest": "sha256:ffa571716fb9d540d8b48d293db3dd24d99277b4d1034d4d377dfb8313d1853b",
+    "digest_mode": "tiber-canonical-json-v1",
+    "path": "runs/run-synthetic-001/attempts/attempt-001/submission.json"
+  },
+  "successor_attempt_ref": null,
+  "synthetic_fixture": true,
+  "terminal_state": {
+    "attempt_state": "sealed",
+    "process_terminal": "completed",
+    "review_verdict": "pass"
+  },
+  "validator_version": "tiber-research-validator-v0"
+}

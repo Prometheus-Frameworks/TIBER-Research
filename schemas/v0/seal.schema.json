@@ -1,0 +1,229 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.tiber.dev/research/v0/seal.schema.json",
+  "title": "TIBER Research v0 terminal attempt seal",
+  "$comment": "The archive ID is the canonical-json-v1 SHA-256 digest of the complete seal object. The digest is deliberately not stored inside this object.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "synthetic_fixture",
+    "job_id",
+    "job_version",
+    "run_id",
+    "attempt_id",
+    "sealed_at",
+    "submission_ref",
+    "review_ref",
+    "terminal_state",
+    "archive_policy",
+    "authority_state",
+    "downstream_authority",
+    "predecessor_attempt_ref",
+    "successor_attempt_ref",
+    "canonicalization_version",
+    "raw_hash_version",
+    "json_file_version",
+    "validator_version",
+    "renderer_version"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "research-seal/v0"
+    },
+    "synthetic_fixture": {
+      "type": "boolean"
+    },
+    "job_id": {
+      "$ref": "common.schema.json#/$defs/safeId"
+    },
+    "job_version": {
+      "type": "string",
+      "pattern": "^v[1-9][0-9]*$"
+    },
+    "run_id": {
+      "$ref": "common.schema.json#/$defs/safeId"
+    },
+    "attempt_id": {
+      "$ref": "common.schema.json#/$defs/safeId"
+    },
+    "sealed_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "submission_ref": {
+      "$ref": "#/$defs/terminalArtifactRef"
+    },
+    "review_ref": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/terminalArtifactRef"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "terminal_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "process_terminal",
+        "review_verdict",
+        "attempt_state"
+      ],
+      "properties": {
+        "process_terminal": {
+          "enum": [
+            "completed",
+            "blocked",
+            "cancelled",
+            "budget_exhausted",
+            "protocol_violation"
+          ]
+        },
+        "review_verdict": {
+          "enum": [
+            "pass",
+            "rework_required",
+            "reject",
+            "blocked",
+            "not_reached"
+          ]
+        },
+        "attempt_state": {
+          "const": "sealed"
+        }
+      }
+    },
+    "archive_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "retention",
+        "redaction",
+        "reportability"
+      ],
+      "properties": {
+        "retention": {
+          "const": "repository_history"
+        },
+        "redaction": {
+          "const": "none_required"
+        },
+        "reportability": {
+          "enum": [
+            "public_safe",
+            "internal",
+            "non_promotable",
+            "later_review_only"
+          ]
+        }
+      }
+    },
+    "authority_state": {
+      "const": "unpromoted"
+    },
+    "downstream_authority": {
+      "const": "none"
+    },
+    "predecessor_attempt_ref": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "attempt_id",
+            "archive_id"
+          ],
+          "properties": {
+            "attempt_id": {
+              "$ref": "common.schema.json#/$defs/safeId"
+            },
+            "archive_id": {
+              "$ref": "common.schema.json#/$defs/digest"
+            }
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "successor_attempt_ref": {
+      "type": "null"
+    },
+    "canonicalization_version": {
+      "const": "tiber-canonical-json-v1"
+    },
+    "raw_hash_version": {
+      "const": "tiber-raw-sha256-v1"
+    },
+    "json_file_version": {
+      "const": "tiber-json-file-v1"
+    },
+    "validator_version": {
+      "const": "tiber-research-validator-v0"
+    },
+    "renderer_version": {
+      "const": "tiber-packet-markdown-v1"
+    }
+  },
+  "$defs": {
+    "terminalArtifactRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "digest",
+        "digest_mode"
+      ],
+      "properties": {
+        "path": {
+          "$ref": "common.schema.json#/$defs/relativePath"
+        },
+        "digest": {
+          "$ref": "common.schema.json#/$defs/digest"
+        },
+        "digest_mode": {
+          "const": "tiber-canonical-json-v1"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "terminal_state": {
+            "type": "object",
+            "properties": {
+              "review_verdict": {
+                "const": "not_reached"
+              }
+            },
+            "required": [
+              "review_verdict"
+            ]
+          }
+        },
+        "required": [
+          "terminal_state"
+        ]
+      },
+      "then": {
+        "properties": {
+          "review_ref": {
+            "type": "null"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "review_ref": {
+            "$ref": "#/$defs/terminalArtifactRef"
+          }
+        }
+      }
+    }
+  ]
+}
