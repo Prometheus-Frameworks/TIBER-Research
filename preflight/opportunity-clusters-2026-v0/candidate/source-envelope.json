@@ -1,0 +1,59 @@
+{
+  "admitted_external_source_families": [],
+  "candidate_run_id": "opportunity-clusters-2026-v0",
+  "external_network_default": "denied",
+  "governed_artifact_candidates": [
+    {
+      "artifact_status": "promoted_governed_artifact",
+      "commit": "3393a8f0b7f4ffa640f63d712768beb1c52b917a",
+      "limitations": [
+        "Historical 2021-2025 production only.",
+        "Does not establish current roster, depth chart, injury, or role truth."
+      ],
+      "path": "exports/promoted/nfl/player_season_coverage_v0.json",
+      "raw_sha256": "sha256:d45f612b207085df00b4b080e4f55ce1abbd060dcbf30b0bee777ff833ddd8ac",
+      "repository": "Prometheus-Frameworks/TIBER-Data",
+      "status": "candidate_pending_cutoff_and_provenance_receipt"
+    },
+    {
+      "artifact_status": "candidate_governed_artifact_not_promoted",
+      "commit": "3393a8f0b7f4ffa640f63d712768beb1c52b917a",
+      "limitations": [
+        "Permitted for population reconciliation only.",
+        "Cannot establish ranking or current-active roster truth."
+      ],
+      "path": "exports/candidates/population_census/bounded_2026_population_census_v0.json",
+      "raw_sha256": "sha256:6057031bfc6dfedac1a5b2957ec194e738df5fbdb12dfec80d1e8ad773f0d1ea",
+      "repository": "Prometheus-Frameworks/TIBER-Data",
+      "status": "identity_candidate_not_research_evidence"
+    },
+    {
+      "artifact_status": "promoted_governed_artifact",
+      "commit": "a825431402f89f7ec4fe69e72de073ca4b301ea3",
+      "limitations": [
+        "College and draft transition evidence for Carnell Tate and Jordyn Tyson.",
+        "Does not establish current fantasy market price or current NFL role."
+      ],
+      "path": "exports/promoted/rookie-transition-profile/2026_rookie_transition_profile_v0.json",
+      "raw_sha256": "sha256:c95b941c7855612daccfc2226fc51e0e34dbb2ebe8a2487596675d2522a22f37",
+      "repository": "Prometheus-Frameworks/TIBER-Rookies",
+      "status": "candidate_pending_cutoff_and_provenance_receipt"
+    }
+  ],
+  "market_snapshot": null,
+  "policy_pin": {
+    "commit": "ddfaddc01f356b9ba7dababce63963f394399e1b",
+    "git_blob": "fa6b81e589fb852b2f14a93063d21cb44d6ca4ad",
+    "path": "docs/architecture/research-observatory-source-admissibility-policy-v0.md",
+    "raw_sha256": "sha256:e465be648916f69a4bf22ebf1a2390df5f6929a051f3f0aa48ae9db92ddf5c12",
+    "repository": "Prometheus-Frameworks/TIBER-Ops",
+    "status": "merged_candidate_not_adopted_source_permission"
+  },
+  "retention_and_reportability": {
+    "default_retention_mode": null,
+    "reportability_class": null,
+    "status": "requires_exact_job_and_operator_decision"
+  },
+  "source_policy_state": "external_candidate_set_empty",
+  "terminal_rule": "Every market claim remains null or blocked unless an operator-approved market snapshot is admitted with exact revision, rights, availability, cutoff, and provenance."
+}

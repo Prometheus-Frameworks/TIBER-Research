@@ -1,0 +1,38 @@
+{
+  "$id": "https://schemas.tiber.dev/research/v1/egress-enforcement-policy.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "control_state": {
+      "enum": [
+        "candidate_not_enforced",
+        "enforced"
+      ]
+    },
+    "default_action": {
+      "const": "deny"
+    },
+    "execution_profile": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+    },
+    "limitations": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/stringList"
+    },
+    "policy_ref": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/nonEmptyString"
+    },
+    "schema_version": {
+      "const": "research-egress-enforcement-policy/v1"
+    }
+  },
+  "required": [
+    "schema_version",
+    "control_state",
+    "default_action",
+    "execution_profile",
+    "limitations",
+    "policy_ref"
+  ],
+  "title": "TIBER Research v1 egress enforcement policy",
+  "type": "object"
+}

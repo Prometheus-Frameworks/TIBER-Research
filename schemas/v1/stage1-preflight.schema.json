@@ -1,0 +1,455 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.tiber.dev/research/v1/stage1-preflight.schema.json",
+  "title": "TIBER Research v1 Stage 1 preflight manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "preflight_id",
+    "candidate_run_id",
+    "prepared_at",
+    "stage0_base",
+    "ops_decision",
+    "gate_artifacts",
+    "candidate_artifact_refs",
+    "requirements",
+    "unresolved_inputs",
+    "status",
+    "activation_ready"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "research-stage1-preflight/v1"
+    },
+    "preflight_id": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+    },
+    "candidate_run_id": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+    },
+    "prepared_at": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/timestamp"
+    },
+    "stage0_base": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "repository",
+        "commit",
+        "tree_sha",
+        "pull_request_ref",
+        "contract_inventory_ref",
+        "schema_version",
+        "validator_version",
+        "ci_status"
+      ],
+      "properties": {
+        "repository": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$",
+          "minLength": 3,
+          "maxLength": 256
+        },
+        "commit": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40,64}$"
+        },
+        "tree_sha": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "pull_request_ref": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/nonEmptyString"
+        },
+        "contract_inventory_ref": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/artifactDigest"
+        },
+        "schema_version": {
+          "const": "tiber-research-schemas-v0"
+        },
+        "validator_version": {
+          "const": "tiber-research-validator-v0"
+        },
+        "ci_status": {
+          "const": "passed"
+        }
+      }
+    },
+    "ops_decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "decision_ref",
+        "quote_digest",
+        "quote_digest_mode",
+        "quote_observed_at",
+        "operator"
+      ],
+      "properties": {
+        "decision_ref": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/nonEmptyString"
+        },
+        "quote_digest": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/digest"
+        },
+        "quote_digest_mode": {
+          "const": "tiber-raw-sha256-v1"
+        },
+        "quote_observed_at": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/timestamp"
+        },
+        "operator": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "gate_artifacts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "external_source_availability_receipt_refs",
+        "governed_artifact_provenance_receipt_refs",
+        "network_policy_ref",
+        "network_enforcement_receipt_ref",
+        "cost_policy_ref",
+        "trusted_usage_receipt_refs"
+      ],
+      "properties": {
+        "external_source_availability_receipt_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/externalSourceAvailabilityReceiptRef"
+          }
+        },
+        "governed_artifact_provenance_receipt_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/governedArtifactProvenanceReceiptRef"
+          }
+        },
+        "network_policy_ref": {
+          "$ref": "#/$defs/networkPolicyRef"
+        },
+        "network_enforcement_receipt_ref": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/networkEnforcementReceiptRef"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cost_policy_ref": {
+          "$ref": "#/$defs/costPolicyRef"
+        },
+        "trusted_usage_receipt_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/trustedUsageReceiptRef"
+          }
+        }
+      }
+    },
+    "candidate_artifact_refs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/artifactDigest"
+      }
+    },
+    "requirements": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "requirement_id",
+          "description",
+          "status",
+          "evidence_refs"
+        ],
+        "properties": {
+          "requirement_id": {
+            "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+          },
+          "description": {
+            "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/nonEmptyString"
+          },
+          "status": {
+            "enum": [
+              "satisfied",
+              "unresolved",
+              "not_applicable"
+            ]
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/artifactDigest"
+            }
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "const": "satisfied"
+                }
+              },
+              "required": [
+                "status"
+              ]
+            },
+            "then": {
+              "properties": {
+                "evidence_refs": {
+                  "type": "array",
+                  "minItems": 1
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "unresolved_inputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "input_id",
+          "description",
+          "blocking",
+          "requirement_refs",
+          "disposition"
+        ],
+        "properties": {
+          "input_id": {
+            "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+          },
+          "description": {
+            "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/nonEmptyString"
+          },
+          "blocking": {
+            "type": "boolean"
+          },
+          "requirement_refs": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+            },
+            "uniqueItems": true
+          },
+          "disposition": {
+            "enum": [
+              "missing",
+              "inadmissible",
+              "unverified",
+              "deferred"
+            ]
+          }
+        }
+      }
+    },
+    "status": {
+      "enum": [
+        "ready_for_activation",
+        "requires_operator_inputs",
+        "blocked"
+      ]
+    },
+    "activation_ready": {
+      "type": "boolean"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "activation_ready": {
+            "const": true
+          }
+        },
+        "required": [
+          "activation_ready"
+        ]
+      },
+      "then": {
+        "properties": {
+          "status": {
+            "const": "ready_for_activation"
+          },
+          "requirements": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "enum": [
+                    "satisfied",
+                    "not_applicable"
+                  ]
+                }
+              }
+            }
+          },
+          "unresolved_inputs": {
+            "type": "array",
+            "maxItems": 0
+          },
+          "gate_artifacts": {
+            "type": "object",
+            "properties": {
+              "network_enforcement_receipt_ref": {
+                "$ref": "#/$defs/networkEnforcementReceiptRef"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "ready_for_activation"
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "activation_ready": {
+            "const": true
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "enum": [
+              "blocked",
+              "requires_operator_inputs"
+            ]
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "activation_ready": {
+            "const": false
+          },
+          "unresolved_inputs": {
+            "type": "array",
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "externalSourceAvailabilityReceiptRef": {
+      "allOf": [
+        {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/artifactDigest"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "artifact_type": {
+              "const": "external_source_availability_receipt"
+            }
+          }
+        }
+      ]
+    },
+    "governedArtifactProvenanceReceiptRef": {
+      "allOf": [
+        {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/artifactDigest"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "artifact_type": {
+              "const": "governed_artifact_provenance_receipt"
+            }
+          }
+        }
+      ]
+    },
+    "networkPolicyRef": {
+      "allOf": [
+        {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/artifactDigest"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "artifact_type": {
+              "const": "network_policy"
+            }
+          }
+        }
+      ]
+    },
+    "networkEnforcementReceiptRef": {
+      "allOf": [
+        {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/artifactDigest"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "artifact_type": {
+              "const": "network_enforcement_receipt"
+            }
+          }
+        }
+      ]
+    },
+    "costPolicyRef": {
+      "allOf": [
+        {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/artifactDigest"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "artifact_type": {
+              "const": "cost_policy"
+            }
+          }
+        }
+      ]
+    },
+    "trustedUsageReceiptRef": {
+      "allOf": [
+        {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/artifactDigest"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "artifact_type": {
+              "const": "trusted_usage_receipt"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

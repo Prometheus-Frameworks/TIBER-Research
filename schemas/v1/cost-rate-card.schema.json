@@ -1,0 +1,55 @@
+{
+  "$id": "https://schemas.tiber.dev/research/v1/cost-rate-card.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "unit": {
+            "const": "tiber_actor_session_v1"
+          }
+        },
+        "required": [
+          "unit"
+        ]
+      },
+      "then": {
+        "properties": {
+          "accounting_basis": {
+            "const": "one_unit_per_trusted_observed_provider_backed_actor_session_ref"
+          }
+        }
+      }
+    }
+  ],
+  "properties": {
+    "accounting_basis": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/nonEmptyString"
+    },
+    "definition": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/nonEmptyString"
+    },
+    "exclusions": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/stringList"
+    },
+    "schema_version": {
+      "const": "research-cost-rate-card/v1"
+    },
+    "unit": {
+      "enum": [
+        "tiber_actor_session_v1",
+        "usd_micro"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "unit",
+    "accounting_basis",
+    "definition",
+    "exclusions"
+  ],
+  "title": "TIBER Research v1 cost rate card",
+  "type": "object"
+}

@@ -4,14 +4,17 @@ TIBER Research is the file-backed custody layer for bounded, replayable research
 It stores immutable job inputs, append-oriented attempt state, structured candidate
 findings, independent reviews, and terminal seals.
 
-This Stage 0 repository is contract infrastructure only. It does not conduct football
-research, call a model or external source, schedule work, access private context,
-promote claims, or change a downstream TIBER artifact.
+The repository currently contains the Stage 0 contracts and a Stage 1 activation
+preflight. It does not yet conduct football research, call a model or external
+source, schedule work, access private context, promote claims, or change a
+downstream TIBER artifact.
 
 The governing architecture is
 [`TIBER-Harness/docs/design/tiber-researcher-v0.md`](https://github.com/Prometheus-Frameworks/TIBER-Harness/blob/eac4b0968ff4645582743421fc8bb2f6a1c2aa8b/docs/design/tiber-researcher-v0.md).
 Stage 0 authority is recorded in
 [`TIBER-Ops#53`](https://github.com/Prometheus-Frameworks/TIBER-Ops/issues/53).
+Stage 1 preflight authority is recorded in
+[`TIBER-Ops#54`](https://github.com/Prometheus-Frameworks/TIBER-Ops/issues/54).
 
 ## Boundary
 
@@ -32,6 +35,7 @@ Stage 0 authority is recorded in
 schemas/v0/                         JSON Schema 2020-12 contracts
 src/                                offline deterministic tools
 fixtures/synthetic-complete/        fictional end-to-end fixture
+preflight/                           hash-bound live-pilot activation candidates
 test/                               positive and adversarial tests
 ```
 
@@ -85,12 +89,14 @@ npm ci
 npm run typecheck
 npm test
 npm run fixture:check
+npm run preflight:check
 ```
 
 The CLI also exposes the individual offline operations:
 
 ```bash
 npm run cli -- start <workspace> <run-id> <attempt-id> <metadata-relative-path>
+npm run cli -- preflight <workspace> <manifest-relative-path> [--require-ready]
 npm run cli -- render <workspace> <run-id> <attempt-id>
 npm run cli -- submit <workspace> <run-id> <attempt-id> <metadata-relative-path>
 npm run cli -- review <workspace> <run-id> <attempt-id> <metadata-relative-path>
@@ -104,11 +110,57 @@ creates or verifies its rendered packet, submission, independent review
 receipt, seal, and run-event bindings. It uses fixed fixture metadata; it
 performs no network or model call.
 
+`preflight` validates a normalized Stage 1 manifest, every recursively referenced
+artifact, exact digest modes, package completeness, privacy ceiling, candidate-run
+identity, the full Stage 0 job/input/authority schemas, source and governed-artifact
+receipt coverage, cutoff chronology, network policy versus observed enforcement,
+and fixed provider-neutral actor-session reservations. A valid preflight may still
+report `activation_ready: false`; that means its blocked or operator-input-required
+disposition is honest and internally consistent. Add `--require-ready` when the
+command is being used as an activation gate. That gate injects the runner's
+canonical UTC time, rejects preflights prepared in the future, and rechecks
+the network receipt validity window at time of use. Historical validation
+without a trusted evaluation time never grants activation readiness.
+Chronology fields fail closed above millisecond precision so the runtime never
+silently truncates otherwise schema-valid RFC 3339 instants.
+
+## Stage 1 preflight
+
+The `opportunity-clusters-2026-v0` package freezes the exact captured body bytes
+from #51, #52, and Strategy #8 and contains:
+
+- a closed 30-subject identity proposal, including
+  `Ferguson → Terrance Ferguson` and `Higgins → Jayden Higgins`;
+- a deliberately blank operator-baseline template;
+- a research-context proposal with unconfirmed assumptions kept distinct from
+  activated inputs;
+- an internal-artifact capability and source-envelope audit;
+- a proposed exact denied-network policy;
+- a proposed two-actor-session cost ceiling with per-role limits of one
+  executor and one reviewer; and
+- a hash-bound preflight manifest that inventories every package file.
+
+The package currently validates as `requires_operator_inputs`, not
+`ready_for_activation`. It creates no `job.yaml`, input manifest, activation
+receipt, evidence ledger, packet, review, archive, or promotion record. In
+particular, a proposed network policy is not treated as an effective enforcement
+receipt, and zero external-source receipts are recorded because the admitted
+external source set is empty.
+
+Referenced egress, observation, freshness, governing-manifest, and cost-rate
+objects are schema-validated as well as hash-bound. Observation policy admits
+exact boundary, actor identity, role, method, and trust-basis tuples; an
+activation direction must approve the exact policy used by every receipt. A
+future activation-ready bundle must also quarantine the pre-activation run
+root to frozen inputs and their declared source objects; a promotion or any
+other unbound run file fails closed.
+
 Metadata paths are workspace-relative normalized JSON files. `start`, `submit`,
 `review`, and `seal` are create-only operations with exact-byte idempotent
 recovery: repeating the same operation is safe, while conflicting replacement
-content is rejected. `render` is likewise create-only. All commands fail closed
-with a non-zero exit status. Validation reports every detected protocol error
+content is rejected. `render` is likewise create-only. Invalid contracts fail
+with a non-zero exit status; a valid but non-ready preflight does so only when
+`--require-ready` is requested. Validation reports every detected protocol error
 but never repairs reviewed material.
 
 ## Lifecycle and governance
@@ -151,7 +203,8 @@ pass. Those remain substantive research and operator-review questions.
 The validator also does not authenticate the human named in an authority
 receipt, enforce operating-system access controls, or replace protected Git
 history and branch rules. Those are repository/host trust assumptions outside
-this offline file validator. Its private-data check detects structural policy
+this offline file validator. The activation-facing time-of-use check trusts the
+runner's system clock. Its private-data check detects structural policy
 violations and obvious secret markers; it is not semantic DLP.
 
 ## Explicitly inactive
@@ -167,12 +220,11 @@ Stage 0 contains no:
 - ranking, lineup, waiver, trade, or draft action;
 - database, vector store, knowledge graph, or UI.
 
-Passing Stage 0 does not activate Stage 1.
+Passing Stage 0 or a Stage 1 preflight does not activate a live research run.
 
-## Required before Stage 1
+## Required before live Stage 1 activation
 
-Stage 0 validates only the synthetic, network-denied contract path. Before any
-live job is activated, a successor contract revision must also define and test:
+The successor preflight contracts now define and test:
 
 - an availability-evidence receipt that binds an external source's exact
   revision and content identity to its claimed pre-cutoff availability;
@@ -183,6 +235,13 @@ live job is activated, a successor contract revision must also define and test:
 - a provider-neutral cost unit, ceiling, trusted usage observation, and
   checkpoint reconciliation rule.
 
-Until those interfaces exist, a live activation must not rely on retrospective
-external-source admission, network access, or a claimed cost ceiling. These are
-pre–Stage 1 gates, not permissions inferred from the Stage 0 schemas.
+The #52 candidate does not yet satisfy those interfaces. Activation still requires
+a machine-readable operator baseline, confirmed research context and cutoff,
+current source-backed 2026 role evidence (or an explicitly narrower job), governed
+provenance receipts, a trusted network-enforcement receipt, resolution of the two
+rookie cross-namespace identities, explicit retention and reportability treatment,
+a named independent reviewer boundary, exact branch and write-path authority, and
+a separate Ops activation decision binding the precise job, inputs, network, and
+cost artifacts.
+Market claims also require an admitted market snapshot; otherwise those questions
+must terminate blocked or remain out of scope.

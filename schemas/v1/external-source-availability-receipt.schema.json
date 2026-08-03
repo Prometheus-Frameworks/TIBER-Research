@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.tiber.dev/research/v1/external-source-availability-receipt.schema.json",
+  "title": "TIBER Research v1 external source availability receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "receipt_id",
+    "candidate_run_id",
+    "source_object_id",
+    "source_family_id",
+    "source_identifier",
+    "revision_id",
+    "content_digest",
+    "metadata_digest",
+    "claimed_available_at",
+    "cutoff_at",
+    "evidence_ref",
+    "observation_method",
+    "observed_at",
+    "observer",
+    "trust_boundary"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "research-external-source-availability-receipt/v1"
+    },
+    "receipt_id": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+    },
+    "candidate_run_id": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+    },
+    "source_object_id": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+    },
+    "source_family_id": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+    },
+    "source_identifier": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/nonEmptyString"
+    },
+    "revision_id": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/nonEmptyString"
+    },
+    "content_digest": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/digest"
+    },
+    "metadata_digest": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/digest"
+    },
+    "claimed_available_at": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/timestamp"
+    },
+    "cutoff_at": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/timestamp"
+    },
+    "evidence_ref": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/artifactDigest"
+    },
+    "observation_method": {
+      "enum": [
+        "direct_pre_cutoff_capture",
+        "immutable_revision_history",
+        "signed_upstream_receipt",
+        "trusted_connector_observation",
+        "operator_provided_packet"
+      ]
+    },
+    "observed_at": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/timestamp"
+    },
+    "observer": {
+      "$ref": "#/$defs/observer"
+    },
+    "trust_boundary": {
+      "$ref": "#/$defs/trustBoundary"
+    }
+  },
+  "$defs": {
+    "observer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "observer_id",
+        "role",
+        "trust_basis"
+      ],
+      "properties": {
+        "observer_id": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/nonEmptyString"
+        },
+        "role": {
+          "enum": [
+            "operator",
+            "trusted_connector",
+            "trusted_runner",
+            "source_custodian"
+          ]
+        },
+        "trust_basis": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "trustBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "boundary_id",
+        "boundary_type",
+        "policy_ref"
+      ],
+      "properties": {
+        "boundary_id": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+        },
+        "boundary_type": {
+          "enum": [
+            "operator_attestation",
+            "connector_receipt",
+            "runner_observation",
+            "upstream_signature"
+          ]
+        },
+        "policy_ref": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/artifactDigest"
+        }
+      }
+    }
+  }
+}

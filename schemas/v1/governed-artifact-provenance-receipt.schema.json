@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.tiber.dev/research/v1/governed-artifact-provenance-receipt.schema.json",
+  "title": "TIBER Research v1 governed artifact provenance receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "receipt_id",
+    "candidate_run_id",
+    "artifact_id",
+    "repository",
+    "commit",
+    "path",
+    "blob_digest",
+    "artifact_digest",
+    "observed_at",
+    "effective_at",
+    "verified_at",
+    "cutoff_at",
+    "governing_authority_ref",
+    "governing_manifest_ref",
+    "verifier",
+    "verification_method",
+    "trust_boundary",
+    "freshness"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "research-governed-artifact-provenance-receipt/v1"
+    },
+    "receipt_id": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+    },
+    "candidate_run_id": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+    },
+    "artifact_id": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+    },
+    "repository": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$",
+      "minLength": 3,
+      "maxLength": 256
+    },
+    "commit": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40,64}$"
+    },
+    "path": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/relativePath"
+    },
+    "blob_digest": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/digest"
+    },
+    "artifact_digest": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/digest"
+    },
+    "observed_at": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/timestamp"
+    },
+    "effective_at": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/timestamp"
+    },
+    "verified_at": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/timestamp"
+    },
+    "cutoff_at": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/timestamp"
+    },
+    "governing_authority_ref": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/artifactDigest"
+    },
+    "governing_manifest_ref": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/artifactDigest"
+    },
+    "verifier": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "verifier_id",
+        "role",
+        "trust_basis"
+      ],
+      "properties": {
+        "verifier_id": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/nonEmptyString"
+        },
+        "role": {
+          "enum": [
+            "operator",
+            "trusted_connector",
+            "trusted_runner",
+            "artifact_custodian"
+          ]
+        },
+        "trust_basis": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "verification_method": {
+      "enum": [
+        "governed_manifest",
+        "repository_blob_verification",
+        "immutable_object_verification",
+        "operator_attested_snapshot"
+      ]
+    },
+    "trust_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "boundary_id",
+        "boundary_type",
+        "policy_ref"
+      ],
+      "properties": {
+        "boundary_id": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+        },
+        "boundary_type": {
+          "enum": [
+            "operator_attestation",
+            "connector_receipt",
+            "runner_observation",
+            "governed_repository"
+          ]
+        },
+        "policy_ref": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/artifactDigest"
+        }
+      }
+    },
+    "freshness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state",
+        "as_of",
+        "policy_ref",
+        "rationale"
+      ],
+      "properties": {
+        "state": {
+          "enum": [
+            "current",
+            "stale",
+            "unresolved"
+          ]
+        },
+        "as_of": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/timestamp"
+        },
+        "policy_ref": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/artifactDigest"
+        },
+        "rationale": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/nonEmptyString"
+        }
+      }
+    }
+  }
+}

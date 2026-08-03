@@ -1,0 +1,90 @@
+{
+  "$defs": {
+    "admission": {
+      "additionalProperties": false,
+      "properties": {
+        "actor_id": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/nonEmptyString"
+        },
+        "actor_role": {
+          "enum": [
+            "artifact_custodian",
+            "operator",
+            "source_custodian",
+            "trusted_connector",
+            "trusted_runner"
+          ]
+        },
+        "boundary_id": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+        },
+        "boundary_type": {
+          "enum": [
+            "connector_policy",
+            "connector_receipt",
+            "egress_proxy",
+            "governed_repository",
+            "network_namespace",
+            "operator_attestation",
+            "provider_usage_api",
+            "runner_observation",
+            "sandbox_firewall",
+            "upstream_signature"
+          ]
+        },
+        "method": {
+          "enum": [
+            "direct_pre_cutoff_capture",
+            "governed_manifest",
+            "immutable_object_verification",
+            "immutable_revision_history",
+            "network_enforcement_observation",
+            "operator_attested_snapshot",
+            "operator_provided_packet",
+            "provider_usage_observation",
+            "repository_blob_verification",
+            "signed_upstream_receipt",
+            "trusted_connector_observation"
+          ]
+        },
+        "trust_basis": {
+          "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/nonEmptyString"
+        }
+      },
+      "required": [
+        "boundary_id",
+        "boundary_type",
+        "actor_id",
+        "actor_role",
+        "method",
+        "trust_basis"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "https://schemas.tiber.dev/research/v1/observation-policy.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "admitted_observations": {
+      "items": {
+        "$ref": "#/$defs/admission"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "policy_id": {
+      "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
+    },
+    "schema_version": {
+      "const": "research-observation-policy/v1"
+    }
+  },
+  "required": [
+    "schema_version",
+    "policy_id",
+    "admitted_observations"
+  ],
+  "title": "TIBER Research v1 receipt observation policy",
+  "type": "object"
+}

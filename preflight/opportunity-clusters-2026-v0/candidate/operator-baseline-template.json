@@ -1,0 +1,169 @@
+{
+  "artifact_state": "template_requires_operator_input",
+  "baseline_authority": "TIBER-Ops 51 and TIBER-Strategy 8 are working priors, not a machine-readable baseline.",
+  "baseline_id": "opportunity-clusters-2026-operator-baseline",
+  "candidate_run_id": "opportunity-clusters-2026-v0",
+  "observation_date": null,
+  "players": [
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Tony Pollard"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Rico Dowdle"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Kyle Monangai"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "J.K. Dobbins"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Woody Marks"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "RJ Harvey"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Kenneth Gainwell"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Parker Washington"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Carnell Tate"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Jordyn Tyson"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Jakobi Meyers"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Josh Downs"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Chris Godwin Jr."
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Michael Pittman"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Romeo Doubs"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Jayden Reed"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Khalil Shakir"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Jayden Higgins"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Tucker Kraft"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Terrance Ferguson"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Dallas Goedert"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Dalton Kincaid"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Brenton Strange"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Hunter Henry"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Oronde Gadsden II"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Trevor Lawrence"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Brock Purdy"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Baker Mayfield"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Justin Herbert"
+    },
+    {
+      "baseline_cluster": null,
+      "baseline_tier": null,
+      "subject": "Jared Goff"
+    }
+  ],
+  "population_count": 30,
+  "prohibited_until_complete": [
+    "upstream disposition",
+    "downstream disposition",
+    "tier-boundary conclusion",
+    "operator-model challenge conclusion"
+  ],
+  "scoring_assumptions": null,
+  "status": "missing_machine_readable_operator_baseline",
+  "tier_boundary_method": null
+}

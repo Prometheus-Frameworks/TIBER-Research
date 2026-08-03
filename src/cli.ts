@@ -17,6 +17,7 @@ import {
   writeUtf8CreateOnly,
 } from "./io.js";
 import { renderPacketMarkdown, type ResearchPacket } from "./renderer.js";
+import { validateStage1Preflight } from "./preflight.js";
 import {
   validateAttempt,
   validateResume,
@@ -28,6 +29,8 @@ async function main(args: string[]): Promise<void> {
   switch (command) {
     case "fixture:build":
       return fixtureBuild(rest);
+    case "preflight":
+      return preflight(rest);
     case "render":
       return render(rest);
     case "resume":
@@ -55,6 +58,38 @@ function fixtureBuild(args: string[]): void {
   );
   const built = buildSyntheticFixture(workspace, runId, attemptId);
   process.stdout.write(normalizedJsonText(built));
+}
+
+function preflight(args: string[]): void {
+  if (args.length < 2 || args.length > 3) {
+    throw new Error(
+      `preflight: expected 2 positional arguments and optional --require-ready\n${usage()}`,
+    );
+  }
+  const [workspace, manifestPath, flag] = args;
+  if (workspace === undefined || manifestPath === undefined) {
+    throw new Error(`preflight: expected 2 positional arguments\n${usage()}`);
+  }
+  if (
+    workspace.startsWith("--") ||
+    manifestPath.startsWith("--") ||
+    (flag !== undefined && flag !== "--require-ready")
+  ) {
+    throw new Error(
+      `preflight: unknown flag or extra argument\n${usage()}`,
+    );
+  }
+  const report = validateStage1Preflight(
+    workspace,
+    manifestPath,
+    flag === "--require-ready"
+      ? { evaluationAt: new Date().toISOString() }
+      : {},
+  );
+  process.stdout.write(normalizedJsonText(report));
+  if (!report.valid || (flag === "--require-ready" && !report.activation_ready)) {
+    process.exitCode = 1;
+  }
 }
 
 function render(args: string[]): void {
@@ -227,6 +262,7 @@ function usage(): string {
   return [
     "Usage:",
     "  tiber-research fixture:build <workspace> <run-id> <attempt-id>",
+    "  tiber-research preflight <workspace> <manifest-relative-path> [--require-ready]",
     "  tiber-research render <workspace> <run-id> <attempt-id>",
     "  tiber-research start <workspace> <run-id> <attempt-id> <metadata-relative-path>",
     "  tiber-research submit <workspace> <run-id> <attempt-id> <metadata-relative-path>",

@@ -440,6 +440,130 @@ export function validateAttempt(
   );
 }
 
+/**
+ * Validate the complete Stage 0 contract bundle immediately before an
+ * activation record may be materialized. This deliberately reuses the same
+ * semantic validators as active and resumable runs so Stage 1 preflight cannot
+ * drift into a weaker reimplementation of the Stage 0 boundary.
+ */
+export function validateActivationCandidate(
+  workspaceDir: string,
+  runId: string,
+  jobPath: string,
+  inputsPath: string,
+  authorityDecisionPath: string,
+  activationAt: string,
+): ValidationIssue[] {
+  const report: ValidationReport = {
+    valid: false,
+    phase: "candidate",
+    end_to_end_ready: false,
+    archive_id: null,
+    errors: [],
+    warnings: [],
+    resume: null,
+  };
+  try {
+    const job = readYaml<Job>(workspaceDir, jobPath);
+    const inputs = readNormalizedJson<Inputs>(workspaceDir, inputsPath);
+    const authorityDecision = readNormalizedJson<AuthorityDecision>(
+      workspaceDir,
+      authorityDecisionPath,
+    );
+    schema(report, jobPath, SCHEMA.job, job);
+    schema(report, inputsPath, SCHEMA.inputs, inputs);
+    schema(
+      report,
+      authorityDecisionPath,
+      SCHEMA.authorityDecision,
+      authorityDecision,
+    );
+
+    const activation: Activation = {
+      synthetic_fixture: authorityDecision.synthetic_fixture,
+      run_id: authorityDecision.run_id,
+      activated_at: activationAt,
+      authority_ceiling: authorityDecision.authority_ceiling,
+      idempotency_key:
+        `${job.job_id}:${job.job_version}:${authorityDecision.run_id}`,
+      permitted_branch: authorityDecision.permitted_branch,
+      job_ref: authorityDecision.job_ref,
+      inputs_ref: authorityDecision.inputs_ref,
+      ops_decision_ref: {
+        decision_ref: authorityDecision.decision_ref,
+        path: authorityDecisionPath,
+        digest: sha256CanonicalJson(authorityDecision),
+        digest_mode: VERSIONS.canonicalJson,
+        approved_at: authorityDecision.approved_at,
+        approved_by: authorityDecision.approved_by,
+      },
+      cutoff_at: authorityDecision.cutoff_at,
+      effective_capabilities: authorityDecision.capabilities,
+      budget: authorityDecision.budget,
+      permitted_path: authorityDecision.permitted_path,
+    };
+
+    validateIdentityPins(
+      workspaceDir,
+      runId,
+      "preflight-candidate",
+      job,
+      activation,
+      inputs,
+      null,
+      report,
+    );
+    validateCapabilities(
+      job,
+      activation,
+      "preflight-candidate",
+      report,
+      authorityDecisionPath,
+    );
+    validateFrozenInputPopulation(job, inputs, report);
+    validatePinnedArtifacts(job, inputs, report);
+    const runRoot = `runs/${runId}`;
+    const sourceMap = validateSources(
+      workspaceDir,
+      runRoot,
+      job,
+      activation,
+      inputs,
+      report,
+    );
+    validatePreactivationLayout(
+      workspaceDir,
+      runRoot,
+      inputs,
+      report,
+    );
+    rejectPromotionInsideRun(workspaceDir, runRoot, report);
+    if (sourceMap.size > activation.budget.evidence_objects) {
+      issue(
+        report,
+        "budget.evidence_exceeded",
+        "inputs.sources",
+        "admitted source-object count exceeds the activated evidence budget",
+      );
+    }
+    validateMarketSnapshots(inputs, activation, sourceMap, report);
+    scanCoreContractPrivacy(
+      workspaceDir,
+      [jobPath, inputsPath, authorityDecisionPath],
+      report,
+    );
+    scanSourceContentPrivacy(workspaceDir, inputs, report);
+  } catch (error) {
+    issue(
+      report,
+      "activation_candidate.unreadable",
+      ".",
+      error instanceof Error ? error.message : String(error),
+    );
+  }
+  return report.errors;
+}
+
 function validateAttemptInternal(
   workspaceDir: string,
   runId: string,
@@ -2073,6 +2197,14 @@ function validateSources(
         );
       }
     }
+    if (metadata.synthetic_fixture !== job.synthetic_fixture) {
+      issue(
+        report,
+        "source.synthetic_fixture_mismatch",
+        `${source.metadata_path}.synthetic_fixture`,
+        "source fixture classification differs from the immutable job classification",
+      );
+    }
 
     const family = allowedFamilies.get(metadata.source_family_id);
     if (!family) {
@@ -2568,6 +2700,119 @@ function validateSourceTimes(
         "temporal.order",
         `${path}.temporal`,
         `${earlierName} occurs after ${laterName}`,
+      );
+    }
+  }
+}
+
+function validatePreactivationLayout(
+  workspaceDir: string,
+  runRoot: string,
+  inputs: Inputs,
+  report: ValidationReport,
+): void {
+  const runAbsolute = resolveContained(workspaceDir, runRoot);
+  const topLevel = new Map(
+    readdirSync(runAbsolute, { withFileTypes: true }).map((entry) => [
+      entry.name,
+      entry,
+    ]),
+  );
+  const requiredTopLevel = new Map([
+    ["inputs.json", "file"],
+    ["sources", "directory"],
+  ]);
+  for (const [name, expectedType] of requiredTopLevel) {
+    const entry = topLevel.get(name);
+    if (
+      entry === undefined ||
+      entry.isSymbolicLink() ||
+      (expectedType === "file" ? !entry.isFile() : !entry.isDirectory())
+    ) {
+      issue(
+        report,
+        "layout.preactivation_entry",
+        `${runRoot}/${name}`,
+        `required ordinary ${expectedType} is missing or has the wrong type`,
+      );
+    }
+  }
+  for (const entry of topLevel.values()) {
+    if (!requiredTopLevel.has(entry.name)) {
+      issue(
+        report,
+        "layout.preactivation_unbound_entry",
+        `${runRoot}/${entry.name}`,
+        "pre-activation run state may contain only frozen inputs and their declared source objects",
+      );
+    }
+    if (entry.isSymbolicLink()) {
+      issue(
+        report,
+        "layout.symlink",
+        `${runRoot}/${entry.name}`,
+        "symbolic links are prohibited in governed pre-activation state",
+      );
+    }
+  }
+
+  const sourceRoot = `${runRoot}/sources`;
+  const sourceAbsolute = resolveContained(workspaceDir, sourceRoot);
+  const expectedFiles = new Set<string>();
+  const expectedDirectories = new Set<string>([sourceRoot]);
+  for (const source of inputs.sources) {
+    expectedFiles.add(source.metadata_path);
+    if (source.content_path !== null) {
+      expectedFiles.add(source.content_path);
+    }
+    for (const file of [
+      source.metadata_path,
+      ...(source.content_path === null ? [] : [source.content_path]),
+    ]) {
+      const parts = file.split("/");
+      for (let index = 1; index < parts.length; index += 1) {
+        expectedDirectories.add(parts.slice(0, index).join("/"));
+      }
+    }
+  }
+  walk(sourceAbsolute, (entry, absolutePath) => {
+    const relativePath = relative(resolve(workspaceDir), absolutePath)
+      .split("\\")
+      .join("/");
+    if (entry.isSymbolicLink()) {
+      issue(
+        report,
+        "layout.symlink",
+        relativePath,
+        "symbolic links are prohibited in governed source state",
+      );
+      return;
+    }
+    if (entry.isDirectory()) {
+      if (!expectedDirectories.has(relativePath)) {
+        issue(
+          report,
+          "layout.preactivation_unbound_source_directory",
+          relativePath,
+          "source directory is not declared by the frozen input manifest",
+        );
+      }
+    } else if (!entry.isFile() || !expectedFiles.has(relativePath)) {
+      issue(
+        report,
+        "layout.preactivation_unbound_source_file",
+        relativePath,
+        "source file is not declared and digest-bound by the frozen input manifest",
+      );
+    }
+  });
+  for (const expected of expectedFiles) {
+    if (!exists(workspaceDir, expected)) {
+      issue(
+        report,
+        "layout.source_file_missing",
+        expected,
+        "declared source file is missing",
       );
     }
   }

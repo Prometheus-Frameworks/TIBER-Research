@@ -1,0 +1,28 @@
+{
+  "candidate_run_id": "opportunity-clusters-2026-v0",
+  "cutoff_at": null,
+  "known_prior": {
+    "draft_environment": "mock",
+    "platform": "Sleeper",
+    "scoring_label": "PPR",
+    "source": "TIBER-Strategy 8",
+    "teams": 12
+  },
+  "market_context": {
+    "aggregation_method": null,
+    "known_bias": null,
+    "market_observation_window": null,
+    "market_type": null,
+    "platform": null,
+    "sample_size": null
+  },
+  "operator_confirmation_required": [
+    "Whether the 12-team PPR Sleeper mock prior is the intended 52 context.",
+    "Whether the pilot is redraft, dynasty, best ball, or another declared market.",
+    "Roster and lineup assumptions.",
+    "Exact evidence cutoff.",
+    "Exact market observation window and aggregation method, if market questions remain in scope."
+  ],
+  "privacy_class": "public_or_governed_tiber_only",
+  "status": "requires_operator_confirmation"
+}

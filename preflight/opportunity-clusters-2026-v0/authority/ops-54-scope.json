@@ -1,0 +1,31 @@
+{
+  "approved_artifact_refs": [],
+  "authority_class": "stage1_preflight_only",
+  "candidate_run_id": "opportunity-clusters-2026-v0",
+  "decision_ref": "https://github.com/Prometheus-Frameworks/TIBER-Ops/issues/54",
+  "exclusions": [
+    "No merge or ready-for-review transition for TIBER-Research pull request 1.",
+    "No live player evidence collection or substantive player conclusion.",
+    "No external source admission, browsing, acquisition, or provider research call.",
+    "No private league, roster, scoring, user, or credential context.",
+    "No promotion, publication, ranking, recommendation, or downstream modification."
+  ],
+  "operator": "TIBER operator",
+  "operator_direction": "Thanks for that. Please proceed with stage 1, I’ll check back in when I’m heading home",
+  "quote_digest": "sha256:16f0681907b6b4606cf64f3ce0f379a3b6405644352d69a4988250367849630e",
+  "quote_digest_mode": "tiber-raw-sha256-v1",
+  "recorded_at": "2026-07-30T17:10:11Z",
+  "schema_version": "research-operator-direction-record/v1",
+  "scope": [
+    "Prepare one stacked TIBER-Research branch and draft pull request.",
+    "Define and validate the four pre-activation control families.",
+    "Freeze the TIBER-Ops 51 and 52 and TIBER-Strategy 8 control records.",
+    "Prepare subject identity, baseline, context, capability, and source-envelope candidates.",
+    "Stop before activation if required inputs or trusted enforcement receipts remain unresolved."
+  ],
+  "terminal_outcomes": [
+    "stage1_activation_ready_for_operator_decision",
+    "stage1_preflight_requires_operator_inputs",
+    "stage1_preflight_blocked"
+  ]
+}

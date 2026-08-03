@@ -13,6 +13,8 @@ import test from "node:test";
 
 const CLI = resolve("dist/src/cli.js");
 const FIXTURE = resolve("fixtures/synthetic-complete");
+const PREFLIGHT_MANIFEST =
+  "preflight/opportunity-clusters-2026-v0/preflight.json";
 const RUN_ID = "run-synthetic-001";
 const ATTEMPT_ID = "attempt-001";
 
@@ -99,6 +101,41 @@ test("CLI resumes a packet-free active attempt from its ledger checkpoint", () =
   }
 });
 
+test("CLI validates an honest non-activated Stage 1 preflight", () => {
+  const result = cli("preflight", resolve("."), PREFLIGHT_MANIFEST);
+
+  assert.equal(result.status, 0, result.stderr);
+  const report = JSON.parse(result.stdout) as {
+    valid: boolean;
+    activation_ready: boolean;
+    status: string;
+    errors: unknown[];
+  };
+  assert.equal(report.valid, true);
+  assert.equal(report.activation_ready, false);
+  assert.equal(report.status, "requires_operator_inputs");
+  assert.deepEqual(report.errors, []);
+});
+
+test("CLI readiness gate rejects an honest non-activated preflight", () => {
+  const result = cli(
+    "preflight",
+    resolve("."),
+    PREFLIGHT_MANIFEST,
+    "--require-ready",
+  );
+
+  assert.equal(result.status, 1);
+  const report = JSON.parse(result.stdout) as {
+    valid: boolean;
+    activation_ready: boolean;
+    evaluation_at: string | null;
+  };
+  assert.equal(report.valid, true);
+  assert.equal(report.activation_ready, false);
+  assert.equal(typeof report.evaluation_at, "string");
+});
+
 test("CLI rejects unknown and duplicate flags", async (t) => {
   await t.test("unknown flag", () => {
     const result = cli(
@@ -162,5 +199,16 @@ test("CLI rejects unknown commands and extra positional arguments", async (t) =>
     const result = cli("resume", FIXTURE, RUN_ID, ATTEMPT_ID, "extra");
     assert.equal(result.status, 1);
     assert.match(result.stderr, /expected 3 positional arguments/u);
+  });
+
+  await t.test("extra preflight argument", () => {
+    const result = cli(
+      "preflight",
+      resolve("."),
+      PREFLIGHT_MANIFEST,
+      "extra",
+    );
+    assert.equal(result.status, 1);
+    assert.match(result.stderr, /unknown flag or extra argument/u);
   });
 });
