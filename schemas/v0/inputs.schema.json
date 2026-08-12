@@ -313,6 +313,9 @@
               "identity_unresolved",
               "cutoff_failure"
             ]
+          },
+          "owner_repository": {
+            "$ref": "common.schema.json#/$defs/ownerRepository"
           }
         }
       }

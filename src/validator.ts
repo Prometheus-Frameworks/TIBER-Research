@@ -153,6 +153,16 @@ interface Job {
     completion: string[];
     review: string[];
   };
+  response_branches?: Array<{
+    branch_id: string;
+    label: string;
+    description: string;
+    expected_signals: string[];
+  }>;
+  terminal_decisions?: Array<{
+    decision: string;
+    class: string;
+  }>;
 }
 
 interface Subject {
@@ -4014,20 +4024,24 @@ function validatePacketTraceability(
         );
       }
     }
+    // out_of_scope claims record a boundary ruling, not an answer, so they
+    // never contribute to the question's evidentiary aggregate.
     const linkedAssessments = question.claim_refs
       .map((claimRef) => claimMap.get(claimRef))
       .filter(
         (claim): claim is PacketClaim =>
           claim !== undefined &&
-          claim.question_ref === question.question_id,
+          claim.question_ref === question.question_id &&
+          claim.assessment !== "out_of_scope",
       )
       .map((claim) => claim.assessment);
     const assessmentSeverity = new Map([
       ["supported", 0],
       ["partly_supported", 1],
-      ["weakened", 2],
-      ["contradicted", 3],
-      ["insufficient", 4],
+      ["mixed", 2],
+      ["weakened", 3],
+      ["contradicted", 4],
+      ["insufficient", 5],
     ]);
     const hasNegativeFinding =
       (negativeByQuestion.get(question.question_id) ?? 0) > 0;
@@ -4067,18 +4081,28 @@ function validatePacketTraceability(
 
   for (const claim of packet.claims) {
     if (
-      !["calculated", "inferred"].includes(claim.epistemic_class) ||
+      !["observed", "calculated", "inferred", "forecast"].includes(
+        claim.epistemic_class,
+      ) ||
+      (claim.epistemic_class === "observed" &&
+        (claim.evidence_refs.length === 0 ||
+          claim.calculation_refs.length > 0)) ||
       (claim.epistemic_class === "calculated" &&
         claim.calculation_refs.length === 0) ||
       (claim.epistemic_class === "inferred" &&
         (claim.evidence_refs.length === 0 ||
-          claim.challenge_refs.length === 0))
+          claim.challenge_refs.length === 0)) ||
+      (claim.epistemic_class === "forecast" &&
+        (claim.evidence_refs.length === 0 ||
+          claim.challenge_refs.length === 0 ||
+          claim.falsifiers === undefined ||
+          claim.falsifiers.length === 0))
     ) {
       issue(
         report,
         "packet.claim_epistemic_mismatch",
         `${path}.claims.${claim.claim_id}.epistemic_class`,
-        "candidate claims must be inferred from challenged evidence or calculated from explicit calculation records",
+        "candidate claims must be observed from admitted evidence without calculations, calculated from explicit calculation records, inferred from challenged evidence, or forecast from challenged evidence with explicit falsifiers",
       );
     }
     if (claim.scope.cutoff_at !== activation.cutoff_at) {
@@ -4117,14 +4141,18 @@ function validatePacketTraceability(
         "candidate claim must be current as of a timestamp no later than the activated cutoff",
       );
     }
+    // An out_of_scope claim rules a statement outside the job boundary and may
+    // not push a baseline disposition in either direction.
     const dispositionValid =
-      job.baseline_ref === null
+      claim.assessment === "out_of_scope"
         ? claim.proposed_disposition === null
-        : claim.assessment === "insufficient"
-          ? claim.proposed_disposition === "insufficient_evidence"
-          : ["upstream", "downstream", "unchanged"].includes(
-              String(claim.proposed_disposition),
-            );
+        : job.baseline_ref === null
+          ? claim.proposed_disposition === null
+          : claim.assessment === "insufficient"
+            ? claim.proposed_disposition === "insufficient_evidence"
+            : ["upstream", "downstream", "unchanged"].includes(
+                String(claim.proposed_disposition),
+              );
     if (!dispositionValid) {
       issue(
         report,
@@ -4402,6 +4430,360 @@ function validatePacketTraceability(
         "packet.market_snapshot_without_claim",
         `${path}.claims.${claim.claim_id}`,
         "non-market claim must not retain a market snapshot reference",
+      );
+    }
+  }
+
+  validateTerminalDecision(job, packet, report, path);
+  validateResponseBranches(job, packet, eventMap, claimMap, report, path);
+  validateCausalPaths(job, packet, eventMap, claimMap, report, path);
+}
+
+function resolveObservationRefs(
+  report: ValidationReport,
+  code: string,
+  itemPath: string,
+  refs: readonly string[],
+  events: ReadonlyMap<string, LedgerEventRecord>,
+): void {
+  for (const ref of refs) {
+    const event = events.get(ref);
+    if (
+      event === undefined ||
+      event.event_type !== "source_observation" ||
+      event.admissibility_state !== "admitted" ||
+      event.freshness_state !== "current" ||
+      String(event.payload.result) !== "observed"
+    ) {
+      issue(
+        report,
+        code,
+        itemPath,
+        `observation reference is unresolved, stale, inadmissible, or the wrong type: ${ref}`,
+      );
+    }
+  }
+}
+
+function validateTerminalDecision(
+  job: Job,
+  packet: ResearchPacket,
+  report: ValidationReport,
+  path: string,
+): void {
+  const declared = job.terminal_decisions;
+  if (declared === undefined) {
+    if (packet.terminal_decision !== undefined) {
+      issue(
+        report,
+        "packet.terminal_decision_undeclared",
+        `${path}.terminal_decision`,
+        "the job does not declare terminal decisions, so the packet may not emit one",
+      );
+    }
+    return;
+  }
+  reportDuplicateIds(
+    declared.map((entry) => entry.decision),
+    report,
+    "job.duplicate_terminal_decision",
+    "job.terminal_decisions",
+  );
+  if (packet.terminal_decision === undefined) {
+    issue(
+      report,
+      "packet.terminal_decision_missing",
+      `${path}.terminal_decision`,
+      "the job declares terminal decisions, so the packet must emit exactly one",
+    );
+    return;
+  }
+  const match = declared.find(
+    (entry) => entry.decision === packet.terminal_decision,
+  );
+  if (match === undefined) {
+    issue(
+      report,
+      "packet.terminal_decision_not_permitted",
+      `${path}.terminal_decision`,
+      `terminal decision ${packet.terminal_decision} is not declared by the job`,
+    );
+    return;
+  }
+  if (match.class === "complete" && packet.process_terminal !== "completed") {
+    issue(
+      report,
+      "packet.terminal_decision_state",
+      `${path}.terminal_decision`,
+      "a complete-class terminal decision requires a completed process terminal",
+    );
+  }
+  if (match.class === "blocked" && packet.process_terminal !== "blocked") {
+    issue(
+      report,
+      "packet.terminal_decision_state",
+      `${path}.terminal_decision`,
+      "a blocked-class terminal decision requires a blocked process terminal",
+    );
+  }
+  if (match.class === "requires_data_followup") {
+    if (packet.process_terminal !== "completed") {
+      issue(
+        report,
+        "packet.terminal_decision_state",
+        `${path}.terminal_decision`,
+        "a requires_data_followup terminal decision closes the protocol, so the process terminal must be completed",
+      );
+    }
+    if (
+      !packet.unresolved.some((entry) =>
+        ["missing_evidence", "blocked_input"].includes(entry.kind),
+      )
+    ) {
+      issue(
+        report,
+        "packet.terminal_decision_gap_required",
+        `${path}.terminal_decision`,
+        "a requires_data_followup terminal decision must bind at least one unresolved missing or blocked input",
+      );
+    }
+    if (!packet.followups.some((entry) => entry.rfi !== undefined)) {
+      issue(
+        report,
+        "packet.terminal_decision_rfi_required",
+        `${path}.terminal_decision`,
+        "a requires_data_followup terminal decision requires at least one follow-up routed to an owner repository",
+      );
+    }
+  }
+}
+
+function validateResponseBranches(
+  job: Job,
+  packet: ResearchPacket,
+  eventMap: Map<string, LedgerEventRecord>,
+  claimMap: Map<string, PacketClaim>,
+  report: ValidationReport,
+  path: string,
+): void {
+  const declared = job.response_branches;
+  if (declared === undefined) {
+    if (packet.response_branches !== undefined) {
+      issue(
+        report,
+        "packet.response_branch_undeclared",
+        `${path}.response_branches`,
+        "the job does not preregister response branches, so the packet may not assess any",
+      );
+    }
+    return;
+  }
+  reportDuplicateIds(
+    declared.map((entry) => entry.branch_id),
+    report,
+    "job.duplicate_response_branch",
+    "job.response_branches",
+  );
+  if (packet.response_branches === undefined) {
+    issue(
+      report,
+      "packet.response_branch_missing",
+      `${path}.response_branches`,
+      "the job preregisters response branches, so the packet must assess every branch",
+    );
+    return;
+  }
+  reportDuplicateIds(
+    packet.response_branches.map((branch) => branch.branch_id),
+    report,
+    "packet.duplicate_response_branch",
+    `${path}.response_branches`,
+  );
+  const declaredById = new Map(
+    declared.map((entry) => [entry.branch_id, entry]),
+  );
+  const assessedIds = new Set(
+    packet.response_branches.map((branch) => branch.branch_id),
+  );
+  for (const entry of declared) {
+    if (!assessedIds.has(entry.branch_id)) {
+      issue(
+        report,
+        "packet.response_branch_missing",
+        `${path}.response_branches`,
+        `preregistered branch ${entry.branch_id} is not assessed`,
+      );
+    }
+  }
+  for (const branch of packet.response_branches) {
+    const branchPath = `${path}.response_branches.${branch.branch_id}`;
+    const preregistered = declaredById.get(branch.branch_id);
+    if (preregistered === undefined) {
+      issue(
+        report,
+        "packet.response_branch_undeclared",
+        branchPath,
+        `branch ${branch.branch_id} is not preregistered by the job`,
+      );
+      continue;
+    }
+    if (
+      branch.label !== preregistered.label ||
+      branch.description !== preregistered.description ||
+      branch.expected_signals.length !==
+        preregistered.expected_signals.length ||
+      branch.expected_signals.some(
+        (signal, index) => signal !== preregistered.expected_signals[index],
+      )
+    ) {
+      issue(
+        report,
+        "packet.response_branch_preregistration_mismatch",
+        branchPath,
+        "branch label, description, and expected signals must exactly match the preregistered job branch",
+      );
+    }
+    if (
+      ["supported", "contradicted", "mixed"].includes(branch.assessment) &&
+      branch.evidence_refs.length === 0
+    ) {
+      issue(
+        report,
+        "packet.response_branch_evidence_required",
+        `${branchPath}.evidence_refs`,
+        "a supported, contradicted, or mixed branch assessment must cite admitted evidence",
+      );
+    }
+    resolveObservationRefs(
+      report,
+      "packet.response_branch_evidence_link",
+      branchPath,
+      [...branch.evidence_refs, ...branch.counterevidence_refs],
+      eventMap,
+    );
+    for (const claimRef of branch.claim_refs) {
+      if (!claimMap.has(claimRef)) {
+        issue(
+          report,
+          "packet.response_branch_claim_link",
+          branchPath,
+          `unknown claim reference: ${claimRef}`,
+        );
+      }
+    }
+  }
+}
+
+function validateCausalPaths(
+  job: Job,
+  packet: ResearchPacket,
+  eventMap: Map<string, LedgerEventRecord>,
+  claimMap: Map<string, PacketClaim>,
+  report: ValidationReport,
+  path: string,
+): void {
+  if (packet.causal_paths === undefined) {
+    return;
+  }
+  const subjectIds = new Set(job.subjects.map((entry) => entry.subject_id));
+  reportDuplicateIds(
+    packet.causal_paths.map((entry) => entry.path_id),
+    report,
+    "packet.duplicate_causal_path",
+    `${path}.causal_paths`,
+  );
+  for (const causalPath of packet.causal_paths) {
+    const itemPath = `${path}.causal_paths.${causalPath.path_id}`;
+    reportDuplicateIds(
+      causalPath.nodes.map((node) => node.node_id),
+      report,
+      "packet.duplicate_causal_node",
+      itemPath,
+    );
+    reportDuplicateIds(
+      causalPath.edges.map((edge) => edge.edge_id),
+      report,
+      "packet.duplicate_causal_edge",
+      itemPath,
+    );
+    const nodeIds = new Set(causalPath.nodes.map((node) => node.node_id));
+    for (const node of causalPath.nodes) {
+      for (const subjectRef of node.subject_refs) {
+        if (!subjectIds.has(subjectRef)) {
+          issue(
+            report,
+            "packet.causal_node_subject_link",
+            `${itemPath}.nodes.${node.node_id}`,
+            `unknown subject reference: ${subjectRef}`,
+          );
+        }
+      }
+    }
+    const adjacency = new Map<string, string[]>();
+    for (const edge of causalPath.edges) {
+      const edgePath = `${itemPath}.edges.${edge.edge_id}`;
+      if (!nodeIds.has(edge.from_node) || !nodeIds.has(edge.to_node)) {
+        issue(
+          report,
+          "packet.causal_edge_node_link",
+          edgePath,
+          "edge endpoints must resolve to declared nodes",
+        );
+      }
+      if (edge.from_node === edge.to_node) {
+        issue(
+          report,
+          "packet.causal_edge_self_loop",
+          edgePath,
+          "an edge may not point at its own source node",
+        );
+      }
+      resolveObservationRefs(
+        report,
+        "packet.causal_edge_evidence_link",
+        edgePath,
+        [...edge.evidence_refs, ...edge.counterevidence_refs],
+        eventMap,
+      );
+      for (const claimRef of edge.claim_refs) {
+        if (!claimMap.has(claimRef)) {
+          issue(
+            report,
+            "packet.causal_edge_claim_link",
+            edgePath,
+            `unknown claim reference: ${claimRef}`,
+          );
+        }
+      }
+      adjacency.set(edge.from_node, [
+        ...(adjacency.get(edge.from_node) ?? []),
+        edge.to_node,
+      ]);
+    }
+    const visitState = new Map<string, "visiting" | "done">();
+    const reachesCycle = (nodeId: string): boolean => {
+      const status = visitState.get(nodeId);
+      if (status === "visiting") {
+        return true;
+      }
+      if (status === "done") {
+        return false;
+      }
+      visitState.set(nodeId, "visiting");
+      for (const next of adjacency.get(nodeId) ?? []) {
+        if (reachesCycle(next)) {
+          return true;
+        }
+      }
+      visitState.set(nodeId, "done");
+      return false;
+    };
+    if ([...nodeIds].some((nodeId) => reachesCycle(nodeId))) {
+      issue(
+        report,
+        "packet.causal_path_cycle",
+        itemPath,
+        "a causal path must be acyclic",
       );
     }
   }

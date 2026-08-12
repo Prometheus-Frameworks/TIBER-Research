@@ -57,11 +57,18 @@
         "observed",
         "calculated",
         "inferred",
+        "forecast",
         "hypothesis",
         "speculative",
         "contradicted",
         "unknown"
       ]
+    },
+    "ownerRepository": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?/[A-Za-z0-9._-]+$",
+      "minLength": 3,
+      "maxLength": 256
     },
     "freshnessState": {
       "enum": [

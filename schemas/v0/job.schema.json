@@ -382,6 +382,63 @@
     "escalation_conditions": {
       "$ref": "common.schema.json#/$defs/stringList"
     },
+    "response_branches": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "branch_id",
+          "label",
+          "description",
+          "expected_signals"
+        ],
+        "properties": {
+          "branch_id": {
+            "$ref": "common.schema.json#/$defs/safeId"
+          },
+          "label": {
+            "$ref": "common.schema.json#/$defs/nonEmptyString"
+          },
+          "description": {
+            "$ref": "common.schema.json#/$defs/nonEmptyString"
+          },
+          "expected_signals": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "common.schema.json#/$defs/nonEmptyString"
+            },
+            "uniqueItems": true
+          }
+        }
+      }
+    },
+    "terminal_decisions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "decision",
+          "class"
+        ],
+        "properties": {
+          "decision": {
+            "$ref": "common.schema.json#/$defs/safeId"
+          },
+          "class": {
+            "enum": [
+              "complete",
+              "requires_data_followup",
+              "blocked"
+            ]
+          }
+        }
+      }
+    },
     "terminal_states": {
       "type": "object",
       "additionalProperties": false,
