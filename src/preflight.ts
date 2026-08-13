@@ -176,6 +176,7 @@ interface NetworkEnforcementReceipt {
     isolation_id: string;
     observed_capabilities_digest: string;
   };
+  limitations: string[];
 }
 
 interface EgressPolicy {
@@ -1739,6 +1740,46 @@ function validateSourceInputFiles(
       message: "Source metadata identity does not match frozen inputs.",
     });
   }
+  // Retention-conditional content rule (PR #7 fail-closed review of
+  // 6b4e4e9): reference_only retention forbids retained bytes — readiness
+  // rests on the digest-bound availability receipt plus the recorded
+  // revision/content identity; content-retaining modes keep the strict
+  // resolvable-bytes requirement. Strict in both directions.
+  if (source.retention_mode === "reference_only") {
+    if (source.content_path !== null) {
+      errors.push({
+        code: "reference_only_content_retained",
+        path: source.source_object_id,
+        message:
+          "A reference_only source must not retain content bytes the admitted retention policy forbids.",
+      });
+      return metadata;
+    }
+    if (activationReady && source.content_digest === null) {
+      errors.push({
+        code: "source_content_missing_for_activation",
+        path: source.source_object_id,
+        message:
+          "An activation-ready reference_only source requires its recorded content identity digest.",
+      });
+      return metadata;
+    }
+    if (
+      source.content_digest !== null &&
+      typeof (metadata as unknown as { content_digest?: unknown })
+        .content_digest === "string" &&
+      (metadata as unknown as { content_digest: string }).content_digest !==
+        source.content_digest
+    ) {
+      errors.push({
+        code: "source_metadata_content_binding",
+        path: source.metadata_path,
+        message:
+          "Source metadata does not bind the frozen recorded content identity digest.",
+      });
+    }
+    return metadata;
+  }
   if (source.content_path === null || source.content_digest === null) {
     if (activationReady) {
       errors.push({
@@ -1867,13 +1908,14 @@ function validateProvenance(
         "provenance_before_operator_direction",
       );
     }
+    const freshnessPolicy = typedValue<{ cutoff_rule?: string }>(
+      values,
+      receipt.freshness.policy_ref.path,
+    );
     if (
       receipt.freshness.policy_ref.artifact_type !==
         "freshness_policy" ||
-      typedValue<unknown>(
-        values,
-        receipt.freshness.policy_ref.path,
-      ) === undefined
+      freshnessPolicy === undefined
     ) {
       errors.push({
         code: "freshness_policy_binding",
@@ -1881,6 +1923,22 @@ function validateProvenance(
         message:
           "The provenance receipt must bind a schema-valid governed-artifact freshness policy.",
       });
+    } else if (
+      freshnessPolicy.cutoff_rule === "freshness_as_of_lte_cutoff_at"
+    ) {
+      // Superseded-vocabulary trap (PR #7 fail-closed review of 6b4e4e9): a
+      // policy that still claims the pre-adjudication cutoff rule is held to
+      // that rule verbatim — it cannot govern a receipt whose custody-side
+      // assessment instant follows the cutoff. The canonical vocabulary is
+      // evidence_clocks_lte_cutoff_custody_assessment_may_follow.
+      isAfter(
+        receipt.freshness.as_of,
+        receipt.cutoff_at,
+        errors,
+        receipt.receipt_id,
+        "The governing freshness policy's declared cutoff rule requires as_of at or before the cutoff.",
+        "freshness_after_cutoff",
+      );
     }
     if (receiptsByArtifact.has(receipt.artifact_id)) {
       errors.push({
@@ -2323,12 +2381,34 @@ function validateNetwork(
     manifest.activation_ready &&
     egressPolicy?.control_state !== "enforced"
   ) {
-    errors.push({
-      code: "egress_policy_not_enforced",
-      path: egressPolicyRef?.path ?? "network_policy.enforcement_boundary",
-      message:
-        "Activation readiness requires the referenced deny-default egress policy to be in enforced state.",
-    });
+    // Attested-denial readiness rule (PR #7 fail-closed review of 6b4e4e9):
+    // a runner_protocol_attestation receipt may satisfy readiness over an
+    // unenforced egress control only in the full truthful-denial shape —
+    // exact receipt/policy boundary match, denied mode with deny default and
+    // an empty destination set, and its weakness declared in non-empty
+    // limitations (the receipt validity window is enforced by the trusted
+    // evaluation-time checks above). Technical isolation boundary classes
+    // still require an enforced egress control.
+    const attestedDenial =
+      enforcement !== undefined &&
+      enforcement.enforcement_boundary.boundary_type ===
+        "runner_protocol_attestation" &&
+      policy.enforcement_boundary.boundary_type ===
+        "runner_protocol_attestation" &&
+      enforcement.effective_mode === "denied" &&
+      enforcement.default_action === "deny" &&
+      enforcement.effective_destinations.length === 0 &&
+      policy.mode === "denied" &&
+      policy.destinations.length === 0 &&
+      enforcement.limitations.length > 0;
+    if (!attestedDenial) {
+      errors.push({
+        code: "egress_policy_not_enforced",
+        path: egressPolicyRef?.path ?? "network_policy.enforcement_boundary",
+        message:
+          "Activation readiness requires an enforced deny-default egress policy, or a fully attested runner_protocol_attestation denial with its limitations declared.",
+      });
+    }
   }
 }
 

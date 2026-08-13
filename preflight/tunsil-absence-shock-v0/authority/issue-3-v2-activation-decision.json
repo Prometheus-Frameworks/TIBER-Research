@@ -11,6 +11,30 @@
       "digest": "sha256:e1582d95a1bdb18ed610d205d1826102cef13f19015036487d1a5f041a9de6de",
       "digest_mode": "tiber-canonical-json-v1",
       "path": "runs/tunsil-absence-shock-v0/inputs.json"
+    },
+    {
+      "artifact_type": "authority_decision",
+      "digest": "sha256:0f6cf7b3d86fb095130dd331169475ed830156b2378bd82a98d7c4cd7a33dfd7",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "authority/tunsil-absence-shock-v0-activation.json"
+    },
+    {
+      "artifact_type": "network_policy",
+      "digest": "sha256:c6c2099211373dbcf97830c8994103283b32df6d7742c004548a4d8bce46949f",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "preflight/tunsil-absence-shock-v0/controls/network-policy.json"
+    },
+    {
+      "artifact_type": "cost_policy",
+      "digest": "sha256:db059d5469a42fe6f23e9810a82d19ab2849648cf216a85d0ea35a6817e5b5de",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "preflight/tunsil-absence-shock-v0/controls/cost-policy.json"
+    },
+    {
+      "artifact_type": "observation_policy",
+      "digest": "sha256:c82d9bcbd53378c4721e7fb0de2bc7a72ecd7d231ebf1db57def21a588a85144",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "preflight/tunsil-absence-shock-v0/controls/observation-policy.json"
     }
   ],
   "authority_class": "activate_run",

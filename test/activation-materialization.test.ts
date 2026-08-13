@@ -3,6 +3,7 @@ import {
   cpSync,
   existsSync,
   mkdtempSync,
+  readdirSync,
   readFileSync,
   rmSync,
 } from "node:fs";
@@ -294,7 +295,7 @@ function buildStage1ProvenanceWorkspace(
     schema_version: "research-freshness-policy/v1",
     policy_id: "synthetic-freshness",
     chronology_rule: "effective_at_lte_freshness_as_of_lte_verified_at",
-    cutoff_rule: "freshness_as_of_lte_cutoff_at",
+    cutoff_rule: "evidence_clocks_lte_cutoff_custody_assessment_may_follow",
     current_state_rule: "current_requires_exact_governing_manifest_and_authority",
   };
   writeJson(root, `${PKG}/controls/freshness-policy.json`, freshnessPolicy);
@@ -657,68 +658,25 @@ function retypeV2EnforcementBoundary(root: string, boundaryType: string): void {
     const value = readWorkspaceJson(root, path);
     operation(value);
     writeJson(root, path, value);
-    return sha256CanonicalJson(value);
   };
-  const observationDigest = mutate(V2_OBSERVATION_POLICY, (value) => {
+  mutate(V2_OBSERVATION_POLICY, (value) => {
     for (const admission of value.admitted_observations) {
       if (admission.method === "network_enforcement_observation") {
         admission.boundary_type = boundaryType;
       }
     }
   });
-  const networkDigest = mutate(V2_NETWORK_POLICY, (value) => {
+  mutate(V2_NETWORK_POLICY, (value) => {
     value.enforcement_boundary.boundary_type = boundaryType;
   });
-  const rebound = new Map<string, string>([
-    [V2_OBSERVATION_POLICY, observationDigest],
-    [V2_NETWORK_POLICY, networkDigest],
+  mutate(V2_ENFORCEMENT, (value) => {
+    value.enforcement_boundary.boundary_type = boundaryType;
+  });
+  rebindV2Workspace(root, [
+    V2_OBSERVATION_POLICY,
+    V2_NETWORK_POLICY,
+    V2_ENFORCEMENT,
   ]);
-  const manifest = readWorkspaceJson(root, V2_MANIFEST);
-  for (const ref of manifest.gate_artifacts
-    .external_source_availability_receipt_refs) {
-    const receiptDigest = mutate(ref.path, (value) => {
-      value.trust_boundary.policy_ref.digest = observationDigest;
-    });
-    rebound.set(ref.path, receiptDigest);
-  }
-  for (const ref of manifest.gate_artifacts
-    .governed_artifact_provenance_receipt_refs) {
-    const receiptDigest = mutate(ref.path, (value) => {
-      value.trust_boundary.policy_ref.digest = observationDigest;
-    });
-    rebound.set(ref.path, receiptDigest);
-  }
-  const enforcementDigest = mutate(V2_ENFORCEMENT, (value) => {
-    value.enforcement_boundary.boundary_type = boundaryType;
-    value.network_policy_ref.digest = networkDigest;
-    value.observation_policy_ref.digest = observationDigest;
-  });
-  rebound.set(V2_ENFORCEMENT, enforcementDigest);
-  const rebind = (ref: JsonObject) => {
-    const next = rebound.get(ref.path);
-    if (next !== undefined) {
-      ref.digest = next;
-    }
-  };
-  for (const ref of manifest.gate_artifacts
-    .external_source_availability_receipt_refs) {
-    rebind(ref);
-  }
-  for (const ref of manifest.gate_artifacts
-    .governed_artifact_provenance_receipt_refs) {
-    rebind(ref);
-  }
-  rebind(manifest.gate_artifacts.network_policy_ref);
-  rebind(manifest.gate_artifacts.network_enforcement_receipt_ref);
-  for (const ref of manifest.candidate_artifact_refs) {
-    rebind(ref);
-  }
-  for (const requirement of manifest.requirements) {
-    for (const ref of requirement.evidence_refs) {
-      rebind(ref);
-    }
-  }
-  writeJson(root, V2_MANIFEST, manifest);
 }
 
 test("runner protocol attestation is accepted over unenforced egress", () => {
@@ -744,9 +702,234 @@ test("a technical boundary claim over unenforced egress is an overclaim", () => 
     retypeV2EnforcementBoundary(root, "sandbox_firewall");
     const report = validateStage1Preflight(root, V2_MANIFEST);
     assert.equal(report.valid, false);
-    assert.ok(report.errors.length >= 1);
-    for (const entry of report.errors) {
-      assert.equal(entry.code, "enforcement_boundary_overclaim");
+    // Since the readiness correction after the 6b4e4e9 halt, a technical
+    // boundary class over unenforced egress fails both the overclaim
+    // invariant and the readiness egress rule.
+    const codes = new Set(report.errors.map((entry) => entry.code));
+    assert.deepEqual(
+      [...codes].sort(),
+      ["egress_policy_not_enforced", "enforcement_boundary_overclaim"],
+    );
+  });
+});
+
+// ---------------------------------------------------------------------------
+// Activation-readiness corrections (Sol review of the 6b4e4e9 fail-closed
+// halt): three generic rules — retention-conditional source content,
+// attested-denial readiness over unenforced egress, and the superseded
+// freshness cutoff vocabulary.
+// ---------------------------------------------------------------------------
+
+const V2_INPUTS_PATH = V2_INPUTS;
+const V2_FRESHNESS_POLICY = `${V2_PACKAGE}/controls/freshness-policy.json`;
+const REFERENCE_ONLY_SOURCE = "src-commanders-2025-oline-review";
+
+/**
+ * After mutating the seed files, rebind every digest reference that points
+ * at a changed artifact, cascading (a changed receipt changes its own digest,
+ * which changes the manifest pin, and so on) until the workspace reaches a
+ * fixpoint. The manifest itself is never referenced, so it is rewritten but
+ * never enters the changed set.
+ */
+function rebindV2Workspace(root: string, seedPaths: string[]): void {
+  const jsonFiles: string[] = [];
+  for (const base of [V2_PACKAGE, V2_RUN, "authority"]) {
+    const dir = join(root, ...base.split("/"));
+    if (!existsSync(dir)) {
+      continue;
     }
+    for (const entry of readdirSync(dir, { recursive: true })) {
+      const relative = String(entry).split("\\").join("/");
+      if (relative.endsWith(".json")) {
+        jsonFiles.push(`${base}/${relative}`);
+      }
+    }
+  }
+  const digestsFor = (path: string) => {
+    const bytes = readFileSync(join(root, ...path.split("/")));
+    return {
+      canonical: sha256CanonicalJson(JSON.parse(bytes.toString("utf8"))),
+      raw: sha256Raw(bytes),
+    };
+  };
+  const changed = new Set(seedPaths);
+  const digests = new Map(seedPaths.map((path) => [path, digestsFor(path)]));
+  let progress = true;
+  while (progress) {
+    progress = false;
+    for (const file of jsonFiles) {
+      const value = readWorkspaceJson(root, file);
+      let touched = false;
+      const walk = (node: unknown): void => {
+        if (Array.isArray(node)) {
+          node.forEach(walk);
+          return;
+        }
+        if (node === null || typeof node !== "object") {
+          return;
+        }
+        const candidate = node as JsonObject;
+        if (
+          typeof candidate.path === "string" &&
+          typeof candidate.digest === "string" &&
+          changed.has(candidate.path)
+        ) {
+          const next =
+            candidate.digest_mode === "tiber-raw-sha256-v1"
+              ? digests.get(candidate.path)?.raw
+              : digests.get(candidate.path)?.canonical;
+          if (next !== undefined && candidate.digest !== next) {
+            candidate.digest = next;
+            touched = true;
+          }
+        }
+        Object.values(candidate).forEach(walk);
+      };
+      walk(value);
+      if (touched) {
+        writeJson(root, file, value);
+        if (file !== V2_MANIFEST) {
+          changed.add(file);
+          digests.set(file, digestsFor(file));
+        }
+        progress = true;
+      }
+    }
+  }
+}
+
+function mutateV2Inputs(
+  root: string,
+  operation: (inputs: JsonObject) => void,
+): void {
+  const inputs = readWorkspaceJson(root, V2_INPUTS_PATH);
+  operation(inputs);
+  writeJson(root, V2_INPUTS_PATH, inputs);
+  rebindV2Workspace(root, [V2_INPUTS_PATH]);
+}
+
+test("a reference_only source with null content path and recorded identity is activation-ready", () => {
+  withTempWorkspace(copyV2Workspace, (root) => {
+    const inputs = readWorkspaceJson(root, V2_INPUTS_PATH);
+    const source = inputs.sources.find(
+      (entry: JsonObject) => entry.source_object_id === REFERENCE_ONLY_SOURCE,
+    );
+    assert.equal(source.retention_mode, "reference_only");
+    assert.equal(source.content_path, null);
+    assert.notEqual(source.content_digest, null);
+    const report = validateStage1Preflight(root, V2_MANIFEST);
+    assert.deepEqual(report.errors, []);
+    assert.equal(report.valid, true);
+  });
+});
+
+test("a reference_only source that retains content bytes is rejected", () => {
+  withTempWorkspace(copyV2Workspace, (root) => {
+    mutateV2Inputs(root, (inputs) => {
+      const source = inputs.sources.find(
+        (entry: JsonObject) =>
+          entry.source_object_id === REFERENCE_ONLY_SOURCE,
+      );
+      source.content_path = `${V2_RUN}/sources/src-commanders-notebook-tunsil-out/excerpts.txt`;
+    });
+    const report = validateStage1Preflight(root, V2_MANIFEST);
+    assert.equal(report.valid, false);
+    assert.ok(
+      report.errors.some(
+        (entry) => entry.code === "reference_only_content_retained",
+      ),
+    );
+  });
+});
+
+test("a reference_only source without its recorded content identity is not activation-ready", () => {
+  withTempWorkspace(copyV2Workspace, (root) => {
+    mutateV2Inputs(root, (inputs) => {
+      const source = inputs.sources.find(
+        (entry: JsonObject) =>
+          entry.source_object_id === REFERENCE_ONLY_SOURCE,
+      );
+      source.content_digest = null;
+    });
+    const report = validateStage1Preflight(root, V2_MANIFEST);
+    assert.equal(report.valid, false);
+    assert.ok(
+      report.errors.some(
+        (entry) => entry.code === "source_content_missing_for_activation",
+      ),
+    );
+  });
+});
+
+test("an excerpt source without retained content is still rejected at activation", () => {
+  withTempWorkspace(copyV2Workspace, (root) => {
+    mutateV2Inputs(root, (inputs) => {
+      const source = inputs.sources.find(
+        (entry: JsonObject) => entry.retention_mode === "excerpt",
+      );
+      source.content_path = null;
+    });
+    const report = validateStage1Preflight(root, V2_MANIFEST);
+    assert.equal(report.valid, false);
+    assert.ok(
+      report.errors.some(
+        (entry) => entry.code === "source_content_missing_for_activation",
+      ),
+    );
+  });
+});
+
+test("an attested denial with a mismatched receipt boundary does not satisfy readiness", () => {
+  withTempWorkspace(copyV2Workspace, (root) => {
+    const enforcement = readWorkspaceJson(root, V2_ENFORCEMENT);
+    enforcement.enforcement_boundary.boundary_type = "sandbox_firewall";
+    writeJson(root, V2_ENFORCEMENT, enforcement);
+    rebindV2Workspace(root, [V2_ENFORCEMENT]);
+    const report = validateStage1Preflight(root, V2_MANIFEST);
+    assert.equal(report.valid, false);
+    assert.ok(
+      report.errors.some(
+        (entry) => entry.code === "egress_policy_not_enforced",
+      ),
+    );
+  });
+});
+
+test("an attested denial that hides its limitations does not satisfy readiness", () => {
+  withTempWorkspace(copyV2Workspace, (root) => {
+    const enforcement = readWorkspaceJson(root, V2_ENFORCEMENT);
+    enforcement.limitations = [];
+    writeJson(root, V2_ENFORCEMENT, enforcement);
+    rebindV2Workspace(root, [V2_ENFORCEMENT]);
+    const report = validateStage1Preflight(root, V2_MANIFEST);
+    assert.equal(report.valid, false);
+    assert.ok(
+      report.errors.some(
+        (entry) => entry.code === "egress_policy_not_enforced",
+      ),
+    );
+  });
+});
+
+test("a policy claiming the superseded cutoff rule cannot govern a post-cutoff assessment", () => {
+  withTempWorkspace(copyV2Workspace, (root) => {
+    const policy = readWorkspaceJson(root, V2_FRESHNESS_POLICY);
+    assert.equal(
+      policy.cutoff_rule,
+      "evidence_clocks_lte_cutoff_custody_assessment_may_follow",
+    );
+    policy.cutoff_rule = "freshness_as_of_lte_cutoff_at";
+    writeJson(root, V2_FRESHNESS_POLICY, policy);
+    rebindV2Workspace(root, [V2_FRESHNESS_POLICY]);
+    // Every provenance receipt honestly assesses freshness after the cutoff
+    // (custody-side clock), so the superseded rule must reject them all.
+    const report = validateStage1Preflight(root, V2_MANIFEST);
+    assert.equal(report.valid, false);
+    assert.ok(
+      report.errors.some((entry) => entry.code === "freshness_after_cutoff"),
+    );
+    assert.ok(
+      report.errors.every((entry) => entry.code === "freshness_after_cutoff"),
+    );
   });
 });

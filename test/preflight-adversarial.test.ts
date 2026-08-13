@@ -876,7 +876,8 @@ function buildReadyPreflight(): BuiltPreflight {
       policy_id: "adversarial-freshness-policy",
       chronology_rule:
         "effective_at_lte_freshness_as_of_lte_verified_at",
-      cutoff_rule: "freshness_as_of_lte_cutoff_at",
+      cutoff_rule:
+        "evidence_clocks_lte_cutoff_custody_assessment_may_follow",
       current_state_rule:
         "current_requires_exact_governing_manifest_and_authority",
     },

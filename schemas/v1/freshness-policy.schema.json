@@ -10,7 +10,10 @@
       "const": "current_requires_exact_governing_manifest_and_authority"
     },
     "cutoff_rule": {
-      "const": "freshness_as_of_lte_cutoff_at"
+      "enum": [
+        "freshness_as_of_lte_cutoff_at",
+        "evidence_clocks_lte_cutoff_custody_assessment_may_follow"
+      ]
     },
     "policy_id": {
       "$ref": "https://schemas.tiber.dev/research/v0/common.schema.json#/$defs/safeId"
