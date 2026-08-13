@@ -21,7 +21,10 @@
   ],
   "properties": {
     "schema_version": {
-      "const": "research-inputs/v0"
+      "enum": [
+        "research-inputs/v0",
+        "research-inputs/v0.1"
+      ]
     },
     "synthetic_fixture": {
       "type": "boolean"
@@ -320,5 +323,32 @@
         }
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "schema_version": {
+            "const": "research-inputs/v0"
+          }
+        },
+        "required": [
+          "schema_version"
+        ]
+      },
+      "then": {
+        "properties": {
+          "blocked_inputs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "owner_repository": false
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
 }

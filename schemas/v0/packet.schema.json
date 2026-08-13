@@ -28,7 +28,10 @@
   ],
   "properties": {
     "schema_version": {
-      "const": "research-packet/v0"
+      "enum": [
+        "research-packet/v0",
+        "research-packet/v0.1"
+      ]
     },
     "synthetic_fixture": {
       "type": "boolean"
@@ -282,11 +285,20 @@
             "required": [
               "owner_repository",
               "related_issue",
-              "requested_evidence"
+              "requested_evidence",
+              "unresolved_refs"
             ],
             "properties": {
               "owner_repository": {
                 "$ref": "common.schema.json#/$defs/ownerRepository"
+              },
+              "unresolved_refs": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "$ref": "common.schema.json#/$defs/safeId"
+                },
+                "uniqueItems": true
               },
               "related_issue": {
                 "type": [
@@ -486,6 +498,84 @@
       }
     }
   },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "schema_version": {
+            "const": "research-packet/v0"
+          }
+        },
+        "required": [
+          "schema_version"
+        ]
+      },
+      "then": {
+        "properties": {
+          "terminal_decision": false,
+          "response_branches": false,
+          "causal_paths": false,
+          "questions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "assessment": {
+                  "enum": [
+                    "supported",
+                    "partly_supported",
+                    "weakened",
+                    "contradicted",
+                    "insufficient"
+                  ]
+                }
+              }
+            }
+          },
+          "claims": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "assessment": {
+                  "enum": [
+                    "supported",
+                    "partly_supported",
+                    "weakened",
+                    "contradicted",
+                    "insufficient"
+                  ]
+                },
+                "epistemic_class": {
+                  "$ref": "common.schema.json#/$defs/epistemicClass"
+                },
+                "claim_type": {
+                  "enum": [
+                    "synthetic_threshold_finding",
+                    "evidence_assessment",
+                    "opportunity_assessment",
+                    "market_inefficiency",
+                    "negative_finding",
+                    "methodological"
+                  ]
+                },
+                "falsifiers": false
+              }
+            }
+          },
+          "followups": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "rfi": false
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
   "$defs": {
     "claim": {
       "type": "object",
@@ -537,7 +627,16 @@
           ]
         },
         "epistemic_class": {
-          "$ref": "common.schema.json#/$defs/epistemicClass"
+          "enum": [
+            "observed",
+            "calculated",
+            "inferred",
+            "forecast",
+            "hypothesis",
+            "speculative",
+            "contradicted",
+            "unknown"
+          ]
         },
         "assessment": {
           "enum": [

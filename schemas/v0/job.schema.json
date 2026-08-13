@@ -36,7 +36,10 @@
   ],
   "properties": {
     "schema_version": {
-      "const": "research-job/v0"
+      "enum": [
+        "research-job/v0",
+        "research-job/v0.1"
+      ]
     },
     "synthetic_fixture": {
       "type": "boolean"
@@ -519,6 +522,24 @@
           "output_class": {
             "const": "synthetic_conformance_fixture"
           }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "schema_version": {
+            "const": "research-job/v0"
+          }
+        },
+        "required": [
+          "schema_version"
+        ]
+      },
+      "then": {
+        "properties": {
+          "response_branches": false,
+          "terminal_decisions": false
         }
       }
     }

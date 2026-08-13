@@ -5,6 +5,7 @@ import {
   mkdtempSync,
   readFileSync,
   rmSync,
+  writeFileSync,
 } from "node:fs";
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
@@ -21,7 +22,6 @@ import {
   validateAttempt,
   type ValidationReport,
 } from "../src/validator.js";
-import { writeFileSync } from "node:fs";
 
 const FIXTURE = resolve("fixtures/synthetic-complete");
 const RUN_ID = "run-synthetic-001";
@@ -84,6 +84,16 @@ function mutatePacket(
   );
 }
 
+function mutatePacketV01(
+  root: string,
+  mutate: (packet: JsonObject) => void,
+): void {
+  mutatePacket(root, (packet) => {
+    packet.schema_version = "research-packet/v0.1";
+    mutate(packet);
+  });
+}
+
 function readJsonl(root: string, path: string): JsonObject[] {
   return readFileSync(absolute(root, path), "utf8")
     .trimEnd()
@@ -119,7 +129,12 @@ function writeRechainedJsonl(
 }
 
 function appendJobYaml(root: string, yamlFragment: string): void {
-  appendFileSync(absolute(root, "job.yaml"), yamlFragment, "utf8");
+  const jobPath = absolute(root, "job.yaml");
+  const upgraded = readFileSync(jobPath, "utf8").replace(
+    "schema_version: research-job/v0\n",
+    "schema_version: research-job/v0.1\n",
+  );
+  writeFileSync(jobPath, upgraded + yamlFragment, "utf8");
   refreshFrozenJobAuthorization(root);
 }
 
@@ -342,25 +357,51 @@ function packetCausalPath(overrides: JsonObject = {}): JsonObject {
   };
 }
 
+function unresolvedGap(
+  unresolvedId: string,
+  kind: string,
+  overrides: JsonObject = {},
+): JsonObject {
+  return {
+    blocked_input_refs: [],
+    kind,
+    related_claim_refs: [],
+    related_question_refs: ["question-threshold"],
+    statement:
+      "Additional invented cycles are unavailable in the frozen fixture.",
+    unresolved_id: unresolvedId,
+    ...overrides,
+  };
+}
+
+function packetRfi(overrides: JsonObject = {}): JsonObject {
+  return {
+    owner_repository: "Prometheus-Frameworks/TIBER-Data",
+    related_issue: null,
+    requested_evidence:
+      "A separately authorized synthetic fixture with more invented cycles.",
+    unresolved_refs: ["unresolved-more-cycles"],
+    ...overrides,
+  };
+}
+
 test("event-shock extension round trip", async (t) => {
   await t.test(
-    "an extended packet with branches, causal paths, falsifiers, an RFI, and a terminal decision validates end to end",
+    "an extended v0.1 packet with branches, causal paths, falsifiers, a bound RFI, and a terminal decision validates end to end",
     () => {
       withFixture((root) => {
         appendJobYaml(root, JOB_BRANCHES_YAML + JOB_DECISIONS_YAML);
-        mutatePacket(root, (packet) => {
+        mutatePacketV01(root, (packet) => {
           packet.terminal_decision = "synthetic_pilot_complete";
           packet.response_branches = [packetBranch()];
           packet.causal_paths = [packetCausalPath()];
           packet.claims[0].falsifiers = [
             "A retained fixture row with outcome fail would falsify the threshold claim.",
           ];
-          packet.followups[0].rfi = {
-            owner_repository: "Prometheus-Frameworks/TIBER-Data",
-            related_issue: null,
-            requested_evidence:
-              "A separately authorized synthetic fixture with more invented cycles.",
-          };
+          packet.unresolved = [
+            unresolvedGap("unresolved-more-cycles", "missing_evidence"),
+          ];
+          packet.followups[0].rfi = packetRfi();
         });
         refreshTerminalBindings(root);
         assertValid(root);
@@ -372,7 +413,7 @@ test("event-shock extension round trip", async (t) => {
     "a forecast-class claim requires explicit falsifiers",
     () => {
       withFixture((root) => {
-        mutatePacket(root, (packet) => {
+        mutatePacketV01(root, (packet) => {
           packet.claims[0].epistemic_class = "forecast";
         });
         refreshTerminalBindings(root);
@@ -393,7 +434,7 @@ test("event-shock extension round trip", async (t) => {
     "an out_of_scope claim is excluded from the question aggregate",
     () => {
       withFixture((root) => {
-        mutatePacket(root, (packet) => {
+        mutatePacketV01(root, (packet) => {
           packet.claims[0].assessment = "out_of_scope";
           packet.questions[0].assessment = "insufficient";
         });
@@ -407,7 +448,7 @@ test("event-shock extension round trip", async (t) => {
     "a mixed claim propagates through the conservative question aggregate",
     () => {
       withFixture((root) => {
-        mutatePacket(root, (packet) => {
+        mutatePacketV01(root, (packet) => {
           packet.claims[0].assessment = "mixed";
         });
         refreshTerminalBindings(root);
@@ -423,10 +464,80 @@ test("event-shock extension round trip", async (t) => {
   );
 });
 
+test("wire-identity versioning", async (t) => {
+  await t.test(
+    "extension packet fields are rejected under the v0 packet identity",
+    () => {
+      withFixture((root) => {
+        mutatePacket(root, (packet) => {
+          packet.claims[0].falsifiers = [
+            "A retained fixture row with outcome fail would falsify the claim.",
+          ];
+        });
+        refreshTerminalBindings(root);
+        assertInvalid(root, "schema.invalid");
+      });
+    },
+  );
+
+  await t.test(
+    "extension enum members are rejected under the v0 packet identity",
+    () => {
+      withFixture((root) => {
+        mutatePacket(root, (packet) => {
+          packet.claims[0].assessment = "out_of_scope";
+          packet.questions[0].assessment = "insufficient";
+        });
+        refreshTerminalBindings(root);
+        assertInvalid(root, "schema.invalid");
+      });
+    },
+  );
+
+  await t.test(
+    "extension job fields are rejected under the v0 job identity",
+    () => {
+      withFixture((root) => {
+        appendFileSync(
+          absolute(root, "job.yaml"),
+          JOB_DECISIONS_YAML,
+          "utf8",
+        );
+        refreshFrozenJobAuthorization(root);
+        refreshTerminalBindings(root);
+        assertInvalid(root, "schema.invalid");
+      });
+    },
+  );
+
+  await t.test(
+    "a frozen blocked-input owner is rejected under the v0 inputs identity",
+    () => {
+      withFixture((root) => {
+        mutateJson(root, INPUTS, (inputs) => {
+          inputs.blocked_inputs = [
+            {
+              input_id: "input-missing-cycles",
+              owner_repository: "Prometheus-Frameworks/TIBER-Data",
+              question_refs: ["question-threshold"],
+              reason:
+                "The additional synthetic cycles were never generated.",
+              status: "unavailable",
+            },
+          ];
+        });
+        refreshFrozenJobAuthorization(root);
+        refreshTerminalBindings(root);
+        assertInvalid(root, "schema.invalid");
+      });
+    },
+  );
+});
+
 test("terminal decision governance", async (t) => {
   await t.test("a packet may not emit an undeclared terminal decision", () => {
     withFixture((root) => {
-      mutatePacket(root, (packet) => {
+      mutatePacketV01(root, (packet) => {
         packet.terminal_decision = "synthetic_pilot_complete";
       });
       refreshTerminalBindings(root);
@@ -448,7 +559,7 @@ test("terminal decision governance", async (t) => {
   await t.test("the emitted decision must be one of the declared tokens", () => {
     withFixture((root) => {
       appendJobYaml(root, JOB_DECISIONS_YAML);
-      mutatePacket(root, (packet) => {
+      mutatePacketV01(root, (packet) => {
         packet.terminal_decision = "synthetic_pilot_unknown";
       });
       refreshTerminalBindings(root);
@@ -461,7 +572,7 @@ test("terminal decision governance", async (t) => {
     () => {
       withFixture((root) => {
         appendJobYaml(root, JOB_DECISIONS_YAML);
-        mutatePacket(root, (packet) => {
+        mutatePacketV01(root, (packet) => {
           packet.terminal_decision = "synthetic_pilot_blocked";
         });
         refreshTerminalBindings(root);
@@ -475,7 +586,7 @@ test("terminal decision governance", async (t) => {
     () => {
       withFixture((root) => {
         appendJobYaml(root, JOB_DECISIONS_YAML);
-        mutatePacket(root, (packet) => {
+        mutatePacketV01(root, (packet) => {
           packet.terminal_decision =
             "synthetic_pilot_requires_data_followup";
         });
@@ -487,6 +598,123 @@ test("terminal decision governance", async (t) => {
       });
     },
   );
+
+  await t.test(
+    "an unrelated RFI does not satisfy a requires_data_followup decision",
+    () => {
+      withFixture((root) => {
+        appendJobYaml(root, JOB_DECISIONS_YAML);
+        mutatePacketV01(root, (packet) => {
+          packet.terminal_decision =
+            "synthetic_pilot_requires_data_followup";
+          packet.unresolved = [
+            unresolvedGap("unresolved-gap-a", "missing_evidence"),
+            unresolvedGap("unresolved-note-b", "contradiction", {
+              statement:
+                "Two invented observations disagree about a synthetic label.",
+            }),
+          ];
+          packet.followups[0].rfi = packetRfi({
+            unresolved_refs: ["unresolved-note-b"],
+          });
+        });
+        refreshTerminalBindings(root);
+        assertInvalid(root, [
+          "packet.rfi_unresolved_link",
+          "packet.terminal_decision_rfi_required",
+        ]);
+      });
+    },
+  );
+
+  await t.test(
+    "a gap-bound requires_data_followup packet validates end to end",
+    () => {
+      withFixture((root) => {
+        appendJobYaml(root, JOB_DECISIONS_YAML);
+        mutatePacketV01(root, (packet) => {
+          packet.terminal_decision =
+            "synthetic_pilot_requires_data_followup";
+          packet.unresolved = [
+            unresolvedGap("unresolved-more-cycles", "missing_evidence"),
+          ];
+          packet.followups[0].rfi = packetRfi();
+        });
+        refreshTerminalBindings(root);
+        assertValid(root);
+      });
+    },
+  );
+});
+
+test("RFI routing governance", async (t) => {
+  await t.test(
+    "an RFI must bind a missing or blocked unresolved item",
+    () => {
+      withFixture((root) => {
+        mutatePacketV01(root, (packet) => {
+          packet.followups[0].rfi = packetRfi({
+            unresolved_refs: ["unresolved-nonexistent"],
+          });
+        });
+        refreshTerminalBindings(root);
+        assertInvalid(root, "packet.rfi_unresolved_link");
+      });
+    },
+  );
+
+  await t.test(
+    "an RFI owner must match the frozen blocked-input owner",
+    () => {
+      withFixture((root) => {
+        mutateJson(root, INPUTS, (inputs) => {
+          inputs.schema_version = "research-inputs/v0.1";
+          inputs.blocked_inputs = [
+            {
+              input_id: "input-missing-cycles",
+              owner_repository: "Prometheus-Frameworks/TIBER-Data",
+              question_refs: ["question-threshold"],
+              reason:
+                "The additional synthetic cycles were never generated.",
+              status: "unavailable",
+            },
+          ];
+        });
+        refreshFrozenJobAuthorization(root);
+        mutatePacketV01(root, (packet) => {
+          packet.unresolved = [
+            unresolvedGap("unresolved-missing-cycles", "blocked_input", {
+              blocked_input_refs: ["input-missing-cycles"],
+            }),
+          ];
+          packet.followups[0].rfi = packetRfi({
+            owner_repository: "Prometheus-Frameworks/TIBER-Fantasy",
+            unresolved_refs: ["unresolved-missing-cycles"],
+          });
+        });
+        refreshTerminalBindings(root);
+        assertInvalid(root, "packet.rfi_owner_mismatch");
+      });
+    },
+  );
+
+  await t.test(
+    "an RFI owner repository must be an owner/name reference",
+    () => {
+      withFixture((root) => {
+        mutatePacketV01(root, (packet) => {
+          packet.unresolved = [
+            unresolvedGap("unresolved-more-cycles", "missing_evidence"),
+          ];
+          packet.followups[0].rfi = packetRfi({
+            owner_repository: "not-a-repository",
+          });
+        });
+        refreshTerminalBindings(root);
+        assertInvalid(root, "schema.invalid");
+      });
+    },
+  );
 });
 
 test("response branch governance", async (t) => {
@@ -494,7 +722,7 @@ test("response branch governance", async (t) => {
     "a packet may not assess branches the job did not preregister",
     () => {
       withFixture((root) => {
-        mutatePacket(root, (packet) => {
+        mutatePacketV01(root, (packet) => {
           packet.response_branches = [packetBranch()];
         });
         refreshTerminalBindings(root);
@@ -516,7 +744,7 @@ test("response branch governance", async (t) => {
     () => {
       withFixture((root) => {
         appendJobYaml(root, JOB_BRANCHES_YAML);
-        mutatePacket(root, (packet) => {
+        mutatePacketV01(root, (packet) => {
           packet.response_branches = [
             packetBranch({ label: "Replacement mostly holds" }),
           ];
@@ -535,7 +763,7 @@ test("response branch governance", async (t) => {
     () => {
       withFixture((root) => {
         appendJobYaml(root, JOB_BRANCHES_YAML);
-        mutatePacket(root, (packet) => {
+        mutatePacketV01(root, (packet) => {
           packet.response_branches = [packetBranch({ evidence_refs: [] })];
         });
         refreshTerminalBindings(root);
@@ -549,7 +777,7 @@ test("response branch governance", async (t) => {
     () => {
       withFixture((root) => {
         appendJobYaml(root, JOB_BRANCHES_YAML);
-        mutatePacket(root, (packet) => {
+        mutatePacketV01(root, (packet) => {
           packet.response_branches = [
             packetBranch({
               assessment: "insufficient",
@@ -568,7 +796,7 @@ test("response branch governance", async (t) => {
 test("causal path governance", async (t) => {
   await t.test("edge endpoints must resolve to declared nodes", () => {
     withFixture((root) => {
-      mutatePacket(root, (packet) => {
+      mutatePacketV01(root, (packet) => {
         const causalPath = packetCausalPath();
         causalPath.edges[0].to_node = "node-undeclared";
         packet.causal_paths = [causalPath];
@@ -580,7 +808,7 @@ test("causal path governance", async (t) => {
 
   await t.test("a causal path must be acyclic", () => {
     withFixture((root) => {
-      mutatePacket(root, (packet) => {
+      mutatePacketV01(root, (packet) => {
         const causalPath = packetCausalPath();
         causalPath.edges.push({
           ...structuredClone(causalPath.edges[0]),
@@ -599,7 +827,7 @@ test("causal path governance", async (t) => {
     "edge evidence must resolve to admitted current observations",
     () => {
       withFixture((root) => {
-        mutatePacket(root, (packet) => {
+        mutatePacketV01(root, (packet) => {
           const causalPath = packetCausalPath();
           causalPath.edges[0].evidence_refs = ["event-001-hypothesis"];
           packet.causal_paths = [causalPath];
@@ -612,7 +840,7 @@ test("causal path governance", async (t) => {
 
   await t.test("node subjects must resolve to governed job subjects", () => {
     withFixture((root) => {
-      mutatePacket(root, (packet) => {
+      mutatePacketV01(root, (packet) => {
         const causalPath = packetCausalPath();
         causalPath.nodes[0].subject_refs = ["subject-undeclared"];
         packet.causal_paths = [causalPath];
@@ -623,24 +851,7 @@ test("causal path governance", async (t) => {
   });
 });
 
-test("routing schema boundaries", async (t) => {
-  await t.test(
-    "an RFI owner repository must be an owner/name reference",
-    () => {
-      withFixture((root) => {
-        mutatePacket(root, (packet) => {
-          packet.followups[0].rfi = {
-            owner_repository: "not-a-repository",
-            related_issue: null,
-            requested_evidence: "Any governed synthetic follow-up input.",
-          };
-        });
-        refreshTerminalBindings(root);
-        assertInvalid(root, "schema.invalid");
-      });
-    },
-  );
-
+test("declared terminal decision hygiene", async (t) => {
   await t.test("duplicate declared terminal decisions are rejected", () => {
     withFixture((root) => {
       appendJobYaml(
@@ -652,7 +863,7 @@ test("routing schema boundaries", async (t) => {
     class: blocked
 `,
       );
-      mutatePacket(root, (packet) => {
+      mutatePacketV01(root, (packet) => {
         packet.terminal_decision = "synthetic_pilot_complete";
       });
       refreshTerminalBindings(root);

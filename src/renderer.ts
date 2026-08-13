@@ -81,6 +81,7 @@ export interface PacketFollowupRfi {
   owner_repository: string;
   related_issue: string | null;
   requested_evidence: string;
+  unresolved_refs: string[];
 }
 
 export interface PacketFollowup {
@@ -388,6 +389,11 @@ export function renderPacketMarkdown(packet: Readonly<ResearchPacket>): string {
           lines,
           "  Requested evidence",
           followup.rfi.requested_evidence,
+        );
+        lines.push(
+          `  - Unresolved references: ${followup.rfi.unresolved_refs
+            .map((ref) => codeSpan(ref))
+            .join(", ")}`,
         );
       }
       blank(lines);

@@ -267,6 +267,7 @@ interface Inputs {
     question_refs: string[];
     reason: string;
     status: string;
+    owner_repository?: string;
   }>;
 }
 
@@ -4434,9 +4435,84 @@ function validatePacketTraceability(
     }
   }
 
+  validateRfiRouting(inputs, packet, report, path);
   validateTerminalDecision(job, packet, report, path);
   validateResponseBranches(job, packet, eventMap, claimMap, report, path);
   validateCausalPaths(job, packet, eventMap, claimMap, report, path);
+}
+
+/**
+ * A routed RFI must bind the exact unresolved gap it exists to route: every
+ * reference must resolve to a missing or blocked unresolved item, and when a
+ * bound gap traces to a frozen blocked input that declares an owner, the RFI
+ * must be routed to that same owner repository.
+ */
+function validateRfiRouting(
+  inputs: Inputs,
+  packet: ResearchPacket,
+  report: ValidationReport,
+  path: string,
+): void {
+  const unresolvedMap = new Map(
+    packet.unresolved.map((entry) => [entry.unresolved_id, entry]),
+  );
+  const blockedInputMap = new Map(
+    inputs.blocked_inputs.map((entry) => [entry.input_id, entry]),
+  );
+  for (const followup of packet.followups) {
+    if (followup.rfi === undefined) {
+      continue;
+    }
+    const followupPath = `${path}.followups.${followup.followup_id}.rfi`;
+    for (const unresolvedRef of followup.rfi.unresolved_refs) {
+      const unresolved = unresolvedMap.get(unresolvedRef);
+      if (
+        unresolved === undefined ||
+        !["missing_evidence", "blocked_input"].includes(unresolved.kind)
+      ) {
+        issue(
+          report,
+          "packet.rfi_unresolved_link",
+          followupPath,
+          `RFI reference does not resolve to a missing or blocked unresolved item: ${unresolvedRef}`,
+        );
+        continue;
+      }
+      for (const blockedRef of unresolved.blocked_input_refs) {
+        const frozen = blockedInputMap.get(blockedRef);
+        if (
+          frozen?.owner_repository !== undefined &&
+          frozen.owner_repository !== followup.rfi.owner_repository
+        ) {
+          issue(
+            report,
+            "packet.rfi_owner_mismatch",
+            followupPath,
+            `RFI owner ${followup.rfi.owner_repository} differs from the frozen blocked input owner ${frozen.owner_repository} for ${blockedRef}`,
+          );
+        }
+      }
+    }
+  }
+}
+
+/**
+ * True when at least one follow-up RFI resolves to a missing or blocked
+ * unresolved item — the binding a requires_data_followup terminal needs.
+ */
+function hasGapBoundRfi(packet: ResearchPacket): boolean {
+  const qualifying = new Set(
+    packet.unresolved
+      .filter((entry) =>
+        ["missing_evidence", "blocked_input"].includes(entry.kind),
+      )
+      .map((entry) => entry.unresolved_id),
+  );
+  return packet.followups.some(
+    (followup) =>
+      followup.rfi !== undefined &&
+      followup.rfi.unresolved_refs.some((ref) => qualifying.has(ref)),
+  );
 }
 
 function resolveObservationRefs(
@@ -4547,12 +4623,12 @@ function validateTerminalDecision(
         "a requires_data_followup terminal decision must bind at least one unresolved missing or blocked input",
       );
     }
-    if (!packet.followups.some((entry) => entry.rfi !== undefined)) {
+    if (!hasGapBoundRfi(packet)) {
       issue(
         report,
         "packet.terminal_decision_rfi_required",
         `${path}.terminal_decision`,
-        "a requires_data_followup terminal decision requires at least one follow-up routed to an owner repository",
+        "a requires_data_followup terminal decision requires at least one follow-up RFI bound to an unresolved missing or blocked input",
       );
     }
   }

@@ -17,12 +17,26 @@ explicit falsifiers. These extensions add those structures **additively**: every
 new field is optional, the synthetic fixture is byte-unchanged, and all prior
 validation behavior is preserved for packets that do not use them.
 
+## Wire identity (review finding, addressed)
+
+The extensions carry a distinguishable contract identity. `schema_version`
+becomes a two-value enum on each changed contract — `research-packet/v0` /
+`research-packet/v0.1`, `research-job/v0` / `research-job/v0.1`,
+`research-inputs/v0` / `research-inputs/v0.1` — with schema conditionals that
+pin the `v0` identity to exactly the pre-extension wire language: under `v0`,
+every new field is rejected and every extended enum is restricted to its
+original members. A packet using extension semantics must declare `v0.1`, which
+a validator pinned before this change fails closed on (its `v0` const no longer
+matches). New semantics are therefore never indistinguishable from the old
+contract, and the commit SHA is not a hidden schema version.
+
 ## What changed
 
 ### `schemas/v0/common.schema.json`
 
-- `epistemicClass` gains `forecast`.
 - New `ownerRepository` definition (`owner/name` reference for RFI routing).
+  (`epistemicClass` is unchanged — `forecast` is a packet-claim class only,
+  defined inline in the packet schema, so ledger-event surfaces are untouched.)
 
 ### `schemas/v0/job.schema.json` (both optional)
 
@@ -45,8 +59,9 @@ validation behavior is preserved for packets that do not use them.
   assessed as separate claims and cannot be collapsed into one verdict.
 - Claims gain optional `falsifiers`.
 - Follow-ups gain optional `rfi` (`owner_repository`, `related_issue`,
-  `requested_evidence`) — a missing-input request routed to the repository that
-  owns the gap.
+  `requested_evidence`, `unresolved_refs`) — a missing-input request routed to
+  the repository that owns the gap. `unresolved_refs` (min 1) binds the RFI to
+  the exact unresolved item it routes.
 - Packet gains optional `terminal_decision`, `response_branches` (assessment of
   each preregistered branch), and `causal_paths` (nodes plus directed edges,
   each edge carrying mechanism, evidence, counterevidence, uncertainty, and
@@ -65,8 +80,14 @@ validation behavior is preserved for packets that do not use them.
   `terminal_decisions`; then exactly one is required, it must be a declared
   token, and its class must cohere with the process terminal. A
   `requires_data_followup` decision additionally requires at least one
-  unresolved missing/blocked input and at least one RFI-routed follow-up, so
-  "we need more data" always leaves owner-addressed work behind.
+  unresolved missing/blocked input **and** at least one RFI whose
+  `unresolved_refs` resolve to such a gap — an unrelated gap plus an unrelated
+  RFI is rejected (review finding, addressed), so "we need more data" always
+  leaves owner-addressed work bound to the exact gap.
+- **RFI routing**: every RFI's `unresolved_refs` must resolve to missing or
+  blocked unresolved items, and when a bound gap traces to a frozen blocked
+  input that declares `owner_repository`, the RFI must be routed to that same
+  owner.
 - **Response branches**: permitted only when preregistered in the job; every
   preregistered branch must be assessed; label, description, and expected
   signals must exactly match the preregistration; `supported`, `contradicted`,
@@ -84,19 +105,19 @@ fixture — render byte-identically.
 
 ## Verification
 
-- `npm run check` passes: typecheck, 279 tests (25 new in
-  `test/extensions.test.ts`), golden fixture end-to-end, and the untouched
-  Stage 1 preflight (still honestly `requires_operator_inputs`).
+- `npm run check` passes: typecheck, 289 tests (35 new in
+  `test/extensions.test.ts`, including the v0 wire-identity gating cases and
+  the unrelated-gap/unrelated-RFI adversarial case), golden fixture
+  end-to-end, and the untouched Stage 1 preflight (still honestly
+  `requires_operator_inputs`).
 - The synthetic fixture and the `preflight/opportunity-clusters-2026-v0`
-  package are byte-unchanged.
+  package are byte-unchanged; the fixture continues to declare and validate as
+  `research-packet/v0`.
 
 ## Open questions for the operator
 
-1. Should adoption bump `schema_version` / renderer and validator version
-   strings? This draft deliberately leaves them unchanged because the fixture
-   and preflight package pin them; a version-bump decision belongs to review.
-2. `mixed` severity placement (between `partly_supported` and `weakened`) is a
+1. `mixed` severity placement (between `partly_supported` and `weakened`) is a
    judgment call; confirm or reorder at review.
-3. Whether question-level assessments should also admit `out_of_scope`
+2. Whether question-level assessments should also admit `out_of_scope`
    (currently claim-level only, since job questions are in scope by
    construction).
