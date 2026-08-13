@@ -1,0 +1,237 @@
+# DRAFT CANDIDATE JOB — NOT ACTIVATED, NOT A PREFLIGHT ARTIFACT.
+# Operator-review draft mapping TIBER-Research issue #3 onto research-job/v0.1.
+# Every value marked OPERATOR-INPUT requires an explicit operator binding
+# (see README.md §3) before this can become a real candidate job. Placed under
+# docs/ deliberately; the real job.yaml is authored only inside an authorized
+# preflight package.
+schema_version: research-job/v0.1
+synthetic_fixture: false
+job_id: tunsil-absence-shock
+job_version: v1
+purpose: >-
+  Bounded offense-to-fantasy causal cross-examination of the 2026-08-08
+  Laremy Tunsil torn-triceps event: test whether TIBER can translate the loss
+  of a non-fantasy infrastructure player through the Washington offense
+  without applying a narrative-only blanket downgrade (TIBER-Research issue
+  #3, Lane 1).
+questions:
+  - question_id: q1-availability-replacement-state
+    prompt: >-
+      Is Tunsil unavailable for the observation window, is Coleman the actual
+      replacement, and is the surrounding line configuration correctly
+      identified?
+  - question_id: q2-protection-quality-pressure
+    prompt: >-
+      Does replacing Tunsil with Coleman create a material expected reduction
+      in isolated protection quality or increase the need for schematic help?
+  - question_id: q3-quarterback-playcalling-response
+    prompt: >-
+      Does the absence change protection count, pressure conditions, time to
+      throw, scramble/throwaway behavior, play action, quick game, rollout
+      usage, depth of target, or explosive-pass opportunity?
+  - question_id: q4-backfield-constraint-redistribution
+    prompt: >-
+      Does Washington increase running-back protection or chip participation,
+      with any additional White snaps correctly separated into pass blocks,
+      chip-and-release routes, full routes, carries, and targets, and does
+      Croskey-Merritt lose passing-down participation without an assumed
+      early-down carry loss?
+  - question_id: q5-mclaurin-opportunity-vs-efficiency
+    prompt: >-
+      Separately from efficiency: does McLaurin's target/first-read
+      opportunity change; and separately from opportunity: do his air yards,
+      target depth, play-action/deep usage, YPRR, explosive conversion,
+      red-zone opportunity, or touchdown ceiling change?
+mode: bounded_domain_research
+output_class: structured_research_packet
+subjects:
+  # Governed GSIS bindings re-resolved at freeze from pinned artifacts.
+  - subject_id: laremy-tunsil
+    label: Laremy Tunsil (LT, WAS) — run-scoped identity, no governed GSIS
+    kind: player-run-scoped
+  - subject_id: brandon-coleman
+    label: Brandon Coleman (LT replacement, WAS) — run-scoped identity
+    kind: player-run-scoped
+  - subject_id: was-oline-configuration
+    label: >-
+      Washington offensive-line configuration (C. Paul LG, Conerly RT, Wylie
+      swing) — run-scoped composite subject
+    kind: unit-run-scoped
+  - subject_id: jayden-daniels
+    label: Jayden Daniels (QB, WAS)
+    kind: player
+    aliases: ["gsis 00-0039910"]
+  - subject_id: terry-mclaurin
+    label: Terry McLaurin (WR, WAS)
+    kind: player
+    aliases: ["gsis 00-0035659"]
+  - subject_id: rachaad-white
+    label: Rachaad White (RB, WAS)
+    kind: player
+    aliases: ["gsis 00-0037256"]
+  - subject_id: jacory-croskey-merritt
+    label: Jacory Croskey-Merritt (RB, WAS)
+    kind: player
+    aliases: ["gsis 00-0040242"]
+comparison_population:
+  mode: closed
+  members:
+    - subject_id: jeremy-mcnichols
+      label: Jeremy McNichols (RB, WAS) — context only
+      kind: player
+      aliases: ["gsis 00-0033955"]
+    - subject_id: stefon-diggs
+      label: Stefon Diggs (WR, WAS) — context only
+      kind: player
+      aliases: ["gsis 00-0031588"]
+    - subject_id: chig-okonkwo
+      label: Chig Okonkwo (TE, WAS) — context only
+      kind: player
+      aliases: ["gsis 00-0037809"]
+baseline_ref: null
+# OPERATOR-INPUT (README §3.1): exact cutoff instant. Candidate anchor below
+# is the issue #3 posting instant; the operator may instead bind a fresh
+# activation-time instant.
+cutoff_at: "2026-08-12T22:08:51Z"
+time_horizon: >-
+  2026 training-camp/preseason window from the 2026-08-08 injury event to the
+  activated cutoff; no regular-season observations exist inside the window.
+source_envelope:
+  families:
+    - source_family_id: commanders-official-club-site
+      intended_use: >-
+        Operator-directed manual observation of specific first-party
+        commanders.com articles named in issue #3; per-item admission with
+        excerpt-only retention; no systematic retrieval.
+      acquisition_methods: [operator-manual-observation]
+      retention_modes: [excerpt, reference_only]
+      reportability: [internal]
+      rights_disposition_ref: >-
+        NFL club-platform terms prohibit systematic retrieval; admission is
+        manual, per-instance, excerpt-scoped (see README §3.2).
+    - source_family_id: tiber-governed-artifacts
+      intended_use: >-
+        Pinned TIBER-Data/TIBER-Fantasy artifacts (readiness audits, roster
+        map, post-cutoff ledger records) as governed evidence and as evidence
+        of witness absence.
+      acquisition_methods: [governed-artifact-pin]
+      retention_modes: [reference_only]
+      reportability: [internal]
+      rights_disposition_ref: TIBER-owned or already-governed artifacts.
+  evidence_classes: [governed_tiber_artifact, operator_provided_observation]
+  default_retention_mode: excerpt
+  required_replayability: lineage_only
+research_context:
+  context_id: context-was-2026-camp-tunsil-shock
+  context_class: pilot_baseline
+  description: >-
+    Washington Commanders, 2026 training camp/preseason, post-2026-08-08
+    Tunsil injury, pre-season-start; protection burden redistribution study.
+  dimensions:
+    team: WAS
+    season: 2026
+    phase: training-camp-preseason
+    event: tunsil-torn-triceps-2026-08-08
+context_policy:
+  allowed_context_classes: [pilot_baseline, pinned_tiber_artifact, admitted_public_evidence]
+  prohibited_context_classes: [private_user_context, hidden_reasoning, provider_memory]
+  privacy_ceiling: public
+capabilities:
+  tools: [file-read, file-write-run-scope]
+  network: denied
+  repository_read: [docs, schemas, src]
+  # OPERATOR-INPUT (README §3.6): exact permitted run write path.
+  repository_write: [runs/tunsil-absence-shock-v0]
+authority:
+  ceiling: research_custody_only
+  prohibited_actions:
+    - source_acquisition
+    - modify_source_repository
+    - modify_ops
+    - modify_harness
+    - modify_strategy
+    - modify_forecast
+    - modify_product
+    - promotion
+    - publication
+    - scheduling
+    - private_context_access
+  human_decision_owner: Joseph (@Prometheus-Frameworks)
+  amendment_owner: Joseph (@Prometheus-Frameworks)
+  consumer_authority: none
+actor_roles:
+  executor: single_writer
+  reviewer: fresh_context_read_only
+# OPERATOR-INPUT (README §3.5): budgets and cost approval.
+budgets:
+  wall_clock_minutes: 240
+  tool_calls: 400
+  evidence_objects: 40
+gates:
+  checkpoint_required: true
+  cold_resume_required: true
+  self_challenge_required: true
+  independent_review_required: true
+  single_writer_required: true
+stop_conditions:
+  - Stop after one packet is submitted, reviewed, and sealed.
+cancellation_conditions:
+  - Cancel on an explicit operator cancellation record.
+blocked_conditions:
+  - Block if no admitted evidence path supports at least one full claim →
+    counterevidence → challenge → packet → review → seal path.
+inconclusive_conditions:
+  - Mark inconclusive where admitted evidence cannot assess a claim; do not
+    substitute proxies for missing route, protection, pressure, or
+    availability witnesses.
+escalation_conditions:
+  - Escalate any request for network access, source acquisition, proxy
+    fabrication, or downstream mutation.
+response_branches:
+  - branch_id: h1-replacement-holds
+    label: H1 — Replacement holds
+    description: Coleman remains serviceable without materially greater help.
+    expected_signals:
+      - Stable chip/double-team and six-/seven-man protection rates.
+      - Stable quick-pressure and sack rates.
+      - Stable play-action/deep-attempt profile.
+      - Stable McLaurin air-yard opportunity.
+      - No meaningful White/Croskey-Merritt passing-down redistribution
+        attributable to protection.
+  - branch_id: h2-successful-adaptation
+    label: H2 — Successful adaptation
+    description: >-
+      Washington preserves quarterback conditions by redistributing
+      protection and changing play design.
+    expected_signals:
+      - More chips, double teams, tight-end or running-back protection.
+      - More quick game, under-center play action, movement, or rollouts.
+      - McLaurin target opportunity holding better than target depth or
+        explosive efficiency.
+      - White gaining passing-down snaps, with routes and pass blocks
+        reported separately.
+      - Croskey-Merritt early-down rushing remaining more stable than his
+        third-down/two-minute role.
+  - branch_id: h3-protection-failure
+    label: H3 — Protection failure
+    description: Adaptation does not fully compensate for the replacement.
+    expected_signals:
+      - Higher quick-pressure, pressure-to-sack, hit, throwaway, or scramble
+        rates.
+      - Lower depth of target and explosive-pass frequency.
+      - Fewer sustained and scoring drives.
+      - Lower passing efficiency for Daniels.
+      - Offense-wide efficiency pressure that cannot be represented as one
+        player's lost workload.
+terminal_decisions:
+  - decision: tunsil_absence_shock_v0_complete
+    class: complete
+  - decision: tunsil_absence_shock_v0_requires_data_followup
+    class: requires_data_followup
+  - decision: tunsil_absence_shock_v0_blocked
+    class: blocked
+terminal_states:
+  process: [completed, blocked, cancelled, budget_exhausted, protocol_violation]
+  completion: [answered, inconclusive, blocked]
+  review: [pass, rework_required, reject, not_reached]
+reportability: internal
