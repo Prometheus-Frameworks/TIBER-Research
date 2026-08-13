@@ -56,7 +56,7 @@ contracts (`schemas/v1/*`), and `src/preflight.ts` gates:
 | Event recorded post-cutoff | ✅ five candidate ledger records on TIBER-Fantasy main (PR #322), explicitly pre-baseline |
 | Upstream evidence boundaries documented | ✅ all four TIBER-Data readiness audits merged (#247 route/snap, #248 ADP, #249 player-state, #250 depth chart) — these are now **governed, pinnable artifacts** the frozen inputs can cite as evidence that the quantitative witnesses do not exist |
 | Governed skill-subject identities | ✅ from the source-backed roster map: McLaurin `00-0035659`, Daniels `00-0039910`, White `00-0037256`, Croskey-Merritt `00-0040242`; context subjects Diggs `00-0031588`, McNichols `00-0033955`, Okonkwo `00-0037809` |
-| OL identities | ❌ Tunsil, Coleman, Paul, Conerly Jr., Wylie are **outside the governed skill-position population** — no governed GSIS binding exists; they require explicit **run-scoped identities** (permitted by the protocol; guessing is prohibited) |
+| OL identities | ❌ Tunsil and Coleman are **outside the governed skill-position population** — no governed GSIS binding exists; they require explicit **run-scoped identities** (permitted by the protocol; guessing is prohibited). The remaining line (Paul, Conerly Jr., Wylie) is modeled as **one composite line-configuration subject**, not individual subject identities (see §3.3) |
 | Seed evidence admission | ❌ none of the nine issue #3 seed references is admitted; each needs a per-item operator admission decision (see §3.2) |
 | Preflight package for this job | ❌ does not exist |
 | Activation authority | ❌ does not exist |
@@ -69,11 +69,24 @@ that can be executed once these are bound.
 
 ### 3.1 Cutoff
 
-One exact `cutoff_at` instant. Candidate anchors, operator to pick one:
-- `2026-08-12T22:08:51Z` — the issue #3 posting instant (everything in the
-  issue is then pre-cutoff by construction), or
-- a fresh instant at activation time (later medical/practice observations
-  before that instant become admissible; nothing after it may leak backward).
+One exact `cutoff_at` instant. **Recommended default: a fresh cutoff bound
+after the manual admission receipts are created** — admission first, then
+cutoff, so every admitted source carries an honest `retrieved_at` /
+`admissible_at` ≤ `cutoff_at` with no backdating. Sequencing: operator
+directs the manual observations (§3.2) → receipts are written with their
+true retrieval clocks → the operator binds `cutoff_at` at or after the last
+`admissible_at` → freeze. Later medical/practice observations before that
+instant become admissible; nothing after it may leak backward.
+
+The issue-posting instant (`2026-08-12T22:08:51Z`) is viable **only if**
+trustworthy pre-cutoff retrieval/availability receipts for the external
+pages already exist and validate — they do not today. The issue text itself
+being pre-cutoff does not make the seven external commanders.com pages
+pre-cutoff: a page admitted after a cutoff cannot be made pre-cutoff merely
+because its URL or a summary appeared in the issue, and retrieval clocks are
+never backdated nor page state assumed immutable. The issue *artifact* can
+be admitted against either cutoff; the *pages* cannot be admitted against
+the earlier one.
 
 ### 3.2 Source admission decisions (per item, none inferred)
 
@@ -105,10 +118,16 @@ acquisition method, retention mode, reportability, and rights treatment:
 
 - Confirm the seven governed GSIS bindings above (re-resolved at freeze from
   pinned artifacts, not from this document).
-- Approve **run-scoped identities** for the five OL subjects (Tunsil,
-  Coleman, Paul, Conerly Jr., Wylie) — name+team+position bound to the run,
-  explicitly marked non-canonical, with an RFI routed to TIBER-Data for OL
-  identity coverage.
+- Approve the **subject grain for the line** (single model, applied
+  consistently in job and inputs): **run-scoped individual identities for
+  Tunsil and Coleman only** (name+team+position bound to the run, explicitly
+  marked non-canonical), plus **one composite
+  `was-oline-configuration` subject** for the surrounding line, inside whose
+  label Paul, Conerly Jr., and Wylie appear as configuration facts — not as
+  required individual subject identities. This matches the issue's bounded
+  subject "Brandon Coleman and the immediate Washington offensive-line
+  configuration" and the candidate job draft. An RFI routes to TIBER-Data
+  for OL identity coverage regardless.
 - Confirm the closed comparison population: the three context-only subjects,
   and nothing else (no roster expansion).
 

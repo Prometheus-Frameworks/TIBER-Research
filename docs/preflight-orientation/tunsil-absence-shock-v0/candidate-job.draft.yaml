@@ -89,10 +89,13 @@ comparison_population:
       kind: player
       aliases: ["gsis 00-0037809"]
 baseline_ref: null
-# OPERATOR-INPUT (README §3.1): exact cutoff instant. Candidate anchor below
-# is the issue #3 posting instant; the operator may instead bind a fresh
-# activation-time instant.
-cutoff_at: "2026-08-12T22:08:51Z"
+# OPERATOR-INPUT (README §3.1): exact cutoff instant. Recommended default is
+# a FRESH cutoff bound after the manual admission receipts exist (admission
+# first, then cutoff), so every external page carries an honest retrieval
+# clock <= cutoff. The issue-posting instant is viable only if pre-cutoff
+# retrieval receipts already exist — they do not today. The value below is a
+# schema-shape placeholder only, not a proposed binding.
+cutoff_at: "2026-08-14T00:00:00Z"
 time_horizon: >-
   2026 training-camp/preseason window from the 2026-08-08 injury event to the
   activated cutoff; no regular-season observations exist inside the window.
