@@ -34,8 +34,9 @@ shape documentation and are **not** committed to this repository.
   4:00 p.m. New York time"); per-day editions are themselves the clock.
 - **Failure modes:** platform migration already happened once; AEM
   instability observed.
-- **Verdict:** **BLOCKER — credentialed-media gate.** Nothing may be retained
-  or redistributed. Evaluated and excluded.
+- **Verdict:** TIBER policy state **`not_admitted`** — credentialed-media
+  gate; no access lane exists without credentials TIBER does not hold, so no
+  retention or redistribution question even arises. Evaluated and excluded.
 
 ## Candidate 1b — NFL.com public injuries pages (`www.nfl.com/injuries/…`, `/inactives/`)
 
@@ -82,11 +83,14 @@ shape documentation and are **not** committed to this repository.
   exhaustively probed (by design).
 - **Schema stability:** plain HTML table; page redesigned before; the routing
   anomaly is itself a stability warning.
-- **Verdict:** canonical official content; underlying facts uncopyrightable;
-  but the ToS systematic-retrieval clause is an explicit contractual
-  prohibition on exactly what a pipeline does. Raw HTML: no. Normalized
-  facts: legally arguable (facts doctrine + browsewrap enforceability) but
-  **recorded as BLOCKER pending counsel** — public reachability ≠ permission.
+- **Verdict:** canonical official content, and the ToS systematic-retrieval
+  clause on its face describes exactly what a pipeline does. Whether the
+  underlying facts are protectable, and whether the browsewrap is
+  enforceable against fact extraction, are **counsel questions this audit
+  does not adjudicate** (routed in the unresolved-questions section). TIBER
+  policy state: **`rights_admission_blocked_pending_review`** — raw HTML not
+  retained; normalized-fact admission refused pending counsel review; public
+  reachability ≠ permission.
 
 ## Candidate 2 — First-party club sites (sampled: Philadelphia Eagles)
 
@@ -100,8 +104,9 @@ shape documentation and are **not** committed to this repository.
   prohibition, personal non-commercial use, identical spider/robot clause.
   Confirms TIBER's prior audits (NFL Enterprises, Arizona Cardinals): the
   prohibition is platform-wide; 32 separate club contracts would apply.
-- **Verdict:** **BLOCKER, same as 1b, multiplied by 32 counterparties.**
-  Strictly dominated by the NFL.com league page. Excluded.
+- **Verdict:** TIBER policy state **`not_admitted`** — same facial-terms
+  posture as 1b, multiplied across 32 club counterparties, and strictly
+  dominated by the NFL.com league page. Excluded.
 
 ## Candidate 3 — ESPN site API (`site.api.espn.com`)
 
@@ -121,11 +126,13 @@ shape documentation and are **not** committed to this repository.
   - `details.type` = 30 body-part values incl. `Knee - ACL`, `Concussion`.
   - Per-item `date` to the minute plus `details.returnDate`.
 - **Load-bearing caveat:** `longComment`/`shortComment` are **editorial
-  fantasy-news prose with reporter attribution** — classic copyrightable
-  expression, categorically different from the status facts. No official
-  per-day practice participation; no gameday inactives; `status` is ESPN's
-  synthesis (fresher than official reports in preseason, but not the official
-  record).
+  fantasy-news prose with reporter attribution** — expressive editorial
+  content, categorically different in kind from the status facts, and
+  treated by TIBER policy as protected expression (protectability is a
+  counsel question; the conservative treatment does not depend on its
+  answer). No official per-day practice participation; no gameday inactives;
+  `status` is ESPN's synthesis (fresher than official reports in preseason,
+  but not the official record).
 - **Auth/robots/ToS:** no auth. `site.api.espn.com/robots.txt` → **403 (none
   served)**. The endpoint is **undocumented and unlicensed** (ESPN's public
   developer program shut down in the mid-2010s). Governing instrument is the
@@ -143,14 +150,19 @@ shape documentation and are **not** committed to this repository.
   robots at all, so the exception cannot be affirmatively claimed there.
 - **Identity:** ESPN athlete id; crosswalk to gsis via nflverse
   `ff_playerids` — feasible, good coverage for rostered skill players.
-- **Backfill:** none — current-state snapshot; history only by archiving it
-  yourself (which is precisely the systematic collection the ToU prohibits).
+- **Backfill:** none — current-state snapshot; history would require
+  archiving it yourself, which is the systematic-collection pattern the ToU
+  text facially prohibits.
 - **Stability:** informally stable for years per community usage; zero
   contract; known intermittent 403s/shape drift reports.
 - **Verdict:** technically the **best open-reachability signal with real
-  clocks**, but the rights posture is the worst evaluated. **Raw content
-  (especially comments): never. Normalized facts: contractually prohibited as
-  read; BLOCKER pending counsel.**
+  clocks**, but the most restrictive terms text observed in this audit.
+  TIBER policy state: **`rights_admission_blocked_pending_review`** — no
+  retention of raw content (the editorial comment fields in particular are
+  treated as protected expression under TIBER policy), no normalized-fact
+  admission while the ToU text facially prohibits the intended use;
+  enforceability and implied-license questions are routed to counsel, not
+  answered here.
 
 ## Candidate 4 — ESPN core API (`sports.core.api.espn.com`)
 
@@ -161,8 +173,9 @@ shape documentation and are **not** committed to this repository.
 - **Differences vs #3:** N+1 fetch pattern — strictly **worse politeness
   economics** (hundreds of requests per league snapshot vs one); slight plus:
   per-athlete per-season history. robots → 403 (none served).
-- **Verdict:** same owner, same ToU, same BLOCKER; dominated by #3 on every
-  axis except per-athlete history. Use only as a schema cross-check.
+- **Verdict:** same owner, same ToU, same
+  `rights_admission_blocked_pending_review` policy state; dominated by #3 on
+  every axis except per-athlete history. Use only as a schema cross-check.
 
 ## Candidate 5 — Sleeper players dump (`api.sleeper.app/v1/players/nfl`)
 
@@ -211,13 +224,15 @@ shape documentation and are **not** committed to this repository.
   (`practice_participation` looks vestigial); no changelog; `NA`/`DNR`/`COV`
   under-documented.
 - **Verdict:** the **only candidate whose owner affirmatively documents free
-  automated access with an explicit rate budget.** Tension: docs say "free
-  for non-commercial," ToU says "personal and non-commercial" and no
-  redistribution. **Normalized facts retained inside TIBER for a free,
-  no-paywall product: plausibly consistent with the documented free-API
-  intent but not clearly licensed; raw-dump redistribution: not licensed;
-  upstream contribution: not licensed.** Best-available for TIBER-internal
-  use, with a written-clarification blocker on redistribution.
+  automated access with an explicit rate budget.** Tension in the observed
+  text: docs say "free for non-commercial," ToU says "personal and
+  non-commercial," and **no redistribution grant is observed anywhere**.
+  TIBER policy state: **`rights_admission_blocked_pending_review`** —
+  whether TIBER's free/no-paywall product fits "non-commercial," and whether
+  normalized-fact retention counts as redistribution, are questions only
+  Sleeper or counsel can answer (routed below); admission is refused until
+  one of them does. Best-positioned candidate for a future TIBER-internal
+  lane *if* those clarifications resolve favorably.
 
 ## Candidate 6 — Commercial comparison rows (recorded, excluded from the open question)
 
@@ -236,8 +251,10 @@ shape documentation and are **not** committed to this repository.
   `https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2025.csv`
   (+ `.parquet`), 200, public, no auth. **`injuries_2026.*` → 404** (not yet
   started/restored).
-- **Observed content (2025):** 6,068 rows; **full coverage REG weeks 1–18
-  plus WC/DIV/CON/SB**; 16 columns (`season, season_type, game_type, team,
+- **Observed content (2025):** 6,068 rows; **rows present for all 32 teams
+  across REG weeks 1–18 plus WC/DIV/CON/SB** (an operational observation of
+  the artifact — no authoritative expected-row census exists to assess
+  completeness against); 16 columns (`season, season_type, game_type, team,
   week, gsis_id, position, full_name, first_name, last_name,
   report_primary_injury, report_secondary_injury, report_status,
   practice_primary_injury, practice_secondary_injury, practice_status`).
@@ -277,7 +294,7 @@ ESPN team-page `?enable=injuries` variants (shape-identical to #3).
 | Clocks in payload | per-day editions | **none** | none | ✔ top-level + per-item ISO minute | ✔ per-item | `news_updated` epoch-ms | **none** (`date_modified` gone in 2025) | ✔ |
 | 2025 backfill | gated | ✔ week pages | partial | ✖ | ✖ | ✖ | **✔ full incl. playoffs** | ✔ (paid) |
 | Rate guidance | n/a | none | none | none (1 call = league) | none (N+1) | **stated: <1000/min; players 1×/day** | GitHub CDN | contractual |
-| Retain/redistribute verdict | neither | facts arguable, **BLOCKER** | neither (dominated) | **neither as read; BLOCKER** | same | facts internal: plausible; redistribution: **BLOCKER** | open in practice; chain-of-rights unresolved | per contract only |
+| TIBER admission state (policy, not law) | `not_admitted` (gated) | `rights_admission_blocked_pending_review` | `not_admitted` (dominated) | `rights_admission_blocked_pending_review` | same | `rights_admission_blocked_pending_review` (Sleeper/counsel clarification) | candidate; chain-of-rights unresolved | commercial; out of open-source scope |
 
 ## Preliminary ranking (frank)
 
@@ -293,13 +310,14 @@ ESPN team-page `?enable=injuries` variants (shape-identical to #3).
    public product, no practice status, no history, weak native gsis.
 3. **NFL.com injuries + inactives pages** — canonical content, uniquely
    covers gameday inactives, robots-permitted; dominant blocker is the
-   express systematic-retrieval ToS clause; also no timestamps and a live
-   routing anomaly.
+   pending-review policy state driven by the facial systematic-retrieval ToS
+   clause; also no timestamps and a live routing anomaly.
 4. **ESPN site API** — best clocks and reserve-list detail, one-call league
-   snapshot; dominant blocker is the harshest posture evaluated; editorial
-   comment fields are radioactive and must never be stored.
-5. **ESPN core API** — same rights blocker, worse politeness economics.
-6. **media.nfl.com PDFs / club sites** — excluded.
+   snapshot; dominant blocker is the most restrictive terms text observed in
+   this audit; TIBER policy retains no editorial comment content absent an
+   authorized legal determination.
+5. **ESPN core API** — same policy state, worse politeness economics.
+6. **media.nfl.com PDFs / club sites** — `not_admitted`.
 
 ### (b) Upstream / nflverse contribution potential
 
@@ -312,16 +330,18 @@ ESPN team-page `?enable=injuries` variants (shape-identical to #3).
 2. **NFL.com pages as the pipeline's source** — content-canonical,
    robots-permitted, but the ToS clause means the pipeline operator carries
    the risk; that is the ecosystem status quo, not a new grant.
-3. **ESPN and Sleeper: unsuitable upstream.** ESPN's ToU prohibits
-   redistribution outright; Sleeper's free API is non-commercial/
-   no-redistribution and its vocabulary is non-official; both are keyed to
-   non-gsis IDs.
+3. **ESPN and Sleeper: unsuitable upstream.** ESPN's ToU text facially
+   prohibits redistribution; Sleeper's observed license is non-commercial
+   with no redistribution grant, and its vocabulary is non-official; both
+   are keyed to non-gsis IDs.
 
 ## Unresolved questions only rights counsel or the source owner can answer
 
-1. **NFL ToS scope:** does extraction of *unprotectable facts* survive the
-   §1.3 systematic-retrieval clause (browsewrap enforceability;
-   hiQ/Van Buren-line reasoning)? The text as written prohibits it.
+1. **NFL ToS scope:** does extraction of the underlying facts survive the
+   §1.3 systematic-retrieval clause (fact protectability; browsewrap
+   enforceability; hiQ/Van Buren-line reasoning)? The clause text on its
+   face describes the pipeline pattern; whether it binds is the counsel
+   question.
 2. **Sleeper's "non-commercial":** does a free, open-source, no-paywall
    analytics product qualify? Does "reach out… to discuss licensing" apply to
    normalized facts as well as raw payloads? Only Sleeper can say (contact

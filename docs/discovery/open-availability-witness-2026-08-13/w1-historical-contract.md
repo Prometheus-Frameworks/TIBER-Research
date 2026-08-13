@@ -10,8 +10,11 @@ it is now stale. The historical upstream (NFL Data Exchange at `nfl.info`,
 authenticated `media/media`) did die after the 2024 season, and no in-season
 2025 data was ever published. However, on **2026-03-18** maintainer mrcaseb
 replaced the scraper's source with the private `nflverse/nflapi` package and
-**retroactively backfilled a complete 2025 season file** (`injuries_2025.*`,
-weeks 1–22 incl. Super Bowl) to the nflverse-data `injuries` release — with a
+**retroactively backfilled a full-season 2025 file** (`injuries_2025.*`,
+weeks 1–22 incl. Super Bowl; "full-season" is operational — rows observed
+for all 32 teams across every week, with no authoritative expected-row
+census to assess completeness against) to the nflverse-data `injuries`
+release — with a
 **schema drift** (adds `season_type`, **drops `date_modified`**). The nflreadr
 documentation ("no 2025 data") has not been updated and now contradicts the
 release assets. TIBER's rejection of nflverse injuries for current-2026 lanes

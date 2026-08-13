@@ -20,6 +20,20 @@ with pinned evidence are in this directory:
 - [`w2-upstream-ownership.md`](w2-upstream-ownership.md)
 - [`w3-candidate-matrix.md`](w3-candidate-matrix.md)
 
+**Rights vocabulary.** This packet is a discovery audit, not a legal
+opinion, and no authorized legal determination exists behind any statement
+in it. It separates three things: (a) **empirical observations** — quoted,
+pinned terms/robots/license text with observed revision dates; (b) **TIBER
+policy states** — `not_admitted` (TIBER has not admitted the source) and
+`rights_admission_blocked_pending_review` (admission refused while the
+observed terms text facially restricts the intended use and/or the rights
+state is unknown, pending counsel review); and (c) **counsel questions** —
+enforceability, protectability, and inherited-rights questions, which are
+routed in the open-questions table and adjudicated nowhere in this packet.
+Fail-closed behavior is unchanged: TIBER refuses admission while rights are
+unknown or facially adverse; that refusal is TIBER's posture, not a claim
+about what the law permits or prohibits.
+
 ---
 
 ## Headline findings (these change the issue's premise)
@@ -28,8 +42,10 @@ with pinned evidence are in this directory:
    (NFL Data Exchange at `nfl.info`) did die after the 2024 season, exactly as
    the pinned vignette says — but on **2026-03-18** the maintainer replaced the
    scraper's upstream with the **private `nflverse/nflapi`** package and
-   **retroactively backfilled a complete `injuries_2025` file** (6,068 rows,
-   REG weeks 1–18 + full postseason, all 32 teams, `gsis_id` fully populated)
+   **retroactively backfilled a full-season `injuries_2025` file** — defined
+   operationally as the observed artifact: 6,068 rows spanning all 32 teams,
+   REG weeks 1–18 plus WC/DIV/CON/SB, `gsis_id` fully populated; no
+   authoritative expected-row census exists to assess completeness against —
    to the public nflverse-data release. The nflreadr vignette and data
    dictionary still say "no 2025 data" — the documentation now contradicts the
    release assets. Independently confirmed by W1 (commit `dbea11a`, patch
@@ -48,17 +64,23 @@ with pinned evidence are in this directory:
    of nflverse injuries for current-2026 lanes therefore remains correct
    today, and the open gap is **in-season 2026 latency and continuity**, not
    2025 existence.
-4. **Every non-nflverse open candidate is rights-blocked as read.** NFL.com's
-   pages are robots-permitted but its ToS expressly prohibits systematic
-   retrieval; all 32 club sites carry the identical platform boilerplate;
-   ESPN's undocumented endpoints sit under the Disney ToU (no automation, no
-   AI use, no commercial use, no redistribution, plus an explicit
-   `anthropic-ai` robots block on the parent property); the official
+4. **No non-nflverse open candidate is admissible today under TIBER policy.**
+   The empirical record: NFL.com's pages are robots-permitted but its ToS
+   text on its face prohibits systematic retrieval; all 32 club sites carry
+   the identical platform boilerplate; ESPN's undocumented endpoints sit
+   under the Disney ToU, whose text on its face prohibits automation,
+   AI-tool use, commercial use, and redistribution, with an explicit
+   `anthropic-ai` robots disallow on the parent property; the official
    media.nfl.com injury-report PDFs are behind a media-credential gate.
-   Sleeper is the only owner-documented free API, but its license is
-   personal/non-commercial with no redistribution, and it carries no practice
-   status. Unknown or adverse rights state is recorded as a blocker
-   throughout — nothing in this packet infers permission from reachability.
+   Sleeper is the only owner-documented free API, but its stated license is
+   personal/non-commercial with no redistribution grant observed, and it
+   carries no practice status. TIBER's recorded policy state for each is
+   `not_admitted` or `rights_admission_blocked_pending_review` — a statement
+   about TIBER's admission posture, **not** a legal determination of what
+   any party may or may not do; enforceability and scope questions are
+   routed to rights counsel in the open-questions table. Nothing in this
+   packet infers permission from reachability, and nothing in it
+   adjudicates law.
 
 ## W1 — historical contract (summary)
 
@@ -129,18 +151,22 @@ Full per-candidate qualification, comparison matrix, and quoted terms in
    are vestigial), native `gsis_id` coverage only ~16% (crosswalk via
    `ff_playerids` required).
 3. **NFL.com injuries + inactives pages** — canonical content, uniquely
-   carries gameday inactives, robots-permitted paths; blocked by the express
-   systematic-retrieval ToS clause; no timestamps in markup; a live routing
-   anomaly (`REG18` URL serving a week-1-titled page) is its own stability
-   warning.
+   carries gameday inactives, robots-permitted paths; TIBER policy state
+   `rights_admission_blocked_pending_review` (the ToS text on its face
+   prohibits systematic retrieval; enforceability/scope is a counsel
+   question); no timestamps in markup; a live routing anomaly (`REG18` URL
+   serving a week-1-titled page) is its own stability warning.
 4. **ESPN site API** — best clocks and reserve-list detail, one call returns
-   the league; **worst rights posture evaluated** (Disney ToU automation/AI/
-   commercial/redistribution bans; `anthropic-ai` explicitly disallowed on
-   the parent property; editorial comment fields are copyrightable expression
-   and must never be stored). ESPN core API: same posture, worse politeness
-   economics.
-5. **media.nfl.com PDFs / club sites** — excluded (credential gate; 32×
-   identical contractual prohibition).
+   the league; **the most restrictive terms text observed in this audit**
+   (Disney ToU automation/AI/commercial/redistribution prohibitions on their
+   face; `anthropic-ai` explicitly disallowed on the parent property).
+   Editorial comment fields are expressive editorial content: TIBER policy
+   is to retain none of it absent an authorized legal determination. Policy
+   state `rights_admission_blocked_pending_review`. ESPN core API: same
+   posture, worse politeness economics.
+5. **media.nfl.com PDFs / club sites** — `not_admitted` (credential gate; 32
+   club sites carry the identical facial prohibition on systematic
+   retrieval).
 
 Commercial comparison rows (excluded from the open question): MySportsFeeds
 (registration/patronage-gated non-commercial tier, paid commercial license) and
@@ -150,7 +176,8 @@ SportsDataIO (enterprise sales) both fail free/open/redistributable.
 **helping maintain/harden the existing nflverse injuries pipeline** — the
 2025 asset already exists; the valuable contribution is 2026 in-season
 continuity plus reinstating a revision/observation clock. ESPN and Sleeper
-are unsuitable upstream donors (rights posture; non-official vocabulary).
+are unsuitable upstream donors (facial terms posture; no redistribution
+grant observed; non-official vocabulary).
 
 ## Implications for W4–W6 (preliminary, for operator discussion)
 
