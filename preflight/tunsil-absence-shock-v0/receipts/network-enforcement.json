@@ -33,11 +33,11 @@
   "observation_method": "network_enforcement_observation",
   "observation_policy_ref": {
     "artifact_type": "observation_policy",
-    "digest": "sha256:1eb11037ed4ecbbffae5576d55c1c9c6a337d1c9f3defd580d49f63bc58f42df",
+    "digest": "sha256:c82d9bcbd53378c4721e7fb0de2bc7a72ecd7d231ebf1db57def21a588a85144",
     "digest_mode": "tiber-canonical-json-v1",
     "path": "preflight/tunsil-absence-shock-v0/controls/observation-policy.json"
   },
-  "observed_at": "2026-08-13T18:53:09Z",
+  "observed_at": "2026-08-13T22:25:19Z",
   "observer": {
     "observer_id": "claude-lane executor session (Claude Code Remote managed container)",
     "role": "trusted_runner",
@@ -45,6 +45,6 @@
   },
   "receipt_id": "network-enforcement-tunsil-absence-shock-v0",
   "schema_version": "research-network-enforcement-receipt/v1",
-  "valid_from": "2026-08-13T18:53:09Z",
-  "valid_until": "2026-08-14T18:53:09Z"
+  "valid_from": "2026-08-13T22:25:19Z",
+  "valid_until": "2026-08-14T22:25:19Z"
 }

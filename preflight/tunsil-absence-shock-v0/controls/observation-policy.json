@@ -15,6 +15,14 @@
       "boundary_type": "runner_protocol_attestation",
       "method": "network_enforcement_observation",
       "trust_basis": "Operator-designated enforcement observer per the activate_run decision (issue #3 comment 5283843131): enforcement for this run is executor-protocol level with post-hoc verifiability via the hash-chained run ledger; the observer is the executor lane itself, not an independent runner."
+    },
+    {
+      "actor_id": "claude-lane",
+      "actor_role": "trusted_runner",
+      "boundary_id": "tiber-governed-repositories",
+      "boundary_type": "governed_repository",
+      "method": "repository_blob_verification",
+      "trust_basis": "Operator-designated executor lane per the v2 activate_run decision (issue #3 comment 5287019126); verification recomputes the sha256 of the git blob bytes at the pinned commit in the artifact's home repository."
     }
   ],
   "policy_id": "tunsil-absence-shock-v0-observation",

@@ -1,0 +1,7 @@
+{
+  "chronology_rule": "effective_at_lte_freshness_as_of_lte_verified_at",
+  "current_state_rule": "current_requires_exact_governing_manifest_and_authority",
+  "cutoff_rule": "freshness_as_of_lte_cutoff_at",
+  "policy_id": "tunsil-absence-shock-v0-freshness",
+  "schema_version": "research-freshness-policy/v1"
+}

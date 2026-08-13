@@ -1,0 +1,42 @@
+{
+  "approved_artifact_refs": [
+    {
+      "artifact_type": "candidate_job",
+      "digest": "sha256:c09eb383e7225cf9474f455337252143ee2acececad63ce130736cd4bb1c67ae",
+      "digest_mode": "tiber-raw-sha256-v1",
+      "path": "preflight/tunsil-absence-shock-v0/candidate/job.yaml"
+    },
+    {
+      "artifact_type": "candidate_inputs",
+      "digest": "sha256:e1582d95a1bdb18ed610d205d1826102cef13f19015036487d1a5f041a9de6de",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "runs/tunsil-absence-shock-v0/inputs.json"
+    }
+  ],
+  "authority_class": "activate_run",
+  "candidate_run_id": "tunsil-absence-shock-v0",
+  "decision_ref": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/3#issuecomment-5287019126",
+  "exclusions": [
+    "If any required receipt cannot be produced truthfully, any bound digest moves, the reviewed head changes, the package semantics change, or --require-ready does not pass: do not execute, return to activation_ready false, and surface the blocker for fresh review/operator adjudication.",
+    "No new evidence after the cutoff, no browsing for replacement data during execution, no proxies for missing protection/route/pressure/availability fields, no roster or question-scope expansion.",
+    "After execution stop at the completed packet/submission and its independent review; no Forecast, Fantasy, rankings, player cards, Strategy, Teamstate, betting/lineup/trade/waiver advice, or public product mutation; no downstream promotion or publication without a separate operator decision."
+  ],
+  "operator": "Joseph (@Prometheus-Frameworks)",
+  "operator_direction": "I approve activation of the bounded tunsil-absence-shock-v0 Research run against the fresh independently reviewed v2 preflight at TIBER-Research PR #7 head 5089333fa9627e9152cfccbbf439302ee60f9183.",
+  "quote_digest": "sha256:72ab4244cb2d0d1f498ce7e1b9983d843e6e40a6b66a3ec0db9da077374bc5d2",
+  "quote_digest_mode": "tiber-raw-sha256-v1",
+  "recorded_at": "2026-08-13T22:15:22Z",
+  "schema_version": "research-operator-direction-record/v1",
+  "scope": [
+    "Activate the bounded tunsil-absence-shock-v0 Research run against reviewed PR #7 head 5089333fa9627e9152cfccbbf439302ee60f9183, binding candidate job sha256:c09eb383e7225cf9474f455337252143ee2acececad63ce130736cd4bb1c67ae and candidate inputs sha256:e1582d95a1bdb18ed610d205d1826102cef13f19015036487d1a5f041a9de6de.",
+    "Bind cutoff 2026-08-13T14:13:09Z, budgets 240 wall-clock minutes / 400 tool calls / 40 evidence objects, execution network denied with the enforcement boundary truthfully classified as runner_protocol_attestation, write authority bounded to the run-scoped Research paths frozen in the reviewed v2 job envelope, and internal reportability.",
+    "Executor: Claude lane; independent reviewer: GPT-5.6 Sol review lane.",
+    "Before execution: materialize the activation-bound governed-artifact provenance receipts and remaining activation records, bind them to this exact decision and the exact job/inputs identities, then run the full activation validator with --require-ready.",
+    "Once the reviewed activation contract is truthfully materialized and --require-ready passes, execution of this exact bounded run is authorized through packet/submission completion and the bound independent-review step."
+  ],
+  "terminal_outcomes": [
+    "tunsil_absence_shock_v0_complete",
+    "tunsil_absence_shock_v0_requires_data_followup",
+    "tunsil_absence_shock_v0_blocked"
+  ]
+}

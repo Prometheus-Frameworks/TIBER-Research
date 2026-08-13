@@ -11,7 +11,7 @@
   },
   "metadata_digest": "sha256:aa3b5b359ac8e02c5d65e68702b91fba2edb0317c761bf37a17269de479fe459",
   "observation_method": "operator_provided_packet",
-  "observed_at": "2026-08-13T18:53:09Z",
+  "observed_at": "2026-08-13T22:25:19Z",
   "observer": {
     "observer_id": "Joseph (@Prometheus-Frameworks)",
     "role": "operator",
@@ -28,7 +28,7 @@
     "boundary_type": "operator_attestation",
     "policy_ref": {
       "artifact_type": "observation_policy",
-      "digest": "sha256:1eb11037ed4ecbbffae5576d55c1c9c6a337d1c9f3defd580d49f63bc58f42df",
+      "digest": "sha256:c82d9bcbd53378c4721e7fb0de2bc7a72ecd7d231ebf1db57def21a588a85144",
       "digest_mode": "tiber-canonical-json-v1",
       "path": "preflight/tunsil-absence-shock-v0/controls/observation-policy.json"
     }

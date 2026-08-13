@@ -1,0 +1,54 @@
+{
+  "approved_at": "2026-08-13T22:15:22Z",
+  "approved_by": "Joseph (@Prometheus-Frameworks)",
+  "authority_ceiling": "research_custody_only",
+  "budget": {
+    "evidence_objects": 40,
+    "tool_calls": 400,
+    "wall_clock_minutes": 240
+  },
+  "capabilities": {
+    "network": "denied",
+    "repository_read": [
+      "authority",
+      "docs",
+      "preflight/tunsil-absence-shock-v0",
+      "runs/tunsil-absence-shock-v0",
+      "schemas",
+      "src"
+    ],
+    "repository_write": [
+      "runs/tunsil-absence-shock-v0/attempts",
+      "runs/tunsil-absence-shock-v0/run-events.jsonl"
+    ],
+    "tools": [
+      "file-read",
+      "file-write-run-scope"
+    ]
+  },
+  "cutoff_at": "2026-08-13T14:13:09Z",
+  "decision_ref": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/3#issuecomment-5287019126",
+  "decision_type": "activate_run",
+  "exclusions": [
+    "Fail closed on any untruthful receipt, digest movement, head change, semantic change, or --require-ready failure.",
+    "No post-cutoff evidence, browsing, proxies, or scope expansion; no downstream product mutation, promotion, or publication without a separate operator decision."
+  ],
+  "inputs_ref": {
+    "digest": "sha256:e1582d95a1bdb18ed610d205d1826102cef13f19015036487d1a5f041a9de6de",
+    "digest_mode": "tiber-canonical-json-v1",
+    "path": "runs/tunsil-absence-shock-v0/inputs.json"
+  },
+  "job_ref": {
+    "digest": "sha256:c09eb383e7225cf9474f455337252143ee2acececad63ce130736cd4bb1c67ae",
+    "digest_mode": "tiber-raw-sha256-v1",
+    "job_id": "tunsil-absence-shock",
+    "job_version": "v1",
+    "path": "preflight/tunsil-absence-shock-v0/candidate/job.yaml"
+  },
+  "permitted_branch": "claude/tunsil-pilot-preflight",
+  "permitted_path": "runs/tunsil-absence-shock-v0/attempts",
+  "run_id": "tunsil-absence-shock-v0",
+  "schema_version": "research-authority-decision/v0",
+  "scope": "Activate the bounded tunsil-absence-shock-v0 Research run against the reviewed v2 frozen package (issue #3 comment 5287019126), through packet/submission completion and the bound GPT-5.6 Sol independent-review step, under the frozen job contract.",
+  "synthetic_fixture": false
+}

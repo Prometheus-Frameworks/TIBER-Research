@@ -3,6 +3,18 @@
   "candidate_artifact_refs": [
     {
       "artifact_type": "operator_direction_record",
+      "digest": "sha256:4893ba12d4ce2483e66bc3735ae9007b2756f57394f5b9e8d84f55782db98eac",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "preflight/tunsil-absence-shock-v0/authority/issue-3-v2-activation-decision.json"
+    },
+    {
+      "artifact_type": "authority_decision",
+      "digest": "sha256:0f6cf7b3d86fb095130dd331169475ed830156b2378bd82a98d7c4cd7a33dfd7",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "authority/tunsil-absence-shock-v0-activation.json"
+    },
+    {
+      "artifact_type": "prior_operator_direction_record",
       "digest": "sha256:6785363519b7086896ea3ba2fc7579042905463fee0847d7f3a116833b90f92d",
       "digest_mode": "tiber-canonical-json-v1",
       "path": "preflight/tunsil-absence-shock-v0/authority/issue-3-v2-build-authority.json"
@@ -129,7 +141,7 @@
     },
     {
       "artifact_type": "snapshot_index",
-      "digest": "sha256:aa0ec790e25b64c3b99281e6f03e529f242ee39771e9c19f3e8df8305720261a",
+      "digest": "sha256:0dc884ae36f1df6ddb7b2785f06a946c3a1114b1972f4e36ae349ce28f1731bf",
       "digest_mode": "tiber-canonical-json-v1",
       "path": "preflight/tunsil-absence-shock-v0/candidate/snapshot-index.json"
     },
@@ -147,7 +159,7 @@
     },
     {
       "artifact_type": "observation_policy",
-      "digest": "sha256:1eb11037ed4ecbbffae5576d55c1c9c6a337d1c9f3defd580d49f63bc58f42df",
+      "digest": "sha256:c82d9bcbd53378c4721e7fb0de2bc7a72ecd7d231ebf1db57def21a588a85144",
       "digest_mode": "tiber-canonical-json-v1",
       "path": "preflight/tunsil-absence-shock-v0/controls/observation-policy.json"
     },
@@ -180,6 +192,12 @@
       "digest": "sha256:f3eb6293bcd03dc3dd36f4e833dc898f538123b02386b990172ad9af21f07e18",
       "digest_mode": "tiber-raw-sha256-v1",
       "path": "preflight/tunsil-absence-shock-v0/snapshots/issue-3-comment-5286246398.md"
+    },
+    {
+      "artifact_type": "ops_issue_comment_snapshot",
+      "digest": "sha256:bef2df5fa0cc866a886e8e06829e0468e98a7879df04dbece26e120b76396220",
+      "digest_mode": "tiber-raw-sha256-v1",
+      "path": "preflight/tunsil-absence-shock-v0/snapshots/issue-3-comment-5287019126.md"
     },
     {
       "artifact_type": "source_content",
@@ -229,51 +247,106 @@
     "external_source_availability_receipt_refs": [
       {
         "artifact_type": "external_source_availability_receipt",
-        "digest": "sha256:2dda2059d724ef6090a41b5ed5c22f06f92a5d00aed50ac4a8b4e95fe2d05743",
+        "digest": "sha256:0d5ff3a4565aaf31c016f8b0a42b21dddc34af9271eb3db35f696c4059892c68",
         "digest_mode": "tiber-canonical-json-v1",
         "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-notebook-tunsil-out.json"
       },
       {
         "artifact_type": "external_source_availability_receipt",
-        "digest": "sha256:c5d7b2e0747e623aa5701117709347bcd17fb4cf0765ebb4e875a9006f963b57",
+        "digest": "sha256:74401a57295b7f032a390d27ed97d47733b374c8f4566ed01f25db0b8f62ee1f",
         "digest_mode": "tiber-canonical-json-v1",
         "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-coleman-tackle-confidence.json"
       },
       {
         "artifact_type": "external_source_availability_receipt",
-        "digest": "sha256:f85051a72a7c7e2edddc1e12675bef93cfb9274d4da67b543e2617887fc98aa4",
+        "digest": "sha256:1dd451ac2aaedd43e7c3870e1ac8439bbcfaf91e36d92039a559388dd0759207",
         "digest_mode": "tiber-canonical-json-v1",
         "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-2025-oline-review.json"
       },
       {
         "artifact_type": "external_source_availability_receipt",
-        "digest": "sha256:96d399b635b759074c9afe76f859210956291b3b3b905ad78c3f2baf7630f9fe",
+        "digest": "sha256:eeed1bd0a89e56b5f4c1d472da7137720bf52b568392d256d594d2af2fac55cf",
         "digest_mode": "tiber-canonical-json-v1",
         "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-mclaurin-blough-offense.json"
       },
       {
         "artifact_type": "external_source_availability_receipt",
-        "digest": "sha256:00d19c7a220bd4d99901866e716f1dc18dc4aea3c290c214cc56ff42daeb6506",
+        "digest": "sha256:2d88ef40600db80f4f475a88ebcba50fe3aee4526248e8e48888ce42f33a9b1b",
         "digest_mode": "tiber-canonical-json-v1",
         "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-white-five-things.json"
       },
       {
         "artifact_type": "external_source_availability_receipt",
-        "digest": "sha256:f1873f18effeb5958564dedcff1976515b526e84afb025812ae5509598f9f2f6",
+        "digest": "sha256:306608d10cb93248e630281858c4f6117efb67a1f89b1754037d3002da0b851e",
         "digest_mode": "tiber-canonical-json-v1",
         "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-rb-room-competition.json"
       },
       {
         "artifact_type": "external_source_availability_receipt",
-        "digest": "sha256:cfa05b75a136fcf57b15d9ff0c91a4241769236c3dfb1a86f3815ca01d356f5e",
+        "digest": "sha256:2f3c1297fdf332434eaa4845885117e4a30109dfd097700c10545a9eb0b62412",
         "digest_mode": "tiber-canonical-json-v1",
         "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-joint-practice-dolphins.json"
       }
     ],
-    "governed_artifact_provenance_receipt_refs": [],
+    "governed_artifact_provenance_receipt_refs": [
+      {
+        "artifact_type": "governed_artifact_provenance_receipt",
+        "digest": "sha256:df2485688c569d0a3c537622fdca3197308a1b79536f4522f6ede144dd16ec69",
+        "digest_mode": "tiber-canonical-json-v1",
+        "path": "preflight/tunsil-absence-shock-v0/receipts/provenance/tiber-data-offensive-participation-readiness-audit-2026-08-10.json"
+      },
+      {
+        "artifact_type": "governed_artifact_provenance_receipt",
+        "digest": "sha256:50a3f413e230d7eecb2f5f94c7abf4860a7c5b93e85a45a9bbbba4bc987516b7",
+        "digest_mode": "tiber-canonical-json-v1",
+        "path": "preflight/tunsil-absence-shock-v0/receipts/provenance/tiber-data-current-player-state-readiness-audit-2026-08-10.json"
+      },
+      {
+        "artifact_type": "governed_artifact_provenance_receipt",
+        "digest": "sha256:f14eefea0f6f23525a92f4ef36bf5bbf9ec85987f0a82df05c6b326745869f2c",
+        "digest_mode": "tiber-canonical-json-v1",
+        "path": "preflight/tunsil-absence-shock-v0/receipts/provenance/tiber-data-official-depth-chart-pilot-readiness-2026-08-10.json"
+      },
+      {
+        "artifact_type": "governed_artifact_provenance_receipt",
+        "digest": "sha256:a0c83fefaea43876e77331ceefe7aa5afbdaf377389f6fcdef49eb90ad76c4b1",
+        "digest_mode": "tiber-canonical-json-v1",
+        "path": "preflight/tunsil-absence-shock-v0/receipts/provenance/tiber-data-roster-player-team-map-2025-source-backed.json"
+      },
+      {
+        "artifact_type": "governed_artifact_provenance_receipt",
+        "digest": "sha256:d8d0733263eb460b73a59374752e2654a22b2c6005bab710c8dca9486d303a14",
+        "digest_mode": "tiber-canonical-json-v1",
+        "path": "preflight/tunsil-absence-shock-v0/receipts/provenance/tiber-fantasy-pclr-20260812-tunsil-laremy-tunsil-r1.json"
+      },
+      {
+        "artifact_type": "governed_artifact_provenance_receipt",
+        "digest": "sha256:9b6ec79d490bd3e0a769629509d3ad645d0b405dbc47a31001b7f36cf4dd768c",
+        "digest_mode": "tiber-canonical-json-v1",
+        "path": "preflight/tunsil-absence-shock-v0/receipts/provenance/tiber-fantasy-pclr-20260812-tunsil-jayden-daniels-r1.json"
+      },
+      {
+        "artifact_type": "governed_artifact_provenance_receipt",
+        "digest": "sha256:3c69ceb0003ced212f6b9b18a0f5a792efb9c7e878b64e36e8a981c56a2ccc28",
+        "digest_mode": "tiber-canonical-json-v1",
+        "path": "preflight/tunsil-absence-shock-v0/receipts/provenance/tiber-fantasy-pclr-20260812-tunsil-terry-mclaurin-r1.json"
+      },
+      {
+        "artifact_type": "governed_artifact_provenance_receipt",
+        "digest": "sha256:35e5d616cab2f913655e2b09fd513adc9d2e09afd949849b6bf82ff53fd6c265",
+        "digest_mode": "tiber-canonical-json-v1",
+        "path": "preflight/tunsil-absence-shock-v0/receipts/provenance/tiber-fantasy-pclr-20260812-tunsil-rachaad-white-r1.json"
+      },
+      {
+        "artifact_type": "governed_artifact_provenance_receipt",
+        "digest": "sha256:f00cfd893e52a8cde82a4810a40243bea6ad77b5734221cc3de1031382da11ff",
+        "digest_mode": "tiber-canonical-json-v1",
+        "path": "preflight/tunsil-absence-shock-v0/receipts/provenance/tiber-fantasy-pclr-20260812-tunsil-jacory-croskey-merritt-r1.json"
+      }
+    ],
     "network_enforcement_receipt_ref": {
       "artifact_type": "network_enforcement_receipt",
-      "digest": "sha256:a834b5030759942442eea58503836020ee78cb26e19637a03794a1284ef28334",
+      "digest": "sha256:3149cf9b954133fa90ad7eea5acc21684c56b35d6a91999b89e33a671a825d52",
       "digest_mode": "tiber-canonical-json-v1",
       "path": "preflight/tunsil-absence-shock-v0/receipts/network-enforcement.json"
     },
@@ -286,14 +359,14 @@
     "trusted_usage_receipt_refs": []
   },
   "ops_decision": {
-    "decision_ref": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/3#issuecomment-5284914358",
+    "decision_ref": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/3#issuecomment-5287019126",
     "operator": "Joseph (@Prometheus-Frameworks)",
-    "quote_digest": "sha256:ab2587b05a07029167bdc4ae7cdb7a725b1c8e39cb2647fcd4c2ecb694bf4a98",
+    "quote_digest": "sha256:72ab4244cb2d0d1f498ce7e1b9983d843e6e40a6b66a3ec0db9da077374bc5d2",
     "quote_digest_mode": "tiber-raw-sha256-v1",
-    "quote_observed_at": "2026-08-13T18:39:40Z"
+    "quote_observed_at": "2026-08-13T22:15:22Z"
   },
   "preflight_id": "tunsil-absence-shock-v0-preflight",
-  "prepared_at": "2026-08-13T21:58:31Z",
+  "prepared_at": "2026-08-13T22:25:19Z",
   "requirements": [
     {
       "description": "Frozen inputs bind the operator-approved cutoff, context, closed subject grain, nine pinned governed artifacts, seven admitted Manual Witness sources, and five owner-routed blocked inputs (issue #3 comment 5281497231 §2-§4, §9), re-frozen v2 at the activation identity path runs/tunsil-absence-shock-v0/inputs.json with governing-manifest artifact digests per comment 5284914358.",
@@ -375,43 +448,43 @@
       "evidence_refs": [
         {
           "artifact_type": "external_source_availability_receipt",
-          "digest": "sha256:2dda2059d724ef6090a41b5ed5c22f06f92a5d00aed50ac4a8b4e95fe2d05743",
+          "digest": "sha256:0d5ff3a4565aaf31c016f8b0a42b21dddc34af9271eb3db35f696c4059892c68",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-notebook-tunsil-out.json"
         },
         {
           "artifact_type": "external_source_availability_receipt",
-          "digest": "sha256:c5d7b2e0747e623aa5701117709347bcd17fb4cf0765ebb4e875a9006f963b57",
+          "digest": "sha256:74401a57295b7f032a390d27ed97d47733b374c8f4566ed01f25db0b8f62ee1f",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-coleman-tackle-confidence.json"
         },
         {
           "artifact_type": "external_source_availability_receipt",
-          "digest": "sha256:f85051a72a7c7e2edddc1e12675bef93cfb9274d4da67b543e2617887fc98aa4",
+          "digest": "sha256:1dd451ac2aaedd43e7c3870e1ac8439bbcfaf91e36d92039a559388dd0759207",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-2025-oline-review.json"
         },
         {
           "artifact_type": "external_source_availability_receipt",
-          "digest": "sha256:96d399b635b759074c9afe76f859210956291b3b3b905ad78c3f2baf7630f9fe",
+          "digest": "sha256:eeed1bd0a89e56b5f4c1d472da7137720bf52b568392d256d594d2af2fac55cf",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-mclaurin-blough-offense.json"
         },
         {
           "artifact_type": "external_source_availability_receipt",
-          "digest": "sha256:00d19c7a220bd4d99901866e716f1dc18dc4aea3c290c214cc56ff42daeb6506",
+          "digest": "sha256:2d88ef40600db80f4f475a88ebcba50fe3aee4526248e8e48888ce42f33a9b1b",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-white-five-things.json"
         },
         {
           "artifact_type": "external_source_availability_receipt",
-          "digest": "sha256:f1873f18effeb5958564dedcff1976515b526e84afb025812ae5509598f9f2f6",
+          "digest": "sha256:306608d10cb93248e630281858c4f6117efb67a1f89b1754037d3002da0b851e",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-rb-room-competition.json"
         },
         {
           "artifact_type": "external_source_availability_receipt",
-          "digest": "sha256:cfa05b75a136fcf57b15d9ff0c91a4241769236c3dfb1a86f3815ca01d356f5e",
+          "digest": "sha256:2f3c1297fdf332434eaa4845885117e4a30109dfd097700c10545a9eb0b62412",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-joint-practice-dolphins.json"
         }
@@ -420,84 +493,72 @@
       "status": "satisfied"
     },
     {
-      "description": "Nine governed artifacts are pinned with commit and true blob digests (re-verified 9/9 against origin/main), and v2 binds artifact_digest to authored research-governing-manifest/v1 record digests — the semantics v1 provenance receipts require. Receipts themselves remain unresolved for one reason only: they must bind the future digest-bound activate_run authority decision as governing_authority_ref. Under the adjudicated canonical chronology (evidence <= cutoff <= freeze <= activation; issue #3 comment 5286246398) they are fully materializable with this package's real clocks the moment that decision exists, as the regression coverage in test/activation-materialization.test.ts proves.",
+      "description": "All nine governed artifacts carry v1 provenance receipts bound to the exact v2 activate_run authority decision (issue #3 comment 5287019126): identities and true blob digests re-verified 9/9 against the pinned commits at receipt time, artifact digests bound to the promoted governing-manifest records, freshness assessed under the canonical chronology at the verification instant.",
       "evidence_refs": [
         {
-          "artifact_type": "candidate_inputs",
-          "digest": "sha256:e1582d95a1bdb18ed610d205d1826102cef13f19015036487d1a5f041a9de6de",
+          "artifact_type": "governed_artifact_provenance_receipt",
+          "digest": "sha256:df2485688c569d0a3c537622fdca3197308a1b79536f4522f6ede144dd16ec69",
           "digest_mode": "tiber-canonical-json-v1",
-          "path": "runs/tunsil-absence-shock-v0/inputs.json"
+          "path": "preflight/tunsil-absence-shock-v0/receipts/provenance/tiber-data-offensive-participation-readiness-audit-2026-08-10.json"
         },
         {
-          "artifact_type": "governing_manifest",
-          "digest": "sha256:8f800607101137252ed9d0ee031226bf484d0ba1c3d1107957f9e503d24208f0",
+          "artifact_type": "governed_artifact_provenance_receipt",
+          "digest": "sha256:50a3f413e230d7eecb2f5f94c7abf4860a7c5b93e85a45a9bbbba4bc987516b7",
           "digest_mode": "tiber-canonical-json-v1",
-          "path": "preflight/tunsil-absence-shock-v0/governance/tiber-data-offensive-participation-readiness-audit-2026-08-10.json"
+          "path": "preflight/tunsil-absence-shock-v0/receipts/provenance/tiber-data-current-player-state-readiness-audit-2026-08-10.json"
         },
         {
-          "artifact_type": "governing_manifest",
-          "digest": "sha256:e40a11caa5e9591e561a2778f237001740332db62ddadbfba9b81fb58ef87640",
+          "artifact_type": "governed_artifact_provenance_receipt",
+          "digest": "sha256:f14eefea0f6f23525a92f4ef36bf5bbf9ec85987f0a82df05c6b326745869f2c",
           "digest_mode": "tiber-canonical-json-v1",
-          "path": "preflight/tunsil-absence-shock-v0/governance/tiber-data-current-player-state-readiness-audit-2026-08-10.json"
+          "path": "preflight/tunsil-absence-shock-v0/receipts/provenance/tiber-data-official-depth-chart-pilot-readiness-2026-08-10.json"
         },
         {
-          "artifact_type": "governing_manifest",
-          "digest": "sha256:8e0beb79b3a449e0b1960321ee4710ab8f9277389dad0b83daf12bc483e0615f",
+          "artifact_type": "governed_artifact_provenance_receipt",
+          "digest": "sha256:a0c83fefaea43876e77331ceefe7aa5afbdaf377389f6fcdef49eb90ad76c4b1",
           "digest_mode": "tiber-canonical-json-v1",
-          "path": "preflight/tunsil-absence-shock-v0/governance/tiber-data-official-depth-chart-pilot-readiness-2026-08-10.json"
+          "path": "preflight/tunsil-absence-shock-v0/receipts/provenance/tiber-data-roster-player-team-map-2025-source-backed.json"
         },
         {
-          "artifact_type": "governing_manifest",
-          "digest": "sha256:61e490aca0e0d55baf872c4ecff0ae56155941e965f0bfd14bf171d2b8a2b72d",
+          "artifact_type": "governed_artifact_provenance_receipt",
+          "digest": "sha256:d8d0733263eb460b73a59374752e2654a22b2c6005bab710c8dca9486d303a14",
           "digest_mode": "tiber-canonical-json-v1",
-          "path": "preflight/tunsil-absence-shock-v0/governance/tiber-data-roster-player-team-map-2025-source-backed.json"
+          "path": "preflight/tunsil-absence-shock-v0/receipts/provenance/tiber-fantasy-pclr-20260812-tunsil-laremy-tunsil-r1.json"
         },
         {
-          "artifact_type": "governing_manifest",
-          "digest": "sha256:b2dc0a8d3448148919cdc3390e0b16a5d97d7760774338df236da2fb28715c2b",
+          "artifact_type": "governed_artifact_provenance_receipt",
+          "digest": "sha256:9b6ec79d490bd3e0a769629509d3ad645d0b405dbc47a31001b7f36cf4dd768c",
           "digest_mode": "tiber-canonical-json-v1",
-          "path": "preflight/tunsil-absence-shock-v0/governance/tiber-fantasy-pclr-20260812-tunsil-laremy-tunsil-r1.json"
+          "path": "preflight/tunsil-absence-shock-v0/receipts/provenance/tiber-fantasy-pclr-20260812-tunsil-jayden-daniels-r1.json"
         },
         {
-          "artifact_type": "governing_manifest",
-          "digest": "sha256:9ec9d2ef84fd6629da39618326d83c2b829ec546c65bd50543f34cffa8728e65",
+          "artifact_type": "governed_artifact_provenance_receipt",
+          "digest": "sha256:3c69ceb0003ced212f6b9b18a0f5a792efb9c7e878b64e36e8a981c56a2ccc28",
           "digest_mode": "tiber-canonical-json-v1",
-          "path": "preflight/tunsil-absence-shock-v0/governance/tiber-fantasy-pclr-20260812-tunsil-jayden-daniels-r1.json"
+          "path": "preflight/tunsil-absence-shock-v0/receipts/provenance/tiber-fantasy-pclr-20260812-tunsil-terry-mclaurin-r1.json"
         },
         {
-          "artifact_type": "governing_manifest",
-          "digest": "sha256:def9b15f8baf9fa1d79bbd1526218b59d3d9e3fb5b2170b8c36a256353112dcf",
+          "artifact_type": "governed_artifact_provenance_receipt",
+          "digest": "sha256:35e5d616cab2f913655e2b09fd513adc9d2e09afd949849b6bf82ff53fd6c265",
           "digest_mode": "tiber-canonical-json-v1",
-          "path": "preflight/tunsil-absence-shock-v0/governance/tiber-fantasy-pclr-20260812-tunsil-terry-mclaurin-r1.json"
+          "path": "preflight/tunsil-absence-shock-v0/receipts/provenance/tiber-fantasy-pclr-20260812-tunsil-rachaad-white-r1.json"
         },
         {
-          "artifact_type": "governing_manifest",
-          "digest": "sha256:e12e4bad1a26cad4bac37e8b0420056cf8f9325fc5c388e32da298cdaf606536",
+          "artifact_type": "governed_artifact_provenance_receipt",
+          "digest": "sha256:f00cfd893e52a8cde82a4810a40243bea6ad77b5734221cc3de1031382da11ff",
           "digest_mode": "tiber-canonical-json-v1",
-          "path": "preflight/tunsil-absence-shock-v0/governance/tiber-fantasy-pclr-20260812-tunsil-rachaad-white-r1.json"
-        },
-        {
-          "artifact_type": "governing_manifest",
-          "digest": "sha256:cdc1376c2ec3c7d52a633e117eccdaabd48a7dd23f96d27610437e827089b2e4",
-          "digest_mode": "tiber-canonical-json-v1",
-          "path": "preflight/tunsil-absence-shock-v0/governance/tiber-fantasy-pclr-20260812-tunsil-jacory-croskey-merritt-r1.json"
-        },
-        {
-          "artifact_type": "activation_contract_derivation",
-          "digest": "sha256:427d42c1db881b6a56080af8dbf2f5a0502d878a304885108f639ff33f8a0b94",
-          "digest_mode": "tiber-raw-sha256-v1",
-          "path": "preflight/tunsil-absence-shock-v0/candidate/activation-contract-derivation.md"
+          "path": "preflight/tunsil-absence-shock-v0/receipts/provenance/tiber-fantasy-pclr-20260812-tunsil-jacory-croskey-merritt-r1.json"
         }
       ],
       "requirement_id": "governed-artifact-provenance",
-      "status": "unresolved"
+      "status": "satisfied"
     },
     {
       "description": "The trusted denied-network enforcement receipt required by the operator is present: the operator-designated executor-lane observer attests the denied profile, deny default, empty destination set, and the frozen capability envelope for the execution environment, with protocol-level enforcement and its limitations stated plainly in the receipt.",
       "evidence_refs": [
         {
           "artifact_type": "network_enforcement_receipt",
-          "digest": "sha256:a834b5030759942442eea58503836020ee78cb26e19637a03794a1284ef28334",
+          "digest": "sha256:3149cf9b954133fa90ad7eea5acc21684c56b35d6a91999b89e33a671a825d52",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/receipts/network-enforcement.json"
         },
@@ -512,29 +573,29 @@
       "status": "satisfied"
     },
     {
-      "description": "The prior activate_run decision (issue #3 comment 5283843131) is void for v2 by its own terms: the v2 re-freeze moves both bound digests. Per the v2 build authority (comment 5284914358), a new digest-bound activation decision will be issued only after fresh independent review of the v2 frozen head; until then no activation authority exists and no v0 activation record may be authored.",
+      "description": "The operator's v2 activate_run decision (issue #3 comment 5287019126, recorded 2026-08-13T22:15:22Z) binds reviewed head 5089333fa9627e9152cfccbbf439302ee60f9183 and the exact v2 job and inputs digests; it is recorded as the governing operator-direction record and as the schema-valid v0 activation decision at authority/tunsil-absence-shock-v0-activation.json.",
       "evidence_refs": [
         {
           "artifact_type": "operator_direction_record",
-          "digest": "sha256:6785363519b7086896ea3ba2fc7579042905463fee0847d7f3a116833b90f92d",
+          "digest": "sha256:4893ba12d4ce2483e66bc3735ae9007b2756f57394f5b9e8d84f55782db98eac",
           "digest_mode": "tiber-canonical-json-v1",
-          "path": "preflight/tunsil-absence-shock-v0/authority/issue-3-v2-build-authority.json"
+          "path": "preflight/tunsil-absence-shock-v0/authority/issue-3-v2-activation-decision.json"
         },
         {
-          "artifact_type": "prior_activation_direction_record",
-          "digest": "sha256:581b0363a47edd2439da3b0efe2e56cfd84fe29f534c5aabca5eb4f47e7ad788",
+          "artifact_type": "authority_decision",
+          "digest": "sha256:0f6cf7b3d86fb095130dd331169475ed830156b2378bd82a98d7c4cd7a33dfd7",
           "digest_mode": "tiber-canonical-json-v1",
-          "path": "preflight/tunsil-absence-shock-v0/authority/issue-3-activation-decision.json"
+          "path": "authority/tunsil-absence-shock-v0-activation.json"
         },
         {
           "artifact_type": "ops_issue_comment_snapshot",
-          "digest": "sha256:81bd514c7fd4ebf5e9057005258fe5274fac62832ef2006ee9c488b716485191",
+          "digest": "sha256:bef2df5fa0cc866a886e8e06829e0468e98a7879df04dbece26e120b76396220",
           "digest_mode": "tiber-raw-sha256-v1",
-          "path": "preflight/tunsil-absence-shock-v0/snapshots/issue-3-comment-5284914358.md"
+          "path": "preflight/tunsil-absence-shock-v0/snapshots/issue-3-comment-5287019126.md"
         }
       ],
       "requirement_id": "operator-activation",
-      "status": "unresolved"
+      "status": "satisfied"
     }
   ],
   "schema_version": "research-stage1-preflight/v1",
@@ -557,12 +618,12 @@
   "unresolved_inputs": [
     {
       "blocking": true,
-      "description": "The new digest-bound operator activate_run decision for the v2 frozen head, to be issued only after fresh independent review (issue #3 comment 5284914358). It must bind the v2 job and inputs digests, and its recorded activation record enables the governed-artifact provenance receipts (governing_authority_ref). Following the adjudicated chronology correction (issue #3 comment 5286246398; candidate/activation-contract-derivation.md §5), this cluster is fully materializable under the canonical chronology evidence <= cutoff <= freeze <= activation with the package's real clocks; the decision itself is the only remaining gate.",
-      "disposition": "missing",
-      "input_id": "v2-activation-decision",
+      "description": "Every Stage 1 requirement is satisfied, but two activation-READY-only validator invariants cannot be truthfully satisfied for this package, so activation_ready remains false per the activate_run decision's own fail-closed clause (issue #3 comment 5287019126): (a) source_content_missing_for_activation requires retained digest-bound content for every admitted source, while src-commanders-2025-oline-review is reference_only by operator retention direction (comment 5281497231 §1) — its page bytes were deliberately never retained and may not be re-retrieved; (b) egress_policy_not_enforced requires the deny-default egress control in enforced state, while the truthful state remains candidate_not_enforced — enforcement is protocol-level runner attestation per the Sol boundary adjudication, not technical isolation. Resolving either requires operator/reviewer adjudication of the readiness contract, not further mechanical work.",
+      "disposition": "deferred",
+      "input_id": "activation-readiness-contract-blockers",
       "requirement_refs": [
-        "operator-activation",
-        "governed-artifact-provenance"
+        "external-source-availability",
+        "network-enforcement"
       ]
     }
   ]

@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import {
   cpSync,
+  existsSync,
   mkdtempSync,
   readFileSync,
   rmSync,
@@ -45,6 +46,13 @@ function copyV2Workspace(root: string): void {
   cpSync(resolve(V2_RUN), join(root, ...V2_RUN.split("/")), {
     recursive: true,
   });
+  // The activation decision lives beneath the top-level authority/ path
+  // required by validateIdentityPins; copy it when materialized.
+  if (existsSync(resolve("authority"))) {
+    cpSync(resolve("authority"), join(root, "authority"), {
+      recursive: true,
+    });
+  }
 }
 
 function readWorkspaceJson<T = JsonObject>(root: string, path: string): T {
@@ -673,6 +681,13 @@ function retypeV2EnforcementBoundary(root: string, boundaryType: string): void {
     });
     rebound.set(ref.path, receiptDigest);
   }
+  for (const ref of manifest.gate_artifacts
+    .governed_artifact_provenance_receipt_refs) {
+    const receiptDigest = mutate(ref.path, (value) => {
+      value.trust_boundary.policy_ref.digest = observationDigest;
+    });
+    rebound.set(ref.path, receiptDigest);
+  }
   const enforcementDigest = mutate(V2_ENFORCEMENT, (value) => {
     value.enforcement_boundary.boundary_type = boundaryType;
     value.network_policy_ref.digest = networkDigest;
@@ -687,6 +702,10 @@ function retypeV2EnforcementBoundary(root: string, boundaryType: string): void {
   };
   for (const ref of manifest.gate_artifacts
     .external_source_availability_receipt_refs) {
+    rebind(ref);
+  }
+  for (const ref of manifest.gate_artifacts
+    .governed_artifact_provenance_receipt_refs) {
     rebind(ref);
   }
   rebind(manifest.gate_artifacts.network_policy_ref);
