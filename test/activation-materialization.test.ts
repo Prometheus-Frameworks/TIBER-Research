@@ -187,9 +187,18 @@ test("v1 capability envelope shape fails Stage 0 activation validation", () => {
 const PKG = "preflight/test-package";
 const GOVERNING_MANIFEST_PATH = `${PKG}/governance/synthetic-governed-artifact.json`;
 
+// Canonical Research chronology (issue #3 comment 5286246398):
+// evidence/admission <= cutoff <= freeze <= direction/approval/receipts.
+// The fixture cutoff is 2026-01-02T00:00:00Z; these custody clocks follow it.
+const CANONICAL_FROZEN_AT = "2026-01-02T00:30:00Z";
+const CANONICAL_DIRECTION_RECORDED_AT = "2026-01-02T00:45:00Z";
+const CANONICAL_APPROVED_AT = "2026-01-02T01:00:00Z";
+const CANONICAL_FRESHNESS_AS_OF = "2026-01-02T01:00:00Z";
+
 function buildStage1ProvenanceWorkspace(
   root: string,
   contentDigestSemantics: boolean,
+  frozenAt: string = CANONICAL_FROZEN_AT,
 ): void {
   cpSync(FIXTURE, root, { recursive: true });
   // Reduce the fixture run to the pre-activation layout the Stage 0
@@ -222,6 +231,7 @@ function buildStage1ProvenanceWorkspace(
 
   const inputsPath = `${FIXTURE_RUN}/inputs.json`;
   const inputs = readWorkspaceJson(root, inputsPath);
+  inputs.frozen_at = frozenAt;
   inputs.artifacts = [
     {
       artifact_id: governingManifest.artifact_id,
@@ -240,6 +250,7 @@ function buildStage1ProvenanceWorkspace(
   const authorityPath = "authority/decision.json";
   const authority = readWorkspaceJson(root, authorityPath);
   authority.inputs_ref.digest = inputsDigest;
+  authority.approved_at = CANONICAL_APPROVED_AT;
   writeJson(root, authorityPath, authority);
   const authorityRef = ref("authority_decision", authorityPath, authority);
   const jobRef = rawFileRef(root, "candidate_job", "job.yaml");
@@ -388,7 +399,7 @@ function buildStage1ProvenanceWorkspace(
     operator_direction: directionQuote,
     quote_digest: sha256Utf8(directionQuote),
     quote_digest_mode: "tiber-raw-sha256-v1",
-    recorded_at: "2026-01-01T14:05:00Z",
+    recorded_at: CANONICAL_DIRECTION_RECORDED_AT,
     approved_artifact_refs: [],
     scope: ["Synthetic regression coverage only."],
     exclusions: ["No real-world claims or authority."],
@@ -435,7 +446,9 @@ function buildStage1ProvenanceWorkspace(
     },
     freshness: {
       state: "current",
-      as_of: "2026-01-01T14:12:00Z",
+      // Custody-side assessment instant deliberately AFTER the evidence
+      // cutoff, exercising the corrected chronology invariant.
+      as_of: CANONICAL_FRESHNESS_AS_OF,
       policy_ref: freshnessRef,
       rationale: "Synthetic regression fixture.",
     },
@@ -566,7 +579,11 @@ function buildStage1ProvenanceWorkspace(
   writeJson(root, `${PKG}/preflight.json`, manifest);
 }
 
-test("governing-manifest digest semantics satisfy provenance coverage", () => {
+test("canonical chronology with governing-manifest digests validates end-to-end", () => {
+  // evidence/admission <= cutoff (2026-01-02T00:00:00Z) <= freeze (00:30)
+  // <= direction (00:45) <= approval / freshness assessment (01:00)
+  // <= receipt observation (now): the corrected contract accepts this and
+  // the provenance gate reads present.
   withTempWorkspace(
     (root) => buildStage1ProvenanceWorkspace(root, false),
     (root) => {
@@ -577,6 +594,21 @@ test("governing-manifest digest semantics satisfy provenance coverage", () => {
         receipt_count: 1,
         state: "present",
       });
+    },
+  );
+});
+
+test("freezing before the cutoff is rejected as an unobservable interval", () => {
+  withTempWorkspace(
+    (root) =>
+      buildStage1ProvenanceWorkspace(root, false, "2026-01-01T14:10:00Z"),
+    (root) => {
+      const report = validateStage1Preflight(root, `${PKG}/preflight.json`);
+      assert.equal(report.valid, false);
+      assert.ok(report.errors.length >= 1);
+      for (const entry of report.errors) {
+        assert.equal(entry.code, "inputs_frozen_before_cutoff");
+      }
     },
   );
 });

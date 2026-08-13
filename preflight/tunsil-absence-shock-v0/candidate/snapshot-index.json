@@ -1,6 +1,6 @@
 {
   "candidate_run_id": "tunsil-absence-shock-v0",
-  "indexed_at": "2026-08-13T18:53:09Z",
+  "indexed_at": "2026-08-13T20:56:10Z",
   "limitations": [
     "Captures were taken through the GitHub API on 2026-08-13; HTML entity escaping in the API issue-body representation was reversed before freezing, so the digests bind the exact captured file bytes, not independently attested upstream body bytes.",
     "Mutable issue URLs remain locator metadata and do not replace the retained byte digests."
@@ -34,6 +34,13 @@
       "source_record_id": "5284914358",
       "source_record_type": "issue_comment",
       "source_ref": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/3#issuecomment-5284914358"
+    },
+    {
+      "captured_file_raw_sha256": "sha256:f3eb6293bcd03dc3dd36f4e833dc898f538123b02386b990172ad9af21f07e18",
+      "snapshot_path": "preflight/tunsil-absence-shock-v0/snapshots/issue-3-comment-5286246398.md",
+      "source_record_id": "5286246398",
+      "source_record_type": "issue_comment",
+      "source_ref": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/3#issuecomment-5286246398"
     }
   ],
   "status": "frozen_control_record_snapshots"

@@ -1320,6 +1320,18 @@ function validateActivationBundle(
     `${inputsRef.path}.frozen_at`,
     "Frozen inputs were created after the preflight was prepared.",
   );
+  // Canonical Research chronology (issue #3 comment 5286246398):
+  // evidence/admission <= cutoff <= freeze <= activation/execution. A freeze
+  // before the cutoff would leave an eligible-but-unobservable evidence
+  // interval, so it is rejected.
+  isAfter(
+    inputs.cutoff_at,
+    inputs.frozen_at,
+    errors,
+    `${inputsRef.path}.frozen_at`,
+    "Frozen inputs must be created at or after the cutoff they freeze.",
+    "inputs_frozen_before_cutoff",
+  );
   parseInstant(job.cutoff_at, `${jobRef.path}.cutoff_at`, errors);
   parseInstant(inputs.cutoff_at, `${inputsRef.path}.cutoff_at`, errors);
   parseInstant(inputs.frozen_at, `${inputsRef.path}.frozen_at`, errors);
@@ -1910,14 +1922,10 @@ function validateProvenance(
       "verified_at is earlier than observed_at.",
       "artifact_verification_order",
     );
-    isAfter(
-      receipt.freshness.as_of,
-      receipt.cutoff_at,
-      errors,
-      receipt.receipt_id,
-      "freshness.as_of is later than cutoff_at.",
-      "freshness_after_cutoff",
-    );
+    // Canonical Research chronology (issue #3 comment 5286246398): the
+    // freshness assessment instant is a custody-side clock and may follow
+    // the evidence cutoff; only the evidence-side clock (effective_at) must
+    // stay at or before the cutoff.
     isAfter(
       receipt.effective_at,
       receipt.freshness.as_of,

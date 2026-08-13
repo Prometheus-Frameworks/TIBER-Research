@@ -27,7 +27,7 @@
     },
     {
       "artifact_type": "activation_contract_derivation",
-      "digest": "sha256:b1c8281bdbe4019a6dd5a7fe0530e71f9b975cb7fb61dafaa2743b9075822c41",
+      "digest": "sha256:427d42c1db881b6a56080af8dbf2f5a0502d878a304885108f639ff33f8a0b94",
       "digest_mode": "tiber-raw-sha256-v1",
       "path": "preflight/tunsil-absence-shock-v0/candidate/activation-contract-derivation.md"
     },
@@ -129,7 +129,7 @@
     },
     {
       "artifact_type": "snapshot_index",
-      "digest": "sha256:b17f439d44cf4202a4baaa749bd6d318de4275b930ebd0445de3914d053f30ea",
+      "digest": "sha256:aa0ec790e25b64c3b99281e6f03e529f242ee39771e9c19f3e8df8305720261a",
       "digest_mode": "tiber-canonical-json-v1",
       "path": "preflight/tunsil-absence-shock-v0/candidate/snapshot-index.json"
     },
@@ -174,6 +174,12 @@
       "digest": "sha256:81bd514c7fd4ebf5e9057005258fe5274fac62832ef2006ee9c488b716485191",
       "digest_mode": "tiber-raw-sha256-v1",
       "path": "preflight/tunsil-absence-shock-v0/snapshots/issue-3-comment-5284914358.md"
+    },
+    {
+      "artifact_type": "ops_issue_comment_snapshot",
+      "digest": "sha256:f3eb6293bcd03dc3dd36f4e833dc898f538123b02386b990172ad9af21f07e18",
+      "digest_mode": "tiber-raw-sha256-v1",
+      "path": "preflight/tunsil-absence-shock-v0/snapshots/issue-3-comment-5286246398.md"
     },
     {
       "artifact_type": "source_content",
@@ -287,7 +293,7 @@
     "quote_observed_at": "2026-08-13T18:39:40Z"
   },
   "preflight_id": "tunsil-absence-shock-v0-preflight",
-  "prepared_at": "2026-08-13T18:53:09Z",
+  "prepared_at": "2026-08-13T20:56:10Z",
   "requirements": [
     {
       "description": "Frozen inputs bind the operator-approved cutoff, context, closed subject grain, nine pinned governed artifacts, seven admitted Manual Witness sources, and five owner-routed blocked inputs (issue #3 comment 5281497231 §2-§4, §9), re-frozen v2 at the activation identity path runs/tunsil-absence-shock-v0/inputs.json with governing-manifest artifact digests per comment 5284914358.",
@@ -343,7 +349,7 @@
         },
         {
           "artifact_type": "activation_contract_derivation",
-          "digest": "sha256:b1c8281bdbe4019a6dd5a7fe0530e71f9b975cb7fb61dafaa2743b9075822c41",
+          "digest": "sha256:427d42c1db881b6a56080af8dbf2f5a0502d878a304885108f639ff33f8a0b94",
           "digest_mode": "tiber-raw-sha256-v1",
           "path": "preflight/tunsil-absence-shock-v0/candidate/activation-contract-derivation.md"
         }
@@ -414,7 +420,7 @@
       "status": "satisfied"
     },
     {
-      "description": "Nine governed artifacts are pinned with commit and true blob digests (re-verified 9/9 against origin/main), and v2 binds artifact_digest to authored research-governing-manifest/v1 record digests — the semantics v1 provenance receipts require. Receipts themselves remain unresolved: they must bind the future digest-bound activate_run authority decision as governing_authority_ref, and the prior activation decision is void for v2. Regression coverage (test/activation-materialization.test.ts) proves the receipts are structurally materializable under these semantics; see the derivation note for the residual freshness-chronology constraint the future decision must reckon with.",
+      "description": "Nine governed artifacts are pinned with commit and true blob digests (re-verified 9/9 against origin/main), and v2 binds artifact_digest to authored research-governing-manifest/v1 record digests — the semantics v1 provenance receipts require. Receipts themselves remain unresolved for one reason only: they must bind the future digest-bound activate_run authority decision as governing_authority_ref. Under the adjudicated canonical chronology (evidence <= cutoff <= freeze <= activation; issue #3 comment 5286246398) they are fully materializable with this package's real clocks the moment that decision exists, as the regression coverage in test/activation-materialization.test.ts proves.",
       "evidence_refs": [
         {
           "artifact_type": "candidate_inputs",
@@ -478,7 +484,7 @@
         },
         {
           "artifact_type": "activation_contract_derivation",
-          "digest": "sha256:b1c8281bdbe4019a6dd5a7fe0530e71f9b975cb7fb61dafaa2743b9075822c41",
+          "digest": "sha256:427d42c1db881b6a56080af8dbf2f5a0502d878a304885108f639ff33f8a0b94",
           "digest_mode": "tiber-raw-sha256-v1",
           "path": "preflight/tunsil-absence-shock-v0/candidate/activation-contract-derivation.md"
         }
@@ -551,7 +557,7 @@
   "unresolved_inputs": [
     {
       "blocking": true,
-      "description": "The new digest-bound operator activate_run decision for the v2 frozen head, to be issued only after fresh independent review (issue #3 comment 5284914358). It must bind the v2 job and inputs digests, and its recorded activation record enables the governed-artifact provenance receipts (governing_authority_ref). Note for that decision: the validator's provenance freshness chain requires operator-direction and approval instants at or before the preserved cutoff 2026-08-13T14:13:09Z while approval must not precede the v2 freeze — a chronology the current validator cannot satisfy simultaneously for this package; see candidate/activation-contract-derivation.md §5.",
+      "description": "The new digest-bound operator activate_run decision for the v2 frozen head, to be issued only after fresh independent review (issue #3 comment 5284914358). It must bind the v2 job and inputs digests, and its recorded activation record enables the governed-artifact provenance receipts (governing_authority_ref). Following the adjudicated chronology correction (issue #3 comment 5286246398; candidate/activation-contract-derivation.md §5), this cluster is fully materializable under the canonical chronology evidence <= cutoff <= freeze <= activation with the package's real clocks; the decision itself is the only remaining gate.",
       "disposition": "missing",
       "input_id": "v2-activation-decision",
       "requirement_refs": [

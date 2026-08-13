@@ -98,24 +98,37 @@ decision snapshot (`snapshots/issue-3-comment-5283843131.md`), and in git
 history at head `251fabd`. The package's governing operator direction is now
 the v2 build authority (comment 5284914358).
 
-## 5. Residual chronology constraint (reported, not forced)
+## 5. Chronology constraint — ADJUDICATED AND CORRECTED
 
-Even with the v2 shapes, one validator chronology chain remains that the
-future activation decision must reckon with:
-`validateProvenance` requires each receipt's `freshness.as_of` to satisfy
-`operator_direction.recorded_at <= as_of <= cutoff_at`, and at
-activation-ready the validator requires
-`authority.approved_at === operator_direction.recorded_at` and
-`inputs.frozen_at <= approved_at`. Together these force
-`frozen_at <= cutoff_at` for any activation-ready package that pins governed
-artifacts. The operator-preserved cutoff (2026-08-13T14:13:09Z) predates the
-v2 freeze instant by design (freeze-after-cutoff was the v1 review's P1
-correction), so under the CURRENT validator code the real package cannot
-reach `activation_ready: true` even after the new activation decision —
-unless the chronology chain in `src/preflight.ts` is reconciled (out of this
-build's authority: no `src/` changes) or the operator binds a post-freeze
-cutoff (out of this build's authority: cutoff preserved verbatim). The
-regression tests prove both reconciled axes work under self-consistent
-clocks (freeze before cutoff); this residual conflict is a validator-design
-finding, not a package defect, and is surfaced for the operator and reviewer
-rather than worked around.
+The residual finding originally reported here (the provenance freshness
+chain `operator_direction.recorded_at <= freshness.as_of <= cutoff_at`
+combined with `inputs.frozen_at <= approved_at` transitively forced
+`frozen_at <= cutoff_at`, making activation-readiness unreachable for any
+package that freezes after its cutoff) was adjudicated by the Sol review
+lane and corrected under operator-transmitted authority (issue #3 comment
+5286246398, recorded 2026-08-13T20:51:15Z, snapshotted in
+`snapshots/issue-3-comment-5286246398.md`).
+
+Canonical Research chronology as adjudicated:
+`evidence/admission <= cutoff <= freeze <= activation/execution`.
+Evidence-side clocks (event_time, effective_at, published_at, admissible_at,
+artifact effectiveness) remain strictly at or before the cutoff.
+Custody-side clocks (receipt observation/verification, freshness
+assessment, freeze, operator direction, approval, activation) may follow
+the cutoff in their existing relative order.
+
+Correction applied in `src/preflight.ts` (this branch): the
+`freshness_after_cutoff` invariant (`as_of <= cutoff_at`) was removed —
+`as_of` is a custody-side assessment instant, still bounded by
+`effective_at <= as_of <= verified_at <= prepared_at` and by the operator
+direction/approval instants; and the new adversarial invariant
+`inputs_frozen_before_cutoff` rejects any candidate inputs frozen BEFORE
+their cutoff (the eligible-but-unobservable interval the v1 review's P1
+correction eliminated). Regression coverage in
+`test/activation-materialization.test.ts` validates the canonical
+chronology end-to-end (including a freshness assessment after the cutoff)
+and asserts the freeze-before-cutoff rejection. Under the corrected
+contract, the v2 package's provenance receipts and activation decision are
+fully materializable with its real clocks (cutoff 2026-08-13T14:13:09Z,
+freeze 2026-08-13T18:53:09Z); the remaining gate is solely the new
+digest-bound operator activation decision after fresh Sol review.
