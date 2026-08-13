@@ -7,6 +7,14 @@
       "boundary_type": "operator_attestation",
       "method": "operator_provided_packet",
       "trust_basis": "Per-instance Manual Witness admission authority recorded in TIBER-Research issue #3 comment 5281497231 §1; retrieval performed once per page by the authorized Claude preflight lane under operator direction with true clocks recorded."
+    },
+    {
+      "actor_id": "claude-lane executor session (Claude Code Remote managed container)",
+      "actor_role": "trusted_runner",
+      "boundary_id": "stage1-manual-runner",
+      "boundary_type": "sandbox_firewall",
+      "method": "network_enforcement_observation",
+      "trust_basis": "Operator-designated enforcement observer per the activate_run decision (issue #3 comment 5283843131): enforcement for this run is executor-protocol level with post-hoc verifiability via the hash-chained run ledger; the observer is the executor lane itself, not an independent runner."
     }
   ],
   "policy_id": "tunsil-absence-shock-v0-observation",

@@ -1,0 +1,15 @@
+{
+  "network": "denied",
+  "repository_read": [
+    "docs",
+    "schemas",
+    "src"
+  ],
+  "repository_write": [
+    "runs/tunsil-absence-shock-v0"
+  ],
+  "tools": [
+    "file-read",
+    "file-write-run-scope"
+  ]
+}
