@@ -2,16 +2,16 @@
   "candidate_run_id": "tunsil-absence-shock-v0",
   "claimed_available_at": "2026-08-13T14:10:40Z",
   "content_digest": "sha256:9afacd6c3e36fb9a9b4db441f6285d2e4356fbb97e72338ac5e9b72194370421",
-  "cutoff_at": "2026-08-13T15:00:00Z",
+  "cutoff_at": "2026-08-13T14:13:09Z",
   "evidence_ref": {
     "artifact_type": "source_metadata",
-    "digest": "sha256:da8af2c6e50e35f4f332661b67cacd99212c860756e012b9ed7d4bad9a29ba45",
+    "digest": "sha256:635e9df9b3c8734e9aa0e6e9f65b43dde70cac188a8dfdced310547e0f5dce40",
     "digest_mode": "tiber-canonical-json-v1",
     "path": "preflight/tunsil-absence-shock-v0/sources/src-commanders-joint-practice-dolphins/metadata.json"
   },
-  "metadata_digest": "sha256:da8af2c6e50e35f4f332661b67cacd99212c860756e012b9ed7d4bad9a29ba45",
+  "metadata_digest": "sha256:635e9df9b3c8734e9aa0e6e9f65b43dde70cac188a8dfdced310547e0f5dce40",
   "observation_method": "operator_provided_packet",
-  "observed_at": "2026-08-13T14:30:05Z",
+  "observed_at": "2026-08-13T16:23:04Z",
   "observer": {
     "observer_id": "Joseph (@Prometheus-Frameworks)",
     "role": "operator",

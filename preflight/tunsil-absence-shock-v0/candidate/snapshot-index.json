@@ -1,6 +1,6 @@
 {
   "candidate_run_id": "tunsil-absence-shock-v0",
-  "indexed_at": "2026-08-13T14:30:05Z",
+  "indexed_at": "2026-08-13T16:23:04Z",
   "limitations": [
     "Captures were taken through the GitHub API on 2026-08-13; HTML entity escaping in the API issue-body representation was reversed before freezing, so the digests bind the exact captured file bytes, not independently attested upstream body bytes.",
     "Mutable issue URLs remain locator metadata and do not replace the retained byte digests."

@@ -41,7 +41,7 @@
     "digest_mode": "tiber-canonical-json-v1",
     "path": "preflight/tunsil-absence-shock-v0/controls/cost-rate-card.json"
   },
-  "recorded_at": "2026-08-13T14:30:05Z",
+  "recorded_at": "2026-08-13T16:23:04Z",
   "schema_version": "research-cost-policy/v1",
   "trusted_observation_required": true,
   "unit": "tiber_actor_session_v1"

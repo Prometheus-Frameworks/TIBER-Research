@@ -2,16 +2,16 @@
   "candidate_run_id": "tunsil-absence-shock-v0",
   "claimed_available_at": "2026-08-13T14:10:36Z",
   "content_digest": "sha256:7c15882e9af2ee9bbf931a8a9420b937f3c3674ddce1e568cf8d540c40a96949",
-  "cutoff_at": "2026-08-13T15:00:00Z",
+  "cutoff_at": "2026-08-13T14:13:09Z",
   "evidence_ref": {
     "artifact_type": "source_metadata",
-    "digest": "sha256:37318f51a56d807c873e0878a3b35272d39997503233f0ff0d5af9110bb188d3",
+    "digest": "sha256:35ac5c575f89856b8dddcee510d40c5350fdef438d01c7562014892bd224184f",
     "digest_mode": "tiber-canonical-json-v1",
     "path": "preflight/tunsil-absence-shock-v0/sources/src-commanders-rb-room-competition/metadata.json"
   },
-  "metadata_digest": "sha256:37318f51a56d807c873e0878a3b35272d39997503233f0ff0d5af9110bb188d3",
+  "metadata_digest": "sha256:35ac5c575f89856b8dddcee510d40c5350fdef438d01c7562014892bd224184f",
   "observation_method": "operator_provided_packet",
-  "observed_at": "2026-08-13T14:30:05Z",
+  "observed_at": "2026-08-13T16:23:04Z",
   "observer": {
     "observer_id": "Joseph (@Prometheus-Frameworks)",
     "role": "operator",

@@ -47,7 +47,7 @@
   "synthetic_fixture": false,
   "temporal": {
     "admissible_at": "2026-08-13T14:13:09Z",
-    "cutoff_at": "2026-08-13T15:00:00Z",
+    "cutoff_at": "2026-08-13T14:13:09Z",
     "effective_at": null,
     "event_time": null,
     "first_observed_at": "2026-08-13T14:10:32Z",

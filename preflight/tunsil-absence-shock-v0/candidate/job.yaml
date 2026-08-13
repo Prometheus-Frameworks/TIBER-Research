@@ -88,9 +88,10 @@ comparison_population:
       aliases: ["gsis 00-0037809"]
 baseline_ref: null
 # Fresh post-admission cutoff bound per issue #3 comment 5281497231 §2:
-# all seven manual witness admissions carry admissible_at
-# 2026-08-13T14:13:09Z, before this cutoff.
-cutoff_at: "2026-08-13T15:00:00Z"
+# bound to the latest admissible receipt clock — all seven manual witness
+# admissions carry admissible_at 2026-08-13T14:13:09Z, and admissible_at <=
+# cutoff_at with equality is valid.
+cutoff_at: "2026-08-13T14:13:09Z"
 time_horizon: >-
   2026 training-camp/preseason window from the 2026-08-08 injury event to the
   activated cutoff; no regular-season observations exist inside the window.

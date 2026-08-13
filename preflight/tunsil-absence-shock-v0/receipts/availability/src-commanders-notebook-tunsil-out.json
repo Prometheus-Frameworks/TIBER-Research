@@ -2,16 +2,16 @@
   "candidate_run_id": "tunsil-absence-shock-v0",
   "claimed_available_at": "2026-08-13T14:10:18Z",
   "content_digest": "sha256:ef291c9e3c1109b7d0cf465d18af121a39c0df9a4db6f5b666eabdecb8dd5e20",
-  "cutoff_at": "2026-08-13T15:00:00Z",
+  "cutoff_at": "2026-08-13T14:13:09Z",
   "evidence_ref": {
     "artifact_type": "source_metadata",
-    "digest": "sha256:959ed2b66e07c715fb4ebf4c2260a075498bf937d3cd41b0976eaf168c209f73",
+    "digest": "sha256:d96f6b3ba7a7f4849bed90e4839109cf1f056b9ef2c833076b1b7a73c78a76a5",
     "digest_mode": "tiber-canonical-json-v1",
     "path": "preflight/tunsil-absence-shock-v0/sources/src-commanders-notebook-tunsil-out/metadata.json"
   },
-  "metadata_digest": "sha256:959ed2b66e07c715fb4ebf4c2260a075498bf937d3cd41b0976eaf168c209f73",
+  "metadata_digest": "sha256:d96f6b3ba7a7f4849bed90e4839109cf1f056b9ef2c833076b1b7a73c78a76a5",
   "observation_method": "operator_provided_packet",
-  "observed_at": "2026-08-13T14:30:05Z",
+  "observed_at": "2026-08-13T16:23:04Z",
   "observer": {
     "observer_id": "Joseph (@Prometheus-Frameworks)",
     "role": "operator",

@@ -9,13 +9,13 @@
     },
     {
       "artifact_type": "candidate_job",
-      "digest": "sha256:a2d37898eb10527023a37815d86218fa35d21c8cc3380461d59d8a5e134fe21b",
+      "digest": "sha256:74574487998d1400c04bf948af00ea8545a52cd067a550ae3ad92bc23d2bd6ff",
       "digest_mode": "tiber-raw-sha256-v1",
       "path": "preflight/tunsil-absence-shock-v0/candidate/job.yaml"
     },
     {
       "artifact_type": "candidate_inputs",
-      "digest": "sha256:1dea0f1e2b1effb6d498d904f779ff513e1757d6885b956cf9d15174e92a5ee9",
+      "digest": "sha256:13723b1a3899145d3d0153a06f1597c29396ce6dd927ae14f3636e42fc130f4c",
       "digest_mode": "tiber-canonical-json-v1",
       "path": "preflight/tunsil-absence-shock-v0/candidate/inputs.json"
     },
@@ -33,7 +33,7 @@
     },
     {
       "artifact_type": "research_context_proposal",
-      "digest": "sha256:ff8d8e98d195292b964339cb513ebee5652aed201f86ca8277beca666a8546f1",
+      "digest": "sha256:60b6715cca68113b25105588095c7aca550d26148976386425245c2332a82904",
       "digest_mode": "tiber-canonical-json-v1",
       "path": "preflight/tunsil-absence-shock-v0/candidate/research-context-proposal.json"
     },
@@ -51,7 +51,7 @@
     },
     {
       "artifact_type": "snapshot_index",
-      "digest": "sha256:5c9d9b984e9544d7c343c0ae45ce82ebc8bc6ef70d5b03cfb9bf8d7ad83e4453",
+      "digest": "sha256:dd9afb9c4190af34d5044b91c3f7dd3891d5fc2897a291f0e38d29f98e3f208f",
       "digest_mode": "tiber-canonical-json-v1",
       "path": "preflight/tunsil-absence-shock-v0/candidate/snapshot-index.json"
     },
@@ -126,50 +126,50 @@
   "gate_artifacts": {
     "cost_policy_ref": {
       "artifact_type": "cost_policy",
-      "digest": "sha256:469e68e015a4ca61ffed792cda9991a80ac4c8a659ee25e41c72ecb34f536d23",
+      "digest": "sha256:db059d5469a42fe6f23e9810a82d19ab2849648cf216a85d0ea35a6817e5b5de",
       "digest_mode": "tiber-canonical-json-v1",
       "path": "preflight/tunsil-absence-shock-v0/controls/cost-policy.json"
     },
     "external_source_availability_receipt_refs": [
       {
         "artifact_type": "external_source_availability_receipt",
-        "digest": "sha256:b065e4d1d0669f46fac6d747006c50f6755fd8102bbd5349a08702819b88cb76",
+        "digest": "sha256:d29b93e1d8d10aa40d085c06dc963794f3007e2cd1b6e4191cd523ed47bee220",
         "digest_mode": "tiber-canonical-json-v1",
         "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-notebook-tunsil-out.json"
       },
       {
         "artifact_type": "external_source_availability_receipt",
-        "digest": "sha256:7fe491704e5161391858a52607e62e7d70be0d8941e66fa427fc7e29f0db5dee",
+        "digest": "sha256:555578186ea753349d2b7df4ca00449efed520d84fd554c7e8b8a20cc1457784",
         "digest_mode": "tiber-canonical-json-v1",
         "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-coleman-tackle-confidence.json"
       },
       {
         "artifact_type": "external_source_availability_receipt",
-        "digest": "sha256:e537c9c69865a8759544cd48e97333acbda42bffa24e475ab0f5a5e1071a43bb",
+        "digest": "sha256:061e094c3ef5715464c32b2e5e354b495eff85b279c050a6d8b690f8618d6c3a",
         "digest_mode": "tiber-canonical-json-v1",
         "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-2025-oline-review.json"
       },
       {
         "artifact_type": "external_source_availability_receipt",
-        "digest": "sha256:139332da312260f970ed5c08370f9295a10bbb706cae7620119dc0b8f0c8bf7a",
+        "digest": "sha256:46ffdfa233302cc2b6db436242a89f8cf378a0376ba53183dde704fae0f7fea6",
         "digest_mode": "tiber-canonical-json-v1",
         "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-mclaurin-blough-offense.json"
       },
       {
         "artifact_type": "external_source_availability_receipt",
-        "digest": "sha256:e0c5a9a140b769088033027dfe027d8e9191e3291ca9e232ee96e0293e298cb0",
+        "digest": "sha256:398b14e161870a39ae42b52b75449b103e85c6fe1fcf6aa2d10ec1df3311e7ea",
         "digest_mode": "tiber-canonical-json-v1",
         "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-white-five-things.json"
       },
       {
         "artifact_type": "external_source_availability_receipt",
-        "digest": "sha256:9e8935932b9c10429e817c3ad797b6acdbc9c22f01bd9dfa87989b0c7a356d40",
+        "digest": "sha256:6b7e6fef8a3e7a878a47ec1725bc7b445304e6a6122ce3008b8ea38dea6622d3",
         "digest_mode": "tiber-canonical-json-v1",
         "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-rb-room-competition.json"
       },
       {
         "artifact_type": "external_source_availability_receipt",
-        "digest": "sha256:d8ec69897ad27a6ea5866e099c712b70fecb90ef97b9f7dc2b1e0fd3fbb71639",
+        "digest": "sha256:4a9bbb7ba45c76fc25a969992d7152ded9f75cc163c1ad7ee1dfbec8e991af9c",
         "digest_mode": "tiber-canonical-json-v1",
         "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-joint-practice-dolphins.json"
       }
@@ -178,7 +178,7 @@
     "network_enforcement_receipt_ref": null,
     "network_policy_ref": {
       "artifact_type": "network_policy",
-      "digest": "sha256:477369e83daaf57b23dcf852ad9bf5393e94dcf7ead3146a2829e45db9823461",
+      "digest": "sha256:e5c2798053f7faa2cc0847da7176654b46da7e601574af892e48a00898b23f8f",
       "digest_mode": "tiber-canonical-json-v1",
       "path": "preflight/tunsil-absence-shock-v0/controls/network-policy.json"
     },
@@ -192,14 +192,14 @@
     "quote_observed_at": "2026-08-13T14:05:26Z"
   },
   "preflight_id": "tunsil-absence-shock-v0-preflight",
-  "prepared_at": "2026-08-13T14:30:05Z",
+  "prepared_at": "2026-08-13T16:23:04Z",
   "requirements": [
     {
       "description": "Frozen inputs bind the operator-approved cutoff, context, closed subject grain, nine pinned governed artifacts, seven admitted Manual Witness sources, and five owner-routed blocked inputs (issue #3 comment 5281497231 §2-§4, §9).",
       "evidence_refs": [
         {
           "artifact_type": "candidate_inputs",
-          "digest": "sha256:1dea0f1e2b1effb6d498d904f779ff513e1757d6885b956cf9d15174e92a5ee9",
+          "digest": "sha256:13723b1a3899145d3d0153a06f1597c29396ce6dd927ae14f3636e42fc130f4c",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/candidate/inputs.json"
         },
@@ -217,7 +217,7 @@
         },
         {
           "artifact_type": "research_context_proposal",
-          "digest": "sha256:ff8d8e98d195292b964339cb513ebee5652aed201f86ca8277beca666a8546f1",
+          "digest": "sha256:60b6715cca68113b25105588095c7aca550d26148976386425245c2332a82904",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/candidate/research-context-proposal.json"
         }
@@ -230,7 +230,7 @@
       "evidence_refs": [
         {
           "artifact_type": "candidate_job",
-          "digest": "sha256:a2d37898eb10527023a37815d86218fa35d21c8cc3380461d59d8a5e134fe21b",
+          "digest": "sha256:74574487998d1400c04bf948af00ea8545a52cd067a550ae3ad92bc23d2bd6ff",
           "digest_mode": "tiber-raw-sha256-v1",
           "path": "preflight/tunsil-absence-shock-v0/candidate/job.yaml"
         },
@@ -255,7 +255,7 @@
       "evidence_refs": [
         {
           "artifact_type": "cost_policy",
-          "digest": "sha256:469e68e015a4ca61ffed792cda9991a80ac4c8a659ee25e41c72ecb34f536d23",
+          "digest": "sha256:db059d5469a42fe6f23e9810a82d19ab2849648cf216a85d0ea35a6817e5b5de",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/controls/cost-policy.json"
         }
@@ -268,43 +268,43 @@
       "evidence_refs": [
         {
           "artifact_type": "external_source_availability_receipt",
-          "digest": "sha256:b065e4d1d0669f46fac6d747006c50f6755fd8102bbd5349a08702819b88cb76",
+          "digest": "sha256:d29b93e1d8d10aa40d085c06dc963794f3007e2cd1b6e4191cd523ed47bee220",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-notebook-tunsil-out.json"
         },
         {
           "artifact_type": "external_source_availability_receipt",
-          "digest": "sha256:7fe491704e5161391858a52607e62e7d70be0d8941e66fa427fc7e29f0db5dee",
+          "digest": "sha256:555578186ea753349d2b7df4ca00449efed520d84fd554c7e8b8a20cc1457784",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-coleman-tackle-confidence.json"
         },
         {
           "artifact_type": "external_source_availability_receipt",
-          "digest": "sha256:e537c9c69865a8759544cd48e97333acbda42bffa24e475ab0f5a5e1071a43bb",
+          "digest": "sha256:061e094c3ef5715464c32b2e5e354b495eff85b279c050a6d8b690f8618d6c3a",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-2025-oline-review.json"
         },
         {
           "artifact_type": "external_source_availability_receipt",
-          "digest": "sha256:139332da312260f970ed5c08370f9295a10bbb706cae7620119dc0b8f0c8bf7a",
+          "digest": "sha256:46ffdfa233302cc2b6db436242a89f8cf378a0376ba53183dde704fae0f7fea6",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-mclaurin-blough-offense.json"
         },
         {
           "artifact_type": "external_source_availability_receipt",
-          "digest": "sha256:e0c5a9a140b769088033027dfe027d8e9191e3291ca9e232ee96e0293e298cb0",
+          "digest": "sha256:398b14e161870a39ae42b52b75449b103e85c6fe1fcf6aa2d10ec1df3311e7ea",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-white-five-things.json"
         },
         {
           "artifact_type": "external_source_availability_receipt",
-          "digest": "sha256:9e8935932b9c10429e817c3ad797b6acdbc9c22f01bd9dfa87989b0c7a356d40",
+          "digest": "sha256:6b7e6fef8a3e7a878a47ec1725bc7b445304e6a6122ce3008b8ea38dea6622d3",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-rb-room-competition.json"
         },
         {
           "artifact_type": "external_source_availability_receipt",
-          "digest": "sha256:d8ec69897ad27a6ea5866e099c712b70fecb90ef97b9f7dc2b1e0fd3fbb71639",
+          "digest": "sha256:4a9bbb7ba45c76fc25a969992d7152ded9f75cc163c1ad7ee1dfbec8e991af9c",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-joint-practice-dolphins.json"
         }
@@ -317,7 +317,7 @@
       "evidence_refs": [
         {
           "artifact_type": "candidate_inputs",
-          "digest": "sha256:1dea0f1e2b1effb6d498d904f779ff513e1757d6885b956cf9d15174e92a5ee9",
+          "digest": "sha256:13723b1a3899145d3d0153a06f1597c29396ce6dd927ae14f3636e42fc130f4c",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/candidate/inputs.json"
         },
@@ -336,7 +336,7 @@
       "evidence_refs": [
         {
           "artifact_type": "network_policy",
-          "digest": "sha256:477369e83daaf57b23dcf852ad9bf5393e94dcf7ead3146a2829e45db9823461",
+          "digest": "sha256:e5c2798053f7faa2cc0847da7176654b46da7e601574af892e48a00898b23f8f",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/controls/network-policy.json"
         }
