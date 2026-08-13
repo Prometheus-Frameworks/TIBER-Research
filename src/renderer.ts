@@ -49,6 +49,7 @@ export interface PacketClaim {
   challenge_refs: string[];
   missing_evidence_refs: string[];
   proposed_disposition: string | null;
+  falsifiers?: string[];
   limitations: string[];
   confidence: PacketConfidence;
   freshness: PacketFreshness;
@@ -76,11 +77,57 @@ export interface PacketUnresolvedItem {
   related_question_refs: string[];
 }
 
+export interface PacketFollowupRfi {
+  owner_repository: string;
+  related_issue: string | null;
+  requested_evidence: string;
+  unresolved_refs: string[];
+}
+
 export interface PacketFollowup {
   followup_id: string;
   question: string;
   rationale: string;
   requires_new_run: boolean;
+  rfi?: PacketFollowupRfi;
+}
+
+export interface PacketResponseBranch {
+  branch_id: string;
+  label: string;
+  description: string;
+  expected_signals: string[];
+  assessment: string;
+  evidence_refs: string[];
+  counterevidence_refs: string[];
+  claim_refs: string[];
+  context_notes: string[];
+  limitations: string[];
+}
+
+export interface PacketCausalNode {
+  node_id: string;
+  label: string;
+  subject_refs: string[];
+}
+
+export interface PacketCausalEdge {
+  edge_id: string;
+  from_node: string;
+  to_node: string;
+  mechanism: string;
+  evidence_refs: string[];
+  counterevidence_refs: string[];
+  uncertainty: string;
+  falsifiers: string[];
+  claim_refs: string[];
+}
+
+export interface PacketCausalPath {
+  path_id: string;
+  description: string;
+  nodes: PacketCausalNode[];
+  edges: PacketCausalEdge[];
 }
 
 export interface ResearchPacket {
@@ -104,6 +151,9 @@ export interface ResearchPacket {
   authority_state: string;
   downstream_authority: string;
   reportability: string;
+  terminal_decision?: string;
+  response_branches?: PacketResponseBranch[];
+  causal_paths?: PacketCausalPath[];
 }
 
 function normalizeNewlines(value: string): string {
@@ -262,6 +312,9 @@ export function renderPacketMarkdown(packet: Readonly<ResearchPacket>): string {
         claim.missing_evidence_refs,
       );
       field(lines, "Proposed disposition", claim.proposed_disposition);
+      if (claim.falsifiers !== undefined) {
+        textList(lines, "Falsifiers", claim.falsifiers);
+      }
       textList(lines, "Limitations", claim.limitations);
       field(lines, "Confidence band", claim.confidence.band);
       textField(lines, "Confidence rationale", claim.confidence.rationale);
@@ -328,7 +381,82 @@ export function renderPacketMarkdown(packet: Readonly<ResearchPacket>): string {
         "Requires new run",
         followup.requires_new_run ? "true" : "false",
       );
+      if (followup.rfi !== undefined) {
+        lines.push("- Request for information:");
+        field(lines, "  Owner repository", followup.rfi.owner_repository);
+        field(lines, "  Related issue", followup.rfi.related_issue);
+        textField(
+          lines,
+          "  Requested evidence",
+          followup.rfi.requested_evidence,
+        );
+        lines.push(
+          `  - Unresolved references: ${followup.rfi.unresolved_refs
+            .map((ref) => codeSpan(ref))
+            .join(", ")}`,
+        );
+      }
       blank(lines);
+    }
+  }
+
+  if (packet.response_branches !== undefined) {
+    lines.push("## Response Branches", "");
+    for (const branch of packet.response_branches) {
+      lines.push(`### Branch ${codeSpan(branch.branch_id)}`, "");
+      textField(lines, "Label", branch.label);
+      textField(lines, "Description", branch.description);
+      textList(lines, "Expected signals", branch.expected_signals);
+      field(lines, "Assessment", branch.assessment);
+      referenceList(lines, "Evidence references", branch.evidence_refs);
+      referenceList(
+        lines,
+        "Counterevidence references",
+        branch.counterevidence_refs,
+      );
+      referenceList(lines, "Claim references", branch.claim_refs);
+      textList(lines, "Context notes", branch.context_notes);
+      textList(lines, "Limitations", branch.limitations);
+      blank(lines);
+    }
+  }
+
+  if (packet.causal_paths !== undefined) {
+    lines.push("## Causal Paths", "");
+    for (const path of packet.causal_paths) {
+      lines.push(`### Causal path ${codeSpan(path.path_id)}`, "");
+      textField(lines, "Description", path.description);
+      lines.push("- Nodes:");
+      for (const node of path.nodes) {
+        lines.push(
+          `  - ${codeSpan(node.node_id)}: ${escapeMarkdown(node.label)}`,
+        );
+        if (node.subject_refs.length > 0) {
+          lines.push(
+            `    - Subject references: ${node.subject_refs
+              .map((ref) => codeSpan(ref))
+              .join(", ")}`,
+          );
+        }
+      }
+      blank(lines);
+      for (const edge of path.edges) {
+        lines.push(
+          `#### Edge ${codeSpan(edge.edge_id)} (${codeSpan(edge.from_node)} → ${codeSpan(edge.to_node)})`,
+          "",
+        );
+        textField(lines, "Mechanism", edge.mechanism);
+        referenceList(lines, "Evidence references", edge.evidence_refs);
+        referenceList(
+          lines,
+          "Counterevidence references",
+          edge.counterevidence_refs,
+        );
+        textField(lines, "Uncertainty", edge.uncertainty);
+        textList(lines, "Falsifiers", edge.falsifiers);
+        referenceList(lines, "Claim references", edge.claim_refs);
+        blank(lines);
+      }
     }
   }
 
@@ -345,6 +473,9 @@ export function renderPacketMarkdown(packet: Readonly<ResearchPacket>): string {
   lines.push("## Governance State", "");
   field(lines, "Process terminal", packet.process_terminal);
   field(lines, "Completion", packet.completion);
+  if (packet.terminal_decision !== undefined) {
+    field(lines, "Terminal decision", packet.terminal_decision);
+  }
   field(lines, "Authority state", packet.authority_state);
   field(lines, "Downstream authority", packet.downstream_authority);
   field(lines, "Reportability", packet.reportability);
