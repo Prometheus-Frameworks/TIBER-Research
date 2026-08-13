@@ -1,0 +1,169 @@
+{
+  "admitted_external_source_families": [
+    {
+      "acquisition_method": "operator-manual-observation",
+      "admitted_receipts": [
+        {
+          "admissible_at": "2026-08-13T14:13:09Z",
+          "author": "Zach Selby",
+          "claim_scope": "q1 availability/replacement; q3 camp QB form context",
+          "http_status": 200,
+          "limitations": [
+            "Club editorial content; practice-period reporting, not game evidence.",
+            "Does not state a season-long timetable; no post-operative timeline published."
+          ],
+          "page_body_sha256_not_retained": "22befc5774d22b635539880512d970be711d52da34c545f22d3faa40175977dd",
+          "page_bytes": 294248,
+          "published_at": "2026-08-10T16:58:26.652Z",
+          "retained_excerpt_sha256": "ef291c9e3c1109b7d0cf465d18af121a39c0df9a4db6f5b666eabdecb8dd5e20",
+          "retention_mode": "excerpt",
+          "retrieved_at": "2026-08-13T14:10:18Z",
+          "source_object_id": "src-commanders-notebook-tunsil-out",
+          "title": "Training camp notebook | Commanders shuffle O-line with Tunsil out",
+          "url": "https://www.commanders.com/news/commanders-training-camp-notebook-laremy-tunsil-brandon-coleman"
+        },
+        {
+          "admissible_at": "2026-08-13T14:13:09Z",
+          "author": "Zach Selby",
+          "claim_scope": "q1 injury nature/timeline language; replacement and line-configuration facts",
+          "http_status": 200,
+          "limitations": [
+            "'Extended time' is the club's language; no exact recovery timetable is asserted.",
+            "Practice-observation reporting for Coleman's readiness; not game evidence."
+          ],
+          "page_body_sha256_not_retained": "147606ce3e101d462673e00d477354011c66ea81fbc73f3f676d956cc7f32842",
+          "page_bytes": 395285,
+          "published_at": "2026-08-10T19:08:48.197Z",
+          "retained_excerpt_sha256": "8fcf5e3ccd1380c119c912813cf9817e172886eddb3afb261929f08af0629f01",
+          "retention_mode": "excerpt",
+          "retrieved_at": "2026-08-13T14:10:22Z",
+          "source_object_id": "src-commanders-coleman-tackle-confidence",
+          "title": "Commanders confident Coleman can move back to tackle after 'excellent' offseason",
+          "url": "https://www.commanders.com/news/commanders-confident-brandon-coleman-tackle-laremy-tunsil"
+        },
+        {
+          "admissible_at": "2026-08-13T14:13:09Z",
+          "author": "Zach Selby",
+          "claim_scope": "q2 context: the club's own 2025 review identifies Tunsil as the line's top performer in its published overall, run-blocking, and pass-blocking categories",
+          "http_status": 200,
+          "limitations": [
+            "Numeric grade values on the page are deliberately NOT retained: their provenance is unstated on-page and appears to be third-party charting of the class excluded by operator direction (PFF exclusion).",
+            "Admitted only as the club's qualitative characterization of Tunsil's 2025 season; not admissible as charting evidence."
+          ],
+          "page_body_sha256_not_retained": "1121207aabdcc317101131334de294146259a67da5099ef391b07991fe434875",
+          "page_bytes": 290425,
+          "published_at": "2026-01-21T16:23:06.081Z",
+          "retained_excerpt_sha256": null,
+          "retention_mode": "reference_only",
+          "retrieved_at": "2026-08-13T14:10:25Z",
+          "source_object_id": "src-commanders-2025-oline-review",
+          "title": "Commanders 2025 position review | Offensive line",
+          "url": "https://www.commanders.com/news/commanders-2025-position-review-offensive-line"
+        },
+        {
+          "admissible_at": "2026-08-13T14:13:09Z",
+          "author": "Zach Selby",
+          "claim_scope": "q5 pre-injury McLaurin usage intent baseline",
+          "http_status": 200,
+          "limitations": [
+            "Stated coaching intent from February/May interviews, pre-dating the Tunsil injury; intent is not usage evidence."
+          ],
+          "page_body_sha256_not_retained": "15eda29356390d61c969e72d7cca27051271d5ad3d64db4957d9d3438ad91610",
+          "page_bytes": 375806,
+          "published_at": "2026-05-20T15:17:13.633Z",
+          "retained_excerpt_sha256": "31e65b47e347bb29f088f7e108d79c1a428433fe976e7e38623e588e7aa10207",
+          "retention_mode": "excerpt",
+          "retrieved_at": "2026-08-13T14:10:29Z",
+          "source_object_id": "src-commanders-mclaurin-blough-offense",
+          "title": "Terry McLaurin loves David Blough's new offense",
+          "url": "https://www.commanders.com/news/terry-mclaurin-david-blough-offense-commanders"
+        },
+        {
+          "admissible_at": "2026-08-13T14:13:09Z",
+          "author": "Zach Selby",
+          "claim_scope": "q4 club-published characterization of White's protection/receiving profile; NOT admissible as charting evidence",
+          "http_status": 200,
+          "limitations": [
+            "The pressure/efficiency/YPRR figures are club-asserted with unstated provenance (likely third-party charting of the operator-excluded class); admitted strictly as the club's published characterization, never as protection/route charting evidence.",
+            "Pre-injury March publication; describes prior-team usage, which must not silently become current Washington usage."
+          ],
+          "page_body_sha256_not_retained": "7072db37c06281522214478a53623253f435d988e14be00751570c1e53a4d06d",
+          "page_bytes": 307430,
+          "published_at": "2026-03-18T18:46:30.452Z",
+          "retained_excerpt_sha256": "bb92e42c4dfb15b6766eaf567509f0e10d70763a27e70e305a88db123adc539c",
+          "retention_mode": "excerpt",
+          "retrieved_at": "2026-08-13T14:10:32Z",
+          "source_object_id": "src-commanders-white-five-things",
+          "title": "5 things to know about Rachaad White",
+          "url": "https://www.commanders.com/news/five-things-to-know-rachaad-white"
+        },
+        {
+          "admissible_at": "2026-08-13T14:13:09Z",
+          "author": "Zach Selby",
+          "claim_scope": "q4 pre-injury backfield role intent (White third-down pass-catcher; JCM depth-chart position and pass-pro development need)",
+          "http_status": 200,
+          "limitations": [
+            "May commentary by a club-platform show guest/host describing roster intent; pre-dates the injury; intent is not usage evidence."
+          ],
+          "page_body_sha256_not_retained": "49aa66e3d26fba696d71ad8594d10cdf582ec9463046fb966cb722a4f669105d",
+          "page_bytes": 287467,
+          "published_at": "2026-05-27T15:07:54.45Z",
+          "retained_excerpt_sha256": "7c15882e9af2ee9bbf931a8a9420b937f3c3674ddce1e568cf8d540c40a96949",
+          "retention_mode": "excerpt",
+          "retrieved_at": "2026-08-13T14:10:36Z",
+          "source_object_id": "src-commanders-rb-room-competition",
+          "title": "Shawn Springs wants to see competition in Commanders' RB room",
+          "url": "https://www.commanders.com/news/shawn-springs-competition-commanders-running-back-room"
+        },
+        {
+          "admissible_at": "2026-08-13T14:13:09Z",
+          "author": "Zach Selby",
+          "claim_scope": "q1/q3 first post-injury joint-practice observations (line pass-pro parity; Daniels form; McLaurin matchup outcomes)",
+          "http_status": 200,
+          "limitations": [
+            "Practice-drill observations from club editorial coverage; not game evidence; no Coleman-specific rep outcomes reported in the retained excerpts."
+          ],
+          "page_body_sha256_not_retained": "c04ee6083a7ff14f5151caa2445de1e52a8c32467ab05e8ef049b2c4ee66a54c",
+          "page_bytes": 296484,
+          "published_at": "2026-08-12T19:03:38.386Z",
+          "retained_excerpt_sha256": "9afacd6c3e36fb9a9b4db441f6285d2e4356fbb97e72338ac5e9b72194370421",
+          "retention_mode": "excerpt",
+          "retrieved_at": "2026-08-13T14:10:40Z",
+          "source_object_id": "src-commanders-joint-practice-dolphins",
+          "title": "Training camp notebook | Commanders look sharp in joint practice vs. Dolphins",
+          "url": "https://www.commanders.com/news/commanders-dolphins-training-camp-practice-notes"
+        }
+      ],
+      "reportability": "internal",
+      "retention_modes": [
+        "excerpt",
+        "reference_only"
+      ],
+      "rights_posture": "NFL club-platform facial terms prohibit systematic retrieval; the operator authorized per-instance manual admission of the seven pages named in issue #3 (comment 5281497231 §1); full page bodies are not retained.",
+      "source_family_id": "commanders-official-club-site"
+    },
+    {
+      "acquisition_method": "governed-artifact-pin",
+      "admitted_receipts": [],
+      "reportability": "internal",
+      "retention_modes": [
+        "reference_only"
+      ],
+      "rights_posture": "TIBER-owned or already-governed artifacts.",
+      "source_family_id": "tiber-governed-artifacts"
+    }
+  ],
+  "candidate_external_set_beyond_admissions": [],
+  "candidate_run_id": "tunsil-absence-shock-v0",
+  "excluded_references": [
+    {
+      "reference": "pff.com Tunsil 2025 blocking profile (issue #3 seed reference)",
+      "status": "provider_or_license_blocked_operator_excluded"
+    },
+    {
+      "reference": "pff.com Coleman 2025 blocking profile (issue #3 seed reference)",
+      "status": "provider_or_license_blocked_operator_excluded"
+    }
+  ],
+  "external_network_default": "denied"
+}

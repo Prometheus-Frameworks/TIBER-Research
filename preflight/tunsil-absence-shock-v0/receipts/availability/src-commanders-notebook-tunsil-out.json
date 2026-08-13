@@ -1,0 +1,36 @@
+{
+  "candidate_run_id": "tunsil-absence-shock-v0",
+  "claimed_available_at": "2026-08-13T14:10:18Z",
+  "content_digest": "sha256:ef291c9e3c1109b7d0cf465d18af121a39c0df9a4db6f5b666eabdecb8dd5e20",
+  "cutoff_at": "2026-08-13T15:00:00Z",
+  "evidence_ref": {
+    "artifact_type": "source_metadata",
+    "digest": "sha256:959ed2b66e07c715fb4ebf4c2260a075498bf937d3cd41b0976eaf168c209f73",
+    "digest_mode": "tiber-canonical-json-v1",
+    "path": "preflight/tunsil-absence-shock-v0/sources/src-commanders-notebook-tunsil-out/metadata.json"
+  },
+  "metadata_digest": "sha256:959ed2b66e07c715fb4ebf4c2260a075498bf937d3cd41b0976eaf168c209f73",
+  "observation_method": "operator_provided_packet",
+  "observed_at": "2026-08-13T14:30:05Z",
+  "observer": {
+    "observer_id": "Joseph (@Prometheus-Frameworks)",
+    "role": "operator",
+    "trust_basis": "Per-instance Manual Witness admission authority recorded in TIBER-Research issue #3 comment 5281497231 §1; retrieval performed once per page by the authorized Claude preflight lane under operator direction with true clocks recorded."
+  },
+  "receipt_id": "avail-src-commanders-notebook-tunsil-out",
+  "revision_id": "sha256:22befc5774d22b635539880512d970be711d52da34c545f22d3faa40175977dd",
+  "schema_version": "research-external-source-availability-receipt/v1",
+  "source_family_id": "commanders-official-club-site",
+  "source_identifier": "https://www.commanders.com/news/commanders-training-camp-notebook-laremy-tunsil-brandon-coleman",
+  "source_object_id": "src-commanders-notebook-tunsil-out",
+  "trust_boundary": {
+    "boundary_id": "issue-3-manual-witness-admission",
+    "boundary_type": "operator_attestation",
+    "policy_ref": {
+      "artifact_type": "observation_policy",
+      "digest": "sha256:05bfb7fa39268088e2c3354102453b1afa2ff53f00e1a10f000d12ec8ac13c50",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "preflight/tunsil-absence-shock-v0/controls/observation-policy.json"
+    }
+  }
+}

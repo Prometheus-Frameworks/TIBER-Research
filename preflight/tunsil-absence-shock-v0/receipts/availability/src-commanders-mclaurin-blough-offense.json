@@ -1,0 +1,36 @@
+{
+  "candidate_run_id": "tunsil-absence-shock-v0",
+  "claimed_available_at": "2026-08-13T14:10:29Z",
+  "content_digest": "sha256:31e65b47e347bb29f088f7e108d79c1a428433fe976e7e38623e588e7aa10207",
+  "cutoff_at": "2026-08-13T15:00:00Z",
+  "evidence_ref": {
+    "artifact_type": "source_metadata",
+    "digest": "sha256:cf0b742d2c462b59a5a56d6bff5cd026316623e384554f565d22482ddeb6e2e5",
+    "digest_mode": "tiber-canonical-json-v1",
+    "path": "preflight/tunsil-absence-shock-v0/sources/src-commanders-mclaurin-blough-offense/metadata.json"
+  },
+  "metadata_digest": "sha256:cf0b742d2c462b59a5a56d6bff5cd026316623e384554f565d22482ddeb6e2e5",
+  "observation_method": "operator_provided_packet",
+  "observed_at": "2026-08-13T14:30:05Z",
+  "observer": {
+    "observer_id": "Joseph (@Prometheus-Frameworks)",
+    "role": "operator",
+    "trust_basis": "Per-instance Manual Witness admission authority recorded in TIBER-Research issue #3 comment 5281497231 §1; retrieval performed once per page by the authorized Claude preflight lane under operator direction with true clocks recorded."
+  },
+  "receipt_id": "avail-src-commanders-mclaurin-blough-offense",
+  "revision_id": "sha256:15eda29356390d61c969e72d7cca27051271d5ad3d64db4957d9d3438ad91610",
+  "schema_version": "research-external-source-availability-receipt/v1",
+  "source_family_id": "commanders-official-club-site",
+  "source_identifier": "https://www.commanders.com/news/terry-mclaurin-david-blough-offense-commanders",
+  "source_object_id": "src-commanders-mclaurin-blough-offense",
+  "trust_boundary": {
+    "boundary_id": "issue-3-manual-witness-admission",
+    "boundary_type": "operator_attestation",
+    "policy_ref": {
+      "artifact_type": "observation_policy",
+      "digest": "sha256:05bfb7fa39268088e2c3354102453b1afa2ff53f00e1a10f000d12ec8ac13c50",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "preflight/tunsil-absence-shock-v0/controls/observation-policy.json"
+    }
+  }
+}

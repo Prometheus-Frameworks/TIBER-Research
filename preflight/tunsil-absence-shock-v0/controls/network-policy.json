@@ -1,0 +1,21 @@
+{
+  "candidate_run_id": "tunsil-absence-shock-v0",
+  "default_action": "deny",
+  "destinations": [],
+  "enforcement_boundary": {
+    "boundary_id": "stage1-manual-runner",
+    "boundary_type": "sandbox_firewall",
+    "enforcement_policy_ref": {
+      "artifact_type": "egress_policy",
+      "digest": "sha256:299cacd2520c44e89c04e0ce055c1c474d4d9fb1e11c059e0065f5616051f265",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "preflight/tunsil-absence-shock-v0/controls/egress-enforcement-policy.json"
+    }
+  },
+  "mode": "denied",
+  "policy_id": "tunsil-absence-shock-v0-network",
+  "policy_owner": "Joseph (@Prometheus-Frameworks) per issue #3 comment 5281497231 §5",
+  "policy_status": "approved",
+  "recorded_at": "2026-08-13T14:30:05Z",
+  "schema_version": "research-network-policy/v1"
+}

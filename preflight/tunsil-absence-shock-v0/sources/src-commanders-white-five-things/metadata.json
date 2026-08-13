@@ -1,0 +1,59 @@
+{
+  "acquisition_method": "operator-manual-observation",
+  "admissibility": {
+    "rationale": "Operator-directed per-instance Manual Witness admission (issue #3 comment 5281497231 §1) with excerpt-scoped retention. Known epistemic limits: The pressure/efficiency/YPRR figures are club-asserted with unstated provenance (likely third-party charting of the operator-excluded class); admitted strictly as the club's published characterization, never as protection/route charting evidence. Pre-injury March publication; describes prior-team usage, which must not silently become current Washington usage.",
+    "state": "admitted"
+  },
+  "admitted": true,
+  "content_digest": "sha256:bb92e42c4dfb15b6766eaf567509f0e10d70763a27e70e305a88db123adc539c",
+  "content_path": "preflight/tunsil-absence-shock-v0/sources/src-commanders-white-five-things/excerpts.txt",
+  "context_match": {
+    "context_ref": "context-was-2026-camp-tunsil-shock",
+    "matched": true,
+    "rationale": "Pre-injury club-published characterization of White's protection/receiving profile; context for the backfield-redistribution question."
+  },
+  "directness": "direct",
+  "freshness": {
+    "rationale": "Retrieved once on 2026-08-13 before the bound cutoff; no later revision of the page was observed or admitted, and the page is not assumed immutable.",
+    "state": "current"
+  },
+  "intended_use": "q4 club-published characterization of White's protection/receiving profile; NOT admissible as charting evidence. Article: \"5 things to know about Rachaad White\" by Zach Selby.",
+  "limits": {
+    "licensing": "Copyrighted NFL club editorial content; no license for retention of full bodies; excerpt/reference admission only.",
+    "privacy": "contains_no_private_user_context",
+    "redistribution": "Not redistributable; internal lineage use only; retained excerpts stay inside this governed package.",
+    "reportability": "Internal only; never quote beyond the retained excerpts; never represent club-asserted figures as charting evidence."
+  },
+  "locator": {
+    "kind": "url",
+    "value": "https://www.commanders.com/news/five-things-to-know-rachaad-white"
+  },
+  "promotable": false,
+  "provider": "Washington Commanders official club site (commanders.com)",
+  "replayability": "lineage_only",
+  "reportability": "internal",
+  "retention_mode": "excerpt",
+  "revision": {
+    "revision_id": "sha256:7072db37c06281522214478a53623253f435d988e14be00751570c1e53a4d06d",
+    "supersedes_revision_id": null
+  },
+  "rights_disposition_ref": "NFL club-platform facial terms prohibit systematic retrieval; admission is operator-directed, per-instance, and excerpt-scoped under issue #3 comment 5281497231 §1; full page bodies are not retained or redistributed.",
+  "run_id": "tunsil-absence-shock-v0",
+  "schema_version": "research-source-metadata/v0",
+  "source_class": "operator_provided_observation",
+  "source_family_id": "commanders-official-club-site",
+  "source_identifier": "https://www.commanders.com/news/five-things-to-know-rachaad-white",
+  "source_object_id": "src-commanders-white-five-things",
+  "synthetic_fixture": false,
+  "temporal": {
+    "admissible_at": "2026-08-13T14:13:09Z",
+    "cutoff_at": "2026-08-13T15:00:00Z",
+    "effective_at": null,
+    "event_time": null,
+    "first_observed_at": "2026-08-13T14:10:32Z",
+    "published_at": "2026-03-18T18:46:30.452Z",
+    "retrieved_at": "2026-08-13T14:10:32Z",
+    "source_available_at": "2026-08-13T14:10:32Z"
+  },
+  "upstream_owner": "Washington Commanders / NFL club media"
+}

@@ -1,0 +1,59 @@
+{
+  "acquisition_method": "operator-manual-observation",
+  "admissibility": {
+    "rationale": "Operator-directed per-instance Manual Witness admission (issue #3 comment 5281497231 §1) with excerpt-scoped retention. Known epistemic limits: May commentary by a club-platform show guest/host describing roster intent; pre-dates the injury; intent is not usage evidence.",
+    "state": "admitted"
+  },
+  "admitted": true,
+  "content_digest": "sha256:7c15882e9af2ee9bbf931a8a9420b937f3c3674ddce1e568cf8d540c40a96949",
+  "content_path": "preflight/tunsil-absence-shock-v0/sources/src-commanders-rb-room-competition/excerpts.txt",
+  "context_match": {
+    "context_ref": "context-was-2026-camp-tunsil-shock",
+    "matched": true,
+    "rationale": "Pre-injury club-platform description of backfield role intent; context for the backfield-redistribution question."
+  },
+  "directness": "direct",
+  "freshness": {
+    "rationale": "Retrieved once on 2026-08-13 before the bound cutoff; no later revision of the page was observed or admitted, and the page is not assumed immutable.",
+    "state": "current"
+  },
+  "intended_use": "q4 pre-injury backfield role intent (White third-down pass-catcher; JCM depth-chart position and pass-pro development need). Article: \"Shawn Springs wants to see competition in Commanders' RB room\" by Zach Selby.",
+  "limits": {
+    "licensing": "Copyrighted NFL club editorial content; no license for retention of full bodies; excerpt/reference admission only.",
+    "privacy": "contains_no_private_user_context",
+    "redistribution": "Not redistributable; internal lineage use only; retained excerpts stay inside this governed package.",
+    "reportability": "Internal only; never quote beyond the retained excerpts; never represent club-asserted figures as charting evidence."
+  },
+  "locator": {
+    "kind": "url",
+    "value": "https://www.commanders.com/news/shawn-springs-competition-commanders-running-back-room"
+  },
+  "promotable": false,
+  "provider": "Washington Commanders official club site (commanders.com)",
+  "replayability": "lineage_only",
+  "reportability": "internal",
+  "retention_mode": "excerpt",
+  "revision": {
+    "revision_id": "sha256:49aa66e3d26fba696d71ad8594d10cdf582ec9463046fb966cb722a4f669105d",
+    "supersedes_revision_id": null
+  },
+  "rights_disposition_ref": "NFL club-platform facial terms prohibit systematic retrieval; admission is operator-directed, per-instance, and excerpt-scoped under issue #3 comment 5281497231 §1; full page bodies are not retained or redistributed.",
+  "run_id": "tunsil-absence-shock-v0",
+  "schema_version": "research-source-metadata/v0",
+  "source_class": "operator_provided_observation",
+  "source_family_id": "commanders-official-club-site",
+  "source_identifier": "https://www.commanders.com/news/shawn-springs-competition-commanders-running-back-room",
+  "source_object_id": "src-commanders-rb-room-competition",
+  "synthetic_fixture": false,
+  "temporal": {
+    "admissible_at": "2026-08-13T14:13:09Z",
+    "cutoff_at": "2026-08-13T15:00:00Z",
+    "effective_at": null,
+    "event_time": null,
+    "first_observed_at": "2026-08-13T14:10:36Z",
+    "published_at": "2026-05-27T15:07:54.45Z",
+    "retrieved_at": "2026-08-13T14:10:36Z",
+    "source_available_at": "2026-08-13T14:10:36Z"
+  },
+  "upstream_owner": "Washington Commanders / NFL club media"
+}

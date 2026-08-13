@@ -1,0 +1,323 @@
+{
+  "artifacts": [
+    {
+      "admissibility": "admitted",
+      "artifact_digest": "sha256:9a9bd0434978ebd48532a5f449b966fb5e6b2a78198910d664eb8047105262cf",
+      "artifact_id": "tiber-data-offensive-participation-readiness-audit-2026-08-10",
+      "blob_digest": "sha256:ff368f95810ce21637efb92b583047fb899b2b0eb8c630b49d27de1b03eb4a76",
+      "commit": "3b3b8bae11b14a0470cdd3a7310acaceac29a048",
+      "freshness": "current",
+      "path": "docs/audits/offensive-participation-evidence-readiness-audit-2026-08-10.json",
+      "repository": "Prometheus-Frameworks/TIBER-Data"
+    },
+    {
+      "admissibility": "admitted",
+      "artifact_digest": "sha256:9d18d0a324c2547f666eb4110f87a40706b1b676f1ba0f4df7796d5db513a850",
+      "artifact_id": "tiber-data-current-player-state-readiness-audit-2026-08-10",
+      "blob_digest": "sha256:35d012cbea8ece9f6f7131e4093617503dcbaf40d95d02933a688e4397d7df06",
+      "commit": "3b3b8bae11b14a0470cdd3a7310acaceac29a048",
+      "freshness": "current",
+      "path": "docs/audits/current-player-state-source-readiness-audit-2026-08-10.json",
+      "repository": "Prometheus-Frameworks/TIBER-Data"
+    },
+    {
+      "admissibility": "admitted",
+      "artifact_digest": "sha256:d14fc5655abe73e359ecbfca7ef1887ebc4288e8d3ce43d1ad630ac1433fe8b8",
+      "artifact_id": "tiber-data-official-depth-chart-pilot-readiness-2026-08-10",
+      "blob_digest": "sha256:865f751268954671328c864f84520210debc978a37a888476c2d32967a7292d3",
+      "commit": "3b3b8bae11b14a0470cdd3a7310acaceac29a048",
+      "freshness": "current",
+      "path": "docs/audits/official-depth-chart-pilot-readiness-2026-08-10.json",
+      "repository": "Prometheus-Frameworks/TIBER-Data"
+    },
+    {
+      "admissibility": "admitted",
+      "artifact_digest": "sha256:7f54aa298d22b0b2788f32683c0e045f2be8f83af84b2cd19e7012208f7376cc",
+      "artifact_id": "tiber-data-roster-player-team-map-2025-source-backed",
+      "blob_digest": "sha256:6c0436a4da7b7d54ee58454ad912be2571f5695457d107ed37a467b79d0cb38a",
+      "commit": "3b3b8bae11b14a0470cdd3a7310acaceac29a048",
+      "freshness": "current",
+      "path": "data/processed/evidence/roster_player_team_map_2025.source_backed.json",
+      "repository": "Prometheus-Frameworks/TIBER-Data"
+    },
+    {
+      "admissibility": "admitted",
+      "artifact_digest": "sha256:d59d019fb279efc42b58f10210d735d37ec8e788584838426a44bdc463cb3746",
+      "artifact_id": "tiber-fantasy-pclr-20260812-tunsil-laremy-tunsil-r1",
+      "blob_digest": "sha256:a57f57f73266fa84156a6251766772216bc9271f4e8b441c466df7e36d8b5d92",
+      "commit": "3750bac99aaea6ab52a1f53dc5ed7a171e442fda",
+      "freshness": "current",
+      "path": "data/post-cutoff-ledger/records/pclr_20260812_tunsil_laremy_tunsil_r1.json",
+      "repository": "Prometheus-Frameworks/TIBER-Fantasy"
+    },
+    {
+      "admissibility": "admitted",
+      "artifact_digest": "sha256:255c393c3773eb9b2c9c9d4dacdcc5b9754be7337477aff5fd3d276855b00410",
+      "artifact_id": "tiber-fantasy-pclr-20260812-tunsil-jayden-daniels-r1",
+      "blob_digest": "sha256:e8da5b754a6305d7ee49a261bd364c87652602159ab2a5f39de43e32028ec4fa",
+      "commit": "3750bac99aaea6ab52a1f53dc5ed7a171e442fda",
+      "freshness": "current",
+      "path": "data/post-cutoff-ledger/records/pclr_20260812_tunsil_jayden_daniels_r1.json",
+      "repository": "Prometheus-Frameworks/TIBER-Fantasy"
+    },
+    {
+      "admissibility": "admitted",
+      "artifact_digest": "sha256:663b82d357d5118d4f046bc4dfabfb2cf05f90f8596d94677e10340f923f73ca",
+      "artifact_id": "tiber-fantasy-pclr-20260812-tunsil-terry-mclaurin-r1",
+      "blob_digest": "sha256:4a74c7ba3437e788debabea223b2031f677b230f5fbd0c9f37c2dd8df494eaba",
+      "commit": "3750bac99aaea6ab52a1f53dc5ed7a171e442fda",
+      "freshness": "current",
+      "path": "data/post-cutoff-ledger/records/pclr_20260812_tunsil_terry_mclaurin_r1.json",
+      "repository": "Prometheus-Frameworks/TIBER-Fantasy"
+    },
+    {
+      "admissibility": "admitted",
+      "artifact_digest": "sha256:79d996fda67b7dc3a21b364fb3cf1fac3e0a342a548c16b4c4911b1cf139e20f",
+      "artifact_id": "tiber-fantasy-pclr-20260812-tunsil-rachaad-white-r1",
+      "blob_digest": "sha256:08b8ee8d3698e173712955ed5b1411548bfa10de64070349df460a14addd6910",
+      "commit": "3750bac99aaea6ab52a1f53dc5ed7a171e442fda",
+      "freshness": "current",
+      "path": "data/post-cutoff-ledger/records/pclr_20260812_tunsil_rachaad_white_r1.json",
+      "repository": "Prometheus-Frameworks/TIBER-Fantasy"
+    },
+    {
+      "admissibility": "admitted",
+      "artifact_digest": "sha256:a7ea9b6b90991cf1886c8b1f767c193ab83a56156caa5ea7440a621a283c4be3",
+      "artifact_id": "tiber-fantasy-pclr-20260812-tunsil-jacory-croskey-merritt-r1",
+      "blob_digest": "sha256:2d20f7235006dd210e2b08262cedd7a13c0438750377691a48745fe527be3bb6",
+      "commit": "3750bac99aaea6ab52a1f53dc5ed7a171e442fda",
+      "freshness": "current",
+      "path": "data/post-cutoff-ledger/records/pclr_20260812_tunsil_jacory_croskey_merritt_r1.json",
+      "repository": "Prometheus-Frameworks/TIBER-Fantasy"
+    }
+  ],
+  "blocked_inputs": [
+    {
+      "input_id": "route-participation-evidence",
+      "owner_repository": "Prometheus-Frameworks/TIBER-Data",
+      "question_refs": [
+        "q4-backfield-constraint-redistribution",
+        "q5-mclaurin-opportunity-vs-efficiency"
+      ],
+      "reason": "The pinned TIBER-Data offensive-participation evidence readiness audit (2026-08-10) records zero governed live-2026 route/route-participation coverage; FTN participation publishes post-season only and PFF-derived participation is provider_or_license_blocked.",
+      "status": "unavailable"
+    },
+    {
+      "input_id": "protection-pressure-attribution",
+      "owner_repository": "Prometheus-Frameworks/TIBER-Data",
+      "question_refs": [
+        "q2-protection-quality-pressure",
+        "q3-quarterback-playcalling-response",
+        "q4-backfield-constraint-redistribution"
+      ],
+      "reason": "No governed pass-block, chip/double-team, or pressure/sack attribution witness exists per the pinned offensive-participation readiness audit; the operator excluded the proprietary charting class that carries these fields.",
+      "status": "unavailable"
+    },
+    {
+      "input_id": "current-governed-availability-state",
+      "owner_repository": "Prometheus-Frameworks/TIBER-Data",
+      "question_refs": [
+        "q1-availability-replacement-state"
+      ],
+      "reason": "The pinned TIBER-Data current-player-state source readiness audit (2026-08-10) leaves governed current roster/injury/gameday availability unresolved; nflverse injury coverage ended after 2024 and no replacement source is qualified.",
+      "status": "unavailable"
+    },
+    {
+      "input_id": "ol-canonical-identity",
+      "owner_repository": "Prometheus-Frameworks/TIBER-Data",
+      "question_refs": [
+        "q1-availability-replacement-state",
+        "q2-protection-quality-pressure"
+      ],
+      "reason": "Tunsil, Coleman, Paul, Conerly Jr., and Wylie sit outside the governed skill-position identity population in the pinned roster map; their identities are run-scoped in this package pending governed OL identity coverage.",
+      "status": "identity_unresolved"
+    },
+    {
+      "input_id": "rb-passpro-role-interpretation",
+      "owner_repository": "Prometheus-Frameworks/Role-and-opportunity-model",
+      "question_refs": [
+        "q4-backfield-constraint-redistribution"
+      ],
+      "reason": "Deterministic RB pass-protection and route/workload role interpretation has a candidate downstream home that is not yet activated (Role-and-opportunity-model #23); no governed interpreter exists for separating pass blocks, chip-and-release routes, and full routes.",
+      "status": "unavailable"
+    }
+  ],
+  "comparisons": [
+    {
+      "aliases": [
+        "gsis 00-0033955"
+      ],
+      "kind": "player",
+      "label": "Jeremy McNichols (RB, WAS) — context only",
+      "subject_id": "jeremy-mcnichols"
+    },
+    {
+      "aliases": [
+        "gsis 00-0031588"
+      ],
+      "kind": "player",
+      "label": "Stefon Diggs (WR, WAS) — context only",
+      "subject_id": "stefon-diggs"
+    },
+    {
+      "aliases": [
+        "gsis 00-0037809"
+      ],
+      "kind": "player",
+      "label": "Chig Okonkwo (TE, WAS) — context only",
+      "subject_id": "chig-okonkwo"
+    }
+  ],
+  "cutoff_at": "2026-08-13T15:00:00Z",
+  "frozen_at": "2026-08-13T14:30:05Z",
+  "job_ref": {
+    "digest": "sha256:a2d37898eb10527023a37815d86218fa35d21c8cc3380461d59d8a5e134fe21b",
+    "digest_mode": "tiber-raw-sha256-v1",
+    "job_id": "tunsil-absence-shock",
+    "job_version": "v1",
+    "path": "preflight/tunsil-absence-shock-v0/candidate/job.yaml"
+  },
+  "market_snapshots": [],
+  "research_context": {
+    "context_class": "pilot_baseline",
+    "context_id": "context-was-2026-camp-tunsil-shock",
+    "description": "Washington Commanders, 2026 training camp/preseason, post-2026-08-08 Tunsil injury, pre-season-start; protection burden redistribution study.",
+    "dimensions": {
+      "event": "tunsil-torn-triceps-2026-08-08",
+      "phase": "training-camp-preseason",
+      "season": 2026,
+      "team": "WAS"
+    }
+  },
+  "run_id": "tunsil-absence-shock-v0",
+  "schema_version": "research-inputs/v0.1",
+  "sources": [
+    {
+      "admissibility": "admitted",
+      "content_digest": "sha256:ef291c9e3c1109b7d0cf465d18af121a39c0df9a4db6f5b666eabdecb8dd5e20",
+      "content_path": "preflight/tunsil-absence-shock-v0/sources/src-commanders-notebook-tunsil-out/excerpts.txt",
+      "metadata_digest": "sha256:959ed2b66e07c715fb4ebf4c2260a075498bf937d3cd41b0976eaf168c209f73",
+      "metadata_path": "preflight/tunsil-absence-shock-v0/sources/src-commanders-notebook-tunsil-out/metadata.json",
+      "promotable": false,
+      "replayability": "lineage_only",
+      "retention_mode": "excerpt",
+      "source_object_id": "src-commanders-notebook-tunsil-out"
+    },
+    {
+      "admissibility": "admitted",
+      "content_digest": "sha256:8fcf5e3ccd1380c119c912813cf9817e172886eddb3afb261929f08af0629f01",
+      "content_path": "preflight/tunsil-absence-shock-v0/sources/src-commanders-coleman-tackle-confidence/excerpts.txt",
+      "metadata_digest": "sha256:1aa07ad8d56224307b7f329e938d0b101a877e729b6f6e98d1c2eb4e15afbbe0",
+      "metadata_path": "preflight/tunsil-absence-shock-v0/sources/src-commanders-coleman-tackle-confidence/metadata.json",
+      "promotable": false,
+      "replayability": "lineage_only",
+      "retention_mode": "excerpt",
+      "source_object_id": "src-commanders-coleman-tackle-confidence"
+    },
+    {
+      "admissibility": "admitted",
+      "content_digest": "sha256:1121207aabdcc317101131334de294146259a67da5099ef391b07991fe434875",
+      "content_path": null,
+      "metadata_digest": "sha256:1116a7a03675af5ef72ec83088f419a3fcbb6e033a2b71984c610eec5833c919",
+      "metadata_path": "preflight/tunsil-absence-shock-v0/sources/src-commanders-2025-oline-review/metadata.json",
+      "promotable": false,
+      "replayability": "lineage_only",
+      "retention_mode": "reference_only",
+      "source_object_id": "src-commanders-2025-oline-review"
+    },
+    {
+      "admissibility": "admitted",
+      "content_digest": "sha256:31e65b47e347bb29f088f7e108d79c1a428433fe976e7e38623e588e7aa10207",
+      "content_path": "preflight/tunsil-absence-shock-v0/sources/src-commanders-mclaurin-blough-offense/excerpts.txt",
+      "metadata_digest": "sha256:cf0b742d2c462b59a5a56d6bff5cd026316623e384554f565d22482ddeb6e2e5",
+      "metadata_path": "preflight/tunsil-absence-shock-v0/sources/src-commanders-mclaurin-blough-offense/metadata.json",
+      "promotable": false,
+      "replayability": "lineage_only",
+      "retention_mode": "excerpt",
+      "source_object_id": "src-commanders-mclaurin-blough-offense"
+    },
+    {
+      "admissibility": "admitted",
+      "content_digest": "sha256:bb92e42c4dfb15b6766eaf567509f0e10d70763a27e70e305a88db123adc539c",
+      "content_path": "preflight/tunsil-absence-shock-v0/sources/src-commanders-white-five-things/excerpts.txt",
+      "metadata_digest": "sha256:f1649e48b85bb4eeefd85eba350e34be968527cd3c80411d79e701e2231b5b47",
+      "metadata_path": "preflight/tunsil-absence-shock-v0/sources/src-commanders-white-five-things/metadata.json",
+      "promotable": false,
+      "replayability": "lineage_only",
+      "retention_mode": "excerpt",
+      "source_object_id": "src-commanders-white-five-things"
+    },
+    {
+      "admissibility": "admitted",
+      "content_digest": "sha256:7c15882e9af2ee9bbf931a8a9420b937f3c3674ddce1e568cf8d540c40a96949",
+      "content_path": "preflight/tunsil-absence-shock-v0/sources/src-commanders-rb-room-competition/excerpts.txt",
+      "metadata_digest": "sha256:37318f51a56d807c873e0878a3b35272d39997503233f0ff0d5af9110bb188d3",
+      "metadata_path": "preflight/tunsil-absence-shock-v0/sources/src-commanders-rb-room-competition/metadata.json",
+      "promotable": false,
+      "replayability": "lineage_only",
+      "retention_mode": "excerpt",
+      "source_object_id": "src-commanders-rb-room-competition"
+    },
+    {
+      "admissibility": "admitted",
+      "content_digest": "sha256:9afacd6c3e36fb9a9b4db441f6285d2e4356fbb97e72338ac5e9b72194370421",
+      "content_path": "preflight/tunsil-absence-shock-v0/sources/src-commanders-joint-practice-dolphins/excerpts.txt",
+      "metadata_digest": "sha256:da8af2c6e50e35f4f332661b67cacd99212c860756e012b9ed7d4bad9a29ba45",
+      "metadata_path": "preflight/tunsil-absence-shock-v0/sources/src-commanders-joint-practice-dolphins/metadata.json",
+      "promotable": false,
+      "replayability": "lineage_only",
+      "retention_mode": "excerpt",
+      "source_object_id": "src-commanders-joint-practice-dolphins"
+    }
+  ],
+  "subjects": [
+    {
+      "kind": "player-run-scoped",
+      "label": "Laremy Tunsil (LT, WAS) — run-scoped identity, no governed GSIS",
+      "subject_id": "laremy-tunsil"
+    },
+    {
+      "kind": "player-run-scoped",
+      "label": "Brandon Coleman (LT replacement, WAS) — run-scoped identity",
+      "subject_id": "brandon-coleman"
+    },
+    {
+      "kind": "unit-run-scoped",
+      "label": "Washington offensive-line configuration (C. Paul LG, Conerly RT, Wylie swing) — run-scoped composite subject",
+      "subject_id": "was-oline-configuration"
+    },
+    {
+      "aliases": [
+        "gsis 00-0039910"
+      ],
+      "kind": "player",
+      "label": "Jayden Daniels (QB, WAS)",
+      "subject_id": "jayden-daniels"
+    },
+    {
+      "aliases": [
+        "gsis 00-0035659"
+      ],
+      "kind": "player",
+      "label": "Terry McLaurin (WR, WAS)",
+      "subject_id": "terry-mclaurin"
+    },
+    {
+      "aliases": [
+        "gsis 00-0037256"
+      ],
+      "kind": "player",
+      "label": "Rachaad White (RB, WAS)",
+      "subject_id": "rachaad-white"
+    },
+    {
+      "aliases": [
+        "gsis 00-0040242"
+      ],
+      "kind": "player",
+      "label": "Jacory Croskey-Merritt (RB, WAS)",
+      "subject_id": "jacory-croskey-merritt"
+    }
+  ],
+  "synthetic_fixture": false
+}

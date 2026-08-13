@@ -1,0 +1,31 @@
+{
+  "approved_artifact_refs": [],
+  "authority_class": "stage1_preflight_only",
+  "candidate_run_id": "tunsil-absence-shock-v0",
+  "decision_ref": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/3#issuecomment-5281497231",
+  "exclusions": [
+    "No execution of the Research run and no activate_run authority; a separate explicit activation decision bound to exact digests is required.",
+    "No PFF retrieval or ingestion; the two PFF profile references are excluded and their gap must surface as Missing Witness RFIs, not proxies.",
+    "No systematic retrieval, general collector, or retention of full page bodies; excerpt/reference-only retention with internal reportability.",
+    "No downstream Forecast, Fantasy, Strategy, Ops, source-repository, promotion, publication, scheduling, or product mutation.",
+    "All repositories other than TIBER-Research remain read-only for this work."
+  ],
+  "operator": "Joseph (@Prometheus-Frameworks)",
+  "operator_direction": "I approve preparation of the bounded `tunsil-absence-shock-v0` preflight package under the following constraints. **This is preflight/build authority only. It is not `activate_run` authority and does not authorize execution of the Research run.**",
+  "quote_digest": "sha256:c244022621a12fbb6fd9dafea110ad322471fd412c35938c86fa5fe2780dfb38",
+  "quote_digest_mode": "tiber-raw-sha256-v1",
+  "recorded_at": "2026-08-13T14:05:26Z",
+  "schema_version": "research-operator-direction-record/v1",
+  "scope": [
+    "Perform the seven bounded Manual Witness admissions of the commanders.com pages named in issue #3 and create their receipts with true clocks.",
+    "Bind the fresh post-admission cutoff at or after the latest admissible_at.",
+    "Author the candidate job.yaml, frozen inputs.json, controls, identity/source maps, blocked inputs/RFIs, and the hash-bound preflight package under preflight/tunsil-absence-shock-v0.",
+    "Make the minimal package.json preflight:check extension needed for CI to validate the new package.",
+    "Validate everything offline and stop at a reviewable package for fresh independent review by the GPT-5.6 Sol review lane."
+  ],
+  "terminal_outcomes": [
+    "stage1_preflight_requires_operator_inputs",
+    "stage1_activation_ready_for_operator_decision",
+    "stage1_preflight_blocked"
+  ]
+}

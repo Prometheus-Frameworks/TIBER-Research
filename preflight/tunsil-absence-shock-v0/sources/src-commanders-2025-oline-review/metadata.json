@@ -1,0 +1,59 @@
+{
+  "acquisition_method": "operator-manual-observation",
+  "admissibility": {
+    "rationale": "Operator-directed per-instance Manual Witness admission (issue #3 comment 5281497231 §1) as reference only: the page's numeric grade values were deliberately not retained because their on-page provenance is unstated and appears to derive from third-party charting of the class the operator excluded; admitted solely as the club's qualitative characterization.",
+    "state": "admitted"
+  },
+  "admitted": true,
+  "content_digest": "sha256:1121207aabdcc317101131334de294146259a67da5099ef391b07991fe434875",
+  "content_path": null,
+  "context_match": {
+    "context_ref": "context-was-2026-camp-tunsil-shock",
+    "matched": true,
+    "rationale": "The club's own 2025 season review characterizes Tunsil's baseline line role; admitted as qualitative context for the protection-quality question."
+  },
+  "directness": "direct",
+  "freshness": {
+    "rationale": "Retrieved once on 2026-08-13 before the bound cutoff; no later revision of the page was observed or admitted, and the page is not assumed immutable.",
+    "state": "current"
+  },
+  "intended_use": "q2 context: the club's own 2025 review identifies Tunsil as the line's top performer in its published overall, run-blocking, and pass-blocking categories. Article: \"Commanders 2025 position review | Offensive line\" by Zach Selby.",
+  "limits": {
+    "licensing": "Copyrighted NFL club editorial content; no license for retention of full bodies; excerpt/reference admission only.",
+    "privacy": "contains_no_private_user_context",
+    "redistribution": "Not redistributable; internal lineage use only; retained excerpts stay inside this governed package.",
+    "reportability": "Internal only; never quote beyond the retained excerpts; never represent club-asserted figures as charting evidence."
+  },
+  "locator": {
+    "kind": "url",
+    "value": "https://www.commanders.com/news/commanders-2025-position-review-offensive-line"
+  },
+  "promotable": false,
+  "provider": "Washington Commanders official club site (commanders.com)",
+  "replayability": "lineage_only",
+  "reportability": "internal",
+  "retention_mode": "reference_only",
+  "revision": {
+    "revision_id": "sha256:1121207aabdcc317101131334de294146259a67da5099ef391b07991fe434875",
+    "supersedes_revision_id": null
+  },
+  "rights_disposition_ref": "NFL club-platform facial terms prohibit systematic retrieval; admission is operator-directed, per-instance, and excerpt-scoped under issue #3 comment 5281497231 §1; full page bodies are not retained or redistributed.",
+  "run_id": "tunsil-absence-shock-v0",
+  "schema_version": "research-source-metadata/v0",
+  "source_class": "operator_provided_observation",
+  "source_family_id": "commanders-official-club-site",
+  "source_identifier": "https://www.commanders.com/news/commanders-2025-position-review-offensive-line",
+  "source_object_id": "src-commanders-2025-oline-review",
+  "synthetic_fixture": false,
+  "temporal": {
+    "admissible_at": "2026-08-13T14:13:09Z",
+    "cutoff_at": "2026-08-13T15:00:00Z",
+    "effective_at": null,
+    "event_time": null,
+    "first_observed_at": "2026-08-13T14:10:25Z",
+    "published_at": "2026-01-21T16:23:06.081Z",
+    "retrieved_at": "2026-08-13T14:10:25Z",
+    "source_available_at": "2026-08-13T14:10:25Z"
+  },
+  "upstream_owner": "Washington Commanders / NFL club media"
+}

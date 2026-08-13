@@ -1,0 +1,85 @@
+{
+  "candidate_run_id": "tunsil-absence-shock-v0",
+  "decision": "admitted_manual_witness_path_exists_quantitative_witnesses_blocked",
+  "fail_closed_note": "Unlike opportunity-clusters-2026-v0, at least one full admitted-evidence claim path exists (q1 via the seven Manual Witness admissions plus pinned governed artifacts), so the job's blocked condition — no admitted evidence path for any full claim — does not trigger. The honest expected terminal with today's coverage remains tunsil_absence_shock_v0_requires_data_followup.",
+  "internal_only_terminal_path": [
+    "tunsil_absence_shock_v0_complete",
+    "tunsil_absence_shock_v0_requires_data_followup",
+    "tunsil_absence_shock_v0_blocked"
+  ],
+  "questions": [
+    {
+      "available": [
+        "First-party club confirmation of the injury, surgery plan, and Coleman replacement (two admitted pages).",
+        "First post-injury joint-practice club observations (admitted page).",
+        "Pinned post-cutoff ledger records separating observation from inference for the five affected players."
+      ],
+      "blocked_by": [
+        "No governed current availability state artifact; club editorial confirmation is not governed availability truth.",
+        "OL identities are run-scoped pending governed OL identity coverage."
+      ],
+      "question_id": "q1-availability-replacement-state",
+      "state": "admitted_evidence_path_available"
+    },
+    {
+      "available": [
+        "Club qualitative characterization of Tunsil's 2025 line role (reference-only admission).",
+        "Club-asserted Coleman camp readiness reporting (admitted excerpts)."
+      ],
+      "blocked_by": [
+        "No governed pass-block or pressure attribution evidence; the proprietary charting class carrying these fields is operator-excluded.",
+        "The Coleman/Tunsil comparative protection-quality claim remains unresolved by operator direction."
+      ],
+      "question_id": "q2-protection-quality-pressure",
+      "state": "substantially_blocked_missing_quantitative_witness"
+    },
+    {
+      "available": [
+        "Club practice reporting on Daniels form inside the window (admitted excerpts)."
+      ],
+      "blocked_by": [
+        "No governed protection-count, time-to-throw, pressure, or play-design evidence for live 2026."
+      ],
+      "question_id": "q3-quarterback-playcalling-response",
+      "state": "substantially_blocked_missing_quantitative_witness"
+    },
+    {
+      "available": [
+        "Club-published pre-injury role intent for White and Croskey-Merritt (admitted excerpts)."
+      ],
+      "blocked_by": [
+        "No governed route-versus-block participation witness.",
+        "No activated deterministic RB pass-protection role interpreter (Role-and-opportunity-model #23)."
+      ],
+      "question_id": "q4-backfield-constraint-redistribution",
+      "state": "substantially_blocked_missing_quantitative_witness"
+    },
+    {
+      "available": [
+        "Club-published pre-injury usage intent for McLaurin (admitted excerpts).",
+        "Pinned McLaurin post-cutoff ledger record."
+      ],
+      "blocked_by": [
+        "No governed target, first-read, air-yard, or route-participation evidence for live 2026."
+      ],
+      "question_id": "q5-mclaurin-opportunity-vs-efficiency",
+      "state": "substantially_blocked_missing_quantitative_witness"
+    }
+  ],
+  "repository_audit_pins": [
+    {
+      "commit": "3b3b8bae11b14a0470cdd3a7310acaceac29a048",
+      "repository": "Prometheus-Frameworks/TIBER-Data"
+    },
+    {
+      "commit": "3750bac99aaea6ab52a1f53dc5ed7a171e442fda",
+      "repository": "Prometheus-Frameworks/TIBER-Fantasy"
+    }
+  ],
+  "traps": [
+    "Club-asserted numeric figures (pressures allowed, efficiency ratings, YPRR) have unstated provenance and must never be promoted to charting evidence.",
+    "Extra White snaps must not be treated as extra routes, targets, or fantasy points.",
+    "One positive practice or Coleman's 87-snap 2025 sample must not be treated as proof the loss is immaterial.",
+    "Depth-chart publication is not availability or usage truth."
+  ]
+}

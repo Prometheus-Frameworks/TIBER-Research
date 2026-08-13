@@ -1,0 +1,11 @@
+{
+  "control_state": "candidate_not_enforced",
+  "default_action": "deny",
+  "execution_profile": "stage1_manual_pilot",
+  "limitations": [
+    "This file states the required enforcement posture; it is not an observation receipt.",
+    "Activation requires a separate trusted runner receipt that binds the effective environment."
+  ],
+  "policy_ref": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/3#issuecomment-5281497231",
+  "schema_version": "research-egress-enforcement-policy/v1"
+}
