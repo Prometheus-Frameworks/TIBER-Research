@@ -169,7 +169,8 @@
             "network_namespace",
             "egress_proxy",
             "connector_policy",
-            "sandbox_firewall"
+            "sandbox_firewall",
+            "runner_protocol_attestation"
           ]
         },
         "enforcement_policy_ref": {

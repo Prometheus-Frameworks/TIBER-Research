@@ -147,7 +147,7 @@
     },
     {
       "artifact_type": "observation_policy",
-      "digest": "sha256:ceabc76f6e81aad44ac79861fb49741402c1931426f76c106589b336f068d009",
+      "digest": "sha256:1eb11037ed4ecbbffae5576d55c1c9c6a337d1c9f3defd580d49f63bc58f42df",
       "digest_mode": "tiber-canonical-json-v1",
       "path": "preflight/tunsil-absence-shock-v0/controls/observation-policy.json"
     },
@@ -229,43 +229,43 @@
     "external_source_availability_receipt_refs": [
       {
         "artifact_type": "external_source_availability_receipt",
-        "digest": "sha256:8a6b947117867c0d105fc070cd121092fc3a9832d95888b272029d958434e719",
+        "digest": "sha256:2dda2059d724ef6090a41b5ed5c22f06f92a5d00aed50ac4a8b4e95fe2d05743",
         "digest_mode": "tiber-canonical-json-v1",
         "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-notebook-tunsil-out.json"
       },
       {
         "artifact_type": "external_source_availability_receipt",
-        "digest": "sha256:db7d2bcc283fbc118f060329fff329008689bd069966a944c2f5a770cdfb758c",
+        "digest": "sha256:c5d7b2e0747e623aa5701117709347bcd17fb4cf0765ebb4e875a9006f963b57",
         "digest_mode": "tiber-canonical-json-v1",
         "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-coleman-tackle-confidence.json"
       },
       {
         "artifact_type": "external_source_availability_receipt",
-        "digest": "sha256:451e5d4d3687a75da046eab38df73b61717c52a675b24335b9769b05964b326a",
+        "digest": "sha256:f85051a72a7c7e2edddc1e12675bef93cfb9274d4da67b543e2617887fc98aa4",
         "digest_mode": "tiber-canonical-json-v1",
         "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-2025-oline-review.json"
       },
       {
         "artifact_type": "external_source_availability_receipt",
-        "digest": "sha256:03054e8a88d57e0d5c7cdc6d00fde1000687a8346076f7e92444a86737fe436e",
+        "digest": "sha256:96d399b635b759074c9afe76f859210956291b3b3b905ad78c3f2baf7630f9fe",
         "digest_mode": "tiber-canonical-json-v1",
         "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-mclaurin-blough-offense.json"
       },
       {
         "artifact_type": "external_source_availability_receipt",
-        "digest": "sha256:433bf541110bae10f3c11bfc670cc9accbe07302efcedd023e3a2f2aca64aca0",
+        "digest": "sha256:00d19c7a220bd4d99901866e716f1dc18dc4aea3c290c214cc56ff42daeb6506",
         "digest_mode": "tiber-canonical-json-v1",
         "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-white-five-things.json"
       },
       {
         "artifact_type": "external_source_availability_receipt",
-        "digest": "sha256:258f3fe98c76da42dd877395643b2dc867d5c06931e20371cb8ed310319ccfd3",
+        "digest": "sha256:f1873f18effeb5958564dedcff1976515b526e84afb025812ae5509598f9f2f6",
         "digest_mode": "tiber-canonical-json-v1",
         "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-rb-room-competition.json"
       },
       {
         "artifact_type": "external_source_availability_receipt",
-        "digest": "sha256:5f295cccb601830b44948b47567749258726a64ed4175721844cb3b0b109e3fc",
+        "digest": "sha256:cfa05b75a136fcf57b15d9ff0c91a4241769236c3dfb1a86f3815ca01d356f5e",
         "digest_mode": "tiber-canonical-json-v1",
         "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-joint-practice-dolphins.json"
       }
@@ -273,13 +273,13 @@
     "governed_artifact_provenance_receipt_refs": [],
     "network_enforcement_receipt_ref": {
       "artifact_type": "network_enforcement_receipt",
-      "digest": "sha256:20cd41b49e13648e8e94e330066f2211703a73faa81c2bf3cdd10565e468ed73",
+      "digest": "sha256:a834b5030759942442eea58503836020ee78cb26e19637a03794a1284ef28334",
       "digest_mode": "tiber-canonical-json-v1",
       "path": "preflight/tunsil-absence-shock-v0/receipts/network-enforcement.json"
     },
     "network_policy_ref": {
       "artifact_type": "network_policy",
-      "digest": "sha256:e5c2798053f7faa2cc0847da7176654b46da7e601574af892e48a00898b23f8f",
+      "digest": "sha256:c6c2099211373dbcf97830c8994103283b32df6d7742c004548a4d8bce46949f",
       "digest_mode": "tiber-canonical-json-v1",
       "path": "preflight/tunsil-absence-shock-v0/controls/network-policy.json"
     },
@@ -293,7 +293,7 @@
     "quote_observed_at": "2026-08-13T18:39:40Z"
   },
   "preflight_id": "tunsil-absence-shock-v0-preflight",
-  "prepared_at": "2026-08-13T20:56:10Z",
+  "prepared_at": "2026-08-13T21:58:31Z",
   "requirements": [
     {
       "description": "Frozen inputs bind the operator-approved cutoff, context, closed subject grain, nine pinned governed artifacts, seven admitted Manual Witness sources, and five owner-routed blocked inputs (issue #3 comment 5281497231 §2-§4, §9), re-frozen v2 at the activation identity path runs/tunsil-absence-shock-v0/inputs.json with governing-manifest artifact digests per comment 5284914358.",
@@ -375,43 +375,43 @@
       "evidence_refs": [
         {
           "artifact_type": "external_source_availability_receipt",
-          "digest": "sha256:8a6b947117867c0d105fc070cd121092fc3a9832d95888b272029d958434e719",
+          "digest": "sha256:2dda2059d724ef6090a41b5ed5c22f06f92a5d00aed50ac4a8b4e95fe2d05743",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-notebook-tunsil-out.json"
         },
         {
           "artifact_type": "external_source_availability_receipt",
-          "digest": "sha256:db7d2bcc283fbc118f060329fff329008689bd069966a944c2f5a770cdfb758c",
+          "digest": "sha256:c5d7b2e0747e623aa5701117709347bcd17fb4cf0765ebb4e875a9006f963b57",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-coleman-tackle-confidence.json"
         },
         {
           "artifact_type": "external_source_availability_receipt",
-          "digest": "sha256:451e5d4d3687a75da046eab38df73b61717c52a675b24335b9769b05964b326a",
+          "digest": "sha256:f85051a72a7c7e2edddc1e12675bef93cfb9274d4da67b543e2617887fc98aa4",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-2025-oline-review.json"
         },
         {
           "artifact_type": "external_source_availability_receipt",
-          "digest": "sha256:03054e8a88d57e0d5c7cdc6d00fde1000687a8346076f7e92444a86737fe436e",
+          "digest": "sha256:96d399b635b759074c9afe76f859210956291b3b3b905ad78c3f2baf7630f9fe",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-mclaurin-blough-offense.json"
         },
         {
           "artifact_type": "external_source_availability_receipt",
-          "digest": "sha256:433bf541110bae10f3c11bfc670cc9accbe07302efcedd023e3a2f2aca64aca0",
+          "digest": "sha256:00d19c7a220bd4d99901866e716f1dc18dc4aea3c290c214cc56ff42daeb6506",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-white-five-things.json"
         },
         {
           "artifact_type": "external_source_availability_receipt",
-          "digest": "sha256:258f3fe98c76da42dd877395643b2dc867d5c06931e20371cb8ed310319ccfd3",
+          "digest": "sha256:f1873f18effeb5958564dedcff1976515b526e84afb025812ae5509598f9f2f6",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-rb-room-competition.json"
         },
         {
           "artifact_type": "external_source_availability_receipt",
-          "digest": "sha256:5f295cccb601830b44948b47567749258726a64ed4175721844cb3b0b109e3fc",
+          "digest": "sha256:cfa05b75a136fcf57b15d9ff0c91a4241769236c3dfb1a86f3815ca01d356f5e",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/receipts/availability/src-commanders-joint-practice-dolphins.json"
         }
@@ -497,13 +497,13 @@
       "evidence_refs": [
         {
           "artifact_type": "network_enforcement_receipt",
-          "digest": "sha256:20cd41b49e13648e8e94e330066f2211703a73faa81c2bf3cdd10565e468ed73",
+          "digest": "sha256:a834b5030759942442eea58503836020ee78cb26e19637a03794a1284ef28334",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/receipts/network-enforcement.json"
         },
         {
           "artifact_type": "network_policy",
-          "digest": "sha256:e5c2798053f7faa2cc0847da7176654b46da7e601574af892e48a00898b23f8f",
+          "digest": "sha256:c6c2099211373dbcf97830c8994103283b32df6d7742c004548a4d8bce46949f",
           "digest_mode": "tiber-canonical-json-v1",
           "path": "preflight/tunsil-absence-shock-v0/controls/network-policy.json"
         }

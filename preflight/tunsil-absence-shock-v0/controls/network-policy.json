@@ -4,7 +4,7 @@
   "destinations": [],
   "enforcement_boundary": {
     "boundary_id": "stage1-manual-runner",
-    "boundary_type": "sandbox_firewall",
+    "boundary_type": "runner_protocol_attestation",
     "enforcement_policy_ref": {
       "artifact_type": "egress_policy",
       "digest": "sha256:299cacd2520c44e89c04e0ce055c1c474d4d9fb1e11c059e0065f5616051f265",

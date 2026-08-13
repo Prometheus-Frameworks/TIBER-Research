@@ -631,3 +631,103 @@ test("content-digest artifact semantics fail provenance coverage", () => {
     },
   );
 });
+
+// ---------------------------------------------------------------------------
+// Enforcement-boundary truthfulness (Sol review of a34237e): while the
+// deny-default egress control is not enforced, a network enforcement receipt
+// may only attest the weakest truthful boundary class,
+// runner_protocol_attestation — a technical isolation claim is an overclaim.
+// ---------------------------------------------------------------------------
+
+const V2_MANIFEST = `${V2_PACKAGE}/preflight.json`;
+const V2_NETWORK_POLICY = `${V2_PACKAGE}/controls/network-policy.json`;
+const V2_OBSERVATION_POLICY = `${V2_PACKAGE}/controls/observation-policy.json`;
+const V2_ENFORCEMENT = `${V2_PACKAGE}/receipts/network-enforcement.json`;
+
+function retypeV2EnforcementBoundary(root: string, boundaryType: string): void {
+  const mutate = (path: string, operation: (value: JsonObject) => void) => {
+    const value = readWorkspaceJson(root, path);
+    operation(value);
+    writeJson(root, path, value);
+    return sha256CanonicalJson(value);
+  };
+  const observationDigest = mutate(V2_OBSERVATION_POLICY, (value) => {
+    for (const admission of value.admitted_observations) {
+      if (admission.method === "network_enforcement_observation") {
+        admission.boundary_type = boundaryType;
+      }
+    }
+  });
+  const networkDigest = mutate(V2_NETWORK_POLICY, (value) => {
+    value.enforcement_boundary.boundary_type = boundaryType;
+  });
+  const rebound = new Map<string, string>([
+    [V2_OBSERVATION_POLICY, observationDigest],
+    [V2_NETWORK_POLICY, networkDigest],
+  ]);
+  const manifest = readWorkspaceJson(root, V2_MANIFEST);
+  for (const ref of manifest.gate_artifacts
+    .external_source_availability_receipt_refs) {
+    const receiptDigest = mutate(ref.path, (value) => {
+      value.trust_boundary.policy_ref.digest = observationDigest;
+    });
+    rebound.set(ref.path, receiptDigest);
+  }
+  const enforcementDigest = mutate(V2_ENFORCEMENT, (value) => {
+    value.enforcement_boundary.boundary_type = boundaryType;
+    value.network_policy_ref.digest = networkDigest;
+    value.observation_policy_ref.digest = observationDigest;
+  });
+  rebound.set(V2_ENFORCEMENT, enforcementDigest);
+  const rebind = (ref: JsonObject) => {
+    const next = rebound.get(ref.path);
+    if (next !== undefined) {
+      ref.digest = next;
+    }
+  };
+  for (const ref of manifest.gate_artifacts
+    .external_source_availability_receipt_refs) {
+    rebind(ref);
+  }
+  rebind(manifest.gate_artifacts.network_policy_ref);
+  rebind(manifest.gate_artifacts.network_enforcement_receipt_ref);
+  for (const ref of manifest.candidate_artifact_refs) {
+    rebind(ref);
+  }
+  for (const requirement of manifest.requirements) {
+    for (const ref of requirement.evidence_refs) {
+      rebind(ref);
+    }
+  }
+  writeJson(root, V2_MANIFEST, manifest);
+}
+
+test("runner protocol attestation is accepted over unenforced egress", () => {
+  withTempWorkspace(copyV2Workspace, (root) => {
+    const enforcement = readWorkspaceJson(root, V2_ENFORCEMENT);
+    assert.equal(
+      enforcement.enforcement_boundary.boundary_type,
+      "runner_protocol_attestation",
+    );
+    const egress = readWorkspaceJson(
+      root,
+      `${V2_PACKAGE}/controls/egress-enforcement-policy.json`,
+    );
+    assert.equal(egress.control_state, "candidate_not_enforced");
+    const report = validateStage1Preflight(root, V2_MANIFEST);
+    assert.deepEqual(report.errors, []);
+    assert.equal(report.valid, true);
+  });
+});
+
+test("a technical boundary claim over unenforced egress is an overclaim", () => {
+  withTempWorkspace(copyV2Workspace, (root) => {
+    retypeV2EnforcementBoundary(root, "sandbox_firewall");
+    const report = validateStage1Preflight(root, V2_MANIFEST);
+    assert.equal(report.valid, false);
+    assert.ok(report.errors.length >= 1);
+    for (const entry of report.errors) {
+      assert.equal(entry.code, "enforcement_boundary_overclaim");
+    }
+  });
+});

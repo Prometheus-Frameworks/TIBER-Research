@@ -28,7 +28,7 @@
     "boundary_type": "operator_attestation",
     "policy_ref": {
       "artifact_type": "observation_policy",
-      "digest": "sha256:ceabc76f6e81aad44ac79861fb49741402c1931426f76c106589b336f068d009",
+      "digest": "sha256:1eb11037ed4ecbbffae5576d55c1c9c6a337d1c9f3defd580d49f63bc58f42df",
       "digest_mode": "tiber-canonical-json-v1",
       "path": "preflight/tunsil-absence-shock-v0/controls/observation-policy.json"
     }

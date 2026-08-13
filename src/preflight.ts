@@ -2229,6 +2229,24 @@ function validateNetwork(
           "The enforcement receipt environment must match the exact egress execution profile.",
       });
     }
+    // Structured provenance must not overclaim the enforcement mechanism
+    // (PR #7 review of a34237e): while the deny-default egress control is
+    // not in enforced state, a receipt may only attest the weakest truthful
+    // boundary class — runner_protocol_attestation — never a technical
+    // isolation class.
+    if (
+      egressPolicy !== undefined &&
+      egressPolicy.control_state !== "enforced" &&
+      enforcement.enforcement_boundary.boundary_type !==
+        "runner_protocol_attestation"
+    ) {
+      errors.push({
+        code: "enforcement_boundary_overclaim",
+        path: "network_enforcement_receipt.enforcement_boundary",
+        message:
+          "An enforcement receipt over an unenforced egress control must declare runner_protocol_attestation, not a technical isolation boundary.",
+      });
+    }
     isAfter(
       enforcement.valid_from,
       enforcement.observed_at,

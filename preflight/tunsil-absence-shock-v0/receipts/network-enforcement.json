@@ -5,7 +5,7 @@
   "effective_mode": "denied",
   "enforcement_boundary": {
     "boundary_id": "stage1-manual-runner",
-    "boundary_type": "sandbox_firewall",
+    "boundary_type": "runner_protocol_attestation",
     "enforcement_policy_ref": {
       "artifact_type": "egress_policy",
       "digest": "sha256:299cacd2520c44e89c04e0ce055c1c474d4d9fb1e11c059e0065f5616051f265",
@@ -26,14 +26,14 @@
   ],
   "network_policy_ref": {
     "artifact_type": "network_policy",
-    "digest": "sha256:e5c2798053f7faa2cc0847da7176654b46da7e601574af892e48a00898b23f8f",
+    "digest": "sha256:c6c2099211373dbcf97830c8994103283b32df6d7742c004548a4d8bce46949f",
     "digest_mode": "tiber-canonical-json-v1",
     "path": "preflight/tunsil-absence-shock-v0/controls/network-policy.json"
   },
   "observation_method": "network_enforcement_observation",
   "observation_policy_ref": {
     "artifact_type": "observation_policy",
-    "digest": "sha256:ceabc76f6e81aad44ac79861fb49741402c1931426f76c106589b336f068d009",
+    "digest": "sha256:1eb11037ed4ecbbffae5576d55c1c9c6a337d1c9f3defd580d49f63bc58f42df",
     "digest_mode": "tiber-canonical-json-v1",
     "path": "preflight/tunsil-absence-shock-v0/controls/observation-policy.json"
   },
