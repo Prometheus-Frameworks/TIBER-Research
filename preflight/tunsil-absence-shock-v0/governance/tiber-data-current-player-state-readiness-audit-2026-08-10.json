@@ -1,0 +1,9 @@
+{
+  "artifact_id": "tiber-data-current-player-state-readiness-audit-2026-08-10",
+  "blob_digest": "sha256:35d012cbea8ece9f6f7131e4093617503dcbaf40d95d02933a688e4397d7df06",
+  "commit": "3b3b8bae11b14a0470cdd3a7310acaceac29a048",
+  "governance_status": "promoted",
+  "path": "docs/audits/current-player-state-source-readiness-audit-2026-08-10.json",
+  "repository": "Prometheus-Frameworks/TIBER-Data",
+  "schema_version": "research-governing-manifest/v1"
+}

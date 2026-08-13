@@ -138,9 +138,20 @@ context_policy:
 capabilities:
   tools: [file-read, file-write-run-scope]
   network: denied
-  repository_read: [docs, schemas, src]
-  # Permitted run write path bound per issue #3 comment 5281497231 §6.
-  repository_write: [runs/tunsil-absence-shock-v0]
+  repository_read:
+    - authority
+    - docs
+    - preflight/tunsil-absence-shock-v0
+    - runs/tunsil-absence-shock-v0
+    - schemas
+    - src
+  # v2 activation-conformant envelope (issue #3 comment 5284914358): read
+  # scope covers the frozen job package, the authority-decision root, and the
+  # run root; write scope is exactly the stable attempts root plus the run
+  # event log, beneath the operator-bound runs/tunsil-absence-shock-v0/**.
+  repository_write:
+    - runs/tunsil-absence-shock-v0/attempts
+    - runs/tunsil-absence-shock-v0/run-events.jsonl
 authority:
   ceiling: research_custody_only
   prohibited_actions:

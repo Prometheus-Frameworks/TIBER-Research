@@ -5,13 +5,13 @@
   "cutoff_at": "2026-08-13T14:13:09Z",
   "evidence_ref": {
     "artifact_type": "source_metadata",
-    "digest": "sha256:635e9df9b3c8734e9aa0e6e9f65b43dde70cac188a8dfdced310547e0f5dce40",
+    "digest": "sha256:9941572e8d0f3e9bab85cf475471d2f325ac17393be06fdb831db068d96d3108",
     "digest_mode": "tiber-canonical-json-v1",
-    "path": "preflight/tunsil-absence-shock-v0/sources/src-commanders-joint-practice-dolphins/metadata.json"
+    "path": "runs/tunsil-absence-shock-v0/sources/src-commanders-joint-practice-dolphins/metadata.json"
   },
-  "metadata_digest": "sha256:635e9df9b3c8734e9aa0e6e9f65b43dde70cac188a8dfdced310547e0f5dce40",
+  "metadata_digest": "sha256:9941572e8d0f3e9bab85cf475471d2f325ac17393be06fdb831db068d96d3108",
   "observation_method": "operator_provided_packet",
-  "observed_at": "2026-08-13T17:11:36Z",
+  "observed_at": "2026-08-13T18:53:09Z",
   "observer": {
     "observer_id": "Joseph (@Prometheus-Frameworks)",
     "role": "operator",

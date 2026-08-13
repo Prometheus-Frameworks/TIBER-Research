@@ -5,13 +5,13 @@
   "cutoff_at": "2026-08-13T14:13:09Z",
   "evidence_ref": {
     "artifact_type": "source_metadata",
-    "digest": "sha256:d96f6b3ba7a7f4849bed90e4839109cf1f056b9ef2c833076b1b7a73c78a76a5",
+    "digest": "sha256:d69819e0598de7b042ca269f01ca04e506a568f8fbf88e5bdc12eb1ea26afdbf",
     "digest_mode": "tiber-canonical-json-v1",
-    "path": "preflight/tunsil-absence-shock-v0/sources/src-commanders-notebook-tunsil-out/metadata.json"
+    "path": "runs/tunsil-absence-shock-v0/sources/src-commanders-notebook-tunsil-out/metadata.json"
   },
-  "metadata_digest": "sha256:d96f6b3ba7a7f4849bed90e4839109cf1f056b9ef2c833076b1b7a73c78a76a5",
+  "metadata_digest": "sha256:d69819e0598de7b042ca269f01ca04e506a568f8fbf88e5bdc12eb1ea26afdbf",
   "observation_method": "operator_provided_packet",
-  "observed_at": "2026-08-13T17:11:36Z",
+  "observed_at": "2026-08-13T18:53:09Z",
   "observer": {
     "observer_id": "Joseph (@Prometheus-Frameworks)",
     "role": "operator",

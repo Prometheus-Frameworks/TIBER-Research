@@ -5,13 +5,13 @@
   "cutoff_at": "2026-08-13T14:13:09Z",
   "evidence_ref": {
     "artifact_type": "source_metadata",
-    "digest": "sha256:692668a8a7a5f0e13bbaf2fb789dae5f0e50690aa8238db8067285b1cfedc30d",
+    "digest": "sha256:f3e71828e60923f2ddcb96154edd944993211d83efc37e3d498f980de41e91a8",
     "digest_mode": "tiber-canonical-json-v1",
-    "path": "preflight/tunsil-absence-shock-v0/sources/src-commanders-2025-oline-review/metadata.json"
+    "path": "runs/tunsil-absence-shock-v0/sources/src-commanders-2025-oline-review/metadata.json"
   },
-  "metadata_digest": "sha256:692668a8a7a5f0e13bbaf2fb789dae5f0e50690aa8238db8067285b1cfedc30d",
+  "metadata_digest": "sha256:f3e71828e60923f2ddcb96154edd944993211d83efc37e3d498f980de41e91a8",
   "observation_method": "operator_provided_packet",
-  "observed_at": "2026-08-13T17:11:36Z",
+  "observed_at": "2026-08-13T18:53:09Z",
   "observer": {
     "observer_id": "Joseph (@Prometheus-Frameworks)",
     "role": "operator",

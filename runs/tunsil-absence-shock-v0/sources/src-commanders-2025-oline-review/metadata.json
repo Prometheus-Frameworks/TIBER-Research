@@ -17,7 +17,7 @@
     "rationale": "Retrieved once on 2026-08-13 before the bound cutoff; no later revision of the page was observed or admitted, and the page is not assumed immutable.",
     "state": "current"
   },
-  "intended_use": "q2 context: the club's own 2025 review identifies Tunsil as the line's top performer in its published overall, run-blocking, and pass-blocking categories. Article: \"Commanders 2025 position review | Offensive line\" by Zach Selby.",
+  "intended_use": "Operator-directed manual observation of specific first-party commanders.com articles named in issue #3; per-item admission with excerpt-only retention; no systematic retrieval.",
   "limits": {
     "licensing": "Copyrighted NFL club editorial content; no license for retention of full bodies; excerpt/reference admission only.",
     "privacy": "contains_no_private_user_context",
@@ -37,7 +37,7 @@
     "revision_id": "sha256:1121207aabdcc317101131334de294146259a67da5099ef391b07991fe434875",
     "supersedes_revision_id": null
   },
-  "rights_disposition_ref": "NFL club-platform facial terms prohibit systematic retrieval; admission is operator-directed, per-instance, and excerpt-scoped under issue #3 comment 5281497231 §1; full page bodies are not retained or redistributed.",
+  "rights_disposition_ref": "NFL club-platform terms prohibit systematic retrieval; admission is manual, per-instance, excerpt-scoped (issue #3 comment 5281497231 §1).",
   "run_id": "tunsil-absence-shock-v0",
   "schema_version": "research-source-metadata/v0",
   "source_class": "operator_provided_observation",

@@ -1,0 +1,9 @@
+{
+  "artifact_id": "tiber-data-roster-player-team-map-2025-source-backed",
+  "blob_digest": "sha256:6c0436a4da7b7d54ee58454ad912be2571f5695457d107ed37a467b79d0cb38a",
+  "commit": "3b3b8bae11b14a0470cdd3a7310acaceac29a048",
+  "governance_status": "promoted",
+  "path": "data/processed/evidence/roster_player_team_map_2025.source_backed.json",
+  "repository": "Prometheus-Frameworks/TIBER-Data",
+  "schema_version": "research-governing-manifest/v1"
+}

@@ -5,13 +5,13 @@
   "cutoff_at": "2026-08-13T14:13:09Z",
   "evidence_ref": {
     "artifact_type": "source_metadata",
-    "digest": "sha256:73a91da8ab8f2d824c4d9615a894023c1038dc2eec07d9c4f68c58624b3df748",
+    "digest": "sha256:94c3655d87926f646aa6985d2faa9913d5fddd2356820da4702e8ce83d4011b2",
     "digest_mode": "tiber-canonical-json-v1",
-    "path": "preflight/tunsil-absence-shock-v0/sources/src-commanders-coleman-tackle-confidence/metadata.json"
+    "path": "runs/tunsil-absence-shock-v0/sources/src-commanders-coleman-tackle-confidence/metadata.json"
   },
-  "metadata_digest": "sha256:73a91da8ab8f2d824c4d9615a894023c1038dc2eec07d9c4f68c58624b3df748",
+  "metadata_digest": "sha256:94c3655d87926f646aa6985d2faa9913d5fddd2356820da4702e8ce83d4011b2",
   "observation_method": "operator_provided_packet",
-  "observed_at": "2026-08-13T17:11:36Z",
+  "observed_at": "2026-08-13T18:53:09Z",
   "observer": {
     "observer_id": "Joseph (@Prometheus-Frameworks)",
     "role": "operator",

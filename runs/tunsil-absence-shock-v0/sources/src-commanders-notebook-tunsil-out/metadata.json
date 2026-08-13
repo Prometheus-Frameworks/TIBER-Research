@@ -1,0 +1,59 @@
+{
+  "acquisition_method": "operator-manual-observation",
+  "admissibility": {
+    "rationale": "Operator-directed per-instance Manual Witness admission (issue #3 comment 5281497231 §1) with excerpt-scoped retention. Known epistemic limits: Club editorial content; practice-period reporting, not game evidence. Does not state a season-long timetable; no post-operative timeline published.",
+    "state": "admitted"
+  },
+  "admitted": true,
+  "content_digest": "sha256:ef291c9e3c1109b7d0cf465d18af121a39c0df9a4db6f5b666eabdecb8dd5e20",
+  "content_path": "runs/tunsil-absence-shock-v0/sources/src-commanders-notebook-tunsil-out/excerpts.txt",
+  "context_match": {
+    "context_ref": "context-was-2026-camp-tunsil-shock",
+    "matched": true,
+    "rationale": "First-party club confirmation of the Tunsil injury and the Coleman replacement plan inside the bounded 2026 camp window."
+  },
+  "directness": "direct",
+  "freshness": {
+    "rationale": "Retrieved once on 2026-08-13 before the bound cutoff; no later revision of the page was observed or admitted, and the page is not assumed immutable.",
+    "state": "current"
+  },
+  "intended_use": "Operator-directed manual observation of specific first-party commanders.com articles named in issue #3; per-item admission with excerpt-only retention; no systematic retrieval.",
+  "limits": {
+    "licensing": "Copyrighted NFL club editorial content; no license for retention of full bodies; excerpt/reference admission only.",
+    "privacy": "contains_no_private_user_context",
+    "redistribution": "Not redistributable; internal lineage use only; retained excerpts stay inside this governed package.",
+    "reportability": "Internal only; never quote beyond the retained excerpts; never represent club-asserted figures as charting evidence."
+  },
+  "locator": {
+    "kind": "url",
+    "value": "https://www.commanders.com/news/commanders-training-camp-notebook-laremy-tunsil-brandon-coleman"
+  },
+  "promotable": false,
+  "provider": "Washington Commanders official club site (commanders.com)",
+  "replayability": "lineage_only",
+  "reportability": "internal",
+  "retention_mode": "excerpt",
+  "revision": {
+    "revision_id": "sha256:22befc5774d22b635539880512d970be711d52da34c545f22d3faa40175977dd",
+    "supersedes_revision_id": null
+  },
+  "rights_disposition_ref": "NFL club-platform terms prohibit systematic retrieval; admission is manual, per-instance, excerpt-scoped (issue #3 comment 5281497231 §1).",
+  "run_id": "tunsil-absence-shock-v0",
+  "schema_version": "research-source-metadata/v0",
+  "source_class": "operator_provided_observation",
+  "source_family_id": "commanders-official-club-site",
+  "source_identifier": "https://www.commanders.com/news/commanders-training-camp-notebook-laremy-tunsil-brandon-coleman",
+  "source_object_id": "src-commanders-notebook-tunsil-out",
+  "synthetic_fixture": false,
+  "temporal": {
+    "admissible_at": "2026-08-13T14:13:09Z",
+    "cutoff_at": "2026-08-13T14:13:09Z",
+    "effective_at": null,
+    "event_time": "2026-08-08T00:00:00Z",
+    "first_observed_at": "2026-08-13T14:10:18Z",
+    "published_at": "2026-08-10T16:58:26.652Z",
+    "retrieved_at": "2026-08-13T14:10:18Z",
+    "source_available_at": "2026-08-13T14:10:18Z"
+  },
+  "upstream_owner": "Washington Commanders / NFL club media"
+}

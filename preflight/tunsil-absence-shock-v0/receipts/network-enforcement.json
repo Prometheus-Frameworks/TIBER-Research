@@ -17,7 +17,7 @@
     "environment_id": "stage1_manual_pilot",
     "execution_surface": "Claude Code Remote managed container session for the Claude executor lane; the platform retains proxied outbound network capability, so denial is enforced at run-protocol level, not kernel isolation.",
     "isolation_id": "claude-session-01F3ADBnag2LBcyvEB4J7A9r",
-    "observed_capabilities_digest": "sha256:7f1a01bea96b4ff1aec87bde1e6d3d2db645b3f6d9b0be966447bbffda32f600"
+    "observed_capabilities_digest": "sha256:f92cf654fb56010039dbd2364d95cfdf20cd8e60d6150bdd0e0d9549287f9444"
   },
   "limitations": [
     "The container retains proxied outbound network capability at the platform level; enforcement for this run is protocol-level — no network tool invocation during execution, all evidence from the frozen package — with post-hoc verifiability via the hash-chained run ledger, not kernel-level isolation.",
@@ -37,7 +37,7 @@
     "digest_mode": "tiber-canonical-json-v1",
     "path": "preflight/tunsil-absence-shock-v0/controls/observation-policy.json"
   },
-  "observed_at": "2026-08-13T17:11:36Z",
+  "observed_at": "2026-08-13T18:53:09Z",
   "observer": {
     "observer_id": "claude-lane executor session (Claude Code Remote managed container)",
     "role": "trusted_runner",
@@ -45,6 +45,6 @@
   },
   "receipt_id": "network-enforcement-tunsil-absence-shock-v0",
   "schema_version": "research-network-enforcement-receipt/v1",
-  "valid_from": "2026-08-13T17:11:36Z",
-  "valid_until": "2026-08-14T17:11:36Z"
+  "valid_from": "2026-08-13T18:53:09Z",
+  "valid_until": "2026-08-14T18:53:09Z"
 }

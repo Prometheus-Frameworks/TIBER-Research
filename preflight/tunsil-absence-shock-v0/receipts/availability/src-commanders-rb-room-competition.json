@@ -5,13 +5,13 @@
   "cutoff_at": "2026-08-13T14:13:09Z",
   "evidence_ref": {
     "artifact_type": "source_metadata",
-    "digest": "sha256:35ac5c575f89856b8dddcee510d40c5350fdef438d01c7562014892bd224184f",
+    "digest": "sha256:fa6559a99ca49aded2ce79bce48ccff208e2e13fd46e7e311ddbeb041e4c6ce0",
     "digest_mode": "tiber-canonical-json-v1",
-    "path": "preflight/tunsil-absence-shock-v0/sources/src-commanders-rb-room-competition/metadata.json"
+    "path": "runs/tunsil-absence-shock-v0/sources/src-commanders-rb-room-competition/metadata.json"
   },
-  "metadata_digest": "sha256:35ac5c575f89856b8dddcee510d40c5350fdef438d01c7562014892bd224184f",
+  "metadata_digest": "sha256:fa6559a99ca49aded2ce79bce48ccff208e2e13fd46e7e311ddbeb041e4c6ce0",
   "observation_method": "operator_provided_packet",
-  "observed_at": "2026-08-13T17:11:36Z",
+  "observed_at": "2026-08-13T18:53:09Z",
   "observer": {
     "observer_id": "Joseph (@Prometheus-Frameworks)",
     "role": "operator",

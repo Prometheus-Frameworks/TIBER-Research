@@ -5,13 +5,13 @@
   "cutoff_at": "2026-08-13T14:13:09Z",
   "evidence_ref": {
     "artifact_type": "source_metadata",
-    "digest": "sha256:fa151d16d23cf03234cb7223463e67e011d48da358f38d488998fb65e2481656",
+    "digest": "sha256:aa3b5b359ac8e02c5d65e68702b91fba2edb0317c761bf37a17269de479fe459",
     "digest_mode": "tiber-canonical-json-v1",
-    "path": "preflight/tunsil-absence-shock-v0/sources/src-commanders-mclaurin-blough-offense/metadata.json"
+    "path": "runs/tunsil-absence-shock-v0/sources/src-commanders-mclaurin-blough-offense/metadata.json"
   },
-  "metadata_digest": "sha256:fa151d16d23cf03234cb7223463e67e011d48da358f38d488998fb65e2481656",
+  "metadata_digest": "sha256:aa3b5b359ac8e02c5d65e68702b91fba2edb0317c761bf37a17269de479fe459",
   "observation_method": "operator_provided_packet",
-  "observed_at": "2026-08-13T17:11:36Z",
+  "observed_at": "2026-08-13T18:53:09Z",
   "observer": {
     "observer_id": "Joseph (@Prometheus-Frameworks)",
     "role": "operator",
