@@ -44,7 +44,15 @@ function copyV2Workspace(root: string): void {
   cpSync(resolve(V2_PACKAGE), join(root, ...V2_PACKAGE.split("/")), {
     recursive: true,
   });
-  cpSync(resolve(V2_RUN), join(root, ...V2_RUN.split("/")), {
+  // Copy only the frozen pre-activation run state (inputs + sources). The
+  // real repository also carries the executed run (activation, run events,
+  // attempts), which the Stage 1 pre-activation layout check rightly
+  // rejects and which these preflight tests do not exercise.
+  cpSync(
+    resolve(`${V2_RUN}/inputs.json`),
+    join(root, ...`${V2_RUN}/inputs.json`.split("/")),
+  );
+  cpSync(resolve(`${V2_RUN}/sources`), join(root, ...`${V2_RUN}/sources`.split("/")), {
     recursive: true,
   });
   // The activation decision lives beneath the top-level authority/ path
