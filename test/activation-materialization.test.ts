@@ -941,3 +941,75 @@ test("a policy claiming the superseded cutoff rule cannot govern a post-cutoff a
     );
   });
 });
+
+// ---------------------------------------------------------------------------
+// Post-activation lifecycle (Sol adjudication on the submission review): the
+// activation trio (activation.json, run-events.jsonl, attempts) is acceptable
+// run state only when a schema-valid activation record binds the exact job
+// digest, inputs digest, run identity, and governing operator decision.
+// Unbound, foreign, or malformed activation state stays rejected, as does
+// attempt state without its activation record.
+// ---------------------------------------------------------------------------
+
+const V2_ACTIVATION = `${V2_RUN}/activation.json`;
+
+function copyV2ExecutedWorkspace(root: string): void {
+  cpSync(resolve(V2_PACKAGE), join(root, ...V2_PACKAGE.split("/")), {
+    recursive: true,
+  });
+  cpSync(resolve(V2_RUN), join(root, ...V2_RUN.split("/")), {
+    recursive: true,
+  });
+  cpSync(resolve("authority"), join(root, "authority"), { recursive: true });
+}
+
+test("a bound activation record makes the executed run acceptable preflight state", () => {
+  withTempWorkspace(copyV2ExecutedWorkspace, (root) => {
+    const report = validateStage1Preflight(root, V2_MANIFEST);
+    assert.deepEqual(report.errors, []);
+    assert.equal(report.valid, true);
+  });
+});
+
+test("a foreign activation record keeps the pre-activation rejection", () => {
+  withTempWorkspace(copyV2ExecutedWorkspace, (root) => {
+    const activation = readWorkspaceJson(root, V2_ACTIVATION);
+    activation.job_ref.digest =
+      "sha256:0000000000000000000000000000000000000000000000000000000000000000";
+    writeJson(root, V2_ACTIVATION, activation);
+    const report = validateStage1Preflight(root, V2_MANIFEST);
+    assert.equal(report.valid, false);
+    assert.equal(report.errors.length, 3);
+    for (const entry of report.errors) {
+      assert.equal(entry.code, "stage0_layout_preactivation_unbound_entry");
+    }
+  });
+});
+
+test("a malformed activation record keeps the pre-activation rejection", () => {
+  withTempWorkspace(copyV2ExecutedWorkspace, (root) => {
+    const activation = readWorkspaceJson(root, V2_ACTIVATION);
+    delete activation.budget;
+    writeJson(root, V2_ACTIVATION, activation);
+    const report = validateStage1Preflight(root, V2_MANIFEST);
+    assert.equal(report.valid, false);
+    assert.ok(report.errors.length >= 3);
+    assert.ok(
+      report.errors.every(
+        (entry) => entry.code === "stage0_layout_preactivation_unbound_entry",
+      ),
+    );
+  });
+});
+
+test("attempt state without an activation record is rejected", () => {
+  withTempWorkspace(copyV2ExecutedWorkspace, (root) => {
+    rmSync(join(root, ...V2_ACTIVATION.split("/")));
+    const report = validateStage1Preflight(root, V2_MANIFEST);
+    assert.equal(report.valid, false);
+    assert.equal(report.errors.length, 2);
+    for (const entry of report.errors) {
+      assert.equal(entry.code, "stage0_layout_preactivation_unbound_entry");
+    }
+  });
+});
