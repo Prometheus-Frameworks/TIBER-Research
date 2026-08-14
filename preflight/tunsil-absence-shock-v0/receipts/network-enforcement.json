@@ -1,0 +1,50 @@
+{
+  "candidate_run_id": "tunsil-absence-shock-v0",
+  "default_action": "deny",
+  "effective_destinations": [],
+  "effective_mode": "denied",
+  "enforcement_boundary": {
+    "boundary_id": "stage1-manual-runner",
+    "boundary_type": "runner_protocol_attestation",
+    "enforcement_policy_ref": {
+      "artifact_type": "egress_policy",
+      "digest": "sha256:299cacd2520c44e89c04e0ce055c1c474d4d9fb1e11c059e0065f5616051f265",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "preflight/tunsil-absence-shock-v0/controls/egress-enforcement-policy.json"
+    }
+  },
+  "environment_identity": {
+    "environment_id": "stage1_manual_pilot",
+    "execution_surface": "Claude Code Remote managed container session for the Claude executor lane; the platform retains proxied outbound network capability, so denial is enforced at run-protocol level, not kernel isolation.",
+    "isolation_id": "claude-session-01F3ADBnag2LBcyvEB4J7A9r",
+    "observed_capabilities_digest": "sha256:f92cf654fb56010039dbd2364d95cfdf20cd8e60d6150bdd0e0d9549287f9444"
+  },
+  "limitations": [
+    "The container retains proxied outbound network capability at the platform level; enforcement for this run is protocol-level — no network tool invocation during execution, all evidence from the frozen package — with post-hoc verifiability via the hash-chained run ledger, not kernel-level isolation.",
+    "The observer is the executor lane itself, designated by the operator in the activate_run decision (issue #3 comment 5283843131), not an independent trusted runner.",
+    "The referenced egress enforcement policy remains in candidate_not_enforced control state; no kernel or proxy-level deny-default egress control was observed."
+  ],
+  "network_policy_ref": {
+    "artifact_type": "network_policy",
+    "digest": "sha256:c6c2099211373dbcf97830c8994103283b32df6d7742c004548a4d8bce46949f",
+    "digest_mode": "tiber-canonical-json-v1",
+    "path": "preflight/tunsil-absence-shock-v0/controls/network-policy.json"
+  },
+  "observation_method": "network_enforcement_observation",
+  "observation_policy_ref": {
+    "artifact_type": "observation_policy",
+    "digest": "sha256:c82d9bcbd53378c4721e7fb0de2bc7a72ecd7d231ebf1db57def21a588a85144",
+    "digest_mode": "tiber-canonical-json-v1",
+    "path": "preflight/tunsil-absence-shock-v0/controls/observation-policy.json"
+  },
+  "observed_at": "2026-08-13T22:25:19Z",
+  "observer": {
+    "observer_id": "claude-lane executor session (Claude Code Remote managed container)",
+    "role": "trusted_runner",
+    "trust_basis": "Operator-designated enforcement observer per the activate_run decision (issue #3 comment 5283843131): enforcement for this run is executor-protocol level with post-hoc verifiability via the hash-chained run ledger; the observer is the executor lane itself, not an independent runner."
+  },
+  "receipt_id": "network-enforcement-tunsil-absence-shock-v0",
+  "schema_version": "research-network-enforcement-receipt/v1",
+  "valid_from": "2026-08-13T22:25:19Z",
+  "valid_until": "2026-08-14T22:25:19Z"
+}

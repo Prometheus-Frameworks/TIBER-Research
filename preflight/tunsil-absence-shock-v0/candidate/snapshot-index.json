@@ -1,0 +1,54 @@
+{
+  "candidate_run_id": "tunsil-absence-shock-v0",
+  "indexed_at": "2026-08-13T22:25:19Z",
+  "limitations": [
+    "Captures were taken through the GitHub API on 2026-08-13; HTML entity escaping in the API issue-body representation was reversed before freezing, so the digests bind the exact captured file bytes, not independently attested upstream body bytes.",
+    "Mutable issue URLs remain locator metadata and do not replace the retained byte digests."
+  ],
+  "record_freeze_scope": "exact_captured_file_bytes_only",
+  "snapshots": [
+    {
+      "captured_file_raw_sha256": "sha256:1081f3831d727ec1420f91b14b210a45f259096d0df3b4dd21a2af154a56c8e4",
+      "snapshot_path": "preflight/tunsil-absence-shock-v0/snapshots/issue-3-body.md",
+      "source_record_id": "TIBER-Research#3",
+      "source_record_type": "issue_body",
+      "source_ref": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/3"
+    },
+    {
+      "captured_file_raw_sha256": "sha256:3e4689ac0c156c4abfe4a1634379a83a07957d60c784053c34f02f6f71b08cc2",
+      "snapshot_path": "preflight/tunsil-absence-shock-v0/snapshots/issue-3-comment-5281497231.md",
+      "source_record_id": "5281497231",
+      "source_record_type": "issue_comment",
+      "source_ref": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/3#issuecomment-5281497231"
+    },
+    {
+      "captured_file_raw_sha256": "sha256:bb9448ae32ce1cec6aa60bb7bad50feb4069e9b27bdcfe27f5f0be3e8a2b0058",
+      "snapshot_path": "preflight/tunsil-absence-shock-v0/snapshots/issue-3-comment-5283843131.md",
+      "source_record_id": "5283843131",
+      "source_record_type": "issue_comment",
+      "source_ref": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/3#issuecomment-5283843131"
+    },
+    {
+      "captured_file_raw_sha256": "sha256:81bd514c7fd4ebf5e9057005258fe5274fac62832ef2006ee9c488b716485191",
+      "snapshot_path": "preflight/tunsil-absence-shock-v0/snapshots/issue-3-comment-5284914358.md",
+      "source_record_id": "5284914358",
+      "source_record_type": "issue_comment",
+      "source_ref": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/3#issuecomment-5284914358"
+    },
+    {
+      "captured_file_raw_sha256": "sha256:f3eb6293bcd03dc3dd36f4e833dc898f538123b02386b990172ad9af21f07e18",
+      "snapshot_path": "preflight/tunsil-absence-shock-v0/snapshots/issue-3-comment-5286246398.md",
+      "source_record_id": "5286246398",
+      "source_record_type": "issue_comment",
+      "source_ref": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/3#issuecomment-5286246398"
+    },
+    {
+      "captured_file_raw_sha256": "sha256:bef2df5fa0cc866a886e8e06829e0468e98a7879df04dbece26e120b76396220",
+      "snapshot_path": "preflight/tunsil-absence-shock-v0/snapshots/issue-3-comment-5287019126.md",
+      "source_record_id": "5287019126",
+      "source_record_type": "issue_comment",
+      "source_ref": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/3#issuecomment-5287019126"
+    }
+  ],
+  "status": "frozen_control_record_snapshots"
+}

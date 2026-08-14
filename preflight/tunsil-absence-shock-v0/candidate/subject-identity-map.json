@@ -1,0 +1,108 @@
+{
+  "audit_state": "identity_map_re_resolved_at_freeze",
+  "candidate_run_id": "tunsil-absence-shock-v0",
+  "limitations": [
+    "The roster map is 2025-season evidence; it establishes identity, not current 2026 roster membership.",
+    "Five offensive linemen (Tunsil, Coleman, Paul, Conerly Jr., Wylie) have no governed canonical identity; the OL-identity gap is frozen as blocked input ol-canonical-identity owned by TIBER-Data.",
+    "The comparison population is closed; no opportunistic roster or historical-comparison expansion."
+  ],
+  "population_mode": "closed",
+  "source_pins": [
+    {
+      "artifact_status": "governed_source_backed_evidence",
+      "commit": "3b3b8bae11b14a0470cdd3a7310acaceac29a048",
+      "path": "data/processed/evidence/roster_player_team_map_2025.source_backed.json",
+      "raw_sha256": "sha256:6c0436a4da7b7d54ee58454ad912be2571f5695457d107ed37a467b79d0cb38a",
+      "repository": "Prometheus-Frameworks/TIBER-Data",
+      "source_id": "roster-map"
+    }
+  ],
+  "subject_count": 10,
+  "subjects": [
+    {
+      "basis": "Outside the governed skill-position identity population; run-scoped by operator direction §3 with a retained OL-identity RFI to TIBER-Data.",
+      "canonical_id": null,
+      "identity_class": "run_scoped_non_canonical",
+      "name": "Laremy Tunsil",
+      "position": "OT",
+      "subject_id": "laremy-tunsil"
+    },
+    {
+      "basis": "Outside the governed skill-position identity population; run-scoped by operator direction §3 with a retained OL-identity RFI to TIBER-Data.",
+      "canonical_id": null,
+      "identity_class": "run_scoped_non_canonical",
+      "name": "Brandon Coleman",
+      "position": "OT",
+      "subject_id": "brandon-coleman"
+    },
+    {
+      "basis": "Composite subject per operator direction §3; member facts are claim content, not identity bindings.",
+      "canonical_id": null,
+      "configuration_facts": [
+        "Chris Paul at left guard (configuration fact, not a separately required subject identity).",
+        "Josh Conerly Jr. at right tackle (configuration fact).",
+        "Andrew Wylie as swing-tackle depth (configuration fact)."
+      ],
+      "identity_class": "run_scoped_composite",
+      "name": "Washington offensive-line configuration",
+      "position": "OL-UNIT",
+      "subject_id": "was-oline-configuration"
+    },
+    {
+      "basis": "Re-resolved at freeze from the pinned roster map (2025 season, team WAS).",
+      "canonical_id": "00-0039910",
+      "identity_class": "governed_gsis",
+      "name": "Jayden Daniels",
+      "position": "QB",
+      "subject_id": "jayden-daniels"
+    },
+    {
+      "basis": "Re-resolved at freeze from the pinned roster map (2025 season, team WAS).",
+      "canonical_id": "00-0035659",
+      "identity_class": "governed_gsis",
+      "name": "Terry McLaurin",
+      "position": "WR",
+      "subject_id": "terry-mclaurin"
+    },
+    {
+      "basis": "Re-resolved at freeze from the pinned roster map (2025 season, team TB — historical); current Washington membership is club-page reported, not governed roster truth.",
+      "canonical_id": "00-0037256",
+      "identity_class": "governed_gsis",
+      "name": "Rachaad White",
+      "position": "RB",
+      "subject_id": "rachaad-white"
+    },
+    {
+      "basis": "Re-resolved at freeze from the pinned roster map (2025 season, team WAS).",
+      "canonical_id": "00-0040242",
+      "identity_class": "governed_gsis",
+      "name": "Jacory Croskey-Merritt",
+      "position": "RB",
+      "subject_id": "jacory-croskey-merritt"
+    },
+    {
+      "basis": "Re-resolved at freeze from the pinned roster map (2025 season, team WAS).",
+      "canonical_id": "00-0033955",
+      "identity_class": "governed_gsis_context_only",
+      "name": "Jeremy McNichols",
+      "position": "RB",
+      "subject_id": "jeremy-mcnichols"
+    },
+    {
+      "basis": "Re-resolved at freeze from the pinned roster map (2025 season, team NE — historical); current Washington membership is club-page reported, not governed roster truth.",
+      "canonical_id": "00-0031588",
+      "identity_class": "governed_gsis_context_only",
+      "name": "Stefon Diggs",
+      "position": "WR",
+      "subject_id": "stefon-diggs"
+    },
+    {
+      "basis": "Re-resolved at freeze from the pinned roster map (2025 season, team TEN — historical); current Washington membership is club-page reported, not governed roster truth.",
+      "canonical_id": "00-0037809",
+      "identity_class": "governed_gsis_context_only",
+      "name": "Chig Okonkwo",
+      "position": "TE",
+      "subject_id": "chig-okonkwo"
+    }
+  ]
+}

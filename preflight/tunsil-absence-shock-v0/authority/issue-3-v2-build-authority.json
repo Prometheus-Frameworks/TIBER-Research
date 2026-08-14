@@ -1,0 +1,28 @@
+{
+  "approved_artifact_refs": [],
+  "authority_class": "stage1_preflight_only",
+  "candidate_run_id": "tunsil-absence-shock-v0",
+  "decision_ref": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/3#issuecomment-5284914358",
+  "exclusions": [
+    "Do not execute the Research run.",
+    "Do not alter the seven Manual Witness admissions, their clocks, the 2026-08-13T14:13:09Z cutoff, the research questions/branches, subjects, Missing Witnesses, budgets, network policy, or reportability beyond the two authorized reconciliations.",
+    "The prior activate_run decision (issue #3 comment 5283843131) remains void for v2; a new digest-bound activation decision follows fresh review."
+  ],
+  "operator": "Joseph (@Prometheus-Frameworks)",
+  "operator_direction": "Authorized. Build the v2 re-freeze under the standing preflight-build authority, limited strictly to reconciling the two discovered activation-contract incompatibilities. Preserve the seven Manual Witness admissions, clocks, 14:13:09Z cutoff, research questions/branches, subjects, Missing Witnesses, budgets, network policy, and reportability unchanged. Add regression coverage proving Stage-1-valid packages are structurally materializable into activation-valid packages for both provenance digest semantics and capability/write-path shape. Do not execute. Stop at the regenerated v2 frozen head for fresh Sol review. The prior activate_run decision remains void for v2; Joe will issue a new digest-bound activation decision only after that review.",
+  "quote_digest": "sha256:ab2587b05a07029167bdc4ae7cdb7a725b1c8e39cb2647fcd4c2ecb694bf4a98",
+  "quote_digest_mode": "tiber-raw-sha256-v1",
+  "recorded_at": "2026-08-13T18:39:40Z",
+  "schema_version": "research-operator-direction-record/v1",
+  "scope": [
+    "Reshape the candidate job capability envelope to the activation contract: write scope exactly runs/tunsil-absence-shock-v0/attempts plus runs/tunsil-absence-shock-v0/run-events.jsonl, read scope covering the frozen job package, the authority-decision root, and the run root; no other job change.",
+    "Bind the frozen inputs at runs/tunsil-absence-shock-v0/inputs.json with artifact_digest re-bound to authored research-governing-manifest/v1 record digests; relocate the seven Manual Witness source objects to the run-scoped layout; no other inputs change.",
+    "Add regression coverage proving Stage-1-valid packages are structurally materializable into activation-valid packages for both provenance digest semantics and capability/write-path shape.",
+    "Stop at the regenerated v2 frozen head for fresh independent review by the GPT-5.6 Sol review lane."
+  ],
+  "terminal_outcomes": [
+    "stage1_preflight_requires_operator_inputs",
+    "stage1_activation_ready_for_operator_decision",
+    "stage1_preflight_blocked"
+  ]
+}

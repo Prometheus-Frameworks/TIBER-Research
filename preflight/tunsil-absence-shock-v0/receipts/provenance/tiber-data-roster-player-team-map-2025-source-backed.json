@@ -1,0 +1,54 @@
+{
+  "artifact_digest": "sha256:61e490aca0e0d55baf872c4ecff0ae56155941e965f0bfd14bf171d2b8a2b72d",
+  "artifact_id": "tiber-data-roster-player-team-map-2025-source-backed",
+  "blob_digest": "sha256:6c0436a4da7b7d54ee58454ad912be2571f5695457d107ed37a467b79d0cb38a",
+  "candidate_run_id": "tunsil-absence-shock-v0",
+  "commit": "3b3b8bae11b14a0470cdd3a7310acaceac29a048",
+  "cutoff_at": "2026-08-13T14:13:09Z",
+  "effective_at": "2026-08-13T10:47:38Z",
+  "freshness": {
+    "as_of": "2026-08-13T22:25:19Z",
+    "policy_ref": {
+      "artifact_type": "freshness_policy",
+      "digest": "sha256:2fa630fa26aeb9d606ac960f5532ff3d78c8c879aeacc14237c53e92cc0565e3",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "preflight/tunsil-absence-shock-v0/controls/freshness-policy.json"
+    },
+    "rationale": "The artifact is pinned at an immutable commit and blob digest merged to its home repository's main branch before the cutoff; re-verified at this assessment instant.",
+    "state": "current"
+  },
+  "governing_authority_ref": {
+    "artifact_type": "authority_decision",
+    "digest": "sha256:0f6cf7b3d86fb095130dd331169475ed830156b2378bd82a98d7c4cd7a33dfd7",
+    "digest_mode": "tiber-canonical-json-v1",
+    "path": "authority/tunsil-absence-shock-v0-activation.json"
+  },
+  "governing_manifest_ref": {
+    "artifact_type": "governing_manifest",
+    "digest": "sha256:61e490aca0e0d55baf872c4ecff0ae56155941e965f0bfd14bf171d2b8a2b72d",
+    "digest_mode": "tiber-canonical-json-v1",
+    "path": "preflight/tunsil-absence-shock-v0/governance/tiber-data-roster-player-team-map-2025-source-backed.json"
+  },
+  "observed_at": "2026-08-13T22:25:19Z",
+  "path": "data/processed/evidence/roster_player_team_map_2025.source_backed.json",
+  "receipt_id": "prov-tiber-data-roster-player-team-map-2025-source-backed",
+  "repository": "Prometheus-Frameworks/TIBER-Data",
+  "schema_version": "research-governed-artifact-provenance-receipt/v1",
+  "trust_boundary": {
+    "boundary_id": "tiber-governed-repositories",
+    "boundary_type": "governed_repository",
+    "policy_ref": {
+      "artifact_type": "observation_policy",
+      "digest": "sha256:c82d9bcbd53378c4721e7fb0de2bc7a72ecd7d231ebf1db57def21a588a85144",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "preflight/tunsil-absence-shock-v0/controls/observation-policy.json"
+    }
+  },
+  "verification_method": "repository_blob_verification",
+  "verified_at": "2026-08-13T22:25:19Z",
+  "verifier": {
+    "role": "trusted_runner",
+    "trust_basis": "Operator-designated executor lane per the v2 activate_run decision (issue #3 comment 5287019126); verification recomputes the sha256 of the git blob bytes at the pinned commit in the artifact's home repository.",
+    "verifier_id": "claude-lane"
+  }
+}

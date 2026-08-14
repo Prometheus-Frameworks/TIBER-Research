@@ -1,0 +1,59 @@
+{
+  "acquisition_method": "operator-manual-observation",
+  "admissibility": {
+    "rationale": "Operator-directed per-instance Manual Witness admission (issue #3 comment 5281497231 §1) with excerpt-scoped retention. Known epistemic limits: Practice-drill observations from club editorial coverage; not game evidence; no Coleman-specific rep outcomes reported in the retained excerpts.",
+    "state": "admitted"
+  },
+  "admitted": true,
+  "content_digest": "sha256:9afacd6c3e36fb9a9b4db441f6285d2e4356fbb97e72338ac5e9b72194370421",
+  "content_path": "runs/tunsil-absence-shock-v0/sources/src-commanders-joint-practice-dolphins/excerpts.txt",
+  "context_match": {
+    "context_ref": "context-was-2026-camp-tunsil-shock",
+    "matched": true,
+    "rationale": "First post-injury joint-practice club observations inside the bounded window."
+  },
+  "directness": "direct",
+  "freshness": {
+    "rationale": "Retrieved once on 2026-08-13 before the bound cutoff; no later revision of the page was observed or admitted, and the page is not assumed immutable.",
+    "state": "current"
+  },
+  "intended_use": "Operator-directed manual observation of specific first-party commanders.com articles named in issue #3; per-item admission with excerpt-only retention; no systematic retrieval.",
+  "limits": {
+    "licensing": "Copyrighted NFL club editorial content; no license for retention of full bodies; excerpt/reference admission only.",
+    "privacy": "contains_no_private_user_context",
+    "redistribution": "Not redistributable; internal lineage use only; retained excerpts stay inside this governed package.",
+    "reportability": "Internal only; never quote beyond the retained excerpts; never represent club-asserted figures as charting evidence."
+  },
+  "locator": {
+    "kind": "url",
+    "value": "https://www.commanders.com/news/commanders-dolphins-training-camp-practice-notes"
+  },
+  "promotable": false,
+  "provider": "Washington Commanders official club site (commanders.com)",
+  "replayability": "lineage_only",
+  "reportability": "internal",
+  "retention_mode": "excerpt",
+  "revision": {
+    "revision_id": "sha256:c04ee6083a7ff14f5151caa2445de1e52a8c32467ab05e8ef049b2c4ee66a54c",
+    "supersedes_revision_id": null
+  },
+  "rights_disposition_ref": "NFL club-platform terms prohibit systematic retrieval; admission is manual, per-instance, excerpt-scoped (issue #3 comment 5281497231 §1).",
+  "run_id": "tunsil-absence-shock-v0",
+  "schema_version": "research-source-metadata/v0",
+  "source_class": "operator_provided_observation",
+  "source_family_id": "commanders-official-club-site",
+  "source_identifier": "https://www.commanders.com/news/commanders-dolphins-training-camp-practice-notes",
+  "source_object_id": "src-commanders-joint-practice-dolphins",
+  "synthetic_fixture": false,
+  "temporal": {
+    "admissible_at": "2026-08-13T14:13:09Z",
+    "cutoff_at": "2026-08-13T14:13:09Z",
+    "effective_at": null,
+    "event_time": null,
+    "first_observed_at": "2026-08-13T14:10:40Z",
+    "published_at": "2026-08-12T19:03:38.386Z",
+    "retrieved_at": "2026-08-13T14:10:40Z",
+    "source_available_at": "2026-08-13T14:10:40Z"
+  },
+  "upstream_owner": "Washington Commanders / NFL club media"
+}

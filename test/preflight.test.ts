@@ -25,7 +25,7 @@ import {
 const PACKAGE = "preflight/synthetic-stage1";
 const MANIFEST = `${PACKAGE}/preflight.json`;
 const RUN_ID = "run-synthetic-001";
-const EVALUATION_AT = "2026-01-01T14:15:00Z";
+const EVALUATION_AT = "2026-01-02T01:15:00Z";
 const DIGEST_A = `sha256:${"a".repeat(64)}`;
 const COMMIT = "8a8039eeaa2ba1b8cae65859d43746df6b949ecd";
 const TREE = "582930f21d6fafafcfc55527e5aa9363c08ad417";
@@ -206,6 +206,23 @@ function buildPreflight(ready: boolean): BuiltPreflight {
     recursive: true,
   });
   rmSync(join(workspace, "runs", RUN_ID, "run-events.jsonl"));
+  // Canonical Research chronology (issue #3 comment 5286246398): the
+  // synthetic package freezes and activates AFTER its evidence cutoff
+  // (2026-01-02T00:00:00Z); evidence-side clocks stay before the cutoff.
+  const canonicalInputs = readNormalizedJson<Record<string, unknown>>(
+    workspace,
+    "runs/run-synthetic-001/inputs.json",
+  );
+  canonicalInputs.frozen_at = "2026-01-02T00:10:00Z";
+  writeJson(workspace, "runs/run-synthetic-001/inputs.json", canonicalInputs);
+  const canonicalAuthority = readNormalizedJson<Record<string, unknown>>(
+    workspace,
+    "authority/decision.json",
+  );
+  canonicalAuthority.approved_at = "2026-01-02T00:20:00Z";
+  (canonicalAuthority.inputs_ref as Record<string, unknown>).digest =
+    sha256CanonicalJson(canonicalInputs);
+  writeJson(workspace, "authority/decision.json", canonicalAuthority);
   const refs: Record<string, ArtifactRef> = {};
   const artifact = (
     key: string,
@@ -297,7 +314,7 @@ function buildPreflight(ready: boolean): BuiltPreflight {
           boundary_type: "runner_observation",
           actor_id: "synthetic-fixture-custodian",
           actor_role: "source_custodian",
-          method: "direct_pre_cutoff_capture",
+          method: "operator_provided_packet",
           trust_basis:
             "Synthetic fixture metadata and retained bytes.",
         },
@@ -386,9 +403,9 @@ function buildPreflight(ready: boolean): BuiltPreflight {
         effective_mode: "denied",
         effective_destinations: [],
         default_action: "deny",
-        observed_at: "2026-01-01T14:13:00Z",
-        valid_from: "2026-01-01T14:12:00Z",
-        valid_until: "2026-01-02T00:00:00Z",
+        observed_at: "2026-01-02T00:30:00Z",
+        valid_from: "2026-01-02T00:25:00Z",
+        valid_until: "2026-01-03T00:00:00Z",
         observer: {
           observer_id: "synthetic-trusted-runner",
           role: "trusted_runner",
@@ -480,8 +497,8 @@ function buildPreflight(ready: boolean): BuiltPreflight {
       claimed_available_at: "2026-01-01T13:00:00Z",
       cutoff_at: "2026-01-02T00:00:00Z",
       evidence_ref: sourceMetadata,
-      observation_method: "direct_pre_cutoff_capture",
-      observed_at: "2026-01-01T14:13:00Z",
+      observation_method: "operator_provided_packet",
+      observed_at: "2026-01-02T00:30:00Z",
       observer: {
         observer_id: "synthetic-fixture-custodian",
         role: "source_custodian",
@@ -510,7 +527,7 @@ function buildPreflight(ready: boolean): BuiltPreflight {
       operator_direction: operatorQuote,
       quote_digest: sha256Utf8(operatorQuote),
       quote_digest_mode: "tiber-raw-sha256-v1",
-      recorded_at: "2026-01-01T14:12:00Z",
+      recorded_at: "2026-01-02T00:20:00Z",
       approved_artifact_refs: [
         authorityDecision,
         candidateInputs,
@@ -602,7 +619,7 @@ function buildPreflight(ready: boolean): BuiltPreflight {
     schema_version: "research-stage1-preflight/v1",
     preflight_id: "synthetic-stage1-preflight",
     candidate_run_id: RUN_ID,
-    prepared_at: "2026-01-01T14:15:00Z",
+    prepared_at: "2026-01-02T01:00:00Z",
     stage0_base: {
       repository: "Prometheus-Frameworks/TIBER-Research",
       commit: COMMIT,
@@ -618,7 +635,7 @@ function buildPreflight(ready: boolean): BuiltPreflight {
       decision_ref: "synthetic:stage0-fixture-authorization",
       quote_digest: sha256Utf8(operatorQuote),
       quote_digest_mode: "tiber-raw-sha256-v1",
-      quote_observed_at: "2026-01-01T14:12:00Z",
+      quote_observed_at: "2026-01-02T00:20:00Z",
       operator: "synthetic-fixture-operator",
     },
     gate_artifacts: {

@@ -1,0 +1,9 @@
+{
+  "artifact_id": "tiber-data-offensive-participation-readiness-audit-2026-08-10",
+  "blob_digest": "sha256:ff368f95810ce21637efb92b583047fb899b2b0eb8c630b49d27de1b03eb4a76",
+  "commit": "3b3b8bae11b14a0470cdd3a7310acaceac29a048",
+  "governance_status": "promoted",
+  "path": "docs/audits/offensive-participation-evidence-readiness-audit-2026-08-10.json",
+  "repository": "Prometheus-Frameworks/TIBER-Data",
+  "schema_version": "research-governing-manifest/v1"
+}

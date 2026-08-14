@@ -1,0 +1,9 @@
+{
+  "artifact_id": "tiber-data-official-depth-chart-pilot-readiness-2026-08-10",
+  "blob_digest": "sha256:865f751268954671328c864f84520210debc978a37a888476c2d32967a7292d3",
+  "commit": "3b3b8bae11b14a0470cdd3a7310acaceac29a048",
+  "governance_status": "promoted",
+  "path": "docs/audits/official-depth-chart-pilot-readiness-2026-08-10.json",
+  "repository": "Prometheus-Frameworks/TIBER-Data",
+  "schema_version": "research-governing-manifest/v1"
+}

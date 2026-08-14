@@ -1,0 +1,20 @@
+{
+  "bound_by": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/3#issuecomment-5281497231 §7",
+  "boundary_terms": [
+    "Executor and reviewer must remain distinct actors.",
+    "The reviewer receives the frozen package, evidence, and result, not hidden executor reasoning.",
+    "The completed preflight package must receive fresh independent review before the operator considers activation."
+  ],
+  "candidate_run_id": "tunsil-absence-shock-v0",
+  "executor": {
+    "actor_id": "claude-lane",
+    "description": "Executor / preflight author: Claude lane.",
+    "role": "single_writer"
+  },
+  "reviewer": {
+    "actor_id": "gpt-5.6-sol-review-lane",
+    "description": "Fresh-context independent reviewer: GPT-5.6 Sol review lane.",
+    "role": "fresh_context_read_only"
+  },
+  "status": "operator_bound"
+}

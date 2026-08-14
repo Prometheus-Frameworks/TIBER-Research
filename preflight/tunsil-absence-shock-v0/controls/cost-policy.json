@@ -1,0 +1,48 @@
+{
+  "accounting_mode": "fixed_session_reservation",
+  "candidate_run_id": "tunsil-absence-shock-v0",
+  "ceiling": 2,
+  "checkpoint_rule": {
+    "overrun_behavior": "block",
+    "reconciliation": "ceiling_minus_cumulative_trusted_usage",
+    "rework": "carry_forward",
+    "scope": "cumulative_run"
+  },
+  "fixed_reservation": {
+    "accounting_basis": "one_unit_per_trusted_observed_provider_backed_actor_session_ref",
+    "accounting_limitation": "Bounds trusted-observed provider-backed actor session starts, not tokens, compute, or currency.",
+    "amount": 2,
+    "role_limits": [
+      {
+        "amount": 1,
+        "role": "executor"
+      },
+      {
+        "amount": 1,
+        "role": "reviewer"
+      }
+    ],
+    "roles": [
+      "executor",
+      "reviewer"
+    ]
+  },
+  "limitations": [
+    "Actor-session accounting does not measure tokens, compute, or currency.",
+    "The run-level budgets approved in issue #3 comment 5281497231 §5 (240 wall-clock minutes maximum, 400 tool calls maximum, 40 evidence objects maximum) are bound in the candidate job contract and enforced by the run protocol, not by this session-count policy.",
+    "No actor session is authorized by this approved policy; activation remains a separate operator decision."
+  ],
+  "policy_id": "tunsil-absence-shock-v0-cost",
+  "policy_owner": "Joseph (@Prometheus-Frameworks) per issue #3 comment 5281497231 §5 and §7",
+  "policy_status": "approved",
+  "rate_card_ref": {
+    "artifact_type": "cost_rate_card",
+    "digest": "sha256:1b0f1153ad599d5a0e11423b544f89a14427525da652e6286854f2207270deb6",
+    "digest_mode": "tiber-canonical-json-v1",
+    "path": "preflight/tunsil-absence-shock-v0/controls/cost-rate-card.json"
+  },
+  "recorded_at": "2026-08-13T16:23:04Z",
+  "schema_version": "research-cost-policy/v1",
+  "trusted_observation_required": true,
+  "unit": "tiber_actor_session_v1"
+}

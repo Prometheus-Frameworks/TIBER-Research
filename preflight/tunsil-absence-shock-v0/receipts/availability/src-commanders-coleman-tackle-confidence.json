@@ -1,0 +1,36 @@
+{
+  "candidate_run_id": "tunsil-absence-shock-v0",
+  "claimed_available_at": "2026-08-13T14:10:22Z",
+  "content_digest": "sha256:8fcf5e3ccd1380c119c912813cf9817e172886eddb3afb261929f08af0629f01",
+  "cutoff_at": "2026-08-13T14:13:09Z",
+  "evidence_ref": {
+    "artifact_type": "source_metadata",
+    "digest": "sha256:94c3655d87926f646aa6985d2faa9913d5fddd2356820da4702e8ce83d4011b2",
+    "digest_mode": "tiber-canonical-json-v1",
+    "path": "runs/tunsil-absence-shock-v0/sources/src-commanders-coleman-tackle-confidence/metadata.json"
+  },
+  "metadata_digest": "sha256:94c3655d87926f646aa6985d2faa9913d5fddd2356820da4702e8ce83d4011b2",
+  "observation_method": "operator_provided_packet",
+  "observed_at": "2026-08-13T22:25:19Z",
+  "observer": {
+    "observer_id": "Joseph (@Prometheus-Frameworks)",
+    "role": "operator",
+    "trust_basis": "Per-instance Manual Witness admission authority recorded in TIBER-Research issue #3 comment 5281497231 §1; retrieval performed once per page by the authorized Claude preflight lane under operator direction with true clocks recorded."
+  },
+  "receipt_id": "avail-src-commanders-coleman-tackle-confidence",
+  "revision_id": "sha256:147606ce3e101d462673e00d477354011c66ea81fbc73f3f676d956cc7f32842",
+  "schema_version": "research-external-source-availability-receipt/v1",
+  "source_family_id": "commanders-official-club-site",
+  "source_identifier": "https://www.commanders.com/news/commanders-confident-brandon-coleman-tackle-laremy-tunsil",
+  "source_object_id": "src-commanders-coleman-tackle-confidence",
+  "trust_boundary": {
+    "boundary_id": "issue-3-manual-witness-admission",
+    "boundary_type": "operator_attestation",
+    "policy_ref": {
+      "artifact_type": "observation_policy",
+      "digest": "sha256:c82d9bcbd53378c4721e7fb0de2bc7a72ecd7d231ebf1db57def21a588a85144",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "preflight/tunsil-absence-shock-v0/controls/observation-policy.json"
+    }
+  }
+}

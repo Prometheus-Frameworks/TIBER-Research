@@ -14,7 +14,7 @@
     "test": "npm run build --silent && node --test dist/test/*.test.js",
     "fixture:build": "npm run build --silent && node dist/src/cli.js fixture:build fixtures/synthetic-complete run-synthetic-001 attempt-001",
     "fixture:check": "npm run build --silent && node dist/src/cli.js validate fixtures/synthetic-complete run-synthetic-001 attempt-001 --require-end-to-end",
-    "preflight:check": "npm run build --silent && node dist/src/cli.js preflight . preflight/opportunity-clusters-2026-v0/preflight.json",
+    "preflight:check": "npm run build --silent && node dist/src/cli.js preflight . preflight/opportunity-clusters-2026-v0/preflight.json && node dist/src/cli.js preflight . preflight/tunsil-absence-shock-v0/preflight.json",
     "preflight:ready": "npm run build --silent && node dist/src/cli.js preflight . preflight/opportunity-clusters-2026-v0/preflight.json --require-ready",
     "check": "npm run typecheck && npm test && npm run fixture:check && npm run preflight:check"
   },

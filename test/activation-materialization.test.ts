@@ -1,0 +1,1015 @@
+import assert from "node:assert/strict";
+import {
+  cpSync,
+  existsSync,
+  mkdtempSync,
+  readdirSync,
+  readFileSync,
+  rmSync,
+} from "node:fs";
+import { tmpdir } from "node:os";
+import { join, resolve } from "node:path";
+import test from "node:test";
+import { sha256CanonicalJson, sha256Raw, sha256Utf8 } from "../src/digest.js";
+import { readYaml, writeJson } from "../src/io.js";
+import { validateStage1Preflight } from "../src/preflight.js";
+import { validateActivationCandidate } from "../src/validator.js";
+
+type JsonObject = Record<string, any>;
+
+const V2_PACKAGE = "preflight/tunsil-absence-shock-v0";
+const V2_RUN = "runs/tunsil-absence-shock-v0";
+const V2_RUN_ID = "tunsil-absence-shock-v0";
+const V2_JOB = `${V2_PACKAGE}/candidate/job.yaml`;
+const V2_INPUTS = `${V2_RUN}/inputs.json`;
+const FIXTURE = resolve("fixtures/synthetic-complete");
+const FIXTURE_RUN_ID = "run-synthetic-001";
+const FIXTURE_RUN = `runs/${FIXTURE_RUN_ID}`;
+
+function withTempWorkspace<T>(
+  prepare: (root: string) => void,
+  action: (root: string) => T,
+): T {
+  const parent = mkdtempSync(join(tmpdir(), "tiber-activation-materialize-"));
+  const root = join(parent, "workspace");
+  prepare(root);
+  try {
+    return action(root);
+  } finally {
+    rmSync(parent, { recursive: true, force: true });
+  }
+}
+
+function copyV2Workspace(root: string): void {
+  cpSync(resolve(V2_PACKAGE), join(root, ...V2_PACKAGE.split("/")), {
+    recursive: true,
+  });
+  // Copy only the frozen pre-activation run state (inputs + sources). The
+  // real repository also carries the executed run (activation, run events,
+  // attempts), which the Stage 1 pre-activation layout check rightly
+  // rejects and which these preflight tests do not exercise.
+  cpSync(
+    resolve(`${V2_RUN}/inputs.json`),
+    join(root, ...`${V2_RUN}/inputs.json`.split("/")),
+  );
+  cpSync(resolve(`${V2_RUN}/sources`), join(root, ...`${V2_RUN}/sources`.split("/")), {
+    recursive: true,
+  });
+  // The activation decision lives beneath the top-level authority/ path
+  // required by validateIdentityPins; copy it when materialized.
+  if (existsSync(resolve("authority"))) {
+    cpSync(resolve("authority"), join(root, "authority"), {
+      recursive: true,
+    });
+  }
+}
+
+function readWorkspaceJson<T = JsonObject>(root: string, path: string): T {
+  return JSON.parse(
+    readFileSync(join(root, ...path.split("/")), "utf8"),
+  ) as T;
+}
+
+function ref(
+  artifactType: string,
+  path: string,
+  value: unknown,
+): JsonObject {
+  return {
+    artifact_type: artifactType,
+    path,
+    digest: sha256CanonicalJson(value),
+    digest_mode: "tiber-canonical-json-v1",
+  };
+}
+
+function rawFileRef(
+  root: string,
+  artifactType: string,
+  path: string,
+): JsonObject {
+  return {
+    artifact_type: artifactType,
+    path,
+    digest: sha256Raw(readFileSync(join(root, ...path.split("/")))),
+    digest_mode: "tiber-raw-sha256-v1",
+  };
+}
+
+// ---------------------------------------------------------------------------
+// Capability / write-path axis: the v2-shaped candidate (attempts-root plus
+// run-event-log write envelope, runs/<id>/inputs.json identity pin, decision
+// beneath top-level authority/) must satisfy the Stage 0 activation-candidate
+// validator; the v1 envelope shape must fail with the capability error codes.
+// ---------------------------------------------------------------------------
+
+function authorV2AuthorityDecision(
+  root: string,
+  reshapeToV1Envelope: boolean,
+): { authorityPath: string; activationAt: string } {
+  const job = readYaml<JsonObject>(root, V2_JOB);
+  const inputs = readWorkspaceJson(root, V2_INPUTS);
+  const now = new Date().toISOString();
+  const capabilities = reshapeToV1Envelope
+    ? {
+        ...job.capabilities,
+        repository_read: ["docs", "schemas", "src"],
+        repository_write: [V2_RUN],
+      }
+    : job.capabilities;
+  const decision = {
+    schema_version: "research-authority-decision/v0",
+    synthetic_fixture: false,
+    decision_ref: "test:tunsil-v2-activation-shape",
+    decision_type: "activate_run",
+    run_id: V2_RUN_ID,
+    job_ref: {
+      job_id: job.job_id,
+      job_version: job.job_version,
+      path: V2_JOB,
+      digest: sha256Raw(readFileSync(join(root, ...V2_JOB.split("/")))),
+      digest_mode: "tiber-raw-sha256-v1",
+    },
+    inputs_ref: {
+      path: V2_INPUTS,
+      digest: sha256CanonicalJson(inputs),
+      digest_mode: "tiber-canonical-json-v1",
+    },
+    cutoff_at: inputs.cutoff_at,
+    capabilities,
+    budget: job.budgets,
+    authority_ceiling: "research_custody_only",
+    permitted_branch: "claude/tunsil-pilot-preflight",
+    permitted_path: reshapeToV1Envelope ? V2_RUN : `${V2_RUN}/attempts`,
+    approved_at: now,
+    approved_by: "Joseph (@Prometheus-Frameworks)",
+    scope:
+      "Regression-only synthetic activation record proving the v2 package shapes satisfy the Stage 0 activation contract; not an operator decision.",
+    exclusions: [
+      "Regression fixture only; grants no authority and activates nothing.",
+    ],
+  };
+  writeJson(root, "authority/decision.json", decision);
+  return { authorityPath: "authority/decision.json", activationAt: now };
+}
+
+test("v2 package shapes satisfy the Stage 0 activation-candidate contract", () => {
+  withTempWorkspace(copyV2Workspace, (root) => {
+    const { authorityPath, activationAt } = authorV2AuthorityDecision(
+      root,
+      false,
+    );
+    const errors = validateActivationCandidate(
+      root,
+      V2_RUN_ID,
+      V2_JOB,
+      V2_INPUTS,
+      authorityPath,
+      activationAt,
+    );
+    assert.deepEqual(errors, []);
+  });
+});
+
+test("v1 capability envelope shape fails Stage 0 activation validation", () => {
+  withTempWorkspace(copyV2Workspace, (root) => {
+    const { authorityPath, activationAt } = authorV2AuthorityDecision(
+      root,
+      true,
+    );
+    const errors = validateActivationCandidate(
+      root,
+      V2_RUN_ID,
+      V2_JOB,
+      V2_INPUTS,
+      authorityPath,
+      activationAt,
+    );
+    const codes = new Set(errors.map((entry) => entry.code));
+    assert.ok(codes.has("authority.write_scope"));
+    assert.ok(codes.has("authority.write_scope_missing"));
+    assert.ok(codes.has("authority.permitted_path"));
+    assert.ok(codes.has("authority.read_scope_missing"));
+  });
+});
+
+// ---------------------------------------------------------------------------
+// Provenance digest-semantics axis: a Stage 1 package whose frozen
+// artifact_digest is the canonical digest of a promoted governing-manifest
+// record accepts a provenance receipt bound to an activate_run authority
+// decision; the v1 semantics (artifact_digest = content digest) are rejected
+// with provenance_coverage_mismatch.
+// ---------------------------------------------------------------------------
+
+const PKG = "preflight/test-package";
+const GOVERNING_MANIFEST_PATH = `${PKG}/governance/synthetic-governed-artifact.json`;
+
+// Canonical Research chronology (issue #3 comment 5286246398):
+// evidence/admission <= cutoff <= freeze <= direction/approval/receipts.
+// The fixture cutoff is 2026-01-02T00:00:00Z; these custody clocks follow it.
+const CANONICAL_FROZEN_AT = "2026-01-02T00:30:00Z";
+const CANONICAL_DIRECTION_RECORDED_AT = "2026-01-02T00:45:00Z";
+const CANONICAL_APPROVED_AT = "2026-01-02T01:00:00Z";
+const CANONICAL_FRESHNESS_AS_OF = "2026-01-02T01:00:00Z";
+
+function buildStage1ProvenanceWorkspace(
+  root: string,
+  contentDigestSemantics: boolean,
+  frozenAt: string = CANONICAL_FROZEN_AT,
+): void {
+  cpSync(FIXTURE, root, { recursive: true });
+  // Reduce the fixture run to the pre-activation layout the Stage 0
+  // candidate validator requires: only frozen inputs and declared sources.
+  rmSync(join(root, ...`${FIXTURE_RUN}/activation.json`.split("/")));
+  rmSync(join(root, ...`${FIXTURE_RUN}/run-events.jsonl`.split("/")));
+  rmSync(join(root, ...`${FIXTURE_RUN}/attempts`.split("/")), {
+    recursive: true,
+  });
+
+  const now = new Date().toISOString();
+  const governingManifest = {
+    schema_version: "research-governing-manifest/v1",
+    artifact_id: "synthetic-governed-artifact",
+    governance_status: "promoted",
+    repository: "Prometheus-Frameworks/TIBER-Synthetic",
+    commit: "a".repeat(40),
+    path: "exports/promoted/synthetic_artifact.json",
+    blob_digest: `sha256:${"b".repeat(64)}`,
+  };
+  writeJson(root, GOVERNING_MANIFEST_PATH, governingManifest);
+  const governingRef = ref(
+    "governing_manifest",
+    GOVERNING_MANIFEST_PATH,
+    governingManifest,
+  );
+  const artifactDigest = contentDigestSemantics
+    ? `sha256:${"c".repeat(64)}`
+    : governingRef.digest;
+
+  const inputsPath = `${FIXTURE_RUN}/inputs.json`;
+  const inputs = readWorkspaceJson(root, inputsPath);
+  inputs.frozen_at = frozenAt;
+  inputs.artifacts = [
+    {
+      artifact_id: governingManifest.artifact_id,
+      repository: governingManifest.repository,
+      commit: governingManifest.commit,
+      path: governingManifest.path,
+      blob_digest: governingManifest.blob_digest,
+      artifact_digest: artifactDigest,
+      admissibility: "admitted",
+      freshness: "current",
+    },
+  ];
+  writeJson(root, inputsPath, inputs);
+  const inputsDigest = sha256CanonicalJson(inputs);
+
+  const authorityPath = "authority/decision.json";
+  const authority = readWorkspaceJson(root, authorityPath);
+  authority.inputs_ref.digest = inputsDigest;
+  authority.approved_at = CANONICAL_APPROVED_AT;
+  writeJson(root, authorityPath, authority);
+  const authorityRef = ref("authority_decision", authorityPath, authority);
+  const jobRef = rawFileRef(root, "candidate_job", "job.yaml");
+  const inputsRef = {
+    artifact_type: "candidate_inputs",
+    path: inputsPath,
+    digest: inputsDigest,
+    digest_mode: "tiber-canonical-json-v1",
+  };
+
+  const observationPolicy = {
+    schema_version: "research-observation-policy/v1",
+    policy_id: "synthetic-observation",
+    admitted_observations: [
+      {
+        boundary_id: "synthetic-governed-repo",
+        boundary_type: "governed_repository",
+        actor_id: "synthetic-verifier",
+        actor_role: "artifact_custodian",
+        method: "repository_blob_verification",
+        trust_basis: "Synthetic regression fixture.",
+      },
+    ],
+  };
+  writeJson(root, `${PKG}/controls/observation-policy.json`, observationPolicy);
+  const observationRef = ref(
+    "observation_policy",
+    `${PKG}/controls/observation-policy.json`,
+    observationPolicy,
+  );
+
+  const freshnessPolicy = {
+    schema_version: "research-freshness-policy/v1",
+    policy_id: "synthetic-freshness",
+    chronology_rule: "effective_at_lte_freshness_as_of_lte_verified_at",
+    cutoff_rule: "evidence_clocks_lte_cutoff_custody_assessment_may_follow",
+    current_state_rule: "current_requires_exact_governing_manifest_and_authority",
+  };
+  writeJson(root, `${PKG}/controls/freshness-policy.json`, freshnessPolicy);
+  const freshnessRef = ref(
+    "freshness_policy",
+    `${PKG}/controls/freshness-policy.json`,
+    freshnessPolicy,
+  );
+
+  const egressPolicy = {
+    schema_version: "research-egress-enforcement-policy/v1",
+    control_state: "candidate_not_enforced",
+    default_action: "deny",
+    execution_profile: "synthetic_profile",
+    limitations: ["Synthetic regression fixture."],
+    policy_ref: "synthetic:regression",
+  };
+  writeJson(root, `${PKG}/controls/egress-enforcement-policy.json`, egressPolicy);
+  const egressRef = ref(
+    "egress_policy",
+    `${PKG}/controls/egress-enforcement-policy.json`,
+    egressPolicy,
+  );
+
+  const networkPolicy = {
+    schema_version: "research-network-policy/v1",
+    policy_id: "synthetic-network",
+    candidate_run_id: FIXTURE_RUN_ID,
+    mode: "denied",
+    default_action: "deny",
+    destinations: [],
+    enforcement_boundary: {
+      boundary_id: "synthetic-runner",
+      boundary_type: "sandbox_firewall",
+      enforcement_policy_ref: egressRef,
+    },
+    policy_owner: "Synthetic regression fixture",
+    policy_status: "proposed",
+    recorded_at: "2026-01-01T14:06:00Z",
+  };
+  writeJson(root, `${PKG}/controls/network-policy.json`, networkPolicy);
+  const networkRef = ref(
+    "network_policy",
+    `${PKG}/controls/network-policy.json`,
+    networkPolicy,
+  );
+
+  const rateCard = {
+    schema_version: "research-cost-rate-card/v1",
+    unit: "tiber_actor_session_v1",
+    accounting_basis:
+      "one_unit_per_trusted_observed_provider_backed_actor_session_ref",
+    definition:
+      "One provider-backed actor session bound to a unique actor_session_ref.",
+    exclusions: ["Synthetic regression fixture."],
+  };
+  writeJson(root, `${PKG}/controls/cost-rate-card.json`, rateCard);
+  const rateCardRef = ref(
+    "cost_rate_card",
+    `${PKG}/controls/cost-rate-card.json`,
+    rateCard,
+  );
+  const costPolicy = {
+    schema_version: "research-cost-policy/v1",
+    policy_id: "synthetic-cost",
+    candidate_run_id: FIXTURE_RUN_ID,
+    unit: "tiber_actor_session_v1",
+    ceiling: 2,
+    accounting_mode: "fixed_session_reservation",
+    rate_card_ref: rateCardRef,
+    trusted_observation_required: true,
+    checkpoint_rule: {
+      scope: "cumulative_run",
+      reconciliation: "ceiling_minus_cumulative_trusted_usage",
+      rework: "carry_forward",
+      overrun_behavior: "block",
+    },
+    fixed_reservation: {
+      amount: 2,
+      roles: ["executor", "reviewer"],
+      role_limits: [
+        { role: "executor", amount: 1 },
+        { role: "reviewer", amount: 1 },
+      ],
+      accounting_basis:
+        "one_unit_per_trusted_observed_provider_backed_actor_session_ref",
+      accounting_limitation:
+        "Bounds trusted-observed provider-backed actor session starts, not tokens, compute, or currency.",
+    },
+    policy_owner: "Synthetic regression fixture",
+    policy_status: "approved",
+    recorded_at: "2026-01-01T14:06:00Z",
+    limitations: ["Synthetic regression fixture."],
+  };
+  writeJson(root, `${PKG}/controls/cost-policy.json`, costPolicy);
+  const costRef = ref(
+    "cost_policy",
+    `${PKG}/controls/cost-policy.json`,
+    costPolicy,
+  );
+
+  const directionQuote =
+    "Synthetic activation direction for regression coverage.";
+  const direction = {
+    schema_version: "research-operator-direction-record/v1",
+    authority_class: "activate_run",
+    decision_ref: authority.decision_ref,
+    operator: authority.approved_by,
+    candidate_run_id: FIXTURE_RUN_ID,
+    operator_direction: directionQuote,
+    quote_digest: sha256Utf8(directionQuote),
+    quote_digest_mode: "tiber-raw-sha256-v1",
+    recorded_at: CANONICAL_DIRECTION_RECORDED_AT,
+    approved_artifact_refs: [],
+    scope: ["Synthetic regression coverage only."],
+    exclusions: ["No real-world claims or authority."],
+    terminal_outcomes: ["synthetic_regression"],
+  };
+  writeJson(root, `${PKG}/authority/direction.json`, direction);
+  const directionRef = ref(
+    "operator_direction_record",
+    `${PKG}/authority/direction.json`,
+    direction,
+  );
+
+  const receipt = {
+    schema_version: "research-governed-artifact-provenance-receipt/v1",
+    receipt_id: "prov-synthetic-governed-artifact",
+    candidate_run_id: FIXTURE_RUN_ID,
+    artifact_id: governingManifest.artifact_id,
+    repository: governingManifest.repository,
+    commit: governingManifest.commit,
+    path: governingManifest.path,
+    blob_digest: governingManifest.blob_digest,
+    artifact_digest: artifactDigest,
+    observed_at: now,
+    effective_at: "2026-01-01T12:00:00Z",
+    verified_at: now,
+    cutoff_at: inputs.cutoff_at,
+    governing_authority_ref: authorityRef,
+    governing_manifest_ref: {
+      artifact_type: "governing_manifest",
+      path: GOVERNING_MANIFEST_PATH,
+      digest: governingRef.digest,
+      digest_mode: "tiber-canonical-json-v1",
+    },
+    verifier: {
+      verifier_id: "synthetic-verifier",
+      role: "artifact_custodian",
+      trust_basis: "Synthetic regression fixture.",
+    },
+    verification_method: "repository_blob_verification",
+    trust_boundary: {
+      boundary_id: "synthetic-governed-repo",
+      boundary_type: "governed_repository",
+      policy_ref: observationRef,
+    },
+    freshness: {
+      state: "current",
+      // Custody-side assessment instant deliberately AFTER the evidence
+      // cutoff, exercising the corrected chronology invariant.
+      as_of: CANONICAL_FRESHNESS_AS_OF,
+      policy_ref: freshnessRef,
+      rationale: "Synthetic regression fixture.",
+    },
+  };
+  writeJson(root, `${PKG}/receipts/provenance.json`, receipt);
+  const receiptRef = ref(
+    "governed_artifact_provenance_receipt",
+    `${PKG}/receipts/provenance.json`,
+    receipt,
+  );
+
+  cpSync(
+    resolve(`${V2_PACKAGE}/candidate/stage0-contract-inventory.json`),
+    join(root, ...`${PKG}/candidate/stage0-contract-inventory.json`.split("/")),
+  );
+  const inventoryRef = ref(
+    "stage0_contract_inventory",
+    `${PKG}/candidate/stage0-contract-inventory.json`,
+    readWorkspaceJson(root, `${PKG}/candidate/stage0-contract-inventory.json`),
+  );
+
+  const manifest = {
+    schema_version: "research-stage1-preflight/v1",
+    preflight_id: "synthetic-materialization-preflight",
+    candidate_run_id: FIXTURE_RUN_ID,
+    prepared_at: now,
+    stage0_base: {
+      repository: "Prometheus-Frameworks/TIBER-Research",
+      commit: "8a8039eeaa2ba1b8cae65859d43746df6b949ecd",
+      tree_sha: "582930f21d6fafafcfc55527e5aa9363c08ad417",
+      pull_request_ref:
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/1",
+      contract_inventory_ref: inventoryRef,
+      schema_version: "tiber-research-schemas-v0",
+      validator_version: "tiber-research-validator-v0",
+      ci_status: "passed",
+    },
+    ops_decision: {
+      decision_ref: direction.decision_ref,
+      quote_digest: direction.quote_digest,
+      quote_digest_mode: "tiber-raw-sha256-v1",
+      quote_observed_at: direction.recorded_at,
+      operator: direction.operator,
+    },
+    gate_artifacts: {
+      external_source_availability_receipt_refs: [],
+      governed_artifact_provenance_receipt_refs: [receiptRef],
+      network_policy_ref: networkRef,
+      network_enforcement_receipt_ref: null,
+      cost_policy_ref: costRef,
+      trusted_usage_receipt_refs: [],
+    },
+    candidate_artifact_refs: [
+      directionRef,
+      authorityRef,
+      jobRef,
+      inputsRef,
+      governingRef,
+    ],
+    requirements: [
+      {
+        requirement_id: "candidate-inputs",
+        description: "Synthetic frozen inputs are bound.",
+        status: "satisfied",
+        evidence_refs: [inputsRef],
+      },
+      {
+        requirement_id: "candidate-job",
+        description: "Synthetic candidate job is bound.",
+        status: "satisfied",
+        evidence_refs: [jobRef],
+      },
+      {
+        requirement_id: "cost-accounting",
+        description: "Synthetic approved two-session reservation.",
+        status: "satisfied",
+        evidence_refs: [costRef],
+      },
+      {
+        requirement_id: "external-source-availability",
+        description:
+          "The admitted synthetic source has no availability receipt yet.",
+        status: "unresolved",
+        evidence_refs: [inputsRef],
+      },
+      {
+        requirement_id: "governed-artifact-provenance",
+        description:
+          "The pinned synthetic artifact carries a provenance receipt bound to the activate_run decision and its promoted governing manifest.",
+        status: "satisfied",
+        evidence_refs: [receiptRef],
+      },
+      {
+        requirement_id: "network-enforcement",
+        description: "No trusted enforcement receipt exists.",
+        status: "unresolved",
+        evidence_refs: [networkRef],
+      },
+      {
+        requirement_id: "operator-activation",
+        description:
+          "A synthetic activate_run direction and decision are bound.",
+        status: "satisfied",
+        evidence_refs: [directionRef, authorityRef],
+      },
+    ],
+    unresolved_inputs: [
+      {
+        input_id: "synthetic-availability-receipt",
+        description:
+          "The synthetic source availability receipt has not been authored.",
+        blocking: true,
+        requirement_refs: ["external-source-availability"],
+        disposition: "missing",
+      },
+      {
+        input_id: "synthetic-network-enforcement-receipt",
+        description:
+          "The synthetic network enforcement receipt has not been observed.",
+        blocking: true,
+        requirement_refs: ["network-enforcement"],
+        disposition: "unverified",
+      },
+    ],
+    status: "requires_operator_inputs",
+    activation_ready: false,
+  };
+  writeJson(root, `${PKG}/preflight.json`, manifest);
+}
+
+test("canonical chronology with governing-manifest digests validates end-to-end", () => {
+  // evidence/admission <= cutoff (2026-01-02T00:00:00Z) <= freeze (00:30)
+  // <= direction (00:45) <= approval / freshness assessment (01:00)
+  // <= receipt observation (now): the corrected contract accepts this and
+  // the provenance gate reads present.
+  withTempWorkspace(
+    (root) => buildStage1ProvenanceWorkspace(root, false),
+    (root) => {
+      const report = validateStage1Preflight(root, `${PKG}/preflight.json`);
+      assert.deepEqual(report.errors, []);
+      assert.equal(report.valid, true);
+      assert.deepEqual(report.gate_state.governed_artifact_provenance, {
+        receipt_count: 1,
+        state: "present",
+      });
+    },
+  );
+});
+
+test("freezing before the cutoff is rejected as an unobservable interval", () => {
+  withTempWorkspace(
+    (root) =>
+      buildStage1ProvenanceWorkspace(root, false, "2026-01-01T14:10:00Z"),
+    (root) => {
+      const report = validateStage1Preflight(root, `${PKG}/preflight.json`);
+      assert.equal(report.valid, false);
+      assert.ok(report.errors.length >= 1);
+      for (const entry of report.errors) {
+        assert.equal(entry.code, "inputs_frozen_before_cutoff");
+      }
+    },
+  );
+});
+
+test("content-digest artifact semantics fail provenance coverage", () => {
+  withTempWorkspace(
+    (root) => buildStage1ProvenanceWorkspace(root, true),
+    (root) => {
+      const report = validateStage1Preflight(root, `${PKG}/preflight.json`);
+      assert.equal(report.valid, false);
+      assert.ok(
+        report.errors.some(
+          (entry) => entry.code === "provenance_coverage_mismatch",
+        ),
+      );
+      assert.deepEqual(report.gate_state.governed_artifact_provenance, {
+        receipt_count: 1,
+        state: "unresolved",
+      });
+    },
+  );
+});
+
+// ---------------------------------------------------------------------------
+// Enforcement-boundary truthfulness (Sol review of a34237e): while the
+// deny-default egress control is not enforced, a network enforcement receipt
+// may only attest the weakest truthful boundary class,
+// runner_protocol_attestation — a technical isolation claim is an overclaim.
+// ---------------------------------------------------------------------------
+
+const V2_MANIFEST = `${V2_PACKAGE}/preflight.json`;
+const V2_NETWORK_POLICY = `${V2_PACKAGE}/controls/network-policy.json`;
+const V2_OBSERVATION_POLICY = `${V2_PACKAGE}/controls/observation-policy.json`;
+const V2_ENFORCEMENT = `${V2_PACKAGE}/receipts/network-enforcement.json`;
+
+function retypeV2EnforcementBoundary(root: string, boundaryType: string): void {
+  const mutate = (path: string, operation: (value: JsonObject) => void) => {
+    const value = readWorkspaceJson(root, path);
+    operation(value);
+    writeJson(root, path, value);
+  };
+  mutate(V2_OBSERVATION_POLICY, (value) => {
+    for (const admission of value.admitted_observations) {
+      if (admission.method === "network_enforcement_observation") {
+        admission.boundary_type = boundaryType;
+      }
+    }
+  });
+  mutate(V2_NETWORK_POLICY, (value) => {
+    value.enforcement_boundary.boundary_type = boundaryType;
+  });
+  mutate(V2_ENFORCEMENT, (value) => {
+    value.enforcement_boundary.boundary_type = boundaryType;
+  });
+  rebindV2Workspace(root, [
+    V2_OBSERVATION_POLICY,
+    V2_NETWORK_POLICY,
+    V2_ENFORCEMENT,
+  ]);
+}
+
+test("runner protocol attestation is accepted over unenforced egress", () => {
+  withTempWorkspace(copyV2Workspace, (root) => {
+    const enforcement = readWorkspaceJson(root, V2_ENFORCEMENT);
+    assert.equal(
+      enforcement.enforcement_boundary.boundary_type,
+      "runner_protocol_attestation",
+    );
+    const egress = readWorkspaceJson(
+      root,
+      `${V2_PACKAGE}/controls/egress-enforcement-policy.json`,
+    );
+    assert.equal(egress.control_state, "candidate_not_enforced");
+    const report = validateStage1Preflight(root, V2_MANIFEST);
+    assert.deepEqual(report.errors, []);
+    assert.equal(report.valid, true);
+  });
+});
+
+test("a technical boundary claim over unenforced egress is an overclaim", () => {
+  withTempWorkspace(copyV2Workspace, (root) => {
+    retypeV2EnforcementBoundary(root, "sandbox_firewall");
+    const report = validateStage1Preflight(root, V2_MANIFEST);
+    assert.equal(report.valid, false);
+    // Since the readiness correction after the 6b4e4e9 halt, a technical
+    // boundary class over unenforced egress fails both the overclaim
+    // invariant and the readiness egress rule.
+    const codes = new Set(report.errors.map((entry) => entry.code));
+    assert.deepEqual(
+      [...codes].sort(),
+      ["egress_policy_not_enforced", "enforcement_boundary_overclaim"],
+    );
+  });
+});
+
+// ---------------------------------------------------------------------------
+// Activation-readiness corrections (Sol review of the 6b4e4e9 fail-closed
+// halt): three generic rules — retention-conditional source content,
+// attested-denial readiness over unenforced egress, and the superseded
+// freshness cutoff vocabulary.
+// ---------------------------------------------------------------------------
+
+const V2_INPUTS_PATH = V2_INPUTS;
+const V2_FRESHNESS_POLICY = `${V2_PACKAGE}/controls/freshness-policy.json`;
+const REFERENCE_ONLY_SOURCE = "src-commanders-2025-oline-review";
+
+/**
+ * After mutating the seed files, rebind every digest reference that points
+ * at a changed artifact, cascading (a changed receipt changes its own digest,
+ * which changes the manifest pin, and so on) until the workspace reaches a
+ * fixpoint. The manifest itself is never referenced, so it is rewritten but
+ * never enters the changed set.
+ */
+function rebindV2Workspace(root: string, seedPaths: string[]): void {
+  const jsonFiles: string[] = [];
+  for (const base of [V2_PACKAGE, V2_RUN, "authority"]) {
+    const dir = join(root, ...base.split("/"));
+    if (!existsSync(dir)) {
+      continue;
+    }
+    for (const entry of readdirSync(dir, { recursive: true })) {
+      const relative = String(entry).split("\\").join("/");
+      if (relative.endsWith(".json")) {
+        jsonFiles.push(`${base}/${relative}`);
+      }
+    }
+  }
+  const digestsFor = (path: string) => {
+    const bytes = readFileSync(join(root, ...path.split("/")));
+    return {
+      canonical: sha256CanonicalJson(JSON.parse(bytes.toString("utf8"))),
+      raw: sha256Raw(bytes),
+    };
+  };
+  const changed = new Set(seedPaths);
+  const digests = new Map(seedPaths.map((path) => [path, digestsFor(path)]));
+  let progress = true;
+  while (progress) {
+    progress = false;
+    for (const file of jsonFiles) {
+      const value = readWorkspaceJson(root, file);
+      let touched = false;
+      const walk = (node: unknown): void => {
+        if (Array.isArray(node)) {
+          node.forEach(walk);
+          return;
+        }
+        if (node === null || typeof node !== "object") {
+          return;
+        }
+        const candidate = node as JsonObject;
+        if (
+          typeof candidate.path === "string" &&
+          typeof candidate.digest === "string" &&
+          changed.has(candidate.path)
+        ) {
+          const next =
+            candidate.digest_mode === "tiber-raw-sha256-v1"
+              ? digests.get(candidate.path)?.raw
+              : digests.get(candidate.path)?.canonical;
+          if (next !== undefined && candidate.digest !== next) {
+            candidate.digest = next;
+            touched = true;
+          }
+        }
+        Object.values(candidate).forEach(walk);
+      };
+      walk(value);
+      if (touched) {
+        writeJson(root, file, value);
+        if (file !== V2_MANIFEST) {
+          changed.add(file);
+          digests.set(file, digestsFor(file));
+        }
+        progress = true;
+      }
+    }
+  }
+}
+
+function mutateV2Inputs(
+  root: string,
+  operation: (inputs: JsonObject) => void,
+): void {
+  const inputs = readWorkspaceJson(root, V2_INPUTS_PATH);
+  operation(inputs);
+  writeJson(root, V2_INPUTS_PATH, inputs);
+  rebindV2Workspace(root, [V2_INPUTS_PATH]);
+}
+
+test("a reference_only source with null content path and recorded identity is activation-ready", () => {
+  withTempWorkspace(copyV2Workspace, (root) => {
+    const inputs = readWorkspaceJson(root, V2_INPUTS_PATH);
+    const source = inputs.sources.find(
+      (entry: JsonObject) => entry.source_object_id === REFERENCE_ONLY_SOURCE,
+    );
+    assert.equal(source.retention_mode, "reference_only");
+    assert.equal(source.content_path, null);
+    assert.notEqual(source.content_digest, null);
+    const report = validateStage1Preflight(root, V2_MANIFEST);
+    assert.deepEqual(report.errors, []);
+    assert.equal(report.valid, true);
+  });
+});
+
+test("a reference_only source that retains content bytes is rejected", () => {
+  withTempWorkspace(copyV2Workspace, (root) => {
+    mutateV2Inputs(root, (inputs) => {
+      const source = inputs.sources.find(
+        (entry: JsonObject) =>
+          entry.source_object_id === REFERENCE_ONLY_SOURCE,
+      );
+      source.content_path = `${V2_RUN}/sources/src-commanders-notebook-tunsil-out/excerpts.txt`;
+    });
+    const report = validateStage1Preflight(root, V2_MANIFEST);
+    assert.equal(report.valid, false);
+    assert.ok(
+      report.errors.some(
+        (entry) => entry.code === "reference_only_content_retained",
+      ),
+    );
+  });
+});
+
+test("a reference_only source without its recorded content identity is not activation-ready", () => {
+  withTempWorkspace(copyV2Workspace, (root) => {
+    mutateV2Inputs(root, (inputs) => {
+      const source = inputs.sources.find(
+        (entry: JsonObject) =>
+          entry.source_object_id === REFERENCE_ONLY_SOURCE,
+      );
+      source.content_digest = null;
+    });
+    const report = validateStage1Preflight(root, V2_MANIFEST);
+    assert.equal(report.valid, false);
+    assert.ok(
+      report.errors.some(
+        (entry) => entry.code === "source_content_missing_for_activation",
+      ),
+    );
+  });
+});
+
+test("an excerpt source without retained content is still rejected at activation", () => {
+  withTempWorkspace(copyV2Workspace, (root) => {
+    mutateV2Inputs(root, (inputs) => {
+      const source = inputs.sources.find(
+        (entry: JsonObject) => entry.retention_mode === "excerpt",
+      );
+      source.content_path = null;
+    });
+    const report = validateStage1Preflight(root, V2_MANIFEST);
+    assert.equal(report.valid, false);
+    assert.ok(
+      report.errors.some(
+        (entry) => entry.code === "source_content_missing_for_activation",
+      ),
+    );
+  });
+});
+
+test("an attested denial with a mismatched receipt boundary does not satisfy readiness", () => {
+  withTempWorkspace(copyV2Workspace, (root) => {
+    const enforcement = readWorkspaceJson(root, V2_ENFORCEMENT);
+    enforcement.enforcement_boundary.boundary_type = "sandbox_firewall";
+    writeJson(root, V2_ENFORCEMENT, enforcement);
+    rebindV2Workspace(root, [V2_ENFORCEMENT]);
+    const report = validateStage1Preflight(root, V2_MANIFEST);
+    assert.equal(report.valid, false);
+    assert.ok(
+      report.errors.some(
+        (entry) => entry.code === "egress_policy_not_enforced",
+      ),
+    );
+  });
+});
+
+test("an attested denial that hides its limitations does not satisfy readiness", () => {
+  withTempWorkspace(copyV2Workspace, (root) => {
+    const enforcement = readWorkspaceJson(root, V2_ENFORCEMENT);
+    enforcement.limitations = [];
+    writeJson(root, V2_ENFORCEMENT, enforcement);
+    rebindV2Workspace(root, [V2_ENFORCEMENT]);
+    const report = validateStage1Preflight(root, V2_MANIFEST);
+    assert.equal(report.valid, false);
+    assert.ok(
+      report.errors.some(
+        (entry) => entry.code === "egress_policy_not_enforced",
+      ),
+    );
+  });
+});
+
+test("a policy claiming the superseded cutoff rule cannot govern a post-cutoff assessment", () => {
+  withTempWorkspace(copyV2Workspace, (root) => {
+    const policy = readWorkspaceJson(root, V2_FRESHNESS_POLICY);
+    assert.equal(
+      policy.cutoff_rule,
+      "evidence_clocks_lte_cutoff_custody_assessment_may_follow",
+    );
+    policy.cutoff_rule = "freshness_as_of_lte_cutoff_at";
+    writeJson(root, V2_FRESHNESS_POLICY, policy);
+    rebindV2Workspace(root, [V2_FRESHNESS_POLICY]);
+    // Every provenance receipt honestly assesses freshness after the cutoff
+    // (custody-side clock), so the superseded rule must reject them all.
+    const report = validateStage1Preflight(root, V2_MANIFEST);
+    assert.equal(report.valid, false);
+    assert.ok(
+      report.errors.some((entry) => entry.code === "freshness_after_cutoff"),
+    );
+    assert.ok(
+      report.errors.every((entry) => entry.code === "freshness_after_cutoff"),
+    );
+  });
+});
+
+// ---------------------------------------------------------------------------
+// Post-activation lifecycle (Sol adjudication on the submission review): the
+// activation trio (activation.json, run-events.jsonl, attempts) is acceptable
+// run state only when a schema-valid activation record binds the exact job
+// digest, inputs digest, run identity, and governing operator decision.
+// Unbound, foreign, or malformed activation state stays rejected, as does
+// attempt state without its activation record.
+// ---------------------------------------------------------------------------
+
+const V2_ACTIVATION = `${V2_RUN}/activation.json`;
+
+function copyV2ExecutedWorkspace(root: string): void {
+  cpSync(resolve(V2_PACKAGE), join(root, ...V2_PACKAGE.split("/")), {
+    recursive: true,
+  });
+  cpSync(resolve(V2_RUN), join(root, ...V2_RUN.split("/")), {
+    recursive: true,
+  });
+  cpSync(resolve("authority"), join(root, "authority"), { recursive: true });
+}
+
+test("a bound activation record makes the executed run acceptable preflight state", () => {
+  withTempWorkspace(copyV2ExecutedWorkspace, (root) => {
+    const report = validateStage1Preflight(root, V2_MANIFEST);
+    assert.deepEqual(report.errors, []);
+    assert.equal(report.valid, true);
+  });
+});
+
+test("a foreign activation record keeps the pre-activation rejection", () => {
+  withTempWorkspace(copyV2ExecutedWorkspace, (root) => {
+    const activation = readWorkspaceJson(root, V2_ACTIVATION);
+    activation.job_ref.digest =
+      "sha256:0000000000000000000000000000000000000000000000000000000000000000";
+    writeJson(root, V2_ACTIVATION, activation);
+    const report = validateStage1Preflight(root, V2_MANIFEST);
+    assert.equal(report.valid, false);
+    assert.equal(report.errors.length, 3);
+    for (const entry of report.errors) {
+      assert.equal(entry.code, "stage0_layout_preactivation_unbound_entry");
+    }
+  });
+});
+
+test("a malformed activation record keeps the pre-activation rejection", () => {
+  withTempWorkspace(copyV2ExecutedWorkspace, (root) => {
+    const activation = readWorkspaceJson(root, V2_ACTIVATION);
+    delete activation.budget;
+    writeJson(root, V2_ACTIVATION, activation);
+    const report = validateStage1Preflight(root, V2_MANIFEST);
+    assert.equal(report.valid, false);
+    assert.ok(report.errors.length >= 3);
+    assert.ok(
+      report.errors.every(
+        (entry) => entry.code === "stage0_layout_preactivation_unbound_entry",
+      ),
+    );
+  });
+});
+
+test("attempt state without an activation record is rejected", () => {
+  withTempWorkspace(copyV2ExecutedWorkspace, (root) => {
+    rmSync(join(root, ...V2_ACTIVATION.split("/")));
+    const report = validateStage1Preflight(root, V2_MANIFEST);
+    assert.equal(report.valid, false);
+    assert.equal(report.errors.length, 2);
+    for (const entry of report.errors) {
+      assert.equal(entry.code, "stage0_layout_preactivation_unbound_entry");
+    }
+  });
+});

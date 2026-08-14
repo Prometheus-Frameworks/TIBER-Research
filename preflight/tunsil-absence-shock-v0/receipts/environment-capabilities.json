@@ -1,0 +1,19 @@
+{
+  "network": "denied",
+  "repository_read": [
+    "authority",
+    "docs",
+    "preflight/tunsil-absence-shock-v0",
+    "runs/tunsil-absence-shock-v0",
+    "schemas",
+    "src"
+  ],
+  "repository_write": [
+    "runs/tunsil-absence-shock-v0/attempts",
+    "runs/tunsil-absence-shock-v0/run-events.jsonl"
+  ],
+  "tools": [
+    "file-read",
+    "file-write-run-scope"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "candidate_run_id": "tunsil-absence-shock-v0",
+  "claimed_available_at": "2026-08-13T14:10:36Z",
+  "content_digest": "sha256:7c15882e9af2ee9bbf931a8a9420b937f3c3674ddce1e568cf8d540c40a96949",
+  "cutoff_at": "2026-08-13T14:13:09Z",
+  "evidence_ref": {
+    "artifact_type": "source_metadata",
+    "digest": "sha256:fa6559a99ca49aded2ce79bce48ccff208e2e13fd46e7e311ddbeb041e4c6ce0",
+    "digest_mode": "tiber-canonical-json-v1",
+    "path": "runs/tunsil-absence-shock-v0/sources/src-commanders-rb-room-competition/metadata.json"
+  },
+  "metadata_digest": "sha256:fa6559a99ca49aded2ce79bce48ccff208e2e13fd46e7e311ddbeb041e4c6ce0",
+  "observation_method": "operator_provided_packet",
+  "observed_at": "2026-08-13T22:25:19Z",
+  "observer": {
+    "observer_id": "Joseph (@Prometheus-Frameworks)",
+    "role": "operator",
+    "trust_basis": "Per-instance Manual Witness admission authority recorded in TIBER-Research issue #3 comment 5281497231 §1; retrieval performed once per page by the authorized Claude preflight lane under operator direction with true clocks recorded."
+  },
+  "receipt_id": "avail-src-commanders-rb-room-competition",
+  "revision_id": "sha256:49aa66e3d26fba696d71ad8594d10cdf582ec9463046fb966cb722a4f669105d",
+  "schema_version": "research-external-source-availability-receipt/v1",
+  "source_family_id": "commanders-official-club-site",
+  "source_identifier": "https://www.commanders.com/news/shawn-springs-competition-commanders-running-back-room",
+  "source_object_id": "src-commanders-rb-room-competition",
+  "trust_boundary": {
+    "boundary_id": "issue-3-manual-witness-admission",
+    "boundary_type": "operator_attestation",
+    "policy_ref": {
+      "artifact_type": "observation_policy",
+      "digest": "sha256:c82d9bcbd53378c4721e7fb0de2bc7a72ecd7d231ebf1db57def21a588a85144",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "preflight/tunsil-absence-shock-v0/controls/observation-policy.json"
+    }
+  }
+}

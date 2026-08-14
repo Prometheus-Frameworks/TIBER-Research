@@ -1,0 +1,9 @@
+{
+  "artifact_id": "tiber-fantasy-pclr-20260812-tunsil-laremy-tunsil-r1",
+  "blob_digest": "sha256:a57f57f73266fa84156a6251766772216bc9271f4e8b441c466df7e36d8b5d92",
+  "commit": "3750bac99aaea6ab52a1f53dc5ed7a171e442fda",
+  "governance_status": "promoted",
+  "path": "data/post-cutoff-ledger/records/pclr_20260812_tunsil_laremy_tunsil_r1.json",
+  "repository": "Prometheus-Frameworks/TIBER-Fantasy",
+  "schema_version": "research-governing-manifest/v1"
+}

@@ -546,6 +546,7 @@ export function validateActivationCandidate(
       workspaceDir,
       runRoot,
       inputs,
+      activation,
       report,
     );
     rejectPromotionInsideRun(workspaceDir, runRoot, report);
@@ -2720,6 +2721,7 @@ function validatePreactivationLayout(
   workspaceDir: string,
   runRoot: string,
   inputs: Inputs,
+  expectedActivation: Activation,
   report: ValidationReport,
 ): void {
   const runAbsolute = resolveContained(workspaceDir, runRoot);
@@ -2748,8 +2750,61 @@ function validatePreactivationLayout(
       );
     }
   }
+  // Post-activation lifecycle (Sol adjudication on the tunsil-absence-shock
+  // submission review): the activation trio is acceptable run state only
+  // when a schema-valid activation record binds this exact candidate
+  // identity — run id, job digest, inputs digest, and the governing
+  // operator decision at its exact path and digest. Unbound, foreign, or
+  // malformed activation state keeps the pre-activation rejection, as does
+  // run-event or attempt state present without its activation record.
+  const activationTopLevel = new Map([
+    ["activation.json", "file"],
+    ["attempts", "directory"],
+    ["run-events.jsonl", "file"],
+  ]);
+  let activationBound = false;
+  const activationEntry = topLevel.get("activation.json");
+  if (
+    activationEntry !== undefined &&
+    activationEntry.isFile() &&
+    !activationEntry.isSymbolicLink()
+  ) {
+    try {
+      const onDisk = readNormalizedJson<Activation>(
+        workspaceDir,
+        `${runRoot}/activation.json`,
+      );
+      activationBound =
+        validateSchema(SCHEMA.activation, onDisk).errors.length === 0 &&
+        onDisk.run_id === expectedActivation.run_id &&
+        onDisk.job_ref.digest === expectedActivation.job_ref.digest &&
+        onDisk.inputs_ref.digest === expectedActivation.inputs_ref.digest &&
+        onDisk.ops_decision_ref.path ===
+          expectedActivation.ops_decision_ref.path &&
+        onDisk.ops_decision_ref.digest ===
+          expectedActivation.ops_decision_ref.digest;
+    } catch {
+      activationBound = false;
+    }
+  }
   for (const entry of topLevel.values()) {
-    if (!requiredTopLevel.has(entry.name)) {
+    if (requiredTopLevel.has(entry.name)) {
+      // validated above
+    } else if (activationTopLevel.has(entry.name)) {
+      const expectedType = activationTopLevel.get(entry.name);
+      if (
+        !activationBound ||
+        entry.isSymbolicLink() ||
+        (expectedType === "file" ? !entry.isFile() : !entry.isDirectory())
+      ) {
+        issue(
+          report,
+          "layout.preactivation_unbound_entry",
+          `${runRoot}/${entry.name}`,
+          "post-activation run state requires a schema-valid activation record binding this exact job, inputs, run identity, and operator decision",
+        );
+      }
+    } else {
       issue(
         report,
         "layout.preactivation_unbound_entry",

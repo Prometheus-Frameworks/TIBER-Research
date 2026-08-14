@@ -1,0 +1,176 @@
+{
+  "artifacts": [
+    {
+      "artifact_type": "authority_decision",
+      "digest": "sha256:0f6cf7b3d86fb095130dd331169475ed830156b2378bd82a98d7c4cd7a33dfd7",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "authority/tunsil-absence-shock-v0-activation.json"
+    },
+    {
+      "artifact_type": "activation",
+      "digest": "sha256:6383b24f2135402af456fc3b220c85a9441d68bfdc2b7a31dadef320e7f615b9",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "runs/tunsil-absence-shock-v0/activation.json"
+    },
+    {
+      "artifact_type": "inputs",
+      "digest": "sha256:e1582d95a1bdb18ed610d205d1826102cef13f19015036487d1a5f041a9de6de",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "runs/tunsil-absence-shock-v0/inputs.json"
+    },
+    {
+      "artifact_type": "job",
+      "digest": "sha256:c09eb383e7225cf9474f455337252143ee2acececad63ce130736cd4bb1c67ae",
+      "digest_mode": "tiber-raw-sha256-v1",
+      "path": "preflight/tunsil-absence-shock-v0/candidate/job.yaml"
+    },
+    {
+      "artifact_type": "ledger",
+      "digest": "sha256:9305551eac12f4783c4c3ad02f2b4761bf2011b552971cbec1508f7910cc820b",
+      "digest_mode": "tiber-raw-sha256-v1",
+      "path": "runs/tunsil-absence-shock-v0/attempts/attempt-001/ledger.jsonl"
+    },
+    {
+      "artifact_type": "packet_json",
+      "digest": "sha256:2b8fb658ef05f040d510ee9bbfd5aff78218c6401df78f2d5588d24a0e47ff3c",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "runs/tunsil-absence-shock-v0/attempts/attempt-001/packet.json"
+    },
+    {
+      "artifact_type": "packet_markdown",
+      "digest": "sha256:132e3cdd07a0a762476ef55b82b79748cbf045e676f2b6015379e09a885759d3",
+      "digest_mode": "tiber-raw-sha256-v1",
+      "path": "runs/tunsil-absence-shock-v0/attempts/attempt-001/packet.md"
+    }
+  ],
+  "attempt_id": "attempt-001",
+  "canonicalization_version": "tiber-canonical-json-v1",
+  "executor_session": {
+    "actor_session_ref": "claude-executor-lane",
+    "model_declared": "model-identity-withheld-by-harness-policy",
+    "observed_by": "operator-session-joseph-prometheus-frameworks",
+    "provider_declared": "anthropic",
+    "role": "executor"
+  },
+  "job_id": "tunsil-absence-shock",
+  "job_version": "v1",
+  "json_file_version": "tiber-json-file-v1",
+  "ledger_head": {
+    "event_count": 18,
+    "event_hash": "sha256:0bce86631023ef793aaf751bc247d68e80e3b14c628955a837b21a01edd1c522",
+    "event_id": "event-018-checkpoint-final"
+  },
+  "raw_hash_version": "tiber-raw-sha256-v1",
+  "renderer_version": "tiber-packet-markdown-v1",
+  "run_id": "tunsil-absence-shock-v0",
+  "schema_version": "research-submission/v0",
+  "sources": [
+    {
+      "content": {
+        "artifact_type": "source_content",
+        "digest": "sha256:ef291c9e3c1109b7d0cf465d18af121a39c0df9a4db6f5b666eabdecb8dd5e20",
+        "digest_mode": "tiber-raw-sha256-v1",
+        "path": "runs/tunsil-absence-shock-v0/sources/src-commanders-notebook-tunsil-out/excerpts.txt"
+      },
+      "metadata": {
+        "artifact_type": "source_metadata",
+        "digest": "sha256:d69819e0598de7b042ca269f01ca04e506a568f8fbf88e5bdc12eb1ea26afdbf",
+        "digest_mode": "tiber-canonical-json-v1",
+        "path": "runs/tunsil-absence-shock-v0/sources/src-commanders-notebook-tunsil-out/metadata.json"
+      },
+      "source_object_id": "src-commanders-notebook-tunsil-out"
+    },
+    {
+      "content": {
+        "artifact_type": "source_content",
+        "digest": "sha256:8fcf5e3ccd1380c119c912813cf9817e172886eddb3afb261929f08af0629f01",
+        "digest_mode": "tiber-raw-sha256-v1",
+        "path": "runs/tunsil-absence-shock-v0/sources/src-commanders-coleman-tackle-confidence/excerpts.txt"
+      },
+      "metadata": {
+        "artifact_type": "source_metadata",
+        "digest": "sha256:94c3655d87926f646aa6985d2faa9913d5fddd2356820da4702e8ce83d4011b2",
+        "digest_mode": "tiber-canonical-json-v1",
+        "path": "runs/tunsil-absence-shock-v0/sources/src-commanders-coleman-tackle-confidence/metadata.json"
+      },
+      "source_object_id": "src-commanders-coleman-tackle-confidence"
+    },
+    {
+      "content": null,
+      "metadata": {
+        "artifact_type": "source_metadata",
+        "digest": "sha256:f3e71828e60923f2ddcb96154edd944993211d83efc37e3d498f980de41e91a8",
+        "digest_mode": "tiber-canonical-json-v1",
+        "path": "runs/tunsil-absence-shock-v0/sources/src-commanders-2025-oline-review/metadata.json"
+      },
+      "source_object_id": "src-commanders-2025-oline-review"
+    },
+    {
+      "content": {
+        "artifact_type": "source_content",
+        "digest": "sha256:31e65b47e347bb29f088f7e108d79c1a428433fe976e7e38623e588e7aa10207",
+        "digest_mode": "tiber-raw-sha256-v1",
+        "path": "runs/tunsil-absence-shock-v0/sources/src-commanders-mclaurin-blough-offense/excerpts.txt"
+      },
+      "metadata": {
+        "artifact_type": "source_metadata",
+        "digest": "sha256:aa3b5b359ac8e02c5d65e68702b91fba2edb0317c761bf37a17269de479fe459",
+        "digest_mode": "tiber-canonical-json-v1",
+        "path": "runs/tunsil-absence-shock-v0/sources/src-commanders-mclaurin-blough-offense/metadata.json"
+      },
+      "source_object_id": "src-commanders-mclaurin-blough-offense"
+    },
+    {
+      "content": {
+        "artifact_type": "source_content",
+        "digest": "sha256:bb92e42c4dfb15b6766eaf567509f0e10d70763a27e70e305a88db123adc539c",
+        "digest_mode": "tiber-raw-sha256-v1",
+        "path": "runs/tunsil-absence-shock-v0/sources/src-commanders-white-five-things/excerpts.txt"
+      },
+      "metadata": {
+        "artifact_type": "source_metadata",
+        "digest": "sha256:ab139bfde005719af6232bf5c6156c2c1b8236f80d7b90e63b431542998c193b",
+        "digest_mode": "tiber-canonical-json-v1",
+        "path": "runs/tunsil-absence-shock-v0/sources/src-commanders-white-five-things/metadata.json"
+      },
+      "source_object_id": "src-commanders-white-five-things"
+    },
+    {
+      "content": {
+        "artifact_type": "source_content",
+        "digest": "sha256:7c15882e9af2ee9bbf931a8a9420b937f3c3674ddce1e568cf8d540c40a96949",
+        "digest_mode": "tiber-raw-sha256-v1",
+        "path": "runs/tunsil-absence-shock-v0/sources/src-commanders-rb-room-competition/excerpts.txt"
+      },
+      "metadata": {
+        "artifact_type": "source_metadata",
+        "digest": "sha256:fa6559a99ca49aded2ce79bce48ccff208e2e13fd46e7e311ddbeb041e4c6ce0",
+        "digest_mode": "tiber-canonical-json-v1",
+        "path": "runs/tunsil-absence-shock-v0/sources/src-commanders-rb-room-competition/metadata.json"
+      },
+      "source_object_id": "src-commanders-rb-room-competition"
+    },
+    {
+      "content": {
+        "artifact_type": "source_content",
+        "digest": "sha256:9afacd6c3e36fb9a9b4db441f6285d2e4356fbb97e72338ac5e9b72194370421",
+        "digest_mode": "tiber-raw-sha256-v1",
+        "path": "runs/tunsil-absence-shock-v0/sources/src-commanders-joint-practice-dolphins/excerpts.txt"
+      },
+      "metadata": {
+        "artifact_type": "source_metadata",
+        "digest": "sha256:9941572e8d0f3e9bab85cf475471d2f325ac17393be06fdb831db068d96d3108",
+        "digest_mode": "tiber-canonical-json-v1",
+        "path": "runs/tunsil-absence-shock-v0/sources/src-commanders-joint-practice-dolphins/metadata.json"
+      },
+      "source_object_id": "src-commanders-joint-practice-dolphins"
+    }
+  ],
+  "submitted_at": "2026-08-14T12:54:18Z",
+  "synthetic_fixture": false,
+  "validation": {
+    "result": "pass",
+    "validated_at": "2026-08-14T12:54:18Z"
+  },
+  "validator_version": "tiber-research-validator-v0"
+}

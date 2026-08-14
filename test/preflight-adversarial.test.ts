@@ -27,7 +27,7 @@ import {
 const PACKAGE = "preflight/adversarial-stage1";
 const MANIFEST = `${PACKAGE}/preflight.json`;
 const RUN_ID = "run-synthetic-001";
-const EVALUATION_AT = "2026-01-01T14:20:00Z";
+const EVALUATION_AT = "2026-01-02T01:15:00Z";
 const COMMIT = "8a8039eeaa2ba1b8cae65859d43746df6b949ecd";
 const TREE = "582930f21d6fafafcfc55527e5aa9363c08ad417";
 const DIGEST_A = `sha256:${"a".repeat(64)}`;
@@ -80,7 +80,7 @@ test("Stage 1 adversarial preflight bypasses fail closed", async (t) => {
   await t.test("an enforcement observation cannot postdate preflight", () => {
     withBuilt((built) => {
       mutateArtifact(built, "networkEnforcement", (value) => {
-        value.observed_at = "2026-01-01T14:30:00Z";
+        value.observed_at = "2026-01-02T01:30:00Z";
       });
 
       assertRejected(built, "network_observed_after_preflight");
@@ -133,7 +133,7 @@ test("Stage 1 adversarial preflight bypasses fail closed", async (t) => {
       addUsageReceipt(built, "usage-executor-1", "session-executor-1", null);
       writeManifest(built);
       mutateArtifact(built, "usageExecutor1", (value) => {
-        value.observed_at = "2026-01-01T14:21:00Z";
+        value.observed_at = "2026-01-02T01:21:00Z";
       });
 
       assertRejected(built, "usage_observed_after_preflight");
@@ -411,7 +411,7 @@ test("Stage 1 adversarial preflight bypasses fail closed", async (t) => {
   await t.test("provenance cannot claim future effective state", () => {
     withBuilt((built) => {
       mutateArtifact(built, "provenance", (value) => {
-        value.effective_at = "2026-01-01T14:21:00Z";
+        value.effective_at = "2026-01-02T01:21:00Z";
       });
 
       assertRejected(built, "artifact_effective_after_preflight");
@@ -682,7 +682,7 @@ test("Stage 1 adversarial preflight bypasses fail closed", async (t) => {
 
   await t.test("preflight preparation cannot postdate trusted evaluation", () => {
     withBuilt((built) => {
-      built.manifest.prepared_at = "2026-01-01T14:21:00Z";
+      built.manifest.prepared_at = "2026-01-02T01:21:00Z";
       writeManifest(built);
 
       assertRejected(built, "preflight_after_evaluation");
@@ -823,7 +823,7 @@ function buildReadyPreflight(): BuiltPreflight {
           boundary_type: "runner_observation",
           actor_id: "synthetic-trusted-runner",
           actor_role: "trusted_runner",
-          method: "direct_pre_cutoff_capture",
+          method: "operator_provided_packet",
           trust_basis: "Synthetic fixture observation.",
         },
         {
@@ -876,7 +876,8 @@ function buildReadyPreflight(): BuiltPreflight {
       policy_id: "adversarial-freshness-policy",
       chronology_rule:
         "effective_at_lte_freshness_as_of_lte_verified_at",
-      cutoff_rule: "freshness_as_of_lte_cutoff_at",
+      cutoff_rule:
+        "evidence_clocks_lte_cutoff_custody_assessment_may_follow",
       current_state_rule:
         "current_requires_exact_governing_manifest_and_authority",
     },
@@ -935,6 +936,9 @@ function buildReadyPreflight(): BuiltPreflight {
     process.cwd(),
     "fixtures/synthetic-complete/runs/run-synthetic-001/inputs.json",
   );
+  // Canonical Research chronology (issue #3 comment 5286246398): freeze and
+  // activation clocks FOLLOW the evidence cutoff (2026-01-02T00:00:00Z).
+  candidateInputsValue.frozen_at = "2026-01-02T00:10:00Z";
   candidateInputsValue.artifacts = [
     {
       artifact_id: "synthetic-baseline",
@@ -961,6 +965,7 @@ function buildReadyPreflight(): BuiltPreflight {
     process.cwd(),
     "fixtures/synthetic-complete/authority/decision.json",
   );
+  authorityDecisionValue.approved_at = "2026-01-02T00:20:00Z";
   const authorityInputsRef = authorityDecisionValue.inputs_ref as Record<
     string,
     unknown
@@ -1011,9 +1016,9 @@ function buildReadyPreflight(): BuiltPreflight {
       effective_mode: "denied",
       effective_destinations: [],
       default_action: "deny",
-      observed_at: "2026-01-01T14:16:00Z",
-      valid_from: "2026-01-01T14:15:00Z",
-      valid_until: "2026-01-02T14:15:00Z",
+      observed_at: "2026-01-02T00:30:00Z",
+      valid_from: "2026-01-02T00:25:00Z",
+      valid_until: "2026-01-02T12:00:00Z",
       observer: {
         observer_id: "synthetic-trusted-runner",
         role: "trusted_runner",
@@ -1090,7 +1095,7 @@ function buildReadyPreflight(): BuiltPreflight {
       operator_direction: operatorDirectionText,
       quote_digest: sha256Utf8(operatorDirectionText),
       quote_digest_mode: "tiber-raw-sha256-v1",
-      recorded_at: "2026-01-01T14:12:00Z",
+      recorded_at: "2026-01-02T00:20:00Z",
       approved_artifact_refs: [
         candidateJob,
         candidateInputs,
@@ -1123,8 +1128,8 @@ function buildReadyPreflight(): BuiltPreflight {
       claimed_available_at: "2026-01-01T13:00:00Z",
       cutoff_at: "2026-01-02T00:00:00Z",
       evidence_ref: sourceMetadataRef,
-      observation_method: "direct_pre_cutoff_capture",
-      observed_at: "2026-01-01T14:16:00Z",
+      observation_method: "operator_provided_packet",
+      observed_at: "2026-01-02T00:30:00Z",
       observer: {
         observer_id: "synthetic-trusted-runner",
         role: "trusted_runner",
@@ -1151,9 +1156,9 @@ function buildReadyPreflight(): BuiltPreflight {
       path: "exports/synthetic-baseline.json",
       blob_digest: DIGEST_A,
       artifact_digest: governingManifest.digest,
-      observed_at: "2026-01-01T14:13:00Z",
+      observed_at: "2026-01-02T00:25:00Z",
       effective_at: "2026-01-01T13:00:00Z",
-      verified_at: "2026-01-01T14:14:00Z",
+      verified_at: "2026-01-02T00:26:00Z",
       cutoff_at: "2026-01-02T00:00:00Z",
       governing_authority_ref: authorityDecision,
       governing_manifest_ref: governingManifest,
@@ -1170,7 +1175,7 @@ function buildReadyPreflight(): BuiltPreflight {
       },
       freshness: {
         state: "current",
-        as_of: "2026-01-01T14:14:00Z",
+        as_of: "2026-01-02T00:26:00Z",
         policy_ref: freshnessPolicy,
         rationale: "Current for the synthetic cutoff.",
       },
@@ -1181,7 +1186,7 @@ function buildReadyPreflight(): BuiltPreflight {
     schema_version: "research-stage1-preflight/v1",
     preflight_id: "adversarial-stage1-preflight",
     candidate_run_id: RUN_ID,
-    prepared_at: "2026-01-01T14:20:00Z",
+    prepared_at: "2026-01-02T01:00:00Z",
     stage0_base: {
       repository: "Prometheus-Frameworks/TIBER-Research",
       commit: COMMIT,
@@ -1197,7 +1202,7 @@ function buildReadyPreflight(): BuiltPreflight {
       decision_ref: "synthetic:stage0-fixture-authorization",
       quote_digest: sha256Utf8(operatorDirectionText),
       quote_digest_mode: "tiber-raw-sha256-v1",
-      quote_observed_at: "2026-01-01T14:12:00Z",
+      quote_observed_at: "2026-01-02T00:20:00Z",
       operator: "synthetic-fixture-operator",
     },
     gate_artifacts: {
@@ -1383,9 +1388,9 @@ function addUsageReceipt(
     invocation_id: `invocation-${receiptId}`,
     provider: "synthetic-provider",
     model: "synthetic-model",
-    usage_started_at: "2026-01-01T14:17:00Z",
-    usage_ended_at: "2026-01-01T14:18:00Z",
-    observed_at: "2026-01-01T14:19:00Z",
+    usage_started_at: "2026-01-02T00:40:00Z",
+    usage_ended_at: "2026-01-02T00:45:00Z",
+    observed_at: "2026-01-02T00:50:00Z",
     provider_native_usage: [
       { unit: "tiber_actor_session_v1", quantity: 1 },
     ],

@@ -28,6 +28,7 @@
             "operator_attestation",
             "provider_usage_api",
             "runner_observation",
+            "runner_protocol_attestation",
             "sandbox_firewall",
             "upstream_signature"
           ]

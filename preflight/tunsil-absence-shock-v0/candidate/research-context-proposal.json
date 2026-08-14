@@ -1,0 +1,25 @@
+{
+  "bound_by": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/3#issuecomment-5281497231 §4",
+  "candidate_run_id": "tunsil-absence-shock-v0",
+  "cutoff_at": "2026-08-13T14:13:09Z",
+  "hindsight_rule": "No later regular-season or post-cutoff observation may enter this frozen run.",
+  "observation_window": {
+    "event_start": "2026-08-08 Tunsil torn-triceps injury in practice",
+    "phase": "training camp / preseason",
+    "season": 2026,
+    "team": "WAS",
+    "window_end": "the bound post-admission cutoff"
+  },
+  "research_context": {
+    "context_class": "pilot_baseline",
+    "context_id": "context-was-2026-camp-tunsil-shock",
+    "description": "Washington Commanders, 2026 training camp/preseason, post-2026-08-08 Tunsil injury, pre-season-start; protection burden redistribution study.",
+    "dimensions": {
+      "event": "tunsil-torn-triceps-2026-08-08",
+      "phase": "training-camp-preseason",
+      "season": 2026,
+      "team": "WAS"
+    }
+  },
+  "status": "operator_bound"
+}

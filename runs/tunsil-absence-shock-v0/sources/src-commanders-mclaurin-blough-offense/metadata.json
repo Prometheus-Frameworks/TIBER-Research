@@ -1,0 +1,59 @@
+{
+  "acquisition_method": "operator-manual-observation",
+  "admissibility": {
+    "rationale": "Operator-directed per-instance Manual Witness admission (issue #3 comment 5281497231 §1) with excerpt-scoped retention. Known epistemic limits: Stated coaching intent from February/May interviews, pre-dating the Tunsil injury; intent is not usage evidence.",
+    "state": "admitted"
+  },
+  "admitted": true,
+  "content_digest": "sha256:31e65b47e347bb29f088f7e108d79c1a428433fe976e7e38623e588e7aa10207",
+  "content_path": "runs/tunsil-absence-shock-v0/sources/src-commanders-mclaurin-blough-offense/excerpts.txt",
+  "context_match": {
+    "context_ref": "context-was-2026-camp-tunsil-shock",
+    "matched": true,
+    "rationale": "Pre-injury club-published coaching intent for McLaurin usage; baseline for the opportunity-versus-efficiency question."
+  },
+  "directness": "direct",
+  "freshness": {
+    "rationale": "Retrieved once on 2026-08-13 before the bound cutoff; no later revision of the page was observed or admitted, and the page is not assumed immutable.",
+    "state": "current"
+  },
+  "intended_use": "Operator-directed manual observation of specific first-party commanders.com articles named in issue #3; per-item admission with excerpt-only retention; no systematic retrieval.",
+  "limits": {
+    "licensing": "Copyrighted NFL club editorial content; no license for retention of full bodies; excerpt/reference admission only.",
+    "privacy": "contains_no_private_user_context",
+    "redistribution": "Not redistributable; internal lineage use only; retained excerpts stay inside this governed package.",
+    "reportability": "Internal only; never quote beyond the retained excerpts; never represent club-asserted figures as charting evidence."
+  },
+  "locator": {
+    "kind": "url",
+    "value": "https://www.commanders.com/news/terry-mclaurin-david-blough-offense-commanders"
+  },
+  "promotable": false,
+  "provider": "Washington Commanders official club site (commanders.com)",
+  "replayability": "lineage_only",
+  "reportability": "internal",
+  "retention_mode": "excerpt",
+  "revision": {
+    "revision_id": "sha256:15eda29356390d61c969e72d7cca27051271d5ad3d64db4957d9d3438ad91610",
+    "supersedes_revision_id": null
+  },
+  "rights_disposition_ref": "NFL club-platform terms prohibit systematic retrieval; admission is manual, per-instance, excerpt-scoped (issue #3 comment 5281497231 §1).",
+  "run_id": "tunsil-absence-shock-v0",
+  "schema_version": "research-source-metadata/v0",
+  "source_class": "operator_provided_observation",
+  "source_family_id": "commanders-official-club-site",
+  "source_identifier": "https://www.commanders.com/news/terry-mclaurin-david-blough-offense-commanders",
+  "source_object_id": "src-commanders-mclaurin-blough-offense",
+  "synthetic_fixture": false,
+  "temporal": {
+    "admissible_at": "2026-08-13T14:13:09Z",
+    "cutoff_at": "2026-08-13T14:13:09Z",
+    "effective_at": null,
+    "event_time": null,
+    "first_observed_at": "2026-08-13T14:10:29Z",
+    "published_at": "2026-05-20T15:17:13.633Z",
+    "retrieved_at": "2026-08-13T14:10:29Z",
+    "source_available_at": "2026-08-13T14:10:29Z"
+  },
+  "upstream_owner": "Washington Commanders / NFL club media"
+}

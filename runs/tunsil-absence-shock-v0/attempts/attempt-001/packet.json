@@ -1,0 +1,835 @@
+{
+  "attempt_id": "attempt-001",
+  "authority_state": "unpromoted",
+  "causal_paths": [
+    {
+      "description": "The frozen causal chain runs Tunsil absence -> left-tackle replacement -> protection conditions -> quarterback passing conditions -> McLaurin opportunity/efficiency, with a parallel branch to backfield protection roles. Only the first two links carry admitted evidence; the downstream links (protection to quarterback conditions, quarterback conditions to McLaurin opportunity, protection to backfield roles) are deliberately not represented as edges because no admitted in-window evidence supports them, and representing them without evidence would reintroduce the narrative-only downgrade the job prohibits.",
+      "edges": [
+        {
+          "claim_refs": [
+            "claim-q1a-tunsil-unavailable",
+            "claim-q1b-coleman-replacement"
+          ],
+          "counterevidence_refs": [],
+          "edge_id": "edge-absence-to-replacement",
+          "evidence_refs": [
+            "event-008-obs-tunsil-out",
+            "event-009-obs-coleman-lt"
+          ],
+          "falsifiers": [
+            "An admitted report of Tunsil returning within the window.",
+            "An admitted report of a different starter at left tackle."
+          ],
+          "from_node": "node-tunsil-absence",
+          "mechanism": "The confirmed surgery and extended absence force a starter replacement at left tackle; admitted reports name Coleman working with the starters as the present solution.",
+          "to_node": "node-lt-replacement",
+          "uncertainty": "Camp alignment is provisional; a roster move or a Conerly cross-match could change the replacement before games count."
+        },
+        {
+          "claim_refs": [
+            "claim-q2-protection-quality"
+          ],
+          "counterevidence_refs": [
+            "event-015-obs-counter-camp-protection"
+          ],
+          "edge_id": "edge-replacement-to-protection",
+          "evidence_refs": [
+            "event-009-obs-coleman-lt",
+            "event-010-obs-oline-camp"
+          ],
+          "falsifiers": [
+            "Governed protection data showing stable isolated protection quality without added help.",
+            "Governed charting showing no change in protection counts or pressure conditions."
+          ],
+          "from_node": "node-lt-replacement",
+          "mechanism": "Replacing a Pro Bowl left tackle with a 2024 third-round pick who played guard in 2025 and missed most of camp injured changes the line's isolated protection conditions and plausibly the need for schematic help; the only in-window protection evidence is a qualitative joint-practice characterization.",
+          "to_node": "node-protection-conditions",
+          "uncertainty": "Direction and magnitude are unmeasured: no governed pass-block, chip/double-team, or pressure witness exists, so this edge records an evidenced mechanism with an unquantified effect."
+        }
+      ],
+      "nodes": [
+        {
+          "label": "Tunsil unavailable (torn triceps, surgery, extended absence)",
+          "node_id": "node-tunsil-absence",
+          "subject_refs": [
+            "laremy-tunsil"
+          ]
+        },
+        {
+          "label": "Coleman at left tackle within the reshaped line configuration",
+          "node_id": "node-lt-replacement",
+          "subject_refs": [
+            "brandon-coleman",
+            "was-oline-configuration"
+          ]
+        },
+        {
+          "label": "Isolated protection quality and schematic-help conditions",
+          "node_id": "node-protection-conditions",
+          "subject_refs": [
+            "was-oline-configuration",
+            "jayden-daniels"
+          ]
+        }
+      ],
+      "path_id": "path-tunsil-protection-chain"
+    }
+  ],
+  "claims": [
+    {
+      "assessment": "supported",
+      "baseline_position": null,
+      "baseline_ref": null,
+      "calculation_refs": [],
+      "challenge_refs": [
+        "event-016-challenge-q1"
+      ],
+      "claim_id": "claim-q1a-tunsil-unavailable",
+      "claim_type": "evidence_assessment",
+      "comparison_refs": [],
+      "confidence": {
+        "band": "high",
+        "rationale": "Two same-window admitted first-party pages independently attest surgery and extended absence, and a bounded counterevidence search found nothing; the only weakness is the absence of a non-club witness."
+      },
+      "counterevidence_refs": [],
+      "epistemic_class": "observed",
+      "evidence_refs": [
+        "event-008-obs-tunsil-out",
+        "event-009-obs-coleman-lt"
+      ],
+      "freshness": {
+        "as_of": "2026-08-10T19:08:48Z",
+        "state": "current"
+      },
+      "hypothesis_refs": [
+        "event-001-hyp-q1-tunsil"
+      ],
+      "limitations": [
+        "Both availability reports are first-party club communications; no independent medical witness is admitted.",
+        "No return date exists; the duration is bounded only by 'extended time' and 'foreseeable future'.",
+        "The quantitative side of availability (a governed injury/roster state witness) remains a frozen blocked input."
+      ],
+      "market_inefficiency_claim": null,
+      "market_snapshot_ref": null,
+      "missing_evidence_refs": [
+        "unres-current-availability"
+      ],
+      "proposed_disposition": null,
+      "question_ref": "q1-availability-replacement-state",
+      "scope": {
+        "context": "Washington Commanders 2026 training camp/preseason after the 2026-08-08 Tunsil torn-triceps event, before any regular-season play.",
+        "context_ref": "context-was-2026-camp-tunsil-shock",
+        "cutoff_at": "2026-08-13T14:13:09Z",
+        "population": "Laremy Tunsil (run-scoped identity).",
+        "time_horizon": "2026 training-camp/preseason window from the 2026-08-08 injury event to the activated cutoff; no regular-season observations exist inside the window."
+      },
+      "statement": "Tunsil is unavailable for the observation window: two independent admitted club reports from 2026-08-10 confirm a torn triceps requiring surgery with an extended absence and no return timeline.",
+      "subject_ref": "laremy-tunsil"
+    },
+    {
+      "assessment": "supported",
+      "baseline_position": null,
+      "baseline_ref": null,
+      "calculation_refs": [],
+      "challenge_refs": [
+        "event-016-challenge-q1"
+      ],
+      "claim_id": "claim-q1b-coleman-replacement",
+      "claim_type": "evidence_assessment",
+      "comparison_refs": [],
+      "confidence": {
+        "band": "moderate",
+        "rationale": "Both admitted pages agree on the replacement, but camp alignment is inherently provisional and no depth-chart witness for the window is admitted."
+      },
+      "counterevidence_refs": [],
+      "epistemic_class": "observed",
+      "evidence_refs": [
+        "event-008-obs-tunsil-out",
+        "event-009-obs-coleman-lt"
+      ],
+      "freshness": {
+        "as_of": "2026-08-10T19:08:48Z",
+        "state": "current"
+      },
+      "hypothesis_refs": [
+        "event-002-hyp-q1-coleman"
+      ],
+      "limitations": [
+        "Starter alignment is a camp-practice observation; a roster move or cross-match before week one could change the actual replacement."
+      ],
+      "market_inefficiency_claim": null,
+      "market_snapshot_ref": null,
+      "missing_evidence_refs": [],
+      "proposed_disposition": null,
+      "question_ref": "q1-availability-replacement-state",
+      "scope": {
+        "context": "Washington Commanders 2026 training camp/preseason after the 2026-08-08 Tunsil torn-triceps event, before any regular-season play.",
+        "context_ref": "context-was-2026-camp-tunsil-shock",
+        "cutoff_at": "2026-08-13T14:13:09Z",
+        "population": "Brandon Coleman (run-scoped identity).",
+        "time_horizon": "2026 training-camp/preseason window from the 2026-08-08 injury event to the activated cutoff; no regular-season observations exist inside the window."
+      },
+      "statement": "Coleman is the actual replacement at left tackle inside the window: admitted club reports name him the present solution and place him with the starters at left tackle in Monday practice.",
+      "subject_ref": "brandon-coleman"
+    },
+    {
+      "assessment": "partly_supported",
+      "baseline_position": null,
+      "baseline_ref": null,
+      "calculation_refs": [],
+      "challenge_refs": [
+        "event-016-challenge-q1"
+      ],
+      "claim_id": "claim-q1c-line-configuration",
+      "claim_type": "evidence_assessment",
+      "comparison_refs": [],
+      "confidence": {
+        "band": "low",
+        "rationale": "Only part of the configuration is directly attested in admitted excerpts and the identities are unresolved, so the composite claim cannot rise above partly supported."
+      },
+      "counterevidence_refs": [],
+      "epistemic_class": "inferred",
+      "evidence_refs": [
+        "event-009-obs-coleman-lt",
+        "event-010-obs-oline-camp"
+      ],
+      "freshness": {
+        "as_of": "2026-08-12T19:03:38Z",
+        "state": "current"
+      },
+      "hypothesis_refs": [
+        "event-003-hyp-q1-config"
+      ],
+      "limitations": [
+        "Configuration facts beyond Paul at left guard rest on the frozen issue context, not restated admitted text.",
+        "All five line identities are run-scoped; none has a governed GSIS binding."
+      ],
+      "market_inefficiency_claim": null,
+      "market_snapshot_ref": null,
+      "missing_evidence_refs": [
+        "unres-ol-identity",
+        "unres-current-availability"
+      ],
+      "proposed_disposition": null,
+      "question_ref": "q1-availability-replacement-state",
+      "scope": {
+        "context": "Washington Commanders 2026 training camp/preseason after the 2026-08-08 Tunsil torn-triceps event, before any regular-season play.",
+        "context_ref": "context-was-2026-camp-tunsil-shock",
+        "cutoff_at": "2026-08-13T14:13:09Z",
+        "population": "Composite Washington offensive-line configuration subject (run-scoped).",
+        "time_horizon": "2026 training-camp/preseason window from the 2026-08-08 injury event to the activated cutoff; no regular-season observations exist inside the window."
+      },
+      "statement": "The surrounding line configuration is partly identified: Chris Paul winning the left-guard job is directly attested and the excerpts corroborate Conerly's 2025 arrival, but the full five-man alignment (including Conerly at right tackle and Wylie as swing) is issue-frozen context the admitted excerpts do not restate, and no governed OL identities exist.",
+      "subject_ref": "was-oline-configuration"
+    },
+    {
+      "assessment": "insufficient",
+      "baseline_position": null,
+      "baseline_ref": null,
+      "calculation_refs": [],
+      "challenge_refs": [
+        "event-017-challenge-insufficiency"
+      ],
+      "claim_id": "claim-q2-protection-quality",
+      "claim_type": "evidence_assessment",
+      "comparison_refs": [],
+      "confidence": {
+        "band": "not_assessed",
+        "rationale": "Insufficiency is a witness-absence determination, not a graded finding; assigning a confidence band would misstate it as an assessment of the football question."
+      },
+      "counterevidence_refs": [
+        "event-015-obs-counter-camp-protection"
+      ],
+      "epistemic_class": "inferred",
+      "evidence_refs": [
+        "event-010-obs-oline-camp"
+      ],
+      "freshness": {
+        "as_of": "2026-08-12T19:03:38Z",
+        "state": "current"
+      },
+      "hypothesis_refs": [
+        "event-004-hyp-q2-protection"
+      ],
+      "limitations": [
+        "No proxy metric was substituted for the missing protection witness, per the job's hard boundaries.",
+        "The operator-excluded proprietary charting class is the only known carrier of the missing fields."
+      ],
+      "market_inefficiency_claim": null,
+      "market_snapshot_ref": null,
+      "missing_evidence_refs": [
+        "unres-protection-pressure",
+        "unres-ol-identity"
+      ],
+      "proposed_disposition": null,
+      "question_ref": "q2-protection-quality-pressure",
+      "scope": {
+        "context": "Washington Commanders 2026 training camp/preseason after the 2026-08-08 Tunsil torn-triceps event, before any regular-season play.",
+        "context_ref": "context-was-2026-camp-tunsil-shock",
+        "cutoff_at": "2026-08-13T14:13:09Z",
+        "population": "Coleman and the composite line configuration (run-scoped identities).",
+        "time_horizon": "2026 training-camp/preseason window from the 2026-08-08 injury event to the activated cutoff; no regular-season observations exist inside the window."
+      },
+      "statement": "Whether replacing Tunsil with Coleman creates a material expected reduction in isolated protection quality or increases the need for schematic help cannot be assessed: the frozen inputs record that no governed pass-block, chip/double-team, or pressure attribution witness exists, and the only in-window protection observation is a qualitative one-on-one drill characterization that excludes schematic help by construction.",
+      "subject_ref": "brandon-coleman"
+    },
+    {
+      "assessment": "insufficient",
+      "baseline_position": null,
+      "baseline_ref": null,
+      "calculation_refs": [],
+      "challenge_refs": [
+        "event-017-challenge-insufficiency"
+      ],
+      "claim_id": "claim-q3-qb-playcalling",
+      "claim_type": "evidence_assessment",
+      "comparison_refs": [],
+      "confidence": {
+        "band": "not_assessed",
+        "rationale": "Insufficiency is a witness-absence determination, not a graded finding."
+      },
+      "counterevidence_refs": [],
+      "epistemic_class": "inferred",
+      "evidence_refs": [
+        "event-010-obs-oline-camp"
+      ],
+      "freshness": {
+        "as_of": "2026-08-12T19:03:38Z",
+        "state": "current"
+      },
+      "hypothesis_refs": [
+        "event-005-hyp-q3-daniels"
+      ],
+      "limitations": [
+        "Camp praise for Daniels is not evidence about protection-dependent play design and was not used as such."
+      ],
+      "market_inefficiency_claim": null,
+      "market_snapshot_ref": null,
+      "missing_evidence_refs": [
+        "unres-protection-pressure"
+      ],
+      "proposed_disposition": null,
+      "question_ref": "q3-quarterback-playcalling-response",
+      "scope": {
+        "context": "Washington Commanders 2026 training camp/preseason after the 2026-08-08 Tunsil torn-triceps event, before any regular-season play.",
+        "context_ref": "context-was-2026-camp-tunsil-shock",
+        "cutoff_at": "2026-08-13T14:13:09Z",
+        "population": "Jayden Daniels (gsis 00-0039910).",
+        "time_horizon": "2026 training-camp/preseason window from the 2026-08-08 injury event to the activated cutoff; no regular-season observations exist inside the window."
+      },
+      "statement": "Whether the absence changes protection count, pressure conditions, time to throw, scramble/throwaway behavior, play action, quick game, rollouts, depth of target, or explosive-pass opportunity cannot be assessed: no governed charting witness for any of these fields exists per the frozen inputs, and the admitted camp characterizations of Daniels (efficient, sharp) carry no play-design measurement.",
+      "subject_ref": "jayden-daniels"
+    },
+    {
+      "assessment": "insufficient",
+      "baseline_position": null,
+      "baseline_ref": null,
+      "calculation_refs": [],
+      "challenge_refs": [
+        "event-017-challenge-insufficiency"
+      ],
+      "claim_id": "claim-q4a-backfield-redistribution",
+      "claim_type": "evidence_assessment",
+      "comparison_refs": [],
+      "confidence": {
+        "band": "not_assessed",
+        "rationale": "Insufficiency is a witness-absence determination, not a graded finding."
+      },
+      "counterevidence_refs": [],
+      "epistemic_class": "inferred",
+      "evidence_refs": [
+        "event-013-obs-rb-room"
+      ],
+      "freshness": {
+        "as_of": "2026-05-27T15:07:54Z",
+        "state": "current"
+      },
+      "hypothesis_refs": [
+        "event-006-hyp-q4-backfield"
+      ],
+      "limitations": [
+        "The May role descriptions establish intended roles, not window-realized redistribution."
+      ],
+      "market_inefficiency_claim": null,
+      "market_snapshot_ref": null,
+      "missing_evidence_refs": [
+        "unres-route-participation",
+        "unres-protection-pressure",
+        "unres-rb-passpro-roles"
+      ],
+      "proposed_disposition": null,
+      "question_ref": "q4-backfield-constraint-redistribution",
+      "scope": {
+        "context": "Washington Commanders 2026 training camp/preseason after the 2026-08-08 Tunsil torn-triceps event, before any regular-season play.",
+        "context_ref": "context-was-2026-camp-tunsil-shock",
+        "cutoff_at": "2026-08-13T14:13:09Z",
+        "population": "Rachaad White (gsis 00-0037256) and Jacory Croskey-Merritt (gsis 00-0040242).",
+        "time_horizon": "2026 training-camp/preseason window from the 2026-08-08 injury event to the activated cutoff; no regular-season observations exist inside the window."
+      },
+      "statement": "Whether Washington increases running-back protection or chip participation — with White's snaps correctly separated into pass blocks, chip-and-release routes, full routes, carries, and targets, and without assuming Croskey-Merritt loses early-down carries — cannot be assessed: no governed role-separated participation witness exists for the window, and no governed interpreter separates those roles.",
+      "subject_ref": "rachaad-white"
+    },
+    {
+      "assessment": "supported",
+      "baseline_position": null,
+      "baseline_ref": null,
+      "calculation_refs": [],
+      "challenge_refs": [
+        "event-017-challenge-insufficiency"
+      ],
+      "claim_id": "claim-q4b-white-2025-passpro-baseline",
+      "claim_type": "evidence_assessment",
+      "comparison_refs": [],
+      "confidence": {
+        "band": "moderate",
+        "rationale": "The profile statement is directly observed in the admitted article, but the underlying figures are unverified quotations of third-party charting."
+      },
+      "counterevidence_refs": [],
+      "epistemic_class": "observed",
+      "evidence_refs": [
+        "event-012-obs-white-passpro-2025",
+        "event-013-obs-rb-room"
+      ],
+      "freshness": {
+        "as_of": "2026-05-27T15:07:54Z",
+        "state": "current"
+      },
+      "hypothesis_refs": [
+        "event-006-hyp-q4-backfield"
+      ],
+      "limitations": [
+        "The figures are the club article's quoted numbers; no governed charting witness verifies them in this run.",
+        "This baseline says nothing about whether redistribution occurs in 2026; that remains insufficient."
+      ],
+      "market_inefficiency_claim": null,
+      "market_snapshot_ref": null,
+      "missing_evidence_refs": [],
+      "proposed_disposition": null,
+      "question_ref": "q4-backfield-constraint-redistribution",
+      "scope": {
+        "context": "Washington Commanders 2026 training camp/preseason after the 2026-08-08 Tunsil torn-triceps event, before any regular-season play.",
+        "context_ref": "context-was-2026-camp-tunsil-shock",
+        "cutoff_at": "2026-08-13T14:13:09Z",
+        "population": "Rachaad White (gsis 00-0037256); 2024-2025 retrospective figures as quoted at signing, predating the observation window.",
+        "time_horizon": "2026 training-camp/preseason window from the 2026-08-08 injury event to the activated cutoff; no regular-season observations exist inside the window."
+      },
+      "statement": "As a bounded pre-window baseline only: the admitted club signing article credits White with strong recent pass protection (six pressures allowed, 95.2 efficiency in 2025; similar 2024 figures) and a short-area receiving profile (205 of 230 career targets caught, 1.09 yards per route run), and he was brought in as a third-down pass-catcher — the profile a protection-driven redistribution would draw on if one occurs.",
+      "subject_ref": "rachaad-white"
+    },
+    {
+      "assessment": "supported",
+      "baseline_position": null,
+      "baseline_ref": null,
+      "calculation_refs": [],
+      "challenge_refs": [
+        "event-017-challenge-insufficiency"
+      ],
+      "claim_id": "claim-q5a-mclaurin-target-intent",
+      "claim_type": "evidence_assessment",
+      "comparison_refs": [],
+      "confidence": {
+        "band": "moderate",
+        "rationale": "The intent quotation is directly observed; its bearing on the window is inherently limited, which the claim's own scope bounds."
+      },
+      "counterevidence_refs": [],
+      "epistemic_class": "observed",
+      "evidence_refs": [
+        "event-011-obs-mclaurin-plan"
+      ],
+      "freshness": {
+        "as_of": "2026-05-20T15:17:13Z",
+        "state": "current"
+      },
+      "hypothesis_refs": [
+        "event-007-hyp-q5-mclaurin"
+      ],
+      "limitations": [
+        "Stated intent is not realized usage and predates the injury; it cannot support any claim about post-injury opportunity."
+      ],
+      "market_inefficiency_claim": null,
+      "market_snapshot_ref": null,
+      "missing_evidence_refs": [],
+      "proposed_disposition": null,
+      "question_ref": "q5-mclaurin-opportunity-vs-efficiency",
+      "scope": {
+        "context": "Washington Commanders 2026 training camp/preseason after the 2026-08-08 Tunsil torn-triceps event, before any regular-season play.",
+        "context_ref": "context-was-2026-camp-tunsil-shock",
+        "cutoff_at": "2026-08-13T14:13:09Z",
+        "population": "Terry McLaurin (gsis 00-0035659); schematic intent as stated 2026-05-20, predating the observation window.",
+        "time_horizon": "2026 training-camp/preseason window from the 2026-08-08 injury event to the activated cutoff; no regular-season observations exist inside the window."
+      },
+      "statement": "As a bounded pre-injury baseline of intent only: the admitted May 2026 article states the offense is built around getting McLaurin ten targets a game with repeated explosive receptions, moving receivers to create matchups — an opportunity-centric schematic intent recorded before the Tunsil event.",
+      "subject_ref": "terry-mclaurin"
+    },
+    {
+      "assessment": "insufficient",
+      "baseline_position": null,
+      "baseline_ref": null,
+      "calculation_refs": [],
+      "challenge_refs": [
+        "event-017-challenge-insufficiency"
+      ],
+      "claim_id": "claim-q5b-mclaurin-opportunity-change",
+      "claim_type": "opportunity_assessment",
+      "comparison_refs": [],
+      "confidence": {
+        "band": "not_assessed",
+        "rationale": "Insufficiency is a witness-absence determination, not a graded finding."
+      },
+      "counterevidence_refs": [],
+      "epistemic_class": "inferred",
+      "evidence_refs": [
+        "event-010-obs-oline-camp"
+      ],
+      "freshness": {
+        "as_of": "2026-08-12T19:03:38Z",
+        "state": "current"
+      },
+      "hypothesis_refs": [
+        "event-007-hyp-q5-mclaurin"
+      ],
+      "limitations": [
+        "Per the job boundaries, no proxy (including camp anecdotes or intent statements) was substituted for the missing opportunity witnesses.",
+        "The operator's original bullishness question therefore receives an explicit requires-data terminal, not a directional answer."
+      ],
+      "market_inefficiency_claim": null,
+      "market_snapshot_ref": null,
+      "missing_evidence_refs": [
+        "unres-route-participation"
+      ],
+      "proposed_disposition": null,
+      "question_ref": "q5-mclaurin-opportunity-vs-efficiency",
+      "scope": {
+        "context": "Washington Commanders 2026 training camp/preseason after the 2026-08-08 Tunsil torn-triceps event, before any regular-season play.",
+        "context_ref": "context-was-2026-camp-tunsil-shock",
+        "cutoff_at": "2026-08-13T14:13:09Z",
+        "population": "Terry McLaurin (gsis 00-0035659).",
+        "time_horizon": "2026 training-camp/preseason window from the 2026-08-08 injury event to the activated cutoff; no regular-season observations exist inside the window."
+      },
+      "statement": "Whether McLaurin's target/first-read opportunity changes — separately from whether his air yards, target depth, play-action/deep usage, YPRR, explosive conversion, red-zone opportunity, or touchdown ceiling change — cannot be assessed: no governed target, air-yard, route, or usage witness exists inside the window, and the only in-window McLaurin observation (winning all one-on-one matchups in a joint practice) measures neither opportunity nor protection-dependent efficiency.",
+      "subject_ref": "terry-mclaurin"
+    }
+  ],
+  "completion": "inconclusive",
+  "downstream_authority": "none",
+  "followups": [
+    {
+      "followup_id": "followup-rfi-route-participation",
+      "question": "Can TIBER-Data stand up a governed live-2026 route/route-participation witness (routes run, participation shares) admissible for in-season runs?",
+      "rationale": "Route participation is the opportunity denominator for q4 and q5; its absence is the frozen blocker for both.",
+      "requires_new_run": true,
+      "rfi": {
+        "owner_repository": "Prometheus-Frameworks/TIBER-Data",
+        "related_issue": "Prometheus-Frameworks/TIBER-Data#247",
+        "requested_evidence": "A governed, rights-clean live-2026 route-participation witness with per-game routes and participation shares for skill positions.",
+        "unresolved_refs": [
+          "unres-route-participation"
+        ]
+      }
+    },
+    {
+      "followup_id": "followup-rfi-protection-pressure",
+      "question": "Can TIBER-Data stand up a governed pass-block/chip/double-team and pressure/sack attribution witness (the '[D0] Tunsil golden trace' successor)?",
+      "rationale": "Protection-quality attribution is the frozen blocker for q2 and q3 and half of q4; without it the protection-to-opportunity chain cannot be evidenced.",
+      "requires_new_run": true,
+      "rfi": {
+        "owner_repository": "Prometheus-Frameworks/TIBER-Data",
+        "related_issue": null,
+        "requested_evidence": "Governed per-snap pass-block assignments, chip/double-team participation, and pressure/sack attribution for the Washington line and backs.",
+        "unresolved_refs": [
+          "unres-protection-pressure"
+        ]
+      }
+    },
+    {
+      "followup_id": "followup-rfi-current-availability",
+      "question": "Can TIBER-Data qualify a governed current-2026 in-season availability witness, resolving the September continuity question for the restored nflverse injuries lane?",
+      "rationale": "Current availability is the quantitative side of q1 and the durable witness Lane 2 tracks; the 2025 backfill provenance class does not qualify.",
+      "requires_new_run": true,
+      "rfi": {
+        "owner_repository": "Prometheus-Frameworks/TIBER-Data",
+        "related_issue": "Prometheus-Frameworks/TIBER-Research#5",
+        "requested_evidence": "A qualified governed current-2026 injury/roster/gameday availability witness with in-season continuity evidence from the September observation checkpoint.",
+        "unresolved_refs": [
+          "unres-current-availability"
+        ]
+      }
+    },
+    {
+      "followup_id": "followup-rfi-ol-identity",
+      "question": "Can TIBER-Data extend governed identity coverage to offensive linemen so line subjects stop requiring run-scoped identities?",
+      "rationale": "All five line identities in this run are run-scoped; composite-subject grain was required because no governed OL GSIS bindings exist.",
+      "requires_new_run": false,
+      "rfi": {
+        "owner_repository": "Prometheus-Frameworks/TIBER-Data",
+        "related_issue": null,
+        "requested_evidence": "Governed GSIS identity bindings for offensive linemen, starting with the Washington line named in this run.",
+        "unresolved_refs": [
+          "unres-ol-identity"
+        ]
+      }
+    },
+    {
+      "followup_id": "followup-rfi-rb-passpro-roles",
+      "question": "Can Role-and-opportunity-model activate the deterministic RB pass-protection/route role interpreter (issue #23)?",
+      "rationale": "q4's role separation (pass blocks vs chip-and-release vs full routes) has a designed downstream home that is not yet activated.",
+      "requires_new_run": true,
+      "rfi": {
+        "owner_repository": "Prometheus-Frameworks/Role-and-opportunity-model",
+        "related_issue": "Prometheus-Frameworks/Role-and-opportunity-model#23",
+        "requested_evidence": "An activated deterministic interpreter separating RB pass blocks, chip-and-release routes, full routes, carries, and targets.",
+        "unresolved_refs": [
+          "unres-rb-passpro-roles"
+        ]
+      }
+    }
+  ],
+  "generated_at": "2026-08-14T12:53:42Z",
+  "job_id": "tunsil-absence-shock",
+  "job_version": "v1",
+  "limitations": [
+    "All football evidence is first-party club reporting admitted manually per instance; no independent or charted witness exists inside the window.",
+    "The observation window contains no regular-season play; every observation is camp or joint-practice grade.",
+    "Availability, replacement, and two pre-window baselines are the only supported findings; the protection-to-opportunity chain the operator asked about is explicitly unassessed, not implicitly downgraded.",
+    "This packet is internal, grants no downstream authority, and must not mutate any TIBER product, ranking, forecast, or fantasy surface; the operator's bullishness question is answered only by the requires-data terminal and the routed RFIs."
+  ],
+  "negative_findings": [],
+  "output_class": "structured_research_packet",
+  "process_terminal": "completed",
+  "questions": [
+    {
+      "assessment": "partly_supported",
+      "blocker_reason": null,
+      "claim_refs": [
+        "claim-q1a-tunsil-unavailable",
+        "claim-q1b-coleman-replacement",
+        "claim-q1c-line-configuration"
+      ],
+      "completion": "answered",
+      "limitations": [
+        "Availability and replacement are supported from admitted first-party evidence; the full line-configuration identification is only partly supported and OL identities remain unresolved."
+      ],
+      "prompt": "Is Tunsil unavailable for the observation window, is Coleman the actual replacement, and is the surrounding line configuration correctly identified?",
+      "question_id": "q1-availability-replacement-state"
+    },
+    {
+      "assessment": "insufficient",
+      "blocker_reason": null,
+      "claim_refs": [
+        "claim-q2-protection-quality"
+      ],
+      "completion": "inconclusive",
+      "limitations": [
+        "No governed protection-quality or pressure witness exists; the frozen blocked inputs carry the owner routing."
+      ],
+      "prompt": "Does replacing Tunsil with Coleman create a material expected reduction in isolated protection quality or increase the need for schematic help?",
+      "question_id": "q2-protection-quality-pressure"
+    },
+    {
+      "assessment": "insufficient",
+      "blocker_reason": null,
+      "claim_refs": [
+        "claim-q3-qb-playcalling"
+      ],
+      "completion": "inconclusive",
+      "limitations": [
+        "No governed charting witness for protection counts, pressure conditions, or play-design distribution exists for the window."
+      ],
+      "prompt": "Does the absence change protection count, pressure conditions, time to throw, scramble/throwaway behavior, play action, quick game, rollout usage, depth of target, or explosive-pass opportunity?",
+      "question_id": "q3-quarterback-playcalling-response"
+    },
+    {
+      "assessment": "insufficient",
+      "blocker_reason": null,
+      "claim_refs": [
+        "claim-q4a-backfield-redistribution",
+        "claim-q4b-white-2025-passpro-baseline"
+      ],
+      "completion": "inconclusive",
+      "limitations": [
+        "A supported pre-window baseline of White's protection/receiving profile exists, but window-realized redistribution is unassessable without role-separated participation data."
+      ],
+      "prompt": "Does Washington increase running-back protection or chip participation, with any additional White snaps correctly separated into pass blocks, chip-and-release routes, full routes, carries, and targets, and does Croskey-Merritt lose passing-down participation without an assumed early-down carry loss?",
+      "question_id": "q4-backfield-constraint-redistribution"
+    },
+    {
+      "assessment": "insufficient",
+      "blocker_reason": null,
+      "claim_refs": [
+        "claim-q5a-mclaurin-target-intent",
+        "claim-q5b-mclaurin-opportunity-change"
+      ],
+      "completion": "inconclusive",
+      "limitations": [
+        "A supported pre-injury intent baseline exists, but neither opportunity nor efficiency change is assessable inside the window without governed usage witnesses."
+      ],
+      "prompt": "Separately from efficiency: does McLaurin's target/first-read opportunity change; and separately from opportunity: do his air yards, target depth, play-action/deep usage, YPRR, explosive conversion, red-zone opportunity, or touchdown ceiling change?",
+      "question_id": "q5-mclaurin-opportunity-vs-efficiency"
+    }
+  ],
+  "reportability": "internal",
+  "response_branches": [
+    {
+      "assessment": "insufficient",
+      "branch_id": "h1-replacement-holds",
+      "claim_refs": [
+        "claim-q2-protection-quality",
+        "claim-q3-qb-playcalling"
+      ],
+      "context_notes": [
+        "Every expected H1 signal (protection rates, pressure rates, play-design profile, air-yard opportunity, backfield redistribution) requires a witness class the frozen inputs record as absent."
+      ],
+      "counterevidence_refs": [],
+      "description": "Coleman remains serviceable without materially greater help.",
+      "evidence_refs": [],
+      "expected_signals": [
+        "Stable chip/double-team and six-/seven-man protection rates.",
+        "Stable quick-pressure and sack rates.",
+        "Stable play-action/deep-attempt profile.",
+        "Stable McLaurin air-yard opportunity.",
+        "No meaningful White/Croskey-Merritt passing-down redistribution attributable to protection."
+      ],
+      "label": "H1 — Replacement holds",
+      "limitations": [
+        "Preregistered before evidence review; assessed insufficient because no admitted in-window quantitative signal can discriminate the branches."
+      ]
+    },
+    {
+      "assessment": "insufficient",
+      "branch_id": "h2-successful-adaptation",
+      "claim_refs": [
+        "claim-q3-qb-playcalling",
+        "claim-q4a-backfield-redistribution",
+        "claim-q5b-mclaurin-opportunity-change"
+      ],
+      "context_notes": [
+        "Adaptation signals (chips, protector counts, play-design shifts, role-separated White snaps) are precisely the fields of the missing protection and participation witnesses."
+      ],
+      "counterevidence_refs": [],
+      "description": "Washington preserves quarterback conditions by redistributing protection and changing play design.",
+      "evidence_refs": [],
+      "expected_signals": [
+        "More chips, double teams, tight-end or running-back protection.",
+        "More quick game, under-center play action, movement, or rollouts.",
+        "McLaurin target opportunity holding better than target depth or explosive efficiency.",
+        "White gaining passing-down snaps, with routes and pass blocks reported separately.",
+        "Croskey-Merritt early-down rushing remaining more stable than his third-down/two-minute role."
+      ],
+      "label": "H2 — Successful adaptation",
+      "limitations": [
+        "Preregistered before evidence review; assessed insufficient because no admitted in-window quantitative signal can discriminate the branches."
+      ]
+    },
+    {
+      "assessment": "insufficient",
+      "branch_id": "h3-protection-failure",
+      "claim_refs": [
+        "claim-q2-protection-quality",
+        "claim-q5b-mclaurin-opportunity-change"
+      ],
+      "context_notes": [
+        "Failure signals (pressure, sack conversion, depth-of-target decline, drive outcomes) have no admitted in-window witness; no regular-season observations exist inside the window at all."
+      ],
+      "counterevidence_refs": [],
+      "description": "Adaptation does not fully compensate for the replacement.",
+      "evidence_refs": [],
+      "expected_signals": [
+        "Higher quick-pressure, pressure-to-sack, hit, throwaway, or scramble rates.",
+        "Lower depth of target and explosive-pass frequency.",
+        "Fewer sustained and scoring drives.",
+        "Lower passing efficiency for Daniels.",
+        "Offense-wide efficiency pressure that cannot be represented as one player's lost workload."
+      ],
+      "label": "H3 — Protection failure",
+      "limitations": [
+        "Preregistered before evidence review; assessed insufficient because no admitted in-window quantitative signal can discriminate the branches."
+      ]
+    }
+  ],
+  "run_id": "tunsil-absence-shock-v0",
+  "schema_version": "research-packet/v0.1",
+  "synthetic_fixture": false,
+  "terminal_decision": "tunsil_absence_shock_v0_requires_data_followup",
+  "title": "Tunsil Absence Shock v0 Research Packet",
+  "unresolved": [
+    {
+      "blocked_input_refs": [
+        "route-participation-evidence"
+      ],
+      "kind": "blocked_input",
+      "related_claim_refs": [
+        "claim-q4a-backfield-redistribution",
+        "claim-q5b-mclaurin-opportunity-change"
+      ],
+      "related_question_refs": [
+        "q4-backfield-constraint-redistribution",
+        "q5-mclaurin-opportunity-vs-efficiency"
+      ],
+      "statement": "No governed live-2026 route or route-participation witness exists; FTN participation publishes post-season only and PFF-derived participation is provider_or_license_blocked.",
+      "unresolved_id": "unres-route-participation"
+    },
+    {
+      "blocked_input_refs": [
+        "protection-pressure-attribution"
+      ],
+      "kind": "blocked_input",
+      "related_claim_refs": [
+        "claim-q2-protection-quality",
+        "claim-q3-qb-playcalling",
+        "claim-q4a-backfield-redistribution"
+      ],
+      "related_question_refs": [
+        "q2-protection-quality-pressure",
+        "q3-quarterback-playcalling-response",
+        "q4-backfield-constraint-redistribution"
+      ],
+      "statement": "No governed pass-block, chip/double-team, or pressure/sack attribution witness exists; the operator excluded the proprietary charting class that carries these fields.",
+      "unresolved_id": "unres-protection-pressure"
+    },
+    {
+      "blocked_input_refs": [
+        "current-governed-availability-state"
+      ],
+      "kind": "blocked_input",
+      "related_claim_refs": [
+        "claim-q1a-tunsil-unavailable",
+        "claim-q1c-line-configuration"
+      ],
+      "related_question_refs": [
+        "q1-availability-replacement-state"
+      ],
+      "statement": "No qualified governed current-2026 in-season availability witness is admitted; the nflverse 2025 restoration is a retrospective-backfill provenance class and the current-player-state audit leaves 2026 lanes unresolved.",
+      "unresolved_id": "unres-current-availability"
+    },
+    {
+      "blocked_input_refs": [
+        "ol-canonical-identity"
+      ],
+      "kind": "blocked_input",
+      "related_claim_refs": [
+        "claim-q1c-line-configuration",
+        "claim-q2-protection-quality"
+      ],
+      "related_question_refs": [
+        "q1-availability-replacement-state",
+        "q2-protection-quality-pressure"
+      ],
+      "statement": "Tunsil, Coleman, Paul, Conerly Jr., and Wylie sit outside the governed skill-position identity population; their identities are run-scoped pending governed OL identity coverage.",
+      "unresolved_id": "unres-ol-identity"
+    },
+    {
+      "blocked_input_refs": [
+        "rb-passpro-role-interpretation"
+      ],
+      "kind": "blocked_input",
+      "related_claim_refs": [
+        "claim-q4a-backfield-redistribution"
+      ],
+      "related_question_refs": [
+        "q4-backfield-constraint-redistribution"
+      ],
+      "statement": "No governed interpreter separates running-back pass blocks, chip-and-release routes, and full routes; the candidate downstream home is not yet activated.",
+      "unresolved_id": "unres-rb-passpro-roles"
+    }
+  ]
+}
