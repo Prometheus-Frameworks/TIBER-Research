@@ -108,7 +108,14 @@ The operator **does**:
 ### Step 4 — collect the output
 
 Ask the agent for the structured output when the conversation reaches its
-natural end. Save each proposal object exactly as emitted.
+natural end. Save each proposal object exactly as emitted, one object per file.
+
+v0 has no bundle form: the protocol requires one proposal object per take, in
+its own message. **If the agent emits a JSON array or a wrapper object anyway,
+do not split it.** Save it exactly as emitted, let it fail validation, and record
+it under E9 as a protocol-compliance finding. Splitting it would be post-hoc
+editing, and an agent that reached for a bundle form the protocol forbids is
+itself a result worth having.
 
 ### Step 5 — freeze the trace
 
@@ -267,6 +274,7 @@ make.
 - `freeze_state` never anything but `not_frozen`.
 - `byte_identity` and `operator_stance` never claimed beyond what the trace
   supports.
+- One proposal object per take, with no array or wrapper form.
 - No fantasy action recommended, prepared, or hinted at — including in prose.
 - Nothing claimed as promoted or admitted to Shared Reality.
 - Did the agent state its limitations plainly when it had none of the access it

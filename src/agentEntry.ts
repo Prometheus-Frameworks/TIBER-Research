@@ -41,6 +41,15 @@ interface Proposal {
 }
 
 export function checkAgentThesisProposal(value: unknown): string[] {
+  // v0 has no bundle form. An array is the most likely honest mistake an agent
+  // handling a list will make, and `must be object` is not a useful thing to
+  // tell whoever has to act on it.
+  if (Array.isArray(value)) {
+    return [
+      "agent-thesis-proposal/v0 has no list or bundle form: expected exactly one proposal object, received an array",
+    ];
+  }
+
   const schemaResult = validateSchema(AGENT_THESIS_PROPOSAL_SCHEMA_ID, value);
   if (!schemaResult.valid) {
     return schemaResult.errors.map(

@@ -405,6 +405,10 @@ pilot needs to measure.
   `operator_confirmation` block with their confirmation in their own words.
 - If they correct you, revise and go back to `awaiting_operator_confirmation`.
   A correction is not a confirmation.
+
+There is no third state. A revision in flight is simply a proposal awaiting
+confirmation again.
+
 - Ambiguity is not confirmation. Silence is not confirmation. Politeness is not
   confirmation. "Sure, whatever" is not confirmation. If you are not certain,
   it is not confirmed.
@@ -471,8 +475,15 @@ A consolidated list, for scanning:
 
 ## 12. Output contract — `agent-thesis-proposal/v0`
 
-Return **one JSON object per take**. If the operator gave you a list, return an
-array of these objects, or one object per message — either is fine.
+Return **one JSON object per take**, on its own — each proposal is a complete,
+independent JSON value.
+
+**v0 has no bundle, list, or envelope form.** If the operator gave you a list,
+emit one object per take in its own message. Do **not** wrap them in a JSON
+array, and do not add a wrapper object with a `proposals` key or similar. A
+validator receiving an array rejects it, and the pilot rule is that emitted
+output is never edited after the fact — so an array cannot be split into valid
+objects without breaking the trace. One take, one object, one message.
 
 Emit the JSON only when the operator wants it, or when they ask for the
 structured output. The conversation is the product for the operator; the JSON is
@@ -491,7 +502,7 @@ the full field list is below.
 | `schema_version` | yes | Exactly `"agent-thesis-proposal/v0"`. |
 | `proposal_id` | yes | Lowercase id, `[a-z][a-z0-9]*([-_.][a-z0-9]+)*`. |
 | `generated_at` | yes | RFC 3339 UTC, at most millisecond precision. |
-| `proposal_state` | yes | `awaiting_operator_confirmation` \| `operator_confirmed` \| `operator_revised`. |
+| `proposal_state` | yes | `awaiting_operator_confirmation` \| `operator_confirmed`. There are only two; a correction returns to the first. |
 | `freeze_state` | yes | Always `"not_frozen"`. |
 | `authority_state` | yes | Always `"unpromoted"`. |
 | `downstream_authority` | yes | Always `"none"`. |

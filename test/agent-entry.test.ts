@@ -453,6 +453,38 @@ test("a proposal cannot relate to itself", () => {
   );
 });
 
+test("v0 has no list or bundle form", () => {
+  // Both elements are individually valid; the array form is what is rejected,
+  // so a compliant agent handling a list cannot emit an unvalidatable artifact.
+  const bundle = [fixture(MINIMAL), fixture(RAGGED)];
+  for (const proposal of bundle) {
+    assert.deepEqual(checkAgentThesisProposal(proposal), []);
+  }
+  assertRejected(bundle, "has no list or bundle form");
+  assertRejected([], "has no list or bundle form");
+});
+
+test("a bundle wrapper object is rejected", () => {
+  assertRejected({ proposals: [fixture(MINIMAL)] }, "schema:");
+});
+
+test("proposal_state has exactly two members", () => {
+  assertRejected(
+    mutate(RAGGED, (value) => {
+      value.proposal_state = "operator_revised";
+    }),
+    "/proposal_state",
+  );
+});
+
+test("a correction returns to awaiting confirmation rather than a third state", () => {
+  const revised = mutate(RAGGED, (value) => {
+    value.proposal_state = "awaiting_operator_confirmation";
+    value.operator_confirmation = null;
+  });
+  assert.deepEqual(checkAgentThesisProposal(revised), []);
+});
+
 test("unknown fields are rejected rather than silently carried", () => {
   assertRejected(
     mutate(MINIMAL, (value) => {

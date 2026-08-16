@@ -43,9 +43,9 @@
     "proposal_state": {
       "enum": [
         "awaiting_operator_confirmation",
-        "operator_confirmed",
-        "operator_revised"
-      ]
+        "operator_confirmed"
+      ],
+      "description": "Only two states exist. A proposal starts awaiting confirmation; an explicit operator confirmation moves it to operator_confirmed; an operator correction returns it to awaiting_operator_confirmation."
     },
     "freeze_state": {
       "const": "not_frozen",

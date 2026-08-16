@@ -19,8 +19,9 @@ this repository, and a cross-repository search of all eleven TIBER repositories
 for prior art on thesis representation, Shared Reality, and operator authority.
 
 **Verdict: mostly reusable, with three genuine contract decisions required.**
-Two further decisions (4 and 5) were forced by independent review of the first
-draft; both correct semantic overclaims rather than gaps in the audit.
+Four further decisions (4-7) were forced by independent review: 4 and 5 correct
+semantic overclaims, 6 and 7 remove a contract mismatch and an orphan state.
+None reflect gaps in the audit of existing contracts.
 
 ### 1.1 Reused without modification
 
@@ -168,6 +169,42 @@ explicitly meaning *no known lossy step*, not *guaranteed clean*.
 The field rename (`verbatim_text` → `received_text`) removes the overclaim from
 the field name itself, not merely from the prose around it.
 
+#### Decision 6 — v0 has no list or bundle form
+
+Raised at second review. The protocol told the agent it could return an array of
+proposals for a list, but the schema is a single object and the CLI validates one
+JSON value. A compliant agent choosing the expressly permitted array form would
+have emitted an artifact the validator rejects — and the pilot's no-post-hoc-
+editing rule would forbid splitting it into valid files. The permission and the
+validation surface contradicted each other.
+
+**Decision taken:** remove the array form rather than build a bundle surface,
+consistent with the standing decision to defer a list wrapper. The protocol now
+states that v0 has no bundle, list, or envelope form and requires one object per
+take in its own message. The checker rejects an array with an explicit message
+rather than a bare `must be object`, because an array is the most likely honest
+mistake an agent handling a list will make. Regression coverage asserts that two
+individually-valid proposals are still rejected when wrapped in an array, and
+that a `{proposals: [...]}` wrapper is rejected too.
+
+The test procedure now says that if an agent emits a bundle anyway, the operator
+saves it as emitted, lets it fail, and records it under E9 — rather than
+splitting it and destroying the trace.
+
+#### Decision 7 — `proposal_state` has exactly two members
+
+Raised at second review. The enum carried `operator_revised`, but section 9
+defines only two transitions — start or return to `awaiting_operator_confirmation`,
+and move to `operator_confirmed` on explicit confirmation — and the schema forces
+`operator_confirmation: null` in every non-confirmed state. A fresh provider had
+no governed rule for when to emit `operator_revised`, which is exactly the kind of
+under-specification that produces cross-provider divergence in the surface this
+pilot exists to compare.
+
+**Decision taken:** remove it. A revision in flight is simply a proposal awaiting
+confirmation again, and the protocol now says so explicitly. Regression coverage
+asserts the value is rejected and that the correction path validates.
+
 ---
 
 ## 2. What was added
@@ -182,7 +219,7 @@ src/agentEntry.ts                                 cross-object checks
 src/cli.ts                                        one new `agent-entry` subcommand
 fixtures/agent-entry/example-minimal.json         smallest legal proposal
 fixtures/agent-entry/example-ragged.json          deliberately non-tree proposal
-test/agent-entry.test.ts                          40 positive and adversarial tests
+test/agent-entry.test.ts                          44 positive and adversarial tests
 package.json                                      `agent-entry:check`, added to `check`
 ```
 
@@ -201,6 +238,8 @@ enforces what spans objects:
 | A Missing Witness must name at least one thing it would resolve | schema |
 | An unanswered clarification cannot have changed the structure | schema |
 | A digest is permitted only when byte identity is verified | schema |
+| `proposal_state` admits exactly two members | schema |
+| An array or bundle wrapper is not a valid v0 output | checker |
 | An agent cannot default its way into a stance the operator never stated | schema |
 | `operator_belief` requires an `asserted_belief` stance | checker |
 | Shared Reality evidence requires a declared live TIBER tool | checker |
@@ -328,7 +367,7 @@ Still open:
 
 ## 6. Verification
 
-`npm run check` passes: typecheck, 347 tests (40 new; baseline 307), the
+`npm run check` passes: typecheck, 351 tests (44 new; baseline 307), the
 synthetic fixture end-to-end, both Stage 1 preflight packages unchanged, and
 both agent-entry examples.
 

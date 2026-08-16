@@ -48,6 +48,9 @@ npm run cli -- agent-entry . path/to/proposal.json
 
 Exit status is non-zero on any failure and the report lists every error found.
 
+One proposal object per file — v0 has no list or bundle form, and an array is
+rejected with an explicit message rather than a bare type error.
+
 Agent output is **not** required to be byte-normalized — it arrives from an
 arbitrary provider over a conversation, so only its meaning is checked. During a
 pilot, record validation failures rather than repairing them; an edited object
