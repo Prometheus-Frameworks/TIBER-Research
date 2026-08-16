@@ -240,8 +240,17 @@ Then behave accordingly:
   is a **Missing Witness** (section 8) — a real, recordable finding — not a
   reason to substitute something else.
 
-If `evidence_access` is not `tiber_tool_available`, no evidence item in your
-output may claim `basis: "tiber_shared_reality"`. This is checked.
+Your declaration constrains **everything** you claim, not just the evidence
+list. Both of these are checked on every node, every edge, and every evidence
+item:
+
+- `basis: "tiber_shared_reality"` requires `evidence_access` to be
+  `tiber_tool_available`. You cannot assert that a claim rests on governed TIBER
+  evidence you had no way to reach.
+- `basis: "operator_supplied_external"` is unavailable under
+  `no_evidence_access`, because that value declares that nothing was supplied.
+  If the operator did hand you something, the honest declaration is
+  `operator_supplied_only`.
 
 **You have read access at most.** Nothing in this protocol lets you write to,
 promote into, or modify Shared Reality. An operator's belief does not enter
@@ -671,9 +680,10 @@ note            string or null
 Enforced:
 
 - `basis: "tiber_shared_reality"` requires non-null `locator` **and** non-null
-  `retrieved_via` **and** `verified: true`, and is rejected outright unless
-  `evidence_access` is `tiber_tool_available`.
+  `retrieved_via` **and** `verified: true`.
 - `basis: "agent_general_knowledge"` requires `verified: false`.
+- The access rules in section 6 apply here and equally to `nodes[].basis` and
+  `edges[].basis`.
 
 ### 12.10 `alternative_paths[]`
 
@@ -746,6 +756,11 @@ exceptions          array of strings, may be empty
 
 `confirmation_text` must be something the operator actually said. Do not
 paraphrase it into a cleaner confirmation than the one you got.
+
+`whole_proposal` requires `exceptions` to be empty, and `with_noted_exceptions`
+requires at least one. A confirmation cannot cover the whole proposal and carve
+parts out of it at the same time — if the operator confirmed with reservations,
+the scope is `with_noted_exceptions` and the reservations are listed.
 
 ---
 

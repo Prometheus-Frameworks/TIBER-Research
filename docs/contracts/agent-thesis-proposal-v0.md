@@ -19,9 +19,10 @@ this repository, and a cross-repository search of all eleven TIBER repositories
 for prior art on thesis representation, Shared Reality, and operator authority.
 
 **Verdict: mostly reusable, with three genuine contract decisions required.**
-Four further decisions (4-7) were forced by independent review: 4 and 5 correct
-semantic overclaims, 6 and 7 remove a contract mismatch and an orphan state.
-None reflect gaps in the audit of existing contracts.
+Six further decisions (4-9) were forced by review: 4 and 5 correct semantic
+overclaims, 6 and 7 remove a contract mismatch and an orphan state, and 8 and 9
+close two enforcement gaps found after merge. None reflect gaps in the audit of
+existing contracts.
 
 ### 1.1 Reused without modification
 
@@ -205,6 +206,34 @@ pilot exists to compare.
 confirmation again, and the protocol now says so explicitly. Regression coverage
 asserts the value is rejected and that the correction path validates.
 
+#### Decision 8 — the access declaration gates every claimed source
+
+Raised at automated review after merge. `evidence_access` was enforced only
+inside the `evidence` registry, but `nodes[].basis` and `edges[].basis` also name
+the layer a claim rests on. An agent declaring `no_evidence_access` could still
+mark a node `tiber_shared_reality` and pass — laundering by a different field
+than the one that was guarded. Separately, `no_evidence_access` declares that
+nothing was supplied, yet `operator_supplied_external` items validated under it.
+
+**Decision taken:** apply the gate wherever a basis is declared. On every node,
+edge, and evidence item: `tiber_shared_reality` requires
+`evidence_access: "tiber_tool_available"`, and `operator_supplied_external` is
+rejected under `no_evidence_access`. Both were reproduced against the committed
+fixtures before the fix and are covered by regression tests, including a positive
+test that operator-supplied material becomes legal as soon as the declaration
+admits it.
+
+#### Decision 9 — confirmation scope is unambiguous in both directions
+
+Raised at the same review. `with_noted_exceptions` required at least one
+exception, but `whole_proposal` could carry a non-empty `exceptions` array — an
+object simultaneously claiming the operator confirmed everything and excluded
+part of it.
+
+**Decision taken:** add the inverse constraint. `whole_proposal` requires an
+empty array. A confirmation with reservations is `with_noted_exceptions`, and the
+reservations are listed.
+
 ---
 
 ## 2. What was added
@@ -219,7 +248,7 @@ src/agentEntry.ts                                 cross-object checks
 src/cli.ts                                        one new `agent-entry` subcommand
 fixtures/agent-entry/example-minimal.json         smallest legal proposal
 fixtures/agent-entry/example-ragged.json          deliberately non-tree proposal
-test/agent-entry.test.ts                          44 positive and adversarial tests
+test/agent-entry.test.ts                          49 positive and adversarial tests
 package.json                                      `agent-entry:check`, added to `check`
 ```
 
@@ -238,11 +267,13 @@ enforces what spans objects:
 | A Missing Witness must name at least one thing it would resolve | schema |
 | An unanswered clarification cannot have changed the structure | schema |
 | A digest is permitted only when byte identity is verified | schema |
+| Confirmation scope is unambiguous in both directions | schema |
+| The access declaration gates every node, edge, and evidence basis | checker |
 | `proposal_state` admits exactly two members | schema |
 | An array or bundle wrapper is not a valid v0 output | checker |
 | An agent cannot default its way into a stance the operator never stated | schema |
 | `operator_belief` requires an `asserted_belief` stance | checker |
-| Shared Reality evidence requires a declared live TIBER tool | checker |
+| Operator-supplied material is rejected under `no_evidence_access` | checker |
 | Inference, supposition, and belief can never be marked `verified` | checker |
 | A `supported` assessment cannot rest only on the agent's recall | checker |
 | Every `*_refs` / `would_resolve` / `attached_to` reference resolves | checker |
@@ -367,7 +398,7 @@ Still open:
 
 ## 6. Verification
 
-`npm run check` passes: typecheck, 351 tests (44 new; baseline 307), the
+`npm run check` passes: typecheck, 356 tests (49 new; baseline 307), the
 synthetic fixture end-to-end, both Stage 1 preflight packages unchanged, and
 both agent-entry examples.
 

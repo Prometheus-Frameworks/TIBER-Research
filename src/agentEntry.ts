@@ -121,6 +121,7 @@ export function checkAgentThesisProposal(value: unknown): string[] {
     checkRefs(node, "evidence_refs", evidenceIds, "evidence", label, errors);
     checkRefs(node, "subject_refs", subjectIds, "subject", label, errors);
     checkSupportQuality(node, evidenceBasis, label, errors);
+    checkAccessDeclaration(node, proposal, label, errors);
     checkBeliefAttribution(node, proposal, label, errors);
   });
 
@@ -136,6 +137,7 @@ export function checkAgentThesisProposal(value: unknown): string[] {
       errors,
     );
     checkSupportQuality(edge, evidenceBasis, label, errors);
+    checkAccessDeclaration(edge, proposal, label, errors);
     checkBeliefAttribution(edge, proposal, label, errors);
 
     const from = stringField(edge, "from_node");
@@ -194,27 +196,52 @@ export function checkAgentThesisProposal(value: unknown): string[] {
 }
 
 /**
- * An agent without TIBER access can never hold Shared Reality evidence, and
- * reasoning is never a retrieval. Both invariants keep recall and inference
- * from being laundered into governed observation.
+ * Reasoning is never a retrieval, so inference, supposition, and belief can
+ * never be marked verified.
  */
 function checkEvidenceAccess(proposal: Proposal, errors: string[]): void {
-  const access = proposal.agent_declaration.evidence_access;
   proposal.evidence.forEach((item, index) => {
     const label = `evidence[${index}]`;
     const basis = stringField(item, "basis");
-    if (basis === "tiber_shared_reality" && access !== "tiber_tool_available") {
-      errors.push(
-        `${label}: shared-reality evidence requires evidence_access "tiber_tool_available", not "${access}"`,
-      );
-    }
     if (basis !== undefined && NOT_RETRIEVALS.has(basis) && item.verified === true) {
       errors.push(
         `${label}: ${basis} cannot be marked verified; it is not a retrieval`,
       );
     }
+    checkAccessDeclaration(item, proposal, label, errors);
     checkBeliefAttribution(item, proposal, label, errors);
   });
+}
+
+/**
+ * The declared access must constrain every claimed source, not merely the
+ * evidence registry. A node or edge also names the layer it rests on, so an
+ * ungated basis there would let an agent with no TIBER access assert that a
+ * claim rests on governed Shared Reality — laundering by a different field.
+ *
+ * `no_evidence_access` additionally means nothing was supplied, so
+ * operator-supplied external material contradicts the declaration wherever it
+ * appears.
+ */
+function checkAccessDeclaration(
+  element: Identified,
+  proposal: Proposal,
+  label: string,
+  errors: string[],
+): void {
+  const access = proposal.agent_declaration.evidence_access;
+  const basis = stringField(element, "basis");
+
+  if (basis === "tiber_shared_reality" && access !== "tiber_tool_available") {
+    errors.push(
+      `${label}: basis "tiber_shared_reality" requires evidence_access "tiber_tool_available", not "${access}"`,
+    );
+  }
+  if (basis === "operator_supplied_external" && access === "no_evidence_access") {
+    errors.push(
+      `${label}: basis "operator_supplied_external" contradicts evidence_access "no_evidence_access", which declares that nothing was supplied`,
+    );
+  }
 }
 
 const NOT_RETRIEVALS = new Set([

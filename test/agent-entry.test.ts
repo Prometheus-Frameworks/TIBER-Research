@@ -246,6 +246,78 @@ test("shared-reality evidence requires a live TIBER tool", () => {
   );
 });
 
+test("the access declaration gates nodes and edges, not only evidence", () => {
+  for (const [collection, index] of [
+    ["nodes", 0],
+    ["edges", 0],
+  ] as const) {
+    assertRejected(
+      mutate(RAGGED, (value) => {
+        value.agent_declaration.evidence_access = "operator_supplied_only";
+        value[collection][index].basis = "tiber_shared_reality";
+      }),
+      'basis "tiber_shared_reality" requires evidence_access "tiber_tool_available"',
+    );
+  }
+});
+
+test("no_evidence_access forbids operator-supplied material anywhere", () => {
+  // The declaration says nothing was supplied, so supplied material contradicts it.
+  assertRejected(
+    mutate(MINIMAL, (value) => {
+      value.nodes[0].basis = "operator_supplied_external";
+    }),
+    'contradicts evidence_access "no_evidence_access"',
+  );
+  assertRejected(
+    mutate(MINIMAL, (value) => {
+      value.evidence.push({
+        evidence_id: "ev-supplied",
+        basis: "operator_supplied_external",
+        statement: "Material the declaration says was never supplied.",
+        locator: "pasted by the operator in chat",
+        retrieved_via: null,
+        verified: false,
+        promotable: false,
+        note: null,
+      });
+    }),
+    'contradicts evidence_access "no_evidence_access"',
+  );
+});
+
+test("operator-supplied material is legal once the declaration admits it", () => {
+  const value = mutate(MINIMAL, (proposal) => {
+    proposal.agent_declaration.evidence_access = "operator_supplied_only";
+    proposal.nodes[0].basis = "operator_supplied_external";
+  });
+  assert.deepEqual(checkAgentThesisProposal(value), []);
+});
+
+test("a whole-proposal confirmation cannot carve out exceptions", () => {
+  assertRejected(
+    mutate(RAGGED, (value) => {
+      value.operator_confirmation.confirmation_scope = "whole_proposal";
+      value.operator_confirmation.exceptions = ["except the part about the depot"];
+    }),
+    "/operator_confirmation/exceptions",
+  );
+});
+
+test("a scoped confirmation must name its exceptions", () => {
+  assertRejected(
+    mutate(RAGGED, (value) => {
+      value.operator_confirmation.confirmation_scope = "with_noted_exceptions";
+    }),
+    "/operator_confirmation/exceptions",
+  );
+  const scoped = mutate(RAGGED, (value) => {
+    value.operator_confirmation.confirmation_scope = "with_noted_exceptions";
+    value.operator_confirmation.exceptions = ["not sure about the timetable bit"];
+  });
+  assert.deepEqual(checkAgentThesisProposal(scoped), []);
+});
+
 test("shared-reality evidence requires a locator and a retrieval path", () => {
   assertRejected(
     mutate(RAGGED, (value) => {

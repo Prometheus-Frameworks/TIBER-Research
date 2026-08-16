@@ -1005,6 +1005,15 @@
                 "minItems": 1
               }
             }
+          },
+          "else": {
+            "$comment": "A whole-proposal confirmation cannot simultaneously exclude parts of the proposal; the scope must be unambiguous.",
+            "properties": {
+              "exceptions": {
+                "type": "array",
+                "maxItems": 0
+              }
+            }
           }
         }
       ]
