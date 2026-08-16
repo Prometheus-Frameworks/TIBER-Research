@@ -1,0 +1,63 @@
+{
+  "agent_declaration": {
+    "agent_self_description": null,
+    "evidence_access": "no_evidence_access",
+    "evidence_access_note": "No TIBER tool or resource was reachable in this session and the operator supplied no external material. Nothing was retrieved.",
+    "role": "research_scaffold",
+    "self_reported_concerns": []
+  },
+  "alternative_paths": [],
+  "authority_state": "unpromoted",
+  "clarifications": [],
+  "downstream_authority": "none",
+  "edges": [],
+  "evidence": [],
+  "freeze_state": "not_frozen",
+  "generated_at": "2026-08-16T00:00:00Z",
+  "interpretation": {
+    "agent_additions": "None. The take states one claim and no dependency, so the proposal records one node and nothing else.",
+    "not_understood": [],
+    "summary": "The operator claims a recurring lateness pattern on one scheduled service, with no stated cause."
+  },
+  "missing_witnesses": [],
+  "nodes": [
+    {
+      "assessment": "unassessed",
+      "basis": "operator_belief",
+      "epistemic_class": "hypothesis",
+      "evidence_refs": [],
+      "label": "Recurring lateness",
+      "node_id": "n-claim",
+      "origin": "verbatim_in_take",
+      "statement": "The 7:10 service is late far more often than it used to be.",
+      "subject_refs": [],
+      "uncertainty": null
+    }
+  ],
+  "open_notes": [
+    "This is the minimum viable output described in section 13 of the protocol: a preserved take, an honest access declaration, one node, and empty arrays everywhere else."
+  ],
+  "operator_confirmation": null,
+  "original_take": {
+    "list_label": null,
+    "operator_supplied_at": null,
+    "provenance_note": "Pasted by the operator directly into the chat and copied without alteration.",
+    "quote_digest": null,
+    "quote_digest_mode": null,
+    "verbatim_preserved": true,
+    "verbatim_text": "the 7:10 bus is basically never on time anymore"
+  },
+  "proposal_id": "agent-entry-example-minimal",
+  "proposal_state": "awaiting_operator_confirmation",
+  "protocol_ref": {
+    "protocol_id": "tiber-agent-entry/v0",
+    "protocol_version": "v0",
+    "retrieval_state": "fetched_from_url",
+    "retrieved_from": "https://raw.githubusercontent.com/Prometheus-Frameworks/TIBER-Research/main/docs/agent-entry/tiber-agent-entry-v0.md"
+  },
+  "relates_to_prior": null,
+  "schema_version": "agent-thesis-proposal/v0",
+  "subjects": [],
+  "thesis_falsifiers": [],
+  "unsupported_assumptions": []
+}

@@ -1,0 +1,192 @@
+{
+  "agent_declaration": {
+    "agent_self_description": null,
+    "evidence_access": "operator_supplied_only",
+    "evidence_access_note": "No TIBER tool was available. The operator pasted one external item; nothing else was retrieved and no lookup was attempted.",
+    "role": "research_scaffold",
+    "self_reported_concerns": [
+      "One node in this proposal has no edges at all. That is the shape the take had, and it was left ragged rather than connected to make the object look like a tree."
+    ]
+  },
+  "alternative_paths": [
+    {
+      "description": "The lateness could arrive by a route unrelated to the depot, such as roadworks or a signal change on the line itself, which would produce the same observation without the relocation mattering.",
+      "edge_refs": [],
+      "node_refs": [
+        "n-lateness"
+      ],
+      "operator_response": "operator said thats possible but they still think its the depot",
+      "path_id": "p-roadworks",
+      "raised_by": "agent",
+      "relation": "competing_explanation"
+    }
+  ],
+  "authority_state": "unpromoted",
+  "clarifications": [
+    {
+      "answer": "no its the move, the run into town is longer now",
+      "answer_state": "answered",
+      "changed_structure": true,
+      "question": "When you say it's because they moved the depot, do you mean the move is what causes the lateness, or that the lateness started around the same time?",
+      "question_id": "q-cause-or-coincidence"
+    },
+    {
+      "answer": null,
+      "answer_state": "unanswered",
+      "changed_structure": false,
+      "question": "Is \"every single day\" literal, or closer to \"most days\"?",
+      "question_id": "q-every-day"
+    }
+  ],
+  "downstream_authority": "none",
+  "edges": [
+    {
+      "assessment": "unassessed",
+      "basis": "agent_inference",
+      "counterevidence_refs": [],
+      "edge_id": "e-relocation-lateness",
+      "epistemic_class": "inferred",
+      "evidence_refs": [],
+      "falsifiers": [
+        "Lateness that predates the relocation date.",
+        "A positioning run that did not lengthen, or lengthened by less than the observed delay."
+      ],
+      "from_node": "n-relocation",
+      "mechanism": "A longer positioning run before the first scheduled stop consumes slack that the timetable does not account for.",
+      "necessity": "contributing",
+      "origin": "agent_proposed",
+      "to_node": "n-lateness",
+      "uncertainty": "The mechanism is the agent's reconstruction of the operator's \"because\". The operator asserted the link but not this explanation of it."
+    }
+  ],
+  "evidence": [
+    {
+      "basis": "operator_supplied_external",
+      "evidence_id": "ev-notice",
+      "locator": "Photograph of a posted notice, pasted by the operator into the chat.",
+      "note": "Supplied by the operator and not independently retrieved. It is external evidence, not TIBER Shared Reality, and this protocol does not admit it into Shared Reality.",
+      "promotable": false,
+      "retrieved_via": null,
+      "statement": "A posted service notice stating that the depot has moved.",
+      "verified": false
+    }
+  ],
+  "freeze_state": "not_frozen",
+  "generated_at": "2026-08-16T00:00:00Z",
+  "interpretation": {
+    "agent_additions": "The edge between the relocation and the lateness, its uncertainty note, and the competing explanation are the agent's, not the operator's. The operator supplied both nodes and the causal claim connecting them.",
+    "not_understood": [
+      "\"every single day\" may be literal or emphatic; the operator was asked and did not say."
+    ],
+    "summary": "The operator claims recurring lateness on one service and attributes it to a depot relocation."
+  },
+  "missing_witnesses": [
+    {
+      "owner_hint": null,
+      "statement": "The date the depot relocation took effect.",
+      "status": "no_access",
+      "why_unavailable": "No TIBER tool was available in this session and the operator's notice did not carry a date. Nothing was substituted for it.",
+      "witness_id": "w-relocation-date",
+      "would_resolve": [
+        "e-relocation-lateness"
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "assessment": "unassessed",
+      "basis": "operator_belief",
+      "epistemic_class": "hypothesis",
+      "evidence_refs": [],
+      "label": "Recurring lateness",
+      "node_id": "n-lateness",
+      "origin": "verbatim_in_take",
+      "statement": "The 7:10 service now arrives late on most or all days.",
+      "subject_refs": [
+        "s-service"
+      ],
+      "uncertainty": "Rests on the operator's own repeated observation; no timing record was available to either party."
+    },
+    {
+      "assessment": "supported",
+      "basis": "operator_supplied_external",
+      "epistemic_class": "observed",
+      "evidence_refs": [
+        "ev-notice"
+      ],
+      "label": "Depot relocation",
+      "node_id": "n-relocation",
+      "origin": "verbatim_in_take",
+      "statement": "The operating depot for this service was moved.",
+      "subject_refs": [
+        "s-service"
+      ],
+      "uncertainty": null
+    },
+    {
+      "assessment": "unassessed",
+      "basis": "operator_belief",
+      "epistemic_class": "speculative",
+      "evidence_refs": [],
+      "label": "Expected timetable rewrite",
+      "node_id": "n-timetable",
+      "origin": "operator_clarification",
+      "statement": "The operator expects the timetable to be rewritten next year.",
+      "subject_refs": [
+        "s-service"
+      ],
+      "uncertainty": "The operator offered this while answering a different question and did not connect it to the lateness claim."
+    }
+  ],
+  "open_notes": [
+    "The structure here is ragged on purpose: one node stands alone with no edge, one edge carries no evidence, and one assessment rests on operator-supplied rather than governed evidence. All three are legal and none should be read as a template.",
+    "The operator's spelling and phrasing are preserved throughout every verbatim field."
+  ],
+  "operator_confirmation": {
+    "confirmation_scope": "whole_proposal",
+    "confirmation_text": "yeah thats it, thats what i think",
+    "confirmed_at": "2026-08-16T00:00:00Z",
+    "exceptions": []
+  },
+  "original_take": {
+    "list_label": null,
+    "operator_supplied_at": "2026-08-16T00:00:00Z",
+    "provenance_note": "Pasted by the operator into the chat. The spelling in the take is the operator's and was not corrected.",
+    "quote_digest": null,
+    "quote_digest_mode": null,
+    "verbatim_preserved": true,
+    "verbatim_text": "the 7:10 is late every single day now, its because they moved the depot"
+  },
+  "proposal_id": "agent-entry-example-ragged",
+  "proposal_state": "operator_confirmed",
+  "protocol_ref": {
+    "protocol_id": "tiber-agent-entry/v0",
+    "protocol_version": "v0",
+    "retrieval_state": "pasted_by_operator",
+    "retrieved_from": null
+  },
+  "relates_to_prior": null,
+  "schema_version": "agent-thesis-proposal/v0",
+  "subjects": [
+    {
+      "kind": "scheduled.service",
+      "label_in_take": "the 7:10",
+      "resolution": null,
+      "subject_id": "s-service"
+    }
+  ],
+  "thesis_falsifiers": [
+    "Operator's own stated falsifier: \"if it runs on time three weeks straight im wrong\"."
+  ],
+  "unsupported_assumptions": [
+    {
+      "assumption_id": "a-schedule-unchanged",
+      "attached_to": [
+        "e-relocation-lateness"
+      ],
+      "operator_response": null,
+      "statement": "That the published schedule was not adjusted at the same time as the relocation.",
+      "surfaced_by": "agent"
+    }
+  ]
+}

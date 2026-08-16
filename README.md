@@ -42,6 +42,30 @@ test/                               positive and adversarial tests
 The synthetic fixture is deliberately non-football-authoritative. Its entities and
 observations are invented only to exercise the protocol.
 
+## Agent entry (draft)
+
+`docs/agent-entry/` holds a separate, run-independent surface: one public,
+provider-neutral document an operator can hand to any capable external agent that
+has never seen TIBER, and the `agent-thesis-proposal/v0` contract that agent
+returns. It turns an informal operator take into an inspectable structure while
+keeping Shared Reality, external evidence, agent inference, and operator belief
+distinct.
+
+```text
+docs/agent-entry/                    the public entry protocol and pilot procedure
+docs/contracts/agent-thesis-proposal-v0.md   contract decisions and contamination register
+schemas/v0/agent-thesis-proposal.schema.json the proposal contract
+fixtures/agent-entry/                two validating non-football examples
+```
+
+An agent proposal is pre-freeze and authority-inert: `freeze_state` is always
+`not_frozen`, evidence is always `promotable: false`, and freezing requires the
+operator. It is deliberately smaller than the `CausalThesisLineageV0` primitive
+sketched in [`#9`](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/9),
+which does not exist yet. Validate a returned proposal with
+`npm run cli -- agent-entry . <path>`. The surface is a draft: not adopted, not
+activated, and it runs no pilot.
+
 ## Identity model
 
 | Identity | Meaning | Change rule |
@@ -90,6 +114,7 @@ npm run typecheck
 npm test
 npm run fixture:check
 npm run preflight:check
+npm run agent-entry:check
 ```
 
 The CLI also exposes the individual offline operations:
@@ -103,7 +128,17 @@ npm run cli -- review <workspace> <run-id> <attempt-id> <metadata-relative-path>
 npm run cli -- seal <workspace> <run-id> <attempt-id> <metadata-relative-path>
 npm run cli -- validate <workspace> <run-id> <attempt-id> --phase=sealed --require-end-to-end
 npm run cli -- resume <workspace> <run-id> <attempt-id>
+npm run cli -- agent-entry <workspace> <proposal-relative-path>
 ```
+
+`agent-entry` validates an `agent-thesis-proposal/v0` object returned by an
+external agent: schema conformance, reference integrity, an acyclic causal graph,
+and the anti-fabrication couplings (an assessed element must cite evidence; Shared
+Reality evidence requires a declared live TIBER tool, a locator, and a retrieval
+path; the agent's own recall can never be verified or be the sole support for an
+assessment). It reads the proposal with `readJson` rather than
+`readNormalizedJson`: agent output arrives from an arbitrary provider, so its byte
+form is not governed and only its meaning is checked.
 
 `fixture:build` verifies the existing synthetic ledger and deterministically
 creates or verifies its rendered packet, submission, independent review
