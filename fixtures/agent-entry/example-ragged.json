@@ -5,7 +5,8 @@
     "evidence_access_note": "No TIBER tool was available. The operator pasted one external item; nothing else was retrieved and no lookup was attempted.",
     "role": "research_scaffold",
     "self_reported_concerns": [
-      "One node in this proposal has no edges at all. That is the shape the take had, and it was left ragged rather than connected to make the object look like a tree."
+      "One node in this proposal has no edges at all. That is the shape the take had, and it was left ragged rather than connected to make the object look like a tree.",
+      "The operator volunteered that they hold this view, so the stance is asserted_belief. Had they not said so, these nodes would be operator_supposition."
     ]
   },
   "alternative_paths": [
@@ -140,7 +141,7 @@
   ],
   "open_notes": [
     "The structure here is ragged on purpose: one node stands alone with no edge, one edge carries no evidence, and one assessment rests on operator-supplied rather than governed evidence. All three are legal and none should be read as a template.",
-    "The operator's spelling and phrasing are preserved throughout every verbatim field."
+    "The operator's spelling and phrasing are preserved exactly as received. Byte identity with their original is not established and no digest is offered, which is the expected result over an ordinary chat transport."
   ],
   "operator_confirmation": {
     "confirmation_scope": "whole_proposal",
@@ -149,13 +150,19 @@
     "exceptions": []
   },
   "original_take": {
+    "byte_identity": "not_established",
     "list_label": null,
+    "operator_stance": "asserted_belief",
     "operator_supplied_at": "2026-08-16T00:00:00Z",
     "provenance_note": "Pasted by the operator into the chat. The spelling in the take is the operator's and was not corrected.",
     "quote_digest": null,
     "quote_digest_mode": null,
-    "verbatim_preserved": true,
-    "verbatim_text": "the 7:10 is late every single day now, its because they moved the depot"
+    "received_text": "the 7:10 is late every single day now, its because they moved the depot",
+    "received_text_preserved": true,
+    "stance_basis": "operator_stated",
+    "transport_notes": [
+      "The operator reported typing this on a mobile client, which may apply autocorrect or smart punctuation before the text reaches the agent."
+    ]
   },
   "proposal_id": "agent-entry-example-ragged",
   "proposal_state": "operator_confirmed",

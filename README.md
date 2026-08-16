@@ -48,8 +48,9 @@ observations are invented only to exercise the protocol.
 provider-neutral document an operator can hand to any capable external agent that
 has never seen TIBER, and the `agent-thesis-proposal/v0` contract that agent
 returns. It turns an informal operator take into an inspectable structure while
-keeping Shared Reality, external evidence, agent inference, and operator belief
-distinct.
+keeping Shared Reality, external evidence, agent inference, agent recall, and the
+operator's own position distinct — including whether the operator asserted the
+take at all, or was merely exploring it.
 
 ```text
 docs/agent-entry/                    the public entry protocol and pilot procedure
@@ -136,7 +137,10 @@ external agent: schema conformance, reference integrity, an acyclic causal graph
 and the anti-fabrication couplings (an assessed element must cite evidence; Shared
 Reality evidence requires a declared live TIBER tool, a locator, and a retrieval
 path; the agent's own recall can never be verified or be the sole support for an
-assessment). It reads the proposal with `readJson` rather than
+assessment; `operator_belief` requires the operator to have actually asserted the
+take, so belief attribution fails closed; and a quote digest is permitted only
+where byte identity with the operator's source was genuinely established). It
+reads the proposal with `readJson` rather than
 `readNormalizedJson`: agent output arrives from an arbitrary provider, so its byte
 form is not governed and only its meaning is checked.
 

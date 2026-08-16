@@ -24,6 +24,7 @@ interface Identified {
 interface Proposal {
   readonly proposal_id: string;
   readonly agent_declaration: { readonly evidence_access: string };
+  readonly original_take: { readonly operator_stance: string };
   readonly protocol_ref: {
     readonly retrieval_state: string;
     readonly retrieved_from: string | null;
@@ -111,6 +112,7 @@ export function checkAgentThesisProposal(value: unknown): string[] {
     checkRefs(node, "evidence_refs", evidenceIds, "evidence", label, errors);
     checkRefs(node, "subject_refs", subjectIds, "subject", label, errors);
     checkSupportQuality(node, evidenceBasis, label, errors);
+    checkBeliefAttribution(node, proposal, label, errors);
   });
 
   proposal.edges.forEach((edge, index) => {
@@ -125,6 +127,7 @@ export function checkAgentThesisProposal(value: unknown): string[] {
       errors,
     );
     checkSupportQuality(edge, evidenceBasis, label, errors);
+    checkBeliefAttribution(edge, proposal, label, errors);
 
     const from = stringField(edge, "from_node");
     const to = stringField(edge, "to_node");
@@ -196,15 +199,43 @@ function checkEvidenceAccess(proposal: Proposal, errors: string[]): void {
         `${label}: shared-reality evidence requires evidence_access "tiber_tool_available", not "${access}"`,
       );
     }
-    if (
-      (basis === "agent_inference" || basis === "operator_belief") &&
-      item.verified === true
-    ) {
+    if (basis !== undefined && NOT_RETRIEVALS.has(basis) && item.verified === true) {
       errors.push(
         `${label}: ${basis} cannot be marked verified; it is not a retrieval`,
       );
     }
+    checkBeliefAttribution(item, proposal, label, errors);
   });
+}
+
+const NOT_RETRIEVALS = new Set([
+  "agent_inference",
+  "operator_supposition",
+  "operator_belief",
+]);
+
+/**
+ * Belief attribution fails closed. Supplying a take asserts nothing about
+ * conviction, so `operator_belief` is unavailable unless the operator actually
+ * stated that they assert it. Recording a conviction the operator never claimed
+ * fabricates a belief and attributes it to a named person; `operator_supposition`
+ * carries the same content without that claim.
+ */
+function checkBeliefAttribution(
+  element: Identified,
+  proposal: Proposal,
+  label: string,
+  errors: string[],
+): void {
+  if (element.basis !== "operator_belief") {
+    return;
+  }
+  const stance = proposal.original_take.operator_stance;
+  if (stance !== "asserted_belief") {
+    errors.push(
+      `${label}: basis "operator_belief" requires operator_stance "asserted_belief", not "${stance}"; use "operator_supposition"`,
+    );
+  }
 }
 
 function checkProtocolRef(proposal: Proposal, errors: string[]): void {

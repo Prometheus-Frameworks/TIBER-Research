@@ -72,6 +72,29 @@ test("the examples demonstrate different geometries", () => {
   );
 });
 
+test("the examples demonstrate both stance postures", () => {
+  const minimal = fixture(MINIMAL);
+  const ragged = fixture(RAGGED);
+
+  // The default posture: nothing was said, so nothing is claimed.
+  assert.equal(minimal.original_take.operator_stance, "unspecified");
+  assert.equal(minimal.original_take.stance_basis, "agent_default_unspecified");
+  assert.ok(
+    minimal.nodes.every((node: JsonObject) => node.basis !== "operator_belief"),
+    "an unspecified stance must not produce operator_belief",
+  );
+
+  // The asserted posture, which the operator has to actually state.
+  assert.equal(ragged.original_take.operator_stance, "asserted_belief");
+  assert.equal(ragged.original_take.stance_basis, "operator_stated");
+
+  // Neither example claims byte identity it cannot establish.
+  for (const value of [minimal, ragged]) {
+    assert.equal(value.original_take.byte_identity, "not_established");
+    assert.equal(value.original_take.quote_digest, null);
+  }
+});
+
 test("examples carry no promotable evidence and no downstream authority", () => {
   for (const path of [MINIMAL, RAGGED]) {
     const value = fixture(path);
@@ -111,12 +134,12 @@ test("a confirmed proposal must carry the operator's own confirmation", () => {
   );
 });
 
-test("an altered take cannot claim verbatim preservation", () => {
+test("an altered take cannot claim preservation of what was received", () => {
   assertRejected(
     mutate(RAGGED, (value) => {
-      value.original_take.verbatim_preserved = false;
+      value.original_take.received_text_preserved = false;
     }),
-    "/original_take/verbatim_preserved",
+    "/original_take/received_text_preserved",
   );
 });
 
@@ -126,6 +149,89 @@ test("a digest mode without a digest is rejected", () => {
       value.original_take.quote_digest_mode = "tiber-raw-sha256-v1";
     }),
     "/original_take/quote_digest_mode",
+  );
+});
+
+test("an unestablished byte identity cannot carry a digest", () => {
+  assertRejected(
+    mutate(RAGGED, (value) => {
+      value.original_take.quote_digest = `sha256:${"a".repeat(64)}`;
+      value.original_take.quote_digest_mode = "tiber-raw-sha256-v1";
+    }),
+    "/original_take/quote_digest",
+  );
+});
+
+test("preserving received text does not require establishing byte identity", () => {
+  const value = mutate(RAGGED, (proposal) => {
+    proposal.original_take.byte_identity = "not_established";
+    proposal.original_take.quote_digest = null;
+    proposal.original_take.quote_digest_mode = null;
+  });
+  assert.deepEqual(checkAgentThesisProposal(value), []);
+  assert.equal(value.original_take.received_text_preserved, true);
+});
+
+test("a verified byte identity may carry a digest", () => {
+  const value = mutate(RAGGED, (proposal) => {
+    proposal.original_take.byte_identity = "verified_against_operator_source";
+    proposal.original_take.quote_digest = `sha256:${"b".repeat(64)}`;
+    proposal.original_take.quote_digest_mode = "tiber-raw-sha256-v1";
+  });
+  assert.deepEqual(checkAgentThesisProposal(value), []);
+});
+
+test("belief attribution fails closed when the stance is not asserted", () => {
+  for (const stance of [
+    "unspecified",
+    "exploratory_hypothesis",
+    "synthetic_test",
+  ]) {
+    assertRejected(
+      mutate(RAGGED, (value) => {
+        value.original_take.operator_stance = stance;
+        value.original_take.stance_basis =
+          stance === "unspecified" ? "agent_default_unspecified" : "operator_stated";
+      }),
+      'basis "operator_belief" requires operator_stance "asserted_belief"',
+    );
+  }
+});
+
+test("belief attribution is checked on evidence items too", () => {
+  assertRejected(
+    mutate(MINIMAL, (value) => {
+      value.evidence.push({
+        evidence_id: "ev-asserted",
+        basis: "operator_belief",
+        statement: "An operator conviction the operator never actually asserted.",
+        locator: null,
+        retrieved_via: null,
+        verified: false,
+        promotable: false,
+        note: null,
+      });
+    }),
+    'basis "operator_belief" requires operator_stance "asserted_belief"',
+  );
+});
+
+test("an agent may not default its way into a stance", () => {
+  assertRejected(
+    mutate(RAGGED, (value) => {
+      value.original_take.stance_basis = "agent_default_unspecified";
+    }),
+    "/original_take/operator_stance",
+  );
+});
+
+test("supposition is never a retrieval", () => {
+  assertRejected(
+    mutate(RAGGED, (value) => {
+      value.evidence[0].basis = "operator_supposition";
+      value.evidence[0].verified = true;
+    }),
+    "it is not a retrieval",
   );
 });
 

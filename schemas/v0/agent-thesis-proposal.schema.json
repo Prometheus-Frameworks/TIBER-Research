@@ -135,23 +135,55 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "verbatim_text",
-        "verbatim_preserved",
+        "received_text",
+        "received_text_preserved",
+        "byte_identity",
         "quote_digest",
         "quote_digest_mode",
+        "transport_notes",
+        "operator_stance",
+        "stance_basis",
         "provenance_note",
         "operator_supplied_at",
         "list_label"
       ],
       "properties": {
-        "verbatim_text": {
+        "received_text": {
           "type": "string",
           "minLength": 1,
-          "maxLength": 16384
+          "maxLength": 16384,
+          "description": "The take exactly as it arrived in the agent's context. This is not a claim about the operator's original bytes; see byte_identity."
         },
-        "verbatim_preserved": {
+        "received_text_preserved": {
           "const": true,
-          "description": "Only true when the take was copied without any alteration whatsoever."
+          "description": "Only true when the received text was copied without any alteration whatsoever. It does not assert byte identity with the operator's source."
+        },
+        "byte_identity": {
+          "enum": [
+            "not_established",
+            "verified_against_operator_source"
+          ],
+          "description": "Whether the agent has an actual basis for claiming the received text is byte-identical to the operator's original. In an ordinary chat, transport normalization is invisible to the agent and not_established is the correct answer."
+        },
+        "transport_notes": {
+          "$ref": "common.schema.json#/$defs/stringList",
+          "description": "Known or suspected lossy steps between the operator and the agent. Empty means no known lossy step, not a guarantee of fidelity."
+        },
+        "operator_stance": {
+          "enum": [
+            "unspecified",
+            "asserted_belief",
+            "exploratory_hypothesis",
+            "synthetic_test"
+          ],
+          "description": "What the operator said about their relationship to the take. Supplying a take asserts nothing about conviction, so unspecified is the default."
+        },
+        "stance_basis": {
+          "enum": [
+            "operator_stated",
+            "agent_default_unspecified"
+          ],
+          "description": "How the stance was determined. An agent may never infer a stance; it may only record one the operator stated."
         },
         "quote_digest": {
           "oneOf": [
@@ -193,6 +225,7 @@
       "allOf": [
         {
           "if": {
+            "type": "object",
             "properties": {
               "quote_digest": {
                 "type": "null"
@@ -213,6 +246,51 @@
             "properties": {
               "quote_digest_mode": {
                 "const": "tiber-raw-sha256-v1"
+              }
+            }
+          }
+        },
+        {
+          "$comment": "A digest over text that may already have been normalized in transit looks like proof of fidelity while proving nothing.",
+          "if": {
+            "type": "object",
+            "properties": {
+              "byte_identity": {
+                "const": "not_established"
+              }
+            },
+            "required": [
+              "byte_identity"
+            ]
+          },
+          "then": {
+            "properties": {
+              "quote_digest": {
+                "type": "null"
+              },
+              "quote_digest_mode": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "$comment": "An agent may not default its way into a stance the operator never stated.",
+          "if": {
+            "type": "object",
+            "properties": {
+              "stance_basis": {
+                "const": "agent_default_unspecified"
+              }
+            },
+            "required": [
+              "stance_basis"
+            ]
+          },
+          "then": {
+            "properties": {
+              "operator_stance": {
+                "const": "unspecified"
               }
             }
           }
@@ -349,6 +427,7 @@
         "tiber_shared_reality",
         "operator_supplied_external",
         "agent_inference",
+        "operator_supposition",
         "operator_belief",
         "agent_general_knowledge"
       ]

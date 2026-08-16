@@ -19,6 +19,8 @@ this repository, and a cross-repository search of all eleven TIBER repositories
 for prior art on thesis representation, Shared Reality, and operator authority.
 
 **Verdict: mostly reusable, with three genuine contract decisions required.**
+Two further decisions (4 and 5) were forced by independent review of the first
+draft; both correct semantic overclaims rather than gaps in the audit.
 
 ### 1.1 Reused without modification
 
@@ -27,8 +29,8 @@ for prior art on thesis representation, Shared Reality, and operator authority.
 | `safeId`, `timestamp`, `nullableTimestamp`, `nonEmptyString`, `digest`, `stringList`, `idList` | `schemas/v0/common.schema.json` | Every identifier, string, and timestamp in the new contract `$ref`s these definitions directly. No new primitive types were introduced. |
 | `epistemicClass` vocabulary (plus the packet-level `forecast`) | `common.schema.json`, `packet.schema.json` | `nodes[].epistemic_class` and `edges[].epistemic_class` use the identical eight-member enum the packet claim contract uses. |
 | Causal node/edge geometry | `packet.schema.json` `causal_paths` | `nodes[]` / `edges[]` carry the same conceptual load: directed edges with `mechanism`, `evidence_refs`, `counterevidence_refs`, `uncertainty`, and `falsifiers`, validated acyclic. |
-| `tiber-raw-sha256-v1` | `README.md` digest rules | `original_take.quote_digest_mode`, so a preserved take hashes the same way an operator direction quote does. |
-| Verbatim-quote-plus-digest pattern | `research-operator-direction-record/v1` | `original_take` and `operator_confirmation` both preserve exact operator words rather than a paraphrase, following the pattern already used to bind operator direction. |
+| `tiber-raw-sha256-v1` | `README.md` digest rules | `original_take.quote_digest_mode`, so a take whose byte identity *is* established hashes the same way an operator direction quote does. |
+| Preserved-operator-quote pattern | `research-operator-direction-record/v1` | `original_take` and `operator_confirmation` both preserve the operator's exact words rather than a paraphrase, following the pattern already used to bind operator direction. The digest half is conditional here — see Decision 5. |
 | `authority_state: "unpromoted"` / `downstream_authority: "none"` | `packet.schema.json` | Identical constants, so an agent proposal is as authority-inert as a research packet. |
 | Missing-gap routing shape | `inputs.schema.json` `blocked_inputs`, `packet.schema.json` `unresolved` + `followups.rfi` | `missing_witnesses[]` reuses the "a gap must name what it blocks" rule that `rfi.unresolved_refs` established. |
 
@@ -103,14 +105,68 @@ even if this document does not travel with it.
 `attempt_id`, and the validator binds a packet to a frozen activation, admitted
 sources, and a hash-chained ledger. An external agent, in a chat window, with no
 TIBER run, cannot produce one — and should not, because a packet is *governed
-research output* and a thesis proposal is *an operator's belief structured*.
-Collapsing them would do exactly what #9 forbids: convert operator conviction
-into shared TIBER truth by choice of container.
+research output* and a thesis proposal is *an operator's position structured*.
+Collapsing them would do exactly what #9 forbids: convert an operator claim into
+shared TIBER truth by choice of container.
 
 **Decision taken:** a new, run-independent contract. It shares vocabulary with
 the packet but not lifecycle. Nothing in the Stage 0 custody chain was modified;
 `src/validator.ts`, `src/preflight.ts`, and every existing schema are
 byte-unchanged.
+
+#### Decision 4 — supplying a take asserts nothing about believing it
+
+Raised at independent review. The protocol originally assumed the operator
+"actually believes" the take. That is too strong: an operator may be exploring
+(*"what if X?"*), or supplying synthetic test material, and User Zero's own list
+is the latter. Recording exploration as conviction fabricates a belief and
+attributes it to a named person — the mirror image of laundering a belief into
+evidence, and just as damaging.
+
+**Decision taken:** `original_take.operator_stance`
+(`unspecified` | `asserted_belief` | `exploratory_hypothesis` | `synthetic_test`)
+with `stance_basis` (`operator_stated` | `agent_default_unspecified`), and a new
+`operator_supposition` value in `evidence_basis`.
+
+It **fails closed** in two independent places:
+
+- schema: `stance_basis: "agent_default_unspecified"` forces
+  `operator_stance: "unspecified"`, so an agent cannot default its way into a
+  stance;
+- checker: `basis: "operator_belief"` on any node, edge, or evidence item
+  requires `operator_stance: "asserted_belief"`.
+
+`operator_supposition` — the operator's position, without a claim about their
+conviction — is the default carrier for operator material, so the fail-closed
+path loses no expressiveness. This also gives TIBER what it needs to represent
+"what if X?" exploration without laundering it into operator belief.
+
+#### Decision 5 — byte identity is a stronger claim than preservation
+
+Raised at independent review. The protocol originally required copying the take
+"byte for byte" and offered a digest over it. Over an arbitrary conversational
+transport an agent generally **cannot** establish the operator's original UTF-8
+bytes: chat clients apply smart punctuation, mobile keyboards autocorrect,
+Unicode normalization happens in transit, voice input is transcribed. None of
+that is visible from inside the agent's context. A digest over already-normalized
+text looks like proof of fidelity while proving nothing.
+
+**Decision taken:** split the claim in two.
+
+- `received_text` / `received_text_preserved` — *"I did not alter what reached
+  me."* Almost always truthfully assertable.
+- `byte_identity` (`not_established` | `verified_against_operator_source`) —
+  *"this is byte-identical to what the operator typed."* Rarely assertable, and
+  `not_established` is documented as the expected answer in ordinary chat.
+
+`quote_digest` is schema-forbidden unless `byte_identity` is
+`verified_against_operator_source`, so the digest can never imply a fidelity
+claim the environment could not support. `transport_notes` gives known lossy
+steps a structural home rather than burying them in prose, with an empty list
+explicitly meaning *no known lossy step*, not *guaranteed clean*.
+
+The field rename (`verbatim_text` → `received_text`) removes the overclaim from
+the field name itself, not merely from the prose around it.
 
 ---
 
@@ -126,7 +182,7 @@ src/agentEntry.ts                                 cross-object checks
 src/cli.ts                                        one new `agent-entry` subcommand
 fixtures/agent-entry/example-minimal.json         smallest legal proposal
 fixtures/agent-entry/example-ragged.json          deliberately non-tree proposal
-test/agent-entry.test.ts                          32 positive and adversarial tests
+test/agent-entry.test.ts                          40 positive and adversarial tests
 package.json                                      `agent-entry:check`, added to `check`
 ```
 
@@ -144,8 +200,11 @@ enforces what spans objects:
 | `freeze_state` is always `not_frozen`; evidence is always `promotable: false` | schema |
 | A Missing Witness must name at least one thing it would resolve | schema |
 | An unanswered clarification cannot have changed the structure | schema |
+| A digest is permitted only when byte identity is verified | schema |
+| An agent cannot default its way into a stance the operator never stated | schema |
+| `operator_belief` requires an `asserted_belief` stance | checker |
 | Shared Reality evidence requires a declared live TIBER tool | checker |
-| Inference and belief can never be marked `verified` | checker |
+| Inference, supposition, and belief can never be marked `verified` | checker |
 | A `supported` assessment cannot rest only on the agent's recall | checker |
 | Every `*_refs` / `would_resolve` / `attached_to` reference resolves | checker |
 | Node and edge id namespaces are disjoint; ids are unique | checker |
@@ -224,6 +283,8 @@ listed so they can be weighed at review and watched during the pilot.
 | R6 | **Asking for `thesis_falsifiers` may induce invented falsifiers.** | The protocol says a falsifier the operator names is worth far more than one the agent invents, and requires the text to mark agent-supplied ones. The array may be empty. |
 | R7 | **"One take, one proposal"** is a granularity constraint that could split or merge against the operator's intent. | Mitigated by requiring the agent to *ask* rather than split silently. Judged the least-leading of the available options. |
 
+| R8 | **Disclosing `synthetic_test` tells the agent it is being tested.** An agent that knows it is on stage may behave more carefully than one in ordinary use, which contaminates the pilot in a different direction. | Introduced by Decision 4, and unavoidable if stance is to be recorded honestly. Not resolvable inside the contract, because it is a run-time choice rather than a schema property: the test procedure (§3, Step 2) makes it an explicit pre-run decision with the tradeoff stated, requires the decision to be recorded, and requires the same choice across both providers in the cross-provider comparison. **Withholding exercises the fail-closed default path and is the more faithful test**; disclosing is the more faithful record. |
+
 ### 4.3 Anti-contamination properties worth keeping
 
 Three design choices actively work against contamination and should survive any
@@ -241,33 +302,33 @@ revision:
 
 ---
 
-## 5. Unresolved operator decisions
+## 5. Operator decisions
 
-None of these block the pilot. All of them should be settled before this
-protocol is used beyond User Zero.
+Resolved at independent review, for the pilot only:
 
-1. **Codify "Shared Reality", or don't.** Phase 0 uses a provisional, agent-facing
-   definition because no org-wide one exists. Either promote it to a real
-   cross-repository contract, or accept that it stays a local term of art.
-2. **Which URL is handed to User Zero** — the commit-pinned raw URL (immutable,
-   correct for a frozen-protocol experiment) or the `main` raw URL (stable
-   address, mutable content). The test procedure recommends the pinned one.
-   See `docs/agent-entry/README.md`.
-3. **Where confirmed proposals are stored.** Phase 0 defines the wire format
-   only. Custody, workspace boundaries, and privacy for operator thesis state are
-   #10 open questions and remain open.
-4. **Whether `necessity` survives** (risk R3).
-5. **Convergence with `operator_signal_note_v0`** (section 1.2), a
+1. **Shared Reality stays provisional and local.** Not codified org-wide yet.
+2. **Use the commit-pinned URL** for User Zero and the cross-provider comparison.
+3. **Confirmed-proposal storage, privacy, and workspace design are deferred**
+   until after the pilot. An inert validated proposal is enough for Phase 0.
+4. **`necessity` is kept for the pilot** and measured (risk R3) rather than
+   deleted preemptively. Evaluation criterion E8 records whether agents use it
+   meaningfully or reflexively.
+5. **Convergence with `operator_signal_note_v0` is deferred** — a separate
    cross-repository decision with TIBER-Data.
-6. **Whether v0.1 should add a `list_bundle` wrapper** so an entire Let's Cook
-   list round-trips as one artifact. Phase 0 deliberately kept one take per
-   object; the pilot will show whether that is awkward in practice.
+6. **No list-bundle wrapper.** The fresh agent receives the whole list
+   conversationally and emits per-take proposals; awkwardness there is useful
+   pilot evidence rather than a defect to pre-empt.
 
----
+Still open:
+
+7. **Whether to disclose the list's stance to the agent** during User Zero
+   (risk R8). This is a run-time decision the operator makes at Step 2 of the
+   test procedure, not a contract question. It must be decided before the run,
+   recorded, and held constant across providers.
 
 ## 6. Verification
 
-`npm run check` passes: typecheck, 339 tests (32 new; baseline 307), the
+`npm run check` passes: typecheck, 347 tests (40 new; baseline 307), the
 synthetic fixture end-to-end, both Stage 1 preflight packages unchanged, and
 both agent-entry examples.
 

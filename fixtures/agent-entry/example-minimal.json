@@ -17,13 +17,13 @@
   "interpretation": {
     "agent_additions": "None. The take states one claim and no dependency, so the proposal records one node and nothing else.",
     "not_understood": [],
-    "summary": "The operator claims a recurring lateness pattern on one scheduled service, with no stated cause."
+    "summary": "The operator put forward a recurring lateness pattern on one scheduled service, with no stated cause."
   },
   "missing_witnesses": [],
   "nodes": [
     {
       "assessment": "unassessed",
-      "basis": "operator_belief",
+      "basis": "operator_supposition",
       "epistemic_class": "hypothesis",
       "evidence_refs": [],
       "label": "Recurring lateness",
@@ -35,17 +35,22 @@
     }
   ],
   "open_notes": [
-    "This is the minimum viable output described in section 13 of the protocol: a preserved take, an honest access declaration, one node, and empty arrays everywhere else."
+    "This is the minimum viable output described in section 13 of the protocol: the received text, an honest access declaration, one node, and empty arrays everywhere else.",
+    "The operator said nothing about whether they hold this view, so the stance stays unspecified and the node is operator_supposition rather than operator_belief. Belief attribution fails closed."
   ],
   "operator_confirmation": null,
   "original_take": {
+    "byte_identity": "not_established",
     "list_label": null,
+    "operator_stance": "unspecified",
     "operator_supplied_at": null,
-    "provenance_note": "Pasted by the operator directly into the chat and copied without alteration.",
+    "provenance_note": "Pasted by the operator directly into the chat and copied without alteration. The chat transport is not observable from inside this session, so byte identity with the operator's original is not established.",
     "quote_digest": null,
     "quote_digest_mode": null,
-    "verbatim_preserved": true,
-    "verbatim_text": "the 7:10 bus is basically never on time anymore"
+    "received_text": "the 7:10 bus is basically never on time anymore",
+    "received_text_preserved": true,
+    "stance_basis": "agent_default_unspecified",
+    "transport_notes": []
   },
   "proposal_id": "agent-entry-example-minimal",
   "proposal_state": "awaiting_operator_confirmation",
