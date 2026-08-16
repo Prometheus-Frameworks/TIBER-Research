@@ -1,0 +1,1037 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.tiber.dev/research/v0/agent-thesis-proposal.schema.json",
+  "title": "TIBER agent-entry v0 thesis proposal",
+  "description": "Interoperable output contract for an external agent consuming the TIBER Agent Entry Protocol v0. A proposal is pre-freeze, unpromoted, and carries no authority. It does not instantiate CausalThesisLineageV0 and does not admit anything into Shared Reality.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "proposal_id",
+    "generated_at",
+    "proposal_state",
+    "freeze_state",
+    "authority_state",
+    "downstream_authority",
+    "protocol_ref",
+    "agent_declaration",
+    "original_take",
+    "subjects",
+    "interpretation",
+    "nodes",
+    "edges",
+    "evidence",
+    "alternative_paths",
+    "missing_witnesses",
+    "unsupported_assumptions",
+    "thesis_falsifiers",
+    "clarifications",
+    "operator_confirmation",
+    "relates_to_prior",
+    "open_notes"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "agent-thesis-proposal/v0"
+    },
+    "proposal_id": {
+      "$ref": "common.schema.json#/$defs/safeId"
+    },
+    "generated_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "proposal_state": {
+      "enum": [
+        "awaiting_operator_confirmation",
+        "operator_confirmed"
+      ],
+      "description": "Only two states exist. A proposal starts awaiting confirmation; an explicit operator confirmation moves it to operator_confirmed; an operator correction returns it to awaiting_operator_confirmation."
+    },
+    "freeze_state": {
+      "const": "not_frozen",
+      "description": "Freezing is an operator action inside TIBER. An agent may never emit a frozen thesis."
+    },
+    "authority_state": {
+      "const": "unpromoted"
+    },
+    "downstream_authority": {
+      "const": "none"
+    },
+    "protocol_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "protocol_id",
+        "protocol_version",
+        "retrieval_state",
+        "retrieved_from"
+      ],
+      "properties": {
+        "protocol_id": {
+          "const": "tiber-agent-entry/v0"
+        },
+        "protocol_version": {
+          "const": "v0"
+        },
+        "retrieval_state": {
+          "enum": [
+            "fetched_from_url",
+            "pasted_by_operator",
+            "unavailable_worked_from_memory"
+          ]
+        },
+        "retrieved_from": {
+          "oneOf": [
+            {
+              "$ref": "common.schema.json#/$defs/nonEmptyString"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "agent_declaration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "role",
+        "agent_self_description",
+        "evidence_access",
+        "evidence_access_note",
+        "self_reported_concerns"
+      ],
+      "properties": {
+        "role": {
+          "const": "research_scaffold"
+        },
+        "agent_self_description": {
+          "oneOf": [
+            {
+              "$ref": "common.schema.json#/$defs/nonEmptyString"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "evidence_access": {
+          "enum": [
+            "tiber_tool_available",
+            "operator_supplied_only",
+            "no_evidence_access"
+          ]
+        },
+        "evidence_access_note": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "self_reported_concerns": {
+          "$ref": "common.schema.json#/$defs/stringList"
+        }
+      }
+    },
+    "original_take": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "received_text",
+        "received_text_preserved",
+        "byte_identity",
+        "quote_digest",
+        "quote_digest_mode",
+        "transport_notes",
+        "operator_stance",
+        "stance_basis",
+        "provenance_note",
+        "operator_supplied_at",
+        "list_label"
+      ],
+      "properties": {
+        "received_text": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 16384,
+          "description": "The take exactly as it arrived in the agent's context. This is not a claim about the operator's original bytes; see byte_identity."
+        },
+        "received_text_preserved": {
+          "const": true,
+          "description": "Only true when the received text was copied without any alteration whatsoever. It does not assert byte identity with the operator's source."
+        },
+        "byte_identity": {
+          "enum": [
+            "not_established",
+            "verified_against_operator_source"
+          ],
+          "description": "Whether the agent has an actual basis for claiming the received text is byte-identical to the operator's original. In an ordinary chat, transport normalization is invisible to the agent and not_established is the correct answer."
+        },
+        "transport_notes": {
+          "$ref": "common.schema.json#/$defs/stringList",
+          "description": "Known or suspected lossy steps between the operator and the agent. Empty means no known lossy step, not a guarantee of fidelity."
+        },
+        "operator_stance": {
+          "enum": [
+            "unspecified",
+            "asserted_belief",
+            "exploratory_hypothesis",
+            "synthetic_test"
+          ],
+          "description": "What the operator said about their relationship to the take. Supplying a take asserts nothing about conviction, so unspecified is the default."
+        },
+        "stance_basis": {
+          "enum": [
+            "operator_stated",
+            "agent_default_unspecified"
+          ],
+          "description": "How the stance was determined. An agent may never infer a stance; it may only record one the operator stated."
+        },
+        "quote_digest": {
+          "oneOf": [
+            {
+              "$ref": "common.schema.json#/$defs/digest"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "quote_digest_mode": {
+          "oneOf": [
+            {
+              "const": "tiber-raw-sha256-v1"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "provenance_note": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "operator_supplied_at": {
+          "$ref": "common.schema.json#/$defs/nullableTimestamp"
+        },
+        "list_label": {
+          "oneOf": [
+            {
+              "$ref": "common.schema.json#/$defs/nonEmptyString"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "type": "object",
+            "properties": {
+              "quote_digest": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "quote_digest"
+            ]
+          },
+          "then": {
+            "properties": {
+              "quote_digest_mode": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "quote_digest_mode": {
+                "const": "tiber-raw-sha256-v1"
+              }
+            }
+          }
+        },
+        {
+          "$comment": "A digest over text that may already have been normalized in transit looks like proof of fidelity while proving nothing.",
+          "if": {
+            "type": "object",
+            "properties": {
+              "byte_identity": {
+                "const": "not_established"
+              }
+            },
+            "required": [
+              "byte_identity"
+            ]
+          },
+          "then": {
+            "properties": {
+              "quote_digest": {
+                "type": "null"
+              },
+              "quote_digest_mode": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "$comment": "An agent may not default its way into a stance the operator never stated.",
+          "if": {
+            "type": "object",
+            "properties": {
+              "stance_basis": {
+                "const": "agent_default_unspecified"
+              }
+            },
+            "required": [
+              "stance_basis"
+            ]
+          },
+          "then": {
+            "properties": {
+              "operator_stance": {
+                "const": "unspecified"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "subjects": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/subject"
+      }
+    },
+    "interpretation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "agent_additions",
+        "not_understood"
+      ],
+      "properties": {
+        "summary": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "agent_additions": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "not_understood": {
+          "$ref": "common.schema.json#/$defs/stringList"
+        }
+      }
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/node"
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/edge"
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/evidenceItem"
+      }
+    },
+    "alternative_paths": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/alternativePath"
+      }
+    },
+    "missing_witnesses": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/missingWitness"
+      }
+    },
+    "unsupported_assumptions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/unsupportedAssumption"
+      }
+    },
+    "thesis_falsifiers": {
+      "$ref": "common.schema.json#/$defs/stringList"
+    },
+    "clarifications": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/clarification"
+      }
+    },
+    "operator_confirmation": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/operatorConfirmation"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "relates_to_prior": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/priorRelation"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "open_notes": {
+      "$ref": "common.schema.json#/$defs/stringList"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "proposal_state": {
+            "const": "operator_confirmed"
+          }
+        },
+        "required": [
+          "proposal_state"
+        ]
+      },
+      "then": {
+        "properties": {
+          "operator_confirmation": {
+            "$ref": "#/$defs/operatorConfirmation"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "operator_confirmation": {
+            "type": "null"
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "evidenceBasis": {
+      "description": "Which epistemic layer a statement rests on. These are never interchangeable.",
+      "enum": [
+        "tiber_shared_reality",
+        "operator_supplied_external",
+        "agent_inference",
+        "operator_supposition",
+        "operator_belief",
+        "agent_general_knowledge"
+      ]
+    },
+    "origin": {
+      "description": "Who put this in the structure. An agent addition stays an agent addition even after the operator endorses it.",
+      "enum": [
+        "verbatim_in_take",
+        "operator_clarification",
+        "agent_proposed"
+      ]
+    },
+    "epistemicClass": {
+      "enum": [
+        "observed",
+        "calculated",
+        "inferred",
+        "forecast",
+        "hypothesis",
+        "speculative",
+        "contradicted",
+        "unknown"
+      ]
+    },
+    "assessment": {
+      "enum": [
+        "unassessed",
+        "supported",
+        "challenged",
+        "contradicted",
+        "unobserved",
+        "insufficient_evidence"
+      ]
+    },
+    "nullableText": {
+      "oneOf": [
+        {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "evidenceCoupling": {
+      "description": "An assessed or observed element must cite evidence. This is the schema-level anti-fabrication gate.",
+      "type": "object",
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "assessment": {
+                "enum": [
+                  "supported",
+                  "challenged",
+                  "contradicted"
+                ]
+              }
+            },
+            "required": [
+              "assessment"
+            ]
+          },
+          "then": {
+            "properties": {
+              "evidence_refs": {
+                "type": "array",
+                "minItems": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "epistemic_class": {
+                "enum": [
+                  "observed",
+                  "calculated"
+                ]
+              }
+            },
+            "required": [
+              "epistemic_class"
+            ]
+          },
+          "then": {
+            "properties": {
+              "evidence_refs": {
+                "type": "array",
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "subject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "subject_id",
+        "label_in_take",
+        "kind",
+        "resolution"
+      ],
+      "properties": {
+        "subject_id": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "label_in_take": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "kind": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "resolution": {
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "resolved_label",
+                "resolution_basis",
+                "identifier"
+              ],
+              "properties": {
+                "resolved_label": {
+                  "$ref": "common.schema.json#/$defs/nonEmptyString"
+                },
+                "resolution_basis": {
+                  "enum": [
+                    "operator_confirmed",
+                    "tiber_resolved",
+                    "agent_guess_unverified"
+                  ]
+                },
+                "identifier": {
+                  "$ref": "#/$defs/nullableText"
+                }
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "node_id",
+        "label",
+        "statement",
+        "origin",
+        "basis",
+        "epistemic_class",
+        "assessment",
+        "evidence_refs",
+        "uncertainty",
+        "subject_refs"
+      ],
+      "properties": {
+        "node_id": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "label": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "statement": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "origin": {
+          "$ref": "#/$defs/origin"
+        },
+        "basis": {
+          "$ref": "#/$defs/evidenceBasis"
+        },
+        "epistemic_class": {
+          "$ref": "#/$defs/epistemicClass"
+        },
+        "assessment": {
+          "$ref": "#/$defs/assessment"
+        },
+        "evidence_refs": {
+          "$ref": "common.schema.json#/$defs/idList"
+        },
+        "uncertainty": {
+          "$ref": "#/$defs/nullableText"
+        },
+        "subject_refs": {
+          "$ref": "common.schema.json#/$defs/idList"
+        }
+      },
+      "$ref": "#/$defs/evidenceCoupling"
+    },
+    "edge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "edge_id",
+        "from_node",
+        "to_node",
+        "mechanism",
+        "origin",
+        "basis",
+        "epistemic_class",
+        "assessment",
+        "necessity",
+        "evidence_refs",
+        "counterevidence_refs",
+        "uncertainty",
+        "falsifiers"
+      ],
+      "properties": {
+        "edge_id": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "from_node": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "to_node": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "mechanism": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "origin": {
+          "$ref": "#/$defs/origin"
+        },
+        "basis": {
+          "$ref": "#/$defs/evidenceBasis"
+        },
+        "epistemic_class": {
+          "$ref": "#/$defs/epistemicClass"
+        },
+        "assessment": {
+          "$ref": "#/$defs/assessment"
+        },
+        "necessity": {
+          "enum": [
+            "required",
+            "contributing",
+            "unclear"
+          ]
+        },
+        "evidence_refs": {
+          "$ref": "common.schema.json#/$defs/idList"
+        },
+        "counterevidence_refs": {
+          "$ref": "common.schema.json#/$defs/idList"
+        },
+        "uncertainty": {
+          "$ref": "#/$defs/nullableText"
+        },
+        "falsifiers": {
+          "$ref": "common.schema.json#/$defs/stringList"
+        }
+      },
+      "$ref": "#/$defs/evidenceCoupling"
+    },
+    "evidenceItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidence_id",
+        "basis",
+        "statement",
+        "locator",
+        "retrieved_via",
+        "verified",
+        "promotable",
+        "note"
+      ],
+      "properties": {
+        "evidence_id": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "basis": {
+          "$ref": "#/$defs/evidenceBasis"
+        },
+        "statement": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "locator": {
+          "$ref": "#/$defs/nullableText"
+        },
+        "retrieved_via": {
+          "$ref": "#/$defs/nullableText"
+        },
+        "verified": {
+          "type": "boolean"
+        },
+        "promotable": {
+          "const": false,
+          "description": "Nothing reaching TIBER through the agent-entry protocol is promotable into Shared Reality."
+        },
+        "note": {
+          "$ref": "#/$defs/nullableText"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "basis": {
+                "const": "tiber_shared_reality"
+              }
+            },
+            "required": [
+              "basis"
+            ]
+          },
+          "then": {
+            "properties": {
+              "locator": {
+                "$ref": "common.schema.json#/$defs/nonEmptyString"
+              },
+              "retrieved_via": {
+                "$ref": "common.schema.json#/$defs/nonEmptyString"
+              },
+              "verified": {
+                "const": true
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "basis": {
+                "const": "agent_general_knowledge"
+              }
+            },
+            "required": [
+              "basis"
+            ]
+          },
+          "then": {
+            "properties": {
+              "verified": {
+                "const": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    "alternativePath": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path_id",
+        "description",
+        "relation",
+        "raised_by",
+        "node_refs",
+        "edge_refs",
+        "operator_response"
+      ],
+      "properties": {
+        "path_id": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "description": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "relation": {
+          "enum": [
+            "competing_explanation",
+            "parallel_route",
+            "precondition_bypass",
+            "different_outcome_same_route",
+            "unclear"
+          ]
+        },
+        "raised_by": {
+          "enum": [
+            "agent",
+            "operator"
+          ]
+        },
+        "node_refs": {
+          "$ref": "common.schema.json#/$defs/idList"
+        },
+        "edge_refs": {
+          "$ref": "common.schema.json#/$defs/idList"
+        },
+        "operator_response": {
+          "$ref": "#/$defs/nullableText"
+        }
+      }
+    },
+    "missingWitness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "witness_id",
+        "statement",
+        "would_resolve",
+        "why_unavailable",
+        "status",
+        "owner_hint"
+      ],
+      "properties": {
+        "witness_id": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "statement": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "would_resolve": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "common.schema.json#/$defs/safeId"
+          }
+        },
+        "why_unavailable": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "status": {
+          "enum": [
+            "no_access",
+            "lookup_failed",
+            "not_held_by_tiber",
+            "operator_declined",
+            "unknown"
+          ]
+        },
+        "owner_hint": {
+          "$ref": "#/$defs/nullableText"
+        }
+      }
+    },
+    "unsupportedAssumption": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "assumption_id",
+        "statement",
+        "attached_to",
+        "surfaced_by",
+        "operator_response"
+      ],
+      "properties": {
+        "assumption_id": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "statement": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "attached_to": {
+          "$ref": "common.schema.json#/$defs/idList"
+        },
+        "surfaced_by": {
+          "enum": [
+            "agent",
+            "operator"
+          ]
+        },
+        "operator_response": {
+          "$ref": "#/$defs/nullableText"
+        }
+      }
+    },
+    "clarification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "question_id",
+        "question",
+        "answer",
+        "answer_state",
+        "changed_structure"
+      ],
+      "properties": {
+        "question_id": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "question": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "answer": {
+          "$ref": "#/$defs/nullableText"
+        },
+        "answer_state": {
+          "enum": [
+            "answered",
+            "unanswered",
+            "declined"
+          ]
+        },
+        "changed_structure": {
+          "type": "boolean"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "answer_state": {
+                "const": "answered"
+              }
+            },
+            "required": [
+              "answer_state"
+            ]
+          },
+          "then": {
+            "properties": {
+              "answer": {
+                "$ref": "common.schema.json#/$defs/nonEmptyString"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "answer": {
+                "type": "null"
+              },
+              "changed_structure": {
+                "const": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    "operatorConfirmation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "confirmed_at",
+        "confirmation_text",
+        "confirmation_scope",
+        "exceptions"
+      ],
+      "properties": {
+        "confirmed_at": {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        "confirmation_text": {
+          "$ref": "common.schema.json#/$defs/nonEmptyString"
+        },
+        "confirmation_scope": {
+          "enum": [
+            "whole_proposal",
+            "with_noted_exceptions"
+          ]
+        },
+        "exceptions": {
+          "$ref": "common.schema.json#/$defs/stringList"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "confirmation_scope": {
+                "const": "with_noted_exceptions"
+              }
+            },
+            "required": [
+              "confirmation_scope"
+            ]
+          },
+          "then": {
+            "properties": {
+              "exceptions": {
+                "type": "array",
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "priorRelation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "prior_proposal_id",
+        "relationship",
+        "note"
+      ],
+      "properties": {
+        "prior_proposal_id": {
+          "$ref": "common.schema.json#/$defs/safeId"
+        },
+        "relationship": {
+          "enum": [
+            "operator_stated_update",
+            "operator_stated_related",
+            "unknown"
+          ]
+        },
+        "note": {
+          "$ref": "#/$defs/nullableText"
+        }
+      }
+    }
+  }
+}

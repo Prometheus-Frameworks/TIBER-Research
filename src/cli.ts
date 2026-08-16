@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { checkAgentThesisProposal } from "./agentEntry.js";
 import {
   buildSyntheticFixture,
   createAttemptStart,
@@ -13,6 +14,7 @@ import {
 } from "./build.js";
 import {
   normalizedJsonText,
+  readJson,
   readNormalizedJson,
   writeUtf8CreateOnly,
 } from "./io.js";
@@ -27,6 +29,8 @@ import {
 async function main(args: string[]): Promise<void> {
   const [command, ...rest] = args;
   switch (command) {
+    case "agent-entry":
+      return agentEntry(rest);
     case "fixture:build":
       return fixtureBuild(rest);
     case "preflight":
@@ -47,6 +51,40 @@ async function main(args: string[]): Promise<void> {
       return validate(rest);
     default:
       throw new Error(usage());
+  }
+}
+
+/**
+ * Validate an `agent-thesis-proposal/v0` object produced by an external agent.
+ *
+ * The proposal is read with `readJson`, not `readNormalizedJson`: it arrives
+ * from an arbitrary provider over a conversation, so its byte form is not
+ * governed. Only its meaning is checked.
+ */
+function agentEntry(args: string[]): void {
+  const [workspace, proposalPath] = args;
+  if (
+    args.length !== 2 ||
+    workspace === undefined ||
+    proposalPath === undefined ||
+    args.some(
+      (argument) => argument.length === 0 || argument.startsWith("--"),
+    )
+  ) {
+    throw new Error(
+      `agent-entry: expected 2 positional arguments\n${usage()}`,
+    );
+  }
+  const errors = checkAgentThesisProposal(readJson(workspace, proposalPath));
+  process.stdout.write(
+    normalizedJsonText({
+      path: proposalPath,
+      valid: errors.length === 0,
+      errors,
+    }),
+  );
+  if (errors.length > 0) {
+    process.exitCode = 1;
   }
 }
 
@@ -261,6 +299,7 @@ function requirePositionals(
 function usage(): string {
   return [
     "Usage:",
+    "  tiber-research agent-entry <workspace> <proposal-relative-path>",
     "  tiber-research fixture:build <workspace> <run-id> <attempt-id>",
     "  tiber-research preflight <workspace> <manifest-relative-path> [--require-ready]",
     "  tiber-research render <workspace> <run-id> <attempt-id>",
