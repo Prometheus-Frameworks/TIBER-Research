@@ -1,0 +1,9 @@
+DERIVED OBSERVATION — not a verbatim page capture.
+Obtained via an automated fetch-and-summarize tool during the 2026-08-18 audit session; the tool returned model-generated summary text, not raw page bytes.
+
+Reported: Keenan Allen agreed to terms with the Indianapolis Colts.
+Reported date: 2026-08-17 (Monday).
+Reported terms: one-year deal worth up to $8.32 million.
+Attributed reporting source: Jordan Schultz.
+Quoted fragment surfaced by the tool: "Allen agreed to a one-year deal worth up to $8.32MM on Monday night."
+The tool also reported that the sides "had been in talks for several weeks".

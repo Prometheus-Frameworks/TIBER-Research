@@ -1,0 +1,228 @@
+{
+  "artifacts": [
+    {
+      "admissibility": "admitted",
+      "artifact_digest": "sha256:56c8115662d852942538c127f8a22c07a663503c16df82cb6dda14295f6c2585",
+      "artifact_id": "tiber-data-bounded-2026-population-census-v0",
+      "blob_digest": "sha256:6057031bfc6dfedac1a5b2957ec194e738df5fbdb12dfec80d1e8ad773f0d1ea",
+      "commit": "cc2b7842b99e1184c04a605a1860c5ab25267ae8",
+      "freshness": "current",
+      "path": "exports/candidates/population_census/bounded_2026_population_census_v0.json",
+      "repository": "Prometheus-Frameworks/TIBER-Data"
+    },
+    {
+      "admissibility": "admitted",
+      "artifact_digest": "sha256:ab4c8f3d56b58fa57eba9db9982898795a99dec6b03b210c7de40a1faf3ec4d9",
+      "artifact_id": "tiber-data-identity-crosswalk-v2",
+      "blob_digest": "sha256:e6c6f8720352f1b94bf0a60fc5c6a2af7995b2b86b87ef9170b18ef3fcc96f9c",
+      "commit": "cc2b7842b99e1184c04a605a1860c5ab25267ae8",
+      "freshness": "current",
+      "path": "exports/promoted/identity_crosswalk/tiber_identity_crosswalk_v2.json",
+      "repository": "Prometheus-Frameworks/TIBER-Data"
+    },
+    {
+      "admissibility": "admitted",
+      "artifact_digest": "sha256:6aee8de0d174371b42c82d548353ded0475d9383493d79bb171fd2adb2ebd53e",
+      "artifact_id": "tiber-data-player-ownership-events-2026",
+      "blob_digest": "sha256:6aee8de0d174371b42c82d548353ded0475d9383493d79bb171fd2adb2ebd53e",
+      "commit": "cc2b7842b99e1184c04a605a1860c5ab25267ae8",
+      "freshness": "current",
+      "path": "exports/promoted/player_ownership/events/player_ownership_events_2026.jsonl",
+      "repository": "Prometheus-Frameworks/TIBER-Data"
+    },
+    {
+      "admissibility": "admitted",
+      "artifact_digest": "sha256:9d18d0a324c2547f666eb4110f87a40706b1b676f1ba0f4df7796d5db513a850",
+      "artifact_id": "tiber-data-current-player-state-readiness-audit-2026-08-10",
+      "blob_digest": "sha256:35d012cbea8ece9f6f7131e4093617503dcbaf40d95d02933a688e4397d7df06",
+      "commit": "cc2b7842b99e1184c04a605a1860c5ab25267ae8",
+      "freshness": "current",
+      "path": "docs/audits/current-player-state-source-readiness-audit-2026-08-10.json",
+      "repository": "Prometheus-Frameworks/TIBER-Data"
+    },
+    {
+      "admissibility": "admitted",
+      "artifact_digest": "sha256:53fe27598def3b5ec963eaa844b8ba55eeb731716f62a92610c159016fa10b19",
+      "artifact_id": "tiber-data-player-ownership-change-event-v0-schema",
+      "blob_digest": "sha256:bb21ac41b8f965acc9205a136c63b24687034fca2e99431cd8a537775cb5c6da",
+      "commit": "cc2b7842b99e1184c04a605a1860c5ab25267ae8",
+      "freshness": "current",
+      "path": "schemas/player_ownership_change_event_v0.schema.json",
+      "repository": "Prometheus-Frameworks/TIBER-Data"
+    }
+  ],
+  "blocked_inputs": [
+    {
+      "input_id": "governed-2026-roster-source",
+      "owner_repository": "Prometheus-Frameworks/TIBER-Data",
+      "question_refs": [
+        "q1-transaction-attestation",
+        "q2-identity-and-current-association",
+        "q3-candidate-representability"
+      ],
+      "reason": "TIBER-Data has no governed, full-universe, current 2026 source for roster membership, ownership status, or transactions, so neither the reported signing nor Allen's current team membership can be confirmed against governed roster state.",
+      "status": "unavailable"
+    },
+    {
+      "input_id": "current-transaction-wire",
+      "owner_repository": "Prometheus-Frameworks/TIBER-Data",
+      "question_refs": [
+        "q1-transaction-attestation"
+      ],
+      "reason": "No current full transaction wire exists, so TIBER cannot detect or corroborate the signing from a governed feed.",
+      "status": "unavailable"
+    },
+    {
+      "input_id": "promoted-crosswalk-coverage-for-allen",
+      "owner_repository": "Prometheus-Frameworks/TIBER-Data",
+      "question_refs": [
+        "q2-identity-and-current-association"
+      ],
+      "reason": "The promoted identity crosswalk v2 is an operator-promoted slice that does not carry a Keenan Allen record, so his canonical identity is available only from a non-promoted candidate census.",
+      "status": "identity_unresolved"
+    }
+  ],
+  "comparisons": [],
+  "cutoff_at": "2026-08-18T21:27:16Z",
+  "frozen_at": "2026-08-18T21:28:00Z",
+  "job_ref": {
+    "digest": "sha256:076648700709e2bd50d00a15c758d08d2d5c43a892d657724bbc46145c707d42",
+    "digest_mode": "tiber-raw-sha256-v1",
+    "job_id": "keenan-allen-ind-signing",
+    "job_version": "v1",
+    "path": "preflight/keenan-allen-ind-signing-v0/candidate/job.yaml"
+  },
+  "market_snapshots": [],
+  "research_context": {
+    "context_class": "admitted_public_evidence",
+    "context_id": "context-ind-2026-allen-signing",
+    "description": "Indianapolis Colts, 2026 preseason, the 2026-08-17 Keenan Allen signing treated strictly as a roster-membership transaction representability test.",
+    "dimensions": {
+      "event": "keenan-allen-ind-signing-2026-08-17",
+      "phase": "preseason",
+      "season": 2026,
+      "team": "IND"
+    }
+  },
+  "run_id": "keenan-allen-ind-signing-v0",
+  "schema_version": "research-inputs/v0.1",
+  "sources": [
+    {
+      "admissibility": "admitted",
+      "content_digest": "sha256:a21e90e102f90c5f0b7bf771ea9f66af7625f388b651c781457cf195d079aa7b",
+      "content_path": "runs/keenan-allen-ind-signing-v0/sources/src-pfr-allen-colts-signing/excerpts.txt",
+      "metadata_digest": "sha256:00dcca054022bc8c0bdbfdea4974a30190c1ad2834c980350d637814588b4df2",
+      "metadata_path": "runs/keenan-allen-ind-signing-v0/sources/src-pfr-allen-colts-signing/metadata.json",
+      "promotable": false,
+      "replayability": "lineage_only",
+      "retention_mode": "derived_only",
+      "source_object_id": "src-pfr-allen-colts-signing"
+    },
+    {
+      "admissibility": "admitted",
+      "content_digest": "sha256:0430fd9213894171a143cd0a7f737c3003b9cada1effcf9b901fc70c7eaa8644",
+      "content_path": "runs/keenan-allen-ind-signing-v0/sources/src-foxsports-allen-colts-signing/excerpts.txt",
+      "metadata_digest": "sha256:041aff354a8372bea0f9e58c48b14668254415a76e7f71a27b361e766327ebaa",
+      "metadata_path": "runs/keenan-allen-ind-signing-v0/sources/src-foxsports-allen-colts-signing/metadata.json",
+      "promotable": false,
+      "replayability": "lineage_only",
+      "retention_mode": "derived_only",
+      "source_object_id": "src-foxsports-allen-colts-signing"
+    },
+    {
+      "admissibility": "admitted",
+      "content_digest": "sha256:d846465459dd8349aaf2f5afa34175802d9df37188916d04192d6e62a4e1f1ea",
+      "content_path": "runs/keenan-allen-ind-signing-v0/sources/src-larrybrown-allen-colts-signing/excerpts.txt",
+      "metadata_digest": "sha256:cb6704caeae4962ec31eac042499a90ec45d23e2f4cd84aedd77a32e34bc3ea9",
+      "metadata_path": "runs/keenan-allen-ind-signing-v0/sources/src-larrybrown-allen-colts-signing/metadata.json",
+      "promotable": false,
+      "replayability": "lineage_only",
+      "retention_mode": "derived_only",
+      "source_object_id": "src-larrybrown-allen-colts-signing"
+    },
+    {
+      "admissibility": "admitted",
+      "content_digest": null,
+      "content_path": null,
+      "metadata_digest": "sha256:c723f06f73f6ec0dce99616dc05cc75e4cb532a12bdabc45afbafefd56d0689e",
+      "metadata_path": "runs/keenan-allen-ind-signing-v0/sources/src-tiber-data-population-census/metadata.json",
+      "promotable": false,
+      "replayability": "lineage_only",
+      "retention_mode": "reference_only",
+      "source_object_id": "src-tiber-data-population-census"
+    },
+    {
+      "admissibility": "admitted",
+      "content_digest": null,
+      "content_path": null,
+      "metadata_digest": "sha256:1f7b64222bbba248be4a588c4db255dc7fcd5a1e5c2eea5f4eae654d720f1de9",
+      "metadata_path": "runs/keenan-allen-ind-signing-v0/sources/src-tiber-data-identity-crosswalk-v2/metadata.json",
+      "promotable": false,
+      "replayability": "lineage_only",
+      "retention_mode": "reference_only",
+      "source_object_id": "src-tiber-data-identity-crosswalk-v2"
+    },
+    {
+      "admissibility": "admitted",
+      "content_digest": null,
+      "content_path": null,
+      "metadata_digest": "sha256:7ac8a94b122e0a41fcc2957c3b938042b623387d79f85658e6766f228d848fda",
+      "metadata_path": "runs/keenan-allen-ind-signing-v0/sources/src-tiber-data-ownership-events-2026/metadata.json",
+      "promotable": false,
+      "replayability": "lineage_only",
+      "retention_mode": "reference_only",
+      "source_object_id": "src-tiber-data-ownership-events-2026"
+    },
+    {
+      "admissibility": "admitted",
+      "content_digest": null,
+      "content_path": null,
+      "metadata_digest": "sha256:d1b23f5fda82c11b575a5f57e1a8def512e026d62f39acc5d9534004d730b34c",
+      "metadata_path": "runs/keenan-allen-ind-signing-v0/sources/src-tiber-data-ownership-change-contract/metadata.json",
+      "promotable": false,
+      "replayability": "lineage_only",
+      "retention_mode": "reference_only",
+      "source_object_id": "src-tiber-data-ownership-change-contract"
+    },
+    {
+      "admissibility": "admitted",
+      "content_digest": null,
+      "content_path": null,
+      "metadata_digest": "sha256:ea8ce12691619ddb914386b5418a4a04f91fc39ec5f69e7e0a9055a4841a00a7",
+      "metadata_path": "runs/keenan-allen-ind-signing-v0/sources/src-tiber-data-current-player-state-audit/metadata.json",
+      "promotable": false,
+      "replayability": "lineage_only",
+      "retention_mode": "reference_only",
+      "source_object_id": "src-tiber-data-current-player-state-audit"
+    }
+  ],
+  "subjects": [
+    {
+      "aliases": [
+        "gsis 00-0030279"
+      ],
+      "kind": "player",
+      "label": "Keenan Allen (WR)",
+      "subject_id": "keenan-allen"
+    },
+    {
+      "aliases": [
+        "IND",
+        "nfl-ind"
+      ],
+      "kind": "team",
+      "label": "Indianapolis Colts (destination team)",
+      "subject_id": "indianapolis-colts"
+    },
+    {
+      "aliases": [
+        "LAC",
+        "nfl-lac"
+      ],
+      "kind": "team",
+      "label": "Los Angeles Chargers (TIBER's current recorded team association)",
+      "subject_id": "los-angeles-chargers"
+    }
+  ],
+  "synthetic_fixture": false
+}

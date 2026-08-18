@@ -1,0 +1,59 @@
+{
+  "acquisition_method": "governed-artifact-pin",
+  "admissibility": {
+    "rationale": "TIBER-owned governed artifact pinned at an exact commit and blob digest; admitted as evidence of TIBER's own current state.",
+    "state": "admitted"
+  },
+  "admitted": true,
+  "content_digest": null,
+  "content_path": null,
+  "context_match": {
+    "context_ref": "context-ind-2026-allen-signing",
+    "matched": true,
+    "rationale": "The 2026 ownership-change event lane this run proposes a candidate row for."
+  },
+  "directness": "direct",
+  "freshness": {
+    "rationale": "Pinned at TIBER-Data commit cc2b7842b99e1184c04a605a1860c5ab25267ae8; current as the repository head observed on 2026-08-18. Provenance clocks are recorded at audit-session granularity: the observation occurred inside the bounded 2026-08-18 session at the recorded time, but the harness did not retain a per-request instant, so these values are session-bounded rather than exact.",
+    "state": "current"
+  },
+  "intended_use": "Pinned TIBER-Data artifacts read as evidence of TIBER's own current identity, ownership-event, and roster-readiness state.",
+  "limits": {
+    "licensing": "TIBER-owned artifact; no third-party licensing constraint.",
+    "privacy": "contains_no_private_user_context",
+    "redistribution": "Internal TIBER lineage use.",
+    "reportability": "Internal."
+  },
+  "locator": {
+    "kind": "repository_path",
+    "value": "Prometheus-Frameworks/TIBER-Data@cc2b7842b99e1184c04a605a1860c5ab25267ae8:exports/promoted/player_ownership/events/player_ownership_events_2026.jsonl"
+  },
+  "promotable": false,
+  "provider": "Prometheus-Frameworks/TIBER-Data",
+  "replayability": "lineage_only",
+  "reportability": "internal",
+  "retention_mode": "reference_only",
+  "revision": {
+    "revision_id": "sha256:6aee8de0d174371b42c82d548353ded0475d9383493d79bb171fd2adb2ebd53e",
+    "supersedes_revision_id": null
+  },
+  "rights_disposition_ref": "TIBER-owned governed artifacts.",
+  "run_id": "keenan-allen-ind-signing-v0",
+  "schema_version": "research-source-metadata/v0",
+  "source_class": "governed_tiber_artifact",
+  "source_family_id": "tiber-governed-artifacts",
+  "source_identifier": "Prometheus-Frameworks/TIBER-Data:exports/promoted/player_ownership/events/player_ownership_events_2026.jsonl",
+  "source_object_id": "src-tiber-data-ownership-events-2026",
+  "synthetic_fixture": false,
+  "temporal": {
+    "admissible_at": "2026-08-18T21:27:16Z",
+    "cutoff_at": "2026-08-18T21:27:16Z",
+    "effective_at": null,
+    "event_time": null,
+    "first_observed_at": "2026-08-18T21:05:00Z",
+    "published_at": null,
+    "retrieved_at": "2026-08-18T21:05:00Z",
+    "source_available_at": "2026-08-18T21:05:00Z"
+  },
+  "upstream_owner": "Prometheus-Frameworks/TIBER-Data"
+}

@@ -1,0 +1,59 @@
+{
+  "acquisition_method": "operator-directed-derived-observation",
+  "admissibility": {
+    "rationale": "Operator-directed per-instance admission under TIBER-Research#13 (2026-08-18) with derived-only retention. Content was obtained through an automated fetch/search tool that returned model-generated summary text rather than raw page bytes; the retained file is a derived observation, not a verbatim capture. Admitted as transaction-report evidence only; not as governed roster truth.",
+    "state": "admitted"
+  },
+  "admitted": true,
+  "content_digest": "sha256:0430fd9213894171a143cd0a7f737c3003b9cada1effcf9b901fc70c7eaa8644",
+  "content_path": "runs/keenan-allen-ind-signing-v0/sources/src-foxsports-allen-colts-signing/excerpts.txt",
+  "context_match": {
+    "context_ref": "context-ind-2026-allen-signing",
+    "matched": true,
+    "rationale": "Reports the 2026-08-17 Keenan Allen / Indianapolis transaction inside the bounded observation window."
+  },
+  "directness": "secondary",
+  "freshness": {
+    "rationale": "Observed once inside the bounded 2026-08-18 audit session before the bound cutoff; no later revision was observed or admitted, and the page is not assumed immutable. Provenance clocks are recorded at audit-session granularity: the observation occurred inside the bounded 2026-08-18 session at the recorded time, but the harness did not retain a per-request instant, so these values are session-bounded rather than exact.",
+    "state": "current"
+  },
+  "intended_use": "Operator-directed manual admission of specific public transaction reports naming the Allen/Indianapolis signing; per-item admission with derived-only retention; no systematic retrieval.",
+  "limits": {
+    "licensing": "Copyrighted third-party editorial content; no license for retention of full bodies; derived-observation admission only.",
+    "privacy": "contains_no_private_user_context",
+    "redistribution": "Not redistributable; internal lineage use only; retained derived text stays inside this governed package.",
+    "reportability": "Internal only; never present the derived text as a verbatim page capture, and never present reported contract terms as a governed TIBER fact."
+  },
+  "locator": {
+    "kind": "url",
+    "value": "https://www.foxsports.com/stories/nfl/keenan-allen-reportedly-signs-indianapolis-colts"
+  },
+  "promotable": false,
+  "provider": "FOX Sports (foxsports.com)",
+  "replayability": "lineage_only",
+  "reportability": "internal",
+  "retention_mode": "derived_only",
+  "revision": {
+    "revision_id": "sha256:0430fd9213894171a143cd0a7f737c3003b9cada1effcf9b901fc70c7eaa8644",
+    "supersedes_revision_id": null
+  },
+  "rights_disposition_ref": "Third-party publisher terms do not grant systematic retrieval or redistribution; admission is manual, per-instance, derived-only.",
+  "run_id": "keenan-allen-ind-signing-v0",
+  "schema_version": "research-source-metadata/v0",
+  "source_class": "admitted_external_source",
+  "source_family_id": "public-transaction-reporting",
+  "source_identifier": "https://www.foxsports.com/stories/nfl/keenan-allen-reportedly-signs-indianapolis-colts",
+  "source_object_id": "src-foxsports-allen-colts-signing",
+  "synthetic_fixture": false,
+  "temporal": {
+    "admissible_at": "2026-08-18T21:27:16Z",
+    "cutoff_at": "2026-08-18T21:27:16Z",
+    "effective_at": null,
+    "event_time": "2026-08-17T00:00:00Z",
+    "first_observed_at": "2026-08-18T20:52:00Z",
+    "published_at": null,
+    "retrieved_at": "2026-08-18T20:52:00Z",
+    "source_available_at": "2026-08-18T20:52:00Z"
+  },
+  "upstream_owner": "Fox Sports Interactive Media, LLC"
+}

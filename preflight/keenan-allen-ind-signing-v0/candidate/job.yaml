@@ -1,0 +1,163 @@
+# Candidate job for the keenan-allen-ind-signing-v0 Research run.
+# Authored under the TIBER-Research issue #13 operator direction of 2026-08-18,
+# recorded at preflight/keenan-allen-ind-signing-v0/authority/
+# operator-direction-2026-08-18.json. Activation is bound to this file's exact
+# digest by a separate authority decision.
+schema_version: research-job/v0.1
+synthetic_fixture: false
+job_id: keenan-allen-ind-signing
+job_version: v1
+purpose: >-
+  Establish whether the 2026-08-17 Keenan Allen / Indianapolis transaction can
+  be represented as bounded, source-linked TIBER custody reality, and express
+  it as an unpromoted candidate player_ownership_change_event_v0 record. This
+  job deliberately stops at representability: it infers no role, alignment,
+  snap share, target share, personnel usage, or downstream fantasy effect for
+  Allen or for any other player (TIBER-Research issue #13, system lane).
+questions:
+  - question_id: q1-transaction-attestation
+    prompt: >-
+      Is the Allen-to-Indianapolis transaction attested by admitted reporting
+      inside the observation window, with agreement on player, direction,
+      destination team, and date?
+  - question_id: q2-identity-and-current-association
+    prompt: >-
+      Does Keenan Allen resolve to a canonical TIBER identity, and which team
+      does TIBER's own governed state currently associate him with?
+  - question_id: q3-candidate-representability
+    prompt: >-
+      Can the transaction be expressed as a contract-conformant candidate
+      player_ownership_change_event_v0 record inside research custody, without
+      asserting governed roster truth or exceeding research authority?
+mode: bounded_domain_research
+output_class: structured_research_packet
+subjects:
+  - subject_id: keenan-allen
+    label: Keenan Allen (WR)
+    kind: player
+    aliases: ["gsis 00-0030279"]
+  - subject_id: indianapolis-colts
+    label: Indianapolis Colts (destination team)
+    kind: team
+    aliases: ["IND", "nfl-ind"]
+  - subject_id: los-angeles-chargers
+    label: Los Angeles Chargers (TIBER's current recorded team association)
+    kind: team
+    aliases: ["LAC", "nfl-lac"]
+comparison_population:
+  mode: closed
+  members: []
+baseline_ref: null
+cutoff_at: "2026-08-18T21:27:16Z"
+time_horizon: >-
+  The bounded 2026-08-17 to 2026-08-18 transaction-reporting window, observed
+  in a single audit session; no 2026 regular-season observation exists inside
+  the window.
+source_envelope:
+  families:
+    - source_family_id: public-transaction-reporting
+      intended_use: >-
+        Operator-directed manual admission of specific public transaction
+        reports naming the Allen/Indianapolis signing; per-item admission with
+        derived-only retention; no systematic retrieval.
+      acquisition_methods: [operator-directed-derived-observation]
+      retention_modes: [derived_only, reference_only]
+      reportability: [internal]
+      rights_disposition_ref: >-
+        Third-party publisher terms do not grant systematic retrieval or
+        redistribution; admission is manual, per-instance, derived-only.
+    - source_family_id: tiber-governed-artifacts
+      intended_use: >-
+        Pinned TIBER-Data artifacts read as evidence of TIBER's own current
+        identity, ownership-event, and roster-readiness state.
+      acquisition_methods: [governed-artifact-pin]
+      retention_modes: [reference_only]
+      reportability: [internal]
+      rights_disposition_ref: TIBER-owned governed artifacts.
+  evidence_classes: [governed_tiber_artifact, admitted_external_source, deterministic_calculation]
+  default_retention_mode: derived_only
+  required_replayability: lineage_only
+research_context:
+  context_id: context-ind-2026-allen-signing
+  context_class: admitted_public_evidence
+  description: >-
+    Indianapolis Colts, 2026 preseason, the 2026-08-17 Keenan Allen signing
+    treated strictly as a roster-membership transaction representability test.
+  dimensions:
+    team: IND
+    season: 2026
+    phase: preseason
+    event: keenan-allen-ind-signing-2026-08-17
+context_policy:
+  allowed_context_classes: [admitted_public_evidence, pinned_tiber_artifact]
+  prohibited_context_classes: [private_user_context, hidden_reasoning, provider_memory]
+  privacy_ceiling: public
+capabilities:
+  tools: [file-read, file-write-run-scope]
+  network: denied
+  repository_read:
+    - authority
+    - docs
+    - preflight/keenan-allen-ind-signing-v0
+    - runs/keenan-allen-ind-signing-v0
+    - schemas
+    - src
+  repository_write:
+    - runs/keenan-allen-ind-signing-v0/attempts
+    - runs/keenan-allen-ind-signing-v0/run-events.jsonl
+authority:
+  ceiling: research_custody_only
+  prohibited_actions:
+    - source_acquisition
+    - modify_source_repository
+    - modify_ops
+    - modify_harness
+    - modify_strategy
+    - modify_forecast
+    - modify_product
+    - promotion
+    - publication
+    - scheduling
+    - private_context_access
+  human_decision_owner: Joseph (@Prometheus-Frameworks)
+  amendment_owner: Joseph (@Prometheus-Frameworks)
+  consumer_authority: none
+actor_roles:
+  executor: single_writer
+  reviewer: fresh_context_read_only
+budgets:
+  wall_clock_minutes: 120
+  tool_calls: 200
+  evidence_objects: 24
+gates:
+  checkpoint_required: true
+  cold_resume_required: true
+  self_challenge_required: true
+  independent_review_required: true
+  single_writer_required: true
+stop_conditions:
+  - Stop after one packet is submitted; the independent review is a separate step.
+cancellation_conditions:
+  - Cancel on an explicit operator cancellation record.
+blocked_conditions:
+  - Block if no admitted evidence path supports a full claim to challenge to packet path.
+inconclusive_conditions:
+  - >-
+    Mark inconclusive where admitted evidence cannot assess a claim; never
+    substitute a reported transaction for a governed roster observation.
+escalation_conditions:
+  - >-
+    Escalate any request for network access, source acquisition, downstream
+    mutation, or promotion of the candidate record into TIBER-Data.
+terminal_decisions:
+  - decision: keenan_allen_ind_signing_v0_complete
+    class: complete
+  - decision: keenan_allen_ind_signing_v0_requires_data_followup
+    class: requires_data_followup
+  - decision: keenan_allen_ind_signing_v0_blocked
+    class: blocked
+terminal_states:
+  process: [completed, blocked, cancelled, budget_exhausted, protocol_violation]
+  completion: [answered, inconclusive, blocked]
+  review: [pass, rework_required, reject, not_reached]
+reportability: internal

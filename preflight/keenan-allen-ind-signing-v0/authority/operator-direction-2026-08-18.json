@@ -1,0 +1,41 @@
+{
+  "approved_artifact_refs": [
+    {
+      "artifact_type": "job",
+      "digest": "sha256:076648700709e2bd50d00a15c758d08d2d5c43a892d657724bbc46145c707d42",
+      "digest_mode": "tiber-raw-sha256-v1",
+      "path": "preflight/keenan-allen-ind-signing-v0/candidate/job.yaml"
+    },
+    {
+      "artifact_type": "inputs",
+      "digest": "sha256:8dc64b58d70632269456be4a5ccb2b9508d6860b54bc658e57d3081a1a371ce7",
+      "digest_mode": "tiber-canonical-json-v1",
+      "path": "runs/keenan-allen-ind-signing-v0/inputs.json"
+    }
+  ],
+  "authority_class": "activate_run",
+  "candidate_run_id": "keenan-allen-ind-signing-v0",
+  "decision_ref": "Prometheus-Frameworks/TIBER-Research#13 operator direction, 2026-08-18, delivered in session rather than as a GitHub comment; the verbatim direction is retained here and bound by quote_digest.",
+  "exclusions": [
+    "No downstream inference: no role, alignment, snap share, target share, personnel usage, or fantasy effect for Allen or any other player.",
+    "No promotion of the candidate record into TIBER-Data or any other repository; promotion remains a separate TIBER-Data governance decision.",
+    "No network access, source acquisition, or scope expansion beyond the admitted sources frozen in inputs.json.",
+    "Stop at the independent review boundary: the executor may not author the review or the seal."
+  ],
+  "operator": "Joseph (@Prometheus-Frameworks)",
+  "operator_direction": "Approved to proceed with the single bounded Allen transaction artifact using the existing Research/ custody path.\n\nPlease stop at the independent review boundary if you produce an artifact / PR change\n\nThe important scope boundary is already captured in #13:\n\nAllen LAC → IND becomes representable TIBER reality. Nothing downstream is inferred yet.",
+  "quote_digest": "sha256:c3e7da632bcd26b7f73efb751eb8587aaf37fea890e5137fca86c1af43c072ce",
+  "quote_digest_mode": "tiber-raw-sha256-v1",
+  "recorded_at": "2026-08-18T21:29:00Z",
+  "schema_version": "research-operator-direction-record/v1",
+  "scope": [
+    "Produce one bounded, source-linked research artifact representing the Keenan Allen LAC to IND transaction.",
+    "Express the transaction as an unpromoted candidate player_ownership_change_event_v0 record held in research custody.",
+    "Use the existing TIBER-Research custody path (job, inputs, activation, ledger, packet, submission)."
+  ],
+  "terminal_outcomes": [
+    "keenan-allen-ind-signing-v0-complete",
+    "keenan-allen-ind-signing-v0-requires-data-followup",
+    "keenan-allen-ind-signing-v0-blocked"
+  ]
+}
