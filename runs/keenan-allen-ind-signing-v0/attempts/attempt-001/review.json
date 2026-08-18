@@ -1,0 +1,52 @@
+{
+  "schema_version": "research-review/v0",
+  "synthetic_fixture": false,
+  "review_id": "review-attempt-001-codex-2026-08-18",
+  "job_id": "keenan-allen-ind-signing",
+  "job_version": "v1",
+  "run_id": "keenan-allen-ind-signing-v0",
+  "attempt_id": "attempt-001",
+  "reviewed_at": "2026-08-18T22:22:00Z",
+  "submission_ref": {
+    "path": "runs/keenan-allen-ind-signing-v0/attempts/attempt-001/submission.json",
+    "digest": "sha256:b85659d246c99cecd20835a6e0073954ff46bd93ee49187a0beccb1c5b536d1b",
+    "digest_mode": "tiber-canonical-json-v1"
+  },
+  "reviewer": {
+    "actor_session_ref": "openai-codex-independent-review-2026-08-18",
+    "role": "reviewer",
+    "provider_declared": "OpenAI",
+    "model_declared": "GPT-5.6 Sol",
+    "fresh_context": true,
+    "independence_basis": "Fresh independent review of exact head 06a32c215a13493bfd1fc170ebae0039afca6e2f. Reviewer did not author the executor run and inspected the frozen job, packet, ledger, submission, schemas, and cited TIBER-Data contract evidence independently.",
+    "independence_limits": [
+      "Review is bounded to repository evidence available at exact head 06a32c215a13493bfd1fc170ebae0039afca6e2f and the pinned artifacts referenced by the run.",
+      "Reviewer did not independently retrieve new transaction evidence; substantive review concerns the run's epistemic grading, custody, and contract semantics."
+    ]
+  },
+  "substantive": {
+    "verdict": "rework_required",
+    "rationale": "The Allen signing candidate is conservatively represented and the Research-to-Ledger calculation path remains within the run's unpromoted authority ceiling, but q2 overgrades candidate evidence as an answer from TIBER's governed state. A caveat does not repair the grade: the canonical identity and historical LAC association used by q2 come from an artifact explicitly marked candidate_governed_artifact_not_promoted, while the pinned promoted crosswalk does not resolve Keenan Allen.",
+    "findings": [
+      "P1: Rework q2 so promoted/current governed state is not inferred from candidate evidence. Candidate evidence resolves GSIS 00-0030279 and carries a historical 2025 LAC association; the pinned promoted crosswalk has no Keenan Allen record, and no admitted promoted/current-roster witness establishes Allen's 2026 team membership, including Indianapolis.",
+      "Do not strengthen bounded absence into an org-wide negative claim: absence from the pinned promoted crosswalk does not prove Allen is absent from every promoted TIBER surface.",
+      "Keep from_team fields null. The admitted evidence does not establish Allen's immediately preceding roster membership, and a 2025 historical team association must not be promoted into a 2026 transition edge.",
+      "Keep confidence and verification provisional. Multiple admitted outlets trace to one originating insider report and do not constitute independent multi-source verification.",
+      "Research-to-Ledger use is acceptable for this run because the candidate is a digest-bound calculation output inside an explicitly unpromoted research envelope with downstream_authority none. This review does not generalize that result into a standing semantic admission rule for arbitrary contract-shaped ledger outputs."
+    ]
+  },
+  "protocol": {
+    "verdict": "pass",
+    "rationale": "The executor respected the frozen inputs, research_custody_only authority ceiling, no-promotion boundary, hash-chained ledger, submission boundary, and independent-review stop. No reviewer or seal artifact was self-authored by the executor.",
+    "findings": []
+  },
+  "overall_verdict": "rework_required",
+  "candidate_modifications_made": false,
+  "limitations": [
+    "This review does not authorize promotion of the candidate ownership-change record into TIBER-Data or Shared Reality.",
+    "A separate hardening task should define the semantics and authority ceiling of contract-shaped objects carried inside Research ledger calculation outputs; that follow-up does not block correction of this run."
+  ],
+  "canonicalization_version": "tiber-canonical-json-v1",
+  "json_file_version": "tiber-json-file-v1",
+  "validator_version": "tiber-research-validator-v0"
+}
