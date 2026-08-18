@@ -1,0 +1,376 @@
+{
+  "attempt_id": "attempt-002",
+  "authority_state": "unpromoted",
+  "claims": [
+    {
+      "assessment": "supported",
+      "baseline_position": null,
+      "baseline_ref": null,
+      "calculation_refs": [],
+      "challenge_refs": [
+        "event-014-challenge-transaction-representation"
+      ],
+      "claim_id": "claim-transaction-attested",
+      "claim_type": "evidence_assessment",
+      "comparison_refs": [],
+      "confidence": {
+        "band": "moderate",
+        "rationale": "Three admitted reports agree on player, destination team, and date, and a bounded contradiction search found none; confidence is held at moderate rather than high because all three trace to a single originating insider report and no first-party club, league, or governed witness was admitted."
+      },
+      "counterevidence_refs": [
+        "event-007-obs-census-allen-identity"
+      ],
+      "epistemic_class": "observed",
+      "evidence_refs": [
+        "event-004-obs-pfr-signing",
+        "event-005-obs-fox-signing",
+        "event-006-obs-larrybrown-signing"
+      ],
+      "freshness": {
+        "as_of": "2026-08-18T21:27:16Z",
+        "state": "current"
+      },
+      "hypothesis_refs": [
+        "event-001-hyp-transaction"
+      ],
+      "limitations": [
+        "All three admitted reports trace to a single named insider report, so corroboration is not independence.",
+        "Reported contract terms are third-party reporting and are not a governed TIBER fact.",
+        "Agreed terms are not an executed contract or a roster-membership fact; no admitted evidence establishes that Allen occupies an Indianapolis roster spot.",
+        "The retained source text is derived summary output, not a verbatim page capture."
+      ],
+      "market_inefficiency_claim": null,
+      "market_snapshot_ref": null,
+      "missing_evidence_refs": [
+        "unres-governed-roster-verification",
+        "unres-transaction-wire"
+      ],
+      "proposed_disposition": null,
+      "question_ref": "q1-transaction-attestation",
+      "scope": {
+        "context": "Indianapolis Colts, 2026 preseason, the 2026-08-17 Keenan Allen signing treated strictly as a roster-membership transaction representability test.",
+        "context_ref": "context-ind-2026-allen-signing",
+        "cutoff_at": "2026-08-18T21:27:16Z",
+        "population": "The single 2026-08-17 Keenan Allen / Indianapolis transaction report.",
+        "time_horizon": "The bounded 2026-08-17 to 2026-08-18 transaction-reporting window, observed in a single audit session; no 2026 regular-season observation exists inside the window."
+      },
+      "statement": "Admitted reporting inside the observation window attests that Keenan Allen agreed to terms with the Indianapolis Colts on 2026-08-17, with three outlets agreeing on player, destination team, and date.",
+      "subject_ref": "keenan-allen"
+    },
+    {
+      "assessment": "partly_supported",
+      "baseline_position": null,
+      "baseline_ref": null,
+      "calculation_refs": [],
+      "challenge_refs": [
+        "event-014-challenge-transaction-representation"
+      ],
+      "claim_id": "claim-canonical-identity",
+      "claim_type": "evidence_assessment",
+      "comparison_refs": [],
+      "confidence": {
+        "band": "high",
+        "rationale": "The identifier and the artifact's own promotion status were both read directly from the pinned artifact bytes; the confidence is in what the candidate artifact says, not in its promotion grade."
+      },
+      "counterevidence_refs": [],
+      "epistemic_class": "observed",
+      "evidence_refs": [
+        "event-007-obs-census-allen-identity"
+      ],
+      "freshness": {
+        "as_of": "2026-08-18T21:27:16Z",
+        "state": "current"
+      },
+      "hypothesis_refs": [
+        "event-002-hyp-identity"
+      ],
+      "limitations": [
+        "The canonical identifier is carried only by a candidate artifact explicitly marked candidate_governed_artifact_not_promoted, so the resolution is established at candidate grade and not at governed grade.",
+        "The pinned promoted identity crosswalk v2 carries no Keenan Allen record. That is a bounded absence across the artifacts admitted to this run and is not a claim that Allen is absent from every promoted TIBER surface.",
+        "The assessment is partial for grade, not for the identifier: nothing here casts doubt on 00-0030279 itself."
+      ],
+      "market_inefficiency_claim": null,
+      "market_snapshot_ref": null,
+      "missing_evidence_refs": [
+        "unres-crosswalk-coverage"
+      ],
+      "proposed_disposition": null,
+      "question_ref": "q2-identity-and-current-association",
+      "scope": {
+        "context": "Indianapolis Colts, 2026 preseason, the 2026-08-17 Keenan Allen signing treated strictly as a roster-membership transaction representability test.",
+        "context_ref": "context-ind-2026-allen-signing",
+        "cutoff_at": "2026-08-18T21:27:16Z",
+        "population": "Keenan Allen's canonical identity across pinned TIBER-Data artifacts.",
+        "time_horizon": "The bounded 2026-08-17 to 2026-08-18 transaction-reporting window, observed in a single audit session; no 2026 regular-season observation exists inside the window."
+      },
+      "statement": "Keenan Allen resolves to canonical TIBER identity 00-0030279 (GSIS) at candidate grade: the pinned bounded 2026 population census marks the row canonical_id_source_verified, while declaring its own artifact status to be candidate_governed_artifact_not_promoted. No promoted artifact admitted to this run resolves him.",
+      "subject_ref": "keenan-allen"
+    },
+    {
+      "assessment": "partly_supported",
+      "baseline_position": null,
+      "baseline_ref": null,
+      "calculation_refs": [],
+      "challenge_refs": [
+        "event-014-challenge-transaction-representation"
+      ],
+      "claim_id": "claim-current-team-association",
+      "claim_type": "evidence_assessment",
+      "comparison_refs": [],
+      "confidence": {
+        "band": "moderate",
+        "rationale": "The association and its status qualifier were read directly from the pinned artifact. Confidence is moderate rather than high because the governed half of the question is answered by absence across a bounded set of admitted artifacts rather than by a positive governed witness."
+      },
+      "counterevidence_refs": [],
+      "epistemic_class": "observed",
+      "evidence_refs": [
+        "event-007-obs-census-allen-identity"
+      ],
+      "freshness": {
+        "as_of": "2026-08-18T21:27:16Z",
+        "state": "current"
+      },
+      "hypothesis_refs": [
+        "event-002-hyp-identity"
+      ],
+      "limitations": [
+        "The LAC association is a 2025 player-season fact carrying team_status source_backed_historical_team; it is not a claim about Allen's roster membership at any 2026 date.",
+        "The governed half of this answer rests on absence across the artifacts admitted to this run. It is not a claim about every promoted TIBER surface, and a promoted witness outside these frozen inputs would not contradict it.",
+        "No artifact admitted to this run associates Keenan Allen with Indianapolis at the cutoff, at any grade."
+      ],
+      "market_inefficiency_claim": null,
+      "market_snapshot_ref": null,
+      "missing_evidence_refs": [
+        "unres-governed-roster-verification"
+      ],
+      "proposed_disposition": null,
+      "question_ref": "q2-identity-and-current-association",
+      "scope": {
+        "context": "Indianapolis Colts, 2026 preseason, the 2026-08-17 Keenan Allen signing treated strictly as a roster-membership transaction representability test.",
+        "context_ref": "context-ind-2026-allen-signing",
+        "cutoff_at": "2026-08-18T21:27:16Z",
+        "population": "TIBER's recorded team association for Keenan Allen at the cutoff.",
+        "time_horizon": "The bounded 2026-08-17 to 2026-08-18 transaction-reporting window, observed in a single audit session; no 2026 regular-season observation exists inside the window."
+      },
+      "statement": "No promoted artifact admitted to this run establishes any current team association for Keenan Allen: the pinned promoted identity crosswalk v2 carries no Allen record. The only association available at any grade is candidate-grade and historical - Los Angeles Chargers, team_status source_backed_historical_team, source_season 2025 - so no admitted TIBER state establishes his 2026 team membership, Indianapolis included.",
+      "subject_ref": "keenan-allen"
+    },
+    {
+      "assessment": "partly_supported",
+      "baseline_position": null,
+      "baseline_ref": null,
+      "calculation_refs": [
+        "event-012-calc-candidate-event-row",
+        "event-013-calc-contract-conformance"
+      ],
+      "challenge_refs": [
+        "event-014-challenge-transaction-representation"
+      ],
+      "claim_id": "claim-candidate-representable",
+      "claim_type": "methodological",
+      "comparison_refs": [],
+      "confidence": {
+        "band": "moderate",
+        "rationale": "The record was constructed field by field against the published contract, every unsupported field was left null, and it validates against the pinned schema; confidence is held at moderate because the governed-verification half remains blocked and promotion review has not occurred."
+      },
+      "counterevidence_refs": [],
+      "epistemic_class": "calculated",
+      "evidence_refs": [
+        "event-004-obs-pfr-signing",
+        "event-005-obs-fox-signing",
+        "event-006-obs-larrybrown-signing",
+        "event-007-obs-census-allen-identity",
+        "event-009-obs-ownership-events-fixture-only",
+        "event-010-obs-no-governed-roster-source",
+        "event-011-obs-ownership-change-contract"
+      ],
+      "freshness": {
+        "as_of": "2026-08-18T21:27:16Z",
+        "state": "current"
+      },
+      "hypothesis_refs": [
+        "event-003-hyp-representability"
+      ],
+      "limitations": [
+        "The record is unpromoted research custody only; it is not a TIBER-Data artifact and carries no downstream authority.",
+        "Conformance was checked against the pinned contract with a JSON Schema 2020-12 validator and passed; that establishes legal shape and vocabulary only. It is not TIBER-Data's promotion review, and schema validity is not evidence that the transaction is governed-verified.",
+        "The assessment is partial because representation succeeded while verification against governed roster state remains impossible: TIBER-Data holds no governed current 2026 roster, ownership, or transaction source.",
+        "from_team fields are null by policy; the 2025 historical LAC association was deliberately not promoted into a from_team value, because no admitted evidence establishes Allen's roster membership immediately before the signing."
+      ],
+      "market_inefficiency_claim": null,
+      "market_snapshot_ref": null,
+      "missing_evidence_refs": [
+        "unres-governed-roster-verification"
+      ],
+      "proposed_disposition": null,
+      "question_ref": "q3-candidate-representability",
+      "scope": {
+        "context": "Indianapolis Colts, 2026 preseason, the 2026-08-17 Keenan Allen signing treated strictly as a roster-membership transaction representability test.",
+        "context_ref": "context-ind-2026-allen-signing",
+        "cutoff_at": "2026-08-18T21:27:16Z",
+        "population": "The single candidate player_ownership_change_event_v0 record proposed by this run.",
+        "time_horizon": "The bounded 2026-08-17 to 2026-08-18 transaction-reporting window, observed in a single audit session; no 2026 regular-season observation exists inside the window."
+      },
+      "statement": "The transaction is expressible as a candidate player_ownership_change_event_v0 record (event_type signing, to_team IND, player_id 00-0030279, from_team fields null, verification_status and confidence both provisional) that validates against the pinned contract and is held in research custody; representation succeeds, while verification against governed roster state remains blocked.",
+      "subject_ref": "keenan-allen"
+    }
+  ],
+  "completion": "answered",
+  "downstream_authority": "none",
+  "followups": [
+    {
+      "followup_id": "followup-promote-candidate-record",
+      "question": "Should the candidate player_ownership_change_event_v0 record for Keenan Allen be admitted into TIBER-Data's promoted 2026 ownership-event lane, replacing the fixture-only exemplar as the lane's first source-backed record?",
+      "rationale": "Promotion is a TIBER-Data governance decision outside this run's research_custody_only ceiling. The candidate record exists, is digest-bound, and is ready for that separate review.",
+      "requires_new_run": false,
+      "rfi": {
+        "owner_repository": "Prometheus-Frameworks/TIBER-Data",
+        "related_issue": "Prometheus-Frameworks/TIBER-Research#13",
+        "requested_evidence": "A TIBER-Data admission decision for the candidate record, plus the governed roster or ownership witness needed to move verification_status beyond provisional.",
+        "unresolved_refs": [
+          "unres-governed-roster-verification"
+        ]
+      }
+    },
+    {
+      "followup_id": "followup-transaction-wire",
+      "question": "What is the smallest governed transaction-detection path that would let TIBER observe a signing like this one without an operator-directed manual admission?",
+      "rationale": "This run detected nothing on its own; the transaction entered only because an operator directed the admission of specific public reports.",
+      "requires_new_run": false,
+      "rfi": {
+        "owner_repository": "Prometheus-Frameworks/TIBER-Data",
+        "related_issue": "Prometheus-Frameworks/TIBER-Research#13",
+        "requested_evidence": "A rights-cleared, clock-bearing transaction source qualified under the TIBER-Data source-admission process.",
+        "unresolved_refs": [
+          "unres-transaction-wire"
+        ]
+      }
+    },
+    {
+      "followup_id": "followup-crosswalk-coverage",
+      "question": "Should the promoted identity crosswalk be extended to carry Keenan Allen, so his canonical identity does not depend on a non-promoted candidate census?",
+      "rationale": "Every identity claim in this packet rests on a candidate artifact explicitly marked not promoted.",
+      "requires_new_run": false,
+      "rfi": {
+        "owner_repository": "Prometheus-Frameworks/TIBER-Data",
+        "related_issue": "Prometheus-Frameworks/TIBER-Research#13",
+        "requested_evidence": "A promoted crosswalk record binding Keenan Allen's canonical GSIS identifier to the provider identifiers TIBER consumes.",
+        "unresolved_refs": [
+          "unres-crosswalk-coverage"
+        ]
+      }
+    }
+  ],
+  "generated_at": "2026-08-18T23:42:00Z",
+  "job_id": "keenan-allen-ind-signing",
+  "job_version": "v1",
+  "limitations": [
+    "Grade discipline for q2: candidate evidence is reported at candidate grade and is never presented as TIBER's promoted or governed state. This is the bounded correction required by the attempt-001 independent review; no other finding, claim, or field changed between attempts.",
+    "This run establishes representability, not roster truth: nothing here asserts that Keenan Allen occupies an Indianapolis roster spot in any governed TIBER sense.",
+    "No downstream inference of any kind was performed. No role, alignment, snap share, target share, route participation, personnel usage, depth-chart position, or fantasy consequence is derived for Allen or for any other Indianapolis player.",
+    "No other Colts player is named, scored, adjusted, or implicated by this packet.",
+    "All admitted external evidence is derived summary text rather than verbatim source bytes, and all of it traces to a single originating insider report.",
+    "The candidate record is held in research custody and is not written into TIBER-Data; promotion remains a separate governance decision.",
+    "Retrieval was bounded to one audit session, so a later transaction, correction, or retraction inside the same window would not have been observed."
+  ],
+  "negative_findings": [],
+  "output_class": "structured_research_packet",
+  "process_terminal": "completed",
+  "questions": [
+    {
+      "assessment": "supported",
+      "blocker_reason": null,
+      "claim_refs": [
+        "claim-transaction-attested"
+      ],
+      "completion": "answered",
+      "limitations": [
+        "Attestation is not verification: no governed, first-party, or league witness was admitted."
+      ],
+      "prompt": "Is the Allen-to-Indianapolis transaction attested by admitted reporting inside the observation window, with agreement on player, direction, destination team, and date?",
+      "question_id": "q1-transaction-attestation"
+    },
+    {
+      "assessment": "partly_supported",
+      "blocker_reason": null,
+      "claim_refs": [
+        "claim-canonical-identity",
+        "claim-current-team-association"
+      ],
+      "completion": "answered",
+      "limitations": [
+        "The question asks what TIBER's governed state associates; the honest answer is that no promoted artifact admitted to this run establishes a current association, and the only association available is candidate-grade and historical.",
+        "The governed half is answered by bounded absence across admitted artifacts, not by a claim about every promoted TIBER surface."
+      ],
+      "prompt": "Does Keenan Allen resolve to a canonical TIBER identity, and which team does TIBER's own governed state currently associate him with?",
+      "question_id": "q2-identity-and-current-association"
+    },
+    {
+      "assessment": "partly_supported",
+      "blocker_reason": null,
+      "claim_refs": [
+        "claim-candidate-representable"
+      ],
+      "completion": "answered",
+      "limitations": [
+        "Representation succeeded; verification against governed roster state remains blocked upstream."
+      ],
+      "prompt": "Can the transaction be expressed as a contract-conformant candidate player_ownership_change_event_v0 record inside research custody, without asserting governed roster truth or exceeding research authority?",
+      "question_id": "q3-candidate-representability"
+    }
+  ],
+  "reportability": "internal",
+  "run_id": "keenan-allen-ind-signing-v0",
+  "schema_version": "research-packet/v0.1",
+  "synthetic_fixture": false,
+  "terminal_decision": "keenan_allen_ind_signing_v0_requires_data_followup",
+  "title": "Keenan Allen to Indianapolis: bounded transaction representability and candidate ownership-change record",
+  "unresolved": [
+    {
+      "blocked_input_refs": [
+        "governed-2026-roster-source"
+      ],
+      "kind": "blocked_input",
+      "related_claim_refs": [
+        "claim-transaction-attested",
+        "claim-current-team-association",
+        "claim-candidate-representable"
+      ],
+      "related_question_refs": [
+        "q1-transaction-attestation",
+        "q2-identity-and-current-association",
+        "q3-candidate-representability"
+      ],
+      "statement": "TIBER-Data holds no governed, full-universe, current 2026 roster, ownership, or transaction source, so the reported signing cannot be verified against governed roster state and the candidate record cannot move beyond provisional.",
+      "unresolved_id": "unres-governed-roster-verification"
+    },
+    {
+      "blocked_input_refs": [
+        "current-transaction-wire"
+      ],
+      "kind": "blocked_input",
+      "related_claim_refs": [
+        "claim-transaction-attested"
+      ],
+      "related_question_refs": [
+        "q1-transaction-attestation"
+      ],
+      "statement": "No current transaction wire exists, so TIBER cannot detect or independently corroborate a signing; this transaction entered custody only through operator-directed manual admission.",
+      "unresolved_id": "unres-transaction-wire"
+    },
+    {
+      "blocked_input_refs": [
+        "promoted-crosswalk-coverage-for-allen"
+      ],
+      "kind": "blocked_input",
+      "related_claim_refs": [
+        "claim-canonical-identity"
+      ],
+      "related_question_refs": [
+        "q2-identity-and-current-association"
+      ],
+      "statement": "The promoted identity crosswalk v2 carries no Keenan Allen record, so his canonical identity is available only from a candidate census that is explicitly not promoted.",
+      "unresolved_id": "unres-crosswalk-coverage"
+    }
+  ]
+}
