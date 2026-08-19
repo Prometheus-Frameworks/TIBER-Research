@@ -1,0 +1,46 @@
+{
+  "attempt_id": "attempt-002",
+  "candidate_modifications_made": false,
+  "canonicalization_version": "tiber-canonical-json-v1",
+  "job_id": "keenan-allen-ind-signing",
+  "job_version": "v1",
+  "json_file_version": "tiber-json-file-v1",
+  "limitations": [
+    "This review does not authorize promotion of the candidate ownership-change record into TIBER-Data or Shared Reality.",
+    "The Research-to-Ledger semantic hardening follow-up remains separate and non-blocking; this pass is limited to the bounded Allen run and does not establish a general admission rule for arbitrary contract-shaped calculation outputs."
+  ],
+  "overall_verdict": "pass",
+  "protocol": {
+    "findings": [],
+    "rationale": "Attempt-002 follows the sealed predecessor and operator-authorized successor path, reuses the frozen inputs and existing activation, preserves the research_custody_only authority ceiling, introduces no new evidence or downstream inference, and stops again at the independent-review boundary.",
+    "verdict": "pass"
+  },
+  "review_id": "review-attempt-002-codex-2026-08-19",
+  "reviewed_at": "2026-08-19T00:03:03Z",
+  "reviewer": {
+    "actor_session_ref": "openai-codex-independent-review-2026-08-19",
+    "fresh_context": true,
+    "independence_basis": "Fresh independent review of exact executor head 5532186. Reviewer inspected the attempt-002 packet, ledger, submission, run lifecycle, the prior attempt-001 candidate calculation, and the bounded q2 correction without authoring the executor attempt.",
+    "independence_limits": [
+      "Review is bounded to repository evidence and frozen inputs carried by the run; no new external transaction evidence was admitted.",
+      "The candidate row's TIBER-Data schema conformance is accepted as a reproducible calculation recorded in the attempt; this review does not itself perform TIBER-Data promotion review."
+    ],
+    "model_declared": "GPT-5.6 Sol",
+    "provider_declared": "OpenAI",
+    "role": "reviewer"
+  },
+  "run_id": "keenan-allen-ind-signing-v0",
+  "schema_version": "research-review/v0",
+  "submission_ref": {
+    "digest": "sha256:3c3ec8c836bb00b08dd693a07dd747a98cf503adcdf9d531681026d50ac84417",
+    "digest_mode": "tiber-canonical-json-v1",
+    "path": "runs/keenan-allen-ind-signing-v0/attempts/attempt-002/submission.json"
+  },
+  "substantive": {
+    "findings": [],
+    "rationale": "The attempt-001 q2 grading defect is corrected. Candidate evidence is explicitly reported at candidate grade; the historical 2025 LAC association is not presented as current 2026 roster state; absence from the pinned promoted crosswalk is bounded to artifacts admitted to this run; no admitted promoted/current-roster witness is claimed to establish Indianapolis membership. The transaction candidate itself is unchanged at output digest sha256:4fb267fdd608654630de76989fc4164f62024df67e7c297e50ddf22df263fd49, retains from_team fields null, and remains provisional. q1 and q3 remain unchanged in substance, terminal disposition remains requires_data_followup, and downstream authority remains none.",
+    "verdict": "pass"
+  },
+  "synthetic_fixture": false,
+  "validator_version": "tiber-research-validator-v0"
+}
