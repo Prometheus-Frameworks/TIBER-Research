@@ -41,6 +41,13 @@ availability_record_v0:
   # ---- identity ----
   record_id:                 # stable id of this observation record
   season:                    # int
+  season_phase:              # pre | reg | post | unknown  (source-neutral;
+                             # never inferred from the week number)
+  season_phase_detail:       # exact source-native value, verbatim | null
+                             # (2025-era nflverse season_type "REG"/"POST";
+                             #  historical game_type "REG"/"WC"/"DIV"/"CON"/"SB")
+  season_phase_round:        # wc | div | con | sb | null — populated only when
+                             # the source itself distinguishes postseason rounds
   week:                      # int | null  (null for undated/current-state sources)
   report_date:               # date | null (the report's own date, when the source carries one)
   report_scope:
@@ -212,6 +219,18 @@ designation publication is itself observed and explicitly establishes that
 the player carried no designation. Dirty values such as `Note` remain
 unmapped and survive only in `game_designation_detail`.
 
+Season phase carries the same discipline, and the observed sources do not
+agree on either the field name or its granularity (W1): the historical
+nflverse files carry **`game_type`** with per-round values
+`REG | WC | DIV | CON | SB`, while the 2025-era schema carries
+**`season_type`** with the binary `REG | POST`. Normalizing both to a single
+binary phase would silently destroy the round granularity the historical
+files actually publish, so the contract keeps three separate fields:
+`season_phase` (source-neutral), `season_phase_detail` (the source's exact
+value, verbatim), and `season_phase_round` (populated only where the source
+itself distinguishes rounds — never reconstructed from a week number for a
+source that publishes only `REG`/`POST`).
+
 ## Fail-closed rules
 
 1. `null` never means healthy, active, zero, or unchanged.
@@ -224,10 +243,17 @@ unmapped and survive only in `game_designation_detail`.
 4. Practice status, game designation, gameday inactive, and reserve state
    never populate one another (e.g. `reserve_state: ir` does not imply
    `gameday_inactive: true`).
-5. `identity_status: resolved` requires both a canonical id and a
+5. `season_phase` is never inferred from the week number, and a `week` alone
+   never establishes scope: sources that number postseason weeks independently
+   publish both a regular-season and a postseason week 1. Records whose
+   `season_phase` differs, or whose phase is `unknown` on either side, are
+   **not** the same scope — they cannot be joined, deduplicated, or
+   superseded against one another, and a supersession link across differing
+   or unknown phases is a contract violation rather than a merge.
+6. `identity_status: resolved` requires both a canonical id and a
    `resolution_method`; ambiguous/unresolved require `canonical_player_id:
    null`.
-6. `observed_record_count` is a ledger count, never the declared universe or a
+7. `observed_record_count` is a ledger count, never the declared universe or a
    completeness denominator. `completeness_state: complete` requires non-null
    digest-bound edition and universe refs/digests/digest modes plus a
    `completeness_evidence_ref` that binds `source.observed_object_digest`, the
@@ -235,7 +261,7 @@ unmapped and survive only in `game_designation_detail`.
    edition to that universe. Otherwise completeness is `partial` or `unknown`.
    `none_listed` additionally requires that exact complete-edition evidence for
    the relevant player.
-7. Cutoff eligibility requires a digest-bound observation receipt and truthful
+8. Cutoff eligibility requires a digest-bound observation receipt and truthful
    separation of evidence, admission, and custody clocks. Source evidence and
    admission must be at or before `cutoff_at`; custody may occur later.
    For every non-null clock, both canonical chains are required:
@@ -250,23 +276,23 @@ unmapped and survive only in `game_designation_detail`.
    Every eligible record also requires a non-null `observed_object_digest` with
    `observed_digest_mode: tiber-raw-sha256-v1`, and the receipt must bind that
    exact source-byte digest. This does not imply retained source content.
-8. Records from `retrospective_backfill` or
+9. Records from `retrospective_backfill` or
    `unknown_pending_observation` classes cannot satisfy a claim requiring
    contemporaneous in-window observation. Timestamps alone never upgrade the
    observation mode.
-9. Rights observations and admission are separate. Facial or unknown terms
+10. Rights observations and admission are separate. Facial or unknown terms
    leave `admitted: false` and `admissibility.state: unresolved` unless an exact
    authority records another disposition; they do not produce a legal
    conclusion. A non-empty `rights_disposition_ref` whose governed scope fits
    the intended use, retention, and reportability is required before admission
    or cutoff eligibility.
-10. Observed identity and retained content are separate. A `reference_only`
+11. Observed identity and retained content are separate. A `reference_only`
    source may carry `observed_object_digest` while every retained-artifact
    field is null. `full`, `excerpt`, and `derived_only` require an exact
    retained reference and a digest over that retained artifact; an excerpt
    digest is never described as the whole-page digest. Neither digest implies
    permission, truth, admission, or replayability.
-11. `probable` remains representable for historical records. A source-native
+12. `probable` remains representable for historical records. A source-native
     blank is `blank_unresolved` unless exact report-edition evidence supports
     `none_listed`; neither value implies healthy or active.
 
