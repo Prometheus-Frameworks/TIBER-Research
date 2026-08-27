@@ -1,0 +1,16 @@
+# Keep developer-facing text portable while preserving retained/governed
+# artifacts byte-for-byte. Later rules override the extension defaults.
+*.json text eol=lf
+*.jsonl text eol=lf
+*.md text eol=lf
+*.ts text eol=lf
+*.txt text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+
+# These trees contain digest-bound or retained bytes. Git must never apply
+# checkout or check-in newline conversion to them.
+/authority/** -text !eol
+/fixtures/synthetic-complete/** -text !eol
+/preflight/** -text !eol
+/runs/** -text !eol

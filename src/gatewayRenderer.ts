@@ -80,11 +80,11 @@ export function renderGatewayIntakeMarkdown(
     for (const subject of report.study_sheet.subjects) {
       if (subject.resolution === null) {
         lines.push(
-          `- ${escapeText(subject.label_in_take)} — unresolved \(${inlineCode(subject.kind)}\)`,
+          `- ${escapeText(subject.label_in_take)} — unresolved (${inlineCode(subject.kind)})`,
         );
       } else {
         lines.push(
-          `- ${escapeText(subject.label_in_take)} → ${escapeText(subject.resolution.resolved_label)} \(${inlineCode(subject.resolution.resolution_basis)}\)`,
+          `- ${escapeText(subject.label_in_take)} → ${escapeText(subject.resolution.resolved_label)} (${inlineCode(subject.resolution.resolution_basis)})`,
         );
       }
     }
@@ -98,7 +98,7 @@ export function renderGatewayIntakeMarkdown(
       field(
         lines,
         "Epistemic qualifiers",
-        `${element.origin}; ${element.basis}; ${element.epistemic_class}; ${element.assessment}`,
+        `${humanize(element.origin)}; ${humanize(element.basis)}; ${humanize(element.epistemic_class)}; ${humanize(element.assessment)}`,
       );
       referenceList(lines, "Evidence references", element.evidence_refs);
       referenceList(lines, "Subject references", element.subject_refs);
@@ -119,7 +119,7 @@ export function renderGatewayIntakeMarkdown(
       field(
         lines,
         "Epistemic qualifiers",
-        `${link.origin}; ${link.basis}; ${link.epistemic_class}; ${link.assessment}; necessity ${link.necessity}`,
+        `${humanize(link.origin)}; ${humanize(link.basis)}; ${humanize(link.epistemic_class)}; ${humanize(link.assessment)}; necessity ${humanize(link.necessity)}`,
       );
       referenceList(lines, "Evidence references", link.evidence_refs);
       referenceList(
@@ -141,7 +141,7 @@ export function renderGatewayIntakeMarkdown(
       field(
         lines,
         "  Qualifiers",
-        `${evidence.basis}; retrieval ${evidence.verified ? "verified" : "unverified"}; non-promotable`,
+        `${humanize(evidence.basis)}; retrieval ${evidence.verified ? "verified" : "unverified"}; non-promotable`,
       );
     }
   }
@@ -150,7 +150,11 @@ export function renderGatewayIntakeMarkdown(
     lines.push("", "## Alternative paths", "");
     for (const path of report.study_sheet.alternative_paths) {
       lines.push(`- ${escapeText(path.description)}`);
-      field(lines, "  Qualifiers", `${path.raised_by}; ${path.relation}`);
+      field(
+        lines,
+        "  Qualifiers",
+        `${humanize(path.raised_by)}; ${humanize(path.relation)}`,
+      );
     }
   }
 
@@ -158,7 +162,7 @@ export function renderGatewayIntakeMarkdown(
     lines.push("", "## Unsupported assumptions", "");
     for (const assumption of report.study_sheet.unsupported_assumptions) {
       lines.push(`- ${escapeText(assumption.statement)}`);
-      field(lines, "  Surfaced by", assumption.surfaced_by);
+      field(lines, "  Surfaced by", humanize(assumption.surfaced_by));
       referenceList(lines, "  Attached to", assumption.attached_to);
     }
   }
@@ -166,7 +170,7 @@ export function renderGatewayIntakeMarkdown(
   if (report.study_sheet.missing_witnesses.length > 0) {
     lines.push("", "## Missing witnesses", "");
     for (const witness of report.study_sheet.missing_witnesses) {
-      lines.push(`- ${escapeText(witness.statement)} \(${inlineCode(witness.status)}\)`);
+      lines.push(`- ${escapeText(witness.statement)} (${inlineCode(witness.status)})`);
       referenceList(lines, "  Would resolve", witness.would_resolve);
     }
   }
@@ -390,7 +394,12 @@ function escapeText(value: string): string {
     .replaceAll("\r\n", "\n")
     .replaceAll("\r", "\n")
     .replaceAll("\\", "\\\\")
-    .replace(/([`*_[\]{}<>#+.!|()-])/gu, "\\$1")
+    .replace(/([`*_[\]{}<>|])/gu, "\\$1")
+    .replace(/(^|\n)([ \t]{0,3})([#>+-])(?=\s)/gu, "$1$2\\$3")
+    .replace(
+      /(^|\n)([ \t]{0,3})(\d+)([.)])(?=\s)/gu,
+      "$1$2$3\\$4",
+    )
     .replaceAll("\n", "<br>\n");
 }
 

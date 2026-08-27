@@ -152,6 +152,8 @@ test("gateway CLI defaults to a concise operator view", async (t) => {
     assert.match(result.stdout, /Unpromoted; no downstream authority/u);
     assert.match(result.stdout, /Gateway operation:/u);
     assert.match(result.stdout, /Empirical truth: Not established/iu);
+    assert.match(result.stdout, /with no stated cause\./u);
+    assert.doesNotMatch(result.stdout, /cause\\\./u);
     assert.doesNotMatch(result.stdout, /^\{/u);
   });
 
@@ -169,7 +171,7 @@ test("gateway CLI defaults to a concise operator view", async (t) => {
     assert.match(result.stdout, /Review: Not reached/iu);
     assert.match(result.stdout, /Seal: Unsealed/iu);
     assert.match(result.stdout, /End-to-end ready: No/iu);
-    assert.match(result.stdout, /chip\/double\\-team/iu);
+    assert.match(result.stdout, /chip\/double-team/iu);
     assert.match(result.stdout, /pressure\/sack/iu);
   });
 

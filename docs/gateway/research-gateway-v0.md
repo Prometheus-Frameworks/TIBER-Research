@@ -142,6 +142,14 @@ npm run cli -- gateway:packet . <run-id> <attempt-id>
 npm run cli -- gateway:status . <run-id> <attempt-id> --format=json
 ```
 
+For a football-first checked-in intake example, use
+`fixtures/agent-entry/example-football-minimal.json`. Repository attributes pin
+ordinary source text to LF and preserve retained/governed artifact trees as
+exact committed bytes, including on Windows with `core.autocrlf=true`. If an
+older checkout rewrote those bytes, the gateway fails closed with
+`gateway.snapshot_noncanonical`; obtain a fresh checkout rather than normalizing
+retained artifacts in place.
+
 These commands are local inspection tools. Their workspace/path arguments are
 not a proposed network API. A future remote or agent-callable adapter must not
 expose arbitrary workspaces or repository paths.

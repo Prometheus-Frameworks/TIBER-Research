@@ -15,6 +15,16 @@ import {
   type JsonValue,
 } from "./canonical.js";
 
+export class NonCanonicalJsonFileError extends Error {
+  readonly relativePath: string;
+
+  constructor(relativePath: string) {
+    super(`${relativePath}: JSON bytes do not conform to tiber-json-file-v1`);
+    this.name = "NonCanonicalJsonFileError";
+    this.relativePath = relativePath;
+  }
+}
+
 export function resolveContained(workspaceDir: string, relativePath: string): string {
   const pathSegments = relativePath.split("/");
   if (
@@ -102,9 +112,7 @@ export function readNormalizedJson<T = unknown>(
   const value = readJson<T>(workspaceDir, relativePath);
   const expected = normalizedJsonText(value);
   if (text !== expected) {
-    throw new Error(
-      `${relativePath}: JSON bytes do not conform to tiber-json-file-v1`,
-    );
+    throw new NonCanonicalJsonFileError(relativePath);
   }
   return value;
 }

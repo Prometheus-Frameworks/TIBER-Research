@@ -5,6 +5,7 @@ import {
   chmodSync,
   cpSync,
   lstatSync,
+  mkdirSync,
   mkdtempSync,
   readFileSync,
   readdirSync,
@@ -142,6 +143,90 @@ test("current Tunsil custody is submitted, unreviewed, and unsealed", () => {
   );
   assert.doesNotMatch(renderGatewayStatusMarkdown(status), /Frontier question:/u);
   assert.doesNotMatch(renderGatewayStatusMarkdown(status), /Budgets remaining:/u);
+});
+
+test("a core.autocrlf checkout preserves governed bytes", (t) => {
+  const gitAvailable = spawnSync("git", ["--version"], { encoding: "utf8" });
+  if (gitAvailable.error !== undefined) {
+    t.skip("git is unavailable");
+    return;
+  }
+
+  const parent = mkdtempSync(join(tmpdir(), "tiber-gateway-autocrlf-"));
+  const source = join(parent, "source");
+  const checkout = join(parent, "checkout");
+  mkdirSync(join(source, "fixtures"), { recursive: true });
+  cpSync(resolve(".gitattributes"), join(source, ".gitattributes"));
+  cpSync(SYNTHETIC, join(source, "fixtures", "synthetic-complete"), {
+    recursive: true,
+  });
+
+  function git(cwd: string, ...args: string[]): void {
+    const result = spawnSync(
+      "git",
+      ["-c", "user.name=TIBER Test", "-c", "user.email=test@invalid", ...args],
+      { cwd, encoding: "utf8" },
+    );
+    assert.equal(result.status, 0, result.stderr);
+  }
+
+  try {
+    git(source, "init", "--quiet");
+    git(source, "add", "--", ".gitattributes", "fixtures/synthetic-complete");
+    git(source, "commit", "--quiet", "-m", "fixture");
+    git(
+      parent,
+      "-c",
+      "core.autocrlf=true",
+      "clone",
+      "--quiet",
+      "--no-hardlinks",
+      source,
+      checkout,
+    );
+
+    const fixture = join(checkout, "fixtures", "synthetic-complete");
+    const activation = readFileSync(
+      join(fixture, "runs", SYNTHETIC_RUN, "activation.json"),
+    );
+    assert.equal(activation.includes(Buffer.from("\r\n")), false);
+
+    const status = getGatewayStatus(fixture, SYNTHETIC_RUN, ATTEMPT);
+    assert.equal(status.protocol_valid, true, JSON.stringify(status.reason_codes));
+    assert.equal(status.phase, "sealed");
+  } finally {
+    rmSync(parent, { force: true, recursive: true });
+  }
+});
+
+test("noncanonical governed JSON is diagnosed without inferred state", () => {
+  withSynthetic((workspace) => {
+    const activationPath = join(
+      workspace,
+      "runs",
+      SYNTHETIC_RUN,
+      "activation.json",
+    );
+    const activation = readFileSync(activationPath, "utf8");
+    writeFileSync(
+      activationPath,
+      activation.replaceAll("\n", "\r\n"),
+      "utf8",
+    );
+
+    const status = getGatewayStatus(workspace, SYNTHETIC_RUN, ATTEMPT);
+    assert.equal(status.protocol_valid, false);
+    assert.equal(status.phase, null);
+    assert.equal(status.review_verdict, null);
+    assert.deepEqual(status.next_permitted_actions, []);
+    assert.deepEqual(status.reason_codes, [
+      "PROTOCOL_INCONSISTENT",
+      "gateway.snapshot_noncanonical",
+    ]);
+
+    const packet = getGatewayPacket(workspace, SYNTHETIC_RUN, ATTEMPT);
+    assert.equal(packet.body, null);
+  });
 });
 
 test("sealed synthetic custody reports the validated terminal boundary", () => {
@@ -798,7 +883,6 @@ test("display redaction preserves football ratios, slash terms, and URLs", () =>
   const report = inspectGatewayIntake(proposal);
   assert.equal(report.valid, true);
   const view = renderGatewayIntakeMarkdown(report);
-  const readableView = view.replaceAll("\\", "");
   for (const fragment of [
     "20/20",
     "QB/RB",
@@ -807,11 +891,26 @@ test("display redaction preserves football ratios, slash terms, and URLs", () =>
     "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/17",
   ]) {
     assert.ok(
-      readableView.includes(fragment),
+      view.includes(fragment),
       `expected default view to preserve ${JSON.stringify(fragment)}`,
     );
   }
   assert.doesNotMatch(view, /absolute path redacted/iu);
+});
+
+test("default views escape Markdown structure without noisy punctuation escapes", () => {
+  const proposal = readJson(
+    "fixtures/agent-entry/example-football-minimal.json",
+  ) as Record<string, any>;
+  proposal.interpretation.summary =
+    "Role changed. Why? chip/double-team.\n# Forged authority";
+
+  const report = inspectGatewayIntake(proposal);
+  assert.equal(report.valid, true, JSON.stringify(report.validation_errors));
+  const view = renderGatewayIntakeMarkdown(report);
+  assert.match(view, /Role changed\. Why\? chip\/double-team\./u);
+  assert.match(view, /\\# Forged authority/u);
+  assert.doesNotMatch(view, /changed\\\.|Why\\\?|double\\-team/u);
 });
 
 test("display redaction covers Windows, UNC, hosted file URI, and quoted actor paths", () => {

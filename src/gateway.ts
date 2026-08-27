@@ -12,7 +12,11 @@ import { tmpdir } from "node:os";
 import { dirname, join, relative, resolve, sep } from "node:path";
 import { checkAgentThesisProposal } from "./agentEntry.js";
 import { sha256CanonicalJson } from "./digest.js";
-import { readNormalizedJson, resolveContained } from "./io.js";
+import {
+  NonCanonicalJsonFileError,
+  readNormalizedJson,
+  resolveContained,
+} from "./io.js";
 import {
   renderPacketMarkdown,
   type ResearchPacket,
@@ -728,11 +732,13 @@ function inspectRun(
 
   try {
     return withRunSnapshot(workspaceDir, runId, attemptId);
-  } catch {
+  } catch (error) {
     return {
       packet: null,
       status: inconsistentStatus(runId, attemptId, [
-        "gateway.snapshot_unavailable",
+        error instanceof NonCanonicalJsonFileError
+          ? "gateway.snapshot_noncanonical"
+          : "gateway.snapshot_unavailable",
       ]),
     };
   }

@@ -1,0 +1,68 @@
+{
+  "agent_declaration": {
+    "agent_self_description": null,
+    "evidence_access": "no_evidence_access",
+    "evidence_access_note": "No TIBER tool or resource was reachable in this session and the operator supplied no external material. Nothing was retrieved.",
+    "role": "research_scaffold",
+    "self_reported_concerns": []
+  },
+  "alternative_paths": [],
+  "authority_state": "unpromoted",
+  "clarifications": [],
+  "downstream_authority": "none",
+  "edges": [],
+  "evidence": [],
+  "freeze_state": "not_frozen",
+  "generated_at": "2026-08-27T00:00:00Z",
+  "interpretation": {
+    "agent_additions": "None. The take states one possible role mechanism and no evidence, so the proposal records one unassessed node and nothing else.",
+    "not_understood": [],
+    "summary": "The operator proposed that a running back's pass-protection value may preserve routes and playing time even if another back is the stronger runner."
+  },
+  "missing_witnesses": [],
+  "nodes": [
+    {
+      "assessment": "unassessed",
+      "basis": "operator_supposition",
+      "epistemic_class": "hypothesis",
+      "evidence_refs": [],
+      "label": "Pass protection may preserve opportunity",
+      "node_id": "n-role-hypothesis",
+      "origin": "verbatim_in_take",
+      "statement": "Rachaad White's pass protection may help him stay on the field for routes even if another back is the better runner.",
+      "subject_refs": [],
+      "uncertainty": "No pass-protection, route-participation, personnel, or playing-time evidence was available to the agent."
+    }
+  ],
+  "open_notes": [
+    "This football-first fixture demonstrates intake shape only. It is not evidence about Rachaad White and does not establish the proposed mechanism.",
+    "The operator's stance is unspecified because supplying a take does not establish belief."
+  ],
+  "operator_confirmation": null,
+  "original_take": {
+    "byte_identity": "not_established",
+    "list_label": null,
+    "operator_stance": "unspecified",
+    "operator_supplied_at": null,
+    "provenance_note": "Pasted by the operator directly into the chat and copied without alteration. The chat transport is not observable from inside this session, so byte identity with the operator's original is not established.",
+    "quote_digest": null,
+    "quote_digest_mode": null,
+    "received_text": "Rachaad White's pass protection may help him stay on the field for routes even if another back is the better runner.",
+    "received_text_preserved": true,
+    "stance_basis": "agent_default_unspecified",
+    "transport_notes": []
+  },
+  "proposal_id": "agent-entry-example-football-minimal",
+  "proposal_state": "awaiting_operator_confirmation",
+  "protocol_ref": {
+    "protocol_id": "tiber-agent-entry/v0",
+    "protocol_version": "v0",
+    "retrieval_state": "fetched_from_url",
+    "retrieved_from": "https://raw.githubusercontent.com/Prometheus-Frameworks/TIBER-Research/main/docs/agent-entry/tiber-agent-entry-v0.md"
+  },
+  "relates_to_prior": null,
+  "schema_version": "agent-thesis-proposal/v0",
+  "subjects": [],
+  "thesis_falsifiers": [],
+  "unsupported_assumptions": []
+}

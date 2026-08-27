@@ -56,7 +56,7 @@ take at all, or was merely exploring it.
 docs/agent-entry/                    the public entry protocol and pilot procedure
 docs/contracts/agent-thesis-proposal-v0.md   contract decisions and contamination register
 schemas/v0/agent-thesis-proposal.schema.json the proposal contract
-fixtures/agent-entry/                two validating non-football examples
+fixtures/agent-entry/                validating contract and football-first examples
 ```
 
 An agent proposal is pre-freeze and authority-inert: `freeze_state` is always
@@ -99,10 +99,17 @@ the capability boundary and documented Tunsil/Allen lifecycle cases.
 The checked-in examples can be inspected directly:
 
 ```bash
-npm run cli -- gateway:intake . fixtures/agent-entry/example-minimal.json
+npm run cli -- gateway:intake . fixtures/agent-entry/example-football-minimal.json
 npm run cli -- gateway:status . tunsil-absence-shock-v0 attempt-001
 npm run cli -- gateway:packet . tunsil-absence-shock-v0 attempt-001
 ```
+
+The repository pins ordinary source text to LF and marks retained/governed
+artifact trees as non-text so Git preserves their committed bytes exactly. This
+makes the same status and packet reads work when a Windows user has
+`core.autocrlf=true`. A clone made before those attributes existed can fail
+closed with `gateway.snapshot_noncanonical`; re-clone after updating rather than
+normalizing retained artifacts in place.
 
 ## Identity model
 
