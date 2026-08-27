@@ -67,6 +67,43 @@ which does not exist yet. Validate a returned proposal with
 `npm run cli -- agent-entry . <path>`. The surface is a draft: not adopted, not
 activated, and it runs no pilot.
 
+## Research Gateway v0 (intake/read scaffold)
+
+The bounded Research Gateway v0 gives an operator three local, provider-neutral
+entry points over the existing contracts:
+
+```bash
+npm run cli -- gateway:intake . <proposal-relative-path>
+npm run cli -- gateway:status . <run-id> <attempt-id>
+npm run cli -- gateway:packet . <run-id> <attempt-id>
+```
+
+The default output is concise Markdown intended for an operator or a connected
+agent. Add `--format=json` after the positional arguments for the full
+structured gateway report. Intake validates and renders one external agent's
+`agent-thesis-proposal/v0`; it neither confirms the interpretation nor creates a
+full preregistration. Status and packet access are deterministic reads of one
+exact repository run and attempt. Invalid custody fails closed: the gateway
+withholds the packet, suppresses inferred actions, and does not repeat positive
+review or lifecycle labels from inconsistent bytes.
+
+This is an access scaffold, not an autonomous researcher. It performs no model
+call, browsing, source acquisition, durable or canonical persistence,
+activation, execution, review, seal, promotion, publication, or downstream
+write. A conversational agent can prepare the intake object and explain the
+returned view; the existing Research validator remains the source of truth for
+custody state. See
+[`docs/gateway/research-gateway-v0.md`](docs/gateway/research-gateway-v0.md) for
+the capability boundary and documented Tunsil/Allen lifecycle cases.
+
+The checked-in examples can be inspected directly:
+
+```bash
+npm run cli -- gateway:intake . fixtures/agent-entry/example-minimal.json
+npm run cli -- gateway:status . tunsil-absence-shock-v0 attempt-001
+npm run cli -- gateway:packet . tunsil-absence-shock-v0 attempt-001
+```
+
 ## Identity model
 
 | Identity | Meaning | Change rule |
@@ -130,6 +167,9 @@ npm run cli -- seal <workspace> <run-id> <attempt-id> <metadata-relative-path>
 npm run cli -- validate <workspace> <run-id> <attempt-id> --phase=sealed --require-end-to-end
 npm run cli -- resume <workspace> <run-id> <attempt-id>
 npm run cli -- agent-entry <workspace> <proposal-relative-path>
+npm run cli -- gateway:intake <workspace> <proposal-relative-path> [--format=markdown|json]
+npm run cli -- gateway:status <workspace> <run-id> <attempt-id> [--format=markdown|json]
+npm run cli -- gateway:packet <workspace> <run-id> <attempt-id> [--format=markdown|json]
 ```
 
 `agent-entry` validates an `agent-thesis-proposal/v0` object returned by an
