@@ -111,6 +111,21 @@ makes the same status and packet reads work when a Windows user has
 closed with `gateway.snapshot_noncanonical`; re-clone after updating rather than
 normalizing retained artifacts in place.
 
+When Windows PowerShell pipes a native program's UTF-8 JSON into
+`ConvertFrom-Json`, its console output encoding must also be UTF-8. Set that
+display boundary before extracting the explicit packet audit body:
+
+```powershell
+npm run build --silent
+[Console]::OutputEncoding = [Text.UTF8Encoding]::new($false)
+node dist/src/cli.js gateway:packet . <run-id> <attempt-id> --format=json |
+  ConvertFrom-Json |
+  ForEach-Object { $_.body.markdown }
+```
+
+This setting affects terminal decoding only. It does not rewrite retained
+artifacts or change Gateway validation, custody, or authority.
+
 ## Identity model
 
 | Identity | Meaning | Change rule |

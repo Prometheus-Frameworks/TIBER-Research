@@ -150,6 +150,27 @@ older checkout rewrote those bytes, the gateway fails closed with
 `gateway.snapshot_noncanonical`; obtain a fresh checkout rather than normalizing
 retained artifacts in place.
 
+### Windows PowerShell audit-body display
+
+The CLI writes UTF-8. Windows PowerShell decodes a native program's piped output
+according to `[Console]::OutputEncoding`; when that value is an OEM code page,
+non-ASCII packet prose can display as mojibake after `ConvertFrom-Json`. Align
+that console boundary to UTF-8 before extracting the explicit Markdown audit
+body:
+
+```powershell
+npm run build --silent
+[Console]::OutputEncoding = [Text.UTF8Encoding]::new($false)
+node dist/src/cli.js gateway:packet . <run-id> <attempt-id> --format=json |
+  ConvertFrom-Json |
+  ForEach-Object { $_.body.markdown }
+```
+
+This is a display-only shell setting. It does not normalize or modify repository
+files, affect the packet digest, or grant any Gateway authority. `$OutputEncoding`
+controls text sent *to* native programs and is not the boundary involved in this
+read pipeline.
+
 These commands are local inspection tools. Their workspace/path arguments are
 not a proposed network API. A future remote or agent-callable adapter must not
 expose arbitrary workspaces or repository paths.
