@@ -8,7 +8,9 @@ import { normalizedJsonText } from "../src/io.js";
 type JsonObject = Record<string, any>;
 
 const MINIMAL = "fixtures/agent-entry/example-minimal.json";
+const FOOTBALL = "fixtures/agent-entry/example-football-minimal.json";
 const RAGGED = "fixtures/agent-entry/example-ragged.json";
+const PUBLISHED = [MINIMAL, FOOTBALL, RAGGED];
 
 function readFixtureText(relativePath: string): string {
   return readFileSync(resolve(relativePath), "utf8");
@@ -36,14 +38,14 @@ function assertRejected(value: unknown, fragment: string): void {
   );
 }
 
-test("both published examples validate", () => {
-  for (const path of [MINIMAL, RAGGED]) {
+test("published examples validate", () => {
+  for (const path of PUBLISHED) {
     assert.deepEqual(checkAgentThesisProposal(fixture(path)), [], path);
   }
 });
 
 test("published examples are stored in the normalized JSON file form", () => {
-  for (const path of [MINIMAL, RAGGED]) {
+  for (const path of PUBLISHED) {
     assert.equal(readFixtureText(path), normalizedJsonText(fixture(path)), path);
   }
 });
@@ -89,14 +91,14 @@ test("the examples demonstrate both stance postures", () => {
   assert.equal(ragged.original_take.stance_basis, "operator_stated");
 
   // Neither example claims byte identity it cannot establish.
-  for (const value of [minimal, ragged]) {
+  for (const value of [minimal, fixture(FOOTBALL), ragged]) {
     assert.equal(value.original_take.byte_identity, "not_established");
     assert.equal(value.original_take.quote_digest, null);
   }
 });
 
 test("examples carry no promotable evidence and no downstream authority", () => {
-  for (const path of [MINIMAL, RAGGED]) {
+  for (const path of PUBLISHED) {
     const value = fixture(path);
     assert.equal(value.authority_state, "unpromoted", path);
     assert.equal(value.downstream_authority, "none", path);

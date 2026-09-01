@@ -4,6 +4,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import test from "node:test";
 import {
+  NonCanonicalJsonFileError,
   readJson,
   readNormalizedJson,
   readUtf8,
@@ -44,6 +45,10 @@ test("readNormalizedJson rejects semantically equal byte rewrites", () => {
   assert.throws(
     () => readNormalizedJson(root, "reordered.json"),
     /tiber-json-file-v1/u,
+  );
+  assert.throws(
+    () => readNormalizedJson(root, "compact.json"),
+    NonCanonicalJsonFileError,
   );
   assert.equal(
     JSON.stringify(readNormalizedJson(root, "normalized.json")),

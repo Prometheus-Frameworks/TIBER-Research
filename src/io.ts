@@ -1,10 +1,18 @@
 import {
-  lstatSync,
   appendFileSync,
+  closeSync,
+  constants,
+  fstatSync,
+  lstatSync,
   mkdirSync,
+  openSync,
   readFileSync,
+  readSync,
   realpathSync,
+  statSync,
   writeFileSync,
+  type BigIntStats,
+  type Stats,
 } from "node:fs";
 import { dirname, isAbsolute, relative, resolve, sep } from "node:path";
 import { parseDocument } from "yaml";
@@ -14,6 +22,16 @@ import {
   parseJsonStrict,
   type JsonValue,
 } from "./canonical.js";
+
+export class NonCanonicalJsonFileError extends Error {
+  readonly relativePath: string;
+
+  constructor(relativePath: string) {
+    super(`${relativePath}: JSON bytes do not conform to tiber-json-file-v1`);
+    this.name = "NonCanonicalJsonFileError";
+    this.relativePath = relativePath;
+  }
+}
 
 export function resolveContained(workspaceDir: string, relativePath: string): string {
   const pathSegments = relativePath.split("/");
@@ -88,6 +106,246 @@ export function readJson<T = unknown>(
 }
 
 /**
+ * Read ungoverned JSON from an ordinary file while bounding memory before any
+ * bytes are buffered, decoded, or parsed. The open descriptor is checked again
+ * after the path check, and reads are capped in case the file grows concurrently.
+ */
+export function readJsonRegularFileLimited<T = unknown>(
+  workspaceDir: string,
+  relativePath: string,
+  maxBytes: number,
+): T {
+  if (!Number.isSafeInteger(maxBytes) || maxBytes < 1) {
+    throw new Error("JSON byte limit must be a positive safe integer");
+  }
+
+  const workspace = realpathSync(workspaceDir);
+  const target = resolveContained(workspace, relativePath);
+  const pathStats = lstatSync(target);
+  assertRegularFileWithinLimit(relativePath, pathStats, maxBytes);
+  const initialIdentity = lstatSync(target, { bigint: true });
+
+  let descriptor: number | undefined;
+  try {
+    // POSIX defensive flags keep a concurrently substituted FIFO from blocking
+    // and reject a substituted symlink. Windows has no filesystem FIFO and the
+    // preceding contained-path lstat remains the portable check there.
+    const defensiveFlags = process.platform === "win32"
+      ? 0
+      : constants.O_NONBLOCK | constants.O_NOFOLLOW;
+    const pinnedDescriptor = openContainedRegularFileLinux(
+      workspace,
+      relativePath,
+      defensiveFlags,
+    );
+    descriptor = pinnedDescriptor ?? openSync(
+      target,
+      constants.O_RDONLY | defensiveFlags,
+    );
+    const openedStats = fstatSync(descriptor);
+    assertRegularFileWithinLimit(relativePath, openedStats, maxBytes);
+    assertOpenedFileContained(
+      workspace,
+      target,
+      descriptor,
+      initialIdentity,
+      relativePath,
+      pinnedDescriptor !== null,
+    );
+
+    const buffer = Buffer.allocUnsafe(maxBytes + 1);
+    let bytesRead = 0;
+    while (bytesRead < buffer.length) {
+      const count = readSync(
+        descriptor,
+        buffer,
+        bytesRead,
+        buffer.length - bytesRead,
+        null,
+      );
+      if (count === 0) {
+        break;
+      }
+      bytesRead += count;
+    }
+    if (bytesRead > maxBytes) {
+      throw new Error(
+        `${relativePath}: exceeds the ${maxBytes}-byte intake limit`,
+      );
+    }
+
+    let text: string;
+    try {
+      text = decodeUtf8Strict(buffer.subarray(0, bytesRead));
+    } catch (error) {
+      throw new Error(`${relativePath}: invalid UTF-8`, { cause: error });
+    }
+    try {
+      return parseJsonStrict(text) as T;
+    } catch (error) {
+      throw new Error(
+        `${relativePath}: invalid JSON: ${(error as Error).message}`,
+        { cause: error },
+      );
+    }
+  } finally {
+    if (descriptor !== undefined) {
+      closeSync(descriptor);
+    }
+  }
+}
+
+function openContainedRegularFileLinux(
+  workspace: string,
+  relativePath: string,
+  fileFlags: number,
+): number | null {
+  if (process.platform !== "linux") {
+    return null;
+  }
+  try {
+    realpathSync("/proc/self/fd");
+  } catch {
+    return null;
+  }
+
+  const segments = relativePath.split("/");
+  const filename = segments.pop();
+  if (filename === undefined) {
+    throw new Error(`unsafe relative path: ${relativePath}`);
+  }
+  const directoryFlags =
+    constants.O_RDONLY | constants.O_DIRECTORY | constants.O_NOFOLLOW;
+  const workspaceIdentity = lstatSync(workspace, { bigint: true });
+  let directoryDescriptor: number | undefined;
+  try {
+    directoryDescriptor = openSync(workspace, directoryFlags);
+    assertSameFileIdentity(
+      workspaceIdentity,
+      fstatSync(directoryDescriptor, { bigint: true }),
+      `${relativePath}: workspace changed before intake traversal`,
+    );
+
+    for (const segment of segments) {
+      const nextDescriptor = openSync(
+        `/proc/self/fd/${directoryDescriptor}/${segment}`,
+        directoryFlags,
+      );
+      closeSync(directoryDescriptor);
+      directoryDescriptor = nextDescriptor;
+    }
+
+    return openSync(
+      `/proc/self/fd/${directoryDescriptor}/${filename}`,
+      constants.O_RDONLY | fileFlags,
+    );
+  } finally {
+    if (directoryDescriptor !== undefined) {
+      closeSync(directoryDescriptor);
+    }
+  }
+}
+
+function assertOpenedFileContained(
+  workspace: string,
+  target: string,
+  descriptor: number,
+  initialIdentity: BigIntStats,
+  relativePath: string,
+  pinnedTraversal: boolean,
+): void {
+  const openedIdentity = fstatSync(descriptor, { bigint: true });
+  assertSameFileIdentity(
+    initialIdentity,
+    openedIdentity,
+    `${relativePath}: file changed before it was opened`,
+  );
+
+  if (pinnedTraversal) {
+    return;
+  }
+
+  const descriptorPath = openedDescriptorPath(descriptor);
+  if (descriptorPath !== null) {
+    assertCanonicalPathContained(workspace, descriptorPath, relativePath);
+  }
+
+  const canonicalTarget = realpathSync(target);
+  assertCanonicalPathContained(workspace, canonicalTarget, relativePath);
+  const finalLinkIdentity = lstatSync(target, { bigint: true });
+  if (finalLinkIdentity.isSymbolicLink()) {
+    throw new Error(`${relativePath}: symbolic links are prohibited`);
+  }
+  assertSameFileIdentity(
+    openedIdentity,
+    finalLinkIdentity,
+    `${relativePath}: file changed while it was opened`,
+  );
+  assertSameFileIdentity(
+    openedIdentity,
+    statSync(canonicalTarget, { bigint: true }),
+    `${relativePath}: canonical file identity changed while it was opened`,
+  );
+}
+
+function openedDescriptorPath(descriptor: number): string | null {
+  const descriptorLink = process.platform === "linux"
+    ? `/proc/self/fd/${descriptor}`
+    : process.platform === "win32"
+      ? null
+      : `/dev/fd/${descriptor}`;
+  if (descriptorLink === null) {
+    return null;
+  }
+  try {
+    const resolved = realpathSync(descriptorLink);
+    return resolved.startsWith("/proc/self/fd/") || resolved.startsWith("/dev/fd/")
+      ? null
+      : resolved;
+  } catch {
+    return null;
+  }
+}
+
+function assertCanonicalPathContained(
+  workspace: string,
+  candidate: string,
+  relativePath: string,
+): void {
+  const fromWorkspace = relative(workspace, candidate);
+  if (
+    fromWorkspace === ".." ||
+    fromWorkspace.startsWith(`..${sep}`) ||
+    isAbsolute(fromWorkspace)
+  ) {
+    throw new Error(`${relativePath}: opened file escapes workspace`);
+  }
+}
+
+function assertSameFileIdentity(
+  expected: BigIntStats,
+  actual: BigIntStats,
+  message: string,
+): void {
+  if (expected.dev !== actual.dev || expected.ino !== actual.ino) {
+    throw new Error(message);
+  }
+}
+
+function assertRegularFileWithinLimit(
+  relativePath: string,
+  stats: Stats,
+  maxBytes: number,
+): void {
+  if (!stats.isFile()) {
+    throw new Error(`${relativePath}: expected an ordinary regular file`);
+  }
+  if (stats.size > maxBytes) {
+    throw new Error(`${relativePath}: exceeds the ${maxBytes}-byte intake limit`);
+  }
+}
+
+/**
  * Read a governed JSON artifact and require the one Stage 0 on-disk form:
  * JSON.stringify(value, null, 2) followed by exactly one LF.
  *
@@ -102,9 +360,7 @@ export function readNormalizedJson<T = unknown>(
   const value = readJson<T>(workspaceDir, relativePath);
   const expected = normalizedJsonText(value);
   if (text !== expected) {
-    throw new Error(
-      `${relativePath}: JSON bytes do not conform to tiber-json-file-v1`,
-    );
+    throw new NonCanonicalJsonFileError(relativePath);
   }
   return value;
 }

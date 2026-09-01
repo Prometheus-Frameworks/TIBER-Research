@@ -15,9 +15,20 @@ import {
 import {
   normalizedJsonText,
   readJson,
+  readJsonRegularFileLimited,
   readNormalizedJson,
   writeUtf8CreateOnly,
 } from "./io.js";
+import {
+  getGatewayPacket,
+  getGatewayStatus,
+  inspectGatewayIntake,
+} from "./gateway.js";
+import {
+  renderGatewayIntakeMarkdown,
+  renderGatewayPacketMarkdown,
+  renderGatewayStatusMarkdown,
+} from "./gatewayRenderer.js";
 import { renderPacketMarkdown, type ResearchPacket } from "./renderer.js";
 import { validateStage1Preflight } from "./preflight.js";
 import {
@@ -31,6 +42,12 @@ async function main(args: string[]): Promise<void> {
   switch (command) {
     case "agent-entry":
       return agentEntry(rest);
+    case "gateway:intake":
+      return gatewayIntake(rest);
+    case "gateway:packet":
+      return gatewayPacket(rest);
+    case "gateway:status":
+      return gatewayStatus(rest);
     case "fixture:build":
       return fixtureBuild(rest);
     case "preflight":
@@ -52,6 +69,92 @@ async function main(args: string[]): Promise<void> {
     default:
       throw new Error(usage());
   }
+}
+
+type GatewayFormat = "json" | "markdown";
+const MAX_GATEWAY_INTAKE_PROPOSAL_BYTES = 1024 * 1024;
+
+function gatewayIntake(args: string[]): void {
+  const { format, positionals } = gatewayArgs("gateway:intake", args, 2);
+  const [workspace, proposalPath] = positionals;
+  if (workspace === undefined || proposalPath === undefined) {
+    throw new Error(`gateway:intake: expected 2 positional arguments\n${usage()}`);
+  }
+  const report = inspectGatewayIntake(
+    readJsonRegularFileLimited(
+      workspace,
+      proposalPath,
+      MAX_GATEWAY_INTAKE_PROPOSAL_BYTES,
+    ),
+  );
+  writeGatewayOutput(report, renderGatewayIntakeMarkdown(report), format);
+  if (!report.valid) {
+    process.exitCode = 1;
+  }
+}
+
+function gatewayStatus(args: string[]): void {
+  const { format, positionals } = gatewayArgs("gateway:status", args, 3);
+  const [workspace, runId, attemptId] = positionals;
+  if (workspace === undefined || runId === undefined || attemptId === undefined) {
+    throw new Error(`gateway:status: expected 3 positional arguments\n${usage()}`);
+  }
+  const report = getGatewayStatus(workspace, runId, attemptId);
+  writeGatewayOutput(report, renderGatewayStatusMarkdown(report), format);
+  if (!report.protocol_valid) {
+    process.exitCode = 1;
+  }
+}
+
+function gatewayPacket(args: string[]): void {
+  const { format, positionals } = gatewayArgs("gateway:packet", args, 3);
+  const [workspace, runId, attemptId] = positionals;
+  if (workspace === undefined || runId === undefined || attemptId === undefined) {
+    throw new Error(`gateway:packet: expected 3 positional arguments\n${usage()}`);
+  }
+  const report = getGatewayPacket(workspace, runId, attemptId);
+  writeGatewayOutput(report, renderGatewayPacketMarkdown(report), format);
+  if (!report.protocol_valid || report.body === null) {
+    process.exitCode = 1;
+  }
+}
+
+function gatewayArgs(
+  command: string,
+  args: string[],
+  positionalCount: 2 | 3,
+): { format: GatewayFormat; positionals: string[] } {
+  const positionals = args.slice(0, positionalCount);
+  if (
+    positionals.length !== positionalCount ||
+    positionals.some(
+      (argument) => argument.length === 0 || argument.startsWith("--"),
+    )
+  ) {
+    throw new Error(
+      `${command}: expected ${positionalCount} positional arguments before flags\n${usage()}`,
+    );
+  }
+  const flags = args.slice(positionalCount);
+  if (flags.length > 1) {
+    throw new Error(`${command}: duplicate or extra format flag\n${usage()}`);
+  }
+  const flag = flags[0];
+  if (flag === undefined || flag === "--format=markdown") {
+    return { format: "markdown", positionals };
+  }
+  if (flag === "--format=json") {
+    return { format: "json", positionals };
+  }
+  throw new Error(`${command}: unknown flag or extra argument: ${flag}\n${usage()}`);
+}
+
+function writeGatewayOutput(
+  report: unknown,
+  markdown: string,
+  format: GatewayFormat,
+): void {
+  process.stdout.write(format === "json" ? normalizedJsonText(report) : markdown);
 }
 
 /**
@@ -300,6 +403,9 @@ function usage(): string {
   return [
     "Usage:",
     "  tiber-research agent-entry <workspace> <proposal-relative-path>",
+    "  tiber-research gateway:intake <workspace> <proposal-relative-path> [--format=markdown|json]",
+    "  tiber-research gateway:status <workspace> <run-id> <attempt-id> [--format=markdown|json]",
+    "  tiber-research gateway:packet <workspace> <run-id> <attempt-id> [--format=markdown|json]",
     "  tiber-research fixture:build <workspace> <run-id> <attempt-id>",
     "  tiber-research preflight <workspace> <manifest-relative-path> [--require-ready]",
     "  tiber-research render <workspace> <run-id> <attempt-id>",

@@ -56,7 +56,7 @@ take at all, or was merely exploring it.
 docs/agent-entry/                    the public entry protocol and pilot procedure
 docs/contracts/agent-thesis-proposal-v0.md   contract decisions and contamination register
 schemas/v0/agent-thesis-proposal.schema.json the proposal contract
-fixtures/agent-entry/                two validating non-football examples
+fixtures/agent-entry/                validating contract and football-first examples
 ```
 
 An agent proposal is pre-freeze and authority-inert: `freeze_state` is always
@@ -66,6 +66,72 @@ sketched in [`#9`](https://github.com/Prometheus-Frameworks/TIBER-Research/issue
 which does not exist yet. Validate a returned proposal with
 `npm run cli -- agent-entry . <path>`. The surface is a draft: not adopted, not
 activated, and it runs no pilot.
+
+## Research Gateway v0 (intake/read scaffold)
+
+The bounded Research Gateway v0 gives an operator three local, provider-neutral
+entry points over the existing contracts:
+
+```bash
+npm run cli -- gateway:intake . <proposal-relative-path>
+npm run cli -- gateway:status . <run-id> <attempt-id>
+npm run cli -- gateway:packet . <run-id> <attempt-id>
+```
+
+The default output is concise Markdown intended for an operator or a connected
+agent. Add `--format=json` after the positional arguments for the full
+structured gateway report. Intake accepts one ordinary proposal file of at most
+1 MiB whose opened identity and canonical path revalidate inside the workspace,
+checks an external agent's `agent-thesis-proposal/v0` for
+schema and cross-field consistency, and renders its declarations. Passing that
+check does not authenticate the provider or operator, retrieve a source, compare
+source bytes, or establish empirical truth. It neither confirms the
+interpretation nor creates a full preregistration. Default Markdown applies
+presentation-only neutralization and redaction; explicit JSON retains the
+structured audit values and can contain sensitive untrusted prose. Status and
+packet access are deterministic reads of one exact repository run and attempt.
+Invalid custody fails closed: the gateway withholds the packet, suppresses
+inferred actions, and does not repeat positive review or lifecycle labels from
+inconsistent bytes.
+
+This is an access scaffold, not an autonomous researcher. It performs no model
+call, browsing, source acquisition, durable or canonical persistence,
+activation, execution, review, seal, promotion, publication, or downstream
+write. A conversational agent can prepare the intake object and explain the
+returned view; the existing Research validator remains the source of truth for
+custody state. See
+[`docs/gateway/research-gateway-v0.md`](docs/gateway/research-gateway-v0.md) for
+the capability boundary and documented Tunsil/Allen lifecycle cases.
+
+The checked-in examples can be inspected directly:
+
+```bash
+npm run cli -- gateway:intake . fixtures/agent-entry/example-football-minimal.json
+npm run cli -- gateway:status . tunsil-absence-shock-v0 attempt-001
+npm run cli -- gateway:packet . tunsil-absence-shock-v0 attempt-001
+```
+
+The repository pins ordinary source text to LF and marks retained/governed
+artifact trees as non-text so Git preserves their committed bytes exactly. This
+makes the same status and packet reads work when a Windows user has
+`core.autocrlf=true`. A clone made before those attributes existed can fail
+closed with `gateway.snapshot_noncanonical`; re-clone after updating rather than
+normalizing retained artifacts in place.
+
+When Windows PowerShell pipes a native program's UTF-8 JSON into
+`ConvertFrom-Json`, its console output encoding must also be UTF-8. Set that
+display boundary before extracting the explicit packet audit body:
+
+```powershell
+npm run build --silent
+[Console]::OutputEncoding = [Text.UTF8Encoding]::new($false)
+node dist/src/cli.js gateway:packet . <run-id> <attempt-id> --format=json |
+  ConvertFrom-Json |
+  ForEach-Object { $_.body.markdown }
+```
+
+This setting affects terminal decoding only. It does not rewrite retained
+artifacts or change Gateway validation, custody, or authority.
 
 ## Identity model
 
@@ -130,6 +196,9 @@ npm run cli -- seal <workspace> <run-id> <attempt-id> <metadata-relative-path>
 npm run cli -- validate <workspace> <run-id> <attempt-id> --phase=sealed --require-end-to-end
 npm run cli -- resume <workspace> <run-id> <attempt-id>
 npm run cli -- agent-entry <workspace> <proposal-relative-path>
+npm run cli -- gateway:intake <workspace> <proposal-relative-path> [--format=markdown|json]
+npm run cli -- gateway:status <workspace> <run-id> <attempt-id> [--format=markdown|json]
+npm run cli -- gateway:packet <workspace> <run-id> <attempt-id> [--format=markdown|json]
 ```
 
 `agent-entry` validates an `agent-thesis-proposal/v0` object returned by an
