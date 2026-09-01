@@ -15,6 +15,7 @@ import {
 import {
   normalizedJsonText,
   readJson,
+  readJsonRegularFileLimited,
   readNormalizedJson,
   writeUtf8CreateOnly,
 } from "./io.js";
@@ -71,6 +72,7 @@ async function main(args: string[]): Promise<void> {
 }
 
 type GatewayFormat = "json" | "markdown";
+const MAX_GATEWAY_INTAKE_PROPOSAL_BYTES = 1024 * 1024;
 
 function gatewayIntake(args: string[]): void {
   const { format, positionals } = gatewayArgs("gateway:intake", args, 2);
@@ -78,7 +80,13 @@ function gatewayIntake(args: string[]): void {
   if (workspace === undefined || proposalPath === undefined) {
     throw new Error(`gateway:intake: expected 2 positional arguments\n${usage()}`);
   }
-  const report = inspectGatewayIntake(readJson(workspace, proposalPath));
+  const report = inspectGatewayIntake(
+    readJsonRegularFileLimited(
+      workspace,
+      proposalPath,
+      MAX_GATEWAY_INTAKE_PROPOSAL_BYTES,
+    ),
+  );
   writeGatewayOutput(report, renderGatewayIntakeMarkdown(report), format);
   if (!report.valid) {
     process.exitCode = 1;

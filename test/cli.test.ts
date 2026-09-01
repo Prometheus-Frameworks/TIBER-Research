@@ -292,6 +292,52 @@ test("gateway CLI fails closed on invalid identity or intake", async (t) => {
     }
   });
 
+  await t.test("oversized intake is rejected before JSON parsing", () => {
+    const parent = mkdtempSync(join(tmpdir(), "tiber-gateway-oversized-"));
+    try {
+      writeFileSync(join(parent, "oversized.json"), Buffer.alloc(1_048_577));
+      const result = cli("gateway:intake", parent, "oversized.json");
+      assert.equal(result.status, 1);
+      assert.match(result.stderr, /exceeds the 1048576-byte intake limit/u);
+      assert.doesNotMatch(result.stderr, /invalid JSON/u);
+    } finally {
+      rmSync(parent, { recursive: true, force: true });
+    }
+  });
+
+  await t.test("FIFO intake is rejected without waiting for a writer", (t) => {
+    if (process.platform === "win32") {
+      t.skip("named FIFO creation is not portable to Windows");
+      return;
+    }
+
+    const parent = mkdtempSync(join(tmpdir(), "tiber-gateway-fifo-"));
+    try {
+      const fifoPath = join(parent, "proposal.json");
+      const created = spawnSync("mkfifo", [fifoPath], { encoding: "utf8" });
+      if ((created.error as NodeJS.ErrnoException | undefined)?.code === "ENOENT") {
+        t.skip("mkfifo is unavailable on this host");
+        return;
+      }
+      assert.equal(created.status, 0, created.stderr);
+
+      const result = spawnSync(
+        process.execPath,
+        [CLI, "gateway:intake", parent, "proposal.json"],
+        {
+          cwd: process.cwd(),
+          encoding: "utf8",
+          timeout: 2_000,
+        },
+      );
+      assert.equal(result.error, undefined);
+      assert.equal(result.status, 1);
+      assert.match(result.stderr, /expected an ordinary regular file/u);
+    } finally {
+      rmSync(parent, { recursive: true, force: true });
+    }
+  });
+
   await t.test("valid custody without a packet returns a typed non-zero result", () => {
     const parent = mkdtempSync(join(tmpdir(), "tiber-gateway-no-packet-"));
     const workspace = join(parent, "workspace");

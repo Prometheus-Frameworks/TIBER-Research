@@ -10,20 +10,21 @@ Research Gateway v0 is a small, provider-neutral read surface over the existing
 TIBER Research contracts. It gives an operator-facing agent three honest
 operations:
 
-1. validate and display a pre-freeze thesis proposal;
+1. check contract conformance and display a pre-freeze agent/provider proposal;
 2. inspect the deterministic custody state of one exact run and attempt; and
 3. display a validated candidate packet with its lifecycle and authority state.
 
 The gateway does not research football. A conversational agent may help the
-operator express or structure a question, while TIBER validates and displays the
-result. The gateway makes that division visible instead of implying that a model,
-source, or autonomous Researcher ran inside this repository.
+operator express or structure a question, while TIBER checks the resulting
+contract for consistency and displays its declarations. The gateway makes that
+division visible instead of implying that a model, source, or autonomous
+Researcher ran inside this repository.
 
 ## Capability truth
 
 | Capability | V0 state |
 | --- | --- |
-| Structure a proposal | External agent; gateway validates and displays it |
+| Structure a proposal | External agent; gateway checks consistency and displays its declarations |
 | Inspect run custody | Deterministic read |
 | Display a packet | Deterministic read after phase validation |
 | Persist operator context | Not available |
@@ -45,28 +46,46 @@ The application functions are ordinary TypeScript and do not import the
 canonical writer operations in `src/build.ts`.
 
 Status and packet operations copy only the governed run plus the exact job and
-authority paths named by its activation into a private ephemeral workspace.
+authority paths named by its activation into a unique ephemeral workspace.
 Validation and projection read that same snapshot, so the bytes projected into
 the report are the bytes passed to the validator. Snapshot composition is not an
 atomic filesystem transaction: this local v0 requires the caller's workspace to
-remain quiescent while the read begins. A source change detected during copying
-aborts, but pathname-level ABA replacement by a concurrent writer is outside the
-v0 guarantee.
+remain quiescent while the read begins. With Linux procfs, the gateway retains
+one opened workspace root across run and dependency copies, traverses components
+with no-follow descriptors, and copies file bytes from opened descriptors. This
+closes the source-path reopen gap, but does not make the multi-file snapshot
+atomic or defend against in-place or mount-namespace mutation. The portable
+fallback performs pathname identity checks around copying; pathname-level ABA
+and cross-file skew by a concurrent writer remain outside the v0 guarantee.
 
 Job and authority dependencies must be ordinary files. A symlink, special file,
 nesting beyond 64 levels, more than 10,000 entries, a file larger than 64 MiB, or
 more than 256 MiB in total aborts the snapshot and yields no inferred custody
-state. Nothing is silently omitted. The private snapshot is removed before the
-operation returns and never changes canonical custody. It temporarily duplicates
-retained run bytes in the operating system's private temporary storage; a hard
+state. Nothing is silently omitted. The snapshot is removed before the operation
+returns and never changes canonical custody. It temporarily duplicates retained
+run bytes beneath the operating system's designated temporary root; a hard
 process termination can leave that directory for host-level temporary-file
-cleanup. This is another reason the adapter is local-only rather than a shared
-service boundary.
+cleanup. The local host's temporary-directory access controls and cleanup policy
+are deployment prerequisites, not security guarantees supplied by the gateway.
+This is another reason the adapter is local-only rather than a shared service or
+multi-user confidentiality boundary.
+
+Before creating a snapshot, the gateway resolves both the inspected workspace
+and its temporary root. On POSIX it uses canonical `/tmp` and does not honor
+caller-controlled `TMPDIR`/`TMP`/`TEMP` overrides. On Windows it uses the
+OS/user-designated temporary root so ordinary non-administrator accounts remain
+supported. If that root or the unique created directory is equal to or nested
+inside the inspected workspace, the operation fails closed. Linux creation is
+anchored through an opened directory descriptor when procfs exposes
+`/proc/self/fd`; otherwise creation uses the canonical root under the local
+quiescent-filesystem boundary. Environment-selected Windows temp paths therefore
+cannot turn the declared read into a transient custody write, while temp-root
+confidentiality remains a host deployment responsibility.
 
 ```text
 operator conversation
   -> external agent proposes structure
-  -> gateway validates and renders an ephemeral intake view
+  -> gateway checks consistency and renders an ephemeral intake view
 
 exact repository state
   -> existing Research validator
@@ -89,12 +108,32 @@ Input is one `agent-thesis-proposal/v0` JSON object produced outside this
 repository. The operation uses the existing semantic checker and emits an
 ephemeral view containing the received take, agent interpretation, declared
 evidence access, clarification state, Missing Witnesses, and operator
-confirmation state.
+confirmation declaration.
+
+The local CLI accepts only a non-symlink ordinary file no larger than 1 MiB,
+revalidates its pre-open, opened, and canonical file identities inside the
+workspace, and performs a bounded read before UTF-8 decoding or JSON parsing.
+On Linux with procfs available it also opens every path component through pinned
+directory descriptors with no-follow semantics. The portable fallback performs
+pre-open/opened/final identity and canonical-containment checks; where a host
+exposes an opened-descriptor path, it checks that path directly as well. Identity
+or containment drift fails closed. The local proposal tree is an input boundary
+and must not be concurrently mutated. The
+application function separately limits named arrays to 1,000 items, traversal to
+100,000 values, and nesting to 32 levels. A future adapter must impose an
+equivalent pre-parse byte bound.
+
+Passing intake establishes schema and cross-field consistency only.
+Confirmation, stance, evidence access, subject resolution, retrieval, and
+byte-identity values remain agent/provider declarations. The gateway does not
+authenticate the provider or operator, retrieve sources, or compare source
+bytes. A proposal-derived `next_boundary` is a non-authorizing transition hint,
+not proof of operator confirmation.
 
 It never:
 
 - persists the proposal;
-- turns confirmation into freeze or activation;
+- turns a confirmation declaration into freeze or activation;
 - calls a model or source;
 - describes the proposal as a complete preregistration; or
 - grants downstream authority.
@@ -214,10 +253,16 @@ action. A file's presence and an agent's prose cannot upgrade custody state.
 ## Privacy and untrusted content
 
 Default operator views do not emit retained source bodies, ledger records,
-actor-session identifiers, absolute host paths, stack traces, or machine JSON.
-Packet and proposal prose are untrusted data to display, never instructions for
-the gateway to execute. Existing structural privacy checks do not constitute
-semantic DLP, authentication, or permission to expose a private run remotely.
+obvious credential material, recognized actor-session forms, absolute host
+paths, stack traces, or machine JSON. Default
+Markdown neutralizes entity, fence, and
+control-character structure and applies presentation-only redaction to obvious
+private/credential markers, host paths, actor-session forms, and stack traces.
+Packet and proposal prose remain untrusted data to display, never instructions
+for the gateway to execute. Explicit JSON is an unsanitized audit surface and
+can retain sensitive untrusted prose. These structural and presentation checks
+do not constitute semantic DLP, authentication, or permission to expose a
+private run remotely.
 
 ## V0 stop boundary
 

@@ -1,15 +1,24 @@
 import {
   chmodSync,
+  closeSync,
+  constants,
   cpSync,
   existsSync,
+  fstatSync,
   lstatSync,
   mkdirSync,
   mkdtempSync,
+  openSync,
+  opendirSync,
+  readSync,
+  realpathSync,
   readdirSync,
   rmSync,
+  writeSync,
+  type BigIntStats,
 } from "node:fs";
 import { tmpdir } from "node:os";
-import { dirname, join, relative, resolve, sep } from "node:path";
+import { dirname, isAbsolute, join, relative, resolve, sep } from "node:path";
 import { checkAgentThesisProposal } from "./agentEntry.js";
 import { sha256CanonicalJson } from "./digest.js";
 import {
@@ -383,6 +392,13 @@ interface SnapshotBudget {
   entries: number;
 }
 
+interface SnapshotSourceContext {
+  copied: Map<string, "directory" | "file">;
+  descriptor: number | null;
+  stats: BigIntStats | null;
+  workspace: string;
+}
+
 interface SnapshotObservation {
   destination: string;
   source: string;
@@ -621,40 +637,73 @@ function intakeSizeErrors(value: unknown): string[] {
     return errors;
   }
 
-  const pending: Array<{ depth: number; value: unknown }> = [
-    { depth: 0, value },
-  ];
   const seen = new WeakSet<object>();
   let valuesSeen = 0;
-  while (pending.length > 0) {
-    const current = pending.pop();
-    if (current === undefined) {
-      break;
+
+  function inspectValue(current: unknown, depth: number): string | null {
+    // Refuse the next value before reading or retaining it. In particular, a
+    // wide nested array cannot first allocate an equally wide pending queue.
+    if (valuesSeen >= MAX_GATEWAY_INTAKE_VALUES) {
+      return `gateway intake exceeds the ${MAX_GATEWAY_INTAKE_VALUES}-value structural safety limit`;
+    }
+    if (depth > MAX_GATEWAY_INTAKE_DEPTH) {
+      return `gateway intake exceeds the ${MAX_GATEWAY_INTAKE_DEPTH}-level nesting safety limit`;
     }
     valuesSeen += 1;
-    if (valuesSeen > MAX_GATEWAY_INTAKE_VALUES) {
-      return [
-        `gateway intake exceeds the ${MAX_GATEWAY_INTAKE_VALUES}-value structural safety limit`,
-      ];
+    if (current === null || typeof current !== "object") {
+      return null;
     }
-    if (current.depth > MAX_GATEWAY_INTAKE_DEPTH) {
-      return [
-        `gateway intake exceeds the ${MAX_GATEWAY_INTAKE_DEPTH}-level nesting safety limit`,
-      ];
+    if (seen.has(current)) {
+      return "gateway intake must be an acyclic data value";
     }
-    if (current.value === null || typeof current.value !== "object") {
-      continue;
+    seen.add(current);
+
+    const childDepth = depth + 1;
+    if (Array.isArray(current)) {
+      for (let index = 0; index < current.length; index += 1) {
+        // Check both structural limits before indexing the child. This keeps a
+        // sparse or proxied array from doing work beyond the accepted bound.
+        if (valuesSeen >= MAX_GATEWAY_INTAKE_VALUES) {
+          return `gateway intake exceeds the ${MAX_GATEWAY_INTAKE_VALUES}-value structural safety limit`;
+        }
+        if (childDepth > MAX_GATEWAY_INTAKE_DEPTH) {
+          return `gateway intake exceeds the ${MAX_GATEWAY_INTAKE_DEPTH}-level nesting safety limit`;
+        }
+        const violation = inspectValue(current[index], childDepth);
+        if (violation !== null) {
+          return violation;
+        }
+      }
+      return null;
     }
-    if (seen.has(current.value)) {
-      return ["gateway intake must be an acyclic data value"];
+
+    for (const key in current) {
+      if (!Object.prototype.hasOwnProperty.call(current, key)) {
+        continue;
+      }
+      // A getter at an out-of-bounds child must not run before the boundary is
+      // enforced. JSON intake is data, but this also keeps the pure function
+      // fail-closed for an arbitrary in-memory caller.
+      if (valuesSeen >= MAX_GATEWAY_INTAKE_VALUES) {
+        return `gateway intake exceeds the ${MAX_GATEWAY_INTAKE_VALUES}-value structural safety limit`;
+      }
+      if (childDepth > MAX_GATEWAY_INTAKE_DEPTH) {
+        return `gateway intake exceeds the ${MAX_GATEWAY_INTAKE_DEPTH}-level nesting safety limit`;
+      }
+      const violation = inspectValue(
+        (current as Record<string, unknown>)[key],
+        childDepth,
+      );
+      if (violation !== null) {
+        return violation;
+      }
     }
-    seen.add(current.value);
-    const children = Array.isArray(current.value)
-      ? current.value
-      : Object.values(current.value as Record<string, unknown>);
-    for (const child of children) {
-      pending.push({ depth: current.depth + 1, value: child });
-    }
+    return null;
+  }
+
+  const structuralViolation = inspectValue(value, 0);
+  if (structuralViolation !== null) {
+    return [structuralViolation];
   }
   return errors;
 }
@@ -746,50 +795,60 @@ function inspectRun(
 
 /**
  * Copy only the governed run and its two activation dependencies into a
- * private ephemeral workspace. Validation and projection then read the same
- * stable bytes, so concurrent replacement in the caller's workspace cannot
- * pair a valid report with an unvalidated packet or review.
+ * unique ephemeral workspace. Validation and projection then read the same
+ * copied bytes. Linux/procfs copies retain one source-root descriptor and read
+ * files through pinned descriptors; portable copies require the documented
+ * local quiescent-tree boundary.
  */
 function withRunSnapshot(
   workspaceDir: string,
   runId: string,
   attemptId: string,
 ): RunInspection {
-  const snapshotParent = mkdtempSync(
-    join(tmpdir(), "tiber-research-gateway-"),
-  );
+  const sourceWorkspace = realpathSync(workspaceDir);
+  const snapshotRoot = gatewaySnapshotRoot();
+  if (pathIsContainedBy(sourceWorkspace, snapshotRoot)) {
+    // A system snapshot root must remain outside canonical custody so the
+    // declared read never becomes even a transient governed write.
+    throw new Error("gateway snapshot root is inside the inspected workspace");
+  }
+  const snapshotParent = createSnapshotParent(snapshotRoot);
   const snapshotWorkspace = join(snapshotParent, "workspace");
-  mkdirSync(snapshotWorkspace, { recursive: true });
 
   try {
-    const sourceWorkspace = resolve(workspaceDir);
+    if (pathIsContainedBy(sourceWorkspace, snapshotParent)) {
+      throw new Error("gateway snapshot directory is inside the inspected workspace");
+    }
+    mkdirSync(snapshotWorkspace, { recursive: true });
     const budget: SnapshotBudget = { bytes: 0, entries: 0 };
-    copySnapshotEntry(
-      sourceWorkspace,
-      snapshotWorkspace,
-      `runs/${runId}`,
-      "directory",
-      budget,
-    );
-    const activation = readNormalizedJson<SnapshotActivationRefs>(
-      snapshotWorkspace,
-      `runs/${runId}/activation.json`,
-    );
-    for (const dependencyPath of [
-      activation.job_ref?.path,
-      activation.ops_decision_ref?.path,
-    ]) {
-      if (typeof dependencyPath !== "string") {
-        throw new Error("activation dependency path is missing");
-      }
+    withSnapshotSource(sourceWorkspace, (source) => {
       copySnapshotEntry(
-        sourceWorkspace,
+        source,
         snapshotWorkspace,
-        dependencyPath,
-        "file",
+        `runs/${runId}`,
+        "directory",
         budget,
       );
-    }
+      const activation = readNormalizedJson<SnapshotActivationRefs>(
+        snapshotWorkspace,
+        `runs/${runId}/activation.json`,
+      );
+      for (const dependencyPath of [
+        activation.job_ref?.path,
+        activation.ops_decision_ref?.path,
+      ]) {
+        if (typeof dependencyPath !== "string") {
+          throw new Error("activation dependency path is missing");
+        }
+        copySnapshotEntry(
+          source,
+          snapshotWorkspace,
+          dependencyPath,
+          "file",
+          budget,
+        );
+      }
+    });
     return inspectSnapshot(snapshotWorkspace, runId, attemptId);
   } finally {
     try {
@@ -800,6 +859,96 @@ function withRunSnapshot(
     }
     rmSync(snapshotParent, { force: true, recursive: true });
   }
+}
+
+function gatewaySnapshotRoot(): string {
+  if (process.platform !== "win32") {
+    // Do not honor caller-controlled TMPDIR/TMP/TEMP for custody snapshots.
+    // The system /tmp directory is anchored by the filesystem root rather than
+    // by a caller-renamable environment-selected parent.
+    return realpathSync("/tmp");
+  }
+
+  // Windows temp selection is an OS/user deployment boundary. The caller's
+  // configured temp root keeps the CLI usable for non-administrator accounts;
+  // containment checks below prevent it from becoming a custody write.
+  const configuredRoot = tmpdir();
+  if (!isAbsolute(configuredRoot)) {
+    throw new Error("gateway OS-designated temporary root is unavailable");
+  }
+  return realpathSync(configuredRoot);
+}
+
+function createSnapshotParent(snapshotRoot: string): string {
+  let created: string;
+  if (process.platform !== "linux" || !hasProcDescriptorDirectory()) {
+    created = mkdtempSync(join(snapshotRoot, "tiber-research-gateway-"));
+  } else {
+    const directoryFlags =
+      constants.O_RDONLY | constants.O_DIRECTORY | constants.O_NOFOLLOW;
+    const descriptor = openSync(snapshotRoot, directoryFlags);
+    try {
+      const descriptorPath = realpathSync(`/proc/self/fd/${descriptor}`);
+      if (descriptorPath !== snapshotRoot) {
+        throw new Error("gateway snapshot root changed before creation");
+      }
+      created = realpathSync(
+        mkdtempSync(`/proc/self/fd/${descriptor}/tiber-research-gateway-`),
+      );
+    } finally {
+      closeSync(descriptor);
+    }
+  }
+
+  try {
+    const canonical = realpathSync(created);
+    const child = relative(snapshotRoot, canonical);
+    if (
+      child.length === 0 ||
+      child === ".." ||
+      child.startsWith(`..${sep}`) ||
+      child.includes(sep) ||
+      isAbsolute(child)
+    ) {
+      throw new Error("gateway snapshot directory escaped its temporary root");
+    }
+    chmodSync(canonical, 0o700);
+    return canonical;
+  } catch (error) {
+    rmSync(created, { force: true, recursive: true });
+    throw error;
+  }
+}
+
+function hasProcDescriptorDirectory(): boolean {
+  if (process.platform !== "linux") {
+    return false;
+  }
+  let descriptor: number | undefined;
+  try {
+    const filesystemRoot = realpathSync("/");
+    descriptor = openSync(
+      filesystemRoot,
+      constants.O_RDONLY | constants.O_DIRECTORY | constants.O_NOFOLLOW,
+    );
+    return realpathSync(`/proc/self/fd/${descriptor}`) === filesystemRoot;
+  } catch {
+    return false;
+  } finally {
+    if (descriptor !== undefined) {
+      closeSync(descriptor);
+    }
+  }
+}
+
+function pathIsContainedBy(parent: string, candidate: string): boolean {
+  const fromParent = relative(parent, candidate);
+  return (
+    fromParent === "" ||
+    (fromParent !== ".." &&
+      !fromParent.startsWith(`..${sep}`) &&
+      !isAbsolute(fromParent))
+  );
 }
 
 function makeSnapshotRemovable(path: string): void {
@@ -818,8 +967,49 @@ function makeSnapshotRemovable(path: string): void {
   }
 }
 
-function copySnapshotEntry(
+function withSnapshotSource<T>(
   sourceWorkspace: string,
+  operation: (source: SnapshotSourceContext) => T,
+): T {
+  if (process.platform !== "linux" || !hasProcDescriptorDirectory()) {
+    return operation({
+      copied: new Map(),
+      descriptor: null,
+      stats: null,
+      workspace: sourceWorkspace,
+    });
+  }
+
+  const directoryFlags =
+    constants.O_RDONLY | constants.O_DIRECTORY | constants.O_NOFOLLOW;
+  const pathStats = lstatSync(sourceWorkspace, { bigint: true });
+  const descriptor = openSync(sourceWorkspace, directoryFlags);
+  try {
+    const openedStats = fstatSync(descriptor, { bigint: true });
+    assertSameSnapshotStats(
+      pathStats,
+      openedStats,
+      "snapshot workspace changed before descriptor traversal",
+    );
+    const result = operation({
+      copied: new Map(),
+      descriptor,
+      stats: openedStats,
+      workspace: sourceWorkspace,
+    });
+    assertSameSnapshotStats(
+      openedStats,
+      fstatSync(descriptor, { bigint: true }),
+      "snapshot workspace changed while it was copied",
+    );
+    return result;
+  } finally {
+    closeSync(descriptor);
+  }
+}
+
+function copySnapshotEntry(
+  sourceContext: SnapshotSourceContext,
   snapshotWorkspace: string,
   relativePath: string,
   expectedType: "directory" | "file",
@@ -831,8 +1021,374 @@ function copySnapshotEntry(
   ) {
     throw new Error("snapshot path exceeds the safety limit");
   }
-  const source = resolveContained(sourceWorkspace, relativePath);
+  assertSafeSnapshotRelativePath(relativePath);
   const destination = resolveContained(snapshotWorkspace, relativePath);
+  const coveringEntry = [...sourceContext.copied].find(
+    ([copiedPath, copiedType]) =>
+      copiedPath === relativePath ||
+      (copiedType === "directory" &&
+        relativePath.startsWith(`${copiedPath}/`)),
+  );
+  if (coveringEntry !== undefined) {
+    const copied = lstatSync(destination);
+    if (
+      copied.isSymbolicLink() ||
+      (expectedType === "directory" ? !copied.isDirectory() : !copied.isFile())
+    ) {
+      throw new Error(`snapshot entry changed from ${expectedType}`);
+    }
+    return;
+  }
+  if (sourceContext.descriptor !== null && sourceContext.stats !== null) {
+    copySnapshotEntryPinnedLinux(
+      sourceContext,
+      destination,
+      relativePath,
+      expectedType,
+      budget,
+    );
+    sourceContext.copied.set(relativePath, expectedType);
+    return;
+  }
+
+  const source = resolveContained(sourceContext.workspace, relativePath);
+  copySnapshotEntryPortable(
+    source,
+    destination,
+    expectedType,
+    budget,
+  );
+  sourceContext.copied.set(relativePath, expectedType);
+}
+
+function assertSafeSnapshotRelativePath(relativePath: string): void {
+  const segments = relativePath.split("/");
+  if (
+    relativePath.length === 0 ||
+    isAbsolute(relativePath) ||
+    relativePath.includes("\\") ||
+    segments.some(
+      (segment) => segment.length === 0 || segment === "." || segment === "..",
+    )
+  ) {
+    throw new Error(`unsafe snapshot relative path: ${relativePath}`);
+  }
+}
+
+/**
+ * Linux/procfs path: retain every traversed directory descriptor while the
+ * entry is copied, then verify those directory identities and timestamps.
+ * Files are copied from their opened descriptors, never by reopening a source
+ * pathname after inspection.
+ */
+function copySnapshotEntryPinnedLinux(
+  sourceContext: SnapshotSourceContext,
+  destination: string,
+  relativePath: string,
+  expectedType: "directory" | "file",
+  budget: SnapshotBudget,
+): void {
+  mkdirSync(dirname(destination), { mode: 0o700, recursive: true });
+  withPinnedSnapshotEntryLinux(
+    sourceContext,
+    relativePath,
+    expectedType,
+    (descriptor, stats) => {
+      copyPinnedSnapshotNode(
+        descriptor,
+        stats,
+        destination,
+        relativePath,
+        0,
+        budget,
+      );
+    },
+  );
+}
+
+function withPinnedSnapshotEntryLinux<T>(
+  sourceContext: SnapshotSourceContext,
+  relativePath: string,
+  expectedType: "directory" | "file",
+  operation: (descriptor: number, stats: BigIntStats) => T,
+): T {
+  if (sourceContext.descriptor === null || sourceContext.stats === null) {
+    throw new Error("snapshot source descriptor is unavailable");
+  }
+  const segments = relativePath.split("/");
+  const descriptors: Array<{ descriptor: number; stats: BigIntStats }> = [];
+  const directoryFlags =
+    constants.O_RDONLY | constants.O_DIRECTORY | constants.O_NOFOLLOW;
+  const entryFlags =
+    constants.O_RDONLY | constants.O_NONBLOCK | constants.O_NOFOLLOW;
+
+  try {
+    assertSameSnapshotStats(
+      sourceContext.stats,
+      fstatSync(sourceContext.descriptor, { bigint: true }),
+      "snapshot workspace changed before entry traversal",
+    );
+    let parentDescriptor = sourceContext.descriptor;
+
+    for (let index = 0; index < segments.length; index += 1) {
+      const segment = segments[index];
+      if (segment === undefined) {
+        throw new Error("snapshot descriptor traversal is incomplete");
+      }
+      const isLast = index === segments.length - 1;
+      const descriptor = openSync(
+        `/proc/self/fd/${parentDescriptor}/${segment}`,
+        isLast ? entryFlags : directoryFlags,
+      );
+      try {
+        const stats = fstatSync(descriptor, { bigint: true });
+        if (!isLast && !stats.isDirectory()) {
+          throw new Error("snapshot path contains a non-directory component");
+        }
+        descriptors.push({ descriptor, stats });
+        parentDescriptor = descriptor;
+      } catch (error) {
+        closeSync(descriptor);
+        throw error;
+      }
+    }
+
+    const target = descriptors[descriptors.length - 1];
+    if (target === undefined) {
+      throw new Error("snapshot target descriptor is unavailable");
+    }
+    if (
+      expectedType === "directory"
+        ? !target.stats.isDirectory()
+        : !target.stats.isFile()
+    ) {
+      throw new Error(`snapshot entry is not an ordinary ${expectedType}`);
+    }
+
+    const result = operation(target.descriptor, target.stats);
+    for (const observation of descriptors) {
+      assertSameSnapshotStats(
+        observation.stats,
+        fstatSync(observation.descriptor, { bigint: true }),
+        "snapshot source changed while it was copied",
+      );
+    }
+    assertSameSnapshotStats(
+      sourceContext.stats,
+      fstatSync(sourceContext.descriptor, { bigint: true }),
+      "snapshot workspace changed while it was copied",
+    );
+    return result;
+  } finally {
+    for (let index = descriptors.length - 1; index >= 0; index -= 1) {
+      const observation = descriptors[index];
+      if (observation !== undefined) {
+        closeSync(observation.descriptor);
+      }
+    }
+  }
+}
+
+function copyPinnedSnapshotNode(
+  sourceDescriptor: number,
+  sourceStats: BigIntStats,
+  destination: string,
+  sourcePath: string,
+  depth: number,
+  budget: SnapshotBudget,
+): void {
+  if (
+    depth > MAX_GATEWAY_SNAPSHOT_DEPTH ||
+    sourcePath.length > MAX_GATEWAY_SNAPSHOT_PATH_LENGTH
+  ) {
+    throw new Error("snapshot nesting exceeds the safety limit");
+  }
+  const type = sourceStats.isDirectory()
+    ? "directory"
+    : sourceStats.isFile()
+      ? "file"
+      : null;
+  if (type === null) {
+    throw new Error("snapshot contains a non-ordinary entry");
+  }
+
+  budget.entries += 1;
+  if (budget.entries > MAX_GATEWAY_SNAPSHOT_ENTRIES) {
+    throw new Error("snapshot entry count exceeds the safety limit");
+  }
+
+  if (type === "file") {
+    if (sourceStats.size > BigInt(MAX_GATEWAY_SNAPSHOT_FILE_BYTES)) {
+      throw new Error("snapshot file exceeds the safety limit");
+    }
+    const sourceSize = Number(sourceStats.size);
+    budget.bytes += sourceSize;
+    if (budget.bytes > MAX_GATEWAY_SNAPSHOT_BYTES) {
+      throw new Error("snapshot byte count exceeds the safety limit");
+    }
+    copyPinnedSnapshotFile(
+      sourceDescriptor,
+      sourceStats,
+      destination,
+      sourceSize,
+    );
+    return;
+  }
+
+  mkdirSync(destination, { mode: 0o700 });
+  const sourceDirectory = opendirSync(`/proc/self/fd/${sourceDescriptor}`);
+  const entryFlags =
+    constants.O_RDONLY | constants.O_NONBLOCK | constants.O_NOFOLLOW;
+  try {
+    while (true) {
+      const entry = sourceDirectory.readSync();
+      if (entry === null) {
+        break;
+      }
+      const childPath = `${sourcePath}/${entry.name}`;
+      if (childPath.length > MAX_GATEWAY_SNAPSHOT_PATH_LENGTH) {
+        throw new Error("snapshot path exceeds the safety limit");
+      }
+      const childSource = `/proc/self/fd/${sourceDescriptor}/${entry.name}`;
+      const childPathStats = lstatSync(childSource, { bigint: true });
+      if (
+        childPathStats.isSymbolicLink() ||
+        (!childPathStats.isDirectory() && !childPathStats.isFile())
+      ) {
+        throw new Error("snapshot contains a non-ordinary entry");
+      }
+      const childDescriptor = openSync(
+        childSource,
+        childPathStats.isDirectory()
+          ? constants.O_RDONLY | constants.O_DIRECTORY | constants.O_NOFOLLOW
+          : entryFlags,
+      );
+      try {
+        const childStats = fstatSync(childDescriptor, { bigint: true });
+        assertSameSnapshotStats(
+          childPathStats,
+          childStats,
+          "snapshot source changed before it was opened",
+        );
+        copyPinnedSnapshotNode(
+          childDescriptor,
+          childStats,
+          join(destination, entry.name),
+          childPath,
+          depth + 1,
+          budget,
+        );
+        assertSameSnapshotStats(
+          childStats,
+          fstatSync(childDescriptor, { bigint: true }),
+          "snapshot source changed while it was copied",
+        );
+      } finally {
+        closeSync(childDescriptor);
+      }
+    }
+  } finally {
+    sourceDirectory.closeSync();
+  }
+  assertSameSnapshotStats(
+    sourceStats,
+    fstatSync(sourceDescriptor, { bigint: true }),
+    "snapshot source changed while it was copied",
+  );
+}
+
+function copyPinnedSnapshotFile(
+  sourceDescriptor: number,
+  sourceStats: BigIntStats,
+  destination: string,
+  sourceSize: number,
+): void {
+  const destinationDescriptor = openSync(
+    destination,
+    constants.O_WRONLY |
+      constants.O_CREAT |
+      constants.O_EXCL |
+      constants.O_NOFOLLOW,
+    0o600,
+  );
+  let copiedBytes = 0;
+  const buffer = Buffer.allocUnsafe(64 * 1024);
+  try {
+    while (true) {
+      const count = readSync(
+        sourceDescriptor,
+        buffer,
+        0,
+        buffer.length,
+        null,
+      );
+      if (count === 0) {
+        break;
+      }
+      copiedBytes += count;
+      if (copiedBytes > sourceSize) {
+        throw new Error("snapshot source changed while it was copied");
+      }
+      let written = 0;
+      while (written < count) {
+        const writeCount = writeSync(
+          destinationDescriptor,
+          buffer,
+          written,
+          count - written,
+          null,
+        );
+        if (writeCount === 0) {
+          throw new Error("snapshot destination stopped accepting bytes");
+        }
+        written += writeCount;
+      }
+    }
+
+    const copiedStats = fstatSync(destinationDescriptor, { bigint: true });
+    if (
+      copiedBytes !== sourceSize ||
+      copiedStats.size !== sourceStats.size ||
+      !copiedStats.isFile()
+    ) {
+      throw new Error("snapshot source changed while it was copied");
+    }
+    assertSameSnapshotStats(
+      sourceStats,
+      fstatSync(sourceDescriptor, { bigint: true }),
+      "snapshot source changed while it was copied",
+    );
+  } finally {
+    closeSync(destinationDescriptor);
+  }
+}
+
+function assertSameSnapshotStats(
+  expected: BigIntStats,
+  actual: BigIntStats,
+  message: string,
+): void {
+  if (
+    expected.dev !== actual.dev ||
+    expected.ino !== actual.ino ||
+    expected.size !== actual.size ||
+    expected.mtimeNs !== actual.mtimeNs ||
+    expected.ctimeNs !== actual.ctimeNs
+  ) {
+    throw new Error(message);
+  }
+}
+
+/**
+ * Portable local fallback. It revalidates pathname identities around `cpSync`
+ * and therefore requires the documented quiescent source-tree boundary.
+ */
+function copySnapshotEntryPortable(
+  source: string,
+  destination: string,
+  expectedType: "directory" | "file",
+  budget: SnapshotBudget,
+): void {
   const sourceStats = lstatSync(source);
   if (
     sourceStats.isSymbolicLink() ||
@@ -841,9 +1397,6 @@ function copySnapshotEntry(
       : !sourceStats.isFile())
   ) {
     throw new Error(`snapshot entry is not an ordinary ${expectedType}`);
-  }
-  if (existsSync(destination)) {
-    return;
   }
   mkdirSync(dirname(destination), { recursive: true });
   const observations: SnapshotObservation[] = [];

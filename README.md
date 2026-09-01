@@ -80,12 +80,19 @@ npm run cli -- gateway:packet . <run-id> <attempt-id>
 
 The default output is concise Markdown intended for an operator or a connected
 agent. Add `--format=json` after the positional arguments for the full
-structured gateway report. Intake validates and renders one external agent's
-`agent-thesis-proposal/v0`; it neither confirms the interpretation nor creates a
-full preregistration. Status and packet access are deterministic reads of one
-exact repository run and attempt. Invalid custody fails closed: the gateway
-withholds the packet, suppresses inferred actions, and does not repeat positive
-review or lifecycle labels from inconsistent bytes.
+structured gateway report. Intake accepts one ordinary proposal file of at most
+1 MiB whose opened identity and canonical path revalidate inside the workspace,
+checks an external agent's `agent-thesis-proposal/v0` for
+schema and cross-field consistency, and renders its declarations. Passing that
+check does not authenticate the provider or operator, retrieve a source, compare
+source bytes, or establish empirical truth. It neither confirms the
+interpretation nor creates a full preregistration. Default Markdown applies
+presentation-only neutralization and redaction; explicit JSON retains the
+structured audit values and can contain sensitive untrusted prose. Status and
+packet access are deterministic reads of one exact repository run and attempt.
+Invalid custody fails closed: the gateway withholds the packet, suppresses
+inferred actions, and does not repeat positive review or lifecycle labels from
+inconsistent bytes.
 
 This is an access scaffold, not an autonomous researcher. It performs no model
 call, browsing, source acquisition, durable or canonical persistence,
