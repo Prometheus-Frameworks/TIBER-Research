@@ -140,6 +140,25 @@ test("default Markdown neutralizes setext headings and hyphen thematic breaks", 
   );
 });
 
+test("neutralized tabs do not trigger setext punctuation escapes", () => {
+  const proposal = readProposal();
+  proposal.original_take.received_text = ["\t===", "\t---"].join("\n");
+  proposal.nodes[0].statement = proposal.original_take.received_text;
+
+  const report = inspectGatewayIntake(proposal);
+  assert.equal(report.valid, true, JSON.stringify(report.validation_errors));
+  const view = renderGatewayIntakeMarkdown(report);
+
+  const tabMarker = "\\[control character removed\\]";
+  for (const punctuation of ["===", "---"]) {
+    assert.ok(view.includes(`${tabMarker}${punctuation}`), `expected ${punctuation}`);
+    assert.ok(
+      !view.includes(`${tabMarker}\\${punctuation}`),
+      `did not expect an escape before ${punctuation}`,
+    );
+  }
+});
+
 test("default views redact whole fields containing colon-prefixed, UNC, and spaced absolute paths", () => {
   for (const [sensitive, exposedFragment] of [
     ["Path:/workspace/private/run.json", "workspace/private/run.json"],
