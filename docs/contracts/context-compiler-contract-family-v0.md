@@ -58,9 +58,9 @@ into a compact agent-facing packet plus replayable custody records, such that:
   claim;
 - observed, derived, forecast, operator, and agent material remain
   structurally distinct and cannot launder into one another;
-- private operator context is released only under exact verified scope, with
-  existence-safe behavior everywhere one principal could probe another's
-  state;
+- private operator context is released only under an exact path-valid scope
+  match (§8), with existence-safe behavior everywhere one principal could
+  probe another's state;
 - every release decision is bound to the exact claim, caller, request, and
   policy it evaluated;
 - every digest uses the repository-native procedures; and
@@ -81,7 +81,8 @@ into a compact agent-facing packet plus replayable custody records, such that:
    belongs to JSON Schema documents only. `schema_version` is included in
    every digest projection, so version substitution under an unchanged digest
    is impossible.
-3. **Digest procedures.** Only the repository-native procedures are used:
+3. **Digest procedures.** The native `common#/$defs/digestMode` contains
+   exactly two values, and only those two are digest modes in this family:
    - `tiber-canonical-json-v1` — canonical structured JSON
      (`src/canonical.ts`): JSON data model only; object member names sorted in
      ascending UTF-16 code-unit order at every depth; array order preserved;
@@ -90,16 +91,20 @@ into a compact agent-facing packet plus replayable custody records, such that:
      symbols, non-plain objects, and cycles; UTF-8 output without a BOM;
      hashed with SHA-256.
    - `tiber-raw-sha256-v1` — hash of exact bytes.
-   - `tiber-json-file-v1` — the governed on-disk JSON form (sorted keys,
-     `JSON.stringify(value, null, 2)`, exactly one trailing LF).
    The digest representation is always the native `sha256:<64 lowercase hex>`
    (`common#/$defs/digest`); the procedure is identified by the native
    `common#/$defs/digestMode` **beside** the digest (§4). No other prefix,
    profile name, or representation exists in this family.
-4. **Three distinct file-digest claims.** For a governed JSON fixture file,
-   the semantic canonical digest (`tiber-canonical-json-v1`), the governed
-   file-form conformance (`tiber-json-file-v1`), and the exact file-byte hash
-   (`tiber-raw-sha256-v1`) are three separate claims and are never collapsed.
+   `tiber-json-file-v1` is **not a digest mode**: it is the repository's
+   governed JSON serialization/file-form conformance rule (sorted keys,
+   `JSON.stringify(value, null, 2)`, exactly one trailing LF).
+4. **Governed JSON file claims.** A governed JSON fixture file carries two
+   digests — its semantic canonical digest (`tiber-canonical-json-v1`) and
+   its exact file-byte hash (`tiber-raw-sha256-v1`) — plus a **separate
+   file-form conformance result** recording whether the bytes satisfy
+   `tiber-json-file-v1`. The two digests and the conformance claim are three
+   distinct statements and are never collapsed, and the conformance result is
+   never represented as a digest value or a `digestMode`.
 5. **Vocabulary reuse.** `safeId`, `nonEmptyString`, `relativePath`,
    `timestamp`, `nullableTimestamp`, `ownerRepository`, `freshnessState`,
    `admissibilityState`, `reportability`, `retentionMode`, `replayability`,
@@ -136,7 +141,11 @@ Composition over native primitives; not a competing procedure:
 
 ```text
 DigestBindingV0:
-  digest_mode: common#/$defs/digestMode
+  digest_mode: common#/$defs/digestMode    # exactly tiber-canonical-json-v1
+                                           # or tiber-raw-sha256-v1; no other
+                                           # value exists (tiber-json-file-v1
+                                           # is a file-form conformance rule,
+                                           # never a digest_mode)
   digest:      common#/$defs/digest        # sha256:<64 lowercase hex>
 ```
 
@@ -178,6 +187,36 @@ something. Absence states never appear as claims (§6).
   optional `ownerRepository`). Always real; never invented.
 - `compiler_chain[]`: ordered transformer records `{transformer_id: safeId,
   version: nonEmptyString}`. The original asserter survives every transform.
+- `derivation` — required iff `claim_production_class: compiler_derived`,
+  absent otherwise. The inline input-edge structure that makes every
+  derivation fully traversable (it is a claim substructure, not a new shape;
+  the twelve-shape inventory is unchanged):
+
+  ```text
+  derivation:
+    transformer: { transformer_id: safeId, version: nonEmptyString }
+                 # the compiler_chain step applying to these inputs
+    inputs[]  (one or more), each:
+      { input_kind:   claim | source_object,
+        input_digest: DigestBindingV0,
+                 # the input's immutable claim_digest, or the governed
+                 # source/object content digest
+        asserter:     <that input's own original asserter, verbatim>,
+        binding:      <the input's applicable source_binding, or its
+                       governed locator {kind, value}>,
+        role:         safeId }   # e.g. component_vector, scoring_contract
+  ```
+
+  Rules: every input is bound by an immutable digest that already exists
+  before the derived claim is constructed, so the edge set is acyclic by
+  construction; each input preserves its own original asserter and binding —
+  **no composite asserter is ever invented** (the derived claim's top-level
+  `asserter` is the asserter of the primary asserted content where one
+  exists, and every other contributor is preserved on its input edge); one
+  input and many inputs use the same structure. A multi-input derived claim
+  — DST-01's named external component vector plus the observed league
+  scoring contract included — is fully traversable through
+  `inspect_lineage`-class operations by walking `derivation.inputs[]`.
 - `assertion`: `{payload_contract_ref: nonEmptyString (id+version of the
   payload shape, owned by the asserting/owning lane; for external material a
   declared contract carrying payload_validation: not_performed |
@@ -312,18 +351,49 @@ from the same policy digest and clocks and must reproduce it byte-identically.
   rule (`admitted: true ⇔ state: admitted`) applies wherever the native
   admissibility block appears in a source binding.
 - `promotion` ∈ `promoted | unpromoted | not_promotable` — promotion
-  **status**, composed with the native `promotable` capability boolean:
-  `not_promotable ⇔ promotable: false`; `promoted`/`unpromoted` require
-  `promotable: true`; `promoted` additionally requires
-  `admission.state: admitted` (validation V4).
+  **status**, total over both source-binding arms:
+  - `source_binding.applicable: true` → the claim's promotion capability
+    must agree with the bound source object's native `promotable` boolean:
+    `not_promotable ⇔ source_ref.promotable: false`; `promoted`/`unpromoted`
+    require `source_ref.promotable: true`; `promoted` additionally requires
+    `admission.state: admitted` (validation V4). Disagreement between the
+    claim and its bound source object is contract-invalid.
+  - `source_binding.applicable: false` (operator hypotheses, agent material,
+    synthetic constructions, unadmitted external candidates) →
+    `promotion: not_promotable` is the **only** permitted value; promoted
+    and unpromoted require an applicable binding. An unadmitted external
+    candidate can gain promotability only by a later governed intake that
+    binds a real admitted source object — never by relabeling.
 - `rights_observed` ∈ `documented_permission |
   terms_facially_restrict_declared_use | upstream_chain_unknown |
   no_terms_observed | not_applicable` — a typed **empirical** observation,
   genuinely new (the native `rights_disposition_ref` is the governing
   disposition pointer and `limits` are per-source strings; neither is a typed
-  empirical state). `rights_disposition_ref` is reused as a required binding
-  wherever rights govern. Empirical observation, governing disposition, and
-  per-request release decisions (§9) remain three distinct things.
+  empirical state). The **governing** rights authority is bound totally and
+  digest-bound via a tagged shape:
+
+  ```text
+  rights_authority:
+    { applicable: true,
+      rights_disposition_ref: <native ref — via the applicable
+                               source_binding's source object, or a directly
+                               bound governed disposition where rights govern
+                               material without a source object> }
+  | { applicable: false, reason: safeId }     # rights genuinely do not
+                                              # govern (e.g. an operator's
+                                              # own hypothesis)
+  | { unresolved: true, reason: safeId }      # rights govern but no admitted
+                                              # disposition exists (e.g. an
+                                              # unadmitted external candidate)
+  ```
+
+  Empirical observation (`rights_observed`), governing disposition
+  (`rights_authority`), and per-request release decisions (§9) remain three
+  distinct things. **Unresolved or absent rights authority can never produce
+  content disclosure or governed-use eligibility**: with
+  `rights_authority.unresolved`, `ReleaseDecisionV0.decisions.payload` cannot
+  be `allow` for externally sourced content, and the S1/S5 sets never grant
+  `consume_canonical` or `derive_governed` (§9 invariant).
 - `privacy_scope`: `public | operator_private{principal_subject_ref,
   workspace, league | null, roster | null, player | null}` — scope only.
   `principal_subject_ref` is required for operator-private claims: under the
@@ -357,11 +427,13 @@ operator/agent with `context_layer: observed`; **V2** `compiler_derived` with
 `context_layer ≠ derived`; **V3** synthetic origin/production outside
 `fixture_only` ceiling or carrying `promotion: promoted`; **V4**
 `promotion: promoted` without `admission.state: admitted`; **V5**
-operator-private material released outside exact verified scope (§8); **V6**
+operator-private material released without an exact path-valid scope match
+(§8); **V6**
 any conflict alternative not passing full per-claim release (§11); **V7**
 `context_layer: forecast` with origin ≠ forecast_model or admission ≠
-admitted; **V8** a substantive value forced where an applicability tag is
-true; **V9** `context_layer: agent` in any compiler-emitted packet.
+admitted; **V8** a substantive/native value supplied inside an
+`{applicable: false}` arm, or a required substantive value missing from an
+`{applicable: true}` arm — an applicable-true value is itself valid; **V9** `context_layer: agent` in any compiler-emitted packet.
 
 ## 6. `EvidenceResultV0` — the per-request result envelope
 
@@ -407,7 +479,7 @@ wherever specificity would leak private existence.
 
 ```text
 subject_claim_digest:     DigestBindingV0     # the exact claim evaluated
-request_scope_digest:     DigestBindingV0     # verified caller scope object
+request_scope_digest:     DigestBindingV0     # effective caller-scope object (§8)
 request_identity_digest:  DigestBindingV0     # {operation_id,
                                               #  operation_version,
                                               #  requested_domain,
@@ -418,7 +490,10 @@ request_identity_digest:  DigestBindingV0     # {operation_id,
 transport_channel:        http_public | local_stdio | internal | remote_future
 scope_verification:       none | declared_unauthenticated | server_authenticated
 rights_observation_refs[] + rights_observation_digest: DigestBindingV0
-evaluated_inputs:         { admission (tagged), promotion, privacy_scope
+evaluated_inputs:         { admission (tagged), promotion,
+                            rights_authority (tagged — the governing
+                            disposition binding, not only the empirical
+                            observations), privacy_scope
                             (incl. principal_subject_ref), authority_ceiling,
                             claim_origin_class, claim_production_class,
                             source_binding applicability (+ native
@@ -450,10 +525,12 @@ contract-invalid (payload without the metadata preserving identity, original
 asserter, authority, and lineage is never releasable). `metadata: withhold`
 means no entry is emitted. `existence: generic` forces the §8 generic path.
 Retention composes with the native `retentionMode`; the native enum is
-unforked. Empirical rights observations and the governing
-`rights_disposition_ref` are inputs; the five decisions are per-request
-outputs; the claim's own `reportability` and rights fields are unchanged by
-any decision.
+unforked. Empirical rights observations and the governing `rights_authority`
+binding (§5.6) are both evaluated inputs, carried inside
+`evaluated_inputs` and therefore inside `decision_input_digest`; the five
+decisions are per-request outputs; the claim's own `reportability` and rights
+fields are unchanged by any decision. With `rights_authority.unresolved`,
+`decisions.payload` cannot be `allow` for externally sourced content.
 
 **One-way lifecycle:** (1) `claim_digest` is computed with no release-decision
 field of any kind; (2) the decision is computed referencing the claim digest
@@ -464,10 +541,16 @@ no cycle.
 
 ## 8. Release paths and existence safety
 
-**Verified caller scope:** `{principal_id, verification_class, workspace,
-league, roster, player}` — produced by the transport's authentication layer,
-never caller-raw. `scope_verification` cannot be set by any caller-supplied
-coordinate, header, or field.
+**Effective caller scope:** one neutral resolved scope object,
+`{principal_or_declared_subject, scope_verification, workspace, league,
+roster, player}`, with exactly two non-interchangeable origins. On **Path L**
+it is assembled by the local stdio transport from **declared** coordinates
+and marked `declared_unauthenticated` — nothing about it is authenticated or
+verified. On **Path S** it is produced by the transport's authentication
+layer: an authenticated, server-derived principal, membership, and resource
+scope. The words "authenticated" and "verified" describe Path S only.
+`scope_verification` cannot be set by any caller-supplied coordinate, header,
+or field, on either path.
 
 **Path L — `declared_local_operator`.** Local stdio transport only.
 Coordinates (`workspaceId`, `operatorId`) are accepted, **not authenticated**,
@@ -495,10 +578,19 @@ private-specific reason code. **No null `ClaimV0` shell is ever emitted.**
 Payload disclosure, metadata disclosure, retention, logging, and existence
 disclosure are five independent controls (§7); rights or privacy prohibitions
 may bind at the metadata level, withholding identifiers, references, digests,
-and lineage — not merely payload. Non-representable inputs (league chat;
-coercive, psychological, or private-incident material; manager/account/chat
-identifiers; credentials; hidden chain of thought) are refused at intake with
-no storage or echo, in every scope.
+and lineage — not merely payload.
+
+**Non-representable inputs:** league-chat content; coercive, psychological,
+or private-incident material; credentials; hidden chain of thought; and
+manager/account/chat identifiers **inside evidence payloads, fixtures,
+narratives, or logs** are refused at intake with no storage or echo, in
+every scope. This does not conflict with the governed scope identifiers the
+paths themselves require: `operatorId`, `principal_id`, and
+`principal_subject_ref` may exist **only** in the effective caller-scope
+envelope and the private storage binding, governed by the §7
+disclosure/logging decisions — they never appear in public-profile logs or
+evidence payloads. Caller-supplied identifiers never establish authenticated
+identity and never select Path-S state.
 
 ## 9. Permitted use — the S1–S6 intersection
 
@@ -522,10 +614,10 @@ cite_with_authority_fields, inspect_reference_only}; fixture_only →
 {use_in_fixture_context, inspect_reference_only}; external_reference_only →
 {cite_with_authority_fields, inspect_reference_only}.
 
-**S3 — privacy/scope:** public → full U; operator_private with exact verified
-scope match (per the active path) → {use_within_scope,
-cite_with_authority_fields, inspect_reference_only}; mismatch → ∅ (and the
-generic path emits nothing).
+**S3 — privacy/scope:** public → full U; operator_private with an exact
+path-valid scope match (per the active path's §8 rules) →
+{use_within_scope, cite_with_authority_fields, inspect_reference_only};
+mismatch → ∅ (and the generic path emits nothing).
 
 **S4 — disclosure decision:** payload allow + metadata allow → full U;
 payload withhold + metadata allow → {cite_with_authority_fields,
@@ -543,8 +635,9 @@ fixture_construction) → {use_in_fixture_context, inspect_reference_only}.
 **S6 — metadata completeness:** complete verified attribution set
 (asserter, entity_ref, claim_origin_class, claim_production_class, admission,
 promotion, authority_ceiling, clocks per nullability, complete freshness
-member + evaluation, compiler_chain or governed digest-bound reference) →
-full U; verified id/digest/locator/layer but incomplete attribution →
+member + evaluation, compiler_chain or governed digest-bound reference, and —
+for `claim_production_class: compiler_derived` — the complete `derivation`
+input-edge set of §5.1) → full U; verified id/digest/locator/layer but incomplete attribution →
 {inspect_reference_only}; unverifiable, prohibited, or mismatched → ∅ and no
 entry emitted. A claim id, digest, and locator alone never qualify as
 attributable citation metadata.
@@ -553,7 +646,9 @@ Invariants: no admission state bypasses any ceiling; unresolved admission
 never gains `derive_governed`; private scope always intersects; flipping
 `promotion` alone between promoted and unpromoted (admission held admitted)
 changes the final set by exactly {consume_canonical, derive_governed} — the
-mechanical CA-01 check.
+mechanical CA-01 check; unresolved or absent `rights_authority` (§5.6) never
+yields payload disclosure of externally sourced content and never yields
+`consume_canonical` or `derive_governed` eligibility for it.
 
 ## 10. `ReleasedEntryV0` and `ReleasedClaimMetadataV0`
 
@@ -581,9 +676,13 @@ carry none of their own.
 deterministic, payload-free authorized projection
 `project(ClaimV0, ReleaseDecisionV0)`: claim_id; claim_digest; entity_ref;
 context_layer; epistemic_class; claim_origin_class; claim_production_class;
-original asserter; compiler_chain or its governed digest-bound reference; the
+original asserter; compiler_chain or its governed digest-bound reference; for
+`claim_production_class: compiler_derived`, the `derivation` input edges of
+§5.1 (transformer identity plus each input's kind, digest binding, asserter,
+binding, and role — digests and identities only, never input payloads); the
 complete clock set; the complete freshness member and evaluation; the
-rights-observation state authorized for disclosure; admission (tagged);
+rights-observation state authorized for disclosure and the tagged
+`rights_authority` binding (§5.6); admission (tagged);
 promotion; authority_ceiling; reportability; the privacy classification
 appropriate for the authorized response; payload_contract_ref; units_ref
 where applicable; payload_digest only when its disclosure is authorized; and
@@ -599,7 +698,9 @@ artifacts the resolution evidence is a
 and verify it equals `claim_digest`; (3) verify claim_id equality; (4) verify
 `context_layer` equality — a derived claim can never be indexed as observed;
 (5) recompute the authorized projection and verify it equals
-`released_metadata` field for field; (6) recompute
+`released_metadata` field for field — for a `compiler_derived` claim this
+includes recomputing each `derivation` input edge's digest binding (§5.1)
+against the resolved claim; (6) recompute
 `metadata_projection_digest`; (7) verify
 `ReleaseDecisionV0.subject_claim_digest` equals the same claim digest. Every
 verification is recorded in `ContextCompilationTraceV0` as a per-entry
@@ -636,8 +737,11 @@ existence. Conflicts are preserved, never merge-resolved.
 ### 12.1 Organization
 
 - `results[]` — the primary structure, indexed by requested
-  operation/domain; each entry one `EvidenceResultV0`; each claim lives in
-  exactly one result.
+  operation/domain; each entry one `EvidenceResultV0`. A claim has one
+  packet-wide `claim_id ↔ claim_digest` identity and **may be referenced by
+  multiple results**: at most one embedded occurrence exists per packet, and
+  every other occurrence is exact reference-form reuse of the same identity
+  (§12.2); the context-layer indexes list each identity once.
 - **Context-layer indexes** — five deterministic lists of
   `{claim_id, claim_digest}` pairs (ordered by `claim_id`, byte-lexicographic)
   referencing released entries in `results[]`: the layer view without
@@ -645,7 +749,7 @@ existence. Conflicts are preserved, never merge-resolved.
   empty in compiler-emitted packets** — the compiler has no ingestion channel
   for agent material, making non-ingestion structural.
 - Header: `context_packet_id`, compiler id/version, `decision_scope`,
-  `caller_scope` (channel; principal class; verified bindings;
+  `caller_scope` (channel; principal class; resolved scope bindings;
   `scope_verification`; Path L's recorded trust assumption where applicable),
   `generated_at`, `world_state_as_of | null` (never defaulted from
   `generated_at`), `known_unknowns[]` and `missing_witnesses[]` (each names
@@ -688,8 +792,11 @@ id/version; exact source snapshot references (native `artifactDigest` for
 governed files; `DigestBindingV0` for object digests; native `replayability`
 where applicable; provenance-receipt references per §10.2); candidate inputs
 considered; inclusion/exclusion rules; every transformation/compaction with
-before/after digests; omission reasons for every omitted decisive-class
-field; freshness/authority filters recorded per axis (availability-of-result,
+before/after digests, and for every claim it produced with
+`claim_production_class: compiler_derived` the complete `derivation`
+input-edge set of §5.1 (transformer identity and each input's kind, digest
+binding, asserter, binding, and role) recorded verbatim; omission reasons for
+every omitted decisive-class field; freshness/authority filters recorded per axis (availability-of-result,
 freshness, admission, promotion separately); per-entry
 `reference_verification` records; per-released-entry `decision_input_digest`;
 the three isolation statuses carried verbatim (`source_containment /
@@ -831,7 +938,11 @@ no fixture is created or frozen by this document): RD-01 (thesis-hold
 isolation), RD-02 (usage evidence unavailable/source-required), JJ-01
 (operator hypothetical privacy), JT-01 (designation/eligibility/reserve axis
 separation), AJ-01 (unresolved availability and late-swap geometry), DST-01
-(deterministic external recast, permanently derived), K-01 (incomplete kicker
+(deterministic external recast, permanently derived; its named external
+component vector and the observed league scoring contract are distinct
+digest-bound entries in the derived claim's `derivation.inputs[]` (§5.1),
+each preserving its own asserter, and remain traversable through
+`inspect_lineage`-class operations), K-01 (incomplete kicker
 components fail incomplete), **AV-01 (mandatory, fail-closed: a
 retrospective/backfill artifact shaped like current evidence must surface
 historical-available and current-stream-unknown as distinct results, with
