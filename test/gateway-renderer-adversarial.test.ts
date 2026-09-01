@@ -113,6 +113,33 @@ test("default Markdown neutralizes entities and tilde fences", () => {
   assert.doesNotMatch(view, /actor-orchestrator-999/iu);
 });
 
+test("default Markdown neutralizes setext headings and hyphen thematic breaks", () => {
+  const proposal = readProposal();
+  proposal.original_take.received_text = [
+    "Untrusted title",
+    "===",
+    "---",
+  ].join("\n");
+  proposal.interpretation.summary = [
+    "Untrusted summary",
+    "-- -",
+    "- - -",
+  ].join("\n");
+  proposal.nodes[0].statement = proposal.original_take.received_text;
+
+  const report = inspectGatewayIntake(proposal);
+  assert.equal(report.valid, true, JSON.stringify(report.validation_errors));
+  const view = renderGatewayIntakeMarkdown(report);
+
+  for (const escaped of ["\\===", "\\---", "\\-- -", "\\- - -"]) {
+    assert.ok(view.includes(`<br>\n${escaped}`), `expected ${escaped}`);
+  }
+  assert.doesNotMatch(
+    view,
+    /(?:^|\n)[ \t]{0,3}(?:=+|-+|(?:-[ \t]*){3,})[ \t]*(?:\n|$)/u,
+  );
+});
+
 test("default views redact whole fields containing colon-prefixed, UNC, and spaced absolute paths", () => {
   for (const [sensitive, exposedFragment] of [
     ["Path:/workspace/private/run.json", "workspace/private/run.json"],

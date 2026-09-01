@@ -443,6 +443,10 @@ function escapeText(value: string): string {
     .replaceAll("\\", "\\\\")
     .replaceAll("&", "&amp;")
     .replace(/([`*_[\]{}<>|])/gu, "\\$1")
+    .replace(
+      /(^|\n)([ \t]{0,3})(?=(?:=+|-+|(?:-[ \t]*){3,})[ \t]*(?:\n|$))([=-])/gu,
+      "$1$2\\$3",
+    )
     .replace(/(^|\n)([ \t]{0,3})([#>+-])(?=\s)/gu, "$1$2\\$3")
     .replace(/(^|\n)([ \t]{0,3})(~{3,})/gu, "$1$2\\$3")
     .replace(
