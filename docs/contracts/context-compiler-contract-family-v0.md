@@ -164,7 +164,8 @@ Usage rule: `DigestBindingV0` is used for every content/self/object digest —
 artifact type and repository-relative path genuinely exist (`operation_manifest_ref`,
 policy references,
 receipt `governing_authority_ref`/`governing_manifest_ref`, trace snapshot
-references to governed files, each §7
+references to governed files, each
+`ClaimV0.rights_observation_universe.refs[].artifact_ref` (§5.6) and §7
 `rights_observation_refs[].artifact_ref`, and the `governed_artifact` form of
 `rights_disposition_binding`). Self-digests never impersonate
 `artifactDigest`. Exactly one digest in the family is not itself a
@@ -355,7 +356,9 @@ something. Absence states never appear as claims (§6).
   `claim_ref` through its pin,
   applies §10.2 checks 1–3 (retrieve, recompute the digest and verify it
   equals `input_digest`, verify `claim_id` equality), verifies the edge's
-  `asserter` per V11 (verbatim equality with the retrieved claim), computes
+  `asserter` per V11 (verbatim equality with the retrieved claim), validates
+  each input's complete rights-observation universe and constructs the exact
+  §5.6 universe union and conservative `rights_observed` fold, then computes
   the tentative caller-invariant derived claim and its
   `output_claim_digest`, and then computes the exact
   `derivation_request_digest`. Before that tentative claim can become valid,
@@ -396,7 +399,10 @@ something. Absence states never appear as claims (§6).
   permitted-use checks described above. Construction-time validation
   recomputes the decision, verifies its subject, complete request identity
   and scope, `decision_input_digest`, and `decision_digest`, and then
-  recomputes S1–S6. A missing, duplicate, ambiguous, or mismatched witness
+  recomputes S1–S6. Each witness also retains its input universe contribution,
+  while the derivation trace retains the exact sorted-union/fold
+  correspondence used before `output_claim_digest`. A missing, duplicate,
+  ambiguous, or mismatched witness
   makes the proposed derivation contract-invalid; the tentative object is
   discarded and no valid derived claim results (V13). This is a
   construction-time audit obligation, not a
@@ -655,7 +661,73 @@ from the same policy digest and clocks and must reproduce it byte-identically.
   no_terms_observed | not_applicable` — a typed **empirical** observation,
   genuinely new (the native `rights_disposition_ref` is the governing
   disposition pointer and `limits` are per-source strings; neither is a typed
-  empirical state). The **governing** rights authority is bound totally,
+  empirical state).
+
+  **Authoritative observation universe.** Every claim also has the required
+  caller-invariant field:
+
+  ```text
+  rights_observation_universe:
+    { refs[]:
+        { artifact_ref: common#/$defs/artifactDigest,
+          artifact_pin: { pin: repository_revision,       # const
+                          repository: ownerRepository,
+                          revision: nonEmptyString } },     # full immutable
+                                                           # commit object id
+      digest: DigestBindingV0 }
+  ```
+
+  This is the governed claim constructor's authoritative closed observation
+  set at claim construction, not a caller- or asserter-supplied sample and not
+  a claim of externally discoverable global completeness. The constructor
+  rejects any caller/asserter-selected subset. Every referenced observation
+  artifact must exist before construction, be resolved at the exact full
+  immutable commit pin, and pass its adjacent native `artifactDigest`
+  procedure before the claim is valid. No observation artifact may contain or
+  depend on the containing `ClaimV0` or `claim_digest`, any release decision,
+  result, packet, or trace digest. Dependency therefore remains one-way:
+  observation artifacts → universe aggregate → claim digest → decision →
+  packet → trace.
+
+  `refs[]` uses the exact wrapper, mode-specific content verification, total
+  order, and duplicate/conflict rejection repeated for decision copies in §7.
+  `digest` is `tiber-canonical-json-v1` over the sorted `refs` array exactly as
+  present, including every nested pin and artifact-ref member. An empty
+  universe is represented by `[]`, never absence or `null`, and is permitted
+  iff `rights_observed: not_applicable`; every other empirical state requires
+  at least one retained bounded-observation or audit artifact. A negative
+  observation is never an empty universe. The entire field is inside
+  `claim_digest`; adding, removing, or superseding an observation therefore
+  requires a newly digested `ClaimV0` linked by `supersedes_claim_id`, never an
+  edit to the old claim. A generic/no-subject response does not project, emit,
+  or log a claim, its universe, or any universe ref/digest (§8). When a claim
+  is releasable, the universe and its
+  refs remain claim metadata and are never partially redacted: policy either
+  authorizes the complete metadata projection that carries them or withholds
+  the entry.
+
+  **Derived-universe correspondence.** For a `compiler_derived` claim, claim
+  construction first retrieves and validates every input `ClaimV0` under the
+  §5.1 pin/digest rules. Before the tentative output is hashed, its
+  `rights_observation_universe.refs[]` must be exactly the deterministic set
+  union of every input claim's complete universe: exact duplicate wrappers
+  collapse to one member; members with the same `{repository, revision, path}`
+  but any unequal `artifact_ref` member conflict and invalidate the
+  derivation; the remaining members use the §7 total sort. No input member may
+  be omitted and no extra member may be injected. V0 has no separate
+  output-specific observation channel: an additional observation applicable
+  to the transformation or output must first be carried by another governed
+  `ClaimV0` and included as a derivation input. The derived
+  `rights_observed` value is the deterministic conservative fold of all input
+  values in this precedence order:
+  `terms_facially_restrict_declared_use` > `upstream_chain_unknown` >
+  `no_terms_observed` > `documented_permission` > `not_applicable`; it is
+  `not_applicable` iff every input is `not_applicable`. The constructor
+  recomputes the union digest and validates both the exact union and this fold
+  before computing `output_claim_digest`. A mismatch is V10/V13 and the
+  proposed derivation is contract-invalid.
+
+  The **governing** rights authority is bound totally,
   resolvably, and immutably via a tagged shape:
 
   ```text
@@ -782,17 +854,27 @@ admitted; **V8** a substantive/native value supplied inside an
 `rights_disposition_ref` that differs from the bound source object's native
 value under an applicable `source_binding`, or a binding whose digest does
 not equal the recomputed digest of the resolved disposition content (§5.6),
-or a §7 `ReleaseDecisionV0` whose rights-observation set is not exactly the
-policy-selected set, contains an unpinned, unresolvable, duplicate, conflicting,
-or incorrectly ordered entry, whose `evaluated_inputs.rights_observed` differs
-from the subject `ClaimV0.rights_observed`, or that has an unequal recomputed
-`rights_observation_digest`, or whose `disclosure_policy_ref` +
+or a `ClaimV0` whose required `rights_observation_universe` contains an
+unpinned, non-pre-existing, unresolvable, digest-mismatched, duplicate,
+conflicting, or incorrectly ordered entry, has an invalid empty/nonempty
+cardinality for its `rights_observed` state, or has an unequal recomputed
+aggregate digest; a `compiler_derived` claim whose universe or
+`rights_observed` value is not the exact §5.6 input-universe union and
+conservative fold; or a §7 `ReleaseDecisionV0` whose rights-observation set or
+digest is not byte-equal to both the verified subject universe and its
+`evaluated_inputs` projection, whose policy selects or filters only a subset,
+or whose decision set contains an unpinned, unresolvable, duplicate,
+conflicting, or incorrectly ordered entry; whose
+`evaluated_inputs.rights_observed` differs from the subject
+`ClaimV0.rights_observed`, or whose `disclosure_policy_ref` +
 `disclosure_policy_pin` pair is missing, mutable, unresolvable, selected for a
 different operation, or fails digest verification against the resolved pinned
 policy content; any decision whose `evaluated_inputs` is not the exact §7
 projection of its verified subject claim; or any decision whose operation
 manifest ref/pin/digest is missing or invalid, lacks exactly one entry for the
-bound operation/version, or selects a different policy ref/pin;
+bound operation/version, selects a different policy ref/pin, lacks a valid
+`generic_path_logging`, or — when `decisions.existence: generic` — has
+`decisions.logging` unequal to that entry's `generic_path_logging`;
 **V11** `asserter.role: output_producer` on any claim other than
 `compiler_derived`, `role: original_asserter` on a `compiler_derived` claim,
 a `compiler_derived` claim whose `asserter.party` differs from
@@ -814,7 +896,8 @@ necessarily fails the required claim retrieval;
 `rights_authority.{applicable: false}` on a claim with
 `claim_origin_class: external_asserter`, `rights_authority.unresolved` with
 `promotion` other than `not_promotable`, or a `compiler_derived` claim
-whose derivation consumed a retrieved input `ClaimV0` whose permitted-use
+whose §5.6 universe/state correspondence is invalid, or whose derivation
+consumed a retrieved input `ClaimV0` whose permitted-use
 intersection lacked `derive_governed` for that exact derivation request at
 derivation time — including because its trace-retained §7 release decision
 was missing, invalid, had `decision_purpose` other than
@@ -919,10 +1002,12 @@ rights_observation_refs[]:
                     repository: ownerRepository,
                     revision: nonEmptyString } }     # exact full immutable
                                                     # commit object id;
-                                                    # cardinality below
+                                                    # exact copy of subject
+                                                    # universe; cardinality below
 rights_observation_digest: DigestBindingV0
 evaluated_inputs:         { admission (tagged), promotion,
                             rights_observed,
+                            rights_observation_universe,
                             rights_authority (tagged — the governing
                             disposition's resolvable ref AND its immutable
                             rights_disposition_binding, not only the
@@ -964,16 +1049,18 @@ decision_digest:          DigestBindingV0
 compiler as a deterministic field-for-field projection of the exact embedded
 or pinned-and-retrieved subject `ClaimV0`; it contains no caller- or
 policy-supplied substitute values. Its claim-level `admission`, `promotion`,
-`rights_observed`, `rights_authority`, `privacy_scope`, `authority_ceiling`,
-`claim_origin_class`, and `claim_production_class` members are byte-equal to
-the subject fields of the same names. Its source-binding applicability is
-byte-equal too; when applicable, native `source_class`, `admitted`,
-`admissibility`, `promotable`, `content_digest`, `replayability`, and the
-wrapper's `source_content_digest_mode` are copied byte-for-byte from the
-subject's complete binding. Before any policy evaluation, validation
-recomputes `subject_claim_digest`, applies V4 to the source/claim admission and
-promotion operands, and verifies every projected equality. A mismatch is V10
-and makes either decision purpose contract-invalid.
+`rights_observed`, `rights_observation_universe`, `rights_authority`,
+`privacy_scope`, `authority_ceiling`, `claim_origin_class`, and
+`claim_production_class` members are byte-equal to the subject fields of the
+same names. Its source-binding applicability is byte-equal too; when
+applicable, native `source_class`, `admitted`, `admissibility`, `promotable`,
+`content_digest`, `replayability`, and the wrapper's
+`source_content_digest_mode` are copied byte-for-byte from the subject's
+complete binding. Before any policy evaluation, validation recomputes
+`subject_claim_digest` and the subject universe digest, applies V4 to the
+source/claim admission and promotion operands, and verifies every projected
+equality. A mismatch is V10 and makes either decision purpose
+contract-invalid.
 
 **Rights-observation binding (total).** Each `rights_observation_refs[]`
 member is one governed empirical-observation artifact — for example retained
@@ -1005,29 +1092,48 @@ instance, recomputes its self-digest, and requires byte equality with
 from the request-identity object whose canonical digest is
 `request_identity_digest` must select exactly one manifest entry, and that
 entry's `disclosure_policy_ref` + `disclosure_policy_pin` must be byte-equal to
-the decision fields. A missing or duplicate operation entry, a mutable or
+the decision fields. The same exact entry also supplies
+`generic_path_logging: log_metadata_only | log_none`. The compiler resolves
+and verifies the pinned manifest and that operation/version entry from trusted
+operation configuration **before any private-resource existence lookup**;
+`generic_path_logging` is the sole logging authority for both branches of the
+§8 existence-safe generic path. It is never caller-supplied and is never read
+from a subject `ClaimV0` or subject-bound decision. When an existing subject's
+`ReleaseDecisionV0` has `decisions.existence: generic`, its
+`decisions.logging` must be byte-equal to the entry's
+`generic_path_logging`; the does-not-exist branch constructs no subject claim
+or release decision and uses that same pre-lookup manifest field directly. A
+missing or duplicate operation entry, a missing or invalid
+`generic_path_logging`, a generic decision/logging mismatch, a mutable or
 failed manifest pin, unequal manifest digest, or policy substitution is V10
 and makes the decision contract-invalid. For an emitting output decision,
 `operation_manifest_ref` and `operation_manifest_pin` equal the enclosing
 packet fields and `operation_manifest_digest` equals the packet's
 `tool_manifest_digest`; a derivation-eligibility decision carries and verifies
-all three in its trace witness.
+all three in its trace witness. Independently of whether any subject or
+decision exists, every enclosing packet also obeys the packet-wide pre-lookup
+manifest invariant in §12.1.
 
 The disclosure policy selected by that exact manifest entry through
-`disclosure_policy_ref` and historically
-located by `disclosure_policy_pin` must define a deterministic
-observation-selection rule. The pin reuses the §5.1
-`repository_revision` arm verbatim; the policy is resolved at that exact
-repository revision and its native artifact digest is recomputed under its
-adjacent mode before selection or evaluation. An unpinned, mutable,
+`disclosure_policy_ref` and historically located by `disclosure_policy_pin`
+governs the five decision outputs, but it does not discover, enumerate,
+select, rank, filter, add, or omit observation candidates. The policy pin
+reuses the §5.1 `repository_revision` arm verbatim; the policy is resolved at
+that exact repository revision and its native artifact digest is recomputed
+under its adjacent mode before evaluation. An unpinned, mutable,
 unresolvable, or digest-mismatched policy makes the decision contract-invalid.
-The array contains exactly the policy-selected artifacts, with no
-caller-selected additions or omissions. An empty
-selection is represented by `[]`, never by absence or `null`, and is permitted
-iff `evaluated_inputs.rights_observed: not_applicable`; every other empirical
-state — including `no_terms_observed` and `upstream_chain_unknown` — requires
-at least one retained bounded-observation or audit artifact; a negative
-observation is never represented by an empty set. Entries are
+
+The verified subject `ClaimV0.rights_observation_universe` (§5.6) is the sole
+membership authority. `evaluated_inputs.rights_observation_universe` must be
+its byte-for-byte projection. `rights_observation_refs[]` must equal that
+projected universe's `refs[]` field-for-field and in the same normative order,
+and `rights_observation_digest` must equal its `digest`; no caller, asserter,
+policy, or decision producer may add, omit, filter, or substitute a member.
+Decision construction therefore has no `latest` alias, current-head query,
+mutable collection, cutoff inference, or other discovery path. The policy
+evaluates the complete verified universe or the decision is contract-invalid.
+
+Entries are
 sorted field-by-field by `artifact_pin.repository`,
 `artifact_pin.revision`, `artifact_ref.artifact_type`, `artifact_ref.path`,
 `artifact_ref.digest_mode`, then `artifact_ref.digest`, using ascending UTF-16
@@ -1037,13 +1143,14 @@ code-unit order with no normalization (the pinned `src/canonical.ts`
 are contract-invalid. `rights_observation_digest` is a `DigestBindingV0` with
 `digest_mode: tiber-canonical-json-v1` over the sorted
 `rights_observation_refs` array exactly as present, including every nested
-`artifact_pin` and `artifact_ref` member; for an empty selection the canonical
+`artifact_pin` and `artifact_ref` member; for an empty universe the canonical
 input is `[]`. It hashes the reference wrappers, not concatenated artifact
 contents; each verified `artifact_ref.digest` transitively binds its resolved
 content. `evaluated_inputs.rights_observed` must equal the subject
-`ClaimV0.rights_observed` byte-for-byte. Validation and replay resolve and
-verify every pinned artifact, reproduce exact policy-selected membership and
-order, recompute the aggregate digest, and only then recompute
+`ClaimV0.rights_observed` byte-for-byte. Validation and replay first recompute
+the subject claim and its universe aggregate, then resolve and verify every
+pinned observation artifact, reproduce exact subject-universe equality and
+order, and only then recompute
 `decision_input_digest` and the five decision outputs. Any failure is V10 and
 makes the decision contract-invalid. Observation refs and their aggregate
 never replace `rights_authority` or its `rights_disposition_binding`.
@@ -1118,11 +1225,13 @@ custody uses plus the non-emitting outcome are distinct:
    otherwise the tentative claim is discarded.
 3. A **non-emitting output decision** (`metadata: withhold`, or a decision
    whose existence rule forces the private-generic path) is applied
-   transiently and creates no `ReleasedEntryV0`. Trace behavior follows the
-   independent `logging` outcome and §8 branch-invariance rule: exactly one
-   fixed generic marker for `log_metadata_only`, or no per-request marker for
-   `log_none`; never the withheld claim, identifiers, full decision, or
-   decision inputs.
+   transiently and creates no `ReleasedEntryV0`. For `metadata: withhold` on a
+   specific-existence path, trace behavior follows the decision's independent
+   `logging` outcome. For the private-generic path, it follows only the exact
+   operation manifest entry's pre-lookup `generic_path_logging` field under
+   the §8 branch-invariance rule: exactly one fixed generic marker for
+   `log_metadata_only`, or no per-request marker for `log_none`; never the
+   withheld claim, identifiers, full decision, or decision inputs.
 
 Thus the reference lifecycles are claim → output decision → entry → result →
 packet, and input claim + tentative output digest → derivation-eligibility
@@ -1166,14 +1275,18 @@ scope — the response is the single generic `EvidenceResultV0` with
 `result_state: not_found`: byte-identical in shape for
 exists-but-unauthorized and does-not-exist; no claims, no conflict ref, no
 omission refs, no private claim id, digest, source reference, lineage, or
-private-specific reason code. **No null `ClaimV0` shell is ever emitted.**
-Trace behavior is branch-invariant too. The applicable logging outcome is
-selected without branching on whether the private claim exists. With
-`log_metadata_only`, exactly one fixed generic marker of identical bytes,
-count, shape, and timing class is produced for both exists-but-unauthorized and
-does-not-exist. With `log_none`, neither branch produces a per-request marker.
-No trace field, aggregate count, ordering effect, or timing classification may
-distinguish which branch occurred.
+rights-observation universe/ref/digest, and no private-specific reason code.
+**No null `ClaimV0` shell is ever emitted.**
+Trace behavior is branch-invariant too. The applicable logging outcome is the
+pinned operation manifest entry's `generic_path_logging`, resolved and
+verified from trusted operation configuration before any private-resource
+existence lookup (§7). It is the sole source on both branches: it is not
+caller-supplied and is not obtained from a `ClaimV0` or
+`ReleaseDecisionV0`. With `log_metadata_only`, exactly one fixed generic
+marker of identical bytes, count, shape, and timing class is produced for both
+exists-but-unauthorized and does-not-exist. With `log_none`, neither branch
+produces a per-request marker. No trace field, aggregate count, ordering
+effect, or timing classification may distinguish which branch occurred.
 Payload disclosure, metadata disclosure, retention, logging, and existence
 disclosure are five independent controls (§7); rights or privacy prohibitions
 may bind at the metadata level, withholding identifiers, references, digests,
@@ -1349,7 +1462,8 @@ locators only, never input payloads); the
 complete claim-level clock set (§5.4, `cutoff_at` non-null) and, under an
 applicable binding, the native `content_digest` with its
 `source_content_digest_mode`; the complete freshness member and evaluation; the
-rights-observation state authorized for disclosure and the tagged
+rights-observation state and complete `rights_observation_universe` authorized
+for disclosure (never a partial universe), and the tagged
 `rights_authority` binding including its `rights_disposition_binding`
 (§5.6); admission (tagged);
 promotion; authority_ceiling; reportability; the privacy classification
@@ -1379,13 +1493,15 @@ has `decision_purpose: output_release`, has no
 claim digest; (8) apply the complete §7 rights-observation validation — exact
 subject-input projection equality and V4, operation-manifest pin/digest and
 exact operation/version selection, disclosure-policy pin resolution/digest
-verification, policy-selected membership, observation-pin resolution,
-per-artifact digest, ordering, uniqueness, claim-state equality, and aggregate
-digest — before
+verification, exact subject-bound observation-universe validation, every
+universe member's pin/digest/order verification, field-for-field
+decision/subject-universe equality, per-artifact digest, ordering, uniqueness,
+claim-state equality, and aggregate digest — before
 recomputing `decision_input_digest` and `decision_digest`. Every
 verification is recorded in `ContextCompilationTraceV0` as a per-entry
 `reference_verification` record (checks 1–8 results + evidence_ref; the
-private-generic path follows §8: one fixed branch-invariant marker for
+private-generic path follows the pre-lookup operation manifest entry's
+`generic_path_logging` under §8: one fixed branch-invariant marker for
 `log_metadata_only`, no per-request marker for `log_none`). Any failure →
 no entry, `result_state: reference_unverifiable` (or generic `not_found`
 where existence safety requires). Entry-level fields are never trusted
@@ -1443,6 +1559,21 @@ existence. Conflicts are preserved, never merge-resolved.
   capability; admission ≠ promotion; availability ≠ freshness;
   absence-result ≠ claim; container ≠ disclosure authority),
   `decision_owner: human`, `source_set_digest`, `packet_digest`.
+
+**Packet-wide pre-lookup manifest invariant.** Every packet, including one
+containing only existence-safe generic/no-subject results, carries
+`operation_manifest_ref`, `operation_manifest_pin`, and
+`tool_manifest_digest` byte-for-byte equal to the trusted operation
+configuration used for that request. Before any private-resource existence
+lookup, the compiler resolves that exact pinned manifest, verifies its native
+artifact digest and `manifest_digest`, and selects exactly one entry for every
+enclosed `{operation_id, operation_version}`. A missing, mutable, mismatched,
+or unverifiable manifest, or a missing/duplicate operation entry, fails before
+lookup and no packet is emitted. This invariant neither depends on nor
+constructs a `ReleaseDecisionV0`. Its operation-level verification outcome is
+recorded branch-identically in the trace even when no subject or released
+entry exists; the recorded manifest can therefore never differ from the one
+that supplied pre-lookup `generic_path_logging`.
 
 ### 12.2 Identity rules
 
@@ -1518,8 +1649,9 @@ tiber-canonical-json-v1` over the sorted array of entry objects exactly as
 present — five members where `replayability` is absent, six where present —
 so a retained value is inside `source_set_digest` and two conforming
 implementations hash identical bytes. All other arrays in the family are
-order-preserving except §7 `rights_observation_refs`, whose own total sort is
-normative. The same entries, in the same order, are recorded in the
+order-preserving except `ClaimV0.rights_observation_universe.refs[]` (§5.6)
+and §7 `rights_observation_refs[]`, which use the same normative total sort.
+The same entries, in the same order, are recorded in the
 trace (§13); released metadata refers to source content only through the
 same `content_digest_mode`/`content_digest` pair; a replay recomputes the
 set from the same objects and must reproduce `source_set_digest`
@@ -1578,8 +1710,13 @@ decision digests, and the input's resulting S1–S6 intersection including its
 through the same pins, revalidates the same trace-retained decisions, and
 re-derives the same intersections; omission reasons for
 every omitted decisive-class field; freshness/authority filters recorded per axis (availability-of-result,
-freshness, admission, promotion separately); for every emitting
-`output_release` decision and every finalized `derivation_eligibility`
+freshness, admission, promotion separately); the packet-wide §12.1 pre-lookup
+`operation_manifest_ref`, `operation_manifest_pin`, and
+`tool_manifest_digest`, their artifact/self-digest verification, and exactly
+one operation/version entry-selection result for every enclosed result —
+retained in the same shape whether a private subject exists or not; for every
+emitting `output_release` decision and every finalized
+`derivation_eligibility`
 decision whose full decision is trace-retained, the exact
 `operation_manifest_ref`, `operation_manifest_pin`, and
 `operation_manifest_digest`, their pinned resolution/self-digest result, and
@@ -1587,23 +1724,31 @@ their exact operation/version entry-selection result; the complete
 `evaluated_inputs` projection and its field-by-field subject-equality and V4
 results; the exact
 `disclosure_policy_ref` + `disclosure_policy_pin` and their pinned
-resolution/digest-verification result, the exact sorted
+resolution/digest-verification result; the exact subject claim's authoritative
+closed `rights_observation_universe`, its claim-construction and aggregate
+verification results, every member's pin-resolution, mode-specific digest,
+and ordering/uniqueness result; for a `compiler_derived` claim, every input
+universe contribution and the exact sorted-union/conservative-fold
+correspondence verified before `output_claim_digest`; and the field-for-field
+decision/subject-universe equality result; the exact sorted
 `rights_observation_refs`,
 `rights_observation_digest`, and the per-ref historical resolution,
-mode-specific digest, policy-membership, ordering/uniqueness, and subject
-`rights_observed` equality results — replay repeats those checks before policy
+mode-specific digest, subject-universe equality, ordering/uniqueness, and
+subject `rights_observed` equality results — replay repeats those checks before policy
 evaluation; per-entry
 `reference_verification` records; per-released-entry `decision_input_digest`;
 the three isolation statuses carried verbatim (`source_containment /
 deployment_binding / authenticated_workspace_isolation` — never one boolean);
 size/budget and displacement; `packet_digest` + `tool_manifest_digest`
 (backward references only); compiler warnings;
-`compilation_trace_digest`. Every §7 non-emitting output path, including
-`metadata: withhold` and the private-generic path, records exactly one fixed
-generic marker when `logging: log_metadata_only` and no per-request marker when
-`logging: log_none` — never private identifiers, the full decision, or decision
-inputs. On an existence-safe path, marker bytes/count/shape/timing class and
-all trace aggregates remain identical between exists-but-unauthorized and
+`compilation_trace_digest`. A §7 `metadata: withhold` output on a
+specific-existence path follows its decision's `logging` outcome. The
+private-generic path instead follows only the exact operation manifest entry's
+pre-lookup `generic_path_logging`: it records exactly one fixed generic marker
+for `log_metadata_only` and no per-request marker for `log_none` — never
+private identifiers, the full decision, or decision inputs. On an
+existence-safe path, marker bytes/count/shape/timing class and all trace
+aggregates remain identical between exists-but-unauthorized and
 does-not-exist.
 
 ## 14. `TiberOperationManifestV0`
@@ -1612,7 +1757,12 @@ does-not-exist.
 operation has a manifest-unique `{id, version}` pair; owning application layer;
 the exact `disclosure_policy_ref: artifactDigest` plus
 `disclosure_policy_pin` using the §5.1 `repository_revision` arm (the sole
-policy authorized for that operation/version); capability family from the
+policy authorized for that operation/version);
+`generic_path_logging: log_metadata_only | log_none`, the sole
+request/operation-level logging rule
+for existence-safe generic results, resolved from the verified manifest entry
+before any private-resource lookup and never supplied by the caller or a
+subject-bound decision; capability family from the
 exact Ops #67 seven (`contract_schema_introspection, world_query,
 provenance_lineage, validation_rejection_explanation, precedent_discovery,
 operator_context_retrieve_persist, privileged_software_maintainer_exclude`) —
@@ -1625,8 +1775,8 @@ blocked, and design-only capabilities are listed visibly as such, never
 omitted or implied. A manifest describes; it never grants — tool availability
 is not approval, and a manifest entry creates no capability. Its
 `manifest_digest: DigestBindingV0` covers every operation entry, including the
-exact policy ref/pin; a §7 decision must bind a pinned copy of this manifest
-and match that selection exactly.
+exact policy ref/pin and `generic_path_logging`; a §7 decision must bind a
+pinned copy of this manifest and match that selection exactly.
 
 ## 15. `AgentContinuationTraceV0` and `AgentContinuationEvaluationV0`
 
