@@ -200,9 +200,11 @@ something. Absence states never appear as claims (§6).
     compiler's owning repository where one exists). A value the compiler
     assembles from separately asserted inputs was asserted by the compiler,
     not by any input party; naming an input party as the asserter of the
-    composite value is contract-invalid (V11). Every input's own asserter is
-    preserved verbatim on its `derivation.inputs[]` edge and is citable only
-    as an input, never as the asserter of the derived value.
+    composite value is contract-invalid (V11). Every input's own verbatim
+    top-level `asserter` object — `original_asserter` for a non-derived
+    input, `output_producer` for a derived input — is preserved on its
+    `derivation.inputs[]` edge and is citable only as an input, never as
+    the asserter of the derived value.
 - `compiler_chain[]`: ordered transformer records `{transformer_id: safeId,
   version: nonEmptyString}`. A step that produces no new asserted value never
   changes `asserter`; a step that does produce one is a derivation, and the
@@ -222,52 +224,101 @@ something. Absence states never appear as claims (§6).
                  # (role: output_producer)
     inputs[]  (one or more), each:
       { input_kind:   claim | source_object,
-        claim_ref:    { claim_id: safeId,
+        claim_ref:    { claim_id:          safeId,
                         claim_locator_ref: <native source-metadata locator
-                                            {kind, value}> }
+                                            {kind, value}>,
+                        locator_pin:       <claim-locator pin — see the
+                                            claim-locator rule below> }
                  # required iff input_kind = claim, absent otherwise: the
-                 # input ClaimV0's own stable identifier and immutable
-                 # locator (the same locator kind reference-form entries
-                 # use, §10.1) — it names the input claim itself, never
-                 # merely its underlying source object
+                 # input ClaimV0's own stable identifier plus an immutable,
+                 # historically retrievable locator (the same rule
+                 # reference-form entries obey, §10.1) — it names the
+                 # input claim itself, never merely its underlying
+                 # source object
         input_digest: DigestBindingV0,
                  # the input's immutable claim_digest, or the governed
                  # source/object content digest
-        asserter:     <that input's own asserter object, verbatim:
-                       role original_asserter for a source object or a
-                       non-derived claim; for a derived input claim, its
-                       output_producer>,
+        asserter:     <the input's verbatim top-level asserter object:
+                       original_asserter for a source object or a
+                       non-derived claim; output_producer for a derived
+                       input claim — copied, never rewritten to an
+                       earlier upstream party>,
         binding:      <the input's applicable source_binding, or its
                        governed locator {kind, value}>,
         role:         safeId }   # e.g. component_vector, scoring_contract
   ```
 
+  **Claim-locator rule** — one rule for every claim locator in the family
+  (`claim_ref.claim_locator_ref` here and `claim_locator_ref` in
+  reference-form entries, §10.1). The native locator is reused unmodified;
+  the sibling `locator_pin`, tagged by the locator's native `kind`, makes
+  the reference immutable **and** historically retrievable:
+
+  ```text
+  locator_pin:
+    kind = immutable_object  → { pin: immutable_object }
+        # value names exactly one object in a governed write-once or
+        # content-addressed store; the store's immutability is the
+        # retrieval guarantee
+    kind = repository_path   → { pin:        repository_revision,
+                                 repository: ownerRepository,
+                                 revision:   <exact immutable revision
+                                              object id — a full commit
+                                              object id, never a branch,
+                                              tag, or "latest"> }
+        # value is the relativePath read at exactly that revision
+    kind = synthetic_fixture → { pin: repository_revision, repository,
+                                 revision }   # fixture context only:
+        # fixture claims are governed repository files; same pin
+    kind = url               → rejected as a claim locator
+        # an unversioned URL is mutable and outside custody; no pin
+        # form exists for it
+  ```
+
+  Retrieval is exactly: the object named by `value` (`immutable_object`),
+  or the file at `value` in `repository` at `revision`
+  (`repository_revision`). An unpinned `repository_path`, a pin whose `pin`
+  tag does not match the locator's `kind`, a `revision` that is not an
+  exact immutable object id, or any `url` claim locator is contract-invalid
+  (V12): a digest alone detects a changed target but cannot retrieve the
+  historical `ClaimV0`, so the pin — not the digest — provides retrieval.
+  No external digest index, snapshot store, or other persistence authority
+  is introduced; derivation-time resolution, trace capture, replay, and
+  recursive `inspect_lineage` all retrieve through this one rule.
+
   Rules: every input is bound by an immutable digest that already exists
   before the derived claim is constructed, so the edge set is acyclic by
-  construction; each input preserves its own original asserter and binding —
-  **no composite or blended asserter is ever invented, and no input party is
-  ever named as the asserter of the derived value**: the derived claim's
-  top-level `asserter` is its `derivation.transformer` as `output_producer`,
-  and every contributor is preserved on its input edge; one input and many
-  inputs use the same structure. **Resolvable lineage:** a digest verifies an
-  input only once the input is found, so every `claim` input additionally
-  carries `claim_ref` — its `claim_id` and an immutable `claim_locator_ref`
-  that resolves to exactly one immutable `ClaimV0`. At derivation time,
-  before the derived claim is constructed, the compiler resolves each
-  `claim_ref.claim_locator_ref` per §10.2 checks 1–3 (resolve, recompute
-  the digest and verify it equals `input_digest`, verify `claim_id`
-  equality) and records that verification in the compilation trace (§13);
-  a claim input that does not resolve, or resolves to a different digest or
-  id, is contract-invalid (V12). `claim_id` is only packet-unique (§12.2)
-  and never identifies an input on its own: the locator retrieves, the
-  digest verifies. A multi-hop derivation — a derived claim consuming a
-  derived claim — is therefore traversable by an `inspect_lineage`-class
-  operation without any external digest index: walk `derivation.inputs[]`,
-  resolve each `claim_ref`, verify it against `input_digest`, and recurse
-  into the resolved claim's own `derivation` until every leaf is a
-  `source_object` input or a non-derived claim. DST-01's named external
-  component vector plus the observed league scoring contract are two such
-  edges under one `output_producer`.
+  construction; each input preserves its own verbatim top-level `asserter`
+  object and binding — **no composite or blended asserter is ever invented,
+  no input party is ever named as the asserter of the derived value, and a
+  nested derived input's `output_producer` is never replaced by an earlier
+  upstream party**: the derived claim's top-level `asserter` is its
+  `derivation.transformer` as `output_producer`, and every contributor is
+  preserved on its input edge exactly as that input's own claim states it;
+  one input and many inputs use the same structure. **Resolvable lineage:**
+  a digest verifies an input only once the input is found, so every `claim`
+  input additionally carries `claim_ref` — its `claim_id` and a pinned
+  `claim_locator_ref` that retrieves exactly one immutable `ClaimV0` under
+  the claim-locator rule. At derivation time, before the derived claim is
+  constructed, the compiler retrieves each `claim_ref` through its pin,
+  applies §10.2 checks 1–3 (retrieve, recompute the digest and verify it
+  equals `input_digest`, verify `claim_id` equality), verifies that the
+  edge's `asserter` equals the retrieved claim's verbatim top-level
+  `asserter` object (V11), and records that verification in the
+  compilation trace (§13); a claim input that cannot be retrieved, or
+  retrieves to a different digest, id, or asserter, is contract-invalid
+  (V12/V11). `claim_id` is only packet-unique (§12.2) and never identifies
+  an input on its own: the pinned locator retrieves, the digest verifies.
+  A multi-hop derivation — a derived claim consuming a derived claim — is
+  therefore traversable by an `inspect_lineage`-class operation without
+  any external digest index: walk `derivation.inputs[]`, retrieve each
+  `claim_ref` through its pin, verify it against `input_digest`, and
+  recurse into the retrieved claim's own `derivation` until every leaf is
+  a `source_object` input or a non-derived claim; at every hop the edge
+  reports the consumed claim's own `asserter` (its `output_producer` where
+  it is itself derived). DST-01's named external component vector plus the
+  observed league scoring contract are two such edges under one
+  `output_producer`.
 - `assertion`: `{payload_contract_ref: nonEmptyString (id+version of the
   payload shape, owned by the asserting/owning lane; for external material a
   declared contract carrying payload_validation: not_performed |
@@ -478,11 +529,24 @@ from the same policy digest and clocks and must reproduce it byte-identically.
   substitutable for it, and a decision replays only against the identical
   binding. Empirical observation (`rights_observed`), governing disposition
   (`rights_authority`), and per-request release decisions (§9) remain three
-  distinct things. **Unresolved or absent rights authority can never produce
-  content disclosure or governed-use eligibility**: with
-  `rights_authority.unresolved`, `ReleaseDecisionV0.decisions.payload` cannot
-  be `allow` for externally sourced content, and the S1/S5 sets never grant
-  `consume_canonical` or `derive_governed` (§9 invariant).
+  distinct things. **Rights-authority compatibility (total):** an
+  applicable `source_binding` binds a native source object that always
+  carries a `rights_disposition_ref`, so `source_binding.applicable: true`
+  requires `rights_authority.applicable: true` bound to it (V13);
+  `unresolved` and `{applicable: false}` therefore occur only without an
+  applicable source binding, where `promotion` is already
+  `not_promotable` (above); an `external_asserter` claim never carries
+  `{applicable: false}` — rights always govern external material, so its
+  only non-applicable state is `unresolved` (V13). **Unresolved rights
+  authority can never produce content disclosure or governed use**: with
+  `rights_authority.unresolved`, `ReleaseDecisionV0.decisions.payload`
+  cannot be `allow` for externally sourced content, S1 mechanically removes
+  `consume_canonical` and `derive_governed` whatever admission, promotion,
+  or any other set permits, and S5 refuses any derivation that consumed
+  such an input (§9). What remains is explicitly non-governed handling —
+  citation with authority fields, reference-only inspection, and
+  run/scope/fixture-bounded use as the other sets allow — never admitted
+  governed use.
 - `privacy_scope`: `public | operator_private{principal_subject_ref,
   workspace, league | null, roster | null, player | null}` — scope only.
   `principal_subject_ref` is required for operator-private claims: under the
@@ -530,12 +594,24 @@ value under an applicable `source_binding`, or a binding whose digest does
 not equal the recomputed digest of the resolved disposition content (§5.6);
 **V11** `asserter.role: output_producer` on any claim other than
 `compiler_derived`, `role: original_asserter` on a `compiler_derived` claim,
-or a `compiler_derived` claim whose `asserter.party` differs from
-`derivation.transformer.transformer_id`; **V12** a `derivation.inputs[]`
-edge with `input_kind: claim` lacking `claim_ref`, carrying `claim_ref` with
-`input_kind: source_object`, or whose `claim_ref` fails to resolve to a
-claim with digest equal to `input_digest` and id equal to
-`claim_ref.claim_id`.
+a `compiler_derived` claim whose `asserter.party` differs from
+`derivation.transformer.transformer_id`, or a `derivation.inputs[]` edge
+whose `asserter` is not the retrieved input claim's verbatim top-level
+`asserter` object (an `original_asserter` substituted for a nested derived
+input's `output_producer` included); **V12** a `derivation.inputs[]` edge
+with `input_kind: claim` lacking `claim_ref`, carrying `claim_ref` with
+`input_kind: source_object`, whose `claim_ref` violates the §5.1
+claim-locator rule (unpinned `repository_path`, pin/kind mismatch,
+non-immutable `revision`, or a `url` locator), or whose `claim_ref` fails
+to retrieve a claim with digest equal to `input_digest` and id equal to
+`claim_ref.claim_id`; **V13** `source_binding.applicable: true` with
+`rights_authority` other than `{applicable: true}`,
+`rights_authority.{applicable: false}` on a claim with
+`claim_origin_class: external_asserter`, `rights_authority.unresolved` with
+`promotion` other than `not_promotable`, or a `compiler_derived` claim
+whose derivation consumed an input whose permitted-use intersection (§9)
+lacked `derive_governed` at derivation time — every input with
+`rights_authority.unresolved` included.
 
 ## 6. `EvidenceResultV0` — the per-request result envelope
 
@@ -561,7 +637,10 @@ conflict | not_found | refused_non_representable | reference_unverifiable
   `fulfilled | fulfilled_partial | conflict | candidate_witness_unadmitted`.
   A `candidate_witness_unadmitted` result may carry real unresolved-admission
   claims whose own release decisions allow the disclosure; the S-intersection
-  (§9.3) governs their permitted uses.
+  (§9) governs their permitted uses, and S1 mechanically excludes
+  `consume_canonical` and `derive_governed` for their unresolved admission
+  and unresolved rights authority alike — they are inspectable and citable
+  as unadmitted candidates, never governed inputs.
 - `conflict_ref`: an embedded `ConflictSetV0` or its `DigestBindingV0`
   reference; present iff `result_state: conflict`.
 - `omission_refs[]`: compilation-trace pointers for per-claim/per-alternative
@@ -624,8 +703,9 @@ identity is contract-invalid — decisions cannot be substituted across claims,
 callers, operations, or domains; the only exception is an equivalence class
 the disclosure policy explicitly defines and the decision explicitly binds by
 reference and digest. `payload: allow` with `metadata: withhold` is
-contract-invalid (payload without the metadata preserving identity, original
-asserter, authority, and lineage is never releasable). `metadata: withhold`
+contract-invalid (payload without the metadata preserving identity, the
+claim's own `asserter` and every derivation-edge asserter, authority, and
+lineage is never releasable). `metadata: withhold`
 means no entry is emitted. `existence: generic` forces the §8 generic path.
 Retention composes with the native `retentionMode`; the native enum is
 unforked. Empirical rights observations and the governing `rights_authority`
@@ -712,11 +792,18 @@ use_in_fixture_context}`. An empty intersection is an explicit refusal with
 reason codes naming every emptying set. No first-match ordering exists;
 ceilings can never be bypassed.
 
-**S1 — admission/promotion:** admitted+promoted → full U;
+**S1 — admission/promotion/rights authority:** admitted+promoted → full U;
 admitted+unpromoted/not_promotable → U −
 {consume_canonical, derive_governed}; unresolved → U −
 {consume_canonical, derive_governed}; inadmissible → ∅;
 admission `{applicable: false}` → U − {consume_canonical, derive_governed}.
+Then, mechanically and unconditionally, `rights_authority.unresolved`
+(§5.6) removes {consume_canonical, derive_governed} from whatever the
+admission/promotion step produced; no admission state, promotion status, or
+other set restores them. Unresolved rights authority leaves only
+non-governed handling (citation with authority fields, reference-only
+inspection, and run/scope/fixture-bounded use as the other sets allow) and
+never becomes admitted governed use.
 
 **S2 — authority ceiling:** shared_consumable → full U;
 research_custody_only → {use_within_run, cite_with_authority_fields,
@@ -737,7 +824,11 @@ payload allow + metadata withhold → contract-invalid.
 
 **S5 — origin/production:** (tiber_governed_source | external_asserter |
 forecast_model, source_direct) → full U; (any valid, compiler_derived) →
-full U (input eligibility was enforced at derivation via derive_governed);
+full U, which is well-formed only because every input's own S1–S6
+intersection contained `derive_governed` at derivation time — a derivation
+that consumed an input lacking it, any input with
+`rights_authority.unresolved` included, is contract-invalid (V13) and no
+such derived claim exists;
 (operator, operator_entry) → {use_within_scope, cite_with_authority_fields,
 inspect_reference_only}; (agent, agent_generated) →
 {cite_with_authority_fields, inspect_reference_only}; (synthetic_fixture,
@@ -756,15 +847,19 @@ attributable citation metadata. `cite_with_authority_fields` on a
 `compiler_derived` claim cites the derived value as the statement of its
 `output_producer`; the input asserters on its derivation edges are citable
 only as inputs to that derivation, never as asserters of the composite
-value.
+value, and a nested derived input is cited as its own `output_producer`'s
+statement, never as an earlier upstream party's.
 
 Invariants: no admission state bypasses any ceiling; unresolved admission
 never gains `derive_governed`; private scope always intersects; flipping
-`promotion` alone between promoted and unpromoted (admission held admitted)
-changes the final set by exactly {consume_canonical, derive_governed} — the
-mechanical CA-01 check; unresolved or absent `rights_authority` (§5.6) never
-yields payload disclosure of externally sourced content and never yields
-`consume_canonical` or `derive_governed` eligibility for it.
+`promotion` alone between promoted and unpromoted (admission held admitted,
+`rights_authority` held applicable) changes the final set by exactly
+{consume_canonical, derive_governed} — the mechanical CA-01 check;
+`rights_authority.unresolved` (§5.6) never yields payload disclosure of
+externally sourced content and — mechanically, via S1 — never yields
+`consume_canonical` or `derive_governed`, whatever admission, promotion, or
+any other set permits; an `external_asserter` claim never carries
+`rights_authority.{applicable: false}` (V13).
 
 ## 10. `ReleasedEntryV0` and `ReleasedClaimMetadataV0`
 
@@ -780,6 +875,8 @@ ReleasedEntryV0 (exactly one kind):
     (permitted only when decisions.payload = allow AND metadata = allow)
   kind = "reference":
     claim_locator_ref: <native source-metadata locator {kind, value}>
+    locator_pin:       <claim-locator pin under the §5.1 claim-locator
+                        rule — immutable and historically retrievable>
     released_metadata: ReleasedClaimMetadataV0   (mandatory)
 ```
 
@@ -792,13 +889,17 @@ carry none of their own.
 deterministic, payload-free authorized projection
 `project(ClaimV0, ReleaseDecisionV0)`: claim_id; claim_digest; entity_ref;
 context_layer; epistemic_class; claim_origin_class; claim_production_class;
-`asserter` with its `role` (for `compiler_derived`, the `output_producer`,
-with each input's original asserter on its derivation edge); compiler_chain
+`asserter` with its `role` (for `compiler_derived`, the `output_producer`;
+each derivation edge carries the consumed input's verbatim top-level
+`asserter` object — `original_asserter` for a non-derived input,
+`output_producer` for a derived input — and never substitutes an earlier
+upstream party for a nested derived input's producer); compiler_chain
 or its governed digest-bound reference; for
 `claim_production_class: compiler_derived`, the `derivation` input edges of
-§5.1 (transformer identity plus each input's kind, `claim_ref` where
-`input_kind: claim`, digest binding, asserter, binding, and role —
-digests, identities, and locators only, never input payloads); the
+§5.1 (transformer identity plus each input's kind, `claim_ref` with its
+`locator_pin` where `input_kind: claim`, digest binding, asserter, binding,
+and role — digests, identities, and pinned locators only, never input
+payloads); the
 complete clock set; the complete freshness member and evaluation; the
 rights-observation state authorized for disclosure and the tagged
 `rights_authority` binding including its `rights_disposition_binding`
@@ -810,8 +911,10 @@ where applicable; payload_digest only when its disclosure is authorized; and
 
 ### 10.2 Correspondence verification (compile-time, fail-closed)
 
-Before emitting any reference-form entry, the compiler must: (1) resolve
-`claim_locator_ref` to the governed immutable claim — for governed TIBER
+Before emitting any reference-form entry, the compiler must: (1) retrieve
+the governed immutable claim through `claim_locator_ref` + `locator_pin`
+under the §5.1 claim-locator rule (an unpinned, mismatched, or `url`
+locator fails this check) — for governed TIBER
 artifacts the resolution evidence is a
 `research-governed-artifact-provenance-receipt/v1` instance under
 `research-observation-policy/v1`; (2) recompute the resolved claim's digest
@@ -819,8 +922,9 @@ and verify it equals `claim_digest`; (3) verify claim_id equality; (4) verify
 `context_layer` equality — a derived claim can never be indexed as observed;
 (5) recompute the authorized projection and verify it equals
 `released_metadata` field for field — for a `compiler_derived` claim this
-includes recomputing each `derivation` input edge's digest binding and, for
-`claim` inputs, its `claim_ref` (§5.1) against the resolved claim; (6)
+includes recomputing each `derivation` input edge's digest binding, edge
+asserter, and, for `claim` inputs, its `claim_ref` with `locator_pin`
+(§5.1) against the resolved claim; (6)
 recompute
 `metadata_projection_digest`; (7) verify
 `ReleaseDecisionV0.subject_claim_digest` equals the same claim digest. Every
@@ -918,9 +1022,12 @@ considered; inclusion/exclusion rules; every transformation/compaction with
 before/after digests, and for every claim it produced with
 `claim_production_class: compiler_derived` the complete `derivation`
 input-edge set of §5.1 (transformer identity and each input's kind,
-`claim_ref` where `input_kind: claim`, digest binding, asserter, binding,
-and role) recorded verbatim together with the derivation-time `claim_ref`
-resolution record (§5.1 rules); omission reasons for
+`claim_ref` with its `locator_pin` where `input_kind: claim`, digest
+binding, the input's verbatim top-level asserter object, binding, and role)
+recorded verbatim together with the derivation-time record of each
+`claim_ref` retrieval through its pin, digest/id verification, edge-asserter
+equality, and each input's `derive_governed` eligibility (§5.1 rules,
+V11–V13) — replay retrieves through the same pins; omission reasons for
 every omitted decisive-class field; freshness/authority filters recorded per axis (availability-of-result,
 freshness, admission, promotion separately); per-entry
 `reference_verification` records; per-released-entry `decision_input_digest`;
@@ -1066,8 +1173,11 @@ separation), AJ-01 (unresolved availability and late-swap geometry), DST-01
 (deterministic external recast, permanently derived; its named external
 component vector and the observed league scoring contract are distinct
 digest-bound entries in the derived claim's `derivation.inputs[]` (§5.1),
-each preserving its own asserter and, where the input is a claim, its
-`claim_ref`; the derived claim's top-level `asserter` is the compiler
+each preserving the input's verbatim top-level `asserter` object (the
+scoring contract's `original_asserter`; a further derived input's own
+`output_producer`, never an earlier upstream party) and, where the input is
+a claim, its pinned `claim_ref`; the derived claim's top-level `asserter`
+is the compiler
 transformer as `output_producer` — neither the component-vector party nor
 the scoring-contract party is named as asserter of the composite value, and
 a consumer citing the result cites the compiler's statement, not either
@@ -1083,8 +1193,11 @@ log, decision-substitution, and principal-discrimination checks), P346-PERT
 (runtime-profile capability failure and mixed-case API/cache perturbations),
 TRAV-01 (no-repository traversal), TUN-C (mechanism separation), KA-01
 (roster shock), JW-01 (operator-context portability), SF-01 (1QB↔superflex
-causal sensitivity/invariance), CA-01 (admitted held constant, promotion
-flips — exactly {consume_canonical, derive_governed} changes), FI-01
+causal sensitivity/invariance), CA-01 (admitted and applicable rights
+authority held constant, promotion flips — exactly {consume_canonical,
+derive_governed} changes; with `rights_authority.unresolved` substituted,
+promotion is necessarily `not_promotable` and neither capability is present
+under any other set), FI-01
 (freshness/identity trap: not-found ≠ not-current ≠ evidence-of-absence).
 
 A bounded synthetic/offline R3 would require, before any activation:
