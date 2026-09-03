@@ -347,18 +347,21 @@ something. Absence states never appear as claims (§6).
   a digest verifies an input only once the input is found, so every input
   carries `claim_ref` — its `claim_id` and a pinned
   `claim_locator_ref` that retrieves exactly one immutable `ClaimV0` under
-  the claim-locator rule. At derivation time, before the derived claim is
-  constructed, the compiler retrieves each `claim_ref` through its pin,
+  the claim-locator rule. At derivation time, the compiler retrieves each
+  `claim_ref` through its pin,
   applies §10.2 checks 1–3 (retrieve, recompute the digest and verify it
   equals `input_digest`, verify `claim_id` equality), verifies the edge's
   `asserter` per V11 (verbatim equality with the retrieved claim), computes
-  and validates a §7 derivation-eligibility decision for the retrieved claim
-  and exact `derivation_request_digest`, computes the input's S1–S6
-  intersection from that
-  verified claim and decision, and records the decision and all those
-  verifications in the compilation trace (§13); a claim input that cannot be
-  retrieved, retrieves to a different digest, id, or asserter, or is
-  evaluated with a substituted decision is contract-invalid (V12/V11/V13).
+  the tentative caller-invariant derived claim and its
+  `output_claim_digest`, and then computes the exact
+  `derivation_request_digest`. Before that tentative claim can become valid,
+  the compiler computes and validates a §7 derivation-eligibility decision
+  for every retrieved input against that request digest, computes each
+  input's S1–S6 intersection from the verified claim and decision, and
+  records the decision and all those verifications in the compilation trace
+  (§13). A claim input that cannot be retrieved, retrieves to a different
+  digest, id, or asserter, or is evaluated with a substituted decision makes
+  the proposed derivation contract-invalid (V12/V11/V13).
   `claim_id` is only
   packet-unique (§12.2) and never identifies an input on its own: the pinned
   locator retrieves, the digest verifies.
@@ -372,12 +375,14 @@ something. Absence states never appear as claims (§6).
   named external component-vector claim plus the observed league-scoring
   claim are two such edges under one `output_producer`.
 
-  **Derivation witness rule.** Before constructing a `compiler_derived`
-  claim, the compiler prepares one provisional
+  **Derivation witness rule.** During input retrieval, the compiler prepares
+  one provisional
   `ContextCompilationTraceV0` derivation witness record for each proposed
-  input and performs all input checks below. It then computes the tentative
-  caller-invariant claim and digest and finalizes exactly one witness per
-  edge, keyed by `{output_claim_id, output_claim_digest, input_ordinal,
+  input and performs the retrieval and equality checks above. After it
+  computes the tentative caller-invariant claim, `output_claim_digest`, and
+  `derivation_request_digest`, it evaluates the input decisions and finalizes
+  exactly one witness per edge, keyed by `{output_claim_id,
+  output_claim_digest, input_ordinal,
   input_claim_id, input_digest}`, where `input_ordinal` is the zero-based
   position in the order-preserving `derivation.inputs[]` array. Only after
   every witness and its trace record are finalized is the claim valid or
@@ -895,14 +900,18 @@ decision_digest:          DigestBindingV0
 For `decision_purpose: derivation_eligibility`,
 `derivation_request_digest` uses `tiber-canonical-json-v1` over exactly
 `{transformer, ordered_inputs, output_entity_ref,
-output_payload_contract_ref}` from the proposed derivation. `transformer` is
-its exact `{transformer_id, version}`; `ordered_inputs` preserves
+output_payload_contract_ref, output_claim_digest}` from the proposed
+derivation. `transformer` is its exact `{transformer_id, version}`;
+`ordered_inputs` preserves
 `derivation.inputs[]` order and projects each edge as `{input_ordinal,
 claim_ref, input_digest, asserter, asserter_basis, binding, role}`;
 `output_entity_ref` and `output_payload_contract_ref` are the proposed
-derived claim's exact `entity_ref` and `assertion.payload_contract_ref`. No
-other projection or reordered input set is equivalent; release decisions
-are excluded from this digest.
+derived claim's exact `entity_ref` and `assertion.payload_contract_ref`, and
+`output_claim_digest` is the digest of the complete tentative
+caller-invariant `ClaimV0`, binding every other output payload, governance,
+custody, and lineage field. No other projection or reordered input set is
+equivalent; release decisions are excluded from both the claim and request
+digests.
 
 Rules: a decision presented with a mismatched subject, scope, or request
 identity is contract-invalid — decisions cannot be substituted across claims,
@@ -946,11 +955,13 @@ custody uses plus the non-emitting outcome are distinct:
    reference) in a `ReleasedEntryV0`, then in an `EvidenceResultV0`, before
    `result_digest` and `packet_digest` are computed.
 2. A **derivation-eligibility decision** (`decision_purpose:
-   derivation_eligibility`) evaluates an already-digested input claim before
-   the proposed derived claim may be constructed. It is retained
-   only in the derived claim's §5.1/§13 trace witness; neither it nor its
-   digest enters any `ClaimV0`. Once the input decisions pass, the derived
-   claim is digested, and that output digest completes the witness key.
+   derivation_eligibility`) evaluates an already-digested input claim after a
+   complete tentative caller-invariant output claim is constructed and
+   digested, but before that output may become valid or emittable. It is
+   retained only in the derived claim's §5.1/§13 trace witness; neither it nor
+   its digest enters any `ClaimV0`. Once all input decisions pass, the
+   witnesses are finalized with the already-computed output digest;
+   otherwise the tentative claim is discarded.
 3. A **non-emitting output decision** (`metadata: withhold`, or a decision
    whose existence rule forces the private-generic path) is applied
    transiently and creates no `ReleasedEntryV0`. Its trace retains only the
@@ -958,10 +969,11 @@ custody uses plus the non-emitting outcome are distinct:
    identifiers, full decision, or decision inputs.
 
 Thus the reference lifecycles are claim → output decision → entry → result →
-packet, and input claim → derivation-eligibility decision plus input claim →
-derived claim → trace witness; the non-emitting path leaves only its generic
-audit marker. The trace then references the packet digest; no decision points
-back into or changes its subject claim, and no digest cycle exists.
+packet, and input claim + tentative output digest → derivation-eligibility
+decision → finalized trace witness → valid derived claim; the non-emitting
+path leaves only its generic audit marker. The trace then references the
+packet digest; no decision points back into or changes its subject claim, and
+no digest cycle exists.
 
 ## 8. Release paths and existence safety
 
