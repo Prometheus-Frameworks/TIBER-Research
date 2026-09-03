@@ -157,10 +157,12 @@ Usage rule: `DigestBindingV0` is used for every content/self/object digest —
 `request_identity_digest`, `derivation_request_digest`,
 `rights_observation_digest`, `metadata_projection_digest`, `packet_digest`,
 `source_set_digest`, `compilation_trace_digest`, `manifest_digest`,
+`operation_manifest_digest`,
 `trace_digest`, `evaluation_digest`, and the `content` form of
 `rights_disposition_binding` (§5.6). The native `artifactDigest`
 (`{artifact_type, path, digest, digest_mode}`) is used **only** where an
-artifact type and repository-relative path genuinely exist (policy references,
+artifact type and repository-relative path genuinely exist (`operation_manifest_ref`,
+policy references,
 receipt `governing_authority_ref`/`governing_manifest_ref`, trace snapshot
 references to governed files, each §7
 `rights_observation_refs[].artifact_ref`, and the `governed_artifact` form of
@@ -760,9 +762,13 @@ operator/agent with `context_layer: observed`; **V2** `compiler_derived` with
 claim with `source_binding.applicable: true` whose claim `admission` is not
 applicable or whose `state` or `rationale` differs from the bound
 `source_ref.admissibility`; a bound native object whose `admitted` boolean is
-not exactly equivalent to `admissibility.state: admitted`; or such a
-source-direct claim with `promotion: promoted` unless the native object also
-has `admitted: true`, `admissibility.state: admitted`, and `promotable: true`;
+not exactly equivalent to `admissibility.state: admitted`; any applicable
+source binding with `promotion: not_promotable` while native `promotable` is
+true, or with `promotion: promoted | unpromoted` while native `promotable` is
+false; any non-applicable source binding with promotion other than
+`not_promotable`; or such a source-direct claim with `promotion: promoted`
+unless the native object also has `admitted: true`,
+`admissibility.state: admitted`, and `promotable: true`;
 **V5**
 operator-private material released without an exact path-valid scope match
 (§8); **V6**
@@ -783,7 +789,10 @@ from the subject `ClaimV0.rights_observed`, or that has an unequal recomputed
 `rights_observation_digest`, or whose `disclosure_policy_ref` +
 `disclosure_policy_pin` pair is missing, mutable, unresolvable, selected for a
 different operation, or fails digest verification against the resolved pinned
-policy content;
+policy content; any decision whose `evaluated_inputs` is not the exact §7
+projection of its verified subject claim; or any decision whose operation
+manifest ref/pin/digest is missing or invalid, lacks exactly one entry for the
+bound operation/version, or selects a different policy ref/pin;
 **V11** `asserter.role: output_producer` on any claim other than
 `compiler_derived`, `role: original_asserter` on a `compiler_derived` claim,
 a `compiler_derived` claim whose `asserter.party` differs from
@@ -812,7 +821,9 @@ was missing, invalid, had `decision_purpose` other than
 `derivation_eligibility`, or mismatched on `subject_claim_digest`, the
 recomputed `derivation_request_digest`, `request_scope_digest`,
 `request_identity_digest`, `transport_channel`, or `scope_verification`, had
-an unequal recomputed decision digest, or its derivation witness was missing,
+failed any V10 subject-projection, operation-manifest/policy-selection, or
+rights-observation validation, had an unequal recomputed decision digest, or
+its derivation witness was missing,
 duplicate, ambiguous, or did not match the §5.1 five-member key; every input
 with `rights_authority.unresolved` included;
 **V14** an applicable
@@ -894,6 +905,12 @@ request_identity_digest:  DigestBindingV0     # {operation_id,
                                               #  request_scope_digest,
                                               #  transport_channel,
                                               #  scope_verification}
+operation_manifest_ref:   artifactDigest      # exact governed manifest file
+operation_manifest_pin:   { pin: repository_revision,  # same §5.1 arm
+                            repository: ownerRepository,
+                            revision: nonEmptyString }  # full immutable commit
+operation_manifest_digest: DigestBindingV0    # byte-equal to the resolved
+                                              # manifest's manifest_digest
 transport_channel:        http_public | local_stdio | internal | remote_future
 scope_verification:       none | declared_unauthenticated | server_authenticated
 rights_observation_refs[]:
@@ -914,6 +931,7 @@ evaluated_inputs:         { admission (tagged), promotion,
                             claim_origin_class, claim_production_class,
                             source_binding applicability (+ native
                             source_class, native admitted + admissibility,
+                            native promotable,
                             native content_digest with its
                             source_content_digest_mode, and native
                             replayability when applicable) }
@@ -924,7 +942,9 @@ disclosure_policy_pin:    { pin: repository_revision,  # same §5.1 arm
 decision_input_digest:    DigestBindingV0 over the canonical object containing
                           subject_claim_digest, decision_purpose,
                           derivation_request_digest, request_scope_digest,
-                          request_identity_digest, transport_channel,
+                          request_identity_digest, operation_manifest_ref,
+                          operation_manifest_pin, operation_manifest_digest,
+                          transport_channel,
                           scope_verification, rights_observation_refs,
                           rights_observation_digest, evaluated_inputs,
                           disclosure_policy_ref, and disclosure_policy_pin
@@ -939,6 +959,21 @@ decisions:                { payload:   allow | withhold,
 reason_codes[]
 decision_digest:          DigestBindingV0
 ```
+
+**Subject-input projection (total).** `evaluated_inputs` is constructed by the
+compiler as a deterministic field-for-field projection of the exact embedded
+or pinned-and-retrieved subject `ClaimV0`; it contains no caller- or
+policy-supplied substitute values. Its claim-level `admission`, `promotion`,
+`rights_observed`, `rights_authority`, `privacy_scope`, `authority_ceiling`,
+`claim_origin_class`, and `claim_production_class` members are byte-equal to
+the subject fields of the same names. Its source-binding applicability is
+byte-equal too; when applicable, native `source_class`, `admitted`,
+`admissibility`, `promotable`, `content_digest`, `replayability`, and the
+wrapper's `source_content_digest_mode` are copied byte-for-byte from the
+subject's complete binding. Before any policy evaluation, validation
+recomputes `subject_claim_digest`, applies V4 to the source/claim admission and
+promotion operands, and verifies every projected equality. A mismatch is V10
+and makes either decision purpose contract-invalid.
 
 **Rights-observation binding (total).** Each `rights_observation_refs[]`
 member is one governed empirical-observation artifact — for example retained
@@ -958,7 +993,28 @@ blob bytes, while `tiber-canonical-json-v1` strictly parses the blob as one JSON
 value and hashes its §2 canonical encoding. A digest detects substitution; the
 repository/revision pin supplies historical retrieval.
 
-The disclosure policy selected by `disclosure_policy_ref` and historically
+**Operation-policy authority (total).** `operation_manifest_ref` and
+`operation_manifest_pin` identify the one governed `TiberOperationManifestV0`
+that authorizes policy selection for this decision. The pin reuses the §5.1
+`repository_revision` arm verbatim and its revision obeys the same full
+immutable commit-object rule as an observation pin. Validation resolves the
+manifest only as `operation_manifest_ref.path` at that repository revision,
+verifies the artifact digest under its adjacent mode, parses the exact manifest
+instance, recomputes its self-digest, and requires byte equality with
+`operation_manifest_digest`. The exact `{operation_id, operation_version}`
+from the request-identity object whose canonical digest is
+`request_identity_digest` must select exactly one manifest entry, and that
+entry's `disclosure_policy_ref` + `disclosure_policy_pin` must be byte-equal to
+the decision fields. A missing or duplicate operation entry, a mutable or
+failed manifest pin, unequal manifest digest, or policy substitution is V10
+and makes the decision contract-invalid. For an emitting output decision,
+`operation_manifest_ref` and `operation_manifest_pin` equal the enclosing
+packet fields and `operation_manifest_digest` equals the packet's
+`tool_manifest_digest`; a derivation-eligibility decision carries and verifies
+all three in its trace witness.
+
+The disclosure policy selected by that exact manifest entry through
+`disclosure_policy_ref` and historically
 located by `disclosure_policy_pin` must define a deterministic
 observation-selection rule. The pin reuses the §5.1
 `repository_revision` arm verbatim; the policy is resolved at that exact
@@ -1062,16 +1118,18 @@ custody uses plus the non-emitting outcome are distinct:
    otherwise the tentative claim is discarded.
 3. A **non-emitting output decision** (`metadata: withhold`, or a decision
    whose existence rule forces the private-generic path) is applied
-   transiently and creates no `ReleasedEntryV0`. Its trace retains only the
-   existence-safe generic audit marker §8 permits, never the withheld claim,
-   identifiers, full decision, or decision inputs.
+   transiently and creates no `ReleasedEntryV0`. Trace behavior follows the
+   independent `logging` outcome and §8 branch-invariance rule: exactly one
+   fixed generic marker for `log_metadata_only`, or no per-request marker for
+   `log_none`; never the withheld claim, identifiers, full decision, or
+   decision inputs.
 
 Thus the reference lifecycles are claim → output decision → entry → result →
 packet, and input claim + tentative output digest → derivation-eligibility
 decision → finalized trace witness → valid derived claim; the non-emitting
-path leaves only its generic audit marker. The trace then references the
-packet digest; no decision points back into or changes its subject claim, and
-no digest cycle exists.
+path leaves only its permitted fixed marker or no marker. The trace then
+references the packet digest; no decision points back into or changes its
+subject claim, and no digest cycle exists.
 
 ## 8. Release paths and existence safety
 
@@ -1109,6 +1167,13 @@ scope — the response is the single generic `EvidenceResultV0` with
 exists-but-unauthorized and does-not-exist; no claims, no conflict ref, no
 omission refs, no private claim id, digest, source reference, lineage, or
 private-specific reason code. **No null `ClaimV0` shell is ever emitted.**
+Trace behavior is branch-invariant too. The applicable logging outcome is
+selected without branching on whether the private claim exists. With
+`log_metadata_only`, exactly one fixed generic marker of identical bytes,
+count, shape, and timing class is produced for both exists-but-unauthorized and
+does-not-exist. With `log_none`, neither branch produces a per-request marker.
+No trace field, aggregate count, ordering effect, or timing classification may
+distinguish which branch occurred.
 Payload disclosure, metadata disclosure, retention, logging, and existence
 disclosure are five independent controls (§7); rights or privacy prohibitions
 may bind at the metadata level, withholding identifiers, references, digests,
@@ -1253,6 +1318,17 @@ Payload withholding is achieved by choosing the reference form; a modified
 claim is never emitted. Entries are covered by their container's digest and
 carry none of their own.
 
+**Common decision verification.** Before either entry kind may emit, the
+compiler obtains the exact underlying claim (the embedded value, or the
+§10.2 pinned retrieval), recomputes its `claim_digest`, and fully revalidates
+the output-release decision against that claim and the enclosing request. This
+includes §7 subject-input projection equality and V4, the pinned operation
+manifest and its operation/version policy selection, the pinned disclosure
+policy, every rights-observation check, request identity/scope, and both
+decision digests. A mismatch makes the decision contract-invalid and no entry
+is emitted; the embedded form is never a shortcut around the checks required
+of the reference form.
+
 `ReleasedClaimMetadataV0` (`schema_version:
 "research-context-compiler-released-claim-metadata/v0"`) is the
 deterministic, payload-free authorized projection
@@ -1301,13 +1377,16 @@ input claim; (6) recompute
 has `decision_purpose: output_release`, has no
 `derivation_request_digest`, and has `subject_claim_digest` equal to the same
 claim digest; (8) apply the complete §7 rights-observation validation — exact
-disclosure-policy pin resolution/digest verification, policy-selected
-membership, observation-pin resolution, per-artifact digest, ordering,
-uniqueness, claim-state equality, and aggregate digest — before
+subject-input projection equality and V4, operation-manifest pin/digest and
+exact operation/version selection, disclosure-policy pin resolution/digest
+verification, policy-selected membership, observation-pin resolution,
+per-artifact digest, ordering, uniqueness, claim-state equality, and aggregate
+digest — before
 recomputing `decision_input_digest` and `decision_digest`. Every
 verification is recorded in `ContextCompilationTraceV0` as a per-entry
 `reference_verification` record (checks 1–8 results + evidence_ref; the
-private-generic path records only that the generic rule fired). Any failure →
+private-generic path follows §8: one fixed branch-invariant marker for
+`log_metadata_only`, no per-request marker for `log_none`). Any failure →
 no entry, `result_state: reference_unverifiable` (or generic `not_found`
 where existence safety requires). Entry-level fields are never trusted
 without this verification. The identical rule applies to conflict
@@ -1355,8 +1434,10 @@ existence. Conflicts are preserved, never merge-resolved.
   `scope_verification`; Path L's recorded trust assumption where applicable),
   `generated_at`, `world_state_as_of | null` (never defaulted from
   `generated_at`), `known_unknowns[]` and `missing_witnesses[]` (each names
-  what it would resolve; never a proxy invitation), `operation_manifest_ref` +
-  `tool_manifest_digest: DigestBindingV0`, `authority_ceiling`,
+  what it would resolve; never a proxy invitation),
+  `operation_manifest_ref: artifactDigest` + `operation_manifest_pin` (the
+  exact §7 repository-revision pin) + `tool_manifest_digest: DigestBindingV0`
+  (byte-equal to the resolved manifest's `manifest_digest`), `authority_ceiling`,
   `prohibited_inferences[]` (minimum: schema-validity ≠ truth; retrieval ≠
   freshness; absence ≠ health; scenario ≠ forecast; link/manifest ≠
   capability; admission ≠ promotion; availability ≠ freshness;
@@ -1469,8 +1550,11 @@ governed files; `DigestBindingV0` for object digests; for every bound
 native source object its `content_digest` with the applicable source
 binding's sibling `source_content_digest_mode` (§5.3), its native `temporal`
 block with non-null `cutoff_at` (§5.4), its native `admitted`,
-`admissibility`, and `replayability`, plus, for an applicable
-`source_direct` claim, the V4 native/claim admission correspondence result;
+`admissibility`, `promotable`, and `replayability`, plus the exact claim
+`promotion` and V4 promotion/native-capability correspondence result for any
+applicable binding and, for an applicable `source_direct` claim, the exact
+claim `admission` and V4 native/claim admission correspondence result (all
+subject to the non-emitting exception below);
 provenance-receipt references per §10.2; the
 `rights_disposition_binding` of every claim whose `rights_authority` is
 applicable, §5.6); the source-set entries in their §12.3 order; candidate
@@ -1497,6 +1581,11 @@ every omitted decisive-class field; freshness/authority filters recorded per axi
 freshness, admission, promotion separately); for every emitting
 `output_release` decision and every finalized `derivation_eligibility`
 decision whose full decision is trace-retained, the exact
+`operation_manifest_ref`, `operation_manifest_pin`, and
+`operation_manifest_digest`, their pinned resolution/self-digest result, and
+their exact operation/version entry-selection result; the complete
+`evaluated_inputs` projection and its field-by-field subject-equality and V4
+results; the exact
 `disclosure_policy_ref` + `disclosure_policy_pin` and their pinned
 resolution/digest-verification result, the exact sorted
 `rights_observation_refs`,
@@ -1510,14 +1599,20 @@ deployment_binding / authenticated_workspace_isolation` — never one boolean);
 size/budget and displacement; `packet_digest` + `tool_manifest_digest`
 (backward references only); compiler warnings;
 `compilation_trace_digest`. Every §7 non-emitting output path, including
-`metadata: withhold` and the private-generic path, records only the
-existence-safe generic marker — never private identifiers, the full decision,
-or decision inputs.
+`metadata: withhold` and the private-generic path, records exactly one fixed
+generic marker when `logging: log_metadata_only` and no per-request marker when
+`logging: log_none` — never private identifiers, the full decision, or decision
+inputs. On an existence-safe path, marker bytes/count/shape/timing class and
+all trace aggregates remain identical between exists-but-unauthorized and
+does-not-exist.
 
 ## 14. `TiberOperationManifestV0`
 
-`schema_version`: `"research-context-compiler-operation-manifest/v0"`. Per
-operation: id + version; owning application layer; capability family from the
+`schema_version`: `"research-context-compiler-operation-manifest/v0"`. Each
+operation has a manifest-unique `{id, version}` pair; owning application layer;
+the exact `disclosure_policy_ref: artifactDigest` plus
+`disclosure_policy_pin` using the §5.1 `repository_revision` arm (the sole
+policy authorized for that operation/version); capability family from the
 exact Ops #67 seven (`contract_schema_introspection, world_query,
 provenance_lineage, validation_rejection_explanation, precedent_discovery,
 operator_context_retrieve_persist, privileged_software_maintainer_exclude`) —
@@ -1528,8 +1623,10 @@ result/refusal states referencing the §6 closed vocabulary **including
 `reference_unverifiable`**; per-channel availability status in which absent,
 blocked, and design-only capabilities are listed visibly as such, never
 omitted or implied. A manifest describes; it never grants — tool availability
-is not approval, and a manifest entry creates no capability.
-`manifest_digest: DigestBindingV0`.
+is not approval, and a manifest entry creates no capability. Its
+`manifest_digest: DigestBindingV0` covers every operation entry, including the
+exact policy ref/pin; a §7 decision must bind a pinned copy of this manifest
+and match that selection exactly.
 
 ## 15. `AgentContinuationTraceV0` and `AgentContinuationEvaluationV0`
 
