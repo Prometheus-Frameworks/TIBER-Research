@@ -503,12 +503,14 @@ native object. The sibling binds the native digest as follows:
 - **Digests and replay:** `source_binding` is a claim field, so the
   sibling is inside `claim_digest`; the native `content_digest` with its
   sibling is an evaluated input of every release decision (§7) and so
-  inside `decision_input_digest`; the same pair enters `source_set_digest`
-  and the trace. For `full_replay`, and whenever retained bytes remain in
-  custody, replay recomputes `tiber-raw-sha256-v1` and must reproduce the
-  native value. A `lineage_only` replay with no retained bytes verifies and
-  preserves the recorded pair and explicitly reports that byte replay is
-  unavailable; it never claims recomputation it cannot perform.
+  inside `decision_input_digest`; when non-null, the same pair enters
+  `source_set_digest`, while the native digest and sibling values — including
+  the permitted null/null state — enter the trace. For `full_replay`, and
+  whenever retained bytes remain in custody, replay recomputes
+  `tiber-raw-sha256-v1` and must reproduce the native value. A
+  `lineage_only` replay with no retained bytes verifies and preserves the
+  recorded pair and explicitly reports that byte replay is unavailable; it
+  never claims recomputation it cannot perform.
 
 A native source object is never fabricated. Honest representations:
 
