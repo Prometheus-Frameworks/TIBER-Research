@@ -154,14 +154,16 @@ DigestBindingV0:
 Usage rule: `DigestBindingV0` is used for every content/self/object digest —
 `claim_digest`, `payload_digest`, `result_digest`, `conflict_set_digest`,
 `decision_digest`, `decision_input_digest`, `request_scope_digest`,
-`request_identity_digest`, `metadata_projection_digest`, `packet_digest`,
+`request_identity_digest`, `derivation_request_digest`,
+`rights_observation_digest`, `metadata_projection_digest`, `packet_digest`,
 `source_set_digest`, `compilation_trace_digest`, `manifest_digest`,
 `trace_digest`, `evaluation_digest`, and the `content` form of
 `rights_disposition_binding` (§5.6). The native `artifactDigest`
 (`{artifact_type, path, digest, digest_mode}`) is used **only** where an
 artifact type and repository-relative path genuinely exist (policy references,
 receipt `governing_authority_ref`/`governing_manifest_ref`, trace snapshot
-references to governed files, the `governed_artifact` form of
+references to governed files, each §7
+`rights_observation_refs[].artifact_ref`, and the `governed_artifact` form of
 `rights_disposition_binding`). Self-digests never impersonate
 `artifactDigest`. Exactly one digest in the family is not itself a
 `DigestBindingV0`: the closed native source object's `content_digest`
@@ -616,17 +618,30 @@ from the same policy digest and clocks and must reproduce it byte-identically.
   {applicable: false, reason: safeId}`. The native enum is reused unmodified —
   no `not_applicable` value is added; where admission genuinely does not
   govern (operator hypotheses, agent material), it is structurally absent with
-  an explicit applicability reason. The native `admitted` boolean consistency
-  rule (`admitted: true ⇔ state: admitted`) applies wherever the native
-  admissibility block appears in a source binding.
+  an explicit applicability reason. The pinned native schema enforces only
+  `source_ref.admitted: true` →
+  `source_ref.admissibility.state: admitted`; it does not enforce the converse.
+  This family therefore adds a wrapper-level correspondence rule for every
+  `source_direct` claim with `source_binding.applicable: true`: claim
+  `admission` is exactly `{applicable: true, state:
+  source_ref.admissibility.state, rationale:
+  source_ref.admissibility.rationale}`, with `state` and `rationale` copied
+  byte-for-byte, and `source_ref.admitted` equals
+  `(source_ref.admissibility.state == admitted)`. Claim admission is never
+  independently authored for such a binding. Any mismatch is contract-invalid
+  (V4); this validates the wrapper without extending or modifying the closed
+  native object.
 - `promotion` ∈ `promoted | unpromoted | not_promotable` — promotion
   **status**, total over both source-binding arms:
   - `source_binding.applicable: true` → the claim's promotion capability
     must agree with the bound source object's native `promotable` boolean:
     `not_promotable ⇔ source_ref.promotable: false`; `promoted`/`unpromoted`
     require `source_ref.promotable: true`; `promoted` additionally requires
-    `admission.state: admitted` (validation V4). Disagreement between the
-    claim and its bound source object is contract-invalid.
+    `admission.state: admitted` (validation V4). For a `source_direct` claim
+    with an applicable binding, this necessarily also means
+    `source_ref.admitted: true` and
+    `source_ref.admissibility.state: admitted`. Disagreement between the claim
+    and its bound source object is contract-invalid.
   - `source_binding.applicable: false` (operator hypotheses, agent material,
     synthetic constructions, unadmitted external candidates) →
     `promotion: not_promotable` is the **only** permitted value; promoted
@@ -741,7 +756,14 @@ Deterministic validation (reject = contract-invalid): **V1** origin
 operator/agent with `context_layer: observed`; **V2** `compiler_derived` with
 `context_layer ≠ derived`; **V3** synthetic origin/production outside
 `fixture_only` ceiling or carrying `promotion: promoted`; **V4**
-`promotion: promoted` without `admission.state: admitted`; **V5**
+`promotion: promoted` without `admission.state: admitted`; a `source_direct`
+claim with `source_binding.applicable: true` whose claim `admission` is not
+applicable or whose `state` or `rationale` differs from the bound
+`source_ref.admissibility`; a bound native object whose `admitted` boolean is
+not exactly equivalent to `admissibility.state: admitted`; or such a
+source-direct claim with `promotion: promoted` unless the native object also
+has `admitted: true`, `admissibility.state: admitted`, and `promotable: true`;
+**V5**
 operator-private material released without an exact path-valid scope match
 (§8); **V6**
 any conflict alternative not passing full per-claim release (§11); **V7**
@@ -753,7 +775,15 @@ admitted; **V8** a substantive/native value supplied inside an
 `rights_disposition_ref` and `rights_disposition_binding`, a
 `rights_disposition_ref` that differs from the bound source object's native
 value under an applicable `source_binding`, or a binding whose digest does
-not equal the recomputed digest of the resolved disposition content (§5.6);
+not equal the recomputed digest of the resolved disposition content (§5.6),
+or a §7 `ReleaseDecisionV0` whose rights-observation set is not exactly the
+policy-selected set, contains an unpinned, unresolvable, duplicate, conflicting,
+or incorrectly ordered entry, whose `evaluated_inputs.rights_observed` differs
+from the subject `ClaimV0.rights_observed`, or that has an unequal recomputed
+`rights_observation_digest`, or whose `disclosure_policy_ref` +
+`disclosure_policy_pin` pair is missing, mutable, unresolvable, selected for a
+different operation, or fails digest verification against the resolved pinned
+policy content;
 **V11** `asserter.role: output_producer` on any claim other than
 `compiler_derived`, `role: original_asserter` on a `compiler_derived` claim,
 a `compiler_derived` claim whose `asserter.party` differs from
@@ -866,8 +896,16 @@ request_identity_digest:  DigestBindingV0     # {operation_id,
                                               #  scope_verification}
 transport_channel:        http_public | local_stdio | internal | remote_future
 scope_verification:       none | declared_unauthenticated | server_authenticated
-rights_observation_refs[] + rights_observation_digest: DigestBindingV0
+rights_observation_refs[]:
+  { artifact_ref: common#/$defs/artifactDigest,
+    artifact_pin: { pin: repository_revision,       # const
+                    repository: ownerRepository,
+                    revision: nonEmptyString } }     # exact full immutable
+                                                    # commit object id;
+                                                    # cardinality below
+rights_observation_digest: DigestBindingV0
 evaluated_inputs:         { admission (tagged), promotion,
+                            rights_observed,
                             rights_authority (tagged — the governing
                             disposition's resolvable ref AND its immutable
                             rights_disposition_binding, not only the
@@ -875,16 +913,21 @@ evaluated_inputs:         { admission (tagged), promotion,
                             (incl. principal_subject_ref), authority_ceiling,
                             claim_origin_class, claim_production_class,
                             source_binding applicability (+ native
-                            source_class, native content_digest with its
+                            source_class, native admitted + admissibility,
+                            native content_digest with its
                             source_content_digest_mode, and native
                             replayability when applicable) }
 disclosure_policy_ref:    artifactDigest      # exact governed policy file
+disclosure_policy_pin:    { pin: repository_revision,  # same §5.1 arm
+                            repository: ownerRepository,
+                            revision: nonEmptyString }  # full immutable commit
 decision_input_digest:    DigestBindingV0 over the canonical object containing
                           subject_claim_digest, decision_purpose,
                           derivation_request_digest, request_scope_digest,
                           request_identity_digest, transport_channel,
-                          scope_verification, rights_observation_digest,
-                          evaluated_inputs, and disclosure_policy_ref
+                          scope_verification, rights_observation_refs,
+                          rights_observation_digest, evaluated_inputs,
+                          disclosure_policy_ref, and disclosure_policy_pin
 disclosure_evaluated_at:  timestamp
 decisions:                { payload:   allow | withhold,
                             metadata:  allow | withhold,
@@ -896,6 +939,58 @@ decisions:                { payload:   allow | withhold,
 reason_codes[]
 decision_digest:          DigestBindingV0
 ```
+
+**Rights-observation binding (total).** Each `rights_observation_refs[]`
+member is one governed empirical-observation artifact — for example retained
+terms, license, or robots content, or a bounded negative-observation receipt —
+and never substitutes for the governing rights disposition. `artifact_ref` is
+the exact unmodified native `artifactDigest`; `artifact_pin` is mandatory and
+reuses the §5.1 `repository_revision` pin arm verbatim. Resolution reads
+`artifact_ref.path` from
+`artifact_pin.repository` at `artifact_pin.revision`. The revision must be a
+full immutable commit object id matching the pinned governed-artifact receipt's
+`commit` rule (`^[a-f0-9]{40,64}$`) and must resolve as a commit object; a
+branch, tag, alias, current-head lookup, URL, or digest-only locator is
+contract-invalid. Before the observation may be
+evaluated, the resolver recomputes `artifact_ref.digest` under its adjacent
+`artifact_ref.digest_mode`: `tiber-raw-sha256-v1` hashes the exact repository
+blob bytes, while `tiber-canonical-json-v1` strictly parses the blob as one JSON
+value and hashes its §2 canonical encoding. A digest detects substitution; the
+repository/revision pin supplies historical retrieval.
+
+The disclosure policy selected by `disclosure_policy_ref` and historically
+located by `disclosure_policy_pin` must define a deterministic
+observation-selection rule. The pin reuses the §5.1
+`repository_revision` arm verbatim; the policy is resolved at that exact
+repository revision and its native artifact digest is recomputed under its
+adjacent mode before selection or evaluation. An unpinned, mutable,
+unresolvable, or digest-mismatched policy makes the decision contract-invalid.
+The array contains exactly the policy-selected artifacts, with no
+caller-selected additions or omissions. An empty
+selection is represented by `[]`, never by absence or `null`, and is permitted
+iff `evaluated_inputs.rights_observed: not_applicable`; every other empirical
+state — including `no_terms_observed` and `upstream_chain_unknown` — requires
+at least one retained bounded-observation or audit artifact; a negative
+observation is never represented by an empty set. Entries are
+sorted field-by-field by `artifact_pin.repository`,
+`artifact_pin.revision`, `artifact_ref.artifact_type`, `artifact_ref.path`,
+`artifact_ref.digest_mode`, then `artifact_ref.digest`, using ascending UTF-16
+code-unit order with no normalization (the pinned `src/canonical.ts`
+`compareUtf16` rule). Exact duplicate entries, or entries sharing
+`{repository, revision, path}` but disagreeing on any `artifact_ref` member,
+are contract-invalid. `rights_observation_digest` is a `DigestBindingV0` with
+`digest_mode: tiber-canonical-json-v1` over the sorted
+`rights_observation_refs` array exactly as present, including every nested
+`artifact_pin` and `artifact_ref` member; for an empty selection the canonical
+input is `[]`. It hashes the reference wrappers, not concatenated artifact
+contents; each verified `artifact_ref.digest` transitively binds its resolved
+content. `evaluated_inputs.rights_observed` must equal the subject
+`ClaimV0.rights_observed` byte-for-byte. Validation and replay resolve and
+verify every pinned artifact, reproduce exact policy-selected membership and
+order, recompute the aggregate digest, and only then recompute
+`decision_input_digest` and the five decision outputs. Any failure is V10 and
+makes the decision contract-invalid. Observation refs and their aggregate
+never replace `rights_authority` or its `rights_disposition_binding`.
 
 For `decision_purpose: derivation_eligibility`,
 `derivation_request_digest` uses `tiber-canonical-json-v1` over exactly
@@ -921,20 +1016,23 @@ reference and digest, and no equivalence class may cross `decision_purpose`
 or `derivation_request_digest`. A derivation-eligibility decision without
 the exact `derivation_request_digest`, or an output-release decision carrying
 that field, is contract-invalid; an output-release decision never authorizes
-`derive_governed`. `disclosure_policy_ref` must equal the governed policy
-selected for the operation, and its artifact digest is inside
-`decision_input_digest`; replay resolves and verifies those exact policy
-bytes before recomputing every decision output. `payload: allow` with
+`derive_governed`. `disclosure_policy_ref` and `disclosure_policy_pin` must
+equal the governed policy and historical pin selected for the operation; both
+are inside `decision_input_digest`. Replay resolves the policy only at that
+pin and verifies those exact bytes against the artifact digest before
+recomputing every decision output. `payload: allow` with
 `metadata: withhold` is
 contract-invalid (payload without the metadata preserving identity, the
 claim's own `asserter` and every derivation-edge asserter, authority, and
 lineage is never releasable). `metadata: withhold`
 means no entry is emitted. `existence: generic` forces the §8 generic path.
 Retention composes with the native `retentionMode`; the native enum is
-unforked. Empirical rights observations and the governing `rights_authority`
-binding (§5.6) — reference and `rights_disposition_binding` together —
-are both evaluated inputs, carried inside `evaluated_inputs` and therefore
-inside `decision_input_digest`; the five decisions are per-request outputs;
+unforked. The subject claim's empirical `rights_observed` state is carried in
+`evaluated_inputs`; the exact verified observation refs and their aggregate are
+sibling decision inputs; and the governing `rights_authority` binding (§5.6) —
+reference and `rights_disposition_binding` together — is carried separately in
+`evaluated_inputs`. All are inside `decision_input_digest`; the five decisions
+are per-request outputs;
 the claim's own `reportability` and rights fields are unchanged by any
 decision. With `rights_authority.unresolved`, `decisions.payload` cannot be
 `allow` for externally sourced content. **Rights-sensitive replay:** a
@@ -1042,6 +1140,9 @@ admitted+unpromoted/not_promotable → U −
 {consume_canonical, derive_governed}; unresolved → U −
 {consume_canonical, derive_governed}; inadmissible → ∅;
 admission `{applicable: false}` → U − {consume_canonical, derive_governed}.
+For a `source_direct` claim with an applicable binding, S1 is evaluated only
+after V4 establishes exact native/claim admission correspondence; otherwise no
+permitted-use set is produced.
 Then, mechanically and unconditionally, `rights_authority.unresolved`
 (§5.6) removes {consume_canonical, derive_governed} from whatever the
 admission/promotion step produced; no admission state, promotion status, or
@@ -1116,6 +1217,10 @@ never gains `derive_governed`; private scope always intersects; flipping
 `promotion` alone between promoted and unpromoted (admission held admitted,
 `rights_authority` held applicable) changes the final set by exactly
 {consume_canonical, derive_governed} — the mechanical CA-01 check;
+native `unresolved` or `inadmissible` admission on a source-direct applicable
+binding is preserved at claim level and can never be relabelled `admitted` or
+`promoted`; native `admitted: false` can never yield `consume_canonical` or
+`derive_governed` through wrapper fields;
 `rights_authority.unresolved` (§5.6) never yields payload disclosure of
 externally sourced content and — mechanically, via S1 — never yields
 `consume_canonical` or `derive_governed`, whatever admission, promotion, or
@@ -1195,9 +1300,13 @@ input claim; (6) recompute
 `metadata_projection_digest`; (7) verify the entry's `ReleaseDecisionV0`
 has `decision_purpose: output_release`, has no
 `derivation_request_digest`, and has `subject_claim_digest` equal to the same
-claim digest. Every
+claim digest; (8) apply the complete §7 rights-observation validation — exact
+disclosure-policy pin resolution/digest verification, policy-selected
+membership, observation-pin resolution, per-artifact digest, ordering,
+uniqueness, claim-state equality, and aggregate digest — before
+recomputing `decision_input_digest` and `decision_digest`. Every
 verification is recorded in `ContextCompilationTraceV0` as a per-entry
-`reference_verification` record (checks 1–7 results + evidence_ref; the
+`reference_verification` record (checks 1–8 results + evidence_ref; the
 private-generic path records only that the generic rule fired). Any failure →
 no entry, `result_state: reference_unverifiable` (or generic `not_found`
 where existence safety requires). Entry-level fields are never trusted
@@ -1328,7 +1437,8 @@ tiber-canonical-json-v1` over the sorted array of entry objects exactly as
 present — five members where `replayability` is absent, six where present —
 so a retained value is inside `source_set_digest` and two conforming
 implementations hash identical bytes. All other arrays in the family are
-order-preserving. The same entries, in the same order, are recorded in the
+order-preserving except §7 `rights_observation_refs`, whose own total sort is
+normative. The same entries, in the same order, are recorded in the
 trace (§13); released metadata refers to source content only through the
 same `content_digest_mode`/`content_digest` pair; a replay recomputes the
 set from the same objects and must reproduce `source_set_digest`
@@ -1358,7 +1468,9 @@ id/version; exact source snapshot references (native `artifactDigest` for
 governed files; `DigestBindingV0` for object digests; for every bound
 native source object its `content_digest` with the applicable source
 binding's sibling `source_content_digest_mode` (§5.3), its native `temporal`
-block with non-null `cutoff_at` (§5.4), and its native `replayability`;
+block with non-null `cutoff_at` (§5.4), its native `admitted`,
+`admissibility`, and `replayability`, plus, for an applicable
+`source_direct` claim, the V4 native/claim admission correspondence result;
 provenance-receipt references per §10.2; the
 `rights_disposition_binding` of every claim whose `rights_authority` is
 applicable, §5.6); the source-set entries in their §12.3 order; candidate
@@ -1382,14 +1494,25 @@ decision digests, and the input's resulting S1–S6 intersection including its
 through the same pins, revalidates the same trace-retained decisions, and
 re-derives the same intersections; omission reasons for
 every omitted decisive-class field; freshness/authority filters recorded per axis (availability-of-result,
-freshness, admission, promotion separately); per-entry
+freshness, admission, promotion separately); for every emitting
+`output_release` decision and every finalized `derivation_eligibility`
+decision whose full decision is trace-retained, the exact
+`disclosure_policy_ref` + `disclosure_policy_pin` and their pinned
+resolution/digest-verification result, the exact sorted
+`rights_observation_refs`,
+`rights_observation_digest`, and the per-ref historical resolution,
+mode-specific digest, policy-membership, ordering/uniqueness, and subject
+`rights_observed` equality results — replay repeats those checks before policy
+evaluation; per-entry
 `reference_verification` records; per-released-entry `decision_input_digest`;
 the three isolation statuses carried verbatim (`source_containment /
 deployment_binding / authenticated_workspace_isolation` — never one boolean);
 size/budget and displacement; `packet_digest` + `tool_manifest_digest`
 (backward references only); compiler warnings;
-`compilation_trace_digest`. The private-generic path records only that the
-generic rule fired — never private identifiers.
+`compilation_trace_digest`. Every §7 non-emitting output path, including
+`metadata: withhold` and the private-generic path, records only the
+existence-safe generic marker — never private identifiers, the full decision,
+or decision inputs.
 
 ## 14. `TiberOperationManifestV0`
 
