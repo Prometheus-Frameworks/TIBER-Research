@@ -1,5 +1,7 @@
 # TIBER Research
 
+> **[TIBER Now — what works, what we’re building, and what’s still conceptual](https://github.com/Prometheus-Frameworks/TIBER-Fantasy/blob/main/docs/TIBER_NOW.md)**
+
 TIBER Research is the file-backed custody layer for bounded, replayable research.
 It stores immutable job inputs, append-oriented attempt state, structured candidate
 findings, independent reviews, and terminal seals.
