@@ -33,3 +33,11 @@ External installed-app/webhook effects were not independently visible through th
 - No empirical selections, Carolina numerical report, provider invocation, source acquisition, production endpoint call or fantasy transaction ran.
 
 The PR must identify its actual exact head and independent review disposition. Historical pins in this packet identify inspected records; they do not assert live deployment or broaden source use.
+
+## October 5 bounded design repair
+
+Joe's new direct October 5 instruction authorizes repair of the two October 5 P2 findings on PR #26 and one fresh exact-head review. This is a new bounded task, not an extension of the expired October 1 grant. The inspected PR remained open/non-draft/unmerged at `4e172195e85f983d01f9be2d0fa64246b8d3aac9`, with both findings and no subsequent repair. The original record above remains historical.
+
+Only the study design and this audit addendum change. Missing candidate features preserve the full comparator pool and cause whole-unit abstention; any such primary-unit abstention prohibits a full-pool confirmatory claim. Supported-unit estimates remain descriptive. The proposed inference now specifies season-stratified paired bootstrap draws, seed/PRNG/quantiles, basic intervals, a null-centered one-sided p-value and a fixed two-test Bonferroni family with simultaneous lower bounds. Bonferroni replaces Holm so tests and interval construction have a simple declared pairing; conservative discrepancies cannot pass the gate. This remains a candidate preregistration requiring later pre-outcome job freeze and separate activation.
+
+Validation: `npm run check` passed (413/413 tests, zero failed/skipped, typecheck, fixture/preflight/agent-entry checks). Eleven before/after document assertions detect the original omissions and the repaired boundaries/formulas; six-document local-link/LF checks and `git diff --check` passed. These are document/repository checks, not a statistical study, power validation or real-player evaluation. No dependencies, code, fixtures, schemas, empirical sources or run state changed. Publication head and fresh independent review disposition belong in the PR discussion; review is not claimed complete here. Keep unmerged; no study, source acquisition/admission, schedule or football recommendation is authorized.
