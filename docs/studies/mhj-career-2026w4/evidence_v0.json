@@ -1,0 +1,1079 @@
+{
+  "artifact": "manual_descriptive_study_evidence_v0",
+  "status": "candidate_pending_independent_review",
+  "promotable": false,
+  "governed_research_attempt": false,
+  "retrieved_on": "2026-10-10",
+  "nfl_cutoff": {
+    "season_type": "REG",
+    "full_seasons": [
+      2024,
+      2025
+    ],
+    "partial_season": 2026,
+    "last_week": 4,
+    "last_game_date": "2026-10-04"
+  },
+  "cohort": {
+    "definition": "All 2024 round-one drafted WRs; membership uses draft facts, never NFL results.",
+    "size": 7,
+    "pre_specification_note": "Defined before comparative calculations in this retrospective study; no prospective preregistration is claimed.",
+    "members": [
+      {
+        "player_slug": "marvin-harrison-jr",
+        "player_name": "Marvin Harrison Jr.",
+        "draft_pick": 4
+      },
+      {
+        "player_slug": "malik-nabers",
+        "player_name": "Malik Nabers",
+        "draft_pick": 6
+      },
+      {
+        "player_slug": "rome-odunze",
+        "player_name": "Rome Odunze",
+        "draft_pick": 9
+      },
+      {
+        "player_slug": "brian-thomas-jr",
+        "player_name": "Brian Thomas Jr.",
+        "draft_pick": 23
+      },
+      {
+        "player_slug": "xavier-worthy",
+        "player_name": "Xavier Worthy",
+        "draft_pick": 28
+      },
+      {
+        "player_slug": "ricky-pearsall",
+        "player_name": "Ricky Pearsall",
+        "draft_pick": 31
+      },
+      {
+        "player_slug": "xavier-legette",
+        "player_name": "Xavier Legette",
+        "draft_pick": 32
+      }
+    ],
+    "draft_source": "https://static.www.nfl.com/image/upload/league/apps/league-site/media-guides/2024/2024_Record_and_Fact_Book_incl_Supplemental.pdf"
+  },
+  "source_ledger": [
+    {
+      "source_id": "college-mhj",
+      "url": "https://ohiostatebuckeyes.com/sports/football/roster/marvin-harrison-jr-/5684",
+      "retrieved_at": "2026-10-10T16:29:28.519643+00:00",
+      "sha256": "0eacadfa48ab9dcc6e4319b6541146d312b7494272e16a67dc5413d4d554c485",
+      "status": "retrieved",
+      "bytes": 3211269,
+      "rights_scope": "Public factual records only; no analyst grades/charting or copied prose.",
+      "qualification": "public_factual_candidate_pending_independent_review",
+      "snapshot_note": "Original publisher bytes not republished; factual extracted rows retained. Current retrieval, not an original contemporaneous forecast."
+    },
+    {
+      "source_id": "nfl-career-brian-thomas-jr",
+      "url": "https://www.nfl.com/players/brian-thomas-jr/stats/career",
+      "retrieved_at": "2026-10-10T16:29:50.655856+00:00",
+      "sha256": "a79d21f6be976600d0541ead614fac2f18c2cbe9a069f4d3e242571b1fbb3500",
+      "status": "retrieved",
+      "bytes": 216532,
+      "rights_scope": "Public factual records only; no analyst grades/charting or copied prose.",
+      "qualification": "public_factual_candidate_pending_independent_review",
+      "snapshot_note": "Original publisher bytes not republished; factual extracted rows retained. Current retrieval, not an original contemporaneous forecast."
+    },
+    {
+      "source_id": "nfl-career-malik-nabers",
+      "url": "https://www.nfl.com/players/malik-nabers/stats/career",
+      "retrieved_at": "2026-10-10T16:29:46.627142+00:00",
+      "sha256": "ec8554cd18e7672361a4f180588d1cbd4a4201f702a10975ff2f64b3f800e2b6",
+      "status": "retrieved",
+      "bytes": 220057,
+      "rights_scope": "Public factual records only; no analyst grades/charting or copied prose.",
+      "qualification": "public_factual_candidate_pending_independent_review",
+      "snapshot_note": "Original publisher bytes not republished; factual extracted rows retained. Current retrieval, not an original contemporaneous forecast."
+    },
+    {
+      "source_id": "nfl-career-marvin-harrison-jr",
+      "url": "https://www.nfl.com/players/marvin-harrison-jr/stats/career",
+      "retrieved_at": "2026-10-10T16:29:46.637184+00:00",
+      "sha256": "6e2bcbfa56fb8ab0ca4f9abe2c25a44571a0b67d01bc1bccc5817a0fd00381a1",
+      "status": "retrieved",
+      "bytes": 213557,
+      "rights_scope": "Public factual records only; no analyst grades/charting or copied prose.",
+      "qualification": "public_factual_candidate_pending_independent_review",
+      "snapshot_note": "Original publisher bytes not republished; factual extracted rows retained. Current retrieval, not an original contemporaneous forecast."
+    },
+    {
+      "source_id": "nfl-career-ricky-pearsall",
+      "url": "https://www.nfl.com/players/ricky-pearsall/stats/career",
+      "retrieved_at": "2026-10-10T16:29:50.918247+00:00",
+      "sha256": "3581984069df16f023c72c4f99cb43bd2ecd821280eb4ea0bae54fafd83744b7",
+      "status": "retrieved",
+      "bytes": 217788,
+      "rights_scope": "Public factual records only; no analyst grades/charting or copied prose.",
+      "qualification": "public_factual_candidate_pending_independent_review",
+      "snapshot_note": "Original publisher bytes not republished; factual extracted rows retained. Current retrieval, not an original contemporaneous forecast."
+    },
+    {
+      "source_id": "nfl-career-rome-odunze",
+      "url": "https://www.nfl.com/players/rome-odunze/stats/career",
+      "retrieved_at": "2026-10-10T16:29:50.825417+00:00",
+      "sha256": "3cd43d31e087f04b182e729f3f73fac2f8e6ec2a040eb627504e0afd8d0ca412",
+      "status": "retrieved",
+      "bytes": 216328,
+      "rights_scope": "Public factual records only; no analyst grades/charting or copied prose.",
+      "qualification": "public_factual_candidate_pending_independent_review",
+      "snapshot_note": "Original publisher bytes not republished; factual extracted rows retained. Current retrieval, not an original contemporaneous forecast."
+    },
+    {
+      "source_id": "nfl-career-xavier-legette",
+      "url": "https://www.nfl.com/players/xavier-legette/stats/career",
+      "retrieved_at": "2026-10-10T16:29:50.781083+00:00",
+      "sha256": "27887022cf2f1d018c000f4ff445fd59ba42c8309a26e1c3ec5da4e8a26c0766",
+      "status": "retrieved",
+      "bytes": 218932,
+      "rights_scope": "Public factual records only; no analyst grades/charting or copied prose.",
+      "qualification": "public_factual_candidate_pending_independent_review",
+      "snapshot_note": "Original publisher bytes not republished; factual extracted rows retained. Current retrieval, not an original contemporaneous forecast."
+    },
+    {
+      "source_id": "nfl-career-xavier-worthy",
+      "url": "https://www.nfl.com/players/xavier-worthy/stats/career",
+      "retrieved_at": "2026-10-10T16:29:50.829328+00:00",
+      "sha256": "12f46c2b4031b9a49c883745d3a37e5c6168ad2e930a78647a4ff9c7fc5ee479",
+      "status": "retrieved",
+      "bytes": 219246,
+      "rights_scope": "Public factual records only; no analyst grades/charting or copied prose.",
+      "qualification": "public_factual_candidate_pending_independent_review",
+      "snapshot_note": "Original publisher bytes not republished; factual extracted rows retained. Current retrieval, not an original contemporaneous forecast."
+    },
+    {
+      "source_id": "nfl-context-2026",
+      "url": "https://www.azcardinals.com/news/marvin-harrison-jr-knows-noise-expectations-but-sticks-to-process",
+      "retrieved_at": "2026-10-10T16:29:45.728669+00:00",
+      "sha256": "6b31dfe755b351f550b1fb8fa1a3c71543450ed063cda9a1d3aa67daef892718",
+      "status": "retrieved",
+      "bytes": 328855,
+      "rights_scope": "Public factual records only; no analyst grades/charting or copied prose.",
+      "qualification": "public_factual_candidate_pending_independent_review",
+      "snapshot_note": "Original publisher bytes not republished; factual extracted rows retained. Current retrieval, not an original contemporaneous forecast."
+    },
+    {
+      "source_id": "nfl-mhj-bio",
+      "url": "https://www.azcardinals.com/team/players-roster/marvin-harrison-jr/",
+      "retrieved_at": "2026-10-10T16:29:45.937365+00:00",
+      "sha256": "7ea0a6e5cb6a8fdc98ff032d6be591f5ba8517211ba1df71cf1c8620068888e2",
+      "status": "retrieved",
+      "bytes": 452178,
+      "rights_scope": "Public factual records only; no analyst grades/charting or copied prose.",
+      "qualification": "public_factual_candidate_pending_independent_review",
+      "snapshot_note": "Original publisher bytes not republished; factual extracted rows retained. Current retrieval, not an original contemporaneous forecast."
+    },
+    {
+      "source_id": "nfl-mhj-logs-2024",
+      "url": "https://www.nfl.com/players/marvin-harrison-jr/stats/logs/2024/",
+      "retrieved_at": "2026-10-10T16:29:50.925505+00:00",
+      "sha256": "833ed47ff9d301df7d60fad9e23403718b66d6cfb7b5914317849e43bef575eb",
+      "status": "retrieved",
+      "bytes": 221361,
+      "rights_scope": "Public factual records only; no analyst grades/charting or copied prose.",
+      "qualification": "public_factual_candidate_pending_independent_review",
+      "snapshot_note": "Original publisher bytes not republished; factual extracted rows retained. Current retrieval, not an original contemporaneous forecast."
+    },
+    {
+      "source_id": "nfl-mhj-logs-2025",
+      "url": "https://www.nfl.com/players/marvin-harrison-jr/stats/logs/2025/",
+      "retrieved_at": "2026-10-10T16:29:55.433445+00:00",
+      "sha256": "c48e9aaa62a076e11c83467002f5b6fb5103bcefd565300ea214dfc510618b94",
+      "status": "retrieved",
+      "bytes": 220707,
+      "rights_scope": "Public factual records only; no analyst grades/charting or copied prose.",
+      "qualification": "public_factual_candidate_pending_independent_review",
+      "snapshot_note": "Original publisher bytes not republished; factual extracted rows retained. Current retrieval, not an original contemporaneous forecast."
+    },
+    {
+      "source_id": "nfl-mhj-logs-2026",
+      "url": "https://www.nfl.com/players/marvin-harrison-jr/stats/logs/2026/",
+      "retrieved_at": "2026-10-10T16:29:54.911923+00:00",
+      "sha256": "f92b5b0ccbb5f29575760bbee211e52da55f44220433e36fbfbc77539e7cca67",
+      "status": "retrieved",
+      "bytes": 213717,
+      "rights_scope": "Public factual records only; no analyst grades/charting or copied prose.",
+      "qualification": "public_factual_candidate_pending_independent_review",
+      "snapshot_note": "Original publisher bytes not republished; factual extracted rows retained. Current retrieval, not an original contemporaneous forecast."
+    },
+    {
+      "source_id": "nfl-targets-2024",
+      "url": "https://www.azcardinals.com/news/trey-mcbride-can-lead-cardinals-passing-game-tight-end-marvin-harrison-michael-wilson",
+      "retrieved_at": "2026-10-10T16:29:45.775761+00:00",
+      "sha256": "e4da1960494dd153860a689086f569b20482935d2fbfc7b329853a34a3d8ee30",
+      "status": "retrieved",
+      "bytes": 327025,
+      "rights_scope": "Public factual records only; no analyst grades/charting or copied prose.",
+      "qualification": "public_factual_candidate_pending_independent_review",
+      "snapshot_note": "Original publisher bytes not republished; factual extracted rows retained. Current retrieval, not an original contemporaneous forecast."
+    },
+    {
+      "source_id": "nfl-targets-2025",
+      "url": "https://www.nfl.com/stats/player-stats/category/receiving/2025/REG/all/receivingyards/ASC?aftercursor=AAAB2QAAAdlAgvgAAAAAADFleUp6WldGeVkyaEJablJsY2lJNld6WXdOeXdpTXpJd01EVXdORGt0TlRReU1pMDRNRFV3TFdFNFpqZ3RaalV5TVRBeE16VmhOR0l6SWl3eU1ESTFYWDA9",
+      "retrieved_at": "2026-10-10T16:33:40.803730+00:00",
+      "sha256": "ae9ef38b03a6e4ff06766d6d328110d6a4fec6b884945cadb60bfafdc77d50fd",
+      "status": "retrieved",
+      "bytes": 258681,
+      "rights_scope": "Public factual records only; no analyst grades/charting or copied prose.",
+      "qualification": "public_factual_candidate_pending_independent_review",
+      "snapshot_note": "Original publisher bytes not republished; factual extracted rows retained. Current retrieval, not an original contemporaneous forecast."
+    },
+    {
+      "source_id": "nfl-targets-2026-indexed-row",
+      "url": "https://www.nfl.com/stats/player-stats/category/receiving/2026/REG/all/receivingtarget/DESC?aftercursor=AAAASgAAAERAJgAAAAAAADFleUp6WldGeVkyaEJablJsY2lJNld6RXhMQ0l6TWpBd05UUTFNaTAwTlRReUxUVTBNVFV0TjJaa1pDMDNOREJtWlRreE9ERm1ZMklpTERJd01qWmRmUT09",
+      "retrieved_on": "2026-10-10",
+      "retrieval_method": "search_service_indexed_primary_row",
+      "observed_row": {
+        "player_name": "Marvin Harrison Jr.",
+        "season": 2026,
+        "receptions": 5,
+        "receiving_yards": 85,
+        "receiving_tds": 1,
+        "targets": 13
+      },
+      "qualification": "provisional_descriptive_candidate_pending_matching_primary_receipt",
+      "limitation": "NFL pagination fetches returned adjacent/repeated pages. No direct source-byte hash is claimed for the indexed row.",
+      "rights_scope": "Public aggregate factual counts only.",
+      "admitted_row_sha256": "29f724bf0f51fc440d125aa0884a18f30fbde6fbe2e0d0cf03c13af5e961027e"
+    },
+    {
+      "source_id": "targets-2026-secondary",
+      "url": "https://www.statmuse.com/nfl/ask/how-many-targets-has-marvin-harrison-jr.-dropped",
+      "retrieved_on": "2026-10-10",
+      "retrieval_method": "search_service",
+      "qualification": "public_basic_stats_secondary_corroboration_only",
+      "observed_targets": 13,
+      "rights_scope": "Aggregate target count only; no proprietary analyst material."
+    }
+  ],
+  "college_baseline": [
+    {
+      "season": 2021,
+      "games": 13,
+      "receptions": 11,
+      "receiving_yards": 139,
+      "receiving_tds": 3,
+      "source_refs": [
+        "nfl-mhj-bio"
+      ],
+      "evidence_lane": "college_production",
+      "status": "public_factual_candidate_pending_independent_review"
+    },
+    {
+      "season": 2022,
+      "games": 13,
+      "receptions": 77,
+      "receiving_yards": 1263,
+      "receiving_tds": 14,
+      "source_refs": [
+        "college-mhj",
+        "nfl-mhj-bio"
+      ],
+      "evidence_lane": "college_production",
+      "status": "public_factual_candidate_pending_independent_review"
+    },
+    {
+      "season": 2023,
+      "games": 12,
+      "receptions": 67,
+      "receiving_yards": 1211,
+      "receiving_tds": 14,
+      "source_refs": [
+        "college-mhj",
+        "nfl-mhj-bio"
+      ],
+      "evidence_lane": "college_production",
+      "status": "public_factual_candidate_pending_independent_review"
+    }
+  ],
+  "college_baseline_source_refs": [
+    "college-mhj",
+    "nfl-mhj-bio"
+  ],
+  "season_rows": [
+    {
+      "player_slug": "marvin-harrison-jr",
+      "player_name": "Marvin Harrison Jr.",
+      "draft_pick": 4,
+      "season": 2024,
+      "season_type": "REG",
+      "week_cutoff": 18,
+      "source_ref": "nfl-career-marvin-harrison-jr",
+      "status": "observed_public_factual_candidate",
+      "games": 17,
+      "receptions": 62,
+      "receiving_yards": 885,
+      "receiving_tds": 8
+    },
+    {
+      "player_slug": "marvin-harrison-jr",
+      "player_name": "Marvin Harrison Jr.",
+      "draft_pick": 4,
+      "season": 2025,
+      "season_type": "REG",
+      "week_cutoff": 18,
+      "source_ref": "nfl-career-marvin-harrison-jr",
+      "status": "observed_public_factual_candidate",
+      "games": 12,
+      "receptions": 41,
+      "receiving_yards": 608,
+      "receiving_tds": 4
+    },
+    {
+      "player_slug": "marvin-harrison-jr",
+      "player_name": "Marvin Harrison Jr.",
+      "draft_pick": 4,
+      "season": 2026,
+      "season_type": "REG",
+      "week_cutoff": 4,
+      "source_ref": "nfl-career-marvin-harrison-jr",
+      "status": "observed_public_factual_candidate",
+      "games": 4,
+      "receptions": 5,
+      "receiving_yards": 85,
+      "receiving_tds": 1
+    },
+    {
+      "player_slug": "malik-nabers",
+      "player_name": "Malik Nabers",
+      "draft_pick": 6,
+      "season": 2024,
+      "season_type": "REG",
+      "week_cutoff": 18,
+      "source_ref": "nfl-career-malik-nabers",
+      "status": "observed_public_factual_candidate",
+      "games": 15,
+      "receptions": 109,
+      "receiving_yards": 1204,
+      "receiving_tds": 7
+    },
+    {
+      "player_slug": "malik-nabers",
+      "player_name": "Malik Nabers",
+      "draft_pick": 6,
+      "season": 2025,
+      "season_type": "REG",
+      "week_cutoff": 18,
+      "source_ref": "nfl-career-malik-nabers",
+      "status": "observed_public_factual_candidate",
+      "games": 4,
+      "receptions": 18,
+      "receiving_yards": 271,
+      "receiving_tds": 2
+    },
+    {
+      "player_slug": "malik-nabers",
+      "player_name": "Malik Nabers",
+      "draft_pick": 6,
+      "season": 2026,
+      "season_type": "REG",
+      "week_cutoff": 4,
+      "source_ref": "nfl-career-malik-nabers",
+      "status": "observed_public_factual_candidate",
+      "games": 4,
+      "receptions": 18,
+      "receiving_yards": 208,
+      "receiving_tds": 1
+    },
+    {
+      "player_slug": "rome-odunze",
+      "player_name": "Rome Odunze",
+      "draft_pick": 9,
+      "season": 2024,
+      "season_type": "REG",
+      "week_cutoff": 18,
+      "source_ref": "nfl-career-rome-odunze",
+      "status": "observed_public_factual_candidate",
+      "games": 17,
+      "receptions": 54,
+      "receiving_yards": 734,
+      "receiving_tds": 3
+    },
+    {
+      "player_slug": "rome-odunze",
+      "player_name": "Rome Odunze",
+      "draft_pick": 9,
+      "season": 2025,
+      "season_type": "REG",
+      "week_cutoff": 18,
+      "source_ref": "nfl-career-rome-odunze",
+      "status": "observed_public_factual_candidate",
+      "games": 12,
+      "receptions": 44,
+      "receiving_yards": 661,
+      "receiving_tds": 6
+    },
+    {
+      "player_slug": "rome-odunze",
+      "player_name": "Rome Odunze",
+      "draft_pick": 9,
+      "season": 2026,
+      "season_type": "REG",
+      "week_cutoff": 4,
+      "source_ref": "nfl-career-rome-odunze",
+      "status": "observed_public_factual_candidate",
+      "games": 4,
+      "receptions": 14,
+      "receiving_yards": 233,
+      "receiving_tds": 0
+    },
+    {
+      "player_slug": "brian-thomas-jr",
+      "player_name": "Brian Thomas Jr.",
+      "draft_pick": 23,
+      "season": 2024,
+      "season_type": "REG",
+      "week_cutoff": 18,
+      "source_ref": "nfl-career-brian-thomas-jr",
+      "status": "observed_public_factual_candidate",
+      "games": 17,
+      "receptions": 87,
+      "receiving_yards": 1282,
+      "receiving_tds": 10
+    },
+    {
+      "player_slug": "brian-thomas-jr",
+      "player_name": "Brian Thomas Jr.",
+      "draft_pick": 23,
+      "season": 2025,
+      "season_type": "REG",
+      "week_cutoff": 18,
+      "source_ref": "nfl-career-brian-thomas-jr",
+      "status": "observed_public_factual_candidate",
+      "games": 14,
+      "receptions": 48,
+      "receiving_yards": 707,
+      "receiving_tds": 2
+    },
+    {
+      "player_slug": "brian-thomas-jr",
+      "player_name": "Brian Thomas Jr.",
+      "draft_pick": 23,
+      "season": 2026,
+      "season_type": "REG",
+      "week_cutoff": 4,
+      "source_ref": "nfl-career-brian-thomas-jr",
+      "status": "observed_public_factual_candidate",
+      "games": 4,
+      "receptions": 9,
+      "receiving_yards": 105,
+      "receiving_tds": 1
+    },
+    {
+      "player_slug": "xavier-worthy",
+      "player_name": "Xavier Worthy",
+      "draft_pick": 28,
+      "season": 2024,
+      "season_type": "REG",
+      "week_cutoff": 18,
+      "source_ref": "nfl-career-xavier-worthy",
+      "status": "observed_public_factual_candidate",
+      "games": 17,
+      "receptions": 59,
+      "receiving_yards": 638,
+      "receiving_tds": 6
+    },
+    {
+      "player_slug": "xavier-worthy",
+      "player_name": "Xavier Worthy",
+      "draft_pick": 28,
+      "season": 2025,
+      "season_type": "REG",
+      "week_cutoff": 18,
+      "source_ref": "nfl-career-xavier-worthy",
+      "status": "observed_public_factual_candidate",
+      "games": 14,
+      "receptions": 42,
+      "receiving_yards": 532,
+      "receiving_tds": 1
+    },
+    {
+      "player_slug": "xavier-worthy",
+      "player_name": "Xavier Worthy",
+      "draft_pick": 28,
+      "season": 2026,
+      "season_type": "REG",
+      "week_cutoff": 4,
+      "source_ref": "nfl-career-xavier-worthy",
+      "status": "observed_public_factual_candidate",
+      "games": 4,
+      "receptions": 14,
+      "receiving_yards": 133,
+      "receiving_tds": 1
+    },
+    {
+      "player_slug": "ricky-pearsall",
+      "player_name": "Ricky Pearsall",
+      "draft_pick": 31,
+      "season": 2024,
+      "season_type": "REG",
+      "week_cutoff": 18,
+      "source_ref": "nfl-career-ricky-pearsall",
+      "status": "observed_public_factual_candidate",
+      "games": 11,
+      "receptions": 31,
+      "receiving_yards": 400,
+      "receiving_tds": 3
+    },
+    {
+      "player_slug": "ricky-pearsall",
+      "player_name": "Ricky Pearsall",
+      "draft_pick": 31,
+      "season": 2025,
+      "season_type": "REG",
+      "week_cutoff": 18,
+      "source_ref": "nfl-career-ricky-pearsall",
+      "status": "observed_public_factual_candidate",
+      "games": 9,
+      "receptions": 36,
+      "receiving_yards": 528,
+      "receiving_tds": 0
+    },
+    {
+      "player_slug": "ricky-pearsall",
+      "player_name": "Ricky Pearsall",
+      "draft_pick": 31,
+      "season": 2026,
+      "season_type": "REG",
+      "week_cutoff": 4,
+      "source_ref": "nfl-career-ricky-pearsall",
+      "status": "unavailable_no_season_row_in_retained_source",
+      "games": null,
+      "receptions": null,
+      "receiving_yards": null,
+      "receiving_tds": null
+    },
+    {
+      "player_slug": "xavier-legette",
+      "player_name": "Xavier Legette",
+      "draft_pick": 32,
+      "season": 2024,
+      "season_type": "REG",
+      "week_cutoff": 18,
+      "source_ref": "nfl-career-xavier-legette",
+      "status": "observed_public_factual_candidate",
+      "games": 16,
+      "receptions": 49,
+      "receiving_yards": 497,
+      "receiving_tds": 4
+    },
+    {
+      "player_slug": "xavier-legette",
+      "player_name": "Xavier Legette",
+      "draft_pick": 32,
+      "season": 2025,
+      "season_type": "REG",
+      "week_cutoff": 18,
+      "source_ref": "nfl-career-xavier-legette",
+      "status": "observed_public_factual_candidate",
+      "games": 15,
+      "receptions": 35,
+      "receiving_yards": 363,
+      "receiving_tds": 3
+    },
+    {
+      "player_slug": "xavier-legette",
+      "player_name": "Xavier Legette",
+      "draft_pick": 32,
+      "season": 2026,
+      "season_type": "REG",
+      "week_cutoff": 4,
+      "source_ref": "nfl-career-xavier-legette",
+      "status": "observed_public_factual_candidate",
+      "games": 2,
+      "receptions": 2,
+      "receiving_yards": 64,
+      "receiving_tds": 0
+    }
+  ],
+  "weekly_rows": [
+    {
+      "season": 2024,
+      "season_type": "REG",
+      "week": 1,
+      "game_date": "2024-09-08",
+      "opponent": "@Bills",
+      "status": "played_receiving_row",
+      "receptions": 1,
+      "receiving_yards": 4,
+      "receiving_tds": 0,
+      "source_ref": "nfl-mhj-logs-2024"
+    },
+    {
+      "season": 2024,
+      "season_type": "REG",
+      "week": 2,
+      "game_date": "2024-09-15",
+      "opponent": "Rams",
+      "status": "played_receiving_row",
+      "receptions": 4,
+      "receiving_yards": 130,
+      "receiving_tds": 2,
+      "source_ref": "nfl-mhj-logs-2024"
+    },
+    {
+      "season": 2024,
+      "season_type": "REG",
+      "week": 3,
+      "game_date": "2024-09-22",
+      "opponent": "Lions",
+      "status": "played_receiving_row",
+      "receptions": 5,
+      "receiving_yards": 64,
+      "receiving_tds": 1,
+      "source_ref": "nfl-mhj-logs-2024"
+    },
+    {
+      "season": 2024,
+      "season_type": "REG",
+      "week": 4,
+      "game_date": "2024-09-29",
+      "opponent": "Commanders",
+      "status": "played_receiving_row",
+      "receptions": 5,
+      "receiving_yards": 45,
+      "receiving_tds": 1,
+      "source_ref": "nfl-mhj-logs-2024"
+    },
+    {
+      "season": 2024,
+      "season_type": "REG",
+      "week": 5,
+      "game_date": "2024-10-06",
+      "opponent": "@49ers",
+      "status": "played_receiving_row",
+      "receptions": 2,
+      "receiving_yards": 36,
+      "receiving_tds": 0,
+      "source_ref": "nfl-mhj-logs-2024"
+    },
+    {
+      "season": 2024,
+      "season_type": "REG",
+      "week": 6,
+      "game_date": "2024-10-13",
+      "opponent": "@Packers",
+      "status": "played_receiving_row",
+      "receptions": 0,
+      "receiving_yards": 0,
+      "receiving_tds": 0,
+      "source_ref": "nfl-mhj-logs-2024"
+    },
+    {
+      "season": 2024,
+      "season_type": "REG",
+      "week": 7,
+      "game_date": "2024-10-21",
+      "opponent": "Chargers",
+      "status": "played_receiving_row",
+      "receptions": 3,
+      "receiving_yards": 21,
+      "receiving_tds": 0,
+      "source_ref": "nfl-mhj-logs-2024"
+    },
+    {
+      "season": 2024,
+      "season_type": "REG",
+      "week": 8,
+      "game_date": "2024-10-27",
+      "opponent": "@Dolphins",
+      "status": "played_receiving_row",
+      "receptions": 6,
+      "receiving_yards": 111,
+      "receiving_tds": 1,
+      "source_ref": "nfl-mhj-logs-2024"
+    },
+    {
+      "season": 2024,
+      "season_type": "REG",
+      "week": 9,
+      "game_date": "2024-11-03",
+      "opponent": "Bears",
+      "status": "played_receiving_row",
+      "receptions": 2,
+      "receiving_yards": 34,
+      "receiving_tds": 0,
+      "source_ref": "nfl-mhj-logs-2024"
+    },
+    {
+      "season": 2024,
+      "season_type": "REG",
+      "week": 10,
+      "game_date": "2024-11-10",
+      "opponent": "Jets",
+      "status": "played_receiving_row",
+      "receptions": 5,
+      "receiving_yards": 54,
+      "receiving_tds": 1,
+      "source_ref": "nfl-mhj-logs-2024"
+    },
+    {
+      "season": 2024,
+      "season_type": "REG",
+      "week": 12,
+      "game_date": "2024-11-24",
+      "opponent": "@Seahawks",
+      "status": "played_receiving_row",
+      "receptions": 3,
+      "receiving_yards": 47,
+      "receiving_tds": 0,
+      "source_ref": "nfl-mhj-logs-2024"
+    },
+    {
+      "season": 2024,
+      "season_type": "REG",
+      "week": 13,
+      "game_date": "2024-12-01",
+      "opponent": "@Vikings",
+      "status": "played_receiving_row",
+      "receptions": 5,
+      "receiving_yards": 60,
+      "receiving_tds": 1,
+      "source_ref": "nfl-mhj-logs-2024"
+    },
+    {
+      "season": 2024,
+      "season_type": "REG",
+      "week": 14,
+      "game_date": "2024-12-08",
+      "opponent": "Seahawks",
+      "status": "played_receiving_row",
+      "receptions": 4,
+      "receiving_yards": 49,
+      "receiving_tds": 0,
+      "source_ref": "nfl-mhj-logs-2024"
+    },
+    {
+      "season": 2024,
+      "season_type": "REG",
+      "week": 15,
+      "game_date": "2024-12-15",
+      "opponent": "Patriots",
+      "status": "played_receiving_row",
+      "receptions": 2,
+      "receiving_yards": 32,
+      "receiving_tds": 0,
+      "source_ref": "nfl-mhj-logs-2024"
+    },
+    {
+      "season": 2024,
+      "season_type": "REG",
+      "week": 16,
+      "game_date": "2024-12-22",
+      "opponent": "@Panthers",
+      "status": "played_receiving_row",
+      "receptions": 4,
+      "receiving_yards": 39,
+      "receiving_tds": 0,
+      "source_ref": "nfl-mhj-logs-2024"
+    },
+    {
+      "season": 2024,
+      "season_type": "REG",
+      "week": 17,
+      "game_date": "2024-12-28",
+      "opponent": "@Rams",
+      "status": "played_receiving_row",
+      "receptions": 6,
+      "receiving_yards": 96,
+      "receiving_tds": 0,
+      "source_ref": "nfl-mhj-logs-2024"
+    },
+    {
+      "season": 2024,
+      "season_type": "REG",
+      "week": 18,
+      "game_date": "2025-01-05",
+      "opponent": "49ers",
+      "status": "played_receiving_row",
+      "receptions": 5,
+      "receiving_yards": 63,
+      "receiving_tds": 1,
+      "source_ref": "nfl-mhj-logs-2024"
+    },
+    {
+      "season": 2025,
+      "season_type": "REG",
+      "week": 1,
+      "game_date": "2025-09-07",
+      "opponent": "@Saints",
+      "status": "played_receiving_row",
+      "receptions": 5,
+      "receiving_yards": 71,
+      "receiving_tds": 1,
+      "source_ref": "nfl-mhj-logs-2025"
+    },
+    {
+      "season": 2025,
+      "season_type": "REG",
+      "week": 2,
+      "game_date": "2025-09-14",
+      "opponent": "Panthers",
+      "status": "played_receiving_row",
+      "receptions": 2,
+      "receiving_yards": 27,
+      "receiving_tds": 0,
+      "source_ref": "nfl-mhj-logs-2025"
+    },
+    {
+      "season": 2025,
+      "season_type": "REG",
+      "week": 3,
+      "game_date": "2025-09-21",
+      "opponent": "@49ers",
+      "status": "played_receiving_row",
+      "receptions": 3,
+      "receiving_yards": 44,
+      "receiving_tds": 0,
+      "source_ref": "nfl-mhj-logs-2025"
+    },
+    {
+      "season": 2025,
+      "season_type": "REG",
+      "week": 4,
+      "game_date": "2025-09-25",
+      "opponent": "Seahawks",
+      "status": "played_receiving_row",
+      "receptions": 6,
+      "receiving_yards": 66,
+      "receiving_tds": 1,
+      "source_ref": "nfl-mhj-logs-2025"
+    },
+    {
+      "season": 2025,
+      "season_type": "REG",
+      "week": 5,
+      "game_date": "2025-10-05",
+      "opponent": "Titans",
+      "status": "played_receiving_row",
+      "receptions": 4,
+      "receiving_yards": 98,
+      "receiving_tds": 0,
+      "source_ref": "nfl-mhj-logs-2025"
+    },
+    {
+      "season": 2025,
+      "season_type": "REG",
+      "week": 6,
+      "game_date": "2025-10-12",
+      "opponent": "@Colts",
+      "status": "played_receiving_row",
+      "receptions": 2,
+      "receiving_yards": 32,
+      "receiving_tds": 0,
+      "source_ref": "nfl-mhj-logs-2025"
+    },
+    {
+      "season": 2025,
+      "season_type": "REG",
+      "week": 7,
+      "game_date": "2025-10-19",
+      "opponent": "Packers",
+      "status": "played_receiving_row",
+      "receptions": 2,
+      "receiving_yards": 58,
+      "receiving_tds": 0,
+      "source_ref": "nfl-mhj-logs-2025"
+    },
+    {
+      "season": 2025,
+      "season_type": "REG",
+      "week": 9,
+      "game_date": "2025-11-03",
+      "opponent": "@Cowboys",
+      "status": "played_receiving_row",
+      "receptions": 7,
+      "receiving_yards": 96,
+      "receiving_tds": 1,
+      "source_ref": "nfl-mhj-logs-2025"
+    },
+    {
+      "season": 2025,
+      "season_type": "REG",
+      "week": 10,
+      "game_date": "2025-11-09",
+      "opponent": "@Seahawks",
+      "status": "played_receiving_row",
+      "receptions": 3,
+      "receiving_yards": 33,
+      "receiving_tds": 1,
+      "source_ref": "nfl-mhj-logs-2025"
+    },
+    {
+      "season": 2025,
+      "season_type": "REG",
+      "week": 11,
+      "game_date": "2025-11-16",
+      "opponent": "49ers",
+      "status": "no_receiving_row_not_inferred_as_played",
+      "receptions": null,
+      "receiving_yards": null,
+      "receiving_tds": null,
+      "source_ref": "nfl-mhj-logs-2025"
+    },
+    {
+      "season": 2025,
+      "season_type": "REG",
+      "week": 12,
+      "game_date": "2025-11-23",
+      "opponent": "Jaguars",
+      "status": "no_receiving_row_not_inferred_as_played",
+      "receptions": null,
+      "receiving_yards": null,
+      "receiving_tds": null,
+      "source_ref": "nfl-mhj-logs-2025"
+    },
+    {
+      "season": 2025,
+      "season_type": "REG",
+      "week": 13,
+      "game_date": "2025-11-30",
+      "opponent": "@Buccaneers",
+      "status": "played_receiving_row",
+      "receptions": 6,
+      "receiving_yards": 69,
+      "receiving_tds": 0,
+      "source_ref": "nfl-mhj-logs-2025"
+    },
+    {
+      "season": 2025,
+      "season_type": "REG",
+      "week": 14,
+      "game_date": "2025-12-07",
+      "opponent": "Rams",
+      "status": "no_receiving_row_not_inferred_as_played",
+      "receptions": null,
+      "receiving_yards": null,
+      "receiving_tds": null,
+      "source_ref": "nfl-mhj-logs-2025"
+    },
+    {
+      "season": 2025,
+      "season_type": "REG",
+      "week": 15,
+      "game_date": "2025-12-14",
+      "opponent": "@Texans",
+      "status": "no_receiving_row_not_inferred_as_played",
+      "receptions": null,
+      "receiving_yards": null,
+      "receiving_tds": null,
+      "source_ref": "nfl-mhj-logs-2025"
+    },
+    {
+      "season": 2025,
+      "season_type": "REG",
+      "week": 16,
+      "game_date": "2025-12-21",
+      "opponent": "Falcons",
+      "status": "played_receiving_row",
+      "receptions": 1,
+      "receiving_yards": 14,
+      "receiving_tds": 0,
+      "source_ref": "nfl-mhj-logs-2025"
+    },
+    {
+      "season": 2025,
+      "season_type": "REG",
+      "week": 17,
+      "game_date": "2025-12-28",
+      "opponent": "@Bengals",
+      "status": "played_receiving_row",
+      "receptions": 0,
+      "receiving_yards": 0,
+      "receiving_tds": 0,
+      "source_ref": "nfl-mhj-logs-2025"
+    },
+    {
+      "season": 2026,
+      "season_type": "REG",
+      "week": 1,
+      "game_date": "2026-09-13",
+      "opponent": "@Chargers",
+      "status": "played_receiving_row",
+      "receptions": 1,
+      "receiving_yards": 33,
+      "receiving_tds": 0,
+      "source_ref": "nfl-mhj-logs-2026"
+    },
+    {
+      "season": 2026,
+      "season_type": "REG",
+      "week": 2,
+      "game_date": "2026-09-20",
+      "opponent": "Seahawks",
+      "status": "played_receiving_row",
+      "receptions": 0,
+      "receiving_yards": 0,
+      "receiving_tds": 0,
+      "source_ref": "nfl-mhj-logs-2026"
+    },
+    {
+      "season": 2026,
+      "season_type": "REG",
+      "week": 3,
+      "game_date": "2026-09-27",
+      "opponent": "@49ers",
+      "status": "played_receiving_row",
+      "receptions": 3,
+      "receiving_yards": 40,
+      "receiving_tds": 0,
+      "source_ref": "nfl-mhj-logs-2026"
+    },
+    {
+      "season": 2026,
+      "season_type": "REG",
+      "week": 4,
+      "game_date": "2026-10-04",
+      "opponent": "@Giants",
+      "status": "played_receiving_row",
+      "receptions": 1,
+      "receiving_yards": 12,
+      "receiving_tds": 1,
+      "source_ref": "nfl-mhj-logs-2026"
+    }
+  ],
+  "targets": [
+    {
+      "season": 2024,
+      "targets": 116,
+      "source_refs": [
+        "nfl-targets-2024"
+      ],
+      "qualification": "primary_public_count"
+    },
+    {
+      "season": 2025,
+      "targets": 73,
+      "source_refs": [
+        "nfl-targets-2025"
+      ],
+      "qualification": "primary_public_count"
+    },
+    {
+      "season": 2026,
+      "targets": 13,
+      "source_refs": [
+        "nfl-targets-2026-indexed-row",
+        "targets-2026-secondary"
+      ],
+      "qualification": "provisional_indexed_primary_row_and_secondary_corroboration"
+    }
+  ],
+  "missing_evidence": [
+    "Qualified snaps/routes and team dropback denominators",
+    "Qualified team target-share denominator",
+    "Route depth, alignment, separation and contested-catch charting",
+    "QB/formation-conditioned exposure and efficiency",
+    "Bounded reviewed film sample",
+    "Original contemporaneous MHJ TIBER expectation record",
+    "Qualified new Rookies Alpha grade",
+    "2026 direct matching primary target receipt",
+    "Ricky Pearsall 2026 season row",
+    "Independent review"
+  ]
+}

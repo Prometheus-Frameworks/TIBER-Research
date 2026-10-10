@@ -1,0 +1,4 @@
+player_name,player_slug,draft_pick,season,status,games,receptions,receiving_yards,receiving_tds,receptions_per_game,receiving_yards_per_game,receiving_ppr_proxy,receiving_ppr_proxy_per_game
+Marvin Harrison Jr.,marvin-harrison-jr,4,2024,observed_public_factual_candidate,17,62,885,8,3.647059,52.058824,198.5,11.676471
+Marvin Harrison Jr.,marvin-harrison-jr,4,2025,observed_public_factual_candidate,12,41,608,4,3.416667,50.666667,125.8,10.483333
+Marvin Harrison Jr.,marvin-harrison-jr,4,2026,observed_public_factual_candidate,4,5,85,1,1.25,21.25,19.5,4.875
