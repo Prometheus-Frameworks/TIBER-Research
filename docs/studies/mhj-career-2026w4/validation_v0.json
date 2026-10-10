@@ -10,7 +10,7 @@
     {
       "command": "python3 docs/studies/mhj-career-2026w4/calculate.py --check --self-test",
       "exit_code": 0,
-      "admission_accounting_checks_passed": 10,
+      "admission_accounting_checks_passed": 15,
       "result": "21 peer-season records; 17/12/4 MHJ played-game denominators; weekly receiving sums and matched W1-W4 windows reconcile; outputs reproduce."
     },
     {
@@ -24,13 +24,13 @@
     }
   ],
   "candidate_file_sha256": {
-    "docs/studies/mhj-career-2026w4/README.md": "2bbdd9ffe5bd5e2df83ec33a70bee3587cec6f1b6d4a3e02c199d6a7a7cadae7",
-    "docs/studies/mhj-career-2026w4/calculate.py": "1ef62058da3916048a926fe6d81d7da8d99c28408e392010004deff86305d44e",
-    "docs/studies/mhj-career-2026w4/evidence_v0.json": "0cf87305bacde2e3f9b8ec253aa3343cc9409d4b1e35b022a9ecda904a59e3db",
+    "docs/studies/mhj-career-2026w4/README.md": "59c9e75afe82afc9eb8c163186405005b2df68dcb2263f7af3751fbecdcb01f0",
+    "docs/studies/mhj-career-2026w4/calculate.py": "701e1c1df1f1724a218806e7db981780a5c9e3d32c0c352672ecc8a9ca0c5c7e",
+    "docs/studies/mhj-career-2026w4/evidence_v0.json": "c8e4907071ec21ee7ec25c754cbb4623cb0ccb08cb3428cf1cfcacf9b5b3ca6a",
     "docs/studies/mhj-career-2026w4/mhj_seasons_v0.csv": "b6f0d4eb9e3eae859281c9ed61bfe3cfd6ca11d0a95e1e8b1d083785082de13e",
     "docs/studies/mhj-career-2026w4/mhj_weekly_v0.csv": "8d468c68741209089fe29dc56504f5934ac516c66445cb86633742ea1d95425e",
     "docs/studies/mhj-career-2026w4/peer_seasons_v0.csv": "ff7f9595c235f2efa6e1623cd0d08ea18bbc4cb44d8b62642d3936b99427d22f",
-    "docs/studies/mhj-career-2026w4/results_v0.json": "b93c9f2af6d485a67a283f9d840516e9bd3aa1e9c2ef3170ccfbf6645a7b1179"
+    "docs/studies/mhj-career-2026w4/results_v0.json": "6887831a85bf39385dfc2613f9cc25b925c40f1488650ab63ccbf48915ff41a7"
   },
   "limitations": [
     "Independent review pending",
@@ -48,6 +48,12 @@
     {
       "comment_id": 4238601726,
       "result": "Partial-season cutoff must exactly match the declared checkpoint, including unavailable rows; regression cases reject later week with only three appearances, missing/non-integer/earlier cutoff and unavailable future row."
+    },
+    {
+      "comment_ids": [
+        4238622249
+      ],
+      "result": "Target lane/week/date bound to receiving checkpoint; retained 2026 observation count consistency enforced; qualification remains provisional. Five new adversarial cases pass."
     }
   ]
 }

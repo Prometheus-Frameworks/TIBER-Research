@@ -1044,7 +1044,9 @@
       "source_refs": [
         "nfl-targets-2024"
       ],
-      "qualification": "primary_public_count"
+      "qualification": "primary_public_count",
+      "season_type": "REG",
+      "week_cutoff": 18
     },
     {
       "season": 2025,
@@ -1052,7 +1054,9 @@
       "source_refs": [
         "nfl-targets-2025"
       ],
-      "qualification": "primary_public_count"
+      "qualification": "primary_public_count",
+      "season_type": "REG",
+      "week_cutoff": 18
     },
     {
       "season": 2026,
@@ -1061,7 +1065,11 @@
         "nfl-targets-2026-indexed-row",
         "targets-2026-secondary"
       ],
-      "qualification": "provisional_indexed_primary_row_and_secondary_corroboration"
+      "qualification": "provisional_indexed_primary_row_and_secondary_corroboration",
+      "season_type": "REG",
+      "week_cutoff": 4,
+      "last_game_date": "2026-10-04",
+      "scope_note": "Declared Weeks 1-4 study checkpoint for the retained 13-target observation; matching primary cutoff receipt remains unverified. This metadata does not upgrade its provisional qualification."
     }
   ],
   "missing_evidence": [

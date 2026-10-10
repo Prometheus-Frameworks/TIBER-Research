@@ -62,8 +62,25 @@ def validate(evidence):
     if Counter(x['season'] for x in evidence['targets']) != {2024: 1, 2025: 1, 2026: 1}:
         raise ValueError('Target observations missing or duplicated')
     for row in evidence['targets']:
-        if not set(row['source_refs']).issubset(sources):
+        if not row['source_refs'] or not set(row['source_refs']).issubset(sources):
             raise ValueError('Unresolved target source')
+        if row.get('season_type') != 'REG':
+            raise ValueError('Invalid target season lane')
+        if type(row['targets']) is not int or row['targets'] <= 0:
+            raise ValueError('Invalid target count')
+        season = next(x for x in rows if x['player_slug'] == MHJ and x['season'] == row['season'])
+        cutoff = row.get('week_cutoff')
+        if type(cutoff) is not int or cutoff != season['week_cutoff']:
+            raise ValueError('Target week cutoff does not match receiving denominator')
+        if row['season'] == evidence['nfl_cutoff']['partial_season']:
+            if row.get('last_game_date') != evidence['nfl_cutoff']['last_game_date']:
+                raise ValueError('Target date cutoff does not match checkpoint')
+            for source in evidence['source_ledger']:
+                if source['source_id'] not in row['source_refs']:
+                    continue
+                retained_count = source.get('observed_row', {}).get('targets', source.get('observed_targets'))
+                if retained_count is not None and row['targets'] != retained_count:
+                    raise ValueError('Target count differs from retained observation')
 
 
 def symmetric_product_change(a0, b0, a1, b1):
@@ -102,7 +119,9 @@ def calculate(evidence):
                                'targets_per_played_game': target['targets'] / r['games'],
                                'catch_rate': r['receptions'] / target['targets'],
                                'yards_per_target': r['receiving_yards'] / target['targets'],
-                               'primary_only_eligible': target['qualification'] == 'primary_public_count'})
+                               'primary_only_eligible': target['qualification'] == 'primary_public_count',
+                               'season_type': target['season_type'], 'week_cutoff': target['week_cutoff'],
+                               'last_game_date': target.get('last_game_date'), 'scope_note': target.get('scope_note')})
     by_year = {x['season']: x for x in mhj}
     first, second = by_year[2024], by_year[2025]
     season_decomposition = symmetric_product_change(first['games'], first['receiving_yards'] / first['games'],
@@ -155,7 +174,15 @@ def self_test(evidence):
     def partial_peer(e):
         return next(x for x in e['season_rows'] if x['season'] == 2026 and x['player_slug'] == 'xavier-legette')
 
+    def partial_target(e):
+        return next(x for x in e['targets'] if x['season'] == 2026)
+
     for mutate, expected in [
+        (lambda e: partial_target(e).update(week_cutoff=5), 'Target week cutoff'),
+        (lambda e: partial_target(e).pop('week_cutoff'), 'Target week cutoff'),
+        (lambda e: partial_target(e).update(week_cutoff=True), 'Target week cutoff'),
+        (lambda e: partial_target(e).update(last_game_date='2026-10-11'), 'Target date cutoff'),
+        (lambda e: partial_target(e).update(targets=18), 'retained observation'),
         (lambda e: partial_peer(e).update(games=3, week_cutoff=5), 'week cutoff'),
         (lambda e: partial_peer(e).pop('week_cutoff'), 'week cutoff'),
         (lambda e: partial_peer(e).update(week_cutoff=True), 'week cutoff'),
@@ -178,7 +205,7 @@ def self_test(evidence):
     d = symmetric_product_change(17, 885 / 17, 12, 608 / 12)
     if abs(d['factor_a_component'] + d['factor_b_component'] - d['total_change']) > 1e-9:
         raise AssertionError('Decomposition does not reconcile')
-    print('Ten admission/accounting checks passed.')
+    print('Fifteen admission/accounting checks passed.')
 
 
 def main():

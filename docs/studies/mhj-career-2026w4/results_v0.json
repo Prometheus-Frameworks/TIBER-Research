@@ -3,7 +3,7 @@
   "status": "candidate_pending_independent_review",
   "promotable": false,
   "governed_research_attempt": false,
-  "evidence_sha256": "0cf87305bacde2e3f9b8ec253aa3343cc9409d4b1e35b022a9ecda904a59e3db",
+  "evidence_sha256": "c8e4907071ec21ee7ec25c754cbb4623cb0ccb08cb3428cf1cfcacf9b5b3ca6a",
   "scoring": {
     "name": "receiving_only_ppr_proxy",
     "formula": "receptions + 0.1 * receiving_yards + 6 * receiving_tds",
@@ -103,7 +103,11 @@
       "targets_per_played_game": 6.823529411764706,
       "catch_rate": 0.5344827586206896,
       "yards_per_target": 7.629310344827586,
-      "primary_only_eligible": true
+      "primary_only_eligible": true,
+      "season_type": "REG",
+      "week_cutoff": 18,
+      "last_game_date": null,
+      "scope_note": null
     },
     {
       "season": 2025,
@@ -112,7 +116,11 @@
       "targets_per_played_game": 6.083333333333333,
       "catch_rate": 0.5616438356164384,
       "yards_per_target": 8.32876712328767,
-      "primary_only_eligible": true
+      "primary_only_eligible": true,
+      "season_type": "REG",
+      "week_cutoff": 18,
+      "last_game_date": null,
+      "scope_note": null
     },
     {
       "season": 2026,
@@ -121,7 +129,11 @@
       "targets_per_played_game": 3.25,
       "catch_rate": 0.38461538461538464,
       "yards_per_target": 6.538461538461538,
-      "primary_only_eligible": false
+      "primary_only_eligible": false,
+      "season_type": "REG",
+      "week_cutoff": 4,
+      "last_game_date": "2026-10-04",
+      "scope_note": "Declared Weeks 1-4 study checkpoint for the retained 13-target observation; matching primary cutoff receipt remains unverified. This metadata does not upgrade its provisional qualification."
     }
   ],
   "peer_rank_summary": [
