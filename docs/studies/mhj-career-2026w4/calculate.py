@@ -28,6 +28,10 @@ def validate(evidence):
     for row in rows:
         if row['source_ref'] not in sources or row['season_type'] != 'REG':
             raise ValueError('Source or season-type mismatch')
+        if row['season'] == evidence['nfl_cutoff']['partial_season']:
+            cutoff = row.get('week_cutoff')
+            if type(cutoff) is not int or cutoff != evidence['nfl_cutoff']['last_week']:
+                raise ValueError('Partial-season week cutoff does not match checkpoint')
         counts = [row[k] for k in ['games', 'receptions', 'receiving_yards', 'receiving_tds']]
         if row['status'].startswith('unavailable'):
             if any(x is not None for x in counts):
@@ -148,7 +152,15 @@ def calculate(evidence):
 
 def self_test(evidence):
     import copy
+    def partial_peer(e):
+        return next(x for x in e['season_rows'] if x['season'] == 2026 and x['player_slug'] == 'xavier-legette')
+
     for mutate, expected in [
+        (lambda e: partial_peer(e).update(games=3, week_cutoff=5), 'week cutoff'),
+        (lambda e: partial_peer(e).pop('week_cutoff'), 'week cutoff'),
+        (lambda e: partial_peer(e).update(week_cutoff=True), 'week cutoff'),
+        (lambda e: partial_peer(e).update(week_cutoff=3), 'week cutoff'),
+        (lambda e: next(x for x in e['season_rows'] if x['status'].startswith('unavailable')).update(week_cutoff=5), 'week cutoff'),
         (lambda e: next(x for x in e['season_rows'] if x['season'] == 2026 and x['player_slug'] == MHJ).update(games=5), 'cutoff'),
         (lambda e: e['weekly_rows'].append(dict(e['weekly_rows'][0])), 'Duplicate weekly'),
         (lambda e: next(x for x in e['season_rows'] if x['status'].startswith('unavailable')).update(games=0), 'Unavailable'),
@@ -166,7 +178,7 @@ def self_test(evidence):
     d = symmetric_product_change(17, 885 / 17, 12, 608 / 12)
     if abs(d['factor_a_component'] + d['factor_b_component'] - d['total_change']) > 1e-9:
         raise AssertionError('Decomposition does not reconcile')
-    print('Five admission/accounting checks passed.')
+    print('Ten admission/accounting checks passed.')
 
 
 def main():
