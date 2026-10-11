@@ -1,0 +1,192 @@
+{
+  "artifact": "manual_descriptive_study_results_v0",
+  "status": "candidate_pending_independent_review",
+  "promotable": false,
+  "governed_research_attempt": false,
+  "evidence_sha256": "c8e4907071ec21ee7ec25c754cbb4623cb0ccb08cb3428cf1cfcacf9b5b3ca6a",
+  "scoring": {
+    "name": "receiving_only_ppr_proxy",
+    "formula": "receptions + 0.1 * receiving_yards + 6 * receiving_tds",
+    "excluded": [
+      "rushing",
+      "two-point conversions",
+      "fumble penalties",
+      "returns",
+      "postseason"
+    ],
+    "warning": "Not complete fantasy PPR scoring. Games means NFL games played, including zero-catch and partial-snap appearances."
+  },
+  "mhj_seasons": [
+    {
+      "player_name": "Marvin Harrison Jr.",
+      "player_slug": "marvin-harrison-jr",
+      "draft_pick": 4,
+      "season": 2024,
+      "status": "observed_public_factual_candidate",
+      "games": 17,
+      "receptions": 62,
+      "receiving_yards": 885,
+      "receiving_tds": 8,
+      "receptions_per_game": 3.647059,
+      "receiving_yards_per_game": 52.058824,
+      "receiving_ppr_proxy": 198.5,
+      "receiving_ppr_proxy_per_game": 11.676471
+    },
+    {
+      "player_name": "Marvin Harrison Jr.",
+      "player_slug": "marvin-harrison-jr",
+      "draft_pick": 4,
+      "season": 2025,
+      "status": "observed_public_factual_candidate",
+      "games": 12,
+      "receptions": 41,
+      "receiving_yards": 608,
+      "receiving_tds": 4,
+      "receptions_per_game": 3.416667,
+      "receiving_yards_per_game": 50.666667,
+      "receiving_ppr_proxy": 125.8,
+      "receiving_ppr_proxy_per_game": 10.483333
+    },
+    {
+      "player_name": "Marvin Harrison Jr.",
+      "player_slug": "marvin-harrison-jr",
+      "draft_pick": 4,
+      "season": 2026,
+      "status": "observed_public_factual_candidate",
+      "games": 4,
+      "receptions": 5,
+      "receiving_yards": 85,
+      "receiving_tds": 1,
+      "receptions_per_game": 1.25,
+      "receiving_yards_per_game": 21.25,
+      "receiving_ppr_proxy": 19.5,
+      "receiving_ppr_proxy_per_game": 4.875
+    }
+  ],
+  "matched_weeks_1_to_4": [
+    {
+      "season": 2024,
+      "weeks": "1-4",
+      "played_games": 4,
+      "receptions": 15,
+      "receiving_yards": 243,
+      "receiving_tds": 4,
+      "receiving_yards_per_game": 60.75,
+      "receiving_ppr_proxy_per_game": 15.825
+    },
+    {
+      "season": 2025,
+      "weeks": "1-4",
+      "played_games": 4,
+      "receptions": 16,
+      "receiving_yards": 208,
+      "receiving_tds": 2,
+      "receiving_yards_per_game": 52.0,
+      "receiving_ppr_proxy_per_game": 12.2
+    },
+    {
+      "season": 2026,
+      "weeks": "1-4",
+      "played_games": 4,
+      "receptions": 5,
+      "receiving_yards": 85,
+      "receiving_tds": 1,
+      "receiving_yards_per_game": 21.25,
+      "receiving_ppr_proxy_per_game": 4.875
+    }
+  ],
+  "target_metrics": [
+    {
+      "season": 2024,
+      "targets": 116,
+      "qualification": "primary_public_count",
+      "targets_per_played_game": 6.823529411764706,
+      "catch_rate": 0.5344827586206896,
+      "yards_per_target": 7.629310344827586,
+      "primary_only_eligible": true,
+      "season_type": "REG",
+      "week_cutoff": 18,
+      "last_game_date": null,
+      "scope_note": null
+    },
+    {
+      "season": 2025,
+      "targets": 73,
+      "qualification": "primary_public_count",
+      "targets_per_played_game": 6.083333333333333,
+      "catch_rate": 0.5616438356164384,
+      "yards_per_target": 8.32876712328767,
+      "primary_only_eligible": true,
+      "season_type": "REG",
+      "week_cutoff": 18,
+      "last_game_date": null,
+      "scope_note": null
+    },
+    {
+      "season": 2026,
+      "targets": 13,
+      "qualification": "provisional_indexed_primary_row_and_secondary_corroboration",
+      "targets_per_played_game": 3.25,
+      "catch_rate": 0.38461538461538464,
+      "yards_per_target": 6.538461538461538,
+      "primary_only_eligible": false,
+      "season_type": "REG",
+      "week_cutoff": 4,
+      "last_game_date": "2026-10-04",
+      "scope_note": "Declared Weeks 1-4 study checkpoint for the retained 13-target observation; matching primary cutoff receipt remains unverified. This metadata does not upgrade its provisional qualification."
+    }
+  ],
+  "peer_rank_summary": [
+    {
+      "season": 2024,
+      "total_members": 7,
+      "members_with_observed_rows": 7,
+      "mhj_yards_per_game_rank_among_observed": 3,
+      "missing_members": [],
+      "caution": "Tiny, heterogeneous cohort; ranks describe realized receiving volume and cannot calibrate a prospect grade."
+    },
+    {
+      "season": 2025,
+      "total_members": 7,
+      "members_with_observed_rows": 7,
+      "mhj_yards_per_game_rank_among_observed": 4,
+      "missing_members": [],
+      "caution": "Tiny, heterogeneous cohort; ranks describe realized receiving volume and cannot calibrate a prospect grade."
+    },
+    {
+      "season": 2026,
+      "total_members": 7,
+      "members_with_observed_rows": 6,
+      "mhj_yards_per_game_rank_among_observed": 6,
+      "missing_members": [
+        "Ricky Pearsall"
+      ],
+      "caution": "Tiny, heterogeneous cohort; ranks describe realized receiving volume and cannot calibrate a prospect grade."
+    }
+  ],
+  "2024_to_2025_yards_decomposition": {
+    "factor_a_component": -256.8137254901961,
+    "factor_b_component": -20.186274509804004,
+    "total_change": -277.0,
+    "interpretation": "Accounting identity, not a causal attribution.",
+    "factors": [
+      "played_games",
+      "receiving_yards_per_played_game"
+    ],
+    "played_games_accounting_share": 0.9271253627804913
+  },
+  "2025_to_2026_yards_per_game_decomposition_provisional": {
+    "factor_a_component": -21.06190727081138,
+    "factor_b_component": -8.354759395855284,
+    "total_change": -29.416666666666664,
+    "interpretation": "Accounting identity, not a causal attribution.",
+    "factors": [
+      "targets_per_played_game",
+      "yards_per_target"
+    ],
+    "status": "provisional_2026_target_receipt_requires_verification"
+  },
+  "sensitivity": {
+    "without_provisional_2026_targets": "Season/weekly receiving tables, 2024-to-2025 accounting, and peer comparison unchanged. 2026 target conversion and decomposition become unavailable."
+  }
+}
