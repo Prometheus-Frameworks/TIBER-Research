@@ -18,6 +18,15 @@ Stage 0 authority is recorded in
 Stage 1 preflight authority is recorded in
 [`TIBER-Ops#54`](https://github.com/Prometheus-Frameworks/TIBER-Ops/issues/54).
 
+## 2026 draft-value pilot preparation
+
+[Draft-value pilot readiness and public Week 1 accounting](docs/preparation/draft-value-2026-v0/README.md)
+continues [Research #37](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/37)
+and the [Strategy #12 field-note bridge](https://github.com/Prometheus-Frameworks/TIBER-Strategy/issues/12).
+It is a manual, partial descriptive candidate, not a governed Research run or
+an accepted Weeks 1-5 draft-value study. Exact FFC market rows and private
+evidence are excluded from this public packet.
+
 ## Boundary
 
 - **TIBER-Ops owns authority:** activation, amendment, cancellation, promotion,
