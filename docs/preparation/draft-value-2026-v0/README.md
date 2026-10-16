@@ -10,7 +10,9 @@ original private PDF/ZIP, exact FFC market rows, private ROP records or league d
 - Empirical owner: [Research #37](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/37).
 - Proposed lesson destination: [Strategy #12](https://github.com/Prometheus-Frameworks/TIBER-Strategy/issues/12).
 - Status: **partial; qualified Weeks 1-5 draft-value comparison blocked**.
-- Review: local source-fidelity and arithmetic checks; independent output review pending.
+- Review: [independent public-scope review](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/38#pullrequestreview-5550806048)
+  recorded; see PR #38 for the final exact-head receipt and operator publication
+  decision. Full-study acceptance remains blocked.
 - Lifecycle: manual candidate, not a governed Research attempt, acceptance or terminal seal.
 
 ## Question and scope
@@ -64,6 +66,10 @@ continue to control unresolved source-definition and identity requirements.
 The inspected promoted identity crosswalk supports Sleeper only; it supplies no
 governed FFC-to-GSIS edge. A matching name/team/position is not such an edge.
 
+Preseason metadata above records prior preparation findings. The public-scope
+review does not reauthenticate restricted market payloads or original private
+correspondence, and does not qualify a preseason baseline.
+
 ## Public partial accounting: same game, same scoring
 
 The following facts are extracted from existing public, pinned TIBER-Data
@@ -91,10 +97,15 @@ observed zero for these two rows. This is not an official Sleeper league score.
 
 The early retained W1 support contains 15 of 16 scheduled games, missing DEN-KC.
 It is not the later complete W1 support used by the private ROP packets.
-Walker is therefore not observed in this particular capture: no appearance,
+Walker is not observed in this particular capture: no appearance,
 absence, bye, injury, lost role or zero is inferred. Positive offensive statistics
 support the exact appearances of the two displayed players, not complete-window
 games-played coverage. Finality is unknown and corrections remain possible.
+
+The full player source also contains one row in `2026_01_NE_SEA` with no
+source-native player identity. It is not one of the selected observations;
+neither selected row has a missing identity or scoring operand. Game presence
+does not certify complete player-population or appearance coverage.
 
 Player/team tables and related ROP work share an upstream source family;
 agreement is not independent football corroboration. Raw CSV byte hashes were
@@ -105,6 +116,14 @@ Source URL, Git pin, original retrieval clocks, byte digest and license referenc
 are retained in the JSON. Only bounded factual extracts are reproduced here;
 the source files remain in their existing public repository.
 
+The JSON now binds the team CSV used for `team_credited_targets` and the
+[retained schedule](https://github.com/Prometheus-Frameworks/TIBER-Data/blob/0d9f82a8d0225602faea4887adf314983ee25a3a/data/raw/weekly_schedule/e3cff05a9fdaa416e9896e3250bfe81ae23419fe29b8827320a868199a7974fb/games.csv)
+used for the 16-game denominator, with both receipts and byte digests.
+`native_player_id`, `name` and `source_ppr` map to `player_id`,
+`player_display_name` and `fantasy_points_ppr`; other extracted player fields
+use same-named source columns. The team denominator is `team.csv.targets` on
+an exact season/type/week/game/team key, and is not pass attempts.
+
 The existing [MHJ Q1 study](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/bd553c985409ecfda7de6f6ca6188e4d5e588d1e/docs/studies/mhj-career-2026w4/README.md)
 is another reusable partial-evidence lead. Its receiving-only component is not
 complete PPR; its provisional target receipt and independent-review limits remain.
@@ -114,11 +133,16 @@ No private ROP comparison values are republished or reauthenticated here.
 
 1. Bind one exact eligible preseason snapshot and market. Target market is
    12-team full-PPR one-QB redraft; do not assume the FFC prototype establishes it.
+   Freeze the baseline-selection rule before comparative outcome inspection;
+   keep early- and late-preseason snapshots in separate sensitivity lanes.
 2. Preserve all QB/RB/WR/TE rows at source ADP <=180, including unresolved identities
    and nonparticipants. Exclude kicker/defense. Missing evidence is not zero.
+   An anchor outside that universe belongs in a separately labeled case appendix;
+   do not silently expand the cohort.
 3. For each anchor, sort same-position rows by (ADP, source-native ID), then select
    the three immediately preceding and three following rows, excluding the anchor.
-   Preserve ties, edges and cost spans. This selector is retrospective, not preregistered.
+   Preserve ties, edges and cost spans; freeze the selector before inspecting
+   comparative outcomes. This design is retrospective, not preregistered.
 4. Bind the exact FFC-to-GSIS identity and permitted-purpose path before joining
    any market row to an outcome. No such mapping is created by this packet.
 5. For W1-4, W5 and W1-5 separately, show delivered points, appearances, PPG,
