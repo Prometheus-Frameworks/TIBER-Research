@@ -1,0 +1,399 @@
+{
+  "schema_version": "tiber-dfs-site/v1",
+  "updated_at": "2026-10-17T23:44:54Z",
+  "title": "TIBER DFS Research Arena",
+  "timezone": "America/Toronto",
+  "next_scheduled_date": "2026-10-18",
+  "research_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43",
+  "protocol_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/codex/weekly-dfs-2026-week-06/docs/weekly-dfs/codex/EXPERIMENT.md",
+  "snapshots": [
+    {
+      "id": "2026-w06-2026-10-17-v1",
+      "date": "2026-10-17",
+      "recorded_at": null,
+      "time_precision": "date_only",
+      "order": 1,
+      "label": "First draft v1",
+      "kind": "seed",
+      "season": 2026,
+      "week": 6,
+      "slate_date": "2026-10-18",
+      "slate_label": "Sunday main slate",
+      "platform": "DraftKings",
+      "salary_cap": 50000,
+      "salary_total": 49400,
+      "salary_remaining": 600,
+      "projected_total": 127.5,
+      "actual_total": null,
+      "frozen": false,
+      "official_pool_verified": false,
+      "projection": {
+        "provider": "Splash Play",
+        "model": "SPAGS",
+        "as_of": "2026-10-17T11:30:00-04:00",
+        "source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+        "checked_on": "2026-10-17",
+        "annotation_recorded_at": "2026-10-17T23:44:54Z",
+        "annotation": true,
+        "note": "One external model snapshot, added for display after the picks were selected. These are estimates, not actual scores or a TIBER Forecast output."
+      },
+      "picks": [
+        {
+          "slot": "QB",
+          "position": "QB",
+          "player": "Josh Allen",
+          "team": "BUF",
+          "opponent": "LV",
+          "home": false,
+          "salary": 7500,
+          "projected_points": 22.7,
+          "actual_points": null,
+          "rationale": "My first choice at quarterback for his rushing upside and overall scoring ceiling.",
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/josh-allen/",
+          "source_ids": [
+            "S2"
+          ]
+        },
+        {
+          "slot": "RB",
+          "position": "RB",
+          "player": "Kyren Williams",
+          "team": "LAR",
+          "opponent": "ARI",
+          "home": true,
+          "salary": 6800,
+          "projected_points": 21.6,
+          "actual_points": null,
+          "rationale": "Adds rushing, receiving and goal-line opportunities from the Rams offense.",
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/kyren-williams/",
+          "source_ids": [
+            "S1"
+          ]
+        },
+        {
+          "slot": "RB",
+          "position": "RB",
+          "player": "Braelon Allen",
+          "team": "NYJ",
+          "opponent": "NE",
+          "home": false,
+          "salary": 5700,
+          "projected_points": 16,
+          "actual_points": null,
+          "rationale": "Breece Hall is out; the expected workload makes his $5,700 salary useful.",
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/braelon-allen/",
+          "source_ids": [
+            "S4"
+          ]
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "Puka Nacua",
+          "team": "LAR",
+          "opponent": "ARI",
+          "home": true,
+          "salary": 8100,
+          "projected_points": 21.7,
+          "actual_points": null,
+          "rationale": "My strongest pick: concentrated targets and a receiving role worth paying for.",
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/puka-nacua/",
+          "source_ids": [
+            "S1",
+            "S2"
+          ]
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "Khalil Shakir",
+          "team": "BUF",
+          "opponent": "LV",
+          "home": false,
+          "salary": 5300,
+          "projected_points": 9.3,
+          "actual_points": null,
+          "rationale": "Pairs with Josh Allen for exposure to Buffalo’s passing scores.",
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/khalil-shakir/",
+          "source_ids": [
+            "S5"
+          ]
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "Germie Bernard",
+          "team": "PIT",
+          "opponent": "TB",
+          "home": false,
+          "salary": 4000,
+          "projected_points": 9.5,
+          "actual_points": null,
+          "rationale": "Salary relief with Roman Wilson out and a plausible expanded receiving role.",
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/germie-bernard/",
+          "source_ids": [
+            "S1"
+          ]
+        },
+        {
+          "slot": "TE",
+          "position": "TE",
+          "player": "Dallas Goedert",
+          "team": "PHI",
+          "opponent": "CAR",
+          "home": true,
+          "salary": 3900,
+          "projected_points": 8.4,
+          "actual_points": null,
+          "rationale": "An affordable receiving option that kept the first draft within the salary cap.",
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/dallas-goedert/",
+          "source_ids": [
+            "S1",
+            "S3"
+          ]
+        },
+        {
+          "slot": "FLEX",
+          "position": "RB",
+          "player": "Tyler Allgeier",
+          "team": "ARI",
+          "opponent": "LAR",
+          "home": false,
+          "salary": 4800,
+          "projected_points": 11.3,
+          "actual_points": null,
+          "rationale": "Love’s absence opens touches. Arizona’s blocking and receiving usage are the main risks.",
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/tyler-allgeier/",
+          "source_ids": [
+            "S4"
+          ]
+        },
+        {
+          "slot": "DST",
+          "position": "DST",
+          "player": "Steelers",
+          "team": "PIT",
+          "opponent": "TB",
+          "home": false,
+          "salary": 3300,
+          "projected_points": 7,
+          "actual_points": null,
+          "rationale": "A $3,300 defense facing Tampa Bay with Baker Mayfield ruled out.",
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/steelers-dst/",
+          "source_ids": [
+            "S2"
+          ]
+        }
+      ],
+      "summary": "The first build starts with Josh Allen, pairs him with Shakir and keeps Puka and Kyren.",
+      "counterargument": "Shakir’s price needs more target volume; Goedert carries uncertainty with Philadelphia’s quarterback change.",
+      "revisions": [],
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a595cffc831776bbcc27d5d7a518ba2e1a79a740/docs/weekly-dfs/codex/2026/week-06.md"
+    },
+    {
+      "id": "2026-w06-2026-10-17-v2",
+      "date": "2026-10-17",
+      "recorded_at": null,
+      "time_precision": "date_only",
+      "order": 2,
+      "label": "Reviewed v2",
+      "kind": "seed",
+      "season": 2026,
+      "week": 6,
+      "slate_date": "2026-10-18",
+      "slate_label": "Sunday main slate",
+      "platform": "DraftKings",
+      "salary_cap": 50000,
+      "salary_total": 49700,
+      "salary_remaining": 300,
+      "projected_total": 134.2,
+      "actual_total": null,
+      "frozen": false,
+      "official_pool_verified": false,
+      "projection": {
+        "provider": "Splash Play",
+        "model": "SPAGS",
+        "as_of": "2026-10-17T11:30:00-04:00",
+        "source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+        "checked_on": "2026-10-17",
+        "annotation_recorded_at": "2026-10-17T23:44:54Z",
+        "annotation": true,
+        "note": "One external model snapshot, added for display after the picks were selected. These are estimates, not actual scores or a TIBER Forecast output."
+      },
+      "picks": [
+        {
+          "slot": "QB",
+          "position": "QB",
+          "player": "Matthew Stafford",
+          "team": "LAR",
+          "opponent": "ARI",
+          "home": true,
+          "salary": 6400,
+          "projected_points": 21.3,
+          "actual_points": null,
+          "rationale": "Saves $1,100 at quarterback and pairs with Puka in the Rams offense.",
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/matthew-stafford/",
+          "source_ids": [
+            "S1",
+            "S2"
+          ]
+        },
+        {
+          "slot": "RB",
+          "position": "RB",
+          "player": "Kyren Williams",
+          "team": "LAR",
+          "opponent": "ARI",
+          "home": true,
+          "salary": 6800,
+          "projected_points": 21.6,
+          "actual_points": null,
+          "rationale": "Adds rushing, receiving and goal-line opportunities from the Rams offense.",
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/kyren-williams/",
+          "source_ids": [
+            "S1"
+          ]
+        },
+        {
+          "slot": "RB",
+          "position": "RB",
+          "player": "Braelon Allen",
+          "team": "NYJ",
+          "opponent": "NE",
+          "home": false,
+          "salary": 5700,
+          "projected_points": 16,
+          "actual_points": null,
+          "rationale": "Breece Hall is out; the expected workload makes his $5,700 salary useful.",
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/braelon-allen/",
+          "source_ids": [
+            "S4"
+          ]
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "Puka Nacua",
+          "team": "LAR",
+          "opponent": "ARI",
+          "home": true,
+          "salary": 8100,
+          "projected_points": 21.7,
+          "actual_points": null,
+          "rationale": "My strongest pick: concentrated targets and a receiving role worth paying for.",
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/puka-nacua/",
+          "source_ids": [
+            "S1",
+            "S2"
+          ]
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "Malik Nabers",
+          "team": "NYG",
+          "opponent": "NO",
+          "home": true,
+          "salary": 6500,
+          "projected_points": 16.1,
+          "actual_points": null,
+          "rationale": "Pays for target concentration over Shakir: the main receiver upgrade from v1.",
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/malik-nabers/",
+          "source_ids": [
+            "S1"
+          ]
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "Germie Bernard",
+          "team": "PIT",
+          "opponent": "TB",
+          "home": false,
+          "salary": 4000,
+          "projected_points": 9.5,
+          "actual_points": null,
+          "rationale": "Salary relief with Roman Wilson out and a plausible expanded receiving role.",
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/germie-bernard/",
+          "source_ids": [
+            "S1"
+          ]
+        },
+        {
+          "slot": "TE",
+          "position": "TE",
+          "player": "Harold Fannin Jr.",
+          "team": "CLE",
+          "opponent": "BAL",
+          "home": true,
+          "salary": 4100,
+          "projected_points": 9.7,
+          "actual_points": null,
+          "rationale": "FTN’s pregame comparison supported the small, $200 upgrade from Goedert.",
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/harold-fannin-jr/",
+          "source_ids": [
+            "S3"
+          ]
+        },
+        {
+          "slot": "FLEX",
+          "position": "RB",
+          "player": "Tyler Allgeier",
+          "team": "ARI",
+          "opponent": "LAR",
+          "home": false,
+          "salary": 4800,
+          "projected_points": 11.3,
+          "actual_points": null,
+          "rationale": "Love’s absence opens touches. Arizona’s blocking and receiving usage are the main risks.",
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/tyler-allgeier/",
+          "source_ids": [
+            "S4"
+          ]
+        },
+        {
+          "slot": "DST",
+          "position": "DST",
+          "player": "Steelers",
+          "team": "PIT",
+          "opponent": "TB",
+          "home": false,
+          "salary": 3300,
+          "projected_points": 7,
+          "actual_points": null,
+          "rationale": "A $3,300 defense facing Tampa Bay with Baker Mayfield ruled out.",
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/steelers-dst/",
+          "source_ids": [
+            "S2"
+          ]
+        }
+      ],
+      "summary": "The Rams lead the build. Stafford frees salary for Nabers, while Puka stays the anchor.",
+      "counterargument": "Three Rams share the risk of a quiet offense. Allgeier is the most fragile individual selection.",
+      "revisions": [
+        {
+          "slot": "QB",
+          "from": "Josh Allen",
+          "to": "Matthew Stafford",
+          "salary_delta": -1100,
+          "reason": "Save salary for receiver upgrade while retaining exposure to the Rams offense."
+        },
+        {
+          "slot": "WR",
+          "from": "Khalil Shakir",
+          "to": "Malik Nabers",
+          "salary_delta": 1200,
+          "reason": "Prefer Nabers's recently demonstrated target concentration over the projected Shakir opportunity at his price."
+        },
+        {
+          "slot": "TE",
+          "from": "Dallas Goedert",
+          "to": "Harold Fannin Jr.",
+          "salary_delta": 200,
+          "reason": "FTN's quoted projections favor Fannin for a small salary increase."
+        }
+      ],
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a595cffc831776bbcc27d5d7a518ba2e1a79a740/docs/weekly-dfs/codex/2026/week-06.md"
+    }
+  ]
+}
