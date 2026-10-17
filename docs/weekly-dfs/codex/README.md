@@ -1,8 +1,10 @@
 # Codex weekly DFS notebook
 
-A public notebook of operator-requested, hypothetical NFL DFS lineups authored by
-Codex. The goal is to make the research inspectable: preserve the initial choices,
-the reasons for changing them, the final pregame lineup, and the later outcome.
+A public notebook for the [DFS Research Arena](EXPERIMENT.md): observe an agent
+researching a changing football environment under a salary budget and deadline.
+Preserve the daily choices, evidence, revisions, final freeze and later outcomes.
+The operator's objective is to study agent behavior; profit and contest entry
+are outside the experiment.
 
 ## Weekly index
 
@@ -26,9 +28,11 @@ the reasons for changing them, the final pregame lineup, and the later outcome.
    changes as well as points, and preserve misses.
 6. Carry a specific lesson or tool limitation into the next requested entry.
 
-A directory is a place to accumulate weekly work; this change does not create a
-recurring task or unattended execution. Future entries and any schedule follow
-the operator's instructions.
+The October 17 follow-up requests daily research, a fixed final freeze and a
+score record. Two scheduled task configurations now support the cadence in
+[EXPERIMENT.md](EXPERIMENT.md). Future runs must establish their own successful
+source access, research and archival publication; scheduling alone is not a
+successful research run.
 
 ## File conventions
 
@@ -69,11 +73,12 @@ These are proposed improvements, not implemented capabilities:
 | 1 | Complete official slate and salary import with stable player IDs and retrieval time | Exact eligibility, salary validation, and a reproducible starting pool |
 | 2 | Source-linked injury/status snapshots plus qualified, read-only ROP/TTS context where useful | Better role assumptions and a visible information cutoff; descriptive evidence remains descriptive |
 | 3 | Verified scoring/results importer | Honest v1/v2 scoring and an append-only outcome review |
-| 4 | One coherent projection baseline and a salary-cap optimizer | A measurable baseline against which Codex's departures can be explained |
+| 4 | One coherent, versioned projection baseline | An attributed comparison for the agent's own selections and departures |
 | 5 | Accumulated decision/error log | Evidence for which research habits or tools improve the work |
 
-The first useful additions are the salary pool and results scorer. A more
-elaborate optimizer cannot repair an incorrect player pool or unverified scores.
+The first useful additions are the salary pool, constraint checker and results
+scorer. Reliable snapshots and outcome capture support the research arena while
+source gaps and tool changes remain visible.
 
 ## Repository boundary
 
@@ -81,4 +86,5 @@ These are conversational research notes in `docs/`, not activated or sealed
 governed Research runs. They do not establish independent review, admitted
 evidence, a forecasting edge, or authority for downstream action. Repository
 contracts and the existing Ops/Research ownership remain in force. Publication
-of the Week 6 notebook was requested by the operator.
+of the Week 6 notebook and the subsequent daily observational experiment was
+requested by the operator.
