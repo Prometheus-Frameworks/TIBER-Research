@@ -1,6 +1,6 @@
 {
   "schema_version": "tiber-dfs-site/v1",
-  "updated_at": "2026-10-18T11:02:05.180Z",
+  "updated_at": "2026-10-18T15:19:12.263Z",
   "title": "TIBER DFS Research Arena",
   "timezone": "America/Toronto",
   "next_scheduled_date": "2026-10-19",
@@ -698,7 +698,317 @@
         "classification": "constraint_or_source_correction",
         "description": "Official export is now accessible and confirms all selected prices/slots. The seed remains labelled as reported prices with no original full export. No salary correction or silent historical backfill."
       }
+    },
+    {
+      "id": "2026-w06-20261018T151704Z-freeze",
+      "date": "2026-10-18",
+      "recorded_at": "2026-10-18T15:17:04.437Z",
+      "time_precision": "timestamp",
+      "order": 2,
+      "label": "Final freeze",
+      "kind": "freeze",
+      "status": "complete",
+      "season": 2026,
+      "week": 6,
+      "slate_date": "2026-10-18",
+      "slate_label": "Sunday main slate",
+      "platform": "DraftKings",
+      "salary_cap": 50000,
+      "salary_total": 49700,
+      "salary_remaining": 300,
+      "projected_total": 137.4,
+      "actual_total": null,
+      "frozen": true,
+      "frozen_at": "2026-10-18T15:17:04.437Z",
+      "official_pool_verified": true,
+      "official_salary_export_verified": true,
+      "projection": {
+        "provider": "Splash Play",
+        "model": "SPAGS",
+        "as_of": "2026-10-18T14:56:00Z",
+        "source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+        "observed_at": "2026-10-18T15:12:48.573Z",
+        "annotation": false,
+        "scoring_basis": "DraftKings NFL Classic; attributed provider estimates"
+      },
+      "picks": [
+        {
+          "slot": "QB",
+          "position": "QB",
+          "player": "Matthew Stafford",
+          "team": "LAR",
+          "opponent": "ARI",
+          "home": true,
+          "salary": 6400,
+          "draftkings_player_id": "44475672",
+          "eligible_slots": [
+            "QB"
+          ],
+          "game_info": "ARI@LAR 10/18/2026 04:05PM ET",
+          "official_export_status": null,
+          "projected_points": 21.3,
+          "actual_points": null,
+          "rationale": "Hold the Stafford–Nacua passing pairing. Current platform eligibility and salaries are unchanged; reduced passing volume in a controlled Rams win remains a risk.",
+          "source_ids": [
+            "F01",
+            "F02",
+            "F05",
+            "F06"
+          ],
+          "salary_source_ids": [
+            "F01"
+          ],
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/"
+        },
+        {
+          "slot": "RB",
+          "position": "RB",
+          "player": "Kyren Williams",
+          "team": "LAR",
+          "opponent": "ARI",
+          "home": true,
+          "salary": 6800,
+          "draftkings_player_id": "44475748",
+          "eligible_slots": [
+            "RB",
+            "FLEX"
+          ],
+          "game_info": "ARI@LAR 10/18/2026 04:05PM ET",
+          "official_export_status": null,
+          "projected_points": 21.5,
+          "actual_points": null,
+          "rationale": "Hold the Rams backfield anchor alongside the passing pairing. It provides a rushing route to production but retains three-player Rams concentration.",
+          "source_ids": [
+            "F01",
+            "F05",
+            "F06"
+          ],
+          "salary_source_ids": [
+            "F01"
+          ],
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/"
+        },
+        {
+          "slot": "RB",
+          "position": "RB",
+          "player": "Braelon Allen",
+          "team": "NYJ",
+          "opponent": "NE",
+          "home": false,
+          "salary": 5700,
+          "draftkings_player_id": "44475766",
+          "eligible_slots": [
+            "RB",
+            "FLEX"
+          ],
+          "game_info": "NYJ@NE 10/18/2026 01:00PM ET",
+          "official_export_status": null,
+          "projected_points": 16,
+          "actual_points": null,
+          "rationale": "Hold the verified $5,700 lead-back opportunity with Hall out. The Jets' team report documents heavy recent participation; the matchup and receiving workload still limit certainty.",
+          "source_ids": [
+            "F01",
+            "F03",
+            "F08"
+          ],
+          "salary_source_ids": [
+            "F01"
+          ],
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/"
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "Puka Nacua",
+          "team": "LAR",
+          "opponent": "ARI",
+          "home": true,
+          "salary": 8100,
+          "draftkings_player_id": "44475972",
+          "eligible_slots": [
+            "WR",
+            "FLEX"
+          ],
+          "game_info": "ARI@LAR 10/18/2026 04:05PM ET",
+          "official_export_status": null,
+          "projected_points": 21.6,
+          "actual_points": null,
+          "rationale": "Hold the premium Rams receiver. There is no observed new injury designation or eligibility change requiring a replacement.",
+          "source_ids": [
+            "F01",
+            "F05",
+            "F06"
+          ],
+          "salary_source_ids": [
+            "F01"
+          ],
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/"
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "Malik Nabers",
+          "team": "NYG",
+          "opponent": "NO",
+          "home": true,
+          "salary": 6500,
+          "draftkings_player_id": "44475990",
+          "eligible_slots": [
+            "WR",
+            "FLEX"
+          ],
+          "game_info": "NO@NYG 10/18/2026 01:00PM ET",
+          "official_export_status": null,
+          "projected_points": 15.9,
+          "actual_points": null,
+          "rationale": "Hold the Giants receiving anchor. The protection concern remains unresolved; retaining him with Likely accepts shared offensive risk.",
+          "source_ids": [
+            "F01",
+            "F04",
+            "F06"
+          ],
+          "salary_source_ids": [
+            "F01"
+          ],
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/"
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "Germie Bernard",
+          "team": "PIT",
+          "opponent": "TB",
+          "home": false,
+          "salary": 4000,
+          "draftkings_player_id": "44476058",
+          "eligible_slots": [
+            "WR",
+            "FLEX"
+          ],
+          "game_info": "PIT@TB 10/18/2026 01:00PM ET",
+          "official_export_status": null,
+          "projected_points": 9.8,
+          "actual_points": null,
+          "rationale": "Hold the $4,000 receiver with Wilson and Skowronek out. The Steelers identify Bernard as an increasingly trusted option, but Metcalf is cleared; do not assume Bernard inherits every missing target.",
+          "source_ids": [
+            "F01",
+            "F03",
+            "F07"
+          ],
+          "salary_source_ids": [
+            "F01"
+          ],
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/"
+        },
+        {
+          "slot": "TE",
+          "position": "TE",
+          "player": "Harold Fannin Jr.",
+          "team": "CLE",
+          "opponent": "BAL",
+          "home": true,
+          "salary": 4100,
+          "draftkings_player_id": "44476368",
+          "eligible_slots": [
+            "TE",
+            "FLEX"
+          ],
+          "game_info": "BAL@CLE 10/18/2026 01:00PM ET",
+          "official_export_status": null,
+          "projected_points": 10.4,
+          "actual_points": null,
+          "rationale": "Hold the $4,100 tight end to preserve the established salary allocation. The refreshed single-model estimate supports retaining him; it does not establish a certain rebound.",
+          "source_ids": [
+            "F01",
+            "F06"
+          ],
+          "salary_source_ids": [
+            "F01"
+          ],
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/"
+        },
+        {
+          "slot": "FLEX",
+          "position": "TE",
+          "player": "Isaiah Likely",
+          "team": "NYG",
+          "opponent": "NO",
+          "home": true,
+          "salary": 4800,
+          "draftkings_player_id": "44476358",
+          "eligible_slots": [
+            "TE",
+            "FLEX"
+          ],
+          "game_info": "NO@NYG 10/18/2026 01:00PM ET",
+          "official_export_status": null,
+          "projected_points": 13.9,
+          "actual_points": null,
+          "rationale": "Hold the morning FLEX change to Likely. Theo Johnson remains out and the previously documented receiving case remains intact; protection duties could still suppress routes.",
+          "source_ids": [
+            "F01",
+            "F04",
+            "F06"
+          ],
+          "salary_source_ids": [
+            "F01"
+          ],
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/"
+        },
+        {
+          "slot": "DST",
+          "position": "DST",
+          "player": "Steelers",
+          "team": "PIT",
+          "opponent": "TB",
+          "home": false,
+          "salary": 3300,
+          "draftkings_player_id": "44476590",
+          "eligible_slots": [
+            "DST"
+          ],
+          "game_info": "PIT@TB 10/18/2026 01:00PM ET",
+          "official_export_status": null,
+          "projected_points": 7,
+          "actual_points": null,
+          "rationale": "Hold Pittsburgh at $3,300 against a Tampa Bay team with Mayfield ruled out. Secondary injuries and turnover/return variance remain explicit risks.",
+          "source_ids": [
+            "F01",
+            "F03",
+            "F07"
+          ],
+          "salary_source_ids": [
+            "F01"
+          ],
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/"
+        }
+      ],
+      "summary": "Final selection: retain the morning nine unchanged after fresh official availability, slate and salary checks. $300 remains. These players and original salaries are fixed for scoring; later news becomes an observation.",
+      "counterargument": "The build still relies on three Rams and two Giants. Both Giants starting tackles remain questionable in the observed official report, so extra protection could reduce Likely's receiving routes and hurt both Giants selections. Bernard's opportunity is also a role assumption, not a guaranteed target count.",
+      "revisions": [],
+      "revision_classification": "unchanged",
+      "previous_snapshot_id": "2026-w06-2026-10-18-daily",
+      "projection_comparison": {
+        "daily_model_as_of": "2026-10-18T04:20:00Z",
+        "daily_total": 137.3,
+        "freeze_model_as_of": "2026-10-18T14:56:00Z",
+        "freeze_total": 137.4,
+        "selection_effect": 0,
+        "model_refresh_effect": 0.1,
+        "note": "Same nine players and original prices. The 0.1-point display change is entirely a provider-model refresh."
+      },
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/b411aac2936b88a6f72f07b9ad4e0630b6d4ebc9/docs/weekly-dfs/codex/2026/week-06/freeze/20261018T151704Z.md",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=154941",
+      "original_salary_snapshot": {
+        "commit": "07327bf83afad38768e9b2095f5f32ad22011473",
+        "path": "docs/weekly-dfs/codex/2026/week-06/daily/2026-10-18-draftkings-154941.csv",
+        "blob_sha": "e8ca218f2e5f77ca67625f7accffee95bf0cdcda",
+        "capture_sha256": "33289f59d5b39b29458926dc36113649becce2849c542e6893b877fdd2ea5cd6",
+        "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/07327bf83afad38768e9b2095f5f32ad22011473/docs/weekly-dfs/codex/2026/week-06/daily/2026-10-18-draftkings-154941.csv",
+        "note": "Original morning salary snapshot remains unchanged; fresh official export confirms the selected fields."
+      },
+      "availability_note": "No selected player is flagged OUT/IR in the retrieved export or listed with an injury designation in the inspected report. Final game-day active status is not certified; the observed Giants tracker has no current Week 6 inactive list."
     }
   ],
-  "archive_commit": "ca9065e0b767ec8bd41b3713a10b0c35e5e3fd0e"
+  "archive_commit": "b411aac2936b88a6f72f07b9ad4e0630b6d4ebc9"
 }
