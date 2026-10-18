@@ -88,3 +88,7 @@ evidence, a forecasting edge, or authority for downstream action. Repository
 contracts and the existing Ops/Research ownership remain in force. Publication
 of the Week 6 notebook and the subsequent daily observational experiment was
 requested by the operator.
+
+## Daily snapshots
+
+- [2026 Week 6 — October 18 morning candidate](2026/week-06/daily/2026-10-18.md): Likely replaces Allgeier; $49,700, official salary export verified. [JSON](2026/week-06/daily/2026-10-18.json)
