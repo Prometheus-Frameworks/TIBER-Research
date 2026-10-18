@@ -1,7 +1,9 @@
 # DFS Site feed
 
 The private observer Site is [TIBER DFS Research Arena](https://tiber-dfs-arena.jmas-tiber.chatgpt.site).
-It reads this folder's `site-feed.json` through its server. Daily research and
+It reads `docs/weekly-dfs/codex/site-feed.json` on the stable
+`codex/weekly-dfs-feed` branch in `Prometheus-Frameworks/TIBER-Research` through
+its server. Daily research and
 Sunday-freeze tasks maintain that materialized view alongside their immutable
 notebook records. Updating the data does not require republishing the Site.
 
@@ -23,26 +25,32 @@ annotation time is recorded explicitly. The original `2026/week-06.md` and
    date, selection, salary, projection snapshot and rationale intact. A correction
    creates a new entry with a new ID and a documented predecessor.
 4. Update `updated_at` and the next scheduled date where known. Publish a guarded
-   update on the notebook branch. Do not force-push, merge or redeploy the Site.
-5. Read back the feed and its new commit. Report archival success only after that
-   succeeds. A feed failure must not be disguised as a successful Site update.
+   update on the notebook branch and read it back. Record that immutable archive
+   commit as `archive_commit` in the display copy.
+5. Re-read the head and complete feed on `codex/weekly-dfs-feed`, preserve all
+   existing snapshots, and publish the display copy there using its observed head
+   as an expected-SHA lease. Do not force-push, merge or redeploy the Site. If the
+   lease fails, re-read and reconcile before retrying; do not discard other runs.
+6. Read back both writes and their commits. Report research archival and Site-feed
+   publication separately. A display-feed failure must not be disguised as a
+   successful Site update; an archived research result still remains valid.
 
 Later verified scores can be added to this display view with explicit scoring
 sources, `scored_at` and provisional/final/corrected status; retain the original
 immutable pregame records and dated postgame review separately. Do not change
 the pregame picks or estimates when adding actual scores.
 
-If PR #43 is merged, subsequent notebook PRs may contain new feed entries.
-The Site uses the latest open DFS notebook PR when it follows the documented
-branch prefix `codex/weekly-dfs-`; otherwise it reads main. Preserve that prefix
-for later documentation-only notebook branches. A closed, unmerged initial
-notebook is treated as paused.
+The stable feed branch is a display-only materialized view. Research continues
+through documentation notebook PRs, including successors after PR #43 is merged.
+The Site never depends on PR discovery or merging a notebook. A missing stable
+branch is an update failure to report, not permission to recreate research history.
 
 ## Feed contract
 
 The supported convention is `schema_version: "tiber-dfs-site/v1"`. Root fields:
 
 - `updated_at`: actual ISO timestamp of the feed update.
+- `archive_commit`: optional immutable research archive commit represented by the display copy.
 - `timezone`: `America/Toronto`.
 - `research_url`, `protocol_url`: HTTPS links.
 - `next_scheduled_date`: optional real ISO calendar day.
@@ -98,7 +106,7 @@ revision list and a clear summary.
 
 The Site validates roster structure, duplicates, budget arithmetic, declared
 projection totals and source URL schemes. These checks do not certify the
-football facts or official platform eligibility. It pins reads to a source commit,
+football facts or official platform eligibility. It reads the stable display branch,
 checks for updates when opened or refreshed, and labels any saved fallback.
 It performs no background research, contest entry or roster transaction itself.
 
