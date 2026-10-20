@@ -1,9 +1,9 @@
 {
   "schema_version": "tiber-dfs-site/v1",
-  "updated_at": "2026-10-19T11:33:33.595Z",
+  "updated_at": "2026-10-20T10:45:22.270Z",
   "title": "TIBER DFS Research Arena",
   "timezone": "America/Toronto",
-  "next_scheduled_date": "2026-10-20",
+  "next_scheduled_date": "2026-10-21",
   "research_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43",
   "protocol_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/codex/weekly-dfs-2026-week-06/docs/weekly-dfs/codex/EXPERIMENT.md",
   "snapshots": [
@@ -1665,7 +1665,282 @@
       },
       "operator_input": "After the initial board, operator requested today's provisional team and challenged keeping both Giants given McCarthy's relief performance while trailing. The follow-up reassessment is operator prompted, not autonomous daily adaptation.",
       "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198"
+    },
+    {
+      "id": "2026-w07-2026-10-20-daily",
+      "date": "2026-10-20",
+      "recorded_at": "2026-10-20T10:44:43.719Z",
+      "time_precision": "exact",
+      "order": 1,
+      "label": "Tuesday daily draft",
+      "kind": "daily",
+      "status": "complete",
+      "season": 2026,
+      "week": 7,
+      "slate_date": "2026-10-25",
+      "slate_label": "Sunday main, draft group 155198",
+      "platform": "DraftKings",
+      "salary_cap": 50000,
+      "salary_total": 49400,
+      "salary_remaining": 600,
+      "projected_total": null,
+      "actual_total": null,
+      "frozen": false,
+      "official_pool_verified": true,
+      "projection": null,
+      "projection_gap": "No qualified coherent Week7 model/scoring/as-of snapshot retrieved. Splash Play currently remains Week6. No historical platform FPPG used as forecast.",
+      "picks": [
+        {
+          "slot": "QB",
+          "position": "QB",
+          "player": "C.J. Stroud",
+          "team": "HOU",
+          "opponent": "NYG",
+          "home": true,
+          "salary": 5700,
+          "draftkings_player_id": "44556892",
+          "eligible_slots": [
+            "QB"
+          ],
+          "game_info": "NYG@HOU 10/25/2026 01:00PM ET",
+          "official_export_status": null,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Keep Stroud at $5,700 using the prior observed 312-yard, three-TD game as role/context evidence. Dell's planned return adds a receiving option; no numerical upgrade is assigned. Removing Noel ends the direct QB-WR pairing.",
+          "source_ids": [
+            "T1",
+            "P1"
+          ],
+          "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198"
+        },
+        {
+          "slot": "RB",
+          "position": "RB",
+          "player": "Chuba Hubbard",
+          "team": "CAR",
+          "opponent": "TB",
+          "home": true,
+          "salary": 6700,
+          "draftkings_player_id": "44556964",
+          "eligible_slots": [
+            "RB",
+            "FLEX"
+          ],
+          "game_info": "TB@CAR 10/25/2026 01:00PM ET",
+          "official_export_status": null,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Keep Hubbard's $6,700 slot and prior 28-carry, 120-yard workload case. No fresh role change established in this focused pass; receiving and touchdown production remain uncertain.",
+          "source_ids": [
+            "T1",
+            "P1"
+          ],
+          "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198"
+        },
+        {
+          "slot": "RB",
+          "position": "RB",
+          "player": "Tony Pollard",
+          "team": "TEN",
+          "opponent": "CLE",
+          "home": true,
+          "salary": 5300,
+          "draftkings_player_id": "44556994",
+          "eligible_slots": [
+            "RB",
+            "FLEX"
+          ],
+          "game_info": "CLE@TEN 10/25/2026 01:00PM ET",
+          "official_export_status": null,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Replace Braelon Allen with $5,300 Pollard. The freshly inspected Week 6 box score records 19 carries for 76 yards, versus one Spears carry; Pollard had zero catches on one target. Prefer that observed rushing role to an Allen lead-role assumption now threatened by Hall's possible return.",
+          "source_ids": [
+            "T1",
+            "T3",
+            "T4"
+          ],
+          "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198"
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "Puka Nacua",
+          "team": "LAR",
+          "opponent": "LV",
+          "home": false,
+          "salary": 8400,
+          "draftkings_player_id": "44557184",
+          "eligible_slots": [
+            "WR",
+            "FLEX"
+          ],
+          "game_info": "LAR@LV 10/25/2026 04:25PM ET",
+          "official_export_status": null,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Keep the $8,400 premium receiver allocation. Prior seven-target evidence remains the basis; no fresh role-changing report established in this bounded pass and no rebound point forecast assigned.",
+          "source_ids": [
+            "T1",
+            "P1"
+          ],
+          "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198"
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "Malik Nabers",
+          "team": "NYG",
+          "opponent": "HOU",
+          "home": false,
+          "salary": 6800,
+          "draftkings_player_id": "44557202",
+          "eligible_slots": [
+            "WR",
+            "FLEX"
+          ],
+          "game_info": "NYG@HOU 10/25/2026 01:00PM ET",
+          "official_export_status": null,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Keep Nabers at $6,800 for the prior 15-target case. Monday's official transcript still leaves the quarterback decision open and warns against extrapolating desperation offense across a full game; no McCarthy-specific upgrade is assumed.",
+          "source_ids": [
+            "T1",
+            "T6"
+          ],
+          "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198"
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "Chris Godwin Jr.",
+          "team": "TB",
+          "opponent": "CAR",
+          "home": false,
+          "salary": 4300,
+          "draftkings_player_id": "44557250",
+          "eligible_slots": [
+            "WR",
+            "FLEX"
+          ],
+          "game_info": "TB@CAR 10/25/2026 01:00PM ET",
+          "official_export_status": null,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Keep Godwin at $4,300 for the prior eight-target involvement and price. The backup-QB concern remains; this hold does not certify an improved passing environment.",
+          "source_ids": [
+            "T1",
+            "P1"
+          ],
+          "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198"
+        },
+        {
+          "slot": "TE",
+          "position": "TE",
+          "player": "Sam LaPorta",
+          "team": "DET",
+          "opponent": "GB",
+          "home": true,
+          "salary": 4800,
+          "draftkings_player_id": "44557574",
+          "eligible_slots": [
+            "TE",
+            "FLEX"
+          ],
+          "game_info": "GB@DET 10/25/2026 04:25PM ET",
+          "official_export_status": null,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Keep LaPorta at $4,800 following Detroit's bye and the previously inspected five-catch, 88-yard game. Retain one Giants receiver rather than adding Likely while the QB decision remains open.",
+          "source_ids": [
+            "T1",
+            "P1"
+          ],
+          "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198"
+        },
+        {
+          "slot": "FLEX",
+          "position": "WR",
+          "player": "Keenan Allen",
+          "team": "IND",
+          "opponent": "MIN",
+          "home": false,
+          "salary": 4800,
+          "draftkings_player_id": "44557240",
+          "eligible_slots": [
+            "WR",
+            "FLEX"
+          ],
+          "game_info": "IND@MIN 10/25/2026 01:00PM ET",
+          "official_export_status": null,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Replace Noel with $4,800 Keenan Allen. The fresh Week 6 box score shows eight catches for 82 yards on 11 targets. Dell's confirmed planned return and Harrison's expanding role weaken Noel's already thin volume premise; exact target losses are unquantified.",
+          "source_ids": [
+            "T1",
+            "T2",
+            "T4",
+            "T5"
+          ],
+          "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198"
+        },
+        {
+          "slot": "DST",
+          "position": "DST",
+          "player": "Titans",
+          "team": "TEN",
+          "opponent": "CLE",
+          "home": true,
+          "salary": 2600,
+          "draftkings_player_id": "44557811",
+          "eligible_slots": [
+            "DST"
+          ],
+          "game_info": "CLE@TEN 10/25/2026 01:00PM ET",
+          "official_export_status": null,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Keep Tennessee at $2,600 for budget and opponent context. Prior Cleveland 13-point evidence is historical, not a turnover forecast. Pollard plus DST now share exposure to a favorable Tennessee game script.",
+          "source_ids": [
+            "T1",
+            "P1"
+          ],
+          "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198"
+        }
+      ],
+      "summary": "Two new-evidence revisions: Pollard for Braelon Allen, Keenan Allen for Noel. $49,400 total, $600 left. Keep the same official Oct25 Week7 main slate; seven picks and all retained original salaries unchanged. No freeze or point projections.",
+      "counterargument": "The replacements may surrender Allen's better receiving role if Hall remains out and Noel's explosive upside if Dell is eased in. Pollard caught no passes last week; his carry share can change, and pairing him with Titans DST increases shared game-script exposure. Keenan's 11 targets were one game in a loss, not an established Week7 allocation. Stroud is now unpaired with a Houston receiver.",
+      "revisions": [
+        {
+          "slot": "RB",
+          "from": "Braelon Allen",
+          "to": "Tony Pollard",
+          "salary_delta": -600,
+          "classification": "new_evidence",
+          "reason": "Official export Hall marker changed OUT to Q; Jets coach reiterates Hall starts on return. Pollard's fresh 19-carry box-score role is preferable to assuming Allen remains the lead back. Hall is not yet confirmed active."
+        },
+        {
+          "slot": "FLEX",
+          "from": "Jaylin Noel",
+          "to": "Keenan Allen",
+          "salary_delta": 900,
+          "classification": "new_evidence",
+          "reason": "Texans confirm Dell plans to play Sunday and discuss more Harrison involvement. Allen's freshly inspected 11-target game supports a less speculative receiving-volume choice, without asserting a known Noel snap reduction."
+        }
+      ],
+      "previous_snapshot_id": "2026-w07-20261019T113232Z-daily",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d45ebad3f56b02e8a570b5141405b2d2f2a34d70/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-20.md",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198",
+      "unresolved_assumptions": [
+        "All selected players' final Week7 availability pending; blank export status is not clearance.",
+        "Hall Q is a platform metadata change, not proof of a Week7 return or practice clearance.",
+        "Texans planned Dell return conflicts with current export IR marker; no activation or workload certification is inferred.",
+        "Giants QB/protection decision remains open in inspected official remarks; no receiver-specific McCarthy effect measured.",
+        "Noel/Harrison/Dell future routes and shares unquantified; removing Noel is agent judgment about uncertainty.",
+        "Pollard receiving floor is weak; no verified Week7 snap-share guarantee or calibrated matchup forecast.",
+        "Seven holds rely partly on explicitly retained prior-game evidence; this was not a fresh full-league availability audit."
+      ]
     }
   ],
-  "archive_commit": "df3c16287403ef566bf40bc148ba67d0b9227152"
+  "archive_commit": "d45ebad3f56b02e8a570b5141405b2d2f2a34d70"
 }
