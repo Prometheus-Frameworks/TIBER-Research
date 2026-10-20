@@ -1,5 +1,7 @@
 # DFS Research Arena v0
 
+> **Prospective supersession — October 20, 2026:** Read [ARENA_V1.md](ARENA_V1.md) first. From the **October 25, 2026 slate**, its standing independent-research assignment and **Sunday 12:30 p.m. America/Toronto (or before first included kickoff if earlier)** deadline supersede the v0 noon rule below. Keep Week 6's noon deadline and every historical snapshot's original fields unchanged. This file retains the initial protocol for provenance; its source, scoring and authority limits still apply. See [SITE_FEED.md](SITE_FEED.md#research-journal-extension) for the implemented journal, expectation and outcome convention.
+
 ## Purpose
 
 Study how an agent uses evidence, maintains continuity and revises decisions in a

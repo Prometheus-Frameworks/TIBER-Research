@@ -113,3 +113,51 @@ It performs no background research, contest entry or roster transaction itself.
 The app and its read-only API are owner-private. The notebook feed remains part
 of the operator-requested public research record; never add private league,
 account, credential or personal context to it.
+
+## Research journal extension
+
+Effective October20, 2026; additive to `tiber-dfs-site/v1`. Older feeds without these fields remain valid and display explicit absence. Do not add journal fields to original snapshots to invent history.
+
+Optional root fields:
+
+- `arena`: `protocol_url`, `effective_slate_date` (2026-10-25), `deadline_timezone` (America/Toronto), `sunday_deadline` (12:30), `deadline_rule` and `historical_deadline_note`. These govern prospective work; do not rewrite historical deadline fields.
+- `journal`: append-only array of independently timestamped entries. The selected lineup displays entries whose `snapshot_ids` include its exact ID. Additional same-day research uses a new ID and actual UTC filename. Never replace a prior entry to change its conclusion.
+- `research_checks`: optional actual publication-check timestamps only when observed. Not required and not a claim of continuous monitoring.
+
+Archive first as `journal/<actual-UTC-timestamp>.md` plus JSON with `schema_version: "tiber-dfs-journal/v1"` and `entries`. A file may hold related entries from one pass. Only after verified notebook readback, append those entries to the full feed with immutable `archive_url` and `lineup_records` links. Guard notebook/feed and stable-branch writes independently. Preserve concurrent entries as well as all prior snapshots; ID collisions with different content require reconciliation, never overwrite. Copy the complete journal history on both branches.
+
+### Entry fields
+
+| Field | Convention |
+|---|---|
+| `id`, `snapshot_ids` | Stable unique ID and nonempty list of exact existing lineup IDs; no dangling links |
+| `kind` | `scheduled_research`, `interactive_research`, `later_annotation`, `outcome_review` |
+| `recorded_at`, `recorded_at_toronto` | Actual UTC and Toronto clocks for this entry; `research_at` is the actual investigation time or null |
+| `origin` | `agent_chosen`, `operator_prompted`, `mixed`, `unknown`; concise `origin_note` records material influence without private details |
+| `original_work_origin` | Optional attribution of earlier summarized work; distinct from why the annotation exists |
+| `title`, `question`, `why_it_matters` | What was investigated and why; annotation titles/questions explicitly say later summary |
+| `findings`, `interpretation` | Array of concise evidence observations; separate public agent interpretation |
+| `alternatives`, `uncertainty` | Competing explanations/choices and limits |
+| `lineup_effect` | Changes, whole-lineup salary/concentration consequences or justified hold |
+| `change_triggers`, `carry_forward` | Observable reasons to revisit and applicable questions/provisional lessons; no quotas |
+| `sources` | Array of `id`, `label`, HTTPS `url`, actual `retrieved_at`, nullable `publication_at`, and `scope`; retrieval is not publication |
+| `lineup_records`, `archive_url` | Array of `snapshot_id`/immutable HTTPS `url`; immutable journal notebook URL |
+| `annotation_of`, `original_evidence_cutoff` | For later explanations, original source record and its actual cutoff or null |
+| `expectations`, `outcomes` | Optional arrays below; empty/missing means absent, not zero or success |
+| `supersedes_entry_id` | Optional prior journal ID for a new correction; retain both entries |
+
+### Pregame expectations
+
+In the actual pregame research/freeze entry, use stable expectation IDs; record `id`, `subject`, `statement`, `support`, `uncertainty`, `challenge`, `observe`, `source_urls`, and `recorded_at`. The expectation is a role/condition claim, not necessarily a point prediction. `observe` names the available postgame measure or marks it unassessable; use numerical thresholds only when evidence supports them. Missing routes/snaps stay missing.
+
+Freeze references exact expectation IDs and their immutable notebook locator, as well as exact selected lineup and original salary snapshot. This binding must be retained before the applicable deadline. An older draft's later annotation cannot masquerade as its original pregame expectations. A setup annotation has no new football expectations.
+
+### Outcome review
+
+Append new `outcome_review` entries after games, linked to every relevant original snapshot and exact expectation IDs. Each `outcomes` item records `id`, nullable `expectation_id`, `expectation`, `opportunity_assessment`, `conditions_assessment`, `score_explanation`, `cutoff_judgment`, `status` (`provisional`, `final`, `corrected`, `unassessable`) and `source_urls`. Compare anticipated opportunity, whether supporting conditions held, what produced the score and whether the judgment was reasonable on its actual pregame evidence. Use supported/contradicted/unassessable distinctions; preserve failures and unknowns. A legacy assessment may have null expectation ID and must be labeled as such, never reconstructed into a prior expectation.
+
+Scoring still uses the existing exact-rule source/bonus/DST convention; keep scores and estimates distinct. Append material corrections with a predecessor, correction reason and original scoring state intact in the dated notebook. Carry provisional lessons forward with sources, limits and applicability; no universal rule from one result.
+
+The initial 20261020T131310Z journal is a later setup annotation of retained Tuesday/Monday decisions and the existing Week6 review. Its own clock does not alter their cutoffs or claim a new investigation.
+
+The one-time October20 Site implementation does not expand scheduled authority: future runs only maintain documentation, dated journal records and the guarded display feed. No app code/deployment, Claude dispatch, new schedule or integration.
