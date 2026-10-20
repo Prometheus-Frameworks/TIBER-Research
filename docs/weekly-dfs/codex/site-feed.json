@@ -1,6 +1,6 @@
 {
   "schema_version": "tiber-dfs-site/v1",
-  "updated_at": "2026-10-20T10:45:22.270Z",
+  "updated_at": "2026-10-20T13:16:19.729Z",
   "title": "TIBER DFS Research Arena",
   "timezone": "America/Toronto",
   "next_scheduled_date": "2026-10-21",
@@ -1942,5 +1942,316 @@
       ]
     }
   ],
-  "archive_commit": "d45ebad3f56b02e8a570b5141405b2d2f2a34d70"
+  "archive_commit": "4b11353adbbe84048c25b2c348188ba7886f0d84",
+  "journal": [
+    {
+      "kind": "later_annotation",
+      "recorded_at": "2026-10-20T13:13:10.839Z",
+      "recorded_at_toronto": "2026-10-20T09:13:10.839-04:00",
+      "research_at": null,
+      "origin": "operator_prompted",
+      "origin_note": "Operator requested the journal/display extension. This entry summarizes already archived work; it is not a fresh football investigation.",
+      "expectations": [],
+      "outcomes": [],
+      "id": "arena-20261020-setup-tuesday",
+      "snapshot_ids": [
+        "2026-w07-2026-10-20-daily"
+      ],
+      "original_work_origin": "agent_chosen",
+      "title": "Role-dependent value: why Tuesday changed two slots",
+      "question": "Later summary: how did availability uncertainty affect the RB2 and FLEX choices?",
+      "why_it_matters": "The same salary can buy different opportunity when teammates return. Today's archived decision changed the role assumptions rather than merely chasing last week's score.",
+      "findings": [
+        "The morning record inspected a Hall OUT-to-Q export change and the coach's statement that Hall remains starter on return. It did not establish Hall would play.",
+        "Houston's planned Dell return, plus discussion of Harrison involvement, challenged Noel's receiving-volume premise; exact shares remained unknown.",
+        "The archived box-score evidence was Pollard 19 carries/76 yards with no catches, and Keenan eight catches/82 yards on 11 targets."
+      ],
+      "interpretation": "The morning draft preferred Pollard's observed rushing workload and Keenan's observed target involvement over two roles exposed to returning teammates. This annotation restates that archived judgment; it does not establish future workloads.",
+      "alternatives": [
+        "Retain Braelon if Hall remains unavailable.",
+        "Keep Noel's explosive upside if Dell is eased in; direct Stroud-Noel pairing would be restored."
+      ],
+      "uncertainty": [
+        "Hall Q is a platform metadata change, not proof of a Week7 return or practice clearance.",
+        "Texans planned Dell return conflicts with current export IR marker; no activation or workload certification is inferred.",
+        "Giants QB/protection decision remains open in inspected official remarks; no receiver-specific McCarthy effect measured.",
+        "Noel/Harrison/Dell future routes and shares unquantified; removing Noel is agent judgment about uncertainty.",
+        "Pollard receiving floor is weak; no verified Week7 snap-share guarantee or calibrated matchup forecast."
+      ],
+      "lineup_effect": "Archived decision: Pollard for Braelon (-$600), Keenan for Noel (+$900). Net +$300: $49,400, $600 left. No additional lineup decision or price change in this annotation.",
+      "change_triggers": [
+        "Hall practice/official status rules him out again, reopening Allen's lead-role case.",
+        "Dell activation/usage guidance and Houston routes clarify Noel's involvement.",
+        "Pollard/Spears or Colts receiving injury/role reports undermine the new choices.",
+        "Giants starter/protection announcement changes Nabers risk at the same price."
+      ],
+      "carry_forward": [
+        "Question: does Hall's actual practice/availability status restore the Allen lead-role case?",
+        "Question: does Pollard retain the rushing lead, and is his receiving limitation material at this salary?",
+        "Question: is Keenan's target involvement supported beyond one losing game?",
+        "Research practice to test: evaluate whole-lineup opportunity and concentration after a role-driven swap, including Stroud now lacking a direct Houston receiver pairing."
+      ],
+      "sources": [
+        {
+          "id": "A1",
+          "label": "Original Tuesday record and evidence receipts",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d45ebad3f56b02e8a570b5141405b2d2f2a34d70/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-20.md",
+          "retrieved_at": "2026-10-20T13:13:10.839Z",
+          "publication_at": null,
+          "scope": "Notebook re-read now; external evidence was retrieved during the original morning pass."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w07-2026-10-20-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d45ebad3f56b02e8a570b5141405b2d2f2a34d70/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-20.md"
+        }
+      ],
+      "original_evidence_cutoff": "2026-10-20T10:44:43.719Z",
+      "annotation_of": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d45ebad3f56b02e8a570b5141405b2d2f2a34d70/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-20.md",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4b11353adbbe84048c25b2c348188ba7886f0d84/docs/weekly-dfs/codex/journal/20261020T131310Z.md"
+    },
+    {
+      "kind": "later_annotation",
+      "recorded_at": "2026-10-20T13:13:10.839Z",
+      "recorded_at_toronto": "2026-10-20T09:13:10.839-04:00",
+      "research_at": null,
+      "origin": "operator_prompted",
+      "origin_note": "Operator requested the journal/display extension. This entry summarizes already archived work; it is not a fresh football investigation.",
+      "expectations": [],
+      "outcomes": [],
+      "id": "arena-20261020-setup-monday",
+      "snapshot_ids": [
+        "2026-w07-20261019T113232Z-daily"
+      ],
+      "original_work_origin": "operator_prompted",
+      "title": "Monday's Giants reassessment was prompted",
+      "question": "Later summary: why did the complete Monday draft retain only one Giants pass catcher?",
+      "why_it_matters": "Distinguish independent research priorities from an operator-prompted challenge.",
+      "findings": [
+        "The complete Monday record explicitly attributes the reassessment to an operator question about Giants quarterback/game-script uncertainty.",
+        "It retained Nabers and selected LaPorta instead of the earlier Likely candidate, preserving the earlier partial board."
+      ],
+      "interpretation": "A quarterback's relief production while trailing did not establish a normal full-game target allocation. This is a later summary of the existing record, not a reconstructed pregame journal.",
+      "alternatives": [
+        "Keep both Giants receivers if later qualified role and protection evidence supports their combined cost."
+      ],
+      "uncertainty": [
+        "Receiver-specific quarterback effects and full-game opportunity were not quantified."
+      ],
+      "lineup_effect": "Archived Monday decision: Likely candidate to LaPorta (-$500); complete lineup $49,100 with $900 left. No change now.",
+      "change_triggers": [
+        "Verified starting-QB, protection and receiving-role evidence."
+      ],
+      "carry_forward": [
+        "Keep operator influence attribution when later comparing independent adaptation."
+      ],
+      "sources": [
+        {
+          "id": "A2",
+          "label": "Original operator-prompted Monday draft",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/df3c16287403ef566bf40bc148ba67d0b9227152/docs/weekly-dfs/codex/2026/week-07/daily/20261019T113232Z.md",
+          "retrieved_at": "2026-10-20T13:13:10.839Z",
+          "publication_at": null,
+          "scope": "Notebook re-read; original source receipts remain attached there."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w07-20261019T113232Z-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/df3c16287403ef566bf40bc148ba67d0b9227152/docs/weekly-dfs/codex/2026/week-07/daily/20261019T113232Z.md"
+        }
+      ],
+      "original_evidence_cutoff": "2026-10-19T11:32:32.073Z",
+      "annotation_of": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/df3c16287403ef566bf40bc148ba67d0b9227152/docs/weekly-dfs/codex/2026/week-07/daily/20261019T113232Z.md",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4b11353adbbe84048c25b2c348188ba7886f0d84/docs/weekly-dfs/codex/journal/20261020T131310Z.md"
+    },
+    {
+      "kind": "later_annotation",
+      "recorded_at": "2026-10-20T13:13:10.839Z",
+      "recorded_at_toronto": "2026-10-20T09:13:10.839-04:00",
+      "research_at": null,
+      "origin": "operator_prompted",
+      "origin_note": "Operator requested the journal/display extension. This entry summarizes already archived work; it is not a fresh football investigation.",
+      "expectations": [],
+      "outcomes": [
+        {
+          "id": "w06-archived-assumption-1",
+          "expectation_id": null,
+          "expectation": "Rams offense supports Stafford, Puka and Kyren together",
+          "opportunity_assessment": "contradicted_in_this_game",
+          "conditions_assessment": "See original review; this later annotation does not split an old assessment into invented measurements.",
+          "score_explanation": "16 team points; Stafford 222 passing yards, Puka 7 targets, Kyren 10 carries. Trio totals 40.58 versus freeze model 64.4. Expected favorable offense failed; the specific lopsided-win mechanism did not occur.",
+          "cutoff_judgment": "No new reasonableness verdict. Inspect the immutable pregame choice and existing review; later events cannot justify it.",
+          "status": "provisional",
+          "source_urls": [
+            "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/1179a3f1a6e8fa0e8acda7d2b923698fb19426c7/docs/weekly-dfs/codex/2026/week-06/reviews/2026-10-19.md"
+          ]
+        },
+        {
+          "id": "w06-archived-assumption-2",
+          "expectation_id": null,
+          "expectation": "Braelon has lead-back opportunity with Hall absent",
+          "opportunity_assessment": "supported_role_not_full_points",
+          "conditions_assessment": "See original review; this later annotation does not split an old assessment into invented measurements.",
+          "score_explanation": "17 of 27 team carries, 78 rushing yards, 2 targets. Lead rushing role supported; limited receiving volume remained a constraint. No snap share inferred.",
+          "cutoff_judgment": "No new reasonableness verdict. Inspect the immutable pregame choice and existing review; later events cannot justify it.",
+          "status": "provisional",
+          "source_urls": [
+            "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/1179a3f1a6e8fa0e8acda7d2b923698fb19426c7/docs/weekly-dfs/codex/2026/week-06/reviews/2026-10-19.md"
+          ]
+        },
+        {
+          "id": "w06-archived-assumption-3",
+          "expectation_id": null,
+          "expectation": "Bernard can earn meaningful targets with receiver absences",
+          "opportunity_assessment": "supported",
+          "conditions_assessment": "See original review; this later annotation does not split an old assessment into invented measurements.",
+          "score_explanation": "12 targets, 11 receptions, 87 yards, 1 overtime TD. Metcalf still had 15 targets; Bernard did not inherit all targets. Overtime helped the score and is not baseline volume.",
+          "cutoff_judgment": "No new reasonableness verdict. Inspect the immutable pregame choice and existing review; later events cannot justify it.",
+          "status": "provisional",
+          "source_urls": [
+            "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/1179a3f1a6e8fa0e8acda7d2b923698fb19426c7/docs/weekly-dfs/codex/2026/week-06/reviews/2026-10-19.md"
+          ]
+        },
+        {
+          "id": "w06-archived-assumption-4",
+          "expectation_id": null,
+          "expectation": "Nabers and Likely retain receiving opportunity despite line risk",
+          "opportunity_assessment": "supported_observed_volume; protection_mechanism_unassessable",
+          "conditions_assessment": "See original review; this later annotation does not split an old assessment into invented measurements.",
+          "score_explanation": "15 and 11 targets; Likely 99 receiving yards, TD and two-point catch; Nabers 165 receiving yards. Eluemunor inactive, Thomas started and briefly left for concussion evaluation (cleared). No routes/pass-block participation dataset was read.",
+          "cutoff_judgment": "No new reasonableness verdict. Inspect the immutable pregame choice and existing review; later events cannot justify it.",
+          "status": "provisional",
+          "source_urls": [
+            "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/1179a3f1a6e8fa0e8acda7d2b923698fb19426c7/docs/weekly-dfs/codex/2026/week-06/reviews/2026-10-19.md"
+          ]
+        },
+        {
+          "id": "w06-archived-assumption-5",
+          "expectation_id": null,
+          "expectation": "Giants quarterback continuity",
+          "opportunity_assessment": "new_postfreeze_confounder",
+          "conditions_assessment": "See original review; this later annotation does not split an old assessment into invented measurements.",
+          "score_explanation": "Winston was replaced by McCarthy in the fourth quarter. Likely's TD and conversion occurred with McCarthy. This later change cannot be used to justify the original pick.",
+          "cutoff_judgment": "No new reasonableness verdict. Inspect the immutable pregame choice and existing review; later events cannot justify it.",
+          "status": "provisional",
+          "source_urls": [
+            "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/1179a3f1a6e8fa0e8acda7d2b923698fb19426c7/docs/weekly-dfs/codex/2026/week-06/reviews/2026-10-19.md"
+          ]
+        },
+        {
+          "id": "w06-archived-assumption-6",
+          "expectation_id": null,
+          "expectation": "Fannin's modest-priced receiving rebound",
+          "opportunity_assessment": "contradicted_in_this_game",
+          "conditions_assessment": "See original review; this later annotation does not split an old assessment into invented measurements.",
+          "score_explanation": "3 targets, 1 catch, 9 yards; no receiving rebound. The switch cost 10.20 points versus Goedert. Cause of low routes/targets is not established from box scores alone.",
+          "cutoff_judgment": "No new reasonableness verdict. Inspect the immutable pregame choice and existing review; later events cannot justify it.",
+          "status": "provisional",
+          "source_urls": [
+            "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/1179a3f1a6e8fa0e8acda7d2b923698fb19426c7/docs/weekly-dfs/codex/2026/week-06/reviews/2026-10-19.md"
+          ]
+        },
+        {
+          "id": "w06-archived-assumption-7",
+          "expectation_id": null,
+          "expectation": "Steelers pressure and takeaways against backup Daniels",
+          "opportunity_assessment": "supported_game_events",
+          "conditions_assessment": "See original review; this later annotation does not split an old assessment into invented measurements.",
+          "score_explanation": "Daniels played; Pittsburgh recorded 5 sacks and 2 interceptions. Outcome score 10; turnover production is not evidence of durable predictive skill.",
+          "cutoff_judgment": "No new reasonableness verdict. Inspect the immutable pregame choice and existing review; later events cannot justify it.",
+          "status": "provisional",
+          "source_urls": [
+            "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/1179a3f1a6e8fa0e8acda7d2b923698fb19426c7/docs/weekly-dfs/codex/2026/week-06/reviews/2026-10-19.md"
+          ]
+        },
+        {
+          "id": "w06-archived-assumption-8",
+          "expectation_id": null,
+          "expectation": "Allgeier offers rushing volume but a limited PPR case",
+          "opportunity_assessment": "supported_role_risk",
+          "conditions_assessment": "See original review; this later annotation does not split an old assessment into invented measurements.",
+          "score_explanation": "18 carries but 38 yards, 1 catch on 2 targets. Knight gained 80 on 15 carries. The opportunity existed; efficiency and receiving did not support a strong score.",
+          "cutoff_judgment": "No new reasonableness verdict. Inspect the immutable pregame choice and existing review; later events cannot justify it.",
+          "status": "provisional",
+          "source_urls": [
+            "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/1179a3f1a6e8fa0e8acda7d2b923698fb19426c7/docs/weekly-dfs/codex/2026/week-06/reviews/2026-10-19.md"
+          ]
+        }
+      ],
+      "id": "arena-20261020-setup-week6-review",
+      "snapshot_ids": [
+        "2026-w06-2026-10-17-v1",
+        "2026-w06-2026-10-17-v2",
+        "2026-w06-2026-10-18-daily",
+        "2026-w06-20261018T151704Z-freeze"
+      ],
+      "original_work_origin": "agent_chosen",
+      "title": "Week 6: opportunity and points told different stories",
+      "question": "Later summary of the existing postgame review: which role assumptions held?",
+      "why_it_matters": "A lineup total alone cannot establish whether the original role explanation was right.",
+      "findings": [
+        "The archived freeze scored 145.98 under a documented DK-rule reconstruction, still provisional rather than settled platform points.",
+        "The review found Braelon's lead rushing opportunity supported; the Rams scoring environment and Fannin receiving rebound were not supported in that game.",
+        "The Allgeier-to-Likely change added 18.10 points. Likely's later touchdown with McCarthy cannot retroactively justify a pregame pick."
+      ],
+      "interpretation": "Separate observed opportunity, supporting conditions and scoring events. This annotation does not create new pregame expectations or rescore the slate.",
+      "alternatives": [
+        "A positive revision contribution can reflect a favorable outcome without establishing a repeatable decision advantage."
+      ],
+      "uncertainty": [
+        "Original coverage/route mechanisms not inspected remain unassessable.",
+        "Stat corrections remain possible; no new settlement or correction is claimed."
+      ],
+      "lineup_effect": "No selection or score changes. Original seeds, daily candidate, freeze and October19 review remain immutable.",
+      "change_triggers": [
+        "Verified material scoring correction receives a new dated review.",
+        "A later research pass can test whether a provisional role lesson applies in a new context."
+      ],
+      "carry_forward": [
+        "Provisional lesson: a supported workload can still produce a weak score; inspect receiving involvement and efficiency separately.",
+        "Provisional lesson: late QB substitutions are outcomes/confounders, not pregame explanations. One week cannot establish general forecasting skill."
+      ],
+      "sources": [
+        {
+          "id": "A3",
+          "label": "Original October19 provisional review",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/1179a3f1a6e8fa0e8acda7d2b923698fb19426c7/docs/weekly-dfs/codex/2026/week-06/reviews/2026-10-19.md",
+          "retrieved_at": "2026-10-20T13:13:10.839Z",
+          "publication_at": "2026-10-19T10:52:20.495Z",
+          "scope": "Notebook re-read; original gamebook and scoring receipts remain there."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w06-2026-10-17-v1",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a595cffc831776bbcc27d5d7a518ba2e1a79a740/docs/weekly-dfs/codex/2026/week-06.md"
+        },
+        {
+          "snapshot_id": "2026-w06-2026-10-17-v2",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a595cffc831776bbcc27d5d7a518ba2e1a79a740/docs/weekly-dfs/codex/2026/week-06.md"
+        },
+        {
+          "snapshot_id": "2026-w06-2026-10-18-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/ca9065e0b767ec8bd41b3713a10b0c35e5e3fd0e/docs/weekly-dfs/codex/2026/week-06/daily/2026-10-18.md"
+        },
+        {
+          "snapshot_id": "2026-w06-20261018T151704Z-freeze",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/b411aac2936b88a6f72f07b9ad4e0630b6d4ebc9/docs/weekly-dfs/codex/2026/week-06/freeze/20261018T151704Z.md"
+        }
+      ],
+      "original_evidence_cutoff": null,
+      "annotation_of": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/1179a3f1a6e8fa0e8acda7d2b923698fb19426c7/docs/weekly-dfs/codex/2026/week-06/reviews/2026-10-19.md",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4b11353adbbe84048c25b2c348188ba7886f0d84/docs/weekly-dfs/codex/journal/20261020T131310Z.md"
+    }
+  ],
+  "arena": {
+    "protocol_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4b11353adbbe84048c25b2c348188ba7886f0d84/docs/weekly-dfs/codex/ARENA_V1.md",
+    "effective_slate_date": "2026-10-25",
+    "deadline_timezone": "America/Toronto",
+    "sunday_deadline": "12:30",
+    "deadline_rule": "Sunday 12:30 p.m. America/Toronto or before first included kickoff if earlier; finish before this deadline.",
+    "historical_deadline_note": "Week6 noon and original early Week7 deadline fields are preserved; journal setup did not revise selections."
+  }
 }
