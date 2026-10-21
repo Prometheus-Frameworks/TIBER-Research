@@ -1,9 +1,9 @@
 {
   "schema_version": "tiber-dfs-site/v1",
-  "updated_at": "2026-10-20T13:16:19.729Z",
+  "updated_at": "2026-10-21T10:29:44.348Z",
   "title": "TIBER DFS Research Arena",
   "timezone": "America/Toronto",
-  "next_scheduled_date": "2026-10-21",
+  "next_scheduled_date": "2026-10-22",
   "research_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43",
   "protocol_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/codex/weekly-dfs-2026-week-06/docs/weekly-dfs/codex/EXPERIMENT.md",
   "snapshots": [
@@ -1940,9 +1940,299 @@
         "Pollard receiving floor is weak; no verified Week7 snap-share guarantee or calibrated matchup forecast.",
         "Seven holds rely partly on explicitly retained prior-game evidence; this was not a fresh full-league availability audit."
       ]
+    },
+    {
+      "id": "2026-w07-2026-10-21-daily",
+      "date": "2026-10-21",
+      "recorded_at": "2026-10-21T10:26:33.332Z",
+      "time_precision": "exact",
+      "order": 1,
+      "label": "Wednesday daily draft",
+      "kind": "daily",
+      "status": "complete",
+      "season": 2026,
+      "week": 7,
+      "slate_date": "2026-10-25",
+      "slate_label": "Sunday main, draft group 155198",
+      "platform": "DraftKings",
+      "salary_cap": 50000,
+      "salary_total": 49400,
+      "salary_remaining": 600,
+      "projected_total": 133.1,
+      "actual_total": null,
+      "frozen": false,
+      "official_pool_verified": true,
+      "projection": {
+        "provider": "Splash Play",
+        "model": "SPAGS",
+        "scoring": "DraftKings NFL Classic",
+        "as_of": "2026-10-20T23:53:00-04:00",
+        "as_of_precision": "minute",
+        "source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+        "published_date": "2026-10-20",
+        "observed_at": "2026-10-21T10:19:53.427Z",
+        "checked_on": "2026-10-21",
+        "note": "All nine values from one inspected Week7 DK main-slate table and one declared as-of snapshot. External estimates, not actual scores, independent certification or a TIBER Forecast. First attached to this new daily snapshot; no earlier record backfill."
+      },
+      "picks": [
+        {
+          "slot": "QB",
+          "position": "QB",
+          "player": "C.J. Stroud",
+          "team": "HOU",
+          "opponent": "NYG",
+          "home": true,
+          "salary": 5700,
+          "draftkings_player_id": "44556892",
+          "eligible_slots": [
+            "QB"
+          ],
+          "game_info": "NYG@HOU 10/25/2026 01:00PM ET",
+          "official_export_status": null,
+          "projected_points": 19.2,
+          "actual_points": null,
+          "rationale": "Hold Stroud at $5,700. The freshly inspected Giants tracker documents 1,714 season passing yards and Houston's two-game recovery; he remains unpaired with a Texans receiver. This is not a claim that a favorable game script is guaranteed.",
+          "source_ids": [
+            "S1",
+            "S11",
+            "S12"
+          ],
+          "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198",
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+          "projection_player_url": "https://splashplaypodcast.com/dfs/nfl/players/cj-stroud/"
+        },
+        {
+          "slot": "RB",
+          "position": "RB",
+          "player": "Chuba Hubbard",
+          "team": "CAR",
+          "opponent": "TB",
+          "home": true,
+          "salary": 6700,
+          "draftkings_player_id": "44556964",
+          "eligible_slots": [
+            "RB",
+            "FLEX"
+          ],
+          "game_info": "TB@CAR 10/25/2026 01:00PM ET",
+          "official_export_status": null,
+          "projected_points": 20.2,
+          "actual_points": null,
+          "rationale": "Hold the $6,700 allocation and prior observed 28-carry, 120-yard role evidence. This pass did not establish a new Carolina role change; final Week7 availability remains unverified.",
+          "source_ids": [
+            "S1",
+            "P1",
+            "S12"
+          ],
+          "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198",
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+          "projection_player_url": "https://splashplaypodcast.com/dfs/nfl/players/chuba-hubbard/"
+        },
+        {
+          "slot": "RB",
+          "position": "RB",
+          "player": "Tony Pollard",
+          "team": "TEN",
+          "opponent": "CLE",
+          "home": true,
+          "salary": 5300,
+          "draftkings_player_id": "44556994",
+          "eligible_slots": [
+            "RB",
+            "FLEX"
+          ],
+          "game_info": "CLE@TEN 10/25/2026 01:00PM ET",
+          "official_export_status": null,
+          "projected_points": 12.4,
+          "actual_points": null,
+          "rationale": "Hold Pollard's $5,300 rushing-role allocation provisionally: fresh game log shows 14,17,16,14,19 carries after the opener, but zero catches in each of the last two games. Cleveland's defensive resistance and shared Pollard/Titans script exposure make this the weakest hold.",
+          "source_ids": [
+            "S1",
+            "S5",
+            "S9",
+            "S10",
+            "S12"
+          ],
+          "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198",
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+          "projection_player_url": "https://splashplaypodcast.com/dfs/nfl/players/tony-pollard/"
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "Puka Nacua",
+          "team": "LAR",
+          "opponent": "LV",
+          "home": false,
+          "salary": 8400,
+          "draftkings_player_id": "44557184",
+          "eligible_slots": [
+            "WR",
+            "FLEX"
+          ],
+          "game_info": "LAR@LV 10/25/2026 04:25PM ET",
+          "official_export_status": null,
+          "projected_points": 23.9,
+          "actual_points": null,
+          "rationale": "Hold Puka at $8,400 after official confirmation Adams will miss time. A central receiving role is a more defensible inference than assuming all vacated targets transfer to him; added coverage attention and a weaker supporting offense remain counterarguments.",
+          "source_ids": [
+            "S1",
+            "S6",
+            "S7",
+            "S8",
+            "S12"
+          ],
+          "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198",
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+          "projection_player_url": "https://splashplaypodcast.com/dfs/nfl/players/puka-nacua/"
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "Malik Nabers",
+          "team": "NYG",
+          "opponent": "HOU",
+          "home": false,
+          "salary": 6800,
+          "draftkings_player_id": "44557202",
+          "eligible_slots": [
+            "WR",
+            "FLEX"
+          ],
+          "game_info": "NYG@HOU 10/25/2026 01:00PM ET",
+          "official_export_status": null,
+          "projected_points": 16.2,
+          "actual_points": null,
+          "rationale": "Hold Nabers at $6,800. Official tracker records 29 catches/398 yards over three games but still contains no starting-QB announcement. Keep the target-role case separate from a claimed McCarthy upgrade.",
+          "source_ids": [
+            "S1",
+            "S11",
+            "S12"
+          ],
+          "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198",
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+          "projection_player_url": "https://splashplaypodcast.com/dfs/nfl/players/malik-nabers/"
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "Chris Godwin Jr.",
+          "team": "TB",
+          "opponent": "CAR",
+          "home": false,
+          "salary": 4300,
+          "draftkings_player_id": "44557250",
+          "eligible_slots": [
+            "WR",
+            "FLEX"
+          ],
+          "game_info": "TB@CAR 10/25/2026 01:00PM ET",
+          "official_export_status": null,
+          "projected_points": 9.4,
+          "actual_points": null,
+          "rationale": "Hold Godwin at $4,300 on the prior eight-target involvement case. No fresh role-changing report established in this focused pass; QB and target-allocation uncertainty remain.",
+          "source_ids": [
+            "S1",
+            "P1",
+            "S12"
+          ],
+          "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198",
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+          "projection_player_url": "https://splashplaypodcast.com/dfs/nfl/players/chris-godwin-jr/"
+        },
+        {
+          "slot": "TE",
+          "position": "TE",
+          "player": "Sam LaPorta",
+          "team": "DET",
+          "opponent": "GB",
+          "home": true,
+          "salary": 4800,
+          "draftkings_player_id": "44557574",
+          "eligible_slots": [
+            "TE",
+            "FLEX"
+          ],
+          "game_info": "GB@DET 10/25/2026 04:25PM ET",
+          "official_export_status": null,
+          "projected_points": 13.4,
+          "actual_points": null,
+          "rationale": "Hold LaPorta at $4,800 using the prior pre-bye involvement case and avoiding a second Giants receiver. The cheap Ferguson alternative is not usable in Week7: NFL reporting places IR return eligibility at Week8.",
+          "source_ids": [
+            "S1",
+            "S6",
+            "P1",
+            "S12"
+          ],
+          "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198",
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+          "projection_player_url": "https://splashplaypodcast.com/dfs/nfl/players/sam-laporta/"
+        },
+        {
+          "slot": "FLEX",
+          "position": "WR",
+          "player": "Keenan Allen",
+          "team": "IND",
+          "opponent": "MIN",
+          "home": false,
+          "salary": 4800,
+          "draftkings_player_id": "44557240",
+          "eligible_slots": [
+            "WR",
+            "FLEX"
+          ],
+          "game_info": "IND@MIN 10/25/2026 01:00PM ET",
+          "official_export_status": null,
+          "projected_points": 12.1,
+          "actual_points": null,
+          "rationale": "Hold Keenan at $4,800. Freshly inspected game log shows 9,9,11 targets in his last three appearances, strengthening the case beyond one game. The last two came in losses; no nine-target floor or full-route guarantee is assumed.",
+          "source_ids": [
+            "S1",
+            "S4",
+            "S12"
+          ],
+          "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198",
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+          "projection_player_url": "https://splashplaypodcast.com/dfs/nfl/players/keenan-allen/"
+        },
+        {
+          "slot": "DST",
+          "position": "DST",
+          "player": "Titans",
+          "team": "TEN",
+          "opponent": "CLE",
+          "home": true,
+          "salary": 2600,
+          "draftkings_player_id": "44557811",
+          "eligible_slots": [
+            "DST"
+          ],
+          "game_info": "CLE@TEN 10/25/2026 01:00PM ET",
+          "official_export_status": null,
+          "projected_points": 6.3,
+          "actual_points": null,
+          "rationale": "Hold Tennessee DST at $2,600 for salary/opponent context. Cleveland's official recap documents early offensive pressure and three first-half sacks, but later comeback success; pressure opportunities do not guarantee sacks or turnovers.",
+          "source_ids": [
+            "S1",
+            "S9",
+            "S10",
+            "S12"
+          ],
+          "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198",
+          "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+          "projection_player_url": "https://splashplaypodcast.com/dfs/nfl/players/titans-dst/"
+        }
+      ],
+      "summary": "Hold all nine at$49,400/$600left. Keenan's target case now has three-appearance support; Pollard's low receiving role remains the weakest hold. Reject Ferguson forWeek7, watch Mumpfield without assuming inherited targets. First qualified Week7 SPAGS snapshot:133.1 external projected points; no historical backfill.",
+      "counterargument": "The external model favors Braelon17.3 over Pollard12.4 for exactly the unused$600. If Hall remains out, retaining Pollard may discard the better opportunity. Pollard has no catches in two games and Cleveland's defensive resistance adds risk; Pollard plus Titans DST share game-script exposure. Mumpfield could exceed the cautious role view at a much lower price. Puka's opportunity may rise while offensive efficiency falls.",
+      "revisions": [],
+      "revision_classification": "unchanged",
+      "previous_snapshot_id": "2026-w07-2026-10-20-daily",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2e951cf9d88a23a1ea5b1dc6b2dff8a323ccfe88/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-21.md",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198"
     }
   ],
-  "archive_commit": "4b11353adbbe84048c25b2c348188ba7886f0d84",
+  "archive_commit": "6af577d7a69f1ed7d3c34ccdbe6bbfdea06f14ce",
   "journal": [
     {
       "kind": "later_annotation",
@@ -2244,6 +2534,269 @@
       "original_evidence_cutoff": null,
       "annotation_of": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/1179a3f1a6e8fa0e8acda7d2b923698fb19426c7/docs/weekly-dfs/codex/2026/week-06/reviews/2026-10-19.md",
       "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4b11353adbbe84048c25b2c348188ba7886f0d84/docs/weekly-dfs/codex/journal/20261020T131310Z.md"
+    },
+    {
+      "kind": "scheduled_research",
+      "recorded_at": "2026-10-21T10:28:57.483Z",
+      "recorded_at_toronto": "2026-10-21T06:28:57.483-04:00",
+      "research_at": "2026-10-21T10:17:37.677Z",
+      "snapshot_ids": [
+        "2026-w07-2026-10-21-daily"
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w07-2026-10-21-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2e951cf9d88a23a1ea5b1dc6b2dff8a323ccfe88/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-21.md"
+        }
+      ],
+      "outcomes": [],
+      "previous_snapshot_id": "2026-w07-2026-10-20-daily",
+      "evidence_cutoff": "2026-10-21T10:26:33.332Z",
+      "id": "2026-w07-1021-targets-and-carries",
+      "origin": "agent_chosen",
+      "origin_note": "Selected from the retained journal's unresolved role questions under the standing assignment. Prior positive feedback did not determine retention.",
+      "title": "Keenan's repeat involvement; Pollard's receiving gap",
+      "question": "Does the evidence beyond last week support retaining these two salary slots?",
+      "why_it_matters": "Tuesday's replacements were based partly on single-game opportunity. Repeated involvement and the kind of touches matter under full PPR.",
+      "findings": [
+        "Keenan's inspected log shows9,9,11 targets over his last three appearances, spanning a win and two losses. That supports involvement beyond one game but does not establish a weekly target floor.",
+        "Pollard's last five carry totals after Week1 are14,17,16,14,19. His last two games have no catches on one target each; the selection primarily purchases rushing opportunity.",
+        "Cleveland's recap shows defensive resistance after Baltimore's opening two drives, while its own offense conceded three first-half sacks. Neither fact is a league-adjusted Week7 prediction.",
+        "The current same-model table favors Braelon17.3 versus Pollard12.4. The $600 switch fits exactly at$50,000, but Hall remainsQ and the table's split assumptions are unknown."
+      ],
+      "interpretation": "Hold Keenan with stronger historical involvement support. Retain Pollard provisionally for the observed rushing lead, while reducing confidence in any PPR-floor description. A contrary model estimate is a useful challenge, not a substitute for qualifying availability.",
+      "alternatives": [
+        "Braelon for Pollard uses the full$600 remaining and may be preferable if Hall is ruled out.",
+        "A more expensive RB requires a receiving/other-slot saving; cheaper uncertain volume can merely relocate the same role risk."
+      ],
+      "uncertainty": [
+        "Keenan's passing volume, health and route share versus Minnesota remain uncertain; no route metric was retrieved.",
+        "Pollard/Spears allocation and Cleveland injured defenders' final status remain unresolved.",
+        "External model assumptions about Hall are not disclosed by the inspected table."
+      ],
+      "lineup_effect": "No player changes: $49,400/$600left. Keep Keenan and Pollard; retain the weakness openly. Pollard plus Titans DST share exposure to favorable Tennessee game conditions. One coherent SPAGS snapshot now provides133.1 external projected total on this new record only.",
+      "change_triggers": [
+        "Official Hall absence returns Braelon to serious consideration at exactly$50,000; return/split evidence determines whether that alternative's model estimate applies.",
+        "Verified Colts role/availability change weakens Keenan; current three-game involvement is evidence, not a floor."
+      ],
+      "carry_forward": [
+        "Check Hall's official Week7 participation/status before deciding whether the exactly$50,000 Braelon alternative is better supported.",
+        "Compare Keenan's role with team pass volume and other Colts targets; do not demand a repeated9-target minimum.",
+        "Evaluate Pollard's rushing opportunity separately from efficiency, TDs and receiving production after games.",
+        "Provisional research lesson: same salary or legal budget does not make two opportunity assumptions equally sound."
+      ],
+      "expectations": [
+        {
+          "id": "2026-w07-1021-keenan-role",
+          "subject": "Keenan Allen",
+          "statement": "If healthy, Keenan remains a central Colts receiving option rather than being displaced into a marginal target role.",
+          "support": "Last three appearances show9,9,11 targets in the inspected data log.",
+          "uncertainty": "Passing volume, coverage and health may change. No repeated9-target floor asserted.",
+          "challenge": "A reduced role, missed time or other receivers clearly taking priority would challenge the rationale.",
+          "observe": "Compare targets and catches with team pass attempts and other receivers. Use route/snap evidence only if actually accessible; otherwise leave it unassessable.",
+          "source_urls": [
+            "https://www.espn.com/nfl/player/gamelog/_/id/15818/keenan-allen"
+          ],
+          "recorded_at": "2026-10-21T10:26:33.332Z"
+        },
+        {
+          "id": "2026-w07-1021-pollard-role",
+          "subject": "Tony Pollard",
+          "statement": "If available, Pollard retains the lead share of Titans RB carries; the selection does not depend on a newly expanded receiving role.",
+          "support": "The game log shows14,17,16,14,19 carries after Week1 and no catches in the last two games.",
+          "uncertainty": "Game script and Spears usage may reduce carries. Cleveland defensive resistance remains a risk.",
+          "challenge": "Spears or another RB taking the rushing lead, or Pollard losing meaningful participation, would undermine the hold.",
+          "observe": "Compare each Titans RB's carries, targets and receiving work; separate opportunity from rushing efficiency/TDs. Examine script only with inspected play evidence.",
+          "source_urls": [
+            "https://www.espn.com/nfl/player/gamelog/_/id/3916148/tony-pollard",
+            "https://www.clevelandbrowns.com/news/browns-13-ravens-10-final-score-stats-game-recap"
+          ],
+          "recorded_at": "2026-10-21T10:26:33.332Z"
+        }
+      ],
+      "sources": [
+        {
+          "id": "S1",
+          "label": "Official DraftKings salary/slate export",
+          "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198",
+          "retrieved_at": "2026-10-21T10:18:30.904Z",
+          "publication_at": null,
+          "scope": "Official group155198: 513 rows and same ten games; player listing/status is not final medical clearance."
+        },
+        {
+          "id": "S4",
+          "label": "Keenan ESPN game log",
+          "url": "https://www.espn.com/nfl/player/gamelog/_/id/15818/keenan-allen",
+          "retrieved_at": "2026-10-21T10:19:55.232Z",
+          "publication_at": null,
+          "scope": "Current ESPN data log: last three appearances 9,9,11 targets. Source publication/update instant not established."
+        },
+        {
+          "id": "S5",
+          "label": "Pollard ESPN game log",
+          "url": "https://www.espn.com/nfl/player/gamelog/_/id/3916148/tony-pollard",
+          "retrieved_at": "2026-10-21T10:19:52.203Z",
+          "publication_at": null,
+          "scope": "Current ESPN data log: last two games 14/52 and19/76 rushing with zero catches each. Historical usage, not future volume."
+        },
+        {
+          "id": "S9",
+          "label": "Official Browns recap",
+          "url": "https://www.clevelandbrowns.com/news/browns-13-ravens-10-final-score-stats-game-recap",
+          "retrieved_at": "2026-10-21T10:21:40.522Z",
+          "publication_at": null,
+          "scope": "Official recap: Browns defense shut out BAL after first two drives; CLE offense allowed3 first-half sacks; no league-wide matchup ranking inferred."
+        },
+        {
+          "id": "S10",
+          "label": "Official unofficial Week7 depth chart",
+          "url": "https://www.clevelandbrowns.com/news/browns-announce-unofficial-depth-chart-for-week-7-vs-the-titans",
+          "retrieved_at": "2026-10-21T10:21:40.906Z",
+          "publication_at": null,
+          "scope": "Unofficial team chart, injured parentheses on Graham/Delpit; not a Friday game designation."
+        },
+        {
+          "id": "S12",
+          "label": "SPAGS Week7 model snapshot",
+          "url": "https://splashplaypodcast.com/dfs/nfl/players/",
+          "retrieved_at": "2026-10-21T10:19:53.427Z",
+          "publication_at": null,
+          "scope": "One Week7 DK model snapshot as of October20 11:53PM ET. Published day and model-as-of are distinct from retrieval."
+        }
+      ],
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6af577d7a69f1ed7d3c34ccdbe6bbfdea06f14ce/docs/weekly-dfs/codex/journal/20261021T102633Z.md"
+    },
+    {
+      "kind": "scheduled_research",
+      "recorded_at": "2026-10-21T10:28:57.483Z",
+      "recorded_at_toronto": "2026-10-21T06:28:57.483-04:00",
+      "research_at": "2026-10-21T10:17:37.677Z",
+      "snapshot_ids": [
+        "2026-w07-2026-10-21-daily"
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w07-2026-10-21-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2e951cf9d88a23a1ea5b1dc6b2dff8a323ccfe88/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-21.md"
+        }
+      ],
+      "outcomes": [],
+      "previous_snapshot_id": "2026-w07-2026-10-20-daily",
+      "evidence_cutoff": "2026-10-21T10:26:33.332Z",
+      "id": "2026-w07-1021-vacated-opportunity",
+      "origin": "mixed",
+      "origin_note": "The Rams priority overlaps previously available operator-supplied injury/alternative context. Source checks, competing explanations, salary comparisons and the decision to hold were agent-selected. No new instruction to select or retain any player.",
+      "title": "Vacated opportunity is not an automatic replacement role",
+      "question": "Do the cheap Rams alternatives justify changing this whole lineup, and does Giants QB uncertainty change Nabers?",
+      "why_it_matters": "The low price of a listed player can distract from actual availability or uncertain target distribution. Role assumptions affect concentration as well as cost.",
+      "findings": [
+        "The official Rams update confirms Adams6-10weeks. NFL reporting states Ferguson cannot come offIR untilWeek8; the official salary pool also marks himIR.",
+        "Mumpfield is priced$3,200. FTN attributes27snaps/3targets toWeek6 and notes Atwell, Whittington and TEs as competing recipients. Those figures are attributed secondary analysis, not independently verified route data.",
+        "The model table has no inspected coherent projection for Mumpfield. No zero or agent-invented estimate was substituted.",
+        "The official Giants tracker still describes an unresolved QB decision and records Nabers29catches/398yards across three games. No confirmed McCarthy start or measured receiver-specific uplift established."
+      ],
+      "interpretation": "Keep Puka as the established Rams receiving choice without assuming he absorbs all Adams targets. Watch Mumpfield rather than replacing stronger observed Colts involvement with an unverified role. Exclude Ferguson fromWeek7 consideration. Keep Nabers on involvement evidence, not a desperation-quarter quarterback extrapolation.",
+      "alternatives": [
+        "Mumpfield for Keenan lowers lineup cost to$47,800/$2,200left, but adds a second Rams receiver and allocation uncertainty; no automatic upgrade is claimed.",
+        "Ferguson for LaPorta would lower cost to$47,100/$2,900left, but is rejected as unavailable forWeek7.",
+        "A supported later rotation/availability report could justify reallocating savings across RB and WR, rather than evaluating a cheap receiver in isolation."
+      ],
+      "uncertainty": [
+        "Actual Rams post-Adams rotation, Atwell availability and coverage allocation remain unresolved.",
+        "Loss of Adams can increase Puka's opportunity while reducing offensive efficiency; no net point uplift is invented.",
+        "Giants starter/protection decision still open in the inspected tracker."
+      ],
+      "lineup_effect": "Hold Puka/Nabers/LaPorta/Keenan and the other five. No new Rams stack or cheap-IR substitution. All nine original salaries stay at$49,400. The strongest countercase remains a better qualified RB alternative plus a cheaper receiving role.",
+      "change_triggers": [
+        "Rams rotation/Atwell reports establish an actual receiving role for Mumpfield; Ferguson remains excluded from thisWeek7 candidate set.",
+        "Giants QB/protection news changes Nabers risk without treating desperation volume as normal."
+      ],
+      "carry_forward": [
+        "Revisit Mumpfield only when a substantiated role or actual rotation supports the salary tradeoff; more vacated snaps are not guaranteed targets.",
+        "Ferguson is a separate Week8 question, not an eligibleWeek7 fix.",
+        "Observe Nabers' actual QB and targets; a later substitution is a condition to evaluate, not a retroactive pregame justification.",
+        "Source-quality note: FTN's15-point Rams statement conflicts with the official16; use the official result."
+      ],
+      "expectations": [
+        {
+          "id": "2026-w07-1021-puka-role",
+          "subject": "Puka Nacua",
+          "statement": "With Adams unavailable, Puka remains a central Rams receiving option; vacated production will not be treated as a one-for-one transfer.",
+          "support": "Team confirms Adams' extended absence; NFL report identifies Puka's continuing major receiving role.",
+          "uncertainty": "Coverage concentration and offensive efficiency can offset additional opportunity.",
+          "challenge": "A role reduction or a documented redistribution that removes his central involvement would challenge the allocation.",
+          "observe": "Compare target involvement across Rams receivers and tight ends, then efficiency and scoring. Coverage mechanism remains unassessable without eligible charting.",
+          "source_urls": [
+            "https://www.therams.com/news/rams-injury-updates-cardinals-week-6-2026-blake-grupe-torn-acl-out-for-season-poona-ford-davante-adams-kobie-turner-trent-mcduffie-raiders",
+            "https://www.nfl.com/news/davante-adams-hamstring-expected-to-miss-6-10-weeks-as-injuries-pile-up-rams"
+          ],
+          "recorded_at": "2026-10-21T10:26:33.332Z"
+        },
+        {
+          "id": "2026-w07-1021-nabers-role",
+          "subject": "Malik Nabers",
+          "statement": "Nabers retains central receiving involvement despite the unresolved quarterback situation.",
+          "support": "Official tracker documents29 catches398yards across the last three games.",
+          "uncertainty": "QB decision, protection and game script may alter ordinary passing volume.",
+          "challenge": "Availability/role changes or a substantially redistributed passing game would challenge keeping this salary slot.",
+          "observe": "Inspect actual starting QB and substitutions, receiver targets and game conditions. Do not retroactively use relief-quarter success to justify the pregame choice.",
+          "source_urls": [
+            "https://www.giants.com/news/week-7-tracker-latest-news-notes-roster-moves-houston-texans-jameis-winston-jj-mccarthy"
+          ],
+          "recorded_at": "2026-10-21T10:26:33.332Z"
+        }
+      ],
+      "sources": [
+        {
+          "id": "S1",
+          "label": "Official DraftKings salary/slate export",
+          "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198",
+          "retrieved_at": "2026-10-21T10:18:30.904Z",
+          "publication_at": null,
+          "scope": "Official group155198: 513 rows and same ten games; player listing/status is not final medical clearance."
+        },
+        {
+          "id": "S6",
+          "label": "NFL Rams injury reporting",
+          "url": "https://www.nfl.com/news/davante-adams-hamstring-expected-to-miss-6-10-weeks-as-injuries-pile-up-rams",
+          "retrieved_at": "2026-10-21T10:19:57.081Z",
+          "publication_at": null,
+          "scope": "NFL reporting attributes Adams absence to coach and Ferguson eligibility to Week8. Exact publication instant unavailable."
+        },
+        {
+          "id": "S7",
+          "label": "Official Rams injury update",
+          "url": "https://www.therams.com/news/rams-injury-updates-cardinals-week-6-2026-blake-grupe-torn-acl-out-for-season-poona-ford-davante-adams-kobie-turner-trent-mcduffie-raiders",
+          "retrieved_at": "2026-10-21T10:22:07.294Z",
+          "publication_at": null,
+          "scope": "Displayed team clock; timezone not printed. Direct team confirmation Adams6-10weeks."
+        },
+        {
+          "id": "S8",
+          "label": "FTN attributed Rams analysis",
+          "url": "https://ftnfantasy.com/davante-adams-injury-fantasy-football-2026",
+          "retrieved_at": "2026-10-21T10:19:52.918Z",
+          "publication_at": null,
+          "scope": "Attributed FTN interpretation/snaps, not an independently verified chart. Its 15-point Rams claim conflicts with official16; reject that claim."
+        },
+        {
+          "id": "S11",
+          "label": "Official Giants tracker",
+          "url": "https://www.giants.com/news/week-7-tracker-latest-news-notes-roster-moves-houston-texans-jameis-winston-jj-mccarthy",
+          "retrieved_at": "2026-10-21T10:22:17.462Z",
+          "publication_at": null,
+          "scope": "Tracker includes Monday QB decision still pending, Nabers recent production and Dell planned return. No new starter inferred."
+        },
+        {
+          "id": "S12",
+          "label": "SPAGS Week7 model snapshot",
+          "url": "https://splashplaypodcast.com/dfs/nfl/players/",
+          "retrieved_at": "2026-10-21T10:19:53.427Z",
+          "publication_at": null,
+          "scope": "One Week7 DK model snapshot as of October20 11:53PM ET. Published day and model-as-of are distinct from retrieval."
+        }
+      ],
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6af577d7a69f1ed7d3c34ccdbe6bbfdea06f14ce/docs/weekly-dfs/codex/journal/20261021T102633Z.md"
     }
   ],
   "arena": {
