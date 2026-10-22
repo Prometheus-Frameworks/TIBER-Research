@@ -1,14 +1,16 @@
-# Codex weekly DFS notebook
+# TIBER weekly DFS notebook
 
-**Start each pass with [Codex Research Arena v1](ARENA_V1.md), then the source and scoring boundaries in [EXPERIMENT.md](EXPERIMENT.md).**
+**Start each pass with [Claude + Codex collaboration v1](COLLABORATION_V1.md), [Arena v1](ARENA_V1.md), and the source and scoring boundaries in [EXPERIMENT.md](EXPERIMENT.md).**
 
-Codex chooses useful football questions and alternatives within the standing assignment; no new operator shortlist or per-pick approval is needed. No quotas for questions, revisions or lessons. This is the existing Codex-only arena.
+From October 22, 2026, the standing workflow is **separate Claude and Codex v1s → third-model questions → joint revision → one shared Sunday submission**. Codex remains the final editor and executor of the existing scheduled tasks. Claude contributions currently arrive through the operator; the third model is still to be selected. The [collaboration protocol](COLLABORATION_V1.md) records attribution, missing-input behavior and the distinction between this workflow and automated provider execution.
+
+Codex chooses useful football questions and alternatives within the standing assignment; no new operator shortlist or per-pick approval is needed. No quotas for questions, revisions or lessons.
 
 **From the October 25, 2026 slate:** freeze by Sunday **12:30 p.m. America/Toronto**, or before the first included kickoff if earlier. The existing Sunday run remains around 10:30 a.m. and must finish before the deadline. Historical Week 6 noon and early Week 7 fields remain unchanged.
 
 Read [the journal convention](SITE_FEED.md#research-journal-extension) and the relevant [retained journal](journal/) before choosing research priorities. Carry applicable unresolved questions and provisional findings forward. Preserve expectations before freeze, then review opportunity, conditions, score causes and cutoff-grounded judgment separately.
 
-A public notebook for the [DFS Research Arena](EXPERIMENT.md): observe an agent
+A public notebook for the [DFS Research Arena](EXPERIMENT.md): observe agents
 researching a changing football environment under a salary budget and deadline.
 Preserve the daily choices, evidence, revisions, final freeze and later outcomes.
 The operator's objective is to study agent behavior; profit and contest entry
@@ -24,17 +26,21 @@ are outside the experiment.
 
 1. Establish the platform, exact slate, scoring rules, salary cap and information
    cutoff. State which of those were directly verified.
-2. Build v1 from current public evidence. Keep source observations, attributed
-   projections and Codex's own judgment distinguishable.
-3. Review salary allocation, role assumptions, injuries, slate eligibility and
-   concentration. This is a **self-review** unless a separately identified
-   reviewer actually reviews the entry.
-4. Preserve both drafts and every replacement with its reason. Check the roster,
-   arithmetic and available alternatives before recording v2.
-5. After the games, append dated results using verified DraftKings scoring.
-   Compare the same frozen players in v1 and v2. Explain role and opportunity
-   changes as well as points, and preserve misses.
-6. Carry a specific lesson or tool limitation into the next requested entry.
+2. Preserve Claude's and Codex's separate v1s with actual authorship, source
+   clocks and any known exposure to the other draft. For future slates, save
+   each v1 before inspecting the other's picks.
+3. Retain the named third model's material questions and exact input references.
+   If that contribution is absent, record the missing stage; self-review remains
+   self-review.
+4. Preserve the actual Claude/Codex responses, useful investigations, whole-lineup
+   alternatives, decisions and unresolved disagreements.
+5. Codex archives one supported Sunday final before the deadline, with its exact
+   contribution history and truthful shared or fallback label. Keep every
+   original draft and revision.
+6. After the games, compare the starting drafts and final using verified
+   DraftKings scoring and original salaries. Assess role assumptions and
+   cutoff-grounded judgment separately from points.
+7. Carry a specific, qualified lesson or tool limitation into the next entry.
 
 The October 17 follow-up requests daily research, a fixed final freeze and a
 score record. Two scheduled task configurations now support the cadence in
@@ -59,8 +65,8 @@ successful research run.
 
 ## How to evaluate the work
 
-Track both versions' actual points, points per $1,000 of salary, and the point
-difference attributable to each revision. Those comparisons describe this
+Track both authors' starting drafts and the final selection's actual points,
+points per $1,000 of salary, and the point difference attributable to each revision. Those comparisons describe this
 experiment; they do not establish predictive skill after one week.
 
 For each important assumption, ask whether the expected role materialized, whether

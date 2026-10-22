@@ -161,3 +161,42 @@ Scoring still uses the existing exact-rule source/bonus/DST convention; keep sco
 The initial 20261020T131310Z journal is a later setup annotation of retained Tuesday/Monday decisions and the existing Week6 review. Its own clock does not alter their cutoffs or claim a new investigation.
 
 The one-time October20 Site implementation does not expand scheduled authority: future runs only maintain documentation, dated journal records and the guarded display feed. No app code/deployment, Claude dispatch, new schedule or integration.
+
+## Collaboration display
+
+From October 22, 2026, [Claude + Codex collaboration v1](COLLABORATION_V1.md)
+governs prospective participation and final ownership. Preserve historical
+snapshot authorship and dates. The existing feed schema can represent the
+new workflow through its current text fields:
+
+| Field | Use |
+|---|---|
+| `label` | Use `Shared final — Claude + Codex` only after an actual revision exchange; otherwise identify the Codex-authored candidate or fallback. |
+| `kind` | Keep `freeze` for the final selection; do not introduce a new enum. |
+| `status` | Describes roster completeness. A complete nine does not prove completed collaboration. |
+| `summary` | Name actual contributors and final editor, and state any missing question pass or other stage. |
+| `counterargument` | Preserve the strongest unresolved assumption or disagreement. |
+| `revisions` | Describe the actual version-to-version changes under the existing schema; compare with both starting drafts in the linked canonical record. |
+| `archive_url` | Immutable final notebook with the exact input references, contributions, stage status and chosen lineup. |
+
+Keep `frozen` true only for a valid final recorded before the applicable
+deadline. A shared final without third-model review must say that the review
+is missing. A fallback must not be presented as completed joint work.
+
+Use the existing journal fields for questions, responses and integration:
+`origin` remains one of the documented values, with `origin_note` naming
+the actual authors and material influence. Use `mixed` where the work
+combines operator and agent direction; it is not a new model-identity field.
+Choose `kind` from the existing enums according to how the work occurred.
+Include the exact final `snapshot_id` in a relevant entry's `snapshot_ids`
+so it appears with that selected lineup.
+
+The canonical notebook may hold more detailed contribution metadata; do not
+assume arbitrary new fields are rendered by the Site. Snapshot labels,
+summaries and linked journal entries convey shared authorship without changing
+the renderer. This does not establish that every static Site heading supports
+new author names.
+
+Archive first, verify immutable readback, then append to the complete feed and
+publish through the existing independently guarded branches. The collaboration
+workflow does not change feed publication scope or create model dispatch.

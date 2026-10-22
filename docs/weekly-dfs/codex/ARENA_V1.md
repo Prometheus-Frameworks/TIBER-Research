@@ -1,5 +1,7 @@
 # Codex Research Arena v1
 
+> **Participation update — October 22, 2026:** [Claude + Codex collaboration v1](COLLABORATION_V1.md) now governs separate starting drafts, third-model questions, joint revision and a shared Sunday final. It prospectively supersedes this document's Codex-only participation and single-author final-selection language. The dated v1 record below remains intact; its research, source, deadline and archival rules still apply.
+
 Effective October 20, 2026 at 08:22:23 America/Toronto
 (`2026-10-20T12:22:23Z`). The prospective deadline change first applies to the
 October 25, 2026 Sunday slate. This document supplements the retained
