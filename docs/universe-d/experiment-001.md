@@ -174,10 +174,18 @@ recovery claim is part of this experiment.
 
 Minimize mean training negative log likelihood plus
 `0.001 * sum(weight^2) / 2`, penalizing all learned weights. Start at zero;
-use deterministic full-batch gradient descent, step `0.10`, at most `2000`
+use deterministic full-batch gradient descent, step `0.10`, at most `10000`
 iterations, stopping at maximum absolute gradient `<= 0.001`. Record the final
 objective, gradient and iteration count. Nonconvergence blocks the support claim;
 do not confuse a weak optimizer with evidence that information is useless.
+
+**Pre-freeze implementation amendment, October 23:** the initial design cap was
+2,000 iterations. Implementation diagnostics on separate development worlds
+1001/1002 found that world 1001 reached that cap above the declared gradient
+tolerance. The implementation candidate raises only the cap to 10,000; the
+objective, step, tolerance, information sets and final-test population are
+unchanged. The initial diagnostics are retained in the implementation handoff.
+No benchmark test labels were generated or inspected to choose this amendment.
 
 Dev data diagnose numerical/convergence and gross feature problems. No
 hyperparameter search is part of v0. If the protocol needs revision, preserve
