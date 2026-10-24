@@ -31,6 +31,14 @@ Stage 1 preflight authority is recorded in
 - **Consumers pull:** no Research artifact grants Strategy, Forecast, product,
   publication, merge, or real-world action authority.
 
+## Universe D research design
+
+[`docs/universe-d/`](docs/universe-d/README.md) proposes a controlled synthetic
+football research track connected to Universe C. Experiment 001 specifies a
+route/coverage target-allocation recovery test and its smallest implementation.
+This is design documentation: no simulator, executed result, governed Research
+activation or production integration is included.
+
 ## Stage 0 surface
 
 ```text
