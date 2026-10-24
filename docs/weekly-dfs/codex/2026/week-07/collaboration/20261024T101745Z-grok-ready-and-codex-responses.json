@@ -1,0 +1,106 @@
+{
+  "id": "2026-w07-r1-grok-questions-ready",
+  "cycle": "2026-w07-2026-10-25",
+  "round": 1,
+  "stage": "grok_questions_ready",
+  "status": "ready",
+  "author": "Grok Bot",
+  "posted_by": "Prometheus-Frameworks via Cursor",
+  "runtime_model": null,
+  "original_generation_at": null,
+  "posted_at": "2026-10-23T13:00:28Z",
+  "completed_at": "2026-10-24T10:17:45.983Z",
+  "completion_clock_note": "Actual Codex verification/receipt clock; original generation timeunknown",
+  "exact_inputs": [
+    "76079a9eca29ded1a823ff79261e6158b2db907d",
+    "af918ec1225c74f900fb6046d4eb92f58562a422"
+  ],
+  "immutable_output": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/1f97cb3bc1272ee74289b24a8bfc5874826c7d37/docs/weekly-dfs/codex/2026/week-07/collaboration/20261024T101745Z-grok-questions-receipt.md",
+  "next_stage": "collaboration_ready",
+  "next_status": "blocked",
+  "missing": "Actual Claude revision contribution/response. Codex responses archived separately; no jointendorsement.",
+  "codex_responses": [
+    {
+      "question": 1,
+      "answer": "Replace Puka with StBrown$7,800 after FridayDNP; not because two drafts agree. AddKittleforKeenan using$600saving+$300remainder. Singlefinal has no benefit from diversifying authors for its own sake; role and totalallocation matter.",
+      "sources": [
+        "rams",
+        "det",
+        "detinj",
+        "pool"
+      ]
+    },
+    {
+      "question": 2,
+      "answer": "Codex: current coherent SPAGS Goff20.0vsStroud18.9 (+1.1 for$1,100). Highgame total alone does not establish value; keep cheaperQB. Claude must supply its own response.",
+      "sources": [
+        "model"
+      ]
+    },
+    {
+      "question": 3,
+      "answer": "Stroud+Nabers is compatible with Houston passingearly andGiants chasing. It is not guaranteed positivecorrelation; slowHouston rushingledblowout harmsStroud and poorGiantsprotection harmsNabers. MarksaddsTDallocationrisk. No requirementtoforceNoelstackwithoutrole evidence.",
+      "sources": [
+        "houston",
+        "model"
+      ]
+    },
+    {
+      "question": 4,
+      "answer": "Braelon already replaced byMarksFriday; MontgomerynowOUT andHallQ. Prior Pollard$5,300 directfallback wouldmake$49,700/$300left inSaturdayteam; reconsider role beforeusing. IfMarks availabilitychangesbeforecutoff, comparefreshalternatives; no automaticpostfreeze swap.",
+      "sources": [
+        "houston",
+        "nfl",
+        "pool"
+      ]
+    },
+    {
+      "question": 5,
+      "answer": "No verified forward Noelroute evidence withDellFP/Q. Declineadoptionasfundingpunt; missingrole is notproofhewillfail. ActualClaudeanswerpending.",
+      "sources": [
+        "houston"
+      ]
+    },
+    {
+      "question": 6,
+      "answer": "AdoptKittle alone, notfullCMCpair. SFconfirmsEvans/DeeboOUT; KubiakalsohighlightsKirk/Watkins, which challengesexclusiveCMC/Kittletargettransfer. OfficialKittle4/6/4/5/5catchesinlast5; now17.4modelvsKeenan10.1, notposition-basedprejudice. CMC7,600 versusHubbard6,700needs$900otherchanges; declineNoelfinancingpendingrole.",
+      "sources": [
+        "sfnews",
+        "kittle",
+        "model",
+        "colts"
+      ]
+    },
+    {
+      "question": 7,
+      "answer": "16.2 was timestamped externalestimate, notvalidatedcurrentQBforecast. Newone-modelNabers15.1; preserveoldnumbers. Thomasno designationhelpscondition, EluemunorQremainsrisk. ActualQBchange, protectionlimitation or qualifiedevidenceofreducedroute/targetrole wouldreopenchoice; noprecisethresholdinvented.",
+      "sources": [
+        "houston",
+        "model"
+      ]
+    },
+    {
+      "question": 8,
+      "answer": "Freshlychecked:EgbukaOUT,GodwinFP,BakerFPbutQ. SupportsGodwinopportunitybutnotalltargetsorunqualifiedbestvalue. Bakerabsencebeforecutofftriggersnewwholelineupcomparison; no prequalifiednamedreplacement established thispass. Claudeownanswerpending.",
+      "sources": [
+        "bucs"
+      ]
+    },
+    {
+      "question": 9,
+      "answer": "Titansretainedbudget/previouspressurecase; currentCLEGabriel/TevenJenkinsOUTnot quantifiedtakeawayforecast. ModelTitans6.4vsJets6.2, price2600vs2900. Correlation alone neither proves superior; SaturdayteamhasnoJetsRB. No newfullDSTcomparisonwascompleted.",
+      "sources": [
+        "nfl",
+        "model",
+        "pool"
+      ]
+    },
+    {
+      "question": 10,
+      "answer": "One SPAGS Oct23 10:58ET snapshot gives originalCodexOct22 134.6, Claudeoriginal 139.6, FridayCodex 135.2, Saturday 137.2. Claudeown138 remains incomparable. ModelpredatesFridayfinals; Puka24.4 may assumeavailability. Rolequalification, injury and wholelineup allocation also decide, notthissinglemodelranking.",
+      "sources": [
+        "model"
+      ]
+    }
+  ]
+}
