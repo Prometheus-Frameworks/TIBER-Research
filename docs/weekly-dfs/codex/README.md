@@ -1,10 +1,10 @@
 # TIBER weekly DFS notebook
 
-> **October 25 pilot carry-forward:** Grok's question stage is complete; Claude's substantive revision exchange is still missing as of the [dated handoff review](2026/week-07/collaboration/20261025T132034Z-pilot-handoff-review.md). Read its next-cycle practice before preparing the next starting pair. Grok Bot supersedes the earlier unselected-third-model language prospectively; original dated adoption notes remain intact.
+> **Week 8 handoff update — October 25, 2026:** Use the [collaboration protocol](COLLABORATION_V1.md) and [handoff template](HANDOFF_TEMPLATE.md) to apply the [completed pilot review](2026/week-07/collaboration/20261025T132034Z-pilot-handoff-review.md). The [Week 7 freeze receipt](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43#issuecomment-6399077833) records a Codex-authored fallback with Grok's question pass complete and the substantive Claude/Codex exchange missing. Preserve that record and apply the handoff improvements prospectively.
 
 **Start each pass with [Claude + Codex collaboration v1](COLLABORATION_V1.md), [Arena v1](ARENA_V1.md), and the source and scoring boundaries in [EXPERIMENT.md](EXPERIMENT.md).**
 
-From October 22, 2026, the standing workflow is **separate Claude and Codex v1s → third-model questions → joint revision → one shared Sunday submission**. Codex remains the final editor and executor of the existing scheduled tasks. Claude contributions currently arrive through the operator; the third model is still to be selected. The [collaboration protocol](COLLABORATION_V1.md) records attribution, missing-input behavior and the distinction between this workflow and automated provider execution.
+From October 22, 2026, the standing workflow is **separate Claude and Codex v1s → third-model questions → joint revision → one shared Sunday submission**. Codex remains the final editor and executor of the existing scheduled tasks. Claude contributions currently arrive through the operator; Grok Bot is the selected questioner. Use explicit, versioned handoffs and recipient acknowledgments where available; a posted notification is not proof of completed work. The [collaboration protocol](COLLABORATION_V1.md) records attribution, missing-input behavior and the distinction between this workflow and automated provider execution.
 
 Codex chooses useful football questions and alternatives within the standing assignment; no new operator shortlist or per-pick approval is needed. No quotas for questions, revisions or lessons.
 

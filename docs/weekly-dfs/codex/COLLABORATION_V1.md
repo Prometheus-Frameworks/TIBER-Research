@@ -1,6 +1,6 @@
 # Claude + Codex DFS collaboration v1
 
-> **October 25 pilot carry-forward:** Grok's question stage is complete; Claude's substantive revision exchange is still missing as of the [dated handoff review](2026/week-07/collaboration/20261025T132034Z-pilot-handoff-review.md). Read its next-cycle practice before preparing the next starting pair. Grok Bot supersedes the earlier unselected-third-model language prospectively; original dated adoption notes remain intact.
+> **Week 8 handoff update — October 25, 2026:** Apply the [completed pilot review](2026/week-07/collaboration/20261025T132034Z-pilot-handoff-review.md) through the explicit handoffs and [reusable template](HANDOFF_TEMPLATE.md) below. The [Week 7 freeze receipt](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43#issuecomment-6399077833) records a Codex-authored fallback: Grok completed its question pass; the substantive Claude/Codex revision exchange was absent. This update applies prospectively from Week 8; historical records, schedules and the Sunday freeze rule remain intact.
 
 Recorded October 22, 2026 at 09:59:52 America/Toronto
 (`2026-10-22T13:59:52Z`). Applies prospectively, beginning with the
@@ -19,12 +19,13 @@ These are hypothetical research submissions.
 
 ## Roles and handoffs
 
-| Stage | Work | Retained result |
+| Stage | Producer → intended recipient | Retained result / next action |
 |---|---|---|
-| Separate v1s | Claude and Codex each build a complete lineup and explain the important assumptions, alternatives and uncertainty. | Two attributed drafts with their original selections, evidence cutoffs and source references. |
-| Third-model questions | A separately identified model reads both drafts and challenges material assumptions, missing evidence and overlooked alternatives. | Its actual questions, the draft versions inspected, and any supporting evidence. |
-| Joint revision | Claude and Codex respond to the consequential questions, investigate where useful and compare complete lineup alternatives. | Their actual contributions, accepted or declined proposals, unresolved disagreements and a shared candidate. |
-| Sunday submission | Codex acts as final editor and archives one supported lineup with its contribution history. | One final freeze before the deadline, with truthful authorship and stage-completion status. |
+| `codex_v1_ready` | Codex → Claude through the current relay | Archive Codex v1; give Claude the versioned common inputs to prepare its own v1, withholding Codex picks until Claude v1 is saved where feasible. |
+| `claude_v1_ready` | Claude → Codex / actual relay, then Grok Bot | Archive Claude v1 with exposure disclosed. Once both originals exist, send Grok their immutable references plus separately dated current context. |
+| `grok_questions_ready` | Grok Bot → Claude and Codex | Archive Grok's actual prioritized questions; hand each author the same question IDs and exact current candidate for substantive replies. |
+| `collaboration_ready` | Claude ↔ Codex; Codex integrates | Retain each author's actual reply and the response to the other's material proposals, decisions and resulting exact candidate. A justified hold is valid. |
+| `final_frozen` | Codex → canonical notebook, then display | Archive one supported final before cutoff with truthful authorship, stage status, missing contributions and contribution references. |
 
 The third model's role is to ask useful questions. A central prompt is:
 **What are both drafts assuming that could be wrong, and what evidence would
@@ -39,11 +40,50 @@ Agreement by several models is not new football evidence. Codex remains
 responsible for the final record and deadline; the operator need not approve
 routine hypothetical picks.
 
+## A verifiable handoff
+
+Use [HANDOFF_TEMPLATE.md](HANDOFF_TEMPLATE.md) inside the existing dated
+collaboration records. A packet may reference an earlier common-input manifest
+rather than copy it. Give every request a unique week/round/stage/recipient ID.
+Retain the content author separately from the actual sender/poster and relay;
+record the intended recipient, exact inputs, actual clocks, expected output and
+next action. Use full commit/path locators or retained content with a verified
+digest; a branch name or mutable comment alone is not an exact input version.
+
+Keep these facts separate, with evidence or explicit `unknown`/`not received`:
+
+- **Prepared:** the packet and its exact inputs are archived.
+- **Posted/sent:** a destination, actual posting time and readback or delivery
+  receipt establish what was posted or sent. This establishes neither recipient
+  receipt nor execution.
+- **Acknowledged:** an attributable recipient reply identifies the handoff ID
+  and input versions it received. A relay's own notice is not that reply.
+- **Completed:** the recipient's substantive output is archived, attributable
+  and bound to the request and inspected inputs. An output can itself acknowledge
+  receipt; a separate acknowledgment is unnecessary when those facts are present.
+
+Track receipt and output separately for Claude and Codex when both are addressed.
+Keep stage `ready`/`partial`/`blocked` tied to the required work above, not a
+notification. A missing acknowledgment stays unknown; it neither proves failed
+delivery nor invalidates an otherwise attributable completed output. Keep the
+original request and append receipts, replies or corrections with actual clocks.
+Retry the same request ID by linking existing records; changed inputs or scope
+require a new round/version and a new acknowledgment. Do not replace originals.
+
+Use the existing daily runs/relay to surface the next missing contribution early.
+Aim for Grok's questions and both authors' substantive replies by Saturday,
+leaving time for an actual exchange before Sunday's final window. This is a
+working target, not a schedule change or an extension of the freeze deadline.
+If work is absent, record who needs which exact packet and the next relay/check
+action; never infer work from a notification or silently wait past cutoff.
+
 ## Separate starting drafts
 
 Use the same slate, roster rules and salary cap. Share a verified salary/pool
 snapshot when available and record any differences in source coverage or
-cutoff. Each author retains its own reasoning and candidate discovery.
+cutoff. A common-input manifest binds the slate/pool, salary snapshot, scoring
+rules, applicable lessons, source cutoff and actual freeze deadline. Unknown
+inputs stay explicit. Each author retains its own reasoning and candidate discovery.
 
 For future slates, each author should save its first complete v1 before reading
 the other's current-week picks. Shared rules and factual source material can
@@ -69,16 +109,54 @@ projections into a team total.
 
 ## Questions, responses and final integration
 
-Retain each third-model question with its actual author, time and the exact
-drafts it inspected. Another Codex subagent is not evidence that a distinct
-third model participated. Codex self-review may still help, but must be called
-self-review.
+### Grok Bot review instructions
+
+Give Grok both immutable originals, the common-input manifest and a separately
+dated delta packet identifying the current candidate, resolved assumptions,
+new evidence and its cutoff. Record exactly which inputs Grok actually inspected;
+later candidates are outside that pass unless explicitly included. Preserve the
+original drafts and questions verbatim, with attribution and actual/unknown clocks.
+
+Ask Grok to rank only questions with a plausible decision consequence; there is
+no count target. Prioritize consequential football assumptions (availability,
+role, QB, matchup or game script), missing or stale evidence, shared blind spots,
+and salary/package tradeoffs. For each question use the template's question ID,
+intended author(s), exact draft claim/version, evidence gap, decision that could
+change, and observation that would resolve it. Explain why it matters now and
+check whether the delta packet already resolves it; mark a still-useful historical
+clarification as such rather than implying the current candidate shares the flaw.
+
+When suggesting a replacement, use verified slate salaries and identify the
+funding move, net salary effect and remaining budget. A complete alternative
+requires nine eligible, unique selections; label an unverified price or incomplete
+package as a question, not an executable lineup. Spending all $50,000 is not a
+goal by itself. Compare projections only from one coherent snapshot, or state
+that a numerical comparison is unavailable.
+
+Separate **questions**, **opinions/interpretations** and **newly retrieved
+evidence**. Draft claims and premises embedded in questions are not verified
+facts. A new finding needs its source, publication/update time when available,
+retrieval time, applicable window and retained receipt; state what was actually
+learned. Out-of-packet evidence gets its own dated delta, never a retroactive
+addition to v1. If no fresh sources were inspected, say so. Grok supplies questions,
+not a third lineup or final endorsement by default; do not manufacture disagreement.
+
+Another Codex subagent is not evidence that a distinct third model participated.
+Codex self-review may still help, but must be called self-review.
+
+### Authors' replies and integration
 
 Claude and Codex can answer through the current relay process. Preserve their
 actual responses; do not write either author's agreement on its behalf.
-Record whether a material proposal was accepted, declined or remains
-unresolved, why, and what it changes in the whole lineup. New evidence and a
-changed interpretation remain distinguishable. A justified hold is valid.
+Each names the handoff, inspected candidate/version and material question or
+proposal IDs; records accept, decline, hold or unresolved with a reason; and
+links any new evidence separately from interpretation. A proposal includes its
+whole-lineup salary effect and a complete legal candidate if changing picks.
+The other author then responds to material proposals, including a reasoned hold.
+Codex retains the disposition and resulting immutable candidate, the source of
+each change (new evidence, changed interpretation or constraint correction), and
+the next unresolved action. Two isolated replies without an exchange do not
+establish joint revision.
 
 **Shared** means that both authors contributed to a substantive revision
 exchange and the final record explains how their work informed the integrated
@@ -129,8 +207,8 @@ The weekly collaboration record can be a lightweight dated notebook/journal
 entry. Include:
 
 - Immutable references to both starting drafts and later input versions.
-- Actual third-model identity or `to be selected`, its questions or an explicit
-  missing-stage note.
+- Grok Bot's actual questions or an explicit missing-stage note; exact runtime
+  identity remains unknown unless observed.
 - Attributed responses, material decisions and unresolved questions.
 - The current candidate and completion status of each stage.
 - For the freeze, the exact chosen lineup, final editor, contribution references,
@@ -155,12 +233,12 @@ The existing Codex daily and Sunday tasks perform Codex's research, respond to
 available contributions, preserve the next handoff, and archive/display the
 result. Their schedules and bounded research scope remain unchanged.
 
-Claude contributions currently arrive through the operator's relay. The
-**third model is to be selected** and its contribution channel is not yet
-configured. This document and the Codex task instructions establish the
-workflow; they do not create autonomous cross-provider execution. Do not claim
-an external model was dispatched, or a stage completed, without the actual
-contribution. No new schedule or provider integration is established here.
+Claude contributions currently arrive through the operator's relay; Grok Bot is
+the selected third-model questioner. Use the actual available relay and record
+its delivery evidence. No verified autonomous cross-provider delivery or provider
+subscription is established by this protocol. The documents and Codex task
+instructions do not dispatch external models. Completed work requires the actual
+contribution; no new schedule or provider integration is established here.
 
 Future scheduled writes continue to be documentation/data through the existing
 guarded notebook and stable-feed branches. Existing limits on production code,
