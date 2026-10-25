@@ -1,5 +1,7 @@
 # Claude + Codex DFS collaboration v1
 
+> **October 25 pilot carry-forward:** Grok's question stage is complete; Claude's substantive revision exchange is still missing as of the [dated handoff review](2026/week-07/collaboration/20261025T132034Z-pilot-handoff-review.md). Read its next-cycle practice before preparing the next starting pair. Grok Bot supersedes the earlier unselected-third-model language prospectively; original dated adoption notes remain intact.
+
 Recorded October 22, 2026 at 09:59:52 America/Toronto
 (`2026-10-22T13:59:52Z`). Applies prospectively, beginning with the
 October 25 Week 7 slate.
