@@ -1,0 +1,95 @@
+{
+  "record_type": "freeze_expectation_packet",
+  "assembled_at": "2026-10-25T14:45:00.295Z",
+  "note": "Original expectations copied without changing their IDs, statements or recorded_at; original notebook locators bound. No new historical expectations reconstructed.",
+  "expectations": [
+    {
+      "id": "2026-w07-1021-nabers-role",
+      "subject": "Malik Nabers",
+      "statement": "Nabers retains central receiving involvement despite the unresolved quarterback situation.",
+      "support": "Official tracker documents29 catches398yards across the last three games.",
+      "uncertainty": "QB decision, protection and game script may alter ordinary passing volume.",
+      "challenge": "Availability/role changes or a substantially redistributed passing game would challenge keeping this salary slot.",
+      "observe": "Inspect actual starting QB and substitutions, receiver targets and game conditions. Do not retroactively use relief-quarter success to justify the pregame choice.",
+      "source_urls": [
+        "https://www.giants.com/news/week-7-tracker-latest-news-notes-roster-moves-houston-texans-jameis-winston-jj-mccarthy"
+      ],
+      "recorded_at": "2026-10-21T10:26:33.332Z",
+      "original_notebook_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6af577d7a69f1ed7d3c34ccdbe6bbfdea06f14ce/docs/weekly-dfs/codex/journal/20261021T102633Z.md"
+    },
+    {
+      "id": "2026-w07-1022-nabers-qb-condition",
+      "subject": "Malik Nabers / Giants QB",
+      "statement": "McCarthy is expected to start; retaining Nabers relies on central receiving involvement, not extrapolating his relief-quarter passing yardage.",
+      "support": "Official Wednesday starter announcement plus retained Nabers involvement evidence.",
+      "uncertainty": "Play mix, protection and full-game target distribution under McCarthy remain unmeasured.",
+      "challenge": "Starter change or substantially reduced Nabers involvement challenges the condition/role premise.",
+      "observe": "Record starter and substitutions, team attempts and receiver targets; assess opportunity separately from yards/TDs.",
+      "source_urls": [
+        "https://www.giants.com/news/j-j-mccarthy-to-start-quarterback-new-york-giants-week-7-houston-texans-john-harbaugh-jameis-winston",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2e951cf9d88a23a1ea5b1dc6b2dff8a323ccfe88/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-21.md"
+      ],
+      "recorded_at": "2026-10-22T10:42:57.483Z",
+      "original_notebook_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/f3c55fd90a4f2e5aabd6f72dcb421fb79b751481/docs/weekly-dfs/codex/journal/20261022T104448Z.md"
+    },
+    {
+      "id": "2026-w07-1023-marks-role",
+      "subject": "Woody Marks",
+      "recorded_at": "2026-10-23T10:46:09.663Z",
+      "statement": "If Montgomery remains unavailable, Marks retains a leading Houston RB workload with some receiving involvement.",
+      "support": "Montgomery DNP both days; official Marks log shows15carries in each of last2games with4then2catches.",
+      "uncertainty": "Montgomery return, Jawhar Jordan, pass-heavy scripts and efficiency can reduce the expected benefit.",
+      "challenge": "Montgomery regains lead work or another back displaces Marks in carries/participation.",
+      "observe": "Check actual RB carries/targets, Montgomery availability, and separate volume from efficiency/TDs. Snaps/routes unassessable unless actually inspected.",
+      "source_urls": [
+        "https://www.houstontexans.com/news/week-7-injury-report-texans-vs-giants",
+        "https://www.houstontexans.com/team/players-roster/woody-marks/logs/"
+      ],
+      "original_notebook_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/26a5d9b495860eefd5ee8e1a778c00543766fa97/docs/weekly-dfs/codex/journal/20261023T105011Z.md"
+    },
+    {
+      "id": "2026-w07-1024-stbrown-role",
+      "subject": "Amon-Ra St. Brown",
+      "recorded_at": "2026-10-24T10:18:50.814Z",
+      "statement": "Retains a central Detroit receiving role, with LaPorta remaining a competing target.",
+      "support": "37catches infivegames;8then6lasttwo.",
+      "uncertainty": "Gibbs/Jamo/LaPorta andscriptcanredirectproduction.",
+      "challenge": "Reducedpassingparticipation or concentrationelsewhere.",
+      "observe": "Assessactualtargets/receptions/teamvolume;routesonlyifverified,efficiency/TDsseparate.",
+      "source_urls": [
+        "https://www.detroitlions.com/team/players-roster/amon-ra-st-brown/logs/",
+        "https://www.detroitlions.com/team/injury-report/"
+      ],
+      "original_notebook_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/49e6b65bde3d166cfda9de4d647babdf7d881f58/docs/weekly-dfs/codex/journal/20261024T102103Z.md"
+    },
+    {
+      "id": "2026-w07-1024-kittle-role",
+      "subject": "George Kittle",
+      "recorded_at": "2026-10-24T10:18:50.814Z",
+      "statement": "Remains a regular receiving contributor with opportunity from Evans/Deebo absence, without assuming allvacatedtargets.",
+      "support": "5catchesin eachlast2games;bothWRsOUT.",
+      "uncertainty": "Kirk/Watkins/CMC andblockingassignments canlimitbenefit.",
+      "challenge": "Otherreceivers absorbpassingwork orKittleprimarilyblocks.",
+      "observe": "Assessactualtargets/catches/teamvolume;qualifiedsnaps/routesifavailable,scorecausesseparate.",
+      "source_urls": [
+        "https://www.49ers.com/team/players-roster/george-kittle/logs/",
+        "https://www.49ers.com/news/49ers-rule-out-mike-evans-vs-falcons-christian-kirk-questionable-ahead-of-week-7-sfvsatl"
+      ],
+      "original_notebook_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/49e6b65bde3d166cfda9de4d647babdf7d881f58/docs/weekly-dfs/codex/journal/20261024T102103Z.md"
+    },
+    {
+      "id": "2026-w07-1024-godwin-condition",
+      "subject": "Chris Godwin Jr.",
+      "recorded_at": "2026-10-24T10:18:50.814Z",
+      "statement": "WithBakerplaying andEgbukaOUT, Godwinremains partofthepassingplan.",
+      "support": "GodwinFridayFP;EgbukaOUT;BakerFPbutQ.",
+      "uncertainty": "QBstatus andotherreceivers matter.",
+      "challenge": "Bakerabsence or reducedGodwinparticipation.",
+      "observe": "CheckactualQB,Godwintargets/catches/teamattempts,notjustfantasypoints.",
+      "source_urls": [
+        "https://www.buccaneers.com/team/injury-report/"
+      ],
+      "original_notebook_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/49e6b65bde3d166cfda9de4d647babdf7d881f58/docs/weekly-dfs/codex/journal/20261024T102103Z.md"
+    }
+  ]
+}
