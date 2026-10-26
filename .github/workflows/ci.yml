@@ -21,3 +21,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run check
+      - run: node --test tools/kicker-dst-streaming-v0/policy.test.mjs
+      - run: python3 -m zipfile -e docs/preparation/kicker-dst-streaming-2026-10-26/week08-input-readiness.zip /tmp/tiber-kdst-week08-replay
+      - run: python3 /tmp/tiber-kdst-week08-replay/public-inputs/validate_inputs.py
+      - run: python3 /tmp/tiber-kdst-week08-replay/verify_publication.py
