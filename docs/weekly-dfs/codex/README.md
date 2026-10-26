@@ -1,5 +1,7 @@
 # TIBER weekly DFS notebook
 
+> **Season study — from the Week 8 slate (November 1, 2026):** Read [SEASON_STUDY_V1.md](SEASON_STUDY_V1.md) with the collaboration protocol. It adds the fixed season questions, an optional operator seat, a smaller Claude reply round, a projection-only baseline and a five-line weekly scorecard. Earlier records stay unchanged.
+
 > **Week 8 handoff update — October 25, 2026:** Use the [collaboration protocol](COLLABORATION_V1.md) and [handoff template](HANDOFF_TEMPLATE.md) to apply the [completed pilot review](2026/week-07/collaboration/20261025T132034Z-pilot-handoff-review.md). The [Week 7 freeze receipt](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43#issuecomment-6399077833) records a Codex-authored fallback with Grok's question pass complete and the substantive Claude/Codex exchange missing. Preserve that record and apply the handoff improvements prospectively.
 
 **Start each pass with [Claude + Codex collaboration v1](COLLABORATION_V1.md), [Arena v1](ARENA_V1.md), and the source and scoring boundaries in [EXPERIMENT.md](EXPERIMENT.md).**
