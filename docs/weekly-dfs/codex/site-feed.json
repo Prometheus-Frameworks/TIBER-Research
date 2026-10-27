@@ -1,9 +1,9 @@
 {
   "schema_version": "tiber-dfs-site/v1",
-  "updated_at": "2026-10-26T11:04:19.100Z",
+  "updated_at": "2026-10-27T10:40:15.357Z",
   "title": "TIBER DFS Research Arena",
   "timezone": "America/Toronto",
-  "next_scheduled_date": "2026-10-27",
+  "next_scheduled_date": "2026-10-28",
   "research_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43",
   "protocol_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/codex/weekly-dfs-2026-week-06/docs/weekly-dfs/codex/EXPERIMENT.md",
   "snapshots": [
@@ -4319,9 +4319,132 @@
         "FLEX",
         "DST"
       ]
+    },
+    {
+      "id": "2026-w08-2026-10-27-daily",
+      "date": "2026-10-27",
+      "recorded_at": "2026-10-27T10:39:00.533Z",
+      "time_precision": "exact",
+      "order": 1,
+      "label": "Codex Week 8 — four priced picks, partial",
+      "kind": "daily",
+      "status": "partial",
+      "season": 2026,
+      "week": 8,
+      "slate_date": "2026-11-01",
+      "slate_label": "Week 8 — November 1 Sunday afternoon window, platform pool unverified",
+      "platform": "DraftKings",
+      "salary_cap": 50000,
+      "salary_total": 24900,
+      "salary_remaining": 25100,
+      "projected_total": null,
+      "actual_total": null,
+      "frozen": false,
+      "official_pool_verified": false,
+      "official_salary_export_verified": false,
+      "salary_basis": "reported_prices",
+      "eligibility_status": "official_pool_unverified",
+      "projection": {
+        "provider": "FantasySportsEdge",
+        "model": "provider's own NFL DFS projection model; version unspecified",
+        "scoring": "DraftKings NFL Classic",
+        "as_of": "2026-10-26T19:37:00-04:00",
+        "source_url": "https://fantasysportsedge.com/nfl/projections",
+        "observed_at": "2026-10-27T10:36:14.228Z",
+        "note": "Three selected players have estimates from the same DK table. Omar absent from visible projection rows; no team total calculated."
+      },
+      "picks": [
+        {
+          "player": "Josh Allen",
+          "position": "QB",
+          "team": "BUF",
+          "opponent": "BAL",
+          "salary": 7700,
+          "projected_points": 22.5,
+          "slot": "QB",
+          "home": true,
+          "actual_points": null,
+          "rationale": "Allocate $7,700 to the source model's leading projected QB in the verified BUF–BAL window. The opponent QB and fresh Buffalo availability remain unresolved; not an asserted shootout.",
+          "source_ids": [
+            "projections",
+            "schedule"
+          ],
+          "salary_source_url": "https://fantasysportsedge.com/nfl/projections",
+          "projection_source_url": "https://fantasysportsedge.com/nfl/projections"
+        },
+        {
+          "player": "Bucky Irving",
+          "position": "RB",
+          "team": "TB",
+          "opponent": "ATL",
+          "salary": 6400,
+          "projected_points": 11.9,
+          "slot": "RB",
+          "home": true,
+          "actual_points": null,
+          "rationale": "At $6,400, retain the observed lead-rushing candidate from Monday. Prior 24 carries came inside 49 team runs with 14 for Gainwell, so do not extrapolate the extreme script.",
+          "source_ids": [
+            "projections",
+            "schedule"
+          ],
+          "salary_source_url": "https://fantasysportsedge.com/nfl/projections",
+          "projection_source_url": "https://fantasysportsedge.com/nfl/projections"
+        },
+        {
+          "player": "Jameson Williams",
+          "position": "WR",
+          "team": "DET",
+          "opponent": "MIN",
+          "salary": 6000,
+          "projected_points": 11.9,
+          "slot": "WR",
+          "home": true,
+          "actual_points": null,
+          "rationale": "At $6,000, buy Detroit receiving involvement at $2,000 below St. Brown. Prior nine targets support more than a two-touchdown chase; target competition and volatility remain.",
+          "source_ids": [
+            "projections",
+            "schedule"
+          ],
+          "salary_source_url": "https://fantasysportsedge.com/nfl/projections",
+          "projection_source_url": "https://fantasysportsedge.com/nfl/projections"
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "Omar Cooper Jr.",
+          "team": "NYJ",
+          "opponent": "LV",
+          "home": true,
+          "salary": 4800,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "New candidate at reported $4,800. Five targets produced 115 yards, so investigate participation rather than expect that efficiency again. Mitchell returned and Wilson remains competition; no causal displacement claim.",
+          "source_ids": [
+            "prices",
+            "boxjets",
+            "jetscoach",
+            "schedule"
+          ],
+          "salary_source_url": "https://fantasysportsedge.com/nfl/dfs/week-8"
+        }
+      ],
+      "summary": "First priced partial core: Josh Allen, Bucky Irving, Jameson Williams and Omar Cooper. Salary evidence improved; five slots remain open. No complete priced v1 or ready handoff claimed.",
+      "counterargument": "Reported prices and inferred membership remain unofficial; early roles/availability are unsettled. Omar's five targets and Irving's extreme team rushing volume can regress. No guaranteed complete supporting package has been established.",
+      "revisions": [],
+      "revision_classification": "new_evidence",
+      "previous_snapshot_id": "2026-w08-2026-10-26-daily",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/31f5412475d93737d293bd06dada518a15c28c28/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-27.md",
+      "budget_note": "Four priced provisional picks; $24,900 allocated/$25,100 remaining. Not a complete legal lineup or v1-ready stage.",
+      "unfilled_slots": [
+        "RB",
+        "WR",
+        "TE",
+        "FLEX",
+        "DST"
+      ]
     }
   ],
-  "archive_commit": "3eebeb33c6385a9fbb02f84f1a132a65509a83a1",
+  "archive_commit": "dc3c46e45645c23f52c2e44fcc825353d9780f54",
   "journal": [
     {
       "kind": "later_annotation",
@@ -6469,6 +6592,209 @@
         "process_proposal": "PR #57 open/unmerged; actual subscriptions/delivery remain unverified."
       },
       "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/3eebeb33c6385a9fbb02f84f1a132a65509a83a1/docs/weekly-dfs/codex/journal/20261026T110317Z.md"
+    },
+    {
+      "id": "2026-w08-research-20261027T103953Z",
+      "snapshot_ids": [
+        "2026-w08-2026-10-27-daily"
+      ],
+      "kind": "scheduled_research",
+      "recorded_at": "2026-10-27T10:39:53.943Z",
+      "recorded_at_toronto": "2026-10-27T06:39:53.943-04:00",
+      "research_at": "2026-10-27T10:39:00.533Z",
+      "origin": "mixed",
+      "origin_note": "Prior qualitative operator calls favoring Flowers and BAL@BUF and fading Garrett Wilson were visible in supplied continuity before this pass; original posting clock/immutable receipt not reverified. No independent/blind claim. Jets fact checks and the two-slot salary comparison were agent chosen; those calls do not mandate picks.",
+      "title": "Reported prices open a four-player core; reject inflated carry evidence",
+      "question": "Can a cheaper Detroit receiver preserve premium QB exposure, and does current Hall evidence justify committing to Braelon?",
+      "why_it_matters": "Prices now permit concrete allocation comparisons, but stale labels and incorrect usage can create false confidence in cheap roles.",
+      "findings": [
+        "Reported Week8 prices now available; official export not discovered. FSE's expected slate matches the NFL's 11 Sunday afternoon games but does not certify official eligibility.",
+        "One coherent DK model snapshot: Allen22.5/$7700, Williams11.9/$6000, Dak17.9/$6300, StBrown16.2/$8000. Allen/Williams=$13700 and34.4 external projected points; Dak/StBrown=$14300 and34.1. These are two-slot packages, not complete alternatives.",
+        "Fresh ESPN and official Jets notebook agree Braelon had17carries/104yards and6catches/30yards; ESPN has7targets. FantasyPros incorrectly says24carries. Its134scrimmageyards agrees, but carry claim rejected.",
+        "Official Week7 inactive list confirms Hall missed that game. Jets injury page still displays Miami, so LP/QUESTIONABLE is not new Week8 evidence. No confirmed Week8 Hall return or absence established.",
+        "Omar had5targets/5catches/115yards; Garrett3targets/2catches/26yards and Mitchell3targets/0catches. Without routes, this does not prove permanent target redistribution.",
+        "Week7 Sunday games remain final. Fresh Jets scoring inputs match the archived review; no material scoring correction established. Week7 freeze114.22 and Week6 freeze145.98 stay provisional, not platform settled."
+      ],
+      "interpretation": "Use Allen/Williams rather than force a same-team stack. At these reported prices the pair is $600 cheaper than Dak/StBrown with nearly equal same-model estimates. Add Irving conditionally and investigate Omar at $4,800. Leave Braelon unresolved until Week8 evidence, not stale Week7 practice.",
+      "alternatives": [
+        "Dak/Williams saves another $1,400 versus Allen/Williams while giving up4.6 external projected points; may fund the five remaining slots.",
+        "StBrown remains a strong role candidate; paying $2,000 more for him needs a complete funding comparison.",
+        "Omar's five targets are less secure than his115yards suggest; Wilson/Mitchell competition could change the forward allocation."
+      ],
+      "uncertainty": [
+        "Official DraftKings game-set identity, selected IDs and eligible pool; five remaining priced selections.",
+        "Fresh Week8 practice/availability, including Hall and QB conditions.",
+        "Omar's forward participation and Detroit distribution; no routes inspected.",
+        "Complete coherent projection pool required for projection-only baseline; no approximation."
+      ],
+      "lineup_effect": "Four priced picks, $24,900/$25,100 remaining. No legal complete lineup, complete team forecast or ready stage. Monday's prior empty priced snapshot remains unchanged.",
+      "change_triggers": [
+        "Official export or sufficient attributable roster completion evidence.",
+        "Hall's Week8 report or coach availability statement that changes Braelon's opportunity.",
+        "A complete alternative under cap that changes salary allocation after self-review."
+      ],
+      "carry_forward": [
+        "Verify Hall's Week8 practice/opponent window before using participation labels; Week7 Q/LP is not a fresh return signal.",
+        "Compare Omar's routes/participation and repeat target allocation before declaring Wilson displaced.",
+        "Complete the five supporting slots from attributable prices; only then save Codex v1 and the versioned common-input handoff.",
+        "Use the now-merged season study prospectively: record operator exposure and later overrides separately, preserve a pre-override candidate, and keep projection-only baseline unavailable unless full pinned pool is actually computable."
+      ],
+      "sources": [
+        {
+          "id": "schedule",
+          "label": "schedule",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+          "retrieved_at": "2026-10-27T10:35:27.494Z",
+          "publication_at": null,
+          "scope": "Current page inspected; publication time unknown unless explicit."
+        },
+        {
+          "id": "prices",
+          "label": "prices",
+          "url": "https://fantasysportsedge.com/nfl/dfs/week-8",
+          "retrieved_at": "2026-10-27T10:35:26.529Z",
+          "publication_at": null,
+          "scope": "Reported prices including Omar WR NYJ $4800; expected 11-game slate, not official platform pool."
+        },
+        {
+          "id": "projections",
+          "label": "projections",
+          "url": "https://fantasysportsedge.com/nfl/projections",
+          "retrieved_at": "2026-10-27T10:36:14.228Z",
+          "publication_at": null,
+          "scope": "DraftKings table only: Week8 11-game main slate; own-model as of Oct26 19:37 EDT. FanDuel table excluded."
+        },
+        {
+          "id": "builder",
+          "label": "builder",
+          "url": "https://fantasysportsedge.com/nfl/lineup-builder?platform=draftkings",
+          "retrieved_at": "2026-10-27T10:36:02.451Z",
+          "publication_at": null,
+          "scope": "Rendered pool stays loading; no complete pool available."
+        },
+        {
+          "id": "dk",
+          "label": "dk",
+          "url": "https://www.draftkings.com/fantasy-football",
+          "retrieved_at": "2026-10-27T10:35:37.530Z",
+          "publication_at": null,
+          "scope": "Current page inspected; publication time unknown unless explicit."
+        },
+        {
+          "id": "lobby",
+          "label": "lobby",
+          "url": "https://www.draftkings.com/lobby",
+          "retrieved_at": "2026-10-27T10:35:49.751Z",
+          "publication_at": null,
+          "scope": "Redirected to account wall; no official export discovered."
+        },
+        {
+          "id": "rulesretry",
+          "label": "rulesretry",
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-10-27T10:36:15.814Z",
+          "publication_at": null,
+          "scope": "Current page inspected; publication time unknown unless explicit."
+        },
+        {
+          "id": "rules2",
+          "label": "rules2",
+          "url": "https://www.draftkings.com/help/rules/overview",
+          "retrieved_at": "2026-10-27T10:36:03.960Z",
+          "publication_at": null,
+          "scope": "Current page inspected; publication time unknown unless explicit."
+        },
+        {
+          "id": "jets",
+          "label": "jets",
+          "url": "https://www.newyorkjets.com/team/injury-report/",
+          "retrieved_at": "2026-10-27T10:35:26.511Z",
+          "publication_at": null,
+          "scope": "Displayed opponent MIA means Week7, not Week8."
+        },
+        {
+          "id": "fp",
+          "label": "fp",
+          "url": "https://www.fantasypros.com/2026/10/fantasy-football-injury-report-updates-week-8-2026/",
+          "retrieved_at": "2026-10-27T10:35:26.825Z",
+          "publication_at": null,
+          "scope": "Unverified Hall return interpretation; incorrect 24-carry claim rejected."
+        },
+        {
+          "id": "boxjets",
+          "label": "boxjets",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873015",
+          "retrieved_at": "2026-10-27T10:35:49.334Z",
+          "publication_at": null,
+          "scope": "Current page inspected; publication time unknown unless explicit."
+        },
+        {
+          "id": "jetsrole",
+          "label": "jetsrole",
+          "url": "https://www.newyorkjets.com/news/jets-notebook-braelon-allen-shows-he-can-carry-load-running-game-10-26-2026",
+          "retrieved_at": "2026-10-27T10:36:15.427Z",
+          "publication_at": "2026-10-26T15:22:00-04:00",
+          "scope": "Current page inspected; publication time unknown unless explicit."
+        },
+        {
+          "id": "jetscoach",
+          "label": "jetscoach",
+          "url": "https://www.newyorkjets.com/news/aaron-glenn-sunday-cannot-get-here-fast-enough-10-26-2026",
+          "retrieved_at": "2026-10-27T10:36:14.291Z",
+          "publication_at": "2026-10-26T12:00:00-04:00",
+          "scope": "Current page inspected; publication time unknown unless explicit."
+        },
+        {
+          "id": "jetsinactive",
+          "label": "jetsinactive",
+          "url": "https://www.newyorkjets.com/news/jets-vs-dolphins-nfl-game-inactives-10-25-2026",
+          "retrieved_at": "2026-10-27T10:36:39.984Z",
+          "publication_at": "2026-10-25T11:30:00-04:00",
+          "scope": "Current page inspected; publication time unknown unless explicit."
+        },
+        {
+          "id": "bills",
+          "label": "bills",
+          "url": "https://www.buffalobills.com/team/injury-report/",
+          "retrieved_at": "2026-10-27T10:37:37.367Z",
+          "publication_at": null,
+          "scope": "No player rows returned; does not establish clean injury report."
+        },
+        {
+          "id": "oldprices",
+          "label": "oldprices",
+          "url": "https://fantraxhq.com/nfl-draftkings-plays-week-8/",
+          "retrieved_at": "2026-10-27T10:35:49.022Z",
+          "publication_at": "2025-10-26",
+          "scope": "2025 article rejected for 2026 prices."
+        },
+        {
+          "id": "week7",
+          "label": "week7",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "retrieved_at": "2026-10-27T10:35:49.027Z",
+          "publication_at": null,
+          "scope": "Current page inspected; publication time unknown unless explicit."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w08-2026-10-27-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/31f5412475d93737d293bd06dada518a15c28c28/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-27.json"
+        }
+      ],
+      "expectations": [],
+      "outcomes": [],
+      "collaboration_status": {
+        "codex_v1_ready": "partial; four priced picks only",
+        "claude_v1_ready": "Week8 picks not inspected; preserve first complete own v1 where feasible",
+        "grok_questions_ready": "not ready",
+        "collaboration_ready": "not ready",
+        "final_frozen": "not ready",
+        "next_handoff": "First establish sufficient eligible priced selections and archive a complete Codex v1/common-input manifest. Then prepare Claude request; no packet dispatched today.",
+        "protocol_status": "PR57 and PR65 observed merged into current notebook branch; season-study rules apply from Week8. Missing-v1 exception available Friday/Saturday; no invented contribution."
+      },
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/dc3c46e45645c23f52c2e44fcc825353d9780f54/docs/weekly-dfs/codex/journal/20261027T103953Z.md"
     }
   ],
   "arena": {
