@@ -1,0 +1,274 @@
+{
+  "schema_version": "tiber-dfs-journal/v1",
+  "entries": [
+    {
+      "id": "2026-w08-research-20261028T101856Z",
+      "snapshot_ids": [
+        "2026-w08-2026-10-28-daily"
+      ],
+      "kind": "scheduled_research",
+      "recorded_at": "2026-10-28T10:18:56.533Z",
+      "recorded_at_toronto": "2026-10-28T06:18:56.533-04:00",
+      "research_at": "2026-10-28T10:17:42.246Z",
+      "origin": "mixed",
+      "origin_note": "Operator calls publicly posted Oct27 11:08:16UTC favor Flowers and BAL@BUF and fade Garrett Wilson. Original supplied clock unknown; stated prior Claude exposure retained. Codex had prior qualitative exposure before this v1; no blind-to-operator claim. No Week8 Claude picks inspected.",
+      "title": "Official pool enables complete v1; role checks challenge the cheap receivers",
+      "question": "Can the four-player core support a complete roster, and which assumptions are weakest?",
+      "why_it_matters": "A legal roster enables meaningful package review; prior partials cannot be relabelled complete retroactively.",
+      "findings": [
+        "Official group153728 and salary export now verify the same11-game Sunday pool; the earlier anticipated window did not change.",
+        "All four Tuesday picks match their official prices. Five additions total$24,300, yielding$49,200/$800left.",
+        "Cooper's70%reportedroute share challenges a full-time role; primary film article says Wilson drew attention on two major plays. No permanent displacement claim.",
+        "Provider projection page now captions14games Thu–Mon, even though titled main slate; no estimates imported into this11-game record.",
+        "Ferguson screened at$4,100 but fresh Monday box has0catches/1target; prefer Taylor's documented receiving involvement at$3,300 while retaining Jets concentration risk.",
+        "Week7 slate completed; fresh Jets box agrees with archived key scoring inputs. No new settled-platform evidence or material Week6/7 correction established; existing provisional totals remain unchanged."
+      ],
+      "interpretation": "Retain the core; fill with Brown, Flowers, Taylor, Concepcion and Jets. Keep800unspent rather than force weaker evidence. Omar's participation evidence argues for restraint, while Ferguson's one target weakens the screened TE alternative.",
+      "alternatives": [
+        "Brown costs200more than Braelon, trading unresolved Hall dependence for a documented receiving component; Brown still shares scoring work.",
+        "Ferguson costs800more than Taylor with poorer latest target evidence. One game is not a permanent ranking.",
+        "JetsDST permits other allocations but two recent sacks and a turnover-free opposing QB are a weak upside foundation."
+      ],
+      "uncertainty": [
+        "Actual Week8 practice/inactive and role changes; empty report render does not mean healthy.",
+        "Full11-game compatible external projection snapshot.",
+        "Jets target competition, Brown goal-line split and Browns offensive limitations."
+      ],
+      "lineup_effect": "First complete v1 at$49,200/$800remaining; no replacements of the original four. All forecasts null because current provider covers14games; official Sunday pool remains11games.",
+      "change_triggers": [
+        "Fresh availability or participation that undermines any selected role.",
+        "A source-qualified complete package offering a better allocation under cap.",
+        "Actual Claude contribution and substantive question/reply exchange; not mere delivery notice."
+      ],
+      "carry_forward": [
+        "Recheck Cooper/Taylor target competition, not just their touchdowns.",
+        "Verify actual Wednesday availability for StBrown, Lamar and selected players; blank pages are not clearances.",
+        "Claude v1 request uses common inputs without Codex picks where feasible. Posting/receipt/output remain separate.",
+        "Assess bound expectations after games; preserve misses and unassessable roles. Keep S1–S5 descriptive and override delta separate."
+      ],
+      "sources": [
+        {
+          "id": "groups",
+          "url": "https://api.draftkings.com/draftgroups/v1/",
+          "retrieved_at": "2026-10-28T10:14:44.897Z",
+          "publication_at": null,
+          "label": "groups",
+          "scope": "Official draft group153728, Classic21, 11games; unrelated groups not retained."
+        },
+        {
+          "id": "pool",
+          "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+          "retrieved_at": "2026-10-28T10:15:05.939Z",
+          "publication_at": null,
+          "label": "pool",
+          "scope": "554-row official salary export; salary/position/eligibility/game IDs, not medical clearance or forecast."
+        },
+        {
+          "id": "schedule",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+          "retrieved_at": "2026-10-28T10:14:33.029Z",
+          "publication_at": null,
+          "label": "schedule",
+          "scope": "Actual page inspected; publication unknown unless recorded."
+        },
+        {
+          "id": "rules",
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-10-28T10:14:24.291Z",
+          "publication_at": null,
+          "label": "rules",
+          "scope": "Actual page inspected; publication unknown unless recorded."
+        },
+        {
+          "id": "omar",
+          "url": "https://www.fantasylife.com/articles/fantasy/fantasy-football-takeaways-omar-cooper-utilization-report",
+          "retrieved_at": "2026-10-28T10:14:21.702Z",
+          "publication_at": null,
+          "label": "omar",
+          "scope": "Attributed external utilization: Cooper70% routes, Mitchell55%; KCC target-role evidence. Historical comparison probabilities not adopted."
+        },
+        {
+          "id": "film",
+          "url": "https://www.newyorkjets.com/news/film-breakdown-omar-cooper-jr-week-7-top-plays-10-27-2026",
+          "retrieved_at": "2026-10-28T10:14:21.940Z",
+          "publication_at": "2026-10-27T13:30:00-04:00",
+          "label": "film",
+          "scope": "Primary selected-play breakdown; man-coverage five routes is a subset, not total routes."
+        },
+        {
+          "id": "chase",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873012",
+          "retrieved_at": "2026-10-28T10:15:42.133Z",
+          "publication_at": null,
+          "label": "chase",
+          "scope": "Actual page inspected; publication unknown unless recorded."
+        },
+        {
+          "id": "ferg",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873009",
+          "retrieved_at": "2026-10-28T10:15:41.925Z",
+          "publication_at": null,
+          "label": "ferg",
+          "scope": "Actual page inspected; publication unknown unless recorded."
+        },
+        {
+          "id": "taylor",
+          "url": "https://www.newyorkjets.com/news/mason-taylor-joined-omar-cooper-jr-in-jets-offensive-production-vs-dolphins-10-26-2026",
+          "retrieved_at": "2026-10-28T10:16:13.889Z",
+          "publication_at": "2026-10-26T12:15:00-04:00",
+          "label": "taylor",
+          "scope": "Actual page inspected; publication unknown unless recorded."
+        },
+        {
+          "id": "jetsbox",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873015",
+          "retrieved_at": "2026-10-28T10:15:41.964Z",
+          "publication_at": null,
+          "label": "jetsbox",
+          "scope": "Actual page inspected; publication unknown unless recorded."
+        },
+        {
+          "id": "lvbox",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873021",
+          "retrieved_at": "2026-10-28T10:15:41.813Z",
+          "publication_at": null,
+          "label": "lvbox",
+          "scope": "Actual page inspected; publication unknown unless recorded."
+        },
+        {
+          "id": "detinj",
+          "url": "https://www.detroitlions.com/team/injury-report/",
+          "retrieved_at": "2026-10-28T10:14:45.818Z",
+          "publication_at": null,
+          "label": "detinj",
+          "scope": "No player rows returned; cannot confirm StBrown ankle report."
+        },
+        {
+          "id": "cinstatus",
+          "url": "https://www.bengals.com/team/injury-report/",
+          "retrieved_at": "2026-10-28T10:15:42.568Z",
+          "publication_at": null,
+          "label": "cinstatus",
+          "scope": "Empty/mislabelled header; not evidence of a clear Week8 report."
+        },
+        {
+          "id": "dalstatus",
+          "url": "https://www.dallascowboys.com/team/injury-report/",
+          "retrieved_at": "2026-10-28T10:15:41.030Z",
+          "publication_at": null,
+          "label": "dalstatus",
+          "scope": "No player rows returned; Ferguson clearance not inferred."
+        },
+        {
+          "id": "bills",
+          "url": "https://www.buffalobills.com/team/injury-report/",
+          "retrieved_at": "2026-10-28T10:16:12.026Z",
+          "publication_at": null,
+          "label": "bills",
+          "scope": "Actual page inspected; publication unknown unless recorded."
+        },
+        {
+          "id": "ravens",
+          "url": "https://www.baltimoreravens.com/team/injury-report/",
+          "retrieved_at": "2026-10-28T10:16:12.439Z",
+          "publication_at": null,
+          "label": "ravens",
+          "scope": "Actual page inspected; publication unknown unless recorded."
+        },
+        {
+          "id": "prices",
+          "url": "https://fantasysportsedge.com/nfl/dfs/week-8",
+          "retrieved_at": "2026-10-28T10:14:22.939Z",
+          "publication_at": null,
+          "label": "prices",
+          "scope": "Actual page inspected; publication unknown unless recorded."
+        },
+        {
+          "id": "projections",
+          "url": "https://fantasysportsedge.com/nfl/projections",
+          "retrieved_at": "2026-10-28T10:14:22.917Z",
+          "publication_at": null,
+          "label": "projections",
+          "scope": "Provider changed to14-game Thu–Mon caption; not used for Sunday point estimates."
+        },
+        {
+          "id": "week7",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "retrieved_at": "2026-10-28T10:14:55.466Z",
+          "publication_at": null,
+          "label": "week7",
+          "scope": "Actual page inspected; publication unknown unless recorded."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w08-2026-10-28-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5afc63ae9519af75cc8281dd3c395490bc9eab5c/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-28.json"
+        }
+      ],
+      "expectations": [
+        {
+          "id": "2026-w08-1028-brown-role",
+          "subject": "Chase Brown",
+          "statement": "Retains a material rushing role with receiving involvement, without an exclusive goal-line role.",
+          "support": "11carries/5targets in the fresh Week7 box.",
+          "uncertainty": "Perine, efficiency and distribution may reduce benefit.",
+          "challenge": "Another back overtakes his opportunity or receiving work disappears.",
+          "observe": "Compare RB carries, targets and red-zone touches if accessible; snaps unassessable unless inspected.",
+          "source_urls": [
+            "https://www.espn.com/nfl/boxscore/_/gameId/401873012"
+          ],
+          "recorded_at": "2026-10-28T10:17:42.246Z"
+        },
+        {
+          "id": "2026-w08-1028-cooper-role",
+          "subject": "Omar Cooper Jr.",
+          "statement": "Remains a receiving participant with designed opportunities, but full-time route allocation is not established.",
+          "support": "Five targets; attributed70%route share and primary play descriptions.",
+          "uncertainty": "Mitchell, Wilson and two TEs compete; last week's efficiency is extreme.",
+          "challenge": "Material reduction in participation or routes; big plays alone do not validate role.",
+          "observe": "Compare actual routes/targets and receiving efficiency separately; do not mistake man-coverage subset for all routes.",
+          "source_urls": [
+            "https://www.fantasylife.com/articles/fantasy/fantasy-football-takeaways-omar-cooper-utilization-report",
+            "https://www.newyorkjets.com/news/film-breakdown-omar-cooper-jr-week-7-top-plays-10-27-2026"
+          ],
+          "recorded_at": "2026-10-28T10:17:42.246Z"
+        },
+        {
+          "id": "2026-w08-1028-taylor-role",
+          "subject": "Mason Taylor",
+          "statement": "Retains some receiving involvement at the low TE salary, without requiring repeated multi-TD scoring.",
+          "support": "Six targets/five catches/62yards in the fresh Week7 box.",
+          "uncertainty": "Cooper/Wilson/Sadiq compete; one game may overstate role.",
+          "challenge": "Participation or targets shift substantially elsewhere.",
+          "observe": "Assess targets/routes when available, and score causes separately.",
+          "source_urls": [
+            "https://www.newyorkjets.com/news/mason-taylor-joined-omar-cooper-jr-in-jets-offensive-production-vs-dolphins-10-26-2026",
+            "https://www.espn.com/nfl/boxscore/_/gameId/401873015"
+          ],
+          "recorded_at": "2026-10-28T10:17:42.246Z"
+        },
+        {
+          "id": "2026-w08-1028-kcc-role",
+          "subject": "KC Concepcion Jr.",
+          "statement": "Retains a central Browns receiving role despite a limited passing environment.",
+          "support": "External report lists25/24/26%shares in prior healthy games then29%Week7.",
+          "uncertainty": "Fannin/Boston competition, offense and matchup can suppress points.",
+          "challenge": "Meaningful passing participation redistribution or availability change.",
+          "observe": "Compare targets/teamattempts and qualified routes when available; separate yards/TD from opportunity.",
+          "source_urls": [
+            "https://www.fantasylife.com/articles/fantasy/fantasy-football-takeaways-omar-cooper-utilization-report"
+          ],
+          "recorded_at": "2026-10-28T10:17:42.246Z"
+        }
+      ],
+      "outcomes": [],
+      "collaboration_status": {
+        "claude_v1_ready": "not received",
+        "grok_questions_ready": "not received",
+        "collaboration_ready": "not completed",
+        "final_frozen": "not yet due"
+      }
+    }
+  ]
+}

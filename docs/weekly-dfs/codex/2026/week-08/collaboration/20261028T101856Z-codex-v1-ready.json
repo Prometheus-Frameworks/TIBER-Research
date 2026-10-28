@@ -1,0 +1,37 @@
+{
+  "record_type": "stage_receipt_and_handoff",
+  "id": "2026-w08-r1-codex-v1-ready",
+  "cycle": "2026-w08-2026-11-01",
+  "round": 1,
+  "stage": "codex_v1_ready",
+  "status": "ready",
+  "author": "Codex",
+  "provider_model": null,
+  "posted_by": "Codex via authorized GitHub connection",
+  "completed_at": "2026-10-28T10:18:56.533Z",
+  "exact_output": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5afc63ae9519af75cc8281dd3c395490bc9eab5c/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-28.json",
+  "salary_snapshot": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5afc63ae9519af75cc8281dd3c395490bc9eab5c/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-28-draftkings-153728.csv",
+  "source_cutoff": "2026-10-28T10:17:42.246Z",
+  "known_exposure": "Operator calls publicly posted Oct27 11:08:16UTC favor Flowers and BAL@BUF and fade Garrett Wilson. Original supplied clock unknown; stated prior Claude exposure retained. Codex had prior qualitative exposure before this v1; no blind-to-operator claim. No Week8 Claude picks inspected.",
+  "ready_basis": "Nine unique valid slots, $49,200/$800left; official export membership and positions matched, record read back. Not medical clearance, final freeze, shared candidate or joint endorsement.",
+  "request": {
+    "id": "2026-w08-r1-claude-v1",
+    "content_author": "Codex",
+    "sender": "Codex",
+    "intended_recipient": "Claude through existing relay",
+    "prepared_at": "2026-10-28T10:18:56.533Z",
+    "common_input_manifest": "same-commit 20261028T101856Z-common-inputs.json",
+    "requested_output": "Own complete attributed v1 with exact salaries, evidence cutoff, source receipts, counterargument, and exposure. Retain before inspecting Codex picks where feasible. Do not reconstruct blinding.",
+    "return_target": "As soon as sources permit; substantive reply round by Friday/Saturday under season study.",
+    "delivery": "prepared; posting receipt recorded separately after actual PR comment",
+    "acknowledgment": "not received",
+    "recipient_output": "not received",
+    "next_action": "Existing relay/Claude session reads manifest, saves v1 and posts attributable result. Codex checks ordinary runs; no provider dispatched."
+  },
+  "remaining_stages": {
+    "claude_v1_ready": "not received",
+    "grok_questions_ready": "not received",
+    "collaboration_ready": "not completed",
+    "final_frozen": "not yet due"
+  }
+}
