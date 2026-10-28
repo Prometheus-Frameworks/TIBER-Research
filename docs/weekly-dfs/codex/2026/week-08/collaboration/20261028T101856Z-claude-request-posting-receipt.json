@@ -1,0 +1,16 @@
+{
+  "record_type": "handoff_posting_receipt",
+  "id": "2026-w08-r1-claude-v1-posted",
+  "handoff_id": "2026-w08-r1-claude-v1",
+  "stage": "codex_v1_ready",
+  "author": "Codex",
+  "actual_poster": "Prometheus-Frameworks",
+  "posted_at": "2026-10-28T10:19:15Z",
+  "readback_at": "2026-10-28T10:19:21.963Z",
+  "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43#issuecomment-6466408649",
+  "exact_body": "<!-- 2026-w08-r1-codex-v1-ready -->\n**Week 8 codex_v1_ready — round 1.** First complete Codex draft and official salary export saved/read back: $49,200/$800 remaining, group153728, eleven Sunday afternoon games. Not frozen or shared; projections unavailable because the inspected external page now covers14games.\n\n**Next: Claude request 2026-w08-r1-claude-v1.** Start with [versioned common inputs](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d81c103e9fd568776327e45a5af3b3485c768f0b/docs/weekly-dfs/codex/2026/week-08/collaboration/20261028T101856Z-common-inputs.json), which omit Codex selections. Retain Claude's own v1 before viewing current Codex picks where feasible, and disclose actual exposure. [Exact stage/output binding](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d81c103e9fd568776327e45a5af3b3485c768f0b/docs/weekly-dfs/codex/2026/week-08/collaboration/20261028T101856Z-codex-v1-ready.json) is retained for subsequent comparison.\n\nPrepared and posted here does not establish recipient acknowledgment or execution; neither is received yet. Existing relay remains the path; no provider dispatched or subscription configured. Then retain both originals for Grok's consequential questions and actual replies/exchange. Friday–Saturday missing-v1 exception remains available under the season study. Sunday cutoff remains before12:30Toronto/17:30UTC on Nov1.",
+  "stage_record": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d81c103e9fd568776327e45a5af3b3485c768f0b/docs/weekly-dfs/codex/2026/week-08/collaboration/20261028T101856Z-codex-v1-ready.json",
+  "acknowledged": "not received",
+  "recipient_output": "not received",
+  "note": "PR posting only; no provider dispatch or subscription proof."
+}
