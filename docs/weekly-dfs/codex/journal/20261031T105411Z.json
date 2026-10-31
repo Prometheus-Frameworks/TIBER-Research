@@ -1,0 +1,268 @@
+{
+  "schema_version": "tiber-dfs-journal/v1",
+  "entries": [
+    {
+      "id": "2026-w08-research-20261031T105411Z",
+      "snapshot_ids": [
+        "2026-w08-2026-10-31-daily"
+      ],
+      "kind": "scheduled_research",
+      "recorded_at": "2026-10-31T10:54:11.625Z",
+      "recorded_at_toronto": "2026-10-31T06:54:11.625-04:00",
+      "research_at": "2026-10-31T10:52:06.655Z",
+      "origin": "agent_chosen",
+      "origin_note": "Codex chose to resolve the prior Jets defensive-availability trigger and compare affordable alternatives. Earlier operator calls/exposure remain as recorded; no new player guidance or external-author contribution.",
+      "title": "Confirmed Jets front absences prompt a Patriots DST revision",
+      "question": "Does the now-confirmed Jets defensive loss justify using the remaining $800 despite New England's unfavorable schematic countercase?",
+      "why_it_matters": "DST was the weakest unresolved availability assumption. A replacement can use existing funds without weakening the eight offensive selections, but a higher salary does not establish better scoring.",
+      "findings": [
+        "Official pool remains 562 rows and eleven games, with unchanged IDs/salaries/positions/game info versus October30.",
+        "Jets Ossai and Sweat OUT, Bailey doubtful; opposing Bowers full with no designation. Powers-Johnson questionable after limited Friday work; not an established absence.",
+        "Patriots DaQuan Jones and Dre'Mont Jones full with no designation. Miami Proctor OUT; Willis full without designation. Davis/Elliss remain questionable despite full practice, and New England offensive Brown/Henderson are questionable.",
+        "October29 Patriots team analysis attributes weak zone efficiency and reliance on blitzing to New England; describes Miami's recent offensive improvement and Willis being more effective against man/blitz than zone/four-man rush. This directly challenges the replacement.",
+        "Ravens Lamar, Hamilton and Roquan full Friday without designations; Buffalo Spencer Brown, DJ Moore and Kincaid questionable. Availability improves without proving a high-scoring game.",
+        "St. Brown/Gibbs full without designations; Williams not listed. No speculative target redistribution.",
+        "Tampa Bay Egbuka OUT with foot injury; Irving full after rest. Gainwell questionable despite full Friday and Goedeke questionable after limited work. No automatic Irving workload boost.",
+        "Browns Jenkins full without designation; Howard concussion questionable after three DNPs. Pittsburgh Watt/Highsmith full without designation; protection risk retained.",
+        "Chase Brown not listed on current dated Bengals report. Team preview attributes 21 sacks to Bengals but only 11 allowed by Titans, including one over last two games; no easy-sack inference.",
+        "Week7 NFL finals and rechecked Jets–Miami box support no material change to inspected archived inputs. No settled platform score or material correction established; Week6 freeze145.98 and Week7 freeze114.22 remain provisional, not newly certified final.",
+        "Projection page still covers 13 Sunday–Monday games rather than chosen eleven. All new estimates remain null.",
+        "Fresh PR comments contain no new Week8 Claude or Grok contribution. Week7 Grok participation remains preserved and is not mistaken for a Week8 pass."
+      ],
+      "interpretation": "Prefer Patriots DST as a qualitative response to confirmed Jets absences and Miami's missing tackle. Keep eight offensive choices; do not assume Egbuka's absence or healthy returns mechanically redistribute targets. The Patriots' zone/pressure weaknesses and Miami's recent improvement are a serious reason this revision could fail.",
+      "alternatives": [
+        "Jets DST: replace; full lineup $49200, remainder $800. Confirmed front absences crossed prior availability concern into a concrete adverse condition; hold remains plausible because Patriots matchup has its own weaknesses.",
+        "Bengals DST: not legal standalone; full lineup $50200, remainder $-200. Requires another $200 funding move. Attributed 21-sack defense is countered by Titans' recent sack avoidance. No supported funding downgrade identified.",
+        "Steelers DST: decline today; full lineup $49700, remainder $300. Watt/Highsmith full and Cleveland protection risk support investigation, but this directly opposes retained Concepcion. No coherent projection comparison establishes that package is better."
+      ],
+      "uncertainty": [
+        "Patriots coverage/run defense versus Willis and Miami's improved attack; Proctor's absence alone does not imply pressure.",
+        "New England Davis/Elliss and offensive Brown/Henderson questionable; Jets Hall and Raiders Powers-Johnson questionable.",
+        "Cooper/Taylor role competition; Brown/Perine split; Cleveland pass volume/protection.",
+        "Bucs Gainwell/Goedeke final availability and offense without Egbuka.",
+        "No coherent complete projection snapshot for the selected eleven-game pool.",
+        "No Claude Week8 substantive output, Grok questions or joint revision observed."
+      ],
+      "lineup_effect": "Codex Saturday candidate: Patriots DST replaces Jets; eight held, $50,000/$0 left. Jets exposure falls from three selections to Cooper/Taylor only. Not frozen or shared; Claude Week8 output and Grok Week8 questions remain absent.",
+      "change_triggers": [
+        "Official material availability or role change before freeze.",
+        "A supported whole-lineup alternative with legal salaries and stronger role/matchup evidence; no requirement to spend full cap.",
+        "Actual version-bound Grok questions or Claude proposal before cutoff. Later replies cannot alter an already valid freeze."
+      ],
+      "carry_forward": [
+        "Before freeze recheck material availability, including Patriots Davis/Elliss and offensive Brown/Henderson, Tampa Bay Gainwell/Goedeke, Buffalo supporting injuries and Jets Hall.",
+        "Evaluate the DST change as Patriots points minus Jets points under the same exact scoring rules, then assess pressure/coverage conditions separately; a favorable score alone would not validate the mechanism.",
+        "Test Miami's protection and Willis mobility against the stated concern using sacks, rushing and accessible pressure/dropback measures. Missing pressure data stays unassessable.",
+        "Carry the Cooper/Taylor target-competition question into freeze and postgame role review; removing JetsDST does not resolve their offensive overlap.",
+        "Existing Grok request remains pending on its exact Friday inputs. Today's candidate is a separate delta; retain actual question versions and Claude/Codex responses instead of restarting originals.",
+        "Keep forecasts null until the exact eleven-game model coverage is verified; earlier scores remain provisional."
+      ],
+      "sources": [
+        {
+          "id": "1031_pool",
+          "label": "pool",
+          "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+          "retrieved_at": "2026-10-31T10:47:07.764Z",
+          "retrieved_at_toronto": "2026-10-31T06:47:07.764-04:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Current source inspected; practice participation is distinct from game designation."
+        },
+        {
+          "id": "1031_rules",
+          "label": "rules",
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-10-31T10:47:09.766Z",
+          "retrieved_at_toronto": "2026-10-31T06:47:09.766-04:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Current source inspected; practice participation is distinct from game designation."
+        },
+        {
+          "id": "1031_schedule",
+          "label": "schedule",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+          "retrieved_at": "2026-10-31T10:47:08.932Z",
+          "retrieved_at_toronto": "2026-10-31T06:47:08.932-04:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Current source inspected; practice participation is distinct from game designation."
+        },
+        {
+          "id": "1031_week7",
+          "label": "week7",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "retrieved_at": "2026-10-31T10:47:09.241Z",
+          "retrieved_at_toronto": "2026-10-31T06:47:09.241-04:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Prior Sunday finals; no new settled DK scoring verified."
+        },
+        {
+          "id": "1031_jets",
+          "label": "jets",
+          "url": "https://www.newyorkjets.com/team/injury-report/",
+          "retrieved_at": "2026-10-31T10:47:08.194Z",
+          "retrieved_at_toronto": "2026-10-31T06:47:08.194-04:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Current source inspected; practice participation is distinct from game designation."
+        },
+        {
+          "id": "1031_tb",
+          "label": "tb",
+          "url": "https://www.buccaneers.com/team/injury-report/",
+          "retrieved_at": "2026-10-31T10:47:08.170Z",
+          "retrieved_at_toronto": "2026-10-31T06:47:08.170-04:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Current source inspected; practice participation is distinct from game designation."
+        },
+        {
+          "id": "1031_cle",
+          "label": "cle",
+          "url": "https://www.clevelandbrowns.com/team/injury-report/",
+          "retrieved_at": "2026-10-31T10:47:08.279Z",
+          "retrieved_at_toronto": "2026-10-31T06:47:08.279-04:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Current source inspected; practice participation is distinct from game designation."
+        },
+        {
+          "id": "1031_det",
+          "label": "det",
+          "url": "https://www.detroitlions.com/team/injury-report/",
+          "retrieved_at": "2026-10-31T10:47:08.204Z",
+          "retrieved_at_toronto": "2026-10-31T06:47:08.204-04:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Current source inspected; practice participation is distinct from game designation."
+        },
+        {
+          "id": "1031_bal",
+          "label": "bal",
+          "url": "https://www.baltimoreravens.com/team/injury-report/",
+          "retrieved_at": "2026-10-31T10:47:08.205Z",
+          "retrieved_at_toronto": "2026-10-31T06:47:08.205-04:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Current source inspected; practice participation is distinct from game designation."
+        },
+        {
+          "id": "1031_cin",
+          "label": "cin",
+          "url": "https://www.bengals.com/news/bengals-titans-week-8-2026-injury-report",
+          "retrieved_at": "2026-10-31T10:47:08.345Z",
+          "retrieved_at_toronto": "2026-10-31T06:47:08.345-04:00",
+          "publication_at": null,
+          "publication_display": "Oct 30, 2026 at 03:45 PM",
+          "scope": "Current source inspected; practice participation is distinct from game designation."
+        },
+        {
+          "id": "1031_proj",
+          "label": "proj",
+          "url": "https://fantasysportsedge.com/nfl/projections",
+          "retrieved_at": "2026-10-31T10:47:08.570Z",
+          "retrieved_at_toronto": "2026-10-31T06:47:08.570-04:00",
+          "publication_at": null,
+          "publication_display": "Page October30 11:09PM EDT; DK caption October30 11:05PM EDT",
+          "scope": "13-game Sun–Mon caption; estimates excluded from 11-game Sunday selection."
+        },
+        {
+          "id": "1031_box",
+          "label": "box",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873015",
+          "retrieved_at": "2026-10-31T10:47:09.640Z",
+          "retrieved_at_toronto": "2026-10-31T06:47:09.640-04:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Current source inspected; practice participation is distinct from game designation."
+        },
+        {
+          "id": "1031_ne",
+          "label": "ne",
+          "url": "https://www.patriots.com/team/injury-report/",
+          "retrieved_at": "2026-10-31T10:47:35.904Z",
+          "retrieved_at_toronto": "2026-10-31T06:47:35.904-04:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Current Week8 final practice/game designations, both teams."
+        },
+        {
+          "id": "1031_neplan",
+          "label": "neplan",
+          "url": "https://www.patriots.com/news/patriots-gameplan-self-scouting-the-pats-through-seven-games-and-prepping-for-the-dolphins-in-week-8",
+          "retrieved_at": "2026-10-31T10:47:52.016Z",
+          "retrieved_at_toronto": "2026-10-31T06:47:52.016-04:00",
+          "publication_at": null,
+          "publication_display": "Oct 29, 2026 at 11:19 AM",
+          "scope": "Team-authored matchup analysis; analytical claims attributed, not independently recalculated."
+        },
+        {
+          "id": "1031_cinpreview",
+          "label": "cinpreview",
+          "url": "https://www.bengals.com/news/game-preview-2026-week-8-bengals-titans",
+          "retrieved_at": "2026-10-31T10:47:36.368Z",
+          "retrieved_at_toronto": "2026-10-31T06:47:36.368-04:00",
+          "publication_at": null,
+          "publication_display": "Oct 30, 2026 at 02:30 PM",
+          "scope": "Team-authored matchup analysis; analytical claims attributed, not independently recalculated."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w08-2026-10-31-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json"
+        }
+      ],
+      "expectations": [
+        {
+          "id": "2026-w08-1031-patriots-availability",
+          "subject": "Patriots DST supporting availability",
+          "statement": "DaQuan Jones and Dre'Mont Jones are expected to be available participants while Miami tackle Kadyn Proctor is unavailable; this supports the replacement's healthier-front premise, without predicting sacks or fantasy points.",
+          "support": "Both Patriots listed full Friday with no game designation; Proctor OUT after three DNPs. Jets alternative has Ossai/Sweat OUT and Bailey doubtful.",
+          "uncertainty": "Late availability or role changes; Davis/Elliss still questionable. Proctor's replacement may protect effectively, and Willis mobility/New England coverage can defeat the pressure premise.",
+          "challenge": "An unexpected Patriots front absence or minimal participation would challenge the availability premise; sound Miami protection would challenge its assumed practical value.",
+          "observe": "Official inactives and defensive participation/snaps; Miami protection lineup and team sacks allowed. Pressure rates only if accessible and attributable; otherwise unassessable. Separate this condition assessment from actual DK points.",
+          "source_urls": [
+            "https://www.patriots.com/team/injury-report/",
+            "https://www.newyorkjets.com/team/injury-report/",
+            "https://www.patriots.com/news/patriots-gameplan-self-scouting-the-pats-through-seven-games-and-prepping-for-the-dolphins-in-week-8"
+          ],
+          "recorded_at": "2026-10-31T10:54:11.625Z"
+        }
+      ],
+      "expectation_references": [
+        {
+          "id": "2026-w08-1028-brown-role",
+          "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d81c103e9fd568776327e45a5af3b3485c768f0b/docs/weekly-dfs/codex/journal/20261028T101856Z.json"
+        },
+        {
+          "id": "2026-w08-1028-cooper-role",
+          "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d81c103e9fd568776327e45a5af3b3485c768f0b/docs/weekly-dfs/codex/journal/20261028T101856Z.json"
+        },
+        {
+          "id": "2026-w08-1028-taylor-role",
+          "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d81c103e9fd568776327e45a5af3b3485c768f0b/docs/weekly-dfs/codex/journal/20261028T101856Z.json"
+        },
+        {
+          "id": "2026-w08-1028-kcc-role",
+          "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d81c103e9fd568776327e45a5af3b3485c768f0b/docs/weekly-dfs/codex/journal/20261028T101856Z.json"
+        }
+      ],
+      "outcomes": [],
+      "collaboration_status": {
+        "codex_v1_ready": "ready; October28 original retained",
+        "claude_v1_ready": "blocked; no acknowledgment or Week8 output received",
+        "grok_questions_ready": "blocked; Friday request posted, acknowledgment/questions not received",
+        "collaboration_ready": "blocked; no substantive Claude/Codex revision exchange",
+        "final_frozen": "not completed; current candidate is daily only",
+        "claude_request_id": "2026-w08-r1-claude-v1",
+        "grok_request_id": "2026-w08-r1-grok-questions",
+        "grok_request_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/1d8d104a1609cd7fe5997200dd8c9b66cc2684cc/docs/weekly-dfs/codex/2026/week-08/collaboration/20261030T105233Z-grok-question-request.json",
+        "latest_inspected_comment": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43#issuecomment-6520930076",
+        "next_handoff": "Existing Grok request remains bound to October28/October30 inputs. Today's DST revision is a separate later delta, not a silent replacement of those inputs. Retain any actual questions and named inspected versions; then Claude/Codex respond and exchange. No new dispatch or ready-stage announcement."
+      }
+    }
+  ]
+}

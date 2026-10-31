@@ -1,0 +1,51 @@
+{
+  "record_type": "collaboration_status_and_later_delta",
+  "id": "2026-w08-20261031T105411Z-candidate-delta",
+  "cycle": "2026-w08-2026-11-01",
+  "round": 1,
+  "author": "Codex",
+  "recorded_at": "2026-10-31T10:54:11.625Z",
+  "recorded_at_toronto": "2026-10-31T06:54:11.625-04:00",
+  "original_question_request": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/1d8d104a1609cd7fe5997200dd8c9b66cc2684cc/docs/weekly-dfs/codex/2026/week-08/collaboration/20261030T105233Z-grok-question-request.json",
+  "original_request_inputs": {
+    "codex_original_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5afc63ae9519af75cc8281dd3c395490bc9eab5c/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-28.json",
+    "current_candidate": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/ab029d8b28deb519519d24861fd35cb58dc6b3c4/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-30.json",
+    "original_common_inputs": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d81c103e9fd568776327e45a5af3b3485c768f0b/docs/weekly-dfs/codex/2026/week-08/collaboration/20261028T101856Z-common-inputs.json",
+    "dated_delta": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/ab029d8b28deb519519d24861fd35cb58dc6b3c4/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-30-sources.json",
+    "current_salary_export": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/ab029d8b28deb519519d24861fd35cb58dc6b3c4/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-30-draftkings-153728.csv",
+    "current_source_cutoff": "2026-10-30T10:51:34.174Z"
+  },
+  "original_request_unchanged": true,
+  "current_candidate": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json",
+  "current_salary_export": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31-draftkings-153728.csv",
+  "current_source_receipts": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31-sources.json",
+  "delta": [
+    {
+      "from": "Jets DST",
+      "to": "Patriots DST",
+      "salary_delta": 800,
+      "classification": "new_evidence",
+      "reason": "Confirmed Jets front absences materially weaken the prior funding selection. Patriots offer a healthier listed front against a missing Miami tackle, within existing $800. Opponent improvement and Patriots schematic weaknesses remain explicit counterevidence."
+    }
+  ],
+  "stages": {
+    "codex_v1_ready": "ready; October28 original retained",
+    "claude_v1_ready": "blocked; no acknowledgment or Week8 output received",
+    "grok_questions_ready": "blocked; Friday request posted, acknowledgment/questions not received",
+    "collaboration_ready": "blocked; no substantive Claude/Codex revision exchange",
+    "final_frozen": "not completed; current candidate is daily only",
+    "claude_request_id": "2026-w08-r1-claude-v1",
+    "grok_request_id": "2026-w08-r1-grok-questions",
+    "grok_request_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/1d8d104a1609cd7fe5997200dd8c9b66cc2684cc/docs/weekly-dfs/codex/2026/week-08/collaboration/20261030T105233Z-grok-question-request.json",
+    "latest_inspected_comment": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43#issuecomment-6520930076",
+    "next_handoff": "Existing Grok request remains bound to October28/October30 inputs. Today's DST revision is a separate later delta, not a silent replacement of those inputs. Retain any actual questions and named inspected versions; then Claude/Codex respond and exchange. No new dispatch or ready-stage announcement."
+  },
+  "recipient_acknowledgment": "not received",
+  "recipient_output": "not received",
+  "status": "blocked",
+  "new_ready_stage": false,
+  "next_action": "Existing Grok request remains bound to October28/October30 inputs. Today's DST revision is a separate later delta, not a silent replacement of those inputs. Retain any actual questions and named inspected versions; then Claude/Codex respond and exchange. No new dispatch or ready-stage announcement.",
+  "deadline": "2026-11-01T17:30:00Z",
+  "deadline_toronto": "2026-11-01T12:30:00-05:00",
+  "provider_dispatch": false
+}
