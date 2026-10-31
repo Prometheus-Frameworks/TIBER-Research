@@ -1,0 +1,79 @@
+{
+  "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/73",
+  "source_updated_at": "2026-10-31T17:40:58Z",
+  "retrieved_at": "2026-10-31T19:25:35.587Z",
+  "captured_body_sha256": "d137fccde0ea5e85c16f799ee773c5e3b0a7c68afce838e599a7fbc8deefd7c5",
+  "capture_scope": "Current normalized API issue body UTF-8 and normalized metadata; all comments fetched (none). Not original publication or external-page archive.",
+  "source_line_ranges_by_outer_section": {
+    "1": [
+      [
+        1,
+        8
+      ]
+    ],
+    "2": [
+      [
+        124,
+        157
+      ]
+    ],
+    "3": [
+      [
+        9,
+        26
+      ]
+    ],
+    "4": [
+      [
+        27,
+        94
+      ]
+    ],
+    "5": [
+      [
+        95,
+        115
+      ]
+    ],
+    "6": [
+      [
+        179,
+        190
+      ]
+    ],
+    "7": [
+      [
+        116,
+        123
+      ]
+    ],
+    "8": [
+      [
+        158,
+        178
+      ],
+      [
+        191,
+        198
+      ]
+    ]
+  },
+  "source_line_coverage": "every source line exactly once; heading depth only changed outside fenced logs",
+  "question_ids_preserved": [
+    "Q1a",
+    "Q1b",
+    "Q2a",
+    "Q2b",
+    "Q3",
+    "Q4",
+    "Q5"
+  ],
+  "original_unchanged": true,
+  "format_preparation": "prepared_for_review",
+  "research_completion": "not_changed",
+  "independent_review": "pending",
+  "base_sha": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+  "presentation_repairs": [
+    "Removed backticks surrounding two existing Markdown link destinations in formatted copy only; source capture unchanged."
+  ]
+}
