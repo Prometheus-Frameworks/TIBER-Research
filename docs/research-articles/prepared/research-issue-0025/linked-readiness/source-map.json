@@ -1,0 +1,62 @@
+{
+  "prepared_at": "2026-10-31T19:30:49.229705Z",
+  "format_check": "All source spans accounted for exactly once; see block_mapping",
+  "sources": [
+    {
+      "edition": "notebook",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/da72dba139139d4f49ce8994ce7ccdd682051e14/docs/preparation/kicker-dst-streaming-2026-10-01/readiness.md",
+      "source_created_at": null,
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-31T19:26:57.944Z",
+      "source_sha256": "70162f2d6382fc085d3c8d558877161b8088832a1106f1fa49db2a5a1c52c47b",
+      "source_characters": 14938,
+      "source_path": "retained/notebook.md",
+      "prepared_path": "notebook-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "# Existing work and source readiness",
+          "outer_section": 4,
+          "sha256": "df72063a8f1677fbed383d926174f5a4dde861d23d3853183b1b97701ca9764e"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "## Exact repository state inspected",
+          "outer_section": 4,
+          "sha256": "a017e901776e9e057aeaeb3e297b1e57364597075bfa22f07989658e20406480"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "## Legacy streamer: implemented does not mean validated",
+          "outer_section": 4,
+          "sha256": "fd0d1bc2fcd0cf4bcb275a9ab61e2ffc3560d8899ea7dd316aae4c9b9f8b4fd0"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "## TTS: preserve what already exists",
+          "outer_section": 4,
+          "sha256": "8b3b010a8bc0bd5bf2bc10b01ed0d61bfaa72563ce3291c8c71ad3731fccc775"
+        },
+        {
+          "block": 5,
+          "original_heading_or_lead": "### Clocks and use boundary",
+          "outer_section": 4,
+          "sha256": "d743bfe1b323dbfcb4ad337fe011e757b7fe3e66c9a9b743b7cab601f34051e7"
+        },
+        {
+          "block": 6,
+          "original_heading_or_lead": "## Field/source readiness matrix",
+          "outer_section": 4,
+          "sha256": "fd361ce9bab74d3baacafc3f1b373ec344677aa5586a0208465664543108216c"
+        },
+        {
+          "block": 7,
+          "original_heading_or_lead": "## Ownership and smallest useful boundary",
+          "outer_section": 7,
+          "sha256": "c4dcbcbd60d2b4da5847843155ef3cec1b101a77220df0e7e5a9796a199da856"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    }
+  ]
+}
