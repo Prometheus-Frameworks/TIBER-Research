@@ -1,0 +1,60 @@
+{
+  "format_prepared_at": "2026-10-31T19:28:46.926160Z",
+  "base_candidate": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+  "captures": [
+    {
+      "path": "retained/issue-body.md",
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/62",
+      "source_created_at": "2026-10-26T13:29:12Z",
+      "source_updated_at": "2026-10-26T13:29:12Z",
+      "retrieved_at": "2026-10-31T19:25:39.473Z",
+      "sha256": "7215b82cd70359d879bd3073acafd23c1b7932c28bffd8eee64311f3de2de19f",
+      "encoding": "UTF-8 exact API-returned body, no added newline"
+    }
+  ],
+  "mapping": [
+    {
+      "source_heading": "## Question and starting point",
+      "common_section": 2,
+      "source_block_sha256": "30770d284a1d54f89be32050b3fc3a9bbbdb2107ddb310c4af0eb7ccb83754cf"
+    },
+    {
+      "source_heading": "## Verified appearance ledger",
+      "common_section": 3,
+      "source_block_sha256": "986a95362b760cc0a1c1eb0d0bd212ac5fcf3f9a664b3e030171d5ef9c59330e"
+    },
+    {
+      "source_heading": "## Week 7 opportunity and gain distribution",
+      "common_section": 4,
+      "source_block_sha256": "4176ef42abeb77c09a3ef47dc2fa53cdec330888b2a16a61db23a7da0994c021"
+    },
+    {
+      "source_heading": "## Prospective Week 8 and ROS tests",
+      "common_section": 7,
+      "source_block_sha256": "76f171d4d76baca1793c52ffeb2f888aa49d1a064a7dd0c72088439550675828"
+    },
+    {
+      "source_heading": "## Comparison with Concepcion",
+      "common_section": 5,
+      "source_block_sha256": "73c87318cc67db1c2ac63e126e02f7fd35edb9532be09d8ed1ba25c74f44beb0"
+    },
+    {
+      "source_heading": "## Required dated update",
+      "common_section": 7,
+      "source_block_sha256": "ccb1dd2c0db3424051f89bbb06dcd8db061bbedb8b8ee76cb83aedb49794f362"
+    }
+  ],
+  "verification": {
+    "all_source_section_blocks_retained": true,
+    "source_body_bytes_retained": true,
+    "original_question_ids_and_windows_unchanged": true,
+    "new_research_performed": false,
+    "independent_review": "pending"
+  },
+  "gaps": [
+    "Null evidence_cutoff means no exact timestamp was supplied; source date-level clocks remain in prose and are not silently sharpened.",
+    "Source-level publication/retrieval and metric gaps remain as originally disclosed.",
+    "Exact owner and final evidence deadline remain unknown where not supplied."
+  ],
+  "capture_clock_semantics": "For issue/comment bundles, retrieved_at is the observed start of the sequential issue + all-comments retrieval, not an exact response-completion timestamp. Later raw-comment metadata reads only supply missing creation/update clocks; body equality is verified. Linked file retrieved_at is the observed time after its fetch completed."
+}
