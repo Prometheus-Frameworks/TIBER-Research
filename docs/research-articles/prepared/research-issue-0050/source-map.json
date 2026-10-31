@@ -1,0 +1,242 @@
+{
+  "prepared_at": "2026-10-31T19:30:11.552299Z",
+  "issue": 50,
+  "source_state": "open",
+  "body_api_sha256": "f56403c28cc0fa72df154a11d51b4b38bb798b9250732f0bebb7c0e401668bf8",
+  "source_updated_at": "2026-10-24T01:06:43Z",
+  "editions": [
+    {
+      "edition": "comment-6377939743",
+      "disposition": "coordination_receipt_retained_not_article",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/50#issuecomment-6377939743",
+      "source_sha256": "8ea1e2c2b075d5e5740984a474c24c2094b864a9dbef39f5138adfe6f8dee8f7",
+      "source_created_at": "2026-10-24T01:06:43Z",
+      "source_updated_at": "2026-10-24T01:06:43Z",
+      "retrieved_at": "2026-10-31T19:25:39.824Z"
+    },
+    {
+      "edition": "universe-d-charter",
+      "path": "docs/research-articles/prepared/research-issue-0050/universe-d-charter.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0e23bcc84378e20033f337384e930e80f420e23f/docs/universe-d/README.md",
+      "source_created_at": "unknown (source describes October 23)",
+      "source_updated_at": "immutable Git 0e23bcc84378e20033f337384e930e80f420e23f",
+      "retrieved_at": "2026-10-31T19:26:31Z to 2026-10-31T19:26:36Z (retrieval call window; exact per-file clock not retained)",
+      "source_sha256": "a5eff1448cea3b093fdb401632b7110b6c22b2984fc7fc7b07bb7b32921dfd1d",
+      "retained_path": "retained/universe-d-charter.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Universe D: synthetic football research",
+          "section": 1,
+          "sha256": "85be18abd43806d27c613b89c7df7fc36fc79dc7c68c75d7776a25f4d9f5c4b1"
+        },
+        {
+          "source_block": 2,
+          "heading": "Question and intended use",
+          "section": 2,
+          "sha256": "5c2715cc655859c71431d9903c19979b0d2fa39e603c5b1001c11fe69820aecd"
+        },
+        {
+          "source_block": 3,
+          "heading": "Carry forward Universe C's distinctions",
+          "section": 3,
+          "sha256": "b1d6ddf8cf4022ca476f9b01c71fec51378f6894c76f9c68a7249cf2b1636e4d"
+        },
+        {
+          "source_block": 4,
+          "heading": "Repository decision",
+          "section": 3,
+          "sha256": "3a32c13a468b3a16ee5eb75c737403ff955d7538ef1ae3cb8ec7ba721d01099b"
+        },
+        {
+          "source_block": 5,
+          "heading": "Validity and the research ladder",
+          "section": 6,
+          "sha256": "bba5e7087bfebe5fd1240de839c317f7495cbd5fbe8fec6082450d3239601d87"
+        },
+        {
+          "source_block": 6,
+          "heading": "Workflow and current boundary",
+          "section": 7,
+          "sha256": "f2abd6fc169d6683314282cc992da087104440f79f0bcfc6b9478b813b3894f8"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true,
+      "git_blob_sha": "2cf128874fcd69ee16486726984c4a7b0dd5dade",
+      "source_commit": "0e23bcc84378e20033f337384e930e80f420e23f"
+    },
+    {
+      "edition": "experiment-protocol-original",
+      "path": "docs/research-articles/prepared/research-issue-0050/experiment-protocol-original.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0e23bcc84378e20033f337384e930e80f420e23f/docs/universe-d/experiment-001.md",
+      "source_created_at": "unknown (source describes October 23)",
+      "source_updated_at": "immutable Git 0e23bcc84378e20033f337384e930e80f420e23f",
+      "retrieved_at": "2026-10-31T19:26:31Z to 2026-10-31T19:26:36Z (retrieval call window; exact per-file clock not retained)",
+      "source_sha256": "c9dc98943b92d3814f154157a331628b4a301243957bca128bc7eebc8572c927",
+      "retained_path": "retained/experiment-protocol-original.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Experiment 001: route and coverage information in generated target allocation",
+          "section": 1,
+          "sha256": "07dcf3792e3dc0f1b89716606d95ecfd9bb4a8caa5637d748b13d4f6643c6242"
+        },
+        {
+          "source_block": 2,
+          "heading": "Bounded question and falsifiable claim",
+          "section": 2,
+          "sha256": "117954d2c47957bd9f68883bbdc3f06c08def5a0edb13ea983d7dcba7e6fd18a"
+        },
+        {
+          "source_block": 3,
+          "heading": "Entities, rules and omissions",
+          "section": 2,
+          "sha256": "a868c8e6710d08e5143d2bd67523f637859c7ed31f499e5b0db5548dcbb04ca3"
+        },
+        {
+          "source_block": 4,
+          "heading": "Generative specification",
+          "section": 4,
+          "sha256": "44ab0aae64691726d14713af5493613cd0c5be4b5d3f2f720d5ba7729667d16b"
+        },
+        {
+          "source_block": 5,
+          "heading": "Evidence and truth separation",
+          "section": 4,
+          "sha256": "6c762c77016a1f155a93e7b7cd1ff186e532ada80e8ac10b977f555049d074ef"
+        },
+        {
+          "source_block": 6,
+          "heading": "Models and the fair comparison",
+          "section": 3,
+          "sha256": "7b4c6d1771103a67b31c8486591d7f2c9813db8c96e53571681036e798d0429c"
+        },
+        {
+          "source_block": 7,
+          "heading": "Reproducible population and evaluation",
+          "section": 4,
+          "sha256": "ee3059966179d20930dd264a8ab750c98bb28378597c60fc8343cc3e933da104"
+        },
+        {
+          "source_block": 8,
+          "heading": "Required negative cases and reporting",
+          "section": 7,
+          "sha256": "c322f142e06d07b797f228abe9eb7d6bd7fc4e21e17fff1d1776070dd91d600b"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true,
+      "git_blob_sha": "62bc855b0bd4d5ad9d054b41491c12e8d13315a6",
+      "source_commit": "0e23bcc84378e20033f337384e930e80f420e23f"
+    },
+    {
+      "edition": "experiment-protocol-amended",
+      "path": "docs/research-articles/prepared/research-issue-0050/experiment-protocol-amended.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/bb24b06980e9a575235fca5e707778e820770fd2/docs/universe-d/experiment-001.md",
+      "source_created_at": "unknown (source describes October 23)",
+      "source_updated_at": "immutable Git bb24b06980e9a575235fca5e707778e820770fd2",
+      "retrieved_at": "2026-10-31T19:26:50Z to 2026-10-31T19:27:05Z (retrieval call window; exact per-file clock not retained)",
+      "source_sha256": "607110b6e0f1b68656767df27b47cdc98556664fdc3c41bda6087bab62c17c6b",
+      "retained_path": "retained/experiment-protocol-amended.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Experiment 001: route and coverage information in generated target allocation",
+          "section": 1,
+          "sha256": "07dcf3792e3dc0f1b89716606d95ecfd9bb4a8caa5637d748b13d4f6643c6242"
+        },
+        {
+          "source_block": 2,
+          "heading": "Bounded question and falsifiable claim",
+          "section": 2,
+          "sha256": "117954d2c47957bd9f68883bbdc3f06c08def5a0edb13ea983d7dcba7e6fd18a"
+        },
+        {
+          "source_block": 3,
+          "heading": "Entities, rules and omissions",
+          "section": 2,
+          "sha256": "a868c8e6710d08e5143d2bd67523f637859c7ed31f499e5b0db5548dcbb04ca3"
+        },
+        {
+          "source_block": 4,
+          "heading": "Generative specification",
+          "section": 4,
+          "sha256": "44ab0aae64691726d14713af5493613cd0c5be4b5d3f2f720d5ba7729667d16b"
+        },
+        {
+          "source_block": 5,
+          "heading": "Evidence and truth separation",
+          "section": 4,
+          "sha256": "6c762c77016a1f155a93e7b7cd1ff186e532ada80e8ac10b977f555049d074ef"
+        },
+        {
+          "source_block": 6,
+          "heading": "Models and the fair comparison",
+          "section": 3,
+          "sha256": "9cd39f6355afc207b28f688cc156c81f018cfa199315c5bdded2e08dc42c589f"
+        },
+        {
+          "source_block": 7,
+          "heading": "Reproducible population and evaluation",
+          "section": 4,
+          "sha256": "ee3059966179d20930dd264a8ab750c98bb28378597c60fc8343cc3e933da104"
+        },
+        {
+          "source_block": 8,
+          "heading": "Required negative cases and reporting",
+          "section": 7,
+          "sha256": "c322f142e06d07b797f228abe9eb7d6bd7fc4e21e17fff1d1776070dd91d600b"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true,
+      "git_blob_sha": "ce3dce692325be2d4a5fdb391f85b67920a27ff7",
+      "source_commit": "bb24b06980e9a575235fca5e707778e820770fd2"
+    },
+    {
+      "edition": "development-validation",
+      "path": "docs/research-articles/prepared/research-issue-0050/development-validation.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/bb24b06980e9a575235fca5e707778e820770fd2/experiments/universe-d/001-target-allocation/VALIDATION.md",
+      "source_created_at": "unknown (source describes October 23)",
+      "source_updated_at": "immutable Git bb24b06980e9a575235fca5e707778e820770fd2",
+      "retrieved_at": "2026-10-31T19:26:50Z to 2026-10-31T19:27:05Z (retrieval call window; exact per-file clock not retained)",
+      "source_sha256": "fe4a68fec03fb73fdc3d22fbb8d45092ab72d0151016c0f594f78aee15106e12",
+      "retained_path": "retained/development-validation.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Implementation validation receipt",
+          "section": 1,
+          "sha256": "3e716805343bacdb003dd084abf71a637faf44f696f9325bafc2377dac7b255c"
+        },
+        {
+          "source_block": 2,
+          "heading": "Scope and checks",
+          "section": 4,
+          "sha256": "2b0b84fa2335f524129bb83de423d7a7edb1b2152dd6c072b32ca51643cbd26f"
+        },
+        {
+          "source_block": 3,
+          "heading": "Numerical budget amendment and preserved failure",
+          "section": 4,
+          "sha256": "df4d0abc1a7cb155582676df595250cb84749f33b05f16b53e14b127e490eede"
+        },
+        {
+          "source_block": 4,
+          "heading": "Exact local capture bindings",
+          "section": 8,
+          "sha256": "a54b25954c357a11c8804b743a615008d22e3f7c60bafb5768a1cb1ee366c2ed"
+        },
+        {
+          "source_block": 5,
+          "heading": "Remaining review boundary",
+          "section": 7,
+          "sha256": "e45cb67aa88209f3010c880e3109b12295d53e94ef3ccc2a106a67450a347607"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true,
+      "git_blob_sha": "1e75893449f1584a71544e9391fb11547086f74e",
+      "source_commit": "bb24b06980e9a575235fca5e707778e820770fd2"
+    }
+  ],
+  "fidelity": "Every source section mapped intact; heading depth only changed. Question IDs/measurements/windows retained. Unknown values not synthesized. Historical external-review receipts are source claims, not new acceptance.",
+  "format_review": "self-check; independent review pending"
+}
