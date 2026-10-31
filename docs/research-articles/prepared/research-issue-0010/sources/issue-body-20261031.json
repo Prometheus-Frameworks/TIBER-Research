@@ -1,0 +1,66 @@
+{
+  "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/10",
+  "source_created_at": "2026-08-15T16:30:58Z",
+  "source_updated_at": "2026-08-17T14:02:52Z",
+  "retrieved_at": "2026-10-31T19:25:27.629Z",
+  "source_body_sha256": "e739cc6050347f3f19152877a3324a5432a72610a47db64c88ec53e642250b2b",
+  "capture_sha256": "e739cc6050347f3f19152877a3324a5432a72610a47db64c88ec53e642250b2b",
+  "capture_scope": "Exact returned Markdown body",
+  "changes": [],
+  "original_publication_bytes_authenticated": false,
+  "source_blob_ref": null,
+  "mapping": [
+    {
+      "source_heading": "## Purpose",
+      "prepared_section": 1
+    },
+    {
+      "source_heading": "## Core principle",
+      "prepared_section": 3
+    },
+    {
+      "source_heading": "## Pilot A \u2014 working Jeremiyah Love share tree",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## Pilot B \u2014 agent-ready Let\u2019s Cook entry link",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## UAV / agent-guidance requirement",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## Operator workspace boundary",
+      "prepared_section": 6
+    },
+    {
+      "source_heading": "## Share / fork direction",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## First user experiment",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## Acceptance criteria for v0",
+      "prepared_section": 7
+    },
+    {
+      "source_heading": "## Architecture constraints",
+      "prepared_section": 6
+    },
+    {
+      "source_heading": "## Open design questions to answer during implementation",
+      "prepared_section": 6
+    },
+    {
+      "source_heading": "## Related",
+      "prepared_section": 8
+    },
+    {
+      "source_heading": "## Terminal v0 success condition",
+      "prepared_section": 7
+    }
+  ]
+}
