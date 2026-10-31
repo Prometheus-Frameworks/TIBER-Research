@@ -8,7 +8,7 @@
     "non_pr_issue_count": 53,
     "source_body_capture": "Body hashes only; not a full body/comment archive or original-publication authentication."
   },
-  "execution_status": "active_full_53_record_triage_complete_first_batch_prepared",
+  "execution_status": "finite_preparation_complete_with_explicit_exclusions",
   "ownership_transfer": false,
   "suggested_first_batch": [
     73,
@@ -36,7 +36,9 @@
       "full_issue_and_all_comments_read": true,
       "preparation_gaps": [
         "Source reportability expressly internal; public formatting copy withheld. Owner must authorize a public-safe edition separately. No internal result/capture/locator is republished."
-      ]
+      ],
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0005",
@@ -48,8 +50,17 @@
       "comment_count_at_census": 1,
       "body_sha256_at_census": "337b104f81d11cd8ce0f1f75464f717e0f4734ae1936085592b6af71ae4acf01",
       "article_classification": "research/design note",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/31182b99d04fca280d1cf6969c4724c288bd6069/docs/research-articles/prepared/research-issue-0005/issue-body-20261031.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/31182b99d04fca280d1cf6969c4724c288bd6069/docs/research-articles/prepared/research-issue-0005/comment-5275322381.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/31182b99d04fca280d1cf6969c4724c288bd6069/docs/research-articles/prepared/research-issue-0005/linked-discovery-overview.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/31182b99d04fca280d1cf6969c4724c288bd6069/docs/research-articles/prepared/research-issue-0005/linked-w1-historical-contract.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/383a66eef7d10a9068c54f866d8adb39a356a8f3/docs/research-articles/prepared/research-issue-0005/linked-w2-upstream-ownership.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/383a66eef7d10a9068c54f866d8adb39a356a8f3/docs/research-articles/prepared/research-issue-0005/linked-w3-candidate-matrix.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/383a66eef7d10a9068c54f866d8adb39a356a8f3/docs/research-articles/prepared/research-issue-0005/linked-w4-availability-contract-design.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/da9207dbc91c74b4bf1f76f1e720d7ded94b9da2/docs/research-articles/prepared/research-issue-0005/linked-w5-dual-layer-architecture.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Availability-source discovery proposal and later distinct consolidated discovery notebook; no admission/outreach authority.",
       "source_updated_at_preparation": "2026-08-13T02:44:56Z",
@@ -59,7 +70,15 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/82",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/85",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/87"
+      ],
+      "prepared_distinct_article_count": 7,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0009",
@@ -71,8 +90,10 @@
       "comment_count_at_census": 0,
       "body_sha256_at_census": "12239310161664d6aa6c1a0c2466f5439fbc2662bb67e3f453368536f6285fe2",
       "article_classification": "research/design note",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/da9207dbc91c74b4bf1f76f1e720d7ded94b9da2/docs/research-articles/prepared/research-issue-0009/issue-body-20261031.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Conceptual causal-lineage research with Love/Price prospective and Jeanty retrospective pilot hypotheses; not adopted or activated.",
       "source_updated_at_preparation": "2026-08-15T12:54:21Z",
@@ -82,7 +103,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/87"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0010",
@@ -94,8 +121,11 @@
       "comment_count_at_census": 1,
       "body_sha256_at_census": "e739cc6050347f3f19152877a3324a5432a72610a47db64c88ec53e642250b2b",
       "article_classification": "research/design note",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/da9207dbc91c74b4bf1f76f1e720d7ded94b9da2/docs/research-articles/prepared/research-issue-0010/issue-body-20261031.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/da9207dbc91c74b4bf1f76f1e720d7ded94b9da2/docs/research-articles/prepared/research-issue-0010/comment-5316923330.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Initial product/experiment design plus substantive separate User Zero findings comment; preserve independent dates and no-evidence-access conditions.",
       "source_updated_at_preparation": "2026-08-17T14:02:52Z",
@@ -105,7 +135,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/87"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0012",
@@ -128,7 +164,9 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0013",
@@ -150,7 +188,9 @@
       "full_issue_and_all_comments_read": true,
       "preparation_gaps": [
         "Source reportability expressly internal; public formatting copy withheld. Owner must authorize a public-safe edition separately. No internal result/capture/locator is republished."
-      ]
+      ],
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0014",
@@ -173,7 +213,9 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0015",
@@ -185,8 +227,14 @@
       "comment_count_at_census": 6,
       "body_sha256_at_census": "caaf76e26bfce73af9ac5bb3d03d94f1fbf1acb75e9cb98f3b54456945035c85",
       "article_classification": "research/design note",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9743a8a1f86ecf87b447ce18c80a531c82f68d4e/docs/research-articles/prepared/research-issue-0015/issue-body-20261031.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9743a8a1f86ecf87b447ce18c80a531c82f68d4e/docs/research-articles/prepared/research-issue-0015/comment-5376323502.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9743a8a1f86ecf87b447ce18c80a531c82f68d4e/docs/research-articles/prepared/research-issue-0015/comment-5446705869.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9743a8a1f86ecf87b447ce18c80a531c82f68d4e/docs/research-articles/prepared/research-issue-0015/comment-5448184223.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9743a8a1f86ecf87b447ce18c80a531c82f68d4e/docs/research-articles/prepared/research-issue-0015/comment-5458407701.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Context-compiler hypothesis/design brief plus separate dated R0/R1 census and R2 field-contribution editions; preserve proposal versus activation/adoption.",
       "source_updated_at_preparation": "2026-08-28T22:26:36Z",
@@ -196,7 +244,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/90"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0016",
@@ -208,8 +262,10 @@
       "comment_count_at_census": 0,
       "body_sha256_at_census": "f2d6a864ae3cec3c818e31cb001c643f7e61492c4e4d39a526630f6cadea20e9",
       "article_classification": "article",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9743a8a1f86ecf87b447ce18c80a531c82f68d4e/docs/research-articles/prepared/research-issue-0016/issue-body-20261031.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Conditional engineering-behavior case study with exact cases, model-attribution caveat, hypotheses and future matched-replay design.",
       "source_updated_at_preparation": "2026-08-24T18:54:17Z",
@@ -219,7 +275,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/90"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0017",
@@ -242,7 +304,9 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0019",
@@ -254,8 +318,10 @@
       "comment_count_at_census": 0,
       "body_sha256_at_census": "a7f8c530728b0d4ba3ca4c82e64477f2e308444dfe4b41770ebddb46554325dd",
       "article_classification": "article",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9743a8a1f86ecf87b447ce18c80a531c82f68d4e/docs/research-articles/prepared/research-issue-0019/issue-body-20261031.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "External-reading comparative research note with corrected legibility interpretation, evidence cutoff and no-authority limits.",
       "source_updated_at_preparation": "2026-08-29T15:35:40Z",
@@ -265,7 +331,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/90"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0021",
@@ -277,8 +349,11 @@
       "comment_count_at_census": 1,
       "body_sha256_at_census": "c3a913fde0f445f436ba5b41d1ec429d8eb4f4ce5122415492d473ccf0b17b05",
       "article_classification": "article",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a2552af3e409cb77f693348faa084303b72589b9/docs/research-articles/prepared/research-issue-0021/issue-body-20261031.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a2552af3e409cb77f693348faa084303b72589b9/docs/research-articles/prepared/research-issue-0021/comment-5487203447.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Steward workbench case study plus distinct Case D evaluation receipt; receipt accepts bounded packet task only, not external Forecast claims.",
       "source_updated_at_preparation": "2026-09-01T01:25:41Z",
@@ -288,7 +363,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/92"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0022",
@@ -300,8 +381,10 @@
       "comment_count_at_census": 0,
       "body_sha256_at_census": "3e5c16961f2e564754fa4eff14eb0e24023ee5e984a68a9e95a6998edfbb3e48",
       "article_classification": "article",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a2552af3e409cb77f693348faa084303b72589b9/docs/research-articles/prepared/research-issue-0022/issue-body-20261031.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Film-charting learning case study and proposed reconciliation; public-safe issue only, private full chart/stills remain reference-only and not acquired/copied.",
       "source_updated_at_preparation": "2026-09-10T17:27:04Z",
@@ -311,7 +394,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/92"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0024",
@@ -323,8 +412,15 @@
       "comment_count_at_census": 5,
       "body_sha256_at_census": "40290bd29c19b7748597d4d773a47db996fb4ceae89ba09ad4309c82783a1cf1",
       "article_classification": "research/design note",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7980c7713a8fcb8cc811ee35f41f079251fca04d/docs/research-articles/prepared/research-issue-0024/body-formatted-2026-10-31.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7980c7713a8fcb8cc811ee35f41f079251fca04d/docs/research-articles/prepared/research-issue-0024/update-5882388277-formatted-2026-10-31.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7980c7713a8fcb8cc811ee35f41f079251fca04d/docs/research-articles/prepared/research-issue-0024/update-5894787664-formatted-2026-10-31.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7980c7713a8fcb8cc811ee35f41f079251fca04d/docs/research-articles/prepared/research-issue-0024/update-5913653063-formatted-2026-10-31.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7980c7713a8fcb8cc811ee35f41f079251fca04d/docs/research-articles/prepared/research-issue-0024/update-5913914511-formatted-2026-10-31.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7980c7713a8fcb8cc811ee35f41f079251fca04d/docs/research-articles/prepared/research-issue-0024/update-5970712185-formatted-2026-10-31.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Weekly intake specifies six player questions and a later separate MIN supplement, with actual readiness amendments; not completed football research.",
       "source_updated_at_preparation": "2026-10-03T15:44:55Z",
@@ -334,7 +430,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/89"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0025",
@@ -346,8 +448,20 @@
       "comment_count_at_census": 6,
       "body_sha256_at_census": "0d3bd710645a61a9ac987c078868f452306af0103373db784c2d4e6b1410afa4",
       "article_classification": "research/design note",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7980c7713a8fcb8cc811ee35f41f079251fca04d/docs/research-articles/prepared/research-issue-0025/body-formatted-2026-10-31.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7980c7713a8fcb8cc811ee35f41f079251fca04d/docs/research-articles/prepared/research-issue-0025/update-6071032293-formatted-2026-10-31.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7980c7713a8fcb8cc811ee35f41f079251fca04d/docs/research-articles/prepared/research-issue-0025/update-6071075003-formatted-2026-10-31.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7980c7713a8fcb8cc811ee35f41f079251fca04d/docs/research-articles/prepared/research-issue-0025/update-6079983136-formatted-2026-10-31.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7980c7713a8fcb8cc811ee35f41f079251fca04d/docs/research-articles/prepared/research-issue-0025/update-6080343958-formatted-2026-10-31.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7980c7713a8fcb8cc811ee35f41f079251fca04d/docs/research-articles/prepared/research-issue-0025/update-6110649901-formatted-2026-10-31.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7980c7713a8fcb8cc811ee35f41f079251fca04d/docs/research-articles/prepared/research-issue-0025/update-6416534085-formatted-2026-10-31.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4a1e828281471b4e12238282eae97393d56c4e7b/docs/research-articles/prepared/research-issue-0025/linked-readiness/notebook-formatted-2026-10-31.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4a1e828281471b4e12238282eae97393d56c4e7b/docs/research-articles/prepared/research-issue-0025/linked-study-design/notebook-formatted-2026-10-31.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7204993d0936fd798b46ab3b16042c1953722c75/docs/research-articles/prepared/research-issue-0025/linked-carolina-case/notebook-formatted-2026-10-31.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7204993d0936fd798b46ab3b16042c1953722c75/docs/research-articles/prepared/research-issue-0025/linked-execution-proposal/notebook-formatted-2026-10-31.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Separate K/DST designs plus original Carolina, Dallas and later three-DST dated cases; linked preparation notebook contains substantive distinct design/readiness records.",
       "source_updated_at_preparation": "2026-10-26T12:56:23Z",
@@ -357,7 +471,15 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/89",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/96",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/97"
+      ],
+      "prepared_distinct_article_count": 5,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0027",
@@ -369,8 +491,11 @@
       "comment_count_at_census": 1,
       "body_sha256_at_census": "17b357ff14080976dcc793e8a6c08072ddb94b31630ba68c9d79a12dc8eea684",
       "article_classification": "research/design note",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7980c7713a8fcb8cc811ee35f41f079251fca04d/docs/research-articles/prepared/research-issue-0027/body-formatted-2026-10-31.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7980c7713a8fcb8cc811ee35f41f079251fca04d/docs/research-articles/prepared/research-issue-0027/update-5980269904-formatted-2026-10-31.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Persistent-state architecture question and completed October 4 audit compare candidates, sources, falsifiers and an explicitly unactivated experiment.",
       "source_updated_at_preparation": "2026-10-04T13:07:31Z",
@@ -380,7 +505,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/89"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0028",
@@ -392,8 +523,11 @@
       "comment_count_at_census": 1,
       "body_sha256_at_census": "3f441516fb0c95e36a32dde74fdac3ff35f45e949084295a3b7b6740c633402a",
       "article_classification": "research/design note",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/253f52c68059452c3cffcc4e0a1cbab1bf17ed88/docs/research-articles/prepared/research-issue-0028/body-formatted-2026-10-31.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/253f52c68059452c3cffcc4e0a1cbab1bf17ed88/docs/research-articles/prepared/research-issue-0028/update-5986419259-formatted-2026-10-31.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "OL Context H1/H2/H3 design plus completed public field-readiness/test-design packet; no experiment, causal OL score or qualified full event population.",
       "source_updated_at_preparation": "2026-10-05T01:11:17Z",
@@ -403,7 +537,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/93"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0029",
@@ -415,8 +555,12 @@
       "comment_count_at_census": 1,
       "body_sha256_at_census": "375f7edb0e5482041359f995b0bd3f23ae13260a39387fb6984286d3cd067e90",
       "article_classification": "research/design note",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/253f52c68059452c3cffcc4e0a1cbab1bf17ed88/docs/research-articles/prepared/research-issue-0029/body-original-framing-formatted-2026-10-31.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/253f52c68059452c3cffcc4e0a1cbab1bf17ed88/docs/research-articles/prepared/research-issue-0029/body-synthesis-2026-10-07-formatted-2026-10-31.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/253f52c68059452c3cffcc4e0a1cbab1bf17ed88/docs/research-articles/prepared/research-issue-0029/update-6377434180-formatted-2026-10-31.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Conceptual Universe C framing and October 7 architecture synthesis; diagram, verifier and synthetic examples are proposals, not empirical results.",
       "source_updated_at_preparation": "2026-10-24T00:20:25Z",
@@ -426,7 +570,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/93"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0030",
@@ -438,8 +588,12 @@
       "comment_count_at_census": 1,
       "body_sha256_at_census": "5df5a34efe959e808f1e0c42be660b13741adb46973c004a0dc679a148d526d7",
       "article_classification": "research/design note",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/253f52c68059452c3cffcc4e0a1cbab1bf17ed88/docs/research-articles/prepared/research-issue-0030/body-formatted-2026-10-31.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/253f52c68059452c3cffcc4e0a1cbab1bf17ed88/docs/research-articles/prepared/research-issue-0030/update-6081213435-handoff-formatted-2026-10-31.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/253f52c68059452c3cffcc4e0a1cbab1bf17ed88/docs/research-articles/prepared/research-issue-0030/update-6081213435-red-zone-addendum-formatted-2026-10-31.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Unit State B0/B1 design with distinct retrospective SEA W1–4 handoff and red-zone EPA addendum; provider report not reproduced or admitted.",
       "source_updated_at_preparation": "2026-10-09T13:08:18Z",
@@ -449,7 +603,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/93"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0031",
@@ -461,8 +621,10 @@
       "comment_count_at_census": 0,
       "body_sha256_at_census": "ef48169cbaa043a9ce32d470f28c4af03ecc5001d43dc5d5a281dc6d57d8b6c2",
       "article_classification": "research/design note",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6b3dd9feee74c9024702fa7ae57fd2e9b416fa13/docs/research-articles/prepared/research-issue-0031/body-formatted-2026-10-31.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Completed documentary Q1 readiness reconciliation and proposed Q2 outline, explicitly incomplete cohort evidence.",
       "source_updated_at_preparation": "2026-10-08T22:50:23Z",
@@ -472,7 +634,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/94"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0032",
@@ -484,8 +652,10 @@
       "comment_count_at_census": 0,
       "body_sha256_at_census": "2893d687aec9f584c3643a3e8346e246f20f81f74045e92faa62bb877b5be111",
       "article_classification": "research/design note",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6b3dd9feee74c9024702fa7ae57fd2e9b416fa13/docs/research-articles/prepared/research-issue-0032/body-formatted-2026-10-31.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Five-paper external-reading article with attributed results, corrections and TIBER inference; no reproduced experiments.",
       "source_updated_at_preparation": "2026-10-09T15:14:21Z",
@@ -495,7 +665,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/94"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0033",
@@ -507,8 +683,14 @@
       "comment_count_at_census": 2,
       "body_sha256_at_census": "2a6d255cc1ffb51b88d6934b689fad285b9aca4dd272476fdc88512669ff9c45",
       "article_classification": "linked article candidate",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6b3dd9feee74c9024702fa7ae57fd2e9b416fa13/docs/research-articles/prepared/research-issue-0033/body-formatted-2026-10-31.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6b3dd9feee74c9024702fa7ae57fd2e9b416fa13/docs/research-articles/prepared/research-issue-0033/update-6099617086-formatted-2026-10-31.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6b3dd9feee74c9024702fa7ae57fd2e9b416fa13/docs/research-articles/prepared/research-issue-0033/update-6099935095-formatted-2026-10-31.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7204993d0936fd798b46ab3b16042c1953722c75/docs/research-articles/prepared/research-issue-0033/linked-mhj-study/notebook-formatted-2026-10-31.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7204993d0936fd798b46ab3b16042c1953722c75/docs/research-articles/prepared/research-issue-0033/linked-mhj-study/notebook-original-1b08358-formatted-2026-10-31.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Proposal and execution/publication receipts lead to distinct merged MHJ descriptive study; preserve issue proposal and study as separate editions/artifacts.",
       "source_updated_at_preparation": "2026-10-11T12:39:10Z",
@@ -518,7 +700,14 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/94",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/97"
+      ],
+      "prepared_distinct_article_count": 2,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0034",
@@ -530,8 +719,10 @@
       "comment_count_at_census": 0,
       "body_sha256_at_census": "c78e2d3462309eb05a0a67c29c4c4de415202bbece7f1cf947438d4ded0080ef",
       "article_classification": "research/design note",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/de2aca204cb98897a865385bde927afef1512039/docs/research-articles/prepared/research-issue-0034/body-formatted-2026-10-31.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Ability-profile/WR-separation proposal includes actual hypotheses, baselines and falsifiers, not measured ability findings.",
       "source_updated_at_preparation": "2026-10-10T16:52:49Z",
@@ -541,7 +732,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/95"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0036",
@@ -553,8 +750,10 @@
       "comment_count_at_census": 0,
       "body_sha256_at_census": "bb97673a75133c1cf7d96e7ca86d99e5f1e5ddd9d0ca86c28c3040f9bbb7181a",
       "article_classification": "article",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/de2aca204cb98897a865385bde927afef1512039/docs/research-articles/prepared/research-issue-0036/body-formatted-2026-10-31.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Completed one-game exploratory target-depth feasibility analysis, exact game/source pins, calculations and negative coverage result.",
       "source_updated_at_preparation": "2026-10-13T01:18:00Z",
@@ -564,7 +763,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/95"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0037",
@@ -576,8 +781,10 @@
       "comment_count_at_census": 0,
       "body_sha256_at_census": "1be2abd1989e5c2e000b97b3b52a7da882c6a61fd019d87751ad2a42d3e79e72",
       "article_classification": "research/design note",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/de2aca204cb98897a865385bde927afef1512039/docs/research-articles/prepared/research-issue-0037/body-formatted-2026-10-31.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Unexecuted draft-price study design preserves Q1 and W5 retrospective windows, seeds versus population and paused W3 lane.",
       "source_updated_at_preparation": "2026-10-13T16:57:47Z",
@@ -587,7 +794,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/95"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0039",
@@ -599,8 +812,10 @@
       "comment_count_at_census": 0,
       "body_sha256_at_census": "d1734c38e9eb982b0a56432e4025414e6a9e222e813e25f56fa2099327130bcd",
       "article_classification": "article",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4a1e828281471b4e12238282eae97393d56c4e7b/docs/research-articles/prepared/research-issue-0039/body-formatted-2026-10-31.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Completed private retrospective experiment publicly summarized with methods/results and review receipts; source inputs and portable report stay private. Closed state retained.",
       "source_updated_at_preparation": "2026-10-14T00:31:52Z",
@@ -610,7 +825,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/96"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0040",
@@ -633,7 +854,9 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0041",
@@ -645,8 +868,10 @@
       "comment_count_at_census": 0,
       "body_sha256_at_census": "83ef3a38e44da8af36d34cf49c58d23cb330eca30ac50587d09e87c903eef524",
       "article_classification": "article",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/f42947e888aef2568940db80c0652263c4f98a48/docs/research-articles/prepared/research-issue-0041/body.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Two-player observational handcuff study with H1–H3, Weeks 1–5 baseline and fixed Weeks 6–18/end-of-season test. No watch dispatched.",
       "source_updated_at_preparation": "2026-10-16T11:09:36Z",
@@ -656,7 +881,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/83"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0042",
@@ -668,8 +899,10 @@
       "comment_count_at_census": 0,
       "body_sha256_at_census": "19e6a6a75075a00a8aba8550f4b1fcb4e3e4054da8f7a00d0ba0c8149371f861",
       "article_classification": "article",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/f42947e888aef2568940db80c0652263c4f98a48/docs/research-articles/prepared/research-issue-0042/body.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Three distinct scoring-qualified comparison cases in one comparative article; retain unposted X draft and MCP proposal as ancillary source material, not new publications.",
       "source_updated_at_preparation": "2026-10-17T14:30:03Z",
@@ -679,7 +912,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/83"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0044",
@@ -691,8 +930,11 @@
       "comment_count_at_census": 1,
       "body_sha256_at_census": "585c1a92b7a06f019a2241718b1e418f1b7be7e871fabc381a7ff7f930360a4b",
       "article_classification": "article",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/f42947e888aef2568940db80c0652263c4f98a48/docs/research-articles/prepared/research-issue-0044/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/f42947e888aef2568940db80c0652263c4f98a48/docs/research-articles/prepared/research-issue-0044/update-6417385863.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Eight UTIL cases with immutable prospective thresholds and differing two-game windows; public edition only. Preserve private-review receipt as reported, never copy private underlying inputs. One Marks-only dated update, not whole-study completion.",
       "source_updated_at_preparation": "2026-10-26T13:37:40Z",
@@ -702,7 +944,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/83"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0045",
@@ -714,8 +962,19 @@
       "comment_count_at_census": 8,
       "body_sha256_at_census": "33aeb22b349061c0128709b29c696c7195cfa7331931114f5833de99aad6cb9c",
       "article_classification": "article",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/body-dated-addition.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/update-6305245492.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/update-6306544349.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/update-6325940080.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/update-6383749621.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/update-6496226724.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/update-6496423581.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/update-6522498036.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/update-6542819176.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Living receiving study with H1–H3/B1–B4, eight substantive separately dated comments; preserve excluded paid recap, W01–W04, film-vs-transcript distinctions and existing cadence.",
       "source_updated_at_preparation": "2026-10-31T11:32:19Z",
@@ -725,7 +984,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/84"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0046",
@@ -737,8 +1002,11 @@
       "comment_count_at_census": 2,
       "body_sha256_at_census": "efbbc7f85ae553d575c6c46087c6a8f238dcfb3b5df7be1d9a53452d60f80cf1",
       "article_classification": "article",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0046/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0046/update-6441026903.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Living Noel study; actual operator assertion is explicit. One scheduling receipt is coordination; one substantive postgame update. Preserve bye and Nov3 decision window.",
       "source_updated_at_preparation": "2026-10-27T11:42:44Z",
@@ -748,7 +1016,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/84"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0047",
@@ -760,8 +1034,17 @@
       "comment_count_at_census": 8,
       "body_sha256_at_census": "7c125550cd5fcb49198b4085a97b3f20cf9af4a987f30b2eb028628b869786ab",
       "article_classification": "article",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0047/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0047/update-6350614837.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0047/update-6350862200.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0047/update-6351704283.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0047/update-6351977020.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0047/update-6352115267.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0047/update-6417265640.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0047/update-6441040381.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Living Wilson study with H1–H4 and MW-47-01–11; seven substantive comments plus one watch receipt. Puka analogy is exploratory, not asserted operator belief.",
       "source_updated_at_preparation": "2026-10-27T11:43:30Z",
@@ -771,7 +1054,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/84"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0048",
@@ -783,8 +1072,11 @@
       "comment_count_at_census": 1,
       "body_sha256_at_census": "7040dc8e1b87efe6c8abe819460ae2bd124c8c4394ea74b26007cb5ae5bce5be",
       "article_classification": "article",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5459c9388ed7b8e9868d2bfefc33751f68e4fc17/docs/research-articles/prepared/research-issue-0048/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5459c9388ed7b8e9868d2bfefc33751f68e4fc17/docs/research-articles/prepared/research-issue-0048/update-6417324415.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Short research backlog note with sourced baseline/alternatives, plus substantive first-return update; not merely coordination. Next two active games only if operator continues; no schedule created.",
       "source_updated_at_preparation": "2026-10-26T13:34:47Z",
@@ -794,7 +1086,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/86"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0049",
@@ -806,8 +1104,11 @@
       "comment_count_at_census": 1,
       "body_sha256_at_census": "f88f062321f6744be3d55dcccddf36d50e4f9bf750a24c75bf06cdd058e40082",
       "article_classification": "article",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5459c9388ed7b8e9868d2bfefc33751f68e4fc17/docs/research-articles/prepared/research-issue-0049/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5459c9388ed7b8e9868d2bfefc33751f68e4fc17/docs/research-articles/prepared/research-issue-0049/update-6417324742.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Pregame matchup/research article with five prospective mechanisms and separate postgame assessment, distinct from Mason case #48.",
       "source_updated_at_preparation": "2026-10-26T13:34:48Z",
@@ -817,7 +1118,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/86"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0050",
@@ -829,8 +1136,13 @@
       "comment_count_at_census": 1,
       "body_sha256_at_census": "f56403c28cc0fa72df154a11d51b4b38bb798b9250732f0bebb7c0e401668bf8",
       "article_classification": "linked_article_candidate",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "linked-articles-prepared-index-not-duplicated",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/ac3c487452b0edb62bec89251d5551a5ae5677dc/docs/research-articles/prepared/research-issue-0050/universe-d-charter.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/ac3c487452b0edb62bec89251d5551a5ae5677dc/docs/research-articles/prepared/research-issue-0050/experiment-protocol-amended.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/ac3c487452b0edb62bec89251d5551a5ae5677dc/docs/research-articles/prepared/research-issue-0050/experiment-protocol-original.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/ac3c487452b0edb62bec89251d5551a5ae5677dc/docs/research-articles/prepared/research-issue-0050/development-validation.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Linked design article candidate: issue summarizes Universe D charter/protocol, not a fourth mirror article. PR51 charter and protocol distinct; PR53 amended protocol separate edition; validation receipt distinct research-method development note. Implementation handoff and runner README are engineering documentation, linked but not additional research articles.",
       "source_updated_at_preparation": "2026-10-24T01:06:43Z",
@@ -840,7 +1152,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/91"
+      ],
+      "prepared_distinct_article_count": 3,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0052",
@@ -852,8 +1170,11 @@
       "comment_count_at_census": 1,
       "body_sha256_at_census": "b388c79f555ea51a9c0efba29a1b1f4c990cf289a2f1344e2b98e233b1b98508",
       "article_classification": "article",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5459c9388ed7b8e9868d2bfefc33751f68e4fc17/docs/research-articles/prepared/research-issue-0052/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5459c9388ed7b8e9868d2bfefc33751f68e4fc17/docs/research-articles/prepared/research-issue-0052/update-6414730618.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Pregame player study with six-question Puka-active and six-question Puka-absent branches; postgame answers select A, retain B untested.",
       "source_updated_at_preparation": "2026-10-26T11:18:58Z",
@@ -863,7 +1184,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/86"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0054",
@@ -875,8 +1202,12 @@
       "comment_count_at_census": 1,
       "body_sha256_at_census": "addd2f059368a07a3e7c3f9ebb41b72ee9a5d589e3cc6da2068ba7f9c9ab0c88",
       "article_classification": "article",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9df1ef103394962ff6e1b7fdc18592bbd9780929/docs/research-articles/prepared/research-issue-0054/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9df1ef103394962ff6e1b7fdc18592bbd9780929/docs/research-articles/prepared/research-issue-0054/body-dated-addition.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9df1ef103394962ff6e1b7fdc18592bbd9780929/docs/research-articles/prepared/research-issue-0054/update-6415084917.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Pregame Jeanty access study plus dated Oct24 receiving addition inside body; postgame separate. Preserve all four availability branches and outcome-vs-mechanism distinction.",
       "source_updated_at_preparation": "2026-10-26T11:38:44Z",
@@ -886,7 +1217,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/88"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0055",
@@ -898,8 +1235,11 @@
       "comment_count_at_census": 1,
       "body_sha256_at_census": "4244384213a6e0b944cb6913846d01255e1412d50e57c31c280b5f3afdcd4391",
       "article_classification": "article",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9df1ef103394962ff6e1b7fdc18592bbd9780929/docs/research-articles/prepared/research-issue-0055/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9df1ef103394962ff6e1b7fdc18592bbd9780929/docs/research-articles/prepared/research-issue-0055/update-6428812290.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Hurst player study plus dated target-qualification engineering addendum; postgame separate. Keep estimated college targets and postmerge P2 boundary, no private input replication.",
       "source_updated_at_preparation": "2026-10-26T22:26:57Z",
@@ -909,7 +1249,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/88"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0056",
@@ -921,8 +1267,11 @@
       "comment_count_at_census": 1,
       "body_sha256_at_census": "dd8a7c93374dc928ed6e4032551f28f4e5b2a7210c3b11081696d06bf0264e80",
       "article_classification": "article",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9df1ef103394962ff6e1b7fdc18592bbd9780929/docs/research-articles/prepared/research-issue-0056/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9df1ef103394962ff6e1b7fdc18592bbd9780929/docs/research-articles/prepared/research-issue-0056/update-6546709227.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Four-receiver pregame audit plus substantive Oct31 postgame edition, both source-specific route definitions and erased-play boundary preserved.",
       "source_updated_at_preparation": "2026-10-31T17:24:29Z",
@@ -932,7 +1281,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/88"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0059",
@@ -944,8 +1299,10 @@
       "comment_count_at_census": 0,
       "body_sha256_at_census": "11362a3d6defb4fa781447295e01378767c75119e473a81ce53d4affc3c3cb68",
       "article_classification": "article",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a0497911bd40016abaa7ef9d02d09b31d5130a74/docs/research-articles/prepared/research-issue-0059/article.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Five-player rebound watch distinguishes opportunity, execution and fantasy outcome; Collins and Purdy have Week 8 byes, not failed rebound tests.",
       "source_updated_at_preparation": "2026-10-26T11:40:57Z",
@@ -955,7 +1312,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/78"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0060",
@@ -967,8 +1330,11 @@
       "comment_count_at_census": 2,
       "body_sha256_at_census": "517acefdc43ed3264d9d9e6f8ebe0069adfbf9afebdde68d036e9006873dc792",
       "article_classification": "article",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a0497911bd40016abaa7ef9d02d09b31d5130a74/docs/research-articles/prepared/research-issue-0060/article.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a0497911bd40016abaa7ef9d02d09b31d5130a74/docs/research-articles/prepared/research-issue-0060/update-2026-10-27.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "The October 26 baseline asks whether Concepcion has repeatable role access rather than only improved conversion. The October 27 partial assessment is retained as a distinct dated edition.",
       "source_updated_at_preparation": "2026-10-27T12:24:10Z",
@@ -978,7 +1344,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/78"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0061",
@@ -990,8 +1362,10 @@
       "comment_count_at_census": 1,
       "body_sha256_at_census": "4a03002d42e5812cbf348f339821f7acb24426a20c206d8050d975fedb37a304",
       "article_classification": "article",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a0497911bd40016abaa7ef9d02d09b31d5130a74/docs/research-articles/prepared/research-issue-0061/article.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Carry share does not establish receiving or close-range ownership. Four healthy-backfield cases preserve separate denominators and situational observations.",
       "source_updated_at_preparation": "2026-10-26T21:40:02Z",
@@ -1001,7 +1375,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/78"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0062",
@@ -1013,8 +1393,10 @@
       "comment_count_at_census": 0,
       "body_sha256_at_census": "7215b82cd70359d879bd3073acafd23c1b7932c28bffd8eee64311f3de2de19f",
       "article_classification": "article",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4350378be430d8cd78fc673f90fbbbc787decfc0/docs/research-articles/prepared/research-issue-0062/article.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Cooper’s recorded explosives are real; repeatable route/target access and a weekly floor remain open.",
       "source_updated_at_preparation": "2026-10-26T13:29:12Z",
@@ -1024,7 +1406,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/79"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0063",
@@ -1036,8 +1424,10 @@
       "comment_count_at_census": 0,
       "body_sha256_at_census": "693147162bedb5410c4159f276ce938a58a9f3f992448a200bd24fb5adef8b58",
       "article_classification": "article",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4350378be430d8cd78fc673f90fbbbc787decfc0/docs/research-articles/prepared/research-issue-0063/article.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Week 7’s eight rushes reconcile to five labelled scrambles, one keeper and two kneels; this does not establish an eight-attempt called-run package.",
       "source_updated_at_preparation": "2026-10-26T13:30:52Z",
@@ -1047,7 +1437,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/79"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0064",
@@ -1059,8 +1455,10 @@
       "comment_count_at_census": 0,
       "body_sha256_at_census": "14d5b6b23a5547fbd34ccbe32935301c67ba4ae92d9cf3c185e2fc3a3ccde0ea",
       "article_classification": "research/design note",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4350378be430d8cd78fc673f90fbbbc787decfc0/docs/research-articles/prepared/research-issue-0064/article.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "A cross-case research notebook prioritizes valuable opportunity persistence, preserves queued hypotheses and methodological corrections, and routes substantive updates to their existing cases.",
       "source_updated_at_preparation": "2026-10-26T13:40:25Z",
@@ -1070,7 +1468,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/79"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0066",
@@ -1082,8 +1486,10 @@
       "comment_count_at_census": 0,
       "body_sha256_at_census": "0d3c0a02c90c6e47923fbdcb48f58313e273c89c4c7f02b727fd30bca6970d0f",
       "article_classification": "article",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/23f2dd7eb29ebe8c37c62cbd2fd90a1c5e7e7f47/docs/research-articles/prepared/research-issue-0066/article.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "Dowdle’s feature-back history supports a contingency hypothesis, not a guaranteed Pittsburgh inherited workload or proven comparative S-tier rank.",
       "source_updated_at_preparation": "2026-10-26T21:39:54Z",
@@ -1093,7 +1499,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/80"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0067",
@@ -1105,8 +1517,10 @@
       "comment_count_at_census": 0,
       "body_sha256_at_census": "2a2a5b0336053ed1f1a9dd1461486a356353cc848388ee7e20d9b78053e35b7a",
       "article_classification": "article",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/23f2dd7eb29ebe8c37c62cbd2fd90a1c5e7e7f47/docs/research-articles/prepared/research-issue-0067/article.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "McGowan’s role increase and a possible Taylor absence/trade motivate a conditional stash thesis; no Taylor transaction or future workhorse role is established.",
       "source_updated_at_preparation": "2026-10-26T22:05:54Z",
@@ -1116,7 +1530,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/80"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0068",
@@ -1128,8 +1548,10 @@
       "comment_count_at_census": 0,
       "body_sha256_at_census": "7f71453b4c431395141dada15a65e3b8b4fc403907a604bd73957e526432cadf",
       "article_classification": "article",
-      "format_preparation": "eligible_pending_preparation",
-      "prepared_artifact_refs": [],
+      "format_preparation": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/23f2dd7eb29ebe8c37c62cbd2fd90a1c5e7e7f47/docs/research-articles/prepared/research-issue-0068/article.md"
+      ],
       "coordination_notes": [],
       "classification_reason": "The McConkey study separates availability, route access, target earning, environment and outcome across the unchanged Week 8–12 window.",
       "source_updated_at_preparation": "2026-10-28T22:55:47Z",
@@ -1139,7 +1561,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/80"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0069",
@@ -1151,9 +1579,9 @@
       "comment_count_at_census": 0,
       "body_sha256_at_census": "0f75697e2d2fc984c8cb99a3da0e650189853303804d89bd3730cccc7eb9f41a",
       "article_classification": "article",
-      "format_preparation": "prepared_pending_draft_publication",
+      "format_preparation": "prepared-draft-review-pending",
       "prepared_artifact_refs": [
-        "docs/research-articles/prepared/research-issue-0069/article.md"
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7867016bb88b09b2ac785860b68dc4242669ac1c/docs/research-articles/prepared/research-issue-0069/article.md"
       ],
       "coordination_notes": [],
       "classification_reason": "Exploratory one-game player study with six original numbered questions and one postgame update.",
@@ -1164,7 +1592,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/77"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0071",
@@ -1190,7 +1624,9 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0073",
@@ -1202,9 +1638,9 @@
       "comment_count_at_census": 0,
       "body_sha256_at_census": "d137fccde0ea5e85c16f799ee773c5e3b0a7c68afce838e599a7fbc8deefd7c5",
       "article_classification": "article",
-      "format_preparation": "prepared_pending_draft_publication",
+      "format_preparation": "prepared-draft-review-pending",
       "prepared_artifact_refs": [
-        "docs/research-articles/prepared/research-issue-0073/article.md"
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7867016bb88b09b2ac785860b68dc4242669ac1c/docs/research-articles/prepared/research-issue-0073/article.md"
       ],
       "coordination_notes": [],
       "classification_reason": "Full matchup preview with separate seven-card agenda, both offenses, competing scenarios and deferred log.",
@@ -1215,7 +1651,13 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/77"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     },
     {
       "source_record_id": "research-issue-0075",
@@ -1227,9 +1669,9 @@
       "comment_count_at_census": 0,
       "body_sha256_at_census": "c6b5e11136dae024dd8eac9279aa95b1745e572b35446a3ae2e9c2214e1ae727",
       "article_classification": "article",
-      "format_preparation": "prepared_pending_draft_publication",
+      "format_preparation": "prepared-draft-review-pending",
       "prepared_artifact_refs": [
-        "docs/research-articles/prepared/research-issue-0075/article.md"
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7867016bb88b09b2ac785860b68dc4242669ac1c/docs/research-articles/prepared/research-issue-0075/article.md"
       ],
       "coordination_notes": [],
       "classification_reason": "Full matchup preview with separate seven-card agenda, both offenses, competing scenarios and deferred log.",
@@ -1240,21 +1682,410 @@
       "preparation_gaps": [
         "Independent research acceptance is not granted by format preparation.",
         "Missing source clocks, owner, endpoint or definition remain unknown; source-owner clarification proposed, not scheduled."
-      ]
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/77"
+      ],
+      "prepared_distinct_article_count": 1,
+      "research_completion_changed_by_preparation": false,
+      "investigator_ownership_changed": false
     }
   ],
   "triage_completed_at": "2026-10-31T19:29:20.564637Z",
   "preparation_branch": "dot/research-article-preparation-20261031-b01",
   "preparation_base_sha": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
   "preparation_base_branch": "codex/game-study-lifecycle-pilot-20261031",
-  "first_checkpoint": "Full triage plus #73/#75/#69 copies and fidelity review; subsequent eligible distinct articles still being prepared.",
-  "triage_summary": {
-    "records_read": 53,
-    "blocked_public_copy": 2,
-    "nonarticle": 4,
-    "codex_owned_excluded": 1,
-    "eligible_issue_records_including_linked_candidates": 46,
-    "first_batch_articles": 3,
-    "linked_distinct_article_accounting": "Read by triage workers; exact editions and preparation dispositions being finalized with finite later batches. Not yet claiming whole queue prepared."
-  }
+  "preparation_completed_at": "2026-10-31T20:16:17.092805Z",
+  "summary": {
+    "census_records": 53,
+    "issue_records_prepared_or_linked": 46,
+    "nonarticle_issue_records": 4,
+    "internal_reportability_blocks": 2,
+    "codex_owned_pilot_excluded": 1,
+    "prepared_distinct_articles": 60,
+    "draft_preparation_prs": 21,
+    "research_review": "unchanged; internal format fidelity checks only",
+    "research_completion": "not implied",
+    "publication_authorized": "Operator explicitly approved public-safe remaining prepared articles, dated updates, maps and public GitHub source captures on2026-10-31; exclusions maintained"
+  },
+  "next_checkpoint": "Finite preparation stopped. Draft review and Joe acceptance/merge decisions remain separate; no continuing research or monitor transferred.",
+  "linked_record_dispositions": [
+    {
+      "issue_number": 3,
+      "inventory_group": "early",
+      "reason": "Linked governed packet explicitly internal; public issue locator only. No internal result capture in output.",
+      "preparation_disposition": "blocked-public-copy",
+      "historical_triage_disposition": "blocked-public-copy"
+    },
+    {
+      "issue_number": 5,
+      "inventory_group": "early",
+      "path": "docs/discovery/open-availability-witness-2026-08-13/README.md",
+      "ref": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+      "prepared_artifact": "docs/research-articles/prepared/research-issue-0005/linked-discovery-overview.md",
+      "source_role": "discovery-overview",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f/docs/discovery/open-availability-witness-2026-08-13/README.md",
+      "preparation_disposition": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/31182b99d04fca280d1cf6969c4724c288bd6069/docs/research-articles/prepared/research-issue-0005/linked-discovery-overview.md"
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/82"
+      ],
+      "historical_triage_disposition": "prepared_local_pending_draft_publication"
+    },
+    {
+      "issue_number": 5,
+      "inventory_group": "early",
+      "path": "docs/discovery/open-availability-witness-2026-08-13/w1-historical-contract.md",
+      "ref": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+      "prepared_artifact": "docs/research-articles/prepared/research-issue-0005/linked-w1-historical-contract.md",
+      "source_role": "distinct linked research/design chapter",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f/docs/discovery/open-availability-witness-2026-08-13/w1-historical-contract.md",
+      "preparation_disposition": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/31182b99d04fca280d1cf6969c4724c288bd6069/docs/research-articles/prepared/research-issue-0005/linked-w1-historical-contract.md"
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/82"
+      ],
+      "historical_triage_disposition": "prepared_local_pending_draft_publication"
+    },
+    {
+      "issue_number": 5,
+      "inventory_group": "early",
+      "path": "docs/discovery/open-availability-witness-2026-08-13/w2-upstream-ownership.md",
+      "ref": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+      "prepared_artifact": "docs/research-articles/prepared/research-issue-0005/linked-w2-upstream-ownership.md",
+      "source_role": "distinct linked research/design chapter",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f/docs/discovery/open-availability-witness-2026-08-13/w2-upstream-ownership.md",
+      "preparation_disposition": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/383a66eef7d10a9068c54f866d8adb39a356a8f3/docs/research-articles/prepared/research-issue-0005/linked-w2-upstream-ownership.md"
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/85"
+      ],
+      "historical_triage_disposition": "prepared_local_pending_draft_publication"
+    },
+    {
+      "issue_number": 5,
+      "inventory_group": "early",
+      "path": "docs/discovery/open-availability-witness-2026-08-13/w3-candidate-matrix.md",
+      "ref": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+      "prepared_artifact": "docs/research-articles/prepared/research-issue-0005/linked-w3-candidate-matrix.md",
+      "source_role": "distinct linked research/design chapter",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f/docs/discovery/open-availability-witness-2026-08-13/w3-candidate-matrix.md",
+      "preparation_disposition": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/383a66eef7d10a9068c54f866d8adb39a356a8f3/docs/research-articles/prepared/research-issue-0005/linked-w3-candidate-matrix.md"
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/85"
+      ],
+      "historical_triage_disposition": "prepared_local_pending_draft_publication"
+    },
+    {
+      "issue_number": 5,
+      "inventory_group": "early",
+      "path": "docs/discovery/open-availability-witness-2026-08-13/w4-availability-contract-design.md",
+      "ref": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+      "prepared_artifact": "docs/research-articles/prepared/research-issue-0005/linked-w4-availability-contract-design.md",
+      "source_role": "distinct linked research/design chapter",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f/docs/discovery/open-availability-witness-2026-08-13/w4-availability-contract-design.md",
+      "preparation_disposition": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/383a66eef7d10a9068c54f866d8adb39a356a8f3/docs/research-articles/prepared/research-issue-0005/linked-w4-availability-contract-design.md"
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/85"
+      ],
+      "historical_triage_disposition": "prepared_local_pending_draft_publication"
+    },
+    {
+      "issue_number": 5,
+      "inventory_group": "early",
+      "path": "docs/discovery/open-availability-witness-2026-08-13/w5-dual-layer-architecture.md",
+      "ref": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+      "prepared_artifact": "docs/research-articles/prepared/research-issue-0005/linked-w5-dual-layer-architecture.md",
+      "source_role": "distinct linked research/design chapter",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f/docs/discovery/open-availability-witness-2026-08-13/w5-dual-layer-architecture.md",
+      "preparation_disposition": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/da9207dbc91c74b4bf1f76f1e720d7ded94b9da2/docs/research-articles/prepared/research-issue-0005/linked-w5-dual-layer-architecture.md"
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/87"
+      ],
+      "historical_triage_disposition": "prepared_local_pending_draft_publication"
+    },
+    {
+      "issue_number": 5,
+      "inventory_group": "early",
+      "path": "docs/discovery/open-availability-witness-2026-08-13/w6-contribution-packet-template.md",
+      "ref": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+      "reason": "Unexecuted future contribution template; retain original technical shape.",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f/docs/discovery/open-availability-witness-2026-08-13/w6-contribution-packet-template.md",
+      "preparation_disposition": "not-an-article",
+      "historical_triage_disposition": "not-an-article"
+    },
+    {
+      "issue_number": 5,
+      "inventory_group": "early",
+      "path": "docs/discovery/open-availability-witness-2026-08-13/witness-terminology.md",
+      "ref": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+      "reason": "Proposed glossary supporting compound notebook, not distinct research article.",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f/docs/discovery/open-availability-witness-2026-08-13/witness-terminology.md",
+      "preparation_disposition": "not-an-article",
+      "historical_triage_disposition": "not-an-article"
+    },
+    {
+      "issue_number": 10,
+      "inventory_group": "early",
+      "path": "docs/agent-entry/user-zero-test-procedure-v0.md",
+      "ref": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+      "reason": "Unexecuted procedure/reference used by later User Zero findings, not separate findings article; retain original procedure.",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f/docs/agent-entry/user-zero-test-procedure-v0.md",
+      "preparation_disposition": "not-an-article",
+      "historical_triage_disposition": "not-an-article"
+    },
+    {
+      "issue_number": 13,
+      "inventory_group": "early",
+      "reason": "Both attempted governed packets/source summaries internal; public issue locator only. No internal result capture in output.",
+      "preparation_disposition": "blocked-public-copy",
+      "historical_triage_disposition": "blocked-public-copy"
+    },
+    {
+      "issue_number": 15,
+      "inventory_group": "early",
+      "path": "docs/contracts/context-compiler-contract-family-v0.md",
+      "ref": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+      "reason": "Normative candidate engineering contract family; retains original authoritative technical format, not duplicate article. R2 research rationale remains in issue edition.",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f/docs/contracts/context-compiler-contract-family-v0.md",
+      "preparation_disposition": "not-an-article",
+      "historical_triage_disposition": "not-an-article"
+    },
+    {
+      "issue_number": 25,
+      "inventory_group": "mid",
+      "path": "docs/preparation/kicker-dst-streaming-2026-10-01/README.md",
+      "ref": "da72dba139139d4f49ce8994ce7ccdd682051e14",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/da72dba139139d4f49ce8994ce7ccdd682051e14/docs/preparation/kicker-dst-streaming-2026-10-01/README.md",
+      "preparation_disposition": "navigation mirror; link only",
+      "historical_triage_disposition": "navigation mirror; link only"
+    },
+    {
+      "issue_number": 25,
+      "inventory_group": "mid",
+      "path": "docs/preparation/kicker-dst-streaming-2026-10-01/study-design.md",
+      "ref": "da72dba139139d4f49ce8994ce7ccdd682051e14",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/da72dba139139d4f49ce8994ce7ccdd682051e14/docs/preparation/kicker-dst-streaming-2026-10-01/study-design.md",
+      "preparation_disposition": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4a1e828281471b4e12238282eae97393d56c4e7b/docs/research-articles/prepared/research-issue-0025/linked-study-design/notebook-formatted-2026-10-31.md"
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/96"
+      ],
+      "historical_triage_disposition": "distinct substantive design article"
+    },
+    {
+      "issue_number": 25,
+      "inventory_group": "mid",
+      "path": "docs/preparation/kicker-dst-streaming-2026-10-01/readiness.md",
+      "ref": "da72dba139139d4f49ce8994ce7ccdd682051e14",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/da72dba139139d4f49ce8994ce7ccdd682051e14/docs/preparation/kicker-dst-streaming-2026-10-01/readiness.md",
+      "preparation_disposition": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4a1e828281471b4e12238282eae97393d56c4e7b/docs/research-articles/prepared/research-issue-0025/linked-readiness/notebook-formatted-2026-10-31.md"
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/96"
+      ],
+      "historical_triage_disposition": "distinct source-readiness note"
+    },
+    {
+      "issue_number": 25,
+      "inventory_group": "mid",
+      "path": "docs/preparation/kicker-dst-streaming-2026-10-01/carolina-case.md",
+      "ref": "da72dba139139d4f49ce8994ce7ccdd682051e14",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/da72dba139139d4f49ce8994ce7ccdd682051e14/docs/preparation/kicker-dst-streaming-2026-10-01/carolina-case.md",
+      "preparation_disposition": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7204993d0936fd798b46ab3b16042c1953722c75/docs/research-articles/prepared/research-issue-0025/linked-carolina-case/notebook-formatted-2026-10-31.md"
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/97"
+      ],
+      "historical_triage_disposition": "distinct case design article"
+    },
+    {
+      "issue_number": 25,
+      "inventory_group": "mid",
+      "path": "docs/preparation/kicker-dst-streaming-2026-10-01/execution-proposal.md",
+      "ref": "da72dba139139d4f49ce8994ce7ccdd682051e14",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/da72dba139139d4f49ce8994ce7ccdd682051e14/docs/preparation/kicker-dst-streaming-2026-10-01/execution-proposal.md",
+      "preparation_disposition": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7204993d0936fd798b46ab3b16042c1953722c75/docs/research-articles/prepared/research-issue-0025/linked-execution-proposal/notebook-formatted-2026-10-31.md"
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/97"
+      ],
+      "historical_triage_disposition": "separate proposed execution design note"
+    },
+    {
+      "issue_number": 25,
+      "inventory_group": "mid",
+      "path": "docs/preparation/kicker-dst-streaming-2026-10-01/preparation-record.md",
+      "ref": "da72dba139139d4f49ce8994ce7ccdd682051e14",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/da72dba139139d4f49ce8994ce7ccdd682051e14/docs/preparation/kicker-dst-streaming-2026-10-01/preparation-record.md",
+      "preparation_disposition": "non-article authority/validation receipt",
+      "historical_triage_disposition": "non-article authority/validation receipt"
+    },
+    {
+      "issue_number": 25,
+      "inventory_group": "mid",
+      "path": "docs/preparation/kicker-dst-streaming-2026-10-26/README.md",
+      "ref": "1e18d699d39b0311a1af114e62ee3759b43637e1",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/1e18d699d39b0311a1af114e62ee3759b43637e1/docs/preparation/kicker-dst-streaming-2026-10-26/README.md",
+      "preparation_disposition": "non-article implementation/run guide; link only, no ZIP/private-input copying",
+      "historical_triage_disposition": "non-article implementation/run guide; link only, no ZIP/private-input copying"
+    },
+    {
+      "issue_number": 25,
+      "inventory_group": "mid",
+      "path": "tools/kicker-dst-streaming-v0/README.md",
+      "ref": "1e18d699d39b0311a1af114e62ee3759b43637e1",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/1e18d699d39b0311a1af114e62ee3759b43637e1/tools/kicker-dst-streaming-v0/README.md",
+      "preparation_disposition": "non-article implementation/run guide; link only, no ZIP/private-input copying",
+      "historical_triage_disposition": "non-article implementation/run guide; link only, no ZIP/private-input copying"
+    },
+    {
+      "issue_number": 29,
+      "inventory_group": "mid",
+      "path": "docs/universe-d/{README.md,experiment-001.md,IMPLEMENTATION.md}",
+      "ref": "0e23bcc84378e20033f337384e930e80f420e23f",
+      "preparation_disposition": "cross-reference to #50 inventory owner; not a second Universe C article copy",
+      "historical_triage_disposition": "cross-reference to #50 inventory owner; not a second Universe C article copy"
+    },
+    {
+      "issue_number": 33,
+      "inventory_group": "mid",
+      "path": "docs/studies/mhj-career-2026w4/README.md",
+      "ref": "f53a9bb3c0e0fd111b598b9822b132b67a4d0050",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/f53a9bb3c0e0fd111b598b9822b132b67a4d0050/docs/studies/mhj-career-2026w4/README.md",
+      "preparation_disposition": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7204993d0936fd798b46ab3b16042c1953722c75/docs/research-articles/prepared/research-issue-0033/linked-mhj-study/notebook-formatted-2026-10-31.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7204993d0936fd798b46ab3b16042c1953722c75/docs/research-articles/prepared/research-issue-0033/linked-mhj-study/notebook-original-1b08358-formatted-2026-10-31.md"
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/97"
+      ],
+      "historical_triage_disposition": "distinct descriptive article; merged PR35, independent research review not established by merge. Earlier 1b08358 issue-linked candidate retained as historical receipt."
+    },
+    {
+      "issue_number": 50,
+      "inventory_group": "late",
+      "ref": "0e23bcc84378e20033f337384e930e80f420e23f",
+      "path": "docs/universe-d/README.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0e23bcc84378e20033f337384e930e80f420e23f/docs/universe-d/README.md",
+      "preparation_disposition": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/ac3c487452b0edb62bec89251d5551a5ae5677dc/docs/research-articles/prepared/research-issue-0050/universe-d-charter.md"
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/91"
+      ],
+      "historical_triage_disposition": "prepare_distinct_charter"
+    },
+    {
+      "issue_number": 50,
+      "inventory_group": "late",
+      "ref": "0e23bcc84378e20033f337384e930e80f420e23f",
+      "path": "docs/universe-d/experiment-001.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0e23bcc84378e20033f337384e930e80f420e23f/docs/universe-d/experiment-001.md",
+      "preparation_disposition": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/ac3c487452b0edb62bec89251d5551a5ae5677dc/docs/research-articles/prepared/research-issue-0050/experiment-protocol-amended.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/ac3c487452b0edb62bec89251d5551a5ae5677dc/docs/research-articles/prepared/research-issue-0050/experiment-protocol-original.md"
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/91"
+      ],
+      "historical_triage_disposition": "prepare_protocol_edition"
+    },
+    {
+      "issue_number": 50,
+      "inventory_group": "late",
+      "ref": "bb24b06980e9a575235fca5e707778e820770fd2",
+      "path": "docs/universe-d/experiment-001.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/bb24b06980e9a575235fca5e707778e820770fd2/docs/universe-d/experiment-001.md",
+      "preparation_disposition": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/ac3c487452b0edb62bec89251d5551a5ae5677dc/docs/research-articles/prepared/research-issue-0050/experiment-protocol-amended.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/ac3c487452b0edb62bec89251d5551a5ae5677dc/docs/research-articles/prepared/research-issue-0050/experiment-protocol-original.md"
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/91"
+      ],
+      "historical_triage_disposition": "prepare_amended_protocol_edition"
+    },
+    {
+      "issue_number": 50,
+      "inventory_group": "late",
+      "ref": "bb24b06980e9a575235fca5e707778e820770fd2",
+      "path": "experiments/universe-d/001-target-allocation/VALIDATION.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/bb24b06980e9a575235fca5e707778e820770fd2/experiments/universe-d/001-target-allocation/VALIDATION.md",
+      "preparation_disposition": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/ac3c487452b0edb62bec89251d5551a5ae5677dc/docs/research-articles/prepared/research-issue-0050/development-validation.md"
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/91"
+      ],
+      "historical_triage_disposition": "prepare_distinct_validation_note"
+    },
+    {
+      "issue_number": 50,
+      "inventory_group": "late",
+      "path": "docs/universe-d/IMPLEMENTATION.md",
+      "reason": "Implementation sequence and execution contract, not additional research article.",
+      "preparation_disposition": "not-an-article"
+    },
+    {
+      "issue_number": 50,
+      "inventory_group": "late",
+      "path": "experiments/universe-d/001-target-allocation/README.md",
+      "reason": "Runner operation/interface instructions, not additional research article.",
+      "preparation_disposition": "not-an-article"
+    },
+    {
+      "issue_number": 71,
+      "inventory_group": "recent",
+      "path": "docs/game-studies/2026/reg/week-08/ari-at-dal/README.md",
+      "ref": "fadcf1d1c8629db84c81f4b883b86b424f0fbb4e",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fadcf1d1c8629db84c81f4b883b86b424f0fbb4e/docs/game-studies/2026/reg/week-08/ari-at-dal/README.md",
+      "preparation_disposition": "excluded Codex-owned pilot; source capture mirror not another article",
+      "historical_triage_disposition": "excluded Codex-owned pilot; source capture mirror not another article"
+    },
+    {
+      "issue_number": 71,
+      "inventory_group": "recent",
+      "path": "docs/evaluations/matchup-preview/2026-w08-ari-at-dal.md",
+      "ref": "bdb8e9808f6244ca5d17411d8b8dccfff0b76f4c",
+      "prepared_artifact_ref": "docs/research-articles/prepared/research-pr-0072-methodology-audit/article.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/bdb8e9808f6244ca5d17411d8b8dccfff0b76f4c/docs/evaluations/matchup-preview/2026-w08-ari-at-dal.md",
+      "preparation_disposition": "prepared-draft-review-pending",
+      "prepared_artifact_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/1a3248f6a8810788b9875ce7e1cf417d28f33aea/docs/research-articles/prepared/research-pr-0072-methodology-audit/article.md"
+      ],
+      "draft_pr_refs": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/81"
+      ],
+      "historical_triage_disposition": "locally_prepared_distinct_methodological_research_note"
+    }
+  ]
 }
