@@ -1,0 +1,34 @@
+{
+  "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/21#issuecomment-5487203447",
+  "source_created_at": "2026-09-01T01:25:41Z",
+  "source_updated_at": "2026-09-01T01:25:41Z",
+  "retrieved_at": "2026-10-31T19:27:59.038Z",
+  "source_body_sha256": "daeb393eca6688f5b0fc8b87afff32394f5ef7fd038a441807f9e9fb74567bae",
+  "capture_sha256": "daeb393eca6688f5b0fc8b87afff32394f5ef7fd038a441807f9e9fb74567bae",
+  "capture_scope": "Exact returned Markdown body",
+  "changes": [],
+  "original_publication_bytes_authenticated": false,
+  "source_blob_ref": null,
+  "mapping": [
+    {
+      "source_heading": "## Evaluation receipt \u2014 Steward Case D: exact-state reconciliation of TIBER-Forecast #170",
+      "prepared_section": 1
+    },
+    {
+      "source_heading": "## What the accepted trace demonstrated",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## Acceptance interpretation",
+      "prepared_section": 5
+    },
+    {
+      "source_heading": "## Evaluation note",
+      "prepared_section": 6
+    },
+    {
+      "source_heading": "## Research state",
+      "prepared_section": 7
+    }
+  ]
+}
