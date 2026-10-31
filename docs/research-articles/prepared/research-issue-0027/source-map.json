@@ -1,0 +1,166 @@
+{
+  "prepared_at": "2026-10-31T19:30:49.229705Z",
+  "format_check": "All source spans accounted for exactly once; see block_mapping",
+  "sources": [
+    {
+      "edition": "body",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/27",
+      "source_created_at": "2026-10-04T12:43:43Z",
+      "source_updated_at": "2026-10-04T13:07:31Z",
+      "retrieved_at": "2026-10-31T19:25:30.180Z",
+      "source_sha256": "17b357ff14080976dcc793e8a6c08072ddb94b31630ba68c9d79a12dc8eea684",
+      "source_characters": 6535,
+      "source_path": "retained/body.md",
+      "prepared_path": "body-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## Objective",
+          "outer_section": 2,
+          "sha256": "dcfe4cb0246311355e11a7d2a17f2beea540bfb861fce77838936196e2b72b04"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "## Core research question",
+          "outer_section": 2,
+          "sha256": "37d12194b2a19cd37c221efa481ef6e50a216cba016b095e202d2120c0e9467a"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "## Required audit",
+          "outer_section": 4,
+          "sha256": "3c9bf65f06ac8fa1deca75dc5a56f1d412b0a398e91058f4ee2a02bd0b7b8be3"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "### 1. Reconcile existing TIBER architecture",
+          "outer_section": 3,
+          "sha256": "a7ccdba4461954003ae94c1d0e5318d7f0af2acb802c31d0a2c0598d84ca44a4"
+        },
+        {
+          "block": 5,
+          "original_heading_or_lead": "### 2. Study the DARKO design pattern, not the basketball metric itself",
+          "outer_section": 4,
+          "sha256": "783a16f52658457df44e5c4be3fc8e5e990481576c02a175f84182de336dacc3"
+        },
+        {
+          "block": 6,
+          "original_heading_or_lead": "### 3. Empirical feasibility",
+          "outer_section": 4,
+          "sha256": "cc4082bc2be79051f8a0e6c2b35293b5896a5086d081cb90f4d481d699331c7e"
+        },
+        {
+          "block": 7,
+          "original_heading_or_lead": "### 4. Architecture options",
+          "outer_section": 3,
+          "sha256": "290302506bbd5fea72e5ed0431ad905810fbf5a3c666e98b95a177b36f8037ba"
+        },
+        {
+          "block": 8,
+          "original_heading_or_lead": "### 5. TIBER governance requirements",
+          "outer_section": 4,
+          "sha256": "d77a4c880555073615b79e7b778c8a74509d7220755263deb6bdf0de89ff0bce"
+        },
+        {
+          "block": 9,
+          "original_heading_or_lead": "### 6. Evaluation design",
+          "outer_section": 4,
+          "sha256": "65c00f4f1ffef162b33bc1a5c06e32a2701be7cd8eb2fb9fe725e5f27fd5c4ec"
+        },
+        {
+          "block": 10,
+          "original_heading_or_lead": "## Requested deliverable",
+          "outer_section": 7,
+          "sha256": "2668e20095c92ac0128501f0ec0e87d1540403805e1ad84449dff0deaf7274c4"
+        },
+        {
+          "block": 11,
+          "original_heading_or_lead": "## Boundaries",
+          "outer_section": 7,
+          "sha256": "be98ba298de5b5c9277aca34c89b5b502502a1017d2eab8e7ec40137e07d8308"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    },
+    {
+      "edition": "update-5980269904",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/27#issuecomment-5980269904",
+      "source_created_at": "2026-10-04T13:07:31Z",
+      "source_updated_at": "2026-10-04T13:07:31Z",
+      "retrieved_at": "2026-10-31T19:25:30.180Z",
+      "source_sha256": "189db2f17447217e9b3bed0f769fccb5085260903bd0a20d9edfd0caeb949d87",
+      "source_characters": 13746,
+      "source_path": "retained/update-5980269904.md",
+      "prepared_path": "update-5980269904-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## October 4 architecture audit — research further before a prototype",
+          "outer_section": 4,
+          "sha256": "e08dfd47e6e24b3f19b323afa2d00608d6aea569a9bd3edc4bb597041661285a"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "### 1. Existing capability map and duplication risk",
+          "outer_section": 6,
+          "sha256": "2d74167469c4decbb5b658d86eb10d91d57a1418d7990f266dcd9dda2b8463e0"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "### 2. DARKO principles that transfer, and those that do not",
+          "outer_section": 4,
+          "sha256": "d806e4c113575c497c6d5ce03b7c20313690f593070be8fd446bf1a0b5970157"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "### 3. Evidence gaps",
+          "outer_section": 6,
+          "sha256": "a42b2cb894fd44b9a91f2242b96e8c223be443a94e02787f9507138bab2ef85f"
+        },
+        {
+          "block": 5,
+          "original_heading_or_lead": "### 4. Candidate state schema",
+          "outer_section": 4,
+          "sha256": "e9f9e1e56c184b66c154731d53c1c1c598c7076907c27421fd674c65e0f32197"
+        },
+        {
+          "block": 6,
+          "original_heading_or_lead": "### 5. Architecture options",
+          "outer_section": 3,
+          "sha256": "cd1c7d3849e22eef93e8b9980e305013213edb6f0f7d9a63dd296ea77d36bd4d"
+        },
+        {
+          "block": 7,
+          "original_heading_or_lead": "### 6. Evaluation protocol",
+          "outer_section": 4,
+          "sha256": "88ca8b7c97ff30b6d4910a2235cff9185157024645e864b5501826f01e77fdda"
+        },
+        {
+          "block": 8,
+          "original_heading_or_lead": "### 7. Risks and counterevidence",
+          "outer_section": 6,
+          "sha256": "dd751e1e673da6c0c3343d250452395c20d1f8eaf0ed256db6d5de6fc839ce90"
+        },
+        {
+          "block": 9,
+          "original_heading_or_lead": "### 8. Recommendation and smallest next decision",
+          "outer_section": 7,
+          "sha256": "865ca64d2191c02f094ccb1904b11b83f219868649d6d0673cc7f4d0b808abf5"
+        },
+        {
+          "block": 10,
+          "original_heading_or_lead": "### 9. Smallest conditional offline experiment",
+          "outer_section": 4,
+          "sha256": "2a5b20991fd4c33e74d425648d581abbbf838e60769301a6c7fd44d54992bfbe"
+        },
+        {
+          "block": 11,
+          "original_heading_or_lead": "### Audit basis and terminal boundary",
+          "outer_section": 8,
+          "sha256": "c79c5a7ef5f1d5fa8cf586e356b46a3710b692c589b87e230ee3b53a6e22dc91"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    }
+  ]
+}
