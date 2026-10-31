@@ -1,0 +1,94 @@
+{
+  "format_prepared_at": "2026-10-31T19:28:46.926160Z",
+  "base_candidate": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+  "captures": [
+    {
+      "path": "retained/issue-body.md",
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/60",
+      "source_created_at": "2026-10-26T12:15:56Z",
+      "source_updated_at": "2026-10-27T12:24:10Z",
+      "retrieved_at": "2026-10-31T19:25:38.094Z",
+      "sha256": "517acefdc43ed3264d9d9e6f8ebe0069adfbf9afebdde68d036e9006873dc792",
+      "encoding": "UTF-8 exact API-returned body, no added newline"
+    },
+    {
+      "path": "retained/issuecomment-6415779383.md",
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/60#issuecomment-6415779383",
+      "source_created_at": "2026-10-26T12:16:49Z",
+      "source_updated_at": "2026-10-26T12:16:49Z",
+      "retrieved_at": "2026-10-31T19:25:38.094Z",
+      "sha256": "06cf7af26e86c0bc30acffd02501d0497e7b1d133551f36f82fada51c2548155",
+      "encoding": "UTF-8 exact API-returned body, no added newline"
+    },
+    {
+      "path": "retained/issuecomment-6441799372.md",
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/60#issuecomment-6441799372",
+      "source_created_at": "2026-10-27T12:24:10Z",
+      "source_updated_at": "2026-10-27T12:24:10Z",
+      "retrieved_at": "2026-10-31T19:25:38.094Z",
+      "sha256": "66c2316b6738532bc720105bbbd1c4a6d559f462d8be54a2748010410ab16a63",
+      "encoding": "UTF-8 exact API-returned body, no added newline"
+    }
+  ],
+  "mapping": [
+    {
+      "source_heading": "## Research question and cutoff",
+      "common_section": 2,
+      "source_block_sha256": "29b1188c116e0004194f879602c17c1d11b5f78e677ed143e8c41d336c868c28"
+    },
+    {
+      "source_heading": "## What TIBER-Rookies already contributes",
+      "common_section": 3,
+      "source_block_sha256": "f68d310ee7509173f0385253e98863f8f8caa583810545624d9262bdc39ba3d5"
+    },
+    {
+      "source_heading": "## First six games, then Week 7",
+      "common_section": 4,
+      "source_block_sha256": "11e28b48ef664d1e8fe999373b706732af19ea8a2770ad84bfb8eec4a0f8b58d"
+    },
+    {
+      "source_heading": "## Week 7 breakout: verified outcome and reported process metrics",
+      "common_section": 4,
+      "source_block_sha256": "bf939a04469aeb507df74fdbd6c201f54ba60e20d161b40a00ee8cd1c980e892"
+    },
+    {
+      "source_heading": "## Week 8 at Pittsburgh: questions to answer prospectively",
+      "common_section": 2,
+      "source_block_sha256": "8d74984fcbba32c3c8673281b36dc7159c6d2e9bc70e3b158f2d982e47ea4c38"
+    },
+    {
+      "source_heading": "## Rest-of-season tracking and decision rules",
+      "common_section": 6,
+      "source_block_sha256": "cf1bfbe8f367bea84a787efa2f922fbf6faf16bb1cd34f1914e76944e848264a"
+    },
+    {
+      "source_heading": "## Follow-up checklist",
+      "common_section": 7,
+      "source_block_sha256": "d03fbcab54194765378c38ab969a2d1846bc7923c1dfca1e8644df75c21cb91e"
+    }
+  ],
+  "verification": {
+    "all_source_section_blocks_retained": true,
+    "source_body_bytes_retained": true,
+    "original_question_ids_and_windows_unchanged": true,
+    "new_research_performed": false,
+    "independent_review": "pending"
+  },
+  "gaps": [
+    "Null evidence_cutoff means no exact timestamp was supplied; source date-level clocks remain in prose and are not silently sharpened.",
+    "Source-level publication/retrieval and metric gaps remain as originally disclosed.",
+    "Exact owner and final evidence deadline remain unknown where not supplied."
+  ],
+  "dated_update_mapping": {
+    "id": 6441799372,
+    "file": "update-2026-10-27.md",
+    "intro": "section 1",
+    "Q1-Q5": "section 4",
+    "Q6 outcomes": "section 4",
+    "Q6 judgment and alternative": "section 5",
+    "Q6 next test/boundary": "section 7",
+    "source_created_at": "2026-10-27T12:24:10Z",
+    "source_updated_at": "2026-10-27T12:24:10Z"
+  },
+  "capture_clock_semantics": "For issue/comment bundles, retrieved_at is the observed start of the sequential issue + all-comments retrieval, not an exact response-completion timestamp. Later raw-comment metadata reads only supply missing creation/update clocks; body equality is verified. Linked file retrieved_at is the observed time after its fetch completed."
+}
