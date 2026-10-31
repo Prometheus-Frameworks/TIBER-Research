@@ -1,0 +1,102 @@
+{
+  "prepared_at": "2026-10-31T19:30:49.229705Z",
+  "format_check": "All source spans accounted for exactly once; see block_mapping",
+  "sources": [
+    {
+      "edition": "body",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/33",
+      "source_created_at": "2026-10-10T15:56:18Z",
+      "source_updated_at": "2026-10-11T12:39:10Z",
+      "retrieved_at": "2026-10-31T19:25:38.894Z",
+      "source_sha256": "2a6d255cc1ffb51b88d6934b689fad285b9aca4dd272476fdc88512669ff9c45",
+      "source_characters": 6042,
+      "source_path": "retained/body.md",
+      "prepared_path": "body-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## Status and authority",
+          "outer_section": 1,
+          "sha256": "b5e56aad0d972a79991a40f4e821923c13fc983fb9fab04040b510150c278b83"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "## Question",
+          "outer_section": 2,
+          "sha256": "45bae9b8ef046f405519df31c62bae15ccd491ea444ddb26b8b662aa10b78de7"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "## Verified starting point",
+          "outer_section": 3,
+          "sha256": "6fb1c107d8b39595740f7492c0c687694229286bf95c9ec9f7d5e6bb9813b354"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "## Proposed design",
+          "outer_section": 4,
+          "sha256": "a40b8db78ab5e356f885a772b42eebe6e22d4b3a191934a284d35929370b6c10"
+        },
+        {
+          "block": 5,
+          "original_heading_or_lead": "## Competing explanations to test",
+          "outer_section": 3,
+          "sha256": "4c898b47332d41be756758eb73a9e7f36359f651cd569a07d8f372a10d8c098f"
+        },
+        {
+          "block": 6,
+          "original_heading_or_lead": "## Proposed deliverables and acceptance",
+          "outer_section": 7,
+          "sha256": "8f5329272f159f1b7b1ce19a035cbcc23a1c1aa06e19d1a051b4f45cf74b2483"
+        },
+        {
+          "block": 7,
+          "original_heading_or_lead": "## Dependency",
+          "outer_section": 4,
+          "sha256": "5d1f1be678173274fa179cba8d1edb4043260a972d75853125ee84a4c882c983"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    },
+    {
+      "edition": "update-6099617086",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/33#issuecomment-6099617086",
+      "source_created_at": "2026-10-10T16:20:09Z",
+      "source_updated_at": "2026-10-10T16:20:09Z",
+      "retrieved_at": "2026-10-31T19:25:38.894Z",
+      "source_sha256": "d7abe5a1c191f2eb4b1235540656d3ff36b7c2fbf65329e24e09a182c37a3ff4",
+      "source_characters": 1205,
+      "source_path": "retained/update-6099617086.md",
+      "prepared_path": "update-6099617086-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## Operator execution authorization — October 10, 2026",
+          "outer_section": 4,
+          "sha256": "d7abe5a1c191f2eb4b1235540656d3ff36b7c2fbf65329e24e09a182c37a3ff4"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    },
+    {
+      "edition": "update-6099935095",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/33#issuecomment-6099935095",
+      "source_created_at": "2026-10-10T16:55:26Z",
+      "source_updated_at": "2026-10-10T16:55:26Z",
+      "retrieved_at": "2026-10-31T19:25:38.894Z",
+      "source_sha256": "e8da51d6330038ee9c371e2675a8854da9c23b88b115d3a58d908071f2c63b00",
+      "source_characters": 2332,
+      "source_path": "retained/update-6099935095.md",
+      "prepared_path": "update-6099935095-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## Manual study candidate published — October 10, 2026",
+          "outer_section": 4,
+          "sha256": "e8da51d6330038ee9c371e2675a8854da9c23b88b115d3a58d908071f2c63b00"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    }
+  ]
+}
