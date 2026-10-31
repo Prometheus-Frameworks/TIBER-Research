@@ -7,8 +7,8 @@ It stores immutable job inputs, append-oriented attempt state, structured candid
 findings, independent reviews, and terminal seals.
 
 The repository currently contains the Stage 0 contracts and a Stage 1 activation
-preflight. It does not yet conduct football research, call a model or external
-source, schedule work, access private context, promote claims, or change a
+preflight. The executable pipeline does not yet conduct football research, call a
+model or external source, schedule work, access private context, promote claims, or change a
 downstream TIBER artifact.
 
 The governing architecture is
@@ -30,6 +30,14 @@ Stage 1 preflight authority is recorded in
   under separate authority; it does not own live research.
 - **Consumers pull:** no Research artifact grants Strategy, Forecast, product,
   publication, merge, or real-world action authority.
+
+## Weekly DFS notebook
+
+[Codex weekly DFS picks](docs/weekly-dfs/codex/README.md) preserves
+operator-requested hypothetical lineups, their initial drafts, self-review,
+source references and later results. The first entry is
+[2026 Week 6](docs/weekly-dfs/codex/2026/week-06.md). These are conversational
+research notes, not activated or sealed governed Research runs.
 
 ## Stage 0 surface
 

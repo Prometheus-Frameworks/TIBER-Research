@@ -1,0 +1,436 @@
+{
+  "format": "codex-weekly-dfs-notebook-v1",
+  "season": 2026,
+  "season_type": "REG",
+  "week": 6,
+  "platform": "DraftKings",
+  "slate": "Sunday main slate",
+  "slate_date": "2026-10-18",
+  "salary_cap": 50000,
+  "selection_snapshot_date": "2026-10-17",
+  "selection_time_precision": "date_only",
+  "selection_context": "Saturday evening, before the operator's 19:17 EDT publication request; exact original selection second was not recorded.",
+  "purpose": "Hypothetical pregame lineup research and later process evaluation.",
+  "author_role": "Codex",
+  "review_kind": "same_author_self_review",
+  "independent_review": null,
+  "status": "pregame_snapshot",
+  "official_salary_csv_verified": false,
+  "official_slate_pool_verified": false,
+  "salary_basis": "Published third-party Week 6 main-slate articles; no complete official salary export or DraftKings ID pool was retained.",
+  "projection_basis": "Attributed external models and author judgment; no complete common projection model and no summed lineup projection.",
+  "raw_source_bytes_retained": false,
+  "claim_of_mathematical_optimality": false,
+  "governed_research_run": false,
+  "sources": [
+    {
+      "id": "S1",
+      "title": "FantasyPros: NFL DFS Lineup Advice, Week 6",
+      "url": "https://www.fantasypros.com/2026/10/nfl-dfs-lineup-advice-picks-predictions-week-6-2026/",
+      "supports": [
+        "Rams/Giants/Germie/Goedert salaries",
+        "published role and matchup analysis"
+      ],
+      "checked_on": "2026-10-17",
+      "retrieval_timestamp_precision": "date_only",
+      "raw_source_bytes_retained": false
+    },
+    {
+      "id": "S2",
+      "title": "FTN: Best NFL DFS Picks, Week 6",
+      "url": "https://ftnfantasy.com/best-nfl-dfs-picks-for-week-6-2026",
+      "supports": [
+        "Allen/Stafford/Puka/Steelers salaries",
+        "external quarterback projections"
+      ],
+      "checked_on": "2026-10-17",
+      "retrieval_timestamp_precision": "date_only",
+      "raw_source_bytes_retained": false
+    },
+    {
+      "id": "S3",
+      "title": "FTN: Cash Game Picks, Week 6",
+      "url": "https://ftnfantasy.com/top-nfl-dfs-cash-game-picks-for-week-6-2026",
+      "supports": [
+        "Fannin salary and projection",
+        "Goedert comparison projection"
+      ],
+      "checked_on": "2026-10-17",
+      "retrieval_timestamp_precision": "date_only",
+      "raw_source_bytes_retained": false
+    },
+    {
+      "id": "S4",
+      "title": "Splash Play: Week 6 DraftKings player projections",
+      "url": "https://splashplaypodcast.com/dfs/nfl/players/",
+      "supports": [
+        "Braelon Allen/Allgeier salaries",
+        "external alternative model estimates"
+      ],
+      "checked_on": "2026-10-17",
+      "retrieval_timestamp_precision": "date_only",
+      "raw_source_bytes_retained": false
+    },
+    {
+      "id": "S5",
+      "title": "Splash Play: Khalil Shakir, Week 6",
+      "url": "https://splashplaypodcast.com/dfs/nfl/players/khalil-shakir/",
+      "supports": [
+        "Shakir salary",
+        "4.8 projected targets and 9.3 projected DraftKings points"
+      ],
+      "checked_on": "2026-10-17",
+      "retrieval_timestamp_precision": "date_only",
+      "raw_source_bytes_retained": false
+    },
+    {
+      "id": "S6",
+      "title": "NFL: Week 6 injury report",
+      "url": "https://www.nfl.com/news/nfl-week-6-injury-report-2026-season",
+      "supports": [
+        "scheduled opponents",
+        "Hall/Love/Roman Wilson/Mayfield out"
+      ],
+      "checked_on": "2026-10-17",
+      "retrieval_timestamp_precision": "date_only",
+      "raw_source_bytes_retained": false
+    },
+    {
+      "id": "S7",
+      "title": "DraftKings Network: Tyler Allgeier, Week 6",
+      "url": "https://dknetwork.draftkings.com/2026/10/16/tyler-allgeier-start-or-sit-advice-for-week-6/",
+      "supports": [
+        "replacement starting opportunity",
+        "offensive line and receiving-role limitations"
+      ],
+      "checked_on": "2026-10-17",
+      "retrieval_timestamp_precision": "date_only",
+      "raw_source_bytes_retained": false
+    },
+    {
+      "id": "S8",
+      "title": "Patriots: Week 6 injury report",
+      "url": "https://www.patriots.com/news/week-6-injury-report-patriots-vs-jets",
+      "supports": [
+        "Henderson questionable, rather than confirmed out",
+        "Hall out"
+      ],
+      "checked_on": "2026-10-17",
+      "retrieval_timestamp_precision": "date_only",
+      "raw_source_bytes_retained": false
+    },
+    {
+      "id": "S9",
+      "title": "DraftKings: Classic overview",
+      "url": "https://support.draftkings.com/dk/en-us/game-style-classic-overview?id=kb_article_view&sysparm_article=KB0010665",
+      "supports": [
+        "50000 salary cap",
+        "multiple-team roster requirement"
+      ],
+      "checked_on": "2026-10-17",
+      "retrieval_timestamp_precision": "date_only",
+      "raw_source_bytes_retained": false
+    }
+  ],
+  "lineups": [
+    {
+      "version": "v1",
+      "review_status": "initial_draft",
+      "salary_total": 49400,
+      "salary_remaining": 600,
+      "projected_total": null,
+      "actual_total": null,
+      "picks": [
+        {
+          "slot": "QB",
+          "player": "Josh Allen",
+          "team": "BUF",
+          "opponent": "LV",
+          "home": false,
+          "salary": 7500,
+          "salary_source_ids": [
+            "S2"
+          ],
+          "draftkings_player_id": null,
+          "actual_points": null
+        },
+        {
+          "slot": "RB",
+          "player": "Kyren Williams",
+          "team": "LAR",
+          "opponent": "ARI",
+          "home": true,
+          "salary": 6800,
+          "salary_source_ids": [
+            "S1"
+          ],
+          "draftkings_player_id": null,
+          "actual_points": null
+        },
+        {
+          "slot": "RB",
+          "player": "Braelon Allen",
+          "team": "NYJ",
+          "opponent": "NE",
+          "home": false,
+          "salary": 5700,
+          "salary_source_ids": [
+            "S4"
+          ],
+          "draftkings_player_id": null,
+          "actual_points": null
+        },
+        {
+          "slot": "WR",
+          "player": "Puka Nacua",
+          "team": "LAR",
+          "opponent": "ARI",
+          "home": true,
+          "salary": 8100,
+          "salary_source_ids": [
+            "S1",
+            "S2"
+          ],
+          "draftkings_player_id": null,
+          "actual_points": null
+        },
+        {
+          "slot": "WR",
+          "player": "Khalil Shakir",
+          "team": "BUF",
+          "opponent": "LV",
+          "home": false,
+          "salary": 5300,
+          "salary_source_ids": [
+            "S5"
+          ],
+          "draftkings_player_id": null,
+          "actual_points": null
+        },
+        {
+          "slot": "WR",
+          "player": "Germie Bernard",
+          "team": "PIT",
+          "opponent": "TB",
+          "home": false,
+          "salary": 4000,
+          "salary_source_ids": [
+            "S1"
+          ],
+          "draftkings_player_id": null,
+          "actual_points": null
+        },
+        {
+          "slot": "TE",
+          "player": "Dallas Goedert",
+          "team": "PHI",
+          "opponent": "CAR",
+          "home": true,
+          "salary": 3900,
+          "salary_source_ids": [
+            "S1",
+            "S3"
+          ],
+          "draftkings_player_id": null,
+          "actual_points": null
+        },
+        {
+          "slot": "FLEX",
+          "player": "Tyler Allgeier",
+          "team": "ARI",
+          "opponent": "LAR",
+          "home": false,
+          "salary": 4800,
+          "salary_source_ids": [
+            "S4"
+          ],
+          "draftkings_player_id": null,
+          "actual_points": null
+        },
+        {
+          "slot": "DST",
+          "player": "Steelers",
+          "team": "PIT",
+          "opponent": "TB",
+          "home": false,
+          "salary": 3300,
+          "salary_source_ids": [
+            "S2"
+          ],
+          "draftkings_player_id": null,
+          "actual_points": null
+        }
+      ]
+    },
+    {
+      "version": "v2",
+      "review_status": "self_reviewed_final_draft",
+      "salary_total": 49700,
+      "salary_remaining": 300,
+      "projected_total": null,
+      "actual_total": null,
+      "picks": [
+        {
+          "slot": "QB",
+          "player": "Matthew Stafford",
+          "team": "LAR",
+          "opponent": "ARI",
+          "home": true,
+          "salary": 6400,
+          "salary_source_ids": [
+            "S1",
+            "S2"
+          ],
+          "draftkings_player_id": null,
+          "actual_points": null
+        },
+        {
+          "slot": "RB",
+          "player": "Kyren Williams",
+          "team": "LAR",
+          "opponent": "ARI",
+          "home": true,
+          "salary": 6800,
+          "salary_source_ids": [
+            "S1"
+          ],
+          "draftkings_player_id": null,
+          "actual_points": null
+        },
+        {
+          "slot": "RB",
+          "player": "Braelon Allen",
+          "team": "NYJ",
+          "opponent": "NE",
+          "home": false,
+          "salary": 5700,
+          "salary_source_ids": [
+            "S4"
+          ],
+          "draftkings_player_id": null,
+          "actual_points": null
+        },
+        {
+          "slot": "WR",
+          "player": "Puka Nacua",
+          "team": "LAR",
+          "opponent": "ARI",
+          "home": true,
+          "salary": 8100,
+          "salary_source_ids": [
+            "S1",
+            "S2"
+          ],
+          "draftkings_player_id": null,
+          "actual_points": null
+        },
+        {
+          "slot": "WR",
+          "player": "Malik Nabers",
+          "team": "NYG",
+          "opponent": "NO",
+          "home": true,
+          "salary": 6500,
+          "salary_source_ids": [
+            "S1"
+          ],
+          "draftkings_player_id": null,
+          "actual_points": null
+        },
+        {
+          "slot": "WR",
+          "player": "Germie Bernard",
+          "team": "PIT",
+          "opponent": "TB",
+          "home": false,
+          "salary": 4000,
+          "salary_source_ids": [
+            "S1"
+          ],
+          "draftkings_player_id": null,
+          "actual_points": null
+        },
+        {
+          "slot": "TE",
+          "player": "Harold Fannin Jr.",
+          "team": "CLE",
+          "opponent": "BAL",
+          "home": true,
+          "salary": 4100,
+          "salary_source_ids": [
+            "S3"
+          ],
+          "draftkings_player_id": null,
+          "actual_points": null
+        },
+        {
+          "slot": "FLEX",
+          "player": "Tyler Allgeier",
+          "team": "ARI",
+          "opponent": "LAR",
+          "home": false,
+          "salary": 4800,
+          "salary_source_ids": [
+            "S4"
+          ],
+          "draftkings_player_id": null,
+          "actual_points": null
+        },
+        {
+          "slot": "DST",
+          "player": "Steelers",
+          "team": "PIT",
+          "opponent": "TB",
+          "home": false,
+          "salary": 3300,
+          "salary_source_ids": [
+            "S2"
+          ],
+          "draftkings_player_id": null,
+          "actual_points": null
+        }
+      ]
+    }
+  ],
+  "revisions": [
+    {
+      "slot": "QB",
+      "from": "Josh Allen",
+      "to": "Matthew Stafford",
+      "salary_delta": -1100,
+      "reason": "Save salary for receiver upgrade while retaining exposure to the Rams offense.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "slot": "WR",
+      "from": "Khalil Shakir",
+      "to": "Malik Nabers",
+      "salary_delta": 1200,
+      "reason": "Prefer Nabers's recently demonstrated target concentration over the projected Shakir opportunity at his price.",
+      "source_ids": [
+        "S1",
+        "S5"
+      ]
+    },
+    {
+      "slot": "TE",
+      "from": "Dallas Goedert",
+      "to": "Harold Fannin Jr.",
+      "salary_delta": 200,
+      "reason": "FTN's quoted projections favor Fannin for a small salary increase.",
+      "source_ids": [
+        "S3"
+      ]
+    }
+  ],
+  "postgame": {
+    "status": "pending",
+    "actual_points_source": null,
+    "scoring_rules_verified": false,
+    "v2_minus_v1_points": null,
+    "notes": []
+  }
+}

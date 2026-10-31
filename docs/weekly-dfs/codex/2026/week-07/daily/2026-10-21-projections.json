@@ -1,0 +1,74 @@
+{
+  "projection": {
+    "provider": "Splash Play",
+    "model": "SPAGS",
+    "scoring": "DraftKings NFL Classic",
+    "as_of": "2026-10-20T23:53:00-04:00",
+    "as_of_precision": "minute",
+    "source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+    "published_date": "2026-10-20",
+    "observed_at": "2026-10-21T10:19:53.427Z",
+    "checked_on": "2026-10-21",
+    "note": "All nine values from one inspected Week7 DK main-slate table and one declared as-of snapshot. External estimates, not actual scores, independent certification or a TIBER Forecast. First attached to this new daily snapshot; no earlier record backfill."
+  },
+  "snapshot_id": "2026-w07-2026-10-21-daily",
+  "retrieved_at": "2026-10-21T10:19:53.427Z",
+  "players": [
+    {
+      "player": "C.J. Stroud",
+      "salary": 5700,
+      "projected_points": 19.2,
+      "source_url": "https://splashplaypodcast.com/dfs/nfl/players/cj-stroud/"
+    },
+    {
+      "player": "Chuba Hubbard",
+      "salary": 6700,
+      "projected_points": 20.2,
+      "source_url": "https://splashplaypodcast.com/dfs/nfl/players/chuba-hubbard/"
+    },
+    {
+      "player": "Tony Pollard",
+      "salary": 5300,
+      "projected_points": 12.4,
+      "source_url": "https://splashplaypodcast.com/dfs/nfl/players/tony-pollard/"
+    },
+    {
+      "player": "Puka Nacua",
+      "salary": 8400,
+      "projected_points": 23.9,
+      "source_url": "https://splashplaypodcast.com/dfs/nfl/players/puka-nacua/"
+    },
+    {
+      "player": "Malik Nabers",
+      "salary": 6800,
+      "projected_points": 16.2,
+      "source_url": "https://splashplaypodcast.com/dfs/nfl/players/malik-nabers/"
+    },
+    {
+      "player": "Chris Godwin Jr.",
+      "salary": 4300,
+      "projected_points": 9.4,
+      "source_url": "https://splashplaypodcast.com/dfs/nfl/players/chris-godwin-jr/"
+    },
+    {
+      "player": "Sam LaPorta",
+      "salary": 4800,
+      "projected_points": 13.4,
+      "source_url": "https://splashplaypodcast.com/dfs/nfl/players/sam-laporta/"
+    },
+    {
+      "player": "Keenan Allen",
+      "salary": 4800,
+      "projected_points": 12.1,
+      "source_url": "https://splashplaypodcast.com/dfs/nfl/players/keenan-allen/"
+    },
+    {
+      "player": "Titans",
+      "salary": 2600,
+      "projected_points": 6.3,
+      "source_url": "https://splashplaypodcast.com/dfs/nfl/players/titans-dst/"
+    }
+  ],
+  "projected_total": 133.1,
+  "source_title": "NFL DFS Player Projections: Week 7 (DraftKings)"
+}

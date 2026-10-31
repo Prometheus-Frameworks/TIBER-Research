@@ -1,0 +1,88 @@
+{
+  "schema_version": "tiber-dfs-journal/v1",
+  "entries": [
+    {
+      "id": "2026-w08-endorsement-20261031T141100Z",
+      "snapshot_ids": [
+        "2026-w08-2026-10-31-daily"
+      ],
+      "kind": "later_annotation",
+      "recorded_at": "2026-10-31T14:11:00.979Z",
+      "recorded_at_toronto": "2026-10-31T10:11:00.979-04:00",
+      "research_at": null,
+      "origin": "mixed",
+      "origin_note": "Operator relayed Claude's completion; Codex verified the direct PR contribution and immutable reply. This records subsequent collaboration, not fresh football research or earlier joint authorship.",
+      "title": "Later collaboration receipt: both authors endorse the exact Saturday candidate",
+      "question": "Later annotation: has Claude answered the qualifications and endorsed the same immutable nine?",
+      "why_it_matters": "Sunday can distinguish a genuinely completed author exchange and exact mutual endorsement from a fallback or missing response.",
+      "findings": [
+        "Claude's20f728d03aa866fdd42ec973a2998263a698a7d5 reply and direct PR publication verified.",
+        "Current daily JSON is byte-identical to immutable888e327 candidate; total50000/$0.",
+        "Claude accepted C1/C2 qualifications, withdrew automatic C3 substitution and closed C4 funding clarification.",
+        "Both authors supplied their own version-bound endorsements; no new football evidence retrieved in this annotation."
+      ],
+      "interpretation": "collaboration_ready is now ready for exact888e327. A genuine shared candidate with explicit joint endorsement exists, while Claude's originalv1 and Week8 Grok questions remain absent. Freeze remains separate.",
+      "alternatives": [
+        "Any changed candidate loses inherited joint endorsement unless Claude endorses that exact changed version."
+      ],
+      "uncertainty": [
+        "Future pre-freeze football availability and any actual Grok output; no continuous monitoring or saved provider subscription established."
+      ],
+      "lineup_effect": "No picks, original salaries, projections or historical rationales changed. Exact50000 nine jointly endorsed at subsequent clocks; not frozen.",
+      "change_triggers": [
+        "Material new evidence before actual freeze may justify editorial revision; retain new version and correct endorsement label."
+      ],
+      "carry_forward": [
+        "Sunday binds the exact candidate, salary snapshot and expectation IDs before cutoff.",
+        "Preserve missing originals/questions even when later reply exchange succeeds.",
+        "Version-bound endorsement must be renewed after a material selection change."
+      ],
+      "sources": [
+        {
+          "id": "claude-endorsement",
+          "label": "Claude immutable endorsement",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20f728d03aa866fdd42ec973a2998263a698a7d5/docs/weekly-dfs/codex/2026/week-08/collaboration/20261031T140633Z-claude-endorsement-reply.md",
+          "retrieved_at": "2026-10-31T14:11:00.979Z",
+          "publication_at": null,
+          "scope": "Source decision14:06:33Z; PR published14:07:14Z. No independently verified Git publication clock claimed."
+        },
+        {
+          "id": "claude-pr",
+          "label": "Claude direct PR comment",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43#issuecomment-6544438827",
+          "retrieved_at": "2026-10-31T14:11:00.979Z",
+          "publication_at": "2026-10-31T14:07:14Z",
+          "scope": "Edited at2026-10-31T14:07:59Z; immutable source retained separately."
+        },
+        {
+          "id": "codex-endorsement",
+          "label": "Codex immutable endorsement",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/3d03592144037075e395566bdcef2e5652687582/docs/weekly-dfs/codex/2026/week-08/collaboration/20261031T140231Z-codex-response.json",
+          "retrieved_at": "2026-10-31T14:11:00.979Z",
+          "publication_at": null,
+          "scope": "Original record clock2026-10-31T14:02:31.740Z"
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w08-2026-10-31-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json"
+        }
+      ],
+      "annotation_of": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/3d03592144037075e395566bdcef2e5652687582/docs/weekly-dfs/codex/2026/week-08/collaboration/20261031T140231Z-codex-response.json",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20f728d03aa866fdd42ec973a2998263a698a7d5/docs/weekly-dfs/codex/2026/week-08/collaboration/20261031T140633Z-claude-endorsement-reply.md"
+      ],
+      "original_evidence_cutoff": "2026-10-31T14:06:33Z",
+      "expectations": [],
+      "outcomes": [],
+      "collaboration_status": {
+        "codex_v1_ready": "ready; original retained",
+        "claude_v1_ready": "absent; exposed revisions do not reconstruct original",
+        "grok_questions_ready": "blocked; no attributable Week8 output received",
+        "collaboration_ready": "ready; substantive exchange and exact mutual endorsement retained",
+        "final_frozen": "not completed"
+      }
+    }
+  ]
+}

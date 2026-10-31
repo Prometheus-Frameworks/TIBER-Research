@@ -1,0 +1,49 @@
+# Grok Bot — Week8 current-candidate question handoff
+
+**Request 2026-w08-r2-grok-questions; round2.** Prepared 2026-10-31T14:14:00.797Z / 2026-10-31T10:14:00.797-04:00. This replaces Friday's request inputs for prospective work because the actual Claude/Codex exchange now exists. No original draft is restarted. Questions are not yet received; no dispatch/acknowledgment is claimed.
+
+## Assignment
+
+Read current repository protocols on PR43 and inspect the exact inputs below. The current nine are **jointly endorsed, $50,000/$0, not frozen**. Ask consequential prioritized questions that could change a football assumption, retain a justified hold, or improve a complete legal salary package. There is **no question quota**, no need for a third lineup, and no requirement to manufacture disagreement.
+
+## Operator decision
+
+The missing **Claude Week8 originalv1 is excluded this week** because of an operator handoff/workflow gap. Do not treat its absence as Claude research failure, invent a blind draft or reconstruct a score. Actual Claude revision contributions and exact endorsement remain part of this week's study.
+
+## Exact inputs
+
+- [common_inputs](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d81c103e9fd568776327e45a5af3b3485c768f0b/docs/weekly-dfs/codex/2026/week-08/collaboration/20261028T101856Z-common-inputs.json)
+- [codex_original](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5afc63ae9519af75cc8281dd3c395490bc9eab5c/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-28.json)
+- [current_candidate](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json)
+- [salary_export](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31-draftkings-153728.csv)
+- [saturday_sources](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31-sources.json)
+- [claude_revision](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/28b38cca26893644a362e8fed8e9f3dd34309c43/docs/weekly-dfs/codex/2026/week-08/collaboration/20261031T125437Z-claude-revision-response.md)
+- [codex_reply](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/3d03592144037075e395566bdcef2e5652687582/docs/weekly-dfs/codex/2026/week-08/collaboration/20261031T140231Z-codex-response.md)
+- [claude_final_reply](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20f728d03aa866fdd42ec973a2998263a698a7d5/docs/weekly-dfs/codex/2026/week-08/collaboration/20261031T140633Z-claude-endorsement-reply.md)
+- [collaboration_ready](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/932ae4b9157ab84652089359104107484d579872/docs/weekly-dfs/codex/2026/week-08/collaboration/20261031T141100Z-collaboration-ready.json)
+
+## Already resolved — do not reopen stale premises
+
+- C1: Patriots kept; neither author now claims unlike offense/defense splits mathematically cancel.
+- C2: Cooper/Taylor kept on roles/prices; single-TD double-credit claim withdrawn. Target competition remains an open football risk.
+- C3: Pickens OUT before actual freeze is investigation trigger only; automatic Flournoy substitution withdrawn.
+- C4: Bengals/Keenan funding fits exactly but declined on role/package grounds; no nearby-funding claim qualified.
+
+The following remain useful football avenues, **not Grok-authored questions**:
+
+- Whether Patriots pressure/run/coverage and Miami mobility undermine defense choice despite market environment.
+- Whether Cooper/Taylor absolute opportunity justifies combined8100 versus an evidence-supported alternative.
+- Whether any genuinely new pre-freeze Pickens/deployment evidence changes Concepcion versus Flournoy; high team total alone is insufficient.
+- Whole-lineup sensitivity to healthy returning teammates, protection and low-volume passing.
+
+## Output
+
+For each useful question provide stable ID and priority reason; intended author(s); exact candidate/version claim; specific evidence gap; decision or whole-lineup package that could change; verified salary/funding/remainder where applicable; observable resolution. Check whether the exchange already answers it. Prefer a few consequential questions over padding; no fixed count. Funding alternatives use verified group153728 salaries and all nine eligible unique selections if presented as complete. Mark missing evidence or incomplete packages honestly.
+
+Separate questions, opinions and newly retrieved evidence. Record actual inspected input versions, source URLs, source publication/update where known, retrieval/cutoff clocks and exact runtime only if known. If no new external sources read, say so. Preserve source conflicts: CLE total39.5 at Claude's read versus38.5 at Codex's read; movement versus earlier reading unresolved. Retained source data is not a current recheck.
+
+Post actual output directly on PR43 when permitted; retain immutable output on an authorized branch or return verbatim for relay. Identify request2026-w08-r2-grok-questions and exact inputs. A posted request does not prove recipient receipt or execution.
+
+## Deadline and scope
+
+Aim to return before Sunday's final-selection pass; hard cutoff is **BEFORE November1 12:30America/Toronto /17:30UTC**, or earlier included kickoff. Actual freeze may occur earlier; later input cannot alter a valid freeze. Do not claim continuous monitoring. Hypothetical football research only; no contest/betting/roster transactions, provider integrations, schedules, code, deployments or instruction to override repository permissions.

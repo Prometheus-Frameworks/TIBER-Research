@@ -1,0 +1,263 @@
+{
+  "schema_version": "tiber-dfs-journal/v1",
+  "entries": [
+    {
+      "id": "2026-w07-1025-activation-hold",
+      "snapshot_ids": [
+        "2026-w07-2026-10-25-daily"
+      ],
+      "kind": "scheduled_research",
+      "recorded_at": "2026-10-25T10:48:49.956Z",
+      "recorded_at_toronto": "2026-10-25T06:48:49.956-04:00",
+      "research_at": "2026-10-25T10:44:30.228Z",
+      "origin": "agent_chosen",
+      "origin_note": "Codex chose to challenge the Kittle hold and cheap receiver alternatives using actual activation evidence. Existing Claude initial-draft and Grok-question influence remains; no new operator pick direction.",
+      "title": "Activation resolves roster status, not receiving allocation",
+      "question": "Do confirmed Kirk and Dell returns justify changing Kittle or adopting cheap receiver financing before the final selection?",
+      "why_it_matters": "A cleared medical/roster condition does not establish the workload purchased by the salary. It can also increase competition for a retained player.",
+      "findings": [
+        "Official October24 SF announcement activates Kirk and removes his questionable designation; older current injury table still listsQ.",
+        "Official Houston October24 transaction announcement activates Dell. Neither activation supplies a verified Sunday route share.",
+        "GodwinFP and EgbukaOUT still support opportunity; Baker officialQ and attributed expected return remain distinct from confirmed active.",
+        "Puka remainsQ after FridayDNP; no inspected final clearance justifies reversing the prior risk decision.",
+        "Current official pool has the same518IDs/ten games and unchanged selected salaries; Kirk/Dell availabilityflags cleared.",
+        "Current one-model SPAGS total137.0 versus archived137.2, a model refresh only.",
+        "No actual Claude revision response appeared in the fresh PR read; no new stage readiness is claimed."
+      ],
+      "interpretation": "Hold the same nine and do not use Kirk or Noel as an automatic budget solution. Kirk's confirmed return is a material counterargument to Kittle target concentration, but not sufficient evidence that it displaces Kittle's regular receiving role. Keep the choice prospective and unfrozen.",
+      "alternatives": [
+        "Keep St. Brown but return FLEX to Keenan: $49100/$900 remaining. St.Brown19.4+Keenan10.5 versus current36.8; model does not settle real roles.",
+        "Reverse both Saturday swaps: Puka and Keenan: $49700/$300 remaining. Puka23.3+Keenan10.5. PukaQ/calfDNP makes forecast brittle.",
+        "Godwin to Kirk as a conditional low-cost alternative: $49300/$700 remaining. Kirk activated/no designation and priced3600; role not established. Would add SF concentration withKittle; not selected as an automatic QB-risk response."
+      ],
+      "uncertainty": [
+        "Mayfield final active status and performance after thumb injury.",
+        "Kirk/Dell actual routes and target allocation; activation is verified, workload is not.",
+        "Puka calf status remainsQ; not ruledOUT by inspected source.",
+        "No exact forward Noel route share; cheap financing remains insufficiently qualified.",
+        "No actual Claude revision response or exact-version joint endorsement."
+      ],
+      "lineup_effect": "No player changes; $50,000/$0 left. Kittle and St.Brown/LaPorta concentration risks remain. Model refresh-0.2; no selection contribution. Saturday's reversal-budget trigger corrected append-only: Puka+Keenan would total$49,700/$300left, not require releasing$300.",
+      "change_triggers": [
+        "Before cutoff, Mayfield absence would reopen Godwin and whole-lineup alternatives.",
+        "New qualified role/availability evidence could change picks before freeze. After a valid freeze later news is observation only.",
+        "A substantive Claude response can inform integration without regenerating either original draft."
+      ],
+      "carry_forward": [
+        "At final selection, inspect actual Mayfield status and any new material reports before the12:30Toronto cutoff.",
+        "Kirk activation is resolved; record actual Kirk/Kittle/CMC/Watkins participation after games rather than infer target transfer.",
+        "Dell activation is resolved; assess Noel's actual role separately from cheap salary and outcomes.",
+        "Keep unchanged original expectation IDs/clocks for freeze binding. No new measured target threshold invented today.",
+        "Claude substantive exchange still missing; existing handoff remains usable. If absent atfreeze use truthful supported Codex fallback."
+      ],
+      "sources": [
+        {
+          "id": "S1",
+          "label": "pool",
+          "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198",
+          "retrieved_at": "2026-10-25T10:45:00.126Z",
+          "retrieved_at_toronto": "2026-10-25T06:45:00.126-04:00",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Inspected body retained in source-receipts JSON; retrieval is not publication."
+        },
+        {
+          "id": "S2",
+          "label": "rules",
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-10-25T10:45:02.569Z",
+          "retrieved_at_toronto": "2026-10-25T06:45:02.569-04:00",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Inspected body retained in source-receipts JSON; retrieval is not publication."
+        },
+        {
+          "id": "S3",
+          "label": "model",
+          "url": "https://splashplaypodcast.com/dfs/nfl/players/",
+          "retrieved_at": "2026-10-25T10:45:01.877Z",
+          "retrieved_at_toronto": "2026-10-25T06:45:01.877-04:00",
+          "publication_at": null,
+          "published_display": "Published October24; numbers asof October24 11:15PM ET",
+          "scope": "Inspected body retained in source-receipts JSON; retrieval is not publication."
+        },
+        {
+          "id": "S4",
+          "label": "w6",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-6",
+          "retrieved_at": "2026-10-25T10:45:03.699Z",
+          "retrieved_at_toronto": "2026-10-25T06:45:03.699-04:00",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Inspected body retained in source-receipts JSON; retrieval is not publication."
+        },
+        {
+          "id": "S5",
+          "label": "w7",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "retrieved_at": "2026-10-25T10:45:01.348Z",
+          "retrieved_at_toronto": "2026-10-25T06:45:01.348-04:00",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Inspected body retained in source-receipts JSON; retrieval is not publication."
+        },
+        {
+          "id": "S6",
+          "label": "sf",
+          "url": "https://www.49ers.com/team/injury-report/",
+          "retrieved_at": "2026-10-25T10:45:00.636Z",
+          "retrieved_at_toronto": "2026-10-25T06:45:00.636-04:00",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Inspected body retained in source-receipts JSON; retrieval is not publication."
+        },
+        {
+          "id": "S7",
+          "label": "bucs",
+          "url": "https://www.buccaneers.com/team/injury-report/",
+          "retrieved_at": "2026-10-25T10:45:10.279Z",
+          "retrieved_at_toronto": "2026-10-25T06:45:10.279-04:00",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Inspected body retained in source-receipts JSON; retrieval is not publication."
+        },
+        {
+          "id": "S8",
+          "label": "hou",
+          "url": "https://www.houstontexans.com/news/week-7-injury-report-texans-vs-giants",
+          "retrieved_at": "2026-10-25T10:45:01.204Z",
+          "retrieved_at_toronto": "2026-10-25T06:45:01.204-04:00",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Inspected body retained in source-receipts JSON; retrieval is not publication."
+        },
+        {
+          "id": "S9",
+          "label": "rams",
+          "url": "https://www.therams.com/team/injury-report/",
+          "retrieved_at": "2026-10-25T10:45:02.119Z",
+          "retrieved_at_toronto": "2026-10-25T06:45:02.119-04:00",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Inspected body retained in source-receipts JSON; retrieval is not publication."
+        },
+        {
+          "id": "S10",
+          "label": "houtrans",
+          "url": "https://www.houstontexans.com/news/houston-texans-transactions-10-24-2026",
+          "retrieved_at": "2026-10-25T10:45:54.759Z",
+          "retrieved_at_toronto": "2026-10-25T06:45:54.759-04:00",
+          "publication_at": null,
+          "published_display": "Oct 24, 2026 at 03:00 PM (page timezone not printed)",
+          "scope": "Official Dell active-roster activation; not a final snap or route plan."
+        },
+        {
+          "id": "S11",
+          "label": "sftrans",
+          "url": "https://www.49ers.com/team/transactions/",
+          "retrieved_at": "2026-10-25T10:45:55.053Z",
+          "retrieved_at_toronto": "2026-10-25T06:45:55.053-04:00",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Inspected body retained in source-receipts JSON; retrieval is not publication."
+        },
+        {
+          "id": "S12",
+          "label": "sfactivation",
+          "url": "https://www.49ers.com/news/49ers-announce-roster-moves-ahead-of-sfvsatl",
+          "retrieved_at": "2026-10-25T10:46:09.033Z",
+          "retrieved_at_toronto": "2026-10-25T06:46:09.033-04:00",
+          "publication_at": null,
+          "published_display": "Oct 24, 2026 at 01:28 PM (page timezone not printed)",
+          "scope": "Official Kirk activation and removal of questionable designation; supersedes older SF injury table. No route/target guarantee."
+        },
+        {
+          "id": "S13",
+          "label": "baker",
+          "url": "https://sports.yahoo.com/fantasy/live/nfl-injury-tracker-week-7-latest-news-fantasy-implications-as-lamar-jackson-downgraded-to-out-saquon-barkley-back-at-practice-puka-nacua-questionable-200425606.html",
+          "retrieved_at": "2026-10-25T10:45:56.592Z",
+          "retrieved_at_toronto": "2026-10-25T06:45:56.592-04:00",
+          "publication_at": "2026-10-24T22:55:00-04:00",
+          "published_display": null,
+          "scope": "Attributed Yahoo expected-Mayfield-return report, updated Oct24 22:55EDT; officialQ still retained."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w07-2026-10-25-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5d6b5a43ba054dda712f07a64091182aa3e8e7b5/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-25.md"
+        }
+      ],
+      "expectations": [],
+      "outcomes": [],
+      "retained_expectation_records": [
+        {
+          "id": "2026-w07-1021-keenan-role",
+          "recorded_at": "2026-10-21T10:26:33.332Z",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6af577d7a69f1ed7d3c34ccdbe6bbfdea06f14ce/docs/weekly-dfs/codex/journal/20261021T102633Z.md"
+        },
+        {
+          "id": "2026-w07-1021-pollard-role",
+          "recorded_at": "2026-10-21T10:26:33.332Z",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6af577d7a69f1ed7d3c34ccdbe6bbfdea06f14ce/docs/weekly-dfs/codex/journal/20261021T102633Z.md"
+        },
+        {
+          "id": "2026-w07-1021-puka-role",
+          "recorded_at": "2026-10-21T10:26:33.332Z",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6af577d7a69f1ed7d3c34ccdbe6bbfdea06f14ce/docs/weekly-dfs/codex/journal/20261021T102633Z.md"
+        },
+        {
+          "id": "2026-w07-1021-nabers-role",
+          "recorded_at": "2026-10-21T10:26:33.332Z",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6af577d7a69f1ed7d3c34ccdbe6bbfdea06f14ce/docs/weekly-dfs/codex/journal/20261021T102633Z.md"
+        },
+        {
+          "id": "2026-w07-1022-braelon-role",
+          "recorded_at": "2026-10-22T10:42:57.483Z",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/f3c55fd90a4f2e5aabd6f72dcb421fb79b751481/docs/weekly-dfs/codex/journal/20261022T104448Z.md"
+        },
+        {
+          "id": "2026-w07-1022-nabers-qb-condition",
+          "recorded_at": "2026-10-22T10:42:57.483Z",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/f3c55fd90a4f2e5aabd6f72dcb421fb79b751481/docs/weekly-dfs/codex/journal/20261022T104448Z.md"
+        },
+        {
+          "id": "2026-w07-1023-marks-role",
+          "recorded_at": "2026-10-23T10:46:09.663Z",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/26a5d9b495860eefd5ee8e1a778c00543766fa97/docs/weekly-dfs/codex/journal/20261023T105011Z.md"
+        },
+        {
+          "id": "2026-w07-1024-stbrown-role",
+          "recorded_at": "2026-10-24T10:18:50.814Z",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/49e6b65bde3d166cfda9de4d647babdf7d881f58/docs/weekly-dfs/codex/journal/20261024T102103Z.md"
+        },
+        {
+          "id": "2026-w07-1024-kittle-role",
+          "recorded_at": "2026-10-24T10:18:50.814Z",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/49e6b65bde3d166cfda9de4d647babdf7d881f58/docs/weekly-dfs/codex/journal/20261024T102103Z.md"
+        },
+        {
+          "id": "2026-w07-1024-godwin-condition",
+          "recorded_at": "2026-10-24T10:18:50.814Z",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/49e6b65bde3d166cfda9de4d647babdf7d881f58/docs/weekly-dfs/codex/journal/20261024T102103Z.md"
+        }
+      ],
+      "previous_snapshot_id": "2026-w07-2026-10-24-daily",
+      "evidence_cutoff": "2026-10-25T10:47:37.244Z",
+      "collaboration_stage_record": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a1f25193e2927bf9ee1b262233b8c6a78d70e408/docs/weekly-dfs/codex/2026/week-07/collaboration/20261024T101745Z-grok-ready-and-codex-responses.md",
+      "collaboration_status": {
+        "authorship": "Codex candidate informed by Claude initial draft and Grok questions",
+        "codex_v1_ready": "retained",
+        "claude_v1_ready": "retained",
+        "grok_questions_ready": "ready; immutable receipt already retained",
+        "collaboration_ready": "blocked: no actual Claude revision response on current PR",
+        "final_frozen": "not complete",
+        "joint_revision_complete": false,
+        "joint_endorsement": false,
+        "stage_record": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a1f25193e2927bf9ee1b262233b8c6a78d70e408/docs/weekly-dfs/codex/2026/week-07/collaboration/20261024T101745Z-grok-ready-and-codex-responses.md",
+        "next_handoff": "Existing handoff remains Claude's substantive assessment of the exact Saturday/Sunday unchanged nine and Grok questions. No repeated dispatch or ready-stage announcement."
+      },
+      "archive_url": null
+    }
+  ]
+}

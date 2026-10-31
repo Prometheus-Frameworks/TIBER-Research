@@ -1,0 +1,883 @@
+{
+  "record_type": "postgame_comparison",
+  "id": "2026-w06-2026-10-19-review",
+  "notebook_convention": "Conversational DFS notebook; same-author evaluation, not a governed Research-run contract or independent review",
+  "recorded_at_utc": "2026-10-19T10:52:20.495Z",
+  "recorded_at_toronto": "2026-10-19T06:52:20.495-04:00",
+  "season": 2026,
+  "week": 6,
+  "slate_date": "2026-10-18",
+  "draft_group_id": "154941",
+  "status": "provisional",
+  "scoring_status": "provisional",
+  "scored_at": "2026-10-19T10:52:20.495Z",
+  "finality": "All ten main-slate games are final on the NFL schedule. These are reproducible DraftKings-rule calculations, not verified settled platform totals. Stat corrections remain possible; future material corrections require another dated review.",
+  "correction_of": null,
+  "previous_review": null,
+  "freeze_reference": {
+    "id": "2026-w06-20261018T151704Z-freeze",
+    "commit": "b411aac2936b88a6f72f07b9ad4e0630b6d4ebc9",
+    "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/b411aac2936b88a6f72f07b9ad4e0630b6d4ebc9/docs/weekly-dfs/codex/2026/week-06/freeze/20261018T151704Z.json",
+    "identity_sha256": "5bb6beb230eca95042907e83a0af0a109952f09676212c7e0739e3efd7245657",
+    "frozen_at": "2026-10-18T15:17:04.437Z",
+    "deadline": "2026-10-18T16:00:00Z",
+    "timely": true,
+    "postdeadline_selection_changes": 0
+  },
+  "scoring_method": {
+    "type": "reconstructed_from_box_scores_and_official_gamebooks",
+    "rules_url": "https://www.draftkings.com/help/rules/1",
+    "offense_formula": "0.04*pass_yards + 4*pass_td - interceptions_thrown + 0.1*(rush_yards+rec_yards) + 6*(rush_td+rec_td+return_td+offensive_fumble_recovery_td) + receptions - fumbles_lost + 2*two_point + 3*(pass_yards>=300) + 3*(rush_yards>=100) + 3*(rec_yards>=100)",
+    "dst_rules": {
+      "sack": 1,
+      "interception": 2,
+      "fumble_recovery": 2,
+      "return_td": 6,
+      "safety": 2,
+      "blocked_kick": 2,
+      "two_point_or_extra_point_return": 2,
+      "points_allowed_bands": {
+        "0": 10,
+        "1-6": 7,
+        "7-13": 4,
+        "14-20": 1,
+        "21-27": 0,
+        "28-34": -1,
+        "35+": -4
+      }
+    },
+    "points_allowed_note": "Current /help/rules/1 explicitly excludes opposing defensive scores against the offense, while listing rushing/passing TDs, offensive fumble-recovery TDs, listed special-teams returns, conversions, PATs and FGs as allowed. Tampa Bay's one offensive TD + PAT + four FGs count as 19.",
+    "zero_fields_note": "Zero scoring categories are supported by individual/fumble/return tables and scoring summaries, not substituted for missing actuals. Gross player passing yards, not net team passing yards, are used. Likely's successful conversion is scored separately.",
+    "canonical_rules_gap_resolved": true,
+    "rules_correction_classification": "constraint_or_source_correction",
+    "unresolved": "Platform completion/settlement and later official stat corrections not independently verified."
+  },
+  "player_scores": [
+    {
+      "player": "Matthew Stafford",
+      "source_ids": [
+        "R03",
+        "R01"
+      ],
+      "stats": {
+        "pass_yards": 222,
+        "pass_td": 2,
+        "interceptions_thrown": 0,
+        "rush_yards": 0,
+        "rush_td": 0,
+        "receptions": 0,
+        "rec_yards": 0,
+        "rec_td": 0,
+        "fumbles_lost": 0,
+        "return_td": 0,
+        "two_point": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "actual_points": 16.88,
+      "calculation": "222×0.04 + 2×4 = 16.88; no 300-yard bonus. Failed try/fumble is not a lost-fumble deduction."
+    },
+    {
+      "player": "Kyren Williams",
+      "source_ids": [
+        "R03",
+        "R01"
+      ],
+      "stats": {
+        "pass_yards": 0,
+        "pass_td": 0,
+        "interceptions_thrown": 0,
+        "rush_yards": 50,
+        "rush_td": 0,
+        "receptions": 3,
+        "rec_yards": 17,
+        "rec_td": 0,
+        "fumbles_lost": 0,
+        "return_td": 0,
+        "two_point": 0,
+        "offensive_fumble_recovery_td": 0,
+        "rush_att": 10,
+        "targets": 6
+      },
+      "actual_points": 9.7,
+      "calculation": "50×0.1 + 3 + 17×0.1 = 9.70"
+    },
+    {
+      "player": "Braelon Allen",
+      "source_ids": [
+        "R05",
+        "R01"
+      ],
+      "stats": {
+        "pass_yards": 0,
+        "pass_td": 0,
+        "interceptions_thrown": 0,
+        "rush_yards": 78,
+        "rush_td": 0,
+        "receptions": 2,
+        "rec_yards": 26,
+        "rec_td": 0,
+        "fumbles_lost": 0,
+        "return_td": 0,
+        "two_point": 0,
+        "offensive_fumble_recovery_td": 0,
+        "rush_att": 17,
+        "targets": 2
+      },
+      "actual_points": 12.4,
+      "calculation": "78×0.1 + 2 + 26×0.1 = 12.40"
+    },
+    {
+      "player": "Puka Nacua",
+      "source_ids": [
+        "R03",
+        "R01"
+      ],
+      "stats": {
+        "pass_yards": 0,
+        "pass_td": 0,
+        "interceptions_thrown": 0,
+        "rush_yards": 0,
+        "rush_td": 0,
+        "receptions": 6,
+        "rec_yards": 80,
+        "rec_td": 0,
+        "fumbles_lost": 0,
+        "return_td": 0,
+        "two_point": 0,
+        "offensive_fumble_recovery_td": 0,
+        "targets": 7
+      },
+      "actual_points": 14,
+      "calculation": "6 + 80×0.1 = 14.00"
+    },
+    {
+      "player": "Malik Nabers",
+      "source_ids": [
+        "R04",
+        "R01"
+      ],
+      "stats": {
+        "pass_yards": 0,
+        "pass_td": 0,
+        "interceptions_thrown": 0,
+        "rush_yards": 0,
+        "rush_td": 0,
+        "receptions": 12,
+        "rec_yards": 165,
+        "rec_td": 0,
+        "fumbles_lost": 0,
+        "return_td": 0,
+        "two_point": 0,
+        "offensive_fumble_recovery_td": 0,
+        "targets": 15
+      },
+      "actual_points": 31.5,
+      "calculation": "12 + 165×0.1 + 3 receiving-yard bonus = 31.50"
+    },
+    {
+      "player": "Germie Bernard",
+      "source_ids": [
+        "R09",
+        "R01"
+      ],
+      "stats": {
+        "pass_yards": 0,
+        "pass_td": 0,
+        "interceptions_thrown": 0,
+        "rush_yards": 0,
+        "rush_td": 0,
+        "receptions": 11,
+        "rec_yards": 87,
+        "rec_td": 1,
+        "fumbles_lost": 0,
+        "return_td": 0,
+        "two_point": 0,
+        "offensive_fumble_recovery_td": 0,
+        "targets": 12
+      },
+      "actual_points": 25.7,
+      "calculation": "11 + 87×0.1 + 6 = 25.70"
+    },
+    {
+      "player": "Harold Fannin Jr.",
+      "source_ids": [
+        "R06",
+        "R01"
+      ],
+      "stats": {
+        "pass_yards": 0,
+        "pass_td": 0,
+        "interceptions_thrown": 0,
+        "rush_yards": 0,
+        "rush_td": 0,
+        "receptions": 1,
+        "rec_yards": 9,
+        "rec_td": 0,
+        "fumbles_lost": 0,
+        "return_td": 0,
+        "two_point": 0,
+        "offensive_fumble_recovery_td": 0,
+        "targets": 3
+      },
+      "actual_points": 1.9,
+      "calculation": "1 + 9×0.1 = 1.90"
+    },
+    {
+      "player": "Isaiah Likely",
+      "source_ids": [
+        "R04",
+        "R01"
+      ],
+      "stats": {
+        "pass_yards": 0,
+        "pass_td": 0,
+        "interceptions_thrown": 0,
+        "rush_yards": 0,
+        "rush_td": 0,
+        "receptions": 6,
+        "rec_yards": 99,
+        "rec_td": 1,
+        "fumbles_lost": 0,
+        "return_td": 0,
+        "two_point": 1,
+        "offensive_fumble_recovery_td": 0,
+        "targets": 11
+      },
+      "actual_points": 23.9,
+      "calculation": "6 + 99×0.1 + 6 + 2 = 23.90; 99 yards earns no 100-yard bonus. Two-point catch is separate from regular receiving totals."
+    },
+    {
+      "player": "Tyler Allgeier",
+      "source_ids": [
+        "R03",
+        "R01"
+      ],
+      "stats": {
+        "pass_yards": 0,
+        "pass_td": 0,
+        "interceptions_thrown": 0,
+        "rush_yards": 38,
+        "rush_td": 0,
+        "receptions": 1,
+        "rec_yards": 10,
+        "rec_td": 0,
+        "fumbles_lost": 0,
+        "return_td": 0,
+        "two_point": 0,
+        "offensive_fumble_recovery_td": 0,
+        "rush_att": 18,
+        "targets": 2
+      },
+      "actual_points": 5.8,
+      "calculation": "38×0.1 + 1 + 10×0.1 = 5.80"
+    },
+    {
+      "player": "Josh Allen",
+      "source_ids": [
+        "R08",
+        "R01"
+      ],
+      "stats": {
+        "pass_yards": 255,
+        "pass_td": 2,
+        "interceptions_thrown": 0,
+        "rush_yards": 1,
+        "rush_td": 0,
+        "receptions": 0,
+        "rec_yards": 0,
+        "rec_td": 0,
+        "fumbles_lost": 0,
+        "return_td": 0,
+        "two_point": 0,
+        "offensive_fumble_recovery_td": 0,
+        "rush_att": 5
+      },
+      "actual_points": 18.3,
+      "calculation": "255×0.04 + 2×4 + 1×0.1 = 18.30"
+    },
+    {
+      "player": "Khalil Shakir",
+      "source_ids": [
+        "R08",
+        "R01"
+      ],
+      "stats": {
+        "pass_yards": 0,
+        "pass_td": 0,
+        "interceptions_thrown": 0,
+        "rush_yards": 0,
+        "rush_td": 0,
+        "receptions": 4,
+        "rec_yards": 34,
+        "rec_td": 1,
+        "fumbles_lost": 0,
+        "return_td": 0,
+        "two_point": 0,
+        "offensive_fumble_recovery_td": 0,
+        "targets": 6
+      },
+      "actual_points": 13.4,
+      "calculation": "4 + 34×0.1 + 6 = 13.40"
+    },
+    {
+      "player": "Dallas Goedert",
+      "source_ids": [
+        "R07",
+        "R01"
+      ],
+      "stats": {
+        "pass_yards": 0,
+        "pass_td": 0,
+        "interceptions_thrown": 0,
+        "rush_yards": 0,
+        "rush_td": 0,
+        "receptions": 6,
+        "rec_yards": 61,
+        "rec_td": 0,
+        "fumbles_lost": 0,
+        "return_td": 0,
+        "two_point": 0,
+        "offensive_fumble_recovery_td": 0,
+        "targets": 8
+      },
+      "actual_points": 12.1,
+      "calculation": "6 + 61×0.1 = 12.10"
+    },
+    {
+      "player": "Steelers",
+      "source_ids": [
+        "R09",
+        "R01"
+      ],
+      "stats": {
+        "sacks": 5,
+        "interceptions": 2,
+        "fumble_recoveries": 0,
+        "return_touchdowns": 0,
+        "safeties": 0,
+        "blocked_kicks": 0,
+        "two_point_or_extra_point_returns": 0,
+        "points_allowed": 19,
+        "points_allowed_fantasy": 1
+      },
+      "actual_points": 10,
+      "calculation": "5 sacks + 2×2 interceptions + 1 PA-band point = 10. Tampa Bay scored one passing TD, one PAT and four FGs: all 19 count. No offensive turnover-return TD to exclude; no blocks, safety, recovery or return TD."
+    }
+  ],
+  "lineup_comparisons": [
+    {
+      "id": "2026-w06-2026-10-17-v1",
+      "kind": "seed",
+      "original_salary_total": 49400,
+      "original_salary_remaining": 600,
+      "original_projection": 127.5,
+      "actual_total": 121.4,
+      "points_per_1000_spent": 2.4575,
+      "picks": [
+        {
+          "slot": "QB",
+          "player": "Josh Allen",
+          "original_salary": 7500,
+          "actual_points": 18.3
+        },
+        {
+          "slot": "RB",
+          "player": "Kyren Williams",
+          "original_salary": 6800,
+          "actual_points": 9.7
+        },
+        {
+          "slot": "RB",
+          "player": "Braelon Allen",
+          "original_salary": 5700,
+          "actual_points": 12.4
+        },
+        {
+          "slot": "WR",
+          "player": "Puka Nacua",
+          "original_salary": 8100,
+          "actual_points": 14
+        },
+        {
+          "slot": "WR",
+          "player": "Khalil Shakir",
+          "original_salary": 5300,
+          "actual_points": 13.4
+        },
+        {
+          "slot": "WR",
+          "player": "Germie Bernard",
+          "original_salary": 4000,
+          "actual_points": 25.7
+        },
+        {
+          "slot": "TE",
+          "player": "Dallas Goedert",
+          "original_salary": 3900,
+          "actual_points": 12.1
+        },
+        {
+          "slot": "FLEX",
+          "player": "Tyler Allgeier",
+          "original_salary": 4800,
+          "actual_points": 5.8
+        },
+        {
+          "slot": "DST",
+          "player": "Steelers",
+          "original_salary": 3300,
+          "actual_points": 10
+        }
+      ],
+      "immutable_selection_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a595cffc831776bbcc27d5d7a518ba2e1a79a740/docs/weekly-dfs/codex/2026/week-06.md"
+    },
+    {
+      "id": "2026-w06-2026-10-17-v2",
+      "kind": "seed",
+      "original_salary_total": 49700,
+      "original_salary_remaining": 300,
+      "original_projection": 134.2,
+      "actual_total": 127.88,
+      "points_per_1000_spent": 2.573,
+      "picks": [
+        {
+          "slot": "QB",
+          "player": "Matthew Stafford",
+          "original_salary": 6400,
+          "actual_points": 16.88
+        },
+        {
+          "slot": "RB",
+          "player": "Kyren Williams",
+          "original_salary": 6800,
+          "actual_points": 9.7
+        },
+        {
+          "slot": "RB",
+          "player": "Braelon Allen",
+          "original_salary": 5700,
+          "actual_points": 12.4
+        },
+        {
+          "slot": "WR",
+          "player": "Puka Nacua",
+          "original_salary": 8100,
+          "actual_points": 14
+        },
+        {
+          "slot": "WR",
+          "player": "Malik Nabers",
+          "original_salary": 6500,
+          "actual_points": 31.5
+        },
+        {
+          "slot": "WR",
+          "player": "Germie Bernard",
+          "original_salary": 4000,
+          "actual_points": 25.7
+        },
+        {
+          "slot": "TE",
+          "player": "Harold Fannin Jr.",
+          "original_salary": 4100,
+          "actual_points": 1.9
+        },
+        {
+          "slot": "FLEX",
+          "player": "Tyler Allgeier",
+          "original_salary": 4800,
+          "actual_points": 5.8
+        },
+        {
+          "slot": "DST",
+          "player": "Steelers",
+          "original_salary": 3300,
+          "actual_points": 10
+        }
+      ],
+      "immutable_selection_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a595cffc831776bbcc27d5d7a518ba2e1a79a740/docs/weekly-dfs/codex/2026/week-06.md"
+    },
+    {
+      "id": "2026-w06-2026-10-18-daily",
+      "kind": "daily",
+      "original_salary_total": 49700,
+      "original_salary_remaining": 300,
+      "original_projection": 137.3,
+      "actual_total": 145.98,
+      "points_per_1000_spent": 2.9372,
+      "picks": [
+        {
+          "slot": "QB",
+          "player": "Matthew Stafford",
+          "original_salary": 6400,
+          "actual_points": 16.88
+        },
+        {
+          "slot": "RB",
+          "player": "Kyren Williams",
+          "original_salary": 6800,
+          "actual_points": 9.7
+        },
+        {
+          "slot": "RB",
+          "player": "Braelon Allen",
+          "original_salary": 5700,
+          "actual_points": 12.4
+        },
+        {
+          "slot": "WR",
+          "player": "Puka Nacua",
+          "original_salary": 8100,
+          "actual_points": 14
+        },
+        {
+          "slot": "WR",
+          "player": "Malik Nabers",
+          "original_salary": 6500,
+          "actual_points": 31.5
+        },
+        {
+          "slot": "WR",
+          "player": "Germie Bernard",
+          "original_salary": 4000,
+          "actual_points": 25.7
+        },
+        {
+          "slot": "TE",
+          "player": "Harold Fannin Jr.",
+          "original_salary": 4100,
+          "actual_points": 1.9
+        },
+        {
+          "slot": "FLEX",
+          "player": "Isaiah Likely",
+          "original_salary": 4800,
+          "actual_points": 23.9
+        },
+        {
+          "slot": "DST",
+          "player": "Steelers",
+          "original_salary": 3300,
+          "actual_points": 10
+        }
+      ],
+      "immutable_selection_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/ca9065e0b767ec8bd41b3713a10b0c35e5e3fd0e/docs/weekly-dfs/codex/2026/week-06/daily/2026-10-18.md"
+    },
+    {
+      "id": "2026-w06-20261018T151704Z-freeze",
+      "kind": "freeze",
+      "original_salary_total": 49700,
+      "original_salary_remaining": 300,
+      "original_projection": 137.4,
+      "actual_total": 145.98,
+      "points_per_1000_spent": 2.9372,
+      "picks": [
+        {
+          "slot": "QB",
+          "player": "Matthew Stafford",
+          "original_salary": 6400,
+          "actual_points": 16.88
+        },
+        {
+          "slot": "RB",
+          "player": "Kyren Williams",
+          "original_salary": 6800,
+          "actual_points": 9.7
+        },
+        {
+          "slot": "RB",
+          "player": "Braelon Allen",
+          "original_salary": 5700,
+          "actual_points": 12.4
+        },
+        {
+          "slot": "WR",
+          "player": "Puka Nacua",
+          "original_salary": 8100,
+          "actual_points": 14
+        },
+        {
+          "slot": "WR",
+          "player": "Malik Nabers",
+          "original_salary": 6500,
+          "actual_points": 31.5
+        },
+        {
+          "slot": "WR",
+          "player": "Germie Bernard",
+          "original_salary": 4000,
+          "actual_points": 25.7
+        },
+        {
+          "slot": "TE",
+          "player": "Harold Fannin Jr.",
+          "original_salary": 4100,
+          "actual_points": 1.9
+        },
+        {
+          "slot": "FLEX",
+          "player": "Isaiah Likely",
+          "original_salary": 4800,
+          "actual_points": 23.9
+        },
+        {
+          "slot": "DST",
+          "player": "Steelers",
+          "original_salary": 3300,
+          "actual_points": 10
+        }
+      ],
+      "immutable_selection_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/b411aac2936b88a6f72f07b9ad4e0630b6d4ebc9/docs/weekly-dfs/codex/2026/week-06/freeze/20261018T151704Z.md"
+    }
+  ],
+  "revision_contributions": [
+    {
+      "from": "Josh Allen",
+      "to": "Matthew Stafford",
+      "classification": "changed_interpretation",
+      "actual_contribution": -1.42
+    },
+    {
+      "from": "Khalil Shakir",
+      "to": "Malik Nabers",
+      "classification": "changed_interpretation",
+      "actual_contribution": 18.1
+    },
+    {
+      "from": "Dallas Goedert",
+      "to": "Harold Fannin Jr.",
+      "classification": "changed_interpretation",
+      "actual_contribution": -10.2
+    },
+    {
+      "from": "Tyler Allgeier",
+      "to": "Isaiah Likely",
+      "classification": "changed_interpretation",
+      "actual_contribution": 18.1
+    }
+  ],
+  "revision_summary": {
+    "v1_to_v2": 6.48,
+    "v2_to_daily": 18.1,
+    "daily_to_freeze": 0,
+    "v1_to_freeze": 24.58,
+    "retained_failures": [
+      "Fannin-for-Goedert cost 10.20",
+      "Rams concentration underperformed the recorded estimate"
+    ],
+    "causality_limit": "A higher final score does not establish improved reasoning. Changes bundled different salaries, players and shared-game risks; only four pregame snapshots exist. No retrospective optimal lineup was computed."
+  },
+  "assumption_evaluation": [
+    {
+      "assumption": "Rams offense supports Stafford, Puka and Kyren together",
+      "assessment": "contradicted_in_this_game",
+      "evidence": "16 team points; Stafford 222 passing yards, Puka 7 targets, Kyren 10 carries. Trio totals 40.58 versus freeze model 64.4. Expected favorable offense failed; the specific lopsided-win mechanism did not occur.",
+      "source_ids": [
+        "R03",
+        "R11"
+      ]
+    },
+    {
+      "assumption": "Braelon has lead-back opportunity with Hall absent",
+      "assessment": "supported_role_not_full_points",
+      "evidence": "17 of 27 team carries, 78 rushing yards, 2 targets. Lead rushing role supported; limited receiving volume remained a constraint. No snap share inferred.",
+      "source_ids": [
+        "R05"
+      ]
+    },
+    {
+      "assumption": "Bernard can earn meaningful targets with receiver absences",
+      "assessment": "supported",
+      "evidence": "12 targets, 11 receptions, 87 yards, 1 overtime TD. Metcalf still had 15 targets; Bernard did not inherit all targets. Overtime helped the score and is not baseline volume.",
+      "source_ids": [
+        "R09"
+      ]
+    },
+    {
+      "assumption": "Nabers and Likely retain receiving opportunity despite line risk",
+      "assessment": "supported_observed_volume; protection_mechanism_unassessable",
+      "evidence": "15 and 11 targets; Likely 99 receiving yards, TD and two-point catch; Nabers 165 receiving yards. Eluemunor inactive, Thomas started and briefly left for concussion evaluation (cleared). No routes/pass-block participation dataset was read.",
+      "source_ids": [
+        "R04",
+        "R10"
+      ]
+    },
+    {
+      "assumption": "Giants quarterback continuity",
+      "assessment": "new_postfreeze_confounder",
+      "evidence": "Winston was replaced by McCarthy in the fourth quarter. Likely's TD and conversion occurred with McCarthy. This later change cannot be used to justify the original pick.",
+      "source_ids": [
+        "R04",
+        "R10"
+      ]
+    },
+    {
+      "assumption": "Fannin's modest-priced receiving rebound",
+      "assessment": "contradicted_in_this_game",
+      "evidence": "3 targets, 1 catch, 9 yards; no receiving rebound. The switch cost 10.20 points versus Goedert. Cause of low routes/targets is not established from box scores alone.",
+      "source_ids": [
+        "R06",
+        "R07"
+      ]
+    },
+    {
+      "assumption": "Steelers pressure and takeaways against backup Daniels",
+      "assessment": "supported_game_events",
+      "evidence": "Daniels played; Pittsburgh recorded 5 sacks and 2 interceptions. Outcome score 10; turnover production is not evidence of durable predictive skill.",
+      "source_ids": [
+        "R09"
+      ]
+    },
+    {
+      "assumption": "Allgeier offers rushing volume but a limited PPR case",
+      "assessment": "supported_role_risk",
+      "evidence": "18 carries but 38 yards, 1 catch on 2 targets. Knight gained 80 on 15 carries. The opportunity existed; efficiency and receiving did not support a strong score.",
+      "source_ids": [
+        "R03"
+      ]
+    }
+  ],
+  "late_news_policy": "Selections and original salaries remain fixed. The Giants quarterback change and actual tackle availability are evaluated after the freeze, not retroactive selection evidence.",
+  "older_pending_slates": "No Week 5 or earlier archived lineup/review exists in the current repository tree. All four Week 6 snapshots are covered here.",
+  "source_conflicts": [
+    "Several Firecrawl gamebook tables have duplicated/misplaced team headings; selected player abbreviations and final individual sections are used, not misleading team subheadings.",
+    "Rams recap displays a 4:05 PM timestamp but contains later final-game events; its displayed timestamp is not treated as publication availability of those results.",
+    "DraftKings /help/rules/nfl rendered generic rules only. /help/rules/1 rendered the exact current NFL Classic table and attribution notes.",
+    "No inaccessible logged-in contest result was substituted with a different fantasy scoring provider."
+  ],
+  "confounders": {
+    "operator_input": "No player-specific instruction in this run; requested prospective notebook, freeze preservation and scoring comparison.",
+    "model_exact_id": null,
+    "model_change_observed": null,
+    "source_access_change": "Exact platform rules body and completed NFL gamebooks now accessible; no new integration or producer.",
+    "independent_review": false,
+    "token_usage": null,
+    "currency_cost": null,
+    "private_league_data_used": false,
+    "producers_executed": false
+  },
+  "raw_source_bytes_retained": false,
+  "sources": [
+    {
+      "id": "R01",
+      "key": "rules1",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at_utc": "2026-10-19T10:50:00.673Z",
+      "retrieved_at_toronto": "2026-10-19T06:50:00.673-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "source_time_note": "No publication/update instant established; retrieval time is not publication time.",
+      "cache_state": null
+    },
+    {
+      "id": "R02",
+      "key": "w6schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-6",
+      "retrieved_at_utc": "2026-10-19T10:46:40.879Z",
+      "retrieved_at_toronto": "2026-10-19T06:46:40.879-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "source_time_note": "No publication/update instant established; retrieval time is not publication time.",
+      "cache_state": null
+    },
+    {
+      "id": "R03",
+      "key": "ramsbox",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873004",
+      "retrieved_at_utc": "2026-10-19T10:46:50.312Z",
+      "retrieved_at_toronto": "2026-10-19T06:46:50.312-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "source_time_note": "No publication/update instant established; retrieval time is not publication time.",
+      "cache_state": null
+    },
+    {
+      "id": "R04",
+      "key": "nygpdf",
+      "url": "https://static.www.nfl.com/image/upload/v1792406325/gamecenter/aab5857e-4feb-11f1-abca-2c54536568a9.pdf",
+      "retrieved_at_utc": "2026-10-19T10:48:50.912Z",
+      "retrieved_at_toronto": "2026-10-19T06:48:50.912-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "source_time_note": "No publication/update instant established; retrieval time is not publication time.",
+      "cache_state": null
+    },
+    {
+      "id": "R05",
+      "key": "nyjpdf",
+      "url": "https://static.www.nfl.com/image/upload/v1792406326/gamecenter/aab58261-4feb-11f1-abca-2c54536568a9.pdf",
+      "retrieved_at_utc": "2026-10-19T10:49:01.887Z",
+      "retrieved_at_toronto": "2026-10-19T06:49:01.887-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "source_time_note": "No publication/update instant established; retrieval time is not publication time.",
+      "cache_state": null
+    },
+    {
+      "id": "R06",
+      "key": "clepdf",
+      "url": "https://static.www.nfl.com/image/upload/v1792406323/gamecenter/aab57bb8-4feb-11f1-abca-2c54536568a9.pdf",
+      "retrieved_at_utc": "2026-10-19T10:49:19.918Z",
+      "retrieved_at_toronto": "2026-10-19T06:49:19.918-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "source_time_note": "No publication/update instant established; retrieval time is not publication time.",
+      "cache_state": null
+    },
+    {
+      "id": "R07",
+      "key": "phipdf",
+      "url": "https://static.www.nfl.com/image/upload/v1792406323/gamecenter/aab588fe-4feb-11f1-abca-2c54536568a9.pdf",
+      "retrieved_at_utc": "2026-10-19T10:49:44.322Z",
+      "retrieved_at_toronto": "2026-10-19T06:49:44.322-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "source_time_note": "No publication/update instant established; retrieval time is not publication time.",
+      "cache_state": null
+    },
+    {
+      "id": "R08",
+      "key": "bufpdf",
+      "url": "https://static.www.nfl.com/image/upload/v1792406325/gamecenter/aad57852-4feb-11f1-abca-2c54536568a9.pdf",
+      "retrieved_at_utc": "2026-10-19T10:49:55.305Z",
+      "retrieved_at_toronto": "2026-10-19T06:49:55.305-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "source_time_note": "No publication/update instant established; retrieval time is not publication time.",
+      "cache_state": null
+    },
+    {
+      "id": "R09",
+      "key": "pitpdf",
+      "url": "https://static.www.nfl.com/image/upload/v1792406326/gamecenter/aab58c4b-4feb-11f1-abca-2c54536568a9.pdf",
+      "retrieved_at_utc": "2026-10-19T10:51:06.141Z",
+      "retrieved_at_toronto": "2026-10-19T06:51:06.141-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "source_time_note": "No publication/update instant established; retrieval time is not publication time.",
+      "cache_state": null
+    },
+    {
+      "id": "R10",
+      "key": "giantsrecap",
+      "url": "https://www.giants.com/news/instant-analysis-giants-fall-to-saints-34-27",
+      "retrieved_at_utc": "2026-10-19T10:48:10.823Z",
+      "retrieved_at_toronto": "2026-10-19T06:48:10.823-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "source_time_note": "Page displays October 18, 2026 at 6:21 PM; timezone not printed.",
+      "cache_state": null
+    },
+    {
+      "id": "R11",
+      "key": "ramsrecap",
+      "url": "https://www.therams.com/news/game-recap-rams-fall-to-cardinals-18-16-at-sofi-stadium",
+      "retrieved_at_utc": "2026-10-19T10:50:10.823Z",
+      "retrieved_at_toronto": "2026-10-19T06:50:10.823-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "source_time_note": "Page displays October 18 at 4:05 PM, near kickoff despite containing final recap; not treated as actual final-update time.",
+      "cache_state": null
+    }
+  ]
+}

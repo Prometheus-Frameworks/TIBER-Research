@@ -1,0 +1,161 @@
+{
+  "schema_version": "tiber-dfs-journal/v1",
+  "entries": [
+    {
+      "id": "2026-w07-final-freeze-20261025T144625Z",
+      "snapshot_ids": [
+        "2026-w07-20261025T144553Z-freeze"
+      ],
+      "kind": "scheduled_research",
+      "recorded_at": "2026-10-25T14:46:25.264Z",
+      "recorded_at_toronto": "2026-10-25T10:46:25.264-04:00",
+      "research_at": "2026-10-25T14:43:07.205Z",
+      "origin": "mixed",
+      "origin_note": "Standing final-selection assignment with actual Claude initial draft and Grok questions retained. Operator requested pilot-gap documentation, not new player direction.",
+      "title": "Final nine frozen; collaboration incomplete",
+      "question": "Do fresh official conditions justify retaining the morning team as the supported final fallback?",
+      "why_it_matters": "The final selection must preserve exact choices, salaries and prospective expectations before outcomes while keeping missing participation visible.",
+      "findings": [
+        "Montgomery remains OUT; GodwinFP/EgbukaOUT and MayfieldFP/Q remain current official conditions.",
+        "Primary NFL report supports expected Mayfield return but records prior offensive struggles and glove/grip adaptation; not confirmed active or guaranteed improvement.",
+        "Kirk activation/removal ofQ remains verified; it does not establish a receiving allocation.",
+        "Selected nine match current official export at original salaries;518IDs/ten games unchanged; rules and schedule inspected.",
+        "No actual Claude revision response found in PR/files; original draft and Grok ten questions remain retained."
+      ],
+      "interpretation": "Retain the nine as Codex-authored fallback informed by Claude and Grok. No shared or jointly endorsed final claimed.",
+      "alternatives": [
+        "Keenan remains viable; replacingKittle alone would leave$900 unused but gives up a supported SF receiving allocation.",
+        "Original Claude package remains separately preserved; Noel forwardrole is insufficiently qualified for adoption.",
+        "No late automatic replacement for Mayfield absence; final inactives remain a deliberate information gap at the actual freeze."
+      ],
+      "uncertainty": [
+        "Mayfield final active status unverified; effective return uncertain. Godwin role depends on offensive conditions.",
+        "Kittle opportunity competes with cleared Kirk and other receivers; no target guarantee.",
+        "Giants full-game passing/protection and Detroit target competition remain risks.",
+        "Final game inactives not yet verified; platformpool eligibility is not medical clearance."
+      ],
+      "lineup_effect": "No selection changes. $50,000/$0remaining. SPAGS137.4 versus morning137.0 is a model refresh only.",
+      "change_triggers": [
+        "After this valid freeze, new evidence can affect observations/review/future slates only, not the scored selection."
+      ],
+      "carry_forward": [
+        "Score every retained complete draft and freeze on the same slate with exactDKbonus/DSTrules; leave unknowns and provisional corrections explicit.",
+        "Assess bound Marks/StBrown/Kittle/Godwin/Nabers expectations separately from points; retain misses and unassessable mechanisms.",
+        "Use the pilot handoff review for nextcycle; delivery gaps and football judgment are separate measures."
+      ],
+      "sources": [
+        {
+          "id": "F1",
+          "label": "pool",
+          "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198",
+          "retrieved_at": "2026-10-25T14:43:34.972Z",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Current body inspected; publication is not retrieval."
+        },
+        {
+          "id": "F2",
+          "label": "rules",
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-10-25T14:43:37.658Z",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Current body inspected; publication is not retrieval."
+        },
+        {
+          "id": "F3",
+          "label": "model",
+          "url": "https://splashplaypodcast.com/dfs/nfl/players/",
+          "retrieved_at": "2026-10-25T14:43:35.310Z",
+          "publication_at": null,
+          "published_display": "October25,2026; numbersasof10:42AM ET",
+          "scope": "Current body inspected; publication is not retrieval."
+        },
+        {
+          "id": "F4",
+          "label": "w7",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "retrieved_at": "2026-10-25T14:43:37.257Z",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Current body inspected; publication is not retrieval."
+        },
+        {
+          "id": "F5",
+          "label": "bucs",
+          "url": "https://www.buccaneers.com/team/injury-report/",
+          "retrieved_at": "2026-10-25T14:43:35.755Z",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Current body inspected; publication is not retrieval."
+        },
+        {
+          "id": "F6",
+          "label": "hou",
+          "url": "https://www.houstontexans.com/news/week-7-injury-report-texans-vs-giants",
+          "retrieved_at": "2026-10-25T14:43:35.378Z",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Current body inspected; publication is not retrieval."
+        },
+        {
+          "id": "F7",
+          "label": "sf",
+          "url": "https://www.49ers.com/news/49ers-announce-roster-moves-ahead-of-sfvsatl",
+          "retrieved_at": "2026-10-25T14:43:35.466Z",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Current body inspected; publication is not retrieval."
+        },
+        {
+          "id": "F8",
+          "label": "det",
+          "url": "https://www.detroitlions.com/team/injury-report/",
+          "retrieved_at": "2026-10-25T14:43:35.301Z",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Current body inspected; publication is not retrieval."
+        },
+        {
+          "id": "F9",
+          "label": "baker",
+          "url": "https://www.nfl.com/news/baker-mayfield-thumb-strong-enough-play-buccaneers-panthers",
+          "retrieved_at": "2026-10-25T14:44:04.427Z",
+          "publication_at": null,
+          "published_display": "October22,2026 per search metadata; exact update unknown",
+          "scope": "Current body inspected; publication is not retrieval."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w07-20261025T144553Z-freeze",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/22f61d352373f222ab94955bfcf6686470e655d6/docs/weekly-dfs/codex/2026/week-07/freeze/20261025T144553Z.json"
+        }
+      ],
+      "expectations": [],
+      "expectation_binding": {
+        "commit": "14daf726c4c4571c032b2d8045b052aa43adf082",
+        "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/14daf726c4c4571c032b2d8045b052aa43adf082/docs/weekly-dfs/codex/2026/week-07/freeze/20261025T144442Z-expectations.json",
+        "ids": [
+          "2026-w07-1021-nabers-role",
+          "2026-w07-1022-nabers-qb-condition",
+          "2026-w07-1023-marks-role",
+          "2026-w07-1024-stbrown-role",
+          "2026-w07-1024-kittle-role",
+          "2026-w07-1024-godwin-condition"
+        ],
+        "note": "Original IDs, timestamps, statements and original immutable notebook links preserved. Legacy missing expectations remain absent."
+      },
+      "outcomes": [],
+      "collaboration_status": {
+        "codex_v1_ready": "ready; original trajectory retained",
+        "claude_v1_ready": "ready; original receipt retained",
+        "grok_questions_ready": "ready; actual questions retained",
+        "collaboration_ready": "blocked; no actual Claude revision response/exchange in inspected record",
+        "final_frozen": "ready; Codex fallback"
+      },
+      "collaboration_stage_record": null,
+      "archive_url": null
+    }
+  ]
+}
