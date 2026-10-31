@@ -60,6 +60,9 @@ and retained records. Do not retrofit new questions into the original prediction
 Use [the closeout template](templates/closeout.md). Preserve both adverse and
 favorable results. Role, exposure, opportunity, efficiency and fantasy production
 are distinct. No fantasy scoring is calculated without an explicit format.
+Full postings and substantive follow-ups use the proposed
+[shared article structure](../research-articles/README.md), with the game manifest
+remaining the single structured register for game-study state.
 
 ## Merge conditions
 

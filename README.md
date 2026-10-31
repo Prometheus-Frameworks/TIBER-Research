@@ -61,6 +61,11 @@ authority and lifecycle described below.
 
 ## Game-study closeout pilot
 
+The [shared article format](docs/research-articles/README.md) proposes one outer
+structure for future research postings and dated updates. Its existing-record
+preparation queue is a triage inventory; formatting does not upgrade evidence,
+review, ownership or downstream authority.
+
 The [game-study notebook](docs/game-studies/README.md) connects bounded manual
 research issues to preserved pregame records, postgame assessments and reviewed
 closeout PRs. Its machine-readable registry starts with Cardinals at Cowboys,
