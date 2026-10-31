@@ -1,0 +1,78 @@
+{
+  "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/15",
+  "source_created_at": "2026-08-21T20:11:19Z",
+  "source_updated_at": "2026-08-28T22:26:36Z",
+  "retrieved_at": "2026-10-31T19:25:32.983Z",
+  "source_body_sha256": "caaf76e26bfce73af9ac5bb3d03d94f1fbf1acb75e9cb98f3b54456945035c85",
+  "capture_sha256": "caaf76e26bfce73af9ac5bb3d03d94f1fbf1acb75e9cb98f3b54456945035c85",
+  "capture_scope": "Exact returned Markdown body",
+  "changes": [],
+  "original_publication_bytes_authenticated": false,
+  "source_blob_ref": null,
+  "mapping": [
+    {
+      "source_heading": "## Answer first",
+      "prepared_section": 1
+    },
+    {
+      "source_heading": "## Architecture premise",
+      "prepared_section": 3
+    },
+    {
+      "source_heading": "## Why this belongs in TIBER-Research",
+      "prepared_section": 2
+    },
+    {
+      "source_heading": "## Relationship to current work",
+      "prepared_section": 8
+    },
+    {
+      "source_heading": "## Research hypotheses",
+      "prepared_section": 3
+    },
+    {
+      "source_heading": "## Primary research questions",
+      "prepared_section": 2
+    },
+    {
+      "source_heading": "## Candidate artifact family",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## Evaluation dimensions",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## Fixture and perturbation protocol",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## TIBER-wide scheme audit",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## Proposed phased work",
+      "prepared_section": 7
+    },
+    {
+      "source_heading": "## Required design deliverable",
+      "prepared_section": 7
+    },
+    {
+      "source_heading": "## Hard boundaries",
+      "prepared_section": 6
+    },
+    {
+      "source_heading": "## Stop conditions",
+      "prepared_section": 6
+    },
+    {
+      "source_heading": "## Acceptance criteria for the design phase",
+      "prepared_section": 7
+    },
+    {
+      "source_heading": "## Terminal decisions",
+      "prepared_section": 7
+    }
+  ]
+}
