@@ -1,0 +1,170 @@
+{
+  "prepared_at": "2026-10-31T19:30:11.552299Z",
+  "issue": 54,
+  "source_state": "open",
+  "body_api_sha256": "addd2f059368a07a3e7c3f9ebb41b72ee9a5d589e3cc6da2068ba7f9c9ab0c88",
+  "source_updated_at": "2026-10-26T11:38:44Z",
+  "editions": [
+    {
+      "edition": "body",
+      "path": "docs/research-articles/prepared/research-issue-0054/body.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/54",
+      "source_created_at": "2026-10-24T03:29:40Z",
+      "source_updated_at": "2026-10-26T11:38:44Z",
+      "retrieved_at": "2026-10-31T19:25:41.278Z",
+      "source_sha256": "2de575a390db1341acd5589b0d2ee982ae4a791ceb14c4a2dd47b373a81befa8",
+      "retained_path": "retained/body.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Question and pregame hypothesis",
+          "section": 1,
+          "sha256": "c17283c3597f8be50281d71795e1a093e1d26fa1e11c4d2c491b575490070b12"
+        },
+        {
+          "source_block": 2,
+          "heading": "Connection to Research #9",
+          "section": 8,
+          "sha256": "604729a6c178726b83677be85caeb82313ac20de97e75148e1619088bde13667"
+        },
+        {
+          "source_block": 3,
+          "heading": "Verified pregame context",
+          "section": 4,
+          "sha256": "7843649c47efe08e271c285725286823f33e9f405430f754c6da2c5b75371db2"
+        },
+        {
+          "source_block": 4,
+          "heading": "Questions to answer after the game",
+          "section": 2,
+          "sha256": "03e06d6da88eabf283d248f4a8f0078ddfbdbc69efc15970907babd1745cc760"
+        },
+        {
+          "source_block": 5,
+          "heading": "Availability branches to preserve",
+          "section": 4,
+          "sha256": "3f8e0c2822b7721063b694604608d8041dd958b521011b69ebd3b04bd94356c4"
+        },
+        {
+          "source_block": 6,
+          "heading": "How findings would update the thesis",
+          "section": 5,
+          "sha256": "6fff8c50421f559ddea80ea4d3c7bff41bd4ab39b6528a4c0bb7c19d8a861e98"
+        },
+        {
+          "source_block": 7,
+          "heading": "Follow-up",
+          "section": 7,
+          "sha256": "25da59cd1f53b76af3dd00641275e3f8fde48317249deda2a91a0bb1a1154547"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    },
+    {
+      "edition": "body-dated-addition",
+      "path": "docs/research-articles/prepared/research-issue-0054/body-dated-addition.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/54",
+      "source_created_at": "2026-10-24T03:29:40Z",
+      "source_updated_at": "2026-10-26T11:38:44Z",
+      "retrieved_at": "2026-10-31T19:25:41.278Z",
+      "source_sha256": "6c587ccd7b1bf2d3f12fca585d74ac76b718a3cc69ff84c760b186c8a0938fc6",
+      "retained_path": "retained/body-dated-addition.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "October 24 pregame addition — receiving opportunity and creation after the catch",
+          "section": 1,
+          "sha256": "452ef370a2363a6c6fbde9b8c0c3533d14da04ab5469b7d90f89b4e86c5c567c"
+        },
+        {
+          "source_block": 2,
+          "heading": "Opportunity signal supplied in our discussion",
+          "section": 4,
+          "sha256": "3824a29d1ea31f8a44249172200ceeadf4eee0a146d609d98982f74dd3bf066c"
+        },
+        {
+          "source_block": 3,
+          "heading": "Receiving-only missed tackles baseline — 2026 through Week 6",
+          "section": 3,
+          "sha256": "aff0baf7b6fecbf8662c602bb507e2e3cb4cfaba933d7b8f49e8c2dd7ae26585"
+        },
+        {
+          "source_block": 4,
+          "heading": "Other evidence relevant to receiving upside",
+          "section": 4,
+          "sha256": "1580b3f5d23d742353047c9941f1e68b69d3f976a8a7e8660ff73803ff1b1183"
+        },
+        {
+          "source_block": 5,
+          "heading": "Receiving questions to answer against the Rams",
+          "section": 2,
+          "sha256": "6600c0b5849541a61e6dccdb84b05099a8f86cab4c0000bd5c7bbe6b24d1f551"
+        },
+        {
+          "source_block": 6,
+          "heading": "Additional follow-up",
+          "section": 7,
+          "sha256": "5a0cf195b93a7cd54703f0610ea41e2adb4faed259eea9ce0c5b6c0ac3609c52"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    },
+    {
+      "edition": "update-6415084917",
+      "path": "docs/research-articles/prepared/research-issue-0054/update-6415084917.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/54#issuecomment-6415084917",
+      "source_created_at": "2026-10-26T11:38:44Z",
+      "source_updated_at": "2026-10-26T11:38:44Z",
+      "retrieved_at": "2026-10-31T19:25:41.278Z",
+      "source_sha256": "0a64711ed0cec8f8f392d8a8c8f11dfde48cff7fc961ec4a7528db49b3ab1717",
+      "retained_path": "retained/update-6415084917.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "October 26, 2026 — Week 7 postgame analysis: Jeanty vs. Rams",
+          "section": 1,
+          "sha256": "9fdb030ae249560b50ab746a9bc97dd671cc4a5ca7b2024be959d94e504d42a7"
+        },
+        {
+          "source_block": 2,
+          "heading": "1. Verified outcomes and usage",
+          "section": 4,
+          "sha256": "9ae6dd98fc51400c40d67066b9faad654ae350b8f9d337e56f2ec08b0f30ce90"
+        },
+        {
+          "source_block": 3,
+          "heading": "2. Complete rushing ledger: poor results existed before the large deficit",
+          "section": 4,
+          "sha256": "64f1efbf20f7fe8b8e65cfd48f1ee8d32d7d7ea249488ea78ee86f38e1efc14c"
+        },
+        {
+          "source_block": 4,
+          "heading": "3. Receiving utilization supported fantasy value; creation remains a separate question",
+          "section": 4,
+          "sha256": "a8f4dceeb349465fb0de455b711472810dffccc392167ccf6c646199d2893e84"
+        },
+        {
+          "source_block": 5,
+          "heading": "4. Adjudication of the frozen hypotheses under Research #9",
+          "section": 5,
+          "sha256": "4c961d3d0258bbf0d00e3f5ad6a3488466cb426da277127cca122b8eecf3f1c3"
+        },
+        {
+          "source_block": 6,
+          "heading": "5. Remaining film and participation questions",
+          "section": 6,
+          "sha256": "388c4f090d00888de5611b51a5bcdb2c2848f566eb3fc497a3c10c96db05e840"
+        },
+        {
+          "source_block": 7,
+          "heading": "6. What changes entering Week 8 at the Jets",
+          "section": 5,
+          "sha256": "f6ba366d97500c4191c7f7f8b71026d894b496446318bed4832cb985e9ae3d99"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    }
+  ],
+  "fidelity": "Every source section mapped intact; heading depth only changed. Question IDs/measurements/windows retained. Unknown values not synthesized. Historical external-review receipts are source claims, not new acceptance.",
+  "format_review": "self-check; independent review pending"
+}

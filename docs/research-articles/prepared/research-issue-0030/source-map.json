@@ -1,0 +1,132 @@
+{
+  "prepared_at": "2026-10-31T19:30:49.229705Z",
+  "format_check": "All source spans accounted for exactly once; see block_mapping",
+  "sources": [
+    {
+      "edition": "body",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/30",
+      "source_created_at": "2026-10-07T22:11:41Z",
+      "source_updated_at": "2026-10-09T13:08:18Z",
+      "retrieved_at": "2026-10-31T19:25:35.176Z",
+      "source_sha256": "5df5a34efe959e808f1e0c42be660b13741adb46973c004a0dc679a148d526d7",
+      "source_characters": 4331,
+      "source_path": "retained/body.md",
+      "prepared_path": "body-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## Research question",
+          "outer_section": 2,
+          "sha256": "ff8f2cb1ebfe163311b29d46fe0ff0d9b8ed4e4870fef4d1946129a6398b780c"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "## Motivation",
+          "outer_section": 3,
+          "sha256": "7b1dfbc372ab55db0382b71a9ef90191d0d54b437565bebc3f9f05a51063b740"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "## Proposed lenses",
+          "outer_section": 4,
+          "sha256": "c67f85edde091227333ba065bc1cd15518102c60d28cca9f1aad8ef58c7c9d24"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "## Bounded first comparison — design only",
+          "outer_section": 4,
+          "sha256": "50f4ed9aac6969837b08619af1496a48b6e553e29305a1993e4393a29d92aceb"
+        },
+        {
+          "block": 5,
+          "original_heading_or_lead": "## First requested deliverable",
+          "outer_section": 7,
+          "sha256": "a7beeca777b6d391e2c2c3c0ab9238df692acf9d45fa6741b75896a8a8cd5153"
+        },
+        {
+          "block": 6,
+          "original_heading_or_lead": "## Ownership and boundaries",
+          "outer_section": 7,
+          "sha256": "ef0a4f3faabfd1c7ac81a9b6e2117bf15b1a5f53c29528e9aff59419f285fa72"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    },
+    {
+      "edition": "update-6081213435-handoff",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/30#issuecomment-6081213435",
+      "source_created_at": "2026-10-09T12:49:03Z",
+      "source_updated_at": "2026-10-09T13:08:18Z",
+      "retrieved_at": "2026-10-31T19:25:35.176Z",
+      "source_sha256": "1855f87b97c8eefa6c88f0ef6de9ce13ce20173f88862ef26fafc5c60055e96f",
+      "source_characters": 8712,
+      "source_path": "retained/update-6081213435-handoff.md",
+      "prepared_path": "update-6081213435-handoff-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## Seahawks Q1 (2026 W1–W4) — Unit State descriptive test-case handoff",
+          "outer_section": 7,
+          "sha256": "4af2d253291992f98d6449ec04aaca760ef1c862330a9f03a2a76bf49202a010"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "### Question and case status",
+          "outer_section": 2,
+          "sha256": "b30142a5ab4b864c971773731aa4c55f1a49957d094f3dd2f15e06f2d3ff2453"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "### Human observations to preserve as hypotheses",
+          "outer_section": 3,
+          "sha256": "ed854f1315776755bc794beb35055fb862836497a3d5e8413f69d0d8ba9407fd"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "### External evidence leads inspected in the preceding investigation",
+          "outer_section": 4,
+          "sha256": "2d4aa0dc25797a335008f6133a407e93c40cf4b1b5af185516a9a296c4203006"
+        },
+        {
+          "block": 5,
+          "original_heading_or_lead": "### Proposed case specification for the existing readiness packet",
+          "outer_section": 1,
+          "sha256": "cdee5634a3fc90ad1ec725c59990f4013b657f3e055f3d6c82069f60c8733d36"
+        },
+        {
+          "block": 6,
+          "original_heading_or_lead": "### What would make this case useful?",
+          "outer_section": 4,
+          "sha256": "27f312069ae3cf9ac29d4a603cf457d8cad659e29d8cf6859e36307d7d1647af"
+        },
+        {
+          "block": 7,
+          "original_heading_or_lead": "### Readiness and ownership",
+          "outer_section": 7,
+          "sha256": "332b7d83384b4b9fbd3d09a880158a33895c3c42f3637d343daf58be04b57b71"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    },
+    {
+      "edition": "update-6081213435-red-zone-addendum",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/30#issuecomment-6081213435",
+      "source_created_at": null,
+      "source_updated_at": "2026-10-09T13:08:18Z",
+      "retrieved_at": "2026-10-31T19:25:35.176Z",
+      "source_sha256": "edc6d6072bfbbdc4cb0731a7de07d69f2469d155a4c71350cdd1c486cf6fd85a",
+      "source_characters": 3810,
+      "source_path": "retained/update-6081213435-red-zone-addendum.md",
+      "prepared_path": "update-6081213435-red-zone-addendum-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "### October 9 addendum — red-zone EPA source located",
+          "outer_section": 4,
+          "sha256": "edc6d6072bfbbdc4cb0731a7de07d69f2469d155a4c71350cdd1c486cf6fd85a"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    }
+  ]
+}

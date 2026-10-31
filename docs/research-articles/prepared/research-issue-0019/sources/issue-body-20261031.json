@@ -1,0 +1,54 @@
+{
+  "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/19",
+  "source_created_at": "2026-08-29T15:35:40Z",
+  "source_updated_at": "2026-08-29T15:35:40Z",
+  "retrieved_at": "2026-10-31T19:25:36.748Z",
+  "source_body_sha256": "a7f8c530728b0d4ba3ca4c82e64477f2e308444dfe4b41770ebddb46554325dd",
+  "capture_sha256": "a7f8c530728b0d4ba3ca4c82e64477f2e308444dfe4b41770ebddb46554325dd",
+  "capture_scope": "Exact returned Markdown body",
+  "changes": [],
+  "original_publication_bytes_authenticated": false,
+  "source_blob_ref": null,
+  "mapping": [
+    {
+      "source_heading": "## Status and authority",
+      "prepared_section": 8
+    },
+    {
+      "source_heading": "## Answer first",
+      "prepared_section": 1
+    },
+    {
+      "source_heading": "## Why TIBER read this",
+      "prepared_section": 2
+    },
+    {
+      "source_heading": "## What Anthropic tested",
+      "prepared_section": 3
+    },
+    {
+      "source_heading": "## Verified findings and qualifications",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## Correction to the initial interpretation: legibility was imposed",
+      "prepared_section": 5
+    },
+    {
+      "source_heading": "## Connections to existing TIBER work",
+      "prepared_section": 5
+    },
+    {
+      "source_heading": "## Questions opened by this reading",
+      "prepared_section": 7
+    },
+    {
+      "source_heading": "## Claims this note does not make",
+      "prepared_section": 6
+    },
+    {
+      "source_heading": "## Repository disposition",
+      "prepared_section": 7
+    }
+  ]
+}

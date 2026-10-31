@@ -1,0 +1,40 @@
+{
+  "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f/docs/discovery/open-availability-witness-2026-08-13/w4-availability-contract-design.md",
+  "source_created_at": null,
+  "source_updated_at": null,
+  "retrieved_at": "2026-10-31T19:27:06.237Z",
+  "source_body_sha256": "892194c1a9e166dbe612f9052f713abd7ebcb5a811a5f400002d863d2d53040c",
+  "capture_sha256": "6bea257f8bd75c066ca46f5fc6c38c6c59269d5d3f062972c0efa7689a8ae58c",
+  "capture_scope": "Transformed public-safe Markdown body; see changes",
+  "changes": [
+    "Repository-relative links expanded to exact-ref source URLs"
+  ],
+  "original_publication_bytes_authenticated": false,
+  "source_blob_ref": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+  "mapping": [
+    {
+      "source_heading": "## Proposed design constraints",
+      "prepared_section": 2
+    },
+    {
+      "source_heading": "## Record grain",
+      "prepared_section": 3
+    },
+    {
+      "source_heading": "## Contract sketch",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## Vocabulary mapping discipline",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## Fail-closed rules",
+      "prepared_section": 6
+    },
+    {
+      "source_heading": "## What this contract deliberately does not do",
+      "prepared_section": 7
+    }
+  ]
+}

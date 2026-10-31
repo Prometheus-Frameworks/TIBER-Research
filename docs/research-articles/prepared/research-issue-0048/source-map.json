@@ -1,0 +1,85 @@
+{
+  "prepared_at": "2026-10-31T19:30:11.552299Z",
+  "issue": 48,
+  "source_state": "open",
+  "body_api_sha256": "7040dc8e1b87efe6c8abe819460ae2bd124c8c4394ea74b26007cb5ae5bce5be",
+  "source_updated_at": "2026-10-26T13:34:47Z",
+  "editions": [
+    {
+      "edition": "body",
+      "path": "docs/research-articles/prepared/research-issue-0048/body.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/48",
+      "source_created_at": "2026-10-22T23:40:08Z",
+      "source_updated_at": "2026-10-26T13:34:47Z",
+      "retrieved_at": "2026-10-31T19:25:38.457Z",
+      "source_sha256": "7040dc8e1b87efe6c8abe819460ae2bd124c8c4394ea74b26007cb5ae5bce5be",
+      "retained_path": "retained/body.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Question to retain",
+          "section": 1,
+          "sha256": "614ca794dfa129525dfdb2a0700446651a3595cf83036524b01173566bad8d9d"
+        },
+        {
+          "source_block": 2,
+          "heading": "Source-backed starting point",
+          "section": 3,
+          "sha256": "e1cf77c3a9917a1224b30b3b233fcf124dfa3c783f86bdd9cc537a6f1cf100bb"
+        },
+        {
+          "source_block": 3,
+          "heading": "Competing explanations to test",
+          "section": 3,
+          "sha256": "c86a66f78cbd28312b172207a07ba155a366b5152ff6267e4b7c6222846ab054"
+        },
+        {
+          "source_block": 4,
+          "heading": "Evidence for the future investigation",
+          "section": 7,
+          "sha256": "31c994a2ddc2b02b7e0f13ea31e4c6a00688c0b2dc83f7a56ed0b7c3c37b1117"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    },
+    {
+      "edition": "update-6417324415",
+      "path": "docs/research-articles/prepared/research-issue-0048/update-6417324415.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/48#issuecomment-6417324415",
+      "source_created_at": "2026-10-26T13:34:47Z",
+      "source_updated_at": "2026-10-26T13:34:47Z",
+      "retrieved_at": "2026-10-31T19:25:38.457Z",
+      "source_sha256": "0f265c199c23ffa7e170032e84148fe91102ffbad7e58e30882f32e935f20c62",
+      "retained_path": "retained/update-6417324415.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "October 26 — first active game after return: a rushing lead, with an important injury qualification",
+          "section": 1,
+          "sha256": "7338f65f90e640b74b27ea164542365c918a141d9dc2757927c7b35ec49e8941"
+        },
+        {
+          "source_block": 2,
+          "heading": "The missing context behind the 65% headline",
+          "section": 4,
+          "sha256": "a12bbcd9abe6fdf152f8427e875fb28fe7c988d13e279a2412f1f0ab817389f4"
+        },
+        {
+          "source_block": 3,
+          "heading": "Update to the competing explanations",
+          "section": 5,
+          "sha256": "3ef8ba07ee155e8b5418422f141df19c8a987508c2747235dc274f86b7b74b32"
+        },
+        {
+          "source_block": 4,
+          "heading": "Next test",
+          "section": 7,
+          "sha256": "383fdd15f5f472a9293bab19f0088695707939457079b24c63cb89e2dde23690"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    }
+  ],
+  "fidelity": "Every source section mapped intact; heading depth only changed. Question IDs/measurements/windows retained. Unknown values not synthesized. Historical external-review receipts are source claims, not new acceptance.",
+  "format_review": "self-check; independent review pending"
+}

@@ -1,0 +1,10 @@
+{
+  "format_version": "tiber-game-study-index/v0",
+  "coverage_scope": "registered_studies_only",
+  "studies": [
+    {
+      "study_id": "nfl-2026-reg-w08-ari-dal",
+      "manifest_path": "docs/game-studies/2026/reg/week-08/ari-at-dal/study.json"
+    }
+  ]
+}

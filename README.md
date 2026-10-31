@@ -67,6 +67,19 @@ change a model or service, or authorize a roster action. A preview created with
 it is a manual research record unless separately admitted under the Research
 authority and lifecycle described below.
 
+## Game-study closeout pilot
+
+The [shared article format](docs/research-articles/README.md) proposes one outer
+structure for future research postings and dated updates. Its existing-record
+preparation queue is a triage inventory; formatting does not upgrade evidence,
+review, ownership or downstream authority.
+
+The [game-study notebook](docs/game-studies/README.md) connects bounded manual
+research issues to preserved pregame records, postgame assessments and reviewed
+closeout PRs. Its machine-readable registry starts with Cardinals at Cowboys,
+2026 Week 8. Completion, question-level evidential support and downstream admission
+remain separate; these records grant no activation or promotion authority.
+
 ## Agent entry (draft)
 
 `docs/agent-entry/` holds a separate, run-independent surface: one public,

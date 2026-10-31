@@ -1,0 +1,65 @@
+{
+  "format_prepared_at": "2026-10-31T19:28:46.926160Z",
+  "base_candidate": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+  "captures": [
+    {
+      "path": "retained/issue-body.md",
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/64",
+      "source_created_at": "2026-10-26T13:40:25Z",
+      "source_updated_at": "2026-10-26T13:40:25Z",
+      "retrieved_at": "2026-10-31T19:25:40.707Z",
+      "sha256": "14d5b6b23a5547fbd34ccbe32935301c67ba4ae92d9cf3c185e2fc3a3ccde0ea",
+      "encoding": "UTF-8 exact API-returned body, no added newline"
+    }
+  ],
+  "mapping": [
+    {
+      "source_heading": "## Purpose and starting judgment",
+      "common_section": 2,
+      "source_block_sha256": "f3b7e0bef4fd18db19c9f6e00584bbabbb4a7633b973714bef1bc78e145072a7"
+    },
+    {
+      "source_heading": "## Highest-priority research tracks",
+      "common_section": 4,
+      "source_block_sha256": "6ee93fa04eaf8148da9227ecdc3df2cbd39f327192aa14631ac9c968c7957af7"
+    },
+    {
+      "source_heading": "## Remaining leads: retain them without opening a study for every stat",
+      "common_section": 6,
+      "source_block_sha256": "410fe123eb4c431955322fc785e63183bb7d53cfcbf1ada708f63715bc4b76e4"
+    },
+    {
+      "source_heading": "## Corrections and evidence qualifications we should carry forward",
+      "common_section": 6,
+      "source_block_sha256": "553caee7ae36d2004d437f320f21a4eada3f92b5f6568b5d6e44f355204f7480"
+    },
+    {
+      "source_heading": "## What to record at each football checkpoint",
+      "common_section": 7,
+      "source_block_sha256": "94b57149ef189099399850aa63e34b8a6c5096c12dc2b6c8571a249161fd36c3"
+    },
+    {
+      "source_heading": "## Near-term sequence and actual schedule",
+      "common_section": 7,
+      "source_block_sha256": "cc881a291587e884402de97313df15fd19a5707ede205d1331ddcdf07e7610db"
+    },
+    {
+      "source_heading": "## Work completed and what remains",
+      "common_section": 7,
+      "source_block_sha256": "c5350d5d4833a1d20378d883eba746983d7cc404b8089bcff9ac5c3baa5bbb74"
+    }
+  ],
+  "verification": {
+    "all_source_section_blocks_retained": true,
+    "source_body_bytes_retained": true,
+    "original_question_ids_and_windows_unchanged": true,
+    "new_research_performed": false,
+    "independent_review": "pending"
+  },
+  "gaps": [
+    "Null evidence_cutoff means no exact timestamp was supplied; source date-level clocks remain in prose and are not silently sharpened.",
+    "Source-level publication/retrieval and metric gaps remain as originally disclosed.",
+    "Exact owner and final evidence deadline remain unknown where not supplied."
+  ],
+  "capture_clock_semantics": "For issue/comment bundles, retrieved_at is the observed start of the sequential issue + all-comments retrieval, not an exact response-completion timestamp. Later raw-comment metadata reads only supply missing creation/update clocks; body equality is verified. Linked file retrieved_at is the observed time after its fetch completed."
+}
