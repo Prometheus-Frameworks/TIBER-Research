@@ -97,10 +97,10 @@ These are format-preparation navigation cards, not new observations, tests or as
 
 | Question / ID | Evidence to locate in this edition and original | Type / scope / contrary evidence and limit |
 | --- | --- | --- |
-| `H1` | Sustained featured receiving concentration; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/47), exact retained text and section map linked in §8 | Reported route loss and reduced credited share retained; Z label not target entitlement. |
-| `H2` | Leading WR within McBride-led distribution; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/47), exact retained text and section map linked in §8 | Compatible counts are not fixed ROS ceiling or isolated trade effect. |
-| `H3` | Coverage/target quality/execution; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/47), exact retained text and section map linked in §8 | Aggregate QB accuracy is not Wilson catchability; MW register remains open. |
-| `H4` | Scoring opportunity; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/47), exact retained text and section map linked in §8 | TD drought does not imply owed TDs; complete scoring ledger absent. |
+| `H1` | Sustained featured receiving concentration; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/47), exact retained text and section map linked in §8 | Weeks 3–4 concentration versus Weeks 5–6 credited-target share; intended Z role is not target entitlement. |
+| `H2` | Leading WR within McBride-led distribution; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/47), exact retained text and section map linked in §8 | Wilson leads WR targets, while McBride leads all receiving options in the six-game baseline; no isolated trade effect. |
+| `H3` | Coverage/target quality/execution; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/47), exact retained text and section map linked in §8 | Catch rate and yards per target are outcomes; catchability, depth, pressure, coverage and execution have not been separated. |
+| `H4` | Scoring opportunity; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/47), exact retained text and section map linked in §8 | One receiving TD through six games motivates an opportunity test, not a claim that touchdowns are owed. |
 
 Source provider/lineage, metric numerator/denominator, exclusions, personnel, actual observation window, supporting passages, confidence and observability remain attached to the corresponding original blocks. These cards grant no independent-source status or final adjudication.
 
