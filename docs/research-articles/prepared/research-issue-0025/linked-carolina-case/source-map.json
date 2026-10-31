@@ -1,0 +1,68 @@
+{
+  "prepared_at": "2026-10-31T19:30:49.229705Z",
+  "format_check": "All source spans accounted for exactly once; see block_mapping",
+  "sources": [
+    {
+      "edition": "notebook",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/da72dba139139d4f49ce8994ce7ccdd682051e14/docs/preparation/kicker-dst-streaming-2026-10-01/carolina-case.md",
+      "source_created_at": null,
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-31T19:26:54.128Z",
+      "source_sha256": "3e4b306950f7b21ac6a56420da37905418306007b9604a55d35497337d601585",
+      "source_characters": 7402,
+      "source_path": "retained/notebook.md",
+      "prepared_path": "notebook-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "# Carolina Week 1 → Week 2: reconstruction plan",
+          "outer_section": 4,
+          "sha256": "5ca681cc35647badc5a3c0dced195fff867d974d83f3cccfe28c2483620b2acf"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "## Why this case exists",
+          "outer_section": 4,
+          "sha256": "6b67cf7ae5160ca5b97e45e5c57d77af97693dcd576360584db9589e2f94bee4"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "## Two outputs, separate permissions and claims",
+          "outer_section": 4,
+          "sha256": "e30ee1cc8602b160c1f45027a6b56ced1023d63529ff86271fa1e02f35167765"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "### A. Retrospective diagnostic",
+          "outer_section": 4,
+          "sha256": "beb564d1431d2cfc2004e0f4baa76a8d60c9f5199fc7bb44ff9f7205d1cb60e1"
+        },
+        {
+          "block": 5,
+          "original_heading_or_lead": "### B. Verified pregame replay",
+          "outer_section": 4,
+          "sha256": "94c5c327008d3eb783336dfb38da15b0a9339125e04ce26187573f85586b9432"
+        },
+        {
+          "block": 6,
+          "original_heading_or_lead": "## Competing explanations",
+          "outer_section": 3,
+          "sha256": "22beb0e1c6f033c0ddd193db298a3f4e37ff8ed8771ec00907ded0894e20f21f"
+        },
+        {
+          "block": 7,
+          "original_heading_or_lead": "## Exact missing witnesses",
+          "outer_section": 4,
+          "sha256": "f1d403ee21429e5e59ecc60f01c2523867ded25a8d069ad3a86e74ffd92b7e14"
+        },
+        {
+          "block": 8,
+          "original_heading_or_lead": "## Falsification and generalization",
+          "outer_section": 4,
+          "sha256": "751fbb7d80afef22c8d6eafba4b8c97239254349421767c28c9047d58bae2ab4"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    }
+  ]
+}
