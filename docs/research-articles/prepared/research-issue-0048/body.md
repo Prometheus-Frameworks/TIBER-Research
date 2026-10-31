@@ -70,9 +70,9 @@ These are format-preparation navigation cards, not new observations, tests or as
 
 | Question / ID | Evidence to locate in this edition and original | Type / scope / contrary evidence and limit |
 | --- | --- | --- |
-| `retro-RQ1` | Mason resumes meaningful early-down work; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/48), exact retained text and section map linked in §8 | Pre/post-Jones exit carry windows; full-game 65.2% not healthy-pair allocation. |
-| `retro-RQ2` | Jones retains lead; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/48), exact retained text and section map linked in §8 | Carry observation is distinct from starting label and receiving role. |
-| `retro-RQ3` | Gradual/health-dependent redistribution; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/48), exact retained text and section map linked in §8 | Only first active game assessed; optional next two active games not automatically scheduled. |
+| `retro-RQ1` | Mason resumes meaningful early-down work; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/48), exact retained text and section map linked in §8 | Prospective explanation: substantial early-down and short-yardage work; verify activation and actual deployment first. |
+| `retro-RQ2` | Jones retains lead; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/48), exact retained text and section map linked in §8 | Prospective alternative: Jones retains the lead and Mason has a smaller complementary role. |
+| `retro-RQ3` | Gradual/health-dependent redistribution; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/48), exact retained text and section map linked in §8 | Prospective alternative: initially limited responsibilities increase across later healthy games; no result is available in this edition. |
 
 Source provider/lineage, metric numerator/denominator, exclusions, personnel, actual observation window, supporting passages, confidence and observability remain attached to the corresponding original blocks. These cards grant no independent-source status or final adjudication.
 
@@ -80,7 +80,8 @@ No separately headed empirical evidence card was supplied in this edition. This 
 
 ## 5. Interpretation and assessment
 
-Initial role split unresolved; later first-return observation supports meaningful rushing work with Jones-exit qualification. Neither edition establishes permanent healthy-pair 65% allocation. See the edition’s original opening and individual cards for its exact dated assessment; this orientation grants no new verdict.
+The October 22 starting record queues a future investigation; the role split is unresolved. Full practice is distinct from activation and game availability. The first active game is the first comparison point, with two more only if the operator elects to continue. No post-return outcome is assessed in this edition.
+
 
 ## 6. Unknowns and revision triggers
 

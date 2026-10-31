@@ -55,11 +55,11 @@ These are format-preparation navigation cards, not new observations, tests or as
 
 | Question / ID | Evidence to locate in this edition and original | Type / scope / contrary evidence and limit |
 | --- | --- | --- |
-| `retro-RQ1` | Healthy weapons and Murray passing; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/49), exact retained text and section map linked in §8 | Box outcomes distinct from coverage/route mechanism. |
-| `retro-RQ2` | Murray rushing support; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/49), exact retained text and section map linked in §8 | Designed runs/scrambles/kneels not inferred from aggregate. |
-| `retro-RQ3` | Indianapolis preserves volume; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/49), exact retained text and section map linked in §8 | Taylor rushing and Jones passing separated; no score-state cause without possession evidence. |
-| `retro-RQ4` | Flores induces ineffective short throws; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/49), exact retained text and section map linked in §8 | Blitz/pressure definitions conflict; postgame box does not establish causal scheme. |
-| `retro-RQ5` | Comfortable lead limits passing; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/49), exact retained text and section map linked in §8 | Final margin is not full game-script reconstruction. |
+| `retro-RQ1` | Healthy weapons and Murray passing; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/49), exact retained text and section map linked in §8 | Pregame test: intermediate/downfield completions, target distribution and efficiency; distinguish deeper gains from underneath YAC. |
+| `retro-RQ2` | Murray rushing support; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/49), exact retained text and section map linked in §8 | Pregame test: separate designed runs, scrambles and kneels, and inspect red-zone usage. |
+| `retro-RQ3` | Indianapolis preserves volume; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/49), exact retained text and section map linked in §8 | Pregame test: Taylor gains, Jones third-down conversions, sustained drives and score state. |
+| `retro-RQ4` | Flores induces ineffective short throws; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/49), exact retained text and section map linked in §8 | Pregame test: blitz/pressure definitions, depth of target, YAC allowed, sacks and turnovers. |
+| `retro-RQ5` | Comfortable lead limits passing; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/49), exact retained text and section map linked in §8 | Pregame test: first-half versus second-half pass volume and rushing share. |
 
 Source provider/lineage, metric numerator/denominator, exclusions, personnel, actual observation window, supporting passages, confidence and observability remain attached to the corresponding original blocks. These cards grant no independent-source status or final adjudication.
 
