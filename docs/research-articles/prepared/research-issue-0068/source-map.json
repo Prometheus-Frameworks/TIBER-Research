@@ -1,0 +1,55 @@
+{
+  "format_prepared_at": "2026-10-31T19:28:46.926160Z",
+  "base_candidate": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+  "captures": [
+    {
+      "path": "retained/issue-body.md",
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/68",
+      "source_created_at": "2026-10-28T22:55:47Z",
+      "source_updated_at": "2026-10-28T22:55:47Z",
+      "retrieved_at": "2026-10-31T19:25:42.910Z",
+      "sha256": "7f71453b4c431395141dada15a65e3b8b4fc403907a604bd73957e526432cadf",
+      "encoding": "UTF-8 exact API-returned body, no added newline"
+    }
+  ],
+  "mapping": [
+    {
+      "source_heading": "## Question and study window",
+      "common_section": 2,
+      "source_block_sha256": "981e2ff7ad5b271cd0d164fe4ba260fb50fb87abada6848f606791872e6b1886"
+    },
+    {
+      "source_heading": "## Starting evidence: 2026 Weeks 1–7",
+      "common_section": 4,
+      "source_block_sha256": "9097f14621c5598c514b2ee256ccb8e0ffc61bbd4748a9e375c833dbbce46eef"
+    },
+    {
+      "source_heading": "## Scheduled observation window",
+      "common_section": 7,
+      "source_block_sha256": "dadd3a6ad1515bc3c0eeb59ff0c67583ce577766c31192a922fc20b3b8dfe2a2"
+    },
+    {
+      "source_heading": "## What we will record",
+      "common_section": 4,
+      "source_block_sha256": "b061f24d3fe40c7520b7122f39c60be34767a7908ce9db3288cdb96ef9901f24"
+    },
+    {
+      "source_heading": "## Hypotheses and decision signals",
+      "common_section": 3,
+      "source_block_sha256": "65c7a79a2051d5f33c71653c0460e3537c492337e3a63b590fd7cae8b0112e32"
+    }
+  ],
+  "verification": {
+    "all_source_section_blocks_retained": true,
+    "source_body_bytes_retained": true,
+    "original_question_ids_and_windows_unchanged": true,
+    "new_research_performed": false,
+    "independent_review": "pending"
+  },
+  "gaps": [
+    "Null evidence_cutoff means no exact timestamp was supplied; source date-level clocks remain in prose and are not silently sharpened.",
+    "Source-level publication/retrieval and metric gaps remain as originally disclosed.",
+    "Exact owner and final evidence deadline remain unknown where not supplied."
+  ],
+  "capture_clock_semantics": "For issue/comment bundles, retrieved_at is the observed start of the sequential issue + all-comments retrieval, not an exact response-completion timestamp. Later raw-comment metadata reads only supply missing creation/update clocks; body equality is verified. Linked file retrieved_at is the observed time after its fetch completed."
+}

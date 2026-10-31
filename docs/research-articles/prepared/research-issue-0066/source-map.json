@@ -1,0 +1,55 @@
+{
+  "format_prepared_at": "2026-10-31T19:28:46.926160Z",
+  "base_candidate": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+  "captures": [
+    {
+      "path": "retained/issue-body.md",
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/66",
+      "source_created_at": "2026-10-26T21:39:54Z",
+      "source_updated_at": "2026-10-26T21:39:54Z",
+      "retrieved_at": "2026-10-31T19:25:41.496Z",
+      "sha256": "0d3c0a02c90c6e47923fbdcb48f58313e273c89c4c7f02b727fd30bca6970d0f",
+      "encoding": "UTF-8 exact API-returned body, no added newline"
+    }
+  ],
+  "mapping": [
+    {
+      "source_heading": "## Research question and starting position",
+      "common_section": 2,
+      "source_block_sha256": "a381a04123af2b9f1d351412b951730cec160119fb4b6e22835206f0fab57a92"
+    },
+    {
+      "source_heading": "## Observed Pittsburgh role",
+      "common_section": 4,
+      "source_block_sha256": "ec9c6baadf7430894398498c3d81bf69d4a2259f26f9c05d75aa2bf69176cfe4"
+    },
+    {
+      "source_heading": "## Direct historical test: replacing a starter",
+      "common_section": 3,
+      "source_block_sha256": "37d83e02ad43be566dec1e9ccd6f56fdd12a30317dab260bc35c3cb77acad434"
+    },
+    {
+      "source_heading": "## What could change the thesis?",
+      "common_section": 6,
+      "source_block_sha256": "aeca0bedded41ca5af683af4168b59181a161c137bea7c9dbcdbad75638f8695"
+    },
+    {
+      "source_heading": "## Prospective checkpoints",
+      "common_section": 7,
+      "source_block_sha256": "2fdb93f82de4abb6bb7ef3c27e758c1f73416381bf64847e0b2434256ebcba68"
+    }
+  ],
+  "verification": {
+    "all_source_section_blocks_retained": true,
+    "source_body_bytes_retained": true,
+    "original_question_ids_and_windows_unchanged": true,
+    "new_research_performed": false,
+    "independent_review": "pending"
+  },
+  "gaps": [
+    "Null evidence_cutoff means no exact timestamp was supplied; source date-level clocks remain in prose and are not silently sharpened.",
+    "Source-level publication/retrieval and metric gaps remain as originally disclosed.",
+    "Exact owner and final evidence deadline remain unknown where not supplied."
+  ],
+  "capture_clock_semantics": "For issue/comment bundles, retrieved_at is the observed start of the sequential issue + all-comments retrieval, not an exact response-completion timestamp. Later raw-comment metadata reads only supply missing creation/update clocks; body equality is verified. Linked file retrieved_at is the observed time after its fetch completed."
+}
