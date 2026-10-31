@@ -1,0 +1,183 @@
+{
+  "format_version": "tiber-game-study/v0",
+  "study_id": "nfl-2026-reg-w08-ari-dal",
+  "artifact_class": "manual_research",
+  "game": {
+    "season": 2026,
+    "phase": "reg",
+    "week": 8,
+    "away": "ARI",
+    "home": "DAL",
+    "kickoff_at": "2026-11-01T13:00:00-05:00",
+    "timezone": "America/Toronto",
+    "schedule_source_url": "https://www.dallascowboys.com/news/cowboys-cardinals-how-to-watch-listen-stream-in-week-8",
+    "provider_game_id": null
+  },
+  "origin": {
+    "issue_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/71",
+    "pregame_cutoff": "2026-10-31T12:00:28-04:00",
+    "baseline_record_ref": "pregame-issue-71",
+    "capture_limitations": [
+      "This captures the current GitHub issue body during setup, not independently recovered bytes from its original publication.",
+      "The pregame cutoff is the original record’s declared cutoff; original source-page bytes and exact per-page attempt clocks were not retained.",
+      "The original selection log was not independently versioned before retrieval; methodological audit is separate from football-outcome evaluation."
+    ]
+  },
+  "owner": "Codex prepares research; Joe owns acceptance and merge decisions.",
+  "plan": {
+    "observation_endpoint": "Verified final whistle of this game; postponement or abandonment requires an explicit pending disposition.",
+    "first_review_at": "2026-11-01T19:00:00-05:00",
+    "evidence_deadline": "2026-11-03T10:00:00-05:00",
+    "working_branch": "codex/game-study-lifecycle-pilot-20261031",
+    "scope": "Seven existing questions only; bounded postgame assessment and closeout documentation.",
+    "stop_rule": "At the evidence deadline, finish with explicit unresolved findings or report blocked closeout. No recurring monitoring or automatic deadline extension."
+  },
+  "records": [
+    {
+      "id": "pregame-issue-71",
+      "kind": "pregame",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/71",
+      "captured_at": "2026-10-31T19:02:19Z",
+      "path": "docs/game-studies/2026/reg/week-08/ari-at-dal/retained/issue-71-body.md",
+      "sha256": "39bd14ada9387e132d2193f41a7ce7b72fc07d6fa8772770d6b8dd2ffa47164a"
+    },
+    {
+      "id": "amendment-6546713994",
+      "kind": "amendment",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/71#issuecomment-6546713994",
+      "captured_at": "2026-10-31T19:02:19Z",
+      "path": "docs/game-studies/2026/reg/week-08/ari-at-dal/retained/issuecomment-6546713994.md",
+      "sha256": "37e5dc9dd1644a612727c242f2d3219816c2b49e7e846a20cfb7a7db03698b1e"
+    }
+  ],
+  "game_final": {
+    "status": "not_checked",
+    "verified_at": null,
+    "evidence_ref": null
+  },
+  "evaluation_state": "pending",
+  "questions": [
+    {
+      "id": "Q1",
+      "question": "Can Arizona protect Brissett with its replacement offensive line against Dallas’s front?",
+      "linked_ids": [
+        "Q2a",
+        "Q2b",
+        "Q3"
+      ],
+      "baseline_refs": [
+        "pregame-issue-71"
+      ],
+      "assessment": "pending",
+      "summary": null,
+      "evidence_refs": [],
+      "limitations": [],
+      "next_action": null
+    },
+    {
+      "id": "Q2a",
+      "question": "Does Wilson retain or expand usable route participation after Brooks’s injury while managing ribs?",
+      "linked_ids": [
+        "Q1",
+        "Q2b"
+      ],
+      "baseline_refs": [
+        "pregame-issue-71"
+      ],
+      "assessment": "pending",
+      "summary": null,
+      "evidence_refs": [],
+      "limitations": [],
+      "next_action": null
+    },
+    {
+      "id": "Q2b",
+      "question": "Who receives the Arizona targets if the Brooks replacement changes deployment?",
+      "linked_ids": [
+        "Q2a",
+        "Q3"
+      ],
+      "baseline_refs": [
+        "pregame-issue-71"
+      ],
+      "assessment": "pending",
+      "summary": null,
+      "evidence_refs": [],
+      "limitations": [],
+      "next_action": null
+    },
+    {
+      "id": "Q3",
+      "question": "Does Love return as a genuine receiving/early-down contributor or to a split, constrained role?",
+      "linked_ids": [
+        "Q1",
+        "Q2b"
+      ],
+      "baseline_refs": [
+        "pregame-issue-71"
+      ],
+      "assessment": "pending",
+      "summary": null,
+      "evidence_refs": [],
+      "limitations": [],
+      "next_action": null
+    },
+    {
+      "id": "Q4",
+      "question": "Can Dallas repeat useful early-down rushing against Arizona without Nolen?",
+      "linked_ids": [
+        "Q5b"
+      ],
+      "baseline_refs": [
+        "pregame-issue-71"
+      ],
+      "assessment": "pending",
+      "summary": null,
+      "evidence_refs": [],
+      "limitations": [],
+      "next_action": null
+    },
+    {
+      "id": "Q5a",
+      "question": "Will Pickens have his normal receiving role alongside Lamb?",
+      "linked_ids": [
+        "Q5b"
+      ],
+      "baseline_refs": [
+        "pregame-issue-71"
+      ],
+      "assessment": "pending",
+      "summary": null,
+      "evidence_refs": [],
+      "limitations": [],
+      "next_action": null
+    },
+    {
+      "id": "Q5b",
+      "question": "Can Dak handle Arizona’s disguised pressure when Dallas faces long passing downs?",
+      "linked_ids": [
+        "Q4",
+        "Q5a"
+      ],
+      "baseline_refs": [
+        "pregame-issue-71",
+        "amendment-6546713994"
+      ],
+      "assessment": "pending",
+      "summary": null,
+      "evidence_refs": [],
+      "limitations": [],
+      "next_action": null
+    }
+  ],
+  "closeout": {
+    "status": "draft",
+    "pr_url": null,
+    "report_record_ref": null
+  },
+  "downstream": {
+    "admission": "not_admitted",
+    "proposal_refs": []
+  },
+  "assessment_cutoff": null
+}
