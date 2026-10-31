@@ -1,0 +1,37 @@
+{
+  "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f/docs/discovery/open-availability-witness-2026-08-13/w1-historical-contract.md",
+  "source_created_at": null,
+  "source_updated_at": null,
+  "retrieved_at": "2026-10-31T19:27:03.724Z",
+  "source_body_sha256": "1580cf8412e02149612f39316b8435d013904ec9f12c8b9253e2f6814f43af6a",
+  "capture_sha256": "6a87c2f5ab772ec17bc139bc4674a3851b9d9c491b4ce5bd5f765667fdf69dcd",
+  "capture_scope": "Transformed public-safe Markdown body; see changes",
+  "changes": [
+    "Historical default credential literal omitted under preparation privacy boundary.",
+    "Repository-relative links expanded to exact-ref source URLs"
+  ],
+  "original_publication_bytes_authenticated": false,
+  "source_blob_ref": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+  "mapping": [
+    {
+      "source_heading": "## 1. The historical schema",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## 2. The observed public implementation surfaces",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## 3. Reported source death and later replacement publication",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## 4. Declared workflow cadence and observed missingness",
+      "prepared_section": 6
+    },
+    {
+      "source_heading": "## 5. Historical contract table (2009\u20132024 released files)",
+      "prepared_section": 4
+    }
+  ]
+}
