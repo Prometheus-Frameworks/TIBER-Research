@@ -1,0 +1,56 @@
+{
+  "prepared_at": "2026-10-31T19:30:49.229705Z",
+  "format_check": "All source spans accounted for exactly once; see block_mapping",
+  "sources": [
+    {
+      "edition": "notebook",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/da72dba139139d4f49ce8994ce7ccdd682051e14/docs/preparation/kicker-dst-streaming-2026-10-01/execution-proposal.md",
+      "source_created_at": null,
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-31T19:26:55.429Z",
+      "source_sha256": "b718c51bfded085b8c73ed96ee49e6e4339677b0152983932571d1f9b5bb8bc2",
+      "source_characters": 7221,
+      "source_path": "retained/notebook.md",
+      "prepared_path": "notebook-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "# Smallest separately authorizable empirical proposal",
+          "outer_section": 4,
+          "sha256": "46ad1e7bc82eafa9503607e113bddd01b0d5775ea1e3ee0ca3e57b4f892ccf82"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "## Recommendation",
+          "outer_section": 5,
+          "sha256": "1f850faac415f6c670117493dd0c152d2c08419c8f73d850d67ea161b1db8013"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "## A. Retained-record recovery and activation preparation",
+          "outer_section": 4,
+          "sha256": "13c73956ec93bd5875ea70d59eb5777d38b1cb02c80b6e0a9b453c87cc74ec0a"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "## B. Proposed diagnostic run (requires separate Ops activation)",
+          "outer_section": 4,
+          "sha256": "c29103bb27088121567a686545bf9900bf27e80f62ab31f027346eaade4a860c"
+        },
+        {
+          "block": 5,
+          "original_heading_or_lead": "## C. What is not ready to activate",
+          "outer_section": 4,
+          "sha256": "955dbdc3f3c38c6de7adba3d75100a5ebc29cd649abb38dee0e593e6fcadbf34"
+        },
+        {
+          "block": 6,
+          "original_heading_or_lead": "## Decision-ready operator choices",
+          "outer_section": 4,
+          "sha256": "8f6755eddf308fd5224fbb4e6454f37ba6d3c45778b84b008d0fe2b26c15bef4"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    }
+  ]
+}
