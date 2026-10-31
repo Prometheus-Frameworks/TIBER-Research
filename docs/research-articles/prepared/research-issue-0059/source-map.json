@@ -1,0 +1,60 @@
+{
+  "format_prepared_at": "2026-10-31T19:28:46.926160Z",
+  "base_candidate": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+  "captures": [
+    {
+      "path": "retained/issue-body.md",
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/59",
+      "source_created_at": "2026-10-26T11:40:57Z",
+      "source_updated_at": "2026-10-26T11:40:57Z",
+      "retrieved_at": "2026-10-31T19:25:35.970Z",
+      "sha256": "11362a3d6defb4fa781447295e01378767c75119e473a81ce53d4affc3c3cb68",
+      "encoding": "UTF-8 exact API-returned body, no added newline"
+    }
+  ],
+  "mapping": [
+    {
+      "source_heading": "## Purpose and timing",
+      "common_section": 2,
+      "source_block_sha256": "7769f95639e53139c0e98862e40b23ce6f84202cdc3e75c4211ca99553da5c49"
+    },
+    {
+      "source_heading": "## Starting evidence: Week 7, October 25",
+      "common_section": 4,
+      "source_block_sha256": "1588e69d12c124d2c4c15ff444d7cd4412e587e57dcb83fd44439daf4f55870e"
+    },
+    {
+      "source_heading": "## Prospective rebound questions",
+      "common_section": 2,
+      "source_block_sha256": "d21c5a313e2ae595827b3b583722bd04bc5ffe1c90ce21c7d49d961d7b1a6174"
+    },
+    {
+      "source_heading": "## Evidence and comparison rules",
+      "common_section": 6,
+      "source_block_sha256": "37bb8a09856b45b7488b46b5e84b2ed3bc504eb2f3b1cd121bad67043fc1623f"
+    },
+    {
+      "source_heading": "## Post-Week 8 return format",
+      "common_section": 7,
+      "source_block_sha256": "c9dc1f265417d0ff7764e96af3ca74da7a23dcf2fef661f7e0f2881def57c032"
+    },
+    {
+      "source_heading": "## Sources and connections",
+      "common_section": 8,
+      "source_block_sha256": "da6b23357445027a4b9c718bace97911244cf167b92e728ecdfbb8353e5126af"
+    }
+  ],
+  "verification": {
+    "all_source_section_blocks_retained": true,
+    "source_body_bytes_retained": true,
+    "original_question_ids_and_windows_unchanged": true,
+    "new_research_performed": false,
+    "independent_review": "pending"
+  },
+  "gaps": [
+    "Null evidence_cutoff means no exact timestamp was supplied; source date-level clocks remain in prose and are not silently sharpened.",
+    "Source-level publication/retrieval and metric gaps remain as originally disclosed.",
+    "Exact owner and final evidence deadline remain unknown where not supplied."
+  ],
+  "capture_clock_semantics": "For issue/comment bundles, retrieved_at is the observed start of the sequential issue + all-comments retrieval, not an exact response-completion timestamp. Later raw-comment metadata reads only supply missing creation/update clocks; body equality is verified. Linked file retrieved_at is the observed time after its fetch completed."
+}

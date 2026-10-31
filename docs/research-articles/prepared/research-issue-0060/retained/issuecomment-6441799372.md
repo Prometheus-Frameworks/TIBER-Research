@@ -1,0 +1,72 @@
+## October 27, 2026 — Week 7 process update / Week 8 preparation
+
+**Evidence cutoff:** October 27 morning, America/Toronto. We read the complete opening record and comments; no earlier research checkpoint was posted. The October 26 baseline remains unchanged. This is a **partial process assessment**, with Week 8 still unplayed.
+
+**Disposition: the repeatable-opportunity thesis gains support; a new route-access breakout is challenged.** Confidence is moderate in the role interpretation, high in the box-score arithmetic, and limited in individual-creation attribution.
+
+### Q1 — Route access: new comparable evidence
+
+[Dwain McFarland’s public Fantasy Life report](https://www.fantasylife.com/articles/fantasy/fantasy-football-takeaways-omar-cooper-utilization-report), published October 26 at 6 p.m. ET and updated 7:49 p.m., embeds this [weekly usage table](https://cdn.fantasylife.com/assets/content/image_7f571e2d58.png), inspected directly:
+
+| Week | Routes % | Targets per route % | Target share % | aDOT |
+| --- | ---: | ---: | ---: | ---: |
+| 3 | 95 | 19 | 25 | 5.3 |
+| 4 | 100 | 22 | 24 | 7.1 |
+| 6 | 89 | 18 | 26 | 7.8 |
+| 7 | 74 | 36 | 29 | 11.1 |
+
+These are **provider-reported percentages**, not reconstructed counts. Raw routes, eligible-dropback denominators, snap counts and two-WR participation remain unverified. We use the named weekly rows, not the image’s mixed-window aggregate/header. Week 5 remains injury-curtailed.
+
+**Interpretation:** Week 7’s target rate increased while route participation declined. This supports target concentration within an established role more than expanded route access; verify independently before treating the percentages as canonical.
+
+### Q2 — Target earning and the 29% denominator
+
+The freshly inspected [ESPN Week 7 box](https://www.espn.com/nfl/boxscore/_/gameId/401873013) lists:
+
+- Concepcion: **10 targets**
+- Fannin: **9**
+- Boston: **8**
+- Jeudy: **4**
+- Sampson: **3**
+- Judkins: **1**
+- **All credited receiving targets: 35**
+
+Our calculation: **10 / 35 = 28.57%, rounding to 29%**. We now have a reproducible credited-target denominator consistent with Gibbs’s figure. This does **not** authenticate Gibbs’s original method. Watson’s 36 pass attempts are a separate denominator: 10/36 = 27.78%.
+
+Concepcion led, but Fannin and Boston were each within two targets. The emerging focal-point case should not become an assumption of monopolized opportunity.
+
+### Q3 — Breadth beyond designed touches
+
+The table’s Week 7 **11.1 aDOT** suggests deeper targeted opportunities than in the earlier displayed weeks. This is targeted depth, not average route depth, route diversity or proof of earning non-first-read targets.
+
+Screens, first-read allocations, untargeted routes and progression position remain unknown. We have not charted film.
+
+### Q4 — Creation versus favorable access
+
+The [Browns’ October 26 News & Notes](https://www.clevelandbrowns.com/news/browns-continue-to-stack-fourth-quarter-game-winning-drives-news-notes) describes Concepcion bouncing off defenders on an **18-yard fourth-quarter jet sweep**, followed by Watson’s scoring run. Monken explicitly endorsed auxiliary rushing by skill players and quarterbacks.
+
+This provides a concrete reported creation example and a coaching rationale for designed carries. It does not establish a representative receiving tackle-breaking rate. His other two carries totaled five yards: the longest accounted for **18/23 rushing yards**.
+
+**Metric conflict retained:** [Dawg Pound Daily’s rookie report, October 27](https://dawgpounddaily.com/browns-rookie-stock-report-as-kc-concepcion-and-spencer-fano-erupt-against-titans-01m5wpvjbyjh) reports **two forced missed tackles**, whereas the opening Gibbs source reports **three avoided tackles**. Definitions/play-type scope have not been reconciled; do not average them or assume equivalence. Gibbs’s 82 YAC remains attributed, not independently charted; YAC over expected, receiving-only tackle opportunities and the scope of seven first downs remain unknown.
+
+### Q5 — Environment, competition and Week 8 availability
+
+The [official box](https://www.clevelandbrowns.com/game-day/2026/reg-week7/browns-at-titans/box-score) still confirms Cleveland’s **27–24 win at Tennessee on October 25**, Watson’s 25/36 for 308 passing yards, and actual participation by Concepcion, Fannin, Boston and Jeudy. The team account describes an early two-touchdown deficit and a late comeback, rather than a sustained blowout.
+
+The [official schedule](https://www.clevelandbrowns.com/schedule/) confirms **at Pittsburgh, Sunday November 1, 1 p.m. EST**. The Week 4 reference remains 5/64 on eight targets. Week 7 participation does not establish Week 8 clearance: final practice/injury designations and game-day inactives are pending in this assessment. Searches did not establish a new Concepcion or Watson absence; absence of a report is not confirmation of full health.
+
+No verified Pittsburgh shadow assignment, slot matchup or Week 8 pressure/coverage forecast has been established here.
+
+### Q6 — Fantasy translation and ROS judgment
+
+Week 7: **8/129 receiving on 10 targets, 3/23 rushing, no TDs**, producing **23.2 PPR / 19.2 half-PPR**. Scoring: 0.1 per rushing/receiving yard, 1 or 0.5 per reception, six per TD, -2 per lost fumble; no bonuses/return points.
+
+The unchanged Weeks 1–6 ledger averages **6.62 PPR / 4.78 half-PPR per appearance**, including the Week 5 early exit and Week 1 lost fumble. These are calculations, not forecasts.
+
+**Our judgment:** provisional WR3/flex consideration, stronger in PPR, with a plausible repeatable role but an unproven weekly floor. We do not need another 129-yard game to gain confidence; recurring route access and target earning would matter more.
+
+**Strongest alternative explanation:** an established role combined with a one-game target-rate, depth and conversion spike against Tennessee. That could produce a much lower Week 8 score without proving the underlying role disappeared. Conversely, another strong score on diminished participation would leave the access question open.
+
+**Next discriminating test:** confirm Week 8 availability, then compare route participation and targets per route with the same provider definitions, credited target shares across the active receivers, and normal-possession versus late-game involvement. Separate a stable role with ordinary efficiency from genuine allocation loss. The next postgame checkpoint is November 3 after verifying the Pittsburgh game is complete. Keep the Week 11 bye and Week 17 endpoint intact.
+
+Only this dated issue comment is added; no model, producer, roster or repository-file changes.
