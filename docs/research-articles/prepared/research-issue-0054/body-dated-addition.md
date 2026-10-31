@@ -82,15 +82,11 @@ These are format-preparation navigation cards, not new observations, tests or as
 
 | Question / ID | Evidence to locate in this edition and original | Type / scope / contrary evidence and limit |
 | --- | --- | --- |
-| `retro-RUSH1` | More usable rushing room; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/54), exact retained text and section map linked in §8 | Contact/lanes not inferred from gain; immediate disruption/ambiguous/access achieved remain distinct. |
-| `retro-RUSH2` | Creation after access; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/54), exact retained text and section map linked in §8 | All carries retained; no conditional slice replaces overall efficiency. |
-| `retro-RUSH3` | Backfield role; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/54), exact retained text and section map linked in §8 | Washington active is not no restriction; actual share not causal redistribution. |
-| `retro-RUSH4` | Game-state contribution; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/54), exact retained text and section map linked in §8 | Early poor carries and later deficit both retained. |
-| `retro-REC1` | Receiving opportunity; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/54), exact retained text and section map linked in §8 | Same-provider routes/targets only; incompatible denominator not adopted. |
-| `retro-REC2` | Full receiving outcome; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/54), exact retained text and section map linked in §8 | Receiving MTF distinct from rushing; erased reception excluded official totals. |
-| `retro-REC3` | First defender after catch; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/54), exact retained text and section map linked in §8 | Requires full reception film and opportunity definitions. |
-| `retro-REC4` | Creation source; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/54), exact retained text and section map linked in §8 | Open space/blocking versus individual skill unresolved; pre-catch separation distinct. |
-| `retro-REC5` | Repeatability; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/54), exact retained text and section map linked in §8 | Explosive/TD concentration and missing YAC over expected retained. |
+| `retro-REC1` | Receiving opportunity; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/54), exact retained text and section map linked in §8 | Prospective receiving test: record routes, targets and target rate with provider and denominator; opportunity is separate from conversion. |
+| `retro-REC2` | Full receiving outcome; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/54), exact retained text and section map linked in §8 | Prospective receiving test: full reception sample, yards, TDs and after-catch outcomes; do not select only highlights. |
+| `retro-REC3` | First defender after catch; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/54), exact retained text and section map linked in §8 | Prospective receiving test: identify the first defender after each catch and whether Jeanty defeats that defender. |
+| `retro-REC4` | Creation source; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/54), exact retained text and section map linked in §8 | Prospective receiving test: distinguish open space and blocking from individual creation; keep pre-catch separation separate. |
+| `retro-REC5` | Repeatability; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/54), exact retained text and section map linked in §8 | Prospective receiving test: examine repeatability and explosive/TD dependence, retaining missing advanced evidence as unknown. |
 
 Source provider/lineage, metric numerator/denominator, exclusions, personnel, actual observation window, supporting passages, confidence and observability remain attached to the corresponding original blocks. These cards grant no independent-source status or final adjudication.
 
@@ -113,7 +109,8 @@ This is a strong reported involvement signal. It does not by itself establish wh
 
 ## 5. Interpretation and assessment
 
-Pregame environment mechanism versus later failed rushing payoff and supported receiving involvement stay separate. Outcome does not identify rushing access or independent after-catch creation. See the edition’s original opening and individual cards for its exact dated assessment; this orientation grants no new verdict.
+This October 24 addition specifies a prospective receiving investigation alongside the earlier rushing questions. It does not contain a postgame result or settle whether opportunity, blocking, open space or Jeanty’s individual creation explains future receiving production.
+
 
 ## 6. Unknowns and revision triggers
 

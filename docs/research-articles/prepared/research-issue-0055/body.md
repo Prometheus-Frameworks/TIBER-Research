@@ -80,13 +80,13 @@ These are format-preparation navigation cards, not new observations, tests or as
 
 | Question / ID | Evidence to locate in this edition and original | Type / scope / contrary evidence and limit |
 | --- | --- | --- |
-| `retro-RQ1` | Route access; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/55), exact retained text and section map linked in §8 | Snaps, routes and personnel denominators differ. |
-| `retro-RQ2` | X role and route breadth; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/55), exact retained text and section map linked in §8 | Outside role analogy is not Evans-equivalent ability. |
-| `retro-RQ3` | Target earning; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/55), exact retained text and section map linked in §8 | No-play DPI separate from official target; progression unknown. |
-| `retro-RQ4` | Baker trust; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/55), exact retained text and section map linked in §8 | Deflected pass not Hurst drop; box does not establish trust. |
-| `retro-RQ5` | Redistribution; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/55), exact retained text and section map linked in §8 | Egbuka WR-room shares not team shares or one-for-one transfer. |
-| `retro-RQ6` | Matchup and QB health; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/55), exact retained text and section map linked in §8 | Mayfield return not immediate normal performance; coverage/placement unmeasured. |
-| `retro-RQ7` | Persistence after returns; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/55), exact retained text and section map linked in §8 | Single run-heavy game cannot establish healthy-competition role. |
+| `retro-RQ1` | Route access; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/55), exact retained text and section map linked in §8 | Pregame question: actual route participation and personnel access, not merely offensive snaps. |
+| `retro-RQ2` | X role and route breadth; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/55), exact retained text and section map linked in §8 | Pregame question: outside X deployment and route breadth; the Evans analogy is not equivalent ability or production. |
+| `retro-RQ3` | Target earning; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/55), exact retained text and section map linked in §8 | Pregame question: targets and target rate relative to routes and team volume; missing data remain unknown. |
+| `retro-RQ4` | Baker trust; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/55), exact retained text and section map linked in §8 | Pregame question: observable timing, progression and quarterback decisions; a hypothesized connection is not established trust. |
+| `retro-RQ5` | Redistribution; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/55), exact retained text and section map linked in §8 | Pregame context: Egbuka shares are WR-room shares, not team shares or a one-for-one transfer to Hurst. |
+| `retro-RQ6` | Matchup and QB health; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/55), exact retained text and section map linked in §8 | Pregame context: Mayfield is expected back but officially questionable; confirm availability and do not assume immediate baseline performance. |
+| `retro-RQ7` | Persistence after returns; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/55), exact retained text and section map linked in §8 | Prospective question: which parts of the role could persist when Egbuka returns? |
 
 Source provider/lineage, metric numerator/denominator, exclusions, personnel, actual observation window, supporting passages, confidence and observability remain attached to the corresponding original blocks. These cards grant no independent-source status or final adjudication.
 
@@ -113,7 +113,8 @@ Mayfield's June 17 assessment praised Hurst's hands, body control and ability to
 
 ## 5. Interpretation and assessment
 
-Initial Mayfield/Hurst/X-role hypothesis remains developmental. Later zero/one official target challenges near-term payoff but no-play DPI and severe low-volume script prevent a simplistic skill verdict. See the edition’s original opening and individual cards for its exact dated assessment; this orientation grants no new verdict.
+This October 24 pregame record frames the Mayfield–Hurst connection and broader outside role as hypotheses. Egbuka’s absence creates potential opportunity but does not allocate it to Hurst; Mayfield’s expected return remains subject to game-day confirmation. The seven questions await the game and subsequent evidence, without a presumed outcome.
+
 
 ## 6. Unknowns and revision triggers
 

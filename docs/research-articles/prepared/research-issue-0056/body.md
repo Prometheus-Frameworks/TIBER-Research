@@ -68,10 +68,10 @@ These are format-preparation navigation cards, not new observations, tests or as
 
 | Question / ID | Evidence to locate in this edition and original | Type / scope / contrary evidence and limit |
 | --- | --- | --- |
-| `Douglas` | Substantial access beyond vertical plays; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/56), exact retained text and section map linked in §8 | Two TDs do not establish target takeover; source-specific route denominators disagree. |
-| `Bell` | Repeatable separation/YAC/targets; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/56), exact retained text and section map linked in §8 | Erased-play lead not official production; film remains incomplete. |
-| `Washington` | Reception-role persistence; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/56), exact retained text and section map linked in §8 | Playing-time priority can persist while target rate falls; no-play DPI separate. |
-| `Coleman` | Lasting role after Week5; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/56), exact retained text and section map linked in §8 | One target/two routes not sustainable earning; access contraction not isolated causal displacement. |
+| `Douglas` | Substantial access beyond vertical plays; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/56), exact retained text and section map linked in §8 | Pregame test: broad route access, repeated targets and two-WR work versus managed rotation, narrow usage or little involvement. |
+| `Bell` | Repeatable separation/YAC/targets; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/56), exact retained text and section map linked in §8 | Pregame test: repeatable separation, YAC and target earning versus low access or execution errors; verified erased Week 4 play is not official production. |
+| `Washington` | Reception-role persistence; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/56), exact retained text and section map linked in §8 | Pregame test: retained underneath/designed-touch work and targets relative to volume versus absence-dependent or late-game usage. |
+| `Coleman` | Lasting role after Week5; [source edition](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/56), exact retained text and section map linked in §8 | Pregame test: Week 5 opportunity persists across meaningful situations versus contracting access with Douglas back. |
 
 Source provider/lineage, metric numerator/denominator, exclusions, personnel, actual observation window, supporting passages, confidence and observability remain attached to the corresponding original blocks. These cards grant no independent-source status or final adjudication.
 
@@ -122,7 +122,8 @@ For each additional reported erased play, retain: game/clock, clip or play ID, o
 
 ## 5. Interpretation and assessment
 
-Initial four-player tests and later access/target changes remain separate. Douglas’s touchdowns do not establish takeover; route-denominator conflicts and causal displacement limits survive. See the edition’s original opening and individual cards for its exact dated assessment; this orientation grants no new verdict.
+The pregame record leaves all four receiver-specific tests open. Douglas’s return does not establish his workload or determine teammates’ opportunities. Washington’s pre-bye production, Coleman’s seven Week 5 targets and Bell’s erased Week 4 play motivate distinct prospective questions; no Week 7 outcome is imported into this edition.
+
 
 ## 6. Unknowns and revision triggers
 
