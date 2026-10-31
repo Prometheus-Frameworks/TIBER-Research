@@ -1,0 +1,62 @@
+{
+  "prepared_at": "2026-10-31T19:30:49.229705Z",
+  "format_check": "All source spans accounted for exactly once; see block_mapping",
+  "sources": [
+    {
+      "edition": "body",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/36",
+      "source_created_at": "2026-10-13T01:18:00Z",
+      "source_updated_at": "2026-10-13T01:18:00Z",
+      "retrieved_at": "2026-10-31T19:25:41.472Z",
+      "source_sha256": "bb97673a75133c1cf7d96e7ca86d99e5f1e5ddd9d0ca86c28c3040f9bbb7181a",
+      "source_characters": 7702,
+      "source_path": "retained/body.md",
+      "prepared_path": "body-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## Status and authority",
+          "outer_section": 1,
+          "sha256": "39ebfb175f6258f2a17136ac4845b4c496f926703d9dfda453344c49abf18125"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "## Question",
+          "outer_section": 2,
+          "sha256": "157a8994859f36e27ee1fde6e3ad0773003a25febd5f6dde8be48dc2c57a2e00"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "## Verified exploratory observations — 2026 REG Week 5, IND at PIT",
+          "outer_section": 4,
+          "sha256": "22bfca9bfdb208b72e6226708e42cec6c63132490c0480bd14f2099a5c58a9a3"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "## Reproducibility and immutable source pointers",
+          "outer_section": 8,
+          "sha256": "05b3387c8f381ac1ab440e81adc6228adbfa993c3db00bb9bcb26a3cc2cd2a0b"
+        },
+        {
+          "block": 5,
+          "original_heading_or_lead": "## Capability boundary",
+          "outer_section": 6,
+          "sha256": "a49c8e0bb5413e810fd06c46ba2cf2644192712a3dad78181c260aa7ee41c1fc"
+        },
+        {
+          "block": 6,
+          "original_heading_or_lead": "## Rights and provenance",
+          "outer_section": 8,
+          "sha256": "b6018f92eb3425285ec76724a5c4d0c937703fe1122344a7a0b5c647e5545a7e"
+        },
+        {
+          "block": 7,
+          "original_heading_or_lead": "## Codex / custodian pickup point — proposal only, NOT dispatched",
+          "outer_section": 7,
+          "sha256": "52430532ed008f43309a7e8be1b199e61290dadaac4a55911dfb9e04b14629fe"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    }
+  ]
+}
