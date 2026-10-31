@@ -172,7 +172,7 @@
   ],
   "closeout": {
     "status": "draft",
-    "pr_url": null,
+    "pr_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/74",
     "report_record_ref": null
   },
   "downstream": {
