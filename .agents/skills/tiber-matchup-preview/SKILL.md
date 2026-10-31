@@ -15,6 +15,7 @@ Read [question selection](references/question-selection.md) before selecting que
 - For an explicitly requested historical preview, obtain or ask for a pregame information cutoff. If a completed game is named without a historical or retrospective purpose, clarify the intended exercise. Exclude evidence unavailable by the cutoff; if pre-cutoff availability is unverified, do not use it as an established pregame fact. Disclose later dataset corrections and uncertain availability rather than treating retrieval time as proof.
 - Record the information cutoff as an explicit date, time, and timezone. Record source publication/update, retrieval and latest game covered separately. Freeze the cutoff before synthesis; material later evidence is a dated amendment, not retroactive pregame knowledge.
 - Establish purpose, scoring assumptions if fantasy points will be calculated, and relevant authorized source access. Do not imply betting, a personal roster recommendation, a transaction, or a scheduled recheck from a general preview.
+- Keep the compact execution record in [record templates](references/templates.md). Distinguish direct methodology use, observed skill loading and automatic selection; retain supporting event locators when available, and mark missing execution evidence unknown.
 
 ## 2. Scan both teams and log the research agenda
 
