@@ -1,0 +1,97 @@
+{
+  "prepared_at": "2026-10-31T19:30:11.552299Z",
+  "issue": 49,
+  "source_state": "open",
+  "body_api_sha256": "f88f062321f6744be3d55dcccddf36d50e4f9bf750a24c75bf06cdd058e40082",
+  "source_updated_at": "2026-10-26T13:34:48Z",
+  "editions": [
+    {
+      "edition": "body",
+      "path": "docs/research-articles/prepared/research-issue-0049/body.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/49",
+      "source_created_at": "2026-10-23T22:41:59Z",
+      "source_updated_at": "2026-10-26T13:34:48Z",
+      "retrieved_at": "2026-10-31T19:25:39.112Z",
+      "source_sha256": "f88f062321f6744be3d55dcccddf36d50e4f9bf750a24c75bf06cdd058e40082",
+      "retained_path": "retained/body.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Question and working view",
+          "section": 1,
+          "sha256": "ad3e53d2da931c0982f242a7674184a23a19d58d9712a5aa54d262204178c965"
+        },
+        {
+          "source_block": 2,
+          "heading": "1. How Murray has looked as a Viking",
+          "section": 4,
+          "sha256": "bce0796d64484136fe2a23ce1ce2f8b42a109c18033415fa471cec0b8aac130a"
+        },
+        {
+          "source_block": 3,
+          "heading": "2. Health and the Indianapolis matchup",
+          "section": 4,
+          "sha256": "2e507cf71fcac7ced182e3d09e29229cf47b8b9113947414f0c90aafdb838e8a"
+        },
+        {
+          "source_block": 4,
+          "heading": "3. What Flores asks Jones to solve",
+          "section": 4,
+          "sha256": "27067c25faacc7add33ae28e78b56ee9de578fdd7fbc1764b49fbc747cc773af"
+        },
+        {
+          "source_block": 5,
+          "heading": "4. Jones against the blitz: a mixed result",
+          "section": 4,
+          "sha256": "371cf51fff27d2177018d31445d97604dc9d7e5b714c585b23ff7d1d54251e22"
+        },
+        {
+          "source_block": 6,
+          "heading": "5. How strong is the Colts offense?",
+          "section": 4,
+          "sha256": "f5ef160a86661bd987a3aa4ad9ad15fd224bf6f53a8b989a100aac3440e38f92"
+        },
+        {
+          "source_block": 7,
+          "heading": "6. Scoring environment and testable expectations",
+          "section": 5,
+          "sha256": "247fb267af651956fa0678fff137b363830c97eaa420734497a678e1dbd67113"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    },
+    {
+      "edition": "update-6417324742",
+      "path": "docs/research-articles/prepared/research-issue-0049/update-6417324742.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/49#issuecomment-6417324742",
+      "source_created_at": "2026-10-26T13:34:48Z",
+      "source_updated_at": "2026-10-26T13:34:48Z",
+      "retrieved_at": "2026-10-31T19:25:39.112Z",
+      "source_sha256": "0b81812f98848038253c068a59c4ca2cb0078f9b383667f97c87bfc63b3f830f",
+      "retained_path": "retained/update-6417324742.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "October 26 — Week 7 postgame: strong defensive result, limited passing payoff",
+          "section": 1,
+          "sha256": "8a0ac918c4d2f506458855c45e8575077d6a863e984d5bd8c6123573f47ea12c"
+        },
+        {
+          "source_block": 2,
+          "heading": "What the outcome can and cannot resolve",
+          "section": 4,
+          "sha256": "1eb0159d55349904ade31e6fa72e474b458fd23fee1af631cd53a17cfbdce1c5"
+        },
+        {
+          "source_block": 3,
+          "heading": "Independent continuation of Heath's Vikings-defense lead",
+          "section": 4,
+          "sha256": "6df61f49724b66b03473d0769cfdfbddd8283790809706065dc14ebc45e04f42"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    }
+  ],
+  "fidelity": "Every source section mapped intact; heading depth only changed. Question IDs/measurements/windows retained. Unknown values not synthesized. Historical external-review receipts are source claims, not new acceptance.",
+  "format_review": "self-check; independent review pending"
+}
