@@ -44,6 +44,21 @@ test/                               positive and adversarial tests
 The synthetic fixture is deliberately non-football-authoritative. Its entities and
 observations are invented only to exercise the protocol.
 
+## Experimental matchup-preview skill
+
+[`tiber-matchup-preview`](.agents/skills/tiber-matchup-preview/SKILL.md) is a
+repository-local, experimental method for researching an NFL team matchup. It
+provides a question-selection log, evidence and preview templates, source and
+metric checks, and a small evaluation procedure. Codex can discover repository
+skills under `.agents/skills/`; another compatible agent can read the skill file
+and its linked references directly.
+
+The skill is not an installed personal skill, a governed Research attempt, or an
+activation of the researcher. It does not itself publish issues, schedule work,
+change a model or service, or authorize a roster action. A preview created with
+it is a manual research record unless separately admitted under the Research
+authority and lifecycle described below.
+
 ## Agent entry (draft)
 
 `docs/agent-entry/` holds a separate, run-independent surface: one public,
