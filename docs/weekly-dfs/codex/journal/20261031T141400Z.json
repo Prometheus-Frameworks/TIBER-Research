@@ -1,0 +1,67 @@
+{
+  "schema_version": "tiber-dfs-journal/v1",
+  "entries": [
+    {
+      "id": "2026-w08-operator-handoff-20261031T141400Z",
+      "snapshot_ids": [
+        "2026-w08-2026-10-31-daily"
+      ],
+      "kind": "later_annotation",
+      "recorded_at": "2026-10-31T14:14:00.797Z",
+      "recorded_at_toronto": "2026-10-31T10:14:00.797-04:00",
+      "research_at": null,
+      "origin": "operator_prompted",
+      "origin_note": "Operator excluded the missing Claude originalv1 baseline for Week8 and requested a current Grok handoff. This is experiment metadata, not new football research.",
+      "title": "Later operator amendment: exclude missing Claude v1; prepare Grok round2",
+      "question": "Later annotation: how should the unavailable original and current question handoff be recorded?",
+      "why_it_matters": "Prevent attributing an operator workflow gap to participant research performance, while preserving real revision contributions and exact input versions.",
+      "findings": [
+        "Operator explicitly excludes the nonexistent Week8 Claude originalv1 baseline; original absence and score remain unavailable.",
+        "Actual Claude/Codex revisions and joint endorsement remain valid and retained.",
+        "No Week8 Grok questions in freshly inspected PR43 record. Current round2 packet includes completed author exchange, superseding Friday request inputs for new work."
+      ],
+      "interpretation": "Treat missing original as an operator workflow confounder and an excluded comparison, not a fabricated draft or agent failure. Do not exclude actual Claude revision work.",
+      "alternatives": [
+        "Retain all history; never replace missing original with exposed revision."
+      ],
+      "uncertainty": [
+        "Grok recipient acknowledgment/output not received; no provider watcher established."
+      ],
+      "lineup_effect": "None: exact888e327 nine remain50000/$0, jointly endorsed and unfrozen.",
+      "change_triggers": [
+        "Actual attributable Grok output with exact inspected versions; new pre-freeze football evidence remains subject to existing rules."
+      ],
+      "carry_forward": [
+        "Improve scheduled handoff readiness and successful direct posting before claiming reliable delivery.",
+        "Exclude missing Claudev1 comparison this week while retaining all actual author contributions."
+      ],
+      "sources": [
+        {
+          "id": "collaboration-ready",
+          "label": "Immutable author exchange readiness",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/932ae4b9157ab84652089359104107484d579872/docs/weekly-dfs/codex/2026/week-08/collaboration/20261031T141100Z-collaboration-ready.json",
+          "retrieved_at": "2026-10-31T14:14:00.797Z",
+          "publication_at": null,
+          "scope": "Previously verified archive; no new football-source retrieval."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w08-2026-10-31-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json"
+        }
+      ],
+      "annotation_of": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/932ae4b9157ab84652089359104107484d579872/docs/weekly-dfs/codex/2026/week-08/collaboration/20261031T141100Z-collaboration-ready.json",
+      "original_evidence_cutoff": null,
+      "expectations": [],
+      "outcomes": [],
+      "operator_amendment": {
+        "recorded_at": "2026-10-31T14:14:00.797Z",
+        "claude_original_v1": "excluded_this_week_missing_input",
+        "reason": "Operator attributes the missing original to an operator handoff/workflow gap, not evidence of Claude research failure.",
+        "scope": "Exclude only nonexistent Claude Week8 original-v1 baseline/comparison; keep its absence and score unavailable. Preserve all actual Claude revision contributions and joint endorsement. Do not synthesize or backfill an original."
+      },
+      "next_handoff_id": "2026-w08-r2-grok-questions"
+    }
+  ]
+}
