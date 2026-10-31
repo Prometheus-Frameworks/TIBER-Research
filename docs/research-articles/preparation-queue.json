@@ -870,7 +870,7 @@
       "article_classification": "article",
       "format_preparation": "prepared-draft-review-pending",
       "prepared_artifact_refs": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/f42947e888aef2568940db80c0652263c4f98a48/docs/research-articles/prepared/research-issue-0041/body.md"
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/14d99144c9ce94744e4ea78efbde0c6db6b56a16/docs/research-articles/prepared/research-issue-0041/body.md"
       ],
       "coordination_notes": [],
       "classification_reason": "Two-player observational handcuff study with H1–H3, Weeks 1–5 baseline and fixed Weeks 6–18/end-of-season test. No watch dispatched.",
@@ -901,7 +901,7 @@
       "article_classification": "article",
       "format_preparation": "prepared-draft-review-pending",
       "prepared_artifact_refs": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/f42947e888aef2568940db80c0652263c4f98a48/docs/research-articles/prepared/research-issue-0042/body.md"
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/14d99144c9ce94744e4ea78efbde0c6db6b56a16/docs/research-articles/prepared/research-issue-0042/body.md"
       ],
       "coordination_notes": [],
       "classification_reason": "Three distinct scoring-qualified comparison cases in one comparative article; retain unposted X draft and MCP proposal as ancillary source material, not new publications.",
@@ -932,8 +932,8 @@
       "article_classification": "article",
       "format_preparation": "prepared-draft-review-pending",
       "prepared_artifact_refs": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/f42947e888aef2568940db80c0652263c4f98a48/docs/research-articles/prepared/research-issue-0044/body.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/f42947e888aef2568940db80c0652263c4f98a48/docs/research-articles/prepared/research-issue-0044/update-6417385863.md"
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/14d99144c9ce94744e4ea78efbde0c6db6b56a16/docs/research-articles/prepared/research-issue-0044/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/14d99144c9ce94744e4ea78efbde0c6db6b56a16/docs/research-articles/prepared/research-issue-0044/update-6417385863.md"
       ],
       "coordination_notes": [],
       "classification_reason": "Eight UTIL cases with immutable prospective thresholds and differing two-game windows; public edition only. Preserve private-review receipt as reported, never copy private underlying inputs. One Marks-only dated update, not whole-study completion.",
@@ -964,16 +964,16 @@
       "article_classification": "article",
       "format_preparation": "prepared-draft-review-pending",
       "prepared_artifact_refs": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/body.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/body-dated-addition.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/update-6305245492.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/update-6306544349.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/update-6325940080.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/update-6383749621.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/update-6496226724.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/update-6496423581.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/update-6522498036.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/update-6542819176.md"
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0045/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0045/body-dated-addition.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0045/update-6305245492.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0045/update-6306544349.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0045/update-6325940080.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0045/update-6383749621.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0045/update-6496226724.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0045/update-6496423581.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0045/update-6522498036.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0045/update-6542819176.md"
       ],
       "coordination_notes": [],
       "classification_reason": "Living receiving study with H1–H3/B1–B4, eight substantive separately dated comments; preserve excluded paid recap, W01–W04, film-vs-transcript distinctions and existing cadence.",
@@ -1004,8 +1004,8 @@
       "article_classification": "article",
       "format_preparation": "prepared-draft-review-pending",
       "prepared_artifact_refs": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0046/body.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0046/update-6441026903.md"
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0046/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0046/update-6441026903.md"
       ],
       "coordination_notes": [],
       "classification_reason": "Living Noel study; actual operator assertion is explicit. One scheduling receipt is coordination; one substantive postgame update. Preserve bye and Nov3 decision window.",
@@ -1036,14 +1036,14 @@
       "article_classification": "article",
       "format_preparation": "prepared-draft-review-pending",
       "prepared_artifact_refs": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0047/body.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0047/update-6350614837.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0047/update-6350862200.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0047/update-6351704283.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0047/update-6351977020.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0047/update-6352115267.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0047/update-6417265640.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0047/update-6441040381.md"
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0047/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0047/update-6350614837.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0047/update-6350862200.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0047/update-6351704283.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0047/update-6351977020.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0047/update-6352115267.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0047/update-6417265640.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0047/update-6441040381.md"
       ],
       "coordination_notes": [],
       "classification_reason": "Living Wilson study with H1–H4 and MW-47-01–11; seven substantive comments plus one watch receipt. Puka analogy is exploratory, not asserted operator belief.",
@@ -1074,8 +1074,8 @@
       "article_classification": "article",
       "format_preparation": "prepared-draft-review-pending",
       "prepared_artifact_refs": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5459c9388ed7b8e9868d2bfefc33751f68e4fc17/docs/research-articles/prepared/research-issue-0048/body.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5459c9388ed7b8e9868d2bfefc33751f68e4fc17/docs/research-articles/prepared/research-issue-0048/update-6417324415.md"
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/aea56dc1d4d6ef4811fcf8b4278a768193403b9a/docs/research-articles/prepared/research-issue-0048/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/aea56dc1d4d6ef4811fcf8b4278a768193403b9a/docs/research-articles/prepared/research-issue-0048/update-6417324415.md"
       ],
       "coordination_notes": [],
       "classification_reason": "Short research backlog note with sourced baseline/alternatives, plus substantive first-return update; not merely coordination. Next two active games only if operator continues; no schedule created.",
@@ -1106,8 +1106,8 @@
       "article_classification": "article",
       "format_preparation": "prepared-draft-review-pending",
       "prepared_artifact_refs": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5459c9388ed7b8e9868d2bfefc33751f68e4fc17/docs/research-articles/prepared/research-issue-0049/body.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5459c9388ed7b8e9868d2bfefc33751f68e4fc17/docs/research-articles/prepared/research-issue-0049/update-6417324742.md"
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/aea56dc1d4d6ef4811fcf8b4278a768193403b9a/docs/research-articles/prepared/research-issue-0049/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/aea56dc1d4d6ef4811fcf8b4278a768193403b9a/docs/research-articles/prepared/research-issue-0049/update-6417324742.md"
       ],
       "coordination_notes": [],
       "classification_reason": "Pregame matchup/research article with five prospective mechanisms and separate postgame assessment, distinct from Mason case #48.",
@@ -1172,8 +1172,8 @@
       "article_classification": "article",
       "format_preparation": "prepared-draft-review-pending",
       "prepared_artifact_refs": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5459c9388ed7b8e9868d2bfefc33751f68e4fc17/docs/research-articles/prepared/research-issue-0052/body.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5459c9388ed7b8e9868d2bfefc33751f68e4fc17/docs/research-articles/prepared/research-issue-0052/update-6414730618.md"
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/aea56dc1d4d6ef4811fcf8b4278a768193403b9a/docs/research-articles/prepared/research-issue-0052/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/aea56dc1d4d6ef4811fcf8b4278a768193403b9a/docs/research-articles/prepared/research-issue-0052/update-6414730618.md"
       ],
       "coordination_notes": [],
       "classification_reason": "Pregame player study with six-question Puka-active and six-question Puka-absent branches; postgame answers select A, retain B untested.",
@@ -1204,9 +1204,9 @@
       "article_classification": "article",
       "format_preparation": "prepared-draft-review-pending",
       "prepared_artifact_refs": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9df1ef103394962ff6e1b7fdc18592bbd9780929/docs/research-articles/prepared/research-issue-0054/body.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9df1ef103394962ff6e1b7fdc18592bbd9780929/docs/research-articles/prepared/research-issue-0054/body-dated-addition.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9df1ef103394962ff6e1b7fdc18592bbd9780929/docs/research-articles/prepared/research-issue-0054/update-6415084917.md"
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/70fadfe56a7902935d8cc990d975b8642e6388e6/docs/research-articles/prepared/research-issue-0054/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/70fadfe56a7902935d8cc990d975b8642e6388e6/docs/research-articles/prepared/research-issue-0054/body-dated-addition.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/70fadfe56a7902935d8cc990d975b8642e6388e6/docs/research-articles/prepared/research-issue-0054/update-6415084917.md"
       ],
       "coordination_notes": [],
       "classification_reason": "Pregame Jeanty access study plus dated Oct24 receiving addition inside body; postgame separate. Preserve all four availability branches and outcome-vs-mechanism distinction.",
@@ -1237,8 +1237,8 @@
       "article_classification": "article",
       "format_preparation": "prepared-draft-review-pending",
       "prepared_artifact_refs": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9df1ef103394962ff6e1b7fdc18592bbd9780929/docs/research-articles/prepared/research-issue-0055/body.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9df1ef103394962ff6e1b7fdc18592bbd9780929/docs/research-articles/prepared/research-issue-0055/update-6428812290.md"
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/70fadfe56a7902935d8cc990d975b8642e6388e6/docs/research-articles/prepared/research-issue-0055/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/70fadfe56a7902935d8cc990d975b8642e6388e6/docs/research-articles/prepared/research-issue-0055/update-6428812290.md"
       ],
       "coordination_notes": [],
       "classification_reason": "Hurst player study plus dated target-qualification engineering addendum; postgame separate. Keep estimated college targets and postmerge P2 boundary, no private input replication.",
@@ -1269,8 +1269,8 @@
       "article_classification": "article",
       "format_preparation": "prepared-draft-review-pending",
       "prepared_artifact_refs": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9df1ef103394962ff6e1b7fdc18592bbd9780929/docs/research-articles/prepared/research-issue-0056/body.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9df1ef103394962ff6e1b7fdc18592bbd9780929/docs/research-articles/prepared/research-issue-0056/update-6546709227.md"
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/70fadfe56a7902935d8cc990d975b8642e6388e6/docs/research-articles/prepared/research-issue-0056/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/70fadfe56a7902935d8cc990d975b8642e6388e6/docs/research-articles/prepared/research-issue-0056/update-6546709227.md"
       ],
       "coordination_notes": [],
       "classification_reason": "Four-receiver pregame audit plus substantive Oct31 postgame edition, both source-specific route definitions and erased-play boundary preserved.",
@@ -2087,5 +2087,16 @@
       ],
       "historical_triage_disposition": "locally_prepared_distinct_methodological_research_note"
     }
-  ]
+  ],
+  "publication_link_revision": {
+    "updated_at": "2026-10-31T22:29:45Z",
+    "reason": "Current prepared_artifact_refs point to reviewed source-edition repairs in PRs 83, 84, 86 and 88; preparation-stage states and original clocks below are historical, not current PR status. Earlier CI receipts remain separately in prepared/publication-index.json.",
+    "repaired_prs": [
+      83,
+      84,
+      86,
+      88
+    ],
+    "research_acceptance_granted": false
+  }
 }

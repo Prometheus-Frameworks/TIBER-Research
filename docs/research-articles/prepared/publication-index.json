@@ -164,53 +164,117 @@
       "batch": 13,
       "branch": "dot/research-article-preparation-20261031-b13",
       "base_sha": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
-      "head_sha": "f42947e888aef2568940db80c0652263c4f98a48",
+      "head_sha": "14d99144c9ce94744e4ea78efbde0c6db6b56a16",
       "pr_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/83",
       "pr_number": 83,
       "readback_passed": true,
       "ci_status": "completed",
       "ci_conclusion": "success",
-      "ci_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/actions/runs/41237649776",
-      "artifact_commit_role": "final verified branch head at receipt"
+      "ci_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/actions/runs/41247893093",
+      "artifact_commit_role": "repaired article revision; exact-head CI and fresh Codex review completed clean",
+      "historical_receipts": [
+        {
+          "receipt_role": "superseded preparation-stage artifact and CI receipt; not current article content",
+          "batch": 13,
+          "branch": "dot/research-article-preparation-20261031-b13",
+          "base_sha": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+          "head_sha": "f42947e888aef2568940db80c0652263c4f98a48",
+          "pr_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/83",
+          "pr_number": 83,
+          "readback_passed": true,
+          "ci_status": "completed",
+          "ci_conclusion": "success",
+          "ci_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/actions/runs/41237649776",
+          "artifact_commit_role": "final verified branch head at receipt"
+        }
+      ]
     },
     {
       "batch": 14,
       "branch": "dot/research-article-preparation-20261031-b14",
       "base_sha": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
-      "head_sha": "0acb857a68e473080f4497876c9add008158bda1",
+      "head_sha": "094d20cab9ab7b2c4312421bcda029c4c41375c6",
       "pr_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/84",
       "pr_number": 84,
       "readback_passed": true,
       "ci_status": "completed",
       "ci_conclusion": "success",
-      "ci_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/actions/runs/41237699294",
-      "artifact_commit_role": "final verified branch head at receipt"
+      "ci_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/actions/runs/41247897898",
+      "artifact_commit_role": "repaired article revision; exact-head CI and fresh Codex review completed clean",
+      "historical_receipts": [
+        {
+          "receipt_role": "superseded preparation-stage artifact and CI receipt; not current article content",
+          "batch": 14,
+          "branch": "dot/research-article-preparation-20261031-b14",
+          "base_sha": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+          "head_sha": "0acb857a68e473080f4497876c9add008158bda1",
+          "pr_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/84",
+          "pr_number": 84,
+          "readback_passed": true,
+          "ci_status": "completed",
+          "ci_conclusion": "success",
+          "ci_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/actions/runs/41237699294",
+          "artifact_commit_role": "final verified branch head at receipt"
+        }
+      ]
     },
     {
       "batch": 15,
       "branch": "dot/research-article-preparation-20261031-b15",
       "base_sha": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
-      "head_sha": "5459c9388ed7b8e9868d2bfefc33751f68e4fc17",
+      "head_sha": "aea56dc1d4d6ef4811fcf8b4278a768193403b9a",
       "pr_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/86",
       "pr_number": 86,
       "readback_passed": true,
       "ci_status": "completed",
       "ci_conclusion": "success",
-      "ci_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/actions/runs/41237718913",
-      "artifact_commit_role": "final verified branch head at receipt"
+      "ci_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/actions/runs/41247903822",
+      "artifact_commit_role": "repaired article revision; exact-head CI and fresh Codex review completed clean",
+      "historical_receipts": [
+        {
+          "receipt_role": "superseded preparation-stage artifact and CI receipt; not current article content",
+          "batch": 15,
+          "branch": "dot/research-article-preparation-20261031-b15",
+          "base_sha": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+          "head_sha": "5459c9388ed7b8e9868d2bfefc33751f68e4fc17",
+          "pr_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/86",
+          "pr_number": 86,
+          "readback_passed": true,
+          "ci_status": "completed",
+          "ci_conclusion": "success",
+          "ci_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/actions/runs/41237718913",
+          "artifact_commit_role": "final verified branch head at receipt"
+        }
+      ]
     },
     {
       "batch": 16,
       "branch": "dot/research-article-preparation-20261031-b16",
       "base_sha": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
-      "head_sha": "9df1ef103394962ff6e1b7fdc18592bbd9780929",
+      "head_sha": "70fadfe56a7902935d8cc990d975b8642e6388e6",
       "pr_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/88",
       "pr_number": 88,
       "readback_passed": true,
       "ci_status": "completed",
       "ci_conclusion": "success",
-      "ci_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/actions/runs/41237739827",
-      "artifact_commit_role": "final verified branch head at receipt"
+      "ci_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/actions/runs/41247910197",
+      "artifact_commit_role": "repaired article revision; exact-head CI and fresh Codex review completed clean",
+      "historical_receipts": [
+        {
+          "receipt_role": "superseded preparation-stage artifact and CI receipt; not current article content",
+          "batch": 16,
+          "branch": "dot/research-article-preparation-20261031-b16",
+          "base_sha": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+          "head_sha": "9df1ef103394962ff6e1b7fdc18592bbd9780929",
+          "pr_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/88",
+          "pr_number": 88,
+          "readback_passed": true,
+          "ci_status": "completed",
+          "ci_conclusion": "success",
+          "ci_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/actions/runs/41237739827",
+          "artifact_commit_role": "final verified branch head at receipt"
+        }
+      ]
     },
     {
       "batch": 17,
@@ -1096,12 +1160,12 @@
       ],
       "pr_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/83",
       "branch": "dot/research-article-preparation-20261031-b13",
-      "head_sha": "f42947e888aef2568940db80c0652263c4f98a48",
+      "head_sha": "14d99144c9ce94744e4ea78efbde0c6db6b56a16",
       "base_sha": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
       "group": "late",
       "unit_id": "docs/research-articles/prepared/research-issue-0041::article",
       "artifact_urls": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/f42947e888aef2568940db80c0652263c4f98a48/docs/research-articles/prepared/research-issue-0041/body.md"
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/14d99144c9ce94744e4ea78efbde0c6db6b56a16/docs/research-articles/prepared/research-issue-0041/body.md"
       ]
     },
     {
@@ -1112,12 +1176,12 @@
       ],
       "pr_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/83",
       "branch": "dot/research-article-preparation-20261031-b13",
-      "head_sha": "f42947e888aef2568940db80c0652263c4f98a48",
+      "head_sha": "14d99144c9ce94744e4ea78efbde0c6db6b56a16",
       "base_sha": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
       "group": "late",
       "unit_id": "docs/research-articles/prepared/research-issue-0042::article",
       "artifact_urls": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/f42947e888aef2568940db80c0652263c4f98a48/docs/research-articles/prepared/research-issue-0042/body.md"
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/14d99144c9ce94744e4ea78efbde0c6db6b56a16/docs/research-articles/prepared/research-issue-0042/body.md"
       ]
     },
     {
@@ -1129,13 +1193,13 @@
       ],
       "pr_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/83",
       "branch": "dot/research-article-preparation-20261031-b13",
-      "head_sha": "f42947e888aef2568940db80c0652263c4f98a48",
+      "head_sha": "14d99144c9ce94744e4ea78efbde0c6db6b56a16",
       "base_sha": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
       "group": "late",
       "unit_id": "docs/research-articles/prepared/research-issue-0044::article",
       "artifact_urls": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/f42947e888aef2568940db80c0652263c4f98a48/docs/research-articles/prepared/research-issue-0044/body.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/f42947e888aef2568940db80c0652263c4f98a48/docs/research-articles/prepared/research-issue-0044/update-6417385863.md"
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/14d99144c9ce94744e4ea78efbde0c6db6b56a16/docs/research-articles/prepared/research-issue-0044/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/14d99144c9ce94744e4ea78efbde0c6db6b56a16/docs/research-articles/prepared/research-issue-0044/update-6417385863.md"
       ]
     },
     {
@@ -1155,21 +1219,21 @@
       ],
       "pr_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/84",
       "branch": "dot/research-article-preparation-20261031-b14",
-      "head_sha": "0acb857a68e473080f4497876c9add008158bda1",
+      "head_sha": "094d20cab9ab7b2c4312421bcda029c4c41375c6",
       "base_sha": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
       "group": "late",
       "unit_id": "docs/research-articles/prepared/research-issue-0045::article",
       "artifact_urls": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/body.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/body-dated-addition.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/update-6305245492.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/update-6306544349.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/update-6325940080.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/update-6383749621.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/update-6496226724.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/update-6496423581.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/update-6522498036.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0045/update-6542819176.md"
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0045/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0045/body-dated-addition.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0045/update-6305245492.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0045/update-6306544349.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0045/update-6325940080.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0045/update-6383749621.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0045/update-6496226724.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0045/update-6496423581.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0045/update-6522498036.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0045/update-6542819176.md"
       ]
     },
     {
@@ -1181,13 +1245,13 @@
       ],
       "pr_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/84",
       "branch": "dot/research-article-preparation-20261031-b14",
-      "head_sha": "0acb857a68e473080f4497876c9add008158bda1",
+      "head_sha": "094d20cab9ab7b2c4312421bcda029c4c41375c6",
       "base_sha": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
       "group": "late",
       "unit_id": "docs/research-articles/prepared/research-issue-0046::article",
       "artifact_urls": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0046/body.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0046/update-6441026903.md"
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0046/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0046/update-6441026903.md"
       ]
     },
     {
@@ -1205,19 +1269,19 @@
       ],
       "pr_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/84",
       "branch": "dot/research-article-preparation-20261031-b14",
-      "head_sha": "0acb857a68e473080f4497876c9add008158bda1",
+      "head_sha": "094d20cab9ab7b2c4312421bcda029c4c41375c6",
       "base_sha": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
       "group": "late",
       "unit_id": "docs/research-articles/prepared/research-issue-0047::article",
       "artifact_urls": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0047/body.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0047/update-6350614837.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0047/update-6350862200.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0047/update-6351704283.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0047/update-6351977020.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0047/update-6352115267.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0047/update-6417265640.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0acb857a68e473080f4497876c9add008158bda1/docs/research-articles/prepared/research-issue-0047/update-6441040381.md"
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0047/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0047/update-6350614837.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0047/update-6350862200.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0047/update-6351704283.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0047/update-6351977020.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0047/update-6352115267.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0047/update-6417265640.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/094d20cab9ab7b2c4312421bcda029c4c41375c6/docs/research-articles/prepared/research-issue-0047/update-6441040381.md"
       ]
     },
     {
@@ -1229,13 +1293,13 @@
       ],
       "pr_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/86",
       "branch": "dot/research-article-preparation-20261031-b15",
-      "head_sha": "5459c9388ed7b8e9868d2bfefc33751f68e4fc17",
+      "head_sha": "aea56dc1d4d6ef4811fcf8b4278a768193403b9a",
       "base_sha": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
       "group": "late",
       "unit_id": "docs/research-articles/prepared/research-issue-0048::article",
       "artifact_urls": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5459c9388ed7b8e9868d2bfefc33751f68e4fc17/docs/research-articles/prepared/research-issue-0048/body.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5459c9388ed7b8e9868d2bfefc33751f68e4fc17/docs/research-articles/prepared/research-issue-0048/update-6417324415.md"
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/aea56dc1d4d6ef4811fcf8b4278a768193403b9a/docs/research-articles/prepared/research-issue-0048/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/aea56dc1d4d6ef4811fcf8b4278a768193403b9a/docs/research-articles/prepared/research-issue-0048/update-6417324415.md"
       ]
     },
     {
@@ -1247,13 +1311,13 @@
       ],
       "pr_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/86",
       "branch": "dot/research-article-preparation-20261031-b15",
-      "head_sha": "5459c9388ed7b8e9868d2bfefc33751f68e4fc17",
+      "head_sha": "aea56dc1d4d6ef4811fcf8b4278a768193403b9a",
       "base_sha": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
       "group": "late",
       "unit_id": "docs/research-articles/prepared/research-issue-0049::article",
       "artifact_urls": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5459c9388ed7b8e9868d2bfefc33751f68e4fc17/docs/research-articles/prepared/research-issue-0049/body.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5459c9388ed7b8e9868d2bfefc33751f68e4fc17/docs/research-articles/prepared/research-issue-0049/update-6417324742.md"
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/aea56dc1d4d6ef4811fcf8b4278a768193403b9a/docs/research-articles/prepared/research-issue-0049/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/aea56dc1d4d6ef4811fcf8b4278a768193403b9a/docs/research-articles/prepared/research-issue-0049/update-6417324742.md"
       ]
     },
     {
@@ -1265,13 +1329,13 @@
       ],
       "pr_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/86",
       "branch": "dot/research-article-preparation-20261031-b15",
-      "head_sha": "5459c9388ed7b8e9868d2bfefc33751f68e4fc17",
+      "head_sha": "aea56dc1d4d6ef4811fcf8b4278a768193403b9a",
       "base_sha": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
       "group": "late",
       "unit_id": "docs/research-articles/prepared/research-issue-0052::article",
       "artifact_urls": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5459c9388ed7b8e9868d2bfefc33751f68e4fc17/docs/research-articles/prepared/research-issue-0052/body.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5459c9388ed7b8e9868d2bfefc33751f68e4fc17/docs/research-articles/prepared/research-issue-0052/update-6414730618.md"
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/aea56dc1d4d6ef4811fcf8b4278a768193403b9a/docs/research-articles/prepared/research-issue-0052/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/aea56dc1d4d6ef4811fcf8b4278a768193403b9a/docs/research-articles/prepared/research-issue-0052/update-6414730618.md"
       ]
     },
     {
@@ -1284,14 +1348,14 @@
       ],
       "pr_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/88",
       "branch": "dot/research-article-preparation-20261031-b16",
-      "head_sha": "9df1ef103394962ff6e1b7fdc18592bbd9780929",
+      "head_sha": "70fadfe56a7902935d8cc990d975b8642e6388e6",
       "base_sha": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
       "group": "late",
       "unit_id": "docs/research-articles/prepared/research-issue-0054::article",
       "artifact_urls": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9df1ef103394962ff6e1b7fdc18592bbd9780929/docs/research-articles/prepared/research-issue-0054/body.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9df1ef103394962ff6e1b7fdc18592bbd9780929/docs/research-articles/prepared/research-issue-0054/body-dated-addition.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9df1ef103394962ff6e1b7fdc18592bbd9780929/docs/research-articles/prepared/research-issue-0054/update-6415084917.md"
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/70fadfe56a7902935d8cc990d975b8642e6388e6/docs/research-articles/prepared/research-issue-0054/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/70fadfe56a7902935d8cc990d975b8642e6388e6/docs/research-articles/prepared/research-issue-0054/body-dated-addition.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/70fadfe56a7902935d8cc990d975b8642e6388e6/docs/research-articles/prepared/research-issue-0054/update-6415084917.md"
       ]
     },
     {
@@ -1303,13 +1367,13 @@
       ],
       "pr_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/88",
       "branch": "dot/research-article-preparation-20261031-b16",
-      "head_sha": "9df1ef103394962ff6e1b7fdc18592bbd9780929",
+      "head_sha": "70fadfe56a7902935d8cc990d975b8642e6388e6",
       "base_sha": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
       "group": "late",
       "unit_id": "docs/research-articles/prepared/research-issue-0055::article",
       "artifact_urls": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9df1ef103394962ff6e1b7fdc18592bbd9780929/docs/research-articles/prepared/research-issue-0055/body.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9df1ef103394962ff6e1b7fdc18592bbd9780929/docs/research-articles/prepared/research-issue-0055/update-6428812290.md"
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/70fadfe56a7902935d8cc990d975b8642e6388e6/docs/research-articles/prepared/research-issue-0055/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/70fadfe56a7902935d8cc990d975b8642e6388e6/docs/research-articles/prepared/research-issue-0055/update-6428812290.md"
       ]
     },
     {
@@ -1321,13 +1385,13 @@
       ],
       "pr_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/88",
       "branch": "dot/research-article-preparation-20261031-b16",
-      "head_sha": "9df1ef103394962ff6e1b7fdc18592bbd9780929",
+      "head_sha": "70fadfe56a7902935d8cc990d975b8642e6388e6",
       "base_sha": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
       "group": "late",
       "unit_id": "docs/research-articles/prepared/research-issue-0056::article",
       "artifact_urls": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9df1ef103394962ff6e1b7fdc18592bbd9780929/docs/research-articles/prepared/research-issue-0056/body.md",
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9df1ef103394962ff6e1b7fdc18592bbd9780929/docs/research-articles/prepared/research-issue-0056/update-6546709227.md"
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/70fadfe56a7902935d8cc990d975b8642e6388e6/docs/research-articles/prepared/research-issue-0056/body.md",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/70fadfe56a7902935d8cc990d975b8642e6388e6/docs/research-articles/prepared/research-issue-0056/update-6546709227.md"
       ]
     },
     {
@@ -1544,5 +1608,16 @@
         "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/1a3248f6a8810788b9875ce7e1cf417d28f33aea/docs/research-articles/prepared/research-pr-0072-methodology-audit/article.md"
       ]
     }
-  ]
+  ],
+  "publication_link_revision": {
+    "updated_at": "2026-10-31T22:29:45Z",
+    "reason": "Point current artifact mappings to the reviewed source-edition repairs in PRs 83, 84, 86 and 88. Earlier artifact/CI receipts remain under each batch historical_receipts. Original source clocks and preparation history are unchanged.",
+    "repaired_prs": [
+      83,
+      84,
+      86,
+      88
+    ],
+    "research_acceptance_granted": false
+  }
 }
