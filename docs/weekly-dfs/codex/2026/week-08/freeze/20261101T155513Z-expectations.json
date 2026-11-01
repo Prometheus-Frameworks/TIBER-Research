@@ -1,0 +1,207 @@
+{
+  "record_type": "freeze_expectation_packet",
+  "recorded_at": "2026-11-01T15:55:13.856Z",
+  "recorded_at_toronto": "2026-11-01T10:55:13.856-05:00",
+  "selection_ref": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json",
+  "original_salary_ref": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31-draftkings-153728.csv",
+  "expectations": [
+    {
+      "id": "2026-w08-1028-brown-role",
+      "subject": "Chase Brown",
+      "statement": "Retains a material rushing role with receiving involvement, without an exclusive goal-line role.",
+      "support": "11carries/5targets in the fresh Week7 box.",
+      "uncertainty": "Perine, efficiency and distribution may reduce benefit.",
+      "challenge": "Another back overtakes his opportunity or receiving work disappears.",
+      "observe": "Compare RB carries, targets and red-zone touches if accessible; snaps unassessable unless inspected.",
+      "source_urls": [
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873012"
+      ],
+      "recorded_at": "2026-10-28T10:17:42.246Z"
+    },
+    {
+      "id": "2026-w08-1028-cooper-role",
+      "subject": "Omar Cooper Jr.",
+      "statement": "Remains a receiving participant with designed opportunities, but full-time route allocation is not established.",
+      "support": "Five targets; attributed70%route share and primary play descriptions.",
+      "uncertainty": "Mitchell, Wilson and two TEs compete; last week's efficiency is extreme.",
+      "challenge": "Material reduction in participation or routes; big plays alone do not validate role.",
+      "observe": "Compare actual routes/targets and receiving efficiency separately; do not mistake man-coverage subset for all routes.",
+      "source_urls": [
+        "https://www.fantasylife.com/articles/fantasy/fantasy-football-takeaways-omar-cooper-utilization-report",
+        "https://www.newyorkjets.com/news/film-breakdown-omar-cooper-jr-week-7-top-plays-10-27-2026"
+      ],
+      "recorded_at": "2026-10-28T10:17:42.246Z"
+    },
+    {
+      "id": "2026-w08-1028-taylor-role",
+      "subject": "Mason Taylor",
+      "statement": "Retains some receiving involvement at the low TE salary, without requiring repeated multi-TD scoring.",
+      "support": "Six targets/five catches/62yards in the fresh Week7 box.",
+      "uncertainty": "Cooper/Wilson/Sadiq compete; one game may overstate role.",
+      "challenge": "Participation or targets shift substantially elsewhere.",
+      "observe": "Assess targets/routes when available, and score causes separately.",
+      "source_urls": [
+        "https://www.newyorkjets.com/news/mason-taylor-joined-omar-cooper-jr-in-jets-offensive-production-vs-dolphins-10-26-2026",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873015"
+      ],
+      "recorded_at": "2026-10-28T10:17:42.246Z"
+    },
+    {
+      "id": "2026-w08-1028-kcc-role",
+      "subject": "KC Concepcion Jr.",
+      "statement": "Retains a central Browns receiving role despite a limited passing environment.",
+      "support": "External report lists25/24/26%shares in prior healthy games then29%Week7.",
+      "uncertainty": "Fannin/Boston competition, offense and matchup can suppress points.",
+      "challenge": "Meaningful passing participation redistribution or availability change.",
+      "observe": "Compare targets/teamattempts and qualified routes when available; separate yards/TD from opportunity.",
+      "source_urls": [
+        "https://www.fantasylife.com/articles/fantasy/fantasy-football-takeaways-omar-cooper-utilization-report"
+      ],
+      "recorded_at": "2026-10-28T10:17:42.246Z"
+    },
+    {
+      "id": "2026-w08-1031-patriots-availability",
+      "subject": "Patriots DST supporting availability",
+      "statement": "DaQuan Jones and Dre'Mont Jones are expected to be available participants while Miami tackle Kadyn Proctor is unavailable; this supports the replacement's healthier-front premise, without predicting sacks or fantasy points.",
+      "support": "Both Patriots listed full Friday with no game designation; Proctor OUT after three DNPs. Jets alternative has Ossai/Sweat OUT and Bailey doubtful.",
+      "uncertainty": "Late availability or role changes; Davis/Elliss still questionable. Proctor's replacement may protect effectively, and Willis mobility/New England coverage can defeat the pressure premise.",
+      "challenge": "An unexpected Patriots front absence or minimal participation would challenge the availability premise; sound Miami protection would challenge its assumed practical value.",
+      "observe": "Official inactives and defensive participation/snaps; Miami protection lineup and team sacks allowed. Pressure rates only if accessible and attributable; otherwise unassessable. Separate this condition assessment from actual DK points.",
+      "source_urls": [
+        "https://www.patriots.com/team/injury-report/",
+        "https://www.newyorkjets.com/team/injury-report/",
+        "https://www.patriots.com/news/patriots-gameplan-self-scouting-the-pats-through-seven-games-and-prepping-for-the-dolphins-in-week-8"
+      ],
+      "recorded_at": "2026-10-31T10:54:11.625Z"
+    }
+  ],
+  "expectation_originals": [
+    {
+      "ids": [
+        "2026-w08-1028-brown-role",
+        "2026-w08-1028-cooper-role",
+        "2026-w08-1028-taylor-role",
+        "2026-w08-1028-kcc-role"
+      ],
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d81c103e9fd568776327e45a5af3b3485c768f0b/docs/weekly-dfs/codex/journal/20261028T101856Z.json"
+    },
+    {
+      "ids": [
+        "2026-w08-1031-patriots-availability"
+      ],
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/8677ade6b38f6402d9b1f21f160ad051b852afdd/docs/weekly-dfs/codex/journal/20261031T105411Z.json"
+    }
+  ],
+  "note": "Exact copies of previously prospective expectations and original clocks, not newly recorded predictions. Fresh uncertainty qualifications accompany freeze; no old expected values or clocks changed.",
+  "current_uncertainty": [
+    "Official Sunday inactives not established by inspected sources at this cutoff. Expected availability is not confirmation.",
+    "NE offensiveBrown/HendersonOUT plusMiamiweather; no guaranteed game script or sack uplift.",
+    "Buffalo supportingQ andJetsprotection/HallQ; no automatic two-inactive threshold orTaylorboost."
+  ],
+  "current_sources": [
+    {
+      "id": "freeze_pool",
+      "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "label": "pool",
+      "retrieved_at": "2026-11-01T15:53:13.667Z",
+      "publication_at": null,
+      "scope": "Current source inspected; a game designation or blank export status is not a final inactive list."
+    },
+    {
+      "id": "freeze_rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "label": "rules",
+      "retrieved_at": "2026-11-01T15:53:16.536Z",
+      "publication_at": null,
+      "scope": "Current source inspected; a game designation or blank export status is not a final inactive list."
+    },
+    {
+      "id": "freeze_schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+      "label": "schedule",
+      "retrieved_at": "2026-11-01T15:53:15.844Z",
+      "publication_at": null,
+      "scope": "Current source inspected; a game designation or blank export status is not a final inactive list."
+    },
+    {
+      "id": "freeze_buf",
+      "url": "https://www.buffalobills.com/team/injury-report/",
+      "label": "buf",
+      "retrieved_at": "2026-11-01T15:53:14.964Z",
+      "publication_at": null,
+      "scope": "Current source inspected; a game designation or blank export status is not a final inactive list."
+    },
+    {
+      "id": "freeze_jets",
+      "url": "https://www.newyorkjets.com/team/injury-report/",
+      "label": "jets",
+      "retrieved_at": "2026-11-01T15:53:15.036Z",
+      "publication_at": null,
+      "scope": "Current source inspected; a game designation or blank export status is not a final inactive list."
+    },
+    {
+      "id": "freeze_dal",
+      "url": "https://www.dallascowboys.com/news/updates-november-2026",
+      "label": "dal",
+      "retrieved_at": "2026-11-01T15:53:16.300Z",
+      "publication_at": null,
+      "scope": "November page supplies no new verifiedPickensOUT."
+    },
+    {
+      "id": "freeze_ne",
+      "url": "https://www.patriots.com/team/injury-report/",
+      "label": "ne",
+      "retrieved_at": "2026-11-01T15:53:14.996Z",
+      "publication_at": null,
+      "scope": "Current source inspected; a game designation or blank export status is not a final inactive list."
+    },
+    {
+      "id": "freeze_tb",
+      "url": "https://www.buccaneers.com/team/injury-report/",
+      "label": "tb",
+      "retrieved_at": "2026-11-01T15:53:15.084Z",
+      "publication_at": null,
+      "scope": "Current source inspected; a game designation or blank export status is not a final inactive list."
+    },
+    {
+      "id": "freeze_nws_mia",
+      "url": "https://forecast.weather.gov/MapClick.php?lat=25.958&lon=-80.239&unit=0&lg=english&FcstType=text&TextType=1",
+      "label": "nws_mia",
+      "retrieved_at": "2026-11-01T15:53:14.829Z",
+      "publication_at": "2026-11-01T03:47:00-05:00",
+      "scope": "Nearby grid broad daytime period, not field/kickoff measurement."
+    },
+    {
+      "id": "freeze_nws_tb",
+      "url": "https://forecast.weather.gov/MapClick.php?lat=27.976&lon=-82.503&unit=0&lg=english&FcstType=text&TextType=1",
+      "label": "nws_tb",
+      "retrieved_at": "2026-11-01T15:53:14.978Z",
+      "publication_at": "2026-11-01T02:01:00-05:00",
+      "scope": "Nearby grid broad daytime period, not field/kickoff measurement."
+    },
+    {
+      "id": "freeze_proj",
+      "url": "https://fantasysportsedge.com/nfl/projections",
+      "label": "proj",
+      "retrieved_at": "2026-11-01T15:53:14.945Z",
+      "publication_at": null,
+      "scope": "13-gameSun–Mon caption; excluded from11Sunday model estimates."
+    },
+    {
+      "id": "freeze_nflinj",
+      "url": "https://www.nfl.com/news/nfl-week-8-injury-report-2026-season",
+      "label": "nflinj",
+      "retrieved_at": "2026-11-01T15:53:16.691Z",
+      "publication_at": null,
+      "scope": "Current source inspected; a game designation or blank export status is not a final inactive list."
+    },
+    {
+      "id": "freeze_expect",
+      "url": "https://www.footballguys.com/article/2026-gameday-injury-expectations-week08",
+      "label": "expect",
+      "retrieved_at": "2026-11-01T15:54:06.075Z",
+      "publication_at": null,
+      "scope": "Attributed secondary expected availability, not official inactives; page publicationOct31, update clocks unknown. Its AJBrownQ discussion is superseded by primaryOUT; not imported."
+    }
+  ]
+}
