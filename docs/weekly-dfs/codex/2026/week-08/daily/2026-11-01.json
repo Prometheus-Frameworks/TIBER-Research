@@ -1,0 +1,634 @@
+{
+  "record_type": "daily_snapshot",
+  "notebook_convention": "Conversational research notebook; not a governed Research contract or independent review.",
+  "id": "2026-w08-2026-11-01-daily",
+  "kind": "daily",
+  "status": "complete",
+  "frozen": false,
+  "recorded_at_utc": "2026-11-01T11:16:34.987Z",
+  "recorded_at_toronto": "2026-11-01T06:16:34.987-05:00",
+  "evidence_cutoff_utc": "2026-11-01T11:16:34.987Z",
+  "season": 2026,
+  "week": 8,
+  "platform": "DraftKings",
+  "slate_date": "2026-11-01",
+  "draft_group_id": "153728",
+  "slate_label": "2026 Week8 Sunday main — official group153728, 11games",
+  "salary_cap": 50000,
+  "salary_total": 50000,
+  "salary_remaining": 0,
+  "budget_note": "Nine held at50000/$0; no forced allocation change.",
+  "projected_total": null,
+  "actual_total": null,
+  "projection": null,
+  "official_pool_verified": true,
+  "official_salary_export_verified": true,
+  "salary_basis": "official_export",
+  "pool_status": "Fresh official group153728 export562rows/11games, no additions/removals or salary/position/game changes versusOct31. Four status changes retained separately; selected nine unchanged. Availability not certified.",
+  "earliest_candidate_kickoff": "2026-11-01T18:00:00Z",
+  "deadline_toronto": "2026-11-01T12:30:00-05:00",
+  "deadline_utc": "2026-11-01T17:30:00Z",
+  "deadline_note": "Toronto daylight saving time ends November 1. Deadline remains local 12:30, before earliest candidate kickoff at 13:00; earlier included kickoff would supersede.",
+  "games": [
+    {
+      "away": "BAL",
+      "home": "BUF",
+      "kickoff_et": "13:00",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "TEN",
+      "home": "CIN",
+      "kickoff_et": "13:00",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "ARI",
+      "home": "DAL",
+      "kickoff_et": "13:00",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "MIN",
+      "home": "DET",
+      "kickoff_et": "13:00",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "IND",
+      "home": "JAX",
+      "kickoff_et": "13:00",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "LV",
+      "home": "NYJ",
+      "kickoff_et": "13:00",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "CLE",
+      "home": "PIT",
+      "kickoff_et": "13:00",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "ATL",
+      "home": "TB",
+      "kickoff_et": "13:00",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "LAC",
+      "home": "LAR",
+      "kickoff_et": "16:05",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "KC",
+      "home": "DEN",
+      "kickoff_et": "16:25",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "NE",
+      "home": "MIA",
+      "kickoff_et": "16:25",
+      "platform_membership": "verified group153728"
+    }
+  ],
+  "excluded_windows": [
+    "CAR@GB Thursday October 29",
+    "PHI@WAS Sunday night November 1",
+    "CHI@SEA Monday November 2"
+  ],
+  "byes": [
+    "HOU",
+    "NO",
+    "NYG",
+    "SF"
+  ],
+  "picks": [
+    {
+      "slot": "QB",
+      "position": "QB",
+      "player": "Josh Allen",
+      "team": "BUF",
+      "opponent": "BAL",
+      "home": true,
+      "salary": 7700,
+      "draftkings_player_id": "44664390",
+      "eligible_slots": [
+        "QB"
+      ],
+      "game_info": "BAL@BUF 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Hold7700 premiumQB; BuffaloMoore/Kincaid/Brown remainQ, so supporting efficiency/protection uncertain. No guaranteed rushing floor.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "1101_pool",
+        "1101_buf"
+      ],
+      "prior_role_evidence": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json"
+    },
+    {
+      "slot": "RB",
+      "position": "RB",
+      "player": "Bucky Irving",
+      "team": "TB",
+      "opponent": "ATL",
+      "home": true,
+      "salary": 6400,
+      "draftkings_player_id": "44664485",
+      "eligible_slots": [
+        "RB",
+        "FLEX"
+      ],
+      "game_info": "ATL@TB 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Hold6400 rushing-role allocation; rest→FP retained, Gainwell/GoedekeQ. Tampa rain does not guarantee more productive carries.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "1101_pool",
+        "1101_tb",
+        "1101_nws_tb"
+      ],
+      "prior_role_evidence": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json"
+    },
+    {
+      "slot": "RB",
+      "position": "RB",
+      "player": "Chase Brown",
+      "team": "CIN",
+      "opponent": "TEN",
+      "home": true,
+      "salary": 6300,
+      "draftkings_player_id": "44664487",
+      "eligible_slots": [
+        "RB",
+        "FLEX"
+      ],
+      "game_info": "TEN@CIN 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Hold6300 receiving/rushing participant based on retained role evidence; no new role change established.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "1101_pool",
+        "1101_nfl_inj"
+      ],
+      "prior_role_evidence": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json"
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Jameson Williams",
+      "team": "DET",
+      "opponent": "MIN",
+      "home": true,
+      "salary": 6000,
+      "draftkings_player_id": "44664743",
+      "eligible_slots": [
+        "WR",
+        "FLEX"
+      ],
+      "game_info": "MIN@DET 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Hold6000 Detroit allocation without speculative StBrown/Gibbsabsenceboost; no new selected-player restriction established.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "1101_pool",
+        "1101_nfl_inj"
+      ],
+      "prior_role_evidence": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json"
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Omar Cooper Jr.",
+      "team": "NYJ",
+      "opponent": "LV",
+      "home": true,
+      "salary": 4800,
+      "draftkings_player_id": "44664777",
+      "eligible_slots": [
+        "WR",
+        "FLEX"
+      ],
+      "game_info": "LV@NYJ 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Hold4800 role/price choice; Jets protection and receiver competition remain risks. No confirmed standalone target floor.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "1101_pool",
+        "1101_jets"
+      ],
+      "prior_role_evidence": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json"
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Zay Flowers",
+      "team": "BAL",
+      "opponent": "BUF",
+      "home": false,
+      "salary": 7200,
+      "draftkings_player_id": "44664725",
+      "eligible_slots": [
+        "WR",
+        "FLEX"
+      ],
+      "game_info": "BAL@BUF 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Hold7200 Ravens receiver allocation; Buffalo personnel losses affect the game indirectly, not his own teammate availability.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "1101_pool",
+        "1101_nfl_inj"
+      ],
+      "prior_role_evidence": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json"
+    },
+    {
+      "slot": "TE",
+      "position": "TE",
+      "player": "Mason Taylor",
+      "team": "NYJ",
+      "opponent": "LV",
+      "home": true,
+      "salary": 3300,
+      "draftkings_player_id": "44665165",
+      "eligible_slots": [
+        "TE",
+        "FLEX"
+      ],
+      "game_info": "LV@NYJ 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Hold3300 TE participation; Hall absence does not automatically transfer targets, and routes/blocking remain unresolved.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "1101_pool",
+        "1101_jets"
+      ],
+      "prior_role_evidence": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json"
+    },
+    {
+      "slot": "FLEX",
+      "position": "WR",
+      "player": "KC Concepcion Jr.",
+      "team": "CLE",
+      "opponent": "PIT",
+      "home": false,
+      "salary": 4700,
+      "draftkings_player_id": "44664781",
+      "eligible_slots": [
+        "WR",
+        "FLEX"
+      ],
+      "game_info": "CLE@PIT 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Hold4700 target-participation case; PickensOUT trigger unconfirmed, so no Flournoy substitution.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "1101_pool",
+        "1101_dal_oct"
+      ],
+      "prior_role_evidence": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json"
+    },
+    {
+      "slot": "DST",
+      "position": "DST",
+      "player": "Patriots",
+      "team": "NE",
+      "opponent": "MIA",
+      "home": false,
+      "salary": 3600,
+      "draftkings_player_id": "44665381",
+      "eligible_slots": [
+        "DST"
+      ],
+      "game_info": "NE@MIA 11/01/2026 04:25PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Hold3600 defensive allocation despite newly confirmed offensive Brown/HendersonOUT. Prior healthier-front/ProctorOUT case survives, but shorthanded offense and rainy Miami may reduce pressure opportunities.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "1101_pool",
+        "1101_ne",
+        "1101_ne_update",
+        "1101_nws_mia"
+      ],
+      "prior_role_evidence": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json"
+    }
+  ],
+  "unfilled_slots": [],
+  "summary": "Sunday morning: unchanged nine50000/$0, same jointly endorsed selection. Patriots offensive Brown/Henderson nowOUT; weather and Sunday inactives remain material uncertainties. Not frozen.",
+  "counterargument": "Patriots offense is now shorthanded, potentially changing the supporting game script for its DST; Miami rain and lower dropbacks are not a guaranteed defensive boost. Buffalo supporting availability and Jets protection/target competition remain unresolved.",
+  "revisions": [],
+  "revision_classification": "unchanged",
+  "previous_snapshot_id": "2026-w08-2026-10-31-daily",
+  "cross_slate_baseline_id": "2026-w07-20261025T144553Z-freeze",
+  "important_unchanged_picks": [
+    {
+      "player": "Josh Allen",
+      "reason": "Hold7700 premiumQB; BuffaloMoore/Kincaid/Brown remainQ, so supporting efficiency/protection uncertain. No guaranteed rushing floor."
+    },
+    {
+      "player": "Bucky Irving",
+      "reason": "Hold6400 rushing-role allocation; rest→FP retained, Gainwell/GoedekeQ. Tampa rain does not guarantee more productive carries."
+    },
+    {
+      "player": "Chase Brown",
+      "reason": "Hold6300 receiving/rushing participant based on retained role evidence; no new role change established."
+    },
+    {
+      "player": "Jameson Williams",
+      "reason": "Hold6000 Detroit allocation without speculative StBrown/Gibbsabsenceboost; no new selected-player restriction established."
+    },
+    {
+      "player": "Omar Cooper Jr.",
+      "reason": "Hold4800 role/price choice; Jets protection and receiver competition remain risks. No confirmed standalone target floor."
+    },
+    {
+      "player": "Zay Flowers",
+      "reason": "Hold7200 Ravens receiver allocation; Buffalo personnel losses affect the game indirectly, not his own teammate availability."
+    },
+    {
+      "player": "Mason Taylor",
+      "reason": "Hold3300 TE participation; Hall absence does not automatically transfer targets, and routes/blocking remain unresolved."
+    },
+    {
+      "player": "KC Concepcion Jr.",
+      "reason": "Hold4700 target-participation case; PickensOUT trigger unconfirmed, so no Flournoy substitution."
+    },
+    {
+      "player": "Patriots",
+      "reason": "Hold3600 defensive allocation despite newly confirmed offensive Brown/HendersonOUT. Prior healthier-front/ProctorOUT case survives, but shorthanded offense and rainy Miami may reduce pressure opportunities."
+    }
+  ],
+  "research_origin": "agent_chosen",
+  "operator_input": "Operator calls publicly posted Oct27 11:08:16UTC favor Flowers and BAL@BUF and fade Garrett Wilson. Original supplied clock unknown; stated prior Claude exposure retained. Codex had prior qualitative exposure before this v1; no blind-to-operator claim. No Week8 Claude picks inspected.",
+  "collaboration": {
+    "codex_v1_ready": "ready; October28 original retained",
+    "claude_v1_ready": "excluded this week; operator handoff gap; no original reconstructed",
+    "grok_questions_ready": "ready; three actual questions retained with skipped-input/search-summary/clock limits",
+    "collaboration_ready": "ready; actual exchange and both authors' question dispositions retained",
+    "final_frozen": "not frozen; morning daily only",
+    "selection_endorsement": "Both authors endorsed exact888e327 selection. This morning retains identical players/slots/original salaries; these new notes are Codex-authored, not a newly coauthored record.",
+    "contribution_record": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/bd43aa1e238f4cb9e2bb7f7bbecc263bc54a1f26/docs/weekly-dfs/codex/2026/week-08/collaboration/20261031T142733Z-integration-closeout.json",
+    "next_action": "Existing final pass rechecks material availability, Pickens condition, weather and exact expectations before actual freeze; do not reopen routine author relay. Material changed selections cannot inherit mutual endorsement."
+  },
+  "unresolved_assumptions": [
+    "Actual Sunday availability/deployment, including Buffalo supporting players, JetsHall/Parham, PatriotsDavis/Elliss andBucsGainwell/Goedeke.",
+    "Miami/Tampa kickoff-period weather and potential game disruption; broad forecasts do not establish delays.",
+    "Patriots offensive shortages and their effect on possession/pressure opportunities.",
+    "Cooper/Taylor target competition and Taylor route/blocking use.",
+    "Complete compatible fantasy projection pool unavailable."
+  ],
+  "what_changes_view": [
+    "Material official inactive or deployment evidence before actualfreeze; do not wait until hardcutoff to begin.",
+    "PickensOUT before actualfreeze prompts Flournoy-vs-Concepcion role comparison, notautomatic substitution.",
+    "Verified whole-lineup alternative with stronger role evidence; later changed selections need truthful endorsement scope.",
+    "Once validly frozen, later news is observation only."
+  ],
+  "sources": [
+    {
+      "id": "1101_week7",
+      "label": "week7",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+      "retrieved_at": "2026-11-01T11:14:58.234Z",
+      "retrieved_at_toronto": "2026-11-01T06:14:58.234-05:00",
+      "publication_at": null,
+      "scope": "Actual current page inspected; retrieval is not publication and game designation is not Sunday inactive confirmation."
+    },
+    {
+      "id": "1101_box",
+      "label": "box",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873015",
+      "retrieved_at": "2026-11-01T11:14:58.297Z",
+      "retrieved_at_toronto": "2026-11-01T06:14:58.297-05:00",
+      "publication_at": null,
+      "scope": "Actual current page inspected; retrieval is not publication and game designation is not Sunday inactive confirmation."
+    },
+    {
+      "id": "1101_pool",
+      "label": "pool",
+      "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "retrieved_at": "2026-11-01T11:14:56.624Z",
+      "retrieved_at_toronto": "2026-11-01T06:14:56.624-05:00",
+      "publication_at": null,
+      "scope": "Actual current page inspected; retrieval is not publication and game designation is not Sunday inactive confirmation."
+    },
+    {
+      "id": "1101_rules",
+      "label": "rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-11-01T11:14:58.337Z",
+      "retrieved_at_toronto": "2026-11-01T06:14:58.337-05:00",
+      "publication_at": null,
+      "scope": "Actual current page inspected; retrieval is not publication and game designation is not Sunday inactive confirmation."
+    },
+    {
+      "id": "1101_schedule",
+      "label": "schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+      "retrieved_at": "2026-11-01T11:14:58.114Z",
+      "retrieved_at_toronto": "2026-11-01T06:14:58.114-05:00",
+      "publication_at": null,
+      "scope": "Actual current page inspected; retrieval is not publication and game designation is not Sunday inactive confirmation."
+    },
+    {
+      "id": "1101_buf",
+      "label": "buf",
+      "url": "https://www.buffalobills.com/team/injury-report/",
+      "retrieved_at": "2026-11-01T11:14:57.210Z",
+      "retrieved_at_toronto": "2026-11-01T06:14:57.210-05:00",
+      "publication_at": null,
+      "scope": "Actual current page inspected; retrieval is not publication and game designation is not Sunday inactive confirmation."
+    },
+    {
+      "id": "1101_jets",
+      "label": "jets",
+      "url": "https://www.newyorkjets.com/team/injury-report/",
+      "retrieved_at": "2026-11-01T11:14:57.260Z",
+      "retrieved_at_toronto": "2026-11-01T06:14:57.260-05:00",
+      "publication_at": null,
+      "scope": "Actual current page inspected; retrieval is not publication and game designation is not Sunday inactive confirmation."
+    },
+    {
+      "id": "1101_ne",
+      "label": "ne",
+      "url": "https://www.patriots.com/team/injury-report/",
+      "retrieved_at": "2026-11-01T11:14:57.243Z",
+      "retrieved_at_toronto": "2026-11-01T06:14:57.243-05:00",
+      "publication_at": null,
+      "scope": "Actual current page inspected; retrieval is not publication and game designation is not Sunday inactive confirmation."
+    },
+    {
+      "id": "1101_tb",
+      "label": "tb",
+      "url": "https://www.buccaneers.com/team/injury-report/",
+      "retrieved_at": "2026-11-01T11:14:57.150Z",
+      "retrieved_at_toronto": "2026-11-01T06:14:57.150-05:00",
+      "publication_at": null,
+      "scope": "Actual current page inspected; retrieval is not publication and game designation is not Sunday inactive confirmation."
+    },
+    {
+      "id": "1101_nws_mia",
+      "label": "nws_mia",
+      "url": "https://forecast.weather.gov/MapClick.php?lat=25.958&lon=-80.239&unit=0&lg=english&FcstType=text&TextType=1",
+      "retrieved_at": "2026-11-01T11:14:57.406Z",
+      "retrieved_at_toronto": "2026-11-01T06:14:57.406-05:00",
+      "publication_at": "2026-11-01T03:47:00-05:00",
+      "scope": "Nearby grid, broad daytime period; not measured field conditions or exact kickoff."
+    },
+    {
+      "id": "1101_nws_tb",
+      "label": "nws_tb",
+      "url": "https://forecast.weather.gov/MapClick.php?lat=27.976&lon=-82.503&unit=0&lg=english&FcstType=text&TextType=1",
+      "retrieved_at": "2026-11-01T11:14:57.505Z",
+      "retrieved_at_toronto": "2026-11-01T06:14:57.505-05:00",
+      "publication_at": "2026-11-01T02:01:00-05:00",
+      "scope": "Nearby grid, broad daytime period; not measured field conditions or exact kickoff."
+    },
+    {
+      "id": "1101_proj",
+      "label": "proj",
+      "url": "https://fantasysportsedge.com/nfl/projections",
+      "retrieved_at": "2026-11-01T11:14:57.542Z",
+      "retrieved_at_toronto": "2026-11-01T06:14:57.542-05:00",
+      "publication_at": null,
+      "scope": "13 Sun–Mon model pool not selected11Sunday; no estimates imported."
+    },
+    {
+      "id": "1101_ne_update",
+      "label": "ne_update",
+      "url": "https://www.patriots.com/news/roster-analysis-patriots-downgrade-wr-a-j-brown-rb-treveyon-henderson-to-out-for-week-8-vs-dolphins",
+      "retrieved_at": "2026-11-01T11:15:16.336Z",
+      "retrieved_at_toronto": "2026-11-01T06:15:16.336-05:00",
+      "publication_at": "2026-10-31T16:00:00-04:00",
+      "scope": "Actual current page inspected; retrieval is not publication and game designation is not Sunday inactive confirmation."
+    },
+    {
+      "id": "1101_dal_oct",
+      "label": "dal_oct",
+      "url": "https://www.dallascowboys.com/news/updates-october-2026",
+      "retrieved_at": "2026-11-01T11:15:16.519Z",
+      "retrieved_at_toronto": "2026-11-01T06:15:16.519-05:00",
+      "publication_at": null,
+      "scope": "Actual current page inspected; retrieval is not publication and game designation is not Sunday inactive confirmation."
+    },
+    {
+      "id": "1101_dal",
+      "label": "dal",
+      "url": "https://www.dallascowboys.com/news/updates-november-2026",
+      "retrieved_at": "2026-11-01T11:14:57.498Z",
+      "retrieved_at_toronto": "2026-11-01T06:14:57.498-05:00",
+      "publication_at": null,
+      "scope": "November update page did not establish a new Pickens ruling; dated October source retained."
+    },
+    {
+      "id": "1101_nfl_inj",
+      "label": "nfl_inj",
+      "url": "https://www.nfl.com/news/nfl-week-8-injury-report-2026-season",
+      "retrieved_at": "2026-11-01T11:15:17.829Z",
+      "retrieved_at_toronto": "2026-11-01T06:15:17.829-05:00",
+      "publication_at": null,
+      "scope": "Actual current page inspected; retrieval is not publication and game designation is not Sunday inactive confirmation."
+    }
+  ],
+  "runtime": {
+    "agent": "Codex",
+    "model": "gpt-6.1-sol",
+    "tools": [
+      "GitHub",
+      "Firecrawl",
+      "TIBER capability reader"
+    ],
+    "cost": null,
+    "retained_output_limit": "Fresh capability read withholdsROP/TTS/Forecast; no qualified retained output accessed, not evidence of nonexistence."
+  },
+  "expectations": [],
+  "previous_snapshot_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json",
+  "season_study": {
+    "effective_slate": "2026-11-01",
+    "first_complete_baseline_id": "2026-w08-2026-10-28-daily",
+    "operator_seat": "qualitative calls received; no override/acceptance",
+    "projection_only_baseline": "unavailable; freeze snapshot not yet exists and no complete compatible projection pool",
+    "override_delta": null,
+    "pre_override_candidate": null
+  },
+  "findings": [
+    "Prior Sunday NFL Week7 games remainFINAL. Fresh Jets–Miami box retains key scoring inputs (Geno287passyards/3TD/1INT, Braelon104rush/30receiving, Cooper115receiving/TD); no material point correction or settled DK evidence established in this limited pass. Existing Week6freeze145.98 andWeek7freeze114.22 remain provisional.",
+    "Official562-row export unchanged in membership/prices/positions/games. Status-only changes: A.J.BrownQ→OUT,HendersonQ→OUT,RJHarveyOUT→IR,JackBechIR→blank. Blank export status does not establish game availability.",
+    "Primary Patriots Oct31 4pmEDT roster article confirms A.J.Brown/Henderson did not travel and areOUT. Team analysis anticipates more Henry/Raridon use but this is attributed forward interpretation, not measured Week8 deployment. Offensive shortages weaken a simple favorable-game-script assumption forDST.",
+    "Primary NEreport still has Davis/EllissQ and MiamiProctorOUT/WillisFPwithoutdesignation; no Sunday inactive list established by this early read.",
+    "Official Bills still lists DJMoore/Kincaid/SpencerBrownQ; JetsHall/ParhamQ andMaxMitchellOUT. No automatic Taylor boost or two-inactive threshold; actual role/protection effects remain uncertain.",
+    "Current primary Dallas October update still says PickensQ, coachexpectsplay; November page adds no verifiedOUT. Existing Flournoy condition is not triggered.",
+    "NWS ScottLake/Miami grid updated03:47EST: rain/thunderstorms80%, east11–14mph,gust26; flood watch linked. Broad daytime period, not exact4:25kickoff.",
+    "NWS Tampa grid updated02:01EST: showers/thunderstorms60%, east9–11mph,gust20, likely rain1–3pm. No automatic rushing/DST fantasy uplift.",
+    "Projection page remains13Sunday–Mondaygames, DK dataOct31 23:06EDT; selected11Sunday pool fixed. New projected points remainnull.",
+    "Fresh PR43 has no new participant contribution after the integration closeout. Claude originalv1 remains excluded by operator; actual Claude/Grok revision work and limits retained."
+  ],
+  "first_complete_v1": false,
+  "author": "Codex; same selection previously endorsed by Claude",
+  "projection_gap": "Current external model remains13Sun–Mon versus selected11Sunday; all new estimatesnull.",
+  "additions": [],
+  "alternatives": [
+    {
+      "players": [
+        "Hunter Henry",
+        "Jets DST",
+        "Keenan Allen"
+      ],
+      "disposition": "screened; decline whole package",
+      "reason": "Replace Taylor3300/Patriots3600/Concepcion4700 withHenry4300/Jets2800/Keenan4500: net0, total50000. NE article supports investigatingTEusage afterWRabsences, but that is not measured role. Funding restores depleted Jets front and replaces Concepcion receiving role without a verified superior comparison. No complete coherent model establishes an upgrade."
+    }
+  ],
+  "expectation_references": [
+    {
+      "id": "2026-w08-1028-brown-role",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d81c103e9fd568776327e45a5af3b3485c768f0b/docs/weekly-dfs/codex/journal/20261028T101856Z.json"
+    },
+    {
+      "id": "2026-w08-1028-cooper-role",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d81c103e9fd568776327e45a5af3b3485c768f0b/docs/weekly-dfs/codex/journal/20261028T101856Z.json"
+    },
+    {
+      "id": "2026-w08-1028-taylor-role",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d81c103e9fd568776327e45a5af3b3485c768f0b/docs/weekly-dfs/codex/journal/20261028T101856Z.json"
+    },
+    {
+      "id": "2026-w08-1028-kcc-role",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d81c103e9fd568776327e45a5af3b3485c768f0b/docs/weekly-dfs/codex/journal/20261028T101856Z.json"
+    },
+    {
+      "id": "2026-w08-1031-patriots-availability",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/8677ade6b38f6402d9b1f21f160ad051b852afdd/docs/weekly-dfs/codex/journal/20261031T105411Z.json"
+    }
+  ],
+  "validation": {
+    "unique_players": true,
+    "slots_valid": true,
+    "cap_valid": true,
+    "selected_pool_rows_verified": true,
+    "distinct_games": 7,
+    "complete": true,
+    "availability_certified": false
+  }
+}
