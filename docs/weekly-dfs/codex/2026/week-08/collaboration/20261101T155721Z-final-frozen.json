@@ -1,0 +1,35 @@
+{
+  "record_type": "collaboration_stage_receipt",
+  "id": "2026-w08-r2-final-frozen",
+  "cycle": "2026-w08-2026-11-01",
+  "round": 2,
+  "stage": "final_frozen",
+  "status": "ready",
+  "author": "Claude + Codex",
+  "final_editor": "Codex",
+  "posted_by": "Codex authoring session; own archive/PR announcement",
+  "recorded_at": "2026-11-01T15:57:21.855Z",
+  "recorded_at_toronto": "2026-11-01T10:57:21.855-05:00",
+  "completed_at": "2026-11-01T15:56:36.648Z",
+  "exact_inputs": {
+    "morning_candidate": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6569b9b38b0ae1dd56e1e43671c6a6c6e70bfc9d/docs/weekly-dfs/codex/2026/week-08/daily/2026-11-01.json",
+    "jointly_endorsed_candidate": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json",
+    "contributions": [
+      "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/932ae4b9157ab84652089359104107484d579872/docs/weekly-dfs/codex/2026/week-08/collaboration/20261031T141100Z-collaboration-ready.json",
+      "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/b82e938e5a1da8b9b685d41bae6d775e0478cd3e/docs/weekly-dfs/codex/2026/week-08/collaboration/20261031T142105Z-grok-questions-receipt.json",
+      "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/bd43aa1e238f4cb9e2bb7f7bbecc263bc54a1f26/docs/weekly-dfs/codex/2026/week-08/collaboration/20261031T142733Z-integration-closeout.json"
+    ],
+    "expectation_packet": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2c37adf21dcaa14c68691c37b534fe422498f34f/docs/weekly-dfs/codex/2026/week-08/freeze/20261101T155513Z-expectations.json"
+  },
+  "immutable_output": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/8268a3002eef31f3e4e06f6d2410b5111e59eb2d/docs/weekly-dfs/codex/2026/week-08/freeze/20261101T155513Z.json",
+  "output_commit": "8268a3002eef31f3e4e06f6d2410b5111e59eb2d",
+  "frozen_at": "2026-11-01T15:56:33.550Z",
+  "deadline": "2026-11-01T17:30:00Z",
+  "deadline_status": "verified archive before cutoff",
+  "salary_total": 50000,
+  "salary_remaining": 0,
+  "jointly_endorsed": true,
+  "missing_original": "Claudev1excludedthisweekunderoperatorhandoffamendment",
+  "grok_limit": "Questionpassreceivedwithskippedinputs/searchsummary-onlyexternalclaims/unverifiedclock;Codexfreshsourcechecksseparate.",
+  "late_rule": "Selection is immutable once this freeze is saved. Later news/inactives/results append observations only, even before hardcutoff."
+}
