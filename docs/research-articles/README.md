@@ -1,9 +1,18 @@
-# Shared research article format — v0 candidate
+# Shared research article format — v0
 
 Joe requested a consistent format for research postings and preparation of the
-existing articles on October 31, 2026. This document proposes the shared publishing
-shape. It remains a draft in PR #74 pending review/merge; using it for a bounded
-preparation task does not activate the governed Research runtime.
+existing articles on October 31, 2026. The shared publishing shape and templates
+are now on `main` through [PR #74](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/74),
+merged October 31. This is an experimental publishing convention; availability
+does not activate the governed Research runtime or establish research acceptance.
+
+For the completed finite format-preparation pass, start at the
+[prepared-article collection](prepared/README.md). Its [publication index](prepared/publication-index.json)
+maps 60 public-safe article units to 114 separate editions; the
+[source queue](preparation-queue.json) accounts for the 53 source issues, including
+explicit exclusions. The collection spans all three [research areas](../README.md).
+Read each origin record for subsequent research, rather than treating a historical
+prepared edition as its latest findings.
 
 Use [the full article template](templates/article.md) for new articles and
 [the dated update template](templates/update.md) for follow-up findings. Matchup,
@@ -65,6 +74,11 @@ new formatting record itself grants no authority.
 
 ## Existing-article preparation
 
+The following is the October 31 preparation brief and its preservation rules.
+The finite pass is now complete with explicit exclusions, as recorded in the
+[prepared index](prepared/README.md); its original assignment language below is
+historical, not a pending task or a transfer of continuing research ownership.
+
 [preparation-queue.json](preparation-queue.json) inventories every non-PR issue
 returned by the October 31 all-state repository census through #75: **53 records**.
 This is a triage universe, not a claim that all 53 are articles. Dot must read each
@@ -99,7 +113,7 @@ Preparation rules:
    not-an-article or blocked dispositions. Formatting acceptance and independent
    research review are different checks. No automatic merge or issue closure.
 
-Suggested first batch: #73, #75 and #69, as three upcoming-game records. #71's
+Original suggested first batch: #73, #75 and #69, as three upcoming-game records. #71's
 active closeout pilot remains Codex-owned; Dot can record a link and format needs
 without editing the pilot's files or duplicating its scheduled assessment.
 
@@ -111,7 +125,8 @@ needs its own explicit contract and acceptance decision. Markdown/YAML layout is
 not an authorized machine-ingestion interface. No parser, automatic migration,
 database or claim promotion is introduced by this document.
 
-The task handoff is prepared separately. Execution is not active until Dot
-acknowledges the assignment and reports the actual branch/checkpoint. Existing
-owners and scheduled research remain in place; this preparation brief does not
-silently give Dot continuing ownership of all research investigations.
+The [task handoff #76](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/76)
+and preparation receipts retain the assignment and execution history. Preparation
+and merge do not establish substantive independent review, downstream acceptance
+or activation. Existing owners and scheduled research remain in place; this
+finite preparation does not give Dot continuing ownership of all investigations.

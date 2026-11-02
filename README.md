@@ -2,14 +2,68 @@
 
 > **[TIBER Now — what works, what we’re building, and what’s still conceptual](https://github.com/Prometheus-Frameworks/TIBER-Fantasy/blob/main/docs/TIBER_NOW.md)**
 
-TIBER Research is the file-backed custody layer for bounded, replayable research.
-It stores immutable job inputs, append-oriented attempt state, structured candidate
-findings, independent reviews, and terminal seals.
+TIBER Research is an open research notebook for football and the agents, models,
+and methods used to investigate it. People and their agents ask questions,
+compare explanations, retain evidence, and revisit their conclusions as new
+information arrives. This repository gives that work a shared, inspectable record.
 
-The repository currently contains the Stage 0 contracts and a Stage 1 activation
-preflight. It does not yet conduct football research, call a model or external
-source, schedule work, access private context, promote claims, or change a
-downstream TIBER artifact.
+It contains player and game studies, research-method proposals, capability
+evaluations, and an offline toolchain for preserving governed research records.
+These have different evidence and review states. Start with the subject you want
+to understand, then read the linked record's scope, cutoff, findings, and limits.
+
+## Explore the research
+
+| Area | Main question | Where to start |
+| --- | --- | --- |
+| **Agentic research** | How can people and agents investigate, coordinate, remember, and review well? | [Research methods, agent entry, collaboration, and durable evidence](docs/README.md#agentic-research) |
+| **Model capabilities and testing** | What can a model or tool demonstrate under specified inputs and evaluation conditions? | [Agent evaluations, football models, simulations, and capability checks](docs/README.md#model-capabilities-and-testing) |
+| **Football research** | What is happening with a player, team, or matchup, and what could explain it? | [Player studies, receiving structures, game previews, and fantasy opportunity](docs/README.md#football-research) |
+
+These areas describe the **subject of the question**. A football study written
+with an agent belongs in football research; a study of that agent's research
+method belongs in agentic research. Mixed work can be linked from more than one
+area while keeping one source record.
+
+The [documentation guide](docs/README.md) maps existing files and selected
+issue-based investigations into these areas. It also explains
+[how to classify new work](docs/README.md#adding-and-classifying-work) and where
+to find the [shared infrastructure](docs/README.md#shared-infrastructure).
+The [issue list](https://github.com/Prometheus-Frameworks/TIBER-Research/issues)
+holds the broader investigation history and dated updates.
+
+## Current entry points
+
+Navigation snapshot: **November 1, 2026**. Follow each linked record and its
+amendments for the latest status.
+
+| Work | What the linked material establishes |
+| --- | --- |
+| [Travis Hunter receiving study](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/45) and [Cardinals–Cowboys preview](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/71) | Football investigations with bounded questions and dated evidence. Read each record's own findings, gaps, and review history. |
+| [MHJ career study](docs/studies/mhj-career-2026w4/README.md) | A retained manual study with source records, reproducible calculations, and explicit qualification limits. |
+| [Experimental matchup-preview method](.agents/skills/tiber-matchup-preview/SKILL.md) | A repository-local research skill on `main`, with question selection, evidence cards, and an [evaluation procedure](.agents/skills/tiber-matchup-preview/references/evaluation.md). Its method and forecasting quality require separate assessment. |
+| [Shared article format](docs/research-articles/README.md) and [game-study closeout](docs/game-studies/README.md) | Templates and bounded pilot infrastructure on `main` through merged [PR #74](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/74). Infrastructure availability does not establish completed postgame work or downstream acceptance. |
+| [Prepared-article collection](docs/research-articles/prepared/README.md) and [preparation handoff #76](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/76#issuecomment-6548640801) | The finite preparation accounts for 53 source issues, 60 public-safe articles and 114 separate editions now on `main`. These are historical format-preparation copies; follow their origin links for later research and distinguish format review from substantive acceptance. |
+| [Universe D design, PR #51](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/51), and [implementation, PR #53](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/53) | The design and isolated [synthetic target-allocation runner](experiments/universe-d/001-target-allocation/README.md) are on `main`: #53 merged into #51's branch, then #51 merged into `main`. Implementation checks are separate from final evaluation, NFL realism and predictive validity. |
+
+A research area is a browsing category. Record type, evidence support, independent
+review, software availability, and downstream acceptance each answer a different
+question. A merged document or passing software test alone does not establish a
+football conclusion or authorize its use elsewhere.
+
+## Shared research infrastructure
+
+The offline toolchain stores and validates immutable job inputs, append-oriented
+attempt state, structured candidate findings, reviews, and terminal seals. Its
+Stage 0 contracts, activation preflights, and Research Gateway support a separate
+governed lifecycle. Ordinary issue-based investigations are manual research
+records unless separately admitted to that lifecycle.
+
+For local usage, open the [Research Gateway guide](docs/gateway/research-gateway-v0.md)
+or expand the [technical reference](#technical-reference) below. The Gateway
+checks proposals and reads custody state; external agents and operators perform
+the research. The offline tools do not themselves call providers, browse,
+schedule investigations, or change downstream TIBER artifacts.
 
 The governing architecture is
 [`TIBER-Harness/docs/design/tiber-researcher-v0.md`](https://github.com/Prometheus-Frameworks/TIBER-Harness/blob/eac4b0968ff4645582743421fc8bb2f6a1c2aa8b/docs/design/tiber-researcher-v0.md).
@@ -31,13 +85,27 @@ Stage 1 preflight authority is recorded in
 - **Consumers pull:** no Research artifact grants Strategy, Forecast, product,
   publication, merge, or real-world action authority.
 
+## Technical reference
+
+<details>
+<summary>Expand protocols, local commands, custody rules, and activation requirements</summary>
+
+The following sections document the offline toolchain, its synthetic fixture,
+specific preflight candidates, and related research interfaces. Statements about
+an inactive fixture or a blocked candidate apply to that named scope; the
+repository also contains the manual football investigations linked above.
+
 ## Universe D research design
 
-[`docs/universe-d/`](docs/universe-d/README.md) proposes a controlled synthetic
-football research track connected to Universe C. Experiment 001 specifies a
-route/coverage target-allocation recovery test and its smallest implementation.
-This is design documentation: no simulator, executed result, governed Research
-activation or production integration is included.
+[`docs/universe-d/`](docs/universe-d/README.md) retains the original design for a
+controlled synthetic football research track connected to Universe C. Experiment
+001 specifies a route/coverage target-allocation recovery test. The isolated
+[runner](experiments/universe-d/001-target-allocation/README.md) is also on `main`;
+its [validation receipt](experiments/universe-d/001-target-allocation/VALIDATION.md)
+records implementation checks and their limits. The design packet retains its
+original design-only scope. Neither implementation availability nor those checks
+establish a completed final evaluation, NFL realism, governed Research activation
+or production integration.
 
 ## Stage 0 surface
 
@@ -69,10 +137,11 @@ authority and lifecycle described below.
 
 ## Game-study closeout pilot
 
-The [shared article format](docs/research-articles/README.md) proposes one outer
-structure for future research postings and dated updates. Its existing-record
-preparation queue is a triage inventory; formatting does not upgrade evidence,
-review, ownership or downstream authority.
+The [shared article format](docs/research-articles/README.md) and templates are on
+`main` through merged [PR #74](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/74).
+The [prepared collection](docs/research-articles/prepared/README.md) preserves the
+finite existing-record preparation and separate editions; formatting does not
+upgrade evidence, review, ownership or downstream authority.
 
 The [game-study notebook](docs/game-studies/README.md) connects bounded manual
 research issues to preserved pregame records, postgame assessments and reviewed
@@ -391,3 +460,5 @@ a separate Ops activation decision binding the precise job, inputs, network, and
 cost artifacts.
 Market claims also require an admitted market snapshot; otherwise those questions
 must terminate blocked or remain out of scope.
+
+</details>
