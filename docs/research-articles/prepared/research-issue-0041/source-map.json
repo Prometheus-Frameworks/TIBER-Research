@@ -1,0 +1,66 @@
+{
+  "prepared_at": "2026-10-31T19:30:11.552299Z",
+  "issue": 41,
+  "source_state": "open",
+  "body_api_sha256": "83ef3a38e44da8af36d34cf49c58d23cb330eca30ac50587d09e87c903eef524",
+  "source_updated_at": "2026-10-16T11:09:36Z",
+  "editions": [
+    {
+      "edition": "body",
+      "path": "docs/research-articles/prepared/research-issue-0041/body.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/41",
+      "source_created_at": "2026-10-16T11:09:36Z",
+      "source_updated_at": "2026-10-16T11:09:36Z",
+      "retrieved_at": "2026-10-31T19:25:33.684Z",
+      "source_sha256": "83ef3a38e44da8af36d34cf49c58d23cb330eca30ac50587d09e87c903eef524",
+      "retained_path": "retained/body.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Purpose and status",
+          "section": 1,
+          "sha256": "7c287fada18b4cf696048187cf30ffec44d0272870a1ce1a85c8745487858da1"
+        },
+        {
+          "source_block": 2,
+          "heading": "1. Freeze the starting beliefs before later outcomes",
+          "section": 3,
+          "sha256": "adf494bc3ac3e4fc659c173bb0c9f472bd745f91d5f8b9aef0124776e7cf8b0d"
+        },
+        {
+          "source_block": 3,
+          "heading": "2. Baseline observations — reported and calculated, not source-admitted",
+          "section": 4,
+          "sha256": "58ed5a86fa5fda3c08cc9f646529c930e62262dff702ba79ef690b05cdd53aee"
+        },
+        {
+          "source_block": 4,
+          "heading": "3. Future observation plan",
+          "section": 7,
+          "sha256": "d871408e36517def9b5b0ed6e110287d6866674159e6992fc2c49cb8de7d0a2c"
+        },
+        {
+          "source_block": 5,
+          "heading": "4. End-of-season review",
+          "section": 7,
+          "sha256": "b08bd57f2aa5bfdb7ea6fbf368479088661cb254fab7ca6f7defa88b27cc3d7d"
+        },
+        {
+          "source_block": 6,
+          "heading": "5. Evidence locators inspected",
+          "section": 8,
+          "sha256": "41de55e8d7d3d30d3a8a60bb21b07cf23a0de945164ad0a85abe614b0bcc81be"
+        },
+        {
+          "source_block": 7,
+          "heading": "Scope",
+          "section": 2,
+          "sha256": "ef8b979e7d845b227dd7bccbe4ee927eab67f42e10f5f500e3d890695a653e6e"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    }
+  ],
+  "fidelity": "Every source section mapped intact; heading depth only changed. Question IDs/measurements/windows retained. Unknown values not synthesized. Historical external-review receipts are source claims, not new acceptance.",
+  "format_review": "self-check; independent review pending"
+}

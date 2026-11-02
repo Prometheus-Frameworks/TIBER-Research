@@ -34,7 +34,7 @@ holds the broader investigation history and dated updates.
 
 ## Current entry points
 
-Navigation snapshot: **October 31, 2026**. Follow each linked record and its
+Navigation snapshot: **November 1, 2026**. Follow each linked record and its
 amendments for the latest status.
 
 | Work | What the linked material establishes |
@@ -42,9 +42,9 @@ amendments for the latest status.
 | [Travis Hunter receiving study](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/45) and [Cardinals–Cowboys preview](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/71) | Football investigations with bounded questions and dated evidence. Read each record's own findings, gaps, and review history. |
 | [MHJ career study](docs/studies/mhj-career-2026w4/README.md) | A retained manual study with source records, reproducible calculations, and explicit qualification limits. |
 | [Experimental matchup-preview method](.agents/skills/tiber-matchup-preview/SKILL.md) | A repository-local research skill on `main`, with question selection, evidence cards, and an [evaluation procedure](.agents/skills/tiber-matchup-preview/references/evaluation.md). Its method and forecasting quality require separate assessment. |
-| [Shared article format and game-study closeout, PR #74](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/74) | A draft publishing structure and bounded closeout pilot. The draft is separate from adoption, completed postgame work, and downstream acceptance. |
-| [Existing-article preparation, #76](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/76#issuecomment-6548640801) | Dot's reported finite format-preparation pass and review index. Its article copies remain in draft PRs; format fidelity and research acceptance are separate. |
-| [Universe D design, PR #51](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/51), and [implementation, PR #53](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/53) | Draft synthetic-football experiment work. Its implementation and tests need to be read separately from any claim of NFL realism or predictive validity. |
+| [Shared article format](docs/research-articles/README.md) and [game-study closeout](docs/game-studies/README.md) | Templates and bounded pilot infrastructure on `main` through merged [PR #74](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/74). Infrastructure availability does not establish completed postgame work or downstream acceptance. |
+| [Prepared-article collection](docs/research-articles/prepared/README.md) and [preparation handoff #76](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/76#issuecomment-6548640801) | The finite preparation accounts for 53 source issues, 60 public-safe articles and 114 separate editions now on `main`. These are historical format-preparation copies; follow their origin links for later research and distinguish format review from substantive acceptance. |
+| [Universe D design, PR #51](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/51), and [implementation, PR #53](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/53) | The design and isolated [synthetic target-allocation runner](experiments/universe-d/001-target-allocation/README.md) are on `main`: #53 merged into #51's branch, then #51 merged into `main`. Implementation checks are separate from final evaluation, NFL realism and predictive validity. |
 
 A research area is a browsing category. Record type, evidence support, independent
 review, software availability, and downstream acceptance each answer a different
@@ -95,6 +95,18 @@ specific preflight candidates, and related research interfaces. Statements about
 an inactive fixture or a blocked candidate apply to that named scope; the
 repository also contains the manual football investigations linked above.
 
+## Universe D research design
+
+[`docs/universe-d/`](docs/universe-d/README.md) retains the original design for a
+controlled synthetic football research track connected to Universe C. Experiment
+001 specifies a route/coverage target-allocation recovery test. The isolated
+[runner](experiments/universe-d/001-target-allocation/README.md) is also on `main`;
+its [validation receipt](experiments/universe-d/001-target-allocation/VALIDATION.md)
+records implementation checks and their limits. The design packet retains its
+original design-only scope. Neither implementation availability nor those checks
+establish a completed final evaluation, NFL realism, governed Research activation
+or production integration.
+
 ## Stage 0 surface
 
 ```text
@@ -122,6 +134,20 @@ activation of the researcher. It does not itself publish issues, schedule work,
 change a model or service, or authorize a roster action. A preview created with
 it is a manual research record unless separately admitted under the Research
 authority and lifecycle described below.
+
+## Game-study closeout pilot
+
+The [shared article format](docs/research-articles/README.md) and templates are on
+`main` through merged [PR #74](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/74).
+The [prepared collection](docs/research-articles/prepared/README.md) preserves the
+finite existing-record preparation and separate editions; formatting does not
+upgrade evidence, review, ownership or downstream authority.
+
+The [game-study notebook](docs/game-studies/README.md) connects bounded manual
+research issues to preserved pregame records, postgame assessments and reviewed
+closeout PRs. Its machine-readable registry starts with Cardinals at Cowboys,
+2026 Week 8. Completion, question-level evidential support and downstream admission
+remain separate; these records grant no activation or promotion authority.
 
 ## Agent entry (draft)
 
@@ -436,4 +462,3 @@ Market claims also require an admitted market snapshot; otherwise those question
 must terminate blocked or remain out of scope.
 
 </details>
-

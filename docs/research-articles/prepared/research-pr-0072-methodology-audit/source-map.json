@@ -1,0 +1,51 @@
+{
+  "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/bdb8e9808f6244ca5d17411d8b8dccfff0b76f4c/docs/evaluations/matchup-preview/2026-w08-ari-at-dal.md",
+  "source_ref": "bdb8e9808f6244ca5d17411d8b8dccfff0b76f4c",
+  "git_blob_sha": "1337e1e3861fd85b5329f459a81a6916b6758148",
+  "retrieved_at": "2026-10-31T19:26:47.261Z",
+  "retained_path": "retained/audit.md",
+  "sha256": "b429cbe2d89a875b325414d5feeb3c8787e9c6afb68a822b6a80917ceccce56c",
+  "mapping": [
+    {
+      "source_heading": "# First published matchup preview: methodological evaluation",
+      "common_section": 1,
+      "source_block_sha256": "5ffd16c43ca137f35745295a8172418c6f8c7f2e6a2eb35a3a2236cf3dd749bd"
+    },
+    {
+      "source_heading": "## Inputs and original boundary",
+      "common_section": 2,
+      "source_block_sha256": "996d06739144a4d2f72910646aee318a987e6d340fdf126372050c5c2388048b"
+    },
+    {
+      "source_heading": "## Conformance findings",
+      "common_section": 4,
+      "source_block_sha256": "1b1a8e4e1937574fb4a907baba4968f7ecf19b45b1d17adb51e61af89e401bad"
+    },
+    {
+      "source_heading": "## Numerical audit",
+      "common_section": 4,
+      "source_block_sha256": "c84f0f1b1c2fb43aec7ca4947ae5d52c438d79d8382288ee73bf46595d1dc7b9"
+    },
+    {
+      "source_heading": "## Meaningful defects and smallest remedies",
+      "common_section": 6,
+      "source_block_sha256": "693d62db0981c8da067fe244868e997ed33e46bade978c040e9bfd82c36b20a0"
+    },
+    {
+      "source_heading": "## Audit-time sources and limits",
+      "common_section": 8,
+      "source_block_sha256": "e2820cbddf050c9d97f3e9b9c5267377abfad0297151103b28c73a17e6b82ed9"
+    },
+    {
+      "source_heading": "## What this validates and next case",
+      "common_section": 5,
+      "source_block_sha256": "dfa8b6fb231f65ac4a954478f616a0c9164c9a55db7a310142bd4d8a9289c5a5"
+    }
+  ],
+  "format_prepared_at": "2026-10-31T19:28:46.926160Z",
+  "limits": [
+    "No original game/source refresh; copy not independent research acceptance.",
+    "This is distinct linked methods research, not another game study or edit to Codex pilot."
+  ],
+  "capture_clock_semantics": "For issue/comment bundles, retrieved_at is the observed start of the sequential issue + all-comments retrieval, not an exact response-completion timestamp. Later raw-comment metadata reads only supply missing creation/update clocks; body equality is verified. Linked file retrieved_at is the observed time after its fetch completed."
+}

@@ -1,0 +1,148 @@
+{
+  "prepared_at": "2026-10-31T19:30:11.552299Z",
+  "issue": 46,
+  "source_state": "open",
+  "body_api_sha256": "efbbc7f85ae553d575c6c46087c6a8f238dcfb3b5df7be1d9a53452d60f80cf1",
+  "source_updated_at": "2026-10-27T11:42:44Z",
+  "editions": [
+    {
+      "edition": "body",
+      "path": "docs/research-articles/prepared/research-issue-0046/body.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/46",
+      "source_created_at": "2026-10-22T13:47:27Z",
+      "source_updated_at": "2026-10-27T11:42:44Z",
+      "retrieved_at": "2026-10-31T19:25:36.611Z",
+      "source_sha256": "efbbc7f85ae553d575c6c46087c6a8f238dcfb3b5df7be1d9a53452d60f80cf1",
+      "retained_path": "retained/body.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Jaylin Noel — ROS case and Week 9 decision watch",
+          "section": 1,
+          "sha256": "01088d4aa9c08965655aeea927a3dfe3130739a520bd33e251cfa8b54c6d5bc6"
+        },
+        {
+          "source_block": 2,
+          "heading": "Operator thesis and decision horizon",
+          "section": 2,
+          "sha256": "d7042c2e7fb9f5f078780273ba788544d263def69209aeb90e9fe2395a711de1"
+        },
+        {
+          "source_block": 3,
+          "heading": "Source-backed baseline",
+          "section": 3,
+          "sha256": "057baff6d85ee3748095ac47e4ad5065c32198356833ff76489ac17d3ba7a5c2"
+        },
+        {
+          "source_block": 4,
+          "heading": "Player and capability context",
+          "section": 4,
+          "sha256": "a8dbda4421670ae72148d91ec9894ce65aefca5d69769c2f31aa8d49985bef97"
+        },
+        {
+          "source_block": 5,
+          "heading": "Weeks 1–6 receiving ledger",
+          "section": 4,
+          "sha256": "fb24a0d90dbd21f9cccc16b968162ddf8d1913da0bc0efa93b5ba3f53a68e2e5"
+        },
+        {
+          "source_block": 6,
+          "heading": "Competition and current availability",
+          "section": 4,
+          "sha256": "09e5e330c55998ceec3af6c9f2b0fa3070f402969278119b8f0a7aa7d9a85f36"
+        },
+        {
+          "source_block": 7,
+          "heading": "Competing hypotheses",
+          "section": 2,
+          "sha256": "99d09af63c5101a7c78cba22958064b9c63763d0010e121caaac2c2e342e6ad3"
+        },
+        {
+          "source_block": 8,
+          "heading": "Prospective Week 7 signals",
+          "section": 4,
+          "sha256": "b7a21cc832ce06a41bac7e9a497f07bb672902337aa3eaa32f044f24d734de28"
+        },
+        {
+          "source_block": 9,
+          "heading": "What each follow-up records",
+          "section": 7,
+          "sha256": "1619bb4eeba06f2a1ce57316e01219c085f07be15720ae218261bdb11d925ad4"
+        },
+        {
+          "source_block": 10,
+          "heading": "Checkpoints and ROS watch",
+          "section": 7,
+          "sha256": "04a03d8ed4a6dda6ef54d2df329c5e188a11a1ae8e148bd5c9fbc6f09f595754"
+        },
+        {
+          "source_block": 11,
+          "heading": "Source register",
+          "section": 8,
+          "sha256": "98a640ba8de7df4ee7ef61fc382117d2b81d7647f253c0b2cf267f95954809c9"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    },
+    {
+      "edition": "comment-6342403770",
+      "disposition": "coordination_receipt_retained_not_article",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/46#issuecomment-6342403770",
+      "source_sha256": "29083b703a2e5571135bbc5650b8d53383054a4e3ade9693cd23714ed5f60df4",
+      "source_created_at": "2026-10-22T13:49:46Z",
+      "source_updated_at": "2026-10-22T13:49:46Z",
+      "retrieved_at": "2026-10-31T19:25:36.611Z"
+    },
+    {
+      "edition": "update-6441026903",
+      "path": "docs/research-articles/prepared/research-issue-0046/update-6441026903.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/46#issuecomment-6441026903",
+      "source_created_at": "2026-10-27T11:42:44Z",
+      "source_updated_at": "2026-10-27T11:42:44Z",
+      "retrieved_at": "2026-10-31T19:25:36.611Z",
+      "source_sha256": "6190cf49ce8f7342ee6a08eaa59be71eb7be116f53c7c1839cc10ea588ac63a1",
+      "retained_path": "retained/update-6441026903.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "First post-Week 7 checkpoint — October 27, 2026",
+          "section": 1,
+          "sha256": "8e77487b260ab2d96b61e871ab7d5c11f15c6ace4d915e1413e12825d379a16a"
+        },
+        {
+          "source_block": 2,
+          "heading": "Observed counts and calculations",
+          "section": 4,
+          "sha256": "fcbc33c155115219393a7e26eb2c5f0a018044a9086ec4e820e8032db9629d5e"
+        },
+        {
+          "source_block": 3,
+          "heading": "Actual competition and health",
+          "section": 4,
+          "sha256": "21a0a2d2e03e524ba807341310e3a4eadfd5b3acd323de44db3f349394969692"
+        },
+        {
+          "source_block": 4,
+          "heading": "H1–H4 assessment",
+          "section": 5,
+          "sha256": "a343bf2261f1043ffa3fa9fc48d8a2da04fa94d877fa31b9b30e61e8a0c449d2"
+        },
+        {
+          "source_block": 5,
+          "heading": "Decision horizon and next test",
+          "section": 7,
+          "sha256": "fb0b9f2592efca955e70712d7c0c5552872591c2615b58637bb59bcaa1649356"
+        },
+        {
+          "source_block": 6,
+          "heading": "Source clocks",
+          "section": 8,
+          "sha256": "147f912a5791f896dee3b890801319b4b4e01b50b8d637aef48880e22e07d0a3"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    }
+  ],
+  "fidelity": "Every source section mapped intact; heading depth only changed. Question IDs/measurements/windows retained. Unknown values not synthesized. Historical external-review receipts are source claims, not new acceptance.",
+  "format_review": "self-check; independent review pending"
+}

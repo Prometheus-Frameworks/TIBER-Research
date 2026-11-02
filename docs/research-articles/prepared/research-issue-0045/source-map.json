@@ -1,0 +1,537 @@
+{
+  "prepared_at": "2026-10-31T19:30:11.552299Z",
+  "issue": 45,
+  "source_state": "open",
+  "body_api_sha256": "33aeb22b349061c0128709b29c696c7195cfa7331931114f5833de99aad6cb9c",
+  "source_updated_at": "2026-10-31T11:32:19Z",
+  "editions": [
+    {
+      "edition": "body",
+      "path": "docs/research-articles/prepared/research-issue-0045/body.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/45",
+      "source_created_at": "2026-10-20T20:30:30Z",
+      "source_updated_at": "2026-10-31T11:32:19Z",
+      "retrieved_at": "2026-10-31T19:25:35.961Z",
+      "source_sha256": "8f54188899378e2a7876e98c97f9733d7cf3c7b877cce76c7d809d63b9849f48",
+      "retained_path": "retained/body.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Jacksonville receiving roles — Hunter, BTJ and Coen",
+          "section": 1,
+          "sha256": "5b22ff7ec7d682d70225e59720ba7688bc4a8018149558e8990c3143ea9a4938"
+        },
+        {
+          "source_block": 2,
+          "heading": "Starting assessment",
+          "section": 5,
+          "sha256": "a0af18e1b34d6f22dc011102ca3a3445e6cda47dc3b951c944b57590ab235ccb"
+        },
+        {
+          "source_block": 3,
+          "heading": "Question origin",
+          "section": 2,
+          "sha256": "06f47ea5005fc4af6c32f7bd321a5b34504d78f49a87ff736e231c915f86e61c"
+        },
+        {
+          "source_block": 4,
+          "heading": "Source-backed baseline",
+          "section": 3,
+          "sha256": "241937cdb4c24f9d093b08390b8a240b451beca854a3d709f9da543c1c35a0b0"
+        },
+        {
+          "source_block": 5,
+          "heading": "Hunter: competing explanations",
+          "section": 3,
+          "sha256": "dd7c22d7971a21d14e43dff2b42c32940a2bc52e24c26318035cacd496611e9c"
+        },
+        {
+          "source_block": 6,
+          "heading": "BTJ: diagnose the break before prescribing an environment",
+          "section": 4,
+          "sha256": "9ccd7c890e3e0d2a2a3cd20c4a6d26d3dc0752a8371cc78ec03ef672e6cbcfb0"
+        },
+        {
+          "source_block": 7,
+          "heading": "What the next pass records",
+          "section": 7,
+          "sha256": "9de20e1abb9fc87c19ed075c4e3fea7289d39174fc3d4474aad3d3812b8550bf"
+        },
+        {
+          "source_block": 8,
+          "heading": "Prospective checkpoints and updates",
+          "section": 7,
+          "sha256": "dd0207dcea5afecb14aeb3225f18e6c3129732ca126be1d6088cf313b80a2198"
+        },
+        {
+          "source_block": 9,
+          "heading": "Scope and continuity",
+          "section": 8,
+          "sha256": "e738e1e9eaf48feb5f7fc84498599d9a7fc21fd1e7f2a88bc1ae5ed19340e6ff"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    },
+    {
+      "edition": "body-dated-addition",
+      "path": "docs/research-articles/prepared/research-issue-0045/body-dated-addition.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/45",
+      "source_created_at": "2026-10-20T20:30:30Z",
+      "source_updated_at": "2026-10-31T11:32:19Z",
+      "retrieved_at": "2026-10-31T19:25:35.961Z",
+      "source_sha256": "d660b02b0c09489b380b4edbf6306a4ff21b47199529c7ec8f7de55be0106b46",
+      "retained_path": "retained/body-dated-addition.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Source paragraph 1",
+          "section": 1,
+          "sha256": "d8fb75860a288cb420179cb5a50f60526b4bec3448bf090d5353a759cc6fc4c7"
+        },
+        {
+          "source_block": 2,
+          "heading": "Source paragraph 2",
+          "section": 8,
+          "sha256": "40199fa04349e8fb24046ab8138576209918df5ec5f6ba0cc7c91e8a20d45268"
+        },
+        {
+          "source_block": 3,
+          "heading": "Source paragraph 3",
+          "section": 8,
+          "sha256": "870510f40e3ebf908bd88c216787b275eda25c0809d32ec4e6ef057a29b1382e"
+        },
+        {
+          "source_block": 4,
+          "heading": "Source paragraph 4",
+          "section": 8,
+          "sha256": "fda84afae10d9edb11a1ff6c3364193ca977f353eb7de2024ba907a4cb9dfb14"
+        },
+        {
+          "source_block": 5,
+          "heading": "Source paragraph 5",
+          "section": 8,
+          "sha256": "0895445f52f5b23296821e1b3fc7416f11b0025687e7380cfb5e1dde44a1141e"
+        },
+        {
+          "source_block": 6,
+          "heading": "Source paragraph 6",
+          "section": 8,
+          "sha256": "3f9cc46ed89aace0e862c00254ff15118e32aab13c3768e942905bfb02a3c14a"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    },
+    {
+      "edition": "update-6305245492",
+      "path": "docs/research-articles/prepared/research-issue-0045/update-6305245492.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/45#issuecomment-6305245492",
+      "source_created_at": "2026-10-21T00:52:31Z",
+      "source_updated_at": "2026-10-21T00:52:31Z",
+      "retrieved_at": "2026-10-31T19:25:35.961Z",
+      "source_sha256": "1de700e4e8988f9e84623c3213bb8f1a37d507b51bb1506334d96f64eea5b572",
+      "retained_path": "retained/update-6305245492.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Historical capability pass — October 20, 2026",
+          "section": 1,
+          "sha256": "edfe678a4c0bf66d4c6d4b3e167477c45485527a1575e54a06c38d7636cb7512"
+        },
+        {
+          "source_block": 2,
+          "heading": "1. The 2025 NFL sample is more substantial than a handful of offensive cameos",
+          "section": 4,
+          "sha256": "ed5a30cb07a9462c6a58c29c82cb90a44dc62b7e524e1d1eb03449ae36de0e2e"
+        },
+        {
+          "source_block": 3,
+          "heading": "2. Located examples that address actual receiving skills",
+          "section": 4,
+          "sha256": "eb3fb28beed01f74f3c35a88a106784e9a89c3dc3e7b82a2a068af0eeac370c3"
+        },
+        {
+          "source_block": 4,
+          "heading": "3. College route variety is supported, but its distribution matters",
+          "section": 4,
+          "sha256": "5079bf92057fdfd6e085255bf8b2bf2e18391c19d73706860cd4863eb1c24d32"
+        },
+        {
+          "source_block": 5,
+          "heading": "4. Coen comparison: transferable responsibilities, with several possible roles",
+          "section": 3,
+          "sha256": "598e2de73435505262e151af5d14d09156cc1b05d6ada57303808384336be11e"
+        },
+        {
+          "source_block": 6,
+          "heading": "5. The live allocation constraint has a direct coaching witness",
+          "section": 4,
+          "sha256": "54506207ef48095d3f43f258370b6a9fa429ec7aafd826119bfb95d621583414"
+        },
+        {
+          "source_block": 7,
+          "heading": "6. Dynasty and redraft consequences",
+          "section": 5,
+          "sha256": "6b4f90fad0a9ed6b7284da7ba98a94375664663e278625aea9506a641f97e250"
+        },
+        {
+          "source_block": 8,
+          "heading": "7. Tagged missing witnesses",
+          "section": 6,
+          "sha256": "ceba5f926e2454a7c2f294fe255cc6964e7d4c23d93e30f787eadd7fe6243393"
+        },
+        {
+          "source_block": 9,
+          "heading": "Sources, clocks and verification",
+          "section": 8,
+          "sha256": "b93857d4b8990438f1915e79a2c3ca267e4863d265532b46dcb354db4b94de2a"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    },
+    {
+      "edition": "update-6306544349",
+      "path": "docs/research-articles/prepared/research-issue-0045/update-6306544349.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/45#issuecomment-6306544349",
+      "source_created_at": "2026-10-21T02:32:07Z",
+      "source_updated_at": "2026-10-21T02:32:07Z",
+      "retrieved_at": "2026-10-31T19:25:35.961Z",
+      "source_sha256": "28c2ed5494e3509b27dc12e023f453122c5a90463ca944cd47bf498da5d589f5",
+      "retained_path": "retained/update-6306544349.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Receiving profile and 2025 alignment follow-up — October 20, 2026",
+          "section": 1,
+          "sha256": "b679d6cbc142018ab867971295fb1080ac6e8c1ecb3cddbdff8a8f05b2a7d61f"
+        },
+        {
+          "source_block": 2,
+          "heading": "What the 2025 evidence adds",
+          "section": 4,
+          "sha256": "7391a36893f421d611f9b7dcfd804f17eeefc687bf745bcdf738a6d836d6d6c5"
+        },
+        {
+          "source_block": 3,
+          "heading": "Skill and scheme hypotheses",
+          "section": 2,
+          "sha256": "8afd18b987622cc4b8430848a68e9d8b6db76b3a1cbd65d3451d07f9eb05f502"
+        },
+        {
+          "source_block": 4,
+          "heading": "Current allocation and development",
+          "section": 4,
+          "sha256": "ee6b7982e1d31f903073d64deeb93a64f17de8d558839a7e31353a5c2af78b6b"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    },
+    {
+      "edition": "update-6325940080",
+      "path": "docs/research-articles/prepared/research-issue-0045/update-6325940080.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/45#issuecomment-6325940080",
+      "source_created_at": "2026-10-21T20:34:06Z",
+      "source_updated_at": "2026-10-21T20:34:06Z",
+      "retrieved_at": "2026-10-31T19:25:35.961Z",
+      "source_sha256": "7fbf3e092e96d57a1f9c3aaa518cf17f32a6e55815455c33c3c39cd96bd4131e",
+      "retained_path": "retained/update-6325940080.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Weekend film investigation — October 21, 2026",
+          "section": 1,
+          "sha256": "9ad2a67b65076dc275736f049bdbbf3f419b3a995f0e0d1231594784a782f7e3"
+        },
+        {
+          "source_block": 2,
+          "heading": "V1 — Hunter: catch through converging coverage",
+          "section": 4,
+          "sha256": "648667a186047a33cdf532ff368fc139ffd40e6168162fc5741bfcd78664f3a2"
+        },
+        {
+          "source_block": 3,
+          "heading": "V2 — Hunter: an untargeted seam and the timing of “open”",
+          "section": 4,
+          "sha256": "93632b421363608ef975794c5b1ffbaf894c937442cdb8825a6356f4d079c3ef"
+        },
+        {
+          "source_block": 4,
+          "heading": "V3 — Hunter: intermediate/deep route while the tight end gets the ball",
+          "section": 4,
+          "sha256": "ea673cdf552a723f30054170465fbaa223c8532b2318c222fadcd80f58b9a671"
+        },
+        {
+          "source_block": 5,
+          "heading": "V4 — BTJ: the isolated receiver on the other side",
+          "section": 4,
+          "sha256": "7ab79b8fdbd3e4f058933e1710af1617cd94e1fc5a3874af9f161ea05ef1fca3"
+        },
+        {
+          "source_block": 6,
+          "heading": "Preserve the existing timestamped analyst anchors",
+          "section": 4,
+          "sha256": "af7eb4ebfd560a5e53b8060723c856865f2db9bc014f6333276fc7749ad0f505"
+        },
+        {
+          "source_block": 7,
+          "heading": "Optional, page-verified official candidates — playback unverified",
+          "section": 4,
+          "sha256": "e29126a39fa65a34a1fff0efce85e15a6b4816b32ff0291cb6665cfc8706ab85"
+        },
+        {
+          "source_block": 8,
+          "heading": "Exact current BTJ footage gaps",
+          "section": 6,
+          "sha256": "2eea1fc53fa5c56f52d04363a0caa71041d5ecf8440789eaa6e3f668132dbe41"
+        },
+        {
+          "source_block": 9,
+          "heading": "October 30 checkpoint contribution",
+          "section": 7,
+          "sha256": "ff74fda6736fd29f8e59f832ceb99598bbb18d9147ce15d34bf483a89221bdbe"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    },
+    {
+      "edition": "update-6383749621",
+      "path": "docs/research-articles/prepared/research-issue-0045/update-6383749621.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/45#issuecomment-6383749621",
+      "source_created_at": "2026-10-24T11:39:11Z",
+      "source_updated_at": "2026-10-24T11:39:11Z",
+      "retrieved_at": "2026-10-31T19:25:35.961Z",
+      "source_sha256": "d1e4d129b052ac377c9f0087dd016813b30f06bafb9e611666f54916f4a104fe",
+      "retained_path": "retained/update-6383749621.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Material availability update — October 24, 2026",
+          "section": 1,
+          "sha256": "1328cec202627ea47b2516bf443ebadd41b7b70f2092b831d3ba56b4332e4dfa"
+        },
+        {
+          "source_block": 2,
+          "heading": "New observation",
+          "section": 4,
+          "sha256": "69105871ab800515533239c64ade64a3c5fd5f2bfd1092efbbcd0eccfa7d6901"
+        },
+        {
+          "source_block": 3,
+          "heading": "Revised interpretation and strongest alternative",
+          "section": 5,
+          "sha256": "f406f51e38a6be2d0816dcc67c3714419eac99ba1fb7936fca7fa99f1e42d7fb"
+        },
+        {
+          "source_block": 4,
+          "heading": "Next observable test",
+          "section": 7,
+          "sha256": "971a8d9ad0f472d01507198c5d6fad23e1d0cfef670047c64a6ebe811ee05f85"
+        },
+        {
+          "source_block": 5,
+          "heading": "Inspected sources and limits",
+          "section": 8,
+          "sha256": "cc78c17a309fa0d5af8e2c53070a393c46386c1d9b5f2ade717c5754ee211c32"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    },
+    {
+      "edition": "update-6496226724",
+      "path": "docs/research-articles/prepared/research-issue-0045/update-6496226724.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/45#issuecomment-6496226724",
+      "source_created_at": "2026-10-29T12:08:04Z",
+      "source_updated_at": "2026-10-29T12:08:04Z",
+      "retrieved_at": "2026-10-31T19:25:35.961Z",
+      "source_sha256": "ec3245216c3eddbfed8fffeefa4fb69e4229ea54ec129a3692ffad9b47355833",
+      "retained_path": "retained/update-6496226724.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Material availability update — October 29, 2026",
+          "section": 1,
+          "sha256": "7df2fa478eead36d6341e8f2c9995683ba4b9b06f559488c1c2c1deca38c3641"
+        },
+        {
+          "source_block": 2,
+          "heading": "New confirmed observations",
+          "section": 4,
+          "sha256": "4fcb021d65753e574f21e4d9da4dc06d34cf84c7312698df9de536cdda4e78a5"
+        },
+        {
+          "source_block": 3,
+          "heading": "Interpretation and strongest alternative",
+          "section": 5,
+          "sha256": "349a415c0147ebc2f9fabb37f7d15a1c8a8b40f53125a6145d78c1ddbaad5756"
+        },
+        {
+          "source_block": 4,
+          "heading": "Next observable test",
+          "section": 7,
+          "sha256": "238dfa2f200c2bc4db59be790cdee18fb20e3e3c9c713d2c516f0db0bd41601d"
+        },
+        {
+          "source_block": 5,
+          "heading": "Inspected sources",
+          "section": 8,
+          "sha256": "8309de25f5b34cedbdd521f0248ddc730e174346f4239458927d843f863d84d6"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    },
+    {
+      "edition": "update-6496423581",
+      "path": "docs/research-articles/prepared/research-issue-0045/update-6496423581.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/45#issuecomment-6496423581",
+      "source_created_at": "2026-10-29T12:16:50Z",
+      "source_updated_at": "2026-10-29T12:16:50Z",
+      "retrieved_at": "2026-10-31T19:25:35.961Z",
+      "source_sha256": "993a0d4db23c58ea288e7b140baa4ab44ac9b28a0391cc310de2f269ed11ba96",
+      "retained_path": "retained/update-6496423581.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Advance Week 8 pregame assessment — October 29, 2026; October 30 refresh pending",
+          "section": 1,
+          "sha256": "741f188fb7bbf830f0d95539e976ede6dfff5c4e0e0a089a9ea49fee3a4494d4"
+        },
+        {
+          "source_block": 2,
+          "heading": "1. Preserve the baseline without manufacturing routes",
+          "section": 3,
+          "sha256": "3cfa3dd0c834d92564da00ab5b18b9064ec68325c587b832947eca02c8852a1a"
+        },
+        {
+          "source_block": 3,
+          "heading": "2. What changed before Indianapolis",
+          "section": 5,
+          "sha256": "470c0eecb40ba89b25c45efe408d26ef6bbbd9de55be96f0caeb5a4553acbd31"
+        },
+        {
+          "source_block": 4,
+          "heading": "3. Hypotheses and the observations that distinguish them",
+          "section": 2,
+          "sha256": "0e87fb50dd31b56966d503d9ce6e4f5df9fe2c6af8fff1ce4fa19efa162221b0"
+        },
+        {
+          "source_block": 5,
+          "heading": "4. What we will call meaningful expansion",
+          "section": 4,
+          "sha256": "5b2e018b48aba1d1b0b82f86e1b8defcc73dda2f295b2954113be27afefcc7de"
+        },
+        {
+          "source_block": 6,
+          "heading": "5. November 1 observation sheet and subsequent review",
+          "section": 7,
+          "sha256": "11bba06f1a6c70a64b42c9c9d4da54ff049e39e93d8e8829120d1f1fb6ba47ae"
+        },
+        {
+          "source_block": 7,
+          "heading": "Source register and limits",
+          "section": 8,
+          "sha256": "d2440a17777f30cbc2e9390139053b9011e81017bc12024ffb839aa60629e81b"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    },
+    {
+      "edition": "update-6522498036",
+      "path": "docs/research-articles/prepared/research-issue-0045/update-6522498036.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/45#issuecomment-6522498036",
+      "source_created_at": "2026-10-30T12:11:37Z",
+      "source_updated_at": "2026-10-30T12:11:37Z",
+      "retrieved_at": "2026-10-31T19:25:35.961Z",
+      "source_sha256": "e1e929ba896eca3e2094d1b84197c1559b092c7c97452b1a30f6922bbe678724",
+      "retained_path": "retained/update-6522498036.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Week 8 pregame checkpoint — October 30, 2026",
+          "section": 1,
+          "sha256": "2e855b9a7eb251a5434b611258ef3040fa84eb5cf1ebac7ea26311a53d01d047"
+        },
+        {
+          "source_block": 2,
+          "heading": "New coaching evidence: development with variable allocation",
+          "section": 4,
+          "sha256": "6e5fd1c1cb1b4115e120694a1741713bf507e1518c9ae1cd6834fa891e97d398"
+        },
+        {
+          "source_block": 3,
+          "heading": "Available Weeks 1–6 baseline and counting limits",
+          "section": 3,
+          "sha256": "8610ed946c78b87e9411611dd36adb5ccb013cad4b8570a539b6735f8c846e32"
+        },
+        {
+          "source_block": 4,
+          "heading": "Thursday availability and opponent context",
+          "section": 4,
+          "sha256": "a67179515989389a3ce058f152cd9cea0dd602bf452327e9bb7f6fd98fc0e25e"
+        },
+        {
+          "source_block": 5,
+          "heading": "Prospective expectations and counterevidence",
+          "section": 4,
+          "sha256": "e990f4e78f7c8f3ece51e56bc7e5a3ec67f3b4e2d607a2340766fe426e87da96"
+        },
+        {
+          "source_block": 6,
+          "heading": "What remains open and next test",
+          "section": 7,
+          "sha256": "6e54115b495265d79423caeff1b7bac01d01b9db846a6fc906895c6f7184714f"
+        },
+        {
+          "source_block": 7,
+          "heading": "Newly inspected sources / retrieval record",
+          "section": 8,
+          "sha256": "b9ec3b54437b75b1b1185372c2ffaa4665b6b844a86338abdef57a10fa09ec41"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    },
+    {
+      "edition": "update-6542819176",
+      "path": "docs/research-articles/prepared/research-issue-0045/update-6542819176.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/45#issuecomment-6542819176",
+      "source_created_at": "2026-10-31T11:32:19Z",
+      "source_updated_at": "2026-10-31T11:32:19Z",
+      "retrieved_at": "2026-10-31T19:25:35.961Z",
+      "source_sha256": "dd4bc553436e7d47bd192b97332256b06c2565a869d111cabd810722e1d44598",
+      "retained_path": "retained/update-6542819176.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Material availability update — October 31, 2026",
+          "section": 1,
+          "sha256": "d6f34999e23ca3c34c97a108c4a34fb793ff1ccbc97a8bb4f3d9e984262f260d"
+        },
+        {
+          "source_block": 2,
+          "heading": "New observations since the pregame checkpoint",
+          "section": 4,
+          "sha256": "d1d1d835d3d8ec76214d0127e378415f0042c5dd598b09557bdf4272371f02db"
+        },
+        {
+          "source_block": 3,
+          "heading": "Revised interpretation and strongest alternative",
+          "section": 5,
+          "sha256": "76eadba91a9fd396fac7f9e64e1577b253bcc7a500feda443b7e3d20beedeed0"
+        },
+        {
+          "source_block": 4,
+          "heading": "Next observable test and limits",
+          "section": 7,
+          "sha256": "010e787121549bce88284cf2b50ea576abf2eb1e5317dbc6573fef3e5b3597da"
+        },
+        {
+          "source_block": 5,
+          "heading": "Inspected sources",
+          "section": 8,
+          "sha256": "ac8f97911e251c2cdde019c745429331abec187f4bcdb9f8b478cc466b15e384"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    }
+  ],
+  "fidelity": "Every source section mapped intact; heading depth only changed. Question IDs/measurements/windows retained. Unknown values not synthesized. Historical external-review receipts are source claims, not new acceptance.",
+  "format_review": "self-check; independent review pending"
+}

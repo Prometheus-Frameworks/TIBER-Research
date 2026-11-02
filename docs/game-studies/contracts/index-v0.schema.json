@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tiber.local/manual-game-study-index-v0.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format_version",
+    "coverage_scope",
+    "studies"
+  ],
+  "properties": {
+    "format_version": {
+      "const": "tiber-game-study-index/v0"
+    },
+    "coverage_scope": {
+      "const": "registered_studies_only"
+    },
+    "studies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "study_id",
+          "manifest_path"
+        ],
+        "properties": {
+          "study_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "manifest_path": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

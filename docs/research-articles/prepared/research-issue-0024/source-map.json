@@ -1,0 +1,228 @@
+{
+  "prepared_at": "2026-10-31T19:30:49.229705Z",
+  "format_check": "All source spans accounted for exactly once; see block_mapping",
+  "sources": [
+    {
+      "edition": "body",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/24",
+      "source_created_at": "2026-09-29T02:06:38Z",
+      "source_updated_at": "2026-10-03T15:44:55Z",
+      "retrieved_at": "2026-10-31T19:25:26.803Z",
+      "source_sha256": "40290bd29c19b7748597d4d773a47db996fb4ceae89ba09ad4309c82783a1cf1",
+      "source_characters": 12822,
+      "source_path": "retained/body.md",
+      "prepared_path": "body-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## Purpose",
+          "outer_section": 2,
+          "sha256": "101e10ae97e22096ea6d649d43630199bf2c967f1bfcf646dc8b071589c5fc7e"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "## Initial player board",
+          "outer_section": 4,
+          "sha256": "f7b8401947aef8d39e69be3a66ca10687fa0d25088780208cc38b86d2201ee89"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "## Readiness gate — when Week 3 evidence is available",
+          "outer_section": 4,
+          "sha256": "4ca7d680f9590ae4a2b3e4b5131701775b0b8edaf02239714325a8c927803f7b"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "## Allen sub-study — preserve the actual post-Hall window",
+          "outer_section": 2,
+          "sha256": "88fd529561be9391c195ed2d2632274daf693a1fcfa779196ff9e16bf9b39329"
+        },
+        {
+          "block": 5,
+          "original_heading_or_lead": "## Common ROP × TTS inspection",
+          "outer_section": 4,
+          "sha256": "0c2794d2e07c8751f0942fbc677f9636d5d18285b5938309f5fbc16d06cade98"
+        },
+        {
+          "block": 6,
+          "original_heading_or_lead": "## Output for the first bounded investigation",
+          "outer_section": 4,
+          "sha256": "1fde926a38c559eb8f244279cdc3ddac8dfcb29e09bd6e4036c65bbb157b5f92"
+        },
+        {
+          "block": 7,
+          "original_heading_or_lead": "## How to add players and roll the board forward",
+          "outer_section": 4,
+          "sha256": "ac10c2e6a5a813a13bb05d12f3e27147cf0c69c6b07bf217fb4439a0ad84bb2e"
+        },
+        {
+          "block": 8,
+          "original_heading_or_lead": "## Scope and ownership",
+          "outer_section": 7,
+          "sha256": "e9570bf4d56d722b0a1b9f48fcc3125d331be18f364892dd8be4401bfc05d8ad"
+        },
+        {
+          "block": 9,
+          "original_heading_or_lead": "## Completion checklist for the Week 3 batch",
+          "outer_section": 7,
+          "sha256": "cd3ed30e2eb0f8b522e06628c029e704169d8e4e303cb32c9c0d027c4d93bb5b"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    },
+    {
+      "edition": "update-5882388277",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/24#issuecomment-5882388277",
+      "source_created_at": "2026-09-29T02:18:19Z",
+      "source_updated_at": "2026-09-29T02:18:19Z",
+      "retrieved_at": "2026-10-31T19:25:26.803Z",
+      "source_sha256": "ad43f52458a2e8e7d3e134d0c17f634ca20ecfd95aef1793e4fea6fba50a286b",
+      "source_characters": 1571,
+      "source_path": "retained/update-5882388277.md",
+      "prepared_path": "update-5882388277-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## Week 3 supplemental intake — Kalif Raymond",
+          "outer_section": 4,
+          "sha256": "fbcdee04a0d19591d47919a9430730ecfcfafaddaf1d66715a39865dac665230"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "### Operator observation / trigger",
+          "outer_section": 4,
+          "sha256": "408d71c6544244e59bc87dba26a47e45bf6b733e2082ee1339701d129b005ab1"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "### Research question",
+          "outer_section": 2,
+          "sha256": "4cc101884559be5610ba00d270acee653bc39a04657f520b4df31bebb6f1894d"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    },
+    {
+      "edition": "update-5894787664",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/24#issuecomment-5894787664",
+      "source_created_at": "2026-09-29T16:56:35Z",
+      "source_updated_at": "2026-09-29T16:56:35Z",
+      "retrieved_at": "2026-10-31T19:25:26.803Z",
+      "source_sha256": "7e0d6a6f01045bca311955239ff4c52f6e54649e2a1417890ab7eb8d9ed9953f",
+      "source_characters": 2008,
+      "source_path": "retained/update-5894787664.md",
+      "prepared_path": "update-5894787664-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## Week 3 readiness update — Data candidate lane activated",
+          "outer_section": 4,
+          "sha256": "71b0f77ade3460168ef48d4da839bc2c6246cd4e693cdd126ab666453a4d59fe"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "### What is now established",
+          "outer_section": 4,
+          "sha256": "cf7f3bd389d270f6c008e701556e05aee13e07f811ac6103432030d971df8f8f"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "### Exact blocker",
+          "outer_section": 6,
+          "sha256": "e1866b9080bd0bc48dff30c407a34811cb577b75e8e0dd65c57ee3f449715bee"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "### Resume boundary",
+          "outer_section": 7,
+          "sha256": "2e0df99db340fe552679a77db4a6bb8f268d793d0d892557b93c64bf4efc7e9f"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    },
+    {
+      "edition": "update-5913653063",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/24#issuecomment-5913653063",
+      "source_created_at": "2026-09-30T14:46:48Z",
+      "source_updated_at": "2026-09-30T14:46:48Z",
+      "retrieved_at": "2026-10-31T19:25:26.803Z",
+      "source_sha256": "eb03e85fa04e8c6ffa0b9a53c22fd7da7babb1a4379e7444468aee69984d1fbc",
+      "source_characters": 4699,
+      "source_path": "retained/update-5913653063.md",
+      "prepared_path": "update-5913653063-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## Week 3 qualification and execution-scope proposal — September 30",
+          "outer_section": 2,
+          "sha256": "60779a5e6b2711375fa13b9b40676fa068cc38a9b685ca43a0d818abf1c1cc40"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "### Reconciled state",
+          "outer_section": 3,
+          "sha256": "bf8c338444954d4269eae1b86ab93e97c640fb4dc7f383805a7be2fa9981eba5"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "### Proposed bounded scope after qualification and a separate live decision",
+          "outer_section": 2,
+          "sha256": "b3f4051d8e0b0169f480376b9f1618f617128d594f3c9e189ce98d163b223860"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "### Explicit exception to consider, not silently applied",
+          "outer_section": 4,
+          "sha256": "5d484eb7f6b9d163f2a203c7e779fcb67816971dd3d9e89f8d9687dc76238953"
+        },
+        {
+          "block": 5,
+          "original_heading_or_lead": "### Cases/limits that cannot be wished away",
+          "outer_section": 6,
+          "sha256": "e9d918d247ddce41f791e7ca208e31b4fcff65a7aa0c840f9fc7a2f5bb90f1d0"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    },
+    {
+      "edition": "update-5913914511",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/24#issuecomment-5913914511",
+      "source_created_at": "2026-09-30T15:01:14Z",
+      "source_updated_at": "2026-09-30T15:01:14Z",
+      "retrieved_at": "2026-10-31T19:25:26.803Z",
+      "source_sha256": "9d23609edaddbdb2a5065ee8bda151f96a7d2fe032d4d6884e5ef616d3efbf63",
+      "source_characters": 2019,
+      "source_path": "retained/update-5913914511.md",
+      "prepared_path": "update-5913914511-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## Final preparation handoff — current heads and review qualifications",
+          "outer_section": 8,
+          "sha256": "9d23609edaddbdb2a5065ee8bda151f96a7d2fe032d4d6884e5ef616d3efbf63"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    },
+    {
+      "edition": "update-5970712185",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/24#issuecomment-5970712185",
+      "source_created_at": "2026-10-03T15:44:55Z",
+      "source_updated_at": "2026-10-03T15:44:55Z",
+      "retrieved_at": "2026-10-31T19:25:26.803Z",
+      "source_sha256": "bb7c6d69cba69499b48e2db3d98dea1df3e7673819d3c156077584d4a063b86d",
+      "source_characters": 2323,
+      "source_path": "retained/update-5970712185.md",
+      "prepared_path": "update-5970712185-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## October 3 — Vikings supplemental intake and blocker repair",
+          "outer_section": 6,
+          "sha256": "bb7c6d69cba69499b48e2db3d98dea1df3e7673819d3c156077584d4a063b86d"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    }
+  ]
+}

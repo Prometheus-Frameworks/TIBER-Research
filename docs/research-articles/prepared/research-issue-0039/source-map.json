@@ -1,0 +1,62 @@
+{
+  "prepared_at": "2026-10-31T19:30:49.229705Z",
+  "format_check": "All source spans accounted for exactly once; see block_mapping",
+  "sources": [
+    {
+      "edition": "body",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/39",
+      "source_created_at": "2026-10-14T00:31:45Z",
+      "source_updated_at": "2026-10-14T00:31:52Z",
+      "retrieved_at": "2026-10-31T19:25:44.008Z",
+      "source_sha256": "d1734c38e9eb982b0a56432e4025414e6a9e222e813e25f56fa2099327130bcd",
+      "source_characters": 11308,
+      "source_path": "retained/body.md",
+      "prepared_path": "body-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## Completed retrospective experiment — October 13, 2026",
+          "outer_section": 1,
+          "sha256": "7dcecf7466473573c0fd5ad07c07de9f8072da86c8e4ec8ae0c1e8088498cab7"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "## Exact input and design",
+          "outer_section": 4,
+          "sha256": "d6044297224114dee05af6c5e9ca709d462e34cd93679e7b8cc60c15f2523cbb"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "## Results",
+          "outer_section": 4,
+          "sha256": "e4c7649501363e3101212e9ede6410b77d0dc88c0dcdd5b167d866d747e2825e"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "## Verification and ordinary repair",
+          "outer_section": 8,
+          "sha256": "3c35d212385363d2d2f5d848fd812550a3a5d32a6ab648ac52c07aef5c9d490e"
+        },
+        {
+          "block": 5,
+          "original_heading_or_lead": "## Final Blockers & Decisions board",
+          "outer_section": 6,
+          "sha256": "f7f9a1822e0f85f23a3c6a49bdc4eb830f78325b102f05505e4cd57ed712cd1c"
+        },
+        {
+          "block": 6,
+          "original_heading_or_lead": "## Private deliverables and reproducibility index",
+          "outer_section": 8,
+          "sha256": "4bd8f97f430b86a99328cfcc05c3cb8f88f03a1048fe56175e717fb7ee17f43b"
+        },
+        {
+          "block": 7,
+          "original_heading_or_lead": "## Interpretation and boundaries",
+          "outer_section": 7,
+          "sha256": "5fbb671ec4c4909007c534a12a7db6d7878f57af41bc789a2321d31b04d38801"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    }
+  ]
+}

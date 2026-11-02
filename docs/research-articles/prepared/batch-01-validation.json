@@ -1,0 +1,32 @@
+[
+  {
+    "record": "research-issue-0069",
+    "eight_sections": true,
+    "all_source_substantive_lines_preserved": true,
+    "body_hash_matches": true,
+    "local_links_resolve": 3,
+    "external_links_syntax_valid": 10,
+    "external_live_football_links": "preserved only; intentionally not refreshed; historical source failures remain documented",
+    "independent_review": "pending"
+  },
+  {
+    "record": "research-issue-0073",
+    "eight_sections": true,
+    "all_source_substantive_lines_preserved": true,
+    "body_hash_matches": true,
+    "local_links_resolve": 3,
+    "external_links_syntax_valid": 44,
+    "external_live_football_links": "preserved only; intentionally not refreshed; historical source failures remain documented",
+    "independent_review": "pending"
+  },
+  {
+    "record": "research-issue-0075",
+    "eight_sections": true,
+    "all_source_substantive_lines_preserved": true,
+    "body_hash_matches": true,
+    "local_links_resolve": 3,
+    "external_links_syntax_valid": 54,
+    "external_live_football_links": "preserved only; intentionally not refreshed; historical source failures remain documented",
+    "independent_review": "pending"
+  }
+]

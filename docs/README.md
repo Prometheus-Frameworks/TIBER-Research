@@ -9,8 +9,9 @@ The three areas below are ways to find related work. A mixed study can have a
 primary area and links from the others while retaining one original record.
 Contracts, custody tools and publishing conventions support all three areas.
 
-**Status snapshot: October 31, 2026.** Local documentation links refer to files
-present on `main` at this snapshot. Issue and PR links identify work that may live
+**Status snapshot: November 1, 2026**, reconciled with `main` at
+`74548b455f7e8f0ecdc667a5265d2e0da2ef0d7c`. Local resource links refer to files
+present on that revision. Issue and PR links identify work that may live
 outside `main`; their current discussion and exact revisions govern later status.
 This is a curated starting map, not an exhaustive research inventory.
 
@@ -20,6 +21,7 @@ This is a curated starting map, not an exhaustive research inventory.
 | [Model capabilities and testing](#model-capabilities-and-testing) | What can a model or method demonstrate under specified inputs, conditions and evaluation? |
 | [Football research](#football-research) | What do the available observations support about players, teams, games and fantasy opportunity? |
 | [Shared infrastructure](#shared-infrastructure) | Where are the contracts, custody rules, commands and publishing resources? |
+| [Prepared-article collection](#prepared-article-collection) | Where are historical format-preparation copies and their source, edition and review mappings across all three areas? |
 
 ## Agentic research
 
@@ -63,7 +65,7 @@ Keep the model family, task, inputs, observation window and evaluation scope cle
 | [Context Compiler #15](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/15) and [candidate contract family](contracts/context-compiler-contract-family-v0.md) | How does the supplied evidence and tool context affect observable agent continuation? | Experiment brief in an issue and contract documentation on `main`; overlaps agentic research. |
 | [Engineering traces #16](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/16) | Which task-dependent behaviors and repair patterns appear in the recorded Opus/Fable work? | Preliminary case study and future comparison design; model attribution comes from operator/session records. |
 | [ROP target-share experiment #39](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/39) | How do declared retrospective target-share baselines perform in the retained window? | Completed-experiment summary; its public record states the inputs, scope and limits of the result. |
-| [Universe D #50](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/50), [design PR #51](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/51) and [implementation PR #53](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/53) | Can route and coverage features recover an authored target-allocation mechanism in a toy world? | Synthetic experiment; both PRs remain open drafts outside `main`. |
+| [Universe D #50](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/50), [design PR #51](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/51) and [implementation PR #53](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/53) | Can route and coverage features recover an authored target-allocation mechanism in a toy world? | Design and isolated [runner](../experiments/universe-d/001-target-allocation/README.md) on `main`; #53 merged into #51's branch before #51 merged into `main`. Implementation checks do not establish final evaluation or NFL realism. |
 | [Persistent player-state design #27](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/27) and [Universe C #29](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/29) | What representations, updating rules and uncertainty treatment are worth investigating for football? | Architecture/research proposals; proposed structure and demonstrated predictive value are separate questions. |
 
 Use the strongest description supported by the check that actually ran:
@@ -101,12 +103,14 @@ For further examples, browse the
 An issue's open or closed state describes its GitHub workflow; read its evidence
 and review statements to understand what the study supports.
 
-The Cardinals–Cowboys closeout workflow is proposed in draft
-[PR #74](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/74).
-Its [pinned game-study guide](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f/docs/game-studies/README.md)
-connects preserved pregame questions to later assessments and closeout. Use that
-candidate's stated pilot boundary when reading it; wider game coverage remains a
-separate expansion.
+The [game-study guide](game-studies/README.md), [registry](game-studies/index.json)
+and [closeout template](game-studies/templates/closeout.md) are on `main` through
+merged [PR #74](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/74).
+They connect preserved pregame questions to later assessments and closeout, starting
+with Cardinals–Cowboys. The [original pinned pilot guide](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f/docs/game-studies/README.md)
+remains historical context. Read each study's manifest and dated assessments for
+its current state; merged infrastructure does not mean postgame work is complete.
+Wider game coverage remains a separate expansion.
 
 ## Shared infrastructure
 
@@ -122,13 +126,34 @@ decisions.
 | [Thesis proposal contract](contracts/agent-thesis-proposal-v0.md), [context contract family](contracts/context-compiler-contract-family-v0.md) and [event-shock extensions](contracts/event-shock-packet-extensions-v0.md) | Versioned contract decisions and their declared boundaries. |
 | [Availability-witness discovery](discovery/open-availability-witness-2026-08-13/README.md) | Source qualification, historical availability and upstream-ownership research. |
 | [Tunsil preflight orientation](preflight-orientation/tunsil-absence-shock-v0/README.md) | Orientation to the retained pilot's preparation and custody context. |
-| [Candidate article format, PR #74](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/74) | Proposed common publishing structure, dated updates and game-study closeout. |
-| [Preparation handoff #76](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/76) and [pinned draft review index](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/482c33604257104cfaefb3b1ec985301b4b10b11/docs/research-articles/prepared/README.md) | Existing-article format preparation and its review queue. The copies are in draft PRs stacked on #74; formatting and research acceptance have separate states. |
+| [Shared article format](research-articles/README.md), [full article template](research-articles/templates/article.md) and [dated update template](research-articles/templates/update.md) | Common publishing structure on `main` through merged [PR #74](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/74); specialized evidence remains inside the shared outer shape. |
+| [Game-study guide](game-studies/README.md), [registry](game-studies/index.json) and [closeout template](game-studies/templates/closeout.md) | Bounded manual game-study lifecycle and question-level closeout; distinct from governed Research activation or downstream admission. |
+| [Prepared-article index](research-articles/prepared/README.md), [source queue](research-articles/preparation-queue.json) and [publication index](research-articles/prepared/publication-index.json) | Existing preparation, source dispositions, separate editions and exact artifact/review receipts on `main`; see the collection notes below. |
 
-The shared article format and prepared copies remain draft work. Their pinned
-links make them readable while the parent PR is unmerged. Follow the original
-record for its evidence history and the preparation index for its format-review
-history.
+### Prepared-article collection
+
+The [prepared collection](research-articles/prepared/README.md) spans agentic
+research, model capabilities and testing, and football research. Its finite
+October 31 census through issue #75 accounts for **53 source issues**, **60 distinct
+public-safe articles** and **114 separately preserved editions**. These are
+different units, not 114 independent studies or a complete current issue inventory.
+The [source queue](research-articles/preparation-queue.json) records exclusions,
+internal-reportability blocks and the separately owned #71 pilot. The
+[publication index](research-articles/prepared/publication-index.json) maps article
+units, edition paths and exact content/review receipts.
+
+The collection is now on `main` through #74. Its preparation-stage draft labels,
+branch targets and pending-merge language are historical assignment context, not
+current merge status. The [handoff #76](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/76)
+and [original pinned preparation index](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/482c33604257104cfaefb3b1ec985301b4b10b11/docs/research-articles/prepared/README.md)
+remain available for that history.
+
+Use the collection's existing origin and edition links instead of creating another
+article inventory or copying records into each area. Prepared copies preserve
+their capture windows; later findings belong to the original investigation and
+its dated follow-ups. Format fidelity, substantive independent research review,
+downstream acceptance and activation remain separate. Merge and preparation alone
+grant none of those later states and do not refresh the underlying evidence.
 
 ## Adding and classifying work
 

@@ -1,0 +1,60 @@
+{
+  "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f/docs/discovery/open-availability-witness-2026-08-13/w3-candidate-matrix.md",
+  "source_created_at": null,
+  "source_updated_at": null,
+  "retrieved_at": "2026-10-31T19:27:05.373Z",
+  "source_body_sha256": "c13ccf6d94c33428b12e2ae68e98101f32040f99d550f9aac28cda74cd069749",
+  "capture_sha256": "8d7e937c8fb2dbad66adea4f5b8bfb79e363b2465bf0e796f39b494a9e9c5ec1",
+  "capture_scope": "Transformed public-safe Markdown body; see changes",
+  "changes": [
+    "Repository-relative links expanded to exact-ref source URLs"
+  ],
+  "original_publication_bytes_authenticated": false,
+  "source_blob_ref": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+  "mapping": [
+    {
+      "source_heading": "## Candidate 1a \u2014 NFL official communications (nflcommunications.com \u2192 media.nfl.com)",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## Candidate 1b \u2014 NFL.com public injuries pages (`www.nfl.com/injuries/\u2026`, `/inactives/`)",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## Candidate 2 \u2014 First-party club sites (sampled: Philadelphia Eagles)",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## Candidate 3 \u2014 ESPN site API (`site.api.espn.com`)",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## Candidate 4 \u2014 ESPN core API (`sports.core.api.espn.com`)",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## Candidate 5 \u2014 Sleeper players dump (`api.sleeper.app/v1/players/nfl`)",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## Candidate 6 \u2014 Commercial comparison rows (recorded, excluded from the open question)",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## Discovered candidate (evaluated) \u2014 nflverse `injuries` release",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## Comparison matrix",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## Preliminary ranking (frank)",
+      "prepared_section": 5
+    },
+    {
+      "source_heading": "## Unresolved questions only rights counsel or the source owner can answer",
+      "prepared_section": 6
+    }
+  ]
+}
