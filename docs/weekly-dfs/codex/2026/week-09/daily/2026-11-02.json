@@ -1,0 +1,389 @@
+{
+  "record_type": "daily_snapshot",
+  "id": "2026-w09-2026-11-02-daily",
+  "kind": "daily",
+  "status": "partial",
+  "frozen": false,
+  "author": "Codex",
+  "recorded_at_utc": "2026-11-02T11:52:55.452Z",
+  "recorded_at_toronto": "2026-11-02T06:52:55.452-05:00",
+  "evidence_cutoff": "2026-11-02T11:52:55.452Z",
+  "season": 2026,
+  "week": 9,
+  "slate_date": "2026-11-08",
+  "slate_label": "2026 Week9 Sunday afternoon target; platform main slate not yet verified",
+  "platform": "DraftKings",
+  "salary_cap": 50000,
+  "salary_total": 0,
+  "salary_remaining": 50000,
+  "budget_note": "No priced selections retained; $50,000 unallocated, not a complete legal roster.",
+  "salary_basis": "unavailable",
+  "official_pool_verified": false,
+  "draft_group_id": null,
+  "projected_total": null,
+  "projection": null,
+  "actual_total": null,
+  "picks": [],
+  "research_board": [
+    {
+      "player": "Patrick Mahomes",
+      "position": "QB",
+      "team": "KC",
+      "opponent": "NYJ",
+      "reason": "Fresh Week8 box:41attempts/321yards/3TD. A replacement QB candidate beyond old nine; allocation waits for price and Jets availability.",
+      "counterargument": "Strong last-game output does not set Week9 volume or value; no current main-slate salary.",
+      "salary": null,
+      "draftkings_player_id": null,
+      "official_eligibility": "unverified; schedule window only"
+    },
+    {
+      "player": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "DET",
+      "opponent": "MIA",
+      "reason": "23carries/153yards plus4targets; compare costly RB allocation with cheaperQB/TE packages once priced.",
+      "counterargument": "Vaki also11carries; 176team passing yards show run-heavy one-game context, not guaranteed repeat.",
+      "salary": null,
+      "draftkings_player_id": null,
+      "official_eligibility": "unverified; schedule window only"
+    },
+    {
+      "player": "Braelon Allen",
+      "position": "RB",
+      "team": "NYJ",
+      "opponent": "KC",
+      "reason": "21carries/147yards and2targets with Hall inactive. Conditional alternative to now-excluded Brown/Irving.",
+      "counterargument": "Hall's Week9 status unknown. Prior7targets fell to2; no receiving-floor inference.",
+      "salary": null,
+      "draftkings_player_id": null,
+      "official_eligibility": "unverified; schedule window only"
+    },
+    {
+      "player": "Jameson Williams",
+      "position": "WR",
+      "team": "DET",
+      "opponent": "MIA",
+      "reason": "Retain as research candidate:6targets/4catches/70yards/TD; actual receiving involvement despite low team passvolume.",
+      "counterargument": "StBrown8targets,25teamattempts; touchdown/long-play efficiency does not establish a floor.",
+      "salary": null,
+      "draftkings_player_id": null,
+      "official_eligibility": "unverified; schedule window only"
+    },
+    {
+      "player": "Adonai Mitchell",
+      "position": "WR",
+      "team": "NYJ",
+      "opponent": "KC",
+      "reason": "9targets/7catches/142yards/TD makes him an alternative to the failed Cooper opportunity premise.",
+      "counterargument": "Wilson12targets; priorweekMitchell hadzero catches, so do not chase a single efficiency spike.",
+      "salary": null,
+      "draftkings_player_id": null,
+      "official_eligibility": "unverified; schedule window only"
+    },
+    {
+      "player": "Harold Fannin Jr.",
+      "position": "TE",
+      "team": "CLE",
+      "opponent": "NO",
+      "reason": "12targets/10catches/154yards vs Concepcion4targets; evaluate as TE alternative beyond previousnine.",
+      "counterargument": "Watson/Sanders and8sacks show fragile offense; price/currentQBstatus unknown. One-game share not permanent.",
+      "salary": null,
+      "draftkings_player_id": null,
+      "official_eligibility": "unverified; schedule window only"
+    },
+    {
+      "player": "Mason Taylor",
+      "position": "TE",
+      "team": "NYJ",
+      "opponent": "KC",
+      "reason": "5targets retain narrow receiving participation; compare with Fannin at actual new prices.",
+      "counterargument": "19yards and zeroTD; avoid automaticCooper+Taylor pairing or Hall-checkdown thesis.",
+      "salary": null,
+      "draftkings_player_id": null,
+      "official_eligibility": "unverified; schedule window only"
+    },
+    {
+      "player": "Patriots",
+      "position": "DST",
+      "team": "NE",
+      "opponent": "GB",
+      "reason": "Candidate only; front participation confirmed, five sacks vsMiami. Reassess freshGreenBay opponent, not automaticweeklyhold.",
+      "counterargument": "Zone vulnerability and extensiveNEoffensive injuries persist; noGreenBay-specificpressurecase or price verified.",
+      "salary": null,
+      "draftkings_player_id": null,
+      "official_eligibility": "unverified; schedule window only"
+    }
+  ],
+  "games": [
+    {
+      "away": "DEN",
+      "home": "CAR",
+      "kickoff_et": "13:00",
+      "platform_membership": "not verified; primary NFL schedule afternoon candidate"
+    },
+    {
+      "away": "DAL",
+      "home": "IND",
+      "kickoff_et": "13:00",
+      "platform_membership": "not verified; primary NFL schedule afternoon candidate"
+    },
+    {
+      "away": "NYJ",
+      "home": "KC",
+      "kickoff_et": "13:00",
+      "platform_membership": "not verified; primary NFL schedule afternoon candidate"
+    },
+    {
+      "away": "DET",
+      "home": "MIA",
+      "kickoff_et": "13:00",
+      "platform_membership": "not verified; primary NFL schedule afternoon candidate"
+    },
+    {
+      "away": "CLE",
+      "home": "NO",
+      "kickoff_et": "13:00",
+      "platform_membership": "not verified; primary NFL schedule afternoon candidate"
+    },
+    {
+      "away": "NYG",
+      "home": "PHI",
+      "kickoff_et": "13:00",
+      "platform_membership": "not verified; primary NFL schedule afternoon candidate"
+    },
+    {
+      "away": "LAR",
+      "home": "WAS",
+      "kickoff_et": "13:00",
+      "platform_membership": "not verified; primary NFL schedule afternoon candidate"
+    },
+    {
+      "away": "HOU",
+      "home": "LAC",
+      "kickoff_et": "16:05",
+      "platform_membership": "not verified; primary NFL schedule afternoon candidate"
+    },
+    {
+      "away": "LV",
+      "home": "SF",
+      "kickoff_et": "16:25",
+      "platform_membership": "not verified; primary NFL schedule afternoon candidate"
+    },
+    {
+      "away": "GB",
+      "home": "NE",
+      "kickoff_et": "16:25",
+      "platform_membership": "not verified; primary NFL schedule afternoon candidate"
+    },
+    {
+      "away": "ARI",
+      "home": "SEA",
+      "kickoff_et": "16:25",
+      "platform_membership": "not verified; primary NFL schedule afternoon candidate"
+    }
+  ],
+  "earliest_candidate_kickoff": "2026-11-08T18:00:00Z",
+  "deadline_toronto": "2026-11-08T12:30:00-05:00",
+  "deadline_utc": "2026-11-08T17:30:00Z",
+  "excluded_windows": [
+    "JAX@BAL ThuNov5 20:15",
+    "CIN@ATL MadridSunNov8 09:30",
+    "TB@CHI SunNov8 20:20",
+    "BUF@MIN MonNov9 20:15"
+  ],
+  "byes": [
+    "PIT",
+    "TEN"
+  ],
+  "previous_snapshot_id": null,
+  "previous_week_baseline": {
+    "id": "2026-w08-20261101T155633Z-freeze",
+    "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/8268a3002eef31f3e4e06f6d2410b5111e59eb2d/docs/weekly-dfs/codex/2026/week-08/freeze/20261101T155513Z.json",
+    "frozen_at": "2026-11-01T15:56:33.550Z",
+    "evidence_cutoff": "2026-11-01T15:55:13.856Z",
+    "selection_binding": {
+      "method": "exact immutable JSON candidate plus verified slot/player/ID/salary/game equality",
+      "commit": "888e3278eba8b86558efeab76041d7d4e89a5467",
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json",
+      "blob_sha": "fd392f89bdb8648119d0fb28c021f4544c62e26c"
+    },
+    "salary_binding": {
+      "original_snapshot": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31-draftkings-153728.csv",
+      "current_official_check": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2c37adf21dcaa14c68691c37b534fe422498f34f/docs/weekly-dfs/codex/2026/week-08/freeze/20261101T155513Z-salary-check.csv",
+      "verification": "Fresh562row/11game officialexport matches selected original prices/positions/IDs/games; no pool or status changes versus morning. Blank status is not medical clearance."
+    },
+    "expectation_binding": {
+      "packet": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2c37adf21dcaa14c68691c37b534fe422498f34f/docs/weekly-dfs/codex/2026/week-08/freeze/20261101T155513Z-expectations.json",
+      "packet_commit": "2c37adf21dcaa14c68691c37b534fe422498f34f",
+      "ids": [
+        "2026-w08-1028-brown-role",
+        "2026-w08-1028-cooper-role",
+        "2026-w08-1028-taylor-role",
+        "2026-w08-1028-kcc-role",
+        "2026-w08-1031-patriots-availability"
+      ],
+      "originals": [
+        {
+          "ids": [
+            "2026-w08-1028-brown-role",
+            "2026-w08-1028-cooper-role",
+            "2026-w08-1028-taylor-role",
+            "2026-w08-1028-kcc-role"
+          ],
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d81c103e9fd568776327e45a5af3b3485c768f0b/docs/weekly-dfs/codex/journal/20261028T101856Z.json"
+        },
+        {
+          "ids": [
+            "2026-w08-1031-patriots-availability"
+          ],
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/8677ade6b38f6402d9b1f21f160ad051b852afdd/docs/weekly-dfs/codex/journal/20261031T105411Z.json"
+        }
+      ]
+    },
+    "authorship": "Shared final — Claude + Codex; exact selection jointly endorsed"
+  },
+  "prior_baseline_disposition": "New slate: Allen, Flowers, Brown and Irving play outside the intended main window. The other five Week 8 selections require new prices, opponents and role checks. No prior salary is carried forward.",
+  "revisions": [],
+  "revision_classification": "constraint_or_source_correction",
+  "changed_picks": [],
+  "important_unchanged": "No Week 9 selections yet. The Week 8 freeze remains immutable. Research continuity retains questions, not stale eligibility or salaries.",
+  "summary": "Week 9 unpriced research board. Eleven Sunday afternoon games verified on the NFL schedule; an official DraftKings group and enough current prices were not established. Mahomes, Gibbs, Braelon Allen, Mitchell and Fannin broaden candidate discovery. Week 8 receiving distribution challenges the Cooper and Concepcion assumptions.",
+  "counterargument": "This box-score board is not a salary-legal lineup or a forecast. New prices, roles and matchups may reverse priorities; isolated 100-yard games do not establish durable opportunity.",
+  "unresolved_assumptions": [
+    "The official Week 9 DraftKings main-slate group, membership and player salaries remain unverified.",
+    "Hall's Week 9 availability, Cleveland's quarterback and New England's offensive injuries need new dated evidence.",
+    "No coherent Week 9 DraftKings projection pool was verified; estimates and the projection-only baseline are unavailable."
+  ],
+  "change_triggers": [
+    "Inspect a published official Week 9 pool or enough attributable priced selections to create a supported first complete Codex draft.",
+    "Check Hall's practice and status before assuming Braelon retains lead work.",
+    "Require current target and route evidence before restoring Cooper's role or declaring Mitchell/Fannin permanent leaders.",
+    "Reassess the Patriots against Green Bay; last week's DST score is not the next matchup case."
+  ],
+  "collaboration": {
+    "cycle": "2026-w09-2026-11-08",
+    "round": 1,
+    "codex_v1_ready": {
+      "status": "blocked",
+      "reason": "No complete verifiably priced roster; this partial board does not unlock readiness."
+    },
+    "claude_v1_ready": {
+      "status": "blocked",
+      "reason": "No Week 9 contribution verified. Await valid common inputs and starting-draft sequence; no Week 9 Claude picks inspected."
+    },
+    "grok_questions_ready": {
+      "status": "blocked",
+      "reason": "Week 9 question packet is not ready. Week 8 questions do not establish current-week participation."
+    },
+    "collaboration_ready": {
+      "status": "blocked"
+    },
+    "final_frozen": {
+      "status": "blocked"
+    },
+    "next_handoff": "Codex must first retain a supported complete Week 9 v1 and a versioned common-input manifest. Claude then retains its own v1 from common inputs before viewing Codex picks where feasible. No provider dispatch or saved subscription is claimed."
+  },
+  "origin": "agent_chosen",
+  "operator_influence": "No new Week 9 football guidance received during this pass. Earlier Week 8 operator calls remain historical confounders, not instructions to retain players.",
+  "sources": [
+    {
+      "id": "src1",
+      "label": "src1",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+      "retrieved_at": "2026-11-02T11:47:42.021Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "rules",
+      "label": "src2",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-11-02T11:47:42.946Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "box401873030",
+      "label": "box401873030",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873030",
+      "retrieved_at": "2026-11-02T11:48:16.421Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "box401873029",
+      "label": "box401873029",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
+      "retrieved_at": "2026-11-02T11:48:16.244Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "jetsinactive",
+      "label": "jetsinactive",
+      "url": "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026",
+      "retrieved_at": "2026-11-02T11:48:59.215Z",
+      "publication_at": "2026-11-01T11:30:00-05:00",
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "box401873027",
+      "label": "box401873027",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873027",
+      "retrieved_at": "2026-11-02T11:48:16.013Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "neobservations",
+      "label": "neobservations",
+      "url": "https://www.patriots.com/news/game-observations-8-takeaways-from-the-patriots-comeback-win-over-the-dolphins-in-week-8",
+      "retrieved_at": "2026-11-02T11:50:32.533Z",
+      "publication_at": "2026-11-01T21:27:00-05:00",
+      "scope": "Attributed team-writer analysis, not an independently retrieved tracking dataset; box totals control discrepancies."
+    },
+    {
+      "id": "prices",
+      "label": "prices",
+      "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php",
+      "retrieved_at": "2026-11-02T11:49:00.299Z",
+      "publication_at": null,
+      "scope": "Inspected Week8/tonight Showdown; not Week9 prices."
+    },
+    {
+      "id": "projection",
+      "label": "projection",
+      "url": "https://fantasysportsedge.com/nfl/projections",
+      "retrieved_at": "2026-11-02T11:48:59.626Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "more1",
+      "label": "more1",
+      "url": "https://www.draftkings.com/lobby#/NFL",
+      "retrieved_at": "2026-11-02T11:48:08.994Z",
+      "publication_at": null,
+      "scope": "DraftKings public lobby redirected to account creation; no login or transaction."
+    },
+    {
+      "id": "kcbox",
+      "label": "kcbox",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873033",
+      "retrieved_at": "2026-11-02T11:50:34.868Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    }
+  ],
+  "runtime": {
+    "agent": "Codex",
+    "model": "exact serving model not separately observed",
+    "tools": [
+      "GitHub connector",
+      "Firecrawl search/scrape",
+      "TIBER capability reader"
+    ],
+    "retained_tiber": "The current reader withholds ROP/TTS/Forecast. No qualified retained output was accessed; inaccessible evidence is not necessarily nonexistent.",
+    "cost": null
+  }
+}
