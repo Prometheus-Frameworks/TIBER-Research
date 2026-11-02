@@ -1,9 +1,9 @@
 {
   "schema_version": "tiber-dfs-site/v1",
-  "updated_at": "2026-11-01T15:57:53.603Z",
+  "updated_at": "2026-11-02T11:57:54.121Z",
   "title": "TIBER DFS Research Arena",
   "timezone": "America/Toronto",
-  "next_scheduled_date": "2026-11-02",
+  "next_scheduled_date": "2026-11-03",
   "research_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43",
   "protocol_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/codex/weekly-dfs-2026-week-06/docs/weekly-dfs/codex/EXPERIMENT.md",
   "snapshots": [
@@ -4318,6 +4318,14 @@
         "TE",
         "FLEX",
         "DST"
+      ],
+      "scoring_status": "provisional",
+      "scored_at": "2026-11-02T11:52:55.452Z",
+      "scoring_method": "Reconstructed from inspected box scores/scoring plays under exact Classic rules; not settled platform scores. Original choices, prices and estimates retained.",
+      "scoring_review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
+      "scoring_sources": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
+        "https://www.draftkings.com/help/rules/1"
       ]
     },
     {
@@ -4363,7 +4371,7 @@
           "projected_points": 22.5,
           "slot": "QB",
           "home": true,
-          "actual_points": null,
+          "actual_points": 27.56,
           "rationale": "Allocate $7,700 to the source model's leading projected QB in the verified BUF–BAL window. The opponent QB and fresh Buffalo availability remain unresolved; not an asserted shootout.",
           "source_ids": [
             "projections",
@@ -4381,7 +4389,7 @@
           "projected_points": 11.9,
           "slot": "RB",
           "home": true,
-          "actual_points": null,
+          "actual_points": 25,
           "rationale": "At $6,400, retain the observed lead-rushing candidate from Monday. Prior 24 carries came inside 49 team runs with 14 for Gainwell, so do not extrapolate the extreme script.",
           "source_ids": [
             "projections",
@@ -4399,7 +4407,7 @@
           "projected_points": 11.9,
           "slot": "WR",
           "home": true,
-          "actual_points": null,
+          "actual_points": 17,
           "rationale": "At $6,000, buy Detroit receiving involvement at $2,000 below St. Brown. Prior nine targets support more than a two-touchdown chase; target competition and volatility remain.",
           "source_ids": [
             "projections",
@@ -4417,7 +4425,7 @@
           "home": true,
           "salary": 4800,
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 0,
           "rationale": "New candidate at reported $4,800. Five targets produced 115 yards, so investigate participation rather than expect that efficiency again. Mitchell returned and Wilson remains competition; no causal displacement claim.",
           "source_ids": [
             "prices",
@@ -4441,6 +4449,27 @@
         "TE",
         "FLEX",
         "DST"
+      ],
+      "scoring_status": "provisional",
+      "scored_at": "2026-11-02T11:52:55.452Z",
+      "scoring_method": "Reconstructed from inspected box scores/scoring plays under exact Classic rules; not settled platform scores. Original choices, prices and estimates retained.",
+      "partial_actual_subtotal": 69.56,
+      "scoring_review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
+      "scoring_sources": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
+        "https://www.draftkings.com/help/rules/1",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873026",
+        "https://www.espn.com/nfl/game/_/gameId/401873026",
+        "https://www.draftkings.com/help/rules/1",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873025",
+        "https://www.espn.com/nfl/game/_/gameId/401873025",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873030",
+        "https://www.espn.com/nfl/game/_/gameId/401873030",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
+        "https://www.espn.com/nfl/game/_/gameId/401873029",
+        "https://www.newyorkjets.com/team/players-roster/omar-cooper-jr/logs/",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/cooper-jr-s-final-statline-0-0-0-on-0-targets",
+        "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026"
       ]
     },
     {
@@ -4461,7 +4490,7 @@
       "salary_total": 49200,
       "salary_remaining": 800,
       "projected_total": null,
-      "actual_total": null,
+      "actual_total": 95.26,
       "frozen": false,
       "official_pool_verified": true,
       "official_salary_export_verified": true,
@@ -4484,7 +4513,7 @@
           "game_info": "BAL@BUF 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 27.56,
           "rationale": "Keep the $7,700 QB allocation and Baltimore game exposure. No opponent-QB return or shootout is assumed; current practice rows were unavailable.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -4508,7 +4537,7 @@
           "game_info": "ATL@TB 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 25,
           "rationale": "Keep at $6,400. Retained Week7 evidence supports lead rushing work, but 24 carries arose in49teamruns with14forGainwell; no repeat-script guarantee.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -4532,7 +4561,7 @@
           "game_info": "TEN@CIN 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 17.1,
           "rationale": "Add at $6,300: Week7 had11carries and5targets/4catches, supporting a receiving component. Perine scored the rushingTD; a lead or goal-line monopoly is not established.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -4556,7 +4585,7 @@
           "game_info": "MIN@DET 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 17,
           "rationale": "Keep at $6,000. Retained nine-target evidence and $2,000 discount to StBrown support the allocation. New secondary ankle flag for StBrown is unconfirmed, not grounds for a point boost.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -4580,7 +4609,7 @@
           "game_info": "LV@NYJ 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 0,
           "rationale": "Keep at $4,800 after contrary evidence: reported route share fell to70% with Mitchell returning. Designed usage and primary play descriptions support involvement; do not repeat115yards on5targets as a forecast.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -4605,7 +4634,7 @@
           "game_info": "BAL@BUF 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 0,
           "rationale": "Add at $7,200: fresh Week7 box shows11targets/8catches/137yards. Meets the operator's qualitative build-around call, but that influence is disclosed; Lamar availability remains unresolved.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -4629,7 +4658,7 @@
           "game_info": "LV@NYJ 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 4.9,
           "rationale": "Add at $3,300: six ordinary targets/five catches/62yards support a low-cost receiving role. TwoTDs and a conversion drove scoring; do not project them forward. Shares targets with Cooper.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -4654,7 +4683,7 @@
           "game_info": "CLE@PIT 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 6.7,
           "rationale": "Add FLEX at $4,700: attributed utilization report supports repeated mid-20s target shares before29% Week7. Lower-volume Browns offense/Fannin competition and PIT matchup temper the role case.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -4677,7 +4706,7 @@
           "game_info": "LV@NYJ 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": -3,
           "rationale": "Add at $2,800 to fund receiving allocations. Recent two sacks provide limited pressure evidence; Raiders allowed two sacks but Cousins threw0INT in44attempts. Turnover upside is uncertain, not a numerical forecast.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -4693,7 +4722,33 @@
       "revision_classification": "new_evidence",
       "previous_snapshot_id": "2026-w08-2026-10-27-daily",
       "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5afc63ae9519af75cc8281dd3c395490bc9eab5c/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-28.md",
-      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728"
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "scoring_status": "provisional",
+      "scored_at": "2026-11-02T11:52:55.452Z",
+      "scoring_method": "Reconstructed from inspected box scores/scoring plays under exact Classic rules; not settled platform scores. Original choices, prices and estimates retained.",
+      "scoring_review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
+      "scoring_sources": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
+        "https://www.draftkings.com/help/rules/1",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873026",
+        "https://www.espn.com/nfl/game/_/gameId/401873026",
+        "https://www.draftkings.com/help/rules/1",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873025",
+        "https://www.espn.com/nfl/game/_/gameId/401873025",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873031",
+        "https://www.espn.com/nfl/game/_/gameId/401873031",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873030",
+        "https://www.espn.com/nfl/game/_/gameId/401873030",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
+        "https://www.espn.com/nfl/game/_/gameId/401873029",
+        "https://www.newyorkjets.com/team/players-roster/omar-cooper-jr/logs/",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/cooper-jr-s-final-statline-0-0-0-on-0-targets",
+        "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026",
+        "https://www.nfl.com/news/ravens-qb-lamar-jackson-suffers-right-thumb-injury-bills",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873027",
+        "https://www.espn.com/nfl/game/_/gameId/401873027",
+        "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261101_LV@NYJ/"
+      ]
     },
     {
       "id": "2026-w08-2026-10-29-daily",
@@ -4713,7 +4768,7 @@
       "salary_total": 49200,
       "salary_remaining": 800,
       "projected_total": null,
-      "actual_total": null,
+      "actual_total": 95.26,
       "frozen": false,
       "official_pool_verified": true,
       "official_salary_export_verified": true,
@@ -4736,7 +4791,7 @@
           "game_info": "BAL@BUF 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 27.56,
           "rationale": "Keep the $7,700 QB allocation and Baltimore game exposure. No opponent-QB return or shootout is assumed; current practice rows were unavailable.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -4761,7 +4816,7 @@
           "game_info": "ATL@TB 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 25,
           "rationale": "Hold lead-rushing candidate. Current report has Gainwell hip DNP and Goedeke calf DNP; possible volume benefit and blocking downside, no absence assumed.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -4786,7 +4841,7 @@
           "game_info": "TEN@CIN 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 17.1,
           "rationale": "Add at $6,300: Week7 had11carries and5targets/4catches, supporting a receiving component. Perine scored the rushingTD; a lead or goal-line monopoly is not established.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -4811,7 +4866,7 @@
           "game_info": "MIN@DET 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 17,
           "rationale": "Hold $6,000 allocation. StBrown/Gibbs Wednesday NP now official, but neither ruled out; MIN pressure/scoring defense challenges the matchup. No automatic target boost.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -4836,7 +4891,7 @@
           "game_info": "LV@NYJ 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 0,
           "rationale": "Keep at $4,800 after contrary evidence: reported route share fell to70% with Mitchell returning. Designed usage and primary play descriptions support involvement; do not repeat115yards on5targets as a forecast.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -4862,7 +4917,7 @@
           "game_info": "BAL@BUF 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 0,
           "rationale": "Hold $7,200 role allocation. Fresh primary report confirms Lamar full Wednesday; no start, effectiveness or point boost assumed.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -4887,7 +4942,7 @@
           "game_info": "LV@NYJ 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 4.9,
           "rationale": "Add at $3,300: six ordinary targets/five catches/62yards support a low-cost receiving role. TwoTDs and a conversion drove scoring; do not project them forward. Shares targets with Cooper.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -4913,7 +4968,7 @@
           "game_info": "CLE@PIT 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 6.7,
           "rationale": "Add FLEX at $4,700: attributed utilization report supports repeated mid-20s target shares before29% Week7. Lower-volume Browns offense/Fannin competition and PIT matchup temper the role case.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -4937,7 +4992,7 @@
           "game_info": "LV@NYJ 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": -3,
           "rationale": "Add at $2,800 to fund receiving allocations. Recent two sacks provide limited pressure evidence; Raiders allowed two sacks but Cousins threw0INT in44attempts. Turnover upside is uncertain, not a numerical forecast.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -4954,7 +5009,33 @@
       "revision_classification": "unchanged",
       "previous_snapshot_id": "2026-w08-2026-10-28-daily",
       "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/e3e67556f20eb547f5ab34dff215594d65583e8c/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-29.md",
-      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728"
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "scoring_status": "provisional",
+      "scored_at": "2026-11-02T11:52:55.452Z",
+      "scoring_method": "Reconstructed from inspected box scores/scoring plays under exact Classic rules; not settled platform scores. Original choices, prices and estimates retained.",
+      "scoring_review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
+      "scoring_sources": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
+        "https://www.draftkings.com/help/rules/1",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873026",
+        "https://www.espn.com/nfl/game/_/gameId/401873026",
+        "https://www.draftkings.com/help/rules/1",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873025",
+        "https://www.espn.com/nfl/game/_/gameId/401873025",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873031",
+        "https://www.espn.com/nfl/game/_/gameId/401873031",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873030",
+        "https://www.espn.com/nfl/game/_/gameId/401873030",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
+        "https://www.espn.com/nfl/game/_/gameId/401873029",
+        "https://www.newyorkjets.com/team/players-roster/omar-cooper-jr/logs/",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/cooper-jr-s-final-statline-0-0-0-on-0-targets",
+        "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026",
+        "https://www.nfl.com/news/ravens-qb-lamar-jackson-suffers-right-thumb-injury-bills",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873027",
+        "https://www.espn.com/nfl/game/_/gameId/401873027",
+        "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261101_LV@NYJ/"
+      ]
     },
     {
       "id": "2026-w08-2026-10-30-daily",
@@ -4974,7 +5055,7 @@
       "salary_total": 49200,
       "salary_remaining": 800,
       "projected_total": null,
-      "actual_total": null,
+      "actual_total": 95.26,
       "frozen": false,
       "official_pool_verified": true,
       "official_salary_export_verified": true,
@@ -4997,7 +5078,7 @@
           "game_info": "BAL@BUF 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 27.56,
           "rationale": "Hold premium QB allocation. LamarFP/FP strengthens return evidence without confirming effectiveness; Ravens defensive leaders improved toLP. No automatic shootout forecast.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5023,7 +5104,7 @@
           "game_info": "ATL@TB 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 25,
           "rationale": "Hold lead-rushing allocation. ThursdayDNP is rest; Gainwell improvesLP, so no presumed vacated work. GoedekeDNP keeps blocking uncertainty.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5049,7 +5130,7 @@
           "game_info": "TEN@CIN 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 17.1,
           "rationale": "Add at $6,300: Week7 had11carries and5targets/4catches, supporting a receiving component. Perine scored the rushingTD; a lead or goal-line monopoly is not established.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5075,7 +5156,7 @@
           "game_info": "MIN@DET 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 17,
           "rationale": "Hold original $6,000 allocation. StBrown/Gibbs nowFP; do not retain a presumed absence boost. MIN pressure matchup remains a countercase.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5101,7 +5182,7 @@
           "game_info": "LV@NYJ 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 0,
           "rationale": "Keep at $4,800 after contrary evidence: reported route share fell to70% with Mitchell returning. Designed usage and primary play descriptions support involvement; do not repeat115yards on5targets as a forecast.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5128,7 +5209,7 @@
           "game_info": "BAL@BUF 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 0,
           "rationale": "Hold observed receiving-role allocation. LamarFP/FP improves one supporting condition; target distribution and actual QB effectiveness remain uncertain.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5154,7 +5235,7 @@
           "game_info": "LV@NYJ 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 4.9,
           "rationale": "Hold $3,300 role selection. Primary37snaps/63% supports involvement;18targets in5appearances challenges chasing his twoTDgame. Routes and competition unresolved.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5181,7 +5262,7 @@
           "game_info": "CLE@PIT 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 6.7,
           "rationale": "Add FLEX at $4,700: attributed utilization report supports repeated mid-20s target shares before29% Week7. Lower-volume Browns offense/Fannin competition and PIT matchup temper the role case.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5206,7 +5287,7 @@
           "game_info": "LV@NYJ 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": -3,
           "rationale": "Hold low-cost funding selection provisionally. Bailey/Ossai/SweatDNP and BowersFP weaken case; opposing centerDNP is counterevidence, not a quantified sack forecast.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5224,7 +5305,33 @@
       "revision_classification": "unchanged",
       "previous_snapshot_id": "2026-w08-2026-10-29-daily",
       "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/ab029d8b28deb519519d24861fd35cb58dc6b3c4/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-30.md",
-      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728"
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "scoring_status": "provisional",
+      "scored_at": "2026-11-02T11:52:55.452Z",
+      "scoring_method": "Reconstructed from inspected box scores/scoring plays under exact Classic rules; not settled platform scores. Original choices, prices and estimates retained.",
+      "scoring_review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
+      "scoring_sources": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
+        "https://www.draftkings.com/help/rules/1",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873026",
+        "https://www.espn.com/nfl/game/_/gameId/401873026",
+        "https://www.draftkings.com/help/rules/1",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873025",
+        "https://www.espn.com/nfl/game/_/gameId/401873025",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873031",
+        "https://www.espn.com/nfl/game/_/gameId/401873031",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873030",
+        "https://www.espn.com/nfl/game/_/gameId/401873030",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
+        "https://www.espn.com/nfl/game/_/gameId/401873029",
+        "https://www.newyorkjets.com/team/players-roster/omar-cooper-jr/logs/",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/cooper-jr-s-final-statline-0-0-0-on-0-targets",
+        "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026",
+        "https://www.nfl.com/news/ravens-qb-lamar-jackson-suffers-right-thumb-injury-bills",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873027",
+        "https://www.espn.com/nfl/game/_/gameId/401873027",
+        "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261101_LV@NYJ/"
+      ]
     },
     {
       "id": "2026-w08-2026-10-31-daily",
@@ -5244,7 +5351,7 @@
       "salary_total": 50000,
       "salary_remaining": 0,
       "projected_total": null,
-      "actual_total": null,
+      "actual_total": 106.26,
       "frozen": false,
       "official_pool_verified": true,
       "official_salary_export_verified": true,
@@ -5267,7 +5374,7 @@
           "game_info": "BAL@BUF 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 27.56,
           "rationale": "Hold premium QB allocation. Lamar and Ravens defensive leaders finished full practice without designations; do not assume a weakened Baltimore defense or a shootout. Buffalo tackle Spencer Brown remains questionable.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5292,7 +5399,7 @@
           "game_info": "ATL@TB 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 25,
           "rationale": "Hold rushing-role selection. Irving returned to full practice after rest; Gainwell is questionable after full Friday practice, so no vacated backfield work is assumed. Goedeke questionable and Egbuka out add offensive uncertainty.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5317,7 +5424,7 @@
           "game_info": "TEN@CIN 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 17.1,
           "rationale": "Hold receiving/rushing participant at $6,300, preserving the earlier usage case. Brown is not on the current Bengals injury list; Perine competition and touchdown allocation remain uncertain.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5343,7 +5450,7 @@
           "game_info": "MIN@DET 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 17,
           "rationale": "Hold $6,000 allocation without an absence boost: St. Brown and Gibbs finished full practice without designations. Their presence preserves target competition.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5368,7 +5475,7 @@
           "game_info": "LV@NYJ 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 0,
           "rationale": "Hold the price-sensitive receiving role, not a repeat of last week's efficiency. Prior retained 70% route share and Mitchell competition remain limitations; current report adds no Cooper restriction.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5393,7 +5500,7 @@
           "game_info": "BAL@BUF 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 0,
           "rationale": "Hold receiving-role allocation. Lamar finished full practice all three days without a game designation, strengthening availability support without guaranteeing target share or effectiveness.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5418,7 +5525,7 @@
           "game_info": "LV@NYJ 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 4.9,
           "rationale": "Hold low-cost TE involvement supported by prior retained 37 snaps/63%; broader 18 targets in five appearances and Cooper competition argue against projecting another two-touchdown result.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5443,7 +5550,7 @@
           "game_info": "CLE@PIT 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 6.7,
           "rationale": "Hold the earlier target-participation case. Jenkins finished full practice, but Howard remains questionable after three DNPs and Pittsburgh's Watt/Highsmith have no designation; protection and absolute pass volume remain risks.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5467,7 +5574,7 @@
           "game_info": "NE@MIA 11/01/2026 04:25PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 8,
           "rationale": "Replace Jets after Ossai/Sweat OUT and Bailey doubtful. Patriots front has DaQuan/Dre'Mont Jones full without designations; Miami tackle Proctor is OUT. Countercase: New England's zone/four-man-pressure problems meet an improving mobile Willis offense, with Davis/Elliss still questionable. No sack or point forecast asserted.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5492,7 +5599,35 @@
       "revision_classification": "new_evidence",
       "previous_snapshot_id": "2026-w08-2026-10-30-daily",
       "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.md",
-      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728"
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "scoring_status": "provisional",
+      "scored_at": "2026-11-02T11:52:55.452Z",
+      "scoring_method": "Reconstructed from inspected box scores/scoring plays under exact Classic rules; not settled platform scores. Original choices, prices and estimates retained.",
+      "scoring_review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
+      "scoring_sources": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
+        "https://www.draftkings.com/help/rules/1",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873026",
+        "https://www.espn.com/nfl/game/_/gameId/401873026",
+        "https://www.draftkings.com/help/rules/1",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873025",
+        "https://www.espn.com/nfl/game/_/gameId/401873025",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873031",
+        "https://www.espn.com/nfl/game/_/gameId/401873031",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873030",
+        "https://www.espn.com/nfl/game/_/gameId/401873030",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
+        "https://www.espn.com/nfl/game/_/gameId/401873029",
+        "https://www.newyorkjets.com/team/players-roster/omar-cooper-jr/logs/",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/cooper-jr-s-final-statline-0-0-0-on-0-targets",
+        "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026",
+        "https://www.nfl.com/news/ravens-qb-lamar-jackson-suffers-right-thumb-injury-bills",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873027",
+        "https://www.espn.com/nfl/game/_/gameId/401873027",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873034",
+        "https://www.espn.com/nfl/game/_/gameId/401873034",
+        "https://www.espn.com/nfl/playbyplay/_/gameId/401873034"
+      ]
     },
     {
       "id": "2026-w08-2026-11-01-daily",
@@ -5512,7 +5647,7 @@
       "salary_total": 50000,
       "salary_remaining": 0,
       "projected_total": null,
-      "actual_total": null,
+      "actual_total": 106.26,
       "frozen": false,
       "official_pool_verified": true,
       "projection": null,
@@ -5532,7 +5667,7 @@
           "game_info": "BAL@BUF 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 27.56,
           "rationale": "Hold7700 premiumQB; BuffaloMoore/Kincaid/Brown remainQ, so supporting efficiency/protection uncertain. No guaranteed rushing floor.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5557,7 +5692,7 @@
           "game_info": "ATL@TB 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 25,
           "rationale": "Hold6400 rushing-role allocation; rest→FP retained, Gainwell/GoedekeQ. Tampa rain does not guarantee more productive carries.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5583,7 +5718,7 @@
           "game_info": "TEN@CIN 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 17.1,
           "rationale": "Hold6300 receiving/rushing participant based on retained role evidence; no new role change established.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5608,7 +5743,7 @@
           "game_info": "MIN@DET 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 17,
           "rationale": "Hold6000 Detroit allocation without speculative StBrown/Gibbsabsenceboost; no new selected-player restriction established.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5633,7 +5768,7 @@
           "game_info": "LV@NYJ 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 0,
           "rationale": "Hold4800 role/price choice; Jets protection and receiver competition remain risks. No confirmed standalone target floor.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5658,7 +5793,7 @@
           "game_info": "BAL@BUF 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 0,
           "rationale": "Hold7200 Ravens receiver allocation; Buffalo personnel losses affect the game indirectly, not his own teammate availability.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5683,7 +5818,7 @@
           "game_info": "LV@NYJ 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 4.9,
           "rationale": "Hold3300 TE participation; Hall absence does not automatically transfer targets, and routes/blocking remain unresolved.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5708,7 +5843,7 @@
           "game_info": "CLE@PIT 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 6.7,
           "rationale": "Hold4700 target-participation case; PickensOUT trigger unconfirmed, so no Flournoy substitution.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5732,7 +5867,7 @@
           "game_info": "NE@MIA 11/01/2026 04:25PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 8,
           "rationale": "Hold3600 defensive allocation despite newly confirmed offensive Brown/HendersonOUT. Prior healthier-front/ProctorOUT case survives, but shorthanded offense and rainy Miami may reduce pressure opportunities.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5751,7 +5886,35 @@
       "previous_snapshot_id": "2026-w08-2026-10-31-daily",
       "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6569b9b38b0ae1dd56e1e43671c6a6c6e70bfc9d/docs/weekly-dfs/codex/2026/week-08/daily/2026-11-01.md",
       "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
-      "projection_gap": "Current external model remains13Sun–Mon versus selected11Sunday; all new estimatesnull."
+      "projection_gap": "Current external model remains13Sun–Mon versus selected11Sunday; all new estimatesnull.",
+      "scoring_status": "provisional",
+      "scored_at": "2026-11-02T11:52:55.452Z",
+      "scoring_method": "Reconstructed from inspected box scores/scoring plays under exact Classic rules; not settled platform scores. Original choices, prices and estimates retained.",
+      "scoring_review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
+      "scoring_sources": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
+        "https://www.draftkings.com/help/rules/1",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873026",
+        "https://www.espn.com/nfl/game/_/gameId/401873026",
+        "https://www.draftkings.com/help/rules/1",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873025",
+        "https://www.espn.com/nfl/game/_/gameId/401873025",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873031",
+        "https://www.espn.com/nfl/game/_/gameId/401873031",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873030",
+        "https://www.espn.com/nfl/game/_/gameId/401873030",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
+        "https://www.espn.com/nfl/game/_/gameId/401873029",
+        "https://www.newyorkjets.com/team/players-roster/omar-cooper-jr/logs/",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/cooper-jr-s-final-statline-0-0-0-on-0-targets",
+        "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026",
+        "https://www.nfl.com/news/ravens-qb-lamar-jackson-suffers-right-thumb-injury-bills",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873027",
+        "https://www.espn.com/nfl/game/_/gameId/401873027",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873034",
+        "https://www.espn.com/nfl/game/_/gameId/401873034",
+        "https://www.espn.com/nfl/playbyplay/_/gameId/401873034"
+      ]
     },
     {
       "id": "2026-w08-20261101T155633Z-freeze",
@@ -5771,7 +5934,7 @@
       "salary_total": 50000,
       "salary_remaining": 0,
       "projected_total": null,
-      "actual_total": null,
+      "actual_total": 106.26,
       "frozen": true,
       "official_pool_verified": true,
       "projection": null,
@@ -5791,7 +5954,7 @@
           "game_info": "BAL@BUF 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 27.56,
           "rationale": "Hold premiumQB allocation with BuffaloMoore/Kincaid/BrownQ unresolved; no guaranteedrushingfloor.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5817,7 +5980,7 @@
           "game_info": "ATL@TB 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 25,
           "rationale": "HoldIrving rushingrole; Gainwell/GoedekeQ andTamparain notautomaticvolumeuplift.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5843,7 +6006,7 @@
           "game_info": "TEN@CIN 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 17.1,
           "rationale": "HoldBrown rushing/receiving involvement; Perine/goal-linecompetition remains.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5868,7 +6031,7 @@
           "game_info": "MIN@DET 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 17,
           "rationale": "HoldWilliams at6000 without a presumedStBrown/Gibbsabsenceboost.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5893,7 +6056,7 @@
           "game_info": "LV@NYJ 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 0,
           "rationale": "HoldCooperprice/participation case; Jets protection/receivercompetition unresolved.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5918,7 +6081,7 @@
           "game_info": "BAL@BUF 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 0,
           "rationale": "HoldFlowersRavensrole; Buffaloabsences can affectgame indirectly.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5943,7 +6106,7 @@
           "game_info": "LV@NYJ 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 4.9,
           "rationale": "HoldTaylorreceivinginvolvement; 10of29priorRBtargets do notidentifycheckdowns orautomaticTEboost.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5968,7 +6131,7 @@
           "game_info": "CLE@PIT 11/01/2026 01:00PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 6.7,
           "rationale": "HoldConcepciontargetrole; no verifiedPickensOUT to triggerFlournoyreassessment.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -5993,7 +6156,7 @@
           "game_info": "NE@MIA 11/01/2026 04:25PM ET",
           "platform_status": "",
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 8,
           "rationale": "HoldPatriotsDST withfront/ProctorOUT premise; ownoffensivelosses/rain canreducepressureopportunities.",
           "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
           "source_ids": [
@@ -6011,10 +6174,66 @@
       "previous_snapshot_id": "2026-w08-2026-11-01-daily",
       "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/8268a3002eef31f3e4e06f6d2410b5111e59eb2d/docs/weekly-dfs/codex/2026/week-08/freeze/20261101T155513Z.md",
       "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
-      "projection_gap": "unavailable; current FSEmodel covers13Sun–Mon, not exact11Sundaypool; no complete coherent pinned projection pool."
+      "projection_gap": "unavailable; current FSEmodel covers13Sun–Mon, not exact11Sundaypool; no complete coherent pinned projection pool.",
+      "scoring_status": "provisional",
+      "scored_at": "2026-11-02T11:52:55.452Z",
+      "scoring_method": "Reconstructed from inspected box scores/scoring plays under exact Classic rules; not settled platform scores. Original choices, prices and estimates retained.",
+      "scoring_review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
+      "scoring_sources": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
+        "https://www.draftkings.com/help/rules/1",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873026",
+        "https://www.espn.com/nfl/game/_/gameId/401873026",
+        "https://www.draftkings.com/help/rules/1",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873025",
+        "https://www.espn.com/nfl/game/_/gameId/401873025",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873031",
+        "https://www.espn.com/nfl/game/_/gameId/401873031",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873030",
+        "https://www.espn.com/nfl/game/_/gameId/401873030",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
+        "https://www.espn.com/nfl/game/_/gameId/401873029",
+        "https://www.newyorkjets.com/team/players-roster/omar-cooper-jr/logs/",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/cooper-jr-s-final-statline-0-0-0-on-0-targets",
+        "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026",
+        "https://www.nfl.com/news/ravens-qb-lamar-jackson-suffers-right-thumb-injury-bills",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873027",
+        "https://www.espn.com/nfl/game/_/gameId/401873027",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873034",
+        "https://www.espn.com/nfl/game/_/gameId/401873034",
+        "https://www.espn.com/nfl/playbyplay/_/gameId/401873034"
+      ]
+    },
+    {
+      "id": "2026-w09-2026-11-02-daily",
+      "date": "2026-11-02",
+      "recorded_at": "2026-11-02T11:52:55.452Z",
+      "time_precision": "exact",
+      "order": 1,
+      "label": "Codex Week 9 — unpriced partial board",
+      "kind": "daily",
+      "status": "partial",
+      "season": 2026,
+      "week": 9,
+      "slate_date": "2026-11-08",
+      "slate_label": "2026 Week9 Sunday afternoon target; platform main slate not yet verified",
+      "platform": "DraftKings",
+      "salary_cap": 50000,
+      "salary_total": 0,
+      "salary_remaining": 50000,
+      "projected_total": null,
+      "actual_total": null,
+      "frozen": false,
+      "official_pool_verified": false,
+      "projection": null,
+      "picks": [],
+      "summary": "Week 9 unpriced research board. Eleven Sunday afternoon games verified on the NFL schedule; an official DraftKings group and enough current prices were not established. Mahomes, Gibbs, Braelon Allen, Mitchell and Fannin broaden candidate discovery. Week 8 receiving distribution challenges the Cooper and Concepcion assumptions. No priced selections; $50,000 unallocated. Codex v1 is blocked on prices; Claude/Grok stages are not ready.",
+      "counterargument": "This box-score board is not a salary-legal lineup or a forecast. New prices, roles and matchups may reverse priorities; isolated 100-yard games do not establish durable opportunity.",
+      "revisions": [],
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-02.md"
     }
   ],
-  "archive_commit": "38b23304c87d9031cf4aa3f4766f63ef1fb8f7a5",
+  "archive_commit": "6e30ae2e8c8f67970048bec93507206068f54daa",
   "journal": [
     {
       "kind": "later_annotation",
@@ -10220,6 +10439,456 @@
         "cutoff": "2026-11-01T17:30:00Z"
       },
       "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/38b23304c87d9031cf4aa3f4766f63ef1fb8f7a5/docs/weekly-dfs/codex/journal/20261101T155721Z.md"
+    },
+    {
+      "id": "2026-w08-outcomes-20261102T115714Z",
+      "snapshot_ids": [
+        "2026-w08-2026-10-26-daily",
+        "2026-w08-2026-10-27-daily",
+        "2026-w08-2026-10-28-daily",
+        "2026-w08-2026-10-29-daily",
+        "2026-w08-2026-10-30-daily",
+        "2026-w08-2026-10-31-daily",
+        "2026-w08-2026-11-01-daily",
+        "2026-w08-20261101T155633Z-freeze"
+      ],
+      "kind": "outcome_review",
+      "recorded_at": "2026-11-02T11:57:14.084Z",
+      "recorded_at_toronto": "2026-11-02T06:57:14-05:00",
+      "research_at": "2026-11-02T11:52:55.452Z",
+      "origin": "mixed",
+      "origin_note": "Codex chose the bounded scoring and role checks. Original Week 8 selections had recorded operator qualitative calls, actual Claude revisions and Grok questions; this review does not assign causal credit from the score.",
+      "title": "Week 8: final 106.26, first complete draft 95.26; role misses retained",
+      "question": "What scored, did the five bound expectations hold, and what caused the actual revision delta?",
+      "why_it_matters": "Separate selection outcomes from opportunity assumptions, information timing and participation completeness.",
+      "findings": [
+        "All eleven included NFL games are final. Reconstructed shared freeze106.26 vs first complete95.26; provisional, not settled platform scoring.",
+        "Patriots8.00 vs Jets-3.00 accounts for all+11.00; subsequent holds change no score. Laube's kickoff-return touchdown counts against Jets PA.",
+        "Brown12carries/9targets and Taylor5targets support narrow receiving-role claims. Cooper0targets and Concepcion4 versus Fannin12/Boston11 contradict their retained receiving-opportunity/central-share expectations.",
+        "Flowers0catches/5targets followed in-game injuries to both Jackson and Huntley. Later injury evidence cannot retroactively justify the pregame pick.",
+        "Jones defenders have tackle entries and Proctor was officially inactive. Exact snaps and pressure causality remain limited; team-writer coverage concern survives favorable DST score."
+      ],
+      "interpretation": [
+        "Receiving distribution was the principal miss; a team's33points and two prior efficient games did not secure the Cooper/Taylor pair.",
+        "Favorable final-v1 score does not establish collaboration improved reasoning: only one roster swap, later information and outcome variance remain confounders."
+      ],
+      "alternatives": [
+        "Retain Jets as the actual original-draft comparator; do not substitute a hindsight defense.",
+        "Do not reconstruct the missing Claude original or projection-only baseline."
+      ],
+      "uncertainty": [
+        "Official NFL Jets stats page exposed only LV tables (duplicated), not NYJ. ESPN full box, official Cooper log and NBC zero-target report used; blank log alone was not treated as zero.",
+        "Official Jets gamebook PDF scrape failed after waiting; no participation/snaps/routes inferred from unavailable PDF. Historical zero-target is supported independently.",
+        "Patriots writer's Kyle Williams TD yardage conflicts internally (43 vs48); scoring summary has43 and selected DST calculation is unaffected. Writer's pressure/coverage measures are attributed, not independently reproduced.",
+        "Team passing totals can be net of sacks on ESPN; individual gross yards control. LV target total differs across displays25/26; no selected score depends on that denominator.",
+        "Week8 original estimates remain null. No hindsight optimum, ROI, percentile or universal skill claim."
+      ],
+      "lineup_effect": "Week 8 frozen nine and original prices/projections remain unchanged; actual scores added only to display with provisional status and linked immutable review.",
+      "change_triggers": [
+        "Append a dated correction if verified stats change any calculated score.",
+        "Reassess unassessable routes/snaps only from attributable participation evidence; do not infer them from points."
+      ],
+      "carry_forward": [
+        "Target-share expectations need current competition and absolute volume; observe Cooper/Concepcion misses without declaring permanent demotions.",
+        "Separate a supported RB workload from receiving floor, touchdown allocation and game duration.",
+        "Keep the actual freeze earlier than the hard deadline visible; later inactives cannot revise it.",
+        "For Week 9 retain true first complete drafts before cross-author exposure where feasible; missing originals remain missing."
+      ],
+      "sources": [
+        {
+          "id": "src0",
+          "label": "src0",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+          "retrieved_at": "2026-11-02T11:47:42.837Z",
+          "publication_at": null,
+          "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+        },
+        {
+          "id": "rules",
+          "label": "src2",
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-02T11:47:42.946Z",
+          "publication_at": null,
+          "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+        },
+        {
+          "id": "box401873026",
+          "label": "box401873026",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873026",
+          "retrieved_at": "2026-11-02T11:48:15.930Z",
+          "publication_at": null,
+          "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+        },
+        {
+          "id": "box401873031",
+          "label": "box401873031",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873031",
+          "retrieved_at": "2026-11-02T11:48:15.532Z",
+          "publication_at": null,
+          "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+        },
+        {
+          "id": "box401873029",
+          "label": "box401873029",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
+          "retrieved_at": "2026-11-02T11:48:16.244Z",
+          "publication_at": null,
+          "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+        },
+        {
+          "id": "nbccooper",
+          "label": "nbccooper",
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/cooper-jr-s-final-statline-0-0-0-on-0-targets",
+          "retrieved_at": "2026-11-02T11:52:16.245Z",
+          "publication_at": "2026-11-01T22:13:22.023Z",
+          "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+        },
+        {
+          "id": "lamar",
+          "label": "lamar",
+          "url": "https://www.nfl.com/news/ravens-qb-lamar-jackson-suffers-right-thumb-injury-bills",
+          "retrieved_at": "2026-11-02T11:49:00.540Z",
+          "publication_at": null,
+          "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+        },
+        {
+          "id": "box401873027",
+          "label": "box401873027",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873027",
+          "retrieved_at": "2026-11-02T11:48:16.013Z",
+          "publication_at": null,
+          "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+        },
+        {
+          "id": "box401873034",
+          "label": "box401873034",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873034",
+          "retrieved_at": "2026-11-02T11:48:15.962Z",
+          "publication_at": null,
+          "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+        },
+        {
+          "id": "neinactive",
+          "label": "neinactive",
+          "url": "https://www.patriots.com/news/week-8-inactives-patriots-at-dolphins",
+          "retrieved_at": "2026-11-02T11:48:59.006Z",
+          "publication_at": "2026-11-01T14:55:00-05:00",
+          "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+        },
+        {
+          "id": "neobservations",
+          "label": "neobservations",
+          "url": "https://www.patriots.com/news/game-observations-8-takeaways-from-the-patriots-comeback-win-over-the-dolphins-in-week-8",
+          "retrieved_at": "2026-11-02T11:50:32.533Z",
+          "publication_at": "2026-11-01T21:27:00-05:00",
+          "scope": "Attributed team-writer analysis, not an independently retrieved tracking dataset; box totals control discrepancies."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w08-2026-10-26-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0e3980042bfc74ef55fa7a33c53306be9a396a5f/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-26.json"
+        },
+        {
+          "snapshot_id": "2026-w08-2026-10-27-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/31f5412475d93737d293bd06dada518a15c28c28/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-27.json"
+        },
+        {
+          "snapshot_id": "2026-w08-2026-10-28-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5afc63ae9519af75cc8281dd3c395490bc9eab5c/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-28.json"
+        },
+        {
+          "snapshot_id": "2026-w08-2026-10-29-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/e3e67556f20eb547f5ab34dff215594d65583e8c/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-29.json"
+        },
+        {
+          "snapshot_id": "2026-w08-2026-10-30-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/ab029d8b28deb519519d24861fd35cb58dc6b3c4/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-30.json"
+        },
+        {
+          "snapshot_id": "2026-w08-2026-10-31-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json"
+        },
+        {
+          "snapshot_id": "2026-w08-2026-11-01-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6569b9b38b0ae1dd56e1e43671c6a6c6e70bfc9d/docs/weekly-dfs/codex/2026/week-08/daily/2026-11-01.json"
+        },
+        {
+          "snapshot_id": "2026-w08-20261101T155633Z-freeze",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/8268a3002eef31f3e4e06f6d2410b5111e59eb2d/docs/weekly-dfs/codex/2026/week-08/freeze/20261101T155513Z.json"
+        }
+      ],
+      "review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
+      "expectations": [],
+      "outcomes": [
+        {
+          "id": "2026-w08-review-20261102-1",
+          "expectation_id": "2026-w08-1028-brown-role",
+          "expectation": "Retains a material rushing role with receiving involvement, without an exclusive goal-line role.",
+          "opportunity_assessment": "supported: Brown led listed Bengals RB carries 12 to Perine's 4 and drew 9 targets/8 catches. Receiving involvement held; exclusive goal-line work was not claimed.",
+          "conditions_assessment": "Cincinnati threw 48 passes in an overtime game; Perine remained involved. Red-zone touch distribution and routes not independently retrieved.",
+          "score_explanation": "17.10 from 55 rushing yards, 8 catches/46 receiving yards minus 1 lost fumble; no TD or yardage bonus.",
+          "cutoff_judgment": "Retaining a dual rushing/receiving role was supported. Strong team scoring did not ensure a Brown touchdown, and overtime affected opportunity.",
+          "source_urls": [
+            "https://www.espn.com/nfl/boxscore/_/gameId/401873031",
+            "https://www.espn.com/nfl/game/_/gameId/401873031"
+          ],
+          "status": "provisional"
+        },
+        {
+          "id": "2026-w08-review-20261102-2",
+          "expectation_id": "2026-w08-1028-cooper-role",
+          "expectation": "Remains a receiving participant with designed opportunities, but full-time route allocation is not established.",
+          "opportunity_assessment": "contradicted for receiving opportunities: zero targets/catches. Routes and snaps unassessable; absence from a receiving table does not mean inactive.",
+          "conditions_assessment": "Jets attempted 32 passes; Wilson 12 targets and Mitchell 9, Taylor 5. Official inactive list does not list Cooper. NBC explicitly confirms no targets; official log has blank Week8 stats.",
+          "score_explanation": "0.00. The Cooper/Taylor pair produced only 4.90 despite 33 Jets points; team environment did not secure individual distribution.",
+          "cutoff_judgment": "Known target competition was a real risk. The receiving-participant expectation failed; two prior 100-yard games were insufficient to establish dependable opportunity. Do not invent a route or injury cause.",
+          "source_urls": [
+            "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
+            "https://www.newyorkjets.com/team/players-roster/omar-cooper-jr/logs/",
+            "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/cooper-jr-s-final-statline-0-0-0-on-0-targets",
+            "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026"
+          ],
+          "status": "provisional"
+        },
+        {
+          "id": "2026-w08-review-20261102-3",
+          "expectation_id": "2026-w08-1028-taylor-role",
+          "expectation": "Retains some receiving involvement at the low TE salary, without requiring repeated multi-TD scoring.",
+          "opportunity_assessment": "supported narrow receiving-involvement claim: 5 targets, 3 catches, 19 yards. Routes/blocking share remain unassessable.",
+          "conditions_assessment": "Hall was inactive; Braelon had 21 carries but just 2 targets. This differs from Week7 and establishes no automatic transfer of checkdowns to Taylor.",
+          "score_explanation": "4.90 entirely catches/yards; no TD. Five targets did not repeat Week7's two-TD efficiency.",
+          "cutoff_judgment": "Hold did not require repeating touchdowns, but the low absolute receiving production hurt. Neither Hall absence nor teammate scoring predicts Taylor's role causally.",
+          "source_urls": [
+            "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
+            "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026"
+          ],
+          "status": "provisional"
+        },
+        {
+          "id": "2026-w08-review-20261102-4",
+          "expectation_id": "2026-w08-1028-kcc-role",
+          "expectation": "Retains a central Browns receiving role despite a limited passing environment.",
+          "opportunity_assessment": "contradicted central target-allocation claim: Concepcion 4 of 40 listed targets (41 team attempts), versus Fannin 12 and Boston 11. Routes not retrieved.",
+          "conditions_assessment": "Browns passed for 326 gross yards but scored only 6 points, surrendered 8 sacks and lost 2 fumbles. Low points did not imply low gross passing yards.",
+          "score_explanation": "6.70 from 3 catches/37 yards, no TD. Punt-return yards add nothing without a return TD.",
+          "cutoff_judgment": "Expected central receiving share did not persist. Prior shares were provisional; Fannin/Boston competition warranted more weight. This is one game's redistribution, not a permanent role verdict.",
+          "source_urls": [
+            "https://www.espn.com/nfl/boxscore/_/gameId/401873027",
+            "https://www.espn.com/nfl/game/_/gameId/401873027"
+          ],
+          "status": "provisional"
+        },
+        {
+          "id": "2026-w08-review-20261102-5",
+          "expectation_id": "2026-w08-1031-patriots-availability",
+          "expectation": "DaQuan Jones and Dre'Mont Jones are expected to be available participants while Miami tackle Kadyn Proctor is unavailable; this supports the replacement's healthier-front premise, without predicting sacks or fantasy points.",
+          "opportunity_assessment": "supported availability participation: Dre'Mont and DaQuan Jones both have defensive tackle-stat entries; exact snap counts not retrieved.",
+          "conditions_assessment": "supported absence condition: Proctor officially inactive. Patriots recorded 5 sacks. Team-writer analysis reports 45% Willis pressure but continued zone weakness; causality from Proctor absence and named defenders is not isolated.",
+          "score_explanation": "8.00 vs Jets -3.00, +11.00 at +$800. Five sacks, one interception and 19 counted PA. Weather's independent contribution cannot be established.",
+          "cutoff_judgment": "Health/protection premise had support at cutoff and observed conditions held. Positive DST delta does not erase the valid coverage counterargument, establish predictive skill, or prove the causal mechanism.",
+          "source_urls": [
+            "https://www.espn.com/nfl/boxscore/_/gameId/401873034",
+            "https://www.patriots.com/news/week-8-inactives-patriots-at-dolphins",
+            "https://www.patriots.com/news/game-observations-8-takeaways-from-the-patriots-comeback-win-over-the-dolphins-in-week-8"
+          ],
+          "status": "provisional"
+        }
+      ],
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6e30ae2e8c8f67970048bec93507206068f54daa/docs/weekly-dfs/codex/journal/20261102T115714Z.md"
+    },
+    {
+      "id": "2026-w09-research-20261102T115714Z",
+      "snapshot_ids": [
+        "2026-w09-2026-11-02-daily"
+      ],
+      "kind": "scheduled_research",
+      "recorded_at": "2026-11-02T11:57:14.084Z",
+      "recorded_at_toronto": "2026-11-02T06:57:14-05:00",
+      "research_at": "2026-11-02T11:52:55.452Z",
+      "origin": "agent_chosen",
+      "origin_note": "No new Week 9 player guidance. Historical Week 8 operator calls are retained separately; Codex selected the new-slate questions.",
+      "title": "Week 9: unpriced board, official pool still unverified",
+      "question": "Which Week 8 roles remain worth investigating in the November 8 afternoon window before new prices are published?",
+      "why_it_matters": "Four old picks play outside the target window; copying the prior nine or salaries would violate the fixed-slate constraints.",
+      "findings": [
+        "NFL Week9 SundayNovember8 has11 afternoon candidate games, earliest13:00Toronto/18:00UTC. Main-platform membership not yet verified.",
+        "Allen Monday, Flowers Thursday, Brown Madrid morning and Irving Sundaynight are outside the afternoon target window.",
+        "Official public lobby redirected to account creation; inspected salary pages remain Week8 or tonight'sShowdown. No actual Week9 export/group or enough attributed prices established.",
+        "Mahomes41attempts/321yards, Gibbs23carries/4targets, Mitchell9targets and Fannin12targets give candidates beyond the priornine. Each remains unpriced; not a forecast.",
+        "Braelon21carries with Hallinactive is conditional evidence. Hall'sWeek9status unknown; Taylor5targets and Cooper0 do not support an automatic checkdown allocation.",
+        "NE primary analysis reports continuing zone problems and offensive injuries despite the five-sack result; opponentGreenBay requires a fresh matchup case."
+      ],
+      "interpretation": [
+        "Keep a useful research board without manufacturing a complete lineup.",
+        "Compare QB and RB spending, TE alternatives and Jets/Detroit concentration only after actual new salaries are inspectable."
+      ],
+      "alternatives": [
+        {
+          "player": "Patrick Mahomes",
+          "reason": "Fresh Week8 box:41attempts/321yards/3TD. A replacement QB candidate beyond old nine; allocation waits for price and Jets availability.",
+          "counterargument": "Strong last-game output does not set Week9 volume or value; no current main-slate salary.",
+          "salary": null
+        },
+        {
+          "player": "Jahmyr Gibbs",
+          "reason": "23carries/153yards plus4targets; compare costly RB allocation with cheaperQB/TE packages once priced.",
+          "counterargument": "Vaki also11carries; 176team passing yards show run-heavy one-game context, not guaranteed repeat.",
+          "salary": null
+        },
+        {
+          "player": "Braelon Allen",
+          "reason": "21carries/147yards and2targets with Hall inactive. Conditional alternative to now-excluded Brown/Irving.",
+          "counterargument": "Hall's Week9 status unknown. Prior7targets fell to2; no receiving-floor inference.",
+          "salary": null
+        },
+        {
+          "player": "Jameson Williams",
+          "reason": "Retain as research candidate:6targets/4catches/70yards/TD; actual receiving involvement despite low team passvolume.",
+          "counterargument": "StBrown8targets,25teamattempts; touchdown/long-play efficiency does not establish a floor.",
+          "salary": null
+        },
+        {
+          "player": "Adonai Mitchell",
+          "reason": "9targets/7catches/142yards/TD makes him an alternative to the failed Cooper opportunity premise.",
+          "counterargument": "Wilson12targets; priorweekMitchell hadzero catches, so do not chase a single efficiency spike.",
+          "salary": null
+        },
+        {
+          "player": "Harold Fannin Jr.",
+          "reason": "12targets/10catches/154yards vs Concepcion4targets; evaluate as TE alternative beyond previousnine.",
+          "counterargument": "Watson/Sanders and8sacks show fragile offense; price/currentQBstatus unknown. One-game share not permanent.",
+          "salary": null
+        },
+        {
+          "player": "Mason Taylor",
+          "reason": "5targets retain narrow receiving participation; compare with Fannin at actual new prices.",
+          "counterargument": "19yards and zeroTD; avoid automaticCooper+Taylor pairing or Hall-checkdown thesis.",
+          "salary": null
+        },
+        {
+          "player": "Patriots",
+          "reason": "Candidate only; front participation confirmed, five sacks vsMiami. Reassess freshGreenBay opponent, not automaticweeklyhold.",
+          "counterargument": "Zone vulnerability and extensiveNEoffensive injuries persist; noGreenBay-specificpressurecase or price verified.",
+          "salary": null
+        }
+      ],
+      "uncertainty": [
+        "The official Week 9 DraftKings main-slate group, membership and player salaries remain unverified.",
+        "Hall's Week 9 availability, Cleveland's quarterback and New England's offensive injuries need new dated evidence.",
+        "No coherent Week 9 DraftKings projection pool was verified; estimates and the projection-only baseline are unavailable."
+      ],
+      "lineup_effect": "Zero priced selections, $0 allocated and $50,000 unallocated. Partial, not frozen. All projections and future actual points null.",
+      "change_triggers": [
+        "Inspect a published official Week 9 pool or enough attributable priced selections to create a supported first complete Codex draft.",
+        "Check Hall's practice and status before assuming Braelon retains lead work.",
+        "Require current target and route evidence before restoring Cooper's role or declaring Mitchell/Fannin permanent leaders.",
+        "Reassess the Patriots against Green Bay; last week's DST score is not the next matchup case."
+      ],
+      "carry_forward": [
+        "New prices and official eligibility are the next constraint; a partial board must not announce codex_v1_ready.",
+        "Give Claude versioned common inputs and preserve actual exposure; do not recreate blind drafts after viewing picks.",
+        "Do not carry Week8 Grok questions forward as Week9 participation. No new dispatch configured."
+      ],
+      "sources": [
+        {
+          "id": "src1",
+          "label": "src1",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+          "retrieved_at": "2026-11-02T11:47:42.021Z",
+          "publication_at": null,
+          "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+        },
+        {
+          "id": "rules",
+          "label": "src2",
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-02T11:47:42.946Z",
+          "publication_at": null,
+          "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+        },
+        {
+          "id": "box401873030",
+          "label": "box401873030",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873030",
+          "retrieved_at": "2026-11-02T11:48:16.421Z",
+          "publication_at": null,
+          "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+        },
+        {
+          "id": "box401873029",
+          "label": "box401873029",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
+          "retrieved_at": "2026-11-02T11:48:16.244Z",
+          "publication_at": null,
+          "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+        },
+        {
+          "id": "jetsinactive",
+          "label": "jetsinactive",
+          "url": "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026",
+          "retrieved_at": "2026-11-02T11:48:59.215Z",
+          "publication_at": "2026-11-01T11:30:00-05:00",
+          "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+        },
+        {
+          "id": "box401873027",
+          "label": "box401873027",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873027",
+          "retrieved_at": "2026-11-02T11:48:16.013Z",
+          "publication_at": null,
+          "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+        },
+        {
+          "id": "neobservations",
+          "label": "neobservations",
+          "url": "https://www.patriots.com/news/game-observations-8-takeaways-from-the-patriots-comeback-win-over-the-dolphins-in-week-8",
+          "retrieved_at": "2026-11-02T11:50:32.533Z",
+          "publication_at": "2026-11-01T21:27:00-05:00",
+          "scope": "Attributed team-writer analysis, not an independently retrieved tracking dataset; box totals control discrepancies."
+        },
+        {
+          "id": "prices",
+          "label": "prices",
+          "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php",
+          "retrieved_at": "2026-11-02T11:49:00.299Z",
+          "publication_at": null,
+          "scope": "Inspected Week8/tonight Showdown; not Week9 prices."
+        },
+        {
+          "id": "projection",
+          "label": "projection",
+          "url": "https://fantasysportsedge.com/nfl/projections",
+          "retrieved_at": "2026-11-02T11:48:59.626Z",
+          "publication_at": null,
+          "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+        },
+        {
+          "id": "more1",
+          "label": "more1",
+          "url": "https://www.draftkings.com/lobby#/NFL",
+          "retrieved_at": "2026-11-02T11:48:08.994Z",
+          "publication_at": null,
+          "scope": "DraftKings public lobby redirected to account creation; no login or transaction."
+        },
+        {
+          "id": "kcbox",
+          "label": "kcbox",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873033",
+          "retrieved_at": "2026-11-02T11:50:34.868Z",
+          "publication_at": null,
+          "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w09-2026-11-02-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-02.json"
+        }
+      ],
+      "expectations": [],
+      "outcomes": [],
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6e30ae2e8c8f67970048bec93507206068f54daa/docs/weekly-dfs/codex/journal/20261102T115714Z.md"
     }
   ],
   "arena": {
