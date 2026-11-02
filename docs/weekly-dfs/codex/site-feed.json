@@ -1,6 +1,6 @@
 {
   "schema_version": "tiber-dfs-site/v1",
-  "updated_at": "2026-11-02T11:57:54.121Z",
+  "updated_at": "2026-11-02T11:58:36.969Z",
   "title": "TIBER DFS Research Arena",
   "timezone": "America/Toronto",
   "next_scheduled_date": "2026-11-03",
@@ -4324,8 +4324,11 @@
       "scoring_method": "Reconstructed from inspected box scores/scoring plays under exact Classic rules; not settled platform scores. Original choices, prices and estimates retained.",
       "scoring_review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
       "scoring_sources": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
-        "https://www.draftkings.com/help/rules/1"
+        {
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-02T11:47:42.946Z",
+          "publication_at": null
+        }
       ]
     },
     {
@@ -4456,20 +4459,71 @@
       "partial_actual_subtotal": 69.56,
       "scoring_review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
       "scoring_sources": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
-        "https://www.draftkings.com/help/rules/1",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873026",
-        "https://www.espn.com/nfl/game/_/gameId/401873026",
-        "https://www.draftkings.com/help/rules/1",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873025",
-        "https://www.espn.com/nfl/game/_/gameId/401873025",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873030",
-        "https://www.espn.com/nfl/game/_/gameId/401873030",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
-        "https://www.espn.com/nfl/game/_/gameId/401873029",
-        "https://www.newyorkjets.com/team/players-roster/omar-cooper-jr/logs/",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/cooper-jr-s-final-statline-0-0-0-on-0-targets",
-        "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026"
+        {
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-02T11:47:42.946Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873026",
+          "retrieved_at": "2026-11-02T11:48:15.930Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873026",
+          "retrieved_at": "2026-11-02T11:48:38.585Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-02T11:47:42.946Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873025",
+          "retrieved_at": "2026-11-02T11:48:16.005Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873025",
+          "retrieved_at": "2026-11-02T11:48:38.473Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873030",
+          "retrieved_at": "2026-11-02T11:48:16.421Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873030",
+          "retrieved_at": "2026-11-02T11:48:38.464Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
+          "retrieved_at": "2026-11-02T11:48:16.244Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873029",
+          "retrieved_at": "2026-11-02T11:48:38.347Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.newyorkjets.com/team/players-roster/omar-cooper-jr/logs/",
+          "retrieved_at": "2026-11-02T11:48:58.975Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/cooper-jr-s-final-statline-0-0-0-on-0-targets",
+          "retrieved_at": "2026-11-02T11:52:16.245Z",
+          "publication_at": "2026-11-01T22:13:22.023Z"
+        },
+        {
+          "url": "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026",
+          "retrieved_at": "2026-11-02T11:48:59.215Z",
+          "publication_at": "2026-11-01T11:30:00-05:00"
+        }
       ]
     },
     {
@@ -4728,26 +4782,101 @@
       "scoring_method": "Reconstructed from inspected box scores/scoring plays under exact Classic rules; not settled platform scores. Original choices, prices and estimates retained.",
       "scoring_review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
       "scoring_sources": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
-        "https://www.draftkings.com/help/rules/1",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873026",
-        "https://www.espn.com/nfl/game/_/gameId/401873026",
-        "https://www.draftkings.com/help/rules/1",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873025",
-        "https://www.espn.com/nfl/game/_/gameId/401873025",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873031",
-        "https://www.espn.com/nfl/game/_/gameId/401873031",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873030",
-        "https://www.espn.com/nfl/game/_/gameId/401873030",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
-        "https://www.espn.com/nfl/game/_/gameId/401873029",
-        "https://www.newyorkjets.com/team/players-roster/omar-cooper-jr/logs/",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/cooper-jr-s-final-statline-0-0-0-on-0-targets",
-        "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026",
-        "https://www.nfl.com/news/ravens-qb-lamar-jackson-suffers-right-thumb-injury-bills",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873027",
-        "https://www.espn.com/nfl/game/_/gameId/401873027",
-        "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261101_LV@NYJ/"
+        {
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-02T11:47:42.946Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873026",
+          "retrieved_at": "2026-11-02T11:48:15.930Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873026",
+          "retrieved_at": "2026-11-02T11:48:38.585Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-02T11:47:42.946Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873025",
+          "retrieved_at": "2026-11-02T11:48:16.005Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873025",
+          "retrieved_at": "2026-11-02T11:48:38.473Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873031",
+          "retrieved_at": "2026-11-02T11:48:15.532Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873031",
+          "retrieved_at": "2026-11-02T11:48:38.318Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873030",
+          "retrieved_at": "2026-11-02T11:48:16.421Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873030",
+          "retrieved_at": "2026-11-02T11:48:38.464Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
+          "retrieved_at": "2026-11-02T11:48:16.244Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873029",
+          "retrieved_at": "2026-11-02T11:48:38.347Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.newyorkjets.com/team/players-roster/omar-cooper-jr/logs/",
+          "retrieved_at": "2026-11-02T11:48:58.975Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/cooper-jr-s-final-statline-0-0-0-on-0-targets",
+          "retrieved_at": "2026-11-02T11:52:16.245Z",
+          "publication_at": "2026-11-01T22:13:22.023Z"
+        },
+        {
+          "url": "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026",
+          "retrieved_at": "2026-11-02T11:48:59.215Z",
+          "publication_at": "2026-11-01T11:30:00-05:00"
+        },
+        {
+          "url": "https://www.nfl.com/news/ravens-qb-lamar-jackson-suffers-right-thumb-injury-bills",
+          "retrieved_at": "2026-11-02T11:49:00.540Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873027",
+          "retrieved_at": "2026-11-02T11:48:16.013Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873027",
+          "retrieved_at": "2026-11-02T11:48:38.389Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261101_LV@NYJ/",
+          "retrieved_at": "2026-11-02T11:49:17.824Z",
+          "publication_at": null
+        }
       ]
     },
     {
@@ -5015,26 +5144,101 @@
       "scoring_method": "Reconstructed from inspected box scores/scoring plays under exact Classic rules; not settled platform scores. Original choices, prices and estimates retained.",
       "scoring_review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
       "scoring_sources": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
-        "https://www.draftkings.com/help/rules/1",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873026",
-        "https://www.espn.com/nfl/game/_/gameId/401873026",
-        "https://www.draftkings.com/help/rules/1",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873025",
-        "https://www.espn.com/nfl/game/_/gameId/401873025",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873031",
-        "https://www.espn.com/nfl/game/_/gameId/401873031",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873030",
-        "https://www.espn.com/nfl/game/_/gameId/401873030",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
-        "https://www.espn.com/nfl/game/_/gameId/401873029",
-        "https://www.newyorkjets.com/team/players-roster/omar-cooper-jr/logs/",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/cooper-jr-s-final-statline-0-0-0-on-0-targets",
-        "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026",
-        "https://www.nfl.com/news/ravens-qb-lamar-jackson-suffers-right-thumb-injury-bills",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873027",
-        "https://www.espn.com/nfl/game/_/gameId/401873027",
-        "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261101_LV@NYJ/"
+        {
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-02T11:47:42.946Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873026",
+          "retrieved_at": "2026-11-02T11:48:15.930Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873026",
+          "retrieved_at": "2026-11-02T11:48:38.585Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-02T11:47:42.946Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873025",
+          "retrieved_at": "2026-11-02T11:48:16.005Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873025",
+          "retrieved_at": "2026-11-02T11:48:38.473Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873031",
+          "retrieved_at": "2026-11-02T11:48:15.532Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873031",
+          "retrieved_at": "2026-11-02T11:48:38.318Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873030",
+          "retrieved_at": "2026-11-02T11:48:16.421Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873030",
+          "retrieved_at": "2026-11-02T11:48:38.464Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
+          "retrieved_at": "2026-11-02T11:48:16.244Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873029",
+          "retrieved_at": "2026-11-02T11:48:38.347Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.newyorkjets.com/team/players-roster/omar-cooper-jr/logs/",
+          "retrieved_at": "2026-11-02T11:48:58.975Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/cooper-jr-s-final-statline-0-0-0-on-0-targets",
+          "retrieved_at": "2026-11-02T11:52:16.245Z",
+          "publication_at": "2026-11-01T22:13:22.023Z"
+        },
+        {
+          "url": "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026",
+          "retrieved_at": "2026-11-02T11:48:59.215Z",
+          "publication_at": "2026-11-01T11:30:00-05:00"
+        },
+        {
+          "url": "https://www.nfl.com/news/ravens-qb-lamar-jackson-suffers-right-thumb-injury-bills",
+          "retrieved_at": "2026-11-02T11:49:00.540Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873027",
+          "retrieved_at": "2026-11-02T11:48:16.013Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873027",
+          "retrieved_at": "2026-11-02T11:48:38.389Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261101_LV@NYJ/",
+          "retrieved_at": "2026-11-02T11:49:17.824Z",
+          "publication_at": null
+        }
       ]
     },
     {
@@ -5311,26 +5515,101 @@
       "scoring_method": "Reconstructed from inspected box scores/scoring plays under exact Classic rules; not settled platform scores. Original choices, prices and estimates retained.",
       "scoring_review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
       "scoring_sources": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
-        "https://www.draftkings.com/help/rules/1",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873026",
-        "https://www.espn.com/nfl/game/_/gameId/401873026",
-        "https://www.draftkings.com/help/rules/1",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873025",
-        "https://www.espn.com/nfl/game/_/gameId/401873025",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873031",
-        "https://www.espn.com/nfl/game/_/gameId/401873031",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873030",
-        "https://www.espn.com/nfl/game/_/gameId/401873030",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
-        "https://www.espn.com/nfl/game/_/gameId/401873029",
-        "https://www.newyorkjets.com/team/players-roster/omar-cooper-jr/logs/",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/cooper-jr-s-final-statline-0-0-0-on-0-targets",
-        "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026",
-        "https://www.nfl.com/news/ravens-qb-lamar-jackson-suffers-right-thumb-injury-bills",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873027",
-        "https://www.espn.com/nfl/game/_/gameId/401873027",
-        "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261101_LV@NYJ/"
+        {
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-02T11:47:42.946Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873026",
+          "retrieved_at": "2026-11-02T11:48:15.930Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873026",
+          "retrieved_at": "2026-11-02T11:48:38.585Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-02T11:47:42.946Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873025",
+          "retrieved_at": "2026-11-02T11:48:16.005Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873025",
+          "retrieved_at": "2026-11-02T11:48:38.473Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873031",
+          "retrieved_at": "2026-11-02T11:48:15.532Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873031",
+          "retrieved_at": "2026-11-02T11:48:38.318Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873030",
+          "retrieved_at": "2026-11-02T11:48:16.421Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873030",
+          "retrieved_at": "2026-11-02T11:48:38.464Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
+          "retrieved_at": "2026-11-02T11:48:16.244Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873029",
+          "retrieved_at": "2026-11-02T11:48:38.347Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.newyorkjets.com/team/players-roster/omar-cooper-jr/logs/",
+          "retrieved_at": "2026-11-02T11:48:58.975Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/cooper-jr-s-final-statline-0-0-0-on-0-targets",
+          "retrieved_at": "2026-11-02T11:52:16.245Z",
+          "publication_at": "2026-11-01T22:13:22.023Z"
+        },
+        {
+          "url": "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026",
+          "retrieved_at": "2026-11-02T11:48:59.215Z",
+          "publication_at": "2026-11-01T11:30:00-05:00"
+        },
+        {
+          "url": "https://www.nfl.com/news/ravens-qb-lamar-jackson-suffers-right-thumb-injury-bills",
+          "retrieved_at": "2026-11-02T11:49:00.540Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873027",
+          "retrieved_at": "2026-11-02T11:48:16.013Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873027",
+          "retrieved_at": "2026-11-02T11:48:38.389Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261101_LV@NYJ/",
+          "retrieved_at": "2026-11-02T11:49:17.824Z",
+          "publication_at": null
+        }
       ]
     },
     {
@@ -5605,28 +5884,111 @@
       "scoring_method": "Reconstructed from inspected box scores/scoring plays under exact Classic rules; not settled platform scores. Original choices, prices and estimates retained.",
       "scoring_review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
       "scoring_sources": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
-        "https://www.draftkings.com/help/rules/1",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873026",
-        "https://www.espn.com/nfl/game/_/gameId/401873026",
-        "https://www.draftkings.com/help/rules/1",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873025",
-        "https://www.espn.com/nfl/game/_/gameId/401873025",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873031",
-        "https://www.espn.com/nfl/game/_/gameId/401873031",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873030",
-        "https://www.espn.com/nfl/game/_/gameId/401873030",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
-        "https://www.espn.com/nfl/game/_/gameId/401873029",
-        "https://www.newyorkjets.com/team/players-roster/omar-cooper-jr/logs/",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/cooper-jr-s-final-statline-0-0-0-on-0-targets",
-        "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026",
-        "https://www.nfl.com/news/ravens-qb-lamar-jackson-suffers-right-thumb-injury-bills",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873027",
-        "https://www.espn.com/nfl/game/_/gameId/401873027",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873034",
-        "https://www.espn.com/nfl/game/_/gameId/401873034",
-        "https://www.espn.com/nfl/playbyplay/_/gameId/401873034"
+        {
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-02T11:47:42.946Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873026",
+          "retrieved_at": "2026-11-02T11:48:15.930Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873026",
+          "retrieved_at": "2026-11-02T11:48:38.585Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-02T11:47:42.946Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873025",
+          "retrieved_at": "2026-11-02T11:48:16.005Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873025",
+          "retrieved_at": "2026-11-02T11:48:38.473Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873031",
+          "retrieved_at": "2026-11-02T11:48:15.532Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873031",
+          "retrieved_at": "2026-11-02T11:48:38.318Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873030",
+          "retrieved_at": "2026-11-02T11:48:16.421Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873030",
+          "retrieved_at": "2026-11-02T11:48:38.464Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
+          "retrieved_at": "2026-11-02T11:48:16.244Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873029",
+          "retrieved_at": "2026-11-02T11:48:38.347Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.newyorkjets.com/team/players-roster/omar-cooper-jr/logs/",
+          "retrieved_at": "2026-11-02T11:48:58.975Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/cooper-jr-s-final-statline-0-0-0-on-0-targets",
+          "retrieved_at": "2026-11-02T11:52:16.245Z",
+          "publication_at": "2026-11-01T22:13:22.023Z"
+        },
+        {
+          "url": "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026",
+          "retrieved_at": "2026-11-02T11:48:59.215Z",
+          "publication_at": "2026-11-01T11:30:00-05:00"
+        },
+        {
+          "url": "https://www.nfl.com/news/ravens-qb-lamar-jackson-suffers-right-thumb-injury-bills",
+          "retrieved_at": "2026-11-02T11:49:00.540Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873027",
+          "retrieved_at": "2026-11-02T11:48:16.013Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873027",
+          "retrieved_at": "2026-11-02T11:48:38.389Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873034",
+          "retrieved_at": "2026-11-02T11:48:15.962Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873034",
+          "retrieved_at": "2026-11-02T11:48:38.644Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/playbyplay/_/gameId/401873034",
+          "retrieved_at": "2026-11-02T11:49:15.883Z",
+          "publication_at": null
+        }
       ]
     },
     {
@@ -5892,28 +6254,111 @@
       "scoring_method": "Reconstructed from inspected box scores/scoring plays under exact Classic rules; not settled platform scores. Original choices, prices and estimates retained.",
       "scoring_review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
       "scoring_sources": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
-        "https://www.draftkings.com/help/rules/1",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873026",
-        "https://www.espn.com/nfl/game/_/gameId/401873026",
-        "https://www.draftkings.com/help/rules/1",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873025",
-        "https://www.espn.com/nfl/game/_/gameId/401873025",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873031",
-        "https://www.espn.com/nfl/game/_/gameId/401873031",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873030",
-        "https://www.espn.com/nfl/game/_/gameId/401873030",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
-        "https://www.espn.com/nfl/game/_/gameId/401873029",
-        "https://www.newyorkjets.com/team/players-roster/omar-cooper-jr/logs/",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/cooper-jr-s-final-statline-0-0-0-on-0-targets",
-        "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026",
-        "https://www.nfl.com/news/ravens-qb-lamar-jackson-suffers-right-thumb-injury-bills",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873027",
-        "https://www.espn.com/nfl/game/_/gameId/401873027",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873034",
-        "https://www.espn.com/nfl/game/_/gameId/401873034",
-        "https://www.espn.com/nfl/playbyplay/_/gameId/401873034"
+        {
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-02T11:47:42.946Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873026",
+          "retrieved_at": "2026-11-02T11:48:15.930Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873026",
+          "retrieved_at": "2026-11-02T11:48:38.585Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-02T11:47:42.946Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873025",
+          "retrieved_at": "2026-11-02T11:48:16.005Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873025",
+          "retrieved_at": "2026-11-02T11:48:38.473Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873031",
+          "retrieved_at": "2026-11-02T11:48:15.532Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873031",
+          "retrieved_at": "2026-11-02T11:48:38.318Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873030",
+          "retrieved_at": "2026-11-02T11:48:16.421Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873030",
+          "retrieved_at": "2026-11-02T11:48:38.464Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
+          "retrieved_at": "2026-11-02T11:48:16.244Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873029",
+          "retrieved_at": "2026-11-02T11:48:38.347Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.newyorkjets.com/team/players-roster/omar-cooper-jr/logs/",
+          "retrieved_at": "2026-11-02T11:48:58.975Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/cooper-jr-s-final-statline-0-0-0-on-0-targets",
+          "retrieved_at": "2026-11-02T11:52:16.245Z",
+          "publication_at": "2026-11-01T22:13:22.023Z"
+        },
+        {
+          "url": "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026",
+          "retrieved_at": "2026-11-02T11:48:59.215Z",
+          "publication_at": "2026-11-01T11:30:00-05:00"
+        },
+        {
+          "url": "https://www.nfl.com/news/ravens-qb-lamar-jackson-suffers-right-thumb-injury-bills",
+          "retrieved_at": "2026-11-02T11:49:00.540Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873027",
+          "retrieved_at": "2026-11-02T11:48:16.013Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873027",
+          "retrieved_at": "2026-11-02T11:48:38.389Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873034",
+          "retrieved_at": "2026-11-02T11:48:15.962Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873034",
+          "retrieved_at": "2026-11-02T11:48:38.644Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/playbyplay/_/gameId/401873034",
+          "retrieved_at": "2026-11-02T11:49:15.883Z",
+          "publication_at": null
+        }
       ]
     },
     {
@@ -6180,28 +6625,111 @@
       "scoring_method": "Reconstructed from inspected box scores/scoring plays under exact Classic rules; not settled platform scores. Original choices, prices and estimates retained.",
       "scoring_review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
       "scoring_sources": [
-        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
-        "https://www.draftkings.com/help/rules/1",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873026",
-        "https://www.espn.com/nfl/game/_/gameId/401873026",
-        "https://www.draftkings.com/help/rules/1",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873025",
-        "https://www.espn.com/nfl/game/_/gameId/401873025",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873031",
-        "https://www.espn.com/nfl/game/_/gameId/401873031",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873030",
-        "https://www.espn.com/nfl/game/_/gameId/401873030",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
-        "https://www.espn.com/nfl/game/_/gameId/401873029",
-        "https://www.newyorkjets.com/team/players-roster/omar-cooper-jr/logs/",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/cooper-jr-s-final-statline-0-0-0-on-0-targets",
-        "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026",
-        "https://www.nfl.com/news/ravens-qb-lamar-jackson-suffers-right-thumb-injury-bills",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873027",
-        "https://www.espn.com/nfl/game/_/gameId/401873027",
-        "https://www.espn.com/nfl/boxscore/_/gameId/401873034",
-        "https://www.espn.com/nfl/game/_/gameId/401873034",
-        "https://www.espn.com/nfl/playbyplay/_/gameId/401873034"
+        {
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-02T11:47:42.946Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873026",
+          "retrieved_at": "2026-11-02T11:48:15.930Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873026",
+          "retrieved_at": "2026-11-02T11:48:38.585Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-02T11:47:42.946Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873025",
+          "retrieved_at": "2026-11-02T11:48:16.005Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873025",
+          "retrieved_at": "2026-11-02T11:48:38.473Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873031",
+          "retrieved_at": "2026-11-02T11:48:15.532Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873031",
+          "retrieved_at": "2026-11-02T11:48:38.318Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873030",
+          "retrieved_at": "2026-11-02T11:48:16.421Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873030",
+          "retrieved_at": "2026-11-02T11:48:38.464Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
+          "retrieved_at": "2026-11-02T11:48:16.244Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873029",
+          "retrieved_at": "2026-11-02T11:48:38.347Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.newyorkjets.com/team/players-roster/omar-cooper-jr/logs/",
+          "retrieved_at": "2026-11-02T11:48:58.975Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/cooper-jr-s-final-statline-0-0-0-on-0-targets",
+          "retrieved_at": "2026-11-02T11:52:16.245Z",
+          "publication_at": "2026-11-01T22:13:22.023Z"
+        },
+        {
+          "url": "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026",
+          "retrieved_at": "2026-11-02T11:48:59.215Z",
+          "publication_at": "2026-11-01T11:30:00-05:00"
+        },
+        {
+          "url": "https://www.nfl.com/news/ravens-qb-lamar-jackson-suffers-right-thumb-injury-bills",
+          "retrieved_at": "2026-11-02T11:49:00.540Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873027",
+          "retrieved_at": "2026-11-02T11:48:16.013Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873027",
+          "retrieved_at": "2026-11-02T11:48:38.389Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873034",
+          "retrieved_at": "2026-11-02T11:48:15.962Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873034",
+          "retrieved_at": "2026-11-02T11:48:38.644Z",
+          "publication_at": null
+        },
+        {
+          "url": "https://www.espn.com/nfl/playbyplay/_/gameId/401873034",
+          "retrieved_at": "2026-11-02T11:49:15.883Z",
+          "publication_at": null
+        }
       ]
     },
     {
