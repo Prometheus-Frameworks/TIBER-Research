@@ -1,0 +1,26 @@
+{
+  "id": "2026-w09-r1-claude-response-receipt",
+  "author": "Claude",
+  "archived_by": "Codex",
+  "original_commit": "e74a83b7315ed97acc31291b0e48d1e15b2748ba",
+  "original_output": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/e74a83b7315ed97acc31291b0e48d1e15b2748ba/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T181917Z-claude-grok-response.json",
+  "original_decision_at": "2026-11-03T18:19:17Z",
+  "original_cutoff": "approximately2026-11-03T18:18Z",
+  "posted_at": "2026-11-03T18:21:18Z",
+  "posted_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43#issuecomment-6612024197",
+  "received_at": "2026-11-03T23:12:33.742Z",
+  "inspected_versions": {
+    "request": "e72b12a9134e49689e65f206f933d1ace5370480",
+    "grok_questions": "c55085d251bd6fac6851b935928d7f6433b59297",
+    "codex_response_and_source_checks": "e72b12a9134e49689e65f206f933d1ace5370480",
+    "codex_candidate": "c67033cfa6c3102dc3273bcf416b514c8f4940e2 (via table in codex response only)",
+    "claude_v1": "8df1a6e2c9549b9bb077630ecc8aa20a1add419a",
+    "common_inputs": "25945a160171e2197a4ce52a8f5234b71f73bcfb",
+    "price_blob": "c941e04f6850ceed4e2ad005eff3dde2a6883688"
+  },
+  "model": "withheld in supplied record; not inferred",
+  "verbatim_files": [
+    "20261103T181917Z-claude-grok-response.md",
+    "20261103T181917Z-claude-grok-response.json"
+  ]
+}

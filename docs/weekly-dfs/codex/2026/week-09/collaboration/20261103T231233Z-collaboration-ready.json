@@ -1,0 +1,253 @@
+{
+  "schema_version": "tiber-dfs-integration/v1",
+  "id": "2026-w09-r1-integration",
+  "recorded_at": "2026-11-03T23:12:33.742Z",
+  "recorded_at_toronto": "2026-11-03T18:12:33.742-05:00",
+  "final_editor": "Codex",
+  "inputs": {
+    "claude_response": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/e74a83b7315ed97acc31291b0e48d1e15b2748ba/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T181917Z-claude-grok-response.json",
+    "codex_response": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/e72b12a9134e49689e65f206f933d1ace5370480/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T174021Z-codex-grok-response.json",
+    "grok_questions": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c55085d251bd6fac6851b935928d7f6433b59297/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T173644Z-grok-questions-verbatim.md"
+  },
+  "actual_exchange": "Codex challenged source/role premises; Claude accepted corrections, supplied route evidence and conditional alternatives; Codex now responds to material proposals and retains reasoned disagreement.",
+  "stage_status": {
+    "codex_v1_ready": "ready",
+    "claude_v1_ready": "ready",
+    "grok_questions_ready": "ready",
+    "collaboration_ready": "ready: substantive exchange and Codex integration retained; no joint endorsement",
+    "final_frozen": "blocked: not yetfinal"
+  },
+  "editor_candidate": {
+    "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67033cfa6c3102dc3273bcf416b514c8f4940e2/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-03.json",
+    "snapshot_id": "2026-w09-2026-11-03-daily",
+    "picks": [
+      {
+        "slot": "QB",
+        "position": "QB",
+        "player": "Patrick Mahomes II",
+        "team": "KC",
+        "opponent": "NYJ",
+        "home": true,
+        "salary": 6100,
+        "official_player_id": null,
+        "projected_points": null,
+        "actual_points": null,
+        "rationale": "Mahomes completed 30 of 41 for321yards/3TD in Week8. Pair with Rice at a combined12500; KC is an attributed9.5pointfavorite. Risk: reduced passing in a comfortable lead and old knee practice information.",
+        "source_ids": [
+          "fp"
+        ],
+        "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+        "kickoff_reported": "Sun 1:00PM"
+      },
+      {
+        "slot": "RB",
+        "position": "RB",
+        "player": "Kyren Williams",
+        "team": "LAR",
+        "opponent": "WAS",
+        "home": false,
+        "salary": 7600,
+        "official_player_id": null,
+        "projected_points": null,
+        "actual_points": null,
+        "rationale": "Week8 lead16carries versus Corum11 supports rushing involvement at7600,2400 below Gibbs. Only1target and Corum's73yards/TD challenge any workhorse or PPR-floor claim.",
+        "source_ids": [
+          "fp"
+        ],
+        "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+        "kickoff_reported": "Sun 1:00PM"
+      },
+      {
+        "slot": "RB",
+        "position": "RB",
+        "player": "Jonah Coleman",
+        "team": "DEN",
+        "opponent": "CAR",
+        "home": false,
+        "salary": 5300,
+        "official_player_id": null,
+        "projected_points": null,
+        "actual_points": null,
+        "rationale": "Week8 had11carries and5targets versus Dobbins7carries; choose a two-phase role at5300. This is one-game evidence, not a guaranteed lead share; check Harvey and backfield availability.",
+        "source_ids": [
+          "fp"
+        ],
+        "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+        "kickoff_reported": "Sun 1:00PM"
+      },
+      {
+        "slot": "WR",
+        "position": "WR",
+        "player": "Rashee Rice",
+        "team": "KC",
+        "opponent": "NYJ",
+        "home": true,
+        "salary": 6400,
+        "official_player_id": null,
+        "projected_points": null,
+        "actual_points": null,
+        "rationale": "Week8 led listed KC targets with8 versus Kelce7/Worthy6, catching7 for53/TD. A direct Mahomes pairing is supportable; no assumption he inherits all targets or is medically cleared.",
+        "source_ids": [
+          "fp"
+        ],
+        "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+        "kickoff_reported": "Sun 1:00PM"
+      },
+      {
+        "slot": "WR",
+        "position": "WR",
+        "player": "Jameson Williams",
+        "team": "DET",
+        "opponent": "MIA",
+        "home": false,
+        "salary": 6100,
+        "official_player_id": null,
+        "projected_points": null,
+        "actual_points": null,
+        "rationale": "Week8 six targets/four catches/70yards/TD;6100 gives access to Detroit's attributed50.5total game. St.Brown had8targets and Detroit only25attempts; explosive efficiency can fail.",
+        "source_ids": [
+          "fp"
+        ],
+        "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+        "kickoff_reported": "Sun 1:00PM"
+      },
+      {
+        "slot": "WR",
+        "position": "WR",
+        "player": "Adonai Mitchell",
+        "team": "NYJ",
+        "opponent": "KC",
+        "home": false,
+        "salary": 4500,
+        "official_player_id": null,
+        "projected_points": null,
+        "actual_points": null,
+        "rationale": "Week8 nine targets/seven catches/142yards/TD supports a4500 receiving alternative to Cooper's zero targets. Wilson led with12; do not project another142yards. Opponent bring-back raises KC–NYJ concentration.",
+        "source_ids": [
+          "fp"
+        ],
+        "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+        "kickoff_reported": "Sun 1:00PM"
+      },
+      {
+        "slot": "TE",
+        "position": "TE",
+        "player": "Harold Fannin Jr.",
+        "team": "CLE",
+        "opponent": "NO",
+        "home": false,
+        "salary": 4700,
+        "official_player_id": null,
+        "projected_points": null,
+        "actual_points": null,
+        "rationale": "Week8 twelve targets/10catches/154yards versus Concepcion4targets provides role evidence at4700. Cleveland suffered8sacks and quarterback continuity is unresolved; earlier low-target weeks remain contrary evidence.",
+        "source_ids": [
+          "fp"
+        ],
+        "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+        "kickoff_reported": "Sun 1:00PM"
+      },
+      {
+        "slot": "FLEX",
+        "position": "WR",
+        "player": "Keenan Allen",
+        "team": "IND",
+        "opponent": "DAL",
+        "home": true,
+        "salary": 4900,
+        "official_player_id": null,
+        "projected_points": null,
+        "actual_points": null,
+        "rationale": "Week8 seven targets/seven catches/67yards;4900 offers observed receiving opportunity in the attributed51.5total Dallas game. Indianapolis had only152gross receivingyards and lost42–7; volume/game competence may disappoint.",
+        "source_ids": [
+          "fp"
+        ],
+        "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+        "kickoff_reported": "Sun 1:00PM"
+      },
+      {
+        "slot": "DST",
+        "position": "DST",
+        "player": "Seattle Seahawks",
+        "team": "SEA",
+        "opponent": "ARI",
+        "home": true,
+        "salary": 3800,
+        "official_player_id": null,
+        "projected_points": null,
+        "actual_points": null,
+        "rationale": "Reported3800 vsArizona and secondary11.5pointfavorite/16.5opponent implied total favor this matchup over recycling Patriots vsGB. Monday Bears gained363yards; Leonard Williams exited with a stinger. This is a conditional matchup preference, not clearance or a sack forecast.",
+        "source_ids": [
+          "fp"
+        ],
+        "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+        "kickoff_reported": "Sun 4:25PM"
+      }
+    ],
+    "salary_total": 49400,
+    "salary_remaining": 600,
+    "official_pool_verified": false,
+    "projection": null,
+    "actual_total": null,
+    "frozen": false,
+    "changed_picks": []
+  },
+  "authorship": "Codex-edited candidate after actual Claude/Codex exchange; shared research contributions retained. Both originals remain distinct; no jointly endorsed selection and no frozen final.",
+  "dispositions": [
+    {
+      "question": "G-W09-Q1",
+      "decision": "Hold Allen; retain disagreement with Claude's Downs preference",
+      "reason": "Accept newly inspected routes: Downs33/89%, Allen22/59%, Warren27/73%. Season route rates86/67/81% and TPRR19/28/25% use provideractive-game windows. Downs's larger route involvement challenges Allen; Allen's recent7targets on22routes supports currenthold. TPRR is target earning, not general efficiency or a hard scoring ceiling. LegalDownsswap remains49600/400.",
+      "conditional": "ClaudeDowns→Allen49700/300 is a valid reported-price alternative, not automatic editor authorization. A confirmed trade/status change triggers newteam/slate/rolecheck; nonroutineabsence alone is not proof of unavailability."
+    },
+    {
+      "question": "G-W09-Q2",
+      "decision": "Accept mutual hold",
+      "reason": "Both authors accept dated official Jonesretention. Reopen for newer namedstarter/reps/injury; not Sundayguarantee."
+    },
+    {
+      "question": "G-W09-Q3",
+      "decision": "Accept corrected narrow rationale as Claude's position; retain Seattle in editorcandidate",
+      "reason": "Eaglesunderdogcorrectionowned byClaude. Lowest affordableopponenttotal assertion depends on his source/window and has not been exhaustively recertified here. Pressure/protection/injury gaps remain; no proofPHIoptimal."
+    },
+    {
+      "question": "G-W09-Q4",
+      "decision": "Hold Seattle with both front injuries visible",
+      "reason": "Claude has no consequential disagreement. No newWeek9clearance or practice reportverified."
+    },
+    {
+      "question": "G-W09-Q5",
+      "decision": "Accept no Flournoy swap now",
+      "reason": "ProviderSutton86%week8/81%seasonroutes versusFlournoy65/74 supportsrolecomparison. TPRR17/18 is similar targetearning, not 'same efficiency'. FiveDAL–INDslots and defensivefunding remain tradeoffs. PickensOUT promptscomparison, notautomaticreplacement."
+    },
+    {
+      "question": "G-W09-Q6",
+      "decision": "Hold caveat",
+      "reason": "No receivingfloor inferred forKyren; Claude reports no disagreement."
+    }
+  ],
+  "sources": [
+    {
+      "id": "routes",
+      "url": "https://www.rotowire.com/football/article/nfl-box-score-breakdown-week-8-recap-usage-stats-145045",
+      "retrieved_at": "2026-11-03T23:11:08.702Z",
+      "publication_at": null,
+      "publication_display": "Current read: Updated November3,2026 2:26PM EST; Claude reported Nov2 in earlier read. Earlier page state not reconstructed.",
+      "scope": "Full public page read. Week8 routes plus season rates; shares adjusted for active games. Attributed provider figures, not independently reproduced tracking. NoWeeks6–8series."
+    },
+    {
+      "id": "trade",
+      "url": "https://www.nfl.com/news/colts-wr-josh-downs-requests-trade",
+      "retrieved_at": "2026-11-03T23:11:27.641Z",
+      "publication_at": null,
+      "scope": "NFL-hosted report attributes request to ESPN; body references Wednesday and pre-Jaguars game. Request is not completedtrade. Exact publicationclock andofficialdeadline notestablished."
+    }
+  ],
+  "remaining": [
+    "Downs/Allen role disagreement survives.",
+    "Currentmedical/poolverification and finaldeadline checks pending.",
+    "Trade-request reporting does not prove a completedtransaction; officialdeadline date not independentlyverified here.",
+    "Route evidence was newly inspected, not proven previously unavailable. No historicalsourcebackfill."
+  ],
+  "next_handoff": "No further routine Claude/Grok reply needed now. Reopen for material evidence, a changedcandidate or explicit endorsement request. Existing daily/Sunday cadence unchanged; finalbeforeNov8 12:30Toronto/17:30UTC."
+}
