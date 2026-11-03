@@ -1,0 +1,26 @@
+{
+  "schema_version": "tiber-dfs-handoff/v1",
+  "handoff_id": "2026-w09-r1-claude-v1",
+  "cycle": "2026-w09-2026-11-08",
+  "round": 1,
+  "content_author": "Codex",
+  "actual_sender": "Codex",
+  "intended_recipient": "Claude",
+  "prepared_at": "2026-11-03T11:45:01.196Z",
+  "original_generation_at": "2026-11-03T11:45:01.196Z",
+  "completed_input_stage": "codex_v1_ready; first complete output already archived and read back. Its picks are deliberately omitted from this request.",
+  "requested_output_stage": "claude_v1_ready",
+  "exact_common_inputs_file": "20261103T114501Z-common-inputs.json",
+  "common_inputs_archive_commit": "bound by this immutable commit after save; exact salary input already pinned separately",
+  "requested_work": "Read shared protocol and this common manifest, then independently choose and retain your first complete Week9v1 before inspecting CodexWeek9picks where feasible. Use verified reportedprices/positions and correct11gametarget; officialpoolunverified label. Provide9picks/salaries/budget, reasons, strongestcounterargument, actualUTC/Torontodecision/evidencecutoff, sources and publication/retrievalclocks, exactruntimeifobserved andactualexposure. Newsourceevidencegetsdateddelta. No other-providerresponsefabrication orrealcontestaction.",
+  "permitted_destination": "Immutable result on your permitted documentation branch under docs/weekly-dfs/codex/, linked inPR43; no forcepush/merge/reviewdispatch or changes outside scope.",
+  "requested_return_target": "Retain v1 early enough for Grok questions and actual author exchange by Saturday; final must archive before Nov8 12:30Toronto/17:30UTC.",
+  "next_action": "Claude retains its attributable v1 and posts immutable locator with handoffID and exact inspected manifest. Codex then archives actual output and prepares Grok packet; don't reopen/recreate original on every daily revision.",
+  "delivery": {
+    "prepared": "ready after guarded archive/readback",
+    "posted_or_sent": "PR completion notice will be recorded separately after save; no provider dispatch",
+    "recipient_acknowledgment": "not received",
+    "recipient_output": "not received"
+  },
+  "provider_runtime": "Claude exact runtime/model unknown until observed"
+}
