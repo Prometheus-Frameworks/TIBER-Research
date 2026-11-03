@@ -1,0 +1,53 @@
+{
+  "schema_version": "tiber-dfs-handoff/v1",
+  "handoff_id": "2026-w09-r1-grok-questions",
+  "cycle": "2026-w09-2026-11-08",
+  "round": 1,
+  "content_author": "Codex",
+  "actual_sender": "Codex",
+  "intended_recipient": "Grok Bot",
+  "prepared_at": "2026-11-03T16:39:01.410Z",
+  "completed_input_stages": [
+    "codex_v1_ready",
+    "claude_v1_ready"
+  ],
+  "requested_output_stage": "grok_questions_ready",
+  "exact_inputs": {
+    "codex_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67033cfa6c3102dc3273bcf416b514c8f4940e2/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-03.json",
+    "claude_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/8df1a6e2c9549b9bb077630ecc8aa20a1add419a/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T122249Z-claude-v1.json",
+    "common_inputs": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/25945a160171e2197a4ce52a8f5234b71f73bcfb/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T114501Z-common-inputs.json",
+    "reported_salary_observations": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67033cfa6c3102dc3273bcf416b514c8f4940e2/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-03-reported-prices.csv",
+    "current_candidate": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67033cfa6c3102dc3273bcf416b514c8f4940e2/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-03.json",
+    "current_delta": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c5106eedb8ba67c54634ee8d683a5658e70eb2a6/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T163714Z-intake-delta.json",
+    "claude_stage_receipt": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c5106eedb8ba67c54634ee8d683a5658e70eb2a6/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T163714Z-claude-v1-ready.json"
+  },
+  "requested_work": "Inspect both immutable originals, shared factual inputs and separatelydateddelta. Select and prioritize only consequential questions about football assumptions, missing/staleevidence, missedalternatives and whole-lineup salary/concentration. Noquestionquota, manufactured disagreement or thirdlineup required. State exactfilesactuallyread andanyskipped; distinguishnewretrieved evidence fromopinion/questions. Do notimpersonate authors or claim asubscription.",
+  "question_fields": [
+    "stablequestionID",
+    "priority/reason",
+    "intendedauthor(s)",
+    "exactdraftclaim/version",
+    "evidencegap",
+    "decision or completepackageatrisk",
+    "observationthatwouldresolveit",
+    "sourceURLs/publication/retrievalclocks andfullpagevssearchsummaryaccess"
+  ],
+  "new_context": [
+    "D1: Stevenson workhorse source isOct14/Week6; noWeek9OUTestablished.",
+    "D2: CurrentVegasInsider putsEagles+3.5/Giants-3.5,total39.5; originalClaudePHI-favoriteclaimnot supportedbythisfreshread. Notareconstructionofoldlivepage.",
+    "D3: CMCexpectationofreturn isOct26pre-bye, notcurrentpracticeclearance.",
+    "OriginalCodexrole/Seattleinjuryquestionsremainopen. Delta'snotesareCodexwork, notGrokquestions."
+  ],
+  "whole_lineup_limits": "Codex49400/600 andClaude49900/100;9uniqueeach,zerooverlap. Codex3slots/17000KC–NYJ; Claude4slots/24500DAL–IND. Any executable replacement proposal uses verifiedprices/eligiblepositions withfundingandfullroster arithmetic. Nofullcoherentprojectionpool; no inventedpoints/probabilities oroptimum.",
+  "expected_output": "Attributable prioritized question pass bound to this request and inspected versions; exactruntime/model only if observed. Actual decision/evidencecutoffUTC/Toronto, sourcepublication/retrievaltimes, limitations. Reasonedno-questionfindingvalidiffullyinspected.",
+  "destination": "Post questions onPR43 if permitted; otherwise provide exactverbatimoutput tooperator forrelay. Do not create/pushanunapprovedbranch. Codexretains exactpostedoutput andactualclock before finaluse.",
+  "return_target": "BySaturdayNov7 wherefeasible to leavebothauthors timeforactualexchange; finalarchivesbeforeNov8 12:30Toronto/17:30UTC. Missingcontributiondoesnotextendcutoff.",
+  "delivery": {
+    "prepared": "archivedandverifiedafterthissave",
+    "posted_or_sent": "PRcompletionnoticeafterverifiedsave;separatereceipt",
+    "recipient_acknowledgment": "notreceived",
+    "recipient_output": "notreceived"
+  },
+  "provider_runtime": "Grok Bot selected; exactruntime/modelunknownuntilobserved",
+  "next_action": "Grokreturnsactualquestions. CodexandClaudeeachansweridenticalIDs/exactcandidate, thenrespondtomaterialproposals; Codexretainsintegration andanydisagreement. Nojointendorsementuntilbothendorseexactsamecandidate."
+}

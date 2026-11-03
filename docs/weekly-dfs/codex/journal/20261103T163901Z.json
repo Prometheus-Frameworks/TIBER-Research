@@ -1,0 +1,106 @@
+{
+  "schema_version": "tiber-dfs-journal/v1",
+  "entries": [
+    {
+      "id": "2026-w09-claude-intake-20261103T163901Z",
+      "snapshot_ids": [
+        "2026-w09-2026-11-03-daily",
+        "2026-w09-r1-claude-v1"
+      ],
+      "kind": "interactive_research",
+      "recorded_at": "2026-11-03T16:39:01.410Z",
+      "recorded_at_toronto": "2026-11-03T11:39:01.410-05:00",
+      "research_at": "2026-11-03T16:37:14.001Z",
+      "origin": "mixed",
+      "origin_note": "Claude supplied a separately authored first draft via its direct PR post; operator relayed notice. Codex verified retained output and chose limited source checks. No operator player override.",
+      "title": "Both Week9 originals retained; stale injury premise and reversed favorite flagged",
+      "question": "Are Claude's original inputs and lineup verifiable, and what current context must be visible to an independent Grok pass?",
+      "why_it_matters": "The second original unlocks a real question pass. Attributable complete output and football premise quality are separate; corrections must not rewrite either starting view.",
+      "findings": [
+        "Both Claudeoriginal files read at8df1a6e2c9549b9bb077630ecc8aa20a1add419a; directPRcomment6603701504 identifiesrequest/commonmanifest andactualexposure.",
+        "NineClaudeprices/positions/teams/opponents independentlymatchthepinnedCSV:49900/100,6targetgames. NooverlapwithCodexnine.",
+        "FullStevensonsourceisOctober14Week6preview; originalworkhorseassumptioncannotuseitascurrentHendersonOUT.",
+        "FreshVegasInsider hasEagles+3.5/Giants-3.5,total39.5 andopeningGiants-2.5. ClaudeoriginalPHI-favoriteclaimisunresolvedatoldcutoff andunsupportedbycurrentread.",
+        "FullMcCaffreysourceisOctober26pre-byeexpectation, notcurrentWeek9medicalclearance."
+      ],
+      "interpretation": [
+        "Acceptclaude_v1_ready basedonactualattributablecompleteoriginal;retainexposurewithoutclaimingfullblinding.",
+        "Codexcandidateunchanged. Do notblenddraftsorclaimentorsementbeforeactualquestion/replyexchange.",
+        "Reviewconcentrationandratherthanassumecorrelatedbring-backsinheritvolume. Correctfavoritepremiseanddatedavailabilityfirst."
+      ],
+      "alternatives": [
+        "Claude'scomplete49900originalversusCodex'scomplete49400original; no newselectionorblendretained.",
+        "Eagles DST may still be a cheapchoice butcurrentreadcannotjustifyit ashomefavorite."
+      ],
+      "uncertainty": [
+        "Officialpool/IDsnotverified.",
+        "FreshmarketreadcannotreconstructClaude'searlierlivepage; avoidclaimingestablishedmarketmovement.",
+        "Newdatedpracticestatus,currentroutesandrolesmissing; snippet-onlysourceusageinClaudeoriginalretained.",
+        "GrokWeek9outputnotreceived; subscriptionsunverified; nojointrevision/freeze."
+      ],
+      "lineup_effect": "No Codex pick changed. Preserve separate Claudeoriginalatitsactual07:22Torontodecisionclock; this11:39:01 Torontointake islatercontext. ClaudeDAL–IND4slots24500;CodexKC–NYJ3slots17000. No projectionsoractualscores added.",
+      "change_triggers": [
+        "Grok'sactualquestionsandbothauthorresponsesmayjustifywhole-lineuprevision.",
+        "DatedMcCaffrey/Hendersonstatus andcurrentreceiverroleevidencecouldchangepackages; donotretrofitv1."
+      ],
+      "carry_forward": [
+        "Keepbothtrueoriginalsavailableforsame-slatepostgamereview.",
+        "Averifiedpricefile doesnotvalidate afootballroleorreadspreadsign.",
+        "Grokrequestpreparedisnotgrok_questions_ready; waitforattributableoutput, thenactualexchange beforecutoff."
+      ],
+      "sources": [
+        {
+          "id": "stevenson",
+          "label": "stevenson",
+          "url": "https://www.rotoballer.com/?p=1966621",
+          "canonical_url": "https://www.rotoballer.com/player-news/rhamondre-stevenson-set-for-workhorse-role-with-teammate-injured/1966621",
+          "retrieved_at": "2026-11-03T16:35:26.117Z",
+          "publication_at": "2026-10-14T23:55:00-04:00",
+          "source_time_note": "Displayed ET publication converted using that date's Toronto/NewYork UTC-04 offset; retrieval is November3 UTC-05.",
+          "scope": "Full source article inspected: explicitly a Week6 preview after Week5 Henderson injury, not Week9 clearance. Related-news sidebar excluded."
+        },
+        {
+          "id": "cmc",
+          "label": "cmc",
+          "url": "https://www.rotoballer.com/player-news/christian-mccaffrey-has-mild-hamstring-strain-should-be-ready-for-week-9/1976550",
+          "canonical_url": "https://www.rotoballer.com/player-news/christian-mccaffrey-has-mild-hamstring-strain-should-be-ready-for-week-9/1976550",
+          "retrieved_at": "2026-11-03T16:35:26.118Z",
+          "publication_at": "2026-10-26T20:41:00-04:00",
+          "source_time_note": "Displayed ET publication converted using that date's Toronto/NewYork UTC-04 offset; retrieval is November3 UTC-05.",
+          "scope": "Full original article inspected: pre-bye expected return, not current practice report or clearance."
+        },
+        {
+          "id": "odds",
+          "label": "odds",
+          "url": "https://www.vegasinsider.com/nfl/nfl-week-9-odds-2026/",
+          "canonical_url": "https://www.vegasinsider.com/nfl/nfl-week-9-odds-2026/",
+          "retrieved_at": "2026-11-03T16:35:29.018Z",
+          "publication_at": null,
+          "source_time_note": "Page header Nov2 2026 12:23AM, body Updated on11/3/26; timezone/update instant unresolved. These are present observations, not a reconstruction of12:20UTC.",
+          "scope": "Summary table names Eagles first with +3.5 and Giants second -3.5, total39.5. Body says openingGiants-2.5. Embedded period-market rows not treated as full-game lines."
+        },
+        {
+          "id": "claudeOriginal",
+          "label": "Claude immutable original",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/8df1a6e2c9549b9bb077630ecc8aa20a1add419a/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T122249Z-claude-v1.json",
+          "retrieved_at": "2026-11-03T16:37:14.001Z",
+          "publication_at": null,
+          "scope": "Author's declared decision clock is distinct from Codex receipt and original source cutoff.",
+          "original_decision_at": "2026-11-03T12:22:49Z"
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w09-2026-11-03-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67033cfa6c3102dc3273bcf416b514c8f4940e2/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-03.json"
+        },
+        {
+          "snapshot_id": "2026-w09-r1-claude-v1",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/8df1a6e2c9549b9bb077630ecc8aa20a1add419a/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T122249Z-claude-v1.json"
+        }
+      ],
+      "expectations": [],
+      "outcomes": []
+    }
+  ]
+}
