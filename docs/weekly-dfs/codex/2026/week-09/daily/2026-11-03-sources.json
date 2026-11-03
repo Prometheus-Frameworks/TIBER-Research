@@ -1,0 +1,313 @@
+{
+  "schema_version": "tiber-reported-price-observations/v1",
+  "recorded_at": "2026-11-03T11:41:57.667Z",
+  "source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+  "retrieved_at": "2026-11-03T11:36:18.122Z",
+  "publication_at": null,
+  "source_heading": "DraftKings Salary Changes | Week 9",
+  "rows": 764,
+  "coverage": "All factual priced rows rendered on one public salary-change page. Includes excluded windows; not official pool/export/completeness or final eligibility.",
+  "official_pool_verified": false,
+  "official_ids_included": false,
+  "observations_file": "2026-11-03-reported-prices.csv",
+  "selected_rows": [
+    {
+      "player": "Patrick Mahomes II",
+      "position": "QB",
+      "team": "KC",
+      "opponent": "NYJ",
+      "kickoff_reported": "Sun 1:00PM",
+      "salary": 6100
+    },
+    {
+      "player": "Kyren Williams",
+      "position": "RB",
+      "team": "LAR",
+      "opponent": "WAS",
+      "kickoff_reported": "Sun 1:00PM",
+      "salary": 7600
+    },
+    {
+      "player": "Jonah Coleman",
+      "position": "RB",
+      "team": "DEN",
+      "opponent": "CAR",
+      "kickoff_reported": "Sun 1:00PM",
+      "salary": 5300
+    },
+    {
+      "player": "Rashee Rice",
+      "position": "WR",
+      "team": "KC",
+      "opponent": "NYJ",
+      "kickoff_reported": "Sun 1:00PM",
+      "salary": 6400
+    },
+    {
+      "player": "Jameson Williams",
+      "position": "WR",
+      "team": "DET",
+      "opponent": "MIA",
+      "kickoff_reported": "Sun 1:00PM",
+      "salary": 6100
+    },
+    {
+      "player": "Adonai Mitchell",
+      "position": "WR",
+      "team": "NYJ",
+      "opponent": "KC",
+      "kickoff_reported": "Sun 1:00PM",
+      "salary": 4500
+    },
+    {
+      "player": "Harold Fannin Jr.",
+      "position": "TE",
+      "team": "CLE",
+      "opponent": "NO",
+      "kickoff_reported": "Sun 1:00PM",
+      "salary": 4700
+    },
+    {
+      "player": "Keenan Allen",
+      "position": "WR",
+      "team": "IND",
+      "opponent": "DAL",
+      "kickoff_reported": "Sun 1:00PM",
+      "salary": 4900
+    },
+    {
+      "player": "Seattle Seahawks",
+      "position": "DST",
+      "team": "SEA",
+      "opponent": "ARI",
+      "kickoff_reported": "Sun 4:25PM",
+      "salary": 3800
+    }
+  ],
+  "sources": [
+    {
+      "id": "fp",
+      "label": "fp",
+      "url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+      "retrieved_at": "2026-11-03T11:36:18.122Z",
+      "retrieved_at_toronto": "2026-11-03T06:36:18.122-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "Week9 live salary table. All764 factual reported price/position/team/opponent/kickoff rows retained separately, including games outside afternoon target. Not an official platform pool/export."
+    },
+    {
+      "id": "fse",
+      "label": "fse",
+      "url": "https://fantasysportsedge.com/nfl/projections",
+      "retrieved_at": "2026-11-03T11:35:48.537Z",
+      "retrieved_at_toronto": "2026-11-03T06:35:48.537-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "Refreshed Week9, DraftKings11Sunday caption is below its table. Onlytop50 table, not fullcoherent9projection coverage; all lineup estimates leftnull.",
+      "source_update_display": "Nov2 23:05EST, displayed projection timestamp; not retrieval"
+    },
+    {
+      "id": "week9",
+      "label": "week9",
+      "url": "https://fantasysportsedge.com/nfl/dfs/week-9",
+      "retrieved_at": "2026-11-03T11:36:21.447Z",
+      "retrieved_at_toronto": "2026-11-03T06:36:21.447-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "Secondary expected11main game list and attributed market snapshot Nov2 20:02ET; not official membership. StaleWeek8 navigation and incorrectLV@SF16:05 conflict withNFL16:25.",
+      "market_as_of": "2026-11-02T20:02:00-05:00"
+    },
+    {
+      "id": "schedule",
+      "label": "schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+      "retrieved_at": "2026-11-03T11:35:50.067Z",
+      "retrieved_at_toronto": "2026-11-03T06:35:50.067-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "Primary2026Week9 schedule: Nov8 elevenafternooncandidate games; earliest13:00Toronto. NFL schedule does not certifyDKpool."
+    },
+    {
+      "id": "rules",
+      "label": "rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-11-03T11:35:49.412Z",
+      "retrieved_at_toronto": "2026-11-03T06:35:49.412-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "CurrentNFLClassic roster,50kcap,minimum2games and exactPPR/bonus/DST scoring inspected."
+    },
+    {
+      "id": "week8",
+      "label": "week8",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+      "retrieved_at": "2026-11-03T11:36:18.345Z",
+      "retrieved_at_toronto": "2026-11-03T06:36:18.345-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "All priorSunday main games final; MondaySeattle–Chicagofinal. Platformsettlement/statcorrections not certified."
+    },
+    {
+      "id": "kcbox",
+      "label": "kcbox",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873033",
+      "retrieved_at": "2026-11-03T11:37:08.088Z",
+      "retrieved_at_toronto": "2026-11-03T06:37:08.088-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "Week8KC–DEN:Mahomes30/41,321,3TD; Rice8targets7/53/TD; Coleman11carries41,4/63on5targets;Dobbins7carries."
+    },
+    {
+      "id": "larbox",
+      "label": "larbox",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873032",
+      "retrieved_at": "2026-11-03T11:37:08.541Z",
+      "retrieved_at_toronto": "2026-11-03T06:37:08.541-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "Week8LAR–LAC:Kyren16carries56/TD,1target;Corum11carries73/TD. Not guaranteedWeek9volume."
+    },
+    {
+      "id": "indbox",
+      "label": "indbox",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873028",
+      "retrieved_at": "2026-11-03T11:37:08.220Z",
+      "retrieved_at_toronto": "2026-11-03T06:37:08.220-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "Week8IND–JAX:Keenan7targets7/67;Warren10targets,team30listedtargets and152receivingyards."
+    },
+    {
+      "id": "box401873027",
+      "label": "box401873027",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873027",
+      "retrieved_at": "2026-11-03T11:40:28.096Z",
+      "retrieved_at_toronto": "2026-11-03T06:40:28.096-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "FreshWeek8CLE–PIT:Fannin12targets10/154,lostfumble;Concepcion4targets,Boston11; receiving40targets. Prior archived scoring remains unchanged."
+    },
+    {
+      "id": "box401873029",
+      "label": "box401873029",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
+      "retrieved_at": "2026-11-03T11:40:18.716Z",
+      "retrieved_at_toronto": "2026-11-03T06:40:18.716-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "FreshWeek8LV–NYJ:Mitchell9targets7/142/TD,Taylor5targets3/19,Wilson12. NoNewYorkfumbles; Cooperabsent fromreceivingtable,consistentwitharchived0targets."
+    },
+    {
+      "id": "box401873030",
+      "label": "box401873030",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873030",
+      "retrieved_at": "2026-11-03T11:40:18.581Z",
+      "retrieved_at_toronto": "2026-11-03T06:40:18.581-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "FreshWeek8MIN–DET:Jamo6targets4/70/TD,StBrown8targets,25listedtargets/attempts; noDET fumbles."
+    },
+    {
+      "id": "seainj",
+      "label": "seainj",
+      "url": "https://www.seahawks.com/news/injury-updates-from-seahawks-week-8-loss-to-bears",
+      "retrieved_at": "2026-11-03T11:39:40.234Z",
+      "retrieved_at_toronto": "2026-11-03T06:39:40.234-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "PrimaryNov2postgame:LeonardWilliamsstinger,didnotreturn;O'Toolefootinjury. NoWeek9clearance.",
+      "publication_display": "Nov02,2026 at09:56PM, page timezone not explicitly established"
+    },
+    {
+      "id": "searecap",
+      "label": "searecap",
+      "url": "https://www.seahawks.com/news/rapid-reactions-seahawks-struggle-to-find-offensive-rhythm-in-34-17-loss-to-bears",
+      "retrieved_at": "2026-11-03T11:39:40.224Z",
+      "retrieved_at_toronto": "2026-11-03T06:39:40.224-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "PrimaryMondayloss34–17,Bears363yards,threeTDdrives80/69/56 plus shortfield. Matchupfavoritismdoesnoterase defensivecounterevidence.",
+      "publication_display": "Nov02,2026 at08:34PM, page timezone not explicitly established"
+    },
+    {
+      "id": "prices",
+      "label": "prices",
+      "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php",
+      "retrieved_at": "2026-11-03T11:35:48.640Z",
+      "retrieved_at_toronto": "2026-11-03T06:35:48.640-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "FullTimeFantasyselectedslate empty/Week8 remnants; rejected forWeek9 prices."
+    },
+    {
+      "id": "builder",
+      "label": "builder",
+      "url": "https://fantasysportsedge.com/nfl/lineup-builder?platform=draftkings&slate=bQnI0lRgqhi",
+      "retrieved_at": "2026-11-03T11:36:17.029Z",
+      "retrieved_at_toronto": "2026-11-03T06:36:17.029-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "Read-only publicclientplaceholder0players; nofullprojectionpool obtained, no lineup-builderexecution."
+    },
+    {
+      "id": "cleinj",
+      "label": "cleinj",
+      "url": "https://www.clevelandbrowns.com/team/injury-report/",
+      "retrieved_at": "2026-11-03T11:37:07.840Z",
+      "retrieved_at_toronto": "2026-11-03T06:37:07.840-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "Currentpage stillWeek8PIT table; cannot establish Week9 QB/availability."
+    },
+    {
+      "id": "larinj",
+      "label": "larinj",
+      "url": "https://www.therams.com/team/injury-report/",
+      "retrieved_at": "2026-11-03T11:37:23.791Z",
+      "retrieved_at_toronto": "2026-11-03T06:37:23.791-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "Currentpage stillWeek8LAC table; not Week9clearance."
+    },
+    {
+      "id": "kcinj",
+      "label": "kcinj",
+      "url": "https://www.chiefs.com/team/injury-report/",
+      "retrieved_at": "2026-11-03T11:37:07.548Z",
+      "retrieved_at_toronto": "2026-11-03T06:37:07.548-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "Currentpage stillWeek8DEN table; priorRiceLP/LP/FP andMahomesFP cannotcertifyWeek9availability."
+    },
+    {
+      "id": "detinj",
+      "label": "detinj",
+      "url": "https://www.detroitlions.com/team/injury-report/",
+      "retrieved_at": "2026-11-03T11:37:07.885Z",
+      "retrieved_at_toronto": "2026-11-03T06:37:07.885-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "Currentpage stillWeek8MIN table; noWeek9absenceinference."
+    },
+    {
+      "id": "deninj",
+      "label": "deninj",
+      "url": "https://www.denverbroncos.com/team/injury-report/",
+      "retrieved_at": "2026-11-03T11:37:07.115Z",
+      "retrieved_at_toronto": "2026-11-03T06:37:07.115-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "Currentpage stillWeek8KC table; priorHarveyOUT not rolledforwardtoWeek9."
+    },
+    {
+      "id": "indinj",
+      "label": "indinj",
+      "url": "https://www.colts.com/team/injury-report/",
+      "retrieved_at": "2026-11-03T11:37:07.482Z",
+      "retrieved_at_toronto": "2026-11-03T06:37:07.482-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "Currentpage stillWeek8JAX table; notWeek9clearance."
+    }
+  ]
+}
