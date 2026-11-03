@@ -1,0 +1,104 @@
+{
+  "schema_version": "tiber-dfs-candidate-delta/v1",
+  "id": "2026-w09-r1-intake-delta-20261103T163714Z",
+  "recorded_at": "2026-11-03T16:37:14.001Z",
+  "recorded_at_toronto": "2026-11-03T11:37:14.001-05:00",
+  "author": "Codex",
+  "kind": "later_annotation",
+  "originals": {
+    "codex": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67033cfa6c3102dc3273bcf416b514c8f4940e2/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-03.json",
+    "codex_md": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67033cfa6c3102dc3273bcf416b514c8f4940e2/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-03.md",
+    "claude": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/8df1a6e2c9549b9bb077630ecc8aa20a1add419a/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T122249Z-claude-v1.json",
+    "claude_md": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/8df1a6e2c9549b9bb077630ecc8aa20a1add419a/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T122249Z-claude-v1.md",
+    "common": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/25945a160171e2197a4ce52a8f5234b71f73bcfb/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T114501Z-common-inputs.json",
+    "prices": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67033cfa6c3102dc3273bcf416b514c8f4940e2/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-03-reported-prices.csv"
+  },
+  "current_candidate": {
+    "id": "2026-w09-2026-11-03-daily",
+    "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67033cfa6c3102dc3273bcf416b514c8f4940e2/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-03.json",
+    "changed_picks": [],
+    "salary_total": 49400,
+    "salary_remaining": 600,
+    "status": "unchanged original; not integrated or frozen"
+  },
+  "claude_original": {
+    "id": "2026-w09-r1-claude-v1",
+    "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/8df1a6e2c9549b9bb077630ecc8aa20a1add419a/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T122249Z-claude-v1.json",
+    "salary_total": 49900,
+    "salary_remaining": 100
+  },
+  "findings": [
+    {
+      "id": "D1",
+      "classification": "constraint_or_source_correction",
+      "finding": "Claude's cited Stevenson workhorse article is dated October14 and explicitly previews Week6. It cannot establish HendersonOUT or Stevensonworkhorse status forWeek9.",
+      "implication": "Do not carry a prior ankle-related absence forward. Week8illness and currentWeek9availability are separate questions; noStevensonreplacementselectedhere."
+    },
+    {
+      "id": "D2",
+      "classification": "constraint_or_source_correction",
+      "finding": "FreshVegasInsider full-game summary names Eagles first at+3.5 and Giants second at-3.5, total39.5; narrative openingGiants-2.5 agrees on favorite direction. Claude original saysPHI-3.5/40.5 andGiantsimplied18.5.",
+      "implication": "At these newlyobserved39.5/-3.5 inputs Giantsimplied21.5, Eagles18.0. Remove home-favorite support from the Eagles DST rationale pending a dated corroboration. This is a current source mismatch, not proof of whatthelivepage showedatClaude's earliercutoff or of an actual marketmove."
+    },
+    {
+      "id": "D3",
+      "classification": "new_evidence",
+      "finding": "McCaffrey source publication now established asOct26 20:41ET; its expectation ofWeek9return is pre-bye secondary reporting.",
+      "implication": "Originalhamstringuncertainty remains; not currentpracticeclearance. Noautomaticchange ormedicalprediction."
+    },
+    {
+      "id": "D4",
+      "classification": "unchanged",
+      "finding": "Both complete originals validate against same factual price CSV, with9uniqueplayers each andzerooverlap. Claude49900/100 across6games; Codex49400/600 across7games.",
+      "implication": "Salaryvalidation establishes sourceconsistency, notrole-quality,officialeligibility orjointendorsement."
+    }
+  ],
+  "comparison": {
+    "allocation_delta": 500,
+    "codex_KC_NYJ_salary": 17000,
+    "codex_KC_NYJ_slots": 3,
+    "claude_DAL_IND_salary": 24500,
+    "claude_DAL_IND_slots": 4,
+    "claude_DAL_IND_share_of_spend": 0.4909819639278557,
+    "note": "Concentration accounting only. A trailing team need not feed either named receiver. No mixed provider point estimate or simple player-by-player optimum."
+  },
+  "unresolved": [
+    "McCaffrey practice status andStevenson/Henderson currentroles.",
+    "Downs/Sutton/Worthy actualroles; originalClaudemarksdata missing.",
+    "Bothoriginals'salcap/positionbasisreportedpricesonly; officialpool/IDsunverified.",
+    "CodexColeman/Kyrenreceivingroles,FanninQB,Mitchellcompetition,Seattlefrontinjuries remainopen."
+  ],
+  "disposition": "Accept receipt of Claude's first complete original. Preserve both originals exactly. No selection change, no joint revision or endorsement yet. These are Codex's source checks, not Grok questions or a substitute for its pass.",
+  "sources": [
+    {
+      "id": "stevenson",
+      "label": "stevenson",
+      "url": "https://www.rotoballer.com/?p=1966621",
+      "canonical_url": "https://www.rotoballer.com/player-news/rhamondre-stevenson-set-for-workhorse-role-with-teammate-injured/1966621",
+      "retrieved_at": "2026-11-03T16:35:26.117Z",
+      "publication_at": "2026-10-14T23:55:00-04:00",
+      "source_time_note": "Displayed ET publication converted using that date's Toronto/NewYork UTC-04 offset; retrieval is November3 UTC-05.",
+      "scope": "Full source article inspected: explicitly a Week6 preview after Week5 Henderson injury, not Week9 clearance. Related-news sidebar excluded."
+    },
+    {
+      "id": "cmc",
+      "label": "cmc",
+      "url": "https://www.rotoballer.com/player-news/christian-mccaffrey-has-mild-hamstring-strain-should-be-ready-for-week-9/1976550",
+      "canonical_url": "https://www.rotoballer.com/player-news/christian-mccaffrey-has-mild-hamstring-strain-should-be-ready-for-week-9/1976550",
+      "retrieved_at": "2026-11-03T16:35:26.118Z",
+      "publication_at": "2026-10-26T20:41:00-04:00",
+      "source_time_note": "Displayed ET publication converted using that date's Toronto/NewYork UTC-04 offset; retrieval is November3 UTC-05.",
+      "scope": "Full original article inspected: pre-bye expected return, not current practice report or clearance."
+    },
+    {
+      "id": "odds",
+      "label": "odds",
+      "url": "https://www.vegasinsider.com/nfl/nfl-week-9-odds-2026/",
+      "canonical_url": "https://www.vegasinsider.com/nfl/nfl-week-9-odds-2026/",
+      "retrieved_at": "2026-11-03T16:35:29.018Z",
+      "publication_at": null,
+      "source_time_note": "Page header Nov2 2026 12:23AM, body Updated on11/3/26; timezone/update instant unresolved. These are present observations, not a reconstruction of12:20UTC.",
+      "scope": "Summary table names Eagles first with +3.5 and Giants second -3.5, total39.5. Body says openingGiants-2.5. Embedded period-market rows not treated as full-game lines."
+    }
+  ]
+}

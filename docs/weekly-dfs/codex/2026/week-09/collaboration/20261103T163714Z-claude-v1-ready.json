@@ -1,0 +1,72 @@
+{
+  "schema_version": "tiber-dfs-stage-receipt/v1",
+  "id": "2026-w09-r1-claude-v1-ready-receipt",
+  "stage": "claude_v1_ready",
+  "status": "ready",
+  "cycle": "2026-w09-2026-11-08",
+  "round": 1,
+  "actual_author": "Claude",
+  "original_posted_by": "Claude Code cloud session, self-attributed in direct PR post",
+  "github_posting_account": "Prometheus-Frameworks",
+  "archived_by": "Codex",
+  "operator_relay": "User supplied notice; exact authoritative files anddirectPRpost freshlyread",
+  "original_completion_clock": "2026-11-03T12:22:49Z",
+  "original_cutoff": "2026-11-03T12:20:00Z",
+  "original_cutoff_precision": "approximate, nearest minute",
+  "original_posted_at": "2026-11-03T12:24:07Z",
+  "receipt_completed_at": "2026-11-03T16:37:14.001Z",
+  "receipt_completed_at_toronto": "2026-11-03T11:37:14.001-05:00",
+  "request_id": "2026-w09-r1-claude-v1",
+  "exact_input_manifest": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/25945a160171e2197a4ce52a8f5234b71f73bcfb/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T114501Z-common-inputs.json",
+  "price_snapshot": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67033cfa6c3102dc3273bcf416b514c8f4940e2/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-03-reported-prices.csv",
+  "price_blob_sha": "c941e04f6850ceed4e2ad005eff3dde2a6883688",
+  "immutable_output": {
+    "json": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/8df1a6e2c9549b9bb077630ecc8aa20a1add419a/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T122249Z-claude-v1.json",
+    "markdown": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/8df1a6e2c9549b9bb077630ecc8aa20a1add419a/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T122249Z-claude-v1.md",
+    "commit": "8df1a6e2c9549b9bb077630ecc8aa20a1add419a",
+    "json_blob_sha": "1c3b3f78a625b922921c479a5ce33c23dea23e76",
+    "markdown_blob_sha": "18a2dbf1bcf1840a10449714c8eee53a12296f83"
+  },
+  "direct_post_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43#issuecomment-6603701504",
+  "known_exposure": {
+    "read": [
+      "PR43 comment 6602948548 (states Codex v1 $49,400/$600 left)",
+      "claude request md/json",
+      "common inputs md/json",
+      "week-07 Claude v1 receipt (Week7 Codex picks)"
+    ],
+    "seen_not_opened": [
+      "week-09 collaboration filename listing",
+      "head commit message"
+    ],
+    "codex_week9_selections_seen": false,
+    "blind_baseline": false
+  },
+  "exposure_note": "Author declares no CodexWeek9selections opened. Budget and priorweeks visible; not a fullyblind controlledbaseline.",
+  "runtime": {
+    "surface": "Claude Code remote cloud session (claude.ai/code)",
+    "model_identifier": "withheld from repository artifacts by session policy; visible to operator in session"
+  },
+  "validation": {
+    "nine_slots": true,
+    "nine_unique": true,
+    "all_nine_prices_positions_teams_opponents_match_pinned_file": true,
+    "total": 49900,
+    "remaining": 100,
+    "distinct_games": 6,
+    "all_games_in_common_target": true,
+    "official_pool_verified": false,
+    "medical_clearance": false,
+    "zero_overlap_with_codex": true
+  },
+  "stage_states": {
+    "codex_v1_ready": "ready",
+    "claude_v1_ready": "ready",
+    "grok_questions_ready": "blocked: actualWeek9questionsnotreceived",
+    "collaboration_ready": "blocked: noWeek9revisionexchange",
+    "final_frozen": "blocked: notyetfinal"
+  },
+  "readiness_limit": "Readiness means attributable complete starting draft, not endorsement of everyfootballpremise. Sourcecorrections live in a separatelydated delta; originalbytes preserved.",
+  "next_handoff": "2026-w09-r1-grok-questions",
+  "dedupe_key": "2026-w09-2026-11-08/claude_v1_ready/r1/8df1a6e2c9549b9bb077630ecc8aa20a1add419a"
+}
