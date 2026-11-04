@@ -4,7 +4,7 @@
 - Update ID / author / actual authoring time and timezone:
 - Original article / original cutoff / affected question IDs:
 - New evidence cutoff / latest observation covered / study window:
-- Update type: new evidence / correction / postgame checkpoint / format preparation.
+- Update type: new evidence / correction / postgame checkpoint / resolution / format preparation.
 - Research state / review state / owner:
 - Admission granted by this update: none. Preserve genuine external receipt links.
 
@@ -30,6 +30,16 @@ where material; unknown fields remain unknown.
 ## 5. Interpretation and assessment
 
 Per-question disposition and explanation; distinguish opportunity from outcomes.
+
+For a `resolution` update, give one line per registered thesis and copy the
+outcome into the [resolution log](../../resolutions/resolution-log.md), naming this
+update as the resolving record:
+
+- Thesis ID / outcome (`supported`, `challenged`, `mixed`, `unresolved`, `untestable`) / the observation that decided it, with denominators / what it cannot establish.
+
+One eligible game does not resolve a two-game window; record the partial result
+and leave the log row `pending`. A condition that did not occur is `untestable`,
+not a failure, and does not extend the window.
 
 ## 6. Unknowns and revision triggers
 

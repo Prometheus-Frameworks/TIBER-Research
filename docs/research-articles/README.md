@@ -36,6 +36,12 @@ than invent content. A conceptual design can have no empirical findings; a futur
 test can remain a proposal; an unresolved question can stay unresolved. Concision
 comes from short answers and linked evidence, not omission of provenance or gaps.
 
+Section 6 carries a resolution block for each thesis the article freezes: the
+claim as frozen, what would weaken it, and the date after which it can be judged.
+The same row goes into the [resolution log](../resolutions/resolution-log.md), and
+a later dated update of type `resolution` records the outcome there. Freezing a
+thesis is half the record; the log is where the other half is owed.
+
 The record header names a format version, stable record ID, type, subject, window,
 evidence cutoff, observation coverage, authoring time, origin, research state,
 review state, owner and original record. These are readable publishing conventions,
