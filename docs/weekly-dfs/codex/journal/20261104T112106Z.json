@@ -1,0 +1,216 @@
+{
+  "schema_version": "tiber-dfs-journal/v1",
+  "entries": [
+    {
+      "id": "2026-w09-research-20261104T112106Z",
+      "snapshot_ids": [
+        "2026-w09-2026-11-04-daily"
+      ],
+      "kind": "scheduled_research",
+      "recorded_at": "2026-11-04T11:21:06.870Z",
+      "recorded_at_toronto": "2026-11-04T06:21:06.870-05:00",
+      "research_at": "2026-11-04T11:21:06.870Z",
+      "origin": "agent_chosen",
+      "origin_note": "Codex selected official-pool, Coleman efficiency/role and Seattle availability checks. Prior actualClaude/Grok contributions retained; no newoperatorplayerdirection.",
+      "title": "Official pool verified; unchanged nine with first coherent model annotation",
+      "question": "Can the retained allocation survive official constraints and focused contrary evidence?",
+      "why_it_matters": "Resolve eligibility uncertainty without retroactively changing originals or forcing rosterchurn.",
+      "findings": [
+        "Official155994CSV contains570rows andsame11games; allnine originalprices andreportedpositionsmatch.",
+        "OneFullTimeFantasyDKsnapshot coversnine:120.4 estimatedpoints. Its separateCSV exportfailed; themainpage supplies selectedvalues.",
+        "Coleman's51yardcatch accountsformostof63receivingyards; primaryrecapdoesnotguaranteerepeatworkload.",
+        "Seattlecoach offerspossiblereturns forWilliams/Nwosu,notclearance. Practicepages renderednoplayers."
+      ],
+      "interpretation": [
+        "Keepnine; improveconstraintcertainty andretain role/availabilityuncertainty.",
+        "Do notconfusehistoricalaveragepoints inofficialCSV with forecasts.",
+        "No jointendorsementcreated bysourceupgrade."
+      ],
+      "alternatives": [
+        {
+          "package": "Allen→Downs",
+          "salary_total": 49600,
+          "salary_remaining": 400,
+          "disposition": "HoldAllen; strongerroutecounterargument survives; no newtradeconfirmed."
+        },
+        {
+          "package": "Seattle→SF",
+          "salary_total": 49200,
+          "salary_remaining": 800,
+          "disposition": "Notselected; tentativeSEAreturnevidence doesnotestablishcomparativeSFsuperiority."
+        }
+      ],
+      "uncertainty": [
+        "Sundaymedicalavailability/practice reports not established at this earlyWednesdaycutoff.",
+        "Colemanrepeatrole/long-gain dependence andSeattlefronthealth.",
+        "Allen/Downsroute-versus-targetearning disagreement; no completedDownstrade established in this pass."
+      ],
+      "lineup_effect": "No pick orsalarychange,49400/600. Newsourceverification andestimatesapplyonlytothisWednesdayrecord.",
+      "change_triggers": [
+        "Datedpractice/inactive changes require fullcandidate reassessment beforefreeze.",
+        "Newpool,price,positionorgame changes require newappend-onlyreceipt.",
+        "No automatictrade-rumor orlow-aDOT swap."
+      ],
+      "carry_forward": [
+        "Verifydatedpractice/statusbeforefreeze; no newroutineproviderquestionloop.",
+        "Assessrole separately fromoneexplosiveplay andfromexternalpointestimate."
+      ],
+      "sources": [
+        {
+          "id": "official",
+          "label": "official",
+          "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=155994",
+          "retrieved_at": "2026-11-04T11:18:11.752Z",
+          "retrieved_at_toronto": "2026-11-04T06:18:11.752-05:00",
+          "publication_at": null,
+          "scope": "Fresh official CSV155994:570rows,11Sundaygames,selectedIDs/positions/prices verified. AveragePointsPerGame is historical, not a forecast; blankStatus is notmedicalclearance."
+        },
+        {
+          "id": "prices",
+          "label": "prices",
+          "url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "retrieved_at": "2026-11-04T11:17:42.284Z",
+          "retrieved_at_toronto": "2026-11-04T06:17:42.284-05:00",
+          "publication_at": null,
+          "scope": "Fresh publicWeek9rows independently match all selected prices/teams/opponents."
+        },
+        {
+          "id": "main",
+          "label": "main",
+          "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994",
+          "retrieved_at": "2026-11-04T11:18:15.111Z",
+          "retrieved_at_toronto": "2026-11-04T06:18:15.111-05:00",
+          "publication_at": null,
+          "scope": "One publisher-labelledDraftKings11gameprojection snapshot covers allnine; estimatedtotal120.4. No sitebuilder controls executed."
+        },
+        {
+          "id": "model",
+          "label": "model",
+          "url": "https://fftoolbox.fulltimefantasy.com/football/ExportToCSV.cfm?type=dk&dgi=155994",
+          "retrieved_at": "2026-11-04T11:18:43.629Z",
+          "retrieved_at_toronto": "2026-11-04T06:18:43.629-05:00",
+          "publication_at": null,
+          "scope": "PublisherCSV link returned no players; not used as a complete model pool. Selectedmodel values instead read from exactmainpage."
+        },
+        {
+          "id": "schedule",
+          "label": "schedule",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+          "retrieved_at": "2026-11-04T11:17:42.968Z",
+          "retrieved_at_toronto": "2026-11-04T06:17:42.968-05:00",
+          "publication_at": null,
+          "scope": "PrimaryNFLWeek9 schedule reconfirmsNov8 elevenafternoon games, earliest13:00Toronto/18:00UTC."
+        },
+        {
+          "id": "rules",
+          "label": "rules",
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-04T11:17:43.855Z",
+          "retrieved_at_toronto": "2026-11-04T06:17:43.855-05:00",
+          "publication_at": null,
+          "scope": "ExactcurrentNFLClassic roster/cap/minimum2games,PPR/bonuses/lostfumble-1/DSTbands inspected."
+        },
+        {
+          "id": "week8",
+          "label": "week8",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+          "retrieved_at": "2026-11-04T11:17:42.961Z",
+          "retrieved_at_toronto": "2026-11-04T06:17:42.961-05:00",
+          "publication_at": null,
+          "scope": "PriorSundaygamesfinal. No settledplatformscore or materialstatcorrection established; retained datedreviews remainprovisional."
+        },
+        {
+          "id": "coleman",
+          "label": "coleman",
+          "url": "https://www.denverbroncos.com/news/rb-jonah-coleman-nominated-for-nfl-rookie-of-the-week-following-week-8-win-vs-kansas-city-chiefs",
+          "retrieved_at": "2026-11-04T11:17:57.396Z",
+          "retrieved_at_toronto": "2026-11-04T06:17:57.396-05:00",
+          "publication_at": null,
+          "scope": "PrimaryNov3recap:41rushyards,4/63receiving,51yardcatch-and-run before5yardTD. One longgain limits interpretationof104yardoutput.",
+          "publication_display": "Nov3,2026 09:03AM, zone notstated"
+        },
+        {
+          "id": "coach",
+          "label": "coach",
+          "url": "https://www.seahawks.com/news/recapturing-us-injury-updates-other-takeaways-from-seahawks-coach-mike-macdonald-on-seattle-sports-710am",
+          "retrieved_at": "2026-11-04T11:18:12.477Z",
+          "retrieved_at_toronto": "2026-11-04T06:18:12.477-05:00",
+          "publication_at": null,
+          "scope": "PrimaryNov3coachreport:Williams,Nwosu,Cross,Shaheed havechance toreturn; no definitiveclearance. Three short rushingTDs afterWilliamsleft is chronology, not isolatedcausalproof.",
+          "publication_display": "Nov3,2026 02:45PM, zone notstated"
+        },
+        {
+          "id": "seainj",
+          "label": "seainj",
+          "url": "https://www.seahawks.com/news/injury-updates-from-seahawks-week-8-loss-to-bears",
+          "retrieved_at": "2026-11-04T11:17:57.519Z",
+          "retrieved_at_toronto": "2026-11-04T06:17:57.519-05:00",
+          "publication_at": null,
+          "scope": "PrimaryMondayreport retained:Williamsstinger/O'Toolefoot; neither automaticallyOUTforSunday."
+        },
+        {
+          "id": "deninj",
+          "label": "deninj",
+          "url": "https://www.denverbroncos.com/team/injury-report/",
+          "retrieved_at": "2026-11-04T11:17:57.320Z",
+          "retrieved_at_toronto": "2026-11-04T06:17:57.320-05:00",
+          "publication_at": null,
+          "scope": "Currentread renderslegend/navigation only, no playerpractice table. NoHarvey/Coleman/Dobbinsclearance inferred."
+        },
+        {
+          "id": "cleinj",
+          "label": "cleinj",
+          "url": "https://www.clevelandbrowns.com/team/injury-report/",
+          "retrieved_at": "2026-11-04T11:17:58.385Z",
+          "retrieved_at_toronto": "2026-11-04T06:17:58.385-05:00",
+          "publication_at": null,
+          "scope": "Currentread renderslegend/navigation only, no practice table. No newQB/TEclearance inferred."
+        },
+        {
+          "id": "export",
+          "label": "export",
+          "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php",
+          "retrieved_at": "2026-11-04T11:17:41.902Z",
+          "retrieved_at_toronto": "2026-11-04T06:17:41.902-05:00",
+          "publication_at": null,
+          "scope": "Default selectedShowdown156000 rejected forClassic; publicHTML revealsMainSlate155994."
+        },
+        {
+          "id": "ftfhtml",
+          "label": "ftfhtml",
+          "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php",
+          "retrieved_at": "2026-11-04T11:17:57.941Z",
+          "retrieved_at_toronto": "2026-11-04T06:17:57.941-05:00",
+          "publication_at": null,
+          "scope": "PublicHTML observed11gameMainSlate identifier155994, used toretrieveofficialCSV. No controlsorproducer executed."
+        },
+        {
+          "id": "den",
+          "label": "den",
+          "url": "https://www.denverbroncos.com/news/",
+          "retrieved_at": "2026-11-04T11:17:41.607Z",
+          "retrieved_at_toronto": "2026-11-04T06:17:41.607-05:00",
+          "publication_at": null,
+          "scope": "Officialnewsindex used todiscoverColemanrecap."
+        },
+        {
+          "id": "sea",
+          "label": "sea",
+          "url": "https://www.seahawks.com/news/",
+          "retrieved_at": "2026-11-04T11:17:41.763Z",
+          "retrieved_at_toronto": "2026-11-04T06:17:41.763-05:00",
+          "publication_at": null,
+          "scope": "Officialnewsindex used todiscoverTuesdaycoachupdate."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w09-2026-11-04-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/039239239c42d76d504b072f3bd42da4bafa26fe/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-04.json"
+        }
+      ],
+      "expectations": [],
+      "outcomes": []
+    }
+  ]
+}
