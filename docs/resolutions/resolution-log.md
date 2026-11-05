@@ -27,6 +27,9 @@ form of persistent memory for a domain that changes every week.
 3. **Outcome** uses the vocabulary already in the game-study guide, plus one
    state for tests whose condition never occurred:
    - `pending` — not yet assessed. A pending row past its due date is overdue.
+     A game-study **Outcome on main** is explicitly revision-scoped: when a later
+     candidate has already been assessed, list that candidate separately and
+     track its publication/acceptance wait instead of implying missing research.
    - `supported` — the frozen test passed under its declared condition.
    - `challenged` — the frozen test failed under its declared condition.
    - `mixed` — the record's own in-between band, or parts went each way.
@@ -55,11 +58,12 @@ Thesis IDs reuse the originating record's IDs where they exist. IDs marked
 `retro` are retrospective organizational labels assigned during the October 31
 format preparation or in this seeding; they are not original pregame IDs.
 
-## Summary as of 2026-11-05
+## Summary — November 4, 2026 (America/Toronto)
 
 | State | Rows |
 | --- | ---: |
-| pending, due date passed (overdue) | 19 |
+| pending, due date passed and assessment outstanding | 12 |
+| pending on main, assessed candidate awaiting publication/acceptance | 7 |
 | pending, not yet due | 6 |
 | supported | 3 |
 | challenged | 3 |
@@ -67,8 +71,11 @@ format preparation or in this seeding; they are not original pregame IDs.
 | unresolved | 2 |
 | untestable | 0 |
 
-Overdue rows are concentrated in the November 1 games. None of the November 1
-results are on `main` yet; the prepared-article snapshot stops October 31.
+The seven Arizona–Dallas questions have a completed, reviewed candidate outside
+`main`; the dated receipt below separates their acceptance wait from the 12 rows
+whose overdue assessments remain unrecorded here. The prepared-article snapshot
+stops October 31. Candidate dispositions are not added to the published outcome
+counts until their resolving record is accepted.
 
 ---
 
@@ -128,26 +135,57 @@ Share denominators: targets over 21 attempts; snaps over 65.
 
 ## Game study `nfl-2026-reg-w08-ari-dal` — Arizona at Dallas, Week 8
 
-Origin: [study manifest](../game-studies/2026/reg/week-08/ari-at-dal/study.json)
+Origin: [main study manifest at `c8cac5a`](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c8cac5a5c29d2f22d2e46ab3d78db799e0945d40/docs/game-studies/2026/reg/week-08/ari-at-dal/study.json)
 from [issue #71](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/71).
-Pregame cutoff 2026-10-31 12:00 America/Toronto; kickoff 2026-11-01; declared
-evidence deadline 2026-11-03 10:00. Manifest shows `game_final: not_checked` and
-`evaluation_state: pending`. These are **questions with two declared branches**,
-not predictions: the retained pregame record gives each a working explanation and
-a credible alternative and selects neither. The row carries both. The outcome is
-the manifest's own per-question disposition once recorded; a branch is never
-graded as a pass or fail. The manifest is the authoritative assessment record;
-these rows mirror it so the overdue state is visible here.
+Pregame cutoff **2026-10-31 12:00:28 EDT, America/Toronto**; kickoff
+2026-11-01; declared evidence deadline **2026-11-03 10:00 EST**.
+These are **questions with working explanations and credible alternatives**.
+The rows preserve both; they do not turn either branch into a frozen prediction.
+Their assessments must retain the study manifest's scope and limitations.
 
-| Thesis | Frozen | Claim as frozen | Weakens if | Due | Outcome | Resolved by / evidence |
+### Dated candidate/publication receipt — November 4, 2026 (America/Toronto)
+
+Codex read the pinned manifests, retained closeout, PR state, review receipt and CI.
+At the main revision above, `game_final.status=not_checked` and
+`evaluation_state=pending`. The **Outcome on main** column mirrors that published
+revision only; it does not claim that the postgame research is still unperformed.
+
+[PR #115](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/115) retains the completed account at
+[`6f43eb5`](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6f43eb5785006db86e945167c56cc99a220a318a/docs/game-studies/2026/reg/week-08/ari-at-dal/study.json):
+`game_final.status=final`, `evaluation_state=complete`, `closeout.status=draft`.
+The [November 3 closeout](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6f43eb5785006db86e945167c56cc99a220a318a/docs/game-studies/2026/reg/week-08/ari-at-dal/retained/closeout-20261103T134525Z.md)
+has **one supported, one challenged, one mixed and four unresolved** dispositions.
+That distribution already exists at
+[`264c34e`](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/264c34ea530527f48927f34eeaebd631308e41d1/docs/game-studies/2026/reg/week-08/ari-at-dal/study.json);
+one mixed, one challenged and five unresolved belongs to the
+[first checkpoint at `787d827`](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/787d827b74f165113064c264e89c2c1166801dca/docs/game-studies/2026/reg/week-08/ari-at-dal/retained/closeout-20261102T005713Z.md).
+
+[Independent GitHub Codex review](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/115#issuecomment-6606896417)
+completed on November 3 with no findings at exact head `6f43eb5785006db86e945167c56cc99a220a318a`;
+[CI run 41656886783](https://github.com/Prometheus-Frameworks/TIBER-Research/actions/runs/41656886783) passed.
+The retained reports' earlier pending-review labels remain historical.
+Review and CI establish their stated checks, not independent empirical validation
+or a reusable predictive edge.
+
+PR #115 is still draft/unmerged and #71 is open. Joe has not accepted the branch
+commit as the log's resolving record. These seven rows therefore await the
+publication/acceptance decision, **not another overdue postgame assessment**.
+After merge, or an explicit decision accepting this exact branch revision as the
+resolving record, update all seven outcomes from the accepted manifest in one
+change and record its immutable revision and the reader/date. If the candidate
+changes first, re-read it and its review receipt. An `unresolved` finding remains
+unresolved when the administrative closeout is accepted.
+Downstream admission remains `not_admitted`.
+
+| Question | Frozen | Original question and branches | Assessment basis | Due | Outcome on main | Candidate assessment / evidence / acceptance |
 | --- | --- | --- | --- | --- | --- | --- |
-| `nfl-2026-reg-w08-ari-dal/Q1` | 2026-10-31 | Q: Can Arizona protect Brissett with its replacement offensive line against Dallas's front? Working explanation: line disruption constrains the passing game before receiver talent can matter. Alternative: quick throws, chips and formation choices keep the offense functional. | Not a prediction. Resolves to the manifest disposition for Q1. | 2026-11-03 | pending | Evidence deadline passed; closeout not on `main`. Overdue. |
-| `nfl-2026-reg-w08-ari-dal/Q2a` | 2026-10-31 | Q: Does Wilson retain or expand usable route participation after Brooks's injury while managing ribs? Working explanation: a larger usable route role is plausible. Alternative: ribs, extra blocking assignments or a committee prevent it. | Not a prediction. Resolves to the manifest disposition for Q2a. | 2026-11-03 | pending | As above. Overdue. Links to #47 H1/H2 below. |
-| `nfl-2026-reg-w08-ari-dal/Q2b` | 2026-10-31 | Q: Who receives the Arizona targets if the Brooks replacement changes deployment? Working explanation: a McBride-led distribution with Wilson still the main WR. Alternative: a more concentrated Wilson role after the latest personnel change. | Not a prediction. Resolves to the manifest disposition for Q2b. | 2026-11-03 | pending | As above. Overdue. |
-| `nfl-2026-reg-w08-ari-dal/Q3` | 2026-10-31 | Q: Does Love return as a genuine receiving/early-down contributor or to a split, constrained role? Working explanation: a healthier Love gives Arizona rushing help and a receiving outlet. Alternative: a three-player rotation behind the same damaged line. | Not a prediction. Resolves to the manifest disposition for Q3. | 2026-11-03 | pending | As above. Overdue. |
-| `nfl-2026-reg-w08-ari-dal/Q4` | 2026-10-31 | Q: Can Dallas repeat useful early-down rushing against Arizona without Nolen? Working explanation: Dallas uses Williams to stay out of difficult passing downs. Alternative: the Philadelphia result was an opponent-specific peak and the passing game must carry the offense. | Not a prediction. Resolves to the manifest disposition for Q4. | 2026-11-03 | pending | As above. Overdue. |
-| `nfl-2026-reg-w08-ari-dal/Q5a` | 2026-10-31 | Q: Will Pickens have his normal receiving role alongside Lamb? Working scenario: Lamb and Pickens available together. Alternative: a limited or absent Pickens changes both distribution and defensive attention. | Not a prediction. Resolves to the manifest disposition for Q5a. | 2026-11-03 | pending | As above. Overdue. |
-| `nfl-2026-reg-w08-ari-dal/Q5b` | 2026-10-31 | Q: Can Dak handle Arizona's disguised pressure when Dallas faces long passing downs? Working explanation: Rallis and Baker can challenge Dallas's identification and protection. Alternative: the pressure looks fail to generate disruption and Dallas finds throws downfield. Apply the separately dated correction retained in the manifest. | Not a prediction. Resolves to the manifest disposition for Q5b. | 2026-11-03 | pending | As above. Overdue. |
+| `nfl-2026-reg-w08-ari-dal/Q1` | 2026-10-31 | Q: Can Arizona protect Brissett with its replacement offensive line against Dallas's front? Working explanation: line disruption constrains the passing game before receiver talent can matter. Alternative: quick throws, chips and formation choices keep the offense functional. | Not a prediction. Resolves to the manifest disposition for Q1. | 2026-11-03 | pending | Candidate **mixed**: early disruption and later QB/lineup changes; causal protection responsibility remains uncharted. Acceptance/publication pending; see dated receipt above. |
+| `nfl-2026-reg-w08-ari-dal/Q2a` | 2026-10-31 | Q: Does Wilson retain or expand usable route participation after Brooks's injury while managing ribs? Working explanation: a larger usable route role is plausible. Alternative: ribs, extra blocking assignments or a committee prevent it. | Not a prediction. Resolves to the manifest disposition for Q2a. | 2026-11-03 | pending | Candidate **unresolved**: offensive snaps do not establish routes. Route/persistence follow-up remains in #47. Acceptance/publication pending; see dated receipt above. |
+| `nfl-2026-reg-w08-ari-dal/Q2b` | 2026-10-31 | Q: Who receives the Arizona targets if the Brooks replacement changes deployment? Working explanation: a McBride-led distribution with Wilson still the main WR. Alternative: a more concentrated Wilson role after the latest personnel change. | Not a prediction. Resolves to the manifest disposition for Q2b. | 2026-11-03 | pending | Candidate **supported**, limited to reported Week 8 target allocation: Wilson 15/41; retained #47/ESPN lineage, not independent re-verification or a causal/persistence finding. Acceptance/publication pending; see dated receipt above. |
+| `nfl-2026-reg-w08-ari-dal/Q3` | 2026-10-31 | Q: Does Love return as a genuine receiving/early-down contributor or to a split, constrained role? Working explanation: a healthier Love gives Arizona rushing help and a receiving outlet. Alternative: a three-player rotation behind the same damaged line. | Not a prediction. Resolves to the manifest disposition for Q3. | 2026-11-03 | pending | Candidate **unresolved**: injury interrupted the healthy-role test; active status alone does not make it assessable. Acceptance/publication pending; see dated receipt above. |
+| `nfl-2026-reg-w08-ari-dal/Q4` | 2026-10-31 | Q: Can Dallas repeat useful early-down rushing against Arizona without Nolen? Working explanation: Dallas uses Williams to stay out of difficult passing downs. Alternative: the Philadelphia result was an opponent-specific peak and the passing game must carry the offense. | Not a prediction. Resolves to the manifest disposition for Q4. | 2026-11-03 | pending | Candidate **challenged**, limited to the efficient-ground path: official Williams 24 carries/56 yards; early-down success and causality remain unmeasured. Acceptance/publication pending; see dated receipt above. |
+| `nfl-2026-reg-w08-ari-dal/Q5a` | 2026-10-31 | Q: Will Pickens have his normal receiving role alongside Lamb? Working scenario: Lamb and Pickens available together. Alternative: a limited or absent Pickens changes both distribution and defensive attention. | Not a prediction. Resolves to the manifest disposition for Q5a. | 2026-11-03 | pending | Candidate **unresolved**: involvement established; a comparable normal route workload is not. Acceptance/publication pending; see dated receipt above. |
+| `nfl-2026-reg-w08-ari-dal/Q5b` | 2026-10-31 | Q: Can Dak handle Arizona's disguised pressure when Dallas faces long passing downs? Working explanation: Rallis and Baker can challenge Dallas's identification and protection. Alternative: the pressure looks fail to generate disruption and Dallas finds throws downfield. Apply the separately dated correction retained in the manifest. | Not a prediction. Resolves to the manifest disposition for Q5b. | 2026-11-03 | pending | Candidate **unresolved**: the amended third-and-long pressure sample, definitions and film remain missing; no aggregate-pressure inference. Acceptance/publication pending; see dated receipt above. |
 
 ## Issue #61 — RB carry leaders versus receiving and goal-line work
 
