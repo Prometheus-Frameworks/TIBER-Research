@@ -58,24 +58,25 @@ Thesis IDs reuse the originating record's IDs where they exist. IDs marked
 `retro` are retrospective organizational labels assigned during the October 31
 format preparation or in this seeding; they are not original pregame IDs.
 
-## Summary — November 4, 2026 (America/Toronto)
+## Summary — November 5, 2026 (UTC)
 
 | State | Rows |
 | --- | ---: |
-| pending, due date passed and assessment outstanding | 12 |
+| pending, due date passed and assessment outstanding | 0 |
 | pending on main, assessed candidate awaiting publication/acceptance | 7 |
-| pending, not yet due | 6 |
-| supported | 3 |
-| challenged | 3 |
-| mixed | 1 |
-| unresolved | 2 |
-| untestable | 0 |
+| pending, not yet due | 10 |
+| supported | 6 |
+| challenged | 5 |
+| mixed | 4 |
+| unresolved | 4 |
+| untestable | 2 |
 
-The seven Arizona–Dallas questions have a completed, reviewed candidate outside
-`main`; the dated receipt below separates their acceptance wait from the 12 rows
-whose overdue assessments remain unrecorded here. The prepared-article snapshot
-stops October 31. Candidate dispositions are not added to the published outcome
-counts until their resolving record is accepted.
+The 12 overdue rows were resolved on November 5 in four dated updates under
+[updates/](updates/); each row names its update. Four second-checkpoint rows
+were created for issue #61. The seven Arizona–Dallas questions still await the
+publication/acceptance decision described in their receipt below. Candidate
+dispositions are not added to the published outcome counts until their resolving
+record is accepted.
 
 ---
 
@@ -89,13 +90,13 @@ all-team carries. "Top two" allows ties. Absence or bye is not zero.
 
 | Thesis | Frozen | Claim as frozen | Weakens if | Due | Outcome | Resolved by / evidence |
 | --- | --- | --- | --- | --- | --- | --- |
-| `UTIL-2026-W06-BERNARD` | 2026-10-19 | Bernard keeps ≥20% target share and a top-two target rank in W7 at NO and W8 vs CLE, with Wilson and Pittman absent and Rodgers primary. | Below 15% with declared personnel and ordinary team volume. 15–20% is mixed. | 2026-11-01 | pending | No dated update on `main`. Overdue. |
-| `UTIL-2026-W06-COKER` | 2026-10-19 | Coker stays a top-two Carolina target with ≥25% share in W7 vs TB and W8 at GB, Young primary, McMillan present. | Below 15% with no limitation while another healthy receiver absorbs priority. 15–25% is mixed. | 2026-10-29 | pending | No dated update on `main`. Overdue. |
+| `UTIL-2026-W06-BERNARD` | 2026-10-19 | Bernard keeps ≥20% target share and a top-two target rank in W7 at NO and W8 vs CLE, with Wilson and Pittman absent and Rodgers primary. | Below 15% with declared personnel and ordinary team volume. 15–20% is mixed. | 2026-11-01 | mixed | W7 at NO 5/28 = 17.9%, 3rd (mixed band, not top two); W8 vs CLE 5/22 = 22.7%, tied 2nd (support). Wilson and Pittman on IR both games, Rodgers primary. [Resolution 2026-11-05](updates/2026-11-05-issue-44-resolution.md), read by Claude. |
+| `UTIL-2026-W06-COKER` | 2026-10-19 | Coker stays a top-two Carolina target with ≥25% share in W7 vs TB and W8 at GB, Young primary, McMillan present. | Below 15% with no limitation while another healthy receiver absorbs priority. 15–25% is mixed. | 2026-10-29 | challenged | W7 vs TB 4/29 = 13.8%, tied 3rd–4th; W8 at GB 5/35 = 14.3%, 3rd. Both below 15% with Young primary and McMillan present (6 and 11 targets). Touchdown recorded, not graded. [Resolution 2026-11-05](updates/2026-11-05-issue-44-resolution.md), read by Claude. |
 | `UTIL-2026-W06-MARKS` | 2026-10-19 | Marks keeps ≥50% of all-team carries in W7 vs NYG and W9 at LAC while Montgomery is absent. Receiving extension tracked separately: ≥2 targets strengthens it. | Below 40% with Montgomery still absent and Marks healthy. 40–50% is mixed. Montgomery's return makes the test untestable, not failed. | 2026-11-08 | pending | Game 1 of 2 read on 2026-10-26 in [update 6417385863](../research-articles/prepared/research-issue-0044/update-6417385863.md): rushing 19/25 = 76.0%, meets criterion; receiving 1 target, weakens the extension. Brief in-game absence not adjudicated. Window closes after W9. |
-| `UTIL-2026-W06-ALLEN` | 2026-10-19 | Allen keeps ≥55% of all-team carries in W7 vs MIA and W8 vs LV with Hall inactive and Geno Smith primary. ≥1 target keeps ancillary receiving involvement. | Below 45% with Hall still absent and Allen healthy, especially with Davis gaining work. 45–55% is mixed. Hall's return is a separate assessment. | 2026-11-01 | pending | No dated update on `main`. Overdue. |
+| `UTIL-2026-W06-ALLEN` | 2026-10-19 | Allen keeps ≥55% of all-team carries in W7 vs MIA and W8 vs LV with Hall inactive and Geno Smith primary. ≥1 target keeps ancillary receiving involvement. | Below 45% with Hall still absent and Allen healthy, especially with Davis gaining work. 45–55% is mixed. Hall's return is a separate assessment. | 2026-11-01 | supported | W7 vs MIA 17/21 = 81.0%, 7 targets; W8 vs LV 21/27 = 77.8%, 2 targets. Hall inactive both games (quad), Geno Smith primary. Healthy-Hall regime untested. [Resolution 2026-11-05](updates/2026-11-05-issue-44-resolution.md), read by Claude. |
 | `UTIL-2026-W06-PWASHINGTON` | 2026-10-19 | Washington keeps a top-two target rank and ≥20% full-game share in W8 vs IND and W9 at BAL, with Lawrence primary, plus ≥1 target and top-two rank inside the frozen competitive split. | Below 15% full-game share when the competitive condition occurred. Full-game pass with competitive rank outside top two or zero competitive targets is mixed, never support. | 2026-11-05 | pending | Not yet due. Fewer than ten eligible competitive team targets leaves the split unassessable but not the full-game result. |
-| `UTIL-2026-W06-DSMITH` | 2026-10-19 | Smith keeps ≥25% of receiver-credited targets and a top-two rank in W7 vs DAL and W8 at WAS with McKee primary. | Below 20% with Smith healthy and McKee primary. 20–25% is mixed. A quarterback change is a new condition reported separately. | 2026-11-01 | pending | No dated update on `main`. Overdue. |
-| `UTIL-2026-W06-FLOWERS` | 2026-10-19 | Flowers stays a top-two target with ≥25% share in W7 vs CIN and W8 at BUF regardless of whether Huntley or Jackson is primary. | Below 20% with Flowers healthy and sufficient volume while another receiver gains recurring priority. 20–25% is mixed. Mixed-QB games are not clean tests. | 2026-11-01 | pending | No dated update on `main`. Overdue. |
+| `UTIL-2026-W06-DSMITH` | 2026-10-19 | Smith keeps ≥25% of receiver-credited targets and a top-two rank in W7 vs DAL and W8 at WAS with McKee primary. | Below 20% with Smith healthy and McKee primary. 20–25% is mixed. A quarterback change is a new condition reported separately. | 2026-11-01 | untestable | Inactive both games with the hamstring: absent from the W7 box (AP story) and ruled out Oct 30 for W8 (Zangaro). No denominator invented. [Resolution 2026-11-05](updates/2026-11-05-issue-44-resolution.md), read by Claude. |
+| `UTIL-2026-W06-FLOWERS` | 2026-10-19 | Flowers stays a top-two target with ≥25% share in W7 vs CIN and W8 at BUF regardless of whether Huntley or Jackson is primary. | Below 20% with Flowers healthy and sufficient volume while another receiver gains recurring priority. 20–25% is mixed. Mixed-QB games are not clean tests. | 2026-11-01 | unresolved | W7 vs CIN 11/34 = 32.4%, 1st, Huntley primary (support). W8 at BUF: Jackson hurt on the first snap, Huntley left in Q2, Fagnano primary; 5/26 = 19.2%, 2nd, recorded not graded; outside the frozen QB condition. One eligible game cannot certify two. [Resolution 2026-11-05](updates/2026-11-05-issue-44-resolution.md), read by Claude. |
 | `UTIL-2026-W06-KINCAID` | 2026-10-19 | Kincaid keeps ≥15% credited target share in W8 vs BAL and W9 at MIN after the bye, with Josh Allen primary and no documented restriction. | Below 10% with Kincaid adequately available and ordinary team opportunity. 10–15% is mixed. | 2026-11-09 | pending | Not yet due. An unverified restriction is recorded as uncertainty and does not erase a low-share result. |
 
 ## Issue #49 — Week 7 Colts at Vikings, Murray rebound conditions
@@ -131,7 +132,7 @@ Share denominators: targets over 21 attempts; snaps over 65.
 | `retro-BELL` (#56) | 2026-10-24 | Do Bell's flashes translate into repeatable separation, YAC and target earning? Strengthens: successful routes beyond scramble plays; manufactured touches plus regular passing work; opportunity retained alongside Douglas. | Low route access, failure to earn targets, recurring execution mistakes, or flashes confined to coverage breakdowns. | 2026-10-25 | supported | Same update lists "continued Bell target involvement despite fewer total snaps" under Supported: 17–18 routes, 4/21 targets including three third-down targets, snaps 71% to 48%. None of the origin's challenge conditions was observed, but separation, YAC, execution and coverage context were not charted; "Bell failing to separate" is listed as not established. Backfill reading by Claude, 2026-11-05. |
 | `retro-WASHINGTON` (#56) | 2026-10-24 | Does Washington's useful PPR role persist with the room healthier? Strengthens: underneath/slot and designed-touch involvement retained, with stable targets relative to team volume. | Targets or route access move to teammates; recent volume proves dependent on absences or late-game catch-up. | 2026-10-25 | mixed | Same update: route access retained (22 routes, most on the team; 80% snaps; two carries), which meets the strengthening condition. Targets fell from 8/27 to 3/21 while Dulcich drew five and Bell four, which meets the first weakening condition. The update lists playing-time priority as Supported and loss of his underlying place as not established. Backfill reading by Claude, 2026-11-05. |
 | `retro-COLEMAN` (#56) | 2026-10-24 | Was Week 5 the beginning of a lasting role for Coleman, and where does his work overlap with the other three? Strengthens: continued routes and targets across meaningful game situations; a distinct deployment role. | Route access contracts sharply with Douglas back; usage remains limited or game-script dependent. | 2026-10-25 | challenged | Same update: 10/65 snaps, 2 routes, 1 target, down from 63.6% snaps and 7 targets; five of ten snaps in single-WR sets. The first weakening condition occurred. Displacement specifically by Douglas not isolated. Backfill reading by Claude, 2026-11-04. |
-| `retro-COLEMAN-W8` (#56) | 2026-10-31 | Prospective: repeated minimal Coleman access in W8 vs NE strengthens displacement; restored access challenges permanence. | Restored route access in W8. | 2026-11-01 | pending | Frozen in update 6546709227 §7. No W8 result on `main`. Overdue. |
+| `retro-COLEMAN-W8` (#56) | 2026-10-31 | Prospective: repeated minimal Coleman access in W8 vs NE strengthens displacement; restored access challenges permanence. | Restored route access in W8. | 2026-11-01 | mixed | W8 vs NE: 17/65 snaps (26%) vs 10 in W7 and 42 in W5; 3/31 targets (9.7%), 35-yard TD; routes unavailable. Access rose but stayed near 40% of the pre-bye level; neither clause cleanly met. [Resolution 2026-11-05](updates/2026-11-05-issue-56-week8-resolution.md), read by Claude. |
 
 ## Game study `nfl-2026-reg-w08-ari-dal` — Arizona at Dallas, Week 8
 
@@ -197,10 +198,14 @@ the first checkpoint and are proposed, not scheduled.
 
 | Thesis | Frozen | Claim as frozen | Weakens if | Due | Outcome | Resolved by / evidence |
 | --- | --- | --- | --- | --- | --- | --- |
-| `retro-WARREN` (#61) | 2026-10-26 | Warren's clear rushing lead persists with Dowdle active, with meaningful routes and targets on ordinary possessions. | Sustained receiving or close-range displacement, or a broader carry rotation, with both backs available. | 2026-11-02 | pending | PIT W8 vs CLE 2026-11-01 not on `main`. Overdue for the first checkpoint. Contingency thesis lives in [#66](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/66). |
-| `retro-JACOBS` (#61) | 2026-10-26 | Jacobs's receiving and close-range access recur with Lloyd participating. | Targets, routes or scoring-position work shift to Lloyd or others. | 2026-11-02 | pending | No W8 result on `main`. Overdue for the first checkpoint. |
-| `retro-IRVING` (#61) | 2026-10-26 | Irving keeps meaningful close-range and receiving access in a more competitive game with Mayfield and the other backs available. | Those channels shift despite comparable health and opportunity. One-target game in an 11-attempt offense is not a collapse. | 2026-11-02 | pending | No W8 result on `main`. Overdue for the first checkpoint. |
-| `retro-COLEMAN-RB` (#61) | 2026-10-26 | Coleman sustains useful participation with Dobbins and Harvey active and earns additional receiving or close-range work. | Returns to a small rotational role or stays restricted to low-value situations. | 2026-11-02 | pending | No W8 result on `main`. Overdue for the first checkpoint. |
+| `retro-WARREN` (#61) | 2026-10-26 | Warren's clear rushing lead persists with Dowdle active, with meaningful routes and targets on ordinary possessions. | Sustained receiving or close-range displacement, or a broader carry rotation, with both backs available. | 2026-11-02 | mixed | Checkpoint 1, W8 vs CLE: 17/32 = 53.1% of RB carries (down from 66.7%), Dowdle 15; targets Warren 2, Dowdle 0; inside-10 carries 2 each, one TD each. Lead held but rotation broadened; receiving did not displace. [Checkpoint 1](updates/2026-11-05-issue-61-checkpoint-1.md), read by Claude. |
+| `retro-JACOBS` (#61) | 2026-10-26 | Jacobs's receiving and close-range access recur with Lloyd participating. | Targets, routes or scoring-position work shift to Lloyd or others. | 2026-11-02 | supported | Checkpoint 1, W8 vs CAR: 21/26 carries, 6 targets/6 rec/1 TD, five inside-10 touches incl. rush and receiving TDs; Lloyd 3 carries, 1 target. [Checkpoint 1](updates/2026-11-05-issue-61-checkpoint-1.md), read by Claude. |
+| `retro-IRVING` (#61) | 2026-10-26 | Irving keeps meaningful close-range and receiving access in a more competitive game with Mayfield and the other backs available. | Those channels shift despite comparable health and opportunity. One-target game in an 11-attempt offense is not a collapse. | 2026-11-02 | unresolved | Checkpoint 1, W8 at ATL in driving rain: 3 team pass attempts, receiving unobservable; Irving 27/52 RB carries, the only two RB inside-10 carries incl. a TD; Gainwell 25. Competitive-passing condition did not occur. [Checkpoint 1](updates/2026-11-05-issue-61-checkpoint-1.md), read by Claude. |
+| `retro-COLEMAN-RB` (#61) | 2026-10-26 | Coleman sustains useful participation with Dobbins and Harvey active and earns additional receiving or close-range work. | Returns to a small rotational role or stays restricted to low-value situations. | 2026-11-02 | untestable | Checkpoint 1, W8 at KC: Harvey on IR (knee, Oct 31), so the Dobbins-and-Harvey-active condition did not occur. Observed in that regime: 11/18 = 61.1% RB carries, 5 targets, 63 yards, all six official RB inside-10 touches, TD. Favorable direction, different regime. [Checkpoint 1](updates/2026-11-05-issue-61-checkpoint-1.md), read by Claude. |
+| `retro-WARREN-C2` (#61) | 2026-11-05 | Checkpoint 2 of the same frozen test: Warren's clear rushing lead persists with Dowdle active, with meaningful routes and targets on ordinary possessions. | Sustained receiving or close-range displacement, or a broader carry rotation, with both backs available. | PIT Week 10 game (Week 9 bye; date to confirm) | pending | Created at checkpoint 1; see that row for the W8 result. |
+| `retro-JACOBS-C2` (#61) | 2026-11-05 | Checkpoint 2: Jacobs's receiving and close-range access recur with Lloyd participating. | Targets, routes or scoring-position work shift to Lloyd or others. | 2026-11-08 | pending | GB at NE 2026-11-08. |
+| `retro-IRVING-C2` (#61) | 2026-11-05 | Checkpoint 2: Irving keeps meaningful close-range and receiving access in a more competitive game with Mayfield and the other backs available. | Those channels shift despite comparable health and opportunity. One-target game in an 11-attempt offense is not a collapse. | 2026-11-08 | pending | TB at CHI 2026-11-08. |
+| `retro-COLEMAN-RB-C2` (#61) | 2026-11-05 | Checkpoint 2: Coleman sustains useful participation with Dobbins and Harvey active and earns additional receiving or close-range work. | Returns to a small rotational role or stays restricted to low-value situations. | 2026-11-08 | pending | DEN at CAR 2026-11-08. Harvey remains on IR, so the frozen condition will again not occur; record the Dobbins-only regime and mark untestable unless Harvey is activated. |
 
 ## Issue #67 — Seth McGowan contingency stash
 
@@ -236,12 +241,16 @@ of 2026-10-30, test game W8 vs IND 2026-11-01.
 
 | Thesis | Frozen | Claim as frozen | Weakens if | Due | Outcome | Resolved by / evidence |
 | --- | --- | --- | --- | --- | --- | --- |
-| `H1` (#45) | 2026-10-30 | Hunter's offensive integration broadens: more route access and repeated ordinary passing participation across possessions, including untargeted work. | A touchdown or selected-touch spike alone, without route breadth, is counterevidence to calling it established. | 2026-11-01 | pending | No W8 result on `main`. Overdue. Working expectation in the record was incremental allocation, not a full-time role. |
-| `H2` (#45) | 2026-10-30 | Hunter remains a selective offensive specialist alongside heavy defensive snaps. | Meaningful receiving breadth expands beyond selected calls at comparable defensive demands. | 2026-11-01 | pending | No W8 result on `main`. Overdue. Meyers's status makes any expansion conditional. |
+| `H1` (#45) | 2026-10-30 | Hunter's offensive integration broadens: more route access and repeated ordinary passing participation across possessions, including untargeted work. | A touchdown or selected-touch spike alone, without route breadth, is counterevidence to calling it established. | 2026-11-01 | challenged | W8 vs IND: 6/54 offensive snaps (11%, down from 9), 1 target, 1 carry; 49/61 defensive snaps; Meyers played 29 snaps. No route-access or ordinary-participation evidence; 42–7 script with 17 pass attempts limits the test. [Resolution 2026-11-05](updates/2026-11-05-issue-45-week8-resolution.md), read by Claude. |
+| `H2` (#45) | 2026-10-30 | Hunter remains a selective offensive specialist alongside heavy defensive snaps. | Meaningful receiving breadth expands beyond selected calls at comparable defensive demands. | 2026-11-01 | supported | W8 vs IND: selective offensive package (6 snaps, 1 target, 1 carry) alongside 80% defensive snaps; no breadth expansion at comparable defensive demand. [Resolution 2026-11-05](updates/2026-11-05-issue-45-week8-resolution.md), read by Claude. |
 
 ---
 
 ## Adding rows
+
+Dated resolution updates live in [updates/](updates/), one file per origin
+record per resolution pass, in the `tiber-research-update/v0` shape with update
+type `resolution`.
 
 Create the row in the same change that freezes the thesis. Use the article
 template's resolution block to carry the same fields in the article, and the
