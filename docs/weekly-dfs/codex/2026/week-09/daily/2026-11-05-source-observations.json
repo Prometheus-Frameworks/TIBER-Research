@@ -1,0 +1,419 @@
+{
+  "recorded_at": "2026-11-05T11:11:24.843Z",
+  "sources": [
+    {
+      "id": "csv",
+      "label": "csv",
+      "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=155994",
+      "retrieved_at": "2026-11-05T11:06:24.761Z",
+      "retrieved_at_toronto": "2026-11-05T06:06:24.761-05:00",
+      "publication_at": null,
+      "scope": "Official group155994 CSV:570 rows, same11games andsameIDs as Nov4; allnine salaries, roster positions, teams andgames match. Rice Q. Blank statuses are not medical clearance. Historical AvgPointsPerGame is not a projection."
+    },
+    {
+      "id": "proj",
+      "label": "proj",
+      "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994",
+      "retrieved_at": "2026-11-05T11:06:30.428Z",
+      "retrieved_at_toronto": "2026-11-05T06:06:30.428-05:00",
+      "publication_at": null,
+      "scope": "Single publisher DK main-slate model, all nine matched byname/team/price. Page says Thu12:15AM ET Week9. Separate repeated select lists agree. No builder controls executed."
+    },
+    {
+      "id": "rules",
+      "label": "rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-11-05T11:06:38.062Z",
+      "retrieved_at_toronto": "2026-11-05T06:06:38.062-05:00",
+      "publication_at": null,
+      "scope": "Current NFL Classic exact nine, >=2games,50k,PPR/bonuses/lost-fumble-1 and DSTevent/PA attribution read. Arena freeze is stricter than platform late swaps."
+    },
+    {
+      "id": "nfl",
+      "label": "nfl",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+      "retrieved_at": "2026-11-05T11:06:37.713Z",
+      "retrieved_at_toronto": "2026-11-05T06:06:37.713-05:00",
+      "publication_at": null,
+      "scope": "Current primary Nov8 Week9 afternoon games: same11, earliest13:00Toronto/18:00UTC. Excluded early/night/Thursday/Monday unchanged."
+    },
+    {
+      "id": "week8",
+      "label": "week8",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+      "retrieved_at": "2026-11-05T11:06:37.821Z",
+      "retrieved_at_toronto": "2026-11-05T06:06:37.821-05:00",
+      "publication_at": null,
+      "scope": "Prior Sunday and Monday games final. Earlier retained reviews already contain reproducible scores; this read does not establish settlement or a stat correction."
+    },
+    {
+      "id": "sea",
+      "label": "sea",
+      "url": "https://www.seahawks.com/team/injury-report/",
+      "retrieved_at": "2026-11-05T11:06:34.920Z",
+      "retrieved_at_toronto": "2026-11-05T06:06:34.920-05:00",
+      "publication_at": null,
+      "scope": "Current official Week9 Wednesday table:Williams/O'Toole/Pili DNP,NwosuLP; DarnoldDNP,LockLP. See dated article for estimated walkthrough context."
+    },
+    {
+      "id": "seaqb",
+      "label": "seaqb",
+      "url": "https://www.seahawks.com/news/seahawks-qb-sam-darnold-out-for-sunday-s-game-vs-arizona-due-to-quad-injury",
+      "retrieved_at": "2026-11-05T11:08:50.006Z",
+      "retrieved_at_toronto": "2026-11-05T06:08:50.006-05:00",
+      "publication_at": null,
+      "scope": "Nov4 official coach announcement: Darnold OUTSunday; Lock expected tostart but elbow limits throws; Milroe also preparing. No exact offensive or DST points effect inferred.",
+      "publication_display": "Nov 04, 2026 at 02:30 PM",
+      "publication_note": "Displayed site clock; timezone not established."
+    },
+    {
+      "id": "seareport",
+      "label": "seareport",
+      "url": "https://www.seahawks.com/news/week-9-injury-report-cardinals-at-seahawks",
+      "retrieved_at": "2026-11-05T11:08:47.491Z",
+      "retrieved_at_toronto": "2026-11-05T06:08:47.491-05:00",
+      "publication_at": null,
+      "scope": "Dated Nov4 primary article explains Wednesday was walkthrough and designations estimates. Williams/O'Toole/Pili nonparticipants,Nwosu limited; returns not guaranteed. Internal prose inconsistencies retained separately.",
+      "publication_display": "Nov 04, 2026 at 07:37 PM",
+      "publication_note": "Displayed site clock; timezone not established."
+    },
+    {
+      "id": "den",
+      "label": "den",
+      "url": "https://www.denverbroncos.com/team/injury-report/",
+      "retrieved_at": "2026-11-05T11:06:36.140Z",
+      "retrieved_at_toronto": "2026-11-05T06:06:36.140-05:00",
+      "publication_at": null,
+      "scope": "Current DEN-CAR Wednesday table: no Coleman/Dobbins row; SuttonNIR-restLP. Not listing a player is not a full medical or workload certification."
+    },
+    {
+      "id": "denreport",
+      "label": "denreport",
+      "url": "https://www.denverbroncos.com/news/injuryreport/injury-report-wr-pat-bryant-listed-as-full-participant-4-broncos-do-not-practice-ahead-of-week-9-game-vs-panthers",
+      "retrieved_at": "2026-11-05T11:08:49.770Z",
+      "retrieved_at_toronto": "2026-11-05T06:08:49.770-05:00",
+      "publication_at": null,
+      "scope": "Dated Nov4 article corroborates Wednesday report and Thursday/Friday updates planned; defensive absences and Suttonrest separated.",
+      "publication_display": "Nov 04, 2026 at 03:48 PM",
+      "publication_note": "Displayed site clock; timezone not established."
+    },
+    {
+      "id": "cle",
+      "label": "cle",
+      "url": "https://www.clevelandbrowns.com/team/injury-report/",
+      "retrieved_at": "2026-11-05T11:06:34.767Z",
+      "retrieved_at_toronto": "2026-11-05T06:06:34.767-05:00",
+      "publication_at": null,
+      "scope": "Official CLE-NO Wednesday table: WatsonconcussionDNP, BostoncalfLP,BarbercalfDNP,JenkinskneeLP. Fannin not listed; no target/blocking guarantee."
+    },
+    {
+      "id": "cleqb",
+      "label": "cleqb",
+      "url": "https://www.clevelandbrowns.com/news/browns-take-day-to-day-approach-at-quarterback-heading-into-week-9",
+      "retrieved_at": "2026-11-05T11:09:21.222Z",
+      "retrieved_at_toronto": "2026-11-05T06:09:21.222-05:00",
+      "publication_at": null,
+      "scope": "Dated Nov4 primary report: Watson concussion protocol, not ruled out; Sandersfirst-teamreps andpossible starter. No automatic checkdown/TE target bonus inferred.",
+      "publication_display": "Nov 04, 2026 at 05:26 PM",
+      "publication_note": "Displayed site clock; timezone not established."
+    },
+    {
+      "id": "kc",
+      "label": "kc",
+      "url": "https://www.chiefs.com/team/injury-report/",
+      "retrieved_at": "2026-11-05T11:08:04.567Z",
+      "retrieved_at_toronto": "2026-11-05T06:08:04.567-05:00",
+      "publication_at": null,
+      "scope": "Official KC-NYJ Wednesday table: MahomeskneeFP,Ricehamstring/kneeLP,KelceankleLP; WilsonconcussionDNP,HallquadLP,TaylorbackLP. Participation is not final status."
+    },
+    {
+      "id": "sf",
+      "label": "sf",
+      "url": "https://www.49ers.com/team/injury-report/",
+      "retrieved_at": "2026-11-05T11:07:13.168Z",
+      "retrieved_at_toronto": "2026-11-05T06:07:13.168-05:00",
+      "publication_at": null,
+      "scope": "Outside-nine alternative: official SF-LV Wednesday table Bosa knee/calfLP,McCaffreyhamstringDNP. SanFrancisco not presumed injury-free."
+    },
+    {
+      "id": "ind",
+      "label": "ind",
+      "url": "https://www.colts.com/team/injury-report/",
+      "retrieved_at": "2026-11-05T11:07:30.113Z",
+      "retrieved_at_toronto": "2026-11-05T06:07:30.113-05:00",
+      "publication_at": null,
+      "scope": "Read returned Dallas rows but no Indianapolis player table. Does not clear Allen,Downs,Warren orJones."
+    },
+    {
+      "id": "lines",
+      "label": "lines",
+      "url": "https://www.vegasinsider.com/nfl/nfl-week-9-odds-2026/",
+      "retrieved_at": "2026-11-05T11:08:53.188Z",
+      "retrieved_at_toronto": "2026-11-05T06:08:53.188-05:00",
+      "publication_at": null,
+      "scope": "Attributable summary table: SEA-8.5,total39.5;SF-10,total52.5;KC-10,total47.5;DAL-5.5,total51.5;DET-7,total50.5. SEAopponentimplied15.5 versusLV21.25 is arithmetic context, not point forecast. HeaderNov4 8:26PM/bodyUpdated11/5 disagree on update date; zone unspecified."
+    },
+    {
+      "id": "seanews",
+      "label": "seanews",
+      "url": "https://www.seahawks.com/news/",
+      "retrieved_at": "2026-11-05T11:07:34.102Z",
+      "retrieved_at_toronto": "2026-11-05T06:07:34.102-05:00",
+      "publication_at": null,
+      "scope": "Public primary news index used to discover dated Seattle report and Darnold announcement."
+    },
+    {
+      "id": "dennews",
+      "label": "dennews",
+      "url": "https://www.denverbroncos.com/news/",
+      "retrieved_at": "2026-11-05T11:07:22.793Z",
+      "retrieved_at_toronto": "2026-11-05T06:07:22.793-05:00",
+      "publication_at": null,
+      "scope": "Public primary news index used to discover dated Denver report."
+    },
+    {
+      "id": "clenews",
+      "label": "clenews",
+      "url": "https://www.clevelandbrowns.com/news/",
+      "retrieved_at": "2026-11-05T11:09:01.162Z",
+      "retrieved_at_toronto": "2026-11-05T06:09:01.162-05:00",
+      "publication_at": null,
+      "scope": "Public primary news index used to discover dated Browns quarterback report."
+    }
+  ],
+  "observations": {
+    "sea": [
+      "| Player | Position | Injury | Wed | Thu | Fri | Game Status |",
+      "| --- | --- | --- | --- | --- | --- | --- |",
+      "| Anthony Bradford | G | Knee | LP |  |  | UNSPECIFIED |",
+      "| Charles Cross | T | Ankle | DNP |  |  | UNSPECIFIED |",
+      "| Sam Darnold | QB | Quadricep, Ribs | DNP |  |  | UNSPECIFIED |",
+      "| Nick Emmanwori | S | Shoulder | FP |  |  | UNSPECIFIED |",
+      "| Tory Horton | WR | Hand | FP |  |  | UNSPECIFIED |",
+      "| Velus Jones Jr. | RB | Hamstring | LP |  |  | UNSPECIFIED |",
+      "| Tyrice Knight | LB | Thigh | FP |  |  | UNSPECIFIED |",
+      "| Drew Lock | QB | Right Elbow | LP |  |  | UNSPECIFIED |",
+      "| Quenton Nelson | G | Knee | LP |  |  | UNSPECIFIED |",
+      "| Uchenna Nwosu | LB | Ankle | LP |  |  | UNSPECIFIED |",
+      "| Connor O'Toole | LB | Foot | DNP |  |  | UNSPECIFIED |",
+      "| Brandon Pili | NT | Back | DNP |  |  | UNSPECIFIED |",
+      "| Rashid Shaheed | WR | Knee | DNP |  |  | UNSPECIFIED |",
+      "| Leonard Williams | DT | Stinger | DNP |  |  | UNSPECIFIED |",
+      "| Player | Position | Injury | Wed | Thu | Fri | Game Status |",
+      "| --- | --- | --- | --- | --- | --- | --- |",
+      "| !Budda Baker headshot Budda Baker | S | NIR-Rest | DNP |  |  | UNSPECIFIED |",
+      "| !Jacoby Brissett headshot Jacoby Brissett | QB | NIR-Other | DNP |  |  | UNSPECIFIED |",
+      "| !Hjalte Froholdt headshot Hjalte Froholdt | C | NIR-Rest | DNP |  |  | UNSPECIFIED |",
+      "| !Jon Gaines II headshot Jon Gaines II | G | Ankle | DNP |  |  | UNSPECIFIED |",
+      "| !Bam Knight headshot Bam Knight | RB | Concussion | DNP |  |  | UNSPECIFIED |",
+      "| !Isaac Seumalo headshot Isaac Seumalo | G | NIR-Rest | DNP |  |  | UNSPECIFIED |",
+      "| !Josh Sweat headshot Josh Sweat | LB | NIR-Rest | DNP |  |  | UNSPECIFIED |",
+      "| !Jayden Williams headshot Jayden Williams | OT | Knee | DNP |  |  | UNSPECIFIED |",
+      "| !Isaiah Adams headshot Isaiah Adams | G | Ankle | LP |  |  | UNSPECIFIED |",
+      "| !Walter Nolen headshot Walter Nolen | DT | Ankle | LP |  |  | UNSPECIFIED |",
+      "| !Michael Wilson headshot Michael Wilson | WR | NIR-Rest/Ribs | LP |  |  | UNSPECIFIED |",
+      "| !Reggie Virgil headshot Reggie Virgil | WR | Back | FP |  |  | UNSPECIFIED |"
+    ],
+    "den": [
+      "| Player | Position | Injury | Wed | Thu | Fri | Game Status |",
+      "| --- | --- | --- | --- | --- | --- | --- |",
+      "| Pat Bryant | WR | Ankle | FP |  |  | UNSPECIFIED |",
+      "| Jaylen Waddle | WR | Chest | FP |  |  | UNSPECIFIED |",
+      "| Zach Allen | DL | NIR - Rest | LP |  |  | UNSPECIFIED |",
+      "| Courtland Sutton | WR | NIR - Rest | LP |  |  | UNSPECIFIED |",
+      "| Kris Abrams-Draine | CB | Ankle | DNP |  |  | UNSPECIFIED |",
+      "| Talanoa Hufanga | S | Ankle | DNP |  |  | UNSPECIFIED |",
+      "| Brandon Jones | S | Hamstring | DNP |  |  | UNSPECIFIED |",
+      "| Eyioma Uwazurike | DL | Shoulder | DNP |  |  | UNSPECIFIED |",
+      "| Player | Position | Injury | Wed | Thu | Fri | Game Status |",
+      "| --- | --- | --- | --- | --- | --- | --- |",
+      "| !Jaelan Phillips headshot Jaelan Phillips | LB | Hamstring | DNP |  |  | UNSPECIFIED |",
+      "| !Will Lee III headshot Will Lee III | CB | Hamstring | DNP |  |  | UNSPECIFIED |",
+      "| !Torricelli Simpkins III headshot Torricelli Simpkins III | G | Ankle | LP |  |  | UNSPECIFIED |",
+      "| !Corey Bullock headshot Corey Bullock | OT | Quadriceps | LP |  |  | UNSPECIFIED |",
+      "| !Damien Lewis headshot Damien Lewis | G | Knee | DNP |  |  | UNSPECIFIED |",
+      "| !Bobby Okereke headshot Bobby Okereke | ILB | Foot | DNP |  |  | UNSPECIFIED |",
+      "| !Bobby Brown III headshot Bobby Brown III | DT | Hand | FP |  |  | UNSPECIFIED |",
+      "| !Bryce Young headshot Bryce Young | QB | Ankle | FP |  |  | UNSPECIFIED |",
+      "| !Brady Christensen headshot Brady Christensen | OT | Hamstring | FP |  |  | UNSPECIFIED |"
+    ],
+    "cle": [
+      "| Player | Position | Injury | Wed | Thu | Fri | Game Status |",
+      "| --- | --- | --- | --- | --- | --- | --- |",
+      "| Austin Barber | T | Calf | DNP |  |  | UNSPECIFIED |",
+      "| Denzel Boston | WR | Calf | LP |  |  | UNSPECIFIED |",
+      "| Maliek Collins | DT | Elbow | DNP |  |  | UNSPECIFIED |",
+      "| Myles Harden | CB | Hamstring | LP |  |  | UNSPECIFIED |",
+      "| Elgton Jenkins | C/G | Knee | LP |  |  | UNSPECIFIED |",
+      "| Carson Schwesinger | LB | Wrist, Ankle | LP |  |  | UNSPECIFIED |",
+      "| Jared Verse | DE | Knee | LP |  |  | UNSPECIFIED |",
+      "| Deshaun Watson | QB | Concussion | DNP |  |  | UNSPECIFIED |",
+      "| Quincy Williams | LB | Hamstring | DNP |  |  | UNSPECIFIED |",
+      "| Player | Position | Injury | Wed | Thu | Fri | Game Status |",
+      "| --- | --- | --- | --- | --- | --- | --- |",
+      "| !Kelvin Banks Jr. headshot Kelvin Banks Jr. | OT | Ankle | LP |  |  | UNSPECIFIED |",
+      "| !CJ Donaldson headshot CJ Donaldson | RB | Shoulder, Concussion | LP |  |  | UNSPECIFIED |",
+      "| !Martin Emerson headshot Martin Emerson | CB | Shin | LP |  |  | UNSPECIFIED |",
+      "| !Alvin Kamara headshot Alvin Kamara | RB | NIR-Rest, Back | DNP |  |  | UNSPECIFIED |",
+      "| !Justin Reid headshot Justin Reid | S | Concussion | FP |  |  | UNSPECIFIED |",
+      "| !Asim Richards headshot Asim Richards | OT | Thumb | LP |  |  | UNSPECIFIED |",
+      "| !Cesar Ruiz headshot Cesar Ruiz | G | Knee | FP |  |  | UNSPECIFIED |",
+      "| !Nathan Shepherd headshot Nathan Shepherd | DE | Illness | FP |  |  | UNSPECIFIED |",
+      "| !Jordyn Tyson headshot Jordyn Tyson | WR | Hamstring | LP |  |  | UNSPECIFIED |"
+    ],
+    "kc": [
+      "| Player | Position | Injury | Wed | Thu | Fri | Game Status |",
+      "| --- | --- | --- | --- | --- | --- | --- |",
+      "| Peter Woods | DL | Neck | DNP |  |  | UNSPECIFIED |",
+      "| Nick Bolton | LB | Neck | FP |  |  | UNSPECIFIED |",
+      "| Mansoor Delane | CB | Shoulder | LP |  |  | UNSPECIFIED |",
+      "| Travis Kelce | TE | Ankle | LP |  |  | UNSPECIFIED |",
+      "| Omarr Norman-Lott | DT | Knee | LP |  |  | UNSPECIFIED |",
+      "| Nikko Remigio | WR | Hip | LP |  |  | UNSPECIFIED |",
+      "| Rashee Rice | WR | Hamstring/Knee | LP |  |  | UNSPECIFIED |",
+      "| Drue Tranquill | LB | Pectoral | FP |  |  | UNSPECIFIED |",
+      "| Patrick Mahomes | QB | Knee | FP |  |  | UNSPECIFIED |",
+      "| Player | Position | Injury | Wed | Thu | Fri | Game Status |",
+      "| --- | --- | --- | --- | --- | --- | --- |",
+      "| !Demario Davis headshot Demario Davis | OLB | Not Injury Related - Vet Rest Day | DNP |  |  | UNSPECIFIED |",
+      "| !Harrison Phillips headshot Harrison Phillips | DT | Ankle | DNP |  |  | UNSPECIFIED |",
+      "| !Garrett Wilson headshot Garrett Wilson | WR | Concussion | DNP |  |  | UNSPECIFIED |",
+      "| !David Bailey headshot David Bailey | LB | Groin | LP |  |  | UNSPECIFIED |",
+      "| !Breece Hall headshot Breece Hall | RB | Quad | LP |  |  | UNSPECIFIED |",
+      "| !Joseph Ossai headshot Joseph Ossai | DE | Ankle | LP |  |  | UNSPECIFIED |",
+      "| !Mason Taylor headshot Mason Taylor | TE | Back | LP |  |  | UNSPECIFIED |",
+      "| !Trevin Wallace headshot Trevin Wallace | LB | Groin | LP |  |  | UNSPECIFIED |",
+      "| !VJ Payne headshot VJ Payne | SAF | Knee | FP |  |  | UNSPECIFIED |"
+    ],
+    "sf": [
+      "| Player | Position | Injury | Wed | Thu | Fri | Game Status |",
+      "| --- | --- | --- | --- | --- | --- | --- |",
+      "| Nick Bosa | DL | Knee, Calf | LP |  |  | UNSPECIFIED |",
+      "| Mike Evans | WR | Ribs, Achilles | DNP |  |  | UNSPECIFIED |",
+      "| Luke Gifford | LB | Groin | LP |  |  | UNSPECIFIED |",
+      "| Nate Hobbs | CB | Adductor | LP |  |  | UNSPECIFIED |",
+      "| Christian Kirk | WR | Knee | LP |  |  | UNSPECIFIED |",
+      "| Christian McCaffrey | RB | Hamstring | DNP |  |  | UNSPECIFIED |",
+      "| Siran Neal | DB | Knee, Foot | DNP |  |  | UNSPECIFIED |",
+      "| Demarcus Robinson | WR | Ankle | LP |  |  | UNSPECIFIED |",
+      "| Deebo Samuel Sr. | WR | Hamstring | DNP |  |  | UNSPECIFIED |",
+      "| Marques Sigle | S | Ankle | LP |  |  | UNSPECIFIED |",
+      "| Upton Stout | CB | Shoulder | LP |  |  | UNSPECIFIED |",
+      "| Garret Wallow | LB | Hamstring | LP |  |  | UNSPECIFIED |",
+      "| Mykel Williams | DL | Knee | FP |  |  | UNSPECIFIED |",
+      "| Trent Williams | T | Not injury related - resting player | DNP |  |  | UNSPECIFIED |",
+      "| Player | Position | Injury | Wed | Thu | Fri | Game Status |",
+      "| --- | --- | --- | --- | --- | --- | --- |",
+      "| !Thomas Booker headshot Thomas Booker | DT | Ankle | LP |  |  | UNSPECIFIED |",
+      "| !Foley Fatukasi headshot Foley Fatukasi | DT | Shoulder/Elbow | LP |  |  | UNSPECIFIED |",
+      "| !Darien Porter headshot Darien Porter | CB | Groin | DNP |  |  | UNSPECIFIED |",
+      "| !Ian Thomas headshot Ian Thomas | TE | Ankle | LP |  |  | UNSPECIFIED |"
+    ],
+    "ind": [
+      "| Player | Position | Injury | Wed | Thu | Fri | Game Status |",
+      "| --- | --- | --- | --- | --- | --- | --- |",
+      "| !Caleb Downs headshot Caleb Downs | SAF | Concussion/Ankle | DNP |  |  | UNSPECIFIED |",
+      "| !Jake Ferguson headshot Jake Ferguson | TE | Ankle | DNP |  |  | UNSPECIFIED |",
+      "| !Broderick Jones headshot Broderick Jones | OT | NIR-Personal | DNP |  |  | UNSPECIFIED |",
+      "| !Malachi Lawrence headshot Malachi Lawrence | LB | Ankle | DNP |  |  | UNSPECIFIED |",
+      "| !P.J. Locke headshot P.J. Locke | DB | Concussion | DNP |  |  | UNSPECIFIED |",
+      "| !Von Miller headshot Von Miller | OLB | NIR-Rest | DNP |  |  | UNSPECIFIED |",
+      "| !KaVontae Turpin headshot KaVontae Turpin | WR | Ribs | DNP |  |  | UNSPECIFIED |",
+      "| !George Pickens headshot George Pickens | WR | Hamstring | LP |  |  | UNSPECIFIED |",
+      "| !Luke Schoonmaker headshot Luke Schoonmaker | TE | Groin | LP |  |  | UNSPECIFIED |",
+      "| !Tyler Smith headshot Tyler Smith | G | Ankle | LP |  |  | UNSPECIFIED |",
+      "| !Dee Winters headshot Dee Winters | LB | Calf | LP |  |  | UNSPECIFIED |",
+      "| !Jonathan Bullard headshot Jonathan Bullard | DE | Calf | FP |  |  | UNSPECIFIED |",
+      "| !Kenny Clark headshot Kenny Clark | NT | Back | FP |  |  | UNSPECIFIED |",
+      "| !Marist Liufau headshot Marist Liufau | LB | Forearm | FP |  |  | UNSPECIFIED |",
+      "| !Joey Porter Jr. headshot Joey Porter Jr. | CB | Ankle | FP |  |  | UNSPECIFIED |",
+      "| !Drew Shelton headshot Drew Shelton | OT | Hamstring | FP |  |  | UNSPECIFIED |"
+    ]
+  },
+  "projections": {
+    "display": "Projections updated Thu12:15AM ET · Week9",
+    "all_selected": [
+      {
+        "id": "44758303",
+        "player": "Patrick Mahomes",
+        "points": 19.4
+      },
+      {
+        "id": "44758375",
+        "player": "Kyren Williams",
+        "points": 17.6
+      },
+      {
+        "id": "44758413",
+        "player": "Jonah Coleman",
+        "points": 17.6
+      },
+      {
+        "id": "44758663",
+        "player": "Rashee Rice",
+        "points": 17
+      },
+      {
+        "id": "44758669",
+        "player": "Jameson Williams",
+        "points": 12.9
+      },
+      {
+        "id": "44758711",
+        "player": "Adonai Mitchell",
+        "points": 6.9
+      },
+      {
+        "id": "44759075",
+        "player": "Harold Fannin Jr.",
+        "points": 15
+      },
+      {
+        "id": "44758695",
+        "player": "Keenan Allen",
+        "points": 15.8
+      },
+      {
+        "id": "44759321",
+        "player": "Seahawks",
+        "points": 7.1
+      }
+    ],
+    "alternatives": [
+      {
+        "position": "WR",
+        "player": "Josh Downs",
+        "team": "IND vs DAL",
+        "salary": 5100,
+        "points": 13.5
+      },
+      {
+        "position": "TE",
+        "player": "Tyler Warren",
+        "team": "IND vs DAL",
+        "salary": 4600,
+        "points": 10.7
+      },
+      {
+        "position": "WR",
+        "player": "Xavier Worthy",
+        "team": "KC vs NYJ",
+        "salary": 4400,
+        "points": 7.5
+      },
+      {
+        "position": "DEF",
+        "player": "49ers",
+        "team": "SF vs LVR",
+        "salary": 3600,
+        "points": 6.5
+      }
+    ]
+  },
+  "conflicts": [
+    "Seattle dated report incorrectly says Williams missed Monday, while prior primary postgame source says he exited; do not rewrite prior observation.",
+    "Nwosu ankle in official table and article body, but knee in article list. LP agrees; exact diagnosis conflict retained.",
+    "Colts report retrieval includes only opponent Dallas player rows; current Colts participation unverified.",
+    "PR metadata reports journalhead2f4064..., while direct branchref andcompletefeed establish newer feedheadca51588...; all mutations usefreshdirectbranchref."
+  ]
+}
