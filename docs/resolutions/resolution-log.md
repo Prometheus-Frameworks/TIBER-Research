@@ -43,7 +43,11 @@ form of persistent memory for a domain that changes every week.
    mechanism tests; a modest score with the role intact is not `challenged`.
 7. Do not add theses that have no falsifier. Descriptive studies such as the
    [MHJ career study](../studies/mhj-career-2026w4/README.md) are not rows; they
-   can be origins for future rows.
+   can be origins for future rows. A game-study question that declares a working
+   explanation and an alternative branch is registered **as a question**: the
+   row carries both branches, selects neither, and resolves to the study
+   manifest's own disposition. Do not convert a branch into a prediction the
+   origin never made.
 8. Private league, roster or lineup context never enters this file. Rows are
    about players and mechanisms, not about what anyone started.
 
@@ -51,15 +55,15 @@ Thesis IDs reuse the originating record's IDs where they exist. IDs marked
 `retro` are retrospective organizational labels assigned during the October 31
 format preparation or in this seeding; they are not original pregame IDs.
 
-## Summary as of 2026-11-04
+## Summary as of 2026-11-05
 
 | State | Rows |
 | --- | ---: |
 | pending, due date passed (overdue) | 19 |
 | pending, not yet due | 6 |
-| supported | 2 |
+| supported | 3 |
 | challenged | 3 |
-| mixed | 2 |
+| mixed | 1 |
 | unresolved | 2 |
 | untestable | 0 |
 
@@ -92,17 +96,19 @@ all-team carries. "Top two" allows ties. Absence or bye is not zero.
 Origin: [prepared copy](../research-articles/prepared/research-issue-0049/body.md)
 of [issue #49](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/49).
 Source record 2026-10-23; the prepared copy labels these `retro-RQ1` to
-`retro-RQ5`. The operator's stated position was exploratory, not asserted. Game
-played 2026-10-25, final MIN 16, IND 10. Read on 2026-10-26 in
+`retro-RQ5`. The operator's stated position was exploratory, not asserted. The
+origin table pairs each hypothesis with **what to inspect after the game**, not a
+numeric weakening threshold; the Weakens-if column quotes those inspection points
+rather than inventing a cutoff. Game played 2026-10-25, final MIN 16, IND 10. Read on 2026-10-26 in
 [update 6417324742](../research-articles/prepared/research-issue-0049/update-6417324742.md).
 
 | Thesis | Frozen | Claim as frozen | Weakens if | Due | Outcome | Resolved by / evidence |
 | --- | --- | --- | --- | --- | --- | --- |
-| `retro-RQ1` (#49) | 2026-10-23 | Healthy Jefferson, Addison and Hockenson improve Murray's passing; a broad passing breakout is possible if volume is sufficient. | Low volume or efficiency with the weapons available. | 2026-10-25 | challenged | Update 6417324742: Murray 14/24, 150 yards, 1 TD; "a broad passing breakout did not occur." Backfill reading by Claude, 2026-11-04. |
-| `retro-RQ2` (#49) | 2026-10-23 | Rushing supports Murray's fantasy floor. | Negligible designed-run or scramble yardage. | 2026-10-25 | supported | Same update: 5 attempts, 39 yards, concentrated in one 35-yard gain; designed runs, scrambles and kneels not separated. Backfill reading by Claude, 2026-11-04. |
-| `retro-RQ3` (#49) | 2026-10-23 | Indianapolis can preserve passing volume and keep the game competitive. | Sustained low passing output or a game that stops being competitive. | 2026-10-25 | challenged | Same update: Jones 13/22, 108 gross, 64 net passing yards, 4 sacks, 1 INT; Jones exited with a knee injury, so the full-game test is partly untestable. Game stayed within one score. Backfill reading by Claude, 2026-11-04. |
-| `retro-RQ4` (#49) | 2026-10-23 | Flores forces short, ineffective throws from Jones. | Jones sustains efficient intermediate passing against the blitz. | 2026-10-25 | unresolved | Same update: result "compatible with our Flores concern" but blitz rate, pressure frequency, depth of target and hot-read mechanism were not measured. Outcome consistent; mechanism not observed. Backfill reading by Claude, 2026-11-04. |
-| `retro-RQ5` (#49) | 2026-10-23 | A comfortable Minnesota lead limits second-half passing opportunity. | Minnesota passes at a similar rate in both halves, or never holds a comfortable lead. | 2026-10-25 | unresolved | Same update: final margin was one score and possession-level game state was not reconstructed; the record declines to attribute the passing result to lead protection. Backfill reading by Claude, 2026-11-04. |
+| `retro-RQ1` (#49) | 2026-10-23 | Healthy weapons improve Murray's passing. Origin judgment: a broad passing breakout across Jefferson, Addison and Hockenson requires sufficient volume. | Origin inspection points, no threshold: intermediate and downfield completions, target distribution and efficiency; distinguish deeper gains from underneath YAC. | 2026-10-25 | challenged | Update 6417324742: Murray 14/24, 150 yards, 1 TD; "a broad passing breakout did not occur." Backfill reading by Claude, 2026-11-04. |
+| `retro-RQ2` (#49) | 2026-10-23 | Rushing supports Murray's fantasy floor. | Origin inspection points, no threshold: separate designed runs, scrambles and kneels; inspect red-zone usage. | 2026-10-25 | supported | Same update: 5 attempts, 39 yards, concentrated in one 35-yard gain; designed runs, scrambles and kneels not separated. Backfill reading by Claude, 2026-11-04. |
+| `retro-RQ3` (#49) | 2026-10-23 | Indianapolis can preserve passing volume. | Origin inspection points, no threshold: Taylor's gains, Jones's third-down conversions, sustained scoring drives and score state. | 2026-10-25 | challenged | Same update: Jones 13/22, 108 gross, 64 net passing yards, 4 sacks, 1 INT; Jones exited with a knee injury, so the full-game test is partly untestable. Game stayed within one score. Backfill reading by Claude, 2026-11-04. |
+| `retro-RQ4` (#49) | 2026-10-23 | Flores forces short, ineffective throws. | Origin inspection points, no threshold: blitz and pressure definitions, Jones's depth of target, YAC allowed, sacks and turnovers. | 2026-10-25 | unresolved | Same update: result "compatible with our Flores concern" but blitz rate, pressure frequency, depth of target and hot-read mechanism were not measured. Outcome consistent; mechanism not observed. Backfill reading by Claude, 2026-11-04. |
+| `retro-RQ5` (#49) | 2026-10-23 | A comfortable lead limits passing opportunity. | Origin inspection points, no threshold: Minnesota's first-half versus second-half pass volume and rushing share. | 2026-10-25 | unresolved | Same update: final margin was one score and possession-level game state was not reconstructed; the record declines to attribute the passing result to lead protection. Backfill reading by Claude, 2026-11-04. |
 
 ## Issue #56 — Miami receivers after the bye
 
@@ -114,10 +120,10 @@ Share denominators: targets over 21 attempts; snaps over 65.
 
 | Thesis | Frozen | Claim as frozen | Weakens if | Due | Outcome | Resolved by / evidence |
 | --- | --- | --- | --- | --- | --- | --- |
-| `retro-DOUGLAS` (#56) | 2026-10-24 | Douglas returns to substantial receiving access beyond vertical plays. | Token or package-only participation. | 2026-10-25 | supported | Update 6546709227: 44/65 snaps, 20–21 routes, 3 targets, 2–70–2. Target takeover not established. Backfill reading by Claude, 2026-11-04. |
-| `retro-BELL` (#56) | 2026-10-24 | Bell's separation, YAC and targets are repeatable with Douglas back. | Bell loses targets when Douglas returns. | 2026-10-25 | mixed | Same update: snaps fell 71% to 48%; targets rose to 4/21 with three third-down targets. "Douglas returned, therefore Bell stopped getting opportunities" fails; film incomplete. Backfill reading by Claude, 2026-11-04. |
-| `retro-WASHINGTON` (#56) | 2026-10-24 | Washington's reception role persists after the bye. | Loss of playing time or route priority. | 2026-10-25 | mixed | Same update: snaps 80% and most routes retained; target rate fell 29.6% to 14.3%. Playing time persisted, target rate did not. Backfill reading by Claude, 2026-11-04. |
-| `retro-COLEMAN` (#56) | 2026-10-24 | Coleman's Week 5 involvement is a lasting role. | Return to a small rotational role. | 2026-10-25 | challenged | Same update: 10/65 snaps, 2 routes, 1 target, down from 63.6% snaps and 7 targets. Displacement specifically by Douglas not isolated. Backfill reading by Claude, 2026-11-04. |
+| `retro-DOUGLAS` (#56) | 2026-10-24 | Does Douglas resume a substantial outside receiving role, and is he trusted beyond occasional vertical plays? Strengthens: broad route access, early and repeated targets, work in two-WR sets and competitive situations. | Managed rotation, narrow route usage or little target involvement despite being active. | 2026-10-25 | supported | Update 6546709227: 44/65 snaps, 20–21 routes, 3 targets, 2–70–2. Target takeover not established. Backfill reading by Claude, 2026-11-04. |
+| `retro-BELL` (#56) | 2026-10-24 | Do Bell's flashes translate into repeatable separation, YAC and target earning? Strengthens: successful routes beyond scramble plays; manufactured touches plus regular passing work; opportunity retained alongside Douglas. | Low route access, failure to earn targets, recurring execution mistakes, or flashes confined to coverage breakdowns. | 2026-10-25 | supported | Same update lists "continued Bell target involvement despite fewer total snaps" under Supported: 17–18 routes, 4/21 targets including three third-down targets, snaps 71% to 48%. None of the origin's challenge conditions was observed, but separation, YAC, execution and coverage context were not charted; "Bell failing to separate" is listed as not established. Backfill reading by Claude, 2026-11-05. |
+| `retro-WASHINGTON` (#56) | 2026-10-24 | Does Washington's useful PPR role persist with the room healthier? Strengthens: underneath/slot and designed-touch involvement retained, with stable targets relative to team volume. | Targets or route access move to teammates; recent volume proves dependent on absences or late-game catch-up. | 2026-10-25 | mixed | Same update: route access retained (22 routes, most on the team; 80% snaps; two carries), which meets the strengthening condition. Targets fell from 8/27 to 3/21 while Dulcich drew five and Bell four, which meets the first weakening condition. The update lists playing-time priority as Supported and loss of his underlying place as not established. Backfill reading by Claude, 2026-11-05. |
+| `retro-COLEMAN` (#56) | 2026-10-24 | Was Week 5 the beginning of a lasting role for Coleman, and where does his work overlap with the other three? Strengthens: continued routes and targets across meaningful game situations; a distinct deployment role. | Route access contracts sharply with Douglas back; usage remains limited or game-script dependent. | 2026-10-25 | challenged | Same update: 10/65 snaps, 2 routes, 1 target, down from 63.6% snaps and 7 targets; five of ten snaps in single-WR sets. The first weakening condition occurred. Displacement specifically by Douglas not isolated. Backfill reading by Claude, 2026-11-04. |
 | `retro-COLEMAN-W8` (#56) | 2026-10-31 | Prospective: repeated minimal Coleman access in W8 vs NE strengthens displacement; restored access challenges permanence. | Restored route access in W8. | 2026-11-01 | pending | Frozen in update 6546709227 §7. No W8 result on `main`. Overdue. |
 
 ## Game study `nfl-2026-reg-w08-ari-dal` — Arizona at Dallas, Week 8
@@ -126,18 +132,22 @@ Origin: [study manifest](../game-studies/2026/reg/week-08/ari-at-dal/study.json)
 from [issue #71](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/71).
 Pregame cutoff 2026-10-31 12:00 America/Toronto; kickoff 2026-11-01; declared
 evidence deadline 2026-11-03 10:00. Manifest shows `game_final: not_checked` and
-`evaluation_state: pending`. The manifest is the authoritative assessment record;
+`evaluation_state: pending`. These are **questions with two declared branches**,
+not predictions: the retained pregame record gives each a working explanation and
+a credible alternative and selects neither. The row carries both. The outcome is
+the manifest's own per-question disposition once recorded; a branch is never
+graded as a pass or fail. The manifest is the authoritative assessment record;
 these rows mirror it so the overdue state is visible here.
 
 | Thesis | Frozen | Claim as frozen | Weakens if | Due | Outcome | Resolved by / evidence |
 | --- | --- | --- | --- | --- | --- | --- |
-| `nfl-2026-reg-w08-ari-dal/Q1` | 2026-10-31 | Arizona's replacement line can protect Brissett against Dallas's front. | See retained pregame record; sacks and pressure with definitions. | 2026-11-03 | pending | Evidence deadline passed; closeout not on `main`. Overdue. |
-| `nfl-2026-reg-w08-ari-dal/Q2a` | 2026-10-31 | Wilson retains or expands usable route participation after Brooks's injury while managing ribs. | Reduced routes with Wilson active. | 2026-11-03 | pending | As above. Overdue. Links to #47 H1/H2 below. |
-| `nfl-2026-reg-w08-ari-dal/Q2b` | 2026-10-31 | Identified recipient of Brooks's targets if deployment changes. | See retained pregame record. | 2026-11-03 | pending | As above. Overdue. |
-| `nfl-2026-reg-w08-ari-dal/Q3` | 2026-10-31 | Love returns as a genuine receiving and early-down contributor rather than a split, constrained role. | Split or constrained usage with Love active. | 2026-11-03 | pending | As above. Overdue. |
-| `nfl-2026-reg-w08-ari-dal/Q4` | 2026-10-31 | Dallas repeats useful early-down rushing against Arizona without Nolen. | See retained pregame record. | 2026-11-03 | pending | As above. Overdue. |
-| `nfl-2026-reg-w08-ari-dal/Q5a` | 2026-10-31 | Pickens has his normal receiving role alongside Lamb. | Reduced role with Pickens active. | 2026-11-03 | pending | As above. Overdue. |
-| `nfl-2026-reg-w08-ari-dal/Q5b` | 2026-10-31 | Dak handles Arizona's disguised pressure on long passing downs. Apply the separately dated correction retained in the manifest. | See retained pregame record and amendment. | 2026-11-03 | pending | As above. Overdue. |
+| `nfl-2026-reg-w08-ari-dal/Q1` | 2026-10-31 | Q: Can Arizona protect Brissett with its replacement offensive line against Dallas's front? Working explanation: line disruption constrains the passing game before receiver talent can matter. Alternative: quick throws, chips and formation choices keep the offense functional. | Not a prediction. Resolves to the manifest disposition for Q1. | 2026-11-03 | pending | Evidence deadline passed; closeout not on `main`. Overdue. |
+| `nfl-2026-reg-w08-ari-dal/Q2a` | 2026-10-31 | Q: Does Wilson retain or expand usable route participation after Brooks's injury while managing ribs? Working explanation: a larger usable route role is plausible. Alternative: ribs, extra blocking assignments or a committee prevent it. | Not a prediction. Resolves to the manifest disposition for Q2a. | 2026-11-03 | pending | As above. Overdue. Links to #47 H1/H2 below. |
+| `nfl-2026-reg-w08-ari-dal/Q2b` | 2026-10-31 | Q: Who receives the Arizona targets if the Brooks replacement changes deployment? Working explanation: a McBride-led distribution with Wilson still the main WR. Alternative: a more concentrated Wilson role after the latest personnel change. | Not a prediction. Resolves to the manifest disposition for Q2b. | 2026-11-03 | pending | As above. Overdue. |
+| `nfl-2026-reg-w08-ari-dal/Q3` | 2026-10-31 | Q: Does Love return as a genuine receiving/early-down contributor or to a split, constrained role? Working explanation: a healthier Love gives Arizona rushing help and a receiving outlet. Alternative: a three-player rotation behind the same damaged line. | Not a prediction. Resolves to the manifest disposition for Q3. | 2026-11-03 | pending | As above. Overdue. |
+| `nfl-2026-reg-w08-ari-dal/Q4` | 2026-10-31 | Q: Can Dallas repeat useful early-down rushing against Arizona without Nolen? Working explanation: Dallas uses Williams to stay out of difficult passing downs. Alternative: the Philadelphia result was an opponent-specific peak and the passing game must carry the offense. | Not a prediction. Resolves to the manifest disposition for Q4. | 2026-11-03 | pending | As above. Overdue. |
+| `nfl-2026-reg-w08-ari-dal/Q5a` | 2026-10-31 | Q: Will Pickens have his normal receiving role alongside Lamb? Working scenario: Lamb and Pickens available together. Alternative: a limited or absent Pickens changes both distribution and defensive attention. | Not a prediction. Resolves to the manifest disposition for Q5a. | 2026-11-03 | pending | As above. Overdue. |
+| `nfl-2026-reg-w08-ari-dal/Q5b` | 2026-10-31 | Q: Can Dak handle Arizona's disguised pressure when Dallas faces long passing downs? Working explanation: Rallis and Baker can challenge Dallas's identification and protection. Alternative: the pressure looks fail to generate disruption and Dallas finds throws downfield. Apply the separately dated correction retained in the manifest. | Not a prediction. Resolves to the manifest disposition for Q5b. | 2026-11-03 | pending | As above. Overdue. |
 
 ## Issue #61 — RB carry leaders versus receiving and goal-line work
 
@@ -176,8 +186,8 @@ is the `ari-dal` study above.
 
 | Thesis | Frozen | Claim as frozen | Weakens if | Due | Outcome | Resolved by / evidence |
 | --- | --- | --- | --- | --- | --- | --- |
-| `H1` (#47) | 2026-10-22 | Wilson sustains high target concentration after Harrison's departure and Brooks's absence. | Committee distribution across the replacement receivers. Brooks's absence is a new test, not confirming evidence. | 2026-11-10 | pending | Three-game reassessment not yet due. W8 result not on `main`. |
-| `H2` (#47) | 2026-10-22 | Wilson is the leading wide receiver within a McBride-led distribution. | McBride or another receiver outranks him in a healthy game. | 2026-11-10 | pending | As above. Update 6441040381 calls H2 "compatible with Week 7's distribution." |
+| `H1` (#47) | 2026-10-22 | H1, sustained featured receiving role: the Z deployment supports recurring high target concentration, beyond two spike games. | Share stays near the recent lower window despite sustained route access, or route access itself contracts. A one-game spike remains insufficient. | 2026-11-10 | pending | Three-game reassessment not yet due. W8 result not on `main`. |
+| `H2` (#47) | 2026-10-22 | H2, stable leading-WR role with a constrained ceiling: seven-ish targets and variable production are typical within a McBride-led distribution. Substantial McBride, Bourne and TE work strengthens it. | Wilson repeatedly captures a larger share with broader valuable opportunities, including productive games without touchdowns. | 2026-11-10 | pending | As above. Update 6441040381 calls H2 "compatible with Week 7's distribution." Note H1 and H2 pull in opposite directions by design; a large Wilson share weakens H2 while strengthening H1. |
 
 ## Issue #45 — Travis Hunter integration, Jacksonville receiving roles
 
