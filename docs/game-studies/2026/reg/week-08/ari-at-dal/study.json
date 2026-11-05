@@ -48,14 +48,54 @@
       "captured_at": "2026-10-31T19:02:19Z",
       "path": "docs/game-studies/2026/reg/week-08/ari-at-dal/retained/issuecomment-6546713994.md",
       "sha256": "37e5dc9dd1644a612727c242f2d3219816c2b49e7e846a20cfb7a7db03698b1e"
+    },
+    {
+      "id": "postgame-20261102T005713Z",
+      "kind": "postgame_evidence",
+      "source_url": "https://www.dallascowboys.com/game-day/2026/season/cardinals-at-cowboys/",
+      "captured_at": "2026-11-02T00:57:13.349Z",
+      "path": "docs/game-studies/2026/reg/week-08/ari-at-dal/retained/evidence-20261102T005713Z.md",
+      "sha256": "502fae2fdf5b21ab751b91b45c17e37f2e2ca39568b439591f17f21683073161"
+    },
+    {
+      "id": "closeout-20261102T005713Z",
+      "kind": "closeout",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/71",
+      "captured_at": "2026-11-02T00:57:13.349Z",
+      "path": "docs/game-studies/2026/reg/week-08/ari-at-dal/retained/closeout-20261102T005713Z.md",
+      "sha256": "ccd5924a0cf4666e1696d22d7f05ffc60761fc2fe38a4b32b044207dacac20a1"
+    },
+    {
+      "id": "close-evidence-20261103T134525Z",
+      "kind": "postgame_evidence",
+      "source_url": "https://www.azcardinals.com/game-day/2026/week8/cardinals-at-cowboys/box-score",
+      "captured_at": "2026-11-03T13:45:25.165Z",
+      "path": "docs/game-studies/2026/reg/week-08/ari-at-dal/retained/evidence-20261103T134525Z.md",
+      "sha256": "6e8f51c20bff293e985b25bf33c03796f6d93d4a518307e7c4e99ed828c83fc7"
+    },
+    {
+      "id": "wilson-source-20261103T134525Z",
+      "kind": "postgame_evidence",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/47#issuecomment-6604079435",
+      "captured_at": "2026-11-03T13:45:25.165Z",
+      "path": "docs/game-studies/2026/reg/week-08/ari-at-dal/retained/wilson-source-20261103T134525Z.md",
+      "sha256": "fd51202268a8384a243417453fe61887f7d13c13f6a51a85fb4f3efc1879becc"
+    },
+    {
+      "id": "final-closeout-20261103T134525Z",
+      "kind": "closeout",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/71",
+      "captured_at": "2026-11-03T13:45:25.165Z",
+      "path": "docs/game-studies/2026/reg/week-08/ari-at-dal/retained/closeout-20261103T134525Z.md",
+      "sha256": "342358c2c1372dff166035d72d2d12fddaff24dd158fb33965f9e28c6db06b03"
     }
   ],
   "game_final": {
-    "status": "not_checked",
-    "verified_at": null,
-    "evidence_ref": null
+    "status": "final",
+    "verified_at": "2026-11-03T13:45:25.165Z",
+    "evidence_ref": "close-evidence-20261103T134525Z"
   },
-  "evaluation_state": "pending",
+  "evaluation_state": "complete",
   "questions": [
     {
       "id": "Q1",
@@ -68,11 +108,16 @@
       "baseline_refs": [
         "pregame-issue-71"
       ],
-      "assessment": "pending",
-      "summary": null,
-      "evidence_refs": [],
-      "limitations": [],
-      "next_action": null
+      "assessment": "mixed",
+      "summary": "Early disruption and the later quarterback/lineup changes support a mixed account; no evidence isolates protection responsibility across regimes.",
+      "evidence_refs": [
+        "postgame-20261102T005713Z",
+        "close-evidence-20261103T134525Z"
+      ],
+      "limitations": [
+        "No representative blocking/pressure chart or complete situational comparison."
+      ],
+      "next_action": "Close the bounded account as mixed; defer any causal protection attribution to separately scoped film work."
     },
     {
       "id": "Q2a",
@@ -84,11 +129,16 @@
       "baseline_refs": [
         "pregame-issue-71"
       ],
-      "assessment": "pending",
-      "summary": null,
-      "evidence_refs": [],
-      "limitations": [],
-      "next_action": null
+      "assessment": "unresolved",
+      "summary": "The official report establishes Wilson played 79% of 81 offensive snaps, but his actual route access and health-related route restrictions remain unverified.",
+      "evidence_refs": [
+        "postgame-20261102T005713Z",
+        "close-evidence-20261103T134525Z"
+      ],
+      "limitations": [
+        "Offensive snaps are not routes; a rounded share cannot establish a route denominator."
+      ],
+      "next_action": "Close unresolved on routes; carry the evidence gap to the existing Wilson #47 track without adding monitoring."
     },
     {
       "id": "Q2b",
@@ -100,11 +150,17 @@
       "baseline_refs": [
         "pregame-issue-71"
       ],
-      "assessment": "pending",
-      "summary": null,
-      "evidence_refs": [],
-      "limitations": [],
-      "next_action": null
+      "assessment": "supported",
+      "summary": "Retained Wilson checkpoint #47 reports 15/41 credited targets (36.6%) versus McBride 8/41 (19.5%), supporting Wilson-led concentration in this game. This run could not directly re-read ESPN; causal redistribution and persistence remain unestablished.",
+      "evidence_refs": [
+        "close-evidence-20261103T134525Z",
+        "wilson-source-20261103T134525Z"
+      ],
+      "limitations": [
+        "Reported target counts retain #47/ESPN lineage, not independent re-verification.",
+        "QB switch, trailing game and injuries to alternative receivers/RBs confound why concentration changed."
+      ],
+      "next_action": "Close supported only for reported Week 8 allocation; defer persistence and causal explanation to the existing #47 study."
     },
     {
       "id": "Q3",
@@ -116,11 +172,16 @@
       "baseline_refs": [
         "pregame-issue-71"
       ],
-      "assessment": "pending",
-      "summary": null,
-      "evidence_refs": [],
-      "limitations": [],
-      "next_action": null
+      "assessment": "unresolved",
+      "summary": "Love's 15 offensive snaps and injury-interrupted return do not test a sustained healthy receiving plan. Allgeier's expanded involvement describes emergency replacement, not the planned healthy rotation.",
+      "evidence_refs": [
+        "postgame-20261102T005713Z",
+        "close-evidence-20261103T134525Z"
+      ],
+      "limitations": [
+        "No pre-exit route/passing-down ledger; injury changes the test condition."
+      ],
+      "next_action": "Close the healthy-role mechanism unresolved; use existing player/context research for any later health-dependent test."
     },
     {
       "id": "Q4",
@@ -131,11 +192,16 @@
       "baseline_refs": [
         "pregame-issue-71"
       ],
-      "assessment": "pending",
-      "summary": null,
-      "evidence_refs": [],
-      "limitations": [],
-      "next_action": null
+      "assessment": "challenged",
+      "summary": "Official final box confirms Williams 24 carries/56 yards (2.33 per carry) and Dallas 39/93 (2.38). The efficient rushing path was challenged; exact early-down success and causal attribution remain unmeasured.",
+      "evidence_refs": [
+        "postgame-20261102T005713Z",
+        "close-evidence-20261103T134525Z"
+      ],
+      "limitations": [
+        "Yards/carry is not early-down success rate; no verified run-concept or blocking attribution."
+      ],
+      "next_action": "Close the efficient-ground-path claim as challenged; defer finer down-and-distance or cause claims rather than extending this study."
     },
     {
       "id": "Q5a",
@@ -146,11 +212,16 @@
       "baseline_refs": [
         "pregame-issue-71"
       ],
-      "assessment": "pending",
-      "summary": null,
-      "evidence_refs": [],
-      "limitations": [],
-      "next_action": null
+      "assessment": "unresolved",
+      "summary": "Pickens' official 2/48 receiving result establishes involvement, not normal route workload. Search-index route/snap leads were not adopted after full charting access failed.",
+      "evidence_refs": [
+        "postgame-20261102T005713Z",
+        "close-evidence-20261103T134525Z"
+      ],
+      "limitations": [
+        "No successfully inspected comparable route ledger or verified normal-role reference."
+      ],
+      "next_action": "Close unresolved on normal workload; any later deployment investigation is a separate proposal, not a continuing pilot."
     },
     {
       "id": "Q5b",
@@ -163,21 +234,26 @@
         "pregame-issue-71",
         "amendment-6546713994"
       ],
-      "assessment": "pending",
-      "summary": null,
-      "evidence_refs": [],
-      "limitations": [],
-      "next_action": null
+      "assessment": "unresolved",
+      "summary": "Consequential pressure outcomes do not establish the amended third-and-long disguise mechanism without its threshold, opportunity count and film/charting.",
+      "evidence_refs": [
+        "postgame-20261102T005713Z",
+        "close-evidence-20261103T134525Z"
+      ],
+      "limitations": [
+        "No scoped pressure denominator or defender/protection assignments; pregame 31.4% remains situational."
+      ],
+      "next_action": "Close unresolved; preserve the correction and defer any mechanistic pressure test to separately scoped evidence."
     }
   ],
   "closeout": {
     "status": "draft",
-    "pr_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/74",
-    "report_record_ref": null
+    "pr_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/115",
+    "report_record_ref": "final-closeout-20261103T134525Z"
   },
   "downstream": {
     "admission": "not_admitted",
     "proposal_refs": []
   },
-  "assessment_cutoff": null
+  "assessment_cutoff": "2026-11-03T13:45:25.165Z"
 }
