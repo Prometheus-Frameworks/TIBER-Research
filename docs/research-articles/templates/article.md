@@ -78,6 +78,18 @@ What remains unobserved or disputed? What specific evidence or condition would
 change the view? Which causal or next-game conclusions cannot be established?
 New postgame discoveries are explicitly retrospective, not original predictions.
 
+### Resolution block
+
+Repeat for every thesis this article freezes. Register the same row in the
+[resolution log](../../resolutions/resolution-log.md) in the same change. A thesis
+without a weakening condition is not registered; say so and leave it as a question.
+
+- Thesis ID (original ID, or `retro-` for a retrospective label):
+- Claim as frozen (copy, do not sharpen):
+- Weakens if (the condition or threshold that counts against it):
+- Due (last game in the window, declared evidence deadline or transaction date; say if proposed):
+- Outcome: `pending` until a dated record resolves it.
+
 ## 7. Next checkpoint and closeout
 
 Record the actual owner, next checkpoint, observation endpoint and evidence
