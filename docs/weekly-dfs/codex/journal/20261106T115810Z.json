@@ -1,0 +1,265 @@
+{
+  "schema_version": "tiber-dfs-journal/v1",
+  "entries": [
+    {
+      "id": "2026-w09-research-20261106T115810Z",
+      "snapshot_ids": [
+        "2026-w09-2026-11-06-daily"
+      ],
+      "kind": "scheduled_research",
+      "recorded_at": "2026-11-06T11:58:10.055Z",
+      "recorded_at_toronto": "2026-11-06T06:58:10.055-05:00",
+      "research_at": "2026-11-06T11:57:30.436Z",
+      "origin": "agent_chosen",
+      "origin_note": "Focused follow-up to retained role and availability questions under the standing assignment. Claude/Grok contributions remain attributed to the existing exchange; no new operator player guidance.",
+      "title": "Thursday practice separates improved participation from new risk",
+      "question": "Do Fannin's new groin limitation and Seattle's growing injury list outweigh the retained role and matchup cases?",
+      "why_it_matters": "Availability conditions can deteriorate while the nine remain legal; pool additions must also be preserved without silently changing the slate.",
+      "findings": [
+        "Rice improved from limited to full participation Thursday; Mahomes and Kelce also full. Garrett Wilson remained DNP with concussion.",
+        "Fannin newly limited with a groin injury and DraftKings Q. Watson remained DNP; the reread Nov4 article supplies a conditional Sanders plan, not a new confirmed starter.",
+        "Seattle Nwosu moved LP to DNP; Derick Hall newly DNP and Ernest Jones newly LP. Williams, O'Toole and Pili remained nonparticipants. Wednesday was a walkthrough estimate; Thursday report is separate.",
+        "Allen returned to full participation after Wednesday rest. This read includes the Colts table that was missing yesterday.",
+        "Official pool increased570 to586 unique rows:16 additions, no removals, same11games and unchanged selected prices.",
+        "San Francisco Bosa remained limited. Current attributed opponent implied totals:Arizona15.5 andLasVegas20.75; not individual point forecasts.",
+        "FullTime Fantasy displayed Thu1:51PM ET, selected-nine estimate129.3 unchanged. Exact injury ingestion unknown.",
+        "Prior Sunday games final; existing complete Week6/7/8 records already scored provisionally. No verified material correction or settled platform source obtained."
+      ],
+      "interpretation": [
+        "Hold all nine today. Rice participation supports the hold; Fannin becomes the weakest availability assumption.",
+        "Fannin LP is not OUT and does not establish lost receiving involvement. Warren fits for100less but adds another Colts receiver beside Allen.",
+        "Seattle's deteriorating front strengthens the SF alternative. The lower attributed Arizona team environment and SF's own front uncertainty still support a qualified hold.",
+        "A newly priced player is not proven to have a playable role. Do not turn pool additions into invented value."
+      ],
+      "alternatives": [
+        {
+          "change": "Seattle -> 49ers",
+          "salary_total": 49200,
+          "salary_remaining": 800,
+          "classification": "not_selected",
+          "reason": "Nwosu/Halldeterioration makesalternative stronger, butBosaLP andattributedLV20.75versusARI15.5 favorholdtoday. Model6.5versusSEA7.1 is attributedonly."
+        },
+        {
+          "change": "Fannin -> Tyler Warren",
+          "salary_total": 49300,
+          "salary_remaining": 700,
+          "classification": "not_selected",
+          "reason": "NewFanningroinLPaddsavailabilityrisk; Warren4600/prior73%routes and10targets iscredible. Countercase: twoINDreceiversbesideAllen andnoverifiedFanninroleloss/OUT; model10.7versus15.0notdecisive."
+        },
+        {
+          "change": "Allen -> Josh Downs",
+          "salary_total": 49600,
+          "salary_remaining": 400,
+          "classification": "not_selected",
+          "reason": "Broaderpriorroutes; currentAllenFPsupportsavailability. Claude'spreference retained withoutautomaticadoption."
+        }
+      ],
+      "uncertainty": [
+        "Fannin Fridaygroinstatus,actualreceiving/blockingdeployment and Brownsnamedstarter.",
+        "Seattlefront finalavailability,Nwosu/Hallprogress andLock'selbow; ownQBchange may affectDSTenvironment withoutknownpointdirection.",
+        "Rice FP is encouraging but not a Sunday guarantee; WilsonDNPisnotOUT.",
+        "Coleman/Dobbins distribution andlonggainrepeatability; Allen/Downsroute disagreement.",
+        "All16pooladditions lack newlyverifiedexpandedrole; cannot manufacturecheapvalue.",
+        "No settledplatformscoring/correction obtained; modelupdate may not incorporateallnews."
+      ],
+      "lineup_effect": {
+        "action": "unchanged",
+        "salary_total": 49400,
+        "salary_remaining": 600,
+        "distinct_games": 7,
+        "kc_nyj_slots": 3,
+        "kc_nyj_salary": 17000,
+        "replacements": []
+      },
+      "change_triggers": [
+        "Fannin FridayDNP/OUT/restriction or reliable alteredrole evidence prompts Warren/otherTE package beforecutoff; newLPisnotOUT.",
+        "Seattleconfirmedfrontabsences orfurtherdeterioration prompts SF comparison withfreshBosaavailability andcurrentwholelineup.",
+        "Ricefinalstatus orWilsonfinalavailability prompts KC-NYJ rolecheck, noautomaticredistribution.",
+        "Freezeexactlineup/salaryandexpectationpacketbeforeNov8 12:30Toronto/17:30UTC; laternews cannotchangefrozenpicks."
+      ],
+      "carry_forward": [
+        "Resolve Fannin's Friday groin status and named Browns starter before final integration; preserve separate availability and role assessments.",
+        "Recheck Seattle front and Lock versus SF Bosa. DNP is not OUT; neither team is presumed healthy.",
+        "Retain exact original expectation IDs and clocks, bind their immutable packet at freeze.",
+        "Keep actual author exchange and Grok pass; no new v1 or routine question loop. Final freeze must finish before Sunday12:30Toronto."
+      ],
+      "sources": [
+        {
+          "id": "official",
+          "label": "official",
+          "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=155994",
+          "retrieved_at": "2026-11-06T11:54:52.146Z",
+          "retrieved_at_toronto": "2026-11-06T06:54:52.146-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Official155994 CSV586 unique rows,11games;16 newIDs/no removals versusNov5. Allnine original salaries/positions/games/IDs match. FanninQ;Riceblank, notmedicalclearance. AvgPointsPerGame is historical, not projection."
+        },
+        {
+          "id": "model",
+          "label": "model",
+          "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994",
+          "retrieved_at": "2026-11-06T11:54:55.056Z",
+          "retrieved_at_toronto": "2026-11-06T06:54:55.056-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Single publisher DK main-slate selected-nine projections, matching names/prices. Display Thu1:51PM ET Week9, mappedNov5 18:51UTC. Duplicate select entries agree. No producer/builder operated."
+        },
+        {
+          "id": "schedule",
+          "label": "schedule",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+          "retrieved_at": "2026-11-06T11:54:53.273Z",
+          "retrieved_at_toronto": "2026-11-06T06:54:53.273-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "NFLNov8 Week9 same11Sundayafternoongames, earliest13:00Toronto/18:00UTC. EarlyMadrid/night/Thursday/Monday excluded."
+        },
+        {
+          "id": "rules",
+          "label": "rules",
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-06T11:54:52.972Z",
+          "retrieved_at_toronto": "2026-11-06T06:54:52.972-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "NFLClassic50k,nineQB2RB3WRTEFLEXDST,>=2games;PPR,bonuses,fumblelost-1,DSTbands andPAattribution inspected. Platformlate-swaprule doesnotchangeArena freeze."
+        },
+        {
+          "id": "week8",
+          "label": "week8",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+          "retrieved_at": "2026-11-06T11:54:52.951Z",
+          "retrieved_at_toronto": "2026-11-06T06:54:52.951-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "AllpriorSundaygamesfinal. ExistingcompleteWeek6/7/8 lineups already have provisionalreconstructed scores; no verified material correction or settledplatform score obtained."
+        },
+        {
+          "id": "kc",
+          "label": "kc",
+          "url": "https://www.chiefs.com/team/injury-report/",
+          "retrieved_at": "2026-11-06T11:54:52.767Z",
+          "retrieved_at_toronto": "2026-11-06T06:54:52.767-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "CurrentWednesday/Thursday table: RiceLP->FP,MahomesFP->FP,KelceLP->FP; WilsonconcussionDNP->DNP,HallLP->FP,TaylorLP->FP. FinalFridaystatus absent."
+        },
+        {
+          "id": "cle",
+          "label": "cle",
+          "url": "https://www.clevelandbrowns.com/team/injury-report/",
+          "retrieved_at": "2026-11-06T11:54:52.849Z",
+          "retrieved_at_toronto": "2026-11-06T06:54:52.849-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Currenttable: Fannin newlyThursdayLPgroin,WatsonDNP->DNPconcussion,BostonLP->LP. BarberDNP->LP,JenkinsLP->FP. No finalstatus/medicalclearance."
+        },
+        {
+          "id": "sea",
+          "label": "sea",
+          "url": "https://www.seahawks.com/news/week-9-injury-report-cardinals-at-seahawks",
+          "retrieved_at": "2026-11-06T11:54:53.988Z",
+          "retrieved_at_toronto": "2026-11-06T06:54:53.988-05:00",
+          "publication_at": null,
+          "publication_display": "Nov5 2026 04:37PM, site timezone unverified",
+          "scope": "Nov5datedThursdayreport: NwosuLP->DNP,HallnewDNPback,JonesnewLPankle,Williams/O'Toole/Pili remainDNP,LockLP. Wednesdaywasestimatedwalkthrough; Thursdaynotlabelledasestimate. Fridaygamestatusnotyetretrieved."
+        },
+        {
+          "id": "ind",
+          "label": "ind",
+          "url": "https://www.colts.com/team/injury-report/",
+          "retrieved_at": "2026-11-06T11:54:52.513Z",
+          "retrieved_at_toronto": "2026-11-06T06:54:52.513-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Currenttable now includesColts: AllenWednesdayrestDNP->ThursdayFP; noDowns/Warren injuryrow. Absentrow notSundayguarantee. OpponentPickensLP/FergusonDNP."
+        },
+        {
+          "id": "den",
+          "label": "den",
+          "url": "https://www.denverbroncos.com/team/injury-report/",
+          "retrieved_at": "2026-11-06T11:54:52.635Z",
+          "retrieved_at_toronto": "2026-11-06T06:54:52.635-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "ThursdayDenver table noColeman/Dobbinsrow; SuttonrestLP->FP. HufangaDNP->LP,otherthree defensiveDNPpersist. No guaranteedRBshare."
+        },
+        {
+          "id": "sf",
+          "label": "sf",
+          "url": "https://www.49ers.com/team/injury-report/",
+          "retrieved_at": "2026-11-06T11:55:17.348Z",
+          "retrieved_at_toronto": "2026-11-06T06:55:17.348-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Outside-ninealternative: BosaLP->LP,MykelWilliamsFP->FP;McCaffreyDNP->LP,KirkLP->DNP. SFnotassumedinjury-free."
+        },
+        {
+          "id": "lines",
+          "label": "lines",
+          "url": "https://www.vegasinsider.com/nfl/nfl-week-9-odds-2026/",
+          "retrieved_at": "2026-11-06T11:55:21.327Z",
+          "retrieved_at_toronto": "2026-11-06T06:55:21.327-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Inspectedsummary: SEA-8.5/39.5 impliesARI15.5;SF-10/51.5 impliesLV20.75. Contextarithmeticonly, notDSTprojection. HeaderNov5 11:36PM/bodyUpdated11/6,timezoneunknown."
+        },
+        {
+          "id": "clenews",
+          "label": "clenews",
+          "url": "https://www.clevelandbrowns.com/news/",
+          "retrieved_at": "2026-11-06T11:55:17.473Z",
+          "retrieved_at_toronto": "2026-11-06T06:55:17.473-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Primarynewsindex screened; no newdatedstarter announcement established."
+        },
+        {
+          "id": "cleqb",
+          "label": "cleqb",
+          "url": "https://www.clevelandbrowns.com/news/browns-take-day-to-day-approach-at-quarterback-heading-into-week-9",
+          "retrieved_at": "2026-11-06T11:55:55.612Z",
+          "retrieved_at_toronto": "2026-11-06T06:55:55.612-05:00",
+          "publication_at": null,
+          "publication_display": "Nov4 2026 05:26PM, site timezone unverified",
+          "scope": "Nov4primaryarticle reread: Watsonnotruledoutthen,SandersWednesdayfirst-teamreps. Not a newly confirmedThursday/Sundaystarter."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w09-2026-11-06-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/64bdf9058f4ed540f75b3bb4cca9b11373301bb3/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-06.json"
+        }
+      ],
+      "expectations": [],
+      "outcomes": [],
+      "prior_expectation_references": [
+        {
+          "ids": [
+            "2026-w09-1103-coleman-role",
+            "2026-w09-1103-mitchell-role",
+            "2026-w09-1103-fannin-role"
+          ],
+          "original_packet": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/25945a160171e2197a4ce52a8f5234b71f73bcfb/docs/weekly-dfs/codex/journal/20261103T114501Z.md"
+        }
+      ],
+      "source_conflicts": [
+        "Seattlearticle body givesNwosuankle whilelistgivesknee; DNPagrees. Do not invent diagnosis resolution.",
+        "SeattleWednesdayprose saysWilliamsmissedMonday whilepriorprimarypostgame saysheexited; preserveconflict.",
+        "MarketpageheaderNov5/bodyUpdatedNov6; no exactsourceupdateinstant inferred.",
+        "Model's displayedclock advanced but selectedvaluesdidnot; injuryincorporationunknown."
+      ],
+      "collaboration": {
+        "codex_v1_ready": "ready",
+        "claude_v1_ready": "ready",
+        "grok_questions_ready": "ready",
+        "collaboration_ready": "ready: substantive exchange and Codex integration retained; no joint endorsement",
+        "final_frozen": "blocked: not yetfinal",
+        "final_editor": "Codex",
+        "integration_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/b8408a409722b23cd8594315f609b0a27711adfb/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T231233Z-collaboration-ready.json",
+        "authorship": "Codex editor candidate after actual author exchange; not jointlyendorsed",
+        "next_handoff": "No newstage orroutine providerreply. Currentexactcandidateunchanged; Fanningroin andSeattlefront are newmaterialconditions forSaturday/Sundayintegration. Actualexchange/Grokpass remainready, finalfrozenpending, nojointendorsement."
+      }
+    }
+  ]
+}
