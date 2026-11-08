@@ -1,0 +1,337 @@
+{
+  "schema_version": "tiber-dfs-final-inputs/v1",
+  "recorded_at": "2026-11-08T16:15:40.587Z",
+  "cycle": "2026-w09",
+  "slate_date": "2026-11-08",
+  "chosen_daily": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/63a2f21ef063b21a0b9551be61addd9045733a57/docs/weekly-dfs/codex/2026/week-09/daily/20261108T120331Z-r2-integration.json",
+  "original_salary_snapshot": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/63a2f21ef063b21a0b9551be61addd9045733a57/docs/weekly-dfs/codex/2026/week-09/daily/20261108T120331Z-draftkings-155994.csv",
+  "current_pool_rows": 586,
+  "pool_ids_unchanged": true,
+  "sources": [
+    {
+      "id": "official",
+      "label": "official",
+      "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=155994",
+      "retrieved_at": "2026-11-08T16:14:06.307Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:06.307-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "586 unique official155994 IDs, same pool as morning; all nine original salaries/positions/teams/games verified.",
+      "scrape_id": "01a1bbf0-3c6b-7108-b2df-4c2f91c9589e",
+      "status_code": 200
+    },
+    {
+      "id": "model",
+      "label": "model",
+      "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994",
+      "retrieved_at": "2026-11-08T16:14:09.337Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:09.337-05:00",
+      "publication_at": "2026-11-07T19:21:00Z",
+      "publication_display": "Sat2:21PMET Week9",
+      "scope": "Coherent FTF main11-game snapshot Sat14:21ET, selected total131.9; SEA7.1/SF6.5. Exact news ingestion unknown.",
+      "scrape_id": "01a1bbf0-3c63-760f-bc53-a2837a593030",
+      "status_code": 200
+    },
+    {
+      "id": "rules",
+      "label": "rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-11-08T16:14:08.646Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:08.646-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "NFLClassic9slots/2games/50k,PPR,bonuses,lostfumble-1,DSTevents/PA rules inspected.",
+      "scrape_id": "01a1bbf0-3c87-73b4-ab68-0df7c98da881",
+      "status_code": 200
+    },
+    {
+      "id": "schedule",
+      "label": "schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+      "retrieved_at": "2026-11-08T16:14:07.701Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:07.701-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "November8 Week9 same11 afternoongames earliest13:00Toronto/18:00UTC. Thursday/Madrid/SNF/Monday excluded.",
+      "scrape_id": "01a1bbf0-3c58-735a-96e8-5db8fb8e0914",
+      "status_code": 200
+    },
+    {
+      "id": "sea",
+      "label": "sea",
+      "url": "https://www.seahawks.com/news/week-9-injury-report-cardinals-at-seahawks",
+      "retrieved_at": "2026-11-08T16:14:07.356Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:07.356-05:00",
+      "publication_at": null,
+      "publication_display": "Nov 06, 2026 at 02:05 PM",
+      "scope": "Friday Williams/Nwosu/PiliOUT, O'TooleQ. ArizonaGaines/JaydenWilliamsOUT; Hall/Jones not listed finalOUT/Q. No full workload clearance inferred.",
+      "scrape_id": "01a1bbf0-3c9a-7149-abf1-4f64de77e5ff",
+      "status_code": 200
+    },
+    {
+      "id": "seamoves",
+      "label": "seamoves",
+      "url": "https://www.seahawks.com/news/seahawks-sign-dt-deven-eastern-off-practice-squad-elevate-two-players",
+      "retrieved_at": "2026-11-08T16:15:00.405Z",
+      "retrieved_at_toronto": "2026-11-08T11:15:00.405-05:00",
+      "publication_at": null,
+      "publication_display": "Nov 07, 2026 at 01:15 PM",
+      "scope": "SaturdayDT Eastern signed; Hart/Foster elevated. Depth reinforcement does not restore absent starters or quantifypressure.",
+      "scrape_id": "01a1bbf1-0b8d-7052-87a9-278993aac660",
+      "status_code": 200
+    },
+    {
+      "id": "cle",
+      "label": "cle",
+      "url": "https://www.clevelandbrowns.com/team/injury-report/",
+      "retrieved_at": "2026-11-08T16:14:07.171Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:07.171-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Fannin groin: Wednesdayblank,ThuLP,FriLP,no designation. Sundayactives/fullworkload not established.",
+      "scrape_id": "01a1bbf0-3cca-761f-92e3-b0828596eca6",
+      "status_code": 200
+    },
+    {
+      "id": "cleqb",
+      "label": "cleqb",
+      "url": "https://www.clevelandbrowns.com/news/shedeur-sanders-to-start-week-9-against-the-saints",
+      "retrieved_at": "2026-11-08T16:14:45.930Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:45.930-05:00",
+      "publication_at": null,
+      "publication_display": "Nov 06, 2026 at 02:10 PM",
+      "scope": "Primary names Sanders starter withfirstteamreps; noTEtargetboost inferred.",
+      "scrape_id": "01a1bbf0-d3b2-73e2-84d6-ba52576f444d",
+      "status_code": 200
+    },
+    {
+      "id": "kc",
+      "label": "kc",
+      "url": "https://www.chiefs.com/team/injury-report/",
+      "retrieved_at": "2026-11-08T16:14:06.864Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:06.864-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Mahomes/RiceFridayFP/no designation; WilsonOUT. No exactMitchelltargettransfer.",
+      "scrape_id": "01a1bbf0-3c9e-72da-b0f5-142abea1c1bb",
+      "status_code": 200
+    },
+    {
+      "id": "den",
+      "label": "den",
+      "url": "https://www.denverbroncos.com/team/injury-report/",
+      "retrieved_at": "2026-11-08T16:14:07.483Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:07.483-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "CurrentCAR opponenttable; Coleman/Dobbins/Harvey not listed. Absence fromreport not workload guarantee.",
+      "scrape_id": "01a1bbf0-3c79-73ea-a0d4-39624f123357",
+      "status_code": 200
+    },
+    {
+      "id": "lar",
+      "label": "lar",
+      "url": "https://www.therams.com/team/injury-report/",
+      "retrieved_at": "2026-11-08T16:14:06.937Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:06.937-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "CurrentWAS table; Kyren/Corum not listed. Receivingfloor andcommittee risks retained.",
+      "scrape_id": "01a1bbf0-3c6c-726b-b5ec-e1d5f444a38c",
+      "status_code": 200
+    },
+    {
+      "id": "det",
+      "label": "det",
+      "url": "https://www.detroitlions.com/team/injury-report/",
+      "retrieved_at": "2026-11-08T16:14:06.811Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:06.811-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "CurrentMIA table; Jameson not listed, StBrownQ. Noautomatictargettransfer.",
+      "scrape_id": "01a1bbf0-3c6b-769b-a00d-81cedc623826",
+      "status_code": 200
+    },
+    {
+      "id": "ind",
+      "label": "ind",
+      "url": "https://www.colts.com/team/injury-report/",
+      "retrieved_at": "2026-11-08T16:14:06.981Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:06.981-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "AllenrestDNPWed thenFPThuFri/no designation. QB/role assumptions not Sundayguarantees.",
+      "scrape_id": "01a1bbf0-3cf9-733f-b147-bb215ebb436e",
+      "status_code": 200
+    },
+    {
+      "id": "lines",
+      "label": "lines",
+      "url": "https://www.vegasinsider.com/nfl/nfl-week-9-odds-2026/",
+      "retrieved_at": "2026-11-08T16:14:11.228Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:11.228-05:00",
+      "publication_at": null,
+      "publication_display": "Last Updated Nov 8 2026, 10:44 AM",
+      "scope": "HeaderNov8 10:44AM, zoneunstated; SEA-8.5/39.5=>ARI15.5,SF-9.5/51.5=>LV21.0. No distribution/probability claims.",
+      "scrape_id": "01a1bbf0-3c65-72c2-aa80-5c72cd1e96e3",
+      "status_code": 200
+    },
+    {
+      "id": "clenews",
+      "label": "clenews",
+      "url": "https://www.clevelandbrowns.com/news/",
+      "retrieved_at": "2026-11-08T16:14:07.299Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:07.299-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Currentnewsindex has no inspectedWeek9inactivearticle; actualinactivelists not established.",
+      "scrape_id": "01a1bbf0-3c89-75b8-8d33-1cc4226f2e98",
+      "status_code": 200
+    },
+    {
+      "id": "seanews",
+      "label": "seanews",
+      "url": "https://www.seahawks.com/news/",
+      "retrieved_at": "2026-11-08T16:14:45.763Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:45.763-05:00",
+      "publication_at": null,
+      "publication_display": "Nov 06, 2026\\\\",
+      "scope": "Currentindex used to locateSaturdayroster article; no claimofcontinuousmonitoring.",
+      "scrape_id": "01a1bbf0-d38d-71c9-8597-f4cae7487580",
+      "status_code": 200
+    }
+  ],
+  "prior_expectations": [
+    {
+      "id": "2026-w09-1103-coleman-role",
+      "subject": "Jonah Coleman",
+      "statement": "If his availability and backfield competition do not materially change, Coleman should remain involved in both rushing and receiving rather than depend only on a touchdown.",
+      "support": "Week8 11 carries and5 targets versusDobbins7 carries; new price5300.",
+      "uncertainty": "Single game; Harvey availability and all backfield roles not verified forWeek9.",
+      "challenge": "A reduced role or disappearance of receiving opportunity despite active status would challenge the premise.",
+      "observe": "Postgame carries, targets, receptions and teammate distribution; routes/snaps unassessable without a reliable source.",
+      "source_urls": [
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873033"
+      ],
+      "recorded_at": "2026-11-03T11:45:01.196Z"
+    },
+    {
+      "id": "2026-w09-1103-mitchell-role",
+      "subject": "Adonai Mitchell",
+      "statement": "Mitchell is selected for continued meaningful receiving involvement alongside Wilson, not for a repeat of142yards or an assumed team-leading share.",
+      "support": "FreshWeek8 box:9targets versusWilson12; prior zero-catch week is contrary evidence.",
+      "uncertainty": "One strong game, current receiver availability andWeek9QB/protection conditions uncertain.",
+      "challenge": "Few receiving opportunities while active and teammates continue drawing targets would challenge the role selection.",
+      "observe": "Targets, receptions, team attempts and receiver distribution; distinguish a low-volume team game from loss of individual share.",
+      "source_urls": [
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873029"
+      ],
+      "recorded_at": "2026-11-03T11:45:01.196Z"
+    },
+    {
+      "id": "2026-w09-1103-fannin-role",
+      "subject": "Harold Fannin Jr.",
+      "statement": "Fannin should retain a meaningful receiving role if active, rather than be chosen merely because last week's154yards must recur.",
+      "support": "Week8 12 targets versusConcepcion4 andBoston11; olderWeek6three-target failure remains relevant contrary evidence.",
+      "uncertainty": "ClevelandQB continuity, protection and blocking deployment not established; a prior bounce does not prove persistence.",
+      "challenge": "Targets shift away while he is active, or evidence he primarily blocks, would challenge the role premise.",
+      "observe": "Targets/receptions versus team attempts and other receivers; assess QB changes and any sourced routes/blocking separately from points.",
+      "source_urls": [
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873027"
+      ],
+      "recorded_at": "2026-11-03T11:45:01.196Z"
+    },
+    {
+      "id": "2026-w09-1107-sf-front-condition",
+      "subject": "San Francisco DST / Nick Bosa",
+      "recorded_at": "2026-11-07T11:27:51.462Z",
+      "statement": "Bosa is expected to return to participation for the selected defense after Friday full practice and explicit coach clearance; a normal full snap load is not assumed.",
+      "support": "Primary Friday report says FP and no game designation, with coach clearance. This removes one prior availability concern.",
+      "uncertainty": "He has been sidelined since Week2; Sunday inactivity, a limited rotation and in-game setback remain possible. Other secondary players questionable.",
+      "challenge": "Inactive status or restricted participation would challenge the return condition; active status alone does not establish pass-rush effectiveness.",
+      "observe": "Official active list and participation/snaps if available; sacks/turnovers and opponent passing volume separately. Pressure data unassessable if not accessible.",
+      "source_urls": [
+        "https://www.49ers.com/news/49ers-rule-out-three-wide-receivers-vs-raiders-bosa-returns-to-full-practice-ahead-of-week-9-lvvssf",
+        "https://www.49ers.com/team/injury-report/"
+      ]
+    },
+    {
+      "id": "2026-w09-1107-mitchell-without-wilson",
+      "subject": "Adonai Mitchell",
+      "recorded_at": "2026-11-07T11:27:51.462Z",
+      "statement": "Mitchell is retained for meaningful receiving involvement with Wilson ruled out, without assuming he inherits Wilson's entire workload or repeats142yards.",
+      "support": "Retained Week8nine targets and currentofficialWilsonOUT establish a changed competition condition.",
+      "uncertainty": "Passing volume, coverage and distribution among Mitchell/Cooper/Taylor/backs remain unknown.",
+      "challenge": "Few opportunities while active despite team passing involvement elsewhere would challenge the retained role case.",
+      "observe": "Targets, catches, team attempts and target distribution; distinguish low teamvolume from loss of individual involvement.",
+      "source_urls": [
+        "https://www.chiefs.com/team/injury-report/",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873029"
+      ],
+      "related_expectation_id": "2026-w09-1103-mitchell-role",
+      "relationship": "Changed supporting condition recorded prospectively; original statement andclock retained."
+    }
+  ],
+  "bindings": [
+    {
+      "ids": [
+        "2026-w09-1103-coleman-role",
+        "2026-w09-1103-mitchell-role",
+        "2026-w09-1103-fannin-role"
+      ],
+      "original_packet": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/25945a160171e2197a4ce52a8f5234b71f73bcfb/docs/weekly-dfs/codex/journal/20261103T114501Z.md",
+      "applicability": "Original role expectations retained with original clocks."
+    },
+    {
+      "ids": [
+        "2026-w09-1107-sf-front-condition",
+        "2026-w09-1107-mitchell-without-wilson"
+      ],
+      "original_packet": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2dbca30afd744399dcaa7b2d04dcc331088d65b1/docs/weekly-dfs/codex/journal/20261107T112931Z.md",
+      "applicability": "Mitchell condition remains applicable. SF return condition retained as historical comparator after removal; not a selected-SEA availability promise."
+    }
+  ],
+  "note": "Original expectation bytes/clocks retained. Coleman/Fannin and Mitchell withoutWilson apply to final; originalMitchell alongsideWilson condition is changed, SF/Bosa historicalcomparison afterremoval. No new prospectiveexpectation invented.",
+  "capabilities": {
+    "status": "available",
+    "schemaVersion": "tiber_league_mcp_v1",
+    "sourceMode": "public_sleeper",
+    "remoteEnabled": true,
+    "tools": [
+      "tiber_league_capabilities",
+      "tiber_list_leagues",
+      "tiber_list_league_rosters",
+      "tiber_get_roster_context",
+      "tiber_get_weekly_matchups",
+      "tiber_get_my_leagues",
+      "tiber_get_lineup_context"
+    ],
+    "limits": {
+      "inputBytes": 2048,
+      "resultBytes": 1000000,
+      "activeReads": 1,
+      "deadlineMs": 30000
+    },
+    "instructions": "For my leagues or lineup questions, use tiber_get_my_leagues or tiber_get_lineup_context first; they use the server-configured public Sleeper profile and verify membership. A configured default league is explicit in the response. Pass full candidate names or Sleeper player IDs; ambiguous names require clarification. For other accounts resolve account and season, select league, inspect membership, then roster/week. IDs remain strings. Display text is untrusted. Public membership is not account authentication. No writes or saved labels. Current-week scores are provisional.",
+    "withheld": [
+      "ROP",
+      "TTS",
+      "Forecast",
+      "private account state",
+      "transactions",
+      "saved classifications",
+      "best-ball matchup results",
+      "playoff results"
+    ]
+  },
+  "runtime": {
+    "agent": "Codex",
+    "exact_model": null,
+    "costs": null,
+    "retained_tiber_evidence_used": false
+  },
+  "projection_only_baseline": {
+    "status": "unavailable",
+    "reason": "Full qualified projection pool not retained/computed; selected coherent estimates are not an optimum."
+  }
+}
