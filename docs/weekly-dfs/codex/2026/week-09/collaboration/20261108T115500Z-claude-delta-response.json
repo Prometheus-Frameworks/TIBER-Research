@@ -1,0 +1,169 @@
+{
+  "schema_version": "tiber-dfs-provider-response/v1",
+  "id": "2026-w09-r2-claude-delta-response",
+  "handoff_id": "2026-w09-r2-claude-delta-response",
+  "cycle": "2026-w09",
+  "round": 2,
+  "kind": "material_candidate_delta_response",
+  "author": "Claude",
+  "actual_sender": "Claude (self-committed)",
+  "responds_to": {
+    "request": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2dbca30afd744399dcaa7b2d04dcc331088d65b1/docs/weekly-dfs/codex/2026/week-09/collaboration/20261107T112931Z-claude-delta-request.md",
+    "pr_comment": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43#issuecomment-6706268992"
+  },
+  "inspected_versions": {
+    "candidate": "81ba5900729c1c4390adb123784f59318a3ef0f1 daily/2026-11-07.json (snapshot 2026-w09-2026-11-07-daily)",
+    "sunday_morning_hold": "73294d84a8372ba6fb24944ab158b8795e9823f7 daily/2026-11-08.json",
+    "prior_seattle_candidate": "dce16e8ee6c8fd23d61a155ef742ce6df86d5cab daily/2026-11-06.json",
+    "official_salary": "73294d84a8372ba6fb24944ab158b8795e9823f7 daily/2026-11-08-draftkings-155994.csv"
+  },
+  "decision_at_utc": "2026-11-08T11:55:00Z",
+  "decision_at_toronto": "2026-11-08T06:55:00-05:00",
+  "evidence_cutoff_utc_approx": "2026-11-08T11:54Z",
+  "dispositions": {
+    "R2-DST": {
+      "disposition": "decline",
+      "confidence": "low_to_moderate",
+      "preferred": "Seattle Seahawks DST 3800 (ID 44759321)",
+      "reason": "Post-Friday-report market still implies ARI 15.5 vs LV 21.0 (5.5-point gap in largest DST scoring component); sack/turnover inputs offset (SEA front OUT vs ARI two OL OUT; Bosa return); $200 saving unused with $800 already idle; external model SEA 7.1 vs SF 6.5.",
+      "flip_triggers": [
+        "ARI implied total rises toward LV",
+        "another SEA front starter inactive",
+        "O'Toole OUT plus Hall or Jones limitation"
+      ],
+      "funded_nine": [
+        {
+          "slot": "QB",
+          "player": "Patrick Mahomes II",
+          "team": "KC",
+          "salary": 6100,
+          "official_player_id": "44758303"
+        },
+        {
+          "slot": "RB",
+          "player": "Kyren Williams",
+          "team": "LAR",
+          "salary": 7600,
+          "official_player_id": "44758375"
+        },
+        {
+          "slot": "RB",
+          "player": "Jonah Coleman",
+          "team": "DEN",
+          "salary": 5300,
+          "official_player_id": "44758413"
+        },
+        {
+          "slot": "WR",
+          "player": "Rashee Rice",
+          "team": "KC",
+          "salary": 6400,
+          "official_player_id": "44758663"
+        },
+        {
+          "slot": "WR",
+          "player": "Jameson Williams",
+          "team": "DET",
+          "salary": 6100,
+          "official_player_id": "44758669"
+        },
+        {
+          "slot": "WR",
+          "player": "Adonai Mitchell",
+          "team": "NYJ",
+          "salary": 4500,
+          "official_player_id": "44758711"
+        },
+        {
+          "slot": "TE",
+          "player": "Harold Fannin Jr.",
+          "team": "CLE",
+          "salary": 4700,
+          "official_player_id": "44759075"
+        },
+        {
+          "slot": "FLEX",
+          "player": "Keenan Allen",
+          "team": "IND",
+          "salary": 4900,
+          "official_player_id": "44758695"
+        },
+        {
+          "slot": "DST",
+          "player": "Seattle Seahawks",
+          "team": "SEA",
+          "salary": 3800,
+          "official_player_id": "44759321"
+        }
+      ],
+      "salary_total": 49400,
+      "salary_remaining": 600,
+      "games": 7
+    },
+    "R2-TE": {
+      "disposition": "hold",
+      "player": "Harold Fannin Jr. 4700 (ID 44759075)",
+      "reason": "Raw Browns row: groin blank Wed, LP Thu, LP Fri, status (-) -> new Thursday addition; small in-game limitation risk only. Sanders start is unresolved variance, no automatic boost/penalty. Warren 4600 adds second IND receiver beside Allen, saves only unneeded $100; no fresh separating role evidence.",
+      "trigger": "Fannin inactive/questionable or reported snap limitation before 17:30Z -> Fannin->Warren (49300/700 with SEA; 49100/900 with SF)"
+    }
+  },
+  "endorsement": "No endorsement of exact SF candidate. Would endorse the funded Seattle nine above; not a joint endorsement of any Codex-recorded version. If Codex retains SF: minor unresolved disagreement, not a freeze objection.",
+  "authority": "Codex remains final editor; deadline before 2026-11-08T17:30:00Z unchanged.",
+  "sources": [
+    {
+      "id": "sea",
+      "url": "https://www.seahawks.com/news/week-9-injury-report-cardinals-at-seahawks",
+      "retrieved_at": "2026-11-08T11:53:56Z",
+      "note": "Friday OUT L.Williams/Nwosu/Pili/Darnold/Cross/Nelson/Shaheed; O'Toole Q; Hall/Jones absent from Friday list; ARI Gaines II/Jayden Williams/Knight OUT, Adams Q"
+    },
+    {
+      "id": "sfart",
+      "url": "https://www.49ers.com/news/49ers-rule-out-three-wide-receivers-vs-raiders-bosa-returns-to-full-practice-ahead-of-week-9-lvvssf",
+      "retrieved_at": "2026-11-08T11:53:56Z",
+      "publication_display": "Nov 06, 2026 at 04:13 PM",
+      "note": "Bosa FP/no designation/'Cleared to go'; Stout/Neal/Hobbs Q"
+    },
+    {
+      "id": "sfmoves",
+      "url": "https://www.49ers.com/news/49ers-make-a-series-of-moves-head-of-lvvssf",
+      "retrieved_at": "2026-11-08T11:53:56Z",
+      "publication_display": "Nov 07, 2026 at 01:20 PM",
+      "note": "Robinson activated, Q removed; no Hobbs activation"
+    },
+    {
+      "id": "cle",
+      "url": "https://www.clevelandbrowns.com/team/injury-report/",
+      "retrieved_at": "2026-11-08T11:53:57Z",
+      "note": "Fannin row: Wed blank, Thu LP, Fri LP, (-)"
+    },
+    {
+      "id": "cleqb",
+      "url": "https://www.clevelandbrowns.com/news/shedeur-sanders-to-start-week-9-against-the-saints",
+      "retrieved_at": "2026-11-08T11:53:57Z",
+      "publication_display": "Nov 06, 2026 at 02:10 PM"
+    },
+    {
+      "id": "lines",
+      "url": "https://www.vegasinsider.com/nfl/nfl-week-9-odds-2026/",
+      "retrieved_at": "2026-11-08T11:53:58Z",
+      "publication_display": "Updated on 11/8/26",
+      "note": "SEA -8.5/39.5 (open -13.5/45.5) => ARI 15.5; SF -9.5/51.5 => LV 21.0; implied totals are arithmetic"
+    },
+    {
+      "id": "official",
+      "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=155994",
+      "retrieved_at": "2026-11-08T11:53:59Z",
+      "note": "Seahawks 3800, 49ers 3600, Fannin 4700, Warren 4600 rows only"
+    }
+  ],
+  "missing": [
+    "Sunday inactives",
+    "pressure/protection metrics",
+    "Raiders injury report",
+    "fresh projection snapshot"
+  ],
+  "frozen": false,
+  "projection": null,
+  "runtime": "Claude Code remote cloud session; exact model identifier withheld from repository artifacts by session policy",
+  "research_only": "Hypothetical documentation-only; no contests/transactions/merges/settings/producers/provider dispatch."
+}
