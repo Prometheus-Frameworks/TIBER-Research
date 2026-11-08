@@ -1,0 +1,749 @@
+{
+  "record_type": "freeze",
+  "id": "2026-w09-20261108T161644Z-freeze",
+  "version": "shared-final",
+  "author": "Codex",
+  "notebook_convention": "Prospective conversational DFS research notebook; not a governed Research-run or independent review.",
+  "recorded_at_utc": "2026-11-08T16:16:44.023Z",
+  "recorded_at_toronto": "2026-11-08T11:16:44.023-05:00",
+  "evidence_cutoff": "2026-11-08T16:16:44.023Z",
+  "season": 2026,
+  "week": 9,
+  "slate_date": "2026-11-08",
+  "platform": "DraftKings",
+  "slate_label": "DraftKings NFL Sunday main, group 155994, 11 games",
+  "salary_cap": 50000,
+  "salary_total": 49400,
+  "salary_remaining": 600,
+  "status": "complete",
+  "frozen": true,
+  "official_pool_verified": true,
+  "salary_basis": "official_export",
+  "pool_status": "official_pool_verified_at_retrieval",
+  "draft_group_id": "155994",
+  "picks": [
+    {
+      "slot": "QB",
+      "position": "QB",
+      "player": "Patrick Mahomes II",
+      "team": "KC",
+      "opponent": "NYJ",
+      "home": true,
+      "salary": 6100,
+      "official_player_id": "44758303",
+      "projected_points": 19.4,
+      "actual_points": null,
+      "rationale": "Hold Mahomes $6,100 with Rice ($12,500 pair). Fresh primary report Friday FP/no designation; Sunday participation pending.",
+      "source_ids": [
+        "official",
+        "kc"
+      ],
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=155994",
+      "kickoff_reported": "Sun 1:00PM",
+      "official_name": "Patrick Mahomes",
+      "official_game": "NYJ@KC 11/08/2026 01:00PM ET",
+      "official_status": null,
+      "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
+    },
+    {
+      "slot": "RB",
+      "position": "RB",
+      "player": "Kyren Williams",
+      "team": "LAR",
+      "opponent": "WAS",
+      "home": false,
+      "salary": 7600,
+      "official_player_id": "44758375",
+      "projected_points": 17.6,
+      "actual_points": null,
+      "rationale": "Hold Kyren $7,600 for previously recorded rushing involvement. Corum competition and only one prior target limit receiving-floor case; no new role guarantee.",
+      "source_ids": [
+        "official"
+      ],
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=155994",
+      "kickoff_reported": "Sun 1:00PM",
+      "official_name": "Kyren Williams",
+      "official_game": "LAR@WAS 11/08/2026 01:00PM ET",
+      "official_status": null,
+      "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
+    },
+    {
+      "slot": "RB",
+      "position": "RB",
+      "player": "Jonah Coleman",
+      "team": "DEN",
+      "opponent": "CAR",
+      "home": false,
+      "salary": 5300,
+      "official_player_id": "44758413",
+      "projected_points": 17.6,
+      "actual_points": null,
+      "rationale": "Hold Coleman $5,300 for prior carries and targets. Dobbins competition and prior51-yard catch concentration remain; no new role guarantee.",
+      "source_ids": [
+        "official"
+      ],
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=155994",
+      "kickoff_reported": "Sun 1:00PM",
+      "official_name": "Jonah Coleman",
+      "official_game": "DEN@CAR 11/08/2026 01:00PM ET",
+      "official_status": null,
+      "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Rashee Rice",
+      "team": "KC",
+      "opponent": "NYJ",
+      "home": true,
+      "salary": 6400,
+      "official_player_id": "44758663",
+      "projected_points": 17,
+      "actual_points": null,
+      "rationale": "Hold Rice $6,400: fresh primary Friday FP/no designation. Kelce competition remains; no target transfer invented.",
+      "source_ids": [
+        "official",
+        "kc"
+      ],
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=155994",
+      "kickoff_reported": "Sun 1:00PM",
+      "official_name": "Rashee Rice",
+      "official_game": "NYJ@KC 11/08/2026 01:00PM ET",
+      "official_status": null,
+      "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Jameson Williams",
+      "team": "DET",
+      "opponent": "MIA",
+      "home": false,
+      "salary": 6100,
+      "official_player_id": "44758669",
+      "projected_points": 12.9,
+      "actual_points": null,
+      "rationale": "Hold Jameson $6,100 for retained receiving involvement. StBrown competition/explosive-play dependence remain; inspected49.5total is context.",
+      "source_ids": [
+        "official"
+      ],
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=155994",
+      "kickoff_reported": "Sun 1:00PM",
+      "official_name": "Jameson Williams",
+      "official_game": "DET@MIA 11/08/2026 01:00PM ET",
+      "official_status": null,
+      "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Adonai Mitchell",
+      "team": "NYJ",
+      "opponent": "KC",
+      "home": false,
+      "salary": 4500,
+      "official_player_id": "44758711",
+      "projected_points": 9.5,
+      "actual_points": null,
+      "rationale": "Hold Mitchell $4,500 with WilsonOUT. External estimate rises6.9->9.5 with undisclosed rationale; prior involvement/reduced competition support hold without fixed target-share promise.",
+      "source_ids": [
+        "official",
+        "kc",
+        "model"
+      ],
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=155994",
+      "kickoff_reported": "Sun 1:00PM",
+      "official_name": "Adonai Mitchell",
+      "official_game": "NYJ@KC 11/08/2026 01:00PM ET",
+      "official_status": null,
+      "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
+    },
+    {
+      "slot": "TE",
+      "position": "TE",
+      "player": "Harold Fannin Jr.",
+      "team": "CLE",
+      "opponent": "NO",
+      "home": false,
+      "salary": 4700,
+      "official_player_id": "44759075",
+      "projected_points": 15,
+      "actual_points": null,
+      "rationale": "Hold Fannin $4,700: groin LPFriday/no designation, Sanders named starter. Deployment uncertain; no automatic checkdown boost.",
+      "source_ids": [
+        "official",
+        "cle",
+        "cleqb"
+      ],
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=155994",
+      "kickoff_reported": "Sun 1:00PM",
+      "official_name": "Harold Fannin Jr.",
+      "official_game": "CLE@NO 11/08/2026 01:00PM ET",
+      "official_status": null,
+      "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
+    },
+    {
+      "slot": "FLEX",
+      "position": "WR",
+      "player": "Keenan Allen",
+      "team": "IND",
+      "opponent": "DAL",
+      "home": true,
+      "salary": 4900,
+      "official_player_id": "44758695",
+      "projected_points": 15.8,
+      "actual_points": null,
+      "rationale": "Hold Allen $4,900 for prior target earning. Claude's Downs route preference remains; no freshSundayrole report resolves it.",
+      "source_ids": [
+        "official"
+      ],
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=155994",
+      "kickoff_reported": "Sun 1:00PM",
+      "official_name": "Keenan Allen",
+      "official_game": "DAL@IND 11/08/2026 01:00PM ET",
+      "official_status": null,
+      "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
+    },
+    {
+      "slot": "DST",
+      "position": "DST",
+      "player": "Seattle Seahawks",
+      "team": "SEA",
+      "opponent": "ARI",
+      "home": true,
+      "salary": 3800,
+      "official_player_id": "44759321",
+      "projected_points": 7.1,
+      "actual_points": null,
+      "rationale": "Revert SF to Seattle at $3,800 after Claude's substantive challenge. Arizona's lower market-implied total and two OL absences, plus the coherent model's small SEA preference, outweigh an unquantified front-health preference for SF. Seattle Williams/Nwosu/Pili OUT and O'Toole questionable remain the strongest risk; no sack uplift forecast.",
+      "source_ids": [
+        "official",
+        "sea",
+        "lines",
+        "model"
+      ],
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=155994",
+      "kickoff_reported": "Sun 4:25PM",
+      "official_name": "Seahawks",
+      "official_game": "ARI@SEA 11/08/2026 04:25PM ET",
+      "official_status": null,
+      "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
+    }
+  ],
+  "projected_total": 131.9,
+  "projection": {
+    "provider": "FullTime Fantasy",
+    "model": "Publisher DraftKings main-slate point projections",
+    "as_of": "2026-11-07T19:21:00Z",
+    "as_of_note": "Publisher Sat2:21PMET Week9 mappedNov7; minute precision. Generation and news incorporation unknown.",
+    "source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994",
+    "observed_at": "2026-11-08T16:14:09.337Z",
+    "annotation_at": "2026-11-08T16:16:44.023Z",
+    "scoring_basis": "Publisher-labelled DraftKings FLEX/main, same snapshot for allnine; no mixed models or historical backfill."
+  },
+  "actual_total": null,
+  "projection_limitation": "One coherent publisher snapshot gives128.7 for selectednine versus129.3 for oldnine in this SAME snapshot. The0.6 reduction is an explicit research departure, not a new agent point forecast. Full-pool projection-only baseline unavailable; no approximation.",
+  "games": [
+    {
+      "away": "DEN",
+      "home": "CAR",
+      "kickoff_et": "13:00",
+      "platform_membership": "Verified in official155994 CSV; no change from original11game target."
+    },
+    {
+      "away": "DAL",
+      "home": "IND",
+      "kickoff_et": "13:00",
+      "platform_membership": "Verified in official155994 CSV; no change from original11game target."
+    },
+    {
+      "away": "NYJ",
+      "home": "KC",
+      "kickoff_et": "13:00",
+      "platform_membership": "Verified in official155994 CSV; no change from original11game target."
+    },
+    {
+      "away": "DET",
+      "home": "MIA",
+      "kickoff_et": "13:00",
+      "platform_membership": "Verified in official155994 CSV; no change from original11game target."
+    },
+    {
+      "away": "CLE",
+      "home": "NO",
+      "kickoff_et": "13:00",
+      "platform_membership": "Verified in official155994 CSV; no change from original11game target."
+    },
+    {
+      "away": "NYG",
+      "home": "PHI",
+      "kickoff_et": "13:00",
+      "platform_membership": "Verified in official155994 CSV; no change from original11game target."
+    },
+    {
+      "away": "LAR",
+      "home": "WAS",
+      "kickoff_et": "13:00",
+      "platform_membership": "Verified in official155994 CSV; no change from original11game target."
+    },
+    {
+      "away": "HOU",
+      "home": "LAC",
+      "kickoff_et": "16:05",
+      "platform_membership": "Verified in official155994 CSV; no change from original11game target."
+    },
+    {
+      "away": "LV",
+      "home": "SF",
+      "kickoff_et": "16:25",
+      "platform_membership": "Verified in official155994 CSV; no change from original11game target."
+    },
+    {
+      "away": "GB",
+      "home": "NE",
+      "kickoff_et": "16:25",
+      "platform_membership": "Verified in official155994 CSV; no change from original11game target."
+    },
+    {
+      "away": "ARI",
+      "home": "SEA",
+      "kickoff_et": "16:25",
+      "platform_membership": "Verified in official155994 CSV; no change from original11game target."
+    }
+  ],
+  "earliest_candidate_kickoff": "2026-11-08T18:00:00Z",
+  "deadline_toronto": "2026-11-08T12:30:00-05:00",
+  "deadline_utc": "2026-11-08T17:30:00Z",
+  "excluded_windows": [
+    "JAX@BAL ThuNov5 20:15",
+    "CIN@ATL MadridSunNov8 09:30",
+    "TB@CHI SunNov8 20:20",
+    "BUF@MIN MonNov9 20:15"
+  ],
+  "byes": [
+    "PIT",
+    "TEN"
+  ],
+  "previous_snapshot_id": "2026-w09-r2-integration-20261108T120331Z",
+  "previous_snapshot_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/63a2f21ef063b21a0b9551be61addd9045733a57/docs/weekly-dfs/codex/2026/week-09/daily/20261108T120331Z-r2-integration.json",
+  "revision_classification": "unchanged",
+  "revisions": [],
+  "changed_picks": [],
+  "important_unchanged": [
+    {
+      "player": "Patrick Mahomes II",
+      "reason": "Hold Mahomes $6,100 with Rice ($12,500 pair). Fresh primary report Friday FP/no designation; Sunday participation pending."
+    },
+    {
+      "player": "Kyren Williams",
+      "reason": "Hold Kyren $7,600 for previously recorded rushing involvement. Corum competition and only one prior target limit receiving-floor case; no new role guarantee."
+    },
+    {
+      "player": "Jonah Coleman",
+      "reason": "Hold Coleman $5,300 for prior carries and targets. Dobbins competition and prior51-yard catch concentration remain; no new role guarantee."
+    },
+    {
+      "player": "Rashee Rice",
+      "reason": "Hold Rice $6,400: fresh primary Friday FP/no designation. Kelce competition remains; no target transfer invented."
+    },
+    {
+      "player": "Jameson Williams",
+      "reason": "Hold Jameson $6,100 for retained receiving involvement. StBrown competition/explosive-play dependence remain; inspected49.5total is context."
+    },
+    {
+      "player": "Adonai Mitchell",
+      "reason": "Hold Mitchell $4,500 with WilsonOUT. External estimate rises6.9->9.5 with undisclosed rationale; prior involvement/reduced competition support hold without fixed target-share promise."
+    },
+    {
+      "player": "Harold Fannin Jr.",
+      "reason": "Hold Fannin $4,700: groin LPFriday/no designation, Sanders named starter. Deployment uncertain; no automatic checkdown boost."
+    },
+    {
+      "player": "Keenan Allen",
+      "reason": "Hold Allen $4,900 for prior target earning. Claude's Downs route preference remains; no freshSundayrole report resolves it."
+    },
+    {
+      "player": "Seattle Seahawks",
+      "reason": "Revert SF to Seattle at $3,800 after Claude's substantive challenge. Arizona's lower market-implied total and two OL absences, plus the coherent model's small SEA preference, outweigh an unquantified front-health preference for SF. Seattle Williams/Nwosu/Pili OUT and O'Toole questionable remain the strongest risk; no sack uplift forecast."
+    }
+  ],
+  "summary": "Shared final — Claude + Codex, final editor Codex: unchanged from R2 Seattle candidate; $49,400/$600. Both original v1s, actual Grok questions and substantive author exchange completed. Exact-version joint endorsement not claimed. Sunday inactives unverified at freeze; later news cannot change scored nine.",
+  "counterargument": "Seattle's three front absences and depleted offense can defeat the favorable opponent environment. Fannin's groin issue and Sanders deployment leave receiving opportunity uncertain. QB/RB/receiver roles can fail despite active status.",
+  "unresolved_assumptions": [
+    "Sunday active/inactive lists not established before this freeze; no selected player's normal snap count certified.",
+    "Seattle Williams/Nwosu/Pili OUT, O'TooleQ; defensive depth signing is not replacement-quality proof.",
+    "Fannin receiving/blocking deployment with Sanders and groin LP status; no automatic checkdown bonus.",
+    "Coleman/Dobbins and Kyren/Corum distribution; Allen/Downs disagreement remains. StBrownQ is not guaranteed Jameson target transfer.",
+    "Full qualified model-pool optimum unavailable; coherent selected estimates are attributed, not a Codex forecast."
+  ],
+  "change_triggers": [
+    "Freeze is binding now: later news, including late inactives, creates observations/outcomes only. No scored-selection revision."
+  ],
+  "prior_scoring_status": {
+    "week6": 145.98,
+    "week7": 114.22,
+    "week8": 106.26,
+    "status": "PriorSundayfinal in primaryschedule. Existingreviewsalreadycomparecomplete drafts; Week6/7/8 freeze145.98/114.22/106.26 stayprovisional. NonewsettledDKsource/materialcorrectionobtained; noduplicatereview.",
+    "checked_at": "2026-11-08T11:45:19.114Z"
+  },
+  "collaboration": {
+    "codex_v1_ready": "ready",
+    "claude_v1_ready": "ready",
+    "grok_questions_ready": "ready",
+    "collaboration_ready": "ready: Claude R2 proposal and Codex substantive disposition archived; exact-version endorsement not claimed",
+    "final_frozen": "ready: exact final archived before cutoff",
+    "final_editor": "Codex",
+    "integration_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/b8408a409722b23cd8594315f609b0a27711adfb/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T231233Z-collaboration-ready.json",
+    "authorship": "Shared final from actual Claude/Codex revision exchange with actual Grok question pass; not jointly endorsed as this exact notebook version.",
+    "next_handoff": "Postgame scoring and expectation reviews; no further pregame question loop.",
+    "current_delta_status": "Claude R2 received and inspected; R2-DST accepted, R2-TE hold accepted.",
+    "existing_delta_request_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43#issuecomment-6706268992",
+    "round": 2,
+    "claude_response_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d383b4d654343b1c6b6c5dafc8e26d1dfe341988/docs/weekly-dfs/codex/2026/week-09/collaboration/20261108T115500Z-claude-delta-response.json",
+    "endorsement": "Claude states would endorse the exact funded Seattle proposal; does not endorse SF or any newly recorded Codex version. Codex accepts proposal; do not label jointly endorsed."
+  },
+  "sources": [
+    {
+      "id": "official",
+      "label": "official",
+      "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=155994",
+      "retrieved_at": "2026-11-08T16:14:06.307Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:06.307-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "586 unique official155994 IDs, same pool as morning; all nine original salaries/positions/teams/games verified.",
+      "scrape_id": "01a1bbf0-3c6b-7108-b2df-4c2f91c9589e",
+      "status_code": 200
+    },
+    {
+      "id": "model",
+      "label": "model",
+      "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994",
+      "retrieved_at": "2026-11-08T16:14:09.337Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:09.337-05:00",
+      "publication_at": "2026-11-07T19:21:00Z",
+      "publication_display": "Sat2:21PMET Week9",
+      "scope": "Coherent FTF main11-game snapshot Sat14:21ET, selected total131.9; SEA7.1/SF6.5. Exact news ingestion unknown.",
+      "scrape_id": "01a1bbf0-3c63-760f-bc53-a2837a593030",
+      "status_code": 200
+    },
+    {
+      "id": "rules",
+      "label": "rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-11-08T16:14:08.646Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:08.646-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "NFLClassic9slots/2games/50k,PPR,bonuses,lostfumble-1,DSTevents/PA rules inspected.",
+      "scrape_id": "01a1bbf0-3c87-73b4-ab68-0df7c98da881",
+      "status_code": 200
+    },
+    {
+      "id": "schedule",
+      "label": "schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+      "retrieved_at": "2026-11-08T16:14:07.701Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:07.701-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "November8 Week9 same11 afternoongames earliest13:00Toronto/18:00UTC. Thursday/Madrid/SNF/Monday excluded.",
+      "scrape_id": "01a1bbf0-3c58-735a-96e8-5db8fb8e0914",
+      "status_code": 200
+    },
+    {
+      "id": "sea",
+      "label": "sea",
+      "url": "https://www.seahawks.com/news/week-9-injury-report-cardinals-at-seahawks",
+      "retrieved_at": "2026-11-08T16:14:07.356Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:07.356-05:00",
+      "publication_at": null,
+      "publication_display": "Nov 06, 2026 at 02:05 PM",
+      "scope": "Friday Williams/Nwosu/PiliOUT, O'TooleQ. ArizonaGaines/JaydenWilliamsOUT; Hall/Jones not listed finalOUT/Q. No full workload clearance inferred.",
+      "scrape_id": "01a1bbf0-3c9a-7149-abf1-4f64de77e5ff",
+      "status_code": 200
+    },
+    {
+      "id": "seamoves",
+      "label": "seamoves",
+      "url": "https://www.seahawks.com/news/seahawks-sign-dt-deven-eastern-off-practice-squad-elevate-two-players",
+      "retrieved_at": "2026-11-08T16:15:00.405Z",
+      "retrieved_at_toronto": "2026-11-08T11:15:00.405-05:00",
+      "publication_at": null,
+      "publication_display": "Nov 07, 2026 at 01:15 PM",
+      "scope": "SaturdayDT Eastern signed; Hart/Foster elevated. Depth reinforcement does not restore absent starters or quantifypressure.",
+      "scrape_id": "01a1bbf1-0b8d-7052-87a9-278993aac660",
+      "status_code": 200
+    },
+    {
+      "id": "cle",
+      "label": "cle",
+      "url": "https://www.clevelandbrowns.com/team/injury-report/",
+      "retrieved_at": "2026-11-08T16:14:07.171Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:07.171-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Fannin groin: Wednesdayblank,ThuLP,FriLP,no designation. Sundayactives/fullworkload not established.",
+      "scrape_id": "01a1bbf0-3cca-761f-92e3-b0828596eca6",
+      "status_code": 200
+    },
+    {
+      "id": "cleqb",
+      "label": "cleqb",
+      "url": "https://www.clevelandbrowns.com/news/shedeur-sanders-to-start-week-9-against-the-saints",
+      "retrieved_at": "2026-11-08T16:14:45.930Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:45.930-05:00",
+      "publication_at": null,
+      "publication_display": "Nov 06, 2026 at 02:10 PM",
+      "scope": "Primary names Sanders starter withfirstteamreps; noTEtargetboost inferred.",
+      "scrape_id": "01a1bbf0-d3b2-73e2-84d6-ba52576f444d",
+      "status_code": 200
+    },
+    {
+      "id": "kc",
+      "label": "kc",
+      "url": "https://www.chiefs.com/team/injury-report/",
+      "retrieved_at": "2026-11-08T16:14:06.864Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:06.864-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Mahomes/RiceFridayFP/no designation; WilsonOUT. No exactMitchelltargettransfer.",
+      "scrape_id": "01a1bbf0-3c9e-72da-b0f5-142abea1c1bb",
+      "status_code": 200
+    },
+    {
+      "id": "den",
+      "label": "den",
+      "url": "https://www.denverbroncos.com/team/injury-report/",
+      "retrieved_at": "2026-11-08T16:14:07.483Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:07.483-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "CurrentCAR opponenttable; Coleman/Dobbins/Harvey not listed. Absence fromreport not workload guarantee.",
+      "scrape_id": "01a1bbf0-3c79-73ea-a0d4-39624f123357",
+      "status_code": 200
+    },
+    {
+      "id": "lar",
+      "label": "lar",
+      "url": "https://www.therams.com/team/injury-report/",
+      "retrieved_at": "2026-11-08T16:14:06.937Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:06.937-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "CurrentWAS table; Kyren/Corum not listed. Receivingfloor andcommittee risks retained.",
+      "scrape_id": "01a1bbf0-3c6c-726b-b5ec-e1d5f444a38c",
+      "status_code": 200
+    },
+    {
+      "id": "det",
+      "label": "det",
+      "url": "https://www.detroitlions.com/team/injury-report/",
+      "retrieved_at": "2026-11-08T16:14:06.811Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:06.811-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "CurrentMIA table; Jameson not listed, StBrownQ. Noautomatictargettransfer.",
+      "scrape_id": "01a1bbf0-3c6b-769b-a00d-81cedc623826",
+      "status_code": 200
+    },
+    {
+      "id": "ind",
+      "label": "ind",
+      "url": "https://www.colts.com/team/injury-report/",
+      "retrieved_at": "2026-11-08T16:14:06.981Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:06.981-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "AllenrestDNPWed thenFPThuFri/no designation. QB/role assumptions not Sundayguarantees.",
+      "scrape_id": "01a1bbf0-3cf9-733f-b147-bb215ebb436e",
+      "status_code": 200
+    },
+    {
+      "id": "lines",
+      "label": "lines",
+      "url": "https://www.vegasinsider.com/nfl/nfl-week-9-odds-2026/",
+      "retrieved_at": "2026-11-08T16:14:11.228Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:11.228-05:00",
+      "publication_at": null,
+      "publication_display": "Last Updated Nov 8 2026, 10:44 AM",
+      "scope": "HeaderNov8 10:44AM, zoneunstated; SEA-8.5/39.5=>ARI15.5,SF-9.5/51.5=>LV21.0. No distribution/probability claims.",
+      "scrape_id": "01a1bbf0-3c65-72c2-aa80-5c72cd1e96e3",
+      "status_code": 200
+    },
+    {
+      "id": "clenews",
+      "label": "clenews",
+      "url": "https://www.clevelandbrowns.com/news/",
+      "retrieved_at": "2026-11-08T16:14:07.299Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:07.299-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Currentnewsindex has no inspectedWeek9inactivearticle; actualinactivelists not established.",
+      "scrape_id": "01a1bbf0-3c89-75b8-8d33-1cc4226f2e98",
+      "status_code": 200
+    },
+    {
+      "id": "seanews",
+      "label": "seanews",
+      "url": "https://www.seahawks.com/news/",
+      "retrieved_at": "2026-11-08T16:14:45.763Z",
+      "retrieved_at_toronto": "2026-11-08T11:14:45.763-05:00",
+      "publication_at": null,
+      "publication_display": "Nov 06, 2026\\\\",
+      "scope": "Currentindex used to locateSaturdayroster article; no claimofcontinuousmonitoring.",
+      "scrape_id": "01a1bbf0-d38d-71c9-8597-f4cae7487580",
+      "status_code": 200
+    }
+  ],
+  "runtime": {
+    "agent": "Codex",
+    "exact_serving_model": null,
+    "costs": null,
+    "tools_observed": [
+      "GitHub authorized connection",
+      "Firecrawl public reads",
+      "TIBER capability inspection"
+    ],
+    "tiber_access": "ROP/TTS/Forecast withheld; noqualifiedretainedoutputaccessed, notproofnoneexists.",
+    "operator_influence": "Relayed actual Claude output is material input; selections proposed by Claude, accepted by Codex. No operator player override or new integration. Exact serving models unknown."
+  },
+  "validation": {
+    "slots": "QB,RB,RB,WR,WR,WR,TE,FLEX,DST",
+    "unique_players": 9,
+    "unique_official_ids": 9,
+    "distinct_games": 7,
+    "official_pool_games": 11,
+    "official_pool_rows": 586,
+    "salary_total": 49400,
+    "salary_remaining": 600,
+    "all_selected_official_prices_positions_games_verified": true,
+    "medical_clearance": false,
+    "source_coverage": "Freshofficialprices/eligibility plus selectedteamreports verified; actualSundayinactivelists unverified.",
+    "unique_pool_ids": 586,
+    "exact_claude_funded_nine_match": true
+  },
+  "alternatives": [
+    {
+      "change": "Seattle -> SF",
+      "salary_total": 49200,
+      "salary_remaining": 800,
+      "classification": "not_selected",
+      "reason": "Keep SF as credible front-health alternative; no quantified net sack/turnover advantage established. Same model131.3 versusSEA131.9."
+    },
+    {
+      "change": "Fannin -> Warren with Seattle",
+      "salary_total": 49300,
+      "salary_remaining": 700,
+      "classification": "not_selected",
+      "reason": "No fresh separating role evidence; adds secondINDreceiver besideAllen. CurrentFanninLP/no designation remains uncertain, not cleared full workload."
+    },
+    {
+      "change": "Allen -> Downs with Seattle",
+      "salary_total": 49600,
+      "salary_remaining": 400,
+      "classification": "not_selected",
+      "reason": "Prior route preference disagreement retained; not reopened inR2."
+    }
+  ],
+  "expectation_references": [
+    {
+      "ids": [
+        "2026-w09-1103-coleman-role",
+        "2026-w09-1103-mitchell-role",
+        "2026-w09-1103-fannin-role"
+      ],
+      "original_packet": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/25945a160171e2197a4ce52a8f5234b71f73bcfb/docs/weekly-dfs/codex/journal/20261103T114501Z.md",
+      "applicability": "Original role expectations retained with original clocks."
+    },
+    {
+      "ids": [
+        "2026-w09-1107-sf-front-condition",
+        "2026-w09-1107-mitchell-without-wilson"
+      ],
+      "original_packet": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2dbca30afd744399dcaa7b2d04dcc331088d65b1/docs/weekly-dfs/codex/journal/20261107T112931Z.md",
+      "applicability": "Mitchell condition remains applicable. SF return condition retained as historical comparator after removal; not a selected-SEA availability promise."
+    }
+  ],
+  "source_conflicts": [
+    "VI headerNov6/bodyNov8 does not verify row-level freshness or complete injury incorporation. Accept matchup evidence without declaring marketfullypricednews.",
+    "Do not adopt ClaudeMD impliedtotal-as-median/coinflip claim: distribution absent. Do not claim PA universallylargest DST component; event points matter.",
+    "Do not describe sacks/turnovers as quantified cancellation; no comparable pressure/protection model inspected.",
+    "BrownsWednesdayblank means firstlistedThursday inreport, not knowninjuryonset. No automatic severity orsmallriskestimate."
+  ],
+  "whole_lineup_analysis": {
+    "distinct_games": 7,
+    "kc_nyj": {
+      "slots": 3,
+      "salary": 17000
+    },
+    "changed_slots": 0,
+    "net_salary_delta": 0,
+    "concentration_note": "Seven games; Mahomes/Rice withMitchell opposite. NootherARI–SEA selection; noforcedspending.",
+    "trajectory": "Same selections asCodexv1, but SaturdaySEA->SF new_evidence andSundaySF->SEA changed_interpretation bothretained. Identical finalpicksdo noteraseadaptationhistory."
+  },
+  "pool_change": {
+    "previous_rows": 586,
+    "current_rows": 586,
+    "added": [],
+    "removed": [],
+    "interpretation": "ActualIDset compared to R2originalCSV; samepool."
+  },
+  "new_prospective_expectations": [],
+  "freeze_at": "2026-11-08T16:16:44.023Z",
+  "exact_lineup_binding": {
+    "chosen_immutable_lineup": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/63a2f21ef063b21a0b9551be61addd9045733a57/docs/weekly-dfs/codex/2026/week-09/daily/20261108T120331Z-r2-integration.json",
+    "meaning": "Exact nine slots, officialIDs and original salaries retained without change from that immutablefile; fresh evidence/metadata inthisfreeze.",
+    "original_salary_snapshot": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/63a2f21ef063b21a0b9551be61addd9045733a57/docs/weekly-dfs/codex/2026/week-09/daily/20261108T120331Z-draftkings-155994.csv",
+    "current_verification_packet": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/67959950c799276189d87636feb6c7ef670c01f8/docs/weekly-dfs/codex/2026/week-09/freeze/20261108T161540Z-inputs.json",
+    "current_salary_snapshot": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/67959950c799276189d87636feb6c7ef670c01f8/docs/weekly-dfs/codex/2026/week-09/freeze/20261108T161540Z-draftkings-155994.csv"
+  },
+  "expectation_bindings": [
+    {
+      "ids": [
+        "2026-w09-1103-coleman-role",
+        "2026-w09-1103-mitchell-role",
+        "2026-w09-1103-fannin-role"
+      ],
+      "original_packet": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/25945a160171e2197a4ce52a8f5234b71f73bcfb/docs/weekly-dfs/codex/journal/20261103T114501Z.md",
+      "applicability": "Original role expectations retained with original clocks."
+    },
+    {
+      "ids": [
+        "2026-w09-1107-sf-front-condition",
+        "2026-w09-1107-mitchell-without-wilson"
+      ],
+      "original_packet": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2dbca30afd744399dcaa7b2d04dcc331088d65b1/docs/weekly-dfs/codex/journal/20261107T112931Z.md",
+      "applicability": "Mitchell condition remains applicable. SF return condition retained as historical comparator after removal; not a selected-SEA availability promise."
+    }
+  ],
+  "expectation_packet": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/67959950c799276189d87636feb6c7ef670c01f8/docs/weekly-dfs/codex/2026/week-09/freeze/20261108T161540Z-inputs.json",
+  "expectation_ids": [
+    "2026-w09-1103-coleman-role",
+    "2026-w09-1103-mitchell-role",
+    "2026-w09-1103-fannin-role",
+    "2026-w09-1107-sf-front-condition",
+    "2026-w09-1107-mitchell-without-wilson"
+  ],
+  "expectation_scope": "Bind originalColeman/Fannin andMitchellwithoutWilson to final; retain originalMitchellalongsideWilson aschangedcondition andBosa/SF ashistoricalcomparison. All original clocks/statements untouched.",
+  "operator_seat": {
+    "status": "absent",
+    "blind_calls": [],
+    "player_overrides": [],
+    "note": "No explicit operator player guidance/override observed in thiscycle. ActualClaude relayisprovidercontribution, notoperatorselection."
+  },
+  "projection_only_baseline": {
+    "status": "unavailable",
+    "reason": "Full qualified projection pool not retained/computed; selected coherent estimates are not an optimum."
+  },
+  "post_freeze_policy": "Later observations cannot change this scored selection.",
+  "collaboration_inputs": {
+    "codex_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67033cfa6c3102dc3273bcf416b514c8f4940e2/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-03.json",
+    "claude_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/8df1a6e2c9549b9bb077630ecc8aa20a1add419a/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T122249Z-claude-v1.json",
+    "grok": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c55085d251bd6fac6851b935928d7f6433b59297/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T173644Z-grok-questions-verbatim.md",
+    "codex_response": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/e72b12a9134e49689e65f206f933d1ace5370480/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T174021Z-codex-grok-response.json",
+    "claude_response": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/e74a83b7315ed97acc31291b0e48d1e15b2748ba/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T181917Z-claude-grok-response.json",
+    "r2_integration": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c84e154cb6907f68963b71e4cc9c32b6ab13e41d/docs/weekly-dfs/codex/2026/week-09/collaboration/20261108T120531Z-collaboration-ready.json",
+    "claude_r2": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d383b4d654343b1c6b6c5dafc8e26d1dfe341988/docs/weekly-dfs/codex/2026/week-09/collaboration/20261108T115500Z-claude-delta-response.json"
+  }
+}
