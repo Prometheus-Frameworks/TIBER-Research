@@ -1,0 +1,145 @@
+{
+  "recorded_at": "2026-11-08T12:03:31.115Z",
+  "sources": [
+    {
+      "id": "official",
+      "label": "official",
+      "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=155994",
+      "retrieved_at": "2026-11-08T12:01:33.019Z",
+      "retrieved_at_toronto": "2026-11-08T07:01:33.019-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Current official group155994 export:586 unique IDs/11games; exact nine prices/positions/teams/game and Claude funded proposal verified."
+    },
+    {
+      "id": "model",
+      "label": "model",
+      "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994",
+      "retrieved_at": "2026-11-08T12:01:36.070Z",
+      "retrieved_at_toronto": "2026-11-08T07:01:36.070-05:00",
+      "publication_at": "2026-11-07T19:21:00Z",
+      "publication_display": "Projections updated Sat 2:21 PM ET · Week 9",
+      "scope": "FullTime Fantasy main11-game selectors agree for every selected price/estimate. Sat2:21PMET snapshot remains; SEA7.1/SF6.5 and currentnine131.9. Provider news ingestion unknown."
+    },
+    {
+      "id": "sea",
+      "label": "sea",
+      "url": "https://www.seahawks.com/news/week-9-injury-report-cardinals-at-seahawks",
+      "retrieved_at": "2026-11-08T12:01:33.789Z",
+      "retrieved_at_toronto": "2026-11-08T07:01:33.789-05:00",
+      "publication_at": null,
+      "publication_display": "Nov 06, 2026 at 02:05 PM",
+      "scope": "Friday primary OUT Williams/Nwosu/Pili; O'TooleQ. Arizona Gaines/JaydenWilliams OUT. These are real competing front/protection changes, not quantified offsets."
+    },
+    {
+      "id": "cle",
+      "label": "cle",
+      "url": "https://www.clevelandbrowns.com/team/injury-report/",
+      "retrieved_at": "2026-11-08T12:01:33.506Z",
+      "retrieved_at_toronto": "2026-11-08T07:01:33.506-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Fannin row Wednesday blank, ThursdayLP,FridayLP,(-) designation. First listed Thursday in report; injury onset/severity not established."
+    },
+    {
+      "id": "lines",
+      "label": "lines",
+      "url": "https://www.vegasinsider.com/nfl/nfl-week-9-odds-2026/",
+      "retrieved_at": "2026-11-08T12:01:38.421Z",
+      "retrieved_at_toronto": "2026-11-08T07:01:38.421-05:00",
+      "publication_at": null,
+      "publication_display": "Header Nov6 9:51PM; body Updated on11/8/26",
+      "scope": "Current-read summary SEA-8.5/39.5 impliesARI15.5;SF-9.5/51.5 impliesLV21.0. HeaderNov6 versus bodyUpdated11/8; no row-level timestamp or full news-incorporation proof."
+    },
+    {
+      "id": "rules",
+      "label": "rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-11-08T12:01:34.560Z",
+      "retrieved_at_toronto": "2026-11-08T07:01:34.560-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Exact NFLClassic DST PA brackets, sacks+1,turnovers+2,TD+6 inspected. Rules do not establish largest realized component or score-distribution probabilities."
+    },
+    {
+      "id": "claude_r2",
+      "label": "Claude committed R2 reply",
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d383b4d654343b1c6b6c5dafc8e26d1dfe341988/docs/weekly-dfs/codex/2026/week-09/collaboration/20261108T115500Z-claude-delta-response.json",
+      "retrieved_at": "2026-11-08T12:04:21.127Z",
+      "publication_at": "2026-11-08T11:56:03Z",
+      "original_decision_at": "2026-11-08T11:55:00Z",
+      "original_evidence_cutoff_approx": "2026-11-08T11:54Z",
+      "scope": "Actual author reply bound to Saturday/Sunday SF candidate and funded Seattle nine. Self-reported original clocks separate from current intake. Comments and committed MD/JSON inspected."
+    }
+  ],
+  "source_conflicts": [
+    "VI headerNov6/bodyNov8 does not verify row-level freshness or complete injury incorporation. Accept matchup evidence without declaring marketfullypricednews.",
+    "Do not adopt ClaudeMD impliedtotal-as-median/coinflip claim: distribution absent. Do not claim PA universallylargest DST component; event points matter.",
+    "Do not describe sacks/turnovers as quantified cancellation; no comparable pressure/protection model inspected.",
+    "BrownsWednesdayblank means firstlistedThursday inreport, not knowninjuryonset. No automatic severity orsmallriskestimate."
+  ],
+  "receipts": [
+    {
+      "id": "official",
+      "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=155994",
+      "retrieved_at": "2026-11-08T12:01:33.019Z",
+      "scrape_id": "01a1bb09-02fd-7305-9053-2a824ed37a55",
+      "status_code": 200
+    },
+    {
+      "id": "model",
+      "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994",
+      "retrieved_at": "2026-11-08T12:01:36.070Z",
+      "title": "2026 DraftKings NFL Salaries, Projections & Values | FullTime Fantasy",
+      "scrape_id": "01a1bb09-033a-724d-8a48-819ca6e74513",
+      "status_code": 200
+    },
+    {
+      "id": "sea",
+      "url": "https://www.seahawks.com/news/week-9-injury-report-cardinals-at-seahawks",
+      "retrieved_at": "2026-11-08T12:01:33.789Z",
+      "title": "Week 9 Injury Report: Cardinals at Seahawks",
+      "scrape_id": "01a1bb09-0366-76fb-af57-8ae14de6eab4",
+      "status_code": 200
+    },
+    {
+      "id": "cle",
+      "url": "https://www.clevelandbrowns.com/team/injury-report/",
+      "retrieved_at": "2026-11-08T12:01:33.506Z",
+      "title": "Browns Injury Report | Cleveland Browns - clevelandbrowns.com",
+      "scrape_id": "01a1bb09-02c2-763e-ad4d-ee5bcf1be36d",
+      "status_code": 200
+    },
+    {
+      "id": "lines",
+      "url": "https://www.vegasinsider.com/nfl/nfl-week-9-odds-2026/",
+      "retrieved_at": "2026-11-08T12:01:38.421Z",
+      "title": "NFL Week 9 Odds: Lines, Spreads, Betting Trends for Every Game",
+      "scrape_id": "01a1bb09-032c-760e-8ef8-72240193a031",
+      "status_code": 200
+    },
+    {
+      "id": "rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-11-08T12:01:34.560Z",
+      "title": "NFL Classic Rules | DraftKings",
+      "scrape_id": "01a1bb09-02ff-741c-8ef4-7d41a97f9a19",
+      "status_code": 200
+    }
+  ],
+  "validation": {
+    "slots": "QB,RB,RB,WR,WR,WR,TE,FLEX,DST",
+    "unique_players": 9,
+    "unique_official_ids": 9,
+    "distinct_games": 7,
+    "official_pool_games": 11,
+    "official_pool_rows": 586,
+    "salary_total": 49400,
+    "salary_remaining": 600,
+    "all_selected_official_prices_positions_games_verified": true,
+    "medical_clearance": false,
+    "source_coverage": "Allnine official prices/positions/teams/games verified in currentCSV; focused R2 injury/environment/scoring checks, no Sundayinactives.",
+    "unique_pool_ids": 586,
+    "exact_claude_funded_nine_match": true
+  }
+}
