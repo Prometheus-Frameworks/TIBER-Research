@@ -1,0 +1,230 @@
+{
+  "schema_version": "tiber-dfs-journal/v1",
+  "entries": [
+    {
+      "id": "2026-w09-r2-exchange-20261108T120531Z",
+      "snapshot_ids": [
+        "2026-w09-r2-integration-20261108T120331Z"
+      ],
+      "kind": "interactive_research",
+      "recorded_at": "2026-11-08T12:05:31.118Z",
+      "recorded_at_toronto": "2026-11-08T07:05:31.118-05:00",
+      "research_at": "2026-11-08T12:03:31.115Z",
+      "origin": "mixed",
+      "origin_note": "Operator relayed an actual Claude-authored response; Codex inspected committed originals and chose evidence checks/dispositions. This is Claude proposal influence, not operator player guidance or override.",
+      "title": "Claude challenge restores Seattle; Fannin held",
+      "question": "Does the funded Seattle counterproposal outweigh the editor's SF front-health interpretation?",
+      "why_it_matters": "A substantive response challenges an unquantified injury advantage, affecting one slot and200 while preserving prior choices.",
+      "findings": [
+        "Claude's committed R2-DST declines SF and supplies exact legalSeattle nine; R2-TE holdsFannin. Originaldecision11:55UTC, sourcecutoffclaimed~11:54UTC, commit11:56:03UTC; currentreceiptseparate.",
+        "Fresh officialCSV verifies nine IDs/salaries/positions/teams/games; same586IDs/11games.",
+        "Inspected market summary impliesARI15.5/LV21.0; conflicting header/body clocks and missingrowtime do not provefullinjuryincorporation.",
+        "SeattleWilliams/Nwosu/PiliOUT andO'TooleQ; ArizonaGaines/JaydenWilliamsOUT. No quantifiedpressure/protectioncomparison obtained.",
+        "Fanninrow Wedblank,ThuLP,FriLP,nodesignation; onset/severityunknown. Earlier namedSandersstarter retained.",
+        "SameexternalSaturday14:21ET model currentSeattle131.9/SF131.3; SEA7.1vsSF6.5. No modeloptimal-lineup claim."
+      ],
+      "interpretation": [
+        "AcceptR2-DST: changeSFtoSEA under changed_interpretation. Loweropponentenvironment/ArizonaOLabsences/smallmodelpreference outweigh unsupportednetfront-health preference; unusedsavingwasnotrealizedbenefit.",
+        "AcceptR2-TEhold; priorinvolvementretained withgroin/QBdeploymentuncertainty. WarrenaddssecondColtsreceiver.",
+        "Do not adopt impliedtotal-as-median, coinflip, universalPA-largestcomponent or measuredsack/turnovercancellation claims.",
+        "Authoragreementisnotindependentfootball evidence. PreserveSFversion andactualClaudeconditions; nojointendorsementofnewnotebookversion."
+      ],
+      "alternatives": [
+        {
+          "change": "Seattle -> SF",
+          "salary_total": 49200,
+          "salary_remaining": 800,
+          "classification": "not_selected",
+          "reason": "Keep SF as credible front-health alternative; no quantified net sack/turnover advantage established. Same model131.3 versusSEA131.9."
+        },
+        {
+          "change": "Fannin -> Warren with Seattle",
+          "salary_total": 49300,
+          "salary_remaining": 700,
+          "classification": "not_selected",
+          "reason": "No fresh separating role evidence; adds secondINDreceiver besideAllen. CurrentFanninLP/no designation remains uncertain, not cleared full workload."
+        },
+        {
+          "change": "Allen -> Downs with Seattle",
+          "salary_total": 49600,
+          "salary_remaining": 400,
+          "classification": "not_selected",
+          "reason": "Prior route preference disagreement retained; not reopened inR2."
+        }
+      ],
+      "uncertainty": [
+        "Seattle depleted front and offense, O'Toole status, and Arizona protection response. No pressure/protection metrics establish a net sack advantage.",
+        "Fannin groin LP/no designation does not ensure full workload; Sanders deployment can change targets or blocking.",
+        "Actual late-game inactives may arrive after Arena freeze; later restrictions are outcomes, not authorized lineup edits.",
+        "Market row publication and injury incorporation unknown; implied totals are not observed medians or probability distributions.",
+        "Other eight role risks retained from morning snapshot; Allen/Downs disagreement remains.",
+        "Full model-pool projection-only baseline unavailable; no optimizer executed."
+      ],
+      "lineup_effect": {
+        "action": "revision",
+        "classification": "changed_interpretation",
+        "revisions": [
+          {
+            "from": "San Francisco 49ers",
+            "to": "Seattle Seahawks",
+            "salary_delta": 200,
+            "classification": "changed_interpretation",
+            "reason": "Accept Claude R2-DST challenge: lower Arizona scoring environment, two Arizona OL absences and small coherent model preference outweigh unsupported net pass-rush advantage for SF. The unused200saving was not a benefit actually realized.",
+            "source_ids": [
+              "claude_r2",
+              "sea",
+              "lines",
+              "model",
+              "official"
+            ]
+          }
+        ],
+        "salary_total": 49400,
+        "salary_remaining": 600,
+        "distinct_games": 7,
+        "kc_nyj_slots": 3,
+        "kc_nyj_salary": 17000,
+        "projection_comparison": {
+          "prior_sf_nine": 131.3,
+          "current_sea_nine": 131.9,
+          "change": 0.6,
+          "interpretation": "Same external snapshot only; not quantified effect of injuries or proof of superior reasoning."
+        }
+      },
+      "change_triggers": [
+        "Before freeze, new selected-player designation/credible workload restriction prompts a funded reassessment; a questionable tag alone is not an automatic swap.",
+        "Additional Seattle front absence, material Hall/Jones limitation with O'TooleOUT, or changed opponent environment can reopen SF comparison. These are observation triggers, not mechanical thresholds.",
+        "Keep Fannin unless material status/deployment evidence changes the whole-lineup comparison; Warren withSEA wouldcost49300/leave700.",
+        "Finish final archive BEFORE17:30UTC/12:30Toronto today. Once frozen no late inactive swaps."
+      ],
+      "carry_forward": [
+        "Finalpassmustcheckmaterialstatus andarchiveexactlineup/salary/expectationreferences before12:30Toronto; nothingfrozenhere.",
+        "ClaudeR2requestcomplete; no routine newClaude/Grokloop. Finalstage stillpending.",
+        "Do not carry probability claims frommarketimpliedtotals withouta scoringdistribution; PA and sacks/turnovers requireseparateassessment.",
+        "Aftergamescompare SEAminusSFpoints androle/availabilityconditions separately; retain bothSaturdaychange andSundayreversal evenifoneoutperforms.",
+        "Keep historicalBosaexpectation ascomparisonafterremovingSF; no newSeattleprospectiveavailabilitypromise invented."
+      ],
+      "sources": [
+        {
+          "id": "official",
+          "label": "official",
+          "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=155994",
+          "retrieved_at": "2026-11-08T12:01:33.019Z",
+          "retrieved_at_toronto": "2026-11-08T07:01:33.019-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Current official group155994 export:586 unique IDs/11games; exact nine prices/positions/teams/game and Claude funded proposal verified."
+        },
+        {
+          "id": "model",
+          "label": "model",
+          "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994",
+          "retrieved_at": "2026-11-08T12:01:36.070Z",
+          "retrieved_at_toronto": "2026-11-08T07:01:36.070-05:00",
+          "publication_at": "2026-11-07T19:21:00Z",
+          "publication_display": "Projections updated Sat 2:21 PM ET · Week 9",
+          "scope": "FullTime Fantasy main11-game selectors agree for every selected price/estimate. Sat2:21PMET snapshot remains; SEA7.1/SF6.5 and currentnine131.9. Provider news ingestion unknown."
+        },
+        {
+          "id": "sea",
+          "label": "sea",
+          "url": "https://www.seahawks.com/news/week-9-injury-report-cardinals-at-seahawks",
+          "retrieved_at": "2026-11-08T12:01:33.789Z",
+          "retrieved_at_toronto": "2026-11-08T07:01:33.789-05:00",
+          "publication_at": null,
+          "publication_display": "Nov 06, 2026 at 02:05 PM",
+          "scope": "Friday primary OUT Williams/Nwosu/Pili; O'TooleQ. Arizona Gaines/JaydenWilliams OUT. These are real competing front/protection changes, not quantified offsets."
+        },
+        {
+          "id": "cle",
+          "label": "cle",
+          "url": "https://www.clevelandbrowns.com/team/injury-report/",
+          "retrieved_at": "2026-11-08T12:01:33.506Z",
+          "retrieved_at_toronto": "2026-11-08T07:01:33.506-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Fannin row Wednesday blank, ThursdayLP,FridayLP,(-) designation. First listed Thursday in report; injury onset/severity not established."
+        },
+        {
+          "id": "lines",
+          "label": "lines",
+          "url": "https://www.vegasinsider.com/nfl/nfl-week-9-odds-2026/",
+          "retrieved_at": "2026-11-08T12:01:38.421Z",
+          "retrieved_at_toronto": "2026-11-08T07:01:38.421-05:00",
+          "publication_at": null,
+          "publication_display": "Header Nov6 9:51PM; body Updated on11/8/26",
+          "scope": "Current-read summary SEA-8.5/39.5 impliesARI15.5;SF-9.5/51.5 impliesLV21.0. HeaderNov6 versus bodyUpdated11/8; no row-level timestamp or full news-incorporation proof."
+        },
+        {
+          "id": "rules",
+          "label": "rules",
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-08T12:01:34.560Z",
+          "retrieved_at_toronto": "2026-11-08T07:01:34.560-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Exact NFLClassic DST PA brackets, sacks+1,turnovers+2,TD+6 inspected. Rules do not establish largest realized component or score-distribution probabilities."
+        },
+        {
+          "id": "claude_r2",
+          "label": "Claude committed R2 reply",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d383b4d654343b1c6b6c5dafc8e26d1dfe341988/docs/weekly-dfs/codex/2026/week-09/collaboration/20261108T115500Z-claude-delta-response.json",
+          "retrieved_at": "2026-11-08T12:04:21.127Z",
+          "publication_at": "2026-11-08T11:56:03Z",
+          "original_decision_at": "2026-11-08T11:55:00Z",
+          "original_evidence_cutoff_approx": "2026-11-08T11:54Z",
+          "scope": "Actual author reply bound to Saturday/Sunday SF candidate and funded Seattle nine. Self-reported original clocks separate from current intake. Comments and committed MD/JSON inspected."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w09-r2-integration-20261108T120331Z",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/63a2f21ef063b21a0b9551be61addd9045733a57/docs/weekly-dfs/codex/2026/week-09/daily/20261108T120331Z-r2-integration.json"
+        }
+      ],
+      "expectations": [],
+      "outcomes": [],
+      "prior_expectation_references": [
+        {
+          "ids": [
+            "2026-w09-1103-coleman-role",
+            "2026-w09-1103-mitchell-role",
+            "2026-w09-1103-fannin-role"
+          ],
+          "original_packet": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/25945a160171e2197a4ce52a8f5234b71f73bcfb/docs/weekly-dfs/codex/journal/20261103T114501Z.md",
+          "applicability": "Original role expectations retained with original clocks."
+        },
+        {
+          "ids": [
+            "2026-w09-1107-sf-front-condition",
+            "2026-w09-1107-mitchell-without-wilson"
+          ],
+          "original_packet": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2dbca30afd744399dcaa7b2d04dcc331088d65b1/docs/weekly-dfs/codex/journal/20261107T112931Z.md",
+          "applicability": "Mitchell condition remains applicable. SF return condition retained as historical comparator after removal; not a selected-SEA availability promise."
+        }
+      ],
+      "source_conflicts": [
+        "VI headerNov6/bodyNov8 does not verify row-level freshness or complete injury incorporation. Accept matchup evidence without declaring marketfullypricednews.",
+        "Do not adopt ClaudeMD impliedtotal-as-median/coinflip claim: distribution absent. Do not claim PA universallylargest DST component; event points matter.",
+        "Do not describe sacks/turnovers as quantified cancellation; no comparable pressure/protection model inspected.",
+        "BrownsWednesdayblank means firstlistedThursday inreport, not knowninjuryonset. No automatic severity orsmallriskestimate."
+      ],
+      "collaboration": {
+        "codex_v1_ready": "ready",
+        "claude_v1_ready": "ready",
+        "grok_questions_ready": "ready",
+        "collaboration_ready": "ready: Claude R2 proposal and Codex substantive disposition archived; exact-version endorsement not claimed",
+        "final_frozen": "blocked: not yet final",
+        "final_editor": "Codex",
+        "integration_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/b8408a409722b23cd8594315f609b0a27711adfb/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T231233Z-collaboration-ready.json",
+        "authorship": "Shared research candidate, Codex final editor; Claude proposed Seattle funded nine and Fannin hold, Codex accepted after evidence check.",
+        "next_handoff": "No routine new reply required. Existing final window checks material pre-cutoff news and freezes exact supported candidate; never extends cutoff.",
+        "current_delta_status": "Claude R2 received and inspected; R2-DST accepted, R2-TE hold accepted.",
+        "existing_delta_request_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43#issuecomment-6706268992",
+        "round": 2,
+        "claude_response_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d383b4d654343b1c6b6c5dafc8e26d1dfe341988/docs/weekly-dfs/codex/2026/week-09/collaboration/20261108T115500Z-claude-delta-response.json",
+        "endorsement": "Claude states would endorse the exact funded Seattle proposal; does not endorse SF or any newly recorded Codex version. Codex accepts proposal; do not label jointly endorsed."
+      }
+    }
+  ]
+}
