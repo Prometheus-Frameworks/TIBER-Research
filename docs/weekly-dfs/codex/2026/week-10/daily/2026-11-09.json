@@ -1,0 +1,228 @@
+{
+  "record_type": "daily",
+  "id": "2026-w10-2026-11-09-daily",
+  "author": "Codex",
+  "recorded_at_utc": "2026-11-09T11:31:52.834Z",
+  "recorded_at_toronto": "2026-11-09T06:31:52.834-05:00",
+  "evidence_cutoff": "2026-11-09T11:31:52.834Z",
+  "season": 2026,
+  "week": 10,
+  "slate_date": "2026-11-15",
+  "platform": "DraftKings",
+  "slate_label": "Expected NFL Sunday afternoon main, November15 — official pool unverified",
+  "draft_group_id": null,
+  "slate_coverage": "PrimaryKC@ATLdate/kickoffconfirmed; ESPNtenafternooncandidate games; fullofficialDKmembership/exportnotavailable.",
+  "games": [
+    "KC@ATL",
+    "HOU@CLE",
+    "MIN@GB",
+    "JAX@TEN",
+    "MIA@IND",
+    "CAR@NO",
+    "BUF@NYJ",
+    "SEA@LV",
+    "LAR@ARI",
+    "SF@DAL"
+  ],
+  "games_status": "expected candidate coverage, not verifiedplatform membership",
+  "earliest_candidate_kickoff": "2026-11-15T18:00:00Z",
+  "deadline_utc": "2026-11-15T17:30:00Z",
+  "deadline_toronto": "2026-11-15T12:30:00-05:00",
+  "excluded_windows": [
+    "Thursday WAS@NYG",
+    "Sunday09:30Munich NE@DET",
+    "SundaynightPIT@CIN",
+    "MondayLAC@BAL"
+  ],
+  "salary_cap": 50000,
+  "salary_total": 0,
+  "salary_remaining": 50000,
+  "salary_basis": "unavailable",
+  "status": "partial",
+  "frozen": false,
+  "official_pool_verified": false,
+  "picks": [],
+  "research_board": [
+    {
+      "player": "Omar Cooper Jr.",
+      "team": "NYJ",
+      "position": "WR",
+      "salary": null,
+      "expected_game": "BUF@NYJ",
+      "observation": "Week9 11targets/8catches/58yards versusMitchell7targets/0catches; both receivedopportunities.",
+      "judgment": "Investigate route deployment andWilsonavailability before preferringCooper; catchconversion alone doesnotprove permanentrolechange.",
+      "trigger": "Week10price/officialeligibility, Wilsonreport androuteusage."
+    },
+    {
+      "player": "Denzel Boston",
+      "team": "CLE",
+      "position": "WR",
+      "salary": null,
+      "expected_game": "HOU@CLE",
+      "observation": "Week9 7targets/6catches/98yards withSanders; targetvolume ahead ofFannin2.",
+      "judgment": "Candidate beyondcurrentnine, comparewithConcepcion andFannin underactualnextstarter. No pointsforecast.",
+      "trigger": "Week10 QBconfirmation, practice/role andofficialsalary."
+    },
+    {
+      "player": "KC Concepcion Jr.",
+      "team": "CLE",
+      "position": "WR",
+      "salary": null,
+      "expected_game": "HOU@CLE",
+      "observation": "Week9 6targets/4catches/85yards/TD plus1carry3yards.",
+      "judgment": "Investigate roleafter priorvolatility; touchdown andyardsefficiencyalone do not establish a floor.",
+      "trigger": "CompareBoston/Concepcion/Fannin routes/targets andprice tradeoff."
+    },
+    {
+      "player": "Kyren Williams",
+      "team": "LAR",
+      "position": "RB",
+      "salary": null,
+      "expected_game": "LAR@ARI",
+      "observation": "Week9 15carries/4targets versusCorum11carries/2targets; CorumscoredrushingTD.",
+      "judgment": "Retain committee as challenge; Kyrenreceivingopportunityimprovedbutrushingleadnotworkhorse.",
+      "trigger": "Week10roles/status/prices, whole-lineupcost comparison."
+    }
+  ],
+  "projected_total": null,
+  "projection": null,
+  "actual_total": null,
+  "previous_snapshot_id": "2026-w09-20261108T161644Z-freeze",
+  "previous_snapshot_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/40cb4dadf06aa7c590ff600a23a5111b0f28be7f/docs/weekly-dfs/codex/2026/week-09/freeze/20261108T161644Z.json",
+  "revision_classification": "constraint_or_source_correction",
+  "revisions": [],
+  "changed_picks": [],
+  "important_unchanged": [],
+  "summary": "NewWeek10partialboard: no pricedselections orlegalnine. Officialpool inaccessible, publicprices/modelstillWeek9. InvestigateCooper/Boston/Concepcion beyondpriornine andKyren/Corumcommittee. All50000unallocated; no v1ready.",
+  "counterargument": "One-game conversion andtouchdown outcomes canmisleadrole selection; Week10QB/availability/routes andprices areunknown. ExpectedNFLgamesarenotDKpoolmembership.",
+  "unresolved_assumptions": [
+    "OfficialWeek10mainpool/exportandselectedprices/positionsunknown.",
+    "NFLleagueWeek10schedulepagecardsmissing;primaryKCfixtureplusESPNbody supportexpectedcoverageonly.",
+    "CurrentQB,Wilsonavailability,receiverrouteusage andRBsplitneednewweekverification.",
+    "No coherentWeek10projection snapshot."
+  ],
+  "change_triggers": [
+    "Published attributableWeek10prices/officialpoolunlock completecandidate; never reuseWeek9prices.",
+    "Freshrole/statussources maychangeunpricedboard; no forceddailychurn."
+  ],
+  "sources": [
+    {
+      "id": "week10",
+      "label": "week10",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+      "retrieved_at": "2026-11-09T11:26:21.853Z",
+      "retrieved_at_toronto": "2026-11-09T06:26:21.853-05:00",
+      "publication_at": null,
+      "scope": "NFLWeek10schedule returned navigation/TBD prose but no game cards; cannotcertifyfullslate."
+    },
+    {
+      "id": "upcoming",
+      "label": "upcoming",
+      "url": "https://www.espn.com/nfl/scoreboard/_/week/10/year/2026/seasontype/2",
+      "retrieved_at": "2026-11-09T11:27:09.926Z",
+      "retrieved_at_toronto": "2026-11-09T06:27:09.926-05:00",
+      "publication_at": null,
+      "scope": "ESPNWeek10 mainbodylists tenSundayafternooncandidate games, earlyMunichNE–DET, ThursdayWAS–NYG, SNFPIT–CIN andMNF LAC–BAL. TopribbonstillWeek9 is nottargetbody."
+    },
+    {
+      "id": "chiefsschedule",
+      "label": "chiefsschedule",
+      "url": "https://www.chiefs.com/schedule/",
+      "retrieved_at": "2026-11-09T11:28:32.075Z",
+      "retrieved_at_toronto": "2026-11-09T06:28:32.075-05:00",
+      "publication_at": null,
+      "scope": "Primaryteam2026 schedule confirmsWeek10Sunday11/15atAtlanta12:00CST=13:00Toronto."
+    },
+    {
+      "id": "nfl10game",
+      "label": "nfl10game",
+      "url": "https://www.nfl.com/games/chiefs-at-falcons-2026-reg-10",
+      "retrieved_at": "2026-11-09T11:28:33.512Z",
+      "retrieved_at_toronto": "2026-11-09T06:28:33.512-05:00",
+      "publication_at": null,
+      "scope": "PrimaryNFLWeek10KC@ATLgamepage confirmsNovember15,13:00; no DKmembershipcertification."
+    },
+    {
+      "id": "poolcheck",
+      "label": "poolcheck",
+      "url": "https://www.draftkings.com/lobby#/NFL/0/All",
+      "retrieved_at": "2026-11-09T11:28:35.126Z",
+      "retrieved_at_toronto": "2026-11-09T06:28:35.126-05:00",
+      "publication_at": null,
+      "scope": "PublicDKlobbyreadredirectedaccountwall; no officialWeek10pool/exportobserved. No login/entry attempted."
+    },
+    {
+      "id": "prices",
+      "label": "prices",
+      "url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+      "retrieved_at": "2026-11-09T11:26:20.876Z",
+      "retrieved_at_toronto": "2026-11-09T06:26:20.876-05:00",
+      "publication_at": null,
+      "scope": "LiveFantasyPros pricetable stillWeek9matchups/salaries; rejectedforWeek10."
+    },
+    {
+      "id": "model",
+      "label": "model",
+      "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php",
+      "retrieved_at": "2026-11-09T11:26:20.856Z",
+      "retrieved_at_toronto": "2026-11-09T06:26:20.856-05:00",
+      "publication_at": null,
+      "scope": "FTFpublic slate list onlyremainingWeek9Showdown/Primetime/SunMon/ThuMon; noWeek10main selected. No builderexecution."
+    },
+    {
+      "id": "rules",
+      "label": "rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-11-09T11:26:21.513Z",
+      "retrieved_at_toronto": "2026-11-09T06:26:21.513-05:00",
+      "publication_at": null,
+      "scope": "CurrentDKClassic50k/nineslots/minimum2games andexactscoring read."
+    },
+    {
+      "id": "box401873039",
+      "label": "Week9 observed usage",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873039",
+      "retrieved_at": "2026-11-09T11:26:36.738Z",
+      "publication_at": null,
+      "scope": "CompletedWeek9candidate role evidence, not aWeek10projection."
+    },
+    {
+      "id": "box401873045",
+      "label": "Week9 observed usage",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873045",
+      "retrieved_at": "2026-11-09T11:26:37.449Z",
+      "publication_at": null,
+      "scope": "CompletedWeek9candidate role evidence, not aWeek10projection."
+    },
+    {
+      "id": "box401873043",
+      "label": "Week9 observed usage",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873043",
+      "retrieved_at": "2026-11-09T11:26:37.317Z",
+      "publication_at": null,
+      "scope": "CompletedWeek9candidate role evidence, not aWeek10projection."
+    }
+  ],
+  "collaboration": {
+    "cycle": "2026-w10-2026-11-15",
+    "round": 1,
+    "codex_v1_ready": "blocked:partial; no completev1",
+    "claude_v1_ready": "notreceived",
+    "grok_questions_ready": "notreceived",
+    "collaboration_ready": "blocked",
+    "final_frozen": "notfinal",
+    "next_handoff": "Codex completes supportedv1 first, then versionedcommon-inputClaudehandoff. No author dispatched ororiginal restarted.",
+    "exposure": "No currentWeek10other-authorpicks inspected; no blindcomplete-v1claimfromthispartialboard."
+  },
+  "runtime": {
+    "agent": "Codex",
+    "exact_serving_model": null,
+    "tools": [
+      "GitHub",
+      "Firecrawl",
+      "TIBER capability inspection"
+    ],
+    "retained_tiber_evidence": "ROP/TTS/Forecastwithheld; noqualifiedretainedoutputaccessed, notproofnoneexists.",
+    "operator_input": "Standingassignment; no newoperatorplayerguidance/override. Week9agentlessonsprovisional."
+  }
+}
