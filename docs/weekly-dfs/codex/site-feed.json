@@ -1,9 +1,9 @@
 {
   "schema_version": "tiber-dfs-site/v1",
-  "updated_at": "2026-11-08T16:17:42.176Z",
+  "updated_at": "2026-11-09T11:34:01.669Z",
   "title": "TIBER DFS Research Arena",
   "timezone": "America/Toronto",
-  "next_scheduled_date": "2026-11-09",
+  "next_scheduled_date": "2026-11-10",
   "research_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43",
   "protocol_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/codex/weekly-dfs-2026-week-06/docs/weekly-dfs/codex/EXPERIMENT.md",
   "snapshots": [
@@ -6778,7 +6778,7 @@
       "salary_total": 49400,
       "salary_remaining": 600,
       "projected_total": null,
-      "actual_total": null,
+      "actual_total": 89.08,
       "frozen": false,
       "official_pool_verified": false,
       "projection": null,
@@ -6792,7 +6792,7 @@
           "home": true,
           "salary": 6100,
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 17.48,
           "rationale": "Mahomes completed 30 of 41 for321yards/3TD in Week8. Pair with Rice at a combined12500; KC is an attributed9.5pointfavorite. Risk: reduced passing in a comfortable lead and old knee practice information."
         },
         {
@@ -6804,7 +6804,7 @@
           "home": false,
           "salary": 7600,
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 9.1,
           "rationale": "Week8 lead16carries versus Corum11 supports rushing involvement at7600,2400 below Gibbs. Only1target and Corum's73yards/TD challenge any workhorse or PPR-floor claim."
         },
         {
@@ -6816,7 +6816,7 @@
           "home": false,
           "salary": 5300,
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 18.8,
           "rationale": "Week8 had11carries and5targets versus Dobbins7carries; choose a two-phase role at5300. This is one-game evidence, not a guaranteed lead share; check Harvey and backfield availability."
         },
         {
@@ -6828,7 +6828,7 @@
           "home": true,
           "salary": 6400,
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 9.9,
           "rationale": "Week8 led listed KC targets with8 versus Kelce7/Worthy6, catching7 for53/TD. A direct Mahomes pairing is supportable; no assumption he inherits all targets or is medically cleared."
         },
         {
@@ -6840,7 +6840,7 @@
           "home": false,
           "salary": 6100,
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 5,
           "rationale": "Week8 six targets/four catches/70yards/TD;6100 gives access to Detroit's attributed50.5total game. St.Brown had8targets and Detroit only25attempts; explosive efficiency can fail."
         },
         {
@@ -6852,7 +6852,7 @@
           "home": false,
           "salary": 4500,
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 0,
           "rationale": "Week8 nine targets/seven catches/142yards/TD supports a4500 receiving alternative to Cooper's zero targets. Wilson led with12; do not project another142yards. Opponent bring-back raises KC–NYJ concentration."
         },
         {
@@ -6864,7 +6864,7 @@
           "home": false,
           "salary": 4700,
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 12.2,
           "rationale": "Week8 twelve targets/10catches/154yards versus Concepcion4targets provides role evidence at4700. Cleveland suffered8sacks and quarterback continuity is unresolved; earlier low-target weeks remain contrary evidence."
         },
         {
@@ -6876,7 +6876,7 @@
           "home": true,
           "salary": 4900,
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 6.6,
           "rationale": "Week8 seven targets/seven catches/67yards;4900 offers observed receiving opportunity in the attributed51.5total Dallas game. Indianapolis had only152gross receivingyards and lost42–7; volume/game competence may disappoint."
         },
         {
@@ -6888,14 +6888,36 @@
           "home": true,
           "salary": 3800,
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 10,
           "rationale": "Reported3800 vsArizona and secondary11.5pointfavorite/16.5opponent implied total favor this matchup over recycling Patriots vsGB. Monday Bears gained363yards; Leonard Williams exited with a stinger. This is a conditional matchup preference, not clearance or a sack forecast."
         }
       ],
       "summary": "First complete Codex Week 9 v1: $49,400 spent/$600 left. New attributable prices unlock the original; prior partial boards are preserved. Mahomes/Rice with Mitchell shares game risk. Coleman and Fannin are role-based choices; Seattle's Monday injuries challenge its favorable matchup. Codex v1 ready and Claude common-input request archived. Claude v1, Grok questions and joint exchange not yet received. Not frozen.",
       "counterargument": "Official pool unverified. One-game roles can regress: Coleman competes for work, Kyren shares with Corum, Mitchell trails Wilson in targets, Fannin's QB is uncertain and Leonard Williams has a stinger. No complete coherent projection snapshot.",
       "revisions": [],
-      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67033cfa6c3102dc3273bcf416b514c8f4940e2/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-03.md"
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67033cfa6c3102dc3273bcf416b514c8f4940e2/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-03.md",
+      "scored_at": "2026-11-09T11:30:11.663Z",
+      "scoring_status": "provisional",
+      "scoring_method": "Reconstructed exact DraftKings NFL Classic rules; not settled platform totals.",
+      "scoring_sources": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0709d595c3908b6e078726a6526ac06ad88a99e5/docs/weekly-dfs/codex/2026/week-09/reviews/20261109T113011Z.json",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873045",
+        "https://www.espn.com/nfl/game/_/gameId/401873045",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873043",
+        "https://www.espn.com/nfl/game/_/gameId/401873043",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873041",
+        "https://www.espn.com/nfl/game/_/gameId/401873041",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873042",
+        "https://www.espn.com/nfl/game/_/gameId/401873042",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873039",
+        "https://www.espn.com/nfl/game/_/gameId/401873039",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873040",
+        "https://www.espn.com/nfl/game/_/gameId/401873040",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873048",
+        "https://www.espn.com/nfl/game/_/gameId/401873048",
+        "https://www.espn.com/nfl/playbyplay/_/gameId/401873048"
+      ],
+      "review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0709d595c3908b6e078726a6526ac06ad88a99e5/docs/weekly-dfs/codex/2026/week-09/reviews/20261109T113011Z.json"
     },
     {
       "id": "2026-w09-r1-claude-v1",
@@ -6915,7 +6937,7 @@
       "salary_total": 49900,
       "salary_remaining": 100,
       "projected_total": null,
-      "actual_total": null,
+      "actual_total": 148.6,
       "frozen": false,
       "official_pool_verified": false,
       "projection": null,
@@ -6929,7 +6951,7 @@
           "home": false,
           "salary": 6500,
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 23.5,
           "rationale": "Claude v1: Prescott/Lamb Dallas pairing, using the attributed DAL -6 and 51.5 total; favors the Dallas passing side."
         },
         {
@@ -6941,7 +6963,7 @@
           "home": true,
           "salary": 8000,
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 22.7,
           "rationale": "Claude v1: pays for rushing/receiving involvement on favored San Francisco; pre-bye hamstring expectation is not current Week9 clearance."
         },
         {
@@ -6953,7 +6975,7 @@
           "home": true,
           "salary": 6100,
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 15.8,
           "rationale": "Claude v1: selected on a reported workhorse role with Henderson sidelined; current role/availability remained an assumption."
         },
         {
@@ -6965,7 +6987,7 @@
           "home": false,
           "salary": 8300,
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 37.5,
           "rationale": "Claude v1: core Prescott receiver on the Dallas side of the four-player DAL–IND game allocation."
         },
         {
@@ -6977,7 +6999,7 @@
           "home": true,
           "salary": 5100,
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 5.4,
           "rationale": "Claude v1: Indianapolis receiving bring-back with Warren on an anticipated trailing script; current role data not retrieved."
         },
         {
@@ -6989,7 +7011,7 @@
           "home": false,
           "salary": 4400,
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 15.5,
           "rationale": "Claude v1: $4,400 salary-fitting receiver; current-season role data not retrieved."
         },
         {
@@ -7001,7 +7023,7 @@
           "home": true,
           "salary": 4600,
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 8.4,
           "rationale": "Claude v1: second Indianapolis receiver in a trailing-script thesis; both Colts pass catchers share game-script risk."
         },
         {
@@ -7013,7 +7035,7 @@
           "home": true,
           "salary": 4400,
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 10.8,
           "rationale": "Claude v1: inexpensive Kansas City exposure; current-season role data not retrieved."
         },
         {
@@ -7025,14 +7047,34 @@
           "home": true,
           "salary": 2500,
           "projected_points": null,
-          "actual_points": null,
+          "actual_points": 9,
           "rationale": "Claude v1: cheapest defense with a home-favorite/low-total thesis. This preserves the author's original rationale; the later journal records the conflicting current favorite direction."
         }
       ],
       "summary": "Claude's separately authored first complete v1, decided November3 07:22:49 Toronto; approximate evidence cutoff07:20. $49,900/$100. Claude declares no Codex Week9 selections seen, with Codex budget/priorweeks exposure disclosed. Codex verified and retained the immutable original later on November3. Both originals ready; Grok request posted, actual questions and revision exchange missing. Source corrections are later journal observations, not edits to v1. Not shared or frozen.",
       "counterargument": "Claude identified pre-bye McCaffrey hamstring uncertainty, missing current role evidence for Downs/Sutton/Worthy and correlated Indianapolis receiving risk. Later Codex checks found the Stevenson workhorse article is Week6 and the current odds page favors Giants over Eagles; see the separately dated journal.",
       "revisions": [],
-      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/8df1a6e2c9549b9bb077630ecc8aa20a1add419a/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T122249Z-claude-v1.md"
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/8df1a6e2c9549b9bb077630ecc8aa20a1add419a/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T122249Z-claude-v1.md",
+      "scored_at": "2026-11-09T11:30:11.663Z",
+      "scoring_status": "provisional",
+      "scoring_method": "Reconstructed exact DraftKings NFL Classic rules; not settled platform totals.",
+      "scoring_sources": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0709d595c3908b6e078726a6526ac06ad88a99e5/docs/weekly-dfs/codex/2026/week-09/reviews/20261109T113011Z.json",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873040",
+        "https://www.espn.com/nfl/game/_/gameId/401873040",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873047",
+        "https://www.espn.com/nfl/game/_/gameId/401873047",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873049",
+        "https://www.espn.com/nfl/game/_/gameId/401873049",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873041",
+        "https://www.espn.com/nfl/game/_/gameId/401873041",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873045",
+        "https://www.espn.com/nfl/game/_/gameId/401873045",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873044",
+        "https://www.espn.com/nfl/game/_/gameId/401873044",
+        "https://www.espn.com/nfl/playbyplay/_/gameId/401873044"
+      ],
+      "review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0709d595c3908b6e078726a6526ac06ad88a99e5/docs/weekly-dfs/codex/2026/week-09/reviews/20261109T113011Z.json"
     },
     {
       "id": "2026-w09-2026-11-04-daily",
@@ -7052,7 +7094,7 @@
       "salary_total": 49400,
       "salary_remaining": 600,
       "projected_total": 120.4,
-      "actual_total": null,
+      "actual_total": 89.08,
       "frozen": false,
       "official_pool_verified": true,
       "projection": {
@@ -7075,7 +7117,7 @@
           "home": true,
           "salary": 6100,
           "projected_points": 17.7,
-          "actual_points": null,
+          "actual_points": 17.48,
           "rationale": "Mahomes completed 30 of 41 for321yards/3TD in Week8. Pair with Rice at a combined12500; KC is an attributed9.5pointfavorite. Risk: reduced passing in a comfortable lead and old knee practice information.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7088,7 +7130,7 @@
           "home": false,
           "salary": 7600,
           "projected_points": 17.1,
-          "actual_points": null,
+          "actual_points": 9.1,
           "rationale": "Week8 lead16carries versus Corum11 supports rushing involvement at7600,2400 below Gibbs. Only1target and Corum's73yards/TD challenge any workhorse or PPR-floor claim.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7101,7 +7143,7 @@
           "home": false,
           "salary": 5300,
           "projected_points": 15.5,
-          "actual_points": null,
+          "actual_points": 18.8,
           "rationale": "Hold the observed rushing/receiving role at $5,300. Primary team recap confirms104scrimmageyards, but51 of63receivingyards came on one catch. Dobbins still competes; official export labelsHarveyIR without proving this week's exact workload.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7114,7 +7156,7 @@
           "home": true,
           "salary": 6400,
           "projected_points": 16.5,
-          "actual_points": null,
+          "actual_points": 9.9,
           "rationale": "Week8 led listed KC targets with8 versus Kelce7/Worthy6, catching7 for53/TD. A direct Mahomes pairing is supportable; no assumption he inherits all targets or is medically cleared.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7127,7 +7169,7 @@
           "home": false,
           "salary": 6100,
           "projected_points": 14.3,
-          "actual_points": null,
+          "actual_points": 5,
           "rationale": "Week8 six targets/four catches/70yards/TD;6100 gives access to Detroit's attributed50.5total game. St.Brown had8targets and Detroit only25attempts; explosive efficiency can fail.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7140,7 +7182,7 @@
           "home": false,
           "salary": 4500,
           "projected_points": 8.2,
-          "actual_points": null,
+          "actual_points": 0,
           "rationale": "Week8 nine targets/seven catches/142yards/TD supports a4500 receiving alternative to Cooper's zero targets. Wilson led with12; do not project another142yards. Opponent bring-back raises KC–NYJ concentration.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7153,7 +7195,7 @@
           "home": false,
           "salary": 4700,
           "projected_points": 12.4,
-          "actual_points": null,
+          "actual_points": 12.2,
           "rationale": "Week8 twelve targets/10catches/154yards versus Concepcion4targets provides role evidence at4700. Cleveland suffered8sacks and quarterback continuity is unresolved; earlier low-target weeks remain contrary evidence.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7166,7 +7208,7 @@
           "home": true,
           "salary": 4900,
           "projected_points": 11.6,
-          "actual_points": null,
+          "actual_points": 6.6,
           "rationale": "HoldAllen at4900 after actual exchange: seven prior targets on22routes support target earning; Claude's Downs alternative has broader routes. The disagreement survives, with no promise of a receiving floor.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7179,7 +7221,7 @@
           "home": true,
           "salary": 3800,
           "projected_points": 7.1,
-          "actual_points": null,
+          "actual_points": 10,
           "rationale": "HoldSeattle3800. Tuesday coach report gives Williams andNwosu a chance to return, not clearance. Williamsstinger/O'Toolefoot, shortweek andMondayred-zonefailures remain counterevidence.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         }
@@ -7187,7 +7229,29 @@
       "summary": "Same nine and original salaries: $49,400/$600. Official570-row11-gameexport155994 now verifies current IDs/positions/prices; no slate change. First coherent FullTimeFantasy model annotation120.4 applies only to this new record. Actual Claude/Codex exchange and Grok pass retained; not jointlyendorsed or frozen.",
       "counterargument": "Coleman's previous receivingproduction depended heavily on one51yardcatch; Dobbins competes. Seattlefrontclearance remainsunknown. Allen's lowerroute involvement versusDowns remains a documented disagreement. The externalmodel estimate is not validated certainty.",
       "revisions": [],
-      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/039239239c42d76d504b072f3bd42da4bafa26fe/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-04.md"
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/039239239c42d76d504b072f3bd42da4bafa26fe/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-04.md",
+      "scored_at": "2026-11-09T11:30:11.663Z",
+      "scoring_status": "provisional",
+      "scoring_method": "Reconstructed exact DraftKings NFL Classic rules; not settled platform totals.",
+      "scoring_sources": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0709d595c3908b6e078726a6526ac06ad88a99e5/docs/weekly-dfs/codex/2026/week-09/reviews/20261109T113011Z.json",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873045",
+        "https://www.espn.com/nfl/game/_/gameId/401873045",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873043",
+        "https://www.espn.com/nfl/game/_/gameId/401873043",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873041",
+        "https://www.espn.com/nfl/game/_/gameId/401873041",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873042",
+        "https://www.espn.com/nfl/game/_/gameId/401873042",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873039",
+        "https://www.espn.com/nfl/game/_/gameId/401873039",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873040",
+        "https://www.espn.com/nfl/game/_/gameId/401873040",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873048",
+        "https://www.espn.com/nfl/game/_/gameId/401873048",
+        "https://www.espn.com/nfl/playbyplay/_/gameId/401873048"
+      ],
+      "review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0709d595c3908b6e078726a6526ac06ad88a99e5/docs/weekly-dfs/codex/2026/week-09/reviews/20261109T113011Z.json"
     },
     {
       "id": "2026-w09-2026-11-05-daily",
@@ -7207,7 +7271,7 @@
       "salary_total": 49400,
       "salary_remaining": 600,
       "projected_total": 129.3,
-      "actual_total": null,
+      "actual_total": 89.08,
       "frozen": false,
       "official_pool_verified": true,
       "projection": {
@@ -7230,7 +7294,7 @@
           "home": true,
           "salary": 6100,
           "projected_points": 19.4,
-          "actual_points": null,
+          "actual_points": 17.48,
           "rationale": "Hold Mahomes/Rice pairing at $12,500. Current Wednesday table upgrades Mahomes information to knee FP; Rice LP means the pairing still needs later availability checks. Prior Week8 passing role remains the football basis; KC -10 can limit attempts.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7243,7 +7307,7 @@
           "home": false,
           "salary": 7600,
           "projected_points": 17.6,
-          "actual_points": null,
+          "actual_points": 9.1,
           "rationale": "Hold the prior 16-carry role at $7,600. Corum's11 carries and only one Kyren target remain contrary evidence; no receiving floor or fresh medical clearance inferred.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7256,7 +7320,7 @@
           "home": false,
           "salary": 5300,
           "projected_points": 17.6,
-          "actual_points": null,
+          "actual_points": 18.8,
           "rationale": "Hold observed rushing and receiving involvement at $5,300; current Denver report lists no Coleman or Dobbins limitation. That absence does not guarantee a lead role. Prior51-yard catch still explains most of last game's receiving yards.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7269,7 +7333,7 @@
           "home": true,
           "salary": 6400,
           "projected_points": 17,
-          "actual_points": null,
+          "actual_points": 9.9,
           "rationale": "Hold Rice's observed receiving role at $6,400. Wednesday hamstring/knee LP and platform Q are material unresolved availability conditions, not an OUT verdict. No target transfer assumed from Kelce LP.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7282,7 +7346,7 @@
           "home": false,
           "salary": 6100,
           "projected_points": 12.9,
-          "actual_points": null,
+          "actual_points": 5,
           "rationale": "Hold the $6,100 Detroit receiving allocation. Prior six targets support involvement, but St.Brown competition and limited total pass attempts challenge repeat explosive production. Current attributed game total50.5 is context only.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7295,7 +7359,7 @@
           "home": false,
           "salary": 4500,
           "projected_points": 6.9,
-          "actual_points": null,
+          "actual_points": 0,
           "rationale": "Hold Mitchell at $4,500. Wilson concussion DNP raises teammate-availability uncertainty without automatically giving Mitchell those targets; Week8 nine targets remain a one-game role observation.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7308,7 +7372,7 @@
           "home": false,
           "salary": 4700,
           "projected_points": 15,
-          "actual_points": null,
+          "actual_points": 12.2,
           "rationale": "Hold Fannin at $4,700 while explicitly reopening the QB condition: Watson concussion protocol, Sanders taking first-team reps. Prior12targets support role, but neither a new passer nor Boston LP guarantees more short targets.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7321,7 +7385,7 @@
           "home": true,
           "salary": 4900,
           "projected_points": 15.8,
-          "actual_points": null,
+          "actual_points": 6.6,
           "rationale": "Hold Allen at $4,900 after the actual exchange. Prior seven targets on22routes support target earning; Downs's broader route participation remains the strongest alternative. Current Colts participation table not retrieved.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7334,7 +7398,7 @@
           "home": true,
           "salary": 3800,
           "projected_points": 7.1,
-          "actual_points": null,
+          "actual_points": 10,
           "rationale": "Hold Seattle $3,800 despite Darnold OUT/Lock elbow and front injury concerns. Wednesday walkthrough estimates Williams/O'Toole/Pili DNP,NwosuLP. Current attributed Arizona implied15.5 is below LasVegas21.25; SF saves$200 but Bosa alsoLP. This is judgment, not a sack forecast.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         }
@@ -7342,7 +7406,29 @@
       "summary": "Hold all nine, $49,400/$600, on the same verified570-row11-game pool. New official Wednesday evidence: RiceLP/MahomesFP, Watsonconcussionprotocol/Sandersfirst-teamreps, WilsonconcussionDNP, SeattleDarnoldOUT/frontuncertainty. Retain competing SF/Warren/Downs options without automatic injury-driven swaps. Not frozen or jointly endorsed.",
       "counterargument": "Several selected receiving roles depend on uncertain conditions at once: Rice is limited, Cleveland may change quarterbacks, and Seattle's own offense plus defensivefront are weakened. Allen's lower route participation remains an unresolved preference against Downs. A complete price-legal roster does not settle those football risks.",
       "revisions": [],
-      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/e4c59ee71177613fb6133acd86056cc26fcae567/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-05.md"
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/e4c59ee71177613fb6133acd86056cc26fcae567/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-05.md",
+      "scored_at": "2026-11-09T11:30:11.663Z",
+      "scoring_status": "provisional",
+      "scoring_method": "Reconstructed exact DraftKings NFL Classic rules; not settled platform totals.",
+      "scoring_sources": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0709d595c3908b6e078726a6526ac06ad88a99e5/docs/weekly-dfs/codex/2026/week-09/reviews/20261109T113011Z.json",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873045",
+        "https://www.espn.com/nfl/game/_/gameId/401873045",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873043",
+        "https://www.espn.com/nfl/game/_/gameId/401873043",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873041",
+        "https://www.espn.com/nfl/game/_/gameId/401873041",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873042",
+        "https://www.espn.com/nfl/game/_/gameId/401873042",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873039",
+        "https://www.espn.com/nfl/game/_/gameId/401873039",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873040",
+        "https://www.espn.com/nfl/game/_/gameId/401873040",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873048",
+        "https://www.espn.com/nfl/game/_/gameId/401873048",
+        "https://www.espn.com/nfl/playbyplay/_/gameId/401873048"
+      ],
+      "review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0709d595c3908b6e078726a6526ac06ad88a99e5/docs/weekly-dfs/codex/2026/week-09/reviews/20261109T113011Z.json"
     },
     {
       "id": "2026-w09-2026-11-06-daily",
@@ -7362,7 +7448,7 @@
       "salary_total": 49400,
       "salary_remaining": 600,
       "projected_total": 129.3,
-      "actual_total": null,
+      "actual_total": 89.08,
       "frozen": false,
       "official_pool_verified": true,
       "projection": {
@@ -7385,7 +7471,7 @@
           "home": true,
           "salary": 6100,
           "projected_points": 19.4,
-          "actual_points": null,
+          "actual_points": 17.48,
           "rationale": "Hold Mahomes at $6,100; Thursday knee FP supports current participation, not Sunday certainty. Pairing with Rice costs$12,500. A large KC lead could still reduce pass volume.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7398,7 +7484,7 @@
           "home": false,
           "salary": 7600,
           "projected_points": 17.6,
-          "actual_points": null,
+          "actual_points": 9.1,
           "rationale": "Hold Kyren's prior rushing involvement at$7,600. Corum competition and only one prior target remain contrary evidence; no invented receiving floor.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7411,7 +7497,7 @@
           "home": false,
           "salary": 5300,
           "projected_points": 17.6,
-          "actual_points": null,
+          "actual_points": 18.8,
           "rationale": "Hold Coleman at$5,300 for observed rushing/receiving involvement. No Coleman/Dobbins limitation listed in ThursdayDenver table, but absence does not guarantee workload. Prior51yardcatch concentration remains a concern.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7424,7 +7510,7 @@
           "home": true,
           "salary": 6400,
           "projected_points": 17,
-          "actual_points": null,
+          "actual_points": 9.9,
           "rationale": "Hold Rice at$6,400: hamstring/knee participation improved LP->FP Thursday and officialpoolQ cleared. Still require final availability check; Kelce also FP, so no assumed vacated targets.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7437,7 +7523,7 @@
           "home": false,
           "salary": 6100,
           "projected_points": 12.9,
-          "actual_points": null,
+          "actual_points": 5,
           "rationale": "Hold Jameson$6,100 for retained receiving involvement in Detroit-Miami. StBrowncompetition and explosive-play dependence remain; markettotal50.5 is context, not individualforecast.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7450,7 +7536,7 @@
           "home": false,
           "salary": 4500,
           "projected_points": 6.9,
-          "actual_points": null,
+          "actual_points": 0,
           "rationale": "Hold Mitchell$4,500: Wilson still concussionDNP Thursday, but no OUT established and no automatic transfer of targets. Retainednine-target evidence is only one strong game.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7463,7 +7549,7 @@
           "home": false,
           "salary": 4700,
           "projected_points": 15,
-          "actual_points": null,
+          "actual_points": 12.2,
           "rationale": "Hold Fannin$4,700 provisionally despite new groinLP/platformQ. Prior12targets remain role evidence; WatsonDNP and possible Sanders start add uncertainty. Warren fits100less but creates secondColtsreceiver; Friday deterioration would reopen the choice.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7476,7 +7562,7 @@
           "home": true,
           "salary": 4900,
           "projected_points": 15.8,
-          "actual_points": null,
+          "actual_points": 6.6,
           "rationale": "Hold Allen$4,900 after actual exchange. ThursdayFP followsWednesdayrestDNP. Seven prior targets on22routes support targetearning; Downs's broader routes remain a documented disagreement.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7489,7 +7575,7 @@
           "home": true,
           "salary": 3800,
           "projected_points": 7.1,
-          "actual_points": null,
+          "actual_points": 10,
           "rationale": "Hold Seattle$3,800 with a weaker case: Nwosu nowDNP,HallnewDNP,JonesnewLP,othersstillDNP andDarnoldOUT. SF saves200 but BosaLP andhigheropponentimplied20.75 versusARI15.5 remain counterarguments; no sackforecast.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         }
@@ -7497,7 +7583,29 @@
       "summary": "Hold all nine at $49,400/$600 after focused Thursday checks. Rice improved to FP; Fannin newly LP with groin injury and platform Q. Seattle front worsened. Official pool expanded570->586 with16 additions, no removals or game change; selected original prices unchanged. Actual author exchange and Grok pass retained; not frozen or jointly endorsed.",
       "counterargument": "Fannin's new groin limitation compounds the unresolved Browns QB condition; Seattle's defensive-front absences expanded while its own quarterback is already OUT. The legal Warren and SF alternatives may become preferable with final status evidence. Keeping the nine risks waiting too long for conditions that do not improve.",
       "revisions": [],
-      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/64bdf9058f4ed540f75b3bb4cca9b11373301bb3/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-06.md"
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/64bdf9058f4ed540f75b3bb4cca9b11373301bb3/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-06.md",
+      "scored_at": "2026-11-09T11:30:11.663Z",
+      "scoring_status": "provisional",
+      "scoring_method": "Reconstructed exact DraftKings NFL Classic rules; not settled platform totals.",
+      "scoring_sources": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0709d595c3908b6e078726a6526ac06ad88a99e5/docs/weekly-dfs/codex/2026/week-09/reviews/20261109T113011Z.json",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873045",
+        "https://www.espn.com/nfl/game/_/gameId/401873045",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873043",
+        "https://www.espn.com/nfl/game/_/gameId/401873043",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873041",
+        "https://www.espn.com/nfl/game/_/gameId/401873041",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873042",
+        "https://www.espn.com/nfl/game/_/gameId/401873042",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873039",
+        "https://www.espn.com/nfl/game/_/gameId/401873039",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873040",
+        "https://www.espn.com/nfl/game/_/gameId/401873040",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873048",
+        "https://www.espn.com/nfl/game/_/gameId/401873048",
+        "https://www.espn.com/nfl/playbyplay/_/gameId/401873048"
+      ],
+      "review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0709d595c3908b6e078726a6526ac06ad88a99e5/docs/weekly-dfs/codex/2026/week-09/reviews/20261109T113011Z.json"
     },
     {
       "id": "2026-w09-2026-11-07-daily",
@@ -7517,7 +7625,7 @@
       "salary_total": 49200,
       "salary_remaining": 800,
       "projected_total": 128.7,
-      "actual_total": null,
+      "actual_total": 96.08,
       "frozen": false,
       "official_pool_verified": true,
       "projection": {
@@ -7540,7 +7648,7 @@
           "home": true,
           "salary": 6100,
           "projected_points": 19.4,
-          "actual_points": null,
+          "actual_points": 17.48,
           "rationale": "Hold Mahomes at $6,100 paired with Rice for $12,500. Friday knee FP and no game designation support availability; opponent defensive absences are context, not an invented passing forecast.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7553,7 +7661,7 @@
           "home": false,
           "salary": 7600,
           "projected_points": 17.6,
-          "actual_points": null,
+          "actual_points": 9.1,
           "rationale": "Hold Kyren at $7,600 for retained rushing involvement. Corum competition and only one prior target still challenge any receiving-floor claim.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7566,7 +7674,7 @@
           "home": false,
           "salary": 5300,
           "projected_points": 17.6,
-          "actual_points": null,
+          "actual_points": 18.8,
           "rationale": "Hold Coleman at $5,300 for observed rushing/receiving involvement. No Coleman/Dobbins row in current Denver report; absence is not a workload guarantee. Prior 51-yard catch concentration remains a risk.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7579,7 +7687,7 @@
           "home": true,
           "salary": 6400,
           "projected_points": 17,
-          "actual_points": null,
+          "actual_points": 9.9,
           "rationale": "Hold Rice at $6,400: Friday FP, no game designation. Kelce is also FP, so do not assume vacated targets. Sunday inactivity and in-game limitations remain possible.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7592,7 +7700,7 @@
           "home": false,
           "salary": 6100,
           "projected_points": 12.9,
-          "actual_points": null,
+          "actual_points": 5,
           "rationale": "Hold Jameson at $6,100 for retained Detroit receiving involvement. St. Brown competition and explosive-play dependence remain; current attributed game total49.5 is context only.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7605,7 +7713,7 @@
           "home": false,
           "salary": 4500,
           "projected_points": 6.9,
-          "actual_points": null,
+          "actual_points": 0,
           "rationale": "Hold Mitchell at $4,500 after Wilson is ruled OUT. Prior nine targets support involvement, but Wilson's absence does not transfer every target or guarantee efficient passing.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7618,7 +7726,7 @@
           "home": false,
           "salary": 4700,
           "projected_points": 15,
-          "actual_points": null,
+          "actual_points": 12.2,
           "rationale": "Hold Fannin at $4,700: Friday groin LP but no game designation. Sanders is now the named starter. Retained receiving role supports a hold, while quarterback change leaves target allocation uncertain; no automatic checkdown bonus.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7631,7 +7739,7 @@
           "home": true,
           "salary": 4900,
           "projected_points": 15.8,
-          "actual_points": null,
+          "actual_points": 6.6,
           "rationale": "Hold Allen at $4,900: Friday FP after Wednesday rest. Prior seven targets on22routes support target earning; Claude's Downs route preference remains unresolved.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7644,7 +7752,7 @@
           "home": true,
           "salary": 3600,
           "projected_points": 6.5,
-          "actual_points": null,
+          "actual_points": 17,
           "rationale": "Replace Seattle with SF at $3,600. Seattle ruled Williams, Nwosu and Pili OUT; SF primary report confirms Bosa FP and cleared to return. Save $200. SF secondary questions and three offensive WR absences remain risks; Arizona's lower market-implied total is the strongest Seattle countercase.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         }
@@ -7666,7 +7774,29 @@
           ]
         }
       ],
-      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/81ba5900729c1c4390adb123784f59318a3ef0f1/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-07.md"
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/81ba5900729c1c4390adb123784f59318a3ef0f1/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-07.md",
+      "scored_at": "2026-11-09T11:30:11.663Z",
+      "scoring_status": "provisional",
+      "scoring_method": "Reconstructed exact DraftKings NFL Classic rules; not settled platform totals.",
+      "scoring_sources": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0709d595c3908b6e078726a6526ac06ad88a99e5/docs/weekly-dfs/codex/2026/week-09/reviews/20261109T113011Z.json",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873045",
+        "https://www.espn.com/nfl/game/_/gameId/401873045",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873043",
+        "https://www.espn.com/nfl/game/_/gameId/401873043",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873041",
+        "https://www.espn.com/nfl/game/_/gameId/401873041",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873042",
+        "https://www.espn.com/nfl/game/_/gameId/401873042",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873039",
+        "https://www.espn.com/nfl/game/_/gameId/401873039",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873040",
+        "https://www.espn.com/nfl/game/_/gameId/401873040",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873047",
+        "https://www.espn.com/nfl/game/_/gameId/401873047",
+        "https://www.espn.com/nfl/playbyplay/_/gameId/401873047"
+      ],
+      "review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0709d595c3908b6e078726a6526ac06ad88a99e5/docs/weekly-dfs/codex/2026/week-09/reviews/20261109T113011Z.json"
     },
     {
       "id": "2026-w09-2026-11-08-daily",
@@ -7686,7 +7816,7 @@
       "salary_total": 49200,
       "salary_remaining": 800,
       "projected_total": 131.3,
-      "actual_total": null,
+      "actual_total": 96.08,
       "frozen": false,
       "official_pool_verified": true,
       "projection": {
@@ -7709,7 +7839,7 @@
           "home": true,
           "salary": 6100,
           "projected_points": 19.4,
-          "actual_points": null,
+          "actual_points": 17.48,
           "rationale": "Hold Mahomes $6,100 with Rice ($12,500 pair). Fresh primary report Friday FP/no designation; Sunday participation pending.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7722,7 +7852,7 @@
           "home": false,
           "salary": 7600,
           "projected_points": 17.6,
-          "actual_points": null,
+          "actual_points": 9.1,
           "rationale": "Hold Kyren $7,600 for previously recorded rushing involvement. Corum competition and only one prior target limit receiving-floor case; no new role guarantee.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7735,7 +7865,7 @@
           "home": false,
           "salary": 5300,
           "projected_points": 17.6,
-          "actual_points": null,
+          "actual_points": 18.8,
           "rationale": "Hold Coleman $5,300 for prior carries and targets. Dobbins competition and prior51-yard catch concentration remain; no new role guarantee.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7748,7 +7878,7 @@
           "home": true,
           "salary": 6400,
           "projected_points": 17,
-          "actual_points": null,
+          "actual_points": 9.9,
           "rationale": "Hold Rice $6,400: fresh primary Friday FP/no designation. Kelce competition remains; no target transfer invented.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7761,7 +7891,7 @@
           "home": false,
           "salary": 6100,
           "projected_points": 12.9,
-          "actual_points": null,
+          "actual_points": 5,
           "rationale": "Hold Jameson $6,100 for retained receiving involvement. StBrown competition/explosive-play dependence remain; inspected49.5total is context.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7774,7 +7904,7 @@
           "home": false,
           "salary": 4500,
           "projected_points": 9.5,
-          "actual_points": null,
+          "actual_points": 0,
           "rationale": "Hold Mitchell $4,500 with WilsonOUT. External estimate rises6.9->9.5 with undisclosed rationale; prior involvement/reduced competition support hold without fixed target-share promise.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7787,7 +7917,7 @@
           "home": false,
           "salary": 4700,
           "projected_points": 15,
-          "actual_points": null,
+          "actual_points": 12.2,
           "rationale": "Hold Fannin $4,700: groin LPFriday/no designation, Sanders named starter. Deployment uncertain; no automatic checkdown boost.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7800,7 +7930,7 @@
           "home": true,
           "salary": 4900,
           "projected_points": 15.8,
-          "actual_points": null,
+          "actual_points": 6.6,
           "rationale": "Hold Allen $4,900 for prior target earning. Claude's Downs route preference remains; no freshSundayrole report resolves it.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7813,7 +7943,7 @@
           "home": true,
           "salary": 3600,
           "projected_points": 6.5,
-          "actual_points": null,
+          "actual_points": 17,
           "rationale": "Hold SF $3,600 after SaturdaySeattle replacement. Robinson activated/Qremoved reduces one offensive availability uncertainty. Bosa cleared return supports availability, but snapload and secondary/Hobbs uncertainty remain. Seattle retains better opponent scoring environment.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         }
@@ -7821,7 +7951,29 @@
       "summary": "Sunday morning hold: all nine unchanged, $49,200 spent/$800 left. Official586-row/11-game pool unchanged. Robinson activated; Hobbs activation unverified. Fannin no designation with Sanders named starter. Coherent model131.3, up2.6 entirely from Mitchell estimate; selections unchanged. Not frozen or jointly endorsed; Claude delta reply missing.",
       "counterargument": "Seattle faces a lower attributed opponent total (Arizona15.5 versusLasVegas21.0), with two Arizona starting linemenOUT; external model prefersSEA7.1 toSF6.5. SF secondary uncertainty and Bosa's unverified snapload remain. Fannin's QB change may weaken his receiving opportunity.",
       "revisions": [],
-      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/73294d84a8372ba6fb24944ab158b8795e9823f7/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-08.md"
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/73294d84a8372ba6fb24944ab158b8795e9823f7/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-08.md",
+      "scored_at": "2026-11-09T11:30:11.663Z",
+      "scoring_status": "provisional",
+      "scoring_method": "Reconstructed exact DraftKings NFL Classic rules; not settled platform totals.",
+      "scoring_sources": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0709d595c3908b6e078726a6526ac06ad88a99e5/docs/weekly-dfs/codex/2026/week-09/reviews/20261109T113011Z.json",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873045",
+        "https://www.espn.com/nfl/game/_/gameId/401873045",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873043",
+        "https://www.espn.com/nfl/game/_/gameId/401873043",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873041",
+        "https://www.espn.com/nfl/game/_/gameId/401873041",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873042",
+        "https://www.espn.com/nfl/game/_/gameId/401873042",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873039",
+        "https://www.espn.com/nfl/game/_/gameId/401873039",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873040",
+        "https://www.espn.com/nfl/game/_/gameId/401873040",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873047",
+        "https://www.espn.com/nfl/game/_/gameId/401873047",
+        "https://www.espn.com/nfl/playbyplay/_/gameId/401873047"
+      ],
+      "review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0709d595c3908b6e078726a6526ac06ad88a99e5/docs/weekly-dfs/codex/2026/week-09/reviews/20261109T113011Z.json"
     },
     {
       "id": "2026-w09-r2-integration-20261108T120331Z",
@@ -7841,7 +7993,7 @@
       "salary_total": 49400,
       "salary_remaining": 600,
       "projected_total": 131.9,
-      "actual_total": null,
+      "actual_total": 89.08,
       "frozen": false,
       "official_pool_verified": true,
       "projection": {
@@ -7864,7 +8016,7 @@
           "home": true,
           "salary": 6100,
           "projected_points": 19.4,
-          "actual_points": null,
+          "actual_points": 17.48,
           "rationale": "Hold Mahomes $6,100 with Rice ($12,500 pair). Fresh primary report Friday FP/no designation; Sunday participation pending.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7877,7 +8029,7 @@
           "home": false,
           "salary": 7600,
           "projected_points": 17.6,
-          "actual_points": null,
+          "actual_points": 9.1,
           "rationale": "Hold Kyren $7,600 for previously recorded rushing involvement. Corum competition and only one prior target limit receiving-floor case; no new role guarantee.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7890,7 +8042,7 @@
           "home": false,
           "salary": 5300,
           "projected_points": 17.6,
-          "actual_points": null,
+          "actual_points": 18.8,
           "rationale": "Hold Coleman $5,300 for prior carries and targets. Dobbins competition and prior51-yard catch concentration remain; no new role guarantee.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7903,7 +8055,7 @@
           "home": true,
           "salary": 6400,
           "projected_points": 17,
-          "actual_points": null,
+          "actual_points": 9.9,
           "rationale": "Hold Rice $6,400: fresh primary Friday FP/no designation. Kelce competition remains; no target transfer invented.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7916,7 +8068,7 @@
           "home": false,
           "salary": 6100,
           "projected_points": 12.9,
-          "actual_points": null,
+          "actual_points": 5,
           "rationale": "Hold Jameson $6,100 for retained receiving involvement. StBrown competition/explosive-play dependence remain; inspected49.5total is context.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7929,7 +8081,7 @@
           "home": false,
           "salary": 4500,
           "projected_points": 9.5,
-          "actual_points": null,
+          "actual_points": 0,
           "rationale": "Hold Mitchell $4,500 with WilsonOUT. External estimate rises6.9->9.5 with undisclosed rationale; prior involvement/reduced competition support hold without fixed target-share promise.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7942,7 +8094,7 @@
           "home": false,
           "salary": 4700,
           "projected_points": 15,
-          "actual_points": null,
+          "actual_points": 12.2,
           "rationale": "Hold Fannin $4,700: groin LPFriday/no designation, Sanders named starter. Deployment uncertain; no automatic checkdown boost.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7955,7 +8107,7 @@
           "home": true,
           "salary": 4900,
           "projected_points": 15.8,
-          "actual_points": null,
+          "actual_points": 6.6,
           "rationale": "Hold Allen $4,900 for prior target earning. Claude's Downs route preference remains; no freshSundayrole report resolves it.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -7968,7 +8120,7 @@
           "home": true,
           "salary": 3800,
           "projected_points": 7.1,
-          "actual_points": null,
+          "actual_points": 10,
           "rationale": "Revert SF to Seattle at $3,800 after Claude's substantive challenge. Arizona's lower market-implied total and two OL absences, plus the coherent model's small SEA preference, outweigh an unquantified front-health preference for SF. Seattle Williams/Nwosu/Pili OUT and O'Toole questionable remain the strongest risk; no sack uplift forecast.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         }
@@ -7991,7 +8143,29 @@
           ]
         }
       ],
-      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/63a2f21ef063b21a0b9551be61addd9045733a57/docs/weekly-dfs/codex/2026/week-09/daily/20261108T120331Z-r2-integration.md"
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/63a2f21ef063b21a0b9551be61addd9045733a57/docs/weekly-dfs/codex/2026/week-09/daily/20261108T120331Z-r2-integration.md",
+      "scored_at": "2026-11-09T11:30:11.663Z",
+      "scoring_status": "provisional",
+      "scoring_method": "Reconstructed exact DraftKings NFL Classic rules; not settled platform totals.",
+      "scoring_sources": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0709d595c3908b6e078726a6526ac06ad88a99e5/docs/weekly-dfs/codex/2026/week-09/reviews/20261109T113011Z.json",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873045",
+        "https://www.espn.com/nfl/game/_/gameId/401873045",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873043",
+        "https://www.espn.com/nfl/game/_/gameId/401873043",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873041",
+        "https://www.espn.com/nfl/game/_/gameId/401873041",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873042",
+        "https://www.espn.com/nfl/game/_/gameId/401873042",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873039",
+        "https://www.espn.com/nfl/game/_/gameId/401873039",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873040",
+        "https://www.espn.com/nfl/game/_/gameId/401873040",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873048",
+        "https://www.espn.com/nfl/game/_/gameId/401873048",
+        "https://www.espn.com/nfl/playbyplay/_/gameId/401873048"
+      ],
+      "review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0709d595c3908b6e078726a6526ac06ad88a99e5/docs/weekly-dfs/codex/2026/week-09/reviews/20261109T113011Z.json"
     },
     {
       "id": "2026-w09-20261108T161644Z-freeze",
@@ -8011,7 +8185,7 @@
       "salary_total": 49400,
       "salary_remaining": 600,
       "projected_total": 131.9,
-      "actual_total": null,
+      "actual_total": 89.08,
       "frozen": true,
       "official_pool_verified": true,
       "projection": {
@@ -8034,7 +8208,7 @@
           "home": true,
           "salary": 6100,
           "projected_points": 19.4,
-          "actual_points": null,
+          "actual_points": 17.48,
           "rationale": "Hold Mahomes $6,100 with Rice ($12,500 pair). Fresh primary report Friday FP/no designation; Sunday participation pending.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -8047,7 +8221,7 @@
           "home": false,
           "salary": 7600,
           "projected_points": 17.6,
-          "actual_points": null,
+          "actual_points": 9.1,
           "rationale": "Hold Kyren $7,600 for previously recorded rushing involvement. Corum competition and only one prior target limit receiving-floor case; no new role guarantee.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -8060,7 +8234,7 @@
           "home": false,
           "salary": 5300,
           "projected_points": 17.6,
-          "actual_points": null,
+          "actual_points": 18.8,
           "rationale": "Hold Coleman $5,300 for prior carries and targets. Dobbins competition and prior51-yard catch concentration remain; no new role guarantee.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -8073,7 +8247,7 @@
           "home": true,
           "salary": 6400,
           "projected_points": 17,
-          "actual_points": null,
+          "actual_points": 9.9,
           "rationale": "Hold Rice $6,400: fresh primary Friday FP/no designation. Kelce competition remains; no target transfer invented.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -8086,7 +8260,7 @@
           "home": false,
           "salary": 6100,
           "projected_points": 12.9,
-          "actual_points": null,
+          "actual_points": 5,
           "rationale": "Hold Jameson $6,100 for retained receiving involvement. StBrown competition/explosive-play dependence remain; inspected49.5total is context.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -8099,7 +8273,7 @@
           "home": false,
           "salary": 4500,
           "projected_points": 9.5,
-          "actual_points": null,
+          "actual_points": 0,
           "rationale": "Hold Mitchell $4,500 with WilsonOUT. External estimate rises6.9->9.5 with undisclosed rationale; prior involvement/reduced competition support hold without fixed target-share promise.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -8112,7 +8286,7 @@
           "home": false,
           "salary": 4700,
           "projected_points": 15,
-          "actual_points": null,
+          "actual_points": 12.2,
           "rationale": "Hold Fannin $4,700: groin LPFriday/no designation, Sanders named starter. Deployment uncertain; no automatic checkdown boost.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -8125,7 +8299,7 @@
           "home": true,
           "salary": 4900,
           "projected_points": 15.8,
-          "actual_points": null,
+          "actual_points": 6.6,
           "rationale": "Hold Allen $4,900 for prior target earning. Claude's Downs route preference remains; no freshSundayrole report resolves it.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         },
@@ -8138,7 +8312,7 @@
           "home": true,
           "salary": 3800,
           "projected_points": 7.1,
-          "actual_points": null,
+          "actual_points": 10,
           "rationale": "Revert SF to Seattle at $3,800 after Claude's substantive challenge. Arizona's lower market-implied total and two OL absences, plus the coherent model's small SEA preference, outweigh an unquantified front-health preference for SF. Seattle Williams/Nwosu/Pili OUT and O'Toole questionable remain the strongest risk; no sack uplift forecast.",
           "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994"
         }
@@ -8146,10 +8320,60 @@
       "summary": "Shared final — Claude + Codex, final editor Codex: unchanged from R2 Seattle candidate; $49,400/$600. Both original v1s, actual Grok questions and substantive author exchange completed. Exact-version joint endorsement not claimed. Sunday inactives unverified at freeze; later news cannot change scored nine.",
       "counterargument": "Seattle's three front absences and depleted offense can defeat the favorable opponent environment. Fannin's groin issue and Sanders deployment leave receiving opportunity uncertain. QB/RB/receiver roles can fail despite active status.",
       "revisions": [],
-      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/40cb4dadf06aa7c590ff600a23a5111b0f28be7f/docs/weekly-dfs/codex/2026/week-09/freeze/20261108T161644Z.md"
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/40cb4dadf06aa7c590ff600a23a5111b0f28be7f/docs/weekly-dfs/codex/2026/week-09/freeze/20261108T161644Z.md",
+      "scored_at": "2026-11-09T11:30:11.663Z",
+      "scoring_status": "provisional",
+      "scoring_method": "Reconstructed exact DraftKings NFL Classic rules; not settled platform totals.",
+      "scoring_sources": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0709d595c3908b6e078726a6526ac06ad88a99e5/docs/weekly-dfs/codex/2026/week-09/reviews/20261109T113011Z.json",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873045",
+        "https://www.espn.com/nfl/game/_/gameId/401873045",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873043",
+        "https://www.espn.com/nfl/game/_/gameId/401873043",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873041",
+        "https://www.espn.com/nfl/game/_/gameId/401873041",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873042",
+        "https://www.espn.com/nfl/game/_/gameId/401873042",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873039",
+        "https://www.espn.com/nfl/game/_/gameId/401873039",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873040",
+        "https://www.espn.com/nfl/game/_/gameId/401873040",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873048",
+        "https://www.espn.com/nfl/game/_/gameId/401873048",
+        "https://www.espn.com/nfl/playbyplay/_/gameId/401873048"
+      ],
+      "review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0709d595c3908b6e078726a6526ac06ad88a99e5/docs/weekly-dfs/codex/2026/week-09/reviews/20261109T113011Z.json"
+    },
+    {
+      "id": "2026-w10-2026-11-09-daily",
+      "date": "2026-11-09",
+      "recorded_at": "2026-11-09T11:31:52.834Z",
+      "time_precision": "exact",
+      "order": 1,
+      "label": "Week10 partial — prices unverified",
+      "kind": "daily",
+      "status": "partial",
+      "season": 2026,
+      "week": 10,
+      "slate_date": "2026-11-15",
+      "slate_label": "Expected NFL Sunday afternoon main, November15 — official pool unverified",
+      "platform": "DraftKings",
+      "salary_cap": 50000,
+      "salary_total": 0,
+      "salary_remaining": 50000,
+      "projected_total": null,
+      "actual_total": null,
+      "frozen": false,
+      "official_pool_verified": false,
+      "projection": null,
+      "picks": [],
+      "summary": "Unpriced board: Cooper, Boston, Concepcion and Kyren/Corum role questions. No eligible pricednine; all$50,000unallocated. November15primaryKCkickoffconfirmed, expectedtenafternoongamesnotofficialpool. Codexv1blocked; no providerdispatch.",
+      "counterargument": "One-game conversion andtouchdown outcomes canmisleadrole selection; Week10QB/availability/routes andprices areunknown. ExpectedNFLgamesarenotDKpoolmembership.",
+      "revisions": [],
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0709d595c3908b6e078726a6526ac06ad88a99e5/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-09.md"
     }
   ],
-  "archive_commit": "a47ccdbaa2fc676dba158416dbcde505bf7f1167",
+  "archive_commit": "34862d0c2fa7fa931b6210ac3fe666010b6805d4",
   "journal": [
     {
       "kind": "later_annotation",
@@ -15700,6 +15924,669 @@
         "endorsement": "Claude states would endorse the exact funded Seattle proposal; does not endorse SF or any newly recorded Codex version. Codex accepts proposal; do not label jointly endorsed."
       },
       "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a47ccdbaa2fc676dba158416dbcde505bf7f1167/docs/weekly-dfs/codex/journal/20261108T161716Z.md"
+    },
+    {
+      "id": "2026-w09-outcomes-20261109T113318Z",
+      "snapshot_ids": [
+        "2026-w09-2026-11-02-daily",
+        "2026-w09-2026-11-03-daily",
+        "2026-w09-r1-claude-v1",
+        "2026-w09-2026-11-04-daily",
+        "2026-w09-2026-11-05-daily",
+        "2026-w09-2026-11-06-daily",
+        "2026-w09-2026-11-07-daily",
+        "2026-w09-2026-11-08-daily",
+        "2026-w09-r2-integration-20261108T120331Z",
+        "2026-w09-20261108T161644Z-freeze"
+      ],
+      "kind": "outcome_review",
+      "recorded_at": "2026-11-09T11:33:18.467Z",
+      "recorded_at_toronto": "2026-11-09T06:33:18.467-05:00",
+      "research_at": "2026-11-09T11:30:11.663Z",
+      "origin": "agent_chosen",
+      "origin_note": "Postgame review of actual shared-agent trajectory; no operator selection input added. Original author decisions/clocks retained.",
+      "title": "Week9 final89.08; role evidence differs from scoring",
+      "question": "Which archived changes and prospective roles survived, separately from points?",
+      "why_it_matters": "First same-slate comparison scores every archived complete lineup and bothactualoriginals; retains misses and unassessable mechanisms.",
+      "findings": [
+        "All11 included gamesfinal; final/firstCodex89.08, Claudeoriginal148.60, SFdrafts96.08, partialboardunassessable.",
+        "DSTSEA10/SF17/PHI9 reconstructed fromexactevents/PA; Saturdaychange+7, Sundayreversal-7.",
+        "Coleman17carries/4targets, Dobbins4/1; Mitchell7targets/0catches; Fannin2targets/42yards/TD.",
+        "Bosa appears inSFbox, butSF0sacks and17DSTfromturnovers/TD/PA; pressures/snaploadunassessable."
+      ],
+      "interpretation": [
+        "Coleman'stwo-phaserole supported. Mitchell receiving involvement supported despite0points.",
+        "Fannin rolevolume contradicted despiteTD-assisted12.2; groin/blockingcausesunassessable.",
+        "LoweropponentscoringdirectionwasrightforSeattle butdidnotensurehigherDSTscore; do not inferuniversalskillfromonegame.",
+        "OriginalMitchellalongsideWilson conditionchangedbeforefreeze; laterwithoutWilsonclaim separatelyassessed."
+      ],
+      "alternatives": [],
+      "uncertainty": [
+        "No verified settledDKtotals; scoresprovisional.",
+        "Routes,blocking,coverage andpressuredata unassessable.",
+        "Scoringpageincludes nullified/reversedplays; handledagainstfinalbox.",
+        "No hindsightoptimum,ROI,contestpercentile oragentskillclaim.",
+        "No continuousintradaymonitoring; no lateinactive reconstruction orpostfreezepickchanges."
+      ],
+      "lineup_effect": {
+        "action": "outcome_review",
+        "selection_changes": 0,
+        "final_points": 89.08,
+        "first_complete_points": 89.08,
+        "claude_original_points": 148.6,
+        "sf_draft_points": 96.08,
+        "scoring_status": "provisional"
+      },
+      "change_triggers": [
+        "Verified materialstat/DKcorrection appendsnewreviewwithpredecessor; nevereditpregamenotebook."
+      ],
+      "carry_forward": [
+        "Do not equatetargetswithcatches/points orTDswithbroadrole.",
+        "CompareColemanroleagainonlyifeligibleinnewslate; no wholesalepriorlineupcarryforward.",
+        "InvestigateBoston/Concepcion/Cooper routes/status andwhole-lineupsalaries onceWeek10poolpublished.",
+        "Keep bothdefenseinterpretations, originalv1s andallactualauthorcontributions; scoresdonotprovejointreasoningimprovement."
+      ],
+      "sources": [
+        {
+          "id": "week9",
+          "label": "week9",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+          "retrieved_at": "2026-11-09T11:26:20.919Z",
+          "retrieved_at_toronto": "2026-11-09T06:26:20.919-05:00",
+          "publication_at": null,
+          "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+          "scope": "All11 includedNovember8 main gamesfinal; MondayBUF–MINnotincluded."
+        },
+        {
+          "id": "rules",
+          "label": "rules",
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-09T11:26:21.513Z",
+          "retrieved_at_toronto": "2026-11-09T06:26:21.513-05:00",
+          "publication_at": null,
+          "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+          "scope": "Current exactNFLClassic scoring, bonuses, lostfumble-1 andDSTPA attribution/events."
+        },
+        {
+          "id": "box401873039",
+          "label": "box401873039",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873039",
+          "retrieved_at": "2026-11-09T11:26:36.738Z",
+          "retrieved_at_toronto": "2026-11-09T06:26:36.738-05:00",
+          "publication_at": null,
+          "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+          "scope": "Selected player stats/teammate opportunity, grossQB yards, turnovers, defensive andreturnstats."
+        },
+        {
+          "id": "game401873039",
+          "label": "game401873039",
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873039",
+          "retrieved_at": "2026-11-09T11:27:08.743Z",
+          "retrieved_at_toronto": "2026-11-09T06:27:08.743-05:00",
+          "publication_at": null,
+          "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+          "scope": "Scoring summaries checked forTDs,two-point conversions andnon-offensive scores."
+        },
+        {
+          "id": "box401873040",
+          "label": "box401873040",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873040",
+          "retrieved_at": "2026-11-09T11:26:37.183Z",
+          "retrieved_at_toronto": "2026-11-09T06:26:37.183-05:00",
+          "publication_at": null,
+          "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+          "scope": "Selected player stats/teammate opportunity, grossQB yards, turnovers, defensive andreturnstats."
+        },
+        {
+          "id": "game401873040",
+          "label": "game401873040",
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873040",
+          "retrieved_at": "2026-11-09T11:27:09.482Z",
+          "retrieved_at_toronto": "2026-11-09T06:27:09.482-05:00",
+          "publication_at": null,
+          "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+          "scope": "Scoring summaries checked forTDs,two-point conversions andnon-offensive scores."
+        },
+        {
+          "id": "box401873041",
+          "label": "box401873041",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873041",
+          "retrieved_at": "2026-11-09T11:26:37.738Z",
+          "retrieved_at_toronto": "2026-11-09T06:26:37.738-05:00",
+          "publication_at": null,
+          "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+          "scope": "Selected player stats/teammate opportunity, grossQB yards, turnovers, defensive andreturnstats."
+        },
+        {
+          "id": "game401873041",
+          "label": "game401873041",
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873041",
+          "retrieved_at": "2026-11-09T11:27:09.873Z",
+          "retrieved_at_toronto": "2026-11-09T06:27:09.873-05:00",
+          "publication_at": null,
+          "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+          "scope": "Scoring summaries checked forTDs,two-point conversions andnon-offensive scores."
+        },
+        {
+          "id": "box401873042",
+          "label": "box401873042",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873042",
+          "retrieved_at": "2026-11-09T11:26:36.861Z",
+          "retrieved_at_toronto": "2026-11-09T06:26:36.861-05:00",
+          "publication_at": null,
+          "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+          "scope": "Selected player stats/teammate opportunity, grossQB yards, turnovers, defensive andreturnstats."
+        },
+        {
+          "id": "game401873042",
+          "label": "game401873042",
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873042",
+          "retrieved_at": "2026-11-09T11:27:09.840Z",
+          "retrieved_at_toronto": "2026-11-09T06:27:09.840-05:00",
+          "publication_at": null,
+          "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+          "scope": "Scoring summaries checked forTDs,two-point conversions andnon-offensive scores."
+        },
+        {
+          "id": "box401873043",
+          "label": "box401873043",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873043",
+          "retrieved_at": "2026-11-09T11:26:37.317Z",
+          "retrieved_at_toronto": "2026-11-09T06:26:37.317-05:00",
+          "publication_at": null,
+          "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+          "scope": "Selected player stats/teammate opportunity, grossQB yards, turnovers, defensive andreturnstats."
+        },
+        {
+          "id": "game401873043",
+          "label": "game401873043",
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873043",
+          "retrieved_at": "2026-11-09T11:27:09.625Z",
+          "retrieved_at_toronto": "2026-11-09T06:27:09.625-05:00",
+          "publication_at": null,
+          "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+          "scope": "Scoring summaries checked forTDs,two-point conversions andnon-offensive scores."
+        },
+        {
+          "id": "box401873044",
+          "label": "box401873044",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873044",
+          "retrieved_at": "2026-11-09T11:26:37.386Z",
+          "retrieved_at_toronto": "2026-11-09T06:26:37.386-05:00",
+          "publication_at": null,
+          "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+          "scope": "Selected player stats/teammate opportunity, grossQB yards, turnovers, defensive andreturnstats."
+        },
+        {
+          "id": "game401873044",
+          "label": "game401873044",
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873044",
+          "retrieved_at": "2026-11-09T11:27:09.647Z",
+          "retrieved_at_toronto": "2026-11-09T06:27:09.647-05:00",
+          "publication_at": null,
+          "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+          "scope": "Scoring summaries checked forTDs,two-point conversions andnon-offensive scores."
+        },
+        {
+          "id": "box401873045",
+          "label": "box401873045",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873045",
+          "retrieved_at": "2026-11-09T11:26:37.449Z",
+          "retrieved_at_toronto": "2026-11-09T06:26:37.449-05:00",
+          "publication_at": null,
+          "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+          "scope": "Selected player stats/teammate opportunity, grossQB yards, turnovers, defensive andreturnstats."
+        },
+        {
+          "id": "game401873045",
+          "label": "game401873045",
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873045",
+          "retrieved_at": "2026-11-09T11:27:09.828Z",
+          "retrieved_at_toronto": "2026-11-09T06:27:09.828-05:00",
+          "publication_at": null,
+          "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+          "scope": "Scoring summaries checked forTDs,two-point conversions andnon-offensive scores."
+        },
+        {
+          "id": "box401873047",
+          "label": "box401873047",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873047",
+          "retrieved_at": "2026-11-09T11:26:37.450Z",
+          "retrieved_at_toronto": "2026-11-09T06:26:37.450-05:00",
+          "publication_at": null,
+          "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+          "scope": "Selected player stats/teammate opportunity, grossQB yards, turnovers, defensive andreturnstats."
+        },
+        {
+          "id": "game401873047",
+          "label": "game401873047",
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873047",
+          "retrieved_at": "2026-11-09T11:27:09.850Z",
+          "retrieved_at_toronto": "2026-11-09T06:27:09.850-05:00",
+          "publication_at": null,
+          "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+          "scope": "Scoring summaries checked forTDs,two-point conversions andnon-offensive scores."
+        },
+        {
+          "id": "box401873048",
+          "label": "box401873048",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873048",
+          "retrieved_at": "2026-11-09T11:26:37.279Z",
+          "retrieved_at_toronto": "2026-11-09T06:26:37.279-05:00",
+          "publication_at": null,
+          "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+          "scope": "Selected player stats/teammate opportunity, grossQB yards, turnovers, defensive andreturnstats."
+        },
+        {
+          "id": "game401873048",
+          "label": "game401873048",
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873048",
+          "retrieved_at": "2026-11-09T11:27:09.791Z",
+          "retrieved_at_toronto": "2026-11-09T06:27:09.791-05:00",
+          "publication_at": null,
+          "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+          "scope": "Scoring summaries checked forTDs,two-point conversions andnon-offensive scores."
+        },
+        {
+          "id": "box401873049",
+          "label": "box401873049",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873049",
+          "retrieved_at": "2026-11-09T11:26:36.940Z",
+          "retrieved_at_toronto": "2026-11-09T06:26:36.940-05:00",
+          "publication_at": null,
+          "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+          "scope": "Selected player stats/teammate opportunity, grossQB yards, turnovers, defensive andreturnstats."
+        },
+        {
+          "id": "game401873049",
+          "label": "game401873049",
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873049",
+          "retrieved_at": "2026-11-09T11:27:10.020Z",
+          "retrieved_at_toronto": "2026-11-09T06:27:10.020-05:00",
+          "publication_at": null,
+          "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+          "scope": "Scoring summaries checked forTDs,two-point conversions andnon-offensive scores."
+        },
+        {
+          "id": "pbp401873044",
+          "label": "pbp401873044",
+          "url": "https://www.espn.com/nfl/playbyplay/_/gameId/401873044",
+          "retrieved_at": "2026-11-09T11:27:33.812Z",
+          "retrieved_at_toronto": "2026-11-09T06:27:33.812-05:00",
+          "publication_at": null,
+          "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+          "scope": "Fullreturned play-by-play checked forblockedkicks/safeties, recoveries, nullifiedplays andPAattribution."
+        },
+        {
+          "id": "pbp401873047",
+          "label": "pbp401873047",
+          "url": "https://www.espn.com/nfl/playbyplay/_/gameId/401873047",
+          "retrieved_at": "2026-11-09T11:27:33.777Z",
+          "retrieved_at_toronto": "2026-11-09T06:27:33.777-05:00",
+          "publication_at": null,
+          "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+          "scope": "Fullreturned play-by-play checked forblockedkicks/safeties, recoveries, nullifiedplays andPAattribution."
+        },
+        {
+          "id": "pbp401873048",
+          "label": "pbp401873048",
+          "url": "https://www.espn.com/nfl/playbyplay/_/gameId/401873048",
+          "retrieved_at": "2026-11-09T11:27:33.453Z",
+          "retrieved_at_toronto": "2026-11-09T06:27:33.453-05:00",
+          "publication_at": null,
+          "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+          "scope": "Fullreturned play-by-play checked forblockedkicks/safeties, recoveries, nullifiedplays andPAattribution."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w09-2026-11-02-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-02.json"
+        },
+        {
+          "snapshot_id": "2026-w09-2026-11-03-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67033cfa6c3102dc3273bcf416b514c8f4940e2/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-03.json"
+        },
+        {
+          "snapshot_id": "2026-w09-r1-claude-v1",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/8df1a6e2c9549b9bb077630ecc8aa20a1add419a/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T122249Z-claude-v1.json"
+        },
+        {
+          "snapshot_id": "2026-w09-2026-11-04-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/039239239c42d76d504b072f3bd42da4bafa26fe/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-04.json"
+        },
+        {
+          "snapshot_id": "2026-w09-2026-11-05-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/e4c59ee71177613fb6133acd86056cc26fcae567/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-05.json"
+        },
+        {
+          "snapshot_id": "2026-w09-2026-11-06-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/64bdf9058f4ed540f75b3bb4cca9b11373301bb3/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-06.json"
+        },
+        {
+          "snapshot_id": "2026-w09-2026-11-07-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/81ba5900729c1c4390adb123784f59318a3ef0f1/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-07.json"
+        },
+        {
+          "snapshot_id": "2026-w09-2026-11-08-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/73294d84a8372ba6fb24944ab158b8795e9823f7/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-08.json"
+        },
+        {
+          "snapshot_id": "2026-w09-r2-integration-20261108T120331Z",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/63a2f21ef063b21a0b9551be61addd9045733a57/docs/weekly-dfs/codex/2026/week-09/daily/20261108T120331Z-r2-integration.json"
+        },
+        {
+          "snapshot_id": "2026-w09-20261108T161644Z-freeze",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/40cb4dadf06aa7c590ff600a23a5111b0f28be7f/docs/weekly-dfs/codex/2026/week-09/freeze/20261108T161644Z.json"
+        }
+      ],
+      "review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0709d595c3908b6e078726a6526ac06ad88a99e5/docs/weekly-dfs/codex/2026/week-09/reviews/20261109T113011Z.json",
+      "expectations": [],
+      "outcomes": [
+        {
+          "id": "2026-w09-coleman-outcome",
+          "expectation_id": "2026-w09-1103-coleman-role",
+          "expectation": "Continued rushing and receiving involvement conditional on competition.",
+          "opportunity_assessment": "supported:17 carries/4 targets/4 catches versusDobbins4 carries/1 target.",
+          "conditions_assessment": "Played; complete active list/Harvey role not separately verified.",
+          "score_explanation": "18.8 includes57rushyards,31recYds,4catches andoneTD. Non-TD involvement independently present.",
+          "cutoff_judgment": "Prior two-phase evidence supported a provisional role choice; one result does not establish persistence.",
+          "status": "provisional",
+          "source_urls": [
+            "https://www.espn.com/nfl/boxscore/_/gameId/401873041"
+          ]
+        },
+        {
+          "id": "2026-w09-mitchell-original-outcome",
+          "expectation_id": "2026-w09-1103-mitchell-role",
+          "expectation": "Meaningful involvement alongside Wilson.",
+          "opportunity_assessment": "Original alongsideWilson condition changed; evaluate later withoutWilson expectation separately.",
+          "conditions_assessment": "contradicted/changed supporting condition:WilsonruledOUTbeforefreeze; original retained, notrewritten.",
+          "score_explanation": "0 points despite7targets; no catch.",
+          "cutoff_judgment": "unassessable as an unchanged alongsideWilson claim. Updated condition was prospectively recorded.",
+          "status": "provisional",
+          "source_urls": [
+            "https://www.espn.com/nfl/boxscore/_/gameId/401873045",
+            "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/67959950c799276189d87636feb6c7ef670c01f8/docs/weekly-dfs/codex/2026/week-09/freeze/20261108T161540Z-inputs.json"
+          ]
+        },
+        {
+          "id": "2026-w09-mitchell-new-outcome",
+          "expectation_id": "2026-w09-1107-mitchell-without-wilson",
+          "expectation": "Meaningful receiving involvement withoutWilson, notallvacatedtargets orrepeat142yds.",
+          "opportunity_assessment": "supported in target involvement:7targets on32teamattempts, secondtoCooper11. Contradicted any unstated conversion/points floor:0catches.",
+          "conditions_assessment": "PregameWilsonOUTcondition recorded; actual routes/coverage not obtained.",
+          "score_explanation": "Zero catches/yards/TD; 0DK despiteopportunity.",
+          "cutoff_judgment": "Role premise hadsupport; opportunityalone didnotproducepoints. Completionquality, targetdifficulty andcoverage remainunassessable.",
+          "status": "provisional",
+          "source_urls": [
+            "https://www.espn.com/nfl/boxscore/_/gameId/401873045"
+          ]
+        },
+        {
+          "id": "2026-w09-fannin-outcome",
+          "expectation_id": "2026-w09-1103-fannin-role",
+          "expectation": "Retain meaningful receiving role ifactive.",
+          "opportunity_assessment": "contradicted on observed target volume:2targets outof31Sandersattempts, versusBoston7/Concepcion6/Jeudy4/Sampson6.",
+          "conditions_assessment": "Played withSanders; routes/blocking andactualgroineffect unavailable, so causalexplanationunassessable.",
+          "score_explanation": "12.2points from2/42/TD;39-yardOTTD accountsformostyards, failedtwo-pointattemptscores0. Points obscure rolemiss.",
+          "cutoff_judgment": "Prior12-targetweekwasreal butcompeting/earliervolatility/QBtransitionwereexplicitrisks. Hold scoredmorethanWarren8.4, whichdoesnotvalidate roleclaim.",
+          "status": "provisional",
+          "source_urls": [
+            "https://www.espn.com/nfl/boxscore/_/gameId/401873039",
+            "https://www.espn.com/nfl/game/_/gameId/401873039"
+          ]
+        },
+        {
+          "id": "2026-w09-bosa-outcome",
+          "expectation_id": "2026-w09-1107-sf-front-condition",
+          "expectation": "Return to participation, withoutnormalfullsnapassumption; historicalSFcomparison.",
+          "opportunity_assessment": "supported:listedwithone tackle inSFdefensivebox. Snapload/pressureunassessable.",
+          "conditions_assessment": "Participated; no evidencehere ofnormalfullworkload.",
+          "score_explanation": "SF17points from3INT/2FR/returnTD/17PA; zeroSFsacks. CannotattributeturnoverstoBosaorfrontreturn.",
+          "cutoff_judgment": "Fridayclearance supportedreturnexpectation; noquantifiedeffectwasestablished. SFremovedfromfinalbutretainedcomparison.",
+          "status": "provisional",
+          "source_urls": [
+            "https://www.espn.com/nfl/boxscore/_/gameId/401873047"
+          ]
+        },
+        {
+          "id": "2026-w09-dst-editor-outcome",
+          "expectation_id": null,
+          "expectation": "Editor matchup interpretation:Seattleloweropponentscoringenvironment; comparisonnotnewpregameexpectation.",
+          "opportunity_assessment": "Arizona3PAversusLV17supports directionofenvironment. SEA3sacks;SF0.",
+          "conditions_assessment": "O'Toole/Hall/Jonesall appearinSEAdefensivebox; fullsnapcountsunknown.",
+          "score_explanation": "SEA10 versusSF17:SEA+6PApoints,+3sackpoints, SF+6INT,+4FR,+6TD => netSEA-SF=-7. No blockedkicks/safeties/returnextras found ininspectedPBPs; nullifiedSEAINTexcluded.",
+          "cutoff_judgment": "Reversalhadstatedcounterarguments; realizedlossretained. BetteropponentenvironmentdidnotensurebetterDKscore. Oneweekcannotsettleagentreasoningorcollaborationskill.",
+          "status": "provisional",
+          "source_urls": [
+            "https://www.espn.com/nfl/boxscore/_/gameId/401873048",
+            "https://www.espn.com/nfl/boxscore/_/gameId/401873047",
+            "https://www.espn.com/nfl/playbyplay/_/gameId/401873048",
+            "https://www.espn.com/nfl/playbyplay/_/gameId/401873047"
+          ]
+        }
+      ],
+      "expectation_packet": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/67959950c799276189d87636feb6c7ef670c01f8/docs/weekly-dfs/codex/2026/week-09/freeze/20261108T161540Z-inputs.json",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/34862d0c2fa7fa931b6210ac3fe666010b6805d4/docs/weekly-dfs/codex/journal/20261109T113318Z.md"
+    },
+    {
+      "id": "2026-w10-research-20261109T113318Z",
+      "snapshot_ids": [
+        "2026-w10-2026-11-09-daily"
+      ],
+      "kind": "scheduled_research",
+      "recorded_at": "2026-11-09T11:33:18.467Z",
+      "recorded_at_toronto": "2026-11-09T06:33:18.467-05:00",
+      "research_at": "2026-11-09T11:31:52.834Z",
+      "origin": "agent_chosen",
+      "origin_note": "Newslate research selected from observedrole contrasts andsource constraints, no newoperatorplayerguidance.",
+      "title": "Week10 begins with unpriced receiver and committee questions",
+      "question": "Which role observations merit new priced comparisons without carryingWeek9salaries forward?",
+      "why_it_matters": "OfficialWeek10main pool remainsunverified; partialresearch isuseful withoutfabricatingnine.",
+      "findings": [
+        "NFLWeek10schedule returned navigation/TBD prose but no game cards; cannotcertifyfullslate.",
+        "ESPNWeek10 mainbodylists tenSundayafternooncandidate games, earlyMunichNE–DET, ThursdayWAS–NYG, SNFPIT–CIN andMNF LAC–BAL. TopribbonstillWeek9 is nottargetbody.",
+        "Primaryteam2026 schedule confirmsWeek10Sunday11/15atAtlanta12:00CST=13:00Toronto.",
+        "PrimaryNFLWeek10KC@ATLgamepage confirmsNovember15,13:00; no DKmembershipcertification.",
+        "PublicDKlobbyreadredirectedaccountwall; no officialWeek10pool/exportobserved. No login/entry attempted.",
+        "LiveFantasyPros pricetable stillWeek9matchups/salaries; rejectedforWeek10.",
+        "FTFpublic slate list onlyremainingWeek9Showdown/Primetime/SunMon/ThuMon; noWeek10main selected. No builderexecution.",
+        "CurrentDKClassic50k/nineslots/minimum2games andexactscoring read.",
+        "CompletedWeek9candidate role evidence, not aWeek10projection.",
+        "CompletedWeek9candidate role evidence, not aWeek10projection.",
+        "CompletedWeek9candidate role evidence, not aWeek10projection."
+      ],
+      "interpretation": [
+        "Omar Cooper Jr.: Investigate route deployment andWilsonavailability before preferringCooper; catchconversion alone doesnotprove permanentrolechange.",
+        "Denzel Boston: Candidate beyondcurrentnine, comparewithConcepcion andFannin underactualnextstarter. No pointsforecast.",
+        "KC Concepcion Jr.: Investigate roleafter priorvolatility; touchdown andyardsefficiencyalone do not establish a floor.",
+        "Kyren Williams: Retain committee as challenge; Kyrenreceivingopportunityimprovedbutrushingleadnotworkhorse."
+      ],
+      "alternatives": [
+        {
+          "player": "Omar Cooper Jr.",
+          "team": "NYJ",
+          "position": "WR",
+          "salary": null,
+          "expected_game": "BUF@NYJ",
+          "observation": "Week9 11targets/8catches/58yards versusMitchell7targets/0catches; both receivedopportunities.",
+          "judgment": "Investigate route deployment andWilsonavailability before preferringCooper; catchconversion alone doesnotprove permanentrolechange.",
+          "trigger": "Week10price/officialeligibility, Wilsonreport androuteusage."
+        },
+        {
+          "player": "Denzel Boston",
+          "team": "CLE",
+          "position": "WR",
+          "salary": null,
+          "expected_game": "HOU@CLE",
+          "observation": "Week9 7targets/6catches/98yards withSanders; targetvolume ahead ofFannin2.",
+          "judgment": "Candidate beyondcurrentnine, comparewithConcepcion andFannin underactualnextstarter. No pointsforecast.",
+          "trigger": "Week10 QBconfirmation, practice/role andofficialsalary."
+        },
+        {
+          "player": "KC Concepcion Jr.",
+          "team": "CLE",
+          "position": "WR",
+          "salary": null,
+          "expected_game": "HOU@CLE",
+          "observation": "Week9 6targets/4catches/85yards/TD plus1carry3yards.",
+          "judgment": "Investigate roleafter priorvolatility; touchdown andyardsefficiencyalone do not establish a floor.",
+          "trigger": "CompareBoston/Concepcion/Fannin routes/targets andprice tradeoff."
+        },
+        {
+          "player": "Kyren Williams",
+          "team": "LAR",
+          "position": "RB",
+          "salary": null,
+          "expected_game": "LAR@ARI",
+          "observation": "Week9 15carries/4targets versusCorum11carries/2targets; CorumscoredrushingTD.",
+          "judgment": "Retain committee as challenge; Kyrenreceivingopportunityimprovedbutrushingleadnotworkhorse.",
+          "trigger": "Week10roles/status/prices, whole-lineupcost comparison."
+        }
+      ],
+      "uncertainty": [
+        "OfficialWeek10mainpool/exportandselectedprices/positionsunknown.",
+        "NFLleagueWeek10schedulepagecardsmissing;primaryKCfixtureplusESPNbody supportexpectedcoverageonly.",
+        "CurrentQB,Wilsonavailability,receiverrouteusage andRBsplitneednewweekverification.",
+        "No coherentWeek10projection snapshot."
+      ],
+      "lineup_effect": {
+        "action": "partial_board",
+        "salary_total": 0,
+        "salary_remaining": 50000,
+        "complete_lineup": false,
+        "priced_picks": 0,
+        "classification": "constraint_or_source_correction"
+      },
+      "change_triggers": [
+        "Published attributableWeek10prices/officialpoolunlock completecandidate; never reuseWeek9prices.",
+        "Freshrole/statussources maychangeunpricedboard; no forceddailychurn."
+      ],
+      "carry_forward": [
+        "ObtainofficialWeek10export orattributableeligibleprices before completeCodexv1.",
+        "Preserve firstcompleteCodexv1 before currentweekotherauthorpicks wherefeasible; existingpartialboarddoesnotunlockClaude/Grokstages.",
+        "VerifyWeek10gamepool membership; expectedtenNFLafternoongames are notofficialDKslate.",
+        "TestonegameBoston/Concepcion/Cooperrolesagainstfutureavailability/routes; do notinferpermanentreplacementfromconversion."
+      ],
+      "sources": [
+        {
+          "id": "week10",
+          "label": "week10",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+          "retrieved_at": "2026-11-09T11:26:21.853Z",
+          "retrieved_at_toronto": "2026-11-09T06:26:21.853-05:00",
+          "publication_at": null,
+          "scope": "NFLWeek10schedule returned navigation/TBD prose but no game cards; cannotcertifyfullslate."
+        },
+        {
+          "id": "upcoming",
+          "label": "upcoming",
+          "url": "https://www.espn.com/nfl/scoreboard/_/week/10/year/2026/seasontype/2",
+          "retrieved_at": "2026-11-09T11:27:09.926Z",
+          "retrieved_at_toronto": "2026-11-09T06:27:09.926-05:00",
+          "publication_at": null,
+          "scope": "ESPNWeek10 mainbodylists tenSundayafternooncandidate games, earlyMunichNE–DET, ThursdayWAS–NYG, SNFPIT–CIN andMNF LAC–BAL. TopribbonstillWeek9 is nottargetbody."
+        },
+        {
+          "id": "chiefsschedule",
+          "label": "chiefsschedule",
+          "url": "https://www.chiefs.com/schedule/",
+          "retrieved_at": "2026-11-09T11:28:32.075Z",
+          "retrieved_at_toronto": "2026-11-09T06:28:32.075-05:00",
+          "publication_at": null,
+          "scope": "Primaryteam2026 schedule confirmsWeek10Sunday11/15atAtlanta12:00CST=13:00Toronto."
+        },
+        {
+          "id": "nfl10game",
+          "label": "nfl10game",
+          "url": "https://www.nfl.com/games/chiefs-at-falcons-2026-reg-10",
+          "retrieved_at": "2026-11-09T11:28:33.512Z",
+          "retrieved_at_toronto": "2026-11-09T06:28:33.512-05:00",
+          "publication_at": null,
+          "scope": "PrimaryNFLWeek10KC@ATLgamepage confirmsNovember15,13:00; no DKmembershipcertification."
+        },
+        {
+          "id": "poolcheck",
+          "label": "poolcheck",
+          "url": "https://www.draftkings.com/lobby#/NFL/0/All",
+          "retrieved_at": "2026-11-09T11:28:35.126Z",
+          "retrieved_at_toronto": "2026-11-09T06:28:35.126-05:00",
+          "publication_at": null,
+          "scope": "PublicDKlobbyreadredirectedaccountwall; no officialWeek10pool/exportobserved. No login/entry attempted."
+        },
+        {
+          "id": "prices",
+          "label": "prices",
+          "url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "retrieved_at": "2026-11-09T11:26:20.876Z",
+          "retrieved_at_toronto": "2026-11-09T06:26:20.876-05:00",
+          "publication_at": null,
+          "scope": "LiveFantasyPros pricetable stillWeek9matchups/salaries; rejectedforWeek10."
+        },
+        {
+          "id": "model",
+          "label": "model",
+          "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php",
+          "retrieved_at": "2026-11-09T11:26:20.856Z",
+          "retrieved_at_toronto": "2026-11-09T06:26:20.856-05:00",
+          "publication_at": null,
+          "scope": "FTFpublic slate list onlyremainingWeek9Showdown/Primetime/SunMon/ThuMon; noWeek10main selected. No builderexecution."
+        },
+        {
+          "id": "rules",
+          "label": "rules",
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-09T11:26:21.513Z",
+          "retrieved_at_toronto": "2026-11-09T06:26:21.513-05:00",
+          "publication_at": null,
+          "scope": "CurrentDKClassic50k/nineslots/minimum2games andexactscoring read."
+        },
+        {
+          "id": "box401873039",
+          "label": "Week9 observed usage",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873039",
+          "retrieved_at": "2026-11-09T11:26:36.738Z",
+          "publication_at": null,
+          "scope": "CompletedWeek9candidate role evidence, not aWeek10projection."
+        },
+        {
+          "id": "box401873045",
+          "label": "Week9 observed usage",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873045",
+          "retrieved_at": "2026-11-09T11:26:37.449Z",
+          "publication_at": null,
+          "scope": "CompletedWeek9candidate role evidence, not aWeek10projection."
+        },
+        {
+          "id": "box401873043",
+          "label": "Week9 observed usage",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873043",
+          "retrieved_at": "2026-11-09T11:26:37.317Z",
+          "publication_at": null,
+          "scope": "CompletedWeek9candidate role evidence, not aWeek10projection."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w10-2026-11-09-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0709d595c3908b6e078726a6526ac06ad88a99e5/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-09.json"
+        }
+      ],
+      "expectations": [],
+      "outcomes": [],
+      "collaboration": {
+        "cycle": "2026-w10-2026-11-15",
+        "round": 1,
+        "codex_v1_ready": "blocked:partial; no completev1",
+        "claude_v1_ready": "notreceived",
+        "grok_questions_ready": "notreceived",
+        "collaboration_ready": "blocked",
+        "final_frozen": "notfinal",
+        "next_handoff": "Codex completes supportedv1 first, then versionedcommon-inputClaudehandoff. No author dispatched ororiginal restarted.",
+        "exposure": "No currentWeek10other-authorpicks inspected; no blindcomplete-v1claimfromthispartialboard."
+      },
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/34862d0c2fa7fa931b6210ac3fe666010b6805d4/docs/weekly-dfs/codex/journal/20261109T113318Z.md"
     }
   ],
   "arena": {
