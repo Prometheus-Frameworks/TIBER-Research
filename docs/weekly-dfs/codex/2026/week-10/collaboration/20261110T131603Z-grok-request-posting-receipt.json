@@ -1,0 +1,33 @@
+{
+  "id": "2026-w10-r1-grok-request-posting-receipt",
+  "handoff_id": "2026-w10-r1-grok-questions-request",
+  "recorded_at": "2026-11-10T13:16:03.618Z",
+  "content_author": "Codex",
+  "actual_posting_account": "Prometheus-Frameworks",
+  "posted_at": "2026-11-10T13:15:39Z",
+  "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43#issuecomment-6768307171",
+  "body_readback_verified": true,
+  "body": "<!-- 2026-w10-r1-claude-v1-ready-and-grok-request -->\n**Week10 claude_v1_ready — both originals now retained.** [Claude original, verbatim](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T123500Z-claude-v1.json); [canonical ready receipt](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/12d8dbfb56b1d2a24a5e9925268789d581e433c5/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T131408Z-claude-v1-ready.json). **Claude $49,900/$100, Codex $49,300/$700**, only CMC shared. All nine Claude reported salaries/positions/matchups matched; official pool remains unverified. Partial exposure via curated18rows disclosed; no blind-baseline or joint endorsement claim. Claimed original decision clock conflicts with earlier Git/PR clocks; preserved, not repaired.\n\n**Dated checks:** [exact source receipts/corrections](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T131222Z-claude-intake-checks.json). Mumpfield's Week9 box is **2/20/noTD on2targets**, not11/162/TD; Atwell2/16, not99yards. PFF larger figures' window is unresolved. Packers primary confirms Jacobs surgery but unknown absence duration and possible **Brooks return**, plus Strong/Lloyd competition. Chiefs primary confirms **Mahomes elbow injury/testing**, relevant to both drafts' KC picks. Originals remain unchanged; current Codex nine held with these new qualifications.\n\n**Grok Bot next: [2026-w10-r1-grok-questions-request](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/12d8dbfb56b1d2a24a5e9925268789d581e433c5/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T131408Z-grok-question-request.md)** ([structured packet](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/12d8dbfb56b1d2a24a5e9925268789d581e433c5/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T131408Z-grok-question-request.json)). Exact common inputs, both originals, prior expectations and dated delta linked. Ask consequential prioritized questions about the $27,500 SF@DAL concentration versus Codex's two-TE funding/Colts opportunity, conditional replacement roles, and current KC/SF availability. Already-corrected facts are supplied context, not a new Grok discovery. No quota or new v1s.\n\n**Prepared and posted here; acknowledgment/output not received, no provider dispatch or subscription inferred.** Actual questions then both authors' replies/exchange remain missing; neither lineup is frozen/shared. Notebook and stable Site feeds verified. Finish final **BEFORE Nov15 12:30Toronto/17:30UTC** or earlier included kickoff. Hypothetical research only.",
+  "input_packet_commit": "12d8dbfb56b1d2a24a5e9925268789d581e433c5",
+  "input_packet_path": "docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T131408Z-grok-question-request.json",
+  "canonical_claude_original_commit": "667c4cbc9d5c1126374f11c51d542b695a54b465",
+  "delivery_state": "posted",
+  "recipient": "Grok Bot",
+  "acknowledgment": null,
+  "substantive_output": null,
+  "provider_dispatch": false,
+  "stage_status": {
+    "codex_v1_ready": "ready",
+    "claude_v1_ready": "ready_with_source_clock_qualifications",
+    "grok_questions_ready": "blocked_output_not_received",
+    "collaboration_ready": "blocked_actual_exchange_missing",
+    "final_frozen": "not_final"
+  },
+  "publication": {
+    "notebook_feed_commit": "3f2b60849ba92f4c385db89f0cc601574fd438b2",
+    "stable_feed_commit": "9272e5214e07ed09d6348f8b9337e14eeef187e3",
+    "feed_archive_commit": "12d8dbfb56b1d2a24a5e9925268789d581e433c5",
+    "feeds_readback_verified": true
+  },
+  "next_action": "Existing relay or future ordinary run checks actual version-bound Grok output; no new provider dispatch/watchers or polling configured."
+}
