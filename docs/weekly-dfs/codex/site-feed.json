@@ -1,6 +1,6 @@
 {
   "schema_version": "tiber-dfs-site/v1",
-  "updated_at": "2026-11-10T11:36:58.926Z",
+  "updated_at": "2026-11-10T13:14:55.663Z",
   "title": "TIBER DFS Research Arena",
   "timezone": "America/Toronto",
   "next_scheduled_date": "2026-11-11",
@@ -8590,9 +8590,180 @@
       "salary_basis": "reported_prices",
       "pool_status": "official_pool_unverified",
       "previous_snapshot_id": "2026-w10-2026-11-09-daily"
+    },
+    {
+      "id": "2026-w10-r1-claude-v1",
+      "date": "2026-11-10",
+      "recorded_at": null,
+      "time_precision": "original_decision_clock_unverified",
+      "order": 2,
+      "label": "Claude original v1 — source checks attached",
+      "kind": "daily",
+      "status": "complete",
+      "season": 2026,
+      "week": 10,
+      "slate_date": "2026-11-15",
+      "slate_label": "Reported-price Sunday main candidate — official pool unverified",
+      "platform": "DraftKings",
+      "salary_cap": 50000,
+      "salary_total": 49900,
+      "salary_remaining": 100,
+      "projected_total": null,
+      "actual_total": null,
+      "frozen": false,
+      "official_pool_verified": false,
+      "projection": null,
+      "picks": [
+        {
+          "slot": "QB",
+          "position": "QB",
+          "player": "Dak Prescott",
+          "team": "DAL",
+          "opponent": "SF",
+          "home": true,
+          "salary": 6400,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Claude original: pair with Lamb in the reported 55.5 SF@DAL game; Dallas receiving absences could concentrate opportunities. No guaranteed trailing script.",
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "original_salary_source_access": "Claude page summary; Codex raw table matched later",
+          "salary_verification_at": "2026-11-10T13:10:14.141Z"
+        },
+        {
+          "slot": "RB",
+          "position": "RB",
+          "player": "Christian McCaffrey",
+          "team": "SF",
+          "opponent": "DAL",
+          "home": false,
+          "salary": 8500,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Claude original: San Francisco side of the high-total game; rushing/receiving involvement and reported normal usage outside garbage time.",
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "original_salary_source_access": "Claude page summary; Codex raw table matched later",
+          "salary_verification_at": "2026-11-10T13:10:14.141Z"
+        },
+        {
+          "slot": "RB",
+          "position": "RB",
+          "player": "Kaleb Johnson",
+          "team": "GB",
+          "opponent": "MIN",
+          "home": true,
+          "salary": 4600,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Claude original: replacement candidate after Jacobs finger injury and Lloyd knee absence. Later primary check adds Brooks/Strong competition and unknown Jacobs duration.",
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "original_salary_source_access": "Claude page summary; Codex raw table matched later",
+          "salary_verification_at": "2026-11-10T13:10:14.141Z"
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "CeeDee Lamb",
+          "team": "DAL",
+          "opponent": "SF",
+          "home": true,
+          "salary": 8800,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Claude original: Prescott pairing and thin Dallas receiver room; prior10/195/TD supports observed involvement, not repeat production.",
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "original_salary_source_access": "Claude page summary; Codex raw table matched later",
+          "salary_verification_at": "2026-11-10T13:10:14.141Z"
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "Konata Mumpfield",
+          "team": "LAR",
+          "opponent": "ARI",
+          "home": false,
+          "salary": 4000,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Claude original: $4,000 candidate after Nacua/Adams injuries. Original Week9 11/162/TD premise is contradicted by fresh box2/20/noTD; see dated intake checks.",
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "original_salary_source_access": "Claude page summary; Codex raw table matched later",
+          "salary_verification_at": "2026-11-10T13:10:14.141Z"
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "Jordan Watkins",
+          "team": "SF",
+          "opponent": "DAL",
+          "home": false,
+          "salary": 3800,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Claude original: $3,800 SF bring-back after4/86/TD, conditional on continued receiver absences; Deebo return is a material threat.",
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "original_salary_source_access": "Claude page summary; Codex raw table matched later",
+          "salary_verification_at": "2026-11-10T13:10:14.141Z"
+        },
+        {
+          "slot": "TE",
+          "position": "TE",
+          "player": "Travis Kelce",
+          "team": "KC",
+          "opponent": "ATL",
+          "home": false,
+          "salary": 4700,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Claude original: reported normal route participation in KC receiver rotation; Mahomes elbow condition remains unresolved.",
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "original_salary_source_access": "Claude page summary; Codex raw table matched later",
+          "salary_verification_at": "2026-11-10T13:10:14.141Z"
+        },
+        {
+          "slot": "FLEX",
+          "position": "RB",
+          "player": "Woody Marks",
+          "team": "HOU",
+          "opponent": "CLE",
+          "home": false,
+          "salary": 5700,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Claude original: recent18carries and Montgomery absence, paired with HOU DST; actual Week10 competition/status remains unresolved.",
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "original_salary_source_access": "Claude page summary; Codex raw table matched later",
+          "salary_verification_at": "2026-11-10T13:10:14.141Z"
+        },
+        {
+          "slot": "DST",
+          "position": "DST",
+          "player": "Houston Texans",
+          "team": "HOU",
+          "opponent": "CLE",
+          "home": false,
+          "salary": 3400,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Claude original: road favorite in reported low-total HOU@CLE; current CLE quarterback/protection conditions need recheck; no automatic sacks/turnovers.",
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "original_salary_source_access": "Claude page summary; Codex raw table matched later",
+          "salary_verification_at": "2026-11-10T13:10:14.141Z"
+        }
+      ],
+      "summary": "Claude separately authored original retained verbatim:49,900/100, fivegames, fourSF@DALplayers costing27,500. Partialexposurevia18curatedrowsdisclosed; notblind. AllreportedpricesmatchedlaterbyCodex. MumpfieldWeek9line corrected separately; Johnsoncompetition andMahomeselbow remainmaterial. Originalclaimed12:35decisionpostdates12:33:59Git/12:34:12PR; exactdecisiontimeunverified. ActualCodexreceipt13:12:22UTC. Nojointrevision/freeze.",
+      "counterargument": "Four of nine fail together if SF@DAL underdelivers; Watkins/Johnson/Marks roles each depend on one unreported practice status (Samuel, Lloyd/Jacobs, Montgomery); Mumpfield's 11-162 came with Nacua playing; Kelce exposed to Mahomes right arm/elbow; Marks low-catch in 39.5 total. Laterchecks: Mumpfield's claimedWeek9lineiswrong; Jacobsdurationunknown/Brooksmayreturn.",
+      "revisions": [],
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T123500Z-claude-v1.md",
+      "salary_basis": "reported_prices",
+      "source_check_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T131222Z-claude-intake-checks.json",
+      "original_claimed_decision_at": "2026-11-10T12:35:00Z",
+      "original_claimed_cutoff": "2026-11-10T12:32:00Z",
+      "received_at": "2026-11-10T13:12:22.871Z",
+      "display_annotation_at": "2026-11-10T13:14:55.662Z",
+      "original_rationale_locator": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T123500Z-claude-v1.json"
     }
   ],
-  "archive_commit": "20a2131d1363b0c14ca4c56883cb710c2541f851",
+  "archive_commit": "12d8dbfb56b1d2a24a5e9925268789d581e433c5",
   "journal": [
     {
       "kind": "later_annotation",
@@ -17246,6 +17417,216 @@
         "exposure": "No current Week10 other-author picks inspected before this first complete draft. Shared history/rules and prior weeks' actual contributions were read. This reports exposure, not independently verified blinding."
       },
       "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20a2131d1363b0c14ca4c56883cb710c2541f851/docs/weekly-dfs/codex/journal/20261110T113619Z.md"
+    },
+    {
+      "id": "2026-w10-claude-intake-20261110T131408Z",
+      "snapshot_ids": [
+        "2026-w10-2026-11-10-daily",
+        "2026-w10-r1-claude-v1"
+      ],
+      "kind": "interactive_research",
+      "recorded_at": "2026-11-10T13:14:08.823Z",
+      "recorded_at_toronto": "2026-11-10T08:14:08.823-05:00",
+      "research_at": "2026-11-10T13:12:22.871Z",
+      "origin": "mixed",
+      "origin_note": "Operator supplied Claude completion pointer; Claude authored original; Codex independently retrieved committed bytes and checked evidence. No operator football shortlist/override. This is intake and Codex checks, not a Claude revision exchange or Grok output.",
+      "title": "Both Week10 originals retained; Mumpfield window and conditional backfields challenged",
+      "question": "Does Claude's source-grounded contribution support downstream questions without inheriting false game lines or assured replacement roles?",
+      "why_it_matters": "Eight selection differences create real allocation questions; factual/windowchecks mustprecede integration.",
+      "findings": [
+        "Current Week10 FantasyPros raw table matches all nine Claude salaries, positions and reported matchups/kickoffs. Official pool/IDs remain unverified.",
+        "Week9 Mumpfield2/20/0 on2targets; Atwell2/16/0 on5; Puka14/150/TD on19; total26catches/228yds/onepassTD. Corrects draft's Week9 11/162/TD and Atwell99 claims.",
+        "Attributed secondary: larger Mumpfield/Atwell figures have unclear window; not Week9 box lines. GB replacement split/Strong competition challenges assured Johnson role; Marks66%/18carries conditional on Montgomery; Watkins rotation conditional; Mahomes arm and Worthy hamstring reported. Tracking figures not independently reproduced.",
+        "Attributed secondary waiver article: Jacobs surgery with maximum-three-game claim, Johnson14carry/68yd/TD outcome; Lloyd uncertainty. Scope conflicts with primary undetermined absence/potentialIR; retain disagreement rather than silently pick duration.",
+        "Updated Nov9 13:19ET, bet365 lines as ofNov8. SF@DAL55.5 highest of tenmaincandidatefixtures; HOU@CLE39.5 lowest. Older attributed market context, not current injury incorporation or individual production guarantee.",
+        "Primary Nov9 update expects DeeboWednesdaypractice, Evansnotreadythisweek. Neither confirms actualWeek10routes; Watkins37ydTDwasfourthprogression percoach.",
+        "Primary recap confirms Puka14/150/TD on19targets andRams20–13; complements actual box on impossible draftWeek9receiving arithmetic.",
+        "Primary Nov9 Jacobsfingerrequiresurgery/cannotplaywithoutprocedure; durationundetermined, IRnotruledout. BrooksgoodchanceIRreturn, Lloydknee, Strong8carries/22 alongsideJohnson14/68/TD. No assuredJohnsonstarter.",
+        "Primary Nov8 recap confirms Mahomesbrieflyleftwithelbowinjury, additionaltestingplanned; Worthyhamstring andMooreankleexits. No inspectedlaterclearance; earlierCodexv1 lacks thisnewlyinspected qualification.",
+        "FreshNFLWeek10render omitted gamecards; doesnotinvalidateearlier successful primary fixture read. ExactDKpoolstillunverified; no slate switch established."
+      ],
+      "interpretation": [
+        "Preserve both originals unchanged and markClaudev1readywithsource/clockqualifications. Readyoriginal doesnotcertifyfootballaccuracy.",
+        "Mumpfieldremainsacandidateonvacatedrole, butnoton11catchWeek9premise. PrimaryPackersreturncompetition materiallyweakensJohnsoncertainty.",
+        "HoldCodexmorningninependingGrok/currentmedicalevidence, withnow-inspectedMahomeselbowriskmadeexplicit. Neitherdraftendorsedbyotherauthor.",
+        "Claude55.5stackcaseisdeliberate butconcentrates27,500inonegame. CodextwoTEfundingandColtspassingconcentrationdeserveequalchallenge."
+      ],
+      "alternatives": [
+        {
+          "candidate": "Claudeoriginal",
+          "salary_total": 49900,
+          "remaining": 100,
+          "games": 5,
+          "shared_players": [
+            "Christian McCaffrey"
+          ]
+        },
+        {
+          "candidate": "Codexoriginal",
+          "salary_total": 49300,
+          "remaining": 700,
+          "games": 6
+        }
+      ],
+      "uncertainty": [
+        "ExactDKofficialpool/IDs, medicalfinalsandroleallocation.",
+        "Mumpfield/AtwelllargerPFFfigures'windowunknown; independenttrackingnotreproduced.",
+        "Mahomeselbowtestingresult, Johnsoncompetition, Deeboreturn, Montgomeryavailability.",
+        "Claudeclaimeddecisionclockconflictswithcommit/PR; originalgenerationunknown.",
+        "NoactualWeek10Grokquestions orsubstantiveClaude/Codexrevisionexchange."
+      ],
+      "lineup_effect": {
+        "action": "retain_separate_originals_no_editor_pick_change",
+        "codex_total": 49300,
+        "codex_remaining": 700,
+        "claude_total": 49900,
+        "claude_remaining": 100,
+        "classification": "constraint_or_source_correction",
+        "note": "Newsourcequalificationdoesnotrewritepregamenotebooks or projections."
+      },
+      "change_triggers": [
+        "ActualGrokquestionsboundtotheseversions; thenauthorresponsesbyID.",
+        "CurrentprimaryMahomesstatusandPackersbackfieldallocation, Deebo/Montgomerypractices.",
+        "VerifiedMumpfieldforwardroutes/rotationwithoutNacua, notautomaticvacatedtargettransfer."
+      ],
+      "carry_forward": [
+        "Do not make a receiving total into a single-game baseline without verifying window.",
+        "Check all plausible returning backs, including IR candidates, before assigning injured starter's role.",
+        "An attributable ready original can have football mistakes; preserve mistakes and attach dated correction, never regeneratev1.",
+        "No questionstageorjointrevisionfroma preparedpacket; waitforactualproviderwork withoutmissingfreeze."
+      ],
+      "sources": [
+        {
+          "id": "prices2",
+          "label": "prices2",
+          "url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "retrieved_at": "2026-11-10T13:10:14.141Z",
+          "retrieved_at_toronto": "2026-11-10T08:10:14.141-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Current Week10 FantasyPros raw table matches all nine Claude salaries, positions and reported matchups/kickoffs. Official pool/IDs remain unverified."
+        },
+        {
+          "id": "ramsBox2",
+          "label": "ramsBox2",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873043",
+          "retrieved_at": "2026-11-10T13:10:15.059Z",
+          "retrieved_at_toronto": "2026-11-10T08:10:15.059-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Week9 Mumpfield2/20/0 on2targets; Atwell2/16/0 on5; Puka14/150/TD on19; total26catches/228yds/onepassTD. Corrects draft's Week9 11/162/TD and Atwell99 claims."
+        },
+        {
+          "id": "pff2",
+          "label": "pff2",
+          "url": "https://www.pff.com/news/fantasy-football-takeaways-week-9",
+          "retrieved_at": "2026-11-10T13:10:14.817Z",
+          "retrieved_at_toronto": "2026-11-10T08:10:14.817-05:00",
+          "publication_at": null,
+          "publication_display": "Nov 8, 2026 12:32 pm EST",
+          "scope": "Attributed secondary: larger Mumpfield/Atwell figures have unclear window; not Week9 box lines. GB replacement split/Strong competition challenges assured Johnson role; Marks66%/18carries conditional on Montgomery; Watkins rotation conditional; Mahomes arm and Worthy hamstring reported. Tracking figures not independently reproduced."
+        },
+        {
+          "id": "yahoo2",
+          "label": "yahoo2",
+          "url": "https://sports.yahoo.com/fantasy/article/week-10-fantasy-football-waiver-wire-seth-mcgowan-corey-kiner-among-top-pickups-190327664.html",
+          "retrieved_at": "2026-11-10T13:10:15.051Z",
+          "retrieved_at_toronto": "2026-11-10T08:10:15.051-05:00",
+          "publication_at": null,
+          "publication_display": "November 9, 2026 at 11:49 PM UTC·",
+          "scope": "Attributed secondary waiver article: Jacobs surgery with maximum-three-game claim, Johnson14carry/68yd/TD outcome; Lloyd uncertainty. Scope conflicts with primary undetermined absence/potentialIR; retain disagreement rather than silently pick duration."
+        },
+        {
+          "id": "fox2",
+          "label": "fox2",
+          "url": "https://www.foxsports.com/stories/nfl/2026-nfl-odds-week-10-lines-spreads-results-all-14-games",
+          "retrieved_at": "2026-11-10T13:10:44.577Z",
+          "retrieved_at_toronto": "2026-11-10T08:10:44.577-05:00",
+          "publication_at": "2026-11-09T18:19:00Z",
+          "publication_display": "Nov. 9, 2026 1:19 p.m. ET",
+          "scope": "Updated Nov9 13:19ET, bet365 lines as ofNov8. SF@DAL55.5 highest of tenmaincandidatefixtures; HOU@CLE39.5 lowest. Older attributed market context, not current injury incorporation or individual production guarantee."
+        },
+        {
+          "id": "sf2",
+          "label": "sf2",
+          "url": "https://www.49ers.com/news/after-further-review-shanahan-shares-injury-updates-talks-defensive-performance-following-week-9-win",
+          "retrieved_at": "2026-11-10T13:10:38.955Z",
+          "retrieved_at_toronto": "2026-11-10T08:10:38.955-05:00",
+          "publication_at": null,
+          "publication_display": "Nov 09, 2026 at 06:35 PM",
+          "scope": "Primary Nov9 update expects DeeboWednesdaypractice, Evansnotreadythisweek. Neither confirms actualWeek10routes; Watkins37ydTDwasfourthprogression percoach."
+        },
+        {
+          "id": "ramsPrimary2",
+          "label": "ramsPrimary2",
+          "url": "https://www.therams.com/news/game-recap-puka-nacua-s-150-receiving-yards-myles-garrett-s-3-sacks-help-rams-defeat-commanders-20-13",
+          "retrieved_at": "2026-11-10T13:10:39.208Z",
+          "retrieved_at_toronto": "2026-11-10T08:10:39.208-05:00",
+          "publication_at": null,
+          "publication_display": "Nov 08, 2026 at 02:40 PM",
+          "scope": "Primary recap confirms Puka14/150/TD on19targets andRams20–13; complements actual box on impossible draftWeek9receiving arithmetic."
+        },
+        {
+          "id": "packers2",
+          "label": "packers2",
+          "url": "https://www.packers.com/news/packers-rb-josh-jacobs-to-miss-time-due-to-surgery-on-broken-finger-nov-9-2026",
+          "retrieved_at": "2026-11-10T13:11:16.690Z",
+          "retrieved_at_toronto": "2026-11-10T08:11:16.690-05:00",
+          "publication_at": null,
+          "publication_display": "Nov 09, 2026 at 04:33 PM",
+          "scope": "Primary Nov9 Jacobsfingerrequiresurgery/cannotplaywithoutprocedure; durationundetermined, IRnotruledout. BrooksgoodchanceIRreturn, Lloydknee, Strong8carries/22 alongsideJohnson14/68/TD. No assuredJohnsonstarter."
+        },
+        {
+          "id": "chiefsRecap2",
+          "label": "chiefsRecap2",
+          "url": "https://www.chiefs.com/news/chiefs-defeat-jets-35-12-behind-ken-walker-s-three-touchdown-performance-",
+          "retrieved_at": "2026-11-10T13:11:14.363Z",
+          "retrieved_at_toronto": "2026-11-10T08:11:14.363-05:00",
+          "publication_at": null,
+          "publication_display": "Nov 08, 2026 at 07:49 PM",
+          "scope": "Primary Nov8 recap confirms Mahomesbrieflyleftwithelbowinjury, additionaltestingplanned; Worthyhamstring andMooreankleexits. No inspectedlaterclearance; earlierCodexv1 lacks thisnewlyinspected qualification."
+        },
+        {
+          "id": "nflSchedule2",
+          "label": "nflSchedule2",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+          "retrieved_at": "2026-11-10T13:11:15.200Z",
+          "retrieved_at_toronto": "2026-11-10T08:11:15.200-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "FreshNFLWeek10render omitted gamecards; doesnotinvalidateearlier successful primary fixture read. ExactDKpoolstillunverified; no slate switch established."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w10-2026-11-10-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a4fd4194bc744ad83c8f68e9e4d45de53aefcf28/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-10.json"
+        },
+        {
+          "snapshot_id": "2026-w10-r1-claude-v1",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T123500Z-claude-v1.json"
+        }
+      ],
+      "expectations": [],
+      "outcomes": [],
+      "collaboration": {
+        "cycle": "2026-w10-2026-11-15",
+        "round": 1,
+        "codex_v1_ready": "ready",
+        "claude_v1_ready": "ready_with_documented_qualifications",
+        "grok_questions_ready": "not_received;request_prepared",
+        "collaboration_ready": "blocked_no_actual_exchange",
+        "final_frozen": "not_final"
+      },
+      "annotation_of": [
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a4fd4194bc744ad83c8f68e9e4d45de53aefcf28/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-10.json",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T123500Z-claude-v1.json"
+      ],
+      "original_evidence_cutoff": {
+        "codex": "2026-11-10T11:34:15.454Z",
+        "claude_claimed": "2026-11-10T12:32:00Z"
+      },
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/12d8dbfb56b1d2a24a5e9925268789d581e433c5/docs/weekly-dfs/codex/journal/20261110T131408Z.md"
     }
   ],
   "arena": {
