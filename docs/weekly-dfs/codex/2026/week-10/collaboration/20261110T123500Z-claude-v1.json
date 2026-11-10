@@ -1,0 +1,231 @@
+{
+  "schema_version": "tiber-dfs-provider-output/v1",
+  "id": "2026-w10-r1-claude-v1",
+  "handoff_id": "2026-w10-r1-claude-v1-request",
+  "cycle": "2026-w10-2026-11-15",
+  "round": 1,
+  "stage": "claude_v1_ready",
+  "author": "Claude",
+  "actual_sender": "Claude (self-committed from Claude Code cloud session)",
+  "input_manifest": {
+    "id": "2026-w10-r1-common-inputs-v1",
+    "file": "docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T113619Z-common-inputs.json",
+    "commit": "20a2131d1363b0c14ca4c56883cb710c2541f851",
+    "blob_sha": "feb9ec0c2c6784a6ca447807246864569a58c32b",
+    "curated_salary_rows_blob_sha": "d4a52fe365e0f047ba0efbf9a6625441d2ac0a8f",
+    "read_from_pr_head": "e857825c4fe4c3760331e4c7826ed82f31a77e83"
+  },
+  "decision_at_utc": "2026-11-10T12:35:00Z",
+  "decision_at_toronto": "2026-11-10T07:35:00-05:00",
+  "evidence_cutoff_utc": "2026-11-10T12:32:00Z",
+  "evidence_cutoff_precision": "approximate, nearest minute",
+  "official_pool_verified": false,
+  "official_player_ids": null,
+  "salary_basis": "reported_prices",
+  "frozen": false,
+  "picks": [
+    {
+      "slot": "QB",
+      "player": "Dak Prescott",
+      "team": "DAL",
+      "opponent_reported": "SF",
+      "salary": 6400,
+      "salary_in_pinned_curated_rows": false
+    },
+    {
+      "slot": "RB",
+      "player": "Christian McCaffrey",
+      "team": "SF",
+      "opponent_reported": "@DAL",
+      "salary": 8500,
+      "salary_in_pinned_curated_rows": true
+    },
+    {
+      "slot": "RB",
+      "player": "Kaleb Johnson",
+      "team": "GB",
+      "opponent_reported": "MIN",
+      "salary": 4600,
+      "salary_in_pinned_curated_rows": false
+    },
+    {
+      "slot": "WR",
+      "player": "CeeDee Lamb",
+      "team": "DAL",
+      "opponent_reported": "SF",
+      "salary": 8800,
+      "salary_in_pinned_curated_rows": false
+    },
+    {
+      "slot": "WR",
+      "player": "Konata Mumpfield",
+      "team": "LAR",
+      "opponent_reported": "@ARI",
+      "salary": 4000,
+      "salary_in_pinned_curated_rows": false
+    },
+    {
+      "slot": "WR",
+      "player": "Jordan Watkins",
+      "team": "SF",
+      "opponent_reported": "@DAL",
+      "salary": 3800,
+      "salary_in_pinned_curated_rows": false
+    },
+    {
+      "slot": "TE",
+      "player": "Travis Kelce",
+      "team": "KC",
+      "opponent_reported": "@ATL",
+      "salary": 4700,
+      "salary_in_pinned_curated_rows": false
+    },
+    {
+      "slot": "FLEX",
+      "player": "Woody Marks",
+      "team": "HOU",
+      "opponent_reported": "@CLE",
+      "salary": 5700,
+      "salary_in_pinned_curated_rows": false
+    },
+    {
+      "slot": "DST",
+      "player": "Houston Texans",
+      "team": "HOU",
+      "opponent_reported": "@CLE",
+      "salary": 3400,
+      "salary_in_pinned_curated_rows": false
+    }
+  ],
+  "salary_total": 49900,
+  "salary_remaining": 100,
+  "distinct_games": 5,
+  "games": [
+    "SF@DAL",
+    "HOU@CLE",
+    "MIN@GB",
+    "LAR@ARI",
+    "KC@ATL"
+  ],
+  "salary_note": "Eight of nine prices come from Claude's own ~12:10Z retrieval of the FantasyPros Week 10 table via page summary; not in a repository snapshot; re-verify against official pool.",
+  "projection": {
+    "total": null,
+    "player_estimates": null,
+    "note": "Null per manifest; no coherent Week 10 model and no agent point forecast."
+  },
+  "market_used": {
+    "source": "Fox Sports (bet365 as of Nov 8)",
+    "SF@DAL": {
+      "spread": "SF -4.5",
+      "total": 55.5
+    },
+    "HOU@CLE": {
+      "spread": "HOU -4.5",
+      "total": 39.5
+    },
+    "MIN@GB": {
+      "spread": "GB -3.5",
+      "total": 42.5
+    },
+    "LAR@ARI": {
+      "spread": "LAR -7.5",
+      "total": 44.5
+    },
+    "KC@ATL": {
+      "spread": "KC -3.5",
+      "total": 45.5
+    }
+  },
+  "thesis": "SF@DAL (55.5, SF -4.5) four-player game stack: Prescott/Lamb on thin DAL receiver room (Pickens, Turpin, Mingo, Ferguson hurt) with McCaffrey/Watkins bring-back; cheap vacated roles: Kaleb Johnson (Jacobs finger surgery, Lloyd knee), Mumpfield (Nacua to IR, Adams IR); Marks + HOU DST same-team pair as road favorite in lowest total vs CLE backup-QB situation; Kelce normal routes in KC WR committee.",
+  "strongest_counterargument": "Four of nine fail together if SF@DAL underdelivers; Watkins/Johnson/Marks roles each depend on one unreported practice status (Samuel, Lloyd/Jacobs, Montgomery); Mumpfield's 11-162 came with Nacua playing; Kelce exposed to Mahomes right arm/elbow; Marks low-catch in 39.5 total.",
+  "change_triggers": [
+    "Samuel full practice or Evans returns -> replace Watkins",
+    "Lloyd full practice or Jacobs not ruled out -> reconsider Kaleb Johnson (Allgeier fallback)",
+    "Montgomery unrestricted -> replace Marks, reassess HOU pair",
+    "Mahomes limited late week/questionable -> Kelce to Higbee or Warren",
+    "Pickens full practice -> reassess Lamb concentration",
+    "Watson cleared and starting -> reassess HOU DST vs GB DST",
+    "SF@DAL total below ~52 -> cut stack to three",
+    "Official pool price/position differs -> reprice in dated delta"
+  ],
+  "sources": [
+    {
+      "label": "FantasyPros DraftKings salary changes Week 10",
+      "url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+      "retrieved_at_approx": "2026-11-10T12:10Z",
+      "publication_at": null,
+      "access": "page summary"
+    },
+    {
+      "label": "Fox Sports Week 10 odds",
+      "url": "https://www.foxsports.com/stories/nfl/2026-nfl-odds-week-10-lines-spreads-results-all-14-games",
+      "retrieved_at_approx": "2026-11-10T12:20Z",
+      "source_updated_display": "Nov. 9, 2026, 1:19 p.m. ET; lines as of Nov. 8 (bet365)"
+    },
+    {
+      "label": "VegasInsider Week 10 odds",
+      "url": "https://www.vegasinsider.com/nfl/nfl-week-10-odds-2026/",
+      "retrieved_at_approx": "2026-11-10T12:14Z",
+      "source_updated_display": "Nov 9, 2026, 10:43 PM",
+      "access": "cross-check only; home/away reversed for several games; LAR@ARI -9.5/40.5 conflicts with Fox; first half of page only"
+    },
+    {
+      "label": "PFF Week 9 fantasy takeaways",
+      "url": "https://www.pff.com/news/fantasy-football-takeaways-week-9",
+      "retrieved_at_approx": "2026-11-10T12:20Z",
+      "publication_at": "2026-11-08T12:32-05:00",
+      "access": "page summary"
+    },
+    {
+      "label": "Yahoo Week 10 waiver wire",
+      "url": "https://sports.yahoo.com/fantasy/article/week-10-fantasy-football-waiver-wire-seth-mcgowan-corey-kiner-among-top-pickups-190327664.html",
+      "retrieved_at_approx": "2026-11-10T12:20Z",
+      "publication_at": "2026-11-09T23:49Z",
+      "access": "page summary"
+    },
+    {
+      "label": "ESPN / Covers / Sportsbook Review Week 10 odds; Blitz Sports Media Week 9 takeaways; Yahoo Taylor trade-deadline report",
+      "url": null,
+      "retrieved_at_approx": "2026-11-10T12:14Z",
+      "access": "search snippets only"
+    }
+  ],
+  "rejected_sources": [
+    "The Fantasy Footballers 'Week 9 injury recap': 2024 content",
+    "Mahomes elbow and Packers backfield follow-up searches: only earlier-season pages returned"
+  ],
+  "exposure": {
+    "read": [
+      "PR43 comment 6766308455 (Codex v1 $49,300/$700 left, nine unique, six games; no names)",
+      "week-10 claude-v1-request md",
+      "week-10 common-inputs json",
+      "week-10 curated 18-row reported-prices json (probably contains Codex's nine without marking them)",
+      "PR43 Nov 8 comments naming the Week 9 final nine",
+      "week-09 Claude v1 md/json (format)"
+    ],
+    "seen_not_opened": [
+      "week-10 filename listing",
+      "PR-branch commit subjects",
+      "prior-lesson journal link"
+    ],
+    "not_opened": [
+      "week-10/daily/2026-11-10.json and .md",
+      "week-10 codex-v1-ready receipt",
+      "week-10 journal",
+      "site-feed.json"
+    ],
+    "codex_week10_selections_knowingly_seen": false,
+    "partial_exposure_via_curated_rows": true,
+    "own_picks_in_curated_rows": [
+      "Christian McCaffrey"
+    ],
+    "blind_baseline": false
+  },
+  "runtime": {
+    "surface": "Claude Code remote cloud session (claude.ai/code)",
+    "model_identifier": "withheld from repository artifacts by session policy; visible to operator in session"
+  },
+  "other_provider_output_fabricated": false,
+  "real_contest_action": false,
+  "research_only": true
+}
