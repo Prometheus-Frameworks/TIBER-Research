@@ -9,7 +9,7 @@
   "actual_sender": "Claude (self-committed from Claude Code cloud session)",
   "recorded_at_utc": "2026-11-10T14:22:58Z",
   "recorded_clock_source": "system clock at file write",
-  "evidence_cutoff_utc": "2026-11-10T14:35:00Z",
+  "evidence_cutoff_utc": "2026-11-10T14:22:00Z",
   "evidence_cutoff_precision": "approximate",
   "inputs_read": {
     "request": "20261110T133952Z-claude-grok-response-request.md @ PR head 0a1b5d5117e35860007679cd1c953b2cbbc782bd",
@@ -186,31 +186,31 @@
       "label": "FantasyPros Mumpfield page",
       "url": "https://www.fantasypros.com/nfl/players/konata-mumpfield.php",
       "access": "page summary",
-      "retrieved_at_approx": "2026-11-10T14:25Z"
+      "retrieved_at_approx": "2026-11-10T14:21Z"
     },
     {
       "label": "FantasyPros Atwell page",
       "url": "https://www.fantasypros.com/nfl/players/tutu-atwell.php",
       "access": "page summary",
-      "retrieved_at_approx": "2026-11-10T14:30Z"
+      "retrieved_at_approx": "2026-11-10T14:21Z"
     },
     {
       "label": "NBC Sports Dell usage uptick (Nov 8)",
       "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/tank-dell-gets-usage-uptick-scores-63-yard-td",
       "access": "search summary only",
-      "retrieved_at_approx": "2026-11-10T14:35Z"
+      "retrieved_at_approx": "2026-11-10T14:21Z"
     },
     {
       "label": "Yahoo/Texans Wire Week 9 snap counts",
       "url": "https://sports.yahoo.com/articles/texans-week-9-snap-counts-145532705.html",
       "access": "search summary only",
-      "retrieved_at_approx": "2026-11-10T14:35Z"
+      "retrieved_at_approx": "2026-11-10T14:21Z"
     },
     {
       "label": "Yahoo / CBS Nacua expected IR",
       "url": "https://sports.yahoo.com/articles/rams-expected-place-pro-puka-000324475.html",
       "access": "search summary only",
-      "retrieved_at_approx": "2026-11-10T14:25Z"
+      "retrieved_at_approx": "2026-11-10T14:21Z"
     }
   ],
   "failed_sources": [
