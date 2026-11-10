@@ -1,0 +1,30 @@
+{
+  "schema_version": "tiber-dfs-collaboration/v1",
+  "id": "2026-w10-r1-collaboration-ready",
+  "cycle": "2026-week-10",
+  "slate_date": "2026-11-15",
+  "round": 1,
+  "stage": "collaboration_ready",
+  "status": "ready",
+  "actual_author": "Codex final editor, with actual Claude response and Grok question pass",
+  "posted_by": "Codex through authorized GitHub connection",
+  "completed_at": "2026-11-10T15:01:45.792Z",
+  "input_versions": {
+    "codex_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a4fd4194bc744ad83c8f68e9e4d45de53aefcf28/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-10.json",
+    "claude_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T123500Z-claude-v1.json",
+    "grok_questions": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2a14ddad633a36fc49aa7d288cba5ca4d689b538/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T133502Z-grok-questions-verbatim.md",
+    "codex_response": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/967778b0e9e8fb371aba9e7d9c3d811c895b096e/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T133808Z-codex-grok-response.json",
+    "claude_response": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/94a4ac9159abba6588d55a0d3008e00192fd5492/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T142258Z-claude-grok-response.json",
+    "source_receipts": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/94a4ac9159abba6588d55a0d3008e00192fd5492/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T145845Z-integration-sources.json",
+    "original_expectations": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20a2131d1363b0c14ca4c56883cb710c2541f851/docs/weekly-dfs/codex/journal/20261110T113619Z.json"
+  },
+  "immutable_output": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6a676cf09f25acfb86013a6a963b9e3439da0c3d/docs/weekly-dfs/codex/2026/week-10/daily/20261110T150023Z-editor-integration.json",
+  "journal": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6a676cf09f25acfb86013a6a963b9e3439da0c3d/docs/weekly-dfs/codex/journal/20261110T150023Z.json",
+  "output_commit": "6a676cf09f25acfb86013a6a963b9e3439da0c3d",
+  "scope": "Actual version-bound response exchange and substantive editor dispositions complete. Editor nine unchanged; separate Claude revision retained. Ready does not mean exact-version joint endorsement, cleared availability, official eligibility, or final freeze.",
+  "joint_endorsement": false,
+  "frozen": false,
+  "deadline_utc": "2026-11-15T17:30:00Z",
+  "deadline_rule": "Finish and archive BEFORE cutoff; later replies cannot change a valid freeze.",
+  "next_handoff": "Claude may answer the funded Dell/Concepcion tradeoff or offer a supported complete alternative after material practice news. No fresh v1 or repeat Grok loop requested. Exact final integration/expectation binding remains before Nov15 17:30UTC."
+}
