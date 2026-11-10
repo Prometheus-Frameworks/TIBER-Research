@@ -1,0 +1,53 @@
+{
+  "id": "2026-w10-r1-codex-v1-ready",
+  "stage": "codex_v1_ready",
+  "cycle": "2026-w10-2026-11-15",
+  "slate_date": "2026-11-15",
+  "round": 1,
+  "author": "Codex",
+  "posted_by": "Codex via authorized GitHub connector",
+  "relay": null,
+  "completed_at": "2026-11-10T11:36:19.215Z",
+  "status": "ready",
+  "input_versions": [
+    {
+      "commit": "4ab9727e417e2d64684516104026802afbf2b6b4",
+      "path": "docs/weekly-dfs/codex/2026/week-10/daily/2026-11-09.json",
+      "snapshot_id": "2026-w10-2026-11-09-daily"
+    },
+    {
+      "commit": "a4fd4194bc744ad83c8f68e9e4d45de53aefcf28",
+      "path": "docs/weekly-dfs/codex/2026/week-10/daily/2026-11-10-reported-prices.json"
+    }
+  ],
+  "immutable_output": {
+    "snapshot_id": "2026-w10-2026-11-10-daily",
+    "commit": "a4fd4194bc744ad83c8f68e9e4d45de53aefcf28",
+    "path": "docs/weekly-dfs/codex/2026/week-10/daily/2026-11-10.json",
+    "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a4fd4194bc744ad83c8f68e9e4d45de53aefcf28/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-10.json"
+  },
+  "output_decision_at": "2026-11-10T11:34:15.454Z",
+  "verified_archive_before_ready": true,
+  "qualifications": [
+    "reported_prices",
+    "official_pool_unverified",
+    "not_frozen",
+    "not_jointly_endorsed"
+  ],
+  "stages": {
+    "codex_v1_ready": "ready",
+    "claude_v1_ready": "not_received",
+    "grok_questions_ready": "not_received",
+    "collaboration_ready": "blocked",
+    "final_frozen": "not_final"
+  },
+  "next_handoff": {
+    "id": "2026-w10-r1-claude-v1-request",
+    "recipient": "Claude",
+    "manifest_id": "2026-w10-r1-common-inputs-v1",
+    "status": "prepared",
+    "acknowledged_at": null,
+    "output": null
+  },
+  "provider_subscriptions": "Unverified; no new dispatch/watcher created."
+}
