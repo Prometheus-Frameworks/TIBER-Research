@@ -1,0 +1,234 @@
+{
+  "schema_version": "tiber-dfs-provider-output/v1",
+  "id": "2026-w10-r1-claude-grok-response",
+  "handoff_id": "2026-w10-r1-claude-grok-response-request",
+  "cycle": "2026-w10-2026-11-15",
+  "round": 1,
+  "stage": "claude_grok_response",
+  "author": "Claude",
+  "actual_sender": "Claude (self-committed from Claude Code cloud session)",
+  "recorded_at_utc": "2026-11-10T14:22:58Z",
+  "recorded_clock_source": "system clock at file write",
+  "evidence_cutoff_utc": "2026-11-10T14:22:00Z",
+  "evidence_cutoff_precision": "approximate",
+  "inputs_read": {
+    "request": "20261110T133952Z-claude-grok-response-request.md @ PR head 0a1b5d5117e35860007679cd1c953b2cbbc782bd",
+    "grok_pass": "PR43 comment 6768533074, full; not diffed against retained verbatim file",
+    "codex_response": "20261110T133808Z-codex-grok-response.md, full",
+    "intake_checks": "20261110T131222Z-claude-intake-checks.json, first 9000 characters only",
+    "pr_comments": [
+      6768307171,
+      6768857546
+    ],
+    "claude_v1_commit": "93f38b8c61d71c8108cf7187ab30b436c0eee77e",
+    "not_opened": [
+      "Codex v1 json/md",
+      "expectations journal",
+      "ready receipts",
+      "response-sources json",
+      "source-display-correction json",
+      "site-feed.json"
+    ]
+  },
+  "corrections_to_own_v1": [
+    {
+      "claim": "Mumpfield 11/162/TD and Atwell 99 yards in Week 9",
+      "correction": "Mumpfield 11/162/1 on 23 targets is the season line; Week 9 was 2/20. Misread from an automated PFF page summary; no box score checked. v1 file unchanged."
+    },
+    {
+      "claim": "decision_at_utc 2026-11-10T12:35:00Z",
+      "correction": "Stamp written before committing; commit clock 12:33:59Z, PR comment 12:34:12Z. Decision complete by 12:33:59Z."
+    }
+  ],
+  "dispositions": [
+    {
+      "id": "G-W10-Q1",
+      "disposition": "hold",
+      "pick": "Travis Kelce",
+      "reason": "MRI/minor/day-to-day reporting (as inspected by Grok and Codex, not re-opened) lowers the flagged risk but is not clearance.",
+      "revisit": "Mahomes limited late week or designated -> compare Kelce with Higbee 4200 / Warren 4400"
+    },
+    {
+      "id": "G-W10-Q2",
+      "disposition": "hold",
+      "pick": "SF@DAL four; Watkins conditional",
+      "reason": "~52 total was own heuristic, not an editor rule. Lamb/Prescott/McCaffrey rest on role. Watkins's 52 snaps came with Samuel and Evans out; TD was a fourth progression.",
+      "revisit": "Samuel practices and is not ruled out -> replace Watkins in dated delta; Cowing not automatic (16 snaps per Niners Nation conflicts with PFF summary)"
+    },
+    {
+      "id": "G-W10-Q3",
+      "disposition": "hold_lower_confidence",
+      "pick": "Kaleb Johnson",
+      "reason": "Packers primary supersedes Yahoo: duration undetermined, Brooks may return, no named starter. Johnson 14 carries to Strong 8; beat calls him most logical primary if Lloyd out; fumbles/inactives and Brooks pass protection count against.",
+      "revisit": "Brooks activated or Lloyd full practice",
+      "clarification": "Allgeier was an outside-team (ARI) fallback; v1 did not label his team"
+    },
+    {
+      "id": "G-W10-Q4",
+      "disposition": "accept_change",
+      "from": "Konata Mumpfield 4000",
+      "to": "Tank Dell 3900",
+      "reason": "False Week 9 baseline removed; Mumpfield last four games 2/20, 0/0, 1/15, 2/15; Atwell out-targeted him 5-2 and is himself 2/16. Dell had 9 targets (4/105/1) on 33 snaps (~47%) in second game back.",
+      "countercase": "63 of 105 yards on one play, 4-of-9 catch rate, part-time role; three HOU slots in lowest-total game; HOU lead works against Dell volume"
+    },
+    {
+      "id": "G-W10-Q5",
+      "disposition": "hold",
+      "pick": "Woody Marks + Houston DST",
+      "reason": "Watson plan report vs Monken non-commitment leaves trigger unmet; Montgomery Week 10 status unreported.",
+      "revisit": "Watson named and Montgomery returns -> reassess all three HOU slots; GB DST 2900 alternative"
+    },
+    {
+      "id": "G-W10-Q6",
+      "disposition": "no_counterproposal",
+      "reason": "No Colts route data beyond Downs 11-personnel share 85.7%; 47.5 open to 40.5-41.5 supports Codex's volume caution but does not choose Allen vs Downs."
+    },
+    {
+      "id": "G-W10-Q7",
+      "disposition": "agree_cmc_mild_disagree_sadiq",
+      "reason": "CMC shared on same evidence. Sadiq 57% snaps with TE time shared; thinnest role in either nine; opinion only, no verified alternative."
+    },
+    {
+      "id": "G-W10-Q8",
+      "disposition": "hold",
+      "pick": "CeeDee Lamb",
+      "reason": "Pickens 'try to get on practice field' is neither return nor sit.",
+      "revisit": "Pickens full practice -> compare, not automatic swap"
+    }
+  ],
+  "lineup_changed": true,
+  "official_pool_verified": false,
+  "official_player_ids": null,
+  "salary_basis": "reported_prices",
+  "frozen": false,
+  "joint_endorsement_claimed": false,
+  "picks": [
+    {
+      "slot": "QB",
+      "player": "Dak Prescott",
+      "team": "DAL",
+      "opponent_reported": "SF",
+      "salary": 6400
+    },
+    {
+      "slot": "RB",
+      "player": "Christian McCaffrey",
+      "team": "SF",
+      "opponent_reported": "@DAL",
+      "salary": 8500
+    },
+    {
+      "slot": "RB",
+      "player": "Kaleb Johnson",
+      "team": "GB",
+      "opponent_reported": "MIN",
+      "salary": 4600
+    },
+    {
+      "slot": "WR",
+      "player": "CeeDee Lamb",
+      "team": "DAL",
+      "opponent_reported": "SF",
+      "salary": 8800
+    },
+    {
+      "slot": "WR",
+      "player": "Tank Dell",
+      "team": "HOU",
+      "opponent_reported": "@CLE",
+      "salary": 3900
+    },
+    {
+      "slot": "WR",
+      "player": "Jordan Watkins",
+      "team": "SF",
+      "opponent_reported": "@DAL",
+      "salary": 3800
+    },
+    {
+      "slot": "TE",
+      "player": "Travis Kelce",
+      "team": "KC",
+      "opponent_reported": "@ATL",
+      "salary": 4700
+    },
+    {
+      "slot": "FLEX",
+      "player": "Woody Marks",
+      "team": "HOU",
+      "opponent_reported": "@CLE",
+      "salary": 5700
+    },
+    {
+      "slot": "DST",
+      "player": "Houston Texans",
+      "team": "HOU",
+      "opponent_reported": "@CLE",
+      "salary": 3400
+    }
+  ],
+  "salary_total": 49800,
+  "salary_remaining": 200,
+  "distinct_games": 4,
+  "games": [
+    "SF@DAL",
+    "HOU@CLE",
+    "MIN@GB",
+    "KC@ATL"
+  ],
+  "salary_note": "Dell HOU WR @CLE 3900 from Claude's 12:10Z FantasyPros page-summary read; not checked against the raw table by anyone; not in pinned 18-row file.",
+  "projection": {
+    "total": null,
+    "player_estimates": null
+  },
+  "sources": [
+    {
+      "label": "FantasyPros Mumpfield page",
+      "url": "https://www.fantasypros.com/nfl/players/konata-mumpfield.php",
+      "access": "page summary",
+      "retrieved_at_approx": "2026-11-10T14:21Z"
+    },
+    {
+      "label": "FantasyPros Atwell page",
+      "url": "https://www.fantasypros.com/nfl/players/tutu-atwell.php",
+      "access": "page summary",
+      "retrieved_at_approx": "2026-11-10T14:21Z"
+    },
+    {
+      "label": "NBC Sports Dell usage uptick (Nov 8)",
+      "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/tank-dell-gets-usage-uptick-scores-63-yard-td",
+      "access": "search summary only",
+      "retrieved_at_approx": "2026-11-10T14:21Z"
+    },
+    {
+      "label": "Yahoo/Texans Wire Week 9 snap counts",
+      "url": "https://sports.yahoo.com/articles/texans-week-9-snap-counts-145532705.html",
+      "access": "search summary only",
+      "retrieved_at_approx": "2026-11-10T14:21Z"
+    },
+    {
+      "label": "Yahoo / CBS Nacua expected IR",
+      "url": "https://sports.yahoo.com/articles/rams-expected-place-pro-puka-000324475.html",
+      "access": "search summary only",
+      "retrieved_at_approx": "2026-11-10T14:21Z"
+    }
+  ],
+  "failed_sources": [
+    "Ledger-Enquirer/Athlon article (Grok E9): fetch refused",
+    "FantasyPros tank-dell.php: returned player search page"
+  ],
+  "exposure": {
+    "codex_week10_selections_seen": true,
+    "via": "Grok question pass and Codex response",
+    "codex_v1_file_opened": false,
+    "change_made_after_exposure": true,
+    "adopts_codex_pick": false
+  },
+  "runtime": {
+    "surface": "Claude Code remote cloud session (claude.ai/code)",
+    "model_identifier": "withheld from repository artifacts by session policy; visible to operator in session"
+  },
+  "other_provider_output_fabricated": false,
+  "real_contest_action": false,
+  "research_only": true
+}
