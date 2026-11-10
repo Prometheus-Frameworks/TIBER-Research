@@ -1,6 +1,6 @@
 {
   "schema_version": "tiber-dfs-site/v1",
-  "updated_at": "2026-11-10T13:40:48.176Z",
+  "updated_at": "2026-11-10T15:01:45.792Z",
   "title": "TIBER DFS Research Arena",
   "timezone": "America/Toronto",
   "next_scheduled_date": "2026-11-11",
@@ -8761,9 +8761,406 @@
       "received_at": "2026-11-10T13:12:22.871Z",
       "display_annotation_at": "2026-11-10T13:14:55.662Z",
       "original_rationale_locator": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T123500Z-claude-v1.json"
+    },
+    {
+      "id": "2026-w10-r1-claude-revision-20261110T142258Z",
+      "date": "2026-11-10",
+      "recorded_at": "2026-11-10T14:22:58Z",
+      "time_precision": "author_recorded_system_clock",
+      "order": 3,
+      "label": "Claude revision — Dell replaces Mumpfield",
+      "kind": "daily",
+      "status": "complete",
+      "season": 2026,
+      "week": 10,
+      "slate_date": "2026-11-15",
+      "slate_label": "Reported-price Sunday main candidate — official pool unverified",
+      "platform": "DraftKings",
+      "salary_cap": 50000,
+      "salary_total": 49800,
+      "salary_remaining": 200,
+      "projected_total": null,
+      "actual_total": null,
+      "frozen": false,
+      "official_pool_verified": false,
+      "projection": null,
+      "picks": [
+        {
+          "slot": "QB",
+          "position": "QB",
+          "player": "Dak Prescott",
+          "team": "DAL",
+          "opponent": "SF",
+          "home": true,
+          "salary": 6400,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Claude original: pair with Lamb in the reported 55.5 SF@DAL game; Dallas receiving absences could concentrate opportunities. No guaranteed trailing script.",
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "original_salary_source_access": "Claude page summary; Codex raw table matched later",
+          "salary_verification_at": "2026-11-10T13:10:14.141Z"
+        },
+        {
+          "slot": "RB",
+          "position": "RB",
+          "player": "Christian McCaffrey",
+          "team": "SF",
+          "opponent": "DAL",
+          "home": false,
+          "salary": 8500,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Claude original: San Francisco side of the high-total game; rushing/receiving involvement and reported normal usage outside garbage time.",
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "original_salary_source_access": "Claude page summary; Codex raw table matched later",
+          "salary_verification_at": "2026-11-10T13:10:14.141Z"
+        },
+        {
+          "slot": "RB",
+          "position": "RB",
+          "player": "Kaleb Johnson",
+          "team": "GB",
+          "opponent": "MIN",
+          "home": true,
+          "salary": 4600,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Claude original: replacement candidate after Jacobs finger injury and Lloyd knee absence. Later primary check adds Brooks/Strong competition and unknown Jacobs duration.",
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "original_salary_source_access": "Claude page summary; Codex raw table matched later",
+          "salary_verification_at": "2026-11-10T13:10:14.141Z"
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "CeeDee Lamb",
+          "team": "DAL",
+          "opponent": "SF",
+          "home": true,
+          "salary": 8800,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Claude original: Prescott pairing and thin Dallas receiver room; prior10/195/TD supports observed involvement, not repeat production.",
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "original_salary_source_access": "Claude page summary; Codex raw table matched later",
+          "salary_verification_at": "2026-11-10T13:10:14.141Z"
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "Tank Dell",
+          "team": "HOU",
+          "opponent": "CLE",
+          "home": false,
+          "salary": 3900,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Claude revision:9targets,4catches,105yards/TD on about47% snaps; 63yards on one play and crowded outside rotation challenge repeat opportunity. Replaces Mumpfield's wrongly attributed season line.",
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "original_salary_source_access": "Claude prior page summary, not raw row at original revision; Codex raw row matched later",
+          "salary_verification_at": "2026-11-10T14:55:23.723Z"
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "Jordan Watkins",
+          "team": "SF",
+          "opponent": "DAL",
+          "home": false,
+          "salary": 3800,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Claude original: $3,800 SF bring-back after4/86/TD, conditional on continued receiver absences; Deebo return is a material threat.",
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "original_salary_source_access": "Claude page summary; Codex raw table matched later",
+          "salary_verification_at": "2026-11-10T13:10:14.141Z"
+        },
+        {
+          "slot": "TE",
+          "position": "TE",
+          "player": "Travis Kelce",
+          "team": "KC",
+          "opponent": "ATL",
+          "home": false,
+          "salary": 4700,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Claude original: reported normal route participation in KC receiver rotation; Mahomes elbow condition remains unresolved.",
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "original_salary_source_access": "Claude page summary; Codex raw table matched later",
+          "salary_verification_at": "2026-11-10T13:10:14.141Z"
+        },
+        {
+          "slot": "FLEX",
+          "position": "RB",
+          "player": "Woody Marks",
+          "team": "HOU",
+          "opponent": "CLE",
+          "home": false,
+          "salary": 5700,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Claude original: recent18carries and Montgomery absence, paired with HOU DST; actual Week10 competition/status remains unresolved.",
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "original_salary_source_access": "Claude page summary; Codex raw table matched later",
+          "salary_verification_at": "2026-11-10T13:10:14.141Z"
+        },
+        {
+          "slot": "DST",
+          "position": "DST",
+          "player": "Houston Texans",
+          "team": "HOU",
+          "opponent": "CLE",
+          "home": false,
+          "salary": 3400,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Claude original: road favorite in reported low-total HOU@CLE; current CLE quarterback/protection conditions need recheck; no automatic sacks/turnovers.",
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "original_salary_source_access": "Claude page summary; Codex raw table matched later",
+          "salary_verification_at": "2026-11-10T13:10:14.141Z"
+        }
+      ],
+      "summary": "Claude answers actual Grok questions and corrects Mumpfield season/game and original decision-clock errors. Dell replaces Mumpfield, saving $100. Four SF@DAL players and three Houston players across four games; conditional roles remain. Codex independently matched Dell raw price and box score later. Not frozen or jointly endorsed.",
+      "counterargument": "Dell earned nine targets but on a part-time rotation; 63 of105 yards came on one touchdown. Three HOU selections concentrate a low-total game; Johnson, Watkins, Mahomes/Kelce and Dallas receiver conditions remain unresolved.",
+      "revisions": [
+        {
+          "from": "Konata Mumpfield",
+          "to": "Tank Dell",
+          "salary_delta": -100,
+          "reason": "Claude corrects season/game window and chooses Dell's returning receiving role; source-summary limitations in author response preserved, independently checked later by Codex.",
+          "classification": "constraint_or_source_correction"
+        }
+      ],
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/94a4ac9159abba6588d55a0d3008e00192fd5492/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T142258Z-claude-grok-response.md",
+      "salary_basis": "reported_prices",
+      "source_check_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T131222Z-claude-intake-checks.json",
+      "received_at": "2026-11-10T14:58:45.853Z",
+      "display_annotation_at": "2026-11-10T15:01:45.792Z",
+      "original_rationale_locator": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/94a4ac9159abba6588d55a0d3008e00192fd5492/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T142258Z-claude-grok-response.json",
+      "previous_snapshot_id": "2026-w10-r1-claude-v1"
+    },
+    {
+      "id": "2026-w10-editor-integration-20261110T150023Z",
+      "date": "2026-11-10",
+      "recorded_at": "2026-11-10T15:00:23.742Z",
+      "time_precision": "observed",
+      "order": 4,
+      "label": "Codex editor hold — actual exchange complete",
+      "kind": "daily",
+      "status": "complete",
+      "season": 2026,
+      "week": 10,
+      "slate_date": "2026-11-15",
+      "slate_label": "Reported-price NFL Sunday main candidate, November 15 — official pool unverified",
+      "platform": "DraftKings",
+      "salary_cap": 50000,
+      "salary_total": 49300,
+      "salary_remaining": 700,
+      "projected_total": null,
+      "actual_total": null,
+      "frozen": false,
+      "official_pool_verified": false,
+      "projection": null,
+      "picks": [
+        {
+          "slot": "QB",
+          "position": "QB",
+          "player": "Patrick Mahomes II",
+          "team": "KC",
+          "opponent": "ATL",
+          "home": false,
+          "salary": 6000,
+          "rationale": "Recent 242 passing yards and two TDs, with Rice leading KC at seven targets. Buy the $12,100 Mahomes/Rice pair, not a repeat of KC's 35 team points; Walker and Fields rushing TDs remain a competing path.",
+          "source_ids": [
+            "prices",
+            "boxKC"
+          ],
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "official_player_id": null,
+          "projected_points": null,
+          "actual_points": null,
+          "salary_receipt": "| 15 | [Patrick Mahomes II](https://www.fantasypros.com/nfl/players/patrick-mahomes.php \"Open player card for Patrick Mahomes II\")(KC - QB) | Sun 1:00PM | @ATL | $6,000 | $6,100 | -100 |",
+          "kickoff_reported": "Sun 1:00PM"
+        },
+        {
+          "slot": "RB",
+          "position": "RB",
+          "player": "Christian McCaffrey",
+          "team": "SF",
+          "opponent": "DAL",
+          "home": false,
+          "salary": 8500,
+          "rationale": "18 carries and three targets last game support both phases. Prefer this known involvement to assigning Kyren a Puka-absence boost; Black's 11 carries and only three CMC targets challenge the premium price. Deebo's expected practice return adds competition.",
+          "source_ids": [
+            "prices",
+            "boxSF",
+            "sfupdate"
+          ],
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "official_player_id": null,
+          "projected_points": null,
+          "actual_points": null,
+          "salary_receipt": "| 6 | [Christian McCaffrey](https://www.fantasypros.com/nfl/players/christian-mccaffrey.php \"Open player card for Christian McCaffrey\")(SF - RB) | Sun 4:25PM | @DAL | $8,500 | $8,000 | +500 |",
+          "kickoff_reported": "Sun 4:25PM"
+        },
+        {
+          "slot": "RB",
+          "position": "RB",
+          "player": "James Cook III",
+          "team": "BUF",
+          "opponent": "NYJ",
+          "home": false,
+          "salary": 7400,
+          "rationale": "Monday's 31 carries/107 yards show a current rushing lead; only one target restrains the PPR-floor case. Do not project 31 carries or a repeat favorable script, especially on the short week.",
+          "source_ids": [
+            "prices",
+            "boxBUF"
+          ],
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "official_player_id": null,
+          "projected_points": null,
+          "actual_points": null,
+          "salary_receipt": "| 12 | [James Cook III](https://www.fantasypros.com/nfl/players/james-cook.php \"Open player card for James Cook III\")(BUF - RB) | Sun 1:00PM | @NYJ | $7,400 | $7,400 | 0 |",
+          "kickoff_reported": "Sun 1:00PM"
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "Rashee Rice",
+          "team": "KC",
+          "opponent": "ATL",
+          "home": false,
+          "salary": 6100,
+          "rationale": "Codex hold: retained seven-target involvement and $12,100 Mahomes pair; newly inspected PFF below67% routes in each of last two games challenges role. No assumed Worthy-injury boost; Mahomes practice/throwing unresolved.",
+          "source_ids": [
+            "prices",
+            "boxKC"
+          ],
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "official_player_id": null,
+          "projected_points": null,
+          "actual_points": null,
+          "salary_receipt": "| 57 | [Rashee Rice](https://www.fantasypros.com/nfl/players/rashee-rice.php \"Open player card for Rashee Rice\")(KC - WR) | Sun 1:00PM | @ATL | $6,100 | $6,400 | -300 |",
+          "kickoff_reported": "Sun 1:00PM"
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "Denzel Boston",
+          "team": "CLE",
+          "opponent": "HOU",
+          "home": true,
+          "salary": 5200,
+          "rationale": "Seven targets, six catches and 98 yards support a receiving candidate beyond last week's nine. The 60-yard catch supplied most yards; prefer one Browns receiver rather than Boston plus Concepcion. Week10 QB and routes remain unresolved.",
+          "source_ids": [
+            "prices",
+            "boxCLE",
+            "brownstake"
+          ],
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "official_player_id": null,
+          "projected_points": null,
+          "actual_points": null,
+          "salary_receipt": "| 68 | [Denzel Boston](https://www.fantasypros.com/nfl/players/denzel-boston.php \"Open player card for Denzel Boston\")(CLE - WR) | Sun 1:00PM | HOU | $5,200 | $5,000 | +200 |",
+          "kickoff_reported": "Sun 1:00PM"
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "Keenan Allen",
+          "team": "IND",
+          "opponent": "MIA",
+          "home": true,
+          "salary": 5100,
+          "rationale": "Eight targets despite four catches/26 yards favor involvement over last week's points. Daniel Jones had only 180 gross passing yards on 34 attempts; Warren and Downs compete, and the Allen/Downs disagreement remains provisional.",
+          "source_ids": [
+            "prices",
+            "boxIND"
+          ],
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "official_player_id": null,
+          "projected_points": null,
+          "actual_points": null,
+          "salary_receipt": "| 101 | [Keenan Allen](https://www.fantasypros.com/nfl/players/keenan-allen.php \"Open player card for Keenan Allen\")(IND - WR) | Sun 1:00PM | MIA | $5,100 | $4,900 | +200 |",
+          "kickoff_reported": "Sun 1:00PM"
+        },
+        {
+          "slot": "TE",
+          "position": "TE",
+          "player": "Tyler Warren",
+          "team": "IND",
+          "opponent": "MIA",
+          "home": true,
+          "salary": 4400,
+          "rationale": "Seven targets/four catches/44 yards at a reported $4,400 offers observed involvement over Fannin's two-target TD result at $4,900. Pairing Warren with Allen deliberately exposes $9,500 to the same limited passing offense.",
+          "source_ids": [
+            "prices",
+            "boxIND",
+            "boxCLE"
+          ],
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "official_player_id": null,
+          "projected_points": null,
+          "actual_points": null,
+          "salary_receipt": "| 79 | [Tyler Warren](https://www.fantasypros.com/nfl/players/tyler-warren.php \"Open player card for Tyler Warren\")(IND - TE) | Sun 1:00PM | MIA | $4,400 | $4,600 | -200 |",
+          "kickoff_reported": "Sun 1:00PM"
+        },
+        {
+          "slot": "FLEX",
+          "position": "TE",
+          "player": "Kenyon Sadiq",
+          "team": "NYJ",
+          "opponent": "BUF",
+          "home": true,
+          "salary": 2800,
+          "rationale": "Codex hold: $2,800 FLEX with PFF-reported57% snaps and expanded12-personnel use with Taylor active. Four-TE rotation and insufficient established route/target floor remain. Dell funding requires another WR change.",
+          "source_ids": [
+            "prices",
+            "boxKC",
+            "jetsnote"
+          ],
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "official_player_id": null,
+          "projected_points": null,
+          "actual_points": null,
+          "salary_receipt": "| 175 | [Kenyon Sadiq](https://www.fantasypros.com/nfl/players/kenyon-sadiq.php \"Open player card for Kenyon Sadiq\")(NYJ - TE) | Sun 1:00PM | BUF | $2,800 | $2,800 | 0 |",
+          "kickoff_reported": "Sun 1:00PM"
+        },
+        {
+          "slot": "DST",
+          "position": "DST",
+          "player": "Los Angeles Rams",
+          "team": "LAR",
+          "opponent": "ARI",
+          "home": false,
+          "salary": 3800,
+          "rationale": "Garrett returned for 35/58 snaps with six attributed pressures; Arizona loses Michael Wilson, has Minshew arm uncertainty and Froholdt in protocol. Select qualitatively, not for a sack/turnover forecast. Rams offensive losses and McDuffie uncertainty challenge field-position and coverage assumptions.",
+          "source_ids": [
+            "prices",
+            "ramsGarrett",
+            "ramsinj",
+            "ariQB",
+            "ariWR"
+          ],
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "official_player_id": null,
+          "projected_points": null,
+          "actual_points": null,
+          "salary_receipt": "| - | [Los Angeles Rams](https://www.fantasypros.com/nfl/players/los-angeles-rams-defense.php \"Open player card for Los Angeles Rams\")(LAR - DST) | Sun 4:05PM | @ARI | $3,800 | $3,300 | +500 |",
+          "kickoff_reported": "Sun 4:05PM"
+        }
+      ],
+      "summary": "Actual round1 exchange completed; Codex editor holds original nine at $49,300/$700 after testing Claude's Dell revision and funded alternative. Separate author candidates remain. No exact-version joint endorsement or freeze.",
+      "counterargument": "Dell's nine-target return could be a stronger FLEX opportunity than Sadiq's four-TE rotation; retaining Boston prevents a funded switch only by judgment, not demonstrated projection superiority. Rice route participation and Mahomes elbow also challenge the KC pair.",
+      "revisions": [],
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6a676cf09f25acfb86013a6a963b9e3439da0c3d/docs/weekly-dfs/codex/2026/week-10/daily/20261110T150023Z-editor-integration.md",
+      "salary_basis": "reported_prices",
+      "pool_status": "official_pool_unverified",
+      "previous_snapshot_id": "2026-w10-2026-11-10-daily"
     }
   ],
-  "archive_commit": "f637983f08ce2355b76b5e4f30a3c346f2ae8f7b",
+  "archive_commit": "6a676cf09f25acfb86013a6a963b9e3439da0c3d",
   "journal": [
     {
       "kind": "later_annotation",
@@ -17983,6 +18380,205 @@
       },
       "source_metadata_correction": "Correctpublication_displayfieldsareinthisentryandappend-onlycorrectionrecord; earlierISOclocks/footballdispositionsunchanged.",
       "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/f637983f08ce2355b76b5e4f30a3c346f2ae8f7b/docs/weekly-dfs/codex/journal/20261110T133952Z.md"
+    },
+    {
+      "id": "2026-w10-integration-20261110T150023Z",
+      "snapshot_ids": [
+        "2026-w10-editor-integration-20261110T150023Z",
+        "2026-w10-r1-claude-revision-20261110T142258Z"
+      ],
+      "kind": "interactive_research",
+      "recorded_at": "2026-11-10T15:00:23.742Z",
+      "recorded_at_toronto": "2026-11-10T15:00:23.742-05:00",
+      "research_at": "2026-11-10T15:00:23.742Z",
+      "origin": "mixed",
+      "origin_note": "Operator relayed actual Claude response to Grok; Codex independently checked Dell, tested whole-lineup funding and disposed of actual proposals. No operator pick override.",
+      "title": "Claude correction retained; Dell funding tested and editor hold recorded",
+      "question": "Does verified Dell involvement justify replacing Sadiq and Boston together?",
+      "why_it_matters": "Changing the FLEX requires funding and alters another role and game exposure; actual author exchange now exists.",
+      "findings": [
+        "ESPN box independently matches Dell 9 targets,4 catches,105 yards,1TD,long63. NBC body corroborates and notes an additional missed end-zone target. Raw FantasyPros row matches HOU WR @CLE Sun1PM $3,900. Claude's season-window error remains in original, acknowledged in response.",
+        "PFF reports Sadiq57% snaps with Taylor active, 70% of 12-personnel snaps, half early-down 11-personnel snaps. Still a four-TE rotation; analyst explicitly says playing time/target rate insufficient for trusted starts.",
+        "PFF reports Rice below67% route participation each of last two games, after69%+ in first three weeks. Worthy left late; only six plays before backups, Armstrong played five. These observations do not establish a Week10 Rice windfall.",
+        "PFF says Cowing all 11-personnel snaps and no other personnel; retained NinersNation says16 total snaps. Those denominators can coexist and do not by themselves conflict.",
+        "Claude retains Johnson, Kelce, Marks/HOU, Lamb and Watkins with practice conditions; no counterproposal for Colts pair. ESPN Houston box shows Marks one catch on FOUR targets, not one target."
+      ],
+      "interpretation": [
+        "Dell is a legitimate alternative, but PFF describes a rotation with Harrison/Boutte outside, Collins established and Hutchinson in slot. Nine targets on 55% route participation do not establish future full-time work. Primary Texans praise the comeback/explosive play but promise no expanded role.",
+        "Expanded personnel use supports the $2,800 participant thesis but not a secure floor. Dell + Concepcion for Sadiq + Boston uses all $700 remaining: +1100-400=+700, total $50,000. No fresh receiver-specific evidence supports preferring Concepcion to Boston; paying to improve one uncertain role introduces a second change. Hold is provisional, not a claim this package is inferior in expected points.",
+        "Seven Week9 targets alone do not guarantee route leadership or a hamstring-vacancy gain. Retained MRI/minor/day-to-day reporting is not Sunday clearance. Assess practice/throwing and the Rice rotation separately.",
+        "Neither proves Cowing's future opportunity or Watkins's loss. Claude's proposed Deebo-practice trigger belongs to Claude; Codex requires material availability/role evidence, not practice alone as an automatic swap.",
+        "Previous QB/competition/Colts-volume concerns remain unresolved. Claude opinions and Grok agreement are not independent role evidence. No fresh Week10 official practice clearance inspected in this focused pass."
+      ],
+      "alternatives": [
+        {
+          "picks_out": [
+            "Kenyon Sadiq",
+            "Denzel Boston"
+          ],
+          "picks_in": [
+            "Tank Dell",
+            "KC Concepcion Jr."
+          ],
+          "salary_delta": 700,
+          "total": 50000,
+          "remaining": 0,
+          "status": "not adopted",
+          "reason": "Expanded personnel use supports the $2,800 participant thesis but not a secure floor. Dell + Concepcion for Sadiq + Boston uses all $700 remaining: +1100-400=+700, total $50,000. No fresh receiver-specific evidence supports preferring Concepcion to Boston; paying to improve one uncertain role introduces a second change. Hold is provisional, not a claim this package is inferior in expected points."
+        }
+      ],
+      "uncertainty": [
+        "Official DK main group/export/IDs and roster eligibility remain unverified; no certification from reported prices.",
+        "Week10 practice reports, actual active lists, CLE starting QB, Cooper ankle severity/Garrett Wilson protocol, Rams McDuffie and Cardinals QB/center decisions remain unresolved.",
+        "Sadiq route/target persistence, Colts absolute passing volume and CMC/Cook receiving workload.",
+        "Draft Sharks Boston40routes/68snaps are attributed, not independently verified; denominator/window not established. No route share calculated.",
+        "No coherent Week10 projection snapshot or full-model projection-only baseline.",
+        "Rice recent route participation below67%, no demonstrated Week10 increase; Dell outside rotation and Sadiq four-TE role both provisional."
+      ],
+      "lineup_effect": {
+        "action": "hold_editor_candidate",
+        "salary_total": 49300,
+        "salary_remaining": 700,
+        "classification": "unchanged",
+        "frozen": false,
+        "joint_endorsement": false
+      },
+      "change_triggers": [
+        "Dated Chiefs practice/throwing and WR rotation evidence; do not infer Rice vacancy gain.",
+        "Dell role expansion or a defensible Concepcion-versus-Boston case could support funded package; do not use target totals as a projection.",
+        "Sadiq multi-personnel work persists or recedes; distinguish total snaps from routes.",
+        "Actual Deebo, Pickens, GB competition, Montgomery/CLE QB and Colts conditions before prospective cutoff."
+      ],
+      "carry_forward": [
+        "Cowing total snaps and 11-personnel share are different denominators, not demonstrated conflict.",
+        "Marks one catch was on four targets; catches cannot stand in for target opportunity.",
+        "Correct season/game windows and clocks append-only; preserve original failures.",
+        "Next author reply should address concrete funded alternatives after new evidence; no restart of originals or unlimited question pass."
+      ],
+      "sources": [
+        {
+          "id": "prices4",
+          "label": "prices4",
+          "url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "retrieved_at": "2026-11-10T14:55:23.723Z",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Raw reported salary rows, not official export"
+        },
+        {
+          "id": "houBox4",
+          "label": "houBox4",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873046",
+          "retrieved_at": "2026-11-10T14:55:24.761Z",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Week9 receiving targets/catches/yards/long/TD"
+        },
+        {
+          "id": "dellNBC4",
+          "label": "dellNBC4",
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/tank-dell-gets-usage-uptick-scores-63-yard-td",
+          "retrieved_at": "2026-11-10T14:55:23.712Z",
+          "publication_at": "2026-11-09T01:36:09.488Z",
+          "publication_display": null,
+          "scope": "Inspected body; attributed football reporting"
+        },
+        {
+          "id": "houSnaps4",
+          "label": "houSnaps4",
+          "url": "https://sports.yahoo.com/articles/texans-week-9-snap-counts-145532705.html",
+          "retrieved_at": "2026-11-10T14:55:25.727Z",
+          "publication_at": null,
+          "publication_display": "Nov9 9:55AM EST",
+          "scope": "Inspected body; attributed football reporting"
+        },
+        {
+          "id": "pff4",
+          "label": "pff4",
+          "url": "https://www.pff.com/news/fantasy-football-takeaways-week-9",
+          "retrieved_at": "2026-11-10T14:55:24.535Z",
+          "publication_at": "2026-11-08T17:32:38Z",
+          "publication_display": null,
+          "scope": "Attributed personnel, snap and route participation; denominators differ"
+        },
+        {
+          "id": "houPrimary4",
+          "label": "houPrimary4",
+          "url": "https://www.houstontexans.com/news/tank-dell-postgame-chargers-ryans-stroud-react",
+          "retrieved_at": "2026-11-10T14:58:08.430Z",
+          "publication_at": null,
+          "publication_display": "Nov 09, 2026 at 08:32 AM; timezone not stated in returned body",
+          "scope": "Inspected body; attributed football reporting"
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w10-2026-11-10-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a4fd4194bc744ad83c8f68e9e4d45de53aefcf28/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-10.json"
+        },
+        {
+          "snapshot_id": "2026-w10-r1-claude-revision-20261110T142258Z",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/94a4ac9159abba6588d55a0d3008e00192fd5492/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T142258Z-claude-grok-response.json"
+        },
+        {
+          "snapshot_id": "2026-w10-editor-integration-20261110T150023Z",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6a676cf09f25acfb86013a6a963b9e3439da0c3d/docs/weekly-dfs/codex/2026/week-10/daily/20261110T150023Z-editor-integration.json"
+        }
+      ],
+      "expectations": [
+        {
+          "id": "2026-w10-1110-rice-route-condition",
+          "subject": "Rashee Rice",
+          "statement": "Continued meaningful receiving involvement is required to support the $6,100 selection; a Worthy absence is not assumed to increase Rice's routes.",
+          "support": "Seven retained Week9 targets, but PFF below67% route participation in each of last two games and Armstrong taking five of six late post-injury plays.",
+          "uncertainty": "Worthy designation and Week10 rotation/route allocation; Mahomes elbow.",
+          "challenge": "Current participation/role reporting or game route involvement shows Rice losing opportunities; separate QB performance from receiver deployment.",
+          "observe": "Postgame targets and qualified route participation if accessible; missing routes remain unassessable, not inferred from catches.",
+          "source_urls": [
+            "https://www.pff.com/news/fantasy-football-takeaways-week-9"
+          ],
+          "recorded_at": "2026-11-10T15:00:23.742Z"
+        },
+        {
+          "id": "2026-w10-1110-sadiq-personnel-condition",
+          "subject": "Kenyon Sadiq",
+          "statement": "The cheap FLEX hold depends on retaining the expanded multi-personnel participation observed in Week9; no full-time or target-floor claim.",
+          "support": "PFF57% total snaps,70% of12-personnel snaps,half early-down11-personnel snaps,with Taylor active.",
+          "uncertainty": "Four-TE rotation can reverse; total snaps are not routes.",
+          "challenge": "New rotation evidence or postgame participation shows the expanded role receding.",
+          "observe": "Qualified postgame snap/personnel/route breakdown and targets, separately from touchdown/points; unavailable measures unassessable.",
+          "source_urls": [
+            "https://www.pff.com/news/fantasy-football-takeaways-week-9"
+          ],
+          "recorded_at": "2026-11-10T15:00:23.742Z"
+        }
+      ],
+      "outcomes": [],
+      "contribution_records": {
+        "codex_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a4fd4194bc744ad83c8f68e9e4d45de53aefcf28/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-10.json",
+        "claude_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T123500Z-claude-v1.json",
+        "grok_questions": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2a14ddad633a36fc49aa7d288cba5ca4d689b538/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T133502Z-grok-questions-verbatim.md",
+        "codex_response": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/967778b0e9e8fb371aba9e7d9c3d811c895b096e/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T133808Z-codex-grok-response.json",
+        "claude_response": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/94a4ac9159abba6588d55a0d3008e00192fd5492/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T142258Z-claude-grok-response.json",
+        "source_receipts": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/94a4ac9159abba6588d55a0d3008e00192fd5492/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T145845Z-integration-sources.json",
+        "original_expectations": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20a2131d1363b0c14ca4c56883cb710c2541f851/docs/weekly-dfs/codex/journal/20261110T113619Z.json"
+      },
+      "collaboration": {
+        "cycle": "2026-week-10",
+        "round": 1,
+        "final_editor": "Codex",
+        "codex_v1_ready": "ready",
+        "claude_v1_ready": "ready_with_recorded_corrections",
+        "grok_questions_ready": "ready",
+        "codex_response": "complete",
+        "claude_response": "complete_received_and_verified",
+        "collaboration_ready": "actual_exchange_and_editor_dispositions_complete; distinct preferred nines remain",
+        "joint_endorsement": false,
+        "shared_final": false,
+        "final_frozen": "not_final",
+        "next_handoff": "Claude may answer the funded Dell/Concepcion tradeoff or offer a supported complete alternative after material practice news. No fresh v1 or repeat Grok loop requested. Exact final integration/expectation binding remains before Nov15 17:30UTC."
+      },
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6a676cf09f25acfb86013a6a963b9e3439da0c3d/docs/weekly-dfs/codex/journal/20261110T150023Z.md"
     }
   ],
   "arena": {
