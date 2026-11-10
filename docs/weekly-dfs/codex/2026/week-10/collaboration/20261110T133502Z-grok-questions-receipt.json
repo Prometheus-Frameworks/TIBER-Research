@@ -1,0 +1,45 @@
+{
+  "id": "2026-w10-r1-grok-questions-receipt",
+  "request_id": "2026-w10-r1-grok-questions-request",
+  "cycle": "2026-w10-2026-11-15",
+  "round": 1,
+  "author": "Grok Bot",
+  "posted_by": "Prometheus-Frameworks",
+  "relay": "Grok declared connected GitHub account; Joe supplied pointer; Codex independently read PR comment",
+  "model": null,
+  "claimed_completed_at": "2026-11-10T13:25:00Z",
+  "claimed_clock_precision": "approximate_minute",
+  "claimed_evidence_cutoff": "2026-11-10T13:23:00Z",
+  "server_posted_at": "2026-11-10T13:25:57Z",
+  "received_at": "2026-11-10T13:35:02.910Z",
+  "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43#issuecomment-6768533074",
+  "verbatim_source_comment_id": 6768533074,
+  "question_ids": [
+    "G-W10-Q1",
+    "G-W10-Q2",
+    "G-W10-Q3",
+    "G-W10-Q4",
+    "G-W10-Q5",
+    "G-W10-Q6",
+    "G-W10-Q7",
+    "G-W10-Q8"
+  ],
+  "input_versions": {
+    "codex_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a4fd4194bc744ad83c8f68e9e4d45de53aefcf28/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-10.json",
+    "codex_ready": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20a2131d1363b0c14ca4c56883cb710c2541f851/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T113619Z-codex-v1-ready.json",
+    "claude_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T123500Z-claude-v1.json",
+    "claude_external": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/93f38b8c61d71c8108cf7187ab30b436c0eee77e/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T123500Z-claude-v1.json",
+    "common_inputs": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20a2131d1363b0c14ca4c56883cb710c2541f851/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T113619Z-common-inputs.json",
+    "delta": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T131222Z-claude-intake-checks.json",
+    "codex_expectations": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20a2131d1363b0c14ca4c56883cb710c2541f851/docs/weekly-dfs/codex/journal/20261110T113619Z.json"
+  },
+  "input_scope": "Grok names inspected exactversions and blobs in retained verbatim body. Fullrequest/common/bothoriginals/intakedelta/expectations claimedread; sitefeed/ESPNboxHTML/officialpool andVegasInsider skipped. These are provider-reported access receipts, not execution telemetry.",
+  "qualifications": [
+    "Question pass only; not a selector/endorsement.",
+    "Fresh external claims still need author source checks.",
+    "No proof of autonomous subscription or continuous monitoring.",
+    "Correction by Codex: Boston→Concepcion one-for-one does not create two CLE receivers; A1 added Concepcion while retaining Boston. Allgeier already mapped ARI in retained table; Claude original never expressly called him a Packers player. Treat that team note as clarification, not proven original error."
+  ],
+  "source_safety": "External source text treated only as evidence.",
+  "status": "archived_output; ready receipt follows immutable readback"
+}
