@@ -1,0 +1,29 @@
+{
+  "id": "2026-w10-post-trade-delta-posting-receipt",
+  "recorded_at": "2026-11-11T11:18:57.142Z",
+  "recorded_at_toronto": "2026-11-11T06:18:57.142-05:00",
+  "comment_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43#issuecomment-6794412934",
+  "comment_created_at": "2026-11-11T11:18:56Z",
+  "readback": "exact",
+  "handoff_id": "2026-w10-post-trade-delta-20261111",
+  "prepared_packet": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/b9e7acd449af4066231d7922513a0dc763ead5b0/docs/weekly-dfs/codex/2026/week-10/collaboration/20261111T111733Z-post-trade-delta.json",
+  "posted": true,
+  "recipient_acknowledged": "unknown",
+  "recipient_completed": "not_received",
+  "verified_publications": [
+    {
+      "kind": "research",
+      "commit": "9ae416975f4aa91f6e281c7a3fa6b80b546a870d"
+    },
+    {
+      "kind": "notebook_feed_and_handoff",
+      "commit": "b9e7acd449af4066231d7922513a0dc763ead5b0"
+    },
+    {
+      "kind": "stable_site_feed",
+      "commit": "4f8fa6dfafa8b89860d9074a263bf42b21674686"
+    }
+  ],
+  "next_handoff": "Claude: assess this exact post-trade Dell-for-Allen candidate and Warren/Rice/CMC conditions after material practice evidence. Existing original/Grok/reply stages stay retained; no new v1 or routine Grok loop. No endorsement of this delta received. Freeze remains strictly before Nov15 12:30Toronto/17:30UTC.",
+  "scope": "Documentation/data only, no provider dispatch or automatic merge."
+}
