@@ -1,0 +1,645 @@
+{
+  "record_type": "daily",
+  "id": "2026-w10-2026-11-10-daily",
+  "author": "Codex",
+  "recorded_at_utc": "2026-11-10T11:34:15.454Z",
+  "recorded_at_toronto": "2026-11-10T06:34:15.454-05:00",
+  "evidence_cutoff": "2026-11-10T11:34:15.454Z",
+  "season": 2026,
+  "week": 10,
+  "slate_date": "2026-11-15",
+  "platform": "DraftKings",
+  "slate_label": "Reported-price NFL Sunday main candidate, November 15 — official pool unverified",
+  "draft_group_id": null,
+  "slate_coverage": "Primary NFL verifies the ten Sunday afternoon candidate fixtures; FantasyPros verifies current selected reported prices/positions/opponents/kickoffs. Exact official DK group, pool and IDs unverified.",
+  "games": [
+    "KC@ATL",
+    "HOU@CLE",
+    "MIN@GB",
+    "JAX@TEN",
+    "MIA@IND",
+    "CAR@NO",
+    "BUF@NYJ",
+    "SEA@LV",
+    "LAR@ARI",
+    "SF@DAL"
+  ],
+  "games_status": "NFL fixtures verified; official DK main membership unverified",
+  "earliest_candidate_kickoff": "2026-11-15T18:00:00Z",
+  "deadline_utc": "2026-11-15T17:30:00Z",
+  "deadline_toronto": "2026-11-15T12:30:00-05:00",
+  "excluded_windows": [
+    "Thursday WAS@NYG",
+    "Sunday09:30Munich NE@DET",
+    "SundaynightPIT@CIN",
+    "MondayLAC@BAL"
+  ],
+  "salary_cap": 50000,
+  "salary_total": 49300,
+  "salary_remaining": 700,
+  "salary_basis": "reported_prices",
+  "status": "complete",
+  "frozen": false,
+  "official_pool_verified": false,
+  "picks": [
+    {
+      "slot": "QB",
+      "position": "QB",
+      "player": "Patrick Mahomes II",
+      "team": "KC",
+      "opponent": "ATL",
+      "home": false,
+      "salary": 6000,
+      "rationale": "Recent 242 passing yards and two TDs, with Rice leading KC at seven targets. Buy the $12,100 Mahomes/Rice pair, not a repeat of KC's 35 team points; Walker and Fields rushing TDs remain a competing path.",
+      "source_ids": [
+        "prices",
+        "boxKC"
+      ],
+      "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+      "official_player_id": null,
+      "projected_points": null,
+      "actual_points": null,
+      "salary_receipt": "| 15 | [Patrick Mahomes II](https://www.fantasypros.com/nfl/players/patrick-mahomes.php \"Open player card for Patrick Mahomes II\")(KC - QB) | Sun 1:00PM | @ATL | $6,000 | $6,100 | -100 |",
+      "kickoff_reported": "Sun 1:00PM"
+    },
+    {
+      "slot": "RB",
+      "position": "RB",
+      "player": "Christian McCaffrey",
+      "team": "SF",
+      "opponent": "DAL",
+      "home": false,
+      "salary": 8500,
+      "rationale": "18 carries and three targets last game support both phases. Prefer this known involvement to assigning Kyren a Puka-absence boost; Black's 11 carries and only three CMC targets challenge the premium price. Deebo's expected practice return adds competition.",
+      "source_ids": [
+        "prices",
+        "boxSF",
+        "sfupdate"
+      ],
+      "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+      "official_player_id": null,
+      "projected_points": null,
+      "actual_points": null,
+      "salary_receipt": "| 6 | [Christian McCaffrey](https://www.fantasypros.com/nfl/players/christian-mccaffrey.php \"Open player card for Christian McCaffrey\")(SF - RB) | Sun 4:25PM | @DAL | $8,500 | $8,000 | +500 |",
+      "kickoff_reported": "Sun 4:25PM"
+    },
+    {
+      "slot": "RB",
+      "position": "RB",
+      "player": "James Cook III",
+      "team": "BUF",
+      "opponent": "NYJ",
+      "home": false,
+      "salary": 7400,
+      "rationale": "Monday's 31 carries/107 yards show a current rushing lead; only one target restrains the PPR-floor case. Do not project 31 carries or a repeat favorable script, especially on the short week.",
+      "source_ids": [
+        "prices",
+        "boxBUF"
+      ],
+      "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+      "official_player_id": null,
+      "projected_points": null,
+      "actual_points": null,
+      "salary_receipt": "| 12 | [James Cook III](https://www.fantasypros.com/nfl/players/james-cook.php \"Open player card for James Cook III\")(BUF - RB) | Sun 1:00PM | @NYJ | $7,400 | $7,400 | 0 |",
+      "kickoff_reported": "Sun 1:00PM"
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Rashee Rice",
+      "team": "KC",
+      "opponent": "ATL",
+      "home": false,
+      "salary": 6100,
+      "rationale": "Seven targets versus Kelce six and Worthy six support continued participation at a $300 lower reported price. Mahomes pairing concentrates KC passing outcomes; it does not earn two receiver credits from one ordinary passing TD.",
+      "source_ids": [
+        "prices",
+        "boxKC"
+      ],
+      "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+      "official_player_id": null,
+      "projected_points": null,
+      "actual_points": null,
+      "salary_receipt": "| 57 | [Rashee Rice](https://www.fantasypros.com/nfl/players/rashee-rice.php \"Open player card for Rashee Rice\")(KC - WR) | Sun 1:00PM | @ATL | $6,100 | $6,400 | -300 |",
+      "kickoff_reported": "Sun 1:00PM"
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Denzel Boston",
+      "team": "CLE",
+      "opponent": "HOU",
+      "home": true,
+      "salary": 5200,
+      "rationale": "Seven targets, six catches and 98 yards support a receiving candidate beyond last week's nine. The 60-yard catch supplied most yards; prefer one Browns receiver rather than Boston plus Concepcion. Week10 QB and routes remain unresolved.",
+      "source_ids": [
+        "prices",
+        "boxCLE",
+        "brownstake"
+      ],
+      "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+      "official_player_id": null,
+      "projected_points": null,
+      "actual_points": null,
+      "salary_receipt": "| 68 | [Denzel Boston](https://www.fantasypros.com/nfl/players/denzel-boston.php \"Open player card for Denzel Boston\")(CLE - WR) | Sun 1:00PM | HOU | $5,200 | $5,000 | +200 |",
+      "kickoff_reported": "Sun 1:00PM"
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Keenan Allen",
+      "team": "IND",
+      "opponent": "MIA",
+      "home": true,
+      "salary": 5100,
+      "rationale": "Eight targets despite four catches/26 yards favor involvement over last week's points. Daniel Jones had only 180 gross passing yards on 34 attempts; Warren and Downs compete, and the Allen/Downs disagreement remains provisional.",
+      "source_ids": [
+        "prices",
+        "boxIND"
+      ],
+      "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+      "official_player_id": null,
+      "projected_points": null,
+      "actual_points": null,
+      "salary_receipt": "| 101 | [Keenan Allen](https://www.fantasypros.com/nfl/players/keenan-allen.php \"Open player card for Keenan Allen\")(IND - WR) | Sun 1:00PM | MIA | $5,100 | $4,900 | +200 |",
+      "kickoff_reported": "Sun 1:00PM"
+    },
+    {
+      "slot": "TE",
+      "position": "TE",
+      "player": "Tyler Warren",
+      "team": "IND",
+      "opponent": "MIA",
+      "home": true,
+      "salary": 4400,
+      "rationale": "Seven targets/four catches/44 yards at a reported $4,400 offers observed involvement over Fannin's two-target TD result at $4,900. Pairing Warren with Allen deliberately exposes $9,500 to the same limited passing offense.",
+      "source_ids": [
+        "prices",
+        "boxIND",
+        "boxCLE"
+      ],
+      "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+      "official_player_id": null,
+      "projected_points": null,
+      "actual_points": null,
+      "salary_receipt": "| 79 | [Tyler Warren](https://www.fantasypros.com/nfl/players/tyler-warren.php \"Open player card for Tyler Warren\")(IND - TE) | Sun 1:00PM | MIA | $4,400 | $4,600 | -200 |",
+      "kickoff_reported": "Sun 1:00PM"
+    },
+    {
+      "slot": "FLEX",
+      "position": "TE",
+      "player": "Kenyon Sadiq",
+      "team": "NYJ",
+      "opponent": "BUF",
+      "home": true,
+      "salary": 2800,
+      "rationale": "Four targets/four catches/49 yards plus the coach's deliberate mismatch-use description support a low-cost receiving participant. $100 cheaper than Mason Taylor, who had two targets. Weakest slot: no route-share persistence or expanded Week10 role certified.",
+      "source_ids": [
+        "prices",
+        "boxKC",
+        "jetsnote"
+      ],
+      "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+      "official_player_id": null,
+      "projected_points": null,
+      "actual_points": null,
+      "salary_receipt": "| 175 | [Kenyon Sadiq](https://www.fantasypros.com/nfl/players/kenyon-sadiq.php \"Open player card for Kenyon Sadiq\")(NYJ - TE) | Sun 1:00PM | BUF | $2,800 | $2,800 | 0 |",
+      "kickoff_reported": "Sun 1:00PM"
+    },
+    {
+      "slot": "DST",
+      "position": "DST",
+      "player": "Los Angeles Rams",
+      "team": "LAR",
+      "opponent": "ARI",
+      "home": false,
+      "salary": 3800,
+      "rationale": "Garrett returned for 35/58 snaps with six attributed pressures; Arizona loses Michael Wilson, has Minshew arm uncertainty and Froholdt in protocol. Select qualitatively, not for a sack/turnover forecast. Rams offensive losses and McDuffie uncertainty challenge field-position and coverage assumptions.",
+      "source_ids": [
+        "prices",
+        "ramsGarrett",
+        "ramsinj",
+        "ariQB",
+        "ariWR"
+      ],
+      "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+      "official_player_id": null,
+      "projected_points": null,
+      "actual_points": null,
+      "salary_receipt": "| - | [Los Angeles Rams](https://www.fantasypros.com/nfl/players/los-angeles-rams-defense.php \"Open player card for Los Angeles Rams\")(LAR - DST) | Sun 4:05PM | @ARI | $3,800 | $3,300 | +500 |",
+      "kickoff_reported": "Sun 4:05PM"
+    }
+  ],
+  "research_board": [],
+  "projected_total": null,
+  "projection": null,
+  "actual_total": null,
+  "previous_snapshot_id": "2026-w10-2026-11-09-daily",
+  "previous_snapshot_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0709d595c3908b6e078726a6526ac06ad88a99e5/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-09.json",
+  "revision_classification": "new_evidence",
+  "revisions": [],
+  "changed_picks": [
+    {
+      "from": null,
+      "to": "Patrick Mahomes II",
+      "reason": "First complete priced draft from Monday's unpriced board; new_evidence, not a replacement of a previously selected player."
+    },
+    {
+      "from": null,
+      "to": "Christian McCaffrey",
+      "reason": "First complete priced draft from Monday's unpriced board; new_evidence, not a replacement of a previously selected player."
+    },
+    {
+      "from": null,
+      "to": "James Cook III",
+      "reason": "First complete priced draft from Monday's unpriced board; new_evidence, not a replacement of a previously selected player."
+    },
+    {
+      "from": null,
+      "to": "Rashee Rice",
+      "reason": "First complete priced draft from Monday's unpriced board; new_evidence, not a replacement of a previously selected player."
+    },
+    {
+      "from": null,
+      "to": "Denzel Boston",
+      "reason": "First complete priced draft from Monday's unpriced board; new_evidence, not a replacement of a previously selected player."
+    },
+    {
+      "from": null,
+      "to": "Keenan Allen",
+      "reason": "First complete priced draft from Monday's unpriced board; new_evidence, not a replacement of a previously selected player."
+    },
+    {
+      "from": null,
+      "to": "Tyler Warren",
+      "reason": "First complete priced draft from Monday's unpriced board; new_evidence, not a replacement of a previously selected player."
+    },
+    {
+      "from": null,
+      "to": "Kenyon Sadiq",
+      "reason": "First complete priced draft from Monday's unpriced board; new_evidence, not a replacement of a previously selected player."
+    },
+    {
+      "from": null,
+      "to": "Los Angeles Rams",
+      "reason": "First complete priced draft from Monday's unpriced board; new_evidence, not a replacement of a previously selected player."
+    }
+  ],
+  "important_unchanged": [
+    "Same November15 target and expected ten-game coverage as Monday. No platform slate switch established.",
+    "Historical Week9 freeze and all prior versions/scores retained."
+  ],
+  "summary": "First complete Codex Week10 v1, $49,300/$700, reported_prices/official_pool_unverified. Boston selected; Cooper, Concepcion and Kyren remain alternatives after focused role/availability checks. Two-TE construction funds CMC/Cook and Rams DST. Not frozen; Claude/Grok Week10 work absent.",
+  "counterargument": "Sadiq's four targets and coach mismatch comments may not persist; using two TEs funds expensive RBs whose latest receiving volume was small. Allen/Warren share a weak recent Colts passing environment. Official pool and current-week final medical status remain unverified.",
+  "unresolved_assumptions": [
+    "Official DK main group/export/IDs and roster eligibility remain unverified; no certification from reported prices.",
+    "Week10 practice reports, actual active lists, CLE starting QB, Cooper ankle severity/Garrett Wilson protocol, Rams McDuffie and Cardinals QB/center decisions remain unresolved.",
+    "Sadiq route/target persistence, Colts absolute passing volume and CMC/Cook receiving workload.",
+    "Draft Sharks Boston40routes/68snaps are attributed, not independently verified; denominator/window not established. No route share calculated.",
+    "No coherent Week10 projection snapshot or full-model projection-only baseline."
+  ],
+  "change_triggers": [
+    "Verify official main pool/export against these original reported prices; retain any correction as a new snapshot.",
+    "Fresh Sadiq/Taylor routes or designation; Cooper official ankle clearance and Wilson status; CLE QB/role changes.",
+    "Current Rams/ARI injury decisions and Garrett workload; no presumed rookie-QB turnover rate.",
+    "Compare complete funded alternatives on roles and concentration before changing; no requirement to spend700."
+  ],
+  "sources": [
+    {
+      "id": "schedule",
+      "label": "schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+      "retrieved_at": "2026-11-10T11:28:18.583Z",
+      "retrieved_at_toronto": "2026-11-10T06:28:18.583-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Primary NFL now displays all ten Nov15 afternoon candidate fixtures and excluded windows. No change to Monday's expected games; improved primary verification, not a platform pool change."
+    },
+    {
+      "id": "prices",
+      "label": "prices",
+      "url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+      "retrieved_at": "2026-11-10T11:28:18.517Z",
+      "retrieved_at_toronto": "2026-11-10T06:28:18.517-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "FantasyPros Week10 table: selected and alternative salaries, NFL positions, opponent and kickoff. All-week coverage includes non-main games, filtered to ten expected Sunday afternoon fixtures. Official DK pool/IDs not verified."
+    },
+    {
+      "id": "rules",
+      "label": "rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-11-10T11:28:18.956Z",
+      "retrieved_at_toronto": "2026-11-10T06:28:18.956-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Current NFL Classic exact roster/scoring, including lost fumble -1 and bonuses/DST treatment."
+    },
+    {
+      "id": "pool",
+      "label": "pool",
+      "url": "https://www.draftkings.com/lobby#/NFL/0/All",
+      "retrieved_at": "2026-11-10T11:29:28.443Z",
+      "retrieved_at_toronto": "2026-11-10T06:29:28.443-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Public lobby redirects to account creation; no official main draft group/export observed."
+    },
+    {
+      "id": "model",
+      "label": "model",
+      "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php",
+      "retrieved_at": "2026-11-10T11:28:17.919Z",
+      "retrieved_at_toronto": "2026-11-10T06:28:17.919-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Empty slate select; Week9 projection caption. No coherent Week10 nine/model imported."
+    },
+    {
+      "id": "week9",
+      "label": "week9",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+      "retrieved_at": "2026-11-10T11:28:19.119Z",
+      "retrieved_at_toronto": "2026-11-10T06:28:19.119-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Prior Sunday included fixtures completed. First comparison exists; no settled platform result observed."
+    },
+    {
+      "id": "ramsinj",
+      "label": "ramsinj",
+      "url": "https://www.therams.com/news/rams-injury-updates-puka-nacua-likely-going-on-injured-reserve-after-sustaining-mcl-pcl-sprain-and-turf-toe-against-commanders-latest-on-steve-avila-and-trent-mcduffie",
+      "retrieved_at": "2026-11-10T11:29:50.804Z",
+      "retrieved_at_toronto": "2026-11-10T06:29:50.804-05:00",
+      "publication_at": null,
+      "publication_display": "Nov 09, 2026 at 04:04 PM",
+      "scope": "Nov9 primary injury report: Nacua out substantial time/likely IR, Avila hamstring absence, Ferguson setback, McDuffie possible return. Listed clocks as displayed; timezone not established."
+    },
+    {
+      "id": "ramsGarrett",
+      "label": "ramsGarrett",
+      "url": "https://www.therams.com/news/weight-off-my-shoulders-myles-garrett-delivers-three-sack-performance-vs-commanders-in-return-from-knee-surgery",
+      "retrieved_at": "2026-11-10T11:30:49.132Z",
+      "retrieved_at_toronto": "2026-11-10T06:30:49.132-05:00",
+      "publication_at": null,
+      "publication_display": "Nov 08, 2026 at 05:14 PM",
+      "scope": "Primary reports Garrett35/58 defensive snaps,6 pressures/27rushes and3sacks as attributed NGS Week9 figures; not a forward forecast."
+    },
+    {
+      "id": "ariQB",
+      "label": "ariQB",
+      "url": "https://www.azcardinals.com/news/quarterback-in-flux-after-gardner-minshew-banged-up-arm-injury-carson-beck",
+      "retrieved_at": "2026-11-10T11:30:49.831Z",
+      "retrieved_at_toronto": "2026-11-10T06:30:49.831-05:00",
+      "publication_at": null,
+      "publication_display": "Published: Nov 09, 2026 at 03:45 PMUpdated: Nov 09, 2026 at 05:31 PM",
+      "scope": "Nov9 published15:45 updated17:31 displayed, timezone not established. Minshew arm/elbow tests; Beck conditional, Froholdt concussion. No final Week10 QB decision."
+    },
+    {
+      "id": "ariWR",
+      "label": "ariWR",
+      "url": "https://www.azcardinals.com/news/michael-wilson-sidelined-for-season-with-neck-injury",
+      "retrieved_at": "2026-11-10T11:30:49.966Z",
+      "retrieved_at_toronto": "2026-11-10T06:30:49.966-05:00",
+      "publication_at": null,
+      "publication_display": "Nov 09, 2026 at 03:11 PM",
+      "scope": "Nov9 15:11 displayed, timezone not established. Michael Wilson ruled out for season; depleted WR group."
+    },
+    {
+      "id": "jetsnote",
+      "label": "jetsnote",
+      "url": "https://www.newyorkjets.com/news/notebook-veteran-jets-demario-davis-not-discouraged-by-start-11-09-2026",
+      "retrieved_at": "2026-11-10T11:29:51.180Z",
+      "retrieved_at_toronto": "2026-11-10T06:29:51.180-05:00",
+      "publication_at": null,
+      "publication_display": "Nov 09, 2026 at 03:00 PM",
+      "scope": "Nov9 primary: Cooper8/11/58 without GarrettWilson; Sadiq4/4/49 and coach mismatch/blocking remarks. No fresh Cooper ankle diagnosis in this primary article."
+    },
+    {
+      "id": "sfupdate",
+      "label": "sfupdate",
+      "url": "https://www.49ers.com/news/after-further-review-shanahan-shares-injury-updates-talks-defensive-performance-following-week-9-win",
+      "retrieved_at": "2026-11-10T11:31:33.603Z",
+      "retrieved_at_toronto": "2026-11-10T06:31:33.603-05:00",
+      "publication_at": null,
+      "publication_display": "Nov 09, 2026 at 06:35 PM",
+      "scope": "Nov9 primary: Deebo expected Wednesday practice; Evans not expected ready this week. Green/Lenoir day-to-day, Halton IR; no new McCaffrey limitation reported, not final medical clearance."
+    },
+    {
+      "id": "colts5",
+      "label": "colts5",
+      "url": "https://www.colts.com/news/5-colts-things-adetomiwa-adebawore-seth-mcgowan-flash-vs-cowboys-why-shane-steichen-went-for-the-win-late-in-week-9",
+      "retrieved_at": "2026-11-10T11:31:33.770Z",
+      "retrieved_at_toronto": "2026-11-10T06:31:33.770-05:00",
+      "publication_at": null,
+      "publication_display": "Nov 09, 2026 at 05:04 PM",
+      "scope": "Nov9 primary: offensive/explosive-play limits and McGowan20-33%snap competition; no automatic Taylor fade."
+    },
+    {
+      "id": "brownstake",
+      "label": "brownstake",
+      "url": "https://www.clevelandbrowns.com/news/shedeur-sanders-showcases-deep-ball-in-loss-to-the-saints-3-big-takeaways",
+      "retrieved_at": "2026-11-10T11:29:51.892Z",
+      "retrieved_at_toronto": "2026-11-10T06:29:51.892-05:00",
+      "publication_at": null,
+      "publication_display": "Nov 08, 2026 at 06:26 PM",
+      "scope": "Nov8 recap: Boston60yd gain, Concepcion64ydTD, Sanders297/2TD/31attempts; no Week10 QB confirmation."
+    },
+    {
+      "id": "boxCLE",
+      "label": "boxCLE",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873039",
+      "retrieved_at": "2026-11-10T11:29:53.672Z",
+      "retrieved_at_toronto": "2026-11-10T06:29:53.672-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Fresh Week9 Cleveland usage/scoring inputs; Boston7targets, Concepcion6, Fannin2; Sanders5sacks. No material difference found in relevant prior review inputs."
+    },
+    {
+      "id": "boxLAR",
+      "label": "boxLAR",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873043",
+      "retrieved_at": "2026-11-10T11:29:52.999Z",
+      "retrieved_at_toronto": "2026-11-10T06:29:52.999-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Fresh Week9 Rams usage; Kyren15carries/4targets, Corum11/2. Relevant prior review inputs unchanged."
+    },
+    {
+      "id": "boxKC",
+      "label": "boxKC",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873045",
+      "retrieved_at": "2026-11-10T11:30:10.135Z",
+      "retrieved_at_toronto": "2026-11-10T06:30:10.135-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Fresh Week9 Chiefs/Jets stats: Mahomes242/2TD/0INT,1lostfumble; Rice7targets, Keenan not in game; Mitchell7/0. Relevant archived inputs unchanged."
+    },
+    {
+      "id": "boxIND",
+      "label": "boxIND",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873040",
+      "retrieved_at": "2026-11-10T11:30:09.252Z",
+      "retrieved_at_toronto": "2026-11-10T06:30:09.252-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Fresh Week9 Colts/Cowboys: Allen8targets/4/26, Warren7/4/44; Jones34attempts/180yards. Relevant previous inputs unchanged."
+    },
+    {
+      "id": "boxBUF",
+      "label": "boxBUF",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873051",
+      "retrieved_at": "2026-11-10T11:30:09.363Z",
+      "retrieved_at_toronto": "2026-11-10T06:30:09.363-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Newly completed Monday BUF@MIN is outside Week9 arena slate. Cook31/107/TD,1target; Allen6rushes/15yds; not forecast."
+    },
+    {
+      "id": "boxSF",
+      "label": "boxSF",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873047",
+      "retrieved_at": "2026-11-10T11:30:51.349Z",
+      "retrieved_at_toronto": "2026-11-10T06:30:51.349-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Fresh Week9 SF/LasVegas: CMC18carries/3targets, Black11carries, Kittle7targets. Relevant prior scoring inputs unchanged."
+    },
+    {
+      "id": "cooperReport",
+      "label": "Draft Sharks attributed role/injury report",
+      "url": "https://www.draftsharks.com/who-should-i-start/denzel-boston-omar-cooper-jr-82286",
+      "retrieved_at": "2026-11-10T11:32:43.203Z",
+      "publication_at": null,
+      "publication_display": "Nov 10, 2026 at 6:32am",
+      "scope": "Reports Cooper ankle re-injury; no confirmed Week10 designation. Attributes Boston68snaps/40routes and full-time role alongsideConcepcion; unverified tracking denominator conflicts with31teamattempts+5sacks, no route-share computation. Mixed/unknown scoring estimates excluded."
+    }
+  ],
+  "collaboration": {
+    "cycle": "2026-w10-2026-11-15",
+    "round": 1,
+    "codex_v1_ready": "output prepared; readiness receipt follows verified immutable archive",
+    "claude_v1_ready": "not_received",
+    "grok_questions_ready": "not_received",
+    "collaboration_ready": "blocked",
+    "final_frozen": "not_final",
+    "next_handoff": "After this v1 archive/readback, prepare common-input Claude request. No provider dispatch configured.",
+    "exposure": "No current Week10 other-author picks inspected before this first complete draft. Shared history/rules and prior weeks' actual contributions were read. This reports exposure, not independently verified blinding."
+  },
+  "runtime": {
+    "agent": "Codex",
+    "exact_serving_model": null,
+    "tools": [
+      "GitHub",
+      "Firecrawl",
+      "TIBER capabilities"
+    ],
+    "retained_tiber_evidence": "Current reader withholds ROP/TTS/Forecast. No qualified retained output accessed; not proof none exists.",
+    "operator_input": "Standing assignment only; no new player shortlist, blind calls or override. No external-model contribution fabricated.",
+    "cost": null
+  },
+  "version": "codex-original-v1",
+  "pool_status": "official_pool_unverified",
+  "alternatives": [
+    {
+      "id": "A1",
+      "players": [
+        "Kyren Williams",
+        "KC Concepcion Jr."
+      ],
+      "salaries": [
+        7100,
+        4800
+      ],
+      "replace": [
+        "Christian McCaffrey",
+        "Kenyon Sadiq"
+      ],
+      "candidate_total": 49900,
+      "candidate_remaining": 100,
+      "disposition": "decline for v1",
+      "reason": "Funded complete alternative, other seven unchanged. Buys a second CLE receiver and Kyren's committee/offensive-line uncertainty in place of CMC/Sadiq. No verified net opportunity superiority."
+    },
+    {
+      "id": "A2",
+      "players": [
+        "Mason Taylor"
+      ],
+      "salaries": [
+        2900
+      ],
+      "replace": [
+        "Kenyon Sadiq"
+      ],
+      "candidate_total": 49400,
+      "candidate_remaining": 600,
+      "disposition": "decline for v1",
+      "reason": "Taylor had two targets versus Sadiq four; coach identifies deliberate Sadiq usage. Small one-game evidence, not a permanent hierarchy."
+    },
+    {
+      "id": "A3",
+      "players": [
+        "Harold Fannin Jr."
+      ],
+      "salaries": [
+        4900
+      ],
+      "replace": [
+        "Tyler Warren"
+      ],
+      "candidate_total": 49800,
+      "candidate_remaining": 200,
+      "disposition": "decline for v1",
+      "reason": "Fannin two-target result relied on OT TD; Warren seven targets. Neither future distribution guaranteed."
+    }
+  ],
+  "board_dispositions": [
+    {
+      "player": "Omar Cooper Jr.",
+      "salary": 5400,
+      "status": "watch",
+      "reason": "11 targets meaningful, but attributed ankle re-injury not resolved by primary update; no automatic Wilson-vacated-target transfer."
+    },
+    {
+      "player": "Kyren Williams",
+      "salary": 7100,
+      "status": "watch",
+      "reason": "15 carries/4targets versus Corum11/2; Nacua and Avila absences may harm efficiency. No mechanical workload boost."
+    },
+    {
+      "player": "KC Concepcion Jr.",
+      "salary": 4800,
+      "status": "alternative",
+      "reason": "6 targets and64-yardTD; avoid doubling CLE in v1. $400 cheaper than Boston."
+    }
+  ],
+  "scoring_recovery": {
+    "review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0709d595c3908b6e078726a6526ac06ad88a99e5/docs/weekly-dfs/codex/2026/week-09/reviews/20261109T113011Z.json",
+    "state": "Existing Week9 first comparison retained; relevant fresh CLE/LAR/KC/IND/SF inputs show no material correction. This is a focused check, not a full rescore or platform settlement.",
+    "final": 89.08,
+    "first_codex": 89.08,
+    "claude_original": 148.6,
+    "sf_drafts": 96.08,
+    "status": "provisional",
+    "older": "Week6/7/8 scores already present; no missing completed-slate total identified in current complete feed. No new settled result or material correction established."
+  },
+  "validation": {
+    "slot_order": [
+      "QB",
+      "RB",
+      "RB",
+      "WR",
+      "WR",
+      "WR",
+      "TE",
+      "FLEX",
+      "DST"
+    ],
+    "unique_selections": 9,
+    "budget_checked": true,
+    "eligible_flex_position": "TE",
+    "distinct_nfl_games": 6,
+    "medical_clearance": false,
+    "official_eligibility_certified": false
+  }
+}

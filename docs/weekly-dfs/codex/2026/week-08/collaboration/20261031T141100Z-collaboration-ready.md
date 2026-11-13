@@ -1,0 +1,26 @@
+# Week8 — collaboration ready; exact candidate jointly endorsed
+
+Receipt: 2026-10-31T14:11:00.979Z / 2026-10-31T10:11:00.979-04:00. Stage `2026-w08-r1-collaboration-ready`, cycle2026-w08-2026-11-01, round1. **Ready**, not frozen.
+
+The substantive Claude → Codex → Claude exchange is retained. [Claude's final reply](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20f728d03aa866fdd42ec973a2998263a698a7d5/docs/weekly-dfs/codex/2026/week-08/collaboration/20261031T140633Z-claude-endorsement-reply.md) has decision clock14:06:33Z and direct PR publication14:07:14Z, separate from this later receipt. No new external football evidence was retrieved for this annotation; original cutoffs remain intact.
+
+## Exact jointly endorsed candidate
+
+[888e327 JSON](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json), **$50,000/$0**. Current branch bytes match the immutable original, blob `fd392f89bdb8648119d0fb28c021f4544c62e26c`. [Original salary snapshot](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31-draftkings-153728.csv).
+
+Codex's own endorsement: [immutable response](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/3d03592144037075e395566bdcef2e5652687582/docs/weekly-dfs/codex/2026/week-08/collaboration/20261031T140231Z-codex-response.json), 2026-10-31T14:02:31.740Z. Claude's own endorsement: [immutable reply](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20f728d03aa866fdd42ec973a2998263a698a7d5/docs/weekly-dfs/codex/2026/week-08/collaboration/20261031T140633Z-claude-endorsement-reply.md),14:06:33Z. Both apply only to the exact unchanged nine. No historical daily snapshot is rewritten to claim earlier joint authorship.
+
+## Material exchange outcomes
+
+- **C1: resolved with qualified interpretation.** Patriots held; no arithmetic cancellation of conditional offense/defense splits. Narrow interpretive emphasis can differ without changing allocation.
+- **C2: resolved.** Cooper/Taylor held on price-sensitive roles; Claude withdrew single-touchdown double-credit rationale.
+- **C3: resolved as investigation trigger, not automatic change.** Default Concepcion. Pickens OUT observed before actual freeze prompts reassessment of Flournoy deployment and whole-lineup case. No guaranteed swap or post-freeze change.
+- **C4: resolved.** Bengals funding change declined on role/package grounds; Keenan exactly funds200 and the earlier funding generalization is qualified.
+
+## Missing stages and next step
+
+Claude's originalv1 remains absent. Week8 Grok questions remain missing. Completed author collaboration does not repair those gaps or establish provider subscriptions. The final is not frozen.
+
+Existing Sunday final-selection pass rechecks material conditions and binds exact chosen nine, original salaries and expectations before cutoff. If unchanged888e327 freezes, joint endorsement applies; a changed candidate is a shared-exchange editorial choice without inherited mutual endorsement. Finish **before Sunday November1 12:30Toronto/17:30UTC**, or earlier included kickoff. News observed after a valid freeze cannot revise its nine. No continuous-monitoring claim.
+
+The displayed PR comment contains malformed link markup; the committed source above is usable. No claim is made about what caused the formatting. Other authors' comments/source files are preserved.

@@ -1,0 +1,60 @@
+{
+  "schema_version": "tiber-dfs-collaboration/v1",
+  "id": "2026-w10-post-practice-delta-20261112",
+  "cycle": "2026-week-10",
+  "round": 1,
+  "delta_version": 2,
+  "kind": "material_context_delta",
+  "status": "prepared",
+  "author": "Codex",
+  "intended_recipient": "Claude through existing PR/relay",
+  "recorded_at": "2026-11-12T11:28:02.090Z",
+  "predecessor_handoff_id": "2026-w10-post-trade-delta-20261111",
+  "predecessor_handoff_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/b9e7acd449af4066231d7922513a0dc763ead5b0/docs/weekly-dfs/codex/2026/week-10/collaboration/20261111T111733Z-post-trade-delta.json",
+  "current_candidate": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/acbb902bc2a8e939ef4fa4a8a95e824f63188f6d/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-12.json",
+  "official_salary_snapshot": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/acbb902bc2a8e939ef4fa4a8a95e824f63188f6d/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-12-draftkings-156416.csv",
+  "projection_snapshot": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/acbb902bc2a8e939ef4fa4a8a95e824f63188f6d/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-12-projection-snapshot.json",
+  "journal": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/acbb902bc2a8e939ef4fa4a8a95e824f63188f6d/docs/weekly-dfs/codex/journal/20261112T112725Z.json",
+  "input_versions": {
+    "codex_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a4fd4194bc744ad83c8f68e9e4d45de53aefcf28/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-10.json",
+    "claude_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T123500Z-claude-v1.json",
+    "grok_questions": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2a14ddad633a36fc49aa7d288cba5ca4d689b538/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T133502Z-grok-questions-verbatim.md",
+    "codex_response": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/967778b0e9e8fb371aba9e7d9c3d811c895b096e/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T133808Z-codex-grok-response.json",
+    "claude_response": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/94a4ac9159abba6588d55a0d3008e00192fd5492/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T142258Z-claude-grok-response.json",
+    "source_receipts": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/94a4ac9159abba6588d55a0d3008e00192fd5492/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T145845Z-integration-sources.json",
+    "original_expectations": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20a2131d1363b0c14ca4c56883cb710c2541f851/docs/weekly-dfs/codex/journal/20261110T113619Z.json"
+  },
+  "delta": [
+    {
+      "from": "Denzel Boston",
+      "to": "KC Concepcion Jr.",
+      "salary_delta": -400,
+      "classification": "new_evidence",
+      "reason": "Boston toeDNP onWednesday plus officialpoolQ; prefer Concepcion comparable prior receiving involvement and externalmodel16.5vs12.2. Do not claim BostonOUT or an automatic Watson uplift."
+    },
+    {
+      "from": "Kenyon Sadiq",
+      "to": "Travis Kelce",
+      "salary_delta": 1900,
+      "classification": "new_evidence",
+      "reason": "Kelce ankleFP/MahomesFP, verified six-target role and coherent13.8vs7.4 externalcomparison support spending available salary on receiving involvement. Adds third KC player; no guarantee of higher points."
+    }
+  ],
+  "questions": [
+    {
+      "id": "W10-PRACTICE-KC",
+      "question": "Does Kelce's role/FP plus MahomesFP justify thirdKCslot at16,800 against Downs/Worthycompetition? Newnine49,600/400; no exact-versionendorsementreceived."
+    },
+    {
+      "id": "W10-PRACTICE-CLE-HOU",
+      "question": "RetainConcepcionoverBostonWednesdaytoeDNP, andDellhand/shoulderLP? Reassessafterfreshpractice without assumingOUT/targettransfer."
+    }
+  ],
+  "next_action": "Existing post-trade Claude handoff remains unanswered. Read this new Nov12 candidate/source delta: Concepcion for toe-DNP Boston, Kelce for Sadiq; assess KC16800 concentration and DellLP after current practice. Respond to exact version if contributing; no new v1/Grok loop or dispatch. Final exact nine/expectation binding must be archived BEFORE Nov15 17:30UTC/12:30Toronto.",
+  "acknowledgment": "not_received",
+  "recipient_completion": "not_received",
+  "prior_stages": "Originals,actualGrokquestions andactualauthorresponse/exchange retained. Thismaterialdelta isnotnewv1ornewcompletedproviderstage.",
+  "joint_endorsement": false,
+  "frozen": false,
+  "deadline": "ArchivefinalBEFORE2026-11-15T17:30:00Z"
+}

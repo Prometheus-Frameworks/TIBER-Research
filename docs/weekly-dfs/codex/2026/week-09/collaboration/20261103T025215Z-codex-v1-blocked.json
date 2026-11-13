@@ -1,0 +1,29 @@
+{
+  "record_type": "collaboration_stage_status",
+  "id": "2026-w09-r1-codex-v1-blocked-20261103T025215Z",
+  "cycle": "2026-w09-2026-11-08",
+  "round": 1,
+  "stage": "codex_v1_ready",
+  "status": "blocked",
+  "actual_author": "Codex (preparation only; no completev1)",
+  "posted_by": "Codex via authorizedGitHubdocumentationbranch",
+  "recorded_at": "2026-11-03T02:52:15.823Z",
+  "recorded_at_toronto": "2026-11-02T21:52:15-05:00",
+  "completed_at": null,
+  "exact_inputs": [
+    "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/54ba8174d2901eb9b4f92a58574022cc5af55006/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-02.json"
+  ],
+  "immutable_output": null,
+  "partial_work_path": "docs/weekly-dfs/codex/journal/20261103T025215Z.json",
+  "missing": [
+    "Nine current priced selections",
+    "Verified main-slate membership or attributed selection-level coverage",
+    "Validated cap and eligibility"
+  ],
+  "next_action": "Retain firstcompleteCodexv1 and versionedcommoninputs oncecurrentpricesaresupportable; thenhandoffClaudeoriginalwithactualexposuredisclosed.",
+  "claude_v1": "not received orinspected",
+  "grok_questions": "notrequestedforWeek9",
+  "notification": "No ready-stage completioncomment becausev1 isnotcomplete.",
+  "supersedes_status": "2026-w09-r1-status-20261102",
+  "historical_note": "Priorblockedstatus andmorningpartialboardretained; no completefirstdraft replaced."
+}

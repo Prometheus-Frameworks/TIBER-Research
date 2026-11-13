@@ -1,0 +1,79 @@
+{
+  "schema_version": "tiber-dfs-stage-receipt/v1",
+  "id": "2026-w09-r1-grok-questions-ready",
+  "stage": "grok_questions_ready",
+  "status": "ready",
+  "cycle": "2026-w09-2026-11-08",
+  "round": 1,
+  "request_id": "2026-w09-r1-grok-questions",
+  "actual_author": "Grok Bot",
+  "posted_by": "Grok Bot through operator-connected GitHub account (self-attributed)",
+  "github_posting_account": "Prometheus-Frameworks",
+  "retained_by": "Codex",
+  "original_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43#issuecomment-6609947738",
+  "original_comment_id": 6609947738,
+  "original_posted_at": "2026-11-03T16:45:26Z",
+  "original_updated_at": "2026-11-03T16:45:26Z",
+  "declared_completion_at_utc": "2026-11-03T16:46:00Z",
+  "declared_completion_precision": "approximate to minute; not a verified generation clock",
+  "declared_evidence_cutoff": "2026-11-03T16:45:00Z",
+  "declared_source_retrieval_window": "approximately16:44–16:45UTC, perauthor",
+  "clock_limit": "Server post16:45:26UTC precedes declared roundedcompletion~16:46UTC. Preserve both; exact originalcompletion/source clocks are not independentlyverified. Receipt completion uses the actual new clock.",
+  "receipt_completed_at": "2026-11-03T17:36:44.456Z",
+  "receipt_completed_at_toronto": "2026-11-03T12:36:44.456-05:00",
+  "exact_requested_inputs": {
+    "codex_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67033cfa6c3102dc3273bcf416b514c8f4940e2/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-03.json",
+    "claude_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/8df1a6e2c9549b9bb077630ecc8aa20a1add419a/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T122249Z-claude-v1.json",
+    "common_inputs": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/25945a160171e2197a4ce52a8f5234b71f73bcfb/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T114501Z-common-inputs.json",
+    "reported_salary_observations": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67033cfa6c3102dc3273bcf416b514c8f4940e2/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-03-reported-prices.csv",
+    "current_candidate": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67033cfa6c3102dc3273bcf416b514c8f4940e2/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-03.json",
+    "current_delta": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c5106eedb8ba67c54634ee8d683a5658e70eb2a6/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T163714Z-intake-delta.json",
+    "claude_stage_receipt": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c5106eedb8ba67c54634ee8d683a5658e70eb2a6/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T163714Z-claude-v1-ready.json"
+  },
+  "author_reported_inspection": {
+    "read": [
+      "Grok request Markdown at3301f35d9b185cea55dce4daa9b02aaac6903ef4",
+      "Codex original Markdown atc67033cfa6c3102dc3273bcf416b514c8f4940e2",
+      "Claude original Markdown at8df1a6e2c9549b9bb077630ecc8aa20a1add419a",
+      "Full common manifest at25945a160171e2197a4ce52a8f5234b71f73bcfb",
+      "Pinned764-rowCSV blobc941e04f6850ceed4e2ad005eff3dde2a6883688",
+      "Intake delta Markdown andClaude-readyreceipt atc5106eedb8ba67c54634ee8d683a5658e70eb2a6",
+      "PRcomments6602948548,6603701504,6609822371"
+    ],
+    "downloaded_not_substantively_read": [
+      "Codex original JSON"
+    ],
+    "skipped": [
+      "Nov2Codexsnapshot",
+      "CodexJSONsource receipts",
+      "ClaudeJSON",
+      "journals",
+      "sitefeed"
+    ]
+  },
+  "question_ids": [
+    "G-W09-Q1",
+    "G-W09-Q2",
+    "G-W09-Q3",
+    "G-W09-Q4",
+    "G-W09-Q5",
+    "G-W09-Q6"
+  ],
+  "author_original_frozen_check": "Grok reports nofreezecomment at16:44UTC; Codex freshheadtree/completefeed also establish no Week9freeze now.",
+  "retained_verbatim_file": "20261103T173644Z-grok-questions-verbatim.md",
+  "quality_limits": [
+    "Question premises are not establishedfacts or an endorsement; new evidence needs separate checks.",
+    "OriginalGroklabelsE1/E2/E3fullpage; source timingsmostlyapproximate andpublicationtimespartlyunknown.",
+    "Actual runtime/model unknown beyondGrokBot; no inferred subscription/automateddelivery."
+  ],
+  "current_stage_status": {
+    "codex_v1_ready": "ready",
+    "claude_v1_ready": "ready",
+    "grok_questions_ready": "ready",
+    "collaboration_ready": "blocked: actualWeek9authorreplyexchange not completed",
+    "final_frozen": "blocked: notfinal"
+  },
+  "recipient_acknowledgment": "Substantive attributed output identifies exact request and reported inputs; acknowledged by output.",
+  "next_action": "Codex responds with sourced dispositions; Claude receives samequestionIDs and exactcandidate plusnewdatedchecks. Retain actualreply/exchange beforeclaimingsharedwork.",
+  "dedupe_key": "2026-w09-2026-11-08/grok_questions_ready/r1/comment6609947738/https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67033cfa6c3102dc3273bcf416b514c8f4940e2/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-03.json"
+}

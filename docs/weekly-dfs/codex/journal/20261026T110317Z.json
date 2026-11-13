@@ -1,0 +1,508 @@
+{
+  "schema_version": "tiber-dfs-journal/v1",
+  "entries": [
+    {
+      "id": "2026-w07-outcomes-20261026T110317Z",
+      "snapshot_ids": [
+        "2026-w07-2026-10-19-daily",
+        "2026-w07-20261019T113232Z-daily",
+        "2026-w07-2026-10-20-daily",
+        "2026-w07-2026-10-21-daily",
+        "2026-w07-2026-10-22-daily",
+        "2026-w07-2026-10-23-daily",
+        "2026-w07-2026-10-24-daily",
+        "2026-w07-2026-10-25-daily",
+        "2026-w07-20261025T144553Z-freeze"
+      ],
+      "kind": "outcome_review",
+      "recorded_at": "2026-10-26T11:03:17.137Z",
+      "recorded_at_toronto": "2026-10-26T07:03:17.137-04:00",
+      "research_at": "2026-10-26T10:53:32.302Z",
+      "origin": "agent_chosen",
+      "origin_note": "Standing postgame assignment; Codex selected the role-versus-points questions. Claude's initial draft and Grok's questions remain attributed historical inputs; no new author response or player direction was observed.",
+      "title": "Week 7: preserve the better early draft and the missed assumptions",
+      "question": "Did the anticipated opportunity appear, and what explains the final team's result versus earlier drafts?",
+      "why_it_matters": "A later draft can score worse even when some new role checks are sound. Preserve the whole trajectory rather than judging only the final nine.",
+      "findings": [
+        "The frozen nine reconstruct to 114.22; Tuesday and Wednesday each 129.52. These are provisional under the inspected DraftKings rules.",
+        "Nabers: nine targets, seven catches, 111 yards with McCarthy starting. St. Brown: 11 targets, nine catches, 153 yards.",
+        "Kittle: ten targets, eight catches, 88 yards and one lost fumble. Marks: 19 carries, but just one receiving target.",
+        "Godwin: five of 11 team targets; Tampa Bay ran 49 times. Quarterback availability and target share did not establish a large passing opportunity.",
+        "LaPorta: two targets; Keenan: three targets in 22 Colts attempts. Pollard had 25 carries/three targets; Braelon 17 carries/seven targets."
+      ],
+      "interpretation": "The Nabers, St. Brown, Kittle and Marks role claims largely held within their stated limits. The result still exposed weak absolute volume and concentrated target competition. Tuesday's higher score must remain visible; neither it nor the final score alone proves better reasoning.",
+      "alternatives": [
+        "Pollard's original workload choice remained defensible; his three touchdowns amplified the result, so do not forecast that score forward.",
+        "The last St. Brown/Kittle package gained 15.10 over Puka/Keenan, while earlier RB changes lost 30.40 from Pollard to Marks.",
+        "Claude's separate original reconstructs to 102.92; this is not a controlled comparison or an author ranking."
+      ],
+      "uncertainty": [
+        "Platform settlement and later stat corrections are unverified.",
+        "Routes, snaps and all final inactive lists were not retrieved; mechanisms beyond inspected targets/carries remain unassessable.",
+        "In-game CMC injury changed conditions; it cannot be retroactively incorporated into pregame reasoning."
+      ],
+      "lineup_effect": "No selection edits after freeze. Add only provisional actuals to the display view, retaining all original salaries, rationales, estimates and cutoffs.",
+      "change_triggers": [
+        "Append a correction only for materially changed verified scoring inputs or platform evidence.",
+        "Reassess carried lessons when fresh prices, availability and role evidence differ."
+      ],
+      "carry_forward": [
+        "Compare absolute team passing volume with target share; a healthy-enough quarterback and a large share can coexist with a small passing pie.",
+        "Separate rushing role from touchdown outcome and receiving floor; Marks led carries while Pollard and Braelon had much stronger scoring results.",
+        "Treat same-team receiver/TE competition as a whole-lineup concentration risk; one game is a provisional lesson, not a rule."
+      ],
+      "sources": [
+        {
+          "id": "rules",
+          "label": "NFL Classic roster/scoring/PA rules",
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-10-26T10:54:00.450Z",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "NFL Classic roster/scoring/PA rules"
+        },
+        {
+          "id": "w7",
+          "label": "Week7 final game statuses",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "retrieved_at": "2026-10-26T10:54:08.430Z",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Week7 final game statuses"
+        },
+        {
+          "id": "nflsf",
+          "label": "SF receiving/rushing/fumbles; away-team table only",
+          "url": "https://www.nfl.com/games/49ers-at-falcons-2026-reg-7?tab=stats",
+          "retrieved_at": "2026-10-26T10:54:06.874Z",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "SF receiving/rushing/fumbles; away-team table only"
+        },
+        {
+          "id": "hou",
+          "label": "Both teams' individual statistics; gross passing yards distinct from net",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873016",
+          "retrieved_at": "2026-10-26T10:56:11.084Z",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Both teams' individual statistics; gross passing yards distinct from net"
+        },
+        {
+          "id": "epdet",
+          "label": "Both teams' stats, negative rushing yard and Goff lost fumble",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873020",
+          "retrieved_at": "2026-10-26T10:56:43.843Z",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Both teams' stats, negative rushing yard and Goff lost fumble"
+        },
+        {
+          "id": "epcar",
+          "label": "Both teams' stats; low passing volume and individual turnovers",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873018",
+          "retrieved_at": "2026-10-26T10:56:45.796Z",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Both teams' stats; low passing volume and individual turnovers"
+        },
+        {
+          "id": "epten",
+          "label": "Pollard and Tennessee DST inputs",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873013",
+          "retrieved_at": "2026-10-26T10:56:43.513Z",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Pollard and Tennessee DST inputs"
+        },
+        {
+          "id": "epnyj",
+          "label": "Braelon/Jets stats and returns",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873015",
+          "retrieved_at": "2026-10-26T10:57:07.264Z",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Braelon/Jets stats and returns"
+        },
+        {
+          "id": "eplar",
+          "label": "Puka rush/receive/fumbles/return statistics",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873021",
+          "retrieved_at": "2026-10-26T10:57:07.164Z",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Puka rush/receive/fumbles/return statistics"
+        },
+        {
+          "id": "epind",
+          "label": "Keenan stats and fumble tables",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873014",
+          "retrieved_at": "2026-10-26T10:57:07.588Z",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Keenan stats and fumble tables"
+        },
+        {
+          "id": "cbshou",
+          "label": "McCarthy start, Stroud-to-Stover conversion, reversed Marks fumble, Noel toe injury",
+          "url": "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261025_NYG@HOU/",
+          "retrieved_at": "2026-10-26T10:57:11.695Z",
+          "publication_at": null,
+          "published_display": "October 25, 2026 displayed; exact publication/update time unknown",
+          "scope": "McCarthy start, Stroud-to-Stover conversion, reversed Marks fumble, Noel toe injury"
+        },
+        {
+          "id": "sf",
+          "label": "Injury disruption; Evans/Deebo inactive; Kittle fumble in play-by-play",
+          "url": "https://www.cbssports.com/nfl/gametracker/recap/NFL_20261025_SF@ATL/",
+          "retrieved_at": "2026-10-26T10:56:13.029Z",
+          "publication_at": null,
+          "published_display": "October 25, 2026 displayed; exact publication/update time unknown",
+          "scope": "Injury disruption; Evans/Deebo inactive; Kittle fumble in play-by-play"
+        },
+        {
+          "id": "det",
+          "label": "Scoring summary; no Detroit conversions",
+          "url": "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261025_GB@DET/",
+          "retrieved_at": "2026-10-26T10:56:12.496Z",
+          "publication_at": null,
+          "published_display": "October 25, 2026 displayed; exact publication/update time unknown",
+          "scope": "Scoring summary; no Detroit conversions"
+        },
+        {
+          "id": "car",
+          "label": "Scoring summary including TB defensive TD/blocked PAT return; Mayfield thumb context",
+          "url": "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261025_TB@CAR/",
+          "retrieved_at": "2026-10-26T10:56:12.693Z",
+          "publication_at": null,
+          "published_display": "October 25, 2026 displayed; exact publication/update time unknown",
+          "scope": "Scoring summary including TB defensive TD/blocked PAT return; Mayfield thumb context"
+        },
+        {
+          "id": "cbsten",
+          "label": "Complete scoring summary; missedFG upright, no blocked kick or conversion",
+          "url": "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261025_CLE@TEN/",
+          "retrieved_at": "2026-10-26T10:57:48.454Z",
+          "publication_at": null,
+          "published_display": "October 25, 2026 displayed; exact publication/update time unknown",
+          "scope": "Complete scoring summary; missedFG upright, no blocked kick or conversion"
+        },
+        {
+          "id": "nyj",
+          "label": "Miami offensive TD/PAT and Jets conversion attribution",
+          "url": "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261025_MIA@NYJ/",
+          "retrieved_at": "2026-10-26T10:56:45.358Z",
+          "publication_at": null,
+          "published_display": "October 25, 2026 displayed; exact publication/update time unknown",
+          "scope": "Miami offensive TD/PAT and Jets conversion attribution"
+        },
+        {
+          "id": "lar",
+          "label": "Scoring summary/no Puka conversion",
+          "url": "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261025_LAR@LV/",
+          "retrieved_at": "2026-10-26T10:56:47.158Z",
+          "publication_at": null,
+          "published_display": "October 25, 2026 displayed; exact publication/update time unknown",
+          "scope": "Scoring summary/no Puka conversion"
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w07-2026-10-19-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/1179a3f1a6e8fa0e8acda7d2b923698fb19426c7/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-19.json"
+        },
+        {
+          "snapshot_id": "2026-w07-20261019T113232Z-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/df3c16287403ef566bf40bc148ba67d0b9227152/docs/weekly-dfs/codex/2026/week-07/daily/20261019T113232Z.json"
+        },
+        {
+          "snapshot_id": "2026-w07-2026-10-20-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d45ebad3f56b02e8a570b5141405b2d2f2a34d70/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-20.json"
+        },
+        {
+          "snapshot_id": "2026-w07-2026-10-21-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2e951cf9d88a23a1ea5b1dc6b2dff8a323ccfe88/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-21.json"
+        },
+        {
+          "snapshot_id": "2026-w07-2026-10-22-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/76079a9eca29ded1a823ff79261e6158b2db907d/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-22.json"
+        },
+        {
+          "snapshot_id": "2026-w07-2026-10-23-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/711eb4bf815f19f1aa986123e68207fd89ed98d5/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-23.json"
+        },
+        {
+          "snapshot_id": "2026-w07-2026-10-24-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a1f25193e2927bf9ee1b262233b8c6a78d70e408/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-24.json"
+        },
+        {
+          "snapshot_id": "2026-w07-2026-10-25-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5d6b5a43ba054dda712f07a64091182aa3e8e7b5/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-25.json"
+        },
+        {
+          "snapshot_id": "2026-w07-20261025T144553Z-freeze",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/22f61d352373f222ab94955bfcf6686470e655d6/docs/weekly-dfs/codex/2026/week-07/freeze/20261025T144553Z.json"
+        }
+      ],
+      "expectations": [],
+      "outcomes": [
+        {
+          "expectation_id": "2026-w07-1021-nabers-role",
+          "expectation": "Nabers retains central receiving involvement.",
+          "opportunity_assessment": "supported: 9targets/7catches/111yards; most Giants targets and receiving yards.",
+          "conditions_assessment": "McCarthy started and attempted28passes. Winston's four rushing attempts do not indicate a passing replacement.",
+          "score_explanation": "21.10: seven receptions,111yards and100-yard bonus; noTD.",
+          "cutoff_judgment": "Central-role thesis supported in this game. This does not prove a lasting QB upgrade.",
+          "source_urls": [
+            "https://www.espn.com/nfl/boxscore/_/gameId/401873016",
+            "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261025_NYG@HOU/"
+          ],
+          "id": "2026-w07-review-20261026-1",
+          "status": "provisional"
+        },
+        {
+          "expectation_id": "2026-w07-1022-nabers-qb-condition",
+          "expectation": "McCarthy expected to start; role case does not extrapolate relief-quarter yardage.",
+          "opportunity_assessment": "supported: Nabers9targets; McCarthy20/28for252.",
+          "conditions_assessment": "supported starter condition; full-game protection quality/routes unassessable here. Three sacks recorded.",
+          "score_explanation": "Nabers scored through catches/yards/bonus despite zeroGiants passingTDs.",
+          "cutoff_judgment": "The narrower pregame premise was reasonable; one game cannot isolate QB causality.",
+          "source_urls": [
+            "https://www.espn.com/nfl/boxscore/_/gameId/401873016",
+            "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261025_NYG@HOU/"
+          ],
+          "id": "2026-w07-review-20261026-2",
+          "status": "provisional"
+        },
+        {
+          "expectation_id": "2026-w07-1023-marks-role",
+          "expectation": "With Montgomery unavailable, Marks leads HoustonRB work with some receiving involvement.",
+          "opportunity_assessment": "supported lead rushing role:19/19listedRBcarries,66yards. Receiving involvement was just1catch/1target/15yards.",
+          "conditions_assessment": "Montgomery absent from boxscore; original official OUT retained at freeze. Snaps/routes not inspected. Marks briefly left and returned perplaylog.",
+          "score_explanation": "9.10, noTD/bonus; early fumble-returnTD ruling reversed, no lost-fumble deduction.",
+          "cutoff_judgment": "Lead-carry premise held, but it did not establish a receiving floor. ReplacingBraelon lost13.30points; droppingPollard earlier cost17.10. These outcomes do not alone establish irrational pregame choices.",
+          "source_urls": [
+            "https://www.espn.com/nfl/boxscore/_/gameId/401873016",
+            "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261025_NYG@HOU/"
+          ],
+          "id": "2026-w07-review-20261026-3",
+          "status": "provisional"
+        },
+        {
+          "expectation_id": "2026-w07-1024-stbrown-role",
+          "expectation": "StBrown central Detroit receiver; LaPorta competes for targets.",
+          "opportunity_assessment": "supported StBrown role:11targets/9catches/153yards. LaPorta2targets/1catch/18yards; production concentrated away from him.",
+          "conditions_assessment": "Detroit32passes, withWilliams9targets andGibbs6; no routes/snaps retrieved.",
+          "score_explanation": "27.20 including100-yard receiving bonus and-.1rushing. Williams caught bothDetroitTDs.",
+          "cutoff_judgment": "StBrown case held; shared team exposure did not protect LaPorta. Review role concentration rather than treating a game total as individual opportunity.",
+          "source_urls": [
+            "https://www.espn.com/nfl/boxscore/_/gameId/401873020",
+            "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261025_GB@DET/"
+          ],
+          "id": "2026-w07-review-20261026-4",
+          "status": "provisional"
+        },
+        {
+          "expectation_id": "2026-w07-1024-kittle-role",
+          "expectation": "Kittle regular receiving contributor with Evans/Deeboabsent, not allvacatedtargets.",
+          "opportunity_assessment": "supported:10targets/8catches/88yards, both receiving totals team-leading.",
+          "conditions_assessment": "Evans/Deebo inactive perrecap. CMCthigh injury changedconditions; he still6catches/61yards. Kirk-specific routes unassessable.",
+          "score_explanation": "15.80 after1lostfumble; noTDor100-yardbonus.",
+          "cutoff_judgment": "Role expectation held. Cannot attribute allopportunity toWRabsences or predict the in-game CMCinjury.",
+          "source_urls": [
+            "https://www.nfl.com/games/49ers-at-falcons-2026-reg-7?tab=stats",
+            "https://www.cbssports.com/nfl/gametracker/recap/NFL_20261025_SF@ATL/"
+          ],
+          "id": "2026-w07-review-20261026-5",
+          "status": "provisional"
+        },
+        {
+          "expectation_id": "2026-w07-1024-godwin-condition",
+          "expectation": "WithMayfieldplaying/EgbukaOUT, Godwin stays inpassingplan.",
+          "opportunity_assessment": "supported modest claim:5of11teamtargets,4catches/27yards. Share did not create largeabsolutevolume.",
+          "conditions_assessment": "Mayfieldreturned but throwingthumb/glove and33-6halftimelead supported49runs/11passes. Egbuka absent fromtargettable; finalinactive list not separately retrieved.",
+          "score_explanation": "6.70, noTD/bonus; team43points included defense/specialteamsand rushing scores.",
+          "cutoff_judgment": "Availability/rolepremise held; treating QBreturn as passingvolume restoration would have been too strong. Originaluncertaintywasreal.",
+          "source_urls": [
+            "https://www.espn.com/nfl/boxscore/_/gameId/401873018",
+            "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261025_TB@CAR/"
+          ],
+          "id": "2026-w07-review-20261026-6",
+          "status": "provisional"
+        },
+        {
+          "expectation_id": null,
+          "expectation": "Legacy review of LaPorta, Hubbard, Pollard, Braelon and Keenan; no new retrospective expectation IDs.",
+          "opportunity_assessment": "LaPorta2targets; Hubbard7carries/5targets; Keenan3targets in22Colts attempts. Pollard25carries/3targets andBraelon17carries/7targets both retained substantivework.",
+          "conditions_assessment": "Hubbard's33-6halftimedeficit and Indianapolis lowpassvolume differ from priorweekworkloads. Snaps/routes and all historicalavailability conditions not established.",
+          "score_explanation": "LaPorta2.8,Hubbard10,Keenan6.1; Pollard39.5 includes3TDsand100rushbonus, Braelon22.4 includes100rushbonus.",
+          "cutoff_judgment": "Retain failures: priorweekvolume was no guarantee. Pollard's observed role merits continued study without assuming3TDs repeat. No precise counterfactualprojection implied.",
+          "source_urls": [
+            "https://www.espn.com/nfl/boxscore/_/gameId/401873020",
+            "https://www.espn.com/nfl/boxscore/_/gameId/401873018",
+            "https://www.espn.com/nfl/boxscore/_/gameId/401873014",
+            "https://www.espn.com/nfl/boxscore/_/gameId/401873013",
+            "https://www.espn.com/nfl/boxscore/_/gameId/401873015"
+          ],
+          "id": "2026-w07-review-20261026-7",
+          "status": "provisional"
+        }
+      ],
+      "scoring_review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0e3980042bfc74ef55fa7a33c53306be9a396a5f/docs/weekly-dfs/codex/2026/week-07/reviews/2026-10-26.json",
+      "collaboration_status": "Codex fallback retained. Grok questions received; substantive Claude revision exchange missing at the original freeze."
+    },
+    {
+      "id": "2026-w08-research-20261026T110317Z",
+      "snapshot_ids": [
+        "2026-w08-2026-10-26-daily"
+      ],
+      "kind": "scheduled_research",
+      "recorded_at": "2026-10-26T11:03:17.137Z",
+      "recorded_at_toronto": "2026-10-26T07:03:17.137-04:00",
+      "research_at": "2026-10-26T10:59:56.161Z",
+      "origin": "agent_chosen",
+      "origin_note": "Standing arena assignment; no new player guidance. Candidate discovery and questions chosen by Codex. No Week 8 Claude picks inspected and no external dispatch configured.",
+      "title": "Week 8 starts unpriced: investigate Detroit allocation and RB opportunity",
+      "question": "Which observed roles deserve price-sensitive investigation on the November 1 slate?",
+      "why_it_matters": "The new slate removes five frozen selections through byes/Thursday scheduling. Reusing old salaries would create a false budget solution.",
+      "findings": [
+        "Primary NFL schedule lists 11 Sunday-afternoon candidate games on November 1; earliest at 13:00 ET. The actual DraftKings game set remains unverified.",
+        "The inspected Week 8 salary page explicitly has no posted prices. No official export or sufficiently priced lineup was established in the bounded pass.",
+        "Williams had nine targets alongside St. Brown's 11; LaPorta had two. Williams is a candidate beyond the prior nine.",
+        "Irving carried 24 times, but his team ran 49 times and Gainwell carried 14. Braelon had 17 carries/seven targets; Pollard 25/three."
+      ],
+      "interpretation": "Begin with an unpriced board. Test whether roles persist, then compare the entire salary package. Williams and Irving warrant discovery work without assuming their touchdowns or favorable scripts repeat.",
+      "alternatives": [
+        "LaPorta may become attractive at a sufficiently low new price, but a high team scoring environment is not proof of his individual target volume.",
+        "Retain Godwin and Keenan as questions rather than automatic selections; new team volume, health and price can change their cases."
+      ],
+      "uncertainty": [
+        "Actual DraftKings main-slate identity, game membership, eligible player IDs, positions and current salaries.",
+        "Week 8 availability reports and a coherent optional external projection snapshot.",
+        "Whether the observed workload conditions persist: Hall, Mayfield, Detroit competition and game script.",
+        "No numerical whole-lineup price tradeoff can be performed before verified prices."
+      ],
+      "lineup_effect": "Zero priced picks; $0 allocated and $50,000 unallocated. Projections null. Partial board cannot be frozen or announced as codex_v1_ready.",
+      "change_triggers": [
+        "A real official salary export or sufficient attributable selected prices, linked to the actual main slate.",
+        "Current availability and role evidence establishing whether the observed carry/target opportunity persists.",
+        "A supported alternative package that improves the whole roster under the cap; no forced churn."
+      ],
+      "carry_forward": [
+        "Check Hall and the Jets backfield split before projecting Braelon's observed role forward.",
+        "Check Mayfield's throwing condition and Tampa Bay's likely passing volume, not only whether he can play.",
+        "Preserve Codex's first supported complete Week 8 v1 before inspecting another author's picks where feasible; a partial board does not unlock downstream stages.",
+        "November 1 local cutoff is 12:30 Toronto / 17:30 UTC because daylight saving time ends."
+      ],
+      "sources": [
+        {
+          "id": "rules",
+          "label": "NFL Classic roster/scoring/PA rules",
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-10-26T10:54:00.450Z",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "NFL Classic roster/scoring/PA rules"
+        },
+        {
+          "id": "w8",
+          "label": "Week8 dates/kickoffs; not platform game set",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+          "retrieved_at": "2026-10-26T10:54:08.742Z",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Week8 dates/kickoffs; not platform game set"
+        },
+        {
+          "id": "epdet",
+          "label": "Both teams' stats, negative rushing yard and Goff lost fumble",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873020",
+          "retrieved_at": "2026-10-26T10:56:43.843Z",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Both teams' stats, negative rushing yard and Goff lost fumble"
+        },
+        {
+          "id": "epcar",
+          "label": "Both teams' stats; low passing volume and individual turnovers",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873018",
+          "retrieved_at": "2026-10-26T10:56:45.796Z",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Both teams' stats; low passing volume and individual turnovers"
+        },
+        {
+          "id": "epten",
+          "label": "Pollard and Tennessee DST inputs",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873013",
+          "retrieved_at": "2026-10-26T10:56:43.513Z",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Pollard and Tennessee DST inputs"
+        },
+        {
+          "id": "epnyj",
+          "label": "Braelon/Jets stats and returns",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873015",
+          "retrieved_at": "2026-10-26T10:57:07.264Z",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Braelon/Jets stats and returns"
+        },
+        {
+          "id": "epind",
+          "label": "Keenan stats and fumble tables",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873014",
+          "retrieved_at": "2026-10-26T10:57:07.588Z",
+          "publication_at": null,
+          "published_display": null,
+          "scope": "Keenan stats and fumble tables"
+        },
+        {
+          "id": "det",
+          "label": "Scoring summary; no Detroit conversions",
+          "url": "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261025_GB@DET/",
+          "retrieved_at": "2026-10-26T10:56:12.496Z",
+          "publication_at": null,
+          "published_display": "October 25, 2026 displayed; exact publication/update time unknown",
+          "scope": "Scoring summary; no Detroit conversions"
+        },
+        {
+          "id": "car",
+          "label": "Scoring summary including TB defensive TD/blocked PAT return; Mayfield thumb context",
+          "url": "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261025_TB@CAR/",
+          "retrieved_at": "2026-10-26T10:56:12.693Z",
+          "publication_at": null,
+          "published_display": "October 25, 2026 displayed; exact publication/update time unknown",
+          "scope": "Scoring summary including TB defensive TD/blocked PAT return; Mayfield thumb context"
+        },
+        {
+          "id": "w8price",
+          "label": "Explicit Week8 salary not-posted notice; secondary source, not proof of global platform absence",
+          "url": "https://fantasysportsedge.com/nfl/dfs/week-8",
+          "retrieved_at": "2026-10-26T10:56:42.658Z",
+          "publication_at": null,
+          "published_display": "October 25, 2026 displayed; exact publication/update time unknown",
+          "scope": "Explicit Week8 salary not-posted notice; secondary source, not proof of global platform absence"
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w08-2026-10-26-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0e3980042bfc74ef55fa7a33c53306be9a396a5f/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-26.json"
+        }
+      ],
+      "expectations": [],
+      "outcomes": [],
+      "collaboration_status": {
+        "codex_v1_ready": "partial — no complete priced v1",
+        "claude_v1_ready": "not inspected for Week 8; preserve Codex first complete v1 where feasible",
+        "grok_questions_ready": "not ready",
+        "collaboration_ready": "not ready",
+        "final_frozen": "not ready",
+        "next_handoff": "Save Codex's first supported complete Week 8 v1 before announcing codex_v1_ready. No downstream stage unlocked today.",
+        "process_proposal": "PR #57 open/unmerged; actual subscriptions/delivery remain unverified."
+      }
+    }
+  ]
+}

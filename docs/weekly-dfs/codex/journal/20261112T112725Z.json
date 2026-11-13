@@ -1,0 +1,414 @@
+{
+  "schema_version": "tiber-dfs-journal/v1",
+  "entries": [
+    {
+      "id": "2026-w10-research-20261112T112725Z",
+      "snapshot_ids": [
+        "2026-w10-2026-11-12-daily"
+      ],
+      "kind": "scheduled_research",
+      "recorded_at": "2026-11-12T11:27:25.565Z",
+      "recorded_at_toronto": "2026-11-12T06:27:25.565-05:00",
+      "research_at": "2026-11-12T11:27:25.565Z",
+      "origin": "agent_chosen",
+      "origin_note": "CodexchoseWednesdayavailabilityandfundedalternatives; actualearlierClaudeDell/Kelceviewsretainedasinfluence. No newoperatorpickinstruction.",
+      "title": "Official pool and one coherent model available; practice prompts two changes",
+      "question": "Does Boston toeDNP favorConcepcion, and is fundedKelceworth addedKCconcentration?",
+      "why_it_matters": "Healthandparticipation differfromlastpoints; earlierpricingconstraintnowresolvedwithoutrewritingdrafts.",
+      "findings": [
+        "Week9 schedule gamesfinal; existing full comparison89.08 remainsprovisional. All earlier complete lineups have totals; no newly verified settledDKresult or materialcorrection.",
+        "Same ten SundayNov15main games confirmed byNFL; earliest13:00Toronto/18:00UTC. Thursday,Munich09:30,SNF,MNFexcluded; officialCSV contains exacttenafternoonfixtures.",
+        "CurrentNFLClassic9slots,QB/2RB/3WR/TE/FLEX/DST,$50k,≥2games. PPR,passing4TD/.04peryard/300bonus3,receiving/rushing6TD/.1yard/100bonus3,lostfumble-1;DSTevent/PA treatment retained.",
+        "OfficialDraftKings group156416CSV:512rows,10afternoongames; allselectedIDs/positions/salaries andteam/game matched. AvgPointsPerGame is historical, never a projection. Boston andDell platformQ; WednesdayDNP/LP not finaldesignation.",
+        "FantasyPros currentreported selected/alternative rows cross-check againstofficialCSV; no originalsalary corrections or slatepool switch.",
+        "Primary datedWeek10Wednesdaylist:Mahomes knee/rightelbowFP,RicekneeFP,KelceankleFP,WorthyhamstringFP. JaylonMooreankleDNP. DisplayedpublishedNov11 15:21 butupdatedNov06 13:49is inconsistent; useweek/opponent/Wednesdaybody, notbadupdateclock.",
+        "PrimaryNov11Texans atBrownsWednesdaytable:Dellhand/shoulderLP,MontgomerygroinDNP,MarkskneeLP,HarrisonhamstringLP;Boston toeDNP,Fannin groinLP. Practiceonly,notOUT.",
+        "BrownsprimarytablecorroboratesBostonDNP,BarbercalfLP,HowardkneeLP,JenkinskneeDNP. Concepcionabsentfrominjurytableisnotcertifiedfinalhealth.",
+        "PrimaryNov11Browns09:22displayconfirmsWatsonsettoWeek10start; clearspriornamedstartergap. SaysprotocolclearedNov7, qualifyingearlierFridayvsSaturdayreportconflict; no receiver-specificupliftestablished.",
+        "PrimaryWednesdayMcCaffreyDNPreasonisNIRrest; Deebo hamstringLP,EvansAchillesDNP. Not finalinactiveandnotanautomaticWatkinsreplacement.",
+        "PrimaryWednesdayGarrettkneeLP;McDuffiebackDNP,CurltoeDNP;StaffordrightelbowFP;Fergusonankle/hamstringDNP,AllenobliqueLP,ParkinsonribsLP. OpponentFroholdtconcussionDNP. Coverageandprotectionconditionsremainmaterial.",
+        "PrimaryWednesdayWilsonconcussionLP,CooperankleLP; noSadiq/Taylorrowsobserved. ReceiverreturnsdonotquantifyTEtargetloss; healthyabsencefromtableisnotclearance.",
+        "PrimaryWednesdaynoWarrenrow;AlieCoxgroinDNP,JalenTraviskneeDNP. No automaticWRvacancyallocation; sparseinjurytableisnotfullrosterproof.",
+        "VerifiedWeek9Kelce6targets/4-72,Rice7/5-49,Worthy6/6-48;Sadiq4/4-49,Taylor2/1-11. Oneweekvolumeisnotastableprojection.",
+        "FullTimeFantasyselectedMainSlate10games,dgi156416,Wed20:22ETWeek10. Allninecoherentroundedprojectedpointsretrieved;147.0newninevs136.3previousnineunderthislatermodel. NeitherbackfilledorcalledCodexforecast.",
+        "ProviderCSVlinkreturned no players for thisposition; noprojectionCSV or completeprojectionpoolasserted. Mainpagecontrols supply selectedroundedestimates.",
+        "PublicDKlobbyredirectsaccountcreation; noaccountaccessused. IndependentpublicofficialCSVsuccessful,so lobbyfailuredoesnotmeanpoolunavailable."
+      ],
+      "interpretation": [
+        "PreferConcepcionoverBostonnowfrommedicalrisk/comparableobservedreceivingandcoherentmodel; oneDNPisnotOUT.",
+        "Spendavailable$1,900onKelce'sobservedinvolvementratherthanfour-TErotation; +6.4outside-modeldifferenceisnotguaranteedactualgain.",
+        "Modelestimatesareattributedandaddedonlytoday. HistoricalAvgPPGisnotprojection; olddraftestimatesremainnull.",
+        "KeepDellLPprovisional; CMCrestDNPdiffersfrominjuryDNP; MahomesFPdoesnotsettleSundaythrowing.",
+        "Officialmainmembershipnowverified: sameweekslate, sourcecoverageimprovedratherthanpoolchanged."
+      ],
+      "alternatives": [
+        {
+          "description": "Retainpriornine",
+          "salary_total": 48100,
+          "salary_remaining": 1900,
+          "model_total_under_new_snapshot": 136.3,
+          "disposition": "declined: lowermodelestimateandBostonDNP, butlessKCconcentration"
+        },
+        {
+          "description": "Concepciononly;holdSadiq",
+          "salary_total": 47700,
+          "salary_remaining": 2300,
+          "model_total": 140.6,
+          "disposition": "declinedfornow:preferKelcesupportedreceivinginvolvement; acceptsKCconcentration"
+        },
+        {
+          "description": "Concepcion andHigbee forBoston/Sadiq",
+          "salary_total": 49100,
+          "salary_remaining": 900,
+          "model_total": 144,
+          "disposition": "notadopted:lessKCconcentration,butLARTErotationwithAllen/ParkinsonLPandFergusonDNPdoesnotguaranteeHigbee expansion"
+        }
+      ],
+      "uncertainty": [
+        "Thursday/Fridayparticipation andfinalactives arefuture; FP/DNP/LP do notsettleSunday.",
+        "KCDowns/Worthy/Rice/Kelceallocation after trade, Mahomes actual throwing effectiveness.",
+        "Dellhand/shoulder restriction/outside rotation and ESPN9vsPFF8targetcoverage.",
+        "ClevelandWatsonchangesopportunity; ConcepcionnotguaranteedBostonvacatedtargets.",
+        "RamsGarrett/secondary availability and Cardinalsprotection/QBconditions; no automatic rookieQBturnovers.",
+        "Modelasofclockfromdisplayonly; roundedexternalestimatesnotcalibratedconfidence. Projection-onlyoptimum notcomputed."
+      ],
+      "lineup_effect": {
+        "revisions": [
+          {
+            "from": "Denzel Boston",
+            "to": "KC Concepcion Jr.",
+            "salary_delta": -400,
+            "classification": "new_evidence",
+            "reason": "Boston toeDNP onWednesday plus officialpoolQ; prefer Concepcion comparable prior receiving involvement and externalmodel16.5vs12.2. Do not claim BostonOUT or an automatic Watson uplift."
+          },
+          {
+            "from": "Kenyon Sadiq",
+            "to": "Travis Kelce",
+            "salary_delta": 1900,
+            "classification": "new_evidence",
+            "reason": "Kelce ankleFP/MahomesFP, verified six-target role and coherent13.8vs7.4 externalcomparison support spending available salary on receiving involvement. Adds third KC player; no guarantee of higher points."
+          }
+        ],
+        "salary_total": 49600,
+        "salary_remaining": 400,
+        "classification": "new_evidence",
+        "distinct_games": 6,
+        "KC_allocation": 16800,
+        "HOU_CLE_allocation": 8700,
+        "BUF_NYJ_allocation": 7400,
+        "projected_total": 147,
+        "actual_total": null,
+        "frozen": false
+      },
+      "change_triggers": [
+        "MaterialThursday/FridayBostonrecoveryorConcepcionroleconcern; compareentirecandidate.",
+        "Mahomesregressionorlimitedthrowing, actualDownsusage/competition; reconsiderthirdKCslot.",
+        "DellDNP/newdesignationorcrediblemanagedrole; useofficialsalarypoolforfundedalternatives.",
+        "Ramscoverage/frontsetbackorCardinalsprotectionresolution; recheckbeforecutoff."
+      ],
+      "carry_forward": [
+        "ReadThursday/Fridayreportbeforemakingfinalavailabilityclaims; oneWednesdayDNPneednotforceexitbutcanchangejudgment.",
+        "Firstofficialexport/firstmodelannotationarenewclocks,notcorrectionstooldprojection-nullrecords.",
+        "AssessKCconcentrationandreceivertargetallocationseparately; modelrankdoesnotreplacemedicalevidence.",
+        "Priorquestionpass/exchangeexists,butthisdeltahasnoreceivedClaudeendorsement; no stage restart."
+      ],
+      "sources": [
+        {
+          "id": "prior",
+          "label": "prior",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+          "retrieved_at": "2026-11-12T11:21:42.937Z",
+          "retrieved_at_toronto": "2026-11-12T06:21:42.937-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Week9 schedule gamesfinal; existing full comparison89.08 remainsprovisional. All earlier complete lineups have totals; no newly verified settledDKresult or materialcorrection."
+        },
+        {
+          "id": "schedule",
+          "label": "schedule",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+          "retrieved_at": "2026-11-12T11:21:43.305Z",
+          "retrieved_at_toronto": "2026-11-12T06:21:43.305-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Same ten SundayNov15main games confirmed byNFL; earliest13:00Toronto/18:00UTC. Thursday,Munich09:30,SNF,MNFexcluded; officialCSV contains exacttenafternoonfixtures."
+        },
+        {
+          "id": "rules",
+          "label": "rules",
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-12T11:21:44.400Z",
+          "retrieved_at_toronto": "2026-11-12T06:21:44.400-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "CurrentNFLClassic9slots,QB/2RB/3WR/TE/FLEX/DST,$50k,≥2games. PPR,passing4TD/.04peryard/300bonus3,receiving/rushing6TD/.1yard/100bonus3,lostfumble-1;DSTevent/PA treatment retained."
+        },
+        {
+          "id": "officialCSV",
+          "label": "officialCSV",
+          "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=156416",
+          "retrieved_at": "2026-11-12T11:23:57.688Z",
+          "retrieved_at_toronto": "2026-11-12T06:23:57.688-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "OfficialDraftKings group156416CSV:512rows,10afternoongames; allselectedIDs/positions/salaries andteam/game matched. AvgPointsPerGame is historical, never a projection. Boston andDell platformQ; WednesdayDNP/LP not finaldesignation."
+        },
+        {
+          "id": "prices",
+          "label": "prices",
+          "url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "retrieved_at": "2026-11-12T11:21:42.094Z",
+          "retrieved_at_toronto": "2026-11-12T06:21:42.094-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "FantasyPros currentreported selected/alternative rows cross-check againstofficialCSV; no originalsalary corrections or slatepool switch."
+        },
+        {
+          "id": "kcArticle",
+          "label": "kcArticle",
+          "url": "https://www.chiefs.com/news/week-10-injury-report-chiefs-vs-falcons-2026",
+          "retrieved_at": "2026-11-12T11:22:19.456Z",
+          "retrieved_at_toronto": "2026-11-12T06:22:19.456-05:00",
+          "publication_at": null,
+          "publication_display": "PublishedNov11 15:21; UpdatedNov06 13:49 (inconsistent; timezoneunverified)",
+          "scope": "Primary datedWeek10Wednesdaylist:Mahomes knee/rightelbowFP,RicekneeFP,KelceankleFP,WorthyhamstringFP. JaylonMooreankleDNP. DisplayedpublishedNov11 15:21 butupdatedNov06 13:49is inconsistent; useweek/opponent/Wednesdaybody, notbadupdateclock."
+        },
+        {
+          "id": "houDated",
+          "label": "houDated",
+          "url": "https://www.houstontexans.com/news/week-10-injury-report-texans-at-browns",
+          "retrieved_at": "2026-11-12T11:23:06.181Z",
+          "retrieved_at_toronto": "2026-11-12T06:23:06.181-05:00",
+          "publication_at": null,
+          "publication_display": "Nov11,2026 16:33 displayed, timezoneunverified",
+          "scope": "PrimaryNov11Texans atBrownsWednesdaytable:Dellhand/shoulderLP,MontgomerygroinDNP,MarkskneeLP,HarrisonhamstringLP;Boston toeDNP,Fannin groinLP. Practiceonly,notOUT."
+        },
+        {
+          "id": "cle",
+          "label": "cle",
+          "url": "https://www.clevelandbrowns.com/team/injury-report/",
+          "retrieved_at": "2026-11-12T11:21:44.827Z",
+          "retrieved_at_toronto": "2026-11-12T06:21:44.827-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "BrownsprimarytablecorroboratesBostonDNP,BarbercalfLP,HowardkneeLP,JenkinskneeDNP. Concepcionabsentfrominjurytableisnotcertifiedfinalhealth."
+        },
+        {
+          "id": "watson",
+          "label": "watson",
+          "url": "https://www.clevelandbrowns.com/news/deshaun-watson-set-to-start-week-10-against-the-texans",
+          "retrieved_at": "2026-11-12T11:23:05.604Z",
+          "retrieved_at_toronto": "2026-11-12T06:23:05.604-05:00",
+          "publication_at": null,
+          "publication_display": "Nov11,2026 09:22 displayed, timezoneunverified",
+          "scope": "PrimaryNov11Browns09:22displayconfirmsWatsonsettoWeek10start; clearspriornamedstartergap. SaysprotocolclearedNov7, qualifyingearlierFridayvsSaturdayreportconflict; no receiver-specificupliftestablished."
+        },
+        {
+          "id": "sf",
+          "label": "sf",
+          "url": "https://www.49ers.com/team/injury-report/",
+          "retrieved_at": "2026-11-12T11:22:18.693Z",
+          "retrieved_at_toronto": "2026-11-12T06:22:18.693-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "PrimaryWednesdayMcCaffreyDNPreasonisNIRrest; Deebo hamstringLP,EvansAchillesDNP. Not finalinactiveandnotanautomaticWatkinsreplacement."
+        },
+        {
+          "id": "rams",
+          "label": "rams",
+          "url": "https://www.therams.com/team/injury-report/",
+          "retrieved_at": "2026-11-12T11:22:18.654Z",
+          "retrieved_at_toronto": "2026-11-12T06:22:18.654-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "PrimaryWednesdayGarrettkneeLP;McDuffiebackDNP,CurltoeDNP;StaffordrightelbowFP;Fergusonankle/hamstringDNP,AllenobliqueLP,ParkinsonribsLP. OpponentFroholdtconcussionDNP. Coverageandprotectionconditionsremainmaterial."
+        },
+        {
+          "id": "jets",
+          "label": "jets",
+          "url": "https://www.newyorkjets.com/team/injury-report/",
+          "retrieved_at": "2026-11-12T11:22:18.523Z",
+          "retrieved_at_toronto": "2026-11-12T06:22:18.523-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "PrimaryWednesdayWilsonconcussionLP,CooperankleLP; noSadiq/Taylorrowsobserved. ReceiverreturnsdonotquantifyTEtargetloss; healthyabsencefromtableisnotclearance."
+        },
+        {
+          "id": "ind",
+          "label": "ind",
+          "url": "https://www.colts.com/team/injury-report/",
+          "retrieved_at": "2026-11-12T11:22:18.867Z",
+          "retrieved_at_toronto": "2026-11-12T06:22:18.867-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "PrimaryWednesdaynoWarrenrow;AlieCoxgroinDNP,JalenTraviskneeDNP. No automaticWRvacancyallocation; sparseinjurytableisnotfullrosterproof."
+        },
+        {
+          "id": "boxKC",
+          "label": "boxKC",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873045",
+          "retrieved_at": "2026-11-12T11:25:10.064Z",
+          "retrieved_at_toronto": "2026-11-12T06:25:10.064-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "VerifiedWeek9Kelce6targets/4-72,Rice7/5-49,Worthy6/6-48;Sadiq4/4-49,Taylor2/1-11. Oneweekvolumeisnotastableprojection."
+        },
+        {
+          "id": "mainModel",
+          "label": "mainModel",
+          "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+          "retrieved_at": "2026-11-12T11:23:43.556Z",
+          "retrieved_at_toronto": "2026-11-12T06:23:43.556-05:00",
+          "publication_at": "2026-11-12T01:22:00Z",
+          "publication_display": null,
+          "scope": "FullTimeFantasyselectedMainSlate10games,dgi156416,Wed20:22ETWeek10. Allninecoherentroundedprojectedpointsretrieved;147.0newninevs136.3previousnineunderthislatermodel. NeitherbackfilledorcalledCodexforecast."
+        },
+        {
+          "id": "mainCSV",
+          "label": "mainCSV",
+          "url": "https://fftoolbox.fulltimefantasy.com/football/ExportToCSV.cfm?type=dk&dgi=156416",
+          "retrieved_at": "2026-11-12T11:23:57.552Z",
+          "retrieved_at_toronto": "2026-11-12T06:23:57.552-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "ProviderCSVlinkreturned no players for thisposition; noprojectionCSV or completeprojectionpoolasserted. Mainpagecontrols supply selectedroundedestimates."
+        },
+        {
+          "id": "pool",
+          "label": "pool",
+          "url": "https://www.draftkings.com/lobby#/NFL/0/All",
+          "retrieved_at": "2026-11-12T11:23:06.524Z",
+          "retrieved_at_toronto": "2026-11-12T06:23:06.524-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "PublicDKlobbyredirectsaccountcreation; noaccountaccessused. IndependentpublicofficialCSVsuccessful,so lobbyfailuredoesnotmeanpoolunavailable."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w10-2026-11-11-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9ae416975f4aa91f6e281c7a3fa6b80b546a870d/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-11.md"
+        }
+      ],
+      "expectations": [
+        {
+          "id": "2026-w10-1112-concepcion-participation",
+          "subject": "KC Concepcion Jr.",
+          "statement": "Remain a meaningful Browns receiving participant with Watson starting, rather than needing a repeat64-yard touchdown.",
+          "support": "RetainedsixWeek9targets; officialWeek10pool andprimaryWatsonstarterconfirmed; replacingBostonDNP doesnotassignhiswork.",
+          "uncertainty": "QBallocation,one-gamesample,Bostonrecovery; no verifiedfuturetargetshare.",
+          "challenge": "Reducedrouteinvolvementorlowabsoluteopportunity undermineschoice evenifTDscores.",
+          "observe": "Targetsandteamattempts,qualifiedroutesifaccessible; separateQBconditionsandexplosiveplays.",
+          "source_urls": [
+            "https://www.espn.com/nfl/boxscore/_/gameId/401873039",
+            "https://www.clevelandbrowns.com/news/deshaun-watson-set-to-start-week-10-against-the-texans",
+            "https://www.clevelandbrowns.com/team/injury-report/"
+          ],
+          "recorded_at": "2026-11-12T11:27:25.565Z"
+        },
+        {
+          "id": "2026-w10-1112-kelce-receiving-condition",
+          "subject": "Travis Kelce",
+          "statement": "Maintain meaningful receiving involvement if active; no automatic increase after Downs arrival or Worthyinjury.",
+          "support": "Week9six targets/4-72; officialWednesdayankleFP andMahomesFP.",
+          "uncertainty": "Downs/Worthy/Ricecompetition andMahomeseffectiveness;threeKCplayerslinked.",
+          "challenge": "Newrestrictionorlowroute/targetparticipationchallengeaddition independentlyofpoints.",
+          "observe": "Active/practicestatus,targetsrelativeKCpasses,qualifiedroutes if available; assessallthreeKCscorecauses.",
+          "source_urls": [
+            "https://www.espn.com/nfl/boxscore/_/gameId/401873045",
+            "https://www.chiefs.com/news/week-10-injury-report-chiefs-vs-falcons-2026"
+          ],
+          "recorded_at": "2026-11-12T11:27:25.565Z"
+        }
+      ],
+      "outcomes": [],
+      "contribution_records": {
+        "codex_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a4fd4194bc744ad83c8f68e9e4d45de53aefcf28/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-10.json",
+        "claude_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T123500Z-claude-v1.json",
+        "grok_questions": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2a14ddad633a36fc49aa7d288cba5ca4d689b538/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T133502Z-grok-questions-verbatim.md",
+        "codex_response": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/967778b0e9e8fb371aba9e7d9c3d811c895b096e/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T133808Z-codex-grok-response.json",
+        "claude_response": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/94a4ac9159abba6588d55a0d3008e00192fd5492/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T142258Z-claude-grok-response.json",
+        "source_receipts": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/94a4ac9159abba6588d55a0d3008e00192fd5492/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T145845Z-integration-sources.json",
+        "original_expectations": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20a2131d1363b0c14ca4c56883cb710c2541f851/docs/weekly-dfs/codex/journal/20261110T113619Z.json"
+      },
+      "collaboration": {
+        "cycle": "2026-week-10",
+        "round": 1,
+        "final_editor": "Codex",
+        "codex_v1_ready": "ready",
+        "claude_v1_ready": "ready_with_recorded_corrections",
+        "grok_questions_ready": "ready",
+        "codex_response": "complete",
+        "claude_response": "complete_received_and_verified",
+        "collaboration_ready": "actual_exchange_and_editor_dispositions_complete; distinct preferred nines remain",
+        "joint_endorsement": false,
+        "shared_final": false,
+        "final_frozen": "not_final",
+        "next_handoff": "Existing post-trade Claude handoff remains unanswered. Read this new Nov12 candidate/source delta: Concepcion for toe-DNP Boston, Kelce for Sadiq; assess KC16800 concentration and DellLP after current practice. Respond to exact version if contributing; no new v1/Grok loop or dispatch. Final exact nine/expectation binding must be archived BEFORE Nov15 17:30UTC/12:30Toronto.",
+        "new_delta_jointly_endorsed": false,
+        "current_delta_author": "Codex",
+        "claude_influence": "Actual earlierDellselectionandKelcepreference; no newClaudeNov12contribution fabricated.",
+        "grok_coverage": "Actualoriginalquestionpasspredatesthesepractice/modelinputs."
+      },
+      "model_comparisons": {
+        "observed_at": "2026-11-12T11:23:43.556Z",
+        "projection": {
+          "provider": "FullTime Fantasy / FFToolbox",
+          "model": "Week10 DraftKings Main Slate, displayed rounded player projections",
+          "as_of": "2026-11-12T01:22:00Z",
+          "source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+          "observed_at": "2026-11-12T11:23:43.556Z",
+          "publication_display": "Projections updated Wed 8:22 PM ET · Week10",
+          "as_of_basis": "WednesdayNov11 20:22ET interpreted as01:22UTC Nov12; page display, not independently verified provider update log",
+          "scoring_basis": "Provider labels DraftKings FLEX/main, not Showdown; historical AvgPointsPerGame from official CSV excluded."
+        },
+        "previous_nine_under_new_model": {
+          "total": 136.3,
+          "kind": "later_comparison_only",
+          "note": "Not an estimate available when previous lineup was selected; original projections remain null.",
+          "picks": [
+            {
+              "player": "Patrick Mahomes II",
+              "points": 20
+            },
+            {
+              "player": "Christian McCaffrey",
+              "points": 26.9
+            },
+            {
+              "player": "James Cook III",
+              "points": 21.5
+            },
+            {
+              "player": "Rashee Rice",
+              "points": 19.1
+            },
+            {
+              "player": "Denzel Boston",
+              "points": 12.2
+            },
+            {
+              "player": "Tank Dell",
+              "points": 9.3
+            },
+            {
+              "player": "Tyler Warren",
+              "points": 12
+            },
+            {
+              "player": "Kenyon Sadiq",
+              "points": 7.4
+            },
+            {
+              "player": "Los Angeles Rams",
+              "points": 7.9
+            }
+          ]
+        },
+        "new_candidate": 147,
+        "difference": 10.7,
+        "caution": "Attributed model difference, not actual improvement or Codex forecast. Same-modelrounded values only."
+      }
+    }
+  ]
+}

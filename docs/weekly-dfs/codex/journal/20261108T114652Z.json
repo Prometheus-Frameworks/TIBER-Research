@@ -1,0 +1,298 @@
+{
+  "schema_version": "tiber-dfs-journal/v1",
+  "entries": [
+    {
+      "id": "2026-w09-research-20261108T114652Z",
+      "snapshot_ids": [
+        "2026-w09-2026-11-08-daily"
+      ],
+      "kind": "scheduled_research",
+      "recorded_at": "2026-11-08T11:46:52.506Z",
+      "recorded_at_toronto": "2026-11-08T06:46:52.506-05:00",
+      "research_at": "2026-11-08T11:45:19.114Z",
+      "origin": "agent_chosen",
+      "origin_note": "Agent chose carried-forward SF activation/Fannin deployment checks and a funded Kittle/Robinson alternative. Actual Claude/Grok prior contributions retained; no new operator player direction. Current-delta Claude reply missing.",
+      "title": "Sunday activation check supports a nine-player hold",
+      "question": "Does Robinson activation or current SF availability justify a different funded lineup before the Sunday deadline?",
+      "why_it_matters": "Activation resolves eligibility uncertainty but not workload. Compare both the defensive condition and the cost/concentration of a receiving package.",
+      "findings": [
+        "Primary Saturday announcement activates Robinson and removes his questionable designation, places Kirk on IR and elevates Hodge. It does not state Hobbs activation.",
+        "Primary Friday Bosa clearance/full practice remains, with no verified full-snap commitment. Generic injury page still lists RobinsonQ and is superseded by dated update.",
+        "Fannin FridaygroinLP/no designation; primary namesSandersstarter. No Sunday active list inspected.",
+        "WilsonOUT; model Mitchell estimate moves6.9->9.5 at newSaturday14:21ET clock, with eightotherestimatesunchanged and causeundisclosed.",
+        "Official586-row pool unchanged fromSaturday; allselectedoriginalsalaries/positions/gamesverified.",
+        "Seattle retains lower opponent environmentARI15.5versusLV21.0 and ArizonaOLabsences; same-modelSEA7.1versusSF6.5. Seattlefrontabsences stillconfirmed.",
+        "PriorSundayfinal; existingcompleteWeek6/7/8reviewsprovisional. No settledDKsource or materialcorrectionobtained.",
+        "FreshPRstate open/unmerged, noSundayfreeze/dailybeforethisrun and noClaudeR2reply afterSaturdayrequest."
+      ],
+      "interpretation": [
+        "Hold all nine; no forced churn or spend. Robinson availability modestly reduces one SF offensive uncertainty but does not resolve SF secondary or Bosa workload.",
+        "Decline Kittle/Robinson package because returning routes/share are not established; cheap eligibility is not secured opportunity.",
+        "Hold Fannin without a quarterback-to-checkdown inference. Preserve Sanders deployment uncertainty.",
+        "Keep model update separate from observed football evidence; no inferred point impact or independent agreement."
+      ],
+      "alternatives": [
+        {
+          "change": "SF -> Seattle",
+          "salary_total": 49400,
+          "salary_remaining": 600,
+          "classification": "not_selected",
+          "reason": "SEA7.1vsSF6.5 andARI15.5vsLV21.0 favorSeattle; confirmedSeattlefrontlossesretaineditorSFpreference. Pricesverified."
+        },
+        {
+          "change": "Fannin -> Warren",
+          "salary_total": 49100,
+          "salary_remaining": 900,
+          "classification": "not_selected",
+          "reason": "Warren4600 crediblepriorroutealternative; addssecondINDreceiverbesideAllen. Fanninnodesignation/priorinvolvementjustifyhold despiteSandersuncertainty."
+        },
+        {
+          "change": "Allen -> Downs",
+          "salary_total": 49400,
+          "salary_remaining": 600,
+          "classification": "not_selected",
+          "reason": "Downs5100 broadpriorroutesisClaude'scountercase; no newroleevidence outweighsAllenpriortargetearning."
+        },
+        {
+          "change": "Fannin/Allen -> Kittle/Robinson",
+          "salary_total": 49900,
+          "salary_remaining": 100,
+          "classification": "not_selected",
+          "reason": "Kittle6000/Robinson4300 fundedpackage+700fits; directKittle+1300exceedscapby500. Robinsonactivated/Qremovedbutreturningroutes/sharenotverifiedafterWeek2absence. TwoSFreceiversplusDSTaddsconcentration. Same-modelpackage131.2vscurrent131.3isnotproof. Declineavailability-to-workloadleap."
+        }
+      ],
+      "uncertainty": [
+        "Sunday inactives not yet inspected. SF late-game active list normally followsArena cutoff; laternews cannot revise frozennine.",
+        "Bosa return does not guarantee fullsnaps/effectiveness. NoHobbsactivationverified; Stout/Nealquestionable.",
+        "Fannin receiving/blocking deployment and groin effect withSanders; no automatic short-target benefit.",
+        "Mitchell distribution withoutWilson and absoluteJetspassingvolume; modelrevisioncauseunknown.",
+        "Coleman/Dobbins andKyren/Corumroles;Allen/Downsdisagreement.",
+        "Full qualified projection-pool baseline notcomputed; external estimates only."
+      ],
+      "lineup_effect": {
+        "action": "hold",
+        "classification": "unchanged",
+        "revisions": [],
+        "salary_total": 49200,
+        "salary_remaining": 800,
+        "distinct_games": 7,
+        "kc_nyj_slots": 3,
+        "kc_nyj_salary": 17000,
+        "projection_snapshot_change": "128.7 to131.3, all2.6fromMitchell externalestimate; selectionsunchanged."
+      },
+      "change_triggers": [
+        "Beforecutoff materialplayerstatus/SFdefensiveavailability change promptsfundedcomparison; oncefrozenlaternewsobservationonly.",
+        "Fanninrestriction/credibledeployment report canreopenWarren; QBidentitydoesnotimplytargettransfer.",
+        "RetainactualClaude deltaresponseifreceived; missingreplycannotextendcutoff orfabricateendorsement.",
+        "Finalrunmustarchiveexactnine/originalprices/expectationlocators BEFORE17:30UTC/12:30Toronto. Thismorningdailyisnotfreeze."
+      ],
+      "carry_forward": [
+        "Final pass must archive exact nine, original salaries and applicable five expectation IDs/immutable packets BEFORE12:30Toronto/17:30UTC; morning daily is not final.",
+        "Read actual Claude R2 reply if received; existing request is reused, no v1 restart or repeatedGrokloop. Do not claim joint endorsement.",
+        "SF late-game inactives may arrive after freeze; later restriction is an outcome, never a lineup revision.",
+        "After games assess Bosa participation, Mitchell opportunity withoutWilson, and Fannin deployment withSanders separately frompoints. Missingroutes/pressure data remainunassessable.",
+        "Robinson activation is verified; future use still requires role evidence. One game cannot establish a universal returning-player rule."
+      ],
+      "sources": [
+        {
+          "id": "week8",
+          "label": "week8",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+          "retrieved_at": "2026-11-08T11:40:03.159Z",
+          "retrieved_at_toronto": "2026-11-08T06:40:03.159-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "publication_note": "Unstated source timezone not converted; retrieval is not publication.",
+          "scope": "PriorSundaygamesfinal; existing complete-lineup reviews provisional, no newly verified DK settlement/correction."
+        },
+        {
+          "id": "schedule",
+          "label": "schedule",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+          "retrieved_at": "2026-11-08T11:40:03.226Z",
+          "retrieved_at_toronto": "2026-11-08T06:40:03.226-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "publication_note": "Unstated source timezone not converted; retrieval is not publication.",
+          "scope": "Primary November8Week9 same eleven afternoongames earliest13:00Toronto, excluded windows verified."
+        },
+        {
+          "id": "rules",
+          "label": "rules",
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-08T11:40:03.591Z",
+          "retrieved_at_toronto": "2026-11-08T06:40:03.591-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "publication_note": "Unstated source timezone not converted; retrieval is not publication.",
+          "scope": "NFLClassic nine slots/twogames/50k,PPR,bonuses,lostfumble-1,DSTevents/PAattribution inspected."
+        },
+        {
+          "id": "official",
+          "label": "official",
+          "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=155994",
+          "retrieved_at": "2026-11-08T11:40:01.737Z",
+          "retrieved_at_toronto": "2026-11-08T06:40:01.737-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "publication_note": "Unstated source timezone not converted; retrieval is not publication.",
+          "scope": "586unique155994rows sameIDs/gamesasNov7; allnineoriginalprices/positions/teams/gamesverified. Blankstatusisnotclearance."
+        },
+        {
+          "id": "model",
+          "label": "model",
+          "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994",
+          "retrieved_at": "2026-11-08T11:40:04.993Z",
+          "retrieved_at_toronto": "2026-11-08T06:40:04.993-05:00",
+          "publication_at": "2026-11-07T19:21:00Z",
+          "publication_display": "Projections updated Sat 2:21 PM ET · Week 9",
+          "publication_note": "Publisher update clock mapped SaturdayNov7ET, minute precision; generation/ingestion unknown.",
+          "scope": "Main11games duplicate selectorsagree; Sat2:21PMET. Mitchell9.5 versusprior6.9; otherselectedvaluesunchanged. No builderexecuted."
+        },
+        {
+          "id": "sfnews",
+          "label": "sfnews",
+          "url": "https://www.49ers.com/news/",
+          "retrieved_at": "2026-11-08T11:40:02.982Z",
+          "retrieved_at_toronto": "2026-11-08T06:40:02.982-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "publication_note": "Unstated source timezone not converted; retrieval is not publication.",
+          "scope": "Primary index locatesdatedroster announcement."
+        },
+        {
+          "id": "sf",
+          "label": "sf",
+          "url": "https://www.49ers.com/team/injury-report/",
+          "retrieved_at": "2026-11-08T11:40:02.708Z",
+          "retrieved_at_toronto": "2026-11-08T06:40:02.708-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "publication_note": "Unstated source timezone not converted; retrieval is not publication.",
+          "scope": "FridayBosaFP,Hobbs/Neal/RobinsonQ. GenericRobinsonQsupersededbySaturdayannouncement; Hobbsactivationnotverified."
+        },
+        {
+          "id": "cle",
+          "label": "cle",
+          "url": "https://www.clevelandbrowns.com/team/injury-report/",
+          "retrieved_at": "2026-11-08T11:40:02.602Z",
+          "retrieved_at_toronto": "2026-11-08T06:40:02.602-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "publication_note": "Unstated source timezone not converted; retrieval is not publication.",
+          "scope": "FanninFridaygroinLP/nodesignation; WatsonQ. Sundayinactivesnotinspected."
+        },
+        {
+          "id": "kc",
+          "label": "kc",
+          "url": "https://www.chiefs.com/team/injury-report/",
+          "retrieved_at": "2026-11-08T11:40:02.528Z",
+          "retrieved_at_toronto": "2026-11-08T06:40:02.528-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "publication_note": "Unstated source timezone not converted; retrieval is not publication.",
+          "scope": "Mahomes/RiceFridayFP/nodesignation; WilsonOUT. No targetallocationimplied."
+        },
+        {
+          "id": "sfmoves",
+          "label": "sfmoves",
+          "url": "https://www.49ers.com/news/49ers-make-a-series-of-moves-head-of-lvvssf",
+          "retrieved_at": "2026-11-08T11:42:33.815Z",
+          "retrieved_at_toronto": "2026-11-08T06:42:33.815-05:00",
+          "publication_at": null,
+          "publication_display": "Published: Nov 07, 2026 at 01:20 PM",
+          "publication_note": "Unstated source timezone not converted; retrieval is not publication.",
+          "scope": "November7primary: RobinsonactivatedIR/Qremoved, KirkIR,Hodgeelevated. NoHobbsactivationstated."
+        },
+        {
+          "id": "sfarticle",
+          "label": "sfarticle",
+          "url": "https://www.49ers.com/news/49ers-rule-out-three-wide-receivers-vs-raiders-bosa-returns-to-full-practice-ahead-of-week-9-lvvssf",
+          "retrieved_at": "2026-11-08T11:42:33.590Z",
+          "retrieved_at_toronto": "2026-11-08T06:42:33.590-05:00",
+          "publication_at": null,
+          "publication_display": "Nov 06, 2026 at 04:13 PM",
+          "publication_note": "Unstated source timezone not converted; retrieval is not publication.",
+          "scope": "November6primary BosaFP,nodesignation,coachclearedreturn afterWeek2absence. Actualsnapsunknown."
+        },
+        {
+          "id": "cleqb",
+          "label": "cleqb",
+          "url": "https://www.clevelandbrowns.com/news/shedeur-sanders-to-start-week-9-against-the-saints",
+          "retrieved_at": "2026-11-08T11:42:33.408Z",
+          "retrieved_at_toronto": "2026-11-08T06:42:33.408-05:00",
+          "publication_at": null,
+          "publication_display": "Nov 06, 2026 at 02:10 PM",
+          "publication_note": "Unstated source timezone not converted; retrieval is not publication.",
+          "scope": "November6primary namesSandersstarter, firstteamrepsallweek. NoautomaticTEbenefit."
+        },
+        {
+          "id": "lines",
+          "label": "lines",
+          "url": "https://www.vegasinsider.com/nfl/nfl-week-9-odds-2026/",
+          "retrieved_at": "2026-11-08T11:42:38.374Z",
+          "retrieved_at_toronto": "2026-11-08T06:42:38.374-05:00",
+          "publication_at": null,
+          "publication_display": "Header Nov6 9:51PM; body Updated on11/8/26",
+          "publication_note": "Unstated source timezone not converted; retrieval is not publication.",
+          "scope": "SummarySEA-8.5/39.5=>ARI15.5;SF-9.5/51.5=>LV21.0 versusprior20.75. HeaderNov6/bodyUpdated11/8 clockconflict."
+        },
+        {
+          "id": "sea",
+          "label": "sea",
+          "url": "https://www.seahawks.com/news/week-9-injury-report-cardinals-at-seahawks",
+          "retrieved_at": "2026-11-08T11:43:15.357Z",
+          "retrieved_at_toronto": "2026-11-08T06:43:15.357-05:00",
+          "publication_at": null,
+          "publication_display": "Nov 06, 2026 at 02:05 PM",
+          "publication_note": "Unstated source timezone not converted; retrieval is not publication.",
+          "scope": "FridayWilliams/Nwosu/PiliOUT,O'TooleQ;ArizonaGaines/JaydenWilliamsOUT. ContrarySeattlecasepreserved."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w09-2026-11-08-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/73294d84a8372ba6fb24944ab158b8795e9823f7/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-08.json"
+        }
+      ],
+      "expectations": [],
+      "outcomes": [],
+      "prior_expectation_references": [
+        {
+          "ids": [
+            "2026-w09-1103-coleman-role",
+            "2026-w09-1103-mitchell-role",
+            "2026-w09-1103-fannin-role"
+          ],
+          "original_packet": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/25945a160171e2197a4ce52a8f5234b71f73bcfb/docs/weekly-dfs/codex/journal/20261103T114501Z.md"
+        },
+        {
+          "ids": [
+            "2026-w09-1107-sf-front-condition",
+            "2026-w09-1107-mitchell-without-wilson"
+          ],
+          "original_packet": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2dbca30afd744399dcaa7b2d04dcc331088d65b1/docs/weekly-dfs/codex/journal/20261107T112931Z.md"
+        }
+      ],
+      "source_conflicts": [
+        "GenericSFtableRobinsonQ supersededbydatedSaturdayactivation/Qremoval.",
+        "HobbsQ/practicewindowisnotverifiedactivation.",
+        "VIheaderNov6 conflictsbodyUpdated11/8; summarySF-9.5 yieldsLV21.0 versusprior20.75. Sourcezoneunknown.",
+        "ModelclockSaturday14:21ET andMitchell+2.6; causeundisclosed. Not independent measuredtargetevidence."
+      ],
+      "collaboration": {
+        "codex_v1_ready": "ready",
+        "claude_v1_ready": "ready",
+        "grok_questions_ready": "ready",
+        "collaboration_ready": "ready: substantive exchange and Codex integration retained; no joint endorsement",
+        "final_frozen": "blocked: not yet final",
+        "final_editor": "Codex",
+        "integration_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/b8408a409722b23cd8594315f609b0a27711adfb/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T231233Z-collaboration-ready.json",
+        "authorship": "Codex morninghold ofSaturdayeditorrevision afteractualClaude/CodexexchangeandGrokpass; notjointlyendorsed",
+        "next_handoff": "2026-w09-r2-claude-delta-response: concise disposition on DST revision and Fannin hold; no neworiginal/Grokloop or deadlineextension.",
+        "current_delta_status": "FreshPRcommentslatestSaturdayrequest6706268992; noClaudeR2replyobserved.",
+        "existing_delta_request_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43#issuecomment-6706268992"
+      }
+    }
+  ]
+}

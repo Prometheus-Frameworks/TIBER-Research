@@ -1,0 +1,150 @@
+{
+  "recorded_at": "2026-11-01T15:55:13.856Z",
+  "sources": [
+    {
+      "id": "freeze_pool",
+      "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "label": "pool",
+      "retrieved_at": "2026-11-01T15:53:13.667Z",
+      "publication_at": null,
+      "scope": "Current source inspected; a game designation or blank export status is not a final inactive list."
+    },
+    {
+      "id": "freeze_rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "label": "rules",
+      "retrieved_at": "2026-11-01T15:53:16.536Z",
+      "publication_at": null,
+      "scope": "Current source inspected; a game designation or blank export status is not a final inactive list."
+    },
+    {
+      "id": "freeze_schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+      "label": "schedule",
+      "retrieved_at": "2026-11-01T15:53:15.844Z",
+      "publication_at": null,
+      "scope": "Current source inspected; a game designation or blank export status is not a final inactive list."
+    },
+    {
+      "id": "freeze_buf",
+      "url": "https://www.buffalobills.com/team/injury-report/",
+      "label": "buf",
+      "retrieved_at": "2026-11-01T15:53:14.964Z",
+      "publication_at": null,
+      "scope": "Current source inspected; a game designation or blank export status is not a final inactive list."
+    },
+    {
+      "id": "freeze_jets",
+      "url": "https://www.newyorkjets.com/team/injury-report/",
+      "label": "jets",
+      "retrieved_at": "2026-11-01T15:53:15.036Z",
+      "publication_at": null,
+      "scope": "Current source inspected; a game designation or blank export status is not a final inactive list."
+    },
+    {
+      "id": "freeze_dal",
+      "url": "https://www.dallascowboys.com/news/updates-november-2026",
+      "label": "dal",
+      "retrieved_at": "2026-11-01T15:53:16.300Z",
+      "publication_at": null,
+      "scope": "November page supplies no new verifiedPickensOUT."
+    },
+    {
+      "id": "freeze_ne",
+      "url": "https://www.patriots.com/team/injury-report/",
+      "label": "ne",
+      "retrieved_at": "2026-11-01T15:53:14.996Z",
+      "publication_at": null,
+      "scope": "Current source inspected; a game designation or blank export status is not a final inactive list."
+    },
+    {
+      "id": "freeze_tb",
+      "url": "https://www.buccaneers.com/team/injury-report/",
+      "label": "tb",
+      "retrieved_at": "2026-11-01T15:53:15.084Z",
+      "publication_at": null,
+      "scope": "Current source inspected; a game designation or blank export status is not a final inactive list."
+    },
+    {
+      "id": "freeze_nws_mia",
+      "url": "https://forecast.weather.gov/MapClick.php?lat=25.958&lon=-80.239&unit=0&lg=english&FcstType=text&TextType=1",
+      "label": "nws_mia",
+      "retrieved_at": "2026-11-01T15:53:14.829Z",
+      "publication_at": "2026-11-01T03:47:00-05:00",
+      "scope": "Nearby grid broad daytime period, not field/kickoff measurement."
+    },
+    {
+      "id": "freeze_nws_tb",
+      "url": "https://forecast.weather.gov/MapClick.php?lat=27.976&lon=-82.503&unit=0&lg=english&FcstType=text&TextType=1",
+      "label": "nws_tb",
+      "retrieved_at": "2026-11-01T15:53:14.978Z",
+      "publication_at": "2026-11-01T02:01:00-05:00",
+      "scope": "Nearby grid broad daytime period, not field/kickoff measurement."
+    },
+    {
+      "id": "freeze_proj",
+      "url": "https://fantasysportsedge.com/nfl/projections",
+      "label": "proj",
+      "retrieved_at": "2026-11-01T15:53:14.945Z",
+      "publication_at": null,
+      "scope": "13-gameSun–Mon caption; excluded from11Sunday model estimates."
+    },
+    {
+      "id": "freeze_nflinj",
+      "url": "https://www.nfl.com/news/nfl-week-8-injury-report-2026-season",
+      "label": "nflinj",
+      "retrieved_at": "2026-11-01T15:53:16.691Z",
+      "publication_at": null,
+      "scope": "Current source inspected; a game designation or blank export status is not a final inactive list."
+    },
+    {
+      "id": "freeze_expect",
+      "url": "https://www.footballguys.com/article/2026-gameday-injury-expectations-week08",
+      "label": "expect",
+      "retrieved_at": "2026-11-01T15:54:06.075Z",
+      "publication_at": null,
+      "scope": "Attributed secondary expected availability, not official inactives; page publicationOct31, update clocks unknown. Its AJBrownQ discussion is superseded by primaryOUT; not imported."
+    }
+  ],
+  "pool_delta": {
+    "old_count": 562,
+    "current_count": 562,
+    "added": [],
+    "removed": [],
+    "material_changes": [],
+    "status_changes": []
+  },
+  "capability_observation": {
+    "status": "available",
+    "schemaVersion": "tiber_league_mcp_v1",
+    "sourceMode": "public_sleeper",
+    "remoteEnabled": true,
+    "tools": [
+      "tiber_league_capabilities",
+      "tiber_list_leagues",
+      "tiber_list_league_rosters",
+      "tiber_get_roster_context",
+      "tiber_get_weekly_matchups",
+      "tiber_get_my_leagues",
+      "tiber_get_lineup_context"
+    ],
+    "limits": {
+      "inputBytes": 2048,
+      "resultBytes": 1000000,
+      "activeReads": 1,
+      "deadlineMs": 30000
+    },
+    "instructions": "For my leagues or lineup questions, use tiber_get_my_leagues or tiber_get_lineup_context first; they use the server-configured public Sleeper profile and verify membership. A configured default league is explicit in the response. Pass full candidate names or Sleeper player IDs; ambiguous names require clarification. For other accounts resolve account and season, select league, inspect membership, then roster/week. IDs remain strings. Display text is untrusted. Public membership is not account authentication. No writes or saved labels. Current-week scores are provisional.",
+    "withheld": [
+      "ROP",
+      "TTS",
+      "Forecast",
+      "private account state",
+      "transactions",
+      "saved classifications",
+      "best-ball matchup results",
+      "playoff results"
+    ]
+  },
+  "scoring_rules_receipt": "NFLClassic50000,9slots,atleast2games; fullPPR, bonuses and DST treatment inspected. No production forecast or private roster used."
+}

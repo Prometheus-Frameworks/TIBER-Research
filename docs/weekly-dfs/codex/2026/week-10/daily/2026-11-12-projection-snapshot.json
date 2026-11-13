@@ -1,0 +1,152 @@
+{
+  "recorded_at": "2026-11-12T11:27:25.565Z",
+  "projection": {
+    "provider": "FullTime Fantasy / FFToolbox",
+    "model": "Week10 DraftKings Main Slate, displayed rounded player projections",
+    "as_of": "2026-11-12T01:22:00Z",
+    "source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+    "observed_at": "2026-11-12T11:23:43.556Z",
+    "publication_display": "Projections updated Wed 8:22 PM ET · Week10",
+    "as_of_basis": "WednesdayNov11 20:22ET interpreted as01:22UTC Nov12; page display, not independently verified provider update log",
+    "scoring_basis": "Provider labels DraftKings FLEX/main, not Showdown; historical AvgPointsPerGame from official CSV excluded."
+  },
+  "selected": [
+    {
+      "player": "Patrick Mahomes II",
+      "position": "QB",
+      "salary": 6000,
+      "projected_points": 20
+    },
+    {
+      "player": "Christian McCaffrey",
+      "position": "RB",
+      "salary": 8500,
+      "projected_points": 26.9
+    },
+    {
+      "player": "James Cook III",
+      "position": "RB",
+      "salary": 7400,
+      "projected_points": 21.5
+    },
+    {
+      "player": "Rashee Rice",
+      "position": "WR",
+      "salary": 6100,
+      "projected_points": 19.1
+    },
+    {
+      "player": "KC Concepcion Jr.",
+      "position": "WR",
+      "salary": 4800,
+      "projected_points": 16.5
+    },
+    {
+      "player": "Tank Dell",
+      "position": "WR",
+      "salary": 3900,
+      "projected_points": 9.3
+    },
+    {
+      "player": "Tyler Warren",
+      "position": "TE",
+      "salary": 4400,
+      "projected_points": 12
+    },
+    {
+      "player": "Travis Kelce",
+      "position": "TE",
+      "salary": 4700,
+      "projected_points": 13.8
+    },
+    {
+      "player": "Los Angeles Rams",
+      "position": "DST",
+      "salary": 3800,
+      "projected_points": 7.9
+    }
+  ],
+  "comparisons": {
+    "observed_at": "2026-11-12T11:23:43.556Z",
+    "projection": {
+      "provider": "FullTime Fantasy / FFToolbox",
+      "model": "Week10 DraftKings Main Slate, displayed rounded player projections",
+      "as_of": "2026-11-12T01:22:00Z",
+      "source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+      "observed_at": "2026-11-12T11:23:43.556Z",
+      "publication_display": "Projections updated Wed 8:22 PM ET · Week10",
+      "as_of_basis": "WednesdayNov11 20:22ET interpreted as01:22UTC Nov12; page display, not independently verified provider update log",
+      "scoring_basis": "Provider labels DraftKings FLEX/main, not Showdown; historical AvgPointsPerGame from official CSV excluded."
+    },
+    "previous_nine_under_new_model": {
+      "total": 136.3,
+      "kind": "later_comparison_only",
+      "note": "Not an estimate available when previous lineup was selected; original projections remain null.",
+      "picks": [
+        {
+          "player": "Patrick Mahomes II",
+          "points": 20
+        },
+        {
+          "player": "Christian McCaffrey",
+          "points": 26.9
+        },
+        {
+          "player": "James Cook III",
+          "points": 21.5
+        },
+        {
+          "player": "Rashee Rice",
+          "points": 19.1
+        },
+        {
+          "player": "Denzel Boston",
+          "points": 12.2
+        },
+        {
+          "player": "Tank Dell",
+          "points": 9.3
+        },
+        {
+          "player": "Tyler Warren",
+          "points": 12
+        },
+        {
+          "player": "Kenyon Sadiq",
+          "points": 7.4
+        },
+        {
+          "player": "Los Angeles Rams",
+          "points": 7.9
+        }
+      ]
+    },
+    "new_candidate": 147,
+    "difference": 10.7,
+    "caution": "Attributed model difference, not actual improvement or Codex forecast. Same-modelrounded values only."
+  },
+  "other_inspected_rows": [
+    {
+      "position": "WR",
+      "name": "Denzel Boston",
+      "game": "CLE vs HOU",
+      "salary": 5200,
+      "points": 12.2
+    },
+    {
+      "position": "TE",
+      "name": "Tyler Higbee",
+      "game": "LAR @ ARI",
+      "salary": 4200,
+      "points": 10.8
+    },
+    {
+      "position": "TE",
+      "name": "Kenyon Sadiq",
+      "game": "NYJ vs BUF",
+      "salary": 2800,
+      "points": 7.4
+    }
+  ],
+  "coverage": "Selected and comparedrowsfromoneMainSlatepage; notacompleteprojectionpool oroptimizationbaseline"
+}

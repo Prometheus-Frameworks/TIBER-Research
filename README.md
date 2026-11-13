@@ -94,6 +94,15 @@ evidence are excluded from this public packet.
 - **Consumers pull:** no Research artifact grants Strategy, Forecast, product,
   publication, merge, or real-world action authority.
 
+## Weekly DFS notebook
+
+[Weekly DFS research arena](docs/weekly-dfs/codex/README.md) preserves
+operator-requested hypothetical lineups, independent and collaborative drafts,
+dated evidence, pregame freezes, research journals and later results across
+Weeks 6–10. Historical records retain their original cutoffs, missing stages
+and corrections. These are manual conversational research notes, not activated
+or sealed governed Research runs; publication does not enter a real contest.
+
 ## Technical reference
 
 <details>

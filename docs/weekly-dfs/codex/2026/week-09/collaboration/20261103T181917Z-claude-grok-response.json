@@ -1,0 +1,222 @@
+{
+  "schema_version": "tiber-dfs-provider-response/v1",
+  "id": "2026-w09-r1-claude-grok-response",
+  "handoff_id": "2026-w09-r1-claude-grok-response",
+  "author": "Claude",
+  "actual_sender": "Claude (self-committed)",
+  "inspected_versions": {
+    "request": "e72b12a9134e49689e65f206f933d1ace5370480",
+    "grok_questions": "c55085d251bd6fac6851b935928d7f6433b59297",
+    "codex_response_and_source_checks": "e72b12a9134e49689e65f206f933d1ace5370480",
+    "codex_candidate": "c67033cfa6c3102dc3273bcf416b514c8f4940e2 (via table in codex response only)",
+    "claude_v1": "8df1a6e2c9549b9bb077630ecc8aa20a1add419a",
+    "common_inputs": "25945a160171e2197a4ce52a8f5234b71f73bcfb",
+    "price_blob": "c941e04f6850ceed4e2ad005eff3dde2a6883688"
+  },
+  "decision_at_utc": "2026-11-03T18:19:17Z",
+  "decision_at_toronto": "2026-11-03T13:19:17-05:00",
+  "evidence_cutoff_utc_approx": "2026-11-03T18:18Z",
+  "candidate_action": "hold_all_nine",
+  "current_candidate": [
+    {
+      "slot": "QB",
+      "player": "Dak Prescott",
+      "salary": 6500
+    },
+    {
+      "slot": "RB",
+      "player": "Christian McCaffrey",
+      "salary": 8000
+    },
+    {
+      "slot": "RB",
+      "player": "Rhamondre Stevenson",
+      "salary": 6100
+    },
+    {
+      "slot": "WR",
+      "player": "CeeDee Lamb",
+      "salary": 8300
+    },
+    {
+      "slot": "WR",
+      "player": "Josh Downs",
+      "salary": 5100
+    },
+    {
+      "slot": "WR",
+      "player": "Courtland Sutton",
+      "salary": 4400
+    },
+    {
+      "slot": "TE",
+      "player": "Tyler Warren",
+      "salary": 4600
+    },
+    {
+      "slot": "FLEX",
+      "player": "Xavier Worthy",
+      "salary": 4400
+    },
+    {
+      "slot": "DST",
+      "player": "Philadelphia Eagles",
+      "salary": 2500
+    }
+  ],
+  "salary_total": 49900,
+  "salary_remaining": 100,
+  "projection": null,
+  "official_pool_verified": false,
+  "frozen": false,
+  "corrections_owned": [
+    "v1 Eagles line misread: VegasInsider lists Eagles +3.5 (home underdog), not -3.5; Giants implied ~21.5 at Codex 39.5 read",
+    "Stevenson workhorse link was Oct14/Week6 (accepted)",
+    "McCaffrey link Oct26 pre-bye (accepted)"
+  ],
+  "dispositions": {
+    "G-W09-Q1": {
+      "disposition": "accept_question_hold",
+      "note": "R1 routes: Downs 89% wk8/86% season, Warren 73%/81%, Allen 59%/67% (TPRR 28% vs Downs 19%, Warren 25%). Downs+Warren are the two highest-route Colts. Codex Allen hold: minor, unresolved disagreement. New risk: Downs trade request.",
+      "conditional_swap_A": {
+        "trigger": "Downs traded, non-routine practice absence Wed-Fri, or otherwise unavailable before freeze",
+        "change": "Josh Downs -> Keenan Allen (IND WR $4,900)",
+        "lineup": [
+          {
+            "slot": "QB",
+            "player": "Dak Prescott",
+            "salary": 6500
+          },
+          {
+            "slot": "RB",
+            "player": "Christian McCaffrey",
+            "salary": 8000
+          },
+          {
+            "slot": "RB",
+            "player": "Rhamondre Stevenson",
+            "salary": 6100
+          },
+          {
+            "slot": "WR",
+            "player": "CeeDee Lamb",
+            "salary": 8300
+          },
+          {
+            "slot": "WR",
+            "player": "Keenan Allen",
+            "salary": 4900
+          },
+          {
+            "slot": "WR",
+            "player": "Courtland Sutton",
+            "salary": 4400
+          },
+          {
+            "slot": "TE",
+            "player": "Tyler Warren",
+            "salary": 4600
+          },
+          {
+            "slot": "FLEX",
+            "player": "Xavier Worthy",
+            "salary": 4400
+          },
+          {
+            "slot": "DST",
+            "player": "Philadelphia Eagles",
+            "salary": 2500
+          }
+        ],
+        "salary_total": 49700,
+        "salary_remaining": 300,
+        "games": 6,
+        "dal_ind_slots": 4,
+        "dal_ind_salary": 24300
+      }
+    },
+    "G-W09-Q2": {
+      "disposition": "accept_codex_hold",
+      "trigger": "named starter change or Richardson first-team reps reopens all four DAL-IND slots"
+    },
+    "G-W09-Q3": {
+      "disposition": "hold_corrected_reason",
+      "reason": "Lowest opponent implied total among DSTs affordable with $100 remaining (NYG ~21.5 vs HOU ~22.5, DEN ~23.25, NE ~24.75). Weak edge; no funding move proposed.",
+      "missing": [
+        "NYG protection/pressure",
+        "turnover data",
+        "PHI Week9 front availability"
+      ]
+    },
+    "G-W09-Q4": {
+      "disposition": "read_no_consequential_disagreement"
+    },
+    "G-W09-Q5": {
+      "disposition": "decline_swap_for_now",
+      "reason": "R1: Sutton 86%/81% routes vs Flournoy 65%/74%, equal TPRR (17% vs 18%), Sutton AY% 32 vs 14; five DAL-IND slots over-concentrates.",
+      "conditional_trigger_B": "Pickens ruled OUT -> re-evaluate Sutton->Flournoy (+$400) with full funded nine; PHI->ARI funding rejected"
+    },
+    "G-W09-Q6": {
+      "disposition": "read_no_action"
+    }
+  },
+  "codex_qualifications": {
+    "jones_retained": "accepted",
+    "warren_4_catches": "accepted",
+    "snaps_not_routes": "accepted; R1 supplies routes",
+    "flournoy_ranking_conflict": "accepted",
+    "stevenson_eagles_corrections": "accepted"
+  },
+  "other_triggers": {
+    "C_stevenson": "Henderson full practice and active -> re-evaluate RB2 (no vetted replacement yet)",
+    "mccaffrey": "limited/DNP Wed-Thu or questionable Fri"
+  },
+  "sources": [
+    {
+      "id": "R1",
+      "url": "https://www.rotowire.com/football/article/nfl-box-score-breakdown-week-8-recap-usage-stats-145045",
+      "publication_display": "Updated Nov 2, 2026",
+      "access": "full page, two chunks"
+    },
+    {
+      "id": "R2",
+      "url": "https://www.nfl.com/news/colts-wr-josh-downs-requests-trade",
+      "publication_at": null,
+      "note": "context implies Oct 28; Nov10 deadline from secondary snippets, unverified"
+    },
+    {
+      "id": "R3",
+      "url": "https://www.dallascowboys.com/news/updates-november-2026",
+      "publication_display": "Nov 2, 2026 5:18 PM"
+    },
+    {
+      "id": "R4",
+      "url": "https://www.patriots.com/news/inactives-analysis-carlton-davis-iii-returns-a-j-brown-and-treveyon-henderson-inactive-for-week-8-vs-dolphins",
+      "access": "snippet"
+    },
+    {
+      "id": "R5",
+      "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-10-26/shanahan-mild-hamstring-strain-for-mccaffrey",
+      "access": "snippet"
+    },
+    {
+      "id": "R6",
+      "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/sutton-catches-all-four-targets-for-53-yards",
+      "access": "snippet"
+    }
+  ],
+  "retrieval_window_utc": "2026-11-03T18:00Z-18:18Z (approximate)",
+  "missing": [
+    "Week9 practice reports",
+    "final inactives",
+    "Weeks6-8 weekly route series",
+    "NYG/PHI pressure-protection",
+    "coherent all-nine projection"
+  ],
+  "endorsement": "none; no joint candidate exists; Codex final editor",
+  "runtime": {
+    "surface": "Claude Code remote cloud session",
+    "model_identifier": "withheld from repository artifacts by session policy"
+  },
+  "research_only": true
+}

@@ -1,0 +1,840 @@
+{
+  "record_type": "daily_snapshot",
+  "notebook_convention": "Conversational research notebook; not a governed Research contract or independent review.",
+  "id": "2026-w08-2026-10-30-daily",
+  "kind": "daily",
+  "status": "complete",
+  "frozen": false,
+  "recorded_at_utc": "2026-10-30T10:51:34.174Z",
+  "recorded_at_toronto": "2026-10-30T06:51:34.174-04:00",
+  "evidence_cutoff_utc": "2026-10-30T10:51:34.174Z",
+  "season": 2026,
+  "week": 8,
+  "platform": "DraftKings",
+  "slate_date": "2026-11-01",
+  "draft_group_id": "153728",
+  "slate_label": "2026 Week8 Sunday main — official group153728, 11games",
+  "salary_cap": 50000,
+  "salary_total": 49200,
+  "salary_remaining": 800,
+  "budget_note": "Unchanged complete daily candidate; $800 intentionally unused.",
+  "projected_total": null,
+  "actual_total": null,
+  "projection": null,
+  "official_pool_verified": true,
+  "official_salary_export_verified": true,
+  "salary_basis": "official_export",
+  "pool_status": "Official export562rows/elevengames; eight additions, no removals versus yesterday. Current selected membership verified; medical availability not certified.",
+  "earliest_candidate_kickoff": "2026-11-01T18:00:00Z",
+  "deadline_toronto": "2026-11-01T12:30:00-05:00",
+  "deadline_utc": "2026-11-01T17:30:00Z",
+  "deadline_note": "Toronto daylight saving time ends November 1. Deadline remains local 12:30, before earliest candidate kickoff at 13:00; earlier included kickoff would supersede.",
+  "games": [
+    {
+      "away": "BAL",
+      "home": "BUF",
+      "kickoff_et": "13:00",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "TEN",
+      "home": "CIN",
+      "kickoff_et": "13:00",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "ARI",
+      "home": "DAL",
+      "kickoff_et": "13:00",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "MIN",
+      "home": "DET",
+      "kickoff_et": "13:00",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "IND",
+      "home": "JAX",
+      "kickoff_et": "13:00",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "LV",
+      "home": "NYJ",
+      "kickoff_et": "13:00",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "CLE",
+      "home": "PIT",
+      "kickoff_et": "13:00",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "ATL",
+      "home": "TB",
+      "kickoff_et": "13:00",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "LAC",
+      "home": "LAR",
+      "kickoff_et": "16:05",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "KC",
+      "home": "DEN",
+      "kickoff_et": "16:25",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "NE",
+      "home": "MIA",
+      "kickoff_et": "16:25",
+      "platform_membership": "verified group153728"
+    }
+  ],
+  "excluded_windows": [
+    "CAR@GB Thursday October 29",
+    "PHI@WAS Sunday night November 1",
+    "CHI@SEA Monday November 2"
+  ],
+  "byes": [
+    "HOU",
+    "NO",
+    "NYG",
+    "SF"
+  ],
+  "picks": [
+    {
+      "slot": "QB",
+      "position": "QB",
+      "player": "Josh Allen",
+      "team": "BUF",
+      "opponent": "BAL",
+      "home": true,
+      "salary": 7700,
+      "draftkings_player_id": "44664390",
+      "eligible_slots": [
+        "QB"
+      ],
+      "game_info": "BAL@BUF 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Hold premium QB allocation. LamarFP/FP strengthens return evidence without confirming effectiveness; Ravens defensive leaders improved toLP. No automatic shootout forecast.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "pool",
+        "schedule",
+        "fresh_pool",
+        "1030_pool"
+      ]
+    },
+    {
+      "slot": "RB",
+      "position": "RB",
+      "player": "Bucky Irving",
+      "team": "TB",
+      "opponent": "ATL",
+      "home": true,
+      "salary": 6400,
+      "draftkings_player_id": "44664485",
+      "eligible_slots": [
+        "RB",
+        "FLEX"
+      ],
+      "game_info": "ATL@TB 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Hold lead-rushing allocation. ThursdayDNP is rest; Gainwell improvesLP, so no presumed vacated work. GoedekeDNP keeps blocking uncertainty.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "pool",
+        "schedule",
+        "fresh_pool",
+        "1030_pool"
+      ]
+    },
+    {
+      "slot": "RB",
+      "position": "RB",
+      "player": "Chase Brown",
+      "team": "CIN",
+      "opponent": "TEN",
+      "home": true,
+      "salary": 6300,
+      "draftkings_player_id": "44664487",
+      "eligible_slots": [
+        "RB",
+        "FLEX"
+      ],
+      "game_info": "TEN@CIN 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Add at $6,300: Week7 had11carries and5targets/4catches, supporting a receiving component. Perine scored the rushingTD; a lead or goal-line monopoly is not established.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "pool",
+        "chase",
+        "fresh_pool",
+        "1030_pool"
+      ]
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Jameson Williams",
+      "team": "DET",
+      "opponent": "MIN",
+      "home": true,
+      "salary": 6000,
+      "draftkings_player_id": "44664743",
+      "eligible_slots": [
+        "WR",
+        "FLEX"
+      ],
+      "game_info": "MIN@DET 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Hold original $6,000 allocation. StBrown/Gibbs nowFP; do not retain a presumed absence boost. MIN pressure matchup remains a countercase.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "pool",
+        "schedule",
+        "fresh_pool",
+        "1030_pool"
+      ]
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Omar Cooper Jr.",
+      "team": "NYJ",
+      "opponent": "LV",
+      "home": true,
+      "salary": 4800,
+      "draftkings_player_id": "44664777",
+      "eligible_slots": [
+        "WR",
+        "FLEX"
+      ],
+      "game_info": "LV@NYJ 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Keep at $4,800 after contrary evidence: reported route share fell to70% with Mitchell returning. Designed usage and primary play descriptions support involvement; do not repeat115yards on5targets as a forecast.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "pool",
+        "omar",
+        "film",
+        "fresh_pool",
+        "1030_pool"
+      ]
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Zay Flowers",
+      "team": "BAL",
+      "opponent": "BUF",
+      "home": false,
+      "salary": 7200,
+      "draftkings_player_id": "44664725",
+      "eligible_slots": [
+        "WR",
+        "FLEX"
+      ],
+      "game_info": "BAL@BUF 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Hold observed receiving-role allocation. LamarFP/FP improves one supporting condition; target distribution and actual QB effectiveness remain uncertain.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "pool",
+        "chase",
+        "fresh_pool",
+        "1030_pool"
+      ]
+    },
+    {
+      "slot": "TE",
+      "position": "TE",
+      "player": "Mason Taylor",
+      "team": "NYJ",
+      "opponent": "LV",
+      "home": true,
+      "salary": 3300,
+      "draftkings_player_id": "44665165",
+      "eligible_slots": [
+        "TE",
+        "FLEX"
+      ],
+      "game_info": "LV@NYJ 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Hold $3,300 role selection. Primary37snaps/63% supports involvement;18targets in5appearances challenges chasing his twoTDgame. Routes and competition unresolved.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "pool",
+        "taylor",
+        "jetsbox",
+        "fresh_pool",
+        "1030_pool"
+      ]
+    },
+    {
+      "slot": "FLEX",
+      "position": "WR",
+      "player": "KC Concepcion Jr.",
+      "team": "CLE",
+      "opponent": "PIT",
+      "home": false,
+      "salary": 4700,
+      "draftkings_player_id": "44664781",
+      "eligible_slots": [
+        "WR",
+        "FLEX"
+      ],
+      "game_info": "CLE@PIT 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Add FLEX at $4,700: attributed utilization report supports repeated mid-20s target shares before29% Week7. Lower-volume Browns offense/Fannin competition and PIT matchup temper the role case.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "pool",
+        "omar",
+        "fresh_pool",
+        "1030_pool"
+      ]
+    },
+    {
+      "slot": "DST",
+      "position": "DST",
+      "player": "Jets",
+      "team": "NYJ",
+      "opponent": "LV",
+      "home": true,
+      "salary": 2800,
+      "draftkings_player_id": "44665389",
+      "eligible_slots": [
+        "DST"
+      ],
+      "game_info": "LV@NYJ 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Hold low-cost funding selection provisionally. Bailey/Ossai/SweatDNP and BowersFP weaken case; opposing centerDNP is counterevidence, not a quantified sack forecast.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "pool",
+        "jetsbox",
+        "lvbox",
+        "fresh_pool",
+        "1030_pool"
+      ]
+    }
+  ],
+  "unfilled_slots": [],
+  "summary": "Nine held: $49,200/$800 remaining. Fresh role and Thursday practice checks challenge assumptions without forcing churn. Friday Grok request prepared under absent-Claude-v1 exception.",
+  "counterargument": "Cooper/Taylor compete for Jets targets, Taylor's broader target history is thin, and Jets defensive absences persist. Healthy returns can dilute role assumptions. No complete coherent projection comparison establishes a superior funding package.",
+  "revisions": [],
+  "revision_classification": "unchanged",
+  "previous_snapshot_id": "2026-w08-2026-10-29-daily",
+  "cross_slate_baseline_id": "2026-w07-20261025T144553Z-freeze",
+  "important_unchanged_picks": [
+    "Josh Allen",
+    "Bucky Irving",
+    "Chase Brown",
+    "Jameson Williams",
+    "Omar Cooper Jr.",
+    "Zay Flowers",
+    "Mason Taylor",
+    "KC Concepcion Jr.",
+    "Jets"
+  ],
+  "research_origin": "agent_chosen",
+  "operator_input": "Operator calls publicly posted Oct27 11:08:16UTC favor Flowers and BAL@BUF and fade Garrett Wilson. Original supplied clock unknown; stated prior Claude exposure retained. Codex had prior qualitative exposure before this v1; no blind-to-operator claim. No Week8 Claude picks inspected.",
+  "collaboration": {
+    "codex_v1_ready": "ready; October28 original retained",
+    "claude_v1_ready": "absent; October28 request posted, acknowledgment/output not received",
+    "grok_questions_ready": "absent; Friday question request prepared under season-study exception, not completed questions",
+    "collaboration_ready": "not completed",
+    "final_frozen": "not due; no Week8 freeze exists",
+    "next_handoff": "Grok question pass using exact original/current candidate/common inputs and today's delta, claude_v1 absent. Claude/Codex then reply to actual question IDs; no restart of Codex v1."
+  },
+  "unresolved_assumptions": [
+    "Final Friday/Sunday availability and roles, rather than practice participation alone.",
+    "Cooper/Taylor target competition, Taylor's route share and Jets pressure quality.",
+    "A complete compatible projection snapshot; a quantified ranking of funding alternatives is unavailable."
+  ],
+  "what_changes_view": [
+    "Material final availability or role evidence before cutoff.",
+    "A verified whole-lineup package that improves the evidence case rather than merely spends the remaining budget.",
+    "Actual Grok questions and Claude substantive response/exchange."
+  ],
+  "sources": [
+    {
+      "id": "groups",
+      "url": "https://api.draftkings.com/draftgroups/v1/",
+      "retrieved_at": "2026-10-28T10:14:44.897Z",
+      "publication_at": null,
+      "label": "groups",
+      "scope": "Official draft group153728, Classic21, 11games; unrelated groups not retained."
+    },
+    {
+      "id": "pool",
+      "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "retrieved_at": "2026-10-28T10:15:05.939Z",
+      "publication_at": null,
+      "label": "pool",
+      "scope": "554-row official salary export; salary/position/eligibility/game IDs, not medical clearance or forecast."
+    },
+    {
+      "id": "schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+      "retrieved_at": "2026-10-28T10:14:33.029Z",
+      "publication_at": null,
+      "label": "schedule",
+      "scope": "Actual page inspected; publication unknown unless recorded."
+    },
+    {
+      "id": "rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-10-28T10:14:24.291Z",
+      "publication_at": null,
+      "label": "rules",
+      "scope": "Actual page inspected; publication unknown unless recorded."
+    },
+    {
+      "id": "omar",
+      "url": "https://www.fantasylife.com/articles/fantasy/fantasy-football-takeaways-omar-cooper-utilization-report",
+      "retrieved_at": "2026-10-28T10:14:21.702Z",
+      "publication_at": null,
+      "label": "omar",
+      "scope": "Attributed external utilization: Cooper70% routes, Mitchell55%; KCC target-role evidence. Historical comparison probabilities not adopted."
+    },
+    {
+      "id": "film",
+      "url": "https://www.newyorkjets.com/news/film-breakdown-omar-cooper-jr-week-7-top-plays-10-27-2026",
+      "retrieved_at": "2026-10-28T10:14:21.940Z",
+      "publication_at": "2026-10-27T13:30:00-04:00",
+      "label": "film",
+      "scope": "Primary selected-play breakdown; man-coverage five routes is a subset, not total routes."
+    },
+    {
+      "id": "chase",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873012",
+      "retrieved_at": "2026-10-28T10:15:42.133Z",
+      "publication_at": null,
+      "label": "chase",
+      "scope": "Actual page inspected; publication unknown unless recorded."
+    },
+    {
+      "id": "ferg",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873009",
+      "retrieved_at": "2026-10-28T10:15:41.925Z",
+      "publication_at": null,
+      "label": "ferg",
+      "scope": "Actual page inspected; publication unknown unless recorded."
+    },
+    {
+      "id": "taylor",
+      "url": "https://www.newyorkjets.com/news/mason-taylor-joined-omar-cooper-jr-in-jets-offensive-production-vs-dolphins-10-26-2026",
+      "retrieved_at": "2026-10-28T10:16:13.889Z",
+      "publication_at": "2026-10-26T12:15:00-04:00",
+      "label": "taylor",
+      "scope": "Actual page inspected; publication unknown unless recorded."
+    },
+    {
+      "id": "jetsbox",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873015",
+      "retrieved_at": "2026-10-28T10:15:41.964Z",
+      "publication_at": null,
+      "label": "jetsbox",
+      "scope": "Actual page inspected; publication unknown unless recorded."
+    },
+    {
+      "id": "lvbox",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873021",
+      "retrieved_at": "2026-10-28T10:15:41.813Z",
+      "publication_at": null,
+      "label": "lvbox",
+      "scope": "Actual page inspected; publication unknown unless recorded."
+    },
+    {
+      "id": "detinj",
+      "url": "https://www.detroitlions.com/team/injury-report/",
+      "retrieved_at": "2026-10-28T10:14:45.818Z",
+      "publication_at": null,
+      "label": "detinj",
+      "scope": "No player rows returned; cannot confirm StBrown ankle report."
+    },
+    {
+      "id": "cinstatus",
+      "url": "https://www.bengals.com/team/injury-report/",
+      "retrieved_at": "2026-10-28T10:15:42.568Z",
+      "publication_at": null,
+      "label": "cinstatus",
+      "scope": "Empty/mislabelled header; not evidence of a clear Week8 report."
+    },
+    {
+      "id": "dalstatus",
+      "url": "https://www.dallascowboys.com/team/injury-report/",
+      "retrieved_at": "2026-10-28T10:15:41.030Z",
+      "publication_at": null,
+      "label": "dalstatus",
+      "scope": "No player rows returned; Ferguson clearance not inferred."
+    },
+    {
+      "id": "bills",
+      "url": "https://www.buffalobills.com/team/injury-report/",
+      "retrieved_at": "2026-10-28T10:16:12.026Z",
+      "publication_at": null,
+      "label": "bills",
+      "scope": "Actual page inspected; publication unknown unless recorded."
+    },
+    {
+      "id": "ravens",
+      "url": "https://www.baltimoreravens.com/team/injury-report/",
+      "retrieved_at": "2026-10-28T10:16:12.439Z",
+      "publication_at": null,
+      "label": "ravens",
+      "scope": "Actual page inspected; publication unknown unless recorded."
+    },
+    {
+      "id": "prices",
+      "url": "https://fantasysportsedge.com/nfl/dfs/week-8",
+      "retrieved_at": "2026-10-28T10:14:22.939Z",
+      "publication_at": null,
+      "label": "prices",
+      "scope": "Actual page inspected; publication unknown unless recorded."
+    },
+    {
+      "id": "projections",
+      "url": "https://fantasysportsedge.com/nfl/projections",
+      "retrieved_at": "2026-10-28T10:14:22.917Z",
+      "publication_at": null,
+      "label": "projections",
+      "scope": "Provider changed to14-game Thu–Mon caption; not used for Sunday point estimates."
+    },
+    {
+      "id": "week7",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+      "retrieved_at": "2026-10-28T10:14:55.466Z",
+      "publication_at": null,
+      "label": "week7",
+      "scope": "Actual page inspected; publication unknown unless recorded."
+    },
+    {
+      "id": "fresh_pool",
+      "label": "pool",
+      "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "retrieved_at": "2026-10-29T10:27:58.542Z",
+      "publication_at": null,
+      "scope": "Inspected current source; practice participation is not final availability."
+    },
+    {
+      "id": "fresh_rules",
+      "label": "rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-10-29T10:28:00.877Z",
+      "publication_at": null,
+      "scope": "Inspected current source; practice participation is not final availability."
+    },
+    {
+      "id": "fresh_schedule",
+      "label": "schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+      "retrieved_at": "2026-10-29T10:28:01.206Z",
+      "publication_at": null,
+      "scope": "Inspected current source; practice participation is not final availability."
+    },
+    {
+      "id": "fresh_week7",
+      "label": "week7",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+      "retrieved_at": "2026-10-29T10:27:59.657Z",
+      "publication_at": null,
+      "scope": "Inspected current source; practice participation is not final availability."
+    },
+    {
+      "id": "fresh_jets",
+      "label": "jets",
+      "url": "https://www.newyorkjets.com/news/jets-injury-report-week-8-vs-raiders-wednesday-10-28-2026",
+      "retrieved_at": "2026-10-29T10:27:58.831Z",
+      "publication_at": "2026-10-28T16:00:00-04:00",
+      "scope": "Inspected current source; practice participation is not final availability."
+    },
+    {
+      "id": "fresh_lamar",
+      "label": "lamar",
+      "url": "https://www.baltimoreravens.com/news/lamar-jackson-injury-practice-report-emotional-boost",
+      "retrieved_at": "2026-10-29T10:28:00.798Z",
+      "publication_at": "2026-10-28T14:17:00-04:00",
+      "scope": "Inspected current source; practice participation is not final availability."
+    },
+    {
+      "id": "fresh_te",
+      "label": "te",
+      "url": "https://www.rotoballer.com/tight-end-te-fantasy-football-start-em-sit-em-picks-for-week-8-2026/1976164",
+      "retrieved_at": "2026-10-29T10:28:01.046Z",
+      "publication_at": "2026-10-28T09:30:00-04:00",
+      "scope": "Inspected current source; practice participation is not final availability."
+    },
+    {
+      "id": "fresh_det",
+      "label": "det",
+      "url": "https://www.detroitlions.com/news/notebook-detroit-lions-joseph-returns-to-practice-goff-wonnum",
+      "retrieved_at": "2026-10-29T10:28:43.792Z",
+      "publication_at": "2026-10-28T17:07:00-04:00",
+      "scope": "Inspected current source; practice participation is not final availability."
+    },
+    {
+      "id": "fresh_detreport",
+      "label": "detreport",
+      "url": "https://www.detroitlions.com/news/lions-vs-vikings-practice-report-oct-28-gibbs-stbrown-joseph",
+      "retrieved_at": "2026-10-29T10:28:58.351Z",
+      "publication_at": "2026-10-28T16:31:00-04:00",
+      "scope": "Inspected current source; practice participation is not final availability."
+    },
+    {
+      "id": "fresh_cin",
+      "label": "cin",
+      "url": "https://www.bengals.com/team/injury-report/",
+      "retrieved_at": "2026-10-29T10:28:43.691Z",
+      "publication_at": null,
+      "scope": "Mislabelled Chiefs header, only opponent Titans rows; no Bengals clearance."
+    },
+    {
+      "id": "fresh_tb",
+      "label": "tb",
+      "url": "https://www.buccaneers.com/team/injury-report/",
+      "retrieved_at": "2026-10-29T10:28:43.736Z",
+      "publication_at": null,
+      "scope": "Inspected current source; practice participation is not final availability."
+    },
+    {
+      "id": "fresh_cle",
+      "label": "cle",
+      "url": "https://www.clevelandbrowns.com/team/injury-report/",
+      "retrieved_at": "2026-10-29T10:28:45.094Z",
+      "publication_at": null,
+      "scope": "Inspected current source; practice participation is not final availability."
+    },
+    {
+      "id": "fresh_proj",
+      "label": "proj",
+      "url": "https://fantasysportsedge.com/nfl/projections",
+      "retrieved_at": "2026-10-29T10:28:43.896Z",
+      "publication_at": null,
+      "scope": "14-game Thu–Mon model; excluded from Sunday forecasts."
+    },
+    {
+      "id": "fresh_box",
+      "label": "box",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873015",
+      "retrieved_at": "2026-10-29T10:28:44.866Z",
+      "publication_at": null,
+      "scope": "Inspected current source; practice participation is not final availability."
+    },
+    {
+      "id": "1030_pool",
+      "label": "pool",
+      "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "retrieved_at": "2026-10-30T10:48:51.285Z",
+      "publication_at": null,
+      "scope": "Current source inspected; retrieval is not publication, practice is not final availability."
+    },
+    {
+      "id": "1030_rules",
+      "label": "rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-10-30T10:48:17.801Z",
+      "publication_at": null,
+      "scope": "Current source inspected; retrieval is not publication, practice is not final availability."
+    },
+    {
+      "id": "1030_schedule",
+      "label": "schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+      "retrieved_at": "2026-10-30T10:48:28.401Z",
+      "publication_at": null,
+      "scope": "Current source inspected; retrieval is not publication, practice is not final availability."
+    },
+    {
+      "id": "1030_week7",
+      "label": "week7",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+      "retrieved_at": "2026-10-30T10:48:33.087Z",
+      "publication_at": null,
+      "scope": "Week7 finals remain in body despite Week8 navigation link; navigation mismatch retained."
+    },
+    {
+      "id": "1030_jets",
+      "label": "jets",
+      "url": "https://www.newyorkjets.com/team/injury-report/",
+      "retrieved_at": "2026-10-30T10:48:28.130Z",
+      "publication_at": null,
+      "scope": "Current source inspected; retrieval is not publication, practice is not final availability."
+    },
+    {
+      "id": "1030_tb",
+      "label": "tb",
+      "url": "https://www.buccaneers.com/team/injury-report/",
+      "retrieved_at": "2026-10-30T10:48:32.843Z",
+      "publication_at": null,
+      "scope": "Current source inspected; retrieval is not publication, practice is not final availability."
+    },
+    {
+      "id": "1030_cle",
+      "label": "cle",
+      "url": "https://www.clevelandbrowns.com/team/injury-report/",
+      "retrieved_at": "2026-10-30T10:48:37.745Z",
+      "publication_at": null,
+      "scope": "Current source inspected; retrieval is not publication, practice is not final availability."
+    },
+    {
+      "id": "1030_ravens",
+      "label": "ravens",
+      "url": "https://www.baltimoreravens.com/team/injury-report/",
+      "retrieved_at": "2026-10-30T10:48:32.913Z",
+      "publication_at": null,
+      "scope": "Current source inspected; retrieval is not publication, practice is not final availability."
+    },
+    {
+      "id": "1030_det",
+      "label": "det",
+      "url": "https://www.detroitlions.com/team/injury-report/",
+      "retrieved_at": "2026-10-30T10:48:28.521Z",
+      "publication_at": null,
+      "scope": "Current source inspected; retrieval is not publication, practice is not final availability."
+    },
+    {
+      "id": "1030_proj",
+      "label": "proj",
+      "url": "https://fantasysportsedge.com/nfl/projections",
+      "retrieved_at": "2026-10-30T10:48:15.528Z",
+      "publication_at": null,
+      "scope": "13-game Sunday–Monday caption; excluded from the eleven-game Sunday forecast."
+    },
+    {
+      "id": "1030_box",
+      "label": "box",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873015",
+      "retrieved_at": "2026-10-30T10:49:52.848Z",
+      "publication_at": null,
+      "scope": "Current source inspected; retrieval is not publication, practice is not final availability."
+    },
+    {
+      "id": "1030_taylor",
+      "label": "taylor",
+      "url": "https://www.newyorkjets.com/news/mason-taylor-sees-more-high-points-down-the-road-10-29-2026",
+      "retrieved_at": "2026-10-30T10:50:12.499Z",
+      "publication_at": "2026-10-29T11:30:00-04:00",
+      "scope": "Current source inspected; retrieval is not publication, practice is not final availability."
+    },
+    {
+      "id": "1030_cin",
+      "label": "cin",
+      "url": "https://www.bengals.com/news/bengals-titans-week-8-2026-injury-report",
+      "retrieved_at": "2026-10-30T10:50:20.288Z",
+      "publication_at": "2026-10-29T16:25:00-04:00",
+      "scope": "Current source inspected; retrieval is not publication, practice is not final availability."
+    }
+  ],
+  "runtime": {
+    "model": "gpt-6.1-sol",
+    "tools": [
+      "GitHub",
+      "Firecrawl",
+      "clock",
+      "TIBER league capabilities"
+    ],
+    "cost": null,
+    "retained_output_limit": "Current reader withholds ROP/TTS/Forecast; no qualified retained output accessed. No claim that retained evidence does not exist."
+  },
+  "expectations": [],
+  "previous_snapshot_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/e3e67556f20eb547f5ab34dff215594d65583e8c/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-29.json",
+  "season_study": {
+    "effective_slate": "2026-11-01",
+    "first_complete_baseline_id": "2026-w08-2026-10-28-daily",
+    "operator_seat": "qualitative calls received; no override/acceptance",
+    "projection_only_baseline": "unavailable; freeze snapshot not yet exists and no complete compatible projection pool",
+    "override_delta": null,
+    "pre_override_candidate": null
+  },
+  "findings": [
+    "Official export expands from554 to562 players: eight additions, zero removed IDs; all eleven games unchanged. Selected nine original salaries, positions and IDs remain valid.",
+    "StBrown ankle and Gibbs shoulder improve DNP→FP Thursday. Williams remains unlisted. This removes a speculative vacated-work rationale; hold Williams on his original allocation case, not on presumed absences.",
+    "Lamar ankle FP both Wednesday/Thursday; Hamilton and Roquan Smith improve DNP→LP. No confirmed Sunday start or defensive absences inferred.",
+    "Gainwell hip improves DNP→LP, Goedeke calf remains DNP; Irving Thursday DNP is explicitly rest. Mayfield thumb FP/FP. No injury-driven Irving workload boost assumed.",
+    "Hall remains LP while Braelon improves LP→FP. His Week7 standalone backfield is not established for Sunday.",
+    "Jets Bailey/Ossai/Sweat remain DNP Thursday. Raiders Bowers improves LP→FP; center Powers-Johnson newly DNP(back). This is conflicting evidence for Jets DST, not automatic sack/turnover upside.",
+    "Primary Taylor article reports team-leading TE37snaps(63%) last Sunday and14catches on18targets across5appearances. Snaps are not routes; the broader target history restrains extrapolation from six-target/two-TD Week7.",
+    "Bengals dated current report now exposes own-team rows; Chase Brown is not listed, Ja'Marr FP Thursday. It also confirms Titans Spears knee DNP/DNP and Pollard rest DNP. Reliable own-team access improves; absence from list is not final clearance.",
+    "Browns Jenkins knee improves DNP→LP, Howard concussion stays DNP, Verse improves DNP→LP; Concepcion unlisted. Search did not establish a new current QB change; older Week4 recap/video cannot resolve a Week8 claim.",
+    "Current external projection caption moved from14Thu–Mon to13Sun–Mon, not our11Sunday games. Keep all new forecasts null and the original official slate fixed.",
+    "Prior Sunday slate complete; current Jets box agrees with relevant archived Week7 inputs. No material scoring correction or settled-platform evidence established. Week6 145.98 and Week7 114.22 remain provisional reconstructed scores.",
+    "Fresh PR43 comments contain no new Claude acknowledgment/v1 or Week8 Grok output. Friday absent-v1 exception now permits a question handoff using retained Codex v1 and dated current delta; no participation fabricated."
+  ],
+  "first_complete_v1": false,
+  "author": "Codex",
+  "projection_gap": "Fresh FSEcaption13gamesSun–Mon; not compatible complete coverage of selected11-gameSundaypool. No estimates imported.",
+  "additions": [],
+  "alternatives": [
+    {
+      "players": [
+        "T.J. Hockenson"
+      ],
+      "salary": 4600,
+      "disposition": "hold Taylor",
+      "reason": "Taylor-only swap adds $1,300; $50,500 is over cap by $500. Requires a second funding move, not a legal standalone alternative."
+    },
+    {
+      "players": [
+        "Hunter Henry"
+      ],
+      "salary": 4300,
+      "disposition": "hold Taylor",
+      "reason": "Taylor-only swap adds $1,000; $50,200 is over cap by $200. Requires funding; article's receiving-role case merits future check."
+    },
+    {
+      "players": [
+        "T.J. Hockenson",
+        "Adonai Mitchell"
+      ],
+      "salary": 8600,
+      "disposition": "decline package today",
+      "reason": "Replace Taylor/Cooper ($8,100) with Hockenson/Mitchell ($8,600): total $49,700/$300 left, all other seven unchanged. Fits slots and export. Removes Jets TE overlap but downgrades Cooper to Mitchell; prior attributed routes70%vs55% and prior box3targets/0catches for Mitchell do not establish an upgrade. Hockenson-specific usage and Detroit matchup mechanism not independently resolved."
+    }
+  ],
+  "expectation_references": [
+    {
+      "id": "2026-w08-1028-brown-role",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d81c103e9fd568776327e45a5af3b3485c768f0b/docs/weekly-dfs/codex/journal/20261028T101856Z.json"
+    },
+    {
+      "id": "2026-w08-1028-cooper-role",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d81c103e9fd568776327e45a5af3b3485c768f0b/docs/weekly-dfs/codex/journal/20261028T101856Z.json"
+    },
+    {
+      "id": "2026-w08-1028-taylor-role",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d81c103e9fd568776327e45a5af3b3485c768f0b/docs/weekly-dfs/codex/journal/20261028T101856Z.json"
+    },
+    {
+      "id": "2026-w08-1028-kcc-role",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d81c103e9fd568776327e45a5af3b3485c768f0b/docs/weekly-dfs/codex/journal/20261028T101856Z.json"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "2026-w10-r1-claude-v1-ready",
+  "stage": "claude_v1_ready",
+  "cycle": "2026-w10-2026-11-15",
+  "slate_date": "2026-11-15",
+  "round": 1,
+  "author": "Claude",
+  "actual_author_evidence": {
+    "external_commit": "93f38b8c61d71c8108cf7187ab30b436c0eee77e",
+    "git_author": "Claude",
+    "commit_at": "2026-11-10T12:33:59Z",
+    "declared_surface": "Claude Code remote cloud session",
+    "exact_model": null
+  },
+  "posted_by": {
+    "source_comment_account": "Prometheus-Frameworks",
+    "declared_sender": "Claude self-committed and posted via authorized connection; not an operator-pasted original",
+    "receipt_author": "Codex"
+  },
+  "relay": "Joe supplied wake-up pointer; original independently read from immutable GitHub commit and PR",
+  "input_versions": [
+    {
+      "id": "2026-w10-r1-common-inputs-v1",
+      "commit": "20a2131d1363b0c14ca4c56883cb710c2541f851",
+      "path": "docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T113619Z-common-inputs.json",
+      "blob_sha": "feb9ec0c2c6784a6ca447807246864569a58c32b"
+    },
+    {
+      "commit": "a4fd4194bc744ad83c8f68e9e4d45de53aefcf28",
+      "path": "docs/weekly-dfs/codex/2026/week-10/daily/2026-11-10-reported-prices.json",
+      "exposure": "curated18rows, no designated nine"
+    }
+  ],
+  "immutable_output": {
+    "id": "2026-w10-r1-claude-v1",
+    "original_commit": "93f38b8c61d71c8108cf7187ab30b436c0eee77e",
+    "canonical_copy_commit": "667c4cbc9d5c1126374f11c51d542b695a54b465",
+    "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T123500Z-claude-v1.json",
+    "md_blob": "32ef18e327e09af41d52129882bc4b32a4dc4174",
+    "json_blob": "4b73db20883a1cfc8be423e63b79bcc884744770",
+    "verbatim_verified": true
+  },
+  "original_claimed_decision": "2026-11-10T12:35:00Z",
+  "original_claimed_evidence_cutoff": "2026-11-10T12:32:00Z",
+  "server_posted_at": "2026-11-10T12:34:12Z",
+  "completed_at": "2026-11-10T13:14:08.823Z",
+  "completion_clock_basis": "Codex observed canonical archive/readback completion, not an invented Claude generation clock",
+  "status": "ready",
+  "qualification": "Complete attributable original with reported prices/arithmetic checked; ready is not validation of every football claim. Mumpfield window and GB role/duration corrected separately. Original12:35decisionclaim is later thancommit/PR, exact generationclock unverified.",
+  "salary_total": 49900,
+  "salary_remaining": 100,
+  "official_pool_verified": false,
+  "exposure": {
+    "read": [
+      "PR43 comment 6766308455 (Codex v1 $49,300/$700 left, nine unique, six games; no names)",
+      "week-10 claude-v1-request md",
+      "week-10 common-inputs json",
+      "week-10 curated 18-row reported-prices json (probably contains Codex's nine without marking them)",
+      "PR43 Nov 8 comments naming the Week 9 final nine",
+      "week-09 Claude v1 md/json (format)"
+    ],
+    "seen_not_opened": [
+      "week-10 filename listing",
+      "PR-branch commit subjects",
+      "prior-lesson journal link"
+    ],
+    "not_opened": [
+      "week-10/daily/2026-11-10.json and .md",
+      "week-10 codex-v1-ready receipt",
+      "week-10 journal",
+      "site-feed.json"
+    ],
+    "codex_week10_selections_knowingly_seen": false,
+    "partial_exposure_via_curated_rows": true,
+    "own_picks_in_curated_rows": [
+      "Christian McCaffrey"
+    ],
+    "blind_baseline": false
+  },
+  "source_corrections": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T131222Z-claude-intake-checks.json",
+  "next_stage": "Grok questions, request prepared only; no acknowledgment/output received",
+  "shared": false,
+  "jointly_endorsed": false,
+  "frozen": false
+}

@@ -1,0 +1,214 @@
+{
+  "schema_version": "tiber-dfs-common-inputs/v1",
+  "id": "2026-w09-common-inputs-v1",
+  "recorded_at": "2026-11-03T11:45:01.196Z",
+  "author": "Codex",
+  "cycle": "2026-w09-2026-11-08",
+  "round": 1,
+  "purpose": "Factual common inputs for a separate Claude v1. No Codex Week9 selections, forecasts or preference ranking included. Save own first complete draft before inspecting Codex current-week selections where feasible; disclose actual exposure.",
+  "season": 2026,
+  "week": 9,
+  "slate_date": "2026-11-08",
+  "platform": "DraftKings",
+  "salary_cap": 50000,
+  "slots": [
+    "QB",
+    "RB",
+    "RB",
+    "WR",
+    "WR",
+    "WR",
+    "TE",
+    "FLEX",
+    "DST"
+  ],
+  "salary_snapshot": {
+    "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67033cfa6c3102dc3273bcf416b514c8f4940e2/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-03-reported-prices.csv",
+    "blob_sha": "c941e04f6850ceed4e2ad005eff3dde2a6883688",
+    "provider": "FantasyPros",
+    "source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+    "retrieved_at": "2026-11-03T11:36:18.122Z",
+    "publication_at": null,
+    "rows": 764,
+    "coverage": "Full set of factual rows rendered by one Week9salary-change page, including excluded game windows. These are observed reported prices/positions, not complete official pool or verified current statuses.",
+    "salary_basis": "reported_prices",
+    "official_pool_verified": false,
+    "official_player_ids": null
+  },
+  "games": [
+    {
+      "away": "DEN",
+      "home": "CAR",
+      "kickoff_et": "13:00",
+      "platform_membership": "Reported afternoon candidate; NFLscheduleverified, officialDKgroupunverified"
+    },
+    {
+      "away": "DAL",
+      "home": "IND",
+      "kickoff_et": "13:00",
+      "platform_membership": "Reported afternoon candidate; NFLscheduleverified, officialDKgroupunverified"
+    },
+    {
+      "away": "NYJ",
+      "home": "KC",
+      "kickoff_et": "13:00",
+      "platform_membership": "Reported afternoon candidate; NFLscheduleverified, officialDKgroupunverified"
+    },
+    {
+      "away": "DET",
+      "home": "MIA",
+      "kickoff_et": "13:00",
+      "platform_membership": "Reported afternoon candidate; NFLscheduleverified, officialDKgroupunverified"
+    },
+    {
+      "away": "CLE",
+      "home": "NO",
+      "kickoff_et": "13:00",
+      "platform_membership": "Reported afternoon candidate; NFLscheduleverified, officialDKgroupunverified"
+    },
+    {
+      "away": "NYG",
+      "home": "PHI",
+      "kickoff_et": "13:00",
+      "platform_membership": "Reported afternoon candidate; NFLscheduleverified, officialDKgroupunverified"
+    },
+    {
+      "away": "LAR",
+      "home": "WAS",
+      "kickoff_et": "13:00",
+      "platform_membership": "Reported afternoon candidate; NFLscheduleverified, officialDKgroupunverified"
+    },
+    {
+      "away": "HOU",
+      "home": "LAC",
+      "kickoff_et": "16:05",
+      "platform_membership": "Reported afternoon candidate; NFLscheduleverified, officialDKgroupunverified"
+    },
+    {
+      "away": "LV",
+      "home": "SF",
+      "kickoff_et": "16:25",
+      "platform_membership": "Reported afternoon candidate; NFLscheduleverified, officialDKgroupunverified"
+    },
+    {
+      "away": "GB",
+      "home": "NE",
+      "kickoff_et": "16:25",
+      "platform_membership": "Reported afternoon candidate; NFLscheduleverified, officialDKgroupunverified"
+    },
+    {
+      "away": "ARI",
+      "home": "SEA",
+      "kickoff_et": "16:25",
+      "platform_membership": "Reported afternoon candidate; NFLscheduleverified, officialDKgroupunverified"
+    }
+  ],
+  "earliest_kickoff": "2026-11-08T18:00:00Z",
+  "deadline_utc": "2026-11-08T17:30:00Z",
+  "deadline_toronto": "2026-11-08T12:30:00-05:00",
+  "excluded_windows": [
+    "JAX@BAL ThuNov5 20:15",
+    "CIN@ATL MadridSunNov8 09:30",
+    "TB@CHI SunNov8 20:20",
+    "BUF@MIN MonNov9 20:15"
+  ],
+  "byes": [
+    "PIT",
+    "TEN"
+  ],
+  "rules": {
+    "source_url": "https://www.draftkings.com/help/rules/1",
+    "retrieved_at": "2026-11-03T11:35:49.412Z",
+    "reference": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5c2578bcc0858f46922fbed7116cf3d11a04d5e0/docs/weekly-dfs/codex/EXPERIMENT.md",
+    "minimum_distinct_games": 2,
+    "scoring": "PPR; passTD4/passyard.04/INT-1; rush/recTD6/yards.1; bonuses3at300pass/100rush/100rec; lostfumble-1; conversions2; exactDSTtable/allowedpointsinlinkedcurrentrules."
+  },
+  "evidence_cutoff": "2026-11-03T11:45:01.196Z",
+  "common_source_receipts": [
+    {
+      "id": "fp",
+      "label": "fp",
+      "url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+      "retrieved_at": "2026-11-03T11:36:18.122Z",
+      "retrieved_at_toronto": "2026-11-03T06:36:18.122-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "Week9 live salary table. All764 factual reported price/position/team/opponent/kickoff rows retained separately, including games outside afternoon target. Not an official platform pool/export."
+    },
+    {
+      "id": "fse",
+      "label": "fse",
+      "url": "https://fantasysportsedge.com/nfl/projections",
+      "retrieved_at": "2026-11-03T11:35:48.537Z",
+      "retrieved_at_toronto": "2026-11-03T06:35:48.537-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "Refreshed Week9, DraftKings11Sunday caption is below its table. Onlytop50 table, not fullcoherent9projection coverage; all lineup estimates leftnull.",
+      "source_update_display": "Nov2 23:05EST, displayed projection timestamp; not retrieval"
+    },
+    {
+      "id": "week9",
+      "label": "week9",
+      "url": "https://fantasysportsedge.com/nfl/dfs/week-9",
+      "retrieved_at": "2026-11-03T11:36:21.447Z",
+      "retrieved_at_toronto": "2026-11-03T06:36:21.447-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "Secondary expected11main game list and attributed market snapshot Nov2 20:02ET; not official membership. StaleWeek8 navigation and incorrectLV@SF16:05 conflict withNFL16:25.",
+      "market_as_of": "2026-11-02T20:02:00-05:00"
+    },
+    {
+      "id": "schedule",
+      "label": "schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+      "retrieved_at": "2026-11-03T11:35:50.067Z",
+      "retrieved_at_toronto": "2026-11-03T06:35:50.067-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "Primary2026Week9 schedule: Nov8 elevenafternooncandidate games; earliest13:00Toronto. NFL schedule does not certifyDKpool."
+    },
+    {
+      "id": "rules",
+      "label": "rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-11-03T11:35:49.412Z",
+      "retrieved_at_toronto": "2026-11-03T06:35:49.412-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "CurrentNFLClassic roster,50kcap,minimum2games and exactPPR/bonus/DST scoring inspected."
+    },
+    {
+      "id": "week8",
+      "label": "week8",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+      "retrieved_at": "2026-11-03T11:36:18.345Z",
+      "retrieved_at_toronto": "2026-11-03T06:36:18.345-05:00",
+      "publication_at": null,
+      "source_updated_at": null,
+      "scope": "All priorSunday main games final; MondaySeattle–Chicagofinal. Platformsettlement/statcorrections not certified."
+    }
+  ],
+  "projection_status": "No full coherent external projection pool retrieved; do not mix providers or approximate a projection-only optimum. Null totals permissible.",
+  "prior_lessons": [
+    {
+      "reference": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-08/reviews/2026-11-02.json",
+      "lesson": "Prior target allocation and availability expectations can fail even when role labels sound plausible. Separate opportunity, efficiency, scoring and later QB/availability changes. One game is provisional evidence, not a universal rule."
+    },
+    {
+      "reference": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5c2578bcc0858f46922fbed7116cf3d11a04d5e0/docs/weekly-dfs/codex/COLLABORATION_V1.md",
+      "lesson": "Independent originals where feasible, genuine question/reply exchange, exact candidate endorsement; no fabricated participation or deadline extension."
+    }
+  ],
+  "missing_inputs": [
+    "Official platformgroup/export/membership andIDs.",
+    "CurrentWeek9officialmedicalstatuses; manylivepagesstillWeek8.",
+    "QualifiedretainedROP/TTS/Forecastnotaccessed; routewithholdingdoesnotestablishnonexistence."
+  ],
+  "source_conflicts": [
+    "FSEWeek9navigationstill saysWeek8; articlehascorrectnewopponents butexpectedslatesarenotofficial.",
+    "FSELV@SF16:05 conflictswithNFL16:25;primaryNFLschedulecontrols.",
+    "FSEprojectioncaptionsfollowtables; FanDuelandDraftKingsnotinterchanged."
+  ],
+  "new_source_policy": "Retrieve fresh evidence when needed, record its clock and retain a dated delta; do not retroactively add it to either original.",
+  "subscriptions": "Claude/Grok saved subscription and successful delivery unverified; this manifest creates none."
+}

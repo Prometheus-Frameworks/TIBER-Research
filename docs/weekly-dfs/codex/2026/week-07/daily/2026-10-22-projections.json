@@ -1,0 +1,83 @@
+{
+  "provider": "Splash Play",
+  "model": "SPAGS",
+  "as_of": "2026-10-20T23:53:00-04:00",
+  "source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+  "observed_at": "2026-10-22T10:41:23.199Z",
+  "rows": [
+    {
+      "player": "C.J. Stroud",
+      "position": "QB",
+      "salary": 5700,
+      "team": "HOU",
+      "opponent": "NYG",
+      "projected_points": 19.2
+    },
+    {
+      "player": "Chuba Hubbard",
+      "position": "RB",
+      "salary": 6700,
+      "team": "CAR",
+      "opponent": "TB",
+      "projected_points": 20.2
+    },
+    {
+      "player": "Braelon Allen",
+      "position": "RB",
+      "salary": 5900,
+      "team": "NYJ",
+      "opponent": "MIA",
+      "projected_points": 17.3
+    },
+    {
+      "player": "Puka Nacua",
+      "position": "WR",
+      "salary": 8400,
+      "team": "LAR",
+      "opponent": "LV",
+      "projected_points": 23.9
+    },
+    {
+      "player": "Malik Nabers",
+      "position": "WR",
+      "salary": 6800,
+      "team": "NYG",
+      "opponent": "HOU",
+      "projected_points": 16.2
+    },
+    {
+      "player": "Chris Godwin Jr.",
+      "position": "WR",
+      "salary": 4300,
+      "team": "TB",
+      "opponent": "CAR",
+      "projected_points": 9.4
+    },
+    {
+      "player": "Sam LaPorta",
+      "position": "TE",
+      "salary": 4800,
+      "team": "DET",
+      "opponent": "GB",
+      "projected_points": 13.4
+    },
+    {
+      "player": "Keenan Allen",
+      "position": "WR",
+      "salary": 4800,
+      "team": "IND",
+      "opponent": "MIN",
+      "projected_points": 12.1
+    },
+    {
+      "player": "Titans",
+      "position": "DST",
+      "salary": 2600,
+      "team": "TEN",
+      "opponent": "CLE",
+      "projected_points": 6.3
+    }
+  ],
+  "total": 138,
+  "note": "Same Oct20 23:53ET external snapshot re-inspected, not a new model update. Applied only to today's selection. Model Hall/QB assumptions not disclosed; no manual uplift or backfill."
+}

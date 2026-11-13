@@ -1,0 +1,55 @@
+{
+  "record_type": "collaboration_request",
+  "id": "2026-w08-r1-grok-questions",
+  "cycle": "2026-w08-2026-11-01",
+  "round": 1,
+  "author": "Codex",
+  "sender": "Codex through existing PR/relay",
+  "intended_recipient": "Grok Bot",
+  "prepared_at": "2026-10-30T10:52:33.786Z",
+  "stage": "grok_questions_ready",
+  "status": "blocked",
+  "preparation_status": "ready",
+  "output_status": "not received",
+  "claude_v1": "absent",
+  "exception_basis": "SEASON_STUDY_V1 missing-v1 Friday–Saturday path; second original not required to request actual questions.",
+  "exact_inputs": {
+    "codex_original_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5afc63ae9519af75cc8281dd3c395490bc9eab5c/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-28.json",
+    "current_candidate": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/ab029d8b28deb519519d24861fd35cb58dc6b3c4/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-30.json",
+    "original_common_inputs": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d81c103e9fd568776327e45a5af3b3485c768f0b/docs/weekly-dfs/codex/2026/week-08/collaboration/20261028T101856Z-common-inputs.json",
+    "dated_delta": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/ab029d8b28deb519519d24861fd35cb58dc6b3c4/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-30-sources.json",
+    "current_salary_export": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/ab029d8b28deb519519d24861fd35cb58dc6b3c4/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-30-draftkings-153728.csv",
+    "current_source_cutoff": "2026-10-30T10:51:34.174Z"
+  },
+  "slate": {
+    "season": 2026,
+    "week": 8,
+    "date": "2026-11-01",
+    "group": "153728",
+    "games": 11,
+    "pool_rows": 562,
+    "deadline": "2026-11-01T17:30:00Z",
+    "deadline_toronto": "2026-11-01T12:30:00-05:00"
+  },
+  "requested_work": "Inspect exact inputs and rank only consequential questions about current football assumptions, role/availability, stale/missing evidence and salary/package alternatives. No quota, manufactured disagreement or third lineup required. Distinguish opinion, questions and new sourced findings. Do not present resolved Wednesday injury uncertainty as if Thursday delta did not exist.",
+  "question_fields": [
+    "stable question ID",
+    "intended author(s)",
+    "exact draft/version claim",
+    "evidence gap",
+    "decision consequence and verified funding if applicable",
+    "observation that resolves it",
+    "priority reason"
+  ],
+  "codex_topics_not_grok_output": [
+    "Cooper/Taylor same-team passing competition versus the low-price role case, including new Taylor snaps/season targets.",
+    "JetsDST three continuing DNPs versus opponent centerDNP/BowersFP; is another allocation worth its funding cost?",
+    "Williams allocation after StBrown/GibbsFP, and Allen/Flowers with LamarFP but effectiveness unknown.",
+    "Complete verified TE funding packages rather than isolated over-cap replacements."
+  ],
+  "return_target": "By Saturday where feasible, leaving time for both authors' substantive replies and actual exchange; Sunday cutoff unchanged.",
+  "recipient_acknowledgment": "not received",
+  "recipient_output": "not received",
+  "posting": "prepared; subsequent actual posting receipt separate",
+  "next_action": "Existing relay or Grok session supplies attributable questions with actual inspected versions, sources and cutoff. Codex retains them, replies and asks Claude to respond to same IDs/exact candidate; no question author impersonation."
+}

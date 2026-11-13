@@ -1,0 +1,173 @@
+{
+  "schema_version": "tiber-dfs-journal/v1",
+  "entries": [
+    {
+      "id": "2026-w09-grok-response-20261103T174021Z",
+      "snapshot_ids": [
+        "2026-w09-2026-11-03-daily",
+        "2026-w09-r1-claude-v1"
+      ],
+      "kind": "interactive_research",
+      "recorded_at": "2026-11-03T17:40:21.144Z",
+      "recorded_at_toronto": "2026-11-03T12:40:21.144-05:00",
+      "research_at": "2026-11-03T17:40:21.144Z",
+      "origin": "mixed",
+      "origin_note": "Grok Bot supplied the actual question pass; operator relayed notice. Codex independently checked cited and primary sources and authored these dispositions. No operator player override or simulated participant.",
+      "title": "Grok questions retained; Jones clarified and Codex nine held",
+      "question": "Do the actual Grok questions support moving Colts receiving salary or changing the defense before an author exchange?",
+      "why_it_matters": "An external question can improve evidence even when the roster is unchanged; retaining source conflicts prevents the question's premise becoming an unsupported fact.",
+      "findings": [
+        "Actual Grok comment6609947738 retained verbatim with questionIDsQ1–Q6, exact inspected inputs and skipped files; serving model unknown.",
+        "Official Colts November2 article retains Jones asQB1 and explains Richardson's fourth-quarter entry by the score.",
+        "Fresh Week8 box: Allen7/7/67; Downs5/4/23/TD; Warren10/4/18 (targets/catches/yards). E2's eightWarrencatches conflicts.",
+        "StatChasers offers attributed season opportunity and snap figures, but the requested weekly route series remains unverified; Allen figures vary across windows/pages.",
+        "Primary Seattle report confirms O'Toolefoot/Williamsstinger, already retained in Codexv1JSON. No newOUT inferred.",
+        "E2Flournoyranking prose contradicts its30/44counts; preserve the limit."
+      ],
+      "interpretation": [
+        "HoldAllen over a legal200Downsupgrade for now; do not equate season air-yard or snap advantage with proven next-game receiving superiority.",
+        "Q2's current identity question is clarified by the inspected primary statement, while offensive execution risk and future starter change remain possible.",
+        "HoldSeattle, acknowledging front injuries/shortweek; cheaper alternatives need an affirmative whole-lineup case.",
+        "Claude must provide its own Q1/Q2/Q3/Q5 dispositions and respond to Codex; no shared candidate or joint endorsement yet."
+      ],
+      "alternatives": [
+        {
+          "package": "CodexAllen→Downs",
+          "total": 49600,
+          "remaining": 400,
+          "disposition": "notselected"
+        },
+        {
+          "package": "CodexSeattle→SF",
+          "total": 49200,
+          "remaining": 800,
+          "disposition": "notselected"
+        },
+        {
+          "package": "CodexSeattle→DEN",
+          "total": 48600,
+          "remaining": 1400,
+          "disposition": "notselected"
+        },
+        {
+          "package": "ClaudeSutton→Flournoy plusPHI→ARI",
+          "total": 49800,
+          "remaining": 200,
+          "disposition": "legalcomparisononly; notselectedbyCodexforClaude"
+        }
+      ],
+      "uncertainty": [
+        "Weekly comparable route data and current medical clearance remain unverified.",
+        "Secondary analysis has factual/window conflicts; do not mix models or turn aDOT into a calibrated ceiling.",
+        "No relevantWeek9practice reports orfinalinactive list verified here; no assertionofnonexistence.",
+        "Grok's completionclock is rounded and slightlylater than serverpublication; exactoriginalgeneration/source clocks unknown."
+      ],
+      "lineup_effect": "No pick changed: exactCodexoriginal49400/600 remains; Claudeoriginal49900/100 preserved. Current evidence changes source interpretation and question status, not roster or earlier cutoff. Forecasts/actuals remainnull.",
+      "change_triggers": [
+        "Newdated starter/reps/injury evidence changes Coltsconditions.",
+        "Comparable recent receiver routes/deployment oravailability warrants a fullDowns/Allen/Warrenpackagecomparison.",
+        "Dated Seattle/Arizona status materially changes the chosen defense case.",
+        "ActualClaudeproposal orcounterargument needs an explicitCodexdisposition beforeclaimingexchange."
+      ],
+      "carry_forward": [
+        "Score whether a question changed evidence or a selection separately; nochange is a validoutcome.",
+        "Source quality and time/denominator coverage are partoffootballreasoning.",
+        "Do not re-run original drafts or solicit an unlimitedGrokquestion loop; next missing contribution isClaude'sactualresponse."
+      ],
+      "sources": [
+        {
+          "id": "usage",
+          "label": "usage",
+          "url": "https://statchasers.com/nfl/teams/indianapolis-colts/usage/",
+          "retrieved_at": "2026-11-03T17:34:04.313Z",
+          "retrieved_at_toronto": "2026-11-03T12:34:04.313-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Current public table says through Week8. Season, last-three and player-availability denominators need care. Snap share is not route share; no weekly Weeks6–8 route series verified."
+        },
+        {
+          "id": "trends",
+          "label": "trends",
+          "url": "https://www.thefantasyfootballers.com/analysis/fantasy-football-target-trends-for-week-9-fantasy-football/",
+          "retrieved_at": "2026-11-03T17:34:17.951Z",
+          "retrieved_at_toronto": "2026-11-03T12:34:17.951-05:00",
+          "publication_at": null,
+          "publication_display": "November 3, 2026; no time established",
+          "scope": "Full article inspected. Warren eight-catch statement conflicts with ESPN four catches; Flournoy/Pickens season-ranking prose contradicts its own counts. QB controversy wording does not establish a starter change."
+        },
+        {
+          "id": "indbox",
+          "label": "indbox",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873028",
+          "retrieved_at": "2026-11-03T17:33:58.413Z",
+          "retrieved_at_toronto": "2026-11-03T12:33:58.413-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Fresh November1 final box: Allen7targets/7catches/67yards; Downs5/4/23/TD; Warren10/4/18. Jones19/28,144yards; Richardson2/2,8yards. Gross player passing yards, not134net teamyards."
+        },
+        {
+          "id": "coltsnews",
+          "label": "coltsnews",
+          "url": "https://www.colts.com/news/",
+          "retrieved_at": "2026-11-03T17:34:01.351Z",
+          "retrieved_at_toronto": "2026-11-03T12:34:01.351-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Official news index discovered the dated coach-statement article; index headline alone is not the confirmation used."
+        },
+        {
+          "id": "starter",
+          "label": "starter",
+          "url": "https://www.colts.com/news/5-colts-things-daniel-jones-remains-starting-quarterback-shane-steichen-sees-execution-as-more-an-issue-than-effort-several-rookies-get-valuable-experience-in-week-8-loss-to-jaguars",
+          "retrieved_at": "2026-11-03T17:34:44.973Z",
+          "retrieved_at_toronto": "2026-11-03T12:34:44.973-05:00",
+          "publication_at": null,
+          "publication_display": "Nov 02, 2026 at 04:51 PM; page does not state a zone",
+          "scope": "Full official Monday report: Steichen retains Jones; Richardson's fourth-quarter entry was explained by a35-point deficit. Decision can change later; it is not a Sunday guarantee."
+        },
+        {
+          "id": "downs",
+          "label": "downs",
+          "url": "https://statchasers.com/nfl/players/josh-downs/",
+          "retrieved_at": "2026-11-03T17:35:28.760Z",
+          "retrieved_at_toronto": "2026-11-03T12:35:28.760-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Public player page: season51targets/8games,81%snaps; Week8box agrees. No requested weekly route share series. Prospect/outlook prose not adopted as forecast."
+        },
+        {
+          "id": "allen",
+          "label": "allen",
+          "url": "https://statchasers.com/nfl/players/keenan-allen/",
+          "retrieved_at": "2026-11-03T17:35:28.756Z",
+          "retrieved_at_toronto": "2026-11-03T12:35:28.756-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Public player page: season50targets/7games, Week8 7/67. Header22.1% versus detailed19.6%targetshare and teamtable52% versus player58.3%snaps have unresolved denominator/window differences; neither is route share."
+        },
+        {
+          "id": "seattle",
+          "label": "seattle",
+          "url": "https://www.seahawks.com/news/injury-updates-from-seahawks-week-8-loss-to-bears",
+          "retrieved_at": "2026-11-03T17:35:29.359Z",
+          "retrieved_at_toronto": "2026-11-03T12:35:29.359-05:00",
+          "publication_at": null,
+          "publication_display": "Nov 02, 2026 at 09:56 PM; page does not state a zone",
+          "scope": "Primary postgame report confirms Williams stinger/O'Toolefoot. These were already in Codex originalJSON source receipt and unresolved assumptions; no newWeek9clearance."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w09-2026-11-03-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67033cfa6c3102dc3273bcf416b514c8f4940e2/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-03.json"
+        },
+        {
+          "snapshot_id": "2026-w09-r1-claude-v1",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/8df1a6e2c9549b9bb077630ecc8aa20a1add419a/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T122249Z-claude-v1.json"
+        }
+      ],
+      "expectations": [],
+      "outcomes": []
+    }
+  ]
+}

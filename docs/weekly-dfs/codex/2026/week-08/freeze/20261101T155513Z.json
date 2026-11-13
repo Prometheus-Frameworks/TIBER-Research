@@ -1,0 +1,549 @@
+{
+  "record_type": "final_freeze",
+  "notebook_convention": "Conversational experiment notebook; not governed Research run or independent review.",
+  "id": "2026-w08-20261101T155633Z-freeze",
+  "kind": "freeze",
+  "status": "complete",
+  "frozen": true,
+  "recorded_at_utc": "2026-11-01T15:56:33.550Z",
+  "recorded_at_toronto": "2026-11-01T10:56:33.550-05:00",
+  "frozen_at": "2026-11-01T15:56:33.550Z",
+  "evidence_cutoff": "2026-11-01T15:55:13.856Z",
+  "season": 2026,
+  "week": 8,
+  "slate_date": "2026-11-01",
+  "platform": "DraftKings",
+  "draft_group_id": "153728",
+  "slate_label": "2026 Week8 Sunday main — official group153728, 11games",
+  "salary_cap": 50000,
+  "salary_total": 50000,
+  "salary_remaining": 0,
+  "projected_total": null,
+  "actual_total": null,
+  "projection": null,
+  "projection_only_baseline": "unavailable; current FSEmodel covers13Sun–Mon, not exact11Sundaypool; no complete coherent pinned projection pool.",
+  "deadline_toronto": "2026-11-01T12:30:00-05:00",
+  "deadline_utc": "2026-11-01T17:30:00Z",
+  "earliest_included_kickoff": "2026-11-01T18:00:00Z",
+  "deadline_status": "timely decision; archival readback must also precede cutoff",
+  "late_news_rule": "Selection is immutable once this freeze is saved. Later news/inactives/results append observations only, even before hardcutoff.",
+  "games": [
+    {
+      "away": "BAL",
+      "home": "BUF",
+      "kickoff_et": "13:00",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "TEN",
+      "home": "CIN",
+      "kickoff_et": "13:00",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "ARI",
+      "home": "DAL",
+      "kickoff_et": "13:00",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "MIN",
+      "home": "DET",
+      "kickoff_et": "13:00",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "IND",
+      "home": "JAX",
+      "kickoff_et": "13:00",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "LV",
+      "home": "NYJ",
+      "kickoff_et": "13:00",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "CLE",
+      "home": "PIT",
+      "kickoff_et": "13:00",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "ATL",
+      "home": "TB",
+      "kickoff_et": "13:00",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "LAC",
+      "home": "LAR",
+      "kickoff_et": "16:05",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "KC",
+      "home": "DEN",
+      "kickoff_et": "16:25",
+      "platform_membership": "verified group153728"
+    },
+    {
+      "away": "NE",
+      "home": "MIA",
+      "kickoff_et": "16:25",
+      "platform_membership": "verified group153728"
+    }
+  ],
+  "excluded_windows": [
+    "CAR@GB Thursday October 29",
+    "PHI@WAS Sunday night November 1",
+    "CHI@SEA Monday November 2"
+  ],
+  "byes": [
+    "HOU",
+    "NO",
+    "NYG",
+    "SF"
+  ],
+  "selection_binding": {
+    "method": "exact immutable JSON candidate plus verified slot/player/ID/salary/game equality",
+    "commit": "888e3278eba8b86558efeab76041d7d4e89a5467",
+    "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json",
+    "blob_sha": "fd392f89bdb8648119d0fb28c021f4544c62e26c"
+  },
+  "salary_binding": {
+    "original_snapshot": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31-draftkings-153728.csv",
+    "current_official_check": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2c37adf21dcaa14c68691c37b534fe422498f34f/docs/weekly-dfs/codex/2026/week-08/freeze/20261101T155513Z-salary-check.csv",
+    "verification": "Fresh562row/11game officialexport matches selected original prices/positions/IDs/games; no pool or status changes versus morning. Blank status is not medical clearance."
+  },
+  "expectation_binding": {
+    "packet": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2c37adf21dcaa14c68691c37b534fe422498f34f/docs/weekly-dfs/codex/2026/week-08/freeze/20261101T155513Z-expectations.json",
+    "packet_commit": "2c37adf21dcaa14c68691c37b534fe422498f34f",
+    "ids": [
+      "2026-w08-1028-brown-role",
+      "2026-w08-1028-cooper-role",
+      "2026-w08-1028-taylor-role",
+      "2026-w08-1028-kcc-role",
+      "2026-w08-1031-patriots-availability"
+    ],
+    "originals": [
+      {
+        "ids": [
+          "2026-w08-1028-brown-role",
+          "2026-w08-1028-cooper-role",
+          "2026-w08-1028-taylor-role",
+          "2026-w08-1028-kcc-role"
+        ],
+        "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d81c103e9fd568776327e45a5af3b3485c768f0b/docs/weekly-dfs/codex/journal/20261028T101856Z.json"
+      },
+      {
+        "ids": [
+          "2026-w08-1031-patriots-availability"
+        ],
+        "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/8677ade6b38f6402d9b1f21f160ad051b852afdd/docs/weekly-dfs/codex/journal/20261031T105411Z.json"
+      }
+    ]
+  },
+  "previous_snapshot_id": "2026-w08-2026-11-01-daily",
+  "previous_snapshot_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6569b9b38b0ae1dd56e1e43671c6a6c6e70bfc9d/docs/weekly-dfs/codex/2026/week-08/daily/2026-11-01.json",
+  "first_complete_v1_ref": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5afc63ae9519af75cc8281dd3c395490bc9eab5c/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-28.json",
+  "author": "Claude + Codex",
+  "final_editor": "Codex",
+  "authorship_label": "Shared final — Claude + Codex; exact selection jointly endorsed",
+  "endorsement_scope": "Exact unchanged888e327 nine were independently endorsed by both authors; this final record and source check are edited byCodex. No changed choice inherits endorsement.",
+  "collaboration": {
+    "codex_v1_ready": "ready; October28 original retained",
+    "claude_v1_ready": "excluded_this_week_missing_original_operator_handoff_gap",
+    "grok_questions_ready": "ready; actual3questions retained, limited packet inspection/search-summary scope and unverified original clocks",
+    "collaboration_ready": "ready; actualClaude→Codex→Claude proposals/dispositions and both authors'Grokresponses retained",
+    "final_frozen": "ready after archivalverification",
+    "contribution_refs": [
+      "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/932ae4b9157ab84652089359104107484d579872/docs/weekly-dfs/codex/2026/week-08/collaboration/20261031T141100Z-collaboration-ready.json",
+      "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/b82e938e5a1da8b9b685d41bae6d775e0478cd3e/docs/weekly-dfs/codex/2026/week-08/collaboration/20261031T142105Z-grok-questions-receipt.json",
+      "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/bd43aa1e238f4cb9e2bb7f7bbecc263bc54a1f26/docs/weekly-dfs/codex/2026/week-08/collaboration/20261031T142733Z-integration-closeout.json"
+    ]
+  },
+  "operator_input": "Operator calls publicly posted Oct27 11:08:16UTC favor Flowers and BAL@BUF and fade Garrett Wilson. Original supplied clock unknown; stated prior Claude exposure retained. Codex had prior qualitative exposure before this v1; no blind-to-operator claim. No Week8 Claude picks inspected.",
+  "operator_amendment": "Missing Claude originalv1 excluded for Week8 comparison due to operator handoff gap; actual Claude revisions and endorsement retained.",
+  "operator_final_override": "none received",
+  "operator_final_acceptance": "not explicitly received; routine final authorized without approval",
+  "override_delta": null,
+  "picks": [
+    {
+      "slot": "QB",
+      "position": "QB",
+      "player": "Josh Allen",
+      "team": "BUF",
+      "opponent": "BAL",
+      "home": true,
+      "salary": 7700,
+      "draftkings_player_id": "44664390",
+      "eligible_slots": [
+        "QB"
+      ],
+      "game_info": "BAL@BUF 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Hold premiumQB allocation with BuffaloMoore/Kincaid/BrownQ unresolved; no guaranteedrushingfloor.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "freeze_pool",
+        "freeze_buf",
+        "freeze_expect"
+      ],
+      "prior_role_evidence": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json"
+    },
+    {
+      "slot": "RB",
+      "position": "RB",
+      "player": "Bucky Irving",
+      "team": "TB",
+      "opponent": "ATL",
+      "home": true,
+      "salary": 6400,
+      "draftkings_player_id": "44664485",
+      "eligible_slots": [
+        "RB",
+        "FLEX"
+      ],
+      "game_info": "ATL@TB 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "HoldIrving rushingrole; Gainwell/GoedekeQ andTamparain notautomaticvolumeuplift.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "freeze_pool",
+        "freeze_tb",
+        "freeze_nws_tb"
+      ],
+      "prior_role_evidence": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json"
+    },
+    {
+      "slot": "RB",
+      "position": "RB",
+      "player": "Chase Brown",
+      "team": "CIN",
+      "opponent": "TEN",
+      "home": true,
+      "salary": 6300,
+      "draftkings_player_id": "44664487",
+      "eligible_slots": [
+        "RB",
+        "FLEX"
+      ],
+      "game_info": "TEN@CIN 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "HoldBrown rushing/receiving involvement; Perine/goal-linecompetition remains.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "freeze_pool",
+        "freeze_nflinj"
+      ],
+      "prior_role_evidence": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json"
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Jameson Williams",
+      "team": "DET",
+      "opponent": "MIN",
+      "home": true,
+      "salary": 6000,
+      "draftkings_player_id": "44664743",
+      "eligible_slots": [
+        "WR",
+        "FLEX"
+      ],
+      "game_info": "MIN@DET 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "HoldWilliams at6000 without a presumedStBrown/Gibbsabsenceboost.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "freeze_pool",
+        "freeze_nflinj"
+      ],
+      "prior_role_evidence": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json"
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Omar Cooper Jr.",
+      "team": "NYJ",
+      "opponent": "LV",
+      "home": true,
+      "salary": 4800,
+      "draftkings_player_id": "44664777",
+      "eligible_slots": [
+        "WR",
+        "FLEX"
+      ],
+      "game_info": "LV@NYJ 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "HoldCooperprice/participation case; Jets protection/receivercompetition unresolved.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "freeze_pool",
+        "freeze_jets"
+      ],
+      "prior_role_evidence": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json"
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Zay Flowers",
+      "team": "BAL",
+      "opponent": "BUF",
+      "home": false,
+      "salary": 7200,
+      "draftkings_player_id": "44664725",
+      "eligible_slots": [
+        "WR",
+        "FLEX"
+      ],
+      "game_info": "BAL@BUF 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "HoldFlowersRavensrole; Buffaloabsences can affectgame indirectly.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "freeze_pool",
+        "freeze_nflinj"
+      ],
+      "prior_role_evidence": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json"
+    },
+    {
+      "slot": "TE",
+      "position": "TE",
+      "player": "Mason Taylor",
+      "team": "NYJ",
+      "opponent": "LV",
+      "home": true,
+      "salary": 3300,
+      "draftkings_player_id": "44665165",
+      "eligible_slots": [
+        "TE",
+        "FLEX"
+      ],
+      "game_info": "LV@NYJ 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "HoldTaylorreceivinginvolvement; 10of29priorRBtargets do notidentifycheckdowns orautomaticTEboost.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "freeze_pool",
+        "freeze_jets"
+      ],
+      "prior_role_evidence": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json"
+    },
+    {
+      "slot": "FLEX",
+      "position": "WR",
+      "player": "KC Concepcion Jr.",
+      "team": "CLE",
+      "opponent": "PIT",
+      "home": false,
+      "salary": 4700,
+      "draftkings_player_id": "44664781",
+      "eligible_slots": [
+        "WR",
+        "FLEX"
+      ],
+      "game_info": "CLE@PIT 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "HoldConcepciontargetrole; no verifiedPickensOUT to triggerFlournoyreassessment.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "freeze_pool",
+        "freeze_expect",
+        "freeze_nflinj"
+      ],
+      "prior_role_evidence": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json"
+    },
+    {
+      "slot": "DST",
+      "position": "DST",
+      "player": "Patriots",
+      "team": "NE",
+      "opponent": "MIA",
+      "home": false,
+      "salary": 3600,
+      "draftkings_player_id": "44665381",
+      "eligible_slots": [
+        "DST"
+      ],
+      "game_info": "NE@MIA 11/01/2026 04:25PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "HoldPatriotsDST withfront/ProctorOUT premise; ownoffensivelosses/rain canreducepressureopportunities.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "freeze_pool",
+        "freeze_ne",
+        "freeze_nws_mia"
+      ],
+      "prior_role_evidence": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json"
+    }
+  ],
+  "revisions": [],
+  "revision_classification": "unchanged",
+  "summary": "Freeze unchanged50000/$0 nine from morning and jointly endorsed888e327 selection. Actual author exchange and Grok questions contributed qualified holds, no forced swap. Later observations cannot change scored nine.",
+  "counterargument": "Patriots offense missing Brown/Henderson/Bryant and Miamiweather may undermine supporting possession/pressure assumptions. Buffalo supportingQ andJets protection/receiving competition remain uncertain; official Sunday inactives not established at this early cutoff.",
+  "source_receipts": [
+    {
+      "id": "freeze_pool",
+      "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "label": "pool",
+      "retrieved_at": "2026-11-01T15:53:13.667Z",
+      "publication_at": null,
+      "scope": "Current source inspected; a game designation or blank export status is not a final inactive list."
+    },
+    {
+      "id": "freeze_rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "label": "rules",
+      "retrieved_at": "2026-11-01T15:53:16.536Z",
+      "publication_at": null,
+      "scope": "Current source inspected; a game designation or blank export status is not a final inactive list."
+    },
+    {
+      "id": "freeze_schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+      "label": "schedule",
+      "retrieved_at": "2026-11-01T15:53:15.844Z",
+      "publication_at": null,
+      "scope": "Current source inspected; a game designation or blank export status is not a final inactive list."
+    },
+    {
+      "id": "freeze_buf",
+      "url": "https://www.buffalobills.com/team/injury-report/",
+      "label": "buf",
+      "retrieved_at": "2026-11-01T15:53:14.964Z",
+      "publication_at": null,
+      "scope": "Current source inspected; a game designation or blank export status is not a final inactive list."
+    },
+    {
+      "id": "freeze_jets",
+      "url": "https://www.newyorkjets.com/team/injury-report/",
+      "label": "jets",
+      "retrieved_at": "2026-11-01T15:53:15.036Z",
+      "publication_at": null,
+      "scope": "Current source inspected; a game designation or blank export status is not a final inactive list."
+    },
+    {
+      "id": "freeze_dal",
+      "url": "https://www.dallascowboys.com/news/updates-november-2026",
+      "label": "dal",
+      "retrieved_at": "2026-11-01T15:53:16.300Z",
+      "publication_at": null,
+      "scope": "November page supplies no new verifiedPickensOUT."
+    },
+    {
+      "id": "freeze_ne",
+      "url": "https://www.patriots.com/team/injury-report/",
+      "label": "ne",
+      "retrieved_at": "2026-11-01T15:53:14.996Z",
+      "publication_at": null,
+      "scope": "Current source inspected; a game designation or blank export status is not a final inactive list."
+    },
+    {
+      "id": "freeze_tb",
+      "url": "https://www.buccaneers.com/team/injury-report/",
+      "label": "tb",
+      "retrieved_at": "2026-11-01T15:53:15.084Z",
+      "publication_at": null,
+      "scope": "Current source inspected; a game designation or blank export status is not a final inactive list."
+    },
+    {
+      "id": "freeze_nws_mia",
+      "url": "https://forecast.weather.gov/MapClick.php?lat=25.958&lon=-80.239&unit=0&lg=english&FcstType=text&TextType=1",
+      "label": "nws_mia",
+      "retrieved_at": "2026-11-01T15:53:14.829Z",
+      "publication_at": "2026-11-01T03:47:00-05:00",
+      "scope": "Nearby grid broad daytime period, not field/kickoff measurement."
+    },
+    {
+      "id": "freeze_nws_tb",
+      "url": "https://forecast.weather.gov/MapClick.php?lat=27.976&lon=-82.503&unit=0&lg=english&FcstType=text&TextType=1",
+      "label": "nws_tb",
+      "retrieved_at": "2026-11-01T15:53:14.978Z",
+      "publication_at": "2026-11-01T02:01:00-05:00",
+      "scope": "Nearby grid broad daytime period, not field/kickoff measurement."
+    },
+    {
+      "id": "freeze_proj",
+      "url": "https://fantasysportsedge.com/nfl/projections",
+      "label": "proj",
+      "retrieved_at": "2026-11-01T15:53:14.945Z",
+      "publication_at": null,
+      "scope": "13-gameSun–Mon caption; excluded from11Sunday model estimates."
+    },
+    {
+      "id": "freeze_nflinj",
+      "url": "https://www.nfl.com/news/nfl-week-8-injury-report-2026-season",
+      "label": "nflinj",
+      "retrieved_at": "2026-11-01T15:53:16.691Z",
+      "publication_at": null,
+      "scope": "Current source inspected; a game designation or blank export status is not a final inactive list."
+    },
+    {
+      "id": "freeze_expect",
+      "url": "https://www.footballguys.com/article/2026-gameday-injury-expectations-week08",
+      "label": "expect",
+      "retrieved_at": "2026-11-01T15:54:06.075Z",
+      "publication_at": null,
+      "scope": "Attributed secondary expected availability, not official inactives; page publicationOct31, update clocks unknown. Its AJBrownQ discussion is superseded by primaryOUT; not imported."
+    }
+  ],
+  "official_pool_verified": true,
+  "salary_basis": "official_export",
+  "medical_availability_certified": false,
+  "unresolved_assumptions": [
+    "Official Sunday inactives not established by inspected sources at this cutoff. Expected availability is not confirmation.",
+    "NE offensiveBrown/HendersonOUT plusMiamiweather; no guaranteed game script or sack uplift.",
+    "Buffalo supportingQ andJetsprotection/HallQ; no automatic two-inactive threshold orTaylorboost."
+  ],
+  "availability_cutoff_note": "Decision made before normal early-game inactive-release window. No final inactive list was established in inspected sources; expected active/inactive reports are explicitly unconfirmed. This is an accepted evidence limit, not a later claim of final medical clearance.",
+  "decision_reasons": [
+    "C1 Patriots held: healthier listedfront and ProctorOUT support case; unlikeconditionalEPA comparisons do not mathematicallycancel and offensiveabsences/weatherremaincounterevidence.",
+    "C2 Cooper/Taylor held onprice/role evidence, not single-TDdoublecredit orautomaticHall-absence checkdownboost.",
+    "C3 Concepcion held: no verified PickensOUT beforeactualfreeze. SecondaryexpectationPickensplays does not certify status; noautomaticFlournoyswap.",
+    "C4 Bengals funding package declined: Keenan4500 would fund200 exactly, but no supportedwhole-lineuproleupgrade established.",
+    "GrokQ1/Q2/Q3 addressed bybothauthors; no two-inactive threshold, causalcheckdowninference orautomaticweatherboost."
+  ],
+  "runtime": {
+    "model": "gpt-6.1-sol",
+    "tools": [
+      "GitHub",
+      "Firecrawl",
+      "TIBER capability reader"
+    ],
+    "external_runtime": "Claude exactservingruntime andGrokmodel unknown",
+    "retained_evidence": "FreshcapabilityresponsewithholdsROP/TTS/Forecast; no qualifiedretainedoutput accessed, not proof of nonexistence.",
+    "cost": null
+  },
+  "validation": {
+    "slots": "QB,RB,RB,WR,WR,WR,TE,FLEX,DST",
+    "unique_player_ids": true,
+    "duplicate_count": 0,
+    "total_verified": 50000,
+    "remaining_verified": 0,
+    "distinct_games": 7,
+    "all_selected_official_prices_positions_games_verified": true,
+    "game_status": "earliestkickoff18:00UTC notstarted",
+    "medical_clearance": false
+  }
+}

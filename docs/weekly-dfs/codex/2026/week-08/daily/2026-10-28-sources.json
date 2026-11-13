@@ -1,0 +1,1013 @@
+{
+  "sources": [
+    {
+      "id": "groups",
+      "url": "https://api.draftkings.com/draftgroups/v1/",
+      "retrieved_at": "2026-10-28T10:14:44.897Z",
+      "publication_at": null,
+      "label": "groups",
+      "scope": "Official draft group153728, Classic21, 11games; unrelated groups not retained."
+    },
+    {
+      "id": "pool",
+      "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "retrieved_at": "2026-10-28T10:15:05.939Z",
+      "publication_at": null,
+      "label": "pool",
+      "scope": "554-row official salary export; salary/position/eligibility/game IDs, not medical clearance or forecast."
+    },
+    {
+      "id": "schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+      "retrieved_at": "2026-10-28T10:14:33.029Z",
+      "publication_at": null,
+      "label": "schedule",
+      "scope": "Actual page inspected; publication unknown unless recorded."
+    },
+    {
+      "id": "rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-10-28T10:14:24.291Z",
+      "publication_at": null,
+      "label": "rules",
+      "scope": "Actual page inspected; publication unknown unless recorded."
+    },
+    {
+      "id": "omar",
+      "url": "https://www.fantasylife.com/articles/fantasy/fantasy-football-takeaways-omar-cooper-utilization-report",
+      "retrieved_at": "2026-10-28T10:14:21.702Z",
+      "publication_at": null,
+      "label": "omar",
+      "scope": "Attributed external utilization: Cooper70% routes, Mitchell55%; KCC target-role evidence. Historical comparison probabilities not adopted."
+    },
+    {
+      "id": "film",
+      "url": "https://www.newyorkjets.com/news/film-breakdown-omar-cooper-jr-week-7-top-plays-10-27-2026",
+      "retrieved_at": "2026-10-28T10:14:21.940Z",
+      "publication_at": "2026-10-27T13:30:00-04:00",
+      "label": "film",
+      "scope": "Primary selected-play breakdown; man-coverage five routes is a subset, not total routes."
+    },
+    {
+      "id": "chase",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873012",
+      "retrieved_at": "2026-10-28T10:15:42.133Z",
+      "publication_at": null,
+      "label": "chase",
+      "scope": "Actual page inspected; publication unknown unless recorded."
+    },
+    {
+      "id": "ferg",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873009",
+      "retrieved_at": "2026-10-28T10:15:41.925Z",
+      "publication_at": null,
+      "label": "ferg",
+      "scope": "Actual page inspected; publication unknown unless recorded."
+    },
+    {
+      "id": "taylor",
+      "url": "https://www.newyorkjets.com/news/mason-taylor-joined-omar-cooper-jr-in-jets-offensive-production-vs-dolphins-10-26-2026",
+      "retrieved_at": "2026-10-28T10:16:13.889Z",
+      "publication_at": "2026-10-26T12:15:00-04:00",
+      "label": "taylor",
+      "scope": "Actual page inspected; publication unknown unless recorded."
+    },
+    {
+      "id": "jetsbox",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873015",
+      "retrieved_at": "2026-10-28T10:15:41.964Z",
+      "publication_at": null,
+      "label": "jetsbox",
+      "scope": "Actual page inspected; publication unknown unless recorded."
+    },
+    {
+      "id": "lvbox",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873021",
+      "retrieved_at": "2026-10-28T10:15:41.813Z",
+      "publication_at": null,
+      "label": "lvbox",
+      "scope": "Actual page inspected; publication unknown unless recorded."
+    },
+    {
+      "id": "detinj",
+      "url": "https://www.detroitlions.com/team/injury-report/",
+      "retrieved_at": "2026-10-28T10:14:45.818Z",
+      "publication_at": null,
+      "label": "detinj",
+      "scope": "No player rows returned; cannot confirm StBrown ankle report."
+    },
+    {
+      "id": "cinstatus",
+      "url": "https://www.bengals.com/team/injury-report/",
+      "retrieved_at": "2026-10-28T10:15:42.568Z",
+      "publication_at": null,
+      "label": "cinstatus",
+      "scope": "Empty/mislabelled header; not evidence of a clear Week8 report."
+    },
+    {
+      "id": "dalstatus",
+      "url": "https://www.dallascowboys.com/team/injury-report/",
+      "retrieved_at": "2026-10-28T10:15:41.030Z",
+      "publication_at": null,
+      "label": "dalstatus",
+      "scope": "No player rows returned; Ferguson clearance not inferred."
+    },
+    {
+      "id": "bills",
+      "url": "https://www.buffalobills.com/team/injury-report/",
+      "retrieved_at": "2026-10-28T10:16:12.026Z",
+      "publication_at": null,
+      "label": "bills",
+      "scope": "Actual page inspected; publication unknown unless recorded."
+    },
+    {
+      "id": "ravens",
+      "url": "https://www.baltimoreravens.com/team/injury-report/",
+      "retrieved_at": "2026-10-28T10:16:12.439Z",
+      "publication_at": null,
+      "label": "ravens",
+      "scope": "Actual page inspected; publication unknown unless recorded."
+    },
+    {
+      "id": "prices",
+      "url": "https://fantasysportsedge.com/nfl/dfs/week-8",
+      "retrieved_at": "2026-10-28T10:14:22.939Z",
+      "publication_at": null,
+      "label": "prices",
+      "scope": "Actual page inspected; publication unknown unless recorded."
+    },
+    {
+      "id": "projections",
+      "url": "https://fantasysportsedge.com/nfl/projections",
+      "retrieved_at": "2026-10-28T10:14:22.917Z",
+      "publication_at": null,
+      "label": "projections",
+      "scope": "Provider changed to14-game Thu–Mon caption; not used for Sunday point estimates."
+    },
+    {
+      "id": "week7",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+      "retrieved_at": "2026-10-28T10:14:55.466Z",
+      "publication_at": null,
+      "label": "week7",
+      "scope": "Actual page inspected; publication unknown unless recorded."
+    }
+  ],
+  "selected_group": {
+    "draftGroupId": 153728,
+    "contestType": {
+      "contestTypeId": 21,
+      "sport": "NFL",
+      "gameType": "SalaryCap",
+      "allowLateSwap": true
+    },
+    "sportId": 1,
+    "startTimeType": "Normal",
+    "minStartTime": "2026-11-01T18:00:00.0000000Z",
+    "maxStartTime": "2026-11-01T21:25:00.0000000Z",
+    "draftGroupState": "Upcoming",
+    "sortOrder": 38,
+    "draftGroupSeries": 2,
+    "allowUgc": true,
+    "leagues": [
+      {
+        "leagueId": 1,
+        "leagueName": "National Football League",
+        "leagueAbbreviation": "NFL"
+      }
+    ],
+    "games": [
+      {
+        "gameId": 6177192,
+        "awayTeamId": 366,
+        "homeTeamId": 324,
+        "startDate": "2026-11-01T18:00:00.0000000Z",
+        "location": "New Highmark Stadium",
+        "timeRemainingStatus": "Pre-Game",
+        "sport": "NFL",
+        "status": "Pre-Game",
+        "description": "BAL @ BUF",
+        "sportSpecificData": {
+          "timeRemaining": "Pre-Game",
+          "quarter": "0"
+        },
+        "league": "NFL",
+        "competitionStatus": "Upcoming",
+        "competitionStatusDetail": "",
+        "gameAttributes": [
+          {
+            "typeId": 9,
+            "value": "Pre-Game"
+          },
+          {
+            "typeId": 22,
+            "value": "8"
+          },
+          {
+            "typeId": 23,
+            "value": "2"
+          },
+          {
+            "typeId": 27,
+            "value": "False"
+          },
+          {
+            "typeId": 32,
+            "value": "CBS"
+          },
+          {
+            "typeId": 46,
+            "value": "0"
+          },
+          {
+            "typeId": 47,
+            "value": "0"
+          },
+          {
+            "typeId": 83,
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "gameId": 6177204,
+        "awayTeamId": 336,
+        "homeTeamId": 327,
+        "startDate": "2026-11-01T18:00:00.0000000Z",
+        "location": "Paul Brown Stadium",
+        "timeRemainingStatus": "Pre-Game",
+        "sport": "NFL",
+        "status": "Pre-Game",
+        "description": "TEN @ CIN",
+        "sportSpecificData": {
+          "timeRemaining": "Pre-Game",
+          "quarter": "0"
+        },
+        "league": "NFL",
+        "competitionStatus": "Upcoming",
+        "competitionStatusDetail": "",
+        "gameAttributes": [
+          {
+            "typeId": 9,
+            "value": "Pre-Game"
+          },
+          {
+            "typeId": 22,
+            "value": "8"
+          },
+          {
+            "typeId": 23,
+            "value": "2"
+          },
+          {
+            "typeId": 27,
+            "value": "False"
+          },
+          {
+            "typeId": 32,
+            "value": "CBS"
+          },
+          {
+            "typeId": 46,
+            "value": "0"
+          },
+          {
+            "typeId": 47,
+            "value": "0"
+          },
+          {
+            "typeId": 83,
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "gameId": 6177210,
+        "awayTeamId": 355,
+        "homeTeamId": 331,
+        "startDate": "2026-11-01T18:00:00.0000000Z",
+        "location": "AT&T Stadium",
+        "timeRemainingStatus": "Pre-Game",
+        "sport": "NFL",
+        "status": "Pre-Game",
+        "description": "ARI @ DAL",
+        "sportSpecificData": {
+          "timeRemaining": "Pre-Game",
+          "quarter": "0"
+        },
+        "league": "NFL",
+        "competitionStatus": "Upcoming",
+        "competitionStatusDetail": "",
+        "gameAttributes": [
+          {
+            "typeId": 9,
+            "value": "Pre-Game"
+          },
+          {
+            "typeId": 22,
+            "value": "8"
+          },
+          {
+            "typeId": 23,
+            "value": "2"
+          },
+          {
+            "typeId": 27,
+            "value": "False"
+          },
+          {
+            "typeId": 32,
+            "value": "FOX"
+          },
+          {
+            "typeId": 46,
+            "value": "0"
+          },
+          {
+            "typeId": 47,
+            "value": "0"
+          },
+          {
+            "typeId": 83,
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "gameId": 6177216,
+        "awayTeamId": 347,
+        "homeTeamId": 334,
+        "startDate": "2026-11-01T18:00:00.0000000Z",
+        "location": "Ford Field",
+        "timeRemainingStatus": "Pre-Game",
+        "sport": "NFL",
+        "status": "Pre-Game",
+        "description": "MIN @ DET",
+        "sportSpecificData": {
+          "timeRemaining": "Pre-Game",
+          "quarter": "0"
+        },
+        "league": "NFL",
+        "competitionStatus": "Upcoming",
+        "competitionStatusDetail": "",
+        "gameAttributes": [
+          {
+            "typeId": 9,
+            "value": "Pre-Game"
+          },
+          {
+            "typeId": 22,
+            "value": "8"
+          },
+          {
+            "typeId": 23,
+            "value": "2"
+          },
+          {
+            "typeId": 27,
+            "value": "False"
+          },
+          {
+            "typeId": 32,
+            "value": "FOX"
+          },
+          {
+            "typeId": 46,
+            "value": "0"
+          },
+          {
+            "typeId": 47,
+            "value": "0"
+          },
+          {
+            "typeId": 83,
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "gameId": 6177222,
+        "awayTeamId": 338,
+        "homeTeamId": 365,
+        "startDate": "2026-11-01T18:00:00.0000000Z",
+        "location": "EverBank Field",
+        "timeRemainingStatus": "Pre-Game",
+        "sport": "NFL",
+        "status": "Pre-Game",
+        "description": "IND @ JAX",
+        "sportSpecificData": {
+          "timeRemaining": "Pre-Game",
+          "quarter": "0"
+        },
+        "league": "NFL",
+        "competitionStatus": "Upcoming",
+        "competitionStatusDetail": "",
+        "gameAttributes": [
+          {
+            "typeId": 9,
+            "value": "Pre-Game"
+          },
+          {
+            "typeId": 22,
+            "value": "8"
+          },
+          {
+            "typeId": 23,
+            "value": "2"
+          },
+          {
+            "typeId": 27,
+            "value": "False"
+          },
+          {
+            "typeId": 32,
+            "value": "CBS"
+          },
+          {
+            "typeId": 46,
+            "value": "0"
+          },
+          {
+            "typeId": 47,
+            "value": "0"
+          },
+          {
+            "typeId": 83,
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "gameId": 6177228,
+        "awayTeamId": 341,
+        "homeTeamId": 352,
+        "startDate": "2026-11-01T18:00:00.0000000Z",
+        "location": "MetLife Stadium",
+        "timeRemainingStatus": "Pre-Game",
+        "sport": "NFL",
+        "status": "Pre-Game",
+        "description": "LV @ NYJ",
+        "sportSpecificData": {
+          "timeRemaining": "Pre-Game",
+          "quarter": "0"
+        },
+        "league": "NFL",
+        "competitionStatus": "Upcoming",
+        "competitionStatusDetail": "",
+        "gameAttributes": [
+          {
+            "typeId": 9,
+            "value": "Pre-Game"
+          },
+          {
+            "typeId": 22,
+            "value": "8"
+          },
+          {
+            "typeId": 23,
+            "value": "2"
+          },
+          {
+            "typeId": 27,
+            "value": "False"
+          },
+          {
+            "typeId": 32,
+            "value": "FOX"
+          },
+          {
+            "typeId": 46,
+            "value": "0"
+          },
+          {
+            "typeId": 47,
+            "value": "0"
+          },
+          {
+            "typeId": 83,
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "gameId": 6177234,
+        "awayTeamId": 329,
+        "homeTeamId": 356,
+        "startDate": "2026-11-01T18:00:00.0000000Z",
+        "location": "Heinz Field",
+        "timeRemainingStatus": "Pre-Game",
+        "sport": "NFL",
+        "status": "Pre-Game",
+        "description": "CLE @ PIT",
+        "sportSpecificData": {
+          "timeRemaining": "Pre-Game",
+          "quarter": "0"
+        },
+        "league": "NFL",
+        "competitionStatus": "Upcoming",
+        "competitionStatusDetail": "",
+        "gameAttributes": [
+          {
+            "typeId": 9,
+            "value": "Pre-Game"
+          },
+          {
+            "typeId": 22,
+            "value": "8"
+          },
+          {
+            "typeId": 23,
+            "value": "2"
+          },
+          {
+            "typeId": 27,
+            "value": "False"
+          },
+          {
+            "typeId": 32,
+            "value": "CBS"
+          },
+          {
+            "typeId": 46,
+            "value": "0"
+          },
+          {
+            "typeId": 47,
+            "value": "0"
+          },
+          {
+            "typeId": 83,
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "gameId": 6177240,
+        "awayTeamId": 323,
+        "homeTeamId": 362,
+        "startDate": "2026-11-01T18:00:00.0000000Z",
+        "location": "Raymond James Stadium",
+        "timeRemainingStatus": "Pre-Game",
+        "sport": "NFL",
+        "status": "Pre-Game",
+        "description": "ATL @ TB",
+        "sportSpecificData": {
+          "timeRemaining": "Pre-Game",
+          "quarter": "0"
+        },
+        "league": "NFL",
+        "competitionStatus": "Upcoming",
+        "competitionStatusDetail": "",
+        "gameAttributes": [
+          {
+            "typeId": 9,
+            "value": "Pre-Game"
+          },
+          {
+            "typeId": 22,
+            "value": "8"
+          },
+          {
+            "typeId": 23,
+            "value": "2"
+          },
+          {
+            "typeId": 27,
+            "value": "False"
+          },
+          {
+            "typeId": 32,
+            "value": "FOX"
+          },
+          {
+            "typeId": 46,
+            "value": "0"
+          },
+          {
+            "typeId": 47,
+            "value": "0"
+          },
+          {
+            "typeId": 83,
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "gameId": 6177246,
+        "awayTeamId": 357,
+        "homeTeamId": 343,
+        "startDate": "2026-11-01T21:05:00.0000000Z",
+        "location": "SoFi Stadium",
+        "timeRemainingStatus": "Pre-Game",
+        "sport": "NFL",
+        "status": "Pre-Game",
+        "description": "LAC @ LAR",
+        "sportSpecificData": {
+          "timeRemaining": "Pre-Game",
+          "quarter": "0"
+        },
+        "league": "NFL",
+        "competitionStatus": "Upcoming",
+        "competitionStatusDetail": "",
+        "gameAttributes": [
+          {
+            "typeId": 9,
+            "value": "Pre-Game"
+          },
+          {
+            "typeId": 22,
+            "value": "8"
+          },
+          {
+            "typeId": 23,
+            "value": "2"
+          },
+          {
+            "typeId": 27,
+            "value": "False"
+          },
+          {
+            "typeId": 32,
+            "value": "FOX"
+          },
+          {
+            "typeId": 46,
+            "value": "0"
+          },
+          {
+            "typeId": 47,
+            "value": "0"
+          },
+          {
+            "typeId": 83,
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "gameId": 6177252,
+        "awayTeamId": 339,
+        "homeTeamId": 332,
+        "startDate": "2026-11-01T21:25:00.0000000Z",
+        "location": "Sports Authority Field at Mile High",
+        "timeRemainingStatus": "Pre-Game",
+        "sport": "NFL",
+        "status": "Pre-Game",
+        "description": "KC @ DEN",
+        "sportSpecificData": {
+          "timeRemaining": "Pre-Game",
+          "quarter": "0"
+        },
+        "league": "NFL",
+        "competitionStatus": "Upcoming",
+        "competitionStatusDetail": "",
+        "gameAttributes": [
+          {
+            "typeId": 9,
+            "value": "Pre-Game"
+          },
+          {
+            "typeId": 22,
+            "value": "8"
+          },
+          {
+            "typeId": 23,
+            "value": "2"
+          },
+          {
+            "typeId": 27,
+            "value": "False"
+          },
+          {
+            "typeId": 32,
+            "value": "CBS"
+          },
+          {
+            "typeId": 46,
+            "value": "0"
+          },
+          {
+            "typeId": 47,
+            "value": "0"
+          },
+          {
+            "typeId": 83,
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "gameId": 6177264,
+        "awayTeamId": 348,
+        "homeTeamId": 345,
+        "startDate": "2026-11-01T21:25:00.0000000Z",
+        "location": "Sun Life Stadium",
+        "timeRemainingStatus": "Pre-Game",
+        "sport": "NFL",
+        "status": "Pre-Game",
+        "description": "NE @ MIA",
+        "sportSpecificData": {
+          "timeRemaining": "Pre-Game",
+          "quarter": "0"
+        },
+        "league": "NFL",
+        "competitionStatus": "Upcoming",
+        "competitionStatusDetail": "",
+        "gameAttributes": [
+          {
+            "typeId": 9,
+            "value": "Pre-Game"
+          },
+          {
+            "typeId": 22,
+            "value": "8"
+          },
+          {
+            "typeId": 23,
+            "value": "2"
+          },
+          {
+            "typeId": 27,
+            "value": "False"
+          },
+          {
+            "typeId": 32,
+            "value": "CBS"
+          },
+          {
+            "typeId": 46,
+            "value": "0"
+          },
+          {
+            "typeId": 47,
+            "value": "0"
+          },
+          {
+            "typeId": 83,
+            "value": "0"
+          }
+        ]
+      }
+    ],
+    "gameTypeId": 1,
+    "allTags": [
+      "Featured"
+    ]
+  },
+  "pool_rows": 554,
+  "selection": [
+    {
+      "slot": "QB",
+      "position": "QB",
+      "player": "Josh Allen",
+      "team": "BUF",
+      "opponent": "BAL",
+      "home": true,
+      "salary": 7700,
+      "draftkings_player_id": "44664390",
+      "eligible_slots": [
+        "QB"
+      ],
+      "game_info": "BAL@BUF 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Keep the $7,700 QB allocation and Baltimore game exposure. No opponent-QB return or shootout is assumed; current practice rows were unavailable.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "pool",
+        "schedule"
+      ]
+    },
+    {
+      "slot": "RB",
+      "position": "RB",
+      "player": "Bucky Irving",
+      "team": "TB",
+      "opponent": "ATL",
+      "home": true,
+      "salary": 6400,
+      "draftkings_player_id": "44664485",
+      "eligible_slots": [
+        "RB",
+        "FLEX"
+      ],
+      "game_info": "ATL@TB 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Keep at $6,400. Retained Week7 evidence supports lead rushing work, but 24 carries arose in49teamruns with14forGainwell; no repeat-script guarantee.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "pool",
+        "schedule"
+      ]
+    },
+    {
+      "slot": "RB",
+      "position": "RB",
+      "player": "Chase Brown",
+      "team": "CIN",
+      "opponent": "TEN",
+      "home": true,
+      "salary": 6300,
+      "draftkings_player_id": "44664487",
+      "eligible_slots": [
+        "RB",
+        "FLEX"
+      ],
+      "game_info": "TEN@CIN 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Add at $6,300: Week7 had11carries and5targets/4catches, supporting a receiving component. Perine scored the rushingTD; a lead or goal-line monopoly is not established.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "pool",
+        "chase"
+      ]
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Jameson Williams",
+      "team": "DET",
+      "opponent": "MIN",
+      "home": true,
+      "salary": 6000,
+      "draftkings_player_id": "44664743",
+      "eligible_slots": [
+        "WR",
+        "FLEX"
+      ],
+      "game_info": "MIN@DET 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Keep at $6,000. Retained nine-target evidence and $2,000 discount to StBrown support the allocation. New secondary ankle flag for StBrown is unconfirmed, not grounds for a point boost.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "pool",
+        "schedule"
+      ]
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Omar Cooper Jr.",
+      "team": "NYJ",
+      "opponent": "LV",
+      "home": true,
+      "salary": 4800,
+      "draftkings_player_id": "44664777",
+      "eligible_slots": [
+        "WR",
+        "FLEX"
+      ],
+      "game_info": "LV@NYJ 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Keep at $4,800 after contrary evidence: reported route share fell to70% with Mitchell returning. Designed usage and primary play descriptions support involvement; do not repeat115yards on5targets as a forecast.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "pool",
+        "omar",
+        "film"
+      ]
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Zay Flowers",
+      "team": "BAL",
+      "opponent": "BUF",
+      "home": false,
+      "salary": 7200,
+      "draftkings_player_id": "44664725",
+      "eligible_slots": [
+        "WR",
+        "FLEX"
+      ],
+      "game_info": "BAL@BUF 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Add at $7,200: fresh Week7 box shows11targets/8catches/137yards. Meets the operator's qualitative build-around call, but that influence is disclosed; Lamar availability remains unresolved.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "pool",
+        "chase"
+      ]
+    },
+    {
+      "slot": "TE",
+      "position": "TE",
+      "player": "Mason Taylor",
+      "team": "NYJ",
+      "opponent": "LV",
+      "home": true,
+      "salary": 3300,
+      "draftkings_player_id": "44665165",
+      "eligible_slots": [
+        "TE",
+        "FLEX"
+      ],
+      "game_info": "LV@NYJ 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Add at $3,300: six ordinary targets/five catches/62yards support a low-cost receiving role. TwoTDs and a conversion drove scoring; do not project them forward. Shares targets with Cooper.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "pool",
+        "taylor",
+        "jetsbox"
+      ]
+    },
+    {
+      "slot": "FLEX",
+      "position": "WR",
+      "player": "KC Concepcion Jr.",
+      "team": "CLE",
+      "opponent": "PIT",
+      "home": false,
+      "salary": 4700,
+      "draftkings_player_id": "44664781",
+      "eligible_slots": [
+        "WR",
+        "FLEX"
+      ],
+      "game_info": "CLE@PIT 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Add FLEX at $4,700: attributed utilization report supports repeated mid-20s target shares before29% Week7. Lower-volume Browns offense/Fannin competition and PIT matchup temper the role case.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "pool",
+        "omar"
+      ]
+    },
+    {
+      "slot": "DST",
+      "position": "DST",
+      "player": "Jets",
+      "team": "NYJ",
+      "opponent": "LV",
+      "home": true,
+      "salary": 2800,
+      "draftkings_player_id": "44665389",
+      "eligible_slots": [
+        "DST"
+      ],
+      "game_info": "LV@NYJ 11/01/2026 01:00PM ET",
+      "platform_status": "",
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Add at $2,800 to fund receiving allocations. Recent two sacks provide limited pressure evidence; Raiders allowed two sacks but Cousins threw0INT in44attempts. Turnover upside is uncertain, not a numerical forecast.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "source_ids": [
+        "pool",
+        "jetsbox",
+        "lvbox"
+      ]
+    }
+  ],
+  "findings": [
+    "Official group153728 and salary export now verify the same11-game Sunday pool; the earlier anticipated window did not change.",
+    "All four Tuesday picks match their official prices. Five additions total$24,300, yielding$49,200/$800left.",
+    "Cooper's70%reportedroute share challenges a full-time role; primary film article says Wilson drew attention on two major plays. No permanent displacement claim.",
+    "Provider projection page now captions14games Thu–Mon, even though titled main slate; no estimates imported into this11-game record.",
+    "Ferguson screened at$4,100 but fresh Monday box has0catches/1target; prefer Taylor's documented receiving involvement at$3,300 while retaining Jets concentration risk.",
+    "Week7 slate completed; fresh Jets box agrees with archived key scoring inputs. No new settled-platform evidence or material Week6/7 correction established; existing provisional totals remain unchanged."
+  ],
+  "rules": {
+    "cap": 50000,
+    "slots": [
+      "QB",
+      "RB",
+      "RB",
+      "WR",
+      "WR",
+      "WR",
+      "TE",
+      "FLEX",
+      "DST"
+    ],
+    "minimum_games": 2,
+    "pass_yard": 0.04,
+    "pass_td": 4,
+    "interception": -1,
+    "rush_rec_yard": 0.1,
+    "reception": 1,
+    "rush_rec_td": 6,
+    "fumble_lost": -1,
+    "two_point": 2,
+    "pass300bonus": 3,
+    "rush100bonus": 3,
+    "rec100bonus": 3,
+    "dst": "Exact current DraftKings rules source inspected; no scoring revision today."
+  }
+}

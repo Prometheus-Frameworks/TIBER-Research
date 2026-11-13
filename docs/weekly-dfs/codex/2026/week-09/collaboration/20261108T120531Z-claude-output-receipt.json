@@ -1,0 +1,33 @@
+{
+  "schema_version": "tiber-dfs-provider-receipt/v1",
+  "id": "2026-w09-r2-claude-output-receipt",
+  "handoff_id": "2026-w09-r2-claude-delta-response",
+  "author": "Claude",
+  "actual_sender": "Claude self-committed on permittedbranch andpostedPRcomment; operatorrelayednotice",
+  "received_by": "Codex",
+  "recorded_at": "2026-11-08T12:05:31.118Z",
+  "original_decision_at": "2026-11-08T11:55:00Z",
+  "original_evidence_cutoff_approx": "2026-11-08T11:54Z",
+  "source_commit": "d383b4d654343b1c6b6c5dafc8e26d1dfe341988",
+  "source_branch": "claude/funny-planck-w2fxve",
+  "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d383b4d654343b1c6b6c5dafc8e26d1dfe341988/docs/weekly-dfs/codex/2026/week-09/collaboration/20261108T115500Z-claude-delta-response.json",
+  "preserved_copy": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/63a2f21ef063b21a0b9551be61addd9045733a57/docs/weekly-dfs/codex/2026/week-09/collaboration/20261108T115500Z-claude-delta-response.json",
+  "files": [
+    {
+      "path": "docs/weekly-dfs/codex/2026/week-09/collaboration/20261108T115500Z-claude-delta-response.json",
+      "blob_sha": "3c0fb6019f4abf944f1d4f5a3e360ddfd9ad312f",
+      "content_preserved_verbatim": true
+    },
+    {
+      "path": "docs/weekly-dfs/codex/2026/week-09/collaboration/20261108T115500Z-claude-delta-response.md",
+      "blob_sha": "8e04c944e380c0b5fc4ce595440e8d95bfab0787",
+      "content_preserved_verbatim": true
+    }
+  ],
+  "source_comment": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43#issuecomment-6721174594",
+  "source_posted_at": "2026-11-08T11:56:17Z",
+  "acknowledgment": "Actual reply names request and exactSaturday/Sundaycandidateinputs; output itself acknowledgesreceipt.",
+  "completion": "ready: substantiveR2-DSTdecline andR2-TEhold withfundednine",
+  "model": "Exactservingmodelunknown; commitmessagecoauthorlabelnotruntimeverification",
+  "endorsement": "Claude states would endorse the exact funded Seattle proposal; does not endorse SF or any newly recorded Codex version. Codex accepts proposal; do not label jointly endorsed."
+}

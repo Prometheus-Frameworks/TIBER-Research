@@ -1,0 +1,380 @@
+{
+  "recorded_at": "2026-11-07T11:27:51.462Z",
+  "sources": [
+    {
+      "id": "official",
+      "label": "official",
+      "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=155994",
+      "retrieved_at": "2026-11-07T11:25:18.749Z",
+      "retrieved_at_toronto": "2026-11-07T06:25:18.749-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "publication_note": "Retrieval is distinct from publication; site zone not established when unstated.",
+      "scope": "586unique official155994 rows, same11games/IDs asNov6; allnineprices/positions/team/gameverified. Fanninstatusblank now, notmedicalclearance; historical averages not projections."
+    },
+    {
+      "id": "model",
+      "label": "model",
+      "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994",
+      "retrieved_at": "2026-11-07T11:25:21.823Z",
+      "retrieved_at_toronto": "2026-11-07T06:25:21.823-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "publication_note": "Retrieval is distinct from publication; site zone not established when unstated.",
+      "scope": "PublisherDKmain allselectedvalues andoldSEA/SFcomparisonread fromsameSat12:15AMETdisplay. Duplicate selectorsagree. No builder operated."
+    },
+    {
+      "id": "week8",
+      "label": "week8",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+      "retrieved_at": "2026-11-07T11:25:20.027Z",
+      "retrieved_at_toronto": "2026-11-07T06:25:20.027-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "publication_note": "Retrieval is distinct from publication; site zone not established when unstated.",
+      "scope": "PriorSundaygamesfinal; existingcompleteWeek6/7/8reviewsalreadyhaveprovisionalreconstructed scores. No verifiedsettledplatformscore/materialcorrection obtained."
+    },
+    {
+      "id": "schedule",
+      "label": "schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+      "retrieved_at": "2026-11-07T11:25:20.373Z",
+      "retrieved_at_toronto": "2026-11-07T06:25:20.373-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "publication_note": "Retrieval is distinct from publication; site zone not established when unstated.",
+      "scope": "PrimaryNov8Week9: same11Sundayafternoon games, earliest13:00Toronto/18:00UTC. Thursday/earlyMadrid/night/Monday excluded."
+    },
+    {
+      "id": "rules",
+      "label": "rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-11-07T11:25:20.872Z",
+      "retrieved_at_toronto": "2026-11-07T06:25:20.872-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "publication_note": "Retrieval is distinct from publication; site zone not established when unstated.",
+      "scope": "Exact NFLClassic50k/nine/2games,PPR,bonuses,lostfumble-1,DSTevents/PAattribution read. Arena deadline supersedesplatformlateswaps."
+    },
+    {
+      "id": "kc",
+      "label": "kc",
+      "url": "https://www.chiefs.com/team/injury-report/",
+      "retrieved_at": "2026-11-07T11:25:19.280Z",
+      "retrieved_at_toronto": "2026-11-07T06:25:19.280-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "publication_note": "Retrieval is distinct from publication; site zone not established when unstated.",
+      "scope": "FridayMahomes/Rice/KelceFP and no designation; JetsWilsonOUT,Hall/TaylorFP. No completeallocation inferred."
+    },
+    {
+      "id": "cle",
+      "label": "cle",
+      "url": "https://www.clevelandbrowns.com/team/injury-report/",
+      "retrieved_at": "2026-11-07T11:25:22.530Z",
+      "retrieved_at_toronto": "2026-11-07T06:25:22.530-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "publication_note": "Retrieval is distinct from publication; site zone not established when unstated.",
+      "scope": "FridayFanninLPgroin/nodesignation; WatsonLPconcussionQ,BostonFP. Participation andQBidentityseparated."
+    },
+    {
+      "id": "cleqb",
+      "label": "cleqb",
+      "url": "https://www.clevelandbrowns.com/news/shedeur-sanders-to-start-week-9-against-the-saints",
+      "retrieved_at": "2026-11-07T11:26:30.882Z",
+      "retrieved_at_toronto": "2026-11-07T06:26:30.882-05:00",
+      "publication_at": null,
+      "publication_display": "Nov 06, 2026 at 02:10 PM",
+      "publication_note": "Retrieval is distinct from publication; site zone not established when unstated.",
+      "scope": "DatedNov6primaryannouncement: Sandersnamedstarter; first-teamreps throughoutweek. WatsonQprotocol. NoTEtargetbenefit inferred."
+    },
+    {
+      "id": "sea",
+      "label": "sea",
+      "url": "https://www.seahawks.com/news/week-9-injury-report-cardinals-at-seahawks",
+      "retrieved_at": "2026-11-07T11:25:19.910Z",
+      "retrieved_at_toronto": "2026-11-07T06:25:19.910-05:00",
+      "publication_at": null,
+      "publication_display": "Nov 06, 2026 at 02:05 PM",
+      "publication_note": "Retrieval is distinct from publication; site zone not established when unstated.",
+      "scope": "DatedNov6primary:Williams/Nwosu/PiliOUT;O'TooleQ;Darnold/Cross/Nelson/ShaheedOUT;Lockstartsnodesignation. ArizonaGaines/JaydenWilliams/KnightOUT. Primarycontrarycase included."
+    },
+    {
+      "id": "sf",
+      "label": "sf",
+      "url": "https://www.49ers.com/team/injury-report/",
+      "retrieved_at": "2026-11-07T11:25:19.671Z",
+      "retrieved_at_toronto": "2026-11-07T06:25:19.671-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "publication_note": "Retrieval is distinct from publication; site zone not established when unstated.",
+      "scope": "FridayBosaFP,MykelWilliamsFP;secondaryplayersQ and3WRsOUT. Ambiguous UNSPECIFIEDgamecells nottreatedasclearance."
+    },
+    {
+      "id": "sfarticle",
+      "label": "sfarticle",
+      "url": "https://www.49ers.com/news/49ers-rule-out-three-wide-receivers-vs-raiders-bosa-returns-to-full-practice-ahead-of-week-9-lvvssf",
+      "retrieved_at": "2026-11-07T11:26:31.877Z",
+      "retrieved_at_toronto": "2026-11-07T06:26:31.877-05:00",
+      "publication_at": null,
+      "publication_display": "Nov 06, 2026 at 04:13 PM",
+      "publication_note": "Retrieval is distinct from publication; site zone not established when unstated.",
+      "scope": "DatedNov6primaryarticle: BosaFP,nogamedesignation,coachclearance toreturn afterWeek2absence. Hobbs/RobinsonneedIRactivation; noactivationassumed."
+    },
+    {
+      "id": "ind",
+      "label": "ind",
+      "url": "https://www.colts.com/team/injury-report/",
+      "retrieved_at": "2026-11-07T11:25:19.407Z",
+      "retrieved_at_toronto": "2026-11-07T06:25:19.407-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "publication_note": "Retrieval is distinct from publication; site zone not established when unstated.",
+      "scope": "AllenFridayFP/nodesignation afterWednesdayrest. NonewColtsstarterchange verified. DallasPickensQ/TurpinOUT; no automaticFlournoyswap."
+    },
+    {
+      "id": "den",
+      "label": "den",
+      "url": "https://www.denverbroncos.com/team/injury-report/",
+      "retrieved_at": "2026-11-07T11:25:19.356Z",
+      "retrieved_at_toronto": "2026-11-07T06:25:19.356-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "publication_note": "Retrieval is distinct from publication; site zone not established when unstated.",
+      "scope": "FridaynoColeman/Dobbinsrow; selectedbackfieldrole notguaranteed. DefensiveabsencesandSuttonrestreturn separated."
+    },
+    {
+      "id": "lines",
+      "label": "lines",
+      "url": "https://www.vegasinsider.com/nfl/nfl-week-9-odds-2026/",
+      "retrieved_at": "2026-11-07T11:26:09.963Z",
+      "retrieved_at_toronto": "2026-11-07T06:26:09.963-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "publication_note": "Retrieval is distinct from publication; site zone not established when unstated.",
+      "scope": "InspectedsummarySEA-8.5/39.5,SF-10/51.5 impliesARI15.5/LV20.75. KC-9.5/48.5,DET-6.5/49.5,DAL-4.5/51.5 currentcontext. No bettingaction."
+    },
+    {
+      "id": "clenews",
+      "label": "clenews",
+      "url": "https://www.clevelandbrowns.com/news/",
+      "retrieved_at": "2026-11-07T11:25:57.902Z",
+      "retrieved_at_toronto": "2026-11-07T06:25:57.902-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "publication_note": "Retrieval is distinct from publication; site zone not established when unstated.",
+      "scope": "Primarynewsindex used todiscover namedSandersstarter."
+    },
+    {
+      "id": "sfnews",
+      "label": "sfnews",
+      "url": "https://www.49ers.com/news/",
+      "retrieved_at": "2026-11-07T11:25:57.552Z",
+      "retrieved_at_toronto": "2026-11-07T06:25:57.552-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "publication_note": "Retrieval is distinct from publication; site zone not established when unstated.",
+      "scope": "Primarynewsindex used todiscover datedBosaFridayarticle."
+    }
+  ],
+  "pool_change": {
+    "previous_rows": 586,
+    "current_rows": 586,
+    "added": [],
+    "removed": [],
+    "interpretation": "Same586IDs and11games asNov6, no additions/removals. All original unchanged-player salaries and newSFpriceverified."
+  },
+  "selected_projections": [
+    {
+      "player": "Patrick Mahomes",
+      "points": 19.4
+    },
+    {
+      "player": "Kyren Williams",
+      "points": 17.6
+    },
+    {
+      "player": "Jonah Coleman",
+      "points": 17.6
+    },
+    {
+      "player": "Rashee Rice",
+      "points": 17
+    },
+    {
+      "player": "Jameson Williams",
+      "points": 12.9
+    },
+    {
+      "player": "Adonai Mitchell",
+      "points": 6.9
+    },
+    {
+      "player": "Harold Fannin Jr.",
+      "points": 15
+    },
+    {
+      "player": "Keenan Allen",
+      "points": 15.8
+    },
+    {
+      "player": "49ers",
+      "points": 6.5
+    }
+  ],
+  "projection": {
+    "provider": "FullTime Fantasy",
+    "model": "Publisher DraftKings main-slate point projections",
+    "as_of": "2026-11-07T05:15:00Z",
+    "as_of_note": "Publisher displays Sat12:15AM ET Week9, mappedNov7; minute precision. Generation and injury-ingestion clocks not independently verified.",
+    "source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994",
+    "observed_at": "2026-11-07T11:25:21.823Z",
+    "annotation_at": "2026-11-07T11:27:51.462Z",
+    "scoring_basis": "Publisher-labelled DraftKings FLEX/main, same snapshot for allnine; no mixed models or historical backfill."
+  },
+  "practice_tables": {
+    "kc": [
+      "| Player | Position | Injury | Wed | Thu | Fri | Game Status |",
+      "| --- | --- | --- | --- | --- | --- | --- |",
+      "| [](https://www.chiefs.com/team/players-roster/peter-woods/)Peter Woods | DL | Neck | DNP | DNP | DNP | OUT |",
+      "| [](https://www.chiefs.com/team/players-roster/nick-bolton/)Nick Bolton | LB | Neck | FP | FP | FP | (-) |",
+      "| [](https://www.chiefs.com/team/players-roster/mansoor-delane/)Mansoor Delane | CB | Shoulder | LP | LP | LP | OUT |",
+      "| [](https://www.chiefs.com/team/players-roster/travis-kelce/)Travis Kelce | TE | Ankle | LP | FP | FP | (-) |",
+      "| [](https://www.chiefs.com/team/players-roster/omarr-norman-lott/)Omarr Norman-Lott | DT | Knee | LP | LP | LP | OUT |",
+      "| [](https://www.chiefs.com/team/players-roster/nikko-remigio/)Nikko Remigio | WR | Hip | LP | FP | FP | QUESTIONABLE |",
+      "| [](https://www.chiefs.com/team/players-roster/rashee-rice/)Rashee Rice | WR | Hamstring/Knee | LP | FP | FP | (-) |",
+      "| [](https://www.chiefs.com/team/players-roster/drue-tranquill/)Drue Tranquill | LB | Pectoral | FP | FP | FP | (-) |",
+      "| [](https://www.chiefs.com/team/players-roster/patrick-mahomes/)Patrick Mahomes | QB | Knee | FP | FP | FP | (-) |",
+      "| Player | Position | Injury | Wed | Thu | Fri | Game Status |",
+      "| --- | --- | --- | --- | --- | --- | --- |",
+      "|  Trevin Wallace | LB | Groin | LP | DNP | DNP | OUT |",
+      "|  Garrett Wilson | WR | Concussion | DNP | DNP | DNP | OUT |",
+      "|  Joseph Ossai | DE | Ankle | LP | LP | LP | QUESTIONABLE |",
+      "|  VJ Payne | SAF | Knee | FP | FP | FP | QUESTIONABLE |",
+      "|  Harrison Phillips | DT | Ankle | DNP | DNP | FP | QUESTIONABLE |",
+      "|  Nahshon Wright | CB | Back |  |  | DNP | QUESTIONABLE |",
+      "|  David Bailey | LB | Groin | LP | FP | FP | UNSPECIFIED |",
+      "|  Breece Hall | RB | Quad | LP | FP | FP | UNSPECIFIED |",
+      "|  Mason Taylor | TE | Back | LP | FP | FP | UNSPECIFIED |"
+    ],
+    "cle": [
+      "| Player | Position | Injury | Wed | Thu | Fri | Game Status |",
+      "| --- | --- | --- | --- | --- | --- | --- |",
+      "| [](https://www.clevelandbrowns.com/team/players-roster/austin-barber/)Austin Barber | T | Calf | DNP | LP | FP | (-) |",
+      "| [](https://www.clevelandbrowns.com/team/players-roster/denzel-boston/)Denzel Boston | WR | Calf | LP | LP | FP | (-) |",
+      "| [](https://www.clevelandbrowns.com/team/players-roster/maliek-collins/)Maliek Collins | DT | Elbow | DNP | DNP | DNP | OUT |",
+      "| [](https://www.clevelandbrowns.com/team/players-roster/harold-fannin-jr/)Harold Fannin Jr. | TE | Groin |  | LP | LP | (-) |",
+      "| [](https://www.clevelandbrowns.com/team/players-roster/myles-harden/)Myles Harden | CB | Hamstring | LP | FP | FP | (-) |",
+      "| [](https://www.clevelandbrowns.com/team/players-roster/elgton-jenkins/)Elgton Jenkins | C/G | Knee | LP | FP | FP | (-) |",
+      "| [](https://www.clevelandbrowns.com/team/players-roster/emmanuel-mcneil-warren/)Emmanuel McNeil-Warren | S | Hip |  | LP | LP | (-) |",
+      "| [](https://www.clevelandbrowns.com/team/players-roster/carson-schwesinger/)Carson Schwesinger | LB | Wrist, Ankle | LP | LP | FP | (-) |",
+      "| [](https://www.clevelandbrowns.com/team/players-roster/jared-verse/)Jared Verse | DE | Knee | LP | FP | FP | (-) |",
+      "| [](https://www.clevelandbrowns.com/team/players-roster/deshaun-watson/)Deshaun Watson | QB | Concussion | DNP | DNP | LP | QUESTIONABLE |",
+      "| [](https://www.clevelandbrowns.com/team/players-roster/quincy-williams/)Quincy Williams | LB | Hamstring | DNP | LP | LP | (-) |",
+      "| Player | Position | Injury | Wed | Thu | Fri | Game Status |",
+      "| --- | --- | --- | --- | --- | --- | --- |",
+      "|  Kelvin Banks Jr. | OT | Ankle | LP | LP | LP | QUESTIONABLE |",
+      "|  CJ Donaldson | RB | Shoulder, Concussion | LP | DNP | DNP | OUT |",
+      "|  Martin Emerson | CB | Shin | LP | LP | DNP | QUESTIONABLE |",
+      "|  Davon Godchaux | DT | NIR-Rest | (-) | DNP | FP | (-) |",
+      "|  Alvin Kamara | RB | NIR-Rest, Back | DNP | LP | FP | (-) |",
+      "|  Justin Reid | S | Concussion | FP | (-) | (-) | (-) |",
+      "|  Asim Richards | OT | Thumb | LP | LP | LP | QUESTIONABLE |",
+      "|  Cesar Ruiz | G | Knee | FP | FP | FP | (-) |",
+      "|  Nathan Shepherd | DE | Illness | FP | (-) | (-) | (-) |",
+      "|  Jordyn Tyson | WR | Hamstring | LP | LP | LP | QUESTIONABLE |"
+    ],
+    "sf": [
+      "| Player | Position | Injury | Wed | Thu | Fri | Game Status |",
+      "| --- | --- | --- | --- | --- | --- | --- |",
+      "| [](https://www.49ers.com/team/players-roster/nick-bosa/)Nick Bosa | DL | Knee, Calf | LP | LP | FP | UNSPECIFIED |",
+      "| [](https://www.49ers.com/team/players-roster/mike-evans/)Mike Evans | WR | Ribs, Achilles | DNP | DNP | DNP | OUT |",
+      "| [](https://www.49ers.com/team/players-roster/luke-gifford/)Luke Gifford | LB | Groin | LP | LP | FP | UNSPECIFIED |",
+      "| [](https://www.49ers.com/team/players-roster/nate-hobbs/)Nate Hobbs | CB | Adductor | LP | LP | LP | QUESTIONABLE |",
+      "| [](https://www.49ers.com/team/players-roster/christian-kirk/)Christian Kirk | WR | Knee | LP | DNP | DNP | OUT |",
+      "| [](https://www.49ers.com/team/players-roster/christian-mccaffrey/)Christian McCaffrey | RB | Hamstring | DNP | LP | FP | UNSPECIFIED |",
+      "| [](https://www.49ers.com/team/players-roster/siran-neal/)Siran Neal | DB | Knee, Foot | DNP | DNP | LP | QUESTIONABLE |",
+      "| [](https://www.49ers.com/team/players-roster/demarcus-robinson/)Demarcus Robinson | WR | Ankle | LP | LP | LP | QUESTIONABLE |",
+      "| [](https://www.49ers.com/team/players-roster/deebo-samuel/)Deebo Samuel Sr. | WR | Hamstring | DNP | DNP | DNP | OUT |",
+      "| [](https://www.49ers.com/team/players-roster/marques-sigle/)Marques Sigle | S | Ankle | LP | LP | FP | UNSPECIFIED |",
+      "| [](https://www.49ers.com/team/players-roster/upton-stout/)Upton Stout | CB | Shoulder | LP | LP | LP | QUESTIONABLE |",
+      "| [](https://www.49ers.com/team/players-roster/garret-wallow/)Garret Wallow | LB | Hamstring | LP | LP | FP | UNSPECIFIED |",
+      "| [](https://www.49ers.com/team/players-roster/mykel-williams/)Mykel Williams | DL | Knee | FP | FP | FP | UNSPECIFIED |",
+      "| [](https://www.49ers.com/team/players-roster/trent-williams/)Trent Williams | T | Not injury related - resting player | DNP | FP | FP | UNSPECIFIED |",
+      "| Player | Position | Injury | Wed | Thu | Fri | Game Status |",
+      "| --- | --- | --- | --- | --- | --- | --- |",
+      "|  Thomas Booker | DT | Ankle | LP | DNP | DNP | OUT |",
+      "|  Foley Fatukasi | DT | Shoulder/Elbow | LP | FP | FP | (-) |",
+      "|  Darien Porter | CB | Groin | DNP | LP | FP | QUESTIONABLE |",
+      "|  Ian Thomas | TE | Ankle | LP | FP | FP | (-) |",
+      "|  Dont'e Thornton Jr. | WR | Back | (-) | LP | FP | (-) |"
+    ],
+    "ind": [
+      "| Player | Position | Injury | Wed | Thu | Fri | Game Status |",
+      "| --- | --- | --- | --- | --- | --- | --- |",
+      "| [](https://www.colts.com/team/players-roster/keenan-allen/)Keenan Allen | WR | NIR - Rest | DNP | FP | FP | (-) |",
+      "| [](https://www.colts.com/team/players-roster/bryce-boettcher/)Bryce Boettcher | LB | Groin | FP | FP | FP | (-) |",
+      "| [](https://www.colts.com/team/players-roster/akeem-davis-gaither/)Akeem Davis-Gaither | LB | Knee | DNP | DNP | DNP | OUT |",
+      "| [](https://www.colts.com/team/players-roster/anthony-gould/)Anthony Gould | WR | Concussion | FP | FP | FP | (-) |",
+      "| [](https://www.colts.com/team/players-roster/a-j-haulcy/)A.J. Haulcy | S | Ankle | (-) | (-) | LP | QUESTIONABLE |",
+      "| [](https://www.colts.com/team/players-roster/will-mallory/)Will Mallory | TE | Throat | (-) | (-) | DNP | (-) |",
+      "| [](https://www.colts.com/team/players-roster/andrew-ogletree/)Andrew Ogletree | TE | Knee | DNP | LP | FP | (-) |",
+      "| [](https://www.colts.com/team/players-roster/grover-stewart/)Grover Stewart | DT | NIR - Rest | (-) | DNP | FP | (-) |",
+      "| [](https://www.colts.com/team/players-roster/jonathan-taylor/)Jonathan Taylor | RB | NIR - Rest | LP | FP | FP | (-) |",
+      "| [](https://www.colts.com/team/players-roster/jalen-travis/)Jalen Travis | T | Thumb, Hamstring | FP | FP | FP | QUESTIONABLE |",
+      "| [](https://www.colts.com/team/players-roster/justin-walley/)Justin Walley | CB | Knee | DNP | DNP | DNP | OUT |",
+      "| [](https://www.colts.com/team/players-roster/charvarius-ward/)Charvarius Ward | CB | NIR - Rest | DNP | FP | FP | (-) |",
+      "| Player | Position | Injury | Wed | Thu | Fri | Game Status |",
+      "| --- | --- | --- | --- | --- | --- | --- |",
+      "|  Jonathan Bullard | DE | Calf | FP | FP | FP | QUESTIONABLE |",
+      "|  Kenny Clark | NT | Back | FP | FP | FP | UNSPECIFIED |",
+      "|  Caleb Downs | SAF | Concussion/Ankle | DNP | LP | FP | UNSPECIFIED |",
+      "|  Jake Ferguson | TE | Ankle | DNP | DNP | LP | QUESTIONABLE |",
+      "|  Broderick Jones | OT | NIR-Personal | DNP | FP |  | UNSPECIFIED |",
+      "|  Malachi Lawrence | LB | Ankle | DNP | DNP | DNP | OUT |",
+      "|  Marist Liufau | LB | Forearm | FP | FP | FP | QUESTIONABLE |",
+      "|  P.J. Locke | DB | Concussion | DNP | LP | FP | UNSPECIFIED |",
+      "|  Von Miller | OLB | NIR-Rest | DNP | FP |  | UNSPECIFIED |",
+      "|  DeMarvion Overshown | LB | Hamstring/Back |  | LP | LP | QUESTIONABLE |",
+      "|  George Pickens | WR | Hamstring | LP | LP | LP | QUESTIONABLE |",
+      "|  Joey Porter Jr. | CB | Ankle | FP | LP | LP | QUESTIONABLE |",
+      "|  Luke Schoonmaker | TE | Groin | LP | LP | LP | QUESTIONABLE |",
+      "|  Drew Shelton | OT | Hamstring | FP | FP | FP | UNSPECIFIED |",
+      "|  Tyler Smith | G | Ankle | LP | LP | FP | UNSPECIFIED |",
+      "|  KaVontae Turpin | WR | Ribs | DNP | DNP | DNP | OUT |",
+      "|  Dee Winters | LB | Calf | LP | FP | FP | UNSPECIFIED |"
+    ],
+    "den": [
+      "| Player | Position | Injury | Wed | Thu | Fri | Game Status |",
+      "| --- | --- | --- | --- | --- | --- | --- |",
+      "| [](https://www.denverbroncos.com/team/players-roster/zach-allen/)Zach Allen | DL | NIR - Rest | LP | FP | FP | (-) |",
+      "| [](https://www.denverbroncos.com/team/players-roster/pat-bryant/)Pat Bryant | WR | Ankle | FP | FP | FP | QUESTIONABLE |",
+      "| [](https://www.denverbroncos.com/team/players-roster/courtland-sutton/)Courtland Sutton | WR | NIR - Rest | LP | FP | FP | (-) |",
+      "| [](https://www.denverbroncos.com/team/players-roster/dondrea-tillman/)Dondrea Tillman | OLB | Hip |  |  | FP | QUESTIONABLE |",
+      "| [](https://www.denverbroncos.com/team/players-roster/jaylen-waddle/)Jaylen Waddle | WR | Chest | FP | FP | FP | (-) |",
+      "| [](https://www.denverbroncos.com/team/players-roster/talanoa-hufanga/)Talanoa Hufanga | S | Ankle | DNP | LP | LP | QUESTIONABLE |",
+      "| [](https://www.denverbroncos.com/team/players-roster/kris-abrams-draine/)Kris Abrams-Draine | CB | Ankle | DNP | DNP | DNP | OUT |",
+      "| [](https://www.denverbroncos.com/team/players-roster/brandon-jones/)Brandon Jones | S | Hamstring | DNP | DNP | DNP | OUT |",
+      "| [](https://www.denverbroncos.com/team/players-roster/eyioma-uwazurike/)Eyioma Uwazurike | DL | Shoulder | DNP | DNP | DNP | OUT |",
+      "| Player | Position | Injury | Wed | Thu | Fri | Game Status |",
+      "| --- | --- | --- | --- | --- | --- | --- |",
+      "|  Jaelan Phillips | LB | Hamstring | DNP | DNP | DNP | OUT |",
+      "|  Will Lee III | CB | Hamstring | DNP | DNP | DNP | OUT |",
+      "|  Torricelli Simpkins III | G | Ankle | LP | FP | FP | QUESTIONABLE |",
+      "|  Corey Bullock | OT | Quadriceps | LP | FP | FP | QUESTIONABLE |",
+      "|  Damien Lewis | G | Knee | DNP | DNP | DNP | OUT |",
+      "|  Bobby Okereke | ILB | Foot | DNP | DNP | DNP | OUT |",
+      "|  Bobby Brown III | DT | Hand | FP | FP | FP | (-) |",
+      "|  Bryce Young | QB | Ankle | FP | FP | FP | (-) |",
+      "|  Brady Christensen | OT | Hamstring | FP | FP | FP | QUESTIONABLE |",
+      "|  Trevis Gipson | LB | Not injury-related/personal | DNP | DNP | FP | (-) |"
+    ]
+  },
+  "conflicts": [
+    "Seattle historical Wednesday prose says Williams missed Monday, while retained primary postgame source says he exited; historical conflict preserved.",
+    "SF table leaves Bosa game status UNSPECIFIED, while dated primary article explicitly states no designation and coach clearance. Use the more specific primary statement without treating Sunday participation as certain.",
+    "Market headerNov6 9:51PM, exact timezone unverified. Implied totals are attributed arithmetic, not football point forecasts.",
+    "Model selected estimates stayed unchanged while its displayed clock advanced; whether Friday news is fully incorporated is unknown."
+  ]
+}

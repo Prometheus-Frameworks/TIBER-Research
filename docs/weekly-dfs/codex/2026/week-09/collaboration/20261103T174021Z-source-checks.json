@@ -1,0 +1,159 @@
+{
+  "recorded_at": "2026-11-03T17:40:21.144Z",
+  "question_record": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c55085d251bd6fac6851b935928d7f6433b59297/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T173644Z-grok-questions-verbatim.md",
+  "sources": [
+    {
+      "id": "usage",
+      "label": "usage",
+      "url": "https://statchasers.com/nfl/teams/indianapolis-colts/usage/",
+      "retrieved_at": "2026-11-03T17:34:04.313Z",
+      "retrieved_at_toronto": "2026-11-03T12:34:04.313-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Current public table says through Week8. Season, last-three and player-availability denominators need care. Snap share is not route share; no weekly Weeks6–8 route series verified."
+    },
+    {
+      "id": "trends",
+      "label": "trends",
+      "url": "https://www.thefantasyfootballers.com/analysis/fantasy-football-target-trends-for-week-9-fantasy-football/",
+      "retrieved_at": "2026-11-03T17:34:17.951Z",
+      "retrieved_at_toronto": "2026-11-03T12:34:17.951-05:00",
+      "publication_at": null,
+      "publication_display": "November 3, 2026; no time established",
+      "scope": "Full article inspected. Warren eight-catch statement conflicts with ESPN four catches; Flournoy/Pickens season-ranking prose contradicts its own counts. QB controversy wording does not establish a starter change."
+    },
+    {
+      "id": "indbox",
+      "label": "indbox",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873028",
+      "retrieved_at": "2026-11-03T17:33:58.413Z",
+      "retrieved_at_toronto": "2026-11-03T12:33:58.413-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Fresh November1 final box: Allen7targets/7catches/67yards; Downs5/4/23/TD; Warren10/4/18. Jones19/28,144yards; Richardson2/2,8yards. Gross player passing yards, not134net teamyards."
+    },
+    {
+      "id": "coltsnews",
+      "label": "coltsnews",
+      "url": "https://www.colts.com/news/",
+      "retrieved_at": "2026-11-03T17:34:01.351Z",
+      "retrieved_at_toronto": "2026-11-03T12:34:01.351-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Official news index discovered the dated coach-statement article; index headline alone is not the confirmation used."
+    },
+    {
+      "id": "starter",
+      "label": "starter",
+      "url": "https://www.colts.com/news/5-colts-things-daniel-jones-remains-starting-quarterback-shane-steichen-sees-execution-as-more-an-issue-than-effort-several-rookies-get-valuable-experience-in-week-8-loss-to-jaguars",
+      "retrieved_at": "2026-11-03T17:34:44.973Z",
+      "retrieved_at_toronto": "2026-11-03T12:34:44.973-05:00",
+      "publication_at": null,
+      "publication_display": "Nov 02, 2026 at 04:51 PM; page does not state a zone",
+      "scope": "Full official Monday report: Steichen retains Jones; Richardson's fourth-quarter entry was explained by a35-point deficit. Decision can change later; it is not a Sunday guarantee."
+    },
+    {
+      "id": "downs",
+      "label": "downs",
+      "url": "https://statchasers.com/nfl/players/josh-downs/",
+      "retrieved_at": "2026-11-03T17:35:28.760Z",
+      "retrieved_at_toronto": "2026-11-03T12:35:28.760-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Public player page: season51targets/8games,81%snaps; Week8box agrees. No requested weekly route share series. Prospect/outlook prose not adopted as forecast."
+    },
+    {
+      "id": "allen",
+      "label": "allen",
+      "url": "https://statchasers.com/nfl/players/keenan-allen/",
+      "retrieved_at": "2026-11-03T17:35:28.756Z",
+      "retrieved_at_toronto": "2026-11-03T12:35:28.756-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Public player page: season50targets/7games, Week8 7/67. Header22.1% versus detailed19.6%targetshare and teamtable52% versus player58.3%snaps have unresolved denominator/window differences; neither is route share."
+    },
+    {
+      "id": "seattle",
+      "label": "seattle",
+      "url": "https://www.seahawks.com/news/injury-updates-from-seahawks-week-8-loss-to-bears",
+      "retrieved_at": "2026-11-03T17:35:29.359Z",
+      "retrieved_at_toronto": "2026-11-03T12:35:29.359-05:00",
+      "publication_at": null,
+      "publication_display": "Nov 02, 2026 at 09:56 PM; page does not state a zone",
+      "scope": "Primary postgame report confirms Williams stinger/O'Toolefoot. These were already in Codex originalJSON source receipt and unresolved assumptions; no newWeek9clearance."
+    }
+  ],
+  "week8_receiving": {
+    "source_id": "indbox",
+    "Allen": {
+      "targets": 7,
+      "receptions": 7,
+      "yards": 67,
+      "receiving_td": 0
+    },
+    "Downs": {
+      "targets": 5,
+      "receptions": 4,
+      "yards": 23,
+      "receiving_td": 1
+    },
+    "Warren": {
+      "targets": 10,
+      "receptions": 4,
+      "yards": 18,
+      "receiving_td": 0
+    },
+    "team_targets": 30,
+    "quarterbacks": {
+      "Jones": {
+        "completions": 19,
+        "attempts": 28,
+        "gross_yards": 144
+      },
+      "Richardson": {
+        "completions": 2,
+        "attempts": 2,
+        "gross_yards": 8
+      }
+    }
+  },
+  "attributed_usage": {
+    "source_id": "usage",
+    "as_of_display": "Updated throughWeek8, refreshed daily; exactrefreshclockunknown",
+    "Downs": {
+      "season_targets": 51,
+      "season_target_share": 20,
+      "air_yard_share": 26.5,
+      "first_read_share": 24.5,
+      "adot": 10.4
+    },
+    "Allen": {
+      "season_targets": 50,
+      "season_target_share": 19.6,
+      "air_yard_share": 18.3,
+      "first_read_share": 22.4,
+      "adot": 7.3
+    },
+    "Warren": {
+      "season_targets": 46,
+      "season_target_share": 18,
+      "air_yard_share": 9.8,
+      "first_read_share": 17,
+      "adot": 4.3
+    },
+    "week6_to_8_routes": null,
+    "limitations": "Different seasons/last-three andavailability windows not harmonized. These are attributed descriptions, not admitteddata/weeklyforecasts or numericceilingranks."
+  },
+  "conflicts": [
+    "E2Warren8catches vsESPN4; both10targets.",
+    "E2saysPickensnext30yetFlournoy44; rankingnotadopted.",
+    "Allenpublicpageheader22.1%targetshare vsdetailed19.6%; teamusage52%snaps vsplayer58.3%; denominator/windowunresolved.",
+    "Grokroundedcompletion~16:46UTC vsserverpost16:45:26; exactgenerationclockunknown.",
+    "O'Toolefootinjurywasalready retainedinCodexv1JSON, despiteomissionfromitsreadablepickrationale."
+  ],
+  "material_nonchanges": [
+    "No starterreplacement established: official report retainsJones as ofMonday; laterchangepossible.",
+    "No officialWeek9practice reports orfinalinactive lists verified inthispass; not a claimnoneexist.",
+    "No newpointforecast, rostertransaction, contestentry or actualscore."
+  ]
+}

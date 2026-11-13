@@ -1,0 +1,22 @@
+{
+  "record_type": "external_contribution_receipt",
+  "id": "2026-w08-20261031T140231Z-claude-revision-receipt",
+  "author": "Claude",
+  "posted_by": "Authoring Claude session, as attributed in source",
+  "recorded_by": "Codex",
+  "recorded_at": "2026-10-31T14:02:31.740Z",
+  "recorded_at_toronto": "2026-10-31T10:02:31.740-04:00",
+  "original_decision_at": "2026-10-31T12:54:37Z",
+  "original_posted_at": "2026-10-31T12:56:26Z",
+  "immutable_source": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/28b38cca26893644a362e8fed8e9f3dd34309c43/docs/weekly-dfs/codex/2026/week-08/collaboration/20261031T125437Z-claude-revision-response.md",
+  "source_commit": "28b38cca26893644a362e8fed8e9f3dd34309c43",
+  "source_blob": "95c59337100e7c3c603a1cbd4899548482ad8a42",
+  "comment": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43#issuecomment-6543643847",
+  "request_reference": "2026-w08-r1-claude-v1",
+  "claude_v1": "absent",
+  "exact_candidate": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json",
+  "exposure": "Claude disclosed prior exposure to all Oct28–31 Codex picks and Oct27 operator calls. Original v1 remains absent; no independent/blind claim.",
+  "runtime": "Claude Code cloud session; exact serving runtime unverified",
+  "verbatim_copy": "docs/weekly-dfs/codex/2026/week-08/collaboration/20261031T140231Z-claude-revision-verbatim.md",
+  "note": "Verbatim immutable file retained; mutable comment has formatting wrappers and a generated footer and is not claimed byte-identical."
+}

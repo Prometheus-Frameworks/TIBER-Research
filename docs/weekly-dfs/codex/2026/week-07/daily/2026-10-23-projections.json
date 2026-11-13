@@ -1,0 +1,118 @@
+{
+  "provider": "Splash Play",
+  "model": "SPAGS",
+  "scoring": "DraftKings NFL Classic",
+  "as_of": "2026-10-22T10:22:00-04:00",
+  "as_of_precision": "minute",
+  "published_date": "2026-10-22",
+  "observed_at": "2026-10-23T10:41:46.205Z",
+  "source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+  "rows": [
+    {
+      "name": "Jared Goff",
+      "url": "https://splashplaypodcast.com/dfs/nfl/players/jared-goff/",
+      "salary": 6800,
+      "points": 20.5,
+      "game": "DET vs GB"
+    },
+    {
+      "name": "C.J. Stroud",
+      "url": "https://splashplaypodcast.com/dfs/nfl/players/cj-stroud/",
+      "salary": 5700,
+      "points": 20.2,
+      "game": "HOU vs NYG"
+    },
+    {
+      "name": "Christian McCaffrey",
+      "url": "https://splashplaypodcast.com/dfs/nfl/players/christian-mccaffrey/",
+      "salary": 7600,
+      "points": 23.7,
+      "game": "SF at ATL"
+    },
+    {
+      "name": "Chuba Hubbard",
+      "url": "https://splashplaypodcast.com/dfs/nfl/players/chuba-hubbard/",
+      "salary": 6700,
+      "points": 18.9,
+      "game": "CAR vs TB"
+    },
+    {
+      "name": "Woody Marks",
+      "url": "https://splashplaypodcast.com/dfs/nfl/players/woody-marks/",
+      "salary": 5600,
+      "points": 16.6,
+      "game": "HOU vs NYG"
+    },
+    {
+      "name": "Braelon Allen",
+      "url": "https://splashplaypodcast.com/dfs/nfl/players/braelon-allen/",
+      "salary": 5900,
+      "points": 16.5,
+      "game": "NYJ vs MIA"
+    },
+    {
+      "name": "Puka Nacua",
+      "url": "https://splashplaypodcast.com/dfs/nfl/players/puka-nacua/",
+      "salary": 8400,
+      "points": 24.5,
+      "game": "LAR at LV"
+    },
+    {
+      "name": "Malik Nabers",
+      "url": "https://splashplaypodcast.com/dfs/nfl/players/malik-nabers/",
+      "salary": 6800,
+      "points": 15.9,
+      "game": "NYG at HOU"
+    },
+    {
+      "name": "Keenan Allen",
+      "url": "https://splashplaypodcast.com/dfs/nfl/players/keenan-allen/",
+      "salary": 4800,
+      "points": 11.9,
+      "game": "IND at MIN"
+    },
+    {
+      "name": "Chris Godwin Jr.",
+      "url": "https://splashplaypodcast.com/dfs/nfl/players/chris-godwin-jr/",
+      "salary": 4300,
+      "points": 11.1,
+      "game": "TB at CAR"
+    },
+    {
+      "name": "Jaylin Noel",
+      "url": "https://splashplaypodcast.com/dfs/nfl/players/jaylin-noel/",
+      "salary": 3900,
+      "points": 6.1,
+      "game": "HOU vs NYG"
+    },
+    {
+      "name": "George Kittle",
+      "url": "https://splashplaypodcast.com/dfs/nfl/players/george-kittle/",
+      "salary": 5700,
+      "points": 17.4,
+      "game": "SF at ATL"
+    },
+    {
+      "name": "Sam LaPorta",
+      "url": "https://splashplaypodcast.com/dfs/nfl/players/sam-laporta/",
+      "salary": 4800,
+      "points": 13.4,
+      "game": "DET vs GB"
+    },
+    {
+      "name": "Titans",
+      "url": "https://splashplaypodcast.com/dfs/nfl/players/titans-dst/",
+      "salary": 2600,
+      "points": 6.3,
+      "game": "TEN vs CLE"
+    },
+    {
+      "name": "Jets",
+      "url": "https://splashplaypodcast.com/dfs/nfl/players/jets-dst/",
+      "salary": 2900,
+      "points": 6.3,
+      "game": "NYJ vs MIA"
+    }
+  ],
+  "note": "Contemporaneous public model rows captured for today's investigation. Not historical original Claude projections; original self-estimate remains separate."
+}

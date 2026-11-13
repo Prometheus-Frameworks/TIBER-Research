@@ -1,0 +1,132 @@
+{
+  "id": "2026-w10-r1-response-sources-20261110T133808Z",
+  "recorded_at": "2026-11-10T13:38:08.144Z",
+  "sources": [
+    {
+      "id": "mahomesCBS3",
+      "label": "mahomesCBS3",
+      "url": "https://www.cbssports.com/fantasy/football/news/chiefs-patrick-mahomes-receives-diagnosis-will-be-monitored/",
+      "resolved_url": "https://www.cbssports.com/fantasy/football/news/chiefs-patrick-mahomes-receives-diagnosis-will-be-monitored/",
+      "retrieved_at": "2026-11-10T13:34:23.687Z",
+      "retrieved_at_toronto": "2026-11-10T08:34:23.687-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "CBS/RotoWire cites Rapoport: MRI strain/sprain, no major injury, monitoring and possible managed practice. No Week10 clearance; completion-count narrative not used to revise scores."
+    },
+    {
+      "id": "mahomesFLM3",
+      "label": "mahomesFLM3",
+      "url": "https://www.newstribune.com/news/2026/nov/10/mahomes-injury-considered-minor-called-day-to-day/",
+      "resolved_url": "https://www.newstribune.com/news/2026/nov/10/mahomes-injury-considered-minor-called-day-to-day/",
+      "retrieved_at": "2026-11-10T13:34:23.348Z",
+      "retrieved_at_toronto": "2026-11-10T08:34:23.348-05:00",
+      "publication_at": "2026-11-10T06:18:00.000Z",
+      "publication_display": null,
+      "scope": "FieldLevelMedia attributes Monday Reid comments describing minor/day-to-day elbow, treatment. Published metadataNov10 00:18Central=06:18UTC. Quotes are attributed reporting, not directly inspected team transcript."
+    },
+    {
+      "id": "lines3",
+      "label": "lines3",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "resolved_url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "retrieved_at": "2026-11-10T13:34:27.745Z",
+      "retrieved_at_toronto": "2026-11-10T08:34:27.745-05:00",
+      "publication_at": "2026-11-09T14:32:00.000Z",
+      "publication_display": "See source body: Monday November9 14:58EST; exactmetadata notestablished",
+      "scope": "ESPN article datedNov9 09:32ET, DK-attributed table retrievednow: SF@DAL55.5 (open52.5), MIA@IND41.5(open47.5), HOU@CLE39.5(open38.5). Different book/time fromretainedFox40.5IND; do not infer a new Tuesday move or exact injury pricing."
+    },
+    {
+      "id": "mumpfield3",
+      "label": "mumpfield3",
+      "url": "https://www.fantasypros.com/nfl/players/konata-mumpfield.php",
+      "resolved_url": "https://www.fantasypros.com/nfl/players/konata-mumpfield.php",
+      "retrieved_at": "2026-11-10T13:34:22.586Z",
+      "retrieved_at_toronto": "2026-11-10T08:34:22.586-05:00",
+      "publication_at": null,
+      "publication_display": "See source body: Monday November9 14:58EST; exactmetadata notestablished",
+      "scope": "FantasyPros explicitly labels Mumpfield11/162/1 on23targets as2026season. Expert notes Atwelltwo more snaps/three more targets inWeek9; those relative snaps are attributed, not independently charted. Pageprojections excluded."
+    },
+    {
+      "id": "watsonCBS3",
+      "label": "watsonCBS3",
+      "url": "https://www.cbssports.com/fantasy/football/news/browns-deshaun-watson-on-track-to-start-week-10/",
+      "resolved_url": "https://www.cbssports.com/fantasy/football/news/browns-deshaun-watson-on-track-to-start-week-10/",
+      "retrieved_at": "2026-11-10T13:34:23.360Z",
+      "retrieved_at_toronto": "2026-11-10T08:34:23.360-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "CBS/RotoWire citing Fowler reportsWatsonplan. Neurological testsSaturday narrative differs fromYahooFriday clearance; exactclearancedayunresolved, neither is currentteamstarterdesignation."
+    },
+    {
+      "id": "watsonYahoo3",
+      "label": "watsonYahoo3",
+      "url": "https://sports.yahoo.com/nfl/article/browns-reportedly-plan-to-start-deshaun-watson-in-week-10-after-concussion-pushed-shedeur-sanders-into-lineup-171315467.html",
+      "resolved_url": "https://sports.yahoo.com/nfl/article/browns-decline-to-name-starting-qb-for-week-10-after-report-deshaun-watson-would-return-195801994.html",
+      "retrieved_at": "2026-11-10T13:34:24.915Z",
+      "retrieved_at_toronto": "2026-11-10T08:34:24.915-05:00",
+      "publication_at": null,
+      "publication_display": "See source body: Monday November9 14:58EST; exactmetadata notestablished",
+      "scope": "Requested earlierWatsonplanURL redirects to laterYahooarticle: MonkenwouldnotnameWeek10starter, reportedviaDanielOyefusi. BodydatedNov9 14:58EST; distinguishplanfromcoachcommitment."
+    },
+    {
+      "id": "watkins3",
+      "label": "watkins3",
+      "url": "https://www.ninersnation.com/san-francisco-49ers-injuries/165462/deebo-samuel-is-on-track-to-return-49ers-open-to-bringing-back-veteran-defensive-tackle",
+      "resolved_url": "https://www.ninersnation.com/san-francisco-49ers-injuries/165462/deebo-samuel-is-on-track-to-return-49ers-open-to-bringing-back-veteran-defensive-tackle",
+      "retrieved_at": "2026-11-10T13:34:23.506Z",
+      "retrieved_at_toronto": "2026-11-10T08:34:23.506-05:00",
+      "publication_at": "2026-11-09T22:59:11.000Z",
+      "publication_display": "See source body: Monday November9 14:58EST; exactmetadata notestablished",
+      "scope": "NinersNation attributesWeek9Watkins52snaps,Robinson35,Cooks30,Cowing16,Hodge12; notindependentlyreproduced. ForwardDeeborole unresolved; currentrankisnotfuture share."
+    },
+    {
+      "id": "pickens3",
+      "label": "pickens3",
+      "url": "https://www.si.com/nfl/cowboys/onsi/will-george-pickens-return-week-10-injury-update-dallas-cowboys",
+      "resolved_url": "https://www.si.com/nfl/cowboys/onsi/will-george-pickens-return-week-10-injury-update-dallas-cowboys",
+      "retrieved_at": "2026-11-10T13:34:23.426Z",
+      "retrieved_at_toronto": "2026-11-10T08:34:23.426-05:00",
+      "publication_at": "2026-11-10T12:39:56.000Z",
+      "publication_display": null,
+      "scope": "SI quotesMondaySchottenheimertryingforpractice andJoneswait-and-see; no clearance. Flournoy97.5%snap figure is attributed. Author's favorableplayingodds are opinion, notstatus."
+    },
+    {
+      "id": "prices3",
+      "label": "prices3",
+      "url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+      "resolved_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+      "retrieved_at": "2026-11-10T13:35:38.409Z",
+      "retrieved_at_toronto": "2026-11-10T08:35:38.409-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "FreshFantasyPros rawtable matchesbothoriginals andquestionedcapmathalternatives. AllgeierARI@LAR, notGB. OfficialDKpoolandIDsunverified."
+    }
+  ],
+  "reported_salary_rows": [
+    "| 140 | [Konata Mumpfield](https://www.fantasypros.com/nfl/players/konata-mumpfield.php \"Open player card for Konata Mumpfield\")(LAR - WR) | Sun 4:05PM | @ARI | $4,000 | $3,300 | +700 |",
+    "| 156 | [Kaleb Johnson](https://www.fantasypros.com/nfl/players/kaleb-johnson-rb.php \"Open player card for Kaleb Johnson\")(GB - RB) | Sun 1:00PM | MIN | $4,600 | $4,000 | +600 |",
+    "| - | [Los Angeles Rams](https://www.fantasypros.com/nfl/players/los-angeles-rams-defense.php \"Open player card for Los Angeles Rams\")(LAR - DST) | Sun 4:05PM | @ARI | $3,800 | $3,300 | +500 |",
+    "| 5 | [Christian McCaffrey](https://www.fantasypros.com/nfl/players/christian-mccaffrey.php \"Open player card for Christian McCaffrey\")(SF - RB) | Sun 4:25PM | @DAL | $8,500 | $8,000 | +500 |",
+    "| 9 | [CeeDee Lamb](https://www.fantasypros.com/nfl/players/ceedee-lamb.php \"Open player card for CeeDee Lamb\")(DAL - WR) | Sun 4:25PM | SF | $8,800 | $8,300 | +500 |",
+    "| 283 | [Justin Fields](https://www.fantasypros.com/nfl/players/justin-fields.php \"Open player card for Justin Fields\")(KC - QB) | Sun 1:00PM | @ATL | $4,500 | $4,000 | +500 |",
+    "| 127 | [Jordan Watkins](https://www.fantasypros.com/nfl/players/jordan-watkins.php \"Open player card for Jordan Watkins\")(SF - WR) | Sun 4:25PM | @DAL | $3,800 | $3,300 | +500 |",
+    "| 185 | [Pierre Strong Jr.](https://www.fantasypros.com/nfl/players/pierre-strong-jr.php \"Open player card for Pierre Strong Jr.\")(GB - RB) | Sun 1:00PM | MIN | $4,300 | $4,000 | +300 |",
+    "| 101 | [Keenan Allen](https://www.fantasypros.com/nfl/players/keenan-allen.php \"Open player card for Keenan Allen\")(IND - WR) | Sun 1:00PM | MIA | $5,100 | $4,900 | +200 |",
+    "| 74 | [KC Concepcion Jr.](https://www.fantasypros.com/nfl/players/kevin-concepcion.php \"Open player card for KC Concepcion Jr.\")(CLE - WR) | Sun 1:00PM | HOU | $4,800 | $4,600 | +200 |",
+    "| 69 | [Denzel Boston](https://www.fantasypros.com/nfl/players/denzel-boston.php \"Open player card for Denzel Boston\")(CLE - WR) | Sun 1:00PM | HOU | $5,200 | $5,000 | +200 |",
+    "| 15 | [James Cook III](https://www.fantasypros.com/nfl/players/james-cook.php \"Open player card for James Cook III\")(BUF - RB) | Sun 1:00PM | @NYJ | $7,400 | $7,400 | 0 |",
+    "| 246 | [Chris Brooks](https://www.fantasypros.com/nfl/players/christopher-brooks.php \"Open player card for Chris Brooks\")(GB - RB) | Sun 1:00PM | MIN | $4,000 | $4,000 | 0 |",
+    "| 174 | [Kenyon Sadiq](https://www.fantasypros.com/nfl/players/kenyon-sadiq.php \"Open player card for Kenyon Sadiq\")(NYJ - TE) | Sun 1:00PM | BUF | $2,800 | $2,800 | 0 |",
+    "| 76 | [Woody Marks](https://www.fantasypros.com/nfl/players/woody-marks.php \"Open player card for Woody Marks\")(HOU - RB) | Sun 1:00PM | @CLE | $5,700 | $5,700 | 0 |",
+    "| - | [Houston Texans](https://www.fantasypros.com/nfl/players/houston-defense.php \"Open player card for Houston Texans\")(HOU - DST) | Sun 1:00PM | @CLE | $3,400 | $3,500 | -100 |",
+    "| 14 | [Dak Prescott](https://www.fantasypros.com/nfl/players/dak-prescott.php \"Open player card for Dak Prescott\")(DAL - QB) | Sun 4:25PM | SF | $6,400 | $6,500 | -100 |",
+    "| 16 | [Patrick Mahomes II](https://www.fantasypros.com/nfl/players/patrick-mahomes.php \"Open player card for Patrick Mahomes II\")(KC - QB) | Sun 1:00PM | @ATL | $6,000 | $6,100 | -100 |",
+    "| 68 | [Travis Kelce](https://www.fantasypros.com/nfl/players/travis-kelce.php \"Open player card for Travis Kelce\")(KC - TE) | Sun 1:00PM | @ATL | $4,700 | $4,900 | -200 |",
+    "| 100 | [Tyler Allgeier](https://www.fantasypros.com/nfl/players/tyler-allgeier.php \"Open player card for Tyler Allgeier\")(ARI - RB) | Sun 4:05PM | LAR | $5,200 | $5,400 | -200 |",
+    "| 75 | [Tyler Warren](https://www.fantasypros.com/nfl/players/tyler-warren.php \"Open player card for Tyler Warren\")(IND - TE) | Sun 1:00PM | MIA | $4,400 | $4,600 | -200 |",
+    "| 59 | [Rashee Rice](https://www.fantasypros.com/nfl/players/rashee-rice.php \"Open player card for Rashee Rice\")(KC - WR) | Sun 1:00PM | @ATL | $6,100 | $6,400 | -300 |",
+    "| 129 | [Josh Downs](https://www.fantasypros.com/nfl/players/josh-downs.php \"Open player card for Josh Downs\")(IND - WR) | Sun 1:00PM | MIA | $4,700 | $5,100 | -400 |"
+  ],
+  "complete_pool": false,
+  "official_ids": null
+}

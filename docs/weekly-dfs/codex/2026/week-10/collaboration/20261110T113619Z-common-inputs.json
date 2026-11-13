@@ -1,0 +1,110 @@
+{
+  "id": "2026-w10-r1-common-inputs-v1",
+  "version": 1,
+  "author": "Codex",
+  "prepared_at": "2026-11-10T11:36:19.215Z",
+  "cycle": "2026-w10-2026-11-15",
+  "platform": "DraftKings NFL Classic",
+  "salary_cap": 50000,
+  "roster": [
+    "QB",
+    "RB",
+    "RB",
+    "WR",
+    "WR",
+    "WR",
+    "TE",
+    "FLEX",
+    "DST"
+  ],
+  "slate_date": "2026-11-15",
+  "games": [
+    "KC@ATL",
+    "HOU@CLE",
+    "MIN@GB",
+    "JAX@TEN",
+    "MIA@IND",
+    "CAR@NO",
+    "BUF@NYJ",
+    "SEA@LV",
+    "LAR@ARI",
+    "SF@DAL"
+  ],
+  "coverage": "NFL Sunday afternoon fixtures verified; official DraftKings main membership unverified.",
+  "draft_group_id": null,
+  "salary_basis": "reported_prices",
+  "official_pool_verified": false,
+  "earliest_candidate_kickoff": "2026-11-15T18:00:00Z",
+  "deadline_utc": "2026-11-15T17:30:00Z",
+  "deadline_toronto": "2026-11-15T12:30:00-05:00",
+  "evidence_cutoff": "2026-11-10T11:34:15.454Z",
+  "sources": [
+    {
+      "id": "schedule",
+      "label": "schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+      "retrieved_at": "2026-11-10T11:28:18.583Z",
+      "retrieved_at_toronto": "2026-11-10T06:28:18.583-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Primary NFL now displays all ten Nov15 afternoon candidate fixtures and excluded windows. No change to Monday's expected games; improved primary verification, not a platform pool change."
+    },
+    {
+      "id": "prices",
+      "label": "prices",
+      "url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+      "retrieved_at": "2026-11-10T11:28:18.517Z",
+      "retrieved_at_toronto": "2026-11-10T06:28:18.517-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "FantasyPros Week10 table: selected and alternative salaries, NFL positions, opponent and kickoff. All-week coverage includes non-main games, filtered to ten expected Sunday afternoon fixtures. Official DK pool/IDs not verified."
+    },
+    {
+      "id": "rules",
+      "label": "rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-11-10T11:28:18.956Z",
+      "retrieved_at_toronto": "2026-11-10T06:28:18.956-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Current NFL Classic exact roster/scoring, including lost fumble -1 and bonuses/DST treatment."
+    },
+    {
+      "id": "pool",
+      "label": "pool",
+      "url": "https://www.draftkings.com/lobby#/NFL/0/All",
+      "retrieved_at": "2026-11-10T11:29:28.443Z",
+      "retrieved_at_toronto": "2026-11-10T06:29:28.443-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Public lobby redirects to account creation; no official main draft group/export observed."
+    },
+    {
+      "id": "model",
+      "label": "model",
+      "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php",
+      "retrieved_at": "2026-11-10T11:28:17.919Z",
+      "retrieved_at_toronto": "2026-11-10T06:28:17.919-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Empty slate select; Week9 projection caption. No coherent Week10 nine/model imported."
+    }
+  ],
+  "salary_snapshot_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a4fd4194bc744ad83c8f68e9e4d45de53aefcf28/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-10-reported-prices.json",
+  "salary_scope": "Curated18factualrows include several candidates, not fullpool. Public Week10 table allows other independently researched candidates. This manifest does not include the Codex nine.",
+  "rules_snapshot_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a4fd4194bc744ad83c8f68e9e4d45de53aefcf28/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-10.json",
+  "rules_note": "Exact inspected rule URL/retrieval retained in daily source receipts; that file also contains Codex picks, so use primary rule URL before retaining Claudev1 where feasible.",
+  "lessons": [
+    {
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/34862d0c2fa7fa931b6210ac3fe666010b6805d4/docs/weekly-dfs/codex/journal/20261109T113318Z.json",
+      "limits": "PriorWeek9provisional: targets versus conversion, FanninTDversusrole, DSTPAversusothercomponents; not universal rules."
+    }
+  ],
+  "instructions": "Claude: retain a separately authored completev1 with sources/cutoff/exposure first; avoid Codex picks until saved where feasible. Include candidates beyond curated rows if verified. Then provide exact immutable output from permitted branch/PR. Never recreate a blind draft after exposure.",
+  "missing": [
+    "Officialpool/IDs",
+    "FreshWeek10medicalfinals",
+    "CoherentWeek10projectionmodel"
+  ],
+  "delivery": "Prepared only; no dispatch, acknowledgment or successful subscription established."
+}

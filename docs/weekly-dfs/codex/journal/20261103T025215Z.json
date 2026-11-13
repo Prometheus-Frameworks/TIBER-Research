@@ -1,0 +1,197 @@
+{
+  "schema_version": "tiber-dfs-journal/v1",
+  "entries": [
+    {
+      "id": "2026-w09-v1-preparation-20261103T025215Z",
+      "snapshot_ids": [
+        "2026-w09-2026-11-02-daily"
+      ],
+      "kind": "interactive_research",
+      "recorded_at": "2026-11-03T02:52:15.823Z",
+      "recorded_at_toronto": "2026-11-02T21:52:15-05:00",
+      "research_at": "2026-11-03T02:52:15.823Z",
+      "origin": "mixed",
+      "origin_note": "Operator requested Codex v1. Codex chose source checks and alternative-role investigations; no new player directions or private league context used.",
+      "title": "Codex v1 preparation: current prices still unverified; Coleman, Allgeier and Raridon investigated",
+      "question": "Can a first complete Week9Codex lineup now be supported by current prices, and which conditional roles deserve new salary comparisons?",
+      "why_it_matters": "A purported first complete draft cannot satisfy the cap or slate constraints without nine genuine current prices. Retain source failures and useful research rather than invent a roster.",
+      "findings": [
+        "Fresh FullTimeFantasy page still saysWeek8 and currently offers Chicago–SeattleShowdown. FSE has explicitWeek8header, and FantasyPros live salary-change page saysWeek8. These cannot establish November8salaries.",
+        "Public DraftKings draft-group reads returnedSPO117 BadRequest, including a format=json request; no current group/export established. Failed discovery is not proof noWeek9pool exists.",
+        "Focused searches found olderWeek8 and2025Week9articles rather than a supportable2026Week9price set. No salaries, IDs, pricechanges or poolcompleteness inferred.",
+        "Primary NFLschedule reconfirms elevenSundayafternooncandidate gamesNovember8, earliest13:00Toronto/18:00UTC; deadline before12:30Toronto/17:30UTC.",
+        "Fresh Arizona–Dallas box: Allgeier11carries/147yards plus5catches/44yards on5targets; Love9carries/Knight3. DKNetworkattributes teammateinjuries and discusses a conditional expandedrole, but no officialWeek9absence was established here.",
+        "Fresh KansasCity–Denver box: Coleman11carries/41yards plus4catches/63yards on5targets, Dobbins7carries/13yards. DKNetworkreports66%backfieldsnaps; that attribution is not independently reproduced. No guaranteedfloor adopted.",
+        "DKNetworkdiscusses Raridon if Henry sits, while acknowledging1catch/5yards on4targets inWeek8 despite Henry's exit. The article provides noWeek9salary; HenrynotdeclaredOUT here."
+      ],
+      "interpretation": [
+        "Codex first completev1 remainsblocked on currentpricing andplatformmembership, not participantpermission. No readyreceipt orClaude/Grokdispatch should be inferred.",
+        "Add Coleman to the RB research alternatives against Gibbs/Braelon; examine Allgeier only if teammateavailability andpricejustify allocation. Lastman'svolume and 13.4yardspercarry are distinct assumptions.",
+        "Raridon is an unpriced conditionalTEalternative toTaylor/Fannin, with uncertainavailability and actualreceivingallocation. Morepossible snaps do not establishtargets."
+      ],
+      "alternatives": [
+        {
+          "player": "Jonah Coleman",
+          "position": "RB",
+          "team": "DEN",
+          "opponent": "CAR",
+          "salary": null,
+          "reason": "Prior11carries/5targets vsDobbins7carries supports comparison oncepriced.",
+          "counterargument": "Onegame,66%snap figureattributed, current rosterchanges andpriceunverified; no floorforecast."
+        },
+        {
+          "player": "Tyler Allgeier",
+          "position": "RB",
+          "team": "ARI",
+          "opponent": "SEA",
+          "salary": null,
+          "reason": "Conditionalworkload candidate ifLove/Knightunavailable.",
+          "counterargument": "OfficialWeek9statusunknown, Allgeierowntoeissueattributed, changedSeattleopponent andextremepriorrushingefficiency."
+        },
+        {
+          "player": "Eli Raridon",
+          "position": "TE",
+          "team": "NE",
+          "opponent": "GB",
+          "salary": null,
+          "reason": "Conditionalreceiving-rolecomparison ifHenryunavailable.",
+          "counterargument": "HenrynotverifiedOUT; last4targets produced1catch/5yards; noautomaticinheritance."
+        }
+      ],
+      "uncertainty": [
+        "EveryWeek9selectedsalary, complete officialpool andnine-slotlegalbudgetremainunverified.",
+        "No currentWeek9Claude picksinspected. This ispreparation, not a retrospectivelyreconstructed orcompletev1.",
+        "NoqualifiedretainedROP/TTS/Forecastaccessed; currentreaderwithholds routes, which does not demonstrate nonexistence."
+      ],
+      "lineup_effect": "Existing morning partial board remains unchanged: zero priced picks, $0 allocated/$50,000 unallocated, not frozen. This new journal appends conditional alternatives; it does not retrofit the earlier board.",
+      "change_triggers": [
+        "A verifiable officialWeek9export or sufficiently attributedcurrentprices can unlockthefirstcompleteCodexv1.",
+        "Newdatedofficialavailability forHall,Love/KnightandHenry changes rolecomparisons; no automaticinjury-basedswap.",
+        "Verifyfullnine, uniqueness, eligiblepositions, games andcap beforepublishingcodex_v1_ready."
+      ],
+      "carry_forward": [
+        "Reuse the same Week9 cycle and existing preparation; do notrestartanoriginal afteritexists.",
+        "Save firstsupportedcompleteCodexv1 beforeviewingClaudeWeek9picks wherefeasible; thenprepare exactcommoninputs forClaude.",
+        "Temporarypricing gaps do not call for a newintegration or schedule."
+      ],
+      "sources": [
+        {
+          "id": "ftf",
+          "label": "ftf",
+          "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php",
+          "retrieved_at": "2026-11-03T02:47:33.882Z",
+          "publication_at": null,
+          "source_updated_at": null,
+          "scope": "Week8 Chicago–Seattle Showdown; rejected as Week9 Classic pricing."
+        },
+        {
+          "id": "fse",
+          "label": "fse",
+          "url": "https://fantasysportsedge.com/nfl/projections",
+          "retrieved_at": "2026-11-03T02:47:33.882Z",
+          "publication_at": null,
+          "source_updated_at": null,
+          "scope": "Explicit Week8 header/opponents; rejected for Week9 prices and estimates."
+        },
+        {
+          "id": "fp",
+          "label": "fp",
+          "url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "retrieved_at": "2026-11-03T02:48:18.734Z",
+          "publication_at": null,
+          "source_updated_at": null,
+          "scope": "Live page says Week8 and NE@MIA, LV@NYJ; rejected."
+        },
+        {
+          "id": "groups",
+          "label": "groups",
+          "url": "https://api.draftkings.com/draftgroups/v1/draftgroups?sport=NFL",
+          "retrieved_at": "2026-11-03T02:48:00.615Z",
+          "publication_at": null,
+          "source_updated_at": null,
+          "scope": "Public draft-group request returned SPO117 Bad Request. No official Week9 group established."
+        },
+        {
+          "id": "groups_format",
+          "label": "groups_format",
+          "url": "https://api.draftkings.com/draftgroups/v1/draftgroups?sport=NFL&format=json",
+          "retrieved_at": "2026-11-03T02:49:07.042Z",
+          "publication_at": null,
+          "source_updated_at": null,
+          "scope": "Same SPO117 Bad Request with HTTP400; not evidence pool is unpublished."
+        },
+        {
+          "id": "schedule",
+          "label": "schedule",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+          "retrieved_at": "2026-11-03T02:49:07.042Z",
+          "publication_at": null,
+          "source_updated_at": null,
+          "scope": "Fresh schedule confirms intended11 afternoon games, not officialDKmembership."
+        },
+        {
+          "id": "rules",
+          "label": "rules",
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-03T02:50:27.784Z",
+          "publication_at": null,
+          "source_updated_at": null,
+          "scope": "Classic9slots/$50k/atleast2games, scoring inspected."
+        },
+        {
+          "id": "allgeier",
+          "label": "allgeier",
+          "url": "https://dknetwork.draftkings.com/2026/11/02/should-you-start-tyler-allgeier-in-week-9-with-jeremiyah-love-and-bam-knight-injured/",
+          "retrieved_at": "2026-11-03T02:49:45.435Z",
+          "publication_at": "2026-11-03T00:56:21+00:00",
+          "source_updated_at": "2026-11-03T00:56:23+00:00",
+          "scope": "Attributed secondary conditionalrole analysis; not an officialWeek9OUT or salary."
+        },
+        {
+          "id": "coleman",
+          "label": "coleman",
+          "url": "https://dknetwork.draftkings.com/2026/11/02/is-jonah-coleman-a-must-start-in-week-9-vs-the-panthers/",
+          "retrieved_at": "2026-11-03T02:49:46.009Z",
+          "publication_at": "2026-11-02T23:55:13+00:00",
+          "source_updated_at": "2026-11-02T23:55:14+00:00",
+          "scope": "Attributed66%snap claim; forwardmuststart/floor assertions not adopted."
+        },
+        {
+          "id": "raridon",
+          "label": "raridon",
+          "url": "https://dknetwork.draftkings.com/2026/11/02/should-you-add-eli-raridon-for-week-9-if-hunter-henry-sits/",
+          "retrieved_at": "2026-11-03T02:49:45.438Z",
+          "publication_at": "2026-11-03T02:00:38+00:00",
+          "source_updated_at": "2026-11-03T02:00:40+00:00",
+          "scope": "Henry availability remains uncertain; snaps/TPRR not equated with guaranteedtargets."
+        },
+        {
+          "id": "boxari",
+          "label": "boxari",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873024",
+          "retrieved_at": "2026-11-03T02:50:26.437Z",
+          "publication_at": null,
+          "source_updated_at": null,
+          "scope": "Fresh priorgameAllgeier11/147rushing,5/44receiving,5targets; Love9carries/Knight3."
+        },
+        {
+          "id": "boxden",
+          "label": "boxden",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873033",
+          "retrieved_at": "2026-11-03T02:50:25.984Z",
+          "publication_at": null,
+          "source_updated_at": null,
+          "scope": "Fresh priorgameColeman11carries/41yards,4catches/63yards/5targets; Dobbins7carries."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w09-2026-11-02-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/54ba8174d2901eb9b4f92a58574022cc5af55006/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-02.json"
+        }
+      ],
+      "expectations": [],
+      "outcomes": []
+    }
+  ]
+}

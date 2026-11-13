@@ -1,0 +1,110 @@
+{
+  "record_type": "weekly_collaboration_stage_receipt",
+  "id": "2026-w07-r1-starting-pair-ready",
+  "cycle": "2026-w07-2026-10-25",
+  "round": 1,
+  "recorded_at": "2026-10-23T10:47:51.593Z",
+  "author": "Codex",
+  "posted_by": "Codex",
+  "status": "ready",
+  "scope": "Starting pair archival readiness only; not completed collaboration.",
+  "protocol_precedence": "OperatorOctober22 ordered-handoff decision selectsGrokBot; it supersedes older to-be-selected text. No subscriptions proven.",
+  "stages": [
+    {
+      "stage": "codex_v1_ready",
+      "cycle": "2026-w07-2026-10-25",
+      "round": 1,
+      "author": "Codex",
+      "posted_by": "Codex",
+      "status": "ready",
+      "actual_completion_at": "2026-10-22T10:42:57.483Z",
+      "receipt_verified_at": "2026-10-23T10:47:51.593Z",
+      "input_versions": [
+        {
+          "id": "first-complete-week7",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/df3c16287403ef566bf40bc148ba67d0b9227152/docs/weekly-dfs/codex/2026/week-07/daily/20261019T113232Z.md"
+        }
+      ],
+      "immutable_output": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/76079a9eca29ded1a823ff79261e6158b2db907d/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-22.md",
+      "note": "Historical first completev1 remainsOctober19. Stage usesOctober22 pre-collaboration baseline forWeek7startingpair; not a regeneratedblindv1. No newv1loop."
+    },
+    {
+      "stage": "claude_v1_ready",
+      "cycle": "2026-w07-2026-10-25",
+      "round": 1,
+      "author": "Claude",
+      "posted_by": "Codex via operator relay",
+      "status": "ready",
+      "actual_completion_at": "2026-10-23T10:44:08.286Z",
+      "original_generation_at": null,
+      "original_evidence_cutoff": null,
+      "input_versions": [
+        {
+          "source": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43#issuecomment-6342360263",
+          "published_at": "2026-10-22T13:47:43Z",
+          "exposure": "ReadPR43beforegeneration;notblind."
+        }
+      ],
+      "immutable_output": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/af918ec1225c74f900fb6046d4eb92f58562a422/docs/weekly-dfs/codex/2026/week-07/collaboration/20261023T104408Z-claude-v1-receipt.md",
+      "note": "Completion clock denotes retained/verifiedreceipt now; original generation unknown. Reuse original, no recreation."
+    },
+    {
+      "stage": "grok_questions_ready",
+      "cycle": "2026-w07-2026-10-25",
+      "round": 1,
+      "author": "Grok Bot",
+      "posted_by": null,
+      "status": "blocked",
+      "actual_completion_at": null,
+      "immutable_output": null,
+      "input_versions": [],
+      "reason": "No actual question contribution received."
+    },
+    {
+      "stage": "collaboration_ready",
+      "cycle": "2026-w07-2026-10-25",
+      "round": 1,
+      "author": "Claude + Codex",
+      "posted_by": null,
+      "status": "blocked",
+      "actual_completion_at": null,
+      "immutable_output": null,
+      "input_versions": [],
+      "reason": "No substantive Claude/Codex revision exchange."
+    },
+    {
+      "stage": "final_frozen",
+      "cycle": "2026-w07-2026-10-25",
+      "round": 1,
+      "author": "Codex final editor",
+      "posted_by": null,
+      "status": "blocked",
+      "actual_completion_at": null,
+      "immutable_output": null,
+      "input_versions": [],
+      "reason": "Not yet due; retain predeadlineprocedure."
+    }
+  ],
+  "dedupe_key": "2026-w07-2026-10-25/starting-pair/1/https://github.com/Prometheus-Frameworks/TIBER-Research/blob/76079a9eca29ded1a823ff79261e6158b2db907d/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-22.md/https://github.com/Prometheus-Frameworks/TIBER-Research/blob/af918ec1225c74f900fb6046d4eb92f58562a422/docs/weekly-dfs/codex/2026/week-07/collaboration/20261023T104408Z-claude-v1-receipt.md",
+  "next_handoff": {
+    "participant": "Grok Bot",
+    "task": "Inspect exact retained CodexOctober22baseline and Claude originalv1; ask consequential questions about sharedPukacalf/Godwinavailability, Noel/Dellforwardrole, SFCMC/Kittle/Kirkallocation and conditionalRBtradeoff. Existing questions are prompts for investigation, not evidence Grok participated.",
+    "inputs": [
+      "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/76079a9eca29ded1a823ff79261e6158b2db907d/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-22.md",
+      "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/af918ec1225c74f900fb6046d4eb92f58562a422/docs/weekly-dfs/codex/2026/week-07/collaboration/20261023T104408Z-claude-v1-receipt.md"
+    ],
+    "context": "Today's Codex revision independently investigates Marks and identifies newPukacalf/HallLP risks. Do not regenerate startingdrafts or fireunlimitedquestionloops when dailylineupchanges.",
+    "following_step": "Actual Claude response and substantive exchange with Codex before any sharedfinalclaim."
+  },
+  "subscriptions": {
+    "codex_event_watcher": "not_created_validation_failed_as_operator_reported",
+    "claude": "unverified",
+    "grok": "unverified",
+    "action": "No setupretry, hourlypoller, newdispatch or schedule."
+  },
+  "deadline": {
+    "before": "2026-10-25T16:30:00Z",
+    "toronto": "2026-10-25T12:30:00-04:00",
+    "missing_stage_action": "Do not wait beyondcutoff. Sharedcandidate maylackthirdreview; absentClaudeexchange useCodexfallbackwithinfluenceexplicit."
+  }
+}

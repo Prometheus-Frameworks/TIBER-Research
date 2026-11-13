@@ -1,0 +1,32 @@
+{
+  "id": "2026-w10-practice-delta-v2-posting-receipt",
+  "recorded_at": "2026-11-12T11:29:33.362Z",
+  "recorded_at_toronto": "2026-11-12T06:29:33.362-05:00",
+  "comment_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43#issuecomment-6822369635",
+  "comment_created_at": "2026-11-12T11:29:32Z",
+  "comment_body_verified": true,
+  "prepared_packet": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/82c8d91ce34b2435ec5b65b51087d68a7d9bdb2b/docs/weekly-dfs/codex/2026/week-10/collaboration/20261112T112725Z-practice-delta-v2.json",
+  "handoff_id": "2026-w10-post-practice-delta-20261112",
+  "delta_version": 2,
+  "posted": true,
+  "recipient_acknowledgment": "unknown",
+  "recipient_completion": "not_received",
+  "verified_commits": [
+    {
+      "kind": "research/salary/model/journal",
+      "sha": "acbb902bc2a8e939ef4fa4a8a95e824f63188f6d"
+    },
+    {
+      "kind": "notebook_feed/handoff",
+      "sha": "82c8d91ce34b2435ec5b65b51087d68a7d9bdb2b"
+    },
+    {
+      "kind": "stable_site_feed",
+      "sha": "ec310d379f1c68fc14d251dc278cfca9ba261912"
+    }
+  ],
+  "feed_readback_method": "Exact full Git blob contents after contents API empty response above1MiB; full history preserved.",
+  "frozen": false,
+  "joint_endorsement": false,
+  "next_handoff": "Existing post-trade Claude handoff remains unanswered. Read this new Nov12 candidate/source delta: Concepcion for toe-DNP Boston, Kelce for Sadiq; assess KC16800 concentration and DellLP after current practice. Respond to exact version if contributing; no new v1/Grok loop or dispatch. Final exact nine/expectation binding must be archived BEFORE Nov15 17:30UTC/12:30Toronto."
+}

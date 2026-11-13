@@ -1,0 +1,109 @@
+{
+  "id": "2026-w10-source-display-correction-20261110T133952Z",
+  "recorded_at": "2026-11-10T13:39:52.896Z",
+  "author": "Codex",
+  "supersedes_record": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/967778b0e9e8fb371aba9e7d9c3d811c895b096e/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T133808Z-response-sources.json",
+  "correction_scope": "publication_display fields only, also applying to same source objects embedded in Codex response JSON",
+  "reason": "A conditional-expression precedence error assigned the Yahoo display-clock note to several source display fields. Corrected metadata is appended here; original records preserved. Retrieved_at and publication_at ISO fields, football findings, replies, prices and picks unchanged.",
+  "corrected_sources": [
+    {
+      "id": "mahomesCBS3",
+      "label": "mahomesCBS3",
+      "url": "https://www.cbssports.com/fantasy/football/news/chiefs-patrick-mahomes-receives-diagnosis-will-be-monitored/",
+      "resolved_url": "https://www.cbssports.com/fantasy/football/news/chiefs-patrick-mahomes-receives-diagnosis-will-be-monitored/",
+      "retrieved_at": "2026-11-10T13:34:23.687Z",
+      "retrieved_at_toronto": "2026-11-10T08:34:23.687-05:00",
+      "publication_at": null,
+      "publication_display": "22 hours ago; no exact absolute clock verified in current returned text.",
+      "scope": "CBS/RotoWire cites Rapoport: MRI strain/sprain, no major injury, monitoring and possible managed practice. No Week10 clearance; completion-count narrative not used to revise scores."
+    },
+    {
+      "id": "mahomesFLM3",
+      "label": "mahomesFLM3",
+      "url": "https://www.newstribune.com/news/2026/nov/10/mahomes-injury-considered-minor-called-day-to-day/",
+      "resolved_url": "https://www.newstribune.com/news/2026/nov/10/mahomes-injury-considered-minor-called-day-to-day/",
+      "retrieved_at": "2026-11-10T13:34:23.348Z",
+      "retrieved_at_toronto": "2026-11-10T08:34:23.348-05:00",
+      "publication_at": "2026-11-10T06:18:00.000Z",
+      "publication_display": "7 hours,15minutes ago; exact publication metadata2026-11-10T00:18:00-0600.",
+      "scope": "FieldLevelMedia attributes Monday Reid comments describing minor/day-to-day elbow, treatment. Published metadataNov10 00:18Central=06:18UTC. Quotes are attributed reporting, not directly inspected team transcript."
+    },
+    {
+      "id": "lines3",
+      "label": "lines3",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "resolved_url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "retrieved_at": "2026-11-10T13:34:27.745Z",
+      "retrieved_at_toronto": "2026-11-10T08:34:27.745-05:00",
+      "publication_at": "2026-11-09T14:32:00.000Z",
+      "publication_display": "Nov9,2026,09:32AM ET.",
+      "scope": "ESPN article datedNov9 09:32ET, DK-attributed table retrievednow: SF@DAL55.5 (open52.5), MIA@IND41.5(open47.5), HOU@CLE39.5(open38.5). Different book/time fromretainedFox40.5IND; do not infer a new Tuesday move or exact injury pricing."
+    },
+    {
+      "id": "mumpfield3",
+      "label": "mumpfield3",
+      "url": "https://www.fantasypros.com/nfl/players/konata-mumpfield.php",
+      "resolved_url": "https://www.fantasypros.com/nfl/players/konata-mumpfield.php",
+      "retrieved_at": "2026-11-10T13:34:22.586Z",
+      "retrieved_at_toronto": "2026-11-10T08:34:22.586-05:00",
+      "publication_at": null,
+      "publication_display": "PatFitzmaurice Nov9,2026; EmilyMaingi Nov9,2026. Exactpublicationclocksunavailable.",
+      "scope": "FantasyPros explicitly labels Mumpfield11/162/1 on23targets as2026season. Expert notes Atwelltwo more snaps/three more targets inWeek9; those relative snaps are attributed, not independently charted. Pageprojections excluded."
+    },
+    {
+      "id": "watsonCBS3",
+      "label": "watsonCBS3",
+      "url": "https://www.cbssports.com/fantasy/football/news/browns-deshaun-watson-on-track-to-start-week-10/",
+      "resolved_url": "https://www.cbssports.com/fantasy/football/news/browns-deshaun-watson-on-track-to-start-week-10/",
+      "retrieved_at": "2026-11-10T13:34:23.360Z",
+      "retrieved_at_toronto": "2026-11-10T08:34:23.360-05:00",
+      "publication_at": null,
+      "publication_display": "20hoursago; exact absoluteclockunverified in current returned text.",
+      "scope": "CBS/RotoWire citing Fowler reportsWatsonplan. Neurological testsSaturday narrative differs fromYahooFriday clearance; exactclearancedayunresolved, neither is currentteamstarterdesignation."
+    },
+    {
+      "id": "watsonYahoo3",
+      "label": "watsonYahoo3",
+      "url": "https://sports.yahoo.com/nfl/article/browns-reportedly-plan-to-start-deshaun-watson-in-week-10-after-concussion-pushed-shedeur-sanders-into-lineup-171315467.html",
+      "resolved_url": "https://sports.yahoo.com/nfl/article/browns-decline-to-name-starting-qb-for-week-10-after-report-deshaun-watson-would-return-195801994.html",
+      "retrieved_at": "2026-11-10T13:34:24.915Z",
+      "retrieved_at_toronto": "2026-11-10T08:34:24.915-05:00",
+      "publication_at": null,
+      "publication_display": "Mon,November9,2026 at2:58PM EST.",
+      "scope": "Requested earlierWatsonplanURL redirects to laterYahooarticle: MonkenwouldnotnameWeek10starter, reportedviaDanielOyefusi. BodydatedNov9 14:58EST; distinguishplanfromcoachcommitment."
+    },
+    {
+      "id": "watkins3",
+      "label": "watkins3",
+      "url": "https://www.ninersnation.com/san-francisco-49ers-injuries/165462/deebo-samuel-is-on-track-to-return-49ers-open-to-bringing-back-veteran-defensive-tackle",
+      "resolved_url": "https://www.ninersnation.com/san-francisco-49ers-injuries/165462/deebo-samuel-is-on-track-to-return-49ers-open-to-bringing-back-veteran-defensive-tackle",
+      "retrieved_at": "2026-11-10T13:34:23.506Z",
+      "retrieved_at_toronto": "2026-11-10T08:34:23.506-05:00",
+      "publication_at": "2026-11-09T22:59:11.000Z",
+      "publication_display": "Nov9,2026,5:59PM EST.",
+      "scope": "NinersNation attributesWeek9Watkins52snaps,Robinson35,Cooks30,Cowing16,Hodge12; notindependentlyreproduced. ForwardDeeborole unresolved; currentrankisnotfuture share."
+    },
+    {
+      "id": "pickens3",
+      "label": "pickens3",
+      "url": "https://www.si.com/nfl/cowboys/onsi/will-george-pickens-return-week-10-injury-update-dallas-cowboys",
+      "resolved_url": "https://www.si.com/nfl/cowboys/onsi/will-george-pickens-return-week-10-injury-update-dallas-cowboys",
+      "retrieved_at": "2026-11-10T13:34:23.426Z",
+      "retrieved_at_toronto": "2026-11-10T08:34:23.426-05:00",
+      "publication_at": "2026-11-10T12:39:56.000Z",
+      "publication_display": null,
+      "scope": "SI quotesMondaySchottenheimertryingforpractice andJoneswait-and-see; no clearance. Flournoy97.5%snap figure is attributed. Author's favorableplayingodds are opinion, notstatus."
+    },
+    {
+      "id": "prices3",
+      "label": "prices3",
+      "url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+      "resolved_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+      "retrieved_at": "2026-11-10T13:35:38.409Z",
+      "retrieved_at_toronto": "2026-11-10T08:35:38.409-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "FreshFantasyPros rawtable matchesbothoriginals andquestionedcapmathalternatives. AllgeierARI@LAR, notGB. OfficialDKpoolandIDsunverified."
+    }
+  ]
+}

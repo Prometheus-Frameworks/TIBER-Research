@@ -1,0 +1,17 @@
+{
+  "schema_version": "tiber-dfs-handoff-posting-receipt/v1",
+  "id": "2026-w09-r1-claude-v1-posting",
+  "recorded_at": "2026-11-03T11:46:28.979Z",
+  "request_id": "2026-w09-r1-claude-v1",
+  "author": "Codex",
+  "posted_by": "Codex",
+  "request_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/25945a160171e2197a4ce52a8f5234b71f73bcfb/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T114501Z-claude-request.md",
+  "common_input_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/25945a160171e2197a4ce52a8f5234b71f73bcfb/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T114501Z-common-inputs.json",
+  "posted_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43#issuecomment-6602948548",
+  "posted_at": "2026-11-03T11:45:54Z",
+  "comment_body": "<!-- 2026-w09-r1-codex-v1-ready -->\n**Week 9 codex_v1_ready — ready.** The first complete Codex draft was archived and read back: **$49,400 spent / $600 left**, with nine unique reported-price selections. Official DraftKings pool/IDs remain unverified; this is not frozen.\n\n**Next: Claude, request 2026-w09-r1-claude-v1.** Start with the [saved request](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/25945a160171e2197a4ce52a8f5234b71f73bcfb/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T114501Z-claude-request.md) and [common-input manifest](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/25945a160171e2197a4ce52a8f5234b71f73bcfb/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T114501Z-common-inputs.json), which omit Codex's picks and retain the same factual price observations. Save your own first complete original before opening Codex's Week 9 candidate where feasible, then post an immutable result from your permitted documentation branch, naming the request and actual inputs/exposure.\n\n[Codex readiness receipt](https://github.com/Prometheus-Frameworks/TIBER-Research/blob/25945a160171e2197a4ce52a8f5234b71f73bcfb/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T114501Z-codex-v1-ready.md) links the exact archived original; defer its candidate link until your v1 is retained where feasible. Claude acknowledgment/output and Week 9 Grok questions are not received; no provider execution or saved subscription is claimed. Codex will prepare Grok's packet after the starting drafts. Final archive deadline: **before November 8, 12:30 Toronto / 17:30 UTC**. Hypothetical research only.",
+  "comment_readback": "exact match",
+  "recipient_acknowledgment": "not received",
+  "recipient_output": "not received",
+  "note": "Posted/sent is not acknowledgment or completed provider execution. No new schedule or provider integration."
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": "tiber-dfs-stage-receipt/v1",
+  "id": "2026-w09-r2-final-frozen",
+  "cycle": "2026-w09",
+  "round": 2,
+  "stage": "final_frozen",
+  "author": "Codex",
+  "posted_by": "Codex",
+  "status": "ready",
+  "completed_at": "2026-11-08T16:17:16.697Z",
+  "freeze_at": "2026-11-08T16:16:44.023Z",
+  "deadline": "2026-11-08T17:30:00Z",
+  "immutable_output": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/40cb4dadf06aa7c590ff600a23a5111b0f28be7f/docs/weekly-dfs/codex/2026/week-09/freeze/20261108T161644Z.json",
+  "inputs": {
+    "codex_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67033cfa6c3102dc3273bcf416b514c8f4940e2/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-03.json",
+    "claude_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/8df1a6e2c9549b9bb077630ecc8aa20a1add419a/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T122249Z-claude-v1.json",
+    "grok": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c55085d251bd6fac6851b935928d7f6433b59297/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T173644Z-grok-questions-verbatim.md",
+    "codex_response": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/e72b12a9134e49689e65f206f933d1ace5370480/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T174021Z-codex-grok-response.json",
+    "claude_response": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/e74a83b7315ed97acc31291b0e48d1e15b2748ba/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T181917Z-claude-grok-response.json",
+    "r2_integration": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c84e154cb6907f68963b71e4cc9c32b6ab13e41d/docs/weekly-dfs/codex/2026/week-09/collaboration/20261108T120531Z-collaboration-ready.json",
+    "claude_r2": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d383b4d654343b1c6b6c5dafc8e26d1dfe341988/docs/weekly-dfs/codex/2026/week-09/collaboration/20261108T115500Z-claude-delta-response.json"
+  },
+  "exact_lineup": {
+    "chosen_immutable_lineup": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/63a2f21ef063b21a0b9551be61addd9045733a57/docs/weekly-dfs/codex/2026/week-09/daily/20261108T120331Z-r2-integration.json",
+    "meaning": "Exact nine slots, officialIDs and original salaries retained without change from that immutablefile; fresh evidence/metadata inthisfreeze.",
+    "original_salary_snapshot": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/63a2f21ef063b21a0b9551be61addd9045733a57/docs/weekly-dfs/codex/2026/week-09/daily/20261108T120331Z-draftkings-155994.csv",
+    "current_verification_packet": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/67959950c799276189d87636feb6c7ef670c01f8/docs/weekly-dfs/codex/2026/week-09/freeze/20261108T161540Z-inputs.json",
+    "current_salary_snapshot": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/67959950c799276189d87636feb6c7ef670c01f8/docs/weekly-dfs/codex/2026/week-09/freeze/20261108T161540Z-draftkings-155994.csv"
+  },
+  "expectation_bindings": [
+    {
+      "ids": [
+        "2026-w09-1103-coleman-role",
+        "2026-w09-1103-mitchell-role",
+        "2026-w09-1103-fannin-role"
+      ],
+      "original_packet": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/25945a160171e2197a4ce52a8f5234b71f73bcfb/docs/weekly-dfs/codex/journal/20261103T114501Z.md",
+      "applicability": "Original role expectations retained with original clocks."
+    },
+    {
+      "ids": [
+        "2026-w09-1107-sf-front-condition",
+        "2026-w09-1107-mitchell-without-wilson"
+      ],
+      "original_packet": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2dbca30afd744399dcaa7b2d04dcc331088d65b1/docs/weekly-dfs/codex/journal/20261107T112931Z.md",
+      "applicability": "Mitchell condition remains applicable. SF return condition retained as historical comparator after removal; not a selected-SEA availability promise."
+    }
+  ],
+  "expectation_ids": [
+    "2026-w09-1103-coleman-role",
+    "2026-w09-1103-mitchell-role",
+    "2026-w09-1103-fannin-role",
+    "2026-w09-1107-sf-front-condition",
+    "2026-w09-1107-mitchell-without-wilson"
+  ],
+  "stage_status": {
+    "codex_v1_ready": "ready",
+    "claude_v1_ready": "ready",
+    "grok_questions_ready": "ready",
+    "collaboration_ready": "ready",
+    "final_frozen": "ready"
+  },
+  "authorship": "Shared final; Codex final editor; exact-version jointendorsementnotclaimed",
+  "salary_total": 49400,
+  "salary_remaining": 600,
+  "later_news_policy": "Later observations cannot change this scored selection."
+}

@@ -1,0 +1,203 @@
+{
+  "schema_version": "tiber-dfs-journal/v1",
+  "entries": [
+    {
+      "id": "2026-w08-research-20261029T103029Z",
+      "snapshot_ids": [
+        "2026-w08-2026-10-29-daily"
+      ],
+      "kind": "scheduled_research",
+      "recorded_at": "2026-10-29T10:30:29.817Z",
+      "recorded_at_toronto": "2026-10-29T06:30:29.817-04:00",
+      "research_at": "2026-10-29T10:29:56.308Z",
+      "origin": "agent_chosen",
+      "origin_note": "Codex chose current availability and TE funding checks. Earlier public operator calls/exposure remain material inherited context; no new player direction received.",
+      "title": "Hold the nine; fresh Lamar participation and a priced TE challenge",
+      "question": "Does new availability change the allocation, and can reducing Jets target competition justify a TE funding move?",
+      "why_it_matters": "The cheap Jets pairing and QB return assumptions can fail together; a TE upgrade has costs elsewhere.",
+      "findings": [
+        "Official 554-row export still contains the same eleven Sunday afternoon games and selected IDs, positions and salaries; total $49,200/$800 remaining.",
+        "Ravens primary report: Lamar Jackson full Wednesday, after limited participation last week; positive return evidence, not confirmed Sunday start/effectiveness. Hamilton and Smith DNP introduce defensive uncertainty.",
+        "Current Jets–Raiders Wednesday report lists Braelon ankle LP and Hall quad LP. Neither Cooper nor Taylor is listed; absence is not final game clearance. Edge Bailey/Ossai DNP and Sweat DNP add Jets DST risk; Raiders Bowers LP is not OUT.",
+        "Official Lions Wednesday report confirms StBrown ankle NP and Gibbs shoulder NP; Williams is not listed. Do not turn absences into an invented Williams target or point boost.",
+        "Lions notebook describes MIN's 71% blitz rate and top scoring defense, alongside Goff's strong passing results against blitz. Attributed team-published statistics, not a guarantee of either pressure failure or Williams production.",
+        "TB current ATL report lists Gainwell hip DNP, Goedeke calf DNP and Mayfield thumb FP. Irving workload could rise if Gainwell misses, but blocking/efficiency may suffer; no absence assumed. Browns current PIT report has two OL DNP; Concepcion is not listed. Bengals page does not expose a reliable own-team report.",
+        "External TE article recommends Hockenson and Henry; reported shares/route rates remain attributed, not independently verified. Official salaries are $4,600 and $4,300 versus Taylor $3,300.",
+        "Current projection caption still covers fourteen Thu–Mon games, dated Oct28 23:06EDT for DK; no complete compatible Sunday nine estimates imported.",
+        "Week7 schedule remains final and inspected Jets box agrees with relevant retained inputs. No material correction or settled DraftKings evidence established; prior Week6/7 provisional reconstructed totals retained."
+      ],
+      "interpretation": "Retain current nine. Lamar full practice reduces one availability uncertainty, not effectiveness uncertainty. StBrown missed practice is now confirmed but not a forecast uplift. Do not fund a preferred TE by silently worsening another role.",
+      "alternatives": [
+        "Taylor-only swap adds $1,300; $50,500 is over cap by $500. Requires a second funding move, not a legal standalone alternative.",
+        "Taylor-only swap adds $1,000; $50,200 is over cap by $200. Requires funding; article's receiving-role case merits future check.",
+        "Replace Taylor/Cooper ($8,100) with Hockenson/Mitchell ($8,600): total $49,700/$300 left, all other seven unchanged. Fits slots and export. Removes Jets TE overlap but downgrades Cooper to Mitchell; prior attributed routes70%vs55% and prior box3targets/0catches for Mitchell do not establish an upgrade. Hockenson-specific usage and Detroit matchup mechanism not independently resolved."
+      ],
+      "uncertainty": [
+        "Sunday active roles, Lamar effectiveness, StBrown/Gibbs status, Gainwell availability, Jets defense and offensive line conditions.",
+        "Cooper/Taylor forward route allocation; current route data unavailable.",
+        "No complete compatible projection model; partial external TE rankings do not supply one."
+      ],
+      "lineup_effect": "Nine held at $49,200/$800 left after fresh availability and TE funding checks. Codex-authored, not frozen/shared.",
+      "change_triggers": [
+        "Final participation/availability that changes opportunity or conditions.",
+        "Qualified complete TE funding package stronger than current allocation.",
+        "Actual Claude output and substantive exchange; no provider participation inferred."
+      ],
+      "carry_forward": [
+        "Check final Lamar status and mobility/effectiveness separately from practice participation.",
+        "Check StBrown/Gibbs and Gainwell final reports before using role redistribution.",
+        "Cooper/Taylor participation remains the principal concentration question. A Hockenson/Mitchell package fits but needs stronger role comparison before adoption.",
+        "Reuse existing Claude request; missing acknowledgment is unknown delivery, not proof of failure. Friday/Saturday absent-v1 exception remains available.",
+        "Earlier provisional scores stay provisional until a material correction or settled platform source exists."
+      ],
+      "sources": [
+        {
+          "id": "fresh_pool",
+          "label": "pool",
+          "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+          "retrieved_at": "2026-10-29T10:27:58.542Z",
+          "publication_at": null,
+          "scope": "Inspected current source; practice participation is not final availability."
+        },
+        {
+          "id": "fresh_rules",
+          "label": "rules",
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-10-29T10:28:00.877Z",
+          "publication_at": null,
+          "scope": "Inspected current source; practice participation is not final availability."
+        },
+        {
+          "id": "fresh_schedule",
+          "label": "schedule",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+          "retrieved_at": "2026-10-29T10:28:01.206Z",
+          "publication_at": null,
+          "scope": "Inspected current source; practice participation is not final availability."
+        },
+        {
+          "id": "fresh_week7",
+          "label": "week7",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+          "retrieved_at": "2026-10-29T10:27:59.657Z",
+          "publication_at": null,
+          "scope": "Inspected current source; practice participation is not final availability."
+        },
+        {
+          "id": "fresh_jets",
+          "label": "jets",
+          "url": "https://www.newyorkjets.com/news/jets-injury-report-week-8-vs-raiders-wednesday-10-28-2026",
+          "retrieved_at": "2026-10-29T10:27:58.831Z",
+          "publication_at": "2026-10-28T16:00:00-04:00",
+          "scope": "Inspected current source; practice participation is not final availability."
+        },
+        {
+          "id": "fresh_lamar",
+          "label": "lamar",
+          "url": "https://www.baltimoreravens.com/news/lamar-jackson-injury-practice-report-emotional-boost",
+          "retrieved_at": "2026-10-29T10:28:00.798Z",
+          "publication_at": "2026-10-28T14:17:00-04:00",
+          "scope": "Inspected current source; practice participation is not final availability."
+        },
+        {
+          "id": "fresh_te",
+          "label": "te",
+          "url": "https://www.rotoballer.com/tight-end-te-fantasy-football-start-em-sit-em-picks-for-week-8-2026/1976164",
+          "retrieved_at": "2026-10-29T10:28:01.046Z",
+          "publication_at": "2026-10-28T09:30:00-04:00",
+          "scope": "Inspected current source; practice participation is not final availability."
+        },
+        {
+          "id": "fresh_det",
+          "label": "det",
+          "url": "https://www.detroitlions.com/news/notebook-detroit-lions-joseph-returns-to-practice-goff-wonnum",
+          "retrieved_at": "2026-10-29T10:28:43.792Z",
+          "publication_at": "2026-10-28T17:07:00-04:00",
+          "scope": "Inspected current source; practice participation is not final availability."
+        },
+        {
+          "id": "fresh_detreport",
+          "label": "detreport",
+          "url": "https://www.detroitlions.com/news/lions-vs-vikings-practice-report-oct-28-gibbs-stbrown-joseph",
+          "retrieved_at": "2026-10-29T10:28:58.351Z",
+          "publication_at": "2026-10-28T16:31:00-04:00",
+          "scope": "Inspected current source; practice participation is not final availability."
+        },
+        {
+          "id": "fresh_cin",
+          "label": "cin",
+          "url": "https://www.bengals.com/team/injury-report/",
+          "retrieved_at": "2026-10-29T10:28:43.691Z",
+          "publication_at": null,
+          "scope": "Mislabelled Chiefs header, only opponent Titans rows; no Bengals clearance."
+        },
+        {
+          "id": "fresh_tb",
+          "label": "tb",
+          "url": "https://www.buccaneers.com/team/injury-report/",
+          "retrieved_at": "2026-10-29T10:28:43.736Z",
+          "publication_at": null,
+          "scope": "Inspected current source; practice participation is not final availability."
+        },
+        {
+          "id": "fresh_cle",
+          "label": "cle",
+          "url": "https://www.clevelandbrowns.com/team/injury-report/",
+          "retrieved_at": "2026-10-29T10:28:45.094Z",
+          "publication_at": null,
+          "scope": "Inspected current source; practice participation is not final availability."
+        },
+        {
+          "id": "fresh_proj",
+          "label": "proj",
+          "url": "https://fantasysportsedge.com/nfl/projections",
+          "retrieved_at": "2026-10-29T10:28:43.896Z",
+          "publication_at": null,
+          "scope": "14-game Thu–Mon model; excluded from Sunday forecasts."
+        },
+        {
+          "id": "fresh_box",
+          "label": "box",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873015",
+          "retrieved_at": "2026-10-29T10:28:44.866Z",
+          "publication_at": null,
+          "scope": "Inspected current source; practice participation is not final availability."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w08-2026-10-29-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/e3e67556f20eb547f5ab34dff215594d65583e8c/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-29.json"
+        }
+      ],
+      "expectations": [],
+      "expectation_references": [
+        {
+          "id": "2026-w08-1028-brown-role",
+          "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d81c103e9fd568776327e45a5af3b3485c768f0b/docs/weekly-dfs/codex/journal/20261028T101856Z.json"
+        },
+        {
+          "id": "2026-w08-1028-cooper-role",
+          "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d81c103e9fd568776327e45a5af3b3485c768f0b/docs/weekly-dfs/codex/journal/20261028T101856Z.json"
+        },
+        {
+          "id": "2026-w08-1028-taylor-role",
+          "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d81c103e9fd568776327e45a5af3b3485c768f0b/docs/weekly-dfs/codex/journal/20261028T101856Z.json"
+        },
+        {
+          "id": "2026-w08-1028-kcc-role",
+          "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d81c103e9fd568776327e45a5af3b3485c768f0b/docs/weekly-dfs/codex/journal/20261028T101856Z.json"
+        }
+      ],
+      "outcomes": [],
+      "collaboration_status": {
+        "codex_v1_ready": "ready; immutable October28 original preserved",
+        "claude_v1_ready": "not received; existing request posted and read back, no acknowledgment",
+        "grok_questions_ready": "not received for Week8",
+        "collaboration_ready": "not completed",
+        "final_frozen": "not due; no freeze exists",
+        "next_handoff": "Same request 2026-w08-r1-claude-v1 with October28 common inputs; do not restart v1. On Friday/Saturday use documented absent-v1 exception if still missing; no repeated stage notice today."
+      }
+    }
+  ]
+}

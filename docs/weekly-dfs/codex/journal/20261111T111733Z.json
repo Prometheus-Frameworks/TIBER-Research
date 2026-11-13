@@ -1,0 +1,282 @@
+{
+  "schema_version": "tiber-dfs-journal/v1",
+  "entries": [
+    {
+      "id": "2026-w10-research-20261111T111733Z",
+      "snapshot_ids": [
+        "2026-w10-2026-11-11-daily"
+      ],
+      "kind": "scheduled_research",
+      "recorded_at": "2026-11-11T11:17:33.909Z",
+      "recorded_at_toronto": "2026-11-11T06:17:33.909-05:00",
+      "research_at": "2026-11-11T11:17:33.909Z",
+      "origin": "agent_chosen",
+      "origin_note": "Codex chose post-deadline team/role verification; actual Claude Dell alternative supplied candidate discovery. No new operator player input in this run.",
+      "title": "Deadline trades break the Colts pair; Dell replaces Allen",
+      "question": "Do changed team contexts justify a direct Allen replacement without yesterday's funding swap?",
+      "why_it_matters": "Allen changes game/team; Downs affects Rice/Kelce; Warren competition and protection both change.",
+      "findings": [
+        "Primary Colts confirm Allen traded to SF on Nov10. FantasyPros now reports SF WR@DAL, $5,100; prior IND/MIA annotation no longer describes his team/game. His SF availability/deployment and official pool treatment remain unverified.",
+        "Primary Colts confirm Downs traded to KC and name Nelson/Buckner departures. Downs57targets through9games is a season total, not a forecast or immediately available KC workload. Departures affect Warren competition and protection as well as Rice/Kelce.",
+        "NFL league article confirms transaction and describes SF's injured receiver room. Does not establish Week10 role, practice or active status.",
+        "Current raw rows match all nine selected salaries/positions/opponents. Allen updated SF@DAL5100; DownsKC@ATL4700. No exact official group, export or player IDs obtained.",
+        "Official NFLClassic: QB,2RB,3WR,TE,FLEX(RB/WR/TE),DST; at least2games;$50k. PPR; passing0.04/yard,4TD,-1INT; rushing/receiving0.1/yard,6TD; +3 at300pass/100rush/100rec; lostfumble-1; two-point2. DST events/PA rules retained for later reproducible scoring.",
+        "Primary NFL confirms same10SundayNov15afternoon fixtures; earliest13:00Toronto/18:00UTC. Thursday, Munich09:30, Sundaynight andMonday excluded from expectedmain; actual platform membership unverified.",
+        "Prior Week9 games marked final. Existing Nov9comparison complete butprovisional; all historical complete lineups have scores in feed, no pending missing complete-lineup totals.",
+        "Public lobby redirects to account creation. No official export/group acquired; no account interaction undertaken.",
+        "ESPN Houston receiving row: Dell4/105/1TD,long63,9targets; Marks1catch/4targets. No new DK points recalculated from this box.",
+        "Attributed Houston table: Dell33snaps,22routes,8targets,team40routes; narrative55% route participation and outside rotation with Harrison/Boutte. ESPN9targets vsPFF8 unresolved coverage/definition conflict, not averaged. Sadiq57%snaps/70%12personnel; Ricebelow67%routes eachoflasttwo. These remain attributed charting.",
+        "ESPN quotes MondayReidday-to-day/MRI no major injury; monitoring/swelling and full practice reps uncertain. Historical Monday update is not Wednesday clearance.",
+        "Primary Chiefs injury page returns legend/weekselector with no player participation rows. No usable current Wednesday report was observed; missing rows do not establish health."
+      ],
+      "interpretation": [
+        "Prefer Dell's observed returning participation to Allen's unmeasured SF integration; Allen not declared ineligible.",
+        "Keep Warren without assigning the departing WRs' targets; Nelson loss could reduce total opportunity.",
+        "Keep Rice but Downs arrival removes any simple vacancy-to-target thesis. Mahomes still conditional.",
+        "Historical Colts pair expectation is overtaken by trades; preserve it for evaluation, never rewrite it into a Warren-only claim."
+      ],
+      "alternatives": [
+        {
+          "candidate": "Keep Allen at SF@DAL5100",
+          "total": 49300,
+          "remaining": 700,
+          "disposition": "declined for now; new-team role unmeasured, not ineligible"
+        },
+        {
+          "candidate": "Earlier Dell+Concepcion for Sadiq+Boston",
+          "total": 50000,
+          "remaining": 0,
+          "disposition": "Original funding example no longer necessary for direct Allen→Dell. Boston retained; no forced perfect spend."
+        }
+      ],
+      "uncertainty": [
+        "Exact official DK main group/export/IDs and trade-related eligibility remain unverified.",
+        "Wednesday Chiefs practice rows not accessible; Mahomes throwing readiness unknown. Downs immediate role unknown.",
+        "Dell future outside rotation and8vs9target-source coverage; no confident projection from one explosive game.",
+        "Warren target redistribution versus Nelson protection loss; CMC/Watkins allocation after Allen arrival and possible Deebo return.",
+        "Original Rams/ARI, CLEQB, NYJ availability conditions still require dated practice recheck before freeze."
+      ],
+      "lineup_effect": {
+        "revisions": [
+          {
+            "from": "Keenan Allen",
+            "to": "Tank Dell",
+            "salary_delta": -1200,
+            "classification": "new_evidence",
+            "reason": "Allen's trade to SF breaks the retained Colts-role basis. Choose Dell's verified returning participation over unmeasured new-team deployment, accepting rotation risk. This is a football judgment; Allen's SF reported row exists and is not declared ineligible."
+          }
+        ],
+        "salary_total": 48100,
+        "salary_remaining": 1900,
+        "distinct_games": 6,
+        "HOU_CLE_exposure": "Boston+Dell $9,100 opposing receivers, instead of one Cleveland receiver",
+        "IND_exposure": "one Warren4400, down from Allen/Warren9500",
+        "classification": "new_evidence"
+      },
+      "change_triggers": [
+        "Official main export or pool corrections after trades; do not silently map INDAllen to SF eligibility.",
+        "Current Mahomes practice/throwing limits and Downs/Worthy receiver allocation; evaluate pair separately.",
+        "Dell route/rotation evidence and stronger funded alternatives before freeze; no forced spend.",
+        "Actual SF receiving deployment, Colts protection and Warren usage; no vacancy arithmetic."
+      ],
+      "carry_forward": [
+        "Check team/game labels after trades before carrying a role or market interpretation forward.",
+        "PFF8 vs ESPN9targets remains a source coverage conflict, not an averaged statistic.",
+        "Keep original question pass separate from new trade evidence; no automatic joint endorsement.",
+        "Assess opportunity, conditions and points separately; finality of NFL game is not settled DK scoring."
+      ],
+      "sources": [
+        {
+          "id": "coltsAllen",
+          "label": "coltsAllen",
+          "url": "https://www.colts.com/news/colts-trade-wr-keenan-allen-to-san-francisco-49ers-for-2027-sixth-round-nfl-draft-pick",
+          "retrieved_at": "2026-11-11T11:15:25.914Z",
+          "retrieved_at_toronto": "2026-11-11T06:15:25.914-05:00",
+          "publication_at": null,
+          "publication_display": "Nov10,2026 03:10PM displayed; timezone not verified",
+          "scope": "Primary Colts confirm Allen traded to SF on Nov10. FantasyPros now reports SF WR@DAL, $5,100; prior IND/MIA annotation no longer describes his team/game. His SF availability/deployment and official pool treatment remain unverified."
+        },
+        {
+          "id": "downs",
+          "label": "downs",
+          "url": "https://www.colts.com/news/colts-acquire-2027-fourth-round-fifth-round-pick-from-kansas-city-chiefs-in-exchange-for-wide-receiver-josh-downs-2027-seventh-round-pick",
+          "retrieved_at": "2026-11-11T11:14:31.699Z",
+          "retrieved_at_toronto": "2026-11-11T06:14:31.699-05:00",
+          "publication_at": null,
+          "publication_display": "Nov10,2026 04:15PM displayed; timezone not verified",
+          "scope": "Primary Colts confirm Downs traded to KC and name Nelson/Buckner departures. Downs57targets through9games is a season total, not a forecast or immediately available KC workload. Departures affect Warren competition and protection as well as Rice/Kelce."
+        },
+        {
+          "id": "allen",
+          "label": "allen",
+          "url": "https://www.nfl.com/news/nfl-network-colts-to-trade-wr-keenan-allen-to-49ers",
+          "retrieved_at": "2026-11-11T11:14:33.340Z",
+          "retrieved_at_toronto": "2026-11-11T06:14:33.340-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "NFL league article confirms transaction and describes SF's injured receiver room. Does not establish Week10 role, practice or active status."
+        },
+        {
+          "id": "prices",
+          "label": "prices",
+          "url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "retrieved_at": "2026-11-11T11:14:33.118Z",
+          "retrieved_at_toronto": "2026-11-11T06:14:33.118-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Current raw rows match all nine selected salaries/positions/opponents. Allen updated SF@DAL5100; DownsKC@ATL4700. No exact official group, export or player IDs obtained."
+        },
+        {
+          "id": "rules",
+          "label": "rules",
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-11T11:14:33.353Z",
+          "retrieved_at_toronto": "2026-11-11T06:14:33.353-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Official NFLClassic: QB,2RB,3WR,TE,FLEX(RB/WR/TE),DST; at least2games;$50k. PPR; passing0.04/yard,4TD,-1INT; rushing/receiving0.1/yard,6TD; +3 at300pass/100rush/100rec; lostfumble-1; two-point2. DST events/PA rules retained for later reproducible scoring."
+        },
+        {
+          "id": "schedule",
+          "label": "schedule",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+          "retrieved_at": "2026-11-11T11:14:34.042Z",
+          "retrieved_at_toronto": "2026-11-11T06:14:34.042-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Primary NFL confirms same10SundayNov15afternoon fixtures; earliest13:00Toronto/18:00UTC. Thursday, Munich09:30, Sundaynight andMonday excluded from expectedmain; actual platform membership unverified."
+        },
+        {
+          "id": "prior",
+          "label": "prior",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+          "retrieved_at": "2026-11-11T11:14:33.823Z",
+          "retrieved_at_toronto": "2026-11-11T06:14:33.823-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Prior Week9 games marked final. Existing Nov9comparison complete butprovisional; all historical complete lineups have scores in feed, no pending missing complete-lineup totals."
+        },
+        {
+          "id": "pool",
+          "label": "pool",
+          "url": "https://www.draftkings.com/lobby#/NFL/0/All",
+          "retrieved_at": "2026-11-11T11:14:32.305Z",
+          "retrieved_at_toronto": "2026-11-11T06:14:32.305-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Public lobby redirects to account creation. No official export/group acquired; no account interaction undertaken."
+        },
+        {
+          "id": "dellBox",
+          "label": "dellBox",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873046",
+          "retrieved_at": "2026-11-11T11:15:28.510Z",
+          "retrieved_at_toronto": "2026-11-11T06:15:28.510-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "ESPN Houston receiving row: Dell4/105/1TD,long63,9targets; Marks1catch/4targets. No new DK points recalculated from this box."
+        },
+        {
+          "id": "pff",
+          "label": "pff",
+          "url": "https://www.pff.com/news/fantasy-football-takeaways-week-9",
+          "retrieved_at": "2026-11-11T11:15:27.634Z",
+          "retrieved_at_toronto": "2026-11-11T06:15:27.634-05:00",
+          "publication_at": "2026-11-08T17:32:38Z",
+          "publication_display": null,
+          "scope": "Attributed Houston table: Dell33snaps,22routes,8targets,team40routes; narrative55% route participation and outside rotation with Harrison/Boutte. ESPN9targets vsPFF8 unresolved coverage/definition conflict, not averaged. Sadiq57%snaps/70%12personnel; Ricebelow67%routes eachoflasttwo. These remain attributed charting."
+        },
+        {
+          "id": "mahomes",
+          "label": "mahomes",
+          "url": "https://www.espn.com/nfl/story/_/id/50434564/chiefs-qb-patrick-mahomes-day-day-elbow-injury",
+          "retrieved_at": "2026-11-11T11:15:27.168Z",
+          "retrieved_at_toronto": "2026-11-11T06:15:27.168-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "ESPN quotes MondayReidday-to-day/MRI no major injury; monitoring/swelling and full practice reps uncertain. Historical Monday update is not Wednesday clearance."
+        },
+        {
+          "id": "kcReport",
+          "label": "kcReport",
+          "url": "https://www.chiefs.com/team/injury-report/",
+          "retrieved_at": "2026-11-11T11:15:26.412Z",
+          "retrieved_at_toronto": "2026-11-11T06:15:26.412-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Primary Chiefs injury page returns legend/weekselector with no player participation rows. No usable current Wednesday report was observed; missing rows do not establish health."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w10-editor-integration-20261110T150023Z",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6a676cf09f25acfb86013a6a963b9e3439da0c3d/docs/weekly-dfs/codex/2026/week-10/daily/20261110T150023Z-editor-integration.md"
+        }
+      ],
+      "expectations": [
+        {
+          "id": "2026-w10-1111-dell-rotation",
+          "subject": "Tank Dell",
+          "statement": "Continue meaningful receiving participation in the outside rotation if active; no full-time role or repeat63-yard score expected.",
+          "support": "ESPN9targets/4-105-TD; PFF33snaps/22routes/55%routes, but8targets in its chart.",
+          "uncertainty": "Outside rotation and target-source coverage; high target rate may recede.",
+          "challenge": "Dated rotation evidence or game participation shows a minor role, even if a touchdown masks it.",
+          "observe": "Qualified snaps/routes and targets relative to Houston passing opportunity; separately report coverage and explosive-play points.",
+          "source_urls": [
+            "https://www.espn.com/nfl/boxscore/_/gameId/401873046",
+            "https://www.pff.com/news/fantasy-football-takeaways-week-9"
+          ],
+          "recorded_at": "2026-11-11T11:17:33.909Z"
+        },
+        {
+          "id": "2026-w10-1111-warren-post-trades",
+          "subject": "Tyler Warren",
+          "statement": "Remain a meaningful Colts receiving participant despite offensive personnel turnover; no guaranteed gain from departed WRs.",
+          "support": "Retained7targets plus officialAllen/Downs departures; Nelson also traded.",
+          "uncertainty": "Replacement receiver allocation, protection and absolute team passing volume.",
+          "challenge": "Lower route participation or team pass opportunity after protection changes; targets do not automatically transfer.",
+          "observe": "Targets/routes if available, team attempts/yards and protection evidence separately from touchdowns.",
+          "source_urls": [
+            "https://www.colts.com/news/colts-acquire-2027-fourth-round-fifth-round-pick-from-kansas-city-chiefs-in-exchange-for-wide-receiver-josh-downs-2027-seventh-round-pick",
+            "https://www.colts.com/news/colts-trade-wr-keenan-allen-to-san-francisco-49ers-for-2027-sixth-round-nfl-draft-pick"
+          ],
+          "recorded_at": "2026-11-11T11:17:33.909Z"
+        }
+      ],
+      "outcomes": [],
+      "contribution_records": {
+        "codex_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a4fd4194bc744ad83c8f68e9e4d45de53aefcf28/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-10.json",
+        "claude_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T123500Z-claude-v1.json",
+        "grok_questions": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2a14ddad633a36fc49aa7d288cba5ca4d689b538/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T133502Z-grok-questions-verbatim.md",
+        "codex_response": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/967778b0e9e8fb371aba9e7d9c3d811c895b096e/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T133808Z-codex-grok-response.json",
+        "claude_response": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/94a4ac9159abba6588d55a0d3008e00192fd5492/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T142258Z-claude-grok-response.json",
+        "source_receipts": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/94a4ac9159abba6588d55a0d3008e00192fd5492/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T145845Z-integration-sources.json",
+        "original_expectations": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20a2131d1363b0c14ca4c56883cb710c2541f851/docs/weekly-dfs/codex/journal/20261110T113619Z.json"
+      },
+      "collaboration": {
+        "cycle": "2026-week-10",
+        "round": 1,
+        "final_editor": "Codex",
+        "codex_v1_ready": "ready",
+        "claude_v1_ready": "ready_with_recorded_corrections",
+        "grok_questions_ready": "ready",
+        "codex_response": "complete",
+        "claude_response": "complete_received_and_verified",
+        "collaboration_ready": "actual_exchange_and_editor_dispositions_complete; distinct preferred nines remain",
+        "joint_endorsement": false,
+        "shared_final": false,
+        "final_frozen": "not_final",
+        "next_handoff": "Claude: assess this exact post-trade Dell-for-Allen candidate and Warren/Rice/CMC conditions after material practice evidence. Existing original/Grok/reply stages stay retained; no new v1 or routine Grok loop. No endorsement of this delta received. Freeze remains strictly before Nov15 12:30Toronto/17:30UTC.",
+        "new_delta_jointly_endorsed": false,
+        "current_delta_author": "Codex",
+        "claude_influence": "Actual prior Dell proposal; not a new Claude reply.",
+        "grok_coverage": "Actual original question pass predates Nov10deadline trades; no claim it inspected this delta."
+      },
+      "original_expectation_disposition": {
+        "id": "2026-w10-1110-colts-passing-opportunity",
+        "status": "conditions_changed_before_freeze",
+        "reason": "Allen nowSF andDowns nowKC; originalINDpair condition no longer applies. Original expectation retained unchanged; new Warren-only expectation recorded now."
+      }
+    }
+  ]
+}

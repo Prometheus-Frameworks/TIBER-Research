@@ -1,0 +1,360 @@
+{
+  "record_type": "daily_snapshot",
+  "notebook_convention": "Conversational research notebook; not a governed Research contract or independent review.",
+  "id": "2026-w08-2026-10-26-daily",
+  "kind": "daily",
+  "status": "partial",
+  "frozen": false,
+  "recorded_at_utc": "2026-10-26T10:59:56.161Z",
+  "recorded_at_toronto": "2026-10-26T06:59:56.161-04:00",
+  "evidence_cutoff_utc": "2026-10-26T10:59:56.161Z",
+  "season": 2026,
+  "week": 8,
+  "platform": "DraftKings",
+  "slate_date": "2026-11-01",
+  "draft_group_id": null,
+  "slate_label": "Week 8 — November 1 Sunday afternoon window, platform pool unverified",
+  "salary_cap": 50000,
+  "salary_total": 0,
+  "salary_remaining": 50000,
+  "budget_note": "No priced selections verified; all $50,000 remains unallocated. This is not a legal complete lineup.",
+  "projected_total": null,
+  "actual_total": null,
+  "projection": null,
+  "projection_unavailable": "No coherent Week 8 price/projection snapshot verified. Unknown estimates and prices remain null, not zero.",
+  "official_pool_verified": false,
+  "official_salary_export_verified": false,
+  "salary_basis": "unavailable",
+  "pool_status": "official_pool_unverified",
+  "earliest_candidate_kickoff": "2026-11-01T18:00:00Z",
+  "deadline_toronto": "2026-11-01T12:30:00-05:00",
+  "deadline_utc": "2026-11-01T17:30:00Z",
+  "deadline_note": "Toronto daylight saving time ends November 1. Deadline remains local 12:30, before earliest candidate kickoff at 13:00; earlier included kickoff would supersede.",
+  "games": [
+    {
+      "away": "BAL",
+      "home": "BUF",
+      "kickoff_et": "13:00",
+      "platform_membership": "unverified"
+    },
+    {
+      "away": "TEN",
+      "home": "CIN",
+      "kickoff_et": "13:00",
+      "platform_membership": "unverified"
+    },
+    {
+      "away": "ARI",
+      "home": "DAL",
+      "kickoff_et": "13:00",
+      "platform_membership": "unverified"
+    },
+    {
+      "away": "MIN",
+      "home": "DET",
+      "kickoff_et": "13:00",
+      "platform_membership": "unverified"
+    },
+    {
+      "away": "IND",
+      "home": "JAX",
+      "kickoff_et": "13:00",
+      "platform_membership": "unverified"
+    },
+    {
+      "away": "LV",
+      "home": "NYJ",
+      "kickoff_et": "13:00",
+      "platform_membership": "unverified"
+    },
+    {
+      "away": "CLE",
+      "home": "PIT",
+      "kickoff_et": "13:00",
+      "platform_membership": "unverified"
+    },
+    {
+      "away": "ATL",
+      "home": "TB",
+      "kickoff_et": "13:00",
+      "platform_membership": "unverified"
+    },
+    {
+      "away": "LAC",
+      "home": "LAR",
+      "kickoff_et": "16:05",
+      "platform_membership": "unverified"
+    },
+    {
+      "away": "KC",
+      "home": "DEN",
+      "kickoff_et": "16:25",
+      "platform_membership": "unverified"
+    },
+    {
+      "away": "NE",
+      "home": "MIA",
+      "kickoff_et": "16:25",
+      "platform_membership": "unverified"
+    }
+  ],
+  "excluded_windows": [
+    "CAR@GB Thursday October 29",
+    "PHI@WAS Sunday night November 1",
+    "CHI@SEA Monday November 2"
+  ],
+  "byes": [
+    "HOU",
+    "NO",
+    "NYG",
+    "SF"
+  ],
+  "picks": [],
+  "unfilled_slots": [
+    "QB",
+    "RB",
+    "RB",
+    "WR",
+    "WR",
+    "WR",
+    "TE",
+    "FLEX",
+    "DST"
+  ],
+  "research_board": [
+    {
+      "player": "Amon-Ra St. Brown",
+      "position": "WR",
+      "team": "DET",
+      "opponent": "MIN",
+      "home": true,
+      "salary": null,
+      "projected_points": null,
+      "rationale": "Retained central role: 11 targets, nine catches and 153 yards. Assess a fresh price against Williams and LaPorta rather than extrapolating the yardage.",
+      "source_ids": [
+        "epdet",
+        "w8"
+      ]
+    },
+    {
+      "player": "Jameson Williams",
+      "position": "WR",
+      "team": "DET",
+      "opponent": "MIN",
+      "home": true,
+      "salary": null,
+      "projected_points": null,
+      "rationale": "Candidate beyond the prior nine: nine targets, five catches and 91 yards show involvement beyond his two touchdowns. Compare his eventual price with St. Brown and the weaker LaPorta allocation.",
+      "source_ids": [
+        "epdet",
+        "det",
+        "w8"
+      ]
+    },
+    {
+      "player": "Braelon Allen",
+      "position": "RB",
+      "team": "NYJ",
+      "opponent": "LV",
+      "home": true,
+      "salary": null,
+      "projected_points": null,
+      "rationale": "17 carries and seven targets/six catches supplied both rushing and receiving opportunity. Recheck Hall's status and the split before assigning repeat volume.",
+      "source_ids": [
+        "epnyj",
+        "w8"
+      ]
+    },
+    {
+      "player": "Tony Pollard",
+      "position": "RB",
+      "team": "TEN",
+      "opponent": "CIN",
+      "home": false,
+      "salary": null,
+      "projected_points": null,
+      "rationale": "25 carries and three targets justify renewed study. His three touchdowns and rushing bonus drove the score; they are not a repeatable point floor.",
+      "source_ids": [
+        "epten",
+        "w8"
+      ]
+    },
+    {
+      "player": "Bucky Irving",
+      "position": "RB",
+      "team": "TB",
+      "opponent": "ATL",
+      "home": true,
+      "salary": null,
+      "projected_points": null,
+      "rationale": "Another candidate beyond the prior nine: 24 carries, but Tampa Bay ran 49 times and Gainwell had 14 carries. Evaluate the split under a less favorable script and Mayfield's health.",
+      "source_ids": [
+        "epcar",
+        "car",
+        "w8"
+      ]
+    },
+    {
+      "player": "Chris Godwin Jr.",
+      "position": "WR",
+      "team": "TB",
+      "opponent": "ATL",
+      "home": true,
+      "salary": null,
+      "projected_points": null,
+      "rationale": "Five of 11 team targets supported a role, not enough absolute volume. Requires a new price, Mayfield health and Week 8 availability checks.",
+      "source_ids": [
+        "epcar",
+        "car",
+        "w8"
+      ]
+    },
+    {
+      "player": "Keenan Allen",
+      "position": "WR",
+      "team": "IND",
+      "opponent": "JAX",
+      "home": false,
+      "salary": null,
+      "projected_points": null,
+      "rationale": "Three targets in 22 team attempts challenged the prior double-digit-target extrapolation. Keep as a question rather than automatically restoring him.",
+      "source_ids": [
+        "epind",
+        "w8"
+      ]
+    }
+  ],
+  "summary": "Week 8 opens with an unpriced research board. Detroit target allocation and the Pollard/Braelon workloads warrant fresh investigation; no Week 7 salary is reused. Five of the frozen nine are unavailable to this Sunday window through byes or Thursday scheduling.",
+  "counterargument": "One game's usage is unstable. Detroit target competition, Hall's availability and Tampa Bay's extreme run-heavy script could change the apparent values once prices and current availability are known.",
+  "revisions": [],
+  "revision_classification": "constraint_or_source_correction",
+  "previous_snapshot_id": null,
+  "cross_slate_baseline_id": "2026-w07-20261025T144553Z-freeze",
+  "important_unchanged_picks": [],
+  "cross_slate_changes": "New slate, not a within-week replacement. Stroud/Marks/Nabers/Kittle are on bye; Hubbard is Thursday. Titans/Godwin/StBrown/LaPorta need new prices; there is no automatic carryover.",
+  "research_origin": "agent_chosen",
+  "operator_input": "Standing arena assignment; no new player direction this pass. Prior praise and operator's separate lineup are not retention instructions.",
+  "collaboration": {
+    "codex_v1_ready": "partial — no complete priced v1",
+    "claude_v1_ready": "not inspected for Week 8; preserve Codex first complete v1 where feasible",
+    "grok_questions_ready": "not ready",
+    "collaboration_ready": "not ready",
+    "final_frozen": "not ready",
+    "next_handoff": "Save Codex's first supported complete Week 8 v1 before announcing codex_v1_ready. No downstream stage unlocked today.",
+    "process_proposal": "PR #57 open/unmerged; actual subscriptions/delivery remain unverified."
+  },
+  "unresolved_assumptions": [
+    "Actual DraftKings main-slate identity, game membership, eligible player IDs, positions and current salaries.",
+    "Week 8 availability reports and a coherent optional external projection snapshot.",
+    "Whether the observed workload conditions persist: Hall, Mayfield, Detroit competition and game script.",
+    "No numerical whole-lineup price tradeoff can be performed before verified prices."
+  ],
+  "what_changes_view": [
+    "A real official salary export or sufficient attributable selected prices, linked to the actual main slate.",
+    "Current availability and role evidence establishing whether the observed carry/target opportunity persists.",
+    "A supported alternative package that improves the whole roster under the cap; no forced churn."
+  ],
+  "sources": [
+    {
+      "id": "rules",
+      "label": "NFL Classic roster/scoring/PA rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-10-26T10:54:00.450Z",
+      "publication_at": null,
+      "published_display": null,
+      "scope": "NFL Classic roster/scoring/PA rules"
+    },
+    {
+      "id": "w8",
+      "label": "Week8 dates/kickoffs; not platform game set",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+      "retrieved_at": "2026-10-26T10:54:08.742Z",
+      "publication_at": null,
+      "published_display": null,
+      "scope": "Week8 dates/kickoffs; not platform game set"
+    },
+    {
+      "id": "epdet",
+      "label": "Both teams' stats, negative rushing yard and Goff lost fumble",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873020",
+      "retrieved_at": "2026-10-26T10:56:43.843Z",
+      "publication_at": null,
+      "published_display": null,
+      "scope": "Both teams' stats, negative rushing yard and Goff lost fumble"
+    },
+    {
+      "id": "epcar",
+      "label": "Both teams' stats; low passing volume and individual turnovers",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873018",
+      "retrieved_at": "2026-10-26T10:56:45.796Z",
+      "publication_at": null,
+      "published_display": null,
+      "scope": "Both teams' stats; low passing volume and individual turnovers"
+    },
+    {
+      "id": "epten",
+      "label": "Pollard and Tennessee DST inputs",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873013",
+      "retrieved_at": "2026-10-26T10:56:43.513Z",
+      "publication_at": null,
+      "published_display": null,
+      "scope": "Pollard and Tennessee DST inputs"
+    },
+    {
+      "id": "epnyj",
+      "label": "Braelon/Jets stats and returns",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873015",
+      "retrieved_at": "2026-10-26T10:57:07.264Z",
+      "publication_at": null,
+      "published_display": null,
+      "scope": "Braelon/Jets stats and returns"
+    },
+    {
+      "id": "epind",
+      "label": "Keenan stats and fumble tables",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873014",
+      "retrieved_at": "2026-10-26T10:57:07.588Z",
+      "publication_at": null,
+      "published_display": null,
+      "scope": "Keenan stats and fumble tables"
+    },
+    {
+      "id": "det",
+      "label": "Scoring summary; no Detroit conversions",
+      "url": "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261025_GB@DET/",
+      "retrieved_at": "2026-10-26T10:56:12.496Z",
+      "publication_at": null,
+      "published_display": "October 25, 2026 displayed; exact publication/update time unknown",
+      "scope": "Scoring summary; no Detroit conversions"
+    },
+    {
+      "id": "car",
+      "label": "Scoring summary including TB defensive TD/blocked PAT return; Mayfield thumb context",
+      "url": "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261025_TB@CAR/",
+      "retrieved_at": "2026-10-26T10:56:12.693Z",
+      "publication_at": null,
+      "published_display": "October 25, 2026 displayed; exact publication/update time unknown",
+      "scope": "Scoring summary including TB defensive TD/blocked PAT return; Mayfield thumb context"
+    },
+    {
+      "id": "w8price",
+      "label": "Explicit Week8 salary not-posted notice; secondary source, not proof of global platform absence",
+      "url": "https://fantasysportsedge.com/nfl/dfs/week-8",
+      "retrieved_at": "2026-10-26T10:56:42.658Z",
+      "publication_at": null,
+      "published_display": "October 25, 2026 displayed; exact publication/update time unknown",
+      "scope": "Explicit Week8 salary not-posted notice; secondary source, not proof of global platform absence"
+    }
+  ],
+  "runtime": {
+    "agent": "Codex",
+    "exact_runtime_model": null,
+    "tools_observed": [
+      "GitHub connector",
+      "Firecrawl public search/scrape",
+      "TIBER read-only capability inspection"
+    ],
+    "tiber_scope": "Current connector withholds ROP/TTS/Forecast. No suitable retained output was accessed; this is not evidence those outputs do not exist. No producer or private roster was used."
+  },
+  "expectations": []
+}

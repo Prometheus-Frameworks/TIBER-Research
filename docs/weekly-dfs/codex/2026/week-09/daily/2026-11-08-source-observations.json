@@ -1,0 +1,301 @@
+{
+  "recorded_at": "2026-11-08T11:45:19.114Z",
+  "recorded_at_toronto": "2026-11-08T06:45:19.114-05:00",
+  "sources": [
+    {
+      "id": "week8",
+      "label": "week8",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+      "retrieved_at": "2026-11-08T11:40:03.159Z",
+      "retrieved_at_toronto": "2026-11-08T06:40:03.159-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "publication_note": "Unstated source timezone not converted; retrieval is not publication.",
+      "scope": "PriorSundaygamesfinal; existing complete-lineup reviews provisional, no newly verified DK settlement/correction."
+    },
+    {
+      "id": "schedule",
+      "label": "schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+      "retrieved_at": "2026-11-08T11:40:03.226Z",
+      "retrieved_at_toronto": "2026-11-08T06:40:03.226-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "publication_note": "Unstated source timezone not converted; retrieval is not publication.",
+      "scope": "Primary November8Week9 same eleven afternoongames earliest13:00Toronto, excluded windows verified."
+    },
+    {
+      "id": "rules",
+      "label": "rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-11-08T11:40:03.591Z",
+      "retrieved_at_toronto": "2026-11-08T06:40:03.591-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "publication_note": "Unstated source timezone not converted; retrieval is not publication.",
+      "scope": "NFLClassic nine slots/twogames/50k,PPR,bonuses,lostfumble-1,DSTevents/PAattribution inspected."
+    },
+    {
+      "id": "official",
+      "label": "official",
+      "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=155994",
+      "retrieved_at": "2026-11-08T11:40:01.737Z",
+      "retrieved_at_toronto": "2026-11-08T06:40:01.737-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "publication_note": "Unstated source timezone not converted; retrieval is not publication.",
+      "scope": "586unique155994rows sameIDs/gamesasNov7; allnineoriginalprices/positions/teams/gamesverified. Blankstatusisnotclearance."
+    },
+    {
+      "id": "model",
+      "label": "model",
+      "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994",
+      "retrieved_at": "2026-11-08T11:40:04.993Z",
+      "retrieved_at_toronto": "2026-11-08T06:40:04.993-05:00",
+      "publication_at": "2026-11-07T19:21:00Z",
+      "publication_display": "Projections updated Sat 2:21 PM ET · Week 9",
+      "publication_note": "Publisher update clock mapped SaturdayNov7ET, minute precision; generation/ingestion unknown.",
+      "scope": "Main11games duplicate selectorsagree; Sat2:21PMET. Mitchell9.5 versusprior6.9; otherselectedvaluesunchanged. No builderexecuted."
+    },
+    {
+      "id": "sfnews",
+      "label": "sfnews",
+      "url": "https://www.49ers.com/news/",
+      "retrieved_at": "2026-11-08T11:40:02.982Z",
+      "retrieved_at_toronto": "2026-11-08T06:40:02.982-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "publication_note": "Unstated source timezone not converted; retrieval is not publication.",
+      "scope": "Primary index locatesdatedroster announcement."
+    },
+    {
+      "id": "sf",
+      "label": "sf",
+      "url": "https://www.49ers.com/team/injury-report/",
+      "retrieved_at": "2026-11-08T11:40:02.708Z",
+      "retrieved_at_toronto": "2026-11-08T06:40:02.708-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "publication_note": "Unstated source timezone not converted; retrieval is not publication.",
+      "scope": "FridayBosaFP,Hobbs/Neal/RobinsonQ. GenericRobinsonQsupersededbySaturdayannouncement; Hobbsactivationnotverified."
+    },
+    {
+      "id": "cle",
+      "label": "cle",
+      "url": "https://www.clevelandbrowns.com/team/injury-report/",
+      "retrieved_at": "2026-11-08T11:40:02.602Z",
+      "retrieved_at_toronto": "2026-11-08T06:40:02.602-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "publication_note": "Unstated source timezone not converted; retrieval is not publication.",
+      "scope": "FanninFridaygroinLP/nodesignation; WatsonQ. Sundayinactivesnotinspected."
+    },
+    {
+      "id": "kc",
+      "label": "kc",
+      "url": "https://www.chiefs.com/team/injury-report/",
+      "retrieved_at": "2026-11-08T11:40:02.528Z",
+      "retrieved_at_toronto": "2026-11-08T06:40:02.528-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "publication_note": "Unstated source timezone not converted; retrieval is not publication.",
+      "scope": "Mahomes/RiceFridayFP/nodesignation; WilsonOUT. No targetallocationimplied."
+    },
+    {
+      "id": "sfmoves",
+      "label": "sfmoves",
+      "url": "https://www.49ers.com/news/49ers-make-a-series-of-moves-head-of-lvvssf",
+      "retrieved_at": "2026-11-08T11:42:33.815Z",
+      "retrieved_at_toronto": "2026-11-08T06:42:33.815-05:00",
+      "publication_at": null,
+      "publication_display": "Published: Nov 07, 2026 at 01:20 PM",
+      "publication_note": "Unstated source timezone not converted; retrieval is not publication.",
+      "scope": "November7primary: RobinsonactivatedIR/Qremoved, KirkIR,Hodgeelevated. NoHobbsactivationstated."
+    },
+    {
+      "id": "sfarticle",
+      "label": "sfarticle",
+      "url": "https://www.49ers.com/news/49ers-rule-out-three-wide-receivers-vs-raiders-bosa-returns-to-full-practice-ahead-of-week-9-lvvssf",
+      "retrieved_at": "2026-11-08T11:42:33.590Z",
+      "retrieved_at_toronto": "2026-11-08T06:42:33.590-05:00",
+      "publication_at": null,
+      "publication_display": "Nov 06, 2026 at 04:13 PM",
+      "publication_note": "Unstated source timezone not converted; retrieval is not publication.",
+      "scope": "November6primary BosaFP,nodesignation,coachclearedreturn afterWeek2absence. Actualsnapsunknown."
+    },
+    {
+      "id": "cleqb",
+      "label": "cleqb",
+      "url": "https://www.clevelandbrowns.com/news/shedeur-sanders-to-start-week-9-against-the-saints",
+      "retrieved_at": "2026-11-08T11:42:33.408Z",
+      "retrieved_at_toronto": "2026-11-08T06:42:33.408-05:00",
+      "publication_at": null,
+      "publication_display": "Nov 06, 2026 at 02:10 PM",
+      "publication_note": "Unstated source timezone not converted; retrieval is not publication.",
+      "scope": "November6primary namesSandersstarter, firstteamrepsallweek. NoautomaticTEbenefit."
+    },
+    {
+      "id": "lines",
+      "label": "lines",
+      "url": "https://www.vegasinsider.com/nfl/nfl-week-9-odds-2026/",
+      "retrieved_at": "2026-11-08T11:42:38.374Z",
+      "retrieved_at_toronto": "2026-11-08T06:42:38.374-05:00",
+      "publication_at": null,
+      "publication_display": "Header Nov6 9:51PM; body Updated on11/8/26",
+      "publication_note": "Unstated source timezone not converted; retrieval is not publication.",
+      "scope": "SummarySEA-8.5/39.5=>ARI15.5;SF-9.5/51.5=>LV21.0 versusprior20.75. HeaderNov6/bodyUpdated11/8 clockconflict."
+    },
+    {
+      "id": "sea",
+      "label": "sea",
+      "url": "https://www.seahawks.com/news/week-9-injury-report-cardinals-at-seahawks",
+      "retrieved_at": "2026-11-08T11:43:15.357Z",
+      "retrieved_at_toronto": "2026-11-08T06:43:15.357-05:00",
+      "publication_at": null,
+      "publication_display": "Nov 06, 2026 at 02:05 PM",
+      "publication_note": "Unstated source timezone not converted; retrieval is not publication.",
+      "scope": "FridayWilliams/Nwosu/PiliOUT,O'TooleQ;ArizonaGaines/JaydenWilliamsOUT. ContrarySeattlecasepreserved."
+    }
+  ],
+  "observations": {
+    "sf_roster": "Robinsonactivated/Qremoved;KirkIR;Hodgeelevated. Hobbsactivationunverified.",
+    "model_change": {
+      "prior_as_of": "2026-11-07T05:15:00Z",
+      "current_as_of": "2026-11-07T19:21:00Z",
+      "Mitchell": {
+        "prior": 6.9,
+        "current": 9.5
+      },
+      "prior_total": 128.7,
+      "current_total": 131.3,
+      "other_selected_estimates_unchanged": true
+    },
+    "pool_change": {
+      "previous_rows": 586,
+      "current_rows": 586,
+      "added": [],
+      "removed": [],
+      "interpretation": "Same586IDs/11games asNov7; no pool switch."
+    },
+    "prior_scores": {
+      "week6": 145.98,
+      "week7": 114.22,
+      "week8": 106.26,
+      "status": "PriorSundayfinal in primaryschedule. Existingreviewsalreadycomparecomplete drafts; Week6/7/8 freeze145.98/114.22/106.26 stayprovisional. NonewsettledDKsource/materialcorrectionobtained; noduplicatereview.",
+      "checked_at": "2026-11-08T11:45:19.114Z"
+    }
+  },
+  "source_receipts": [
+    {
+      "id": "week8",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+      "retrieved_at": "2026-11-08T11:40:03.159Z",
+      "title": "NFL Week 8 Schedule 2026: Games, Times, Matchups & Tickets",
+      "scrape_id": "01a1baf5-4fd9-704f-8816-94470cd8c4c8",
+      "status_code": 200
+    },
+    {
+      "id": "schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+      "retrieved_at": "2026-11-08T11:40:03.226Z",
+      "title": "NFL Week 9 Schedule 2026: Games, Times, Matchups & Tickets",
+      "scrape_id": "01a1baf5-4e13-734f-a558-bd0ebe79be48",
+      "status_code": 200
+    },
+    {
+      "id": "rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-11-08T11:40:03.591Z",
+      "title": "NFL Classic Rules | DraftKings",
+      "scrape_id": "01a1baf5-4f43-759e-86f3-f2b654734648",
+      "status_code": 200
+    },
+    {
+      "id": "official",
+      "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=155994",
+      "retrieved_at": "2026-11-08T11:40:01.737Z",
+      "scrape_id": "01a1baf5-4ea4-7727-b7ed-8e18ce223255",
+      "status_code": 200
+    },
+    {
+      "id": "model",
+      "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994",
+      "retrieved_at": "2026-11-08T11:40:04.993Z",
+      "title": "2026 DraftKings NFL Salaries, Projections & Values | FullTime Fantasy",
+      "scrape_id": "01a1baf5-4ed4-72c8-b972-7bf8e64a75ad",
+      "status_code": 200
+    },
+    {
+      "id": "sfnews",
+      "url": "https://www.49ers.com/news/",
+      "retrieved_at": "2026-11-08T11:40:02.982Z",
+      "title": "49ers News | San Francisco 49ers - 49ers.com",
+      "scrape_id": "01a1baf5-4fe9-7079-8b0f-29d7a88586b3",
+      "status_code": 200
+    },
+    {
+      "id": "sf",
+      "url": "https://www.49ers.com/team/injury-report/",
+      "retrieved_at": "2026-11-08T11:40:02.708Z",
+      "title": "49ers Injury Report | San Francisco 49ers - 49ers.com",
+      "scrape_id": "01a1baf5-4ec8-775f-8f0c-ff906c710195",
+      "status_code": 200
+    },
+    {
+      "id": "cle",
+      "url": "https://www.clevelandbrowns.com/team/injury-report/",
+      "retrieved_at": "2026-11-08T11:40:02.602Z",
+      "title": "Browns Injury Report | Cleveland Browns - clevelandbrowns.com",
+      "scrape_id": "01a1baf5-4f43-7039-ad44-b70ab014bc17",
+      "status_code": 200
+    },
+    {
+      "id": "kc",
+      "url": "https://www.chiefs.com/team/injury-report/",
+      "retrieved_at": "2026-11-08T11:40:02.528Z",
+      "title": "Injury Report | Kansas City Chiefs - Chiefs.com",
+      "scrape_id": "01a1baf5-4fea-7255-b0c7-25075f445cd7",
+      "status_code": 200
+    },
+    {
+      "id": "sfmoves",
+      "url": "https://www.49ers.com/news/49ers-make-a-series-of-moves-head-of-lvvssf",
+      "retrieved_at": "2026-11-08T11:42:33.815Z",
+      "title": "49ers Make a Series of Moves Ahead of #LVvsSF",
+      "scrape_id": "01a1baf7-9daf-73ac-a82d-a629c7f4b895",
+      "status_code": 200
+    },
+    {
+      "id": "sfarticle",
+      "url": "https://www.49ers.com/news/49ers-rule-out-three-wide-receivers-vs-raiders-bosa-returns-to-full-practice-ahead-of-week-9-lvvssf",
+      "retrieved_at": "2026-11-08T11:42:33.590Z",
+      "title": "49ers Rule Out Three Wide Receivers vs. Raiders; Bosa Returns to Full Practice Ahead of Week 9 #LVvsSF",
+      "scrape_id": "01a1baf7-9cf7-733a-9432-30ebd6453f7f",
+      "status_code": 200
+    },
+    {
+      "id": "cleqb",
+      "url": "https://www.clevelandbrowns.com/news/shedeur-sanders-to-start-week-9-against-the-saints",
+      "retrieved_at": "2026-11-08T11:42:33.408Z",
+      "title": "Shedeur Sanders to start Week 9 against the Saints",
+      "scrape_id": "01a1baf7-9c4a-704b-a827-9f2fefa3056f",
+      "status_code": 200
+    },
+    {
+      "id": "lines",
+      "url": "https://www.vegasinsider.com/nfl/nfl-week-9-odds-2026/",
+      "retrieved_at": "2026-11-08T11:42:38.374Z",
+      "title": "NFL Week 9 Odds: Lines, Spreads, Betting Trends for Every Game",
+      "scrape_id": "01a1baf7-9c4e-73fb-bdb1-2edc13c0a32a",
+      "status_code": 200
+    },
+    {
+      "id": "sea",
+      "url": "https://www.seahawks.com/news/week-9-injury-report-cardinals-at-seahawks",
+      "retrieved_at": "2026-11-08T11:43:15.357Z",
+      "title": "Week 9 Injury Report: Cardinals at Seahawks",
+      "scrape_id": "01a1baf8-3e10-7744-8cba-10e047743d5a",
+      "status_code": 200
+    }
+  ]
+}

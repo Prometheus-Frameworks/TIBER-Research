@@ -1,0 +1,51 @@
+{
+  "record_type": "third_model_questions_receipt",
+  "id": "2026-w08-r2-grok-questions-ready",
+  "cycle": "2026-w08-2026-11-01",
+  "round": 2,
+  "stage": "grok_questions_ready",
+  "status": "ready",
+  "scope_qualification": "Actual current-candidate question pass received with disclosed omitted requested inputs; not full-packet inspection or full-source football verification.",
+  "author": "Grok Bot",
+  "posted_by": "Grok Bot via operator GitHub connector, as attributed; account Prometheus-Frameworks",
+  "runtime": null,
+  "request_id": "2026-w08-r2-grok-questions",
+  "recorded_at": "2026-10-31T14:21:05.043Z",
+  "recorded_at_toronto": "2026-10-31T10:21:05.043-04:00",
+  "published_at": "2026-10-31T14:17:18Z",
+  "updated_at": "2026-10-31T14:17:18Z",
+  "first_observed_receipt": "2026-10-31T14:18:59.820Z",
+  "source_comment": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43#issuecomment-6544563500",
+  "original_generation_time": null,
+  "author_claimed_cutoff": "2026-10-31 approximately10:25Toronto/14:25UTC",
+  "author_claimed_retrieval_window": "approximately10:20–10:25Toronto",
+  "clock_validation": "Unverified and inconsistent: claimed cutoff/retrieval window is later than actual14:17:18Z publication and first observed receipt14:18:59Z. Do not use it as a verified historical evidence cutoff or silently repair it.",
+  "completed_at": null,
+  "completion_note": "Output exists by GitHub publication; exact generation/research clocks unknown.",
+  "claimed_inspected_inputs": {
+    "current_candidate": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json",
+    "salary_export": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31-draftkings-153728.csv",
+    "claude_revision": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/28b38cca26893644a362e8fed8e9f3dd34309c43/docs/weekly-dfs/codex/2026/week-08/collaboration/20261031T125437Z-claude-revision-response.md",
+    "codex_reply": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/3d03592144037075e395566bdcef2e5652687582/docs/weekly-dfs/codex/2026/week-08/collaboration/20261031T140231Z-codex-response.md",
+    "claude_final_reply": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20f728d03aa866fdd42ec973a2998263a698a7d5/docs/weekly-dfs/codex/2026/week-08/collaboration/20261031T140633Z-claude-endorsement-reply.md",
+    "collaboration_ready": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/932ae4b9157ab84652089359104107484d579872/docs/weekly-dfs/codex/2026/week-08/collaboration/20261031T141100Z-collaboration-ready.json"
+  },
+  "claimed_skipped_inputs": {
+    "common_inputs": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d81c103e9fd568776327e45a5af3b3485c768f0b/docs/weekly-dfs/codex/2026/week-08/collaboration/20261028T101856Z-common-inputs.json",
+    "codex_original": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5afc63ae9519af75cc8281dd3c395490bc9eab5c/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-28.json",
+    "saturday_sources": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31-sources.json"
+  },
+  "other_inspected": "Round2 packet03bdbe0 and PR comments through6544527512, as attributed.",
+  "source_quality": "Grok states new injury/weather evidence came only from search summaries; no full pages. Codex's full-page checks are separate, actual later reads.",
+  "question_ids": [
+    "G-W08-Q1",
+    "G-W08-Q2",
+    "G-W08-Q3"
+  ],
+  "verbatim_copy": "docs/weekly-dfs/codex/2026/week-08/collaboration/20261031T142105Z-grok-questions-verbatim.md",
+  "claude_original_v1": "excluded_this_week_missing_input; operator handoff gap; actual revisions preserved",
+  "grok_hold_opinion": "Attributed Grok judgment, not new football evidence or final endorsement.",
+  "lineup": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json",
+  "roster_unchanged": true,
+  "frozen": false
+}

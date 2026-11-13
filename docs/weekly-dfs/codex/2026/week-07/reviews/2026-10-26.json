@@ -1,0 +1,1643 @@
+{
+  "record_type": "postgame_comparison",
+  "id": "2026-w07-2026-10-26-review",
+  "notebook_convention": "Conversational notebook, same-author evaluation; not governed Research contract or independent review.",
+  "recorded_at_utc": "2026-10-26T10:59:56.161Z",
+  "recorded_at_toronto": "2026-10-26T06:59:56.161-04:00",
+  "season": 2026,
+  "week": 7,
+  "slate_date": "2026-10-25",
+  "draft_group_id": "155198",
+  "status": "provisional",
+  "scoring_status": "provisional",
+  "scored_at": "2026-10-26T10:59:56.161Z",
+  "finality": "All ten Sunday main-slate games are final on the NFL schedule. These are reproducible DraftKings-rule calculations, not verified settled platform totals. Stat corrections remain possible; material corrections require another dated review.",
+  "correction_of": null,
+  "freeze_reference": {
+    "id": "2026-w07-20261025T144553Z-freeze",
+    "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/22f61d352373f222ab94955bfcf6686470e655d6/docs/weekly-dfs/codex/2026/week-07/freeze/20261025T144553Z.json",
+    "frozen_at": "2026-10-25T14:45:53.222Z",
+    "evidence_cutoff": "2026-10-25T14:44:42.731Z",
+    "deadline_utc": "2026-10-25T16:30:00Z",
+    "selection_binding": {
+      "method": "immutable candidate JSON file/commit with exact nine and original salaries",
+      "commit": "14daf726c4c4571c032b2d8045b052aa43adf082",
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/14daf726c4c4571c032b2d8045b052aa43adf082/docs/weekly-dfs/codex/2026/week-07/freeze/20261025T144442Z-candidate.json"
+    },
+    "expectation_binding": {
+      "commit": "14daf726c4c4571c032b2d8045b052aa43adf082",
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/14daf726c4c4571c032b2d8045b052aa43adf082/docs/weekly-dfs/codex/2026/week-07/freeze/20261025T144442Z-expectations.json",
+      "ids": [
+        "2026-w07-1021-nabers-role",
+        "2026-w07-1022-nabers-qb-condition",
+        "2026-w07-1023-marks-role",
+        "2026-w07-1024-stbrown-role",
+        "2026-w07-1024-kittle-role",
+        "2026-w07-1024-godwin-condition"
+      ],
+      "note": "Original IDs, timestamps, statements and original immutable notebook links preserved. Legacy missing expectations remain absent."
+    },
+    "authorship": "Codex-authored fallback informed by Claude initial draft and Grok questions",
+    "joint_revision_complete": false
+  },
+  "postdeadline_selection_changes": 0,
+  "scoring_method": {
+    "type": "reconstructed_from_public_box_scores_and_scoring_plays",
+    "rules_url": "https://www.draftkings.com/help/rules/1",
+    "offense_formula": "0.04*pass_yards+4*pass_td-interceptions_thrown+0.1*(rush_yards+rec_yards)+6*(rush_td+rec_td+return_td+offensive_fumble_recovery_td)+receptions-fumbles_lost+2*two_point+3*(pass_yards>=300)+3*(rush_yards>=100)+3*(rec_yards>=100)",
+    "dst_rules": {
+      "sack": 1,
+      "interception": 2,
+      "fumble_recovery": 2,
+      "return_td": 6,
+      "safety": 2,
+      "blocked_kick": 2,
+      "conversion_return": 2,
+      "points_allowed_bands": {
+        "0": 10,
+        "1-6": 7,
+        "7-13": 4,
+        "14-20": 1,
+        "21-27": 0,
+        "28-34": -1,
+        "35+": -4
+      }
+    },
+    "zero_categories": "Individual passing/rushing/receiving/fumble/return tables and game scoring summaries inspected; absent scoring categories are zero. Gross passer yards used, never net team yards. Bonuses, conversions and fumbles lost explicitly included.",
+    "notes": [
+      "Stroud's successful2ptpass earns2;Marks reversed lostfumble doesnot deduct1.",
+      "Kittle1lostfumble;Goff1lostfumble;ASB-1rushingyard.",
+      "Titans27PA allcount;1sack/1INT/1FR;missedFGhit upright not blocked.",
+      "Jets28PA alloffensiveTD/PAT;2sacks;no turnovers/returns/safeties/blocks."
+    ]
+  },
+  "player_scores": [
+    {
+      "player": "C.J. Stroud",
+      "source_ids": [
+        "hou",
+        "rules",
+        "cbshou"
+      ],
+      "stats": {
+        "pass_yards": 153,
+        "pass_td": 2,
+        "interceptions_thrown": 0,
+        "rush_yards": 4,
+        "rush_td": 0,
+        "receptions": 0,
+        "rec_yards": 0,
+        "rec_td": 0,
+        "fumbles_lost": 0,
+        "return_td": 0,
+        "two_point": 1,
+        "offensive_fumble_recovery_td": 0,
+        "rush_att": 2
+      },
+      "actual_points": 16.52,
+      "calculation": "153×.04 + 2×4 + 4×.1 + 2; successful Stover conversion is separate from ordinary passing totals."
+    },
+    {
+      "player": "Woody Marks",
+      "source_ids": [
+        "hou",
+        "rules",
+        "cbshou"
+      ],
+      "stats": {
+        "pass_yards": 0,
+        "pass_td": 0,
+        "interceptions_thrown": 0,
+        "rush_yards": 66,
+        "rush_td": 0,
+        "receptions": 1,
+        "rec_yards": 15,
+        "rec_td": 0,
+        "fumbles_lost": 0,
+        "return_td": 0,
+        "two_point": 0,
+        "offensive_fumble_recovery_td": 0,
+        "rush_att": 19,
+        "targets": 1
+      },
+      "actual_points": 9.1,
+      "calculation": "66×.1 + 1 + 15×.1; no lost fumble: initial return-TD ruling reversed."
+    },
+    {
+      "player": "Malik Nabers",
+      "source_ids": [
+        "hou",
+        "rules",
+        "cbshou"
+      ],
+      "stats": {
+        "pass_yards": 0,
+        "pass_td": 0,
+        "interceptions_thrown": 0,
+        "rush_yards": 0,
+        "rush_td": 0,
+        "receptions": 7,
+        "rec_yards": 111,
+        "rec_td": 0,
+        "fumbles_lost": 0,
+        "return_td": 0,
+        "two_point": 0,
+        "offensive_fumble_recovery_td": 0,
+        "targets": 9
+      },
+      "actual_points": 21.1,
+      "calculation": "7 + 111×.1 + 3 receiving bonus."
+    },
+    {
+      "player": "Isaiah Likely",
+      "source_ids": [
+        "hou",
+        "rules",
+        "cbshou"
+      ],
+      "stats": {
+        "pass_yards": 0,
+        "pass_td": 0,
+        "interceptions_thrown": 0,
+        "rush_yards": 0,
+        "rush_td": 0,
+        "receptions": 2,
+        "rec_yards": 12,
+        "rec_td": 0,
+        "fumbles_lost": 0,
+        "return_td": 0,
+        "two_point": 0,
+        "offensive_fumble_recovery_td": 0,
+        "targets": 4
+      },
+      "actual_points": 3.2,
+      "calculation": "2 + 12×.1."
+    },
+    {
+      "player": "Jaylin Noel",
+      "source_ids": [
+        "hou",
+        "rules",
+        "cbshou"
+      ],
+      "stats": {
+        "pass_yards": 0,
+        "pass_td": 0,
+        "interceptions_thrown": 0,
+        "rush_yards": 0,
+        "rush_td": 0,
+        "receptions": 2,
+        "rec_yards": -3,
+        "rec_td": 0,
+        "fumbles_lost": 0,
+        "return_td": 0,
+        "two_point": 0,
+        "offensive_fumble_recovery_td": 0,
+        "targets": 2
+      },
+      "actual_points": 1.7,
+      "calculation": "2 - 3×.1; no return TD."
+    },
+    {
+      "player": "Chuba Hubbard",
+      "source_ids": [
+        "epcar",
+        "rules"
+      ],
+      "stats": {
+        "pass_yards": 0,
+        "pass_td": 0,
+        "interceptions_thrown": 0,
+        "rush_yards": 33,
+        "rush_td": 0,
+        "receptions": 4,
+        "rec_yards": 27,
+        "rec_td": 0,
+        "fumbles_lost": 0,
+        "return_td": 0,
+        "two_point": 0,
+        "offensive_fumble_recovery_td": 0,
+        "rush_att": 7,
+        "targets": 5
+      },
+      "actual_points": 10,
+      "calculation": "33×.1 + 4 + 27×.1."
+    },
+    {
+      "player": "Chris Godwin Jr.",
+      "source_ids": [
+        "epcar",
+        "rules"
+      ],
+      "stats": {
+        "pass_yards": 0,
+        "pass_td": 0,
+        "interceptions_thrown": 0,
+        "rush_yards": 0,
+        "rush_td": 0,
+        "receptions": 4,
+        "rec_yards": 27,
+        "rec_td": 0,
+        "fumbles_lost": 0,
+        "return_td": 0,
+        "two_point": 0,
+        "offensive_fumble_recovery_td": 0,
+        "targets": 5
+      },
+      "actual_points": 6.7,
+      "calculation": "4 + 27×.1."
+    },
+    {
+      "player": "Amon-Ra St. Brown",
+      "source_ids": [
+        "epdet",
+        "rules"
+      ],
+      "stats": {
+        "pass_yards": 0,
+        "pass_td": 0,
+        "interceptions_thrown": 0,
+        "rush_yards": -1,
+        "rush_td": 0,
+        "receptions": 9,
+        "rec_yards": 153,
+        "rec_td": 0,
+        "fumbles_lost": 0,
+        "return_td": 0,
+        "two_point": 0,
+        "offensive_fumble_recovery_td": 0,
+        "rush_att": 1,
+        "targets": 11
+      },
+      "actual_points": 27.2,
+      "calculation": "-.1 + 9 + 153×.1 + 3 receiving bonus."
+    },
+    {
+      "player": "Sam LaPorta",
+      "source_ids": [
+        "epdet",
+        "rules"
+      ],
+      "stats": {
+        "pass_yards": 0,
+        "pass_td": 0,
+        "interceptions_thrown": 0,
+        "rush_yards": 0,
+        "rush_td": 0,
+        "receptions": 1,
+        "rec_yards": 18,
+        "rec_td": 0,
+        "fumbles_lost": 0,
+        "return_td": 0,
+        "two_point": 0,
+        "offensive_fumble_recovery_td": 0,
+        "targets": 2
+      },
+      "actual_points": 2.8,
+      "calculation": "1 + 18×.1."
+    },
+    {
+      "player": "Jared Goff",
+      "source_ids": [
+        "epdet",
+        "rules"
+      ],
+      "stats": {
+        "pass_yards": 303,
+        "pass_td": 2,
+        "interceptions_thrown": 0,
+        "rush_yards": -1,
+        "rush_td": 0,
+        "receptions": 0,
+        "rec_yards": 0,
+        "rec_td": 0,
+        "fumbles_lost": 1,
+        "return_td": 0,
+        "two_point": 0,
+        "offensive_fumble_recovery_td": 0,
+        "rush_att": 2
+      },
+      "actual_points": 22.02,
+      "calculation": "303×.04 + 2×4 + 3 passing bonus -.1 -1 lost fumble."
+    },
+    {
+      "player": "Tony Pollard",
+      "source_ids": [
+        "epten",
+        "rules"
+      ],
+      "stats": {
+        "pass_yards": 0,
+        "pass_td": 0,
+        "interceptions_thrown": 0,
+        "rush_yards": 129,
+        "rush_td": 3,
+        "receptions": 3,
+        "rec_yards": 26,
+        "rec_td": 0,
+        "fumbles_lost": 0,
+        "return_td": 0,
+        "two_point": 0,
+        "offensive_fumble_recovery_td": 0,
+        "rush_att": 25,
+        "targets": 3
+      },
+      "actual_points": 39.5,
+      "calculation": "129×.1 + 3 rushing bonus + 3×6 + 3 + 26×.1."
+    },
+    {
+      "player": "Braelon Allen",
+      "source_ids": [
+        "epnyj",
+        "rules"
+      ],
+      "stats": {
+        "pass_yards": 0,
+        "pass_td": 0,
+        "interceptions_thrown": 0,
+        "rush_yards": 104,
+        "rush_td": 0,
+        "receptions": 6,
+        "rec_yards": 30,
+        "rec_td": 0,
+        "fumbles_lost": 0,
+        "return_td": 0,
+        "two_point": 0,
+        "offensive_fumble_recovery_td": 0,
+        "rush_att": 17,
+        "targets": 7
+      },
+      "actual_points": 22.4,
+      "calculation": "104×.1 + 3 rushing bonus + 6 + 30×.1."
+    },
+    {
+      "player": "Puka Nacua",
+      "source_ids": [
+        "eplar",
+        "rules"
+      ],
+      "stats": {
+        "pass_yards": 0,
+        "pass_td": 0,
+        "interceptions_thrown": 0,
+        "rush_yards": 10,
+        "rush_td": 0,
+        "receptions": 8,
+        "rec_yards": 68,
+        "rec_td": 1,
+        "fumbles_lost": 0,
+        "return_td": 0,
+        "two_point": 0,
+        "offensive_fumble_recovery_td": 0,
+        "rush_att": 2,
+        "targets": 10
+      },
+      "actual_points": 21.8,
+      "calculation": "10×.1 + 8 + 68×.1 + 6."
+    },
+    {
+      "player": "Keenan Allen",
+      "source_ids": [
+        "epind",
+        "rules"
+      ],
+      "stats": {
+        "pass_yards": 0,
+        "pass_td": 0,
+        "interceptions_thrown": 0,
+        "rush_yards": 0,
+        "rush_td": 0,
+        "receptions": 3,
+        "rec_yards": 31,
+        "rec_td": 0,
+        "fumbles_lost": 0,
+        "return_td": 0,
+        "two_point": 0,
+        "offensive_fumble_recovery_td": 0,
+        "targets": 3
+      },
+      "actual_points": 6.1,
+      "calculation": "3 + 31×.1."
+    },
+    {
+      "player": "George Kittle",
+      "source_ids": [
+        "nflsf",
+        "rules",
+        "sf"
+      ],
+      "stats": {
+        "pass_yards": 0,
+        "pass_td": 0,
+        "interceptions_thrown": 0,
+        "rush_yards": 0,
+        "rush_td": 0,
+        "receptions": 8,
+        "rec_yards": 88,
+        "rec_td": 0,
+        "fumbles_lost": 1,
+        "return_td": 0,
+        "two_point": 0,
+        "offensive_fumble_recovery_td": 0,
+        "targets": 10
+      },
+      "actual_points": 15.8,
+      "calculation": "8 + 88×.1 -1 lost fumble; no receiving bonus."
+    },
+    {
+      "player": "Christian McCaffrey",
+      "source_ids": [
+        "nflsf",
+        "rules",
+        "sf"
+      ],
+      "stats": {
+        "pass_yards": 0,
+        "pass_td": 0,
+        "interceptions_thrown": 0,
+        "rush_yards": 39,
+        "rush_td": 1,
+        "receptions": 6,
+        "rec_yards": 61,
+        "rec_td": 0,
+        "fumbles_lost": 0,
+        "return_td": 0,
+        "two_point": 0,
+        "offensive_fumble_recovery_td": 0,
+        "rush_att": 7,
+        "targets": 7
+      },
+      "actual_points": 22,
+      "calculation": "39×.1 + 6 rushing TD + 6 + 61×.1."
+    },
+    {
+      "player": "Titans",
+      "source_ids": [
+        "epten",
+        "cbsten",
+        "rules"
+      ],
+      "stats": {
+        "sacks": 1,
+        "interceptions": 1,
+        "fumble_recoveries": 1,
+        "return_touchdowns": 0,
+        "safeties": 0,
+        "blocked_kicks": 0,
+        "two_point_or_extra_point_returns": 0,
+        "points_allowed": 27,
+        "points_allowed_fantasy": 0
+      },
+      "actual_points": 5,
+      "calculation": "1 sack + 2 interception + 2 fumble recovery + 0 PA-band. All27 Cleveland points count; missed43-yardFGhit upright, not blocked."
+    },
+    {
+      "player": "Jets",
+      "source_ids": [
+        "epnyj",
+        "nyj",
+        "rules"
+      ],
+      "stats": {
+        "sacks": 2,
+        "interceptions": 0,
+        "fumble_recoveries": 0,
+        "return_touchdowns": 0,
+        "safeties": 0,
+        "blocked_kicks": 0,
+        "two_point_or_extra_point_returns": 0,
+        "points_allowed": 28,
+        "points_allowed_fantasy": -1
+      },
+      "actual_points": 1,
+      "calculation": "2 sacks -1 PA-band. Miami scored4offensiveTDs+4PATs; no defensive scores excluded."
+    }
+  ],
+  "lineup_comparisons": [
+    {
+      "id": "2026-w07-2026-10-19-daily",
+      "original_status": "partial",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/1179a3f1a6e8fa0e8acda7d2b923698fb19426c7/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-19.md",
+      "original_salary_total": 20500,
+      "original_salary_remaining": 29500,
+      "original_projected_total": null,
+      "actual_total": null,
+      "partial_selected_subtotal": 46.1,
+      "picks": [
+        {
+          "slot": "WR",
+          "player": "Puka Nacua",
+          "original_salary": 8400,
+          "original_projected_points": null,
+          "actual_points": 21.8
+        },
+        {
+          "slot": "WR",
+          "player": "Malik Nabers",
+          "original_salary": 6800,
+          "original_projected_points": null,
+          "actual_points": 21.1
+        },
+        {
+          "slot": "TE",
+          "player": "Isaiah Likely",
+          "original_salary": 5300,
+          "original_projected_points": null,
+          "actual_points": 3.2
+        }
+      ]
+    },
+    {
+      "id": "2026-w07-20261019T113232Z-daily",
+      "original_status": "complete",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/df3c16287403ef566bf40bc148ba67d0b9227152/docs/weekly-dfs/codex/2026/week-07/daily/20261019T113232Z.md",
+      "original_salary_total": 49100,
+      "original_salary_remaining": 900,
+      "original_projected_total": null,
+      "actual_total": 108.02,
+      "partial_selected_subtotal": null,
+      "picks": [
+        {
+          "slot": "QB",
+          "player": "C.J. Stroud",
+          "original_salary": 5700,
+          "original_projected_points": null,
+          "actual_points": 16.52
+        },
+        {
+          "slot": "RB",
+          "player": "Chuba Hubbard",
+          "original_salary": 6700,
+          "original_projected_points": null,
+          "actual_points": 10
+        },
+        {
+          "slot": "RB",
+          "player": "Braelon Allen",
+          "original_salary": 5900,
+          "original_projected_points": null,
+          "actual_points": 22.4
+        },
+        {
+          "slot": "WR",
+          "player": "Puka Nacua",
+          "original_salary": 8400,
+          "original_projected_points": null,
+          "actual_points": 21.8
+        },
+        {
+          "slot": "WR",
+          "player": "Malik Nabers",
+          "original_salary": 6800,
+          "original_projected_points": null,
+          "actual_points": 21.1
+        },
+        {
+          "slot": "WR",
+          "player": "Chris Godwin Jr.",
+          "original_salary": 4300,
+          "original_projected_points": null,
+          "actual_points": 6.7
+        },
+        {
+          "slot": "TE",
+          "player": "Sam LaPorta",
+          "original_salary": 4800,
+          "original_projected_points": null,
+          "actual_points": 2.8
+        },
+        {
+          "slot": "FLEX",
+          "player": "Jaylin Noel",
+          "original_salary": 3900,
+          "original_projected_points": null,
+          "actual_points": 1.7
+        },
+        {
+          "slot": "DST",
+          "player": "Titans",
+          "original_salary": 2600,
+          "original_projected_points": null,
+          "actual_points": 5
+        }
+      ]
+    },
+    {
+      "id": "2026-w07-2026-10-20-daily",
+      "original_status": "complete",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d45ebad3f56b02e8a570b5141405b2d2f2a34d70/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-20.md",
+      "original_salary_total": 49400,
+      "original_salary_remaining": 600,
+      "original_projected_total": null,
+      "actual_total": 129.52,
+      "partial_selected_subtotal": null,
+      "picks": [
+        {
+          "slot": "QB",
+          "player": "C.J. Stroud",
+          "original_salary": 5700,
+          "original_projected_points": null,
+          "actual_points": 16.52
+        },
+        {
+          "slot": "RB",
+          "player": "Chuba Hubbard",
+          "original_salary": 6700,
+          "original_projected_points": null,
+          "actual_points": 10
+        },
+        {
+          "slot": "RB",
+          "player": "Tony Pollard",
+          "original_salary": 5300,
+          "original_projected_points": null,
+          "actual_points": 39.5
+        },
+        {
+          "slot": "WR",
+          "player": "Puka Nacua",
+          "original_salary": 8400,
+          "original_projected_points": null,
+          "actual_points": 21.8
+        },
+        {
+          "slot": "WR",
+          "player": "Malik Nabers",
+          "original_salary": 6800,
+          "original_projected_points": null,
+          "actual_points": 21.1
+        },
+        {
+          "slot": "WR",
+          "player": "Chris Godwin Jr.",
+          "original_salary": 4300,
+          "original_projected_points": null,
+          "actual_points": 6.7
+        },
+        {
+          "slot": "TE",
+          "player": "Sam LaPorta",
+          "original_salary": 4800,
+          "original_projected_points": null,
+          "actual_points": 2.8
+        },
+        {
+          "slot": "FLEX",
+          "player": "Keenan Allen",
+          "original_salary": 4800,
+          "original_projected_points": null,
+          "actual_points": 6.1
+        },
+        {
+          "slot": "DST",
+          "player": "Titans",
+          "original_salary": 2600,
+          "original_projected_points": null,
+          "actual_points": 5
+        }
+      ]
+    },
+    {
+      "id": "2026-w07-2026-10-21-daily",
+      "original_status": "complete",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2e951cf9d88a23a1ea5b1dc6b2dff8a323ccfe88/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-21.md",
+      "original_salary_total": 49400,
+      "original_salary_remaining": 600,
+      "original_projected_total": 133.1,
+      "actual_total": 129.52,
+      "partial_selected_subtotal": null,
+      "picks": [
+        {
+          "slot": "QB",
+          "player": "C.J. Stroud",
+          "original_salary": 5700,
+          "original_projected_points": 19.2,
+          "actual_points": 16.52
+        },
+        {
+          "slot": "RB",
+          "player": "Chuba Hubbard",
+          "original_salary": 6700,
+          "original_projected_points": 20.2,
+          "actual_points": 10
+        },
+        {
+          "slot": "RB",
+          "player": "Tony Pollard",
+          "original_salary": 5300,
+          "original_projected_points": 12.4,
+          "actual_points": 39.5
+        },
+        {
+          "slot": "WR",
+          "player": "Puka Nacua",
+          "original_salary": 8400,
+          "original_projected_points": 23.9,
+          "actual_points": 21.8
+        },
+        {
+          "slot": "WR",
+          "player": "Malik Nabers",
+          "original_salary": 6800,
+          "original_projected_points": 16.2,
+          "actual_points": 21.1
+        },
+        {
+          "slot": "WR",
+          "player": "Chris Godwin Jr.",
+          "original_salary": 4300,
+          "original_projected_points": 9.4,
+          "actual_points": 6.7
+        },
+        {
+          "slot": "TE",
+          "player": "Sam LaPorta",
+          "original_salary": 4800,
+          "original_projected_points": 13.4,
+          "actual_points": 2.8
+        },
+        {
+          "slot": "FLEX",
+          "player": "Keenan Allen",
+          "original_salary": 4800,
+          "original_projected_points": 12.1,
+          "actual_points": 6.1
+        },
+        {
+          "slot": "DST",
+          "player": "Titans",
+          "original_salary": 2600,
+          "original_projected_points": 6.3,
+          "actual_points": 5
+        }
+      ]
+    },
+    {
+      "id": "2026-w07-2026-10-22-daily",
+      "original_status": "complete",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/76079a9eca29ded1a823ff79261e6158b2db907d/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-22.md",
+      "original_salary_total": 50000,
+      "original_salary_remaining": 0,
+      "original_projected_total": 138,
+      "actual_total": 112.42,
+      "partial_selected_subtotal": null,
+      "picks": [
+        {
+          "slot": "QB",
+          "player": "C.J. Stroud",
+          "original_salary": 5700,
+          "original_projected_points": 19.2,
+          "actual_points": 16.52
+        },
+        {
+          "slot": "RB",
+          "player": "Chuba Hubbard",
+          "original_salary": 6700,
+          "original_projected_points": 20.2,
+          "actual_points": 10
+        },
+        {
+          "slot": "RB",
+          "player": "Braelon Allen",
+          "original_salary": 5900,
+          "original_projected_points": 17.3,
+          "actual_points": 22.4
+        },
+        {
+          "slot": "WR",
+          "player": "Puka Nacua",
+          "original_salary": 8400,
+          "original_projected_points": 23.9,
+          "actual_points": 21.8
+        },
+        {
+          "slot": "WR",
+          "player": "Malik Nabers",
+          "original_salary": 6800,
+          "original_projected_points": 16.2,
+          "actual_points": 21.1
+        },
+        {
+          "slot": "WR",
+          "player": "Chris Godwin Jr.",
+          "original_salary": 4300,
+          "original_projected_points": 9.4,
+          "actual_points": 6.7
+        },
+        {
+          "slot": "TE",
+          "player": "Sam LaPorta",
+          "original_salary": 4800,
+          "original_projected_points": 13.4,
+          "actual_points": 2.8
+        },
+        {
+          "slot": "FLEX",
+          "player": "Keenan Allen",
+          "original_salary": 4800,
+          "original_projected_points": 12.1,
+          "actual_points": 6.1
+        },
+        {
+          "slot": "DST",
+          "player": "Titans",
+          "original_salary": 2600,
+          "original_projected_points": 6.3,
+          "actual_points": 5
+        }
+      ]
+    },
+    {
+      "id": "2026-w07-2026-10-23-daily",
+      "original_status": "complete",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/711eb4bf815f19f1aa986123e68207fd89ed98d5/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-23.md",
+      "original_salary_total": 49700,
+      "original_salary_remaining": 300,
+      "original_projected_total": 138.8,
+      "actual_total": 99.12,
+      "partial_selected_subtotal": null,
+      "picks": [
+        {
+          "slot": "QB",
+          "player": "C.J. Stroud",
+          "original_salary": 5700,
+          "original_projected_points": 20.2,
+          "actual_points": 16.52
+        },
+        {
+          "slot": "RB",
+          "player": "Chuba Hubbard",
+          "original_salary": 6700,
+          "original_projected_points": 18.9,
+          "actual_points": 10
+        },
+        {
+          "slot": "RB",
+          "player": "Woody Marks",
+          "original_salary": 5600,
+          "original_projected_points": 16.6,
+          "actual_points": 9.1
+        },
+        {
+          "slot": "WR",
+          "player": "Puka Nacua",
+          "original_salary": 8400,
+          "original_projected_points": 24.5,
+          "actual_points": 21.8
+        },
+        {
+          "slot": "WR",
+          "player": "Malik Nabers",
+          "original_salary": 6800,
+          "original_projected_points": 15.9,
+          "actual_points": 21.1
+        },
+        {
+          "slot": "WR",
+          "player": "Chris Godwin Jr.",
+          "original_salary": 4300,
+          "original_projected_points": 11.1,
+          "actual_points": 6.7
+        },
+        {
+          "slot": "TE",
+          "player": "Sam LaPorta",
+          "original_salary": 4800,
+          "original_projected_points": 13.4,
+          "actual_points": 2.8
+        },
+        {
+          "slot": "FLEX",
+          "player": "Keenan Allen",
+          "original_salary": 4800,
+          "original_projected_points": 11.9,
+          "actual_points": 6.1
+        },
+        {
+          "slot": "DST",
+          "player": "Titans",
+          "original_salary": 2600,
+          "original_projected_points": 6.3,
+          "actual_points": 5
+        }
+      ]
+    },
+    {
+      "id": "2026-w07-2026-10-24-daily",
+      "original_status": "complete",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a1f25193e2927bf9ee1b262233b8c6a78d70e408/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-24.md",
+      "original_salary_total": 50000,
+      "original_salary_remaining": 0,
+      "original_projected_total": 137.2,
+      "actual_total": 114.22,
+      "partial_selected_subtotal": null,
+      "picks": [
+        {
+          "slot": "QB",
+          "player": "C.J. Stroud",
+          "original_salary": 5700,
+          "original_projected_points": 18.9,
+          "actual_points": 16.52
+        },
+        {
+          "slot": "RB",
+          "player": "Chuba Hubbard",
+          "original_salary": 6700,
+          "original_projected_points": 19.3,
+          "actual_points": 10
+        },
+        {
+          "slot": "RB",
+          "player": "Woody Marks",
+          "original_salary": 5600,
+          "original_projected_points": 17.1,
+          "actual_points": 9.1
+        },
+        {
+          "slot": "WR",
+          "player": "Amon-Ra St. Brown",
+          "original_salary": 7800,
+          "original_projected_points": 19.1,
+          "actual_points": 27.2
+        },
+        {
+          "slot": "WR",
+          "player": "Malik Nabers",
+          "original_salary": 6800,
+          "original_projected_points": 15.1,
+          "actual_points": 21.1
+        },
+        {
+          "slot": "WR",
+          "player": "Chris Godwin Jr.",
+          "original_salary": 4300,
+          "original_projected_points": 10.6,
+          "actual_points": 6.7
+        },
+        {
+          "slot": "TE",
+          "player": "Sam LaPorta",
+          "original_salary": 4800,
+          "original_projected_points": 13.3,
+          "actual_points": 2.8
+        },
+        {
+          "slot": "FLEX",
+          "player": "George Kittle",
+          "original_salary": 5700,
+          "original_projected_points": 17.4,
+          "actual_points": 15.8
+        },
+        {
+          "slot": "DST",
+          "player": "Titans",
+          "original_salary": 2600,
+          "original_projected_points": 6.4,
+          "actual_points": 5
+        }
+      ]
+    },
+    {
+      "id": "2026-w07-2026-10-25-daily",
+      "original_status": "complete",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5d6b5a43ba054dda712f07a64091182aa3e8e7b5/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-25.md",
+      "original_salary_total": 50000,
+      "original_salary_remaining": 0,
+      "original_projected_total": 137,
+      "actual_total": 114.22,
+      "partial_selected_subtotal": null,
+      "picks": [
+        {
+          "slot": "QB",
+          "player": "C.J. Stroud",
+          "original_salary": 5700,
+          "original_projected_points": 18.8,
+          "actual_points": 16.52
+        },
+        {
+          "slot": "RB",
+          "player": "Chuba Hubbard",
+          "original_salary": 6700,
+          "original_projected_points": 18.2,
+          "actual_points": 10
+        },
+        {
+          "slot": "RB",
+          "player": "Woody Marks",
+          "original_salary": 5600,
+          "original_projected_points": 17.4,
+          "actual_points": 9.1
+        },
+        {
+          "slot": "WR",
+          "player": "Amon-Ra St. Brown",
+          "original_salary": 7800,
+          "original_projected_points": 19.4,
+          "actual_points": 27.2
+        },
+        {
+          "slot": "WR",
+          "player": "Malik Nabers",
+          "original_salary": 6800,
+          "original_projected_points": 14.8,
+          "actual_points": 21.1
+        },
+        {
+          "slot": "WR",
+          "player": "Chris Godwin Jr.",
+          "original_salary": 4300,
+          "original_projected_points": 11,
+          "actual_points": 6.7
+        },
+        {
+          "slot": "TE",
+          "player": "Sam LaPorta",
+          "original_salary": 4800,
+          "original_projected_points": 13.7,
+          "actual_points": 2.8
+        },
+        {
+          "slot": "FLEX",
+          "player": "George Kittle",
+          "original_salary": 5700,
+          "original_projected_points": 17.4,
+          "actual_points": 15.8
+        },
+        {
+          "slot": "DST",
+          "player": "Titans",
+          "original_salary": 2600,
+          "original_projected_points": 6.3,
+          "actual_points": 5
+        }
+      ]
+    },
+    {
+      "id": "2026-w07-20261025T144553Z-freeze",
+      "original_status": "complete",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/22f61d352373f222ab94955bfcf6686470e655d6/docs/weekly-dfs/codex/2026/week-07/freeze/20261025T144553Z.md",
+      "original_salary_total": 50000,
+      "original_salary_remaining": 0,
+      "original_projected_total": 137.4,
+      "actual_total": 114.22,
+      "partial_selected_subtotal": null,
+      "picks": [
+        {
+          "slot": "QB",
+          "player": "C.J. Stroud",
+          "original_salary": 5700,
+          "original_projected_points": 18.9,
+          "actual_points": 16.52
+        },
+        {
+          "slot": "RB",
+          "player": "Chuba Hubbard",
+          "original_salary": 6700,
+          "original_projected_points": 18.2,
+          "actual_points": 10
+        },
+        {
+          "slot": "RB",
+          "player": "Woody Marks",
+          "original_salary": 5600,
+          "original_projected_points": 17.5,
+          "actual_points": 9.1
+        },
+        {
+          "slot": "WR",
+          "player": "Amon-Ra St. Brown",
+          "original_salary": 7800,
+          "original_projected_points": 19.9,
+          "actual_points": 27.2
+        },
+        {
+          "slot": "WR",
+          "player": "Malik Nabers",
+          "original_salary": 6800,
+          "original_projected_points": 14.8,
+          "actual_points": 21.1
+        },
+        {
+          "slot": "WR",
+          "player": "Chris Godwin Jr.",
+          "original_salary": 4300,
+          "original_projected_points": 11.1,
+          "actual_points": 6.7
+        },
+        {
+          "slot": "TE",
+          "player": "Sam LaPorta",
+          "original_salary": 4800,
+          "original_projected_points": 13.5,
+          "actual_points": 2.8
+        },
+        {
+          "slot": "FLEX",
+          "player": "George Kittle",
+          "original_salary": 5700,
+          "original_projected_points": 17.2,
+          "actual_points": 15.8
+        },
+        {
+          "slot": "DST",
+          "player": "Titans",
+          "original_salary": 2600,
+          "original_projected_points": 6.3,
+          "actual_points": 5
+        }
+      ]
+    }
+  ],
+  "external_original_comparison": {
+    "id": "2026-w07-claude-v1-receipt",
+    "author": "Claude",
+    "kind": "separate_initial_draft",
+    "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/af918ec1225c74f900fb6046d4eb92f58562a422/docs/weekly-dfs/codex/2026/week-07/collaboration/20261023T104408Z-claude-v1-receipt.json",
+    "original_salary_total": 50000,
+    "original_salary_remaining": 0,
+    "original_projected_total": null,
+    "original_self_estimate": {
+      "attributed_approximate_estimate": 138,
+      "provider": "Claude self-estimate",
+      "reproducible_method_supplied": false,
+      "feed_projected_total": null,
+      "note": "Not SPAGS; no player forecasts supplied. Do not combine or backfill."
+    },
+    "actual_total": 102.92,
+    "picks": [
+      {
+        "slot": "QB",
+        "player": "Jared Goff",
+        "original_salary": 6800,
+        "actual_points": 22.02
+      },
+      {
+        "slot": "RB",
+        "player": "Christian McCaffrey",
+        "original_salary": 7600,
+        "actual_points": 22
+      },
+      {
+        "slot": "RB",
+        "player": "Woody Marks",
+        "original_salary": 5600,
+        "actual_points": 9.1
+      },
+      {
+        "slot": "WR",
+        "player": "Puka Nacua",
+        "original_salary": 8400,
+        "actual_points": 21.8
+      },
+      {
+        "slot": "WR",
+        "player": "Chris Godwin Jr.",
+        "original_salary": 4300,
+        "actual_points": 6.7
+      },
+      {
+        "slot": "WR",
+        "player": "Jaylin Noel",
+        "original_salary": 3900,
+        "actual_points": 1.7
+      },
+      {
+        "slot": "TE",
+        "player": "Sam LaPorta",
+        "original_salary": 4800,
+        "actual_points": 2.8
+      },
+      {
+        "slot": "FLEX",
+        "player": "George Kittle",
+        "original_salary": 5700,
+        "actual_points": 15.8
+      },
+      {
+        "slot": "DST",
+        "player": "Jets",
+        "original_salary": 2900,
+        "actual_points": 1
+      }
+    ],
+    "note": "Original generation/cutoff unknown; separately authored, not blind; no actual joint revision or shared final. Self-estimate not SPAGS."
+  },
+  "revision_contributions": [
+    {
+      "from": "2026-w07-20261019T113232Z-daily",
+      "to": "2026-w07-2026-10-20-daily",
+      "removed": [
+        {
+          "slot": "RB",
+          "player": "Braelon Allen",
+          "original_salary": 5900,
+          "original_projected_points": null,
+          "actual_points": 22.4
+        },
+        {
+          "slot": "FLEX",
+          "player": "Jaylin Noel",
+          "original_salary": 3900,
+          "original_projected_points": null,
+          "actual_points": 1.7
+        }
+      ],
+      "added": [
+        {
+          "slot": "RB",
+          "player": "Tony Pollard",
+          "original_salary": 5300,
+          "original_projected_points": null,
+          "actual_points": 39.5
+        },
+        {
+          "slot": "FLEX",
+          "player": "Keenan Allen",
+          "original_salary": 4800,
+          "original_projected_points": null,
+          "actual_points": 6.1
+        }
+      ],
+      "change_contribution": 21.5,
+      "salary_delta": 300
+    },
+    {
+      "from": "2026-w07-2026-10-20-daily",
+      "to": "2026-w07-2026-10-21-daily",
+      "removed": [],
+      "added": [],
+      "change_contribution": 0,
+      "salary_delta": 0
+    },
+    {
+      "from": "2026-w07-2026-10-21-daily",
+      "to": "2026-w07-2026-10-22-daily",
+      "removed": [
+        {
+          "slot": "RB",
+          "player": "Tony Pollard",
+          "original_salary": 5300,
+          "original_projected_points": 12.4,
+          "actual_points": 39.5
+        }
+      ],
+      "added": [
+        {
+          "slot": "RB",
+          "player": "Braelon Allen",
+          "original_salary": 5900,
+          "original_projected_points": 17.3,
+          "actual_points": 22.4
+        }
+      ],
+      "change_contribution": -17.1,
+      "salary_delta": 600
+    },
+    {
+      "from": "2026-w07-2026-10-22-daily",
+      "to": "2026-w07-2026-10-23-daily",
+      "removed": [
+        {
+          "slot": "RB",
+          "player": "Braelon Allen",
+          "original_salary": 5900,
+          "original_projected_points": 17.3,
+          "actual_points": 22.4
+        }
+      ],
+      "added": [
+        {
+          "slot": "RB",
+          "player": "Woody Marks",
+          "original_salary": 5600,
+          "original_projected_points": 16.6,
+          "actual_points": 9.1
+        }
+      ],
+      "change_contribution": -13.3,
+      "salary_delta": -300
+    },
+    {
+      "from": "2026-w07-2026-10-23-daily",
+      "to": "2026-w07-2026-10-24-daily",
+      "removed": [
+        {
+          "slot": "WR",
+          "player": "Puka Nacua",
+          "original_salary": 8400,
+          "original_projected_points": 24.5,
+          "actual_points": 21.8
+        },
+        {
+          "slot": "FLEX",
+          "player": "Keenan Allen",
+          "original_salary": 4800,
+          "original_projected_points": 11.9,
+          "actual_points": 6.1
+        }
+      ],
+      "added": [
+        {
+          "slot": "WR",
+          "player": "Amon-Ra St. Brown",
+          "original_salary": 7800,
+          "original_projected_points": 19.1,
+          "actual_points": 27.2
+        },
+        {
+          "slot": "FLEX",
+          "player": "George Kittle",
+          "original_salary": 5700,
+          "original_projected_points": 17.4,
+          "actual_points": 15.8
+        }
+      ],
+      "change_contribution": 15.1,
+      "salary_delta": 300
+    },
+    {
+      "from": "2026-w07-2026-10-24-daily",
+      "to": "2026-w07-2026-10-25-daily",
+      "removed": [],
+      "added": [],
+      "change_contribution": 0,
+      "salary_delta": 0
+    },
+    {
+      "from": "2026-w07-2026-10-25-daily",
+      "to": "2026-w07-20261025T144553Z-freeze",
+      "removed": [],
+      "added": [],
+      "change_contribution": 0,
+      "salary_delta": 0
+    }
+  ],
+  "expectation_packet_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/14daf726c4c4571c032b2d8045b052aa43adf082/docs/weekly-dfs/codex/2026/week-07/freeze/20261025T144442Z-expectations.json",
+  "outcomes": [
+    {
+      "expectation_id": "2026-w07-1021-nabers-role",
+      "expectation": "Nabers retains central receiving involvement.",
+      "opportunity_assessment": "supported: 9targets/7catches/111yards; most Giants targets and receiving yards.",
+      "conditions_assessment": "McCarthy started and attempted28passes. Winston's four rushing attempts do not indicate a passing replacement.",
+      "score_explanation": "21.10: seven receptions,111yards and100-yard bonus; noTD.",
+      "cutoff_judgment": "Central-role thesis supported in this game. This does not prove a lasting QB upgrade.",
+      "source_urls": [
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873016",
+        "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261025_NYG@HOU/"
+      ],
+      "id": "2026-w07-review-20261026-1",
+      "status": "provisional"
+    },
+    {
+      "expectation_id": "2026-w07-1022-nabers-qb-condition",
+      "expectation": "McCarthy expected to start; role case does not extrapolate relief-quarter yardage.",
+      "opportunity_assessment": "supported: Nabers9targets; McCarthy20/28for252.",
+      "conditions_assessment": "supported starter condition; full-game protection quality/routes unassessable here. Three sacks recorded.",
+      "score_explanation": "Nabers scored through catches/yards/bonus despite zeroGiants passingTDs.",
+      "cutoff_judgment": "The narrower pregame premise was reasonable; one game cannot isolate QB causality.",
+      "source_urls": [
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873016",
+        "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261025_NYG@HOU/"
+      ],
+      "id": "2026-w07-review-20261026-2",
+      "status": "provisional"
+    },
+    {
+      "expectation_id": "2026-w07-1023-marks-role",
+      "expectation": "With Montgomery unavailable, Marks leads HoustonRB work with some receiving involvement.",
+      "opportunity_assessment": "supported lead rushing role:19/19listedRBcarries,66yards. Receiving involvement was just1catch/1target/15yards.",
+      "conditions_assessment": "Montgomery absent from boxscore; original official OUT retained at freeze. Snaps/routes not inspected. Marks briefly left and returned perplaylog.",
+      "score_explanation": "9.10, noTD/bonus; early fumble-returnTD ruling reversed, no lost-fumble deduction.",
+      "cutoff_judgment": "Lead-carry premise held, but it did not establish a receiving floor. ReplacingBraelon lost13.30points; droppingPollard earlier cost17.10. These outcomes do not alone establish irrational pregame choices.",
+      "source_urls": [
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873016",
+        "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261025_NYG@HOU/"
+      ],
+      "id": "2026-w07-review-20261026-3",
+      "status": "provisional"
+    },
+    {
+      "expectation_id": "2026-w07-1024-stbrown-role",
+      "expectation": "StBrown central Detroit receiver; LaPorta competes for targets.",
+      "opportunity_assessment": "supported StBrown role:11targets/9catches/153yards. LaPorta2targets/1catch/18yards; production concentrated away from him.",
+      "conditions_assessment": "Detroit32passes, withWilliams9targets andGibbs6; no routes/snaps retrieved.",
+      "score_explanation": "27.20 including100-yard receiving bonus and-.1rushing. Williams caught bothDetroitTDs.",
+      "cutoff_judgment": "StBrown case held; shared team exposure did not protect LaPorta. Review role concentration rather than treating a game total as individual opportunity.",
+      "source_urls": [
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873020",
+        "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261025_GB@DET/"
+      ],
+      "id": "2026-w07-review-20261026-4",
+      "status": "provisional"
+    },
+    {
+      "expectation_id": "2026-w07-1024-kittle-role",
+      "expectation": "Kittle regular receiving contributor with Evans/Deeboabsent, not allvacatedtargets.",
+      "opportunity_assessment": "supported:10targets/8catches/88yards, both receiving totals team-leading.",
+      "conditions_assessment": "Evans/Deebo inactive perrecap. CMCthigh injury changedconditions; he still6catches/61yards. Kirk-specific routes unassessable.",
+      "score_explanation": "15.80 after1lostfumble; noTDor100-yardbonus.",
+      "cutoff_judgment": "Role expectation held. Cannot attribute allopportunity toWRabsences or predict the in-game CMCinjury.",
+      "source_urls": [
+        "https://www.nfl.com/games/49ers-at-falcons-2026-reg-7?tab=stats",
+        "https://www.cbssports.com/nfl/gametracker/recap/NFL_20261025_SF@ATL/"
+      ],
+      "id": "2026-w07-review-20261026-5",
+      "status": "provisional"
+    },
+    {
+      "expectation_id": "2026-w07-1024-godwin-condition",
+      "expectation": "WithMayfieldplaying/EgbukaOUT, Godwin stays inpassingplan.",
+      "opportunity_assessment": "supported modest claim:5of11teamtargets,4catches/27yards. Share did not create largeabsolutevolume.",
+      "conditions_assessment": "Mayfieldreturned but throwingthumb/glove and33-6halftimelead supported49runs/11passes. Egbuka absent fromtargettable; finalinactive list not separately retrieved.",
+      "score_explanation": "6.70, noTD/bonus; team43points included defense/specialteamsand rushing scores.",
+      "cutoff_judgment": "Availability/rolepremise held; treating QBreturn as passingvolume restoration would have been too strong. Originaluncertaintywasreal.",
+      "source_urls": [
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873018",
+        "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261025_TB@CAR/"
+      ],
+      "id": "2026-w07-review-20261026-6",
+      "status": "provisional"
+    },
+    {
+      "expectation_id": null,
+      "expectation": "Legacy review of LaPorta, Hubbard, Pollard, Braelon and Keenan; no new retrospective expectation IDs.",
+      "opportunity_assessment": "LaPorta2targets; Hubbard7carries/5targets; Keenan3targets in22Colts attempts. Pollard25carries/3targets andBraelon17carries/7targets both retained substantivework.",
+      "conditions_assessment": "Hubbard's33-6halftimedeficit and Indianapolis lowpassvolume differ from priorweekworkloads. Snaps/routes and all historicalavailability conditions not established.",
+      "score_explanation": "LaPorta2.8,Hubbard10,Keenan6.1; Pollard39.5 includes3TDsand100rushbonus, Braelon22.4 includes100rushbonus.",
+      "cutoff_judgment": "Retain failures: priorweekvolume was no guarantee. Pollard's observed role merits continued study without assuming3TDs repeat. No precise counterfactualprojection implied.",
+      "source_urls": [
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873020",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873018",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873014",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873013",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873015"
+      ],
+      "id": "2026-w07-review-20261026-7",
+      "status": "provisional"
+    }
+  ],
+  "sources": [
+    {
+      "id": "rules",
+      "label": "NFL Classic roster/scoring/PA rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-10-26T10:54:00.450Z",
+      "publication_at": null,
+      "published_display": null,
+      "scope": "NFL Classic roster/scoring/PA rules"
+    },
+    {
+      "id": "w7",
+      "label": "Week7 final game statuses",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+      "retrieved_at": "2026-10-26T10:54:08.430Z",
+      "publication_at": null,
+      "published_display": null,
+      "scope": "Week7 final game statuses"
+    },
+    {
+      "id": "nflsf",
+      "label": "SF receiving/rushing/fumbles; away-team table only",
+      "url": "https://www.nfl.com/games/49ers-at-falcons-2026-reg-7?tab=stats",
+      "retrieved_at": "2026-10-26T10:54:06.874Z",
+      "publication_at": null,
+      "published_display": null,
+      "scope": "SF receiving/rushing/fumbles; away-team table only"
+    },
+    {
+      "id": "hou",
+      "label": "Both teams' individual statistics; gross passing yards distinct from net",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873016",
+      "retrieved_at": "2026-10-26T10:56:11.084Z",
+      "publication_at": null,
+      "published_display": null,
+      "scope": "Both teams' individual statistics; gross passing yards distinct from net"
+    },
+    {
+      "id": "epdet",
+      "label": "Both teams' stats, negative rushing yard and Goff lost fumble",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873020",
+      "retrieved_at": "2026-10-26T10:56:43.843Z",
+      "publication_at": null,
+      "published_display": null,
+      "scope": "Both teams' stats, negative rushing yard and Goff lost fumble"
+    },
+    {
+      "id": "epcar",
+      "label": "Both teams' stats; low passing volume and individual turnovers",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873018",
+      "retrieved_at": "2026-10-26T10:56:45.796Z",
+      "publication_at": null,
+      "published_display": null,
+      "scope": "Both teams' stats; low passing volume and individual turnovers"
+    },
+    {
+      "id": "epten",
+      "label": "Pollard and Tennessee DST inputs",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873013",
+      "retrieved_at": "2026-10-26T10:56:43.513Z",
+      "publication_at": null,
+      "published_display": null,
+      "scope": "Pollard and Tennessee DST inputs"
+    },
+    {
+      "id": "epnyj",
+      "label": "Braelon/Jets stats and returns",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873015",
+      "retrieved_at": "2026-10-26T10:57:07.264Z",
+      "publication_at": null,
+      "published_display": null,
+      "scope": "Braelon/Jets stats and returns"
+    },
+    {
+      "id": "eplar",
+      "label": "Puka rush/receive/fumbles/return statistics",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873021",
+      "retrieved_at": "2026-10-26T10:57:07.164Z",
+      "publication_at": null,
+      "published_display": null,
+      "scope": "Puka rush/receive/fumbles/return statistics"
+    },
+    {
+      "id": "epind",
+      "label": "Keenan stats and fumble tables",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873014",
+      "retrieved_at": "2026-10-26T10:57:07.588Z",
+      "publication_at": null,
+      "published_display": null,
+      "scope": "Keenan stats and fumble tables"
+    },
+    {
+      "id": "cbshou",
+      "label": "McCarthy start, Stroud-to-Stover conversion, reversed Marks fumble, Noel toe injury",
+      "url": "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261025_NYG@HOU/",
+      "retrieved_at": "2026-10-26T10:57:11.695Z",
+      "publication_at": null,
+      "published_display": "October 25, 2026 displayed; exact publication/update time unknown",
+      "scope": "McCarthy start, Stroud-to-Stover conversion, reversed Marks fumble, Noel toe injury"
+    },
+    {
+      "id": "sf",
+      "label": "Injury disruption; Evans/Deebo inactive; Kittle fumble in play-by-play",
+      "url": "https://www.cbssports.com/nfl/gametracker/recap/NFL_20261025_SF@ATL/",
+      "retrieved_at": "2026-10-26T10:56:13.029Z",
+      "publication_at": null,
+      "published_display": "October 25, 2026 displayed; exact publication/update time unknown",
+      "scope": "Injury disruption; Evans/Deebo inactive; Kittle fumble in play-by-play"
+    },
+    {
+      "id": "det",
+      "label": "Scoring summary; no Detroit conversions",
+      "url": "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261025_GB@DET/",
+      "retrieved_at": "2026-10-26T10:56:12.496Z",
+      "publication_at": null,
+      "published_display": "October 25, 2026 displayed; exact publication/update time unknown",
+      "scope": "Scoring summary; no Detroit conversions"
+    },
+    {
+      "id": "car",
+      "label": "Scoring summary including TB defensive TD/blocked PAT return; Mayfield thumb context",
+      "url": "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261025_TB@CAR/",
+      "retrieved_at": "2026-10-26T10:56:12.693Z",
+      "publication_at": null,
+      "published_display": "October 25, 2026 displayed; exact publication/update time unknown",
+      "scope": "Scoring summary including TB defensive TD/blocked PAT return; Mayfield thumb context"
+    },
+    {
+      "id": "cbsten",
+      "label": "Complete scoring summary; missedFG upright, no blocked kick or conversion",
+      "url": "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261025_CLE@TEN/",
+      "retrieved_at": "2026-10-26T10:57:48.454Z",
+      "publication_at": null,
+      "published_display": "October 25, 2026 displayed; exact publication/update time unknown",
+      "scope": "Complete scoring summary; missedFG upright, no blocked kick or conversion"
+    },
+    {
+      "id": "nyj",
+      "label": "Miami offensive TD/PAT and Jets conversion attribution",
+      "url": "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261025_MIA@NYJ/",
+      "retrieved_at": "2026-10-26T10:56:45.358Z",
+      "publication_at": null,
+      "published_display": "October 25, 2026 displayed; exact publication/update time unknown",
+      "scope": "Miami offensive TD/PAT and Jets conversion attribution"
+    },
+    {
+      "id": "lar",
+      "label": "Scoring summary/no Puka conversion",
+      "url": "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261025_LAR@LV/",
+      "retrieved_at": "2026-10-26T10:56:47.158Z",
+      "publication_at": null,
+      "published_display": "October 25, 2026 displayed; exact publication/update time unknown",
+      "scope": "Scoring summary/no Puka conversion"
+    }
+  ],
+  "data_limitations": [
+    "NFL Houston/Tennessee game pages returned HiddenScore and no tables; ESPN and CBS supplied the inspected replacements.",
+    "NFL Detroit/Carolina/San Francisco pages delivered only the away-team table, duplicated. Duplication was not counted as additional events; ESPN supplied both teams for Detroit and Carolina.",
+    "Play logs include nullified and reversed plays. Final individual tables control; the initially reported Marks lost fumble was reversed.",
+    "No new settled-platform scoring evidence for Week 6 was established in this bounded pass. Its 145.98 provisional reconstructed freeze score remains unchanged.",
+    "Routes, snap shares and full postgame inactive lists were not retrieved. Mechanisms beyond inspected targets, attempts and play descriptions remain unassessable."
+  ],
+  "collaboration_evaluation": "Week 7 Grok questions and Claude's initial draft were received. A substantive Claude revision response and joint exchange were missing at freeze, so the final remains a Codex-authored fallback. No new external contribution was found. PR #57 is open and unmerged: a prospective handoff proposal, not proof of delivery. No author ranking or agent-skill claim follows.",
+  "conclusion": "Freeze: 114.22. Tuesday/Wednesday: 129.52. The last replacements improved the October 23 candidate by 15.10, but the freeze was 15.30 below Tuesday/Wednesday. Preserve every outcome; one week does not establish better reasoning."
+}

@@ -1,0 +1,1394 @@
+{
+  "record_type": "postgame_review",
+  "id": "2026-w09-review-20261109T113011Z",
+  "recorded_at_utc": "2026-11-09T11:30:11.663Z",
+  "recorded_at_toronto": "2026-11-09T06:30:11.663-05:00",
+  "season": 2026,
+  "week": 9,
+  "slate_date": "2026-11-08",
+  "draft_group_id": 155994,
+  "scoring_status": "provisional",
+  "scored_at": "2026-11-09T11:30:11.663Z",
+  "finality": "All included gamesfinal. Reproducible DK-rule reconstruction from current ESPNboxes/scoring/PBP, not settled platform scores. Stat corrections possible; material corrections append predecessors.",
+  "correction_of": null,
+  "freeze_reference": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/40cb4dadf06aa7c590ff600a23a5111b0f28be7f/docs/weekly-dfs/codex/2026/week-09/freeze/20261108T161644Z.json",
+  "postdeadline_selection_changes": false,
+  "scoring_method": {
+    "offense": "0.04*passYds+4*passTD-INT+0.1*rushYds+6*rushTD+REC+0.1*recYds+6*recTD-lostFumbles+2*successful2pt+6*returnTD+6*offensiveFumbleRecoveryTD+bonuses",
+    "bonuses": "3each for300pass,100rush,100rec; grossindividualQBpassYds notnetteamyards.",
+    "dst": "sacks+2*INT+2*FR+6*defensiveOrSpecialReturnTD+2*safety+2*blockedKick+2*conversionReturn+PAbracket",
+    "pa_brackets": {
+      "0": 10,
+      "1-6": 7,
+      "7-13": 4,
+      "14-20": 1,
+      "21-27": 0,
+      "28-34": -1,
+      "35+": -4
+    },
+    "dst_attribution": "Allopponentpoints inSEA/SF/PHI gameswereoffense/FGs. NooffensiveturnoverTDsexcludedinselectedDSTgames. Recoveriesuseopponentlostfumbles, notallownrecoveries. ReversedPHIMarcusEppsFR and nullifiedSEAINT excluded.",
+    "two_point_check": "All10scoring summariesinspected. Listedplayershadnosuccessful2pt;Fannin/Colemanattemptsfailed. OtherteamMilton/JordanLoveconversionsnotselected.",
+    "return_check": "Selectedplayersreturntables/scoringchecked; no selectedindividualreturnTDs. SFreturnTDcountedonceinDST."
+  },
+  "player_scores": [
+    {
+      "player": "Patrick Mahomes II",
+      "game_id": 401873045,
+      "stats": {
+        "passing_yards": 242,
+        "passing_td": 2,
+        "interceptions": 0,
+        "rush_attempts": 2,
+        "rushing_yards": 8,
+        "rushing_td": 0,
+        "receptions": 0,
+        "receiving_yards": 0,
+        "receiving_td": 0,
+        "targets": 0,
+        "lost_fumbles": 1,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 0,
+      "points": 17.48,
+      "status": "provisional",
+      "source_url": "https://www.espn.com/nfl/boxscore/_/gameId/401873045",
+      "scoring_summary_url": "https://www.espn.com/nfl/game/_/gameId/401873045"
+    },
+    {
+      "player": "Kyren Williams",
+      "game_id": 401873043,
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 15,
+        "rushing_yards": 45,
+        "rushing_td": 0,
+        "receptions": 3,
+        "receiving_yards": 16,
+        "receiving_td": 0,
+        "targets": 4,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 0,
+      "points": 9.1,
+      "status": "provisional",
+      "source_url": "https://www.espn.com/nfl/boxscore/_/gameId/401873043",
+      "scoring_summary_url": "https://www.espn.com/nfl/game/_/gameId/401873043"
+    },
+    {
+      "player": "Jonah Coleman",
+      "game_id": 401873041,
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 17,
+        "rushing_yards": 57,
+        "rushing_td": 1,
+        "receptions": 4,
+        "receiving_yards": 31,
+        "receiving_td": 0,
+        "targets": 4,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 0,
+      "points": 18.8,
+      "status": "provisional",
+      "source_url": "https://www.espn.com/nfl/boxscore/_/gameId/401873041",
+      "scoring_summary_url": "https://www.espn.com/nfl/game/_/gameId/401873041"
+    },
+    {
+      "player": "Rashee Rice",
+      "game_id": 401873045,
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 0,
+        "rushing_yards": 0,
+        "rushing_td": 0,
+        "receptions": 5,
+        "receiving_yards": 49,
+        "receiving_td": 0,
+        "targets": 7,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 0,
+      "points": 9.9,
+      "status": "provisional",
+      "source_url": "https://www.espn.com/nfl/boxscore/_/gameId/401873045",
+      "scoring_summary_url": "https://www.espn.com/nfl/game/_/gameId/401873045"
+    },
+    {
+      "player": "Jameson Williams",
+      "game_id": 401873042,
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 1,
+        "rushing_yards": 9,
+        "rushing_td": 0,
+        "receptions": 1,
+        "receiving_yards": 31,
+        "receiving_td": 0,
+        "targets": 2,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 0,
+      "points": 5,
+      "status": "provisional",
+      "source_url": "https://www.espn.com/nfl/boxscore/_/gameId/401873042",
+      "scoring_summary_url": "https://www.espn.com/nfl/game/_/gameId/401873042"
+    },
+    {
+      "player": "Adonai Mitchell",
+      "game_id": 401873045,
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 0,
+        "rushing_yards": 0,
+        "rushing_td": 0,
+        "receptions": 0,
+        "receiving_yards": 0,
+        "receiving_td": 0,
+        "targets": 7,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 0,
+      "points": 0,
+      "status": "provisional",
+      "source_url": "https://www.espn.com/nfl/boxscore/_/gameId/401873045",
+      "scoring_summary_url": "https://www.espn.com/nfl/game/_/gameId/401873045"
+    },
+    {
+      "player": "Harold Fannin Jr.",
+      "game_id": 401873039,
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 0,
+        "rushing_yards": 0,
+        "rushing_td": 0,
+        "receptions": 2,
+        "receiving_yards": 42,
+        "receiving_td": 1,
+        "targets": 2,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 0,
+      "points": 12.2,
+      "status": "provisional",
+      "source_url": "https://www.espn.com/nfl/boxscore/_/gameId/401873039",
+      "scoring_summary_url": "https://www.espn.com/nfl/game/_/gameId/401873039"
+    },
+    {
+      "player": "Keenan Allen",
+      "game_id": 401873040,
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 0,
+        "rushing_yards": 0,
+        "rushing_td": 0,
+        "receptions": 4,
+        "receiving_yards": 26,
+        "receiving_td": 0,
+        "targets": 8,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 0,
+      "points": 6.6,
+      "status": "provisional",
+      "source_url": "https://www.espn.com/nfl/boxscore/_/gameId/401873040",
+      "scoring_summary_url": "https://www.espn.com/nfl/game/_/gameId/401873040"
+    },
+    {
+      "player": "Dak Prescott",
+      "game_id": 401873040,
+      "stats": {
+        "passing_yards": 335,
+        "passing_td": 2,
+        "interceptions": 0,
+        "rush_attempts": 2,
+        "rushing_yards": 1,
+        "rushing_td": 0,
+        "receptions": 0,
+        "receiving_yards": 0,
+        "receiving_td": 0,
+        "targets": 0,
+        "lost_fumbles": 1,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 3,
+      "points": 23.5,
+      "status": "provisional",
+      "source_url": "https://www.espn.com/nfl/boxscore/_/gameId/401873040",
+      "scoring_summary_url": "https://www.espn.com/nfl/game/_/gameId/401873040"
+    },
+    {
+      "player": "Christian McCaffrey",
+      "game_id": 401873047,
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 18,
+        "rushing_yards": 68,
+        "rushing_td": 1,
+        "receptions": 2,
+        "receiving_yards": 19,
+        "receiving_td": 1,
+        "targets": 3,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 0,
+      "points": 22.7,
+      "status": "provisional",
+      "source_url": "https://www.espn.com/nfl/boxscore/_/gameId/401873047",
+      "scoring_summary_url": "https://www.espn.com/nfl/game/_/gameId/401873047"
+    },
+    {
+      "player": "Rhamondre Stevenson",
+      "game_id": 401873049,
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 6,
+        "rushing_yards": 32,
+        "rushing_td": 0,
+        "receptions": 3,
+        "receiving_yards": 46,
+        "receiving_td": 1,
+        "targets": 4,
+        "lost_fumbles": 1,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 0,
+      "points": 15.8,
+      "status": "provisional",
+      "source_url": "https://www.espn.com/nfl/boxscore/_/gameId/401873049",
+      "scoring_summary_url": "https://www.espn.com/nfl/game/_/gameId/401873049"
+    },
+    {
+      "player": "CeeDee Lamb",
+      "game_id": 401873040,
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 0,
+        "rushing_yards": 0,
+        "rushing_td": 0,
+        "receptions": 10,
+        "receiving_yards": 195,
+        "receiving_td": 1,
+        "targets": 16,
+        "lost_fumbles": 1,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 3,
+      "points": 37.5,
+      "status": "provisional",
+      "source_url": "https://www.espn.com/nfl/boxscore/_/gameId/401873040",
+      "scoring_summary_url": "https://www.espn.com/nfl/game/_/gameId/401873040"
+    },
+    {
+      "player": "Josh Downs",
+      "game_id": 401873040,
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 0,
+        "rushing_yards": 0,
+        "rushing_td": 0,
+        "receptions": 3,
+        "receiving_yards": 24,
+        "receiving_td": 0,
+        "targets": 6,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 0,
+      "points": 5.4,
+      "status": "provisional",
+      "source_url": "https://www.espn.com/nfl/boxscore/_/gameId/401873040",
+      "scoring_summary_url": "https://www.espn.com/nfl/game/_/gameId/401873040"
+    },
+    {
+      "player": "Courtland Sutton",
+      "game_id": 401873041,
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 0,
+        "rushing_yards": 0,
+        "rushing_td": 0,
+        "receptions": 5,
+        "receiving_yards": 45,
+        "receiving_td": 1,
+        "targets": 9,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 0,
+      "points": 15.5,
+      "status": "provisional",
+      "source_url": "https://www.espn.com/nfl/boxscore/_/gameId/401873041",
+      "scoring_summary_url": "https://www.espn.com/nfl/game/_/gameId/401873041"
+    },
+    {
+      "player": "Tyler Warren",
+      "game_id": 401873040,
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 0,
+        "rushing_yards": 0,
+        "rushing_td": 0,
+        "receptions": 4,
+        "receiving_yards": 44,
+        "receiving_td": 0,
+        "targets": 7,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 0,
+      "points": 8.4,
+      "status": "provisional",
+      "source_url": "https://www.espn.com/nfl/boxscore/_/gameId/401873040",
+      "scoring_summary_url": "https://www.espn.com/nfl/game/_/gameId/401873040"
+    },
+    {
+      "player": "Xavier Worthy",
+      "game_id": 401873045,
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 0,
+        "rushing_yards": 0,
+        "rushing_td": 0,
+        "receptions": 6,
+        "receiving_yards": 48,
+        "receiving_td": 0,
+        "targets": 6,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 0,
+      "points": 10.8,
+      "status": "provisional",
+      "source_url": "https://www.espn.com/nfl/boxscore/_/gameId/401873045",
+      "scoring_summary_url": "https://www.espn.com/nfl/game/_/gameId/401873045"
+    },
+    {
+      "player": "Seattle Seahawks",
+      "game_id": 401873048,
+      "stats": {
+        "sacks": 3,
+        "interceptions": 0,
+        "fumble_recoveries": 0,
+        "defensive_return_td": 0,
+        "special_teams_td": 0,
+        "safeties": 0,
+        "blocked_kicks": 0,
+        "conversion_returns": 0,
+        "points_allowed": 3
+      },
+      "points_allowed_points": 7,
+      "points": 10,
+      "status": "provisional",
+      "source_url": "https://www.espn.com/nfl/boxscore/_/gameId/401873048",
+      "play_by_play_url": "https://www.espn.com/nfl/playbyplay/_/gameId/401873048",
+      "scoring_summary_url": "https://www.espn.com/nfl/game/_/gameId/401873048"
+    },
+    {
+      "player": "San Francisco 49ers",
+      "game_id": 401873047,
+      "stats": {
+        "sacks": 0,
+        "interceptions": 3,
+        "fumble_recoveries": 2,
+        "defensive_return_td": 1,
+        "special_teams_td": 0,
+        "safeties": 0,
+        "blocked_kicks": 0,
+        "conversion_returns": 0,
+        "points_allowed": 17
+      },
+      "points_allowed_points": 1,
+      "points": 17,
+      "status": "provisional",
+      "source_url": "https://www.espn.com/nfl/boxscore/_/gameId/401873047",
+      "play_by_play_url": "https://www.espn.com/nfl/playbyplay/_/gameId/401873047",
+      "scoring_summary_url": "https://www.espn.com/nfl/game/_/gameId/401873047"
+    },
+    {
+      "player": "Philadelphia Eagles",
+      "game_id": 401873044,
+      "stats": {
+        "sacks": 6,
+        "interceptions": 0,
+        "fumble_recoveries": 1,
+        "defensive_return_td": 0,
+        "special_teams_td": 0,
+        "safeties": 0,
+        "blocked_kicks": 0,
+        "conversion_returns": 0,
+        "points_allowed": 19
+      },
+      "points_allowed_points": 1,
+      "points": 9,
+      "status": "provisional",
+      "source_url": "https://www.espn.com/nfl/boxscore/_/gameId/401873044",
+      "play_by_play_url": "https://www.espn.com/nfl/playbyplay/_/gameId/401873044",
+      "scoring_summary_url": "https://www.espn.com/nfl/game/_/gameId/401873044"
+    }
+  ],
+  "lineup_comparisons": [
+    {
+      "id": "2026-w09-2026-11-02-daily",
+      "status": "partial",
+      "kind": "daily",
+      "original_salary_total": 0,
+      "points": null,
+      "picks": [],
+      "immutable_archive": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-02.md"
+    },
+    {
+      "id": "2026-w09-2026-11-03-daily",
+      "status": "complete",
+      "kind": "daily",
+      "original_salary_total": 49400,
+      "points": 89.08,
+      "picks": [
+        {
+          "player": "Patrick Mahomes II",
+          "original_salary": 6100,
+          "points": 17.48
+        },
+        {
+          "player": "Kyren Williams",
+          "original_salary": 7600,
+          "points": 9.1
+        },
+        {
+          "player": "Jonah Coleman",
+          "original_salary": 5300,
+          "points": 18.8
+        },
+        {
+          "player": "Rashee Rice",
+          "original_salary": 6400,
+          "points": 9.9
+        },
+        {
+          "player": "Jameson Williams",
+          "original_salary": 6100,
+          "points": 5
+        },
+        {
+          "player": "Adonai Mitchell",
+          "original_salary": 4500,
+          "points": 0
+        },
+        {
+          "player": "Harold Fannin Jr.",
+          "original_salary": 4700,
+          "points": 12.2
+        },
+        {
+          "player": "Keenan Allen",
+          "original_salary": 4900,
+          "points": 6.6
+        },
+        {
+          "player": "Seattle Seahawks",
+          "original_salary": 3800,
+          "points": 10
+        }
+      ],
+      "immutable_archive": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67033cfa6c3102dc3273bcf416b514c8f4940e2/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-03.md"
+    },
+    {
+      "id": "2026-w09-r1-claude-v1",
+      "status": "complete",
+      "kind": "daily",
+      "original_salary_total": 49900,
+      "points": 148.6,
+      "picks": [
+        {
+          "player": "Dak Prescott",
+          "original_salary": 6500,
+          "points": 23.5
+        },
+        {
+          "player": "Christian McCaffrey",
+          "original_salary": 8000,
+          "points": 22.7
+        },
+        {
+          "player": "Rhamondre Stevenson",
+          "original_salary": 6100,
+          "points": 15.8
+        },
+        {
+          "player": "CeeDee Lamb",
+          "original_salary": 8300,
+          "points": 37.5
+        },
+        {
+          "player": "Josh Downs",
+          "original_salary": 5100,
+          "points": 5.4
+        },
+        {
+          "player": "Courtland Sutton",
+          "original_salary": 4400,
+          "points": 15.5
+        },
+        {
+          "player": "Tyler Warren",
+          "original_salary": 4600,
+          "points": 8.4
+        },
+        {
+          "player": "Xavier Worthy",
+          "original_salary": 4400,
+          "points": 10.8
+        },
+        {
+          "player": "Philadelphia Eagles",
+          "original_salary": 2500,
+          "points": 9
+        }
+      ],
+      "immutable_archive": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/8df1a6e2c9549b9bb077630ecc8aa20a1add419a/docs/weekly-dfs/codex/2026/week-09/collaboration/20261103T122249Z-claude-v1.md"
+    },
+    {
+      "id": "2026-w09-2026-11-04-daily",
+      "status": "complete",
+      "kind": "daily",
+      "original_salary_total": 49400,
+      "points": 89.08,
+      "picks": [
+        {
+          "player": "Patrick Mahomes II",
+          "original_salary": 6100,
+          "points": 17.48
+        },
+        {
+          "player": "Kyren Williams",
+          "original_salary": 7600,
+          "points": 9.1
+        },
+        {
+          "player": "Jonah Coleman",
+          "original_salary": 5300,
+          "points": 18.8
+        },
+        {
+          "player": "Rashee Rice",
+          "original_salary": 6400,
+          "points": 9.9
+        },
+        {
+          "player": "Jameson Williams",
+          "original_salary": 6100,
+          "points": 5
+        },
+        {
+          "player": "Adonai Mitchell",
+          "original_salary": 4500,
+          "points": 0
+        },
+        {
+          "player": "Harold Fannin Jr.",
+          "original_salary": 4700,
+          "points": 12.2
+        },
+        {
+          "player": "Keenan Allen",
+          "original_salary": 4900,
+          "points": 6.6
+        },
+        {
+          "player": "Seattle Seahawks",
+          "original_salary": 3800,
+          "points": 10
+        }
+      ],
+      "immutable_archive": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/039239239c42d76d504b072f3bd42da4bafa26fe/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-04.md"
+    },
+    {
+      "id": "2026-w09-2026-11-05-daily",
+      "status": "complete",
+      "kind": "daily",
+      "original_salary_total": 49400,
+      "points": 89.08,
+      "picks": [
+        {
+          "player": "Patrick Mahomes II",
+          "original_salary": 6100,
+          "points": 17.48
+        },
+        {
+          "player": "Kyren Williams",
+          "original_salary": 7600,
+          "points": 9.1
+        },
+        {
+          "player": "Jonah Coleman",
+          "original_salary": 5300,
+          "points": 18.8
+        },
+        {
+          "player": "Rashee Rice",
+          "original_salary": 6400,
+          "points": 9.9
+        },
+        {
+          "player": "Jameson Williams",
+          "original_salary": 6100,
+          "points": 5
+        },
+        {
+          "player": "Adonai Mitchell",
+          "original_salary": 4500,
+          "points": 0
+        },
+        {
+          "player": "Harold Fannin Jr.",
+          "original_salary": 4700,
+          "points": 12.2
+        },
+        {
+          "player": "Keenan Allen",
+          "original_salary": 4900,
+          "points": 6.6
+        },
+        {
+          "player": "Seattle Seahawks",
+          "original_salary": 3800,
+          "points": 10
+        }
+      ],
+      "immutable_archive": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/e4c59ee71177613fb6133acd86056cc26fcae567/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-05.md"
+    },
+    {
+      "id": "2026-w09-2026-11-06-daily",
+      "status": "complete",
+      "kind": "daily",
+      "original_salary_total": 49400,
+      "points": 89.08,
+      "picks": [
+        {
+          "player": "Patrick Mahomes II",
+          "original_salary": 6100,
+          "points": 17.48
+        },
+        {
+          "player": "Kyren Williams",
+          "original_salary": 7600,
+          "points": 9.1
+        },
+        {
+          "player": "Jonah Coleman",
+          "original_salary": 5300,
+          "points": 18.8
+        },
+        {
+          "player": "Rashee Rice",
+          "original_salary": 6400,
+          "points": 9.9
+        },
+        {
+          "player": "Jameson Williams",
+          "original_salary": 6100,
+          "points": 5
+        },
+        {
+          "player": "Adonai Mitchell",
+          "original_salary": 4500,
+          "points": 0
+        },
+        {
+          "player": "Harold Fannin Jr.",
+          "original_salary": 4700,
+          "points": 12.2
+        },
+        {
+          "player": "Keenan Allen",
+          "original_salary": 4900,
+          "points": 6.6
+        },
+        {
+          "player": "Seattle Seahawks",
+          "original_salary": 3800,
+          "points": 10
+        }
+      ],
+      "immutable_archive": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/64bdf9058f4ed540f75b3bb4cca9b11373301bb3/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-06.md"
+    },
+    {
+      "id": "2026-w09-2026-11-07-daily",
+      "status": "complete",
+      "kind": "daily",
+      "original_salary_total": 49200,
+      "points": 96.08,
+      "picks": [
+        {
+          "player": "Patrick Mahomes II",
+          "original_salary": 6100,
+          "points": 17.48
+        },
+        {
+          "player": "Kyren Williams",
+          "original_salary": 7600,
+          "points": 9.1
+        },
+        {
+          "player": "Jonah Coleman",
+          "original_salary": 5300,
+          "points": 18.8
+        },
+        {
+          "player": "Rashee Rice",
+          "original_salary": 6400,
+          "points": 9.9
+        },
+        {
+          "player": "Jameson Williams",
+          "original_salary": 6100,
+          "points": 5
+        },
+        {
+          "player": "Adonai Mitchell",
+          "original_salary": 4500,
+          "points": 0
+        },
+        {
+          "player": "Harold Fannin Jr.",
+          "original_salary": 4700,
+          "points": 12.2
+        },
+        {
+          "player": "Keenan Allen",
+          "original_salary": 4900,
+          "points": 6.6
+        },
+        {
+          "player": "San Francisco 49ers",
+          "original_salary": 3600,
+          "points": 17
+        }
+      ],
+      "immutable_archive": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/81ba5900729c1c4390adb123784f59318a3ef0f1/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-07.md"
+    },
+    {
+      "id": "2026-w09-2026-11-08-daily",
+      "status": "complete",
+      "kind": "daily",
+      "original_salary_total": 49200,
+      "points": 96.08,
+      "picks": [
+        {
+          "player": "Patrick Mahomes II",
+          "original_salary": 6100,
+          "points": 17.48
+        },
+        {
+          "player": "Kyren Williams",
+          "original_salary": 7600,
+          "points": 9.1
+        },
+        {
+          "player": "Jonah Coleman",
+          "original_salary": 5300,
+          "points": 18.8
+        },
+        {
+          "player": "Rashee Rice",
+          "original_salary": 6400,
+          "points": 9.9
+        },
+        {
+          "player": "Jameson Williams",
+          "original_salary": 6100,
+          "points": 5
+        },
+        {
+          "player": "Adonai Mitchell",
+          "original_salary": 4500,
+          "points": 0
+        },
+        {
+          "player": "Harold Fannin Jr.",
+          "original_salary": 4700,
+          "points": 12.2
+        },
+        {
+          "player": "Keenan Allen",
+          "original_salary": 4900,
+          "points": 6.6
+        },
+        {
+          "player": "San Francisco 49ers",
+          "original_salary": 3600,
+          "points": 17
+        }
+      ],
+      "immutable_archive": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/73294d84a8372ba6fb24944ab158b8795e9823f7/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-08.md"
+    },
+    {
+      "id": "2026-w09-r2-integration-20261108T120331Z",
+      "status": "complete",
+      "kind": "daily",
+      "original_salary_total": 49400,
+      "points": 89.08,
+      "picks": [
+        {
+          "player": "Patrick Mahomes II",
+          "original_salary": 6100,
+          "points": 17.48
+        },
+        {
+          "player": "Kyren Williams",
+          "original_salary": 7600,
+          "points": 9.1
+        },
+        {
+          "player": "Jonah Coleman",
+          "original_salary": 5300,
+          "points": 18.8
+        },
+        {
+          "player": "Rashee Rice",
+          "original_salary": 6400,
+          "points": 9.9
+        },
+        {
+          "player": "Jameson Williams",
+          "original_salary": 6100,
+          "points": 5
+        },
+        {
+          "player": "Adonai Mitchell",
+          "original_salary": 4500,
+          "points": 0
+        },
+        {
+          "player": "Harold Fannin Jr.",
+          "original_salary": 4700,
+          "points": 12.2
+        },
+        {
+          "player": "Keenan Allen",
+          "original_salary": 4900,
+          "points": 6.6
+        },
+        {
+          "player": "Seattle Seahawks",
+          "original_salary": 3800,
+          "points": 10
+        }
+      ],
+      "immutable_archive": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/63a2f21ef063b21a0b9551be61addd9045733a57/docs/weekly-dfs/codex/2026/week-09/daily/20261108T120331Z-r2-integration.md"
+    },
+    {
+      "id": "2026-w09-20261108T161644Z-freeze",
+      "status": "complete",
+      "kind": "freeze",
+      "original_salary_total": 49400,
+      "points": 89.08,
+      "picks": [
+        {
+          "player": "Patrick Mahomes II",
+          "original_salary": 6100,
+          "points": 17.48
+        },
+        {
+          "player": "Kyren Williams",
+          "original_salary": 7600,
+          "points": 9.1
+        },
+        {
+          "player": "Jonah Coleman",
+          "original_salary": 5300,
+          "points": 18.8
+        },
+        {
+          "player": "Rashee Rice",
+          "original_salary": 6400,
+          "points": 9.9
+        },
+        {
+          "player": "Jameson Williams",
+          "original_salary": 6100,
+          "points": 5
+        },
+        {
+          "player": "Adonai Mitchell",
+          "original_salary": 4500,
+          "points": 0
+        },
+        {
+          "player": "Harold Fannin Jr.",
+          "original_salary": 4700,
+          "points": 12.2
+        },
+        {
+          "player": "Keenan Allen",
+          "original_salary": 4900,
+          "points": 6.6
+        },
+        {
+          "player": "Seattle Seahawks",
+          "original_salary": 3800,
+          "points": 10
+        }
+      ],
+      "immutable_archive": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/40cb4dadf06aa7c590ff600a23a5111b0f28be7f/docs/weekly-dfs/codex/2026/week-09/freeze/20261108T161644Z.md"
+    }
+  ],
+  "revision_contributions": [
+    {
+      "from": "Seattle Seahawks",
+      "to": "San Francisco 49ers",
+      "classification": "new_evidence",
+      "snapshot": "2026-w09-2026-11-07-daily",
+      "points_delta": 7
+    },
+    {
+      "from": "San Francisco 49ers",
+      "to": "Seattle Seahawks",
+      "classification": "changed_interpretation",
+      "snapshot": "2026-w09-r2-integration-20261108T120331Z",
+      "points_delta": -7
+    },
+    {
+      "from": "first complete Codex v1",
+      "to": "final freeze",
+      "points_delta": 0,
+      "note": "Samefinalnine despite two retained reversals."
+    }
+  ],
+  "outcomes": [
+    {
+      "id": "2026-w09-coleman-outcome",
+      "expectation_id": "2026-w09-1103-coleman-role",
+      "expectation": "Continued rushing and receiving involvement conditional on competition.",
+      "opportunity_assessment": "supported:17 carries/4 targets/4 catches versusDobbins4 carries/1 target.",
+      "conditions_assessment": "Played; complete active list/Harvey role not separately verified.",
+      "score_explanation": "18.8 includes57rushyards,31recYds,4catches andoneTD. Non-TD involvement independently present.",
+      "cutoff_judgment": "Prior two-phase evidence supported a provisional role choice; one result does not establish persistence.",
+      "status": "provisional",
+      "source_urls": [
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873041"
+      ]
+    },
+    {
+      "id": "2026-w09-mitchell-original-outcome",
+      "expectation_id": "2026-w09-1103-mitchell-role",
+      "expectation": "Meaningful involvement alongside Wilson.",
+      "opportunity_assessment": "Original alongsideWilson condition changed; evaluate later withoutWilson expectation separately.",
+      "conditions_assessment": "contradicted/changed supporting condition:WilsonruledOUTbeforefreeze; original retained, notrewritten.",
+      "score_explanation": "0 points despite7targets; no catch.",
+      "cutoff_judgment": "unassessable as an unchanged alongsideWilson claim. Updated condition was prospectively recorded.",
+      "status": "provisional",
+      "source_urls": [
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873045",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/67959950c799276189d87636feb6c7ef670c01f8/docs/weekly-dfs/codex/2026/week-09/freeze/20261108T161540Z-inputs.json"
+      ]
+    },
+    {
+      "id": "2026-w09-mitchell-new-outcome",
+      "expectation_id": "2026-w09-1107-mitchell-without-wilson",
+      "expectation": "Meaningful receiving involvement withoutWilson, notallvacatedtargets orrepeat142yds.",
+      "opportunity_assessment": "supported in target involvement:7targets on32teamattempts, secondtoCooper11. Contradicted any unstated conversion/points floor:0catches.",
+      "conditions_assessment": "PregameWilsonOUTcondition recorded; actual routes/coverage not obtained.",
+      "score_explanation": "Zero catches/yards/TD; 0DK despiteopportunity.",
+      "cutoff_judgment": "Role premise hadsupport; opportunityalone didnotproducepoints. Completionquality, targetdifficulty andcoverage remainunassessable.",
+      "status": "provisional",
+      "source_urls": [
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873045"
+      ]
+    },
+    {
+      "id": "2026-w09-fannin-outcome",
+      "expectation_id": "2026-w09-1103-fannin-role",
+      "expectation": "Retain meaningful receiving role ifactive.",
+      "opportunity_assessment": "contradicted on observed target volume:2targets outof31Sandersattempts, versusBoston7/Concepcion6/Jeudy4/Sampson6.",
+      "conditions_assessment": "Played withSanders; routes/blocking andactualgroineffect unavailable, so causalexplanationunassessable.",
+      "score_explanation": "12.2points from2/42/TD;39-yardOTTD accountsformostyards, failedtwo-pointattemptscores0. Points obscure rolemiss.",
+      "cutoff_judgment": "Prior12-targetweekwasreal butcompeting/earliervolatility/QBtransitionwereexplicitrisks. Hold scoredmorethanWarren8.4, whichdoesnotvalidate roleclaim.",
+      "status": "provisional",
+      "source_urls": [
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873039",
+        "https://www.espn.com/nfl/game/_/gameId/401873039"
+      ]
+    },
+    {
+      "id": "2026-w09-bosa-outcome",
+      "expectation_id": "2026-w09-1107-sf-front-condition",
+      "expectation": "Return to participation, withoutnormalfullsnapassumption; historicalSFcomparison.",
+      "opportunity_assessment": "supported:listedwithone tackle inSFdefensivebox. Snapload/pressureunassessable.",
+      "conditions_assessment": "Participated; no evidencehere ofnormalfullworkload.",
+      "score_explanation": "SF17points from3INT/2FR/returnTD/17PA; zeroSFsacks. CannotattributeturnoverstoBosaorfrontreturn.",
+      "cutoff_judgment": "Fridayclearance supportedreturnexpectation; noquantifiedeffectwasestablished. SFremovedfromfinalbutretainedcomparison.",
+      "status": "provisional",
+      "source_urls": [
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873047"
+      ]
+    },
+    {
+      "id": "2026-w09-dst-editor-outcome",
+      "expectation_id": null,
+      "expectation": "Editor matchup interpretation:Seattleloweropponentscoringenvironment; comparisonnotnewpregameexpectation.",
+      "opportunity_assessment": "Arizona3PAversusLV17supports directionofenvironment. SEA3sacks;SF0.",
+      "conditions_assessment": "O'Toole/Hall/Jonesall appearinSEAdefensivebox; fullsnapcountsunknown.",
+      "score_explanation": "SEA10 versusSF17:SEA+6PApoints,+3sackpoints, SF+6INT,+4FR,+6TD => netSEA-SF=-7. No blockedkicks/safeties/returnextras found ininspectedPBPs; nullifiedSEAINTexcluded.",
+      "cutoff_judgment": "Reversalhadstatedcounterarguments; realizedlossretained. BetteropponentenvironmentdidnotensurebetterDKscore. Oneweekcannotsettleagentreasoningorcollaborationskill.",
+      "status": "provisional",
+      "source_urls": [
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873048",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873047",
+        "https://www.espn.com/nfl/playbyplay/_/gameId/401873048",
+        "https://www.espn.com/nfl/playbyplay/_/gameId/401873047"
+      ]
+    }
+  ],
+  "weekly_scorecard": {
+    "S1": {
+      "final": 89.08,
+      "first_complete": 89.08,
+      "delta": 0,
+      "claude_original": 148.6,
+      "projection_only": null
+    },
+    "S2": "One new_evidence DSTrevision +7, later changed_interpretation reversal -7; descriptive only, sameoutcome reused.",
+    "S3": "GrokG-W09-Q4 prompted defensechallenge; actualauthorworkchangedlaterinterpretation. No directcausalquestionvalueisolated; DTSpointhistory +7 then-7.",
+    "S4": {
+      "operator_seat": "absent",
+      "overrides": [],
+      "final_override_delta": 0,
+      "note": "Supportedpreoverridecandidate unchanged, absentoperatornotclaimedasactiveinput."
+    },
+    "S5": "Bothv1s,actualGrokquestions,authorresponses/exchange/R2andtimelyfreezecompleted; exact-versionjointendorsementnotclaimed."
+  },
+  "older_pending_slates": {
+    "week6": 145.98,
+    "week7": 114.22,
+    "week8": 106.26,
+    "status": "Existingcomplete-lineupreviewsread;allprovisional. No new settledplatformcorrectionverified; no duplicateolderreview."
+  },
+  "data_limitations": [
+    "No verified settledDKtotals; scoresprovisional.",
+    "Routes,blocking,coverage andpressuredata unassessable.",
+    "Scoringpageincludes nullified/reversedplays; handledagainstfinalbox.",
+    "No hindsightoptimum,ROI,contestpercentile oragentskillclaim.",
+    "No continuousintradaymonitoring; no lateinactive reconstruction orpostfreezepickchanges."
+  ],
+  "sources": [
+    {
+      "id": "week9",
+      "label": "week9",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+      "retrieved_at": "2026-11-09T11:26:20.919Z",
+      "retrieved_at_toronto": "2026-11-09T06:26:20.919-05:00",
+      "publication_at": null,
+      "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+      "scope": "All11 includedNovember8 main gamesfinal; MondayBUF–MINnotincluded."
+    },
+    {
+      "id": "rules",
+      "label": "rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-11-09T11:26:21.513Z",
+      "retrieved_at_toronto": "2026-11-09T06:26:21.513-05:00",
+      "publication_at": null,
+      "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+      "scope": "Current exactNFLClassic scoring, bonuses, lostfumble-1 andDSTPA attribution/events."
+    },
+    {
+      "id": "box401873039",
+      "label": "box401873039",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873039",
+      "retrieved_at": "2026-11-09T11:26:36.738Z",
+      "retrieved_at_toronto": "2026-11-09T06:26:36.738-05:00",
+      "publication_at": null,
+      "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+      "scope": "Selected player stats/teammate opportunity, grossQB yards, turnovers, defensive andreturnstats."
+    },
+    {
+      "id": "game401873039",
+      "label": "game401873039",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873039",
+      "retrieved_at": "2026-11-09T11:27:08.743Z",
+      "retrieved_at_toronto": "2026-11-09T06:27:08.743-05:00",
+      "publication_at": null,
+      "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+      "scope": "Scoring summaries checked forTDs,two-point conversions andnon-offensive scores."
+    },
+    {
+      "id": "box401873040",
+      "label": "box401873040",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873040",
+      "retrieved_at": "2026-11-09T11:26:37.183Z",
+      "retrieved_at_toronto": "2026-11-09T06:26:37.183-05:00",
+      "publication_at": null,
+      "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+      "scope": "Selected player stats/teammate opportunity, grossQB yards, turnovers, defensive andreturnstats."
+    },
+    {
+      "id": "game401873040",
+      "label": "game401873040",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873040",
+      "retrieved_at": "2026-11-09T11:27:09.482Z",
+      "retrieved_at_toronto": "2026-11-09T06:27:09.482-05:00",
+      "publication_at": null,
+      "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+      "scope": "Scoring summaries checked forTDs,two-point conversions andnon-offensive scores."
+    },
+    {
+      "id": "box401873041",
+      "label": "box401873041",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873041",
+      "retrieved_at": "2026-11-09T11:26:37.738Z",
+      "retrieved_at_toronto": "2026-11-09T06:26:37.738-05:00",
+      "publication_at": null,
+      "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+      "scope": "Selected player stats/teammate opportunity, grossQB yards, turnovers, defensive andreturnstats."
+    },
+    {
+      "id": "game401873041",
+      "label": "game401873041",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873041",
+      "retrieved_at": "2026-11-09T11:27:09.873Z",
+      "retrieved_at_toronto": "2026-11-09T06:27:09.873-05:00",
+      "publication_at": null,
+      "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+      "scope": "Scoring summaries checked forTDs,two-point conversions andnon-offensive scores."
+    },
+    {
+      "id": "box401873042",
+      "label": "box401873042",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873042",
+      "retrieved_at": "2026-11-09T11:26:36.861Z",
+      "retrieved_at_toronto": "2026-11-09T06:26:36.861-05:00",
+      "publication_at": null,
+      "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+      "scope": "Selected player stats/teammate opportunity, grossQB yards, turnovers, defensive andreturnstats."
+    },
+    {
+      "id": "game401873042",
+      "label": "game401873042",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873042",
+      "retrieved_at": "2026-11-09T11:27:09.840Z",
+      "retrieved_at_toronto": "2026-11-09T06:27:09.840-05:00",
+      "publication_at": null,
+      "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+      "scope": "Scoring summaries checked forTDs,two-point conversions andnon-offensive scores."
+    },
+    {
+      "id": "box401873043",
+      "label": "box401873043",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873043",
+      "retrieved_at": "2026-11-09T11:26:37.317Z",
+      "retrieved_at_toronto": "2026-11-09T06:26:37.317-05:00",
+      "publication_at": null,
+      "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+      "scope": "Selected player stats/teammate opportunity, grossQB yards, turnovers, defensive andreturnstats."
+    },
+    {
+      "id": "game401873043",
+      "label": "game401873043",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873043",
+      "retrieved_at": "2026-11-09T11:27:09.625Z",
+      "retrieved_at_toronto": "2026-11-09T06:27:09.625-05:00",
+      "publication_at": null,
+      "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+      "scope": "Scoring summaries checked forTDs,two-point conversions andnon-offensive scores."
+    },
+    {
+      "id": "box401873044",
+      "label": "box401873044",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873044",
+      "retrieved_at": "2026-11-09T11:26:37.386Z",
+      "retrieved_at_toronto": "2026-11-09T06:26:37.386-05:00",
+      "publication_at": null,
+      "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+      "scope": "Selected player stats/teammate opportunity, grossQB yards, turnovers, defensive andreturnstats."
+    },
+    {
+      "id": "game401873044",
+      "label": "game401873044",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873044",
+      "retrieved_at": "2026-11-09T11:27:09.647Z",
+      "retrieved_at_toronto": "2026-11-09T06:27:09.647-05:00",
+      "publication_at": null,
+      "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+      "scope": "Scoring summaries checked forTDs,two-point conversions andnon-offensive scores."
+    },
+    {
+      "id": "box401873045",
+      "label": "box401873045",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873045",
+      "retrieved_at": "2026-11-09T11:26:37.449Z",
+      "retrieved_at_toronto": "2026-11-09T06:26:37.449-05:00",
+      "publication_at": null,
+      "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+      "scope": "Selected player stats/teammate opportunity, grossQB yards, turnovers, defensive andreturnstats."
+    },
+    {
+      "id": "game401873045",
+      "label": "game401873045",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873045",
+      "retrieved_at": "2026-11-09T11:27:09.828Z",
+      "retrieved_at_toronto": "2026-11-09T06:27:09.828-05:00",
+      "publication_at": null,
+      "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+      "scope": "Scoring summaries checked forTDs,two-point conversions andnon-offensive scores."
+    },
+    {
+      "id": "box401873047",
+      "label": "box401873047",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873047",
+      "retrieved_at": "2026-11-09T11:26:37.450Z",
+      "retrieved_at_toronto": "2026-11-09T06:26:37.450-05:00",
+      "publication_at": null,
+      "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+      "scope": "Selected player stats/teammate opportunity, grossQB yards, turnovers, defensive andreturnstats."
+    },
+    {
+      "id": "game401873047",
+      "label": "game401873047",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873047",
+      "retrieved_at": "2026-11-09T11:27:09.850Z",
+      "retrieved_at_toronto": "2026-11-09T06:27:09.850-05:00",
+      "publication_at": null,
+      "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+      "scope": "Scoring summaries checked forTDs,two-point conversions andnon-offensive scores."
+    },
+    {
+      "id": "box401873048",
+      "label": "box401873048",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873048",
+      "retrieved_at": "2026-11-09T11:26:37.279Z",
+      "retrieved_at_toronto": "2026-11-09T06:26:37.279-05:00",
+      "publication_at": null,
+      "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+      "scope": "Selected player stats/teammate opportunity, grossQB yards, turnovers, defensive andreturnstats."
+    },
+    {
+      "id": "game401873048",
+      "label": "game401873048",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873048",
+      "retrieved_at": "2026-11-09T11:27:09.791Z",
+      "retrieved_at_toronto": "2026-11-09T06:27:09.791-05:00",
+      "publication_at": null,
+      "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+      "scope": "Scoring summaries checked forTDs,two-point conversions andnon-offensive scores."
+    },
+    {
+      "id": "box401873049",
+      "label": "box401873049",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873049",
+      "retrieved_at": "2026-11-09T11:26:36.940Z",
+      "retrieved_at_toronto": "2026-11-09T06:26:36.940-05:00",
+      "publication_at": null,
+      "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+      "scope": "Selected player stats/teammate opportunity, grossQB yards, turnovers, defensive andreturnstats."
+    },
+    {
+      "id": "game401873049",
+      "label": "game401873049",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873049",
+      "retrieved_at": "2026-11-09T11:27:10.020Z",
+      "retrieved_at_toronto": "2026-11-09T06:27:10.020-05:00",
+      "publication_at": null,
+      "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+      "scope": "Scoring summaries checked forTDs,two-point conversions andnon-offensive scores."
+    },
+    {
+      "id": "pbp401873044",
+      "label": "pbp401873044",
+      "url": "https://www.espn.com/nfl/playbyplay/_/gameId/401873044",
+      "retrieved_at": "2026-11-09T11:27:33.812Z",
+      "retrieved_at_toronto": "2026-11-09T06:27:33.812-05:00",
+      "publication_at": null,
+      "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+      "scope": "Fullreturned play-by-play checked forblockedkicks/safeties, recoveries, nullifiedplays andPAattribution."
+    },
+    {
+      "id": "pbp401873047",
+      "label": "pbp401873047",
+      "url": "https://www.espn.com/nfl/playbyplay/_/gameId/401873047",
+      "retrieved_at": "2026-11-09T11:27:33.777Z",
+      "retrieved_at_toronto": "2026-11-09T06:27:33.777-05:00",
+      "publication_at": null,
+      "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+      "scope": "Fullreturned play-by-play checked forblockedkicks/safeties, recoveries, nullifiedplays andPAattribution."
+    },
+    {
+      "id": "pbp401873048",
+      "label": "pbp401873048",
+      "url": "https://www.espn.com/nfl/playbyplay/_/gameId/401873048",
+      "retrieved_at": "2026-11-09T11:27:33.453Z",
+      "retrieved_at_toronto": "2026-11-09T06:27:33.453-05:00",
+      "publication_at": null,
+      "publication_note": "Live page publication/stat-correction clock not established; retrieval is distinct.",
+      "scope": "Fullreturned play-by-play checked forblockedkicks/safeties, recoveries, nullifiedplays andPAattribution."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "record_type": "source_metadata_correction",
+  "id": "2026-w07-2026-10-22-rules-reference-correction",
+  "recorded_at": "2026-10-22T10:46:06.339Z",
+  "corrects": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/76079a9eca29ded1a823ff79261e6158b2db907d/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-22.json",
+  "field": "scoring_reference.url",
+  "original_value": "https://www.nfl.com/schedules/2026/by-week/week-6",
+  "correct_value": "https://www.draftkings.com/help/rules/1",
+  "reason": "Source-array index error in metadata; S8 in the source register already contains the correct rules URL.",
+  "selection_effect": "None. Original selections, salaries, projections, football conclusions and cutoff preserved.",
+  "verification_status": "Current full rules body still unavailable; retained October21 full read remains the declared basis."
+}

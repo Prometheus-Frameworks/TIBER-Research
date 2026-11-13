@@ -1,0 +1,80 @@
+{
+  "provider": {
+    "provider": "FullTime Fantasy",
+    "model": "Publisher DraftKings main-slate point projections",
+    "as_of": "2026-11-04T00:15:00Z",
+    "as_of_note": "Publisher displays Tue7:15PM ET in Week9; mapped to Nov3 local date. Minute precision, not a verified model-generation clock.",
+    "source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=155994",
+    "observed_at": "2026-11-04T11:18:15.111Z",
+    "annotation_at": "2026-11-04T11:21:06.870Z",
+    "scoring_basis": "Publisher-labelled DraftKings FLEX/main slate; not recomputed or mixed with any other model."
+  },
+  "rows": [
+    {
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "game": "KC vs NYJ",
+      "salary": 6100,
+      "projected_points": 17.7
+    },
+    {
+      "name": "Kyren Williams",
+      "position": "RB",
+      "game": "LAR @ WAS",
+      "salary": 7600,
+      "projected_points": 17.1
+    },
+    {
+      "name": "Jonah Coleman",
+      "position": "RB",
+      "game": "DEN @ CAR",
+      "salary": 5300,
+      "projected_points": 15.5
+    },
+    {
+      "name": "Rashee Rice",
+      "position": "WR",
+      "game": "KC vs NYJ",
+      "salary": 6400,
+      "projected_points": 16.5
+    },
+    {
+      "name": "Jameson Williams",
+      "position": "WR",
+      "game": "DET @ MIA",
+      "salary": 6100,
+      "projected_points": 14.3
+    },
+    {
+      "name": "Adonai Mitchell",
+      "position": "WR",
+      "game": "NYJ @ KC",
+      "salary": 4500,
+      "projected_points": 8.2
+    },
+    {
+      "name": "Harold Fannin Jr.",
+      "position": "TE",
+      "game": "CLE @ NO",
+      "salary": 4700,
+      "projected_points": 12.4
+    },
+    {
+      "name": "Keenan Allen",
+      "position": "WR",
+      "game": "IND vs DAL",
+      "salary": 4900,
+      "projected_points": 11.6
+    },
+    {
+      "name": "Seahawks",
+      "position": "DEF",
+      "game": "SEA vs ARI",
+      "salary": 3800,
+      "projected_points": 7.1
+    }
+  ],
+  "total": 120.4,
+  "source_retrieval": "2026-11-04T11:18:15.111Z",
+  "scope": "Nine selected observations only; no historical annotation or claim of full model pool."
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": "tiber-dfs-stage-receipt/v1",
+  "id": "2026-w09-r1-codex-v1-ready",
+  "stage": "codex_v1_ready",
+  "status": "ready",
+  "cycle": "2026-w09-2026-11-08",
+  "round": 1,
+  "actual_author": "Codex",
+  "posted_by": "Codex",
+  "relay": "PR43 completion comment after archive; provider execution unverified",
+  "completed_at": "2026-11-03T11:45:01.196Z",
+  "completed_at_toronto": "2026-11-03T06:45:01.196-05:00",
+  "decision_at": "2026-11-03T11:41:57.667Z",
+  "evidence_cutoff": "2026-11-03T11:41:57.667Z",
+  "exact_inputs": [
+    "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/fc762069677be4266ec0e95979b72438c9a7784c/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-02.json",
+    "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2572fe4fff565053b24eda89433cdb7bc8cb35e9/docs/weekly-dfs/codex/journal/20261103T025215Z.json",
+    "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67033cfa6c3102dc3273bcf416b514c8f4940e2/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-03-reported-prices.csv"
+  ],
+  "immutable_output": {
+    "snapshot_id": "2026-w09-2026-11-03-daily",
+    "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67033cfa6c3102dc3273bcf416b514c8f4940e2/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-03.json",
+    "commit": "c67033cfa6c3102dc3273bcf416b514c8f4940e2",
+    "blob_sha": "e18dde197a17ed1d237ccef6301bf252d26d55a9",
+    "salary_snapshot": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67033cfa6c3102dc3273bcf416b514c8f4940e2/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-03-reported-prices.csv"
+  },
+  "salary_total": 49400,
+  "salary_remaining": 600,
+  "roster_status": "complete",
+  "salary_basis": "reported_prices",
+  "official_pool_verified": false,
+  "final_frozen": false,
+  "exposure": "No currentWeek9Claude/Grokpicksinspected; ordinarysharedrules,prices,Week8lessonsandoperatorrequestforv1read. Do notclaima controlledblindtrial.",
+  "common_inputs_file": "20261103T114501Z-common-inputs.json",
+  "next_handoff_id": "2026-w09-r1-claude-v1",
+  "stages": {
+    "codex_v1_ready": {
+      "status": "ready",
+      "output": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67033cfa6c3102dc3273bcf416b514c8f4940e2/docs/weekly-dfs/codex/2026/week-09/daily/2026-11-03.json"
+    },
+    "claude_v1_ready": {
+      "status": "blocked",
+      "reason": "ActualWeek9v1notreceived"
+    },
+    "grok_questions_ready": {
+      "status": "blocked",
+      "reason": "ActualWeek9questionsnotreceived"
+    },
+    "collaboration_ready": {
+      "status": "blocked",
+      "reason": "NoWeek9authorrevisionexchange"
+    },
+    "final_frozen": {
+      "status": "blocked",
+      "reason": "NotyetSundayfinal"
+    }
+  },
+  "dedupe_key": "2026-w09-2026-11-08/codex_v1_ready/r1/c67033cfa6c3102dc3273bcf416b514c8f4940e2/2026-11-03.json",
+  "supersedes_stage_state": "Earlier partial/blocked receipts retained; new pricing unlocks first complete draft, not a retry rewrite."
+}

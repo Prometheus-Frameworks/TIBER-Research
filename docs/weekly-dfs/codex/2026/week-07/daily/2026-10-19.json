@@ -1,0 +1,407 @@
+{
+  "record_type": "daily_partial_research_board",
+  "notebook_convention": "Conversational prospective notebook; not an independent review or governed Research-run contract",
+  "id": "2026-w07-2026-10-19-daily",
+  "kind": "daily",
+  "status": "partial",
+  "frozen": false,
+  "recorded_at_utc": "2026-10-19T10:52:20.495Z",
+  "recorded_at_toronto": "2026-10-19T06:52:20.495-04:00",
+  "evidence_cutoff_utc": "2026-10-19T10:52:20.495Z",
+  "season": 2026,
+  "week": 7,
+  "platform": "DraftKings",
+  "slate_date": "2026-10-25",
+  "slate_label": "Target Sunday main; official draft group not yet verified",
+  "draft_group_id": null,
+  "official_pool_verified": false,
+  "official_salary_export_verified": false,
+  "salary_basis": "reported_prices",
+  "eligibility_status": "official_pool_unverified",
+  "salary_cap": 50000,
+  "salary_total": 20500,
+  "salary_remaining": 29500,
+  "budget_note": "Sum/remainder of three conditional reported-price board candidates only, NOT a legal team's cost or verified spendable remainder. Six slots unfilled.",
+  "roster_slots_required": [
+    "QB",
+    "RB",
+    "RB",
+    "WR",
+    "WR",
+    "WR",
+    "TE",
+    "FLEX",
+    "DST"
+  ],
+  "unfilled_slots": [
+    "QB",
+    "RB",
+    "RB",
+    "WR",
+    "FLEX",
+    "DST"
+  ],
+  "projected_total": null,
+  "actual_total": null,
+  "projection": null,
+  "projection_gap": {
+    "provider_considered": "dfsroto",
+    "page_updated_date": "2026-10-19",
+    "model_as_of_instant": null,
+    "source_url": "https://dfsroto.win/projections",
+    "decision": "not_qualified_for_team_projection",
+    "reason": "The page reverses four home/away pairs relative to NFL schedule, gives nonzero values to OUT-labelled rows despite saying out players are zeroed, and defaults QB to prior-game passer despite Giants in-game change. Its model and injury handling are not accepted as a current team forecast. Splash Play hub still shows Week 6."
+  },
+  "picks": [
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Puka Nacua",
+      "team": "LAR",
+      "opponent": "LV",
+      "home": false,
+      "salary": 8400,
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Keep on the research board for the established receiving role (6 catches on 7 Week 6 targets). Do not automatically carry the three-Rams core into a new road matchup or recycle the old $8,100 price.",
+      "source_ids": [
+        "R03",
+        "R12",
+        "R13"
+      ],
+      "salary_source_url": "https://dfsroto.win/projections"
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Malik Nabers",
+      "team": "NYG",
+      "opponent": "HOU",
+      "home": false,
+      "salary": 6800,
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "15 Week 6 targets preserve the volume case, but Houston is a new matchup and the Giants changed quarterbacks in the fourth quarter. Candidate only until QB, protection and price are qualified.",
+      "source_ids": [
+        "R04",
+        "R10",
+        "R12",
+        "R13"
+      ],
+      "salary_source_url": "https://dfsroto.win/projections"
+    },
+    {
+      "slot": "TE",
+      "position": "TE",
+      "player": "Isaiah Likely",
+      "team": "NYG",
+      "opponent": "HOU",
+      "home": false,
+      "salary": 5300,
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "11 Week 6 targets support continuing to investigate the receiving role; the late TD and conversion are not next-week expectations. New $5,300 reported cost, quarterback uncertainty and Theo Johnson's Week 7 availability need rechecking.",
+      "source_ids": [
+        "R04",
+        "R10",
+        "R12",
+        "R13"
+      ],
+      "salary_source_url": "https://dfsroto.win/projections"
+    }
+  ],
+  "board_not_committed_lineup": true,
+  "previous_snapshot": {
+    "same_slate": null,
+    "cross_slate_baseline_id": "2026-w06-2026-10-18-daily",
+    "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4bafb74bac3a43b5fc7495396733a279fd866647/docs/weekly-dfs/codex/2026/week-06/daily/2026-10-18.json",
+    "frozen_baseline_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/b411aac2936b88a6f72f07b9ad4e0630b6d4ebc9/docs/weekly-dfs/codex/2026/week-06/freeze/20261018T151704Z.json",
+    "note": "First Week 7 board; Week 6 seeds are October 17 setup, not a full daily trajectory. No cross-slate score or selection-effect comparison."
+  },
+  "revision_classification": "new_evidence",
+  "revisions": [],
+  "important_unchanged_candidates": [
+    "Puka Nacua",
+    "Malik Nabers",
+    "Isaiah Likely"
+  ],
+  "material_changes": [
+    "Start a separate October 25 / Week 7 slate trajectory; do not mutate Week 6.",
+    "Bernard and Steelers are outside the intended Sunday-afternoon window because PIT plays the 9:30 AM Paris game.",
+    "Fannin is not carried into the priced board: 3 targets and 1 catch challenge the rebound premise; role explanation needed.",
+    "Do not carry the Rams trio automatically: Kyren had 10 carries versus Corum's 9. This is one game's split, not a declared permanent role loss.",
+    "Week 7 salaries are not copied from Week 6; three new reported prices are recorded with a source-quality warning."
+  ],
+  "strongest_counterargument": "This board still pairs two Giants pass catchers against Houston without settled quarterback/protection evidence. A single strong game can invite recency bias; the lone Week 7 price source has material inconsistencies, so these reported prices may also need correction.",
+  "unresolved_assumptions": [
+    "Official DraftKings draft group, full eligible pool, player IDs and exact priced membership not retrieved.",
+    "Three prices and positions are attributable to a public Week 7 page, not certified official; independent corroboration absent.",
+    "Week 7 official practice/game designations not established; Week 6 OUT labels are not automatically carried forward.",
+    "Giants Week 7 starting QB, tackle health and Theo Johnson role unresolved.",
+    "Six required slots remain unfilled; no cap-legal nine-player selection certified.",
+    "No qualified coherent current projection snapshot; estimates remain null."
+  ],
+  "what_would_change_view": [
+    "A genuine official Week 7 export or corroborated public priced selections resolves eligibility/prices.",
+    "Official quarterback/availability and deployment updates alter the receiving-role case.",
+    "A correctly matched current external model snapshot can be attributed without mixing providers."
+  ],
+  "slate": {
+    "basis": "NFL scheduled Sunday afternoon games; platform membership unverified",
+    "expected_games": [
+      "SF@ATL 13:00 EDT",
+      "CIN@BAL 13:00 EDT",
+      "TB@CAR 13:00 EDT",
+      "NYG@HOU 13:00 EDT",
+      "IND@MIN 13:00 EDT",
+      "MIA@NYJ 13:00 EDT",
+      "CLE@TEN 13:00 EDT",
+      "DEN@ARI 16:05 EDT",
+      "GB@DET 16:25 EDT",
+      "LAR@LV 16:25 EDT"
+    ],
+    "expected_earliest_kickoff_utc": "2026-10-25T17:00:00Z",
+    "expected_earliest_kickoff_toronto": "2026-10-25T13:00:00-04:00",
+    "excluded_windows": [
+      "NE@CHI Thursday October 22 20:15 EDT",
+      "PIT@NO Paris Sunday October 25 09:30 EDT",
+      "KC@SEA Sunday October 25 20:20 EDT",
+      "DAL@PHI Monday October 26 20:15 EDT"
+    ],
+    "slate_change_note": "New weekly target, not a revision of Week 6 pool. No platform slate change asserted."
+  },
+  "freeze": {
+    "existing_same_slate_freeze": false,
+    "deadline_utc": "2026-10-25T16:00:00Z",
+    "deadline_toronto": "2026-10-25T12:00:00-04:00",
+    "partial_cannot_freeze": true
+  },
+  "rules": {
+    "source_url": "https://www.draftkings.com/help/rules/1",
+    "salary_cap": 50000,
+    "slots": "QB,2 RB,3 WR,TE,FLEX(RB/WR/TE),DST; at least two different NFL games",
+    "scoring": "Full PPR; pass TD4, INT-1, pass yards0.04; rush/rec TD6, yards0.1; 300 pass /100 rush /100 rec bonus3; lost fumble-1; two-point2. Exact rules and DST treatment in accompanying Week 6 review."
+  },
+  "source_quality_findings": [
+    {
+      "severity": "high",
+      "confidence": "directly_observed",
+      "issue": "Four of ten dfsroto away/home game lines reverse official venues",
+      "all_reversed_pairs": [
+        "ATL@SF vs official SF@ATL",
+        "LV@LAR vs official LAR@LV",
+        "ARI@DEN vs official DEN@ARI",
+        "TEN@CLE vs official CLE@TEN"
+      ],
+      "risk": "Venue-sensitive market/model inputs may be mapped incorrectly. Prices remain attributed reported values only; projections rejected.",
+      "remediation": "Require official export/corroboration and correct game mapping before a complete qualified draft."
+    },
+    {
+      "severity": "high",
+      "confidence": "directly_observed",
+      "issue": "OUT rows have nonzero projections despite stated zeroing rule",
+      "examples": [
+        "Breece Hall OUT 7.4",
+        "Josh Jacobs OUT 8.1",
+        "Quinshon Judkins OUT 9.6"
+      ]
+    },
+    {
+      "severity": "medium",
+      "confidence": "directly_observed",
+      "issue": "Search cached snippet and live scrape differ; intraday model time absent",
+      "examples": [
+        "Stafford search 19.4 vs scrape19.8; do not mix estimates"
+      ]
+    }
+  ],
+  "source_conflicts": [
+    "Official NFL schedule controls home/away; dfsroto price-only rows are not official eligibility proof.",
+    "DraftKings lobby redirected to sign-up. No login, private roster, paid data or integration was used; this is an access limit, not proof Week 7 contests do not exist.",
+    "Splash Play still labels its projection pool Week 6 with October 18 3:48 PM ET update; it cannot supply Week 7 estimates."
+  ],
+  "confounders": {
+    "operator_input": "Continue prospective notebook and observer feed; no player-specific direction.",
+    "runtime_agent": "Codex",
+    "exact_model_id": null,
+    "model_change_observed": null,
+    "tools": "Authorized GitHub; ordinary public Firecrawl/search; league capabilities only.",
+    "withheld": [
+      "ROP",
+      "TTS",
+      "Forecast"
+    ],
+    "private_rosters_used": false,
+    "producers_executed": false,
+    "new_integrations": false,
+    "token_usage": null,
+    "currency_cost": null
+  },
+  "sources": [
+    {
+      "id": "R01",
+      "key": "rules1",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at_utc": "2026-10-19T10:50:00.673Z",
+      "retrieved_at_toronto": "2026-10-19T06:50:00.673-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "source_time_note": "No publication/update instant established; retrieval time is not publication time.",
+      "cache_state": null
+    },
+    {
+      "id": "R02",
+      "key": "w6schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-6",
+      "retrieved_at_utc": "2026-10-19T10:46:40.879Z",
+      "retrieved_at_toronto": "2026-10-19T06:46:40.879-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "source_time_note": "No publication/update instant established; retrieval time is not publication time.",
+      "cache_state": null
+    },
+    {
+      "id": "R03",
+      "key": "ramsbox",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873004",
+      "retrieved_at_utc": "2026-10-19T10:46:50.312Z",
+      "retrieved_at_toronto": "2026-10-19T06:46:50.312-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "source_time_note": "No publication/update instant established; retrieval time is not publication time.",
+      "cache_state": null
+    },
+    {
+      "id": "R04",
+      "key": "nygpdf",
+      "url": "https://static.www.nfl.com/image/upload/v1792406325/gamecenter/aab5857e-4feb-11f1-abca-2c54536568a9.pdf",
+      "retrieved_at_utc": "2026-10-19T10:48:50.912Z",
+      "retrieved_at_toronto": "2026-10-19T06:48:50.912-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "source_time_note": "No publication/update instant established; retrieval time is not publication time.",
+      "cache_state": null
+    },
+    {
+      "id": "R05",
+      "key": "nyjpdf",
+      "url": "https://static.www.nfl.com/image/upload/v1792406326/gamecenter/aab58261-4feb-11f1-abca-2c54536568a9.pdf",
+      "retrieved_at_utc": "2026-10-19T10:49:01.887Z",
+      "retrieved_at_toronto": "2026-10-19T06:49:01.887-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "source_time_note": "No publication/update instant established; retrieval time is not publication time.",
+      "cache_state": null
+    },
+    {
+      "id": "R06",
+      "key": "clepdf",
+      "url": "https://static.www.nfl.com/image/upload/v1792406323/gamecenter/aab57bb8-4feb-11f1-abca-2c54536568a9.pdf",
+      "retrieved_at_utc": "2026-10-19T10:49:19.918Z",
+      "retrieved_at_toronto": "2026-10-19T06:49:19.918-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "source_time_note": "No publication/update instant established; retrieval time is not publication time.",
+      "cache_state": null
+    },
+    {
+      "id": "R07",
+      "key": "phipdf",
+      "url": "https://static.www.nfl.com/image/upload/v1792406323/gamecenter/aab588fe-4feb-11f1-abca-2c54536568a9.pdf",
+      "retrieved_at_utc": "2026-10-19T10:49:44.322Z",
+      "retrieved_at_toronto": "2026-10-19T06:49:44.322-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "source_time_note": "No publication/update instant established; retrieval time is not publication time.",
+      "cache_state": null
+    },
+    {
+      "id": "R08",
+      "key": "bufpdf",
+      "url": "https://static.www.nfl.com/image/upload/v1792406325/gamecenter/aad57852-4feb-11f1-abca-2c54536568a9.pdf",
+      "retrieved_at_utc": "2026-10-19T10:49:55.305Z",
+      "retrieved_at_toronto": "2026-10-19T06:49:55.305-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "source_time_note": "No publication/update instant established; retrieval time is not publication time.",
+      "cache_state": null
+    },
+    {
+      "id": "R09",
+      "key": "pitpdf",
+      "url": "https://static.www.nfl.com/image/upload/v1792406326/gamecenter/aab58c4b-4feb-11f1-abca-2c54536568a9.pdf",
+      "retrieved_at_utc": "2026-10-19T10:51:06.141Z",
+      "retrieved_at_toronto": "2026-10-19T06:51:06.141-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "source_time_note": "No publication/update instant established; retrieval time is not publication time.",
+      "cache_state": null
+    },
+    {
+      "id": "R10",
+      "key": "giantsrecap",
+      "url": "https://www.giants.com/news/instant-analysis-giants-fall-to-saints-34-27",
+      "retrieved_at_utc": "2026-10-19T10:48:10.823Z",
+      "retrieved_at_toronto": "2026-10-19T06:48:10.823-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "source_time_note": "Page displays October 18, 2026 at 6:21 PM; timezone not printed.",
+      "cache_state": null
+    },
+    {
+      "id": "R11",
+      "key": "ramsrecap",
+      "url": "https://www.therams.com/news/game-recap-rams-fall-to-cardinals-18-16-at-sofi-stadium",
+      "retrieved_at_utc": "2026-10-19T10:50:10.823Z",
+      "retrieved_at_toronto": "2026-10-19T06:50:10.823-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "source_time_note": "Page displays October 18 at 4:05 PM, near kickoff despite containing final recap; not treated as actual final-update time.",
+      "cache_state": null
+    },
+    {
+      "id": "R12",
+      "key": "w7schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+      "retrieved_at_utc": "2026-10-19T10:46:45.956Z",
+      "retrieved_at_toronto": "2026-10-19T06:46:45.956-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "source_time_note": "No publication/update instant established; retrieval time is not publication time.",
+      "cache_state": null
+    },
+    {
+      "id": "R13",
+      "key": "dfsroto",
+      "url": "https://dfsroto.win/projections",
+      "retrieved_at_utc": "2026-10-19T10:50:05.633Z",
+      "retrieved_at_toronto": "2026-10-19T06:50:05.633-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "source_time_note": "Page says Updated 2026-10-19; no intraday model timestamp.",
+      "cache_state": null
+    },
+    {
+      "id": "R14",
+      "key": "dklobby",
+      "url": "https://www.draftkings.com/lobby?sport=NFL",
+      "retrieved_at_utc": "2026-10-19T10:46:55.490Z",
+      "retrieved_at_toronto": "2026-10-19T06:46:55.490-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "source_time_note": "No publication/update instant established; retrieval time is not publication time.",
+      "cache_state": null
+    },
+    {
+      "id": "R15",
+      "key": "projections",
+      "url": "https://splashplaypodcast.com/dfs/nfl/players/",
+      "retrieved_at_utc": "2026-10-19T10:50:15.248Z",
+      "retrieved_at_toronto": "2026-10-19T06:50:15.248-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "source_time_note": "Still Week 6, numbers as of October 18 3:48 PM ET, not Week 7.",
+      "cache_state": null
+    }
+  ]
+}

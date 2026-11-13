@@ -1,0 +1,360 @@
+{
+  "schema_version": "tiber-dfs-journal/v1",
+  "entries": [
+    {
+      "id": "2026-w10-grok-response-20261110T133952Z",
+      "snapshot_ids": [
+        "2026-w10-2026-11-10-daily",
+        "2026-w10-r1-claude-v1"
+      ],
+      "kind": "interactive_research",
+      "recorded_at": "2026-11-10T13:39:52.896Z",
+      "recorded_at_toronto": "2026-11-10T08:39:52.896-05:00",
+      "research_at": "2026-11-10T13:38:08.144Z",
+      "origin": "mixed",
+      "origin_note": "GrokBotauthoredactualquestions; operatorsuppliedwake-up; Codex independentlyreadPR/versionsandinspectednewsourcepremises. Nooperatorfootballshortlist/override. Clauderesponsemissing.",
+      "title": "Actual Grok pass received; Codex hold with corrected premises and missed-source acknowledgment",
+      "question": "Do G-W10-Q1–Q8 justify a funded change before actual author exchange?",
+      "why_it_matters": "Questionsnowexist; sourcecorrections andconditionalrolesneedreal dispositions, notstagecompletionbyagreement.",
+      "findings": [
+        "CBS/RotoWire cites Rapoport: MRI strain/sprain, no major injury, monitoring and possible managed practice. No Week10 clearance; completion-count narrative not used to revise scores.",
+        "FieldLevelMedia attributes Monday Reid comments describing minor/day-to-day elbow, treatment. Published metadataNov10 00:18Central=06:18UTC. Quotes are attributed reporting, not directly inspected team transcript.",
+        "ESPN article datedNov9 09:32ET, DK-attributed table retrievednow: SF@DAL55.5 (open52.5), MIA@IND41.5(open47.5), HOU@CLE39.5(open38.5). Different book/time fromretainedFox40.5IND; do not infer a new Tuesday move or exact injury pricing.",
+        "FantasyPros explicitly labels Mumpfield11/162/1 on23targets as2026season. Expert notes Atwelltwo more snaps/three more targets inWeek9; those relative snaps are attributed, not independently charted. Pageprojections excluded.",
+        "CBS/RotoWire citing Fowler reportsWatsonplan. Neurological testsSaturday narrative differs fromYahooFriday clearance; exactclearancedayunresolved, neither is currentteamstarterdesignation.",
+        "Requested earlierWatsonplanURL redirects to laterYahooarticle: MonkenwouldnotnameWeek10starter, reportedviaDanielOyefusi. BodydatedNov9 14:58EST; distinguishplanfromcoachcommitment.",
+        "NinersNation attributesWeek9Watkins52snaps,Robinson35,Cooks30,Cowing16,Hodge12; notindependentlyreproduced. ForwardDeeborole unresolved; currentrankisnotfuture share.",
+        "SI quotesMondaySchottenheimertryingforpractice andJoneswait-and-see; no clearance. Flournoy97.5%snap figure is attributed. Author's favorableplayingodds are opinion, notstatus.",
+        "FreshFantasyPros rawtable matchesbothoriginals andquestionedcapmathalternatives. AllgeierARI@LAR, notGB. OfficialDKpoolandIDsunverified."
+      ],
+      "interpretation": [
+        "HoldCodex49300/700; monitoredminorMahomesreportdoesnotclearSundaybutfillsmisseddiagnosisgap. Fieldspriceisnotstarterevidence.",
+        "Mumpfield11/162/TD nowexplicitlyseasonline; nofreshownroleprojection. ClaudeoriginalretainedwrongWeek9window.",
+        "Boston→ConcepciononeforoneretainsoneCLEreceiver; Q5conflateditwithA1'sadditionalCLEreceiver. AllgeierARIteamnoteisclarification, notprovenClaudeincorrectteamclaim.",
+        "Colts40.5vs41.5book/windowconflict reinforcesvolumequestionwithoutchoosingDowns. Return/practicecommentsdon'tquantifyreceiverallocation.",
+        "GrokquestionpassandCodexresponsescomplete; actualClaudedispositions/exchangepending. Nothingfrozen/sharedendorsed."
+      ],
+      "alternatives": [
+        {
+          "scope": "Unadopted question examples",
+          "note": "Salary-legal examples do not certify role/officialpool. Nochangednineproposed.",
+          "examples": [
+            "Mahomes→Fields47800/2200",
+            "Boston→Concepcion48900/1100,oneCLE",
+            "Allen→Downs48900/1100,stillColtspair"
+          ]
+        }
+      ],
+      "uncertainty": [
+        "Mahomesactualpractice/throwinglimits; noinspectedteamWeek10clearance.",
+        "Clevelandstarterplanversuscoachnoncommitment; Friday/Saturdayclearance-dayreportconflict.",
+        "Packerscompetition,Deebo/Watkins,Pickens/Lamb,Mumpfieldpost-Nacuarotation.",
+        "Sadiqroutepersistence andCMC/Cookreceivingwork; nofreshindependentroutecharts.",
+        "OfficialDKpool/IDs,coherentprojectionmodel; currentdatareaderwithholdsROP/TTS/Forecast, notproofnonexistence.",
+        "Exactexternalpublishclocksunknownwheremetadataabsent; oldbooknumbersnotpresentedasTuesdaymarketmove."
+      ],
+      "lineup_effect": {
+        "action": "unchanged_codex_candidate",
+        "salary_total": 49300,
+        "salary_remaining": 700,
+        "classification": "unchanged",
+        "actual_total": null,
+        "editor_candidate": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a4fd4194bc744ad83c8f68e9e4d45de53aefcf28/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-10.json",
+        "claude_original": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T123500Z-claude-v1.json",
+        "shared": false,
+        "frozen": false
+      },
+      "change_triggers": [
+        {
+          "question_id": "G-W10-Q1",
+          "trigger": "Current dated Chiefs practice/designation and credible throwing/participation limits; assess QB andRice separately beforedeadline."
+        },
+        {
+          "question_id": "G-W10-Q2",
+          "trigger": "ActualDeebopractice/activation/role andcurrentpass-catchingavailability; comparewholelineupwhenproposingmove."
+        },
+        {
+          "question_id": "G-W10-Q3",
+          "trigger": "Lloydparticipation,Brooksactivation/protectionrole,Johnson/Strongallocation; nopresumedWednesdayreport."
+        },
+        {
+          "question_id": "G-W10-Q4",
+          "trigger": "Primary/qualifiedfutureparticipationandrotation,Nacuatransaction,andfundedalternatives; notautomaticAtwellswap."
+        },
+        {
+          "question_id": "G-W10-Q5",
+          "trigger": "Datedteamstarter/first-teamreps andTexansMontgomeryreport; compareBoston/Concepcion/Fanninallocationandprotection."
+        },
+        {
+          "question_id": "G-W10-Q6",
+          "trigger": "Coltsparticipation,DanielJonesstatus/throwingcontext,actualroutes/role andmorecurrentcompatiblemarketreadbeforefreeze."
+        },
+        {
+          "question_id": "G-W10-Q7",
+          "trigger": "CurrentpracticeandrotationevidenceforRBcompetitionandSadiq/Taylorroutes; no artificialminimumtargetthreshold."
+        },
+        {
+          "question_id": "G-W10-Q8",
+          "trigger": "DatedDallasparticipation/designationandmaterialreceiverrolechanges; whole-lineupfundingifauthorproposeschange."
+        }
+      ],
+      "carry_forward": [
+        "ObtainClaudeactualversion-boundreplies; Codexthenresponds/integrates, notautomaticsharedlabel.",
+        "RetainMissedMondayMahomessourcegapandoriginalclocks; new-to-agentdoesnotmeannewpublication.",
+        "Keepquestionpremisesfallible: correctBostonconstructionandAllgeierattributionfairly; independentagreementisnotevidence.",
+        "Verifywindowforreceivingtotalsandcurrentroleswhenreturningteammates; noforceddailychurn.",
+        "Freezeexactcandidate/expectationsbeforeSundaycutoff; noawaitingproviderpastdeadline."
+      ],
+      "sources": [
+        {
+          "id": "mahomesCBS3",
+          "label": "mahomesCBS3",
+          "url": "https://www.cbssports.com/fantasy/football/news/chiefs-patrick-mahomes-receives-diagnosis-will-be-monitored/",
+          "resolved_url": "https://www.cbssports.com/fantasy/football/news/chiefs-patrick-mahomes-receives-diagnosis-will-be-monitored/",
+          "retrieved_at": "2026-11-10T13:34:23.687Z",
+          "retrieved_at_toronto": "2026-11-10T08:34:23.687-05:00",
+          "publication_at": null,
+          "publication_display": "22 hours ago; no exact absolute clock verified in current returned text.",
+          "scope": "CBS/RotoWire cites Rapoport: MRI strain/sprain, no major injury, monitoring and possible managed practice. No Week10 clearance; completion-count narrative not used to revise scores."
+        },
+        {
+          "id": "mahomesFLM3",
+          "label": "mahomesFLM3",
+          "url": "https://www.newstribune.com/news/2026/nov/10/mahomes-injury-considered-minor-called-day-to-day/",
+          "resolved_url": "https://www.newstribune.com/news/2026/nov/10/mahomes-injury-considered-minor-called-day-to-day/",
+          "retrieved_at": "2026-11-10T13:34:23.348Z",
+          "retrieved_at_toronto": "2026-11-10T08:34:23.348-05:00",
+          "publication_at": "2026-11-10T06:18:00.000Z",
+          "publication_display": "7 hours,15minutes ago; exact publication metadata2026-11-10T00:18:00-0600.",
+          "scope": "FieldLevelMedia attributes Monday Reid comments describing minor/day-to-day elbow, treatment. Published metadataNov10 00:18Central=06:18UTC. Quotes are attributed reporting, not directly inspected team transcript."
+        },
+        {
+          "id": "lines3",
+          "label": "lines3",
+          "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+          "resolved_url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+          "retrieved_at": "2026-11-10T13:34:27.745Z",
+          "retrieved_at_toronto": "2026-11-10T08:34:27.745-05:00",
+          "publication_at": "2026-11-09T14:32:00.000Z",
+          "publication_display": "Nov9,2026,09:32AM ET.",
+          "scope": "ESPN article datedNov9 09:32ET, DK-attributed table retrievednow: SF@DAL55.5 (open52.5), MIA@IND41.5(open47.5), HOU@CLE39.5(open38.5). Different book/time fromretainedFox40.5IND; do not infer a new Tuesday move or exact injury pricing."
+        },
+        {
+          "id": "mumpfield3",
+          "label": "mumpfield3",
+          "url": "https://www.fantasypros.com/nfl/players/konata-mumpfield.php",
+          "resolved_url": "https://www.fantasypros.com/nfl/players/konata-mumpfield.php",
+          "retrieved_at": "2026-11-10T13:34:22.586Z",
+          "retrieved_at_toronto": "2026-11-10T08:34:22.586-05:00",
+          "publication_at": null,
+          "publication_display": "PatFitzmaurice Nov9,2026; EmilyMaingi Nov9,2026. Exactpublicationclocksunavailable.",
+          "scope": "FantasyPros explicitly labels Mumpfield11/162/1 on23targets as2026season. Expert notes Atwelltwo more snaps/three more targets inWeek9; those relative snaps are attributed, not independently charted. Pageprojections excluded."
+        },
+        {
+          "id": "watsonCBS3",
+          "label": "watsonCBS3",
+          "url": "https://www.cbssports.com/fantasy/football/news/browns-deshaun-watson-on-track-to-start-week-10/",
+          "resolved_url": "https://www.cbssports.com/fantasy/football/news/browns-deshaun-watson-on-track-to-start-week-10/",
+          "retrieved_at": "2026-11-10T13:34:23.360Z",
+          "retrieved_at_toronto": "2026-11-10T08:34:23.360-05:00",
+          "publication_at": null,
+          "publication_display": "20hoursago; exact absoluteclockunverified in current returned text.",
+          "scope": "CBS/RotoWire citing Fowler reportsWatsonplan. Neurological testsSaturday narrative differs fromYahooFriday clearance; exactclearancedayunresolved, neither is currentteamstarterdesignation."
+        },
+        {
+          "id": "watsonYahoo3",
+          "label": "watsonYahoo3",
+          "url": "https://sports.yahoo.com/nfl/article/browns-reportedly-plan-to-start-deshaun-watson-in-week-10-after-concussion-pushed-shedeur-sanders-into-lineup-171315467.html",
+          "resolved_url": "https://sports.yahoo.com/nfl/article/browns-decline-to-name-starting-qb-for-week-10-after-report-deshaun-watson-would-return-195801994.html",
+          "retrieved_at": "2026-11-10T13:34:24.915Z",
+          "retrieved_at_toronto": "2026-11-10T08:34:24.915-05:00",
+          "publication_at": null,
+          "publication_display": "Mon,November9,2026 at2:58PM EST.",
+          "scope": "Requested earlierWatsonplanURL redirects to laterYahooarticle: MonkenwouldnotnameWeek10starter, reportedviaDanielOyefusi. BodydatedNov9 14:58EST; distinguishplanfromcoachcommitment."
+        },
+        {
+          "id": "watkins3",
+          "label": "watkins3",
+          "url": "https://www.ninersnation.com/san-francisco-49ers-injuries/165462/deebo-samuel-is-on-track-to-return-49ers-open-to-bringing-back-veteran-defensive-tackle",
+          "resolved_url": "https://www.ninersnation.com/san-francisco-49ers-injuries/165462/deebo-samuel-is-on-track-to-return-49ers-open-to-bringing-back-veteran-defensive-tackle",
+          "retrieved_at": "2026-11-10T13:34:23.506Z",
+          "retrieved_at_toronto": "2026-11-10T08:34:23.506-05:00",
+          "publication_at": "2026-11-09T22:59:11.000Z",
+          "publication_display": "Nov9,2026,5:59PM EST.",
+          "scope": "NinersNation attributesWeek9Watkins52snaps,Robinson35,Cooks30,Cowing16,Hodge12; notindependentlyreproduced. ForwardDeeborole unresolved; currentrankisnotfuture share."
+        },
+        {
+          "id": "pickens3",
+          "label": "pickens3",
+          "url": "https://www.si.com/nfl/cowboys/onsi/will-george-pickens-return-week-10-injury-update-dallas-cowboys",
+          "resolved_url": "https://www.si.com/nfl/cowboys/onsi/will-george-pickens-return-week-10-injury-update-dallas-cowboys",
+          "retrieved_at": "2026-11-10T13:34:23.426Z",
+          "retrieved_at_toronto": "2026-11-10T08:34:23.426-05:00",
+          "publication_at": "2026-11-10T12:39:56.000Z",
+          "publication_display": null,
+          "scope": "SI quotesMondaySchottenheimertryingforpractice andJoneswait-and-see; no clearance. Flournoy97.5%snap figure is attributed. Author's favorableplayingodds are opinion, notstatus."
+        },
+        {
+          "id": "prices3",
+          "label": "prices3",
+          "url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "resolved_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "retrieved_at": "2026-11-10T13:35:38.409Z",
+          "retrieved_at_toronto": "2026-11-10T08:35:38.409-05:00",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "FreshFantasyPros rawtable matchesbothoriginals andquestionedcapmathalternatives. AllgeierARI@LAR, notGB. OfficialDKpoolandIDsunverified."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w10-2026-11-10-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a4fd4194bc744ad83c8f68e9e4d45de53aefcf28/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-10.json"
+        },
+        {
+          "snapshot_id": "2026-w10-r1-claude-v1",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T123500Z-claude-v1.json"
+        }
+      ],
+      "expectations": [],
+      "outcomes": [],
+      "question_ids": [
+        "G-W10-Q1",
+        "G-W10-Q2",
+        "G-W10-Q3",
+        "G-W10-Q4",
+        "G-W10-Q5",
+        "G-W10-Q6",
+        "G-W10-Q7",
+        "G-W10-Q8"
+      ],
+      "responses": [
+        {
+          "question_id": "G-W10-Q1",
+          "disposition": "accept question; hold Mahomes/Rice for now",
+          "classification": "new_evidence",
+          "evidence": "CBS MRI/no-major-injury report and FLM MondayReidminor/day-to-daycomments inspected. These already-public reports were missed in earlier Tuesday retrieval; new-to-this-pass is not newly-published.",
+          "reason": "Evidence reduces the unresolved diagnosis gap but does not establish Sunday availability/effectiveness. Fields' price is not evidence he starts. A Mahomes-only swap leaves Rice's passing context unresolved.",
+          "lineup_effect": "No selection change,49300/700. Fields4500one-slotmath47800/2200 is an unadopted conditional example; no backup-start assumption.",
+          "trigger": "Current dated Chiefs practice/designation and credible throwing/participation limits; assess QB andRice separately beforedeadline.",
+          "sources": [
+            "mahomesCBS3",
+            "mahomesFLM3",
+            "prices3"
+          ]
+        },
+        {
+          "question_id": "G-W10-Q2",
+          "disposition": "accept concentration/Watkins question; decline automatic market or Cowing trigger",
+          "classification": "changed_interpretation",
+          "evidence": "Current retrievedESPNtable still55.5; NinersNationWeek9snapcounts support actualpastWatkinsinvolvement, not hisWeek10share.",
+          "reason": "Claude's27500four-slotgameallocation deserves role evidence independently oftotal. Cowing couldalso loseworkwhenDeeboreturns; AtwellwoulddoubleLARexposure. The about52cutoff isClaude'sdeclaredheuristic, not a validateddecisionrule orCodexcommitment.",
+          "lineup_effect": "No adoption ofClaude'sstack orsubstitute. Claude must give its own disposition/fundednine ifchanging.",
+          "trigger": "ActualDeebopractice/activation/role andcurrentpass-catchingavailability; comparewholelineupwhenproposingmove.",
+          "sources": [
+            "lines3",
+            "watkins3"
+          ]
+        },
+        {
+          "question_id": "G-W10-Q3",
+          "disposition": "accept allocation concern; clarification on Allgeier",
+          "classification": "constraint_or_source_correction",
+          "evidence": "RetainedprimaryGBupdate alreadysetsJacobsdurationunknown andBrooksreturnpossibility; currentpricepageconfirmsStrong4300/Brooks4000/Allgeier5200ARI.",
+          "reason": "JacobsabsencealonecannotestablishJohnsonstarter. GrokcorrectlyclarifiesAllgeierteam, butClaudeoriginalneverexpresslycalledhim aGBplayer; outside-teamfallbackisallowed. Do not turnclarificationintoaprovenwrong-teamerror. Cheaperbackup isnotautomaticallybetter.",
+          "lineup_effect": "JohnsonnotinCodexnine. KeepClaudeoriginal; actualClaudequestionresponsepending. Allgeier/Higbeefundingexample remains50000/0, notadopted.",
+          "trigger": "Lloydparticipation,Brooksactivation/protectionrole,Johnson/Strongallocation; nopresumedWednesdayreport.",
+          "sources": [
+            "prices3"
+          ],
+          "retained_primary_reference": "667c4cbc9d5c1126374f11c51d542b695a54b465 intakechecks packers2"
+        },
+        {
+          "question_id": "G-W10-Q4",
+          "disposition": "accept correction and unresolved vacancy question",
+          "classification": "constraint_or_source_correction",
+          "evidence": "FreshFantasyProsexplicitlystates11/162/1on23targets fortheseason, resolving priorunknownwindow. ActualWeek9box2/20/noTDremainsretained.",
+          "reason": "Seasonlinecannotjustifyeleven-catchlastweekbaseline. AtwellWeek9target/snapedge challengesMumpfield, butdoesnotprovepost-Nacuaallocation; third-partydepthchart/slotfiguresnotnewlyverifiedhere.",
+          "lineup_effect": "NoCodexMumpfieldselection; norewriteClaudeoriginal. RequestClaudeacknowledgescorrectedwindowandkeeps/replacesonforwardroleevidence.",
+          "trigger": "Primary/qualifiedfutureparticipationandrotation,Nacuatransaction,andfundedalternatives; notautomaticAtwellswap.",
+          "sources": [
+            "mumpfield3"
+          ]
+        },
+        {
+          "question_id": "G-W10-Q5",
+          "disposition": "accept starter uncertainty; hold Boston and correct construction premise",
+          "classification": "constraint_or_source_correction",
+          "evidence": "CBSWatsonplan andlaterYahooMonkennoncommitmentbothinspected. Reportedplanisnotofficialstarter. Clearance-daynarrativesFridayvsSaturdayconflict retained.",
+          "reason": "Boston'sroleisconditional; no inspectedreceiver-specificWatsonuplift/penalty. **Boston5200→Concepcion4800 keepsoneCLEreceiver**, total48900/1100. PriorA1addedConcepcionwhileholdingBoston; Grokconflatedthetwo. NeitherQBdesignationnorMontgomeryWeek10absenceestablished.",
+          "lineup_effect": "HoldBoston; noone-for-oneConcepcionswap. ClaudeHOU/Marks9100remains itsowncandidateforactualresponse, notCodexadoption.",
+          "trigger": "Datedteamstarter/first-teamreps andTexansMontgomeryreport; compareBoston/Concepcion/Fanninallocationandprotection.",
+          "sources": [
+            "watsonCBS3",
+            "watsonYahoo3",
+            "prices3"
+          ]
+        },
+        {
+          "question_id": "G-W10-Q6",
+          "disposition": "accept low-environment concern; hold Allen/Warren",
+          "classification": "unchanged",
+          "evidence": "ESPNDK41.5/open47.5 versusretainedFoxbet36540.5. Book/as-ofdifference preserved; no freshrouteevidenceretrieved.",
+          "reason": "Lowmarketenvironmentreinforcesalready-recordedabsoluteopportunityrisk. Allen→Downs saves400butretainsColtsconcentration; unusedsalaryalone doesnotresolvefloor/role. NoverifiedreasonnowtogiveupAllen8/Warren7targetinvolvement.",
+          "lineup_effect": "49300/700 unchanged; Downsone-slotexample48900/1100 notadopted. ExistingAllen/Downsdisagreementretained.",
+          "trigger": "Coltsparticipation,DanielJonesstatus/throwingcontext,actualroutes/role andmorecurrentcompatiblemarketreadbeforefreeze.",
+          "sources": [
+            "lines3",
+            "prices3"
+          ]
+        },
+        {
+          "question_id": "G-W10-Q7",
+          "disposition": "hold CMC, Cook and Sadiq; accept need for role confirmation",
+          "classification": "unchanged",
+          "evidence": "No new inspectedrolemeasureoverturnsoriginalconditionaldispositions. Freshpricesstillmatch; originalfiveexpectationIDs/clocksremain.",
+          "reason": "Cook31carrygameisnotprojected31; CMCthree/Cookonetargetrestrainreceivingclaims. Sadiqfourtargetsandcoachmismatchcomments supportparticipant, notsecurefloor. A1Kyren/Concepcion49900/100 addstheotherCLEreceiver; nominallylegalTaylorRBswapdoesnotestablishsuperioropportunity.",
+          "lineup_effect": "Retain49300/700; no new9orprojection. Allfirstv1bytes/salarysnapshotunchanged.",
+          "trigger": "CurrentpracticeandrotationevidenceforRBcompetitionandSadiq/Taylorroutes; no artificialminimumtargetthreshold.",
+          "sources": [
+            "prices3"
+          ]
+        },
+        {
+          "question_id": "G-W10-Q8",
+          "disposition": "accept conditional Pickens check; Claude disposition pending",
+          "classification": "new_evidence",
+          "evidence": "SITuesdayarticlequotesMondaycoachtryingforpracticeandJoneswait-and-see. Noactive/inactivefinal; authorfavorablereturnopinionexcluded.",
+          "reason": "Lamb's16-targetWeek9rolewasrealbutfutureconcentrationcanchange. PickensFPwouldnotbyitselfquantifyLambtargetloss ormandateaswap.",
+          "lineup_effect": "NeitherLambnorPrescottinCodexnine; do notchangeClaude'soriginalonitsbehalf.",
+          "trigger": "DatedDallasparticipation/designationandmaterialreceiverrolechanges; whole-lineupfundingifauthorproposeschange.",
+          "sources": [
+            "pickens3"
+          ]
+        }
+      ],
+      "contribution_records": {
+        "grok_original": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2a14ddad633a36fc49aa7d288cba5ca4d689b538/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T133502Z-grok-questions-verbatim.md",
+        "grok_receipt": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2a14ddad633a36fc49aa7d288cba5ca4d689b538/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T133502Z-grok-questions-receipt.json",
+        "codex_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a4fd4194bc744ad83c8f68e9e4d45de53aefcf28/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-10.json",
+        "claude_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T123500Z-claude-v1.json",
+        "common": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20a2131d1363b0c14ca4c56883cb710c2541f851/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T113619Z-common-inputs.json",
+        "previous_delta": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T131222Z-claude-intake-checks.json",
+        "expectations": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20a2131d1363b0c14ca4c56883cb710c2541f851/docs/weekly-dfs/codex/journal/20261110T113619Z.json",
+        "codex_response": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/967778b0e9e8fb371aba9e7d9c3d811c895b096e/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T133808Z-codex-grok-response.json",
+        "codex_response_readable": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/967778b0e9e8fb371aba9e7d9c3d811c895b096e/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T133808Z-codex-grok-response.md",
+        "grok_ready": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/967778b0e9e8fb371aba9e7d9c3d811c895b096e/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T133808Z-grok-questions-ready.json"
+      },
+      "collaboration": {
+        "codex_v1_ready": "ready",
+        "claude_v1_ready": "ready_with_qualifications",
+        "grok_questions_ready": "ready",
+        "codex_response": "complete",
+        "claude_response": "not_received",
+        "collaboration_ready": "blocked_actual_exchange_missing",
+        "final_frozen": "not_final"
+      },
+      "source_metadata_correction": "Correctpublication_displayfieldsareinthisentryandappend-onlycorrectionrecord; earlierISOclocks/footballdispositionsunchanged."
+    }
+  ]
+}

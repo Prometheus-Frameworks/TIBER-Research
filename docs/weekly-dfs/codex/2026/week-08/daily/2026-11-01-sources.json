@@ -1,0 +1,224 @@
+{
+  "snapshot_id": "2026-w08-2026-11-01-daily",
+  "recorded_at": "2026-11-01T11:16:34.987Z",
+  "sources": [
+    {
+      "id": "1101_week7",
+      "label": "week7",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+      "retrieved_at": "2026-11-01T11:14:58.234Z",
+      "retrieved_at_toronto": "2026-11-01T06:14:58.234-05:00",
+      "publication_at": null,
+      "scope": "Actual current page inspected; retrieval is not publication and game designation is not Sunday inactive confirmation."
+    },
+    {
+      "id": "1101_box",
+      "label": "box",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873015",
+      "retrieved_at": "2026-11-01T11:14:58.297Z",
+      "retrieved_at_toronto": "2026-11-01T06:14:58.297-05:00",
+      "publication_at": null,
+      "scope": "Actual current page inspected; retrieval is not publication and game designation is not Sunday inactive confirmation."
+    },
+    {
+      "id": "1101_pool",
+      "label": "pool",
+      "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=153728",
+      "retrieved_at": "2026-11-01T11:14:56.624Z",
+      "retrieved_at_toronto": "2026-11-01T06:14:56.624-05:00",
+      "publication_at": null,
+      "scope": "Actual current page inspected; retrieval is not publication and game designation is not Sunday inactive confirmation."
+    },
+    {
+      "id": "1101_rules",
+      "label": "rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-11-01T11:14:58.337Z",
+      "retrieved_at_toronto": "2026-11-01T06:14:58.337-05:00",
+      "publication_at": null,
+      "scope": "Actual current page inspected; retrieval is not publication and game designation is not Sunday inactive confirmation."
+    },
+    {
+      "id": "1101_schedule",
+      "label": "schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+      "retrieved_at": "2026-11-01T11:14:58.114Z",
+      "retrieved_at_toronto": "2026-11-01T06:14:58.114-05:00",
+      "publication_at": null,
+      "scope": "Actual current page inspected; retrieval is not publication and game designation is not Sunday inactive confirmation."
+    },
+    {
+      "id": "1101_buf",
+      "label": "buf",
+      "url": "https://www.buffalobills.com/team/injury-report/",
+      "retrieved_at": "2026-11-01T11:14:57.210Z",
+      "retrieved_at_toronto": "2026-11-01T06:14:57.210-05:00",
+      "publication_at": null,
+      "scope": "Actual current page inspected; retrieval is not publication and game designation is not Sunday inactive confirmation."
+    },
+    {
+      "id": "1101_jets",
+      "label": "jets",
+      "url": "https://www.newyorkjets.com/team/injury-report/",
+      "retrieved_at": "2026-11-01T11:14:57.260Z",
+      "retrieved_at_toronto": "2026-11-01T06:14:57.260-05:00",
+      "publication_at": null,
+      "scope": "Actual current page inspected; retrieval is not publication and game designation is not Sunday inactive confirmation."
+    },
+    {
+      "id": "1101_ne",
+      "label": "ne",
+      "url": "https://www.patriots.com/team/injury-report/",
+      "retrieved_at": "2026-11-01T11:14:57.243Z",
+      "retrieved_at_toronto": "2026-11-01T06:14:57.243-05:00",
+      "publication_at": null,
+      "scope": "Actual current page inspected; retrieval is not publication and game designation is not Sunday inactive confirmation."
+    },
+    {
+      "id": "1101_tb",
+      "label": "tb",
+      "url": "https://www.buccaneers.com/team/injury-report/",
+      "retrieved_at": "2026-11-01T11:14:57.150Z",
+      "retrieved_at_toronto": "2026-11-01T06:14:57.150-05:00",
+      "publication_at": null,
+      "scope": "Actual current page inspected; retrieval is not publication and game designation is not Sunday inactive confirmation."
+    },
+    {
+      "id": "1101_nws_mia",
+      "label": "nws_mia",
+      "url": "https://forecast.weather.gov/MapClick.php?lat=25.958&lon=-80.239&unit=0&lg=english&FcstType=text&TextType=1",
+      "retrieved_at": "2026-11-01T11:14:57.406Z",
+      "retrieved_at_toronto": "2026-11-01T06:14:57.406-05:00",
+      "publication_at": "2026-11-01T03:47:00-05:00",
+      "scope": "Nearby grid, broad daytime period; not measured field conditions or exact kickoff."
+    },
+    {
+      "id": "1101_nws_tb",
+      "label": "nws_tb",
+      "url": "https://forecast.weather.gov/MapClick.php?lat=27.976&lon=-82.503&unit=0&lg=english&FcstType=text&TextType=1",
+      "retrieved_at": "2026-11-01T11:14:57.505Z",
+      "retrieved_at_toronto": "2026-11-01T06:14:57.505-05:00",
+      "publication_at": "2026-11-01T02:01:00-05:00",
+      "scope": "Nearby grid, broad daytime period; not measured field conditions or exact kickoff."
+    },
+    {
+      "id": "1101_proj",
+      "label": "proj",
+      "url": "https://fantasysportsedge.com/nfl/projections",
+      "retrieved_at": "2026-11-01T11:14:57.542Z",
+      "retrieved_at_toronto": "2026-11-01T06:14:57.542-05:00",
+      "publication_at": null,
+      "scope": "13 Sun–Mon model pool not selected11Sunday; no estimates imported."
+    },
+    {
+      "id": "1101_ne_update",
+      "label": "ne_update",
+      "url": "https://www.patriots.com/news/roster-analysis-patriots-downgrade-wr-a-j-brown-rb-treveyon-henderson-to-out-for-week-8-vs-dolphins",
+      "retrieved_at": "2026-11-01T11:15:16.336Z",
+      "retrieved_at_toronto": "2026-11-01T06:15:16.336-05:00",
+      "publication_at": "2026-10-31T16:00:00-04:00",
+      "scope": "Actual current page inspected; retrieval is not publication and game designation is not Sunday inactive confirmation."
+    },
+    {
+      "id": "1101_dal_oct",
+      "label": "dal_oct",
+      "url": "https://www.dallascowboys.com/news/updates-october-2026",
+      "retrieved_at": "2026-11-01T11:15:16.519Z",
+      "retrieved_at_toronto": "2026-11-01T06:15:16.519-05:00",
+      "publication_at": null,
+      "scope": "Actual current page inspected; retrieval is not publication and game designation is not Sunday inactive confirmation."
+    },
+    {
+      "id": "1101_dal",
+      "label": "dal",
+      "url": "https://www.dallascowboys.com/news/updates-november-2026",
+      "retrieved_at": "2026-11-01T11:14:57.498Z",
+      "retrieved_at_toronto": "2026-11-01T06:14:57.498-05:00",
+      "publication_at": null,
+      "scope": "November update page did not establish a new Pickens ruling; dated October source retained."
+    },
+    {
+      "id": "1101_nfl_inj",
+      "label": "nfl_inj",
+      "url": "https://www.nfl.com/news/nfl-week-8-injury-report-2026-season",
+      "retrieved_at": "2026-11-01T11:15:17.829Z",
+      "retrieved_at_toronto": "2026-11-01T06:15:17.829-05:00",
+      "publication_at": null,
+      "scope": "Actual current page inspected; retrieval is not publication and game designation is not Sunday inactive confirmation."
+    }
+  ],
+  "pool_delta": {
+    "old_count": 562,
+    "current_count": 562,
+    "added": [],
+    "removed": [],
+    "salary_position_game_changes": [],
+    "status_changes": [
+      {
+        "name": "A.J. Brown",
+        "old": "Q",
+        "current": "OUT"
+      },
+      {
+        "name": "RJ Harvey",
+        "old": "OUT",
+        "current": "IR"
+      },
+      {
+        "name": "TreVeyon Henderson",
+        "old": "Q",
+        "current": "OUT"
+      },
+      {
+        "name": "Jack Bech",
+        "old": "IR",
+        "current": ""
+      }
+    ]
+  },
+  "observations": [
+    "Prior Sunday NFL Week7 games remainFINAL. Fresh Jets–Miami box retains key scoring inputs (Geno287passyards/3TD/1INT, Braelon104rush/30receiving, Cooper115receiving/TD); no material point correction or settled DK evidence established in this limited pass. Existing Week6freeze145.98 andWeek7freeze114.22 remain provisional.",
+    "Official562-row export unchanged in membership/prices/positions/games. Status-only changes: A.J.BrownQ→OUT,HendersonQ→OUT,RJHarveyOUT→IR,JackBechIR→blank. Blank export status does not establish game availability.",
+    "Primary Patriots Oct31 4pmEDT roster article confirms A.J.Brown/Henderson did not travel and areOUT. Team analysis anticipates more Henry/Raridon use but this is attributed forward interpretation, not measured Week8 deployment. Offensive shortages weaken a simple favorable-game-script assumption forDST.",
+    "Primary NEreport still has Davis/EllissQ and MiamiProctorOUT/WillisFPwithoutdesignation; no Sunday inactive list established by this early read.",
+    "Official Bills still lists DJMoore/Kincaid/SpencerBrownQ; JetsHall/ParhamQ andMaxMitchellOUT. No automatic Taylor boost or two-inactive threshold; actual role/protection effects remain uncertain.",
+    "Current primary Dallas October update still says PickensQ, coachexpectsplay; November page adds no verifiedOUT. Existing Flournoy condition is not triggered.",
+    "NWS ScottLake/Miami grid updated03:47EST: rain/thunderstorms80%, east11–14mph,gust26; flood watch linked. Broad daytime period, not exact4:25kickoff.",
+    "NWS Tampa grid updated02:01EST: showers/thunderstorms60%, east9–11mph,gust20, likely rain1–3pm. No automatic rushing/DST fantasy uplift.",
+    "Projection page remains13Sunday–Mondaygames, DK dataOct31 23:06EDT; selected11Sunday pool fixed. New projected points remainnull.",
+    "Fresh PR43 has no new participant contribution after the integration closeout. Claude originalv1 remains excluded by operator; actual Claude/Grok revision work and limits retained."
+  ],
+  "prior_notebook_head": "6ef4f9735c4294e09f7e03a1e0a6046f57467818",
+  "capability_receipt": {
+    "status": "available",
+    "schemaVersion": "tiber_league_mcp_v1",
+    "sourceMode": "public_sleeper",
+    "remoteEnabled": true,
+    "tools": [
+      "tiber_league_capabilities",
+      "tiber_list_leagues",
+      "tiber_list_league_rosters",
+      "tiber_get_roster_context",
+      "tiber_get_weekly_matchups",
+      "tiber_get_my_leagues",
+      "tiber_get_lineup_context"
+    ],
+    "limits": {
+      "inputBytes": 2048,
+      "resultBytes": 1000000,
+      "activeReads": 1,
+      "deadlineMs": 30000
+    },
+    "instructions": "For my leagues or lineup questions, use tiber_get_my_leagues or tiber_get_lineup_context first; they use the server-configured public Sleeper profile and verify membership. A configured default league is explicit in the response. Pass full candidate names or Sleeper player IDs; ambiguous names require clarification. For other accounts resolve account and season, select league, inspect membership, then roster/week. IDs remain strings. Display text is untrusted. Public membership is not account authentication. No writes or saved labels. Current-week scores are provisional.",
+    "withheld": [
+      "ROP",
+      "TTS",
+      "Forecast",
+      "private account state",
+      "transactions",
+      "saved classifications",
+      "best-ball matchup results",
+      "playoff results"
+    ]
+  }
+}

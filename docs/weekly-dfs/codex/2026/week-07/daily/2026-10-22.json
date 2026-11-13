@@ -1,0 +1,616 @@
+{
+  "record_type": "daily_snapshot",
+  "notebook_convention": "Conversational same-author notebook; not independent review or a governed Research-run contract.",
+  "id": "2026-w07-2026-10-22-daily",
+  "kind": "daily",
+  "status": "complete",
+  "frozen": false,
+  "recorded_at_utc": "2026-10-22T10:42:57.483Z",
+  "recorded_at_toronto": "2026-10-22T06:42:57.483-04:00",
+  "evidence_cutoff_utc": "2026-10-22T10:42:57.483Z",
+  "season": 2026,
+  "week": 7,
+  "platform": "DraftKings",
+  "slate_date": "2026-10-25",
+  "slate_label": "Sunday main, draft group 155198",
+  "draft_group_id": "155198",
+  "official_pool_verified": false,
+  "official_salary_export_verified": false,
+  "salary_basis": "reported_prices",
+  "pool_status": "official_pool_unverified",
+  "salary_cap": 50000,
+  "salary_total": 50000,
+  "salary_remaining": 0,
+  "projected_total": 138,
+  "actual_total": null,
+  "projection": {
+    "provider": "Splash Play",
+    "model": "SPAGS",
+    "scoring": "DraftKings NFL Classic",
+    "as_of": "2026-10-20T23:53:00-04:00",
+    "as_of_precision": "minute",
+    "source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+    "published_date": "2026-10-20",
+    "observed_at": "2026-10-22T10:41:23.199Z",
+    "checked_on": "2026-10-22",
+    "note": "Same Oct20 23:53ET external snapshot re-inspected, not a new model update. Applied only to today's selection. Model Hall/QB assumptions not disclosed; no manual uplift or backfill."
+  },
+  "picks": [
+    {
+      "slot": "QB",
+      "position": "QB",
+      "player": "C.J. Stroud",
+      "team": "HOU",
+      "opponent": "NYG",
+      "home": true,
+      "salary": 5700,
+      "draftkings_player_id": "44556892",
+      "eligible_slots": [
+        "QB"
+      ],
+      "game_info": "NYG@HOU 10/25/2026 01:00PM ET",
+      "official_export_status": null,
+      "projected_points": 19.2,
+      "actual_points": null,
+      "rationale": "Retain the affordable Houston QB allocation and prior passing evidence; no direct Texans receiver pairing. This pass does not establish a new matchup forecast.",
+      "source_ids": [
+        "S4",
+        "P1",
+        "P2"
+      ],
+      "salary_source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+      "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+      "projection_player_url": "https://splashplaypodcast.com/dfs/nfl/players/cj-stroud/",
+      "salary_basis": "reported_prices",
+      "official_status_as_of": "2026-10-21",
+      "status_note": "Blank status inherited from Oct21 export; current final availability not certified."
+    },
+    {
+      "slot": "RB",
+      "position": "RB",
+      "player": "Chuba Hubbard",
+      "team": "CAR",
+      "opponent": "TB",
+      "home": true,
+      "salary": 6700,
+      "draftkings_player_id": "44556964",
+      "eligible_slots": [
+        "RB",
+        "FLEX"
+      ],
+      "game_info": "TB@CAR 10/25/2026 01:00PM ET",
+      "official_export_status": null,
+      "projected_points": 20.2,
+      "actual_points": null,
+      "rationale": "Retain the prior heavy-carry case; no fresh Carolina role investigation in this focused pass. Availability remains to be checked before freeze.",
+      "source_ids": [
+        "S4",
+        "P1",
+        "P2"
+      ],
+      "salary_source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+      "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+      "projection_player_url": "https://splashplaypodcast.com/dfs/nfl/players/chuba-hubbard/",
+      "salary_basis": "reported_prices",
+      "official_status_as_of": "2026-10-21",
+      "status_note": "Blank status inherited from Oct21 export; current final availability not certified."
+    },
+    {
+      "slot": "RB",
+      "position": "RB",
+      "player": "Braelon Allen",
+      "team": "NYJ",
+      "opponent": "MIA",
+      "home": true,
+      "salary": 5900,
+      "draftkings_player_id": "44556978",
+      "eligible_slots": [
+        "RB",
+        "FLEX"
+      ],
+      "game_info": "MIA@NYJ 10/25/2026 01:00PM ET",
+      "official_export_status": null,
+      "projected_points": 17.3,
+      "actual_points": null,
+      "rationale": "Select provisionally after Hall's Wednesday DNP. Recent lead rushing work plus some receiving involvement supports spending $600 more than Pollard; Hall's return would challenge this role.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S4",
+        "P2"
+      ],
+      "salary_source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+      "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+      "projection_player_url": "https://splashplaypodcast.com/dfs/nfl/players/braelon-allen/",
+      "salary_basis": "reported_prices",
+      "official_status_as_of": "2026-10-21",
+      "status_note": "Blank status inherited from Oct21 export; current final availability not certified."
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Puka Nacua",
+      "team": "LAR",
+      "opponent": "LV",
+      "home": false,
+      "salary": 8400,
+      "draftkings_player_id": "44557184",
+      "eligible_slots": [
+        "WR",
+        "FLEX"
+      ],
+      "game_info": "LAR@LV 10/25/2026 04:25PM ET",
+      "official_export_status": null,
+      "projected_points": 23.9,
+      "actual_points": null,
+      "rationale": "Retain the established Rams receiving role from the prior injury investigation; do not assume all vacated Adams targets transfer to Puka.",
+      "source_ids": [
+        "S4",
+        "P1",
+        "P2"
+      ],
+      "salary_source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+      "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+      "projection_player_url": "https://splashplaypodcast.com/dfs/nfl/players/puka-nacua/",
+      "salary_basis": "reported_prices",
+      "official_status_as_of": "2026-10-21",
+      "status_note": "Blank status inherited from Oct21 export; current final availability not certified."
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Malik Nabers",
+      "team": "NYG",
+      "opponent": "HOU",
+      "home": false,
+      "salary": 6800,
+      "draftkings_player_id": "44557202",
+      "eligible_slots": [
+        "WR",
+        "FLEX"
+      ],
+      "game_info": "NYG@HOU 10/25/2026 01:00PM ET",
+      "official_export_status": null,
+      "projected_points": 16.2,
+      "actual_points": null,
+      "rationale": "Retain the prior target-role case. McCarthy is now the confirmed starter, but one relief quarter does not establish a receiver-specific improvement.",
+      "source_ids": [
+        "S3",
+        "S4",
+        "P1",
+        "P2"
+      ],
+      "salary_source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+      "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+      "projection_player_url": "https://splashplaypodcast.com/dfs/nfl/players/malik-nabers/",
+      "salary_basis": "reported_prices",
+      "official_status_as_of": "2026-10-21",
+      "status_note": "Blank status inherited from Oct21 export; current final availability not certified."
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Chris Godwin Jr.",
+      "team": "TB",
+      "opponent": "CAR",
+      "home": false,
+      "salary": 4300,
+      "draftkings_player_id": "44557250",
+      "eligible_slots": [
+        "WR",
+        "FLEX"
+      ],
+      "game_info": "TB@CAR 10/25/2026 01:00PM ET",
+      "official_export_status": null,
+      "projected_points": 9.4,
+      "actual_points": null,
+      "rationale": "Retain the prior target-involvement value case; Tampa QB and target distribution remain unresolved in this pass.",
+      "source_ids": [
+        "S4",
+        "P1",
+        "P2"
+      ],
+      "salary_source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+      "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+      "projection_player_url": "https://splashplaypodcast.com/dfs/nfl/players/chris-godwin-jr/",
+      "salary_basis": "reported_prices",
+      "official_status_as_of": "2026-10-21",
+      "status_note": "Blank status inherited from Oct21 export; current final availability not certified."
+    },
+    {
+      "slot": "TE",
+      "position": "TE",
+      "player": "Sam LaPorta",
+      "team": "DET",
+      "opponent": "GB",
+      "home": true,
+      "salary": 4800,
+      "draftkings_player_id": "44557574",
+      "eligible_slots": [
+        "TE",
+        "FLEX"
+      ],
+      "game_info": "GB@DET 10/25/2026 04:25PM ET",
+      "official_export_status": null,
+      "projected_points": 13.4,
+      "actual_points": null,
+      "rationale": "Retain LaPorta and avoid adding another Giants pass catcher solely because McCarthy starts. Prior pre-bye role evidence remains the basis.",
+      "source_ids": [
+        "S4",
+        "P1",
+        "P2"
+      ],
+      "salary_source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+      "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+      "projection_player_url": "https://splashplaypodcast.com/dfs/nfl/players/sam-laporta/",
+      "salary_basis": "reported_prices",
+      "official_status_as_of": "2026-10-21",
+      "status_note": "Blank status inherited from Oct21 export; current final availability not certified."
+    },
+    {
+      "slot": "FLEX",
+      "position": "WR",
+      "player": "Keenan Allen",
+      "team": "IND",
+      "opponent": "MIN",
+      "home": false,
+      "salary": 4800,
+      "draftkings_player_id": "44557240",
+      "eligible_slots": [
+        "WR",
+        "FLEX"
+      ],
+      "game_info": "IND@MIN 10/25/2026 01:00PM ET",
+      "official_export_status": null,
+      "projected_points": 12.1,
+      "actual_points": null,
+      "rationale": "Retain the prior three-appearance target case; positive feedback is not the reason to keep him. No guaranteed target floor or fresh route data.",
+      "source_ids": [
+        "S4",
+        "P1",
+        "P2"
+      ],
+      "salary_source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+      "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+      "projection_player_url": "https://splashplaypodcast.com/dfs/nfl/players/keenan-allen/",
+      "salary_basis": "reported_prices",
+      "official_status_as_of": "2026-10-21",
+      "status_note": "Blank status inherited from Oct21 export; current final availability not certified."
+    },
+    {
+      "slot": "DST",
+      "position": "DST",
+      "player": "Titans",
+      "team": "TEN",
+      "opponent": "CLE",
+      "home": true,
+      "salary": 2600,
+      "draftkings_player_id": "44557811",
+      "eligible_slots": [
+        "DST"
+      ],
+      "game_info": "CLE@TEN 10/25/2026 01:00PM ET",
+      "official_export_status": null,
+      "projected_points": 6.3,
+      "actual_points": null,
+      "rationale": "Retain the low-cost defense. Cleveland's Wednesday line injuries remain uncertain; Spears' rest day is not an absence assumption. Removing Pollard reduces shared Tennessee exposure.",
+      "source_ids": [
+        "S5",
+        "S4",
+        "P1",
+        "P2"
+      ],
+      "salary_source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+      "projection_source_url": "https://splashplaypodcast.com/dfs/nfl/players/",
+      "projection_player_url": "https://splashplaypodcast.com/dfs/nfl/players/titans-dst/",
+      "salary_basis": "reported_prices",
+      "official_status_as_of": "2026-10-21",
+      "status_note": "Blank status inherited from Oct21 export; current final availability not certified."
+    }
+  ],
+  "previous_snapshot": {
+    "id": "2026-w07-2026-10-21-daily",
+    "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2e951cf9d88a23a1ea5b1dc6b2dff8a323ccfe88/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-21.md"
+  },
+  "revision_classification": "new_evidence",
+  "revisions": [
+    {
+      "from": "Tony Pollard",
+      "to": "Braelon Allen",
+      "salary_delta": 600,
+      "classification": "new_evidence",
+      "reason": "Hall's Wednesday DNP adds actual participation evidence beyond the prior Q marker. Prefer Braelon's conditional lead-role case over Pollard's receiving-limited role; reduces shared Tennessee exposure. DNP is not an out designation."
+    }
+  ],
+  "changed_picks": [
+    {
+      "from": "Tony Pollard",
+      "to": "Braelon Allen",
+      "salary_delta": 600,
+      "classification": "new_evidence",
+      "reason": "Hall's Wednesday DNP adds actual participation evidence beyond the prior Q marker. Prefer Braelon's conditional lead-role case over Pollard's receiving-limited role; reduces shared Tennessee exposure. DNP is not an out designation."
+    }
+  ],
+  "important_unchanged": [
+    "Nabers retained after confirmed McCarthy start; no invented uplift.",
+    "LaPorta retained rather than restoring two Giants pass catchers.",
+    "Keenan/Puka retained on prior role evidence; no feedback-driven retention."
+  ],
+  "summary": "Braelon replaces Pollard provisionally (+$600); $50,000/$0. Hall's Wednesday DNP strengthens the conditional role case. McCarthy confirmed: hold Nabers/LaPorta. Same-model external baseline138.0, still datedOct20. Current official pool not reverified.",
+  "strongest_counterargument": "Wednesday DNP does not rule Hall out. Selecting Braelon before final availability accepts a fragile role premise and uses all salary flexibility; Pollard may offer the steadier rushing allocation. An old model estimate cannot resolve that uncertainty.",
+  "unresolved_assumptions": [
+    "Hall is not ruled out; a return or materially shared backfield could invalidate the Braelon lead-role premise.",
+    "Live official pool/export could not be fetched today. All nine current public prices/position/matchup labels were inspected and match retained Oct21 official rows; current official eligibility is unverified.",
+    "Current exact scoring-rule body rendered only a shell. Retained Oct21 rules read governs arithmetic/scoring assumptions until rechecked.",
+    "External model is still as of Oct20 23:53ET and predates the confirmed Giants QB announcement; no quantified McCarthy uplift applied.",
+    "Other picks retain prior evidence rather than a new full-league medical/role audit; final inactives and Rams rotation remain pending."
+  ],
+  "what_would_change_view": [
+    "Hall's next participation and final game designation; if he returns with starter role, reconsider Braelon before freeze.",
+    "A supported receiver role/availability change or current official slate/price correction.",
+    "Giants protection and actual target distribution; McCarthy starting alone does not justify a second Giants receiver."
+  ],
+  "alternatives": [
+    {
+      "player": "Tony Pollard",
+      "salary": 5300,
+      "decision": "retain_as_alternative",
+      "scenario_total": 49400,
+      "scenario_remaining": 600,
+      "reason": "Established rushing role remains a credible fallback if Hall returns; Spears rest day does not establish extra touches."
+    },
+    {
+      "player": "Woody Marks",
+      "salary": 5600,
+      "decision": "screen_only",
+      "scenario_total": 49700,
+      "scenario_remaining": 300,
+      "reason": "Reported-price alternative adds Houston concentration; no fresh role investigation supports choosing him in this pass."
+    }
+  ],
+  "expectations": [
+    {
+      "id": "2026-w07-1022-braelon-role",
+      "subject": "Braelon Allen",
+      "statement": "Conditional on Hall remaining unavailable, Braelon retains the lead share of Jets RB carries; some receiving involvement is possible, without a target-floor claim.",
+      "support": "Official Wednesday DNP for Hall and recent Braelon rushing/receiving work.",
+      "uncertainty": "Hall may return; Isaiah Davis, game script and returning pass catchers can alter opportunity.",
+      "challenge": "Hall returning to the lead role or another back taking most RB carries challenges this selection.",
+      "observe": "Compare actual Hall status, Jets RB carries and targets. Separate volume from efficiency/TDs. Routes remain unassessable without inspected data.",
+      "source_urls": [
+        "https://www.newyorkjets.com/news/jets-injury-report-week-7-vs-dolphins-wednesday-10-21-2026",
+        "https://www.newyorkjets.com/news/adonai-mitchell-dylan-parham-return-to-practice-for-jets-10-21-2026"
+      ],
+      "recorded_at": "2026-10-22T10:42:57.483Z"
+    },
+    {
+      "id": "2026-w07-1022-nabers-qb-condition",
+      "subject": "Malik Nabers / Giants QB",
+      "statement": "McCarthy is expected to start; retaining Nabers relies on central receiving involvement, not extrapolating his relief-quarter passing yardage.",
+      "support": "Official Wednesday starter announcement plus retained Nabers involvement evidence.",
+      "uncertainty": "Play mix, protection and full-game target distribution under McCarthy remain unmeasured.",
+      "challenge": "Starter change or substantially reduced Nabers involvement challenges the condition/role premise.",
+      "observe": "Record starter and substitutions, team attempts and receiver targets; assess opportunity separately from yards/TDs.",
+      "source_urls": [
+        "https://www.giants.com/news/j-j-mccarthy-to-start-quarterback-new-york-giants-week-7-houston-texans-john-harbaugh-jameis-winston",
+        "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2e951cf9d88a23a1ea5b1dc6b2dff8a323ccfe88/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-21.md"
+      ],
+      "recorded_at": "2026-10-22T10:42:57.483Z"
+    }
+  ],
+  "retained_expectations": [
+    {
+      "id": "2026-w07-1021-keenan-role",
+      "recorded_at": "2026-10-21T10:26:33.332Z",
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2e951cf9d88a23a1ea5b1dc6b2dff8a323ccfe88/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-21.md",
+      "note": "Original statement/time retained in prior record; Nabers QB condition now separately updated."
+    },
+    {
+      "id": "2026-w07-1021-puka-role",
+      "recorded_at": "2026-10-21T10:26:33.332Z",
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2e951cf9d88a23a1ea5b1dc6b2dff8a323ccfe88/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-21.md",
+      "note": "Original statement/time retained in prior record; Nabers QB condition now separately updated."
+    },
+    {
+      "id": "2026-w07-1021-nabers-role",
+      "recorded_at": "2026-10-21T10:26:33.332Z",
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2e951cf9d88a23a1ea5b1dc6b2dff8a323ccfe88/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-21.md",
+      "note": "Original statement/time retained in prior record; Nabers QB condition now separately updated."
+    }
+  ],
+  "expectation_packet_status": "prospective_daily_not_frozen",
+  "slate": {
+    "included_games": [
+      "CIN@BAL 10/25/2026 01:00PM ET",
+      "CLE@TEN 10/25/2026 01:00PM ET",
+      "DEN@ARI 10/25/2026 04:05PM ET",
+      "GB@DET 10/25/2026 04:25PM ET",
+      "IND@MIN 10/25/2026 01:00PM ET",
+      "LAR@LV 10/25/2026 04:25PM ET",
+      "MIA@NYJ 10/25/2026 01:00PM ET",
+      "NYG@HOU 10/25/2026 01:00PM ET",
+      "SF@ATL 10/25/2026 01:00PM ET",
+      "TB@CAR 10/25/2026 01:00PM ET"
+    ],
+    "player_rows": null,
+    "earliest_kickoff_utc": "2026-10-25T17:00:00Z",
+    "earliest_kickoff_toronto": "2026-10-25T13:00:00-04:00",
+    "platform_change_from_expected": null,
+    "excluded_windows": [
+      "NE@CHI Thursday October 22 20:15 EDT",
+      "PIT@NO Paris Sunday October 25 09:30 EDT",
+      "KC@SEA Sunday October 25 20:20 EDT",
+      "DAL@PHI Monday October 26 20:15 EDT"
+    ],
+    "last_verified_player_rows": 513,
+    "current_platform_membership_reverified": false,
+    "note": "Retained ten-game slate; NFL windows and public selected matchups agree. No silent slate switch; no claim of a fresh complete export."
+  },
+  "freeze": {
+    "existing_valid_freeze": false,
+    "deadline_utc": "2026-10-25T16:30:00Z",
+    "deadline_toronto": "2026-10-25T12:30:00-04:00",
+    "this_record_is_freeze": false,
+    "authority": "ARENA_V1 prospective supersession effectiveOct20 forOct25 slate; historical deadline fields unchanged."
+  },
+  "validation": {
+    "nine_required_slots": true,
+    "unique_players": true,
+    "all_slots_in_retained_official_export": true,
+    "current_official_eligibility_verified": false,
+    "all_prices_match_reported_main_table": true,
+    "original_salary_sum": 50000,
+    "cap_remaining": 0,
+    "at_least_two_games": true,
+    "final_inactives_verified": false
+  },
+  "salary_capture": {
+    "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2e951cf9d88a23a1ea5b1dc6b2dff8a323ccfe88/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-21-draftkings-155198.csv",
+    "original_observed_at": "2026-10-21T10:18:30.904Z",
+    "sha256": "79a34364edb23b91ad0fbd56ed4dca6abc5f4bbefc2c76a44aadb9bcf03cd769",
+    "current_export_status": "unavailable",
+    "note": "No new official CSV capture. Fresh public selected prices agree with prior official export."
+  },
+  "prior_slate_review": {
+    "season": 2026,
+    "week": 6,
+    "all_main_games_final": true,
+    "status": "provisional",
+    "frozen_total": 145.98,
+    "review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/1179a3f1a6e8fa0e8acda7d2b923698fb19426c7/docs/weekly-dfs/codex/2026/week-06/reviews/2026-10-19.json",
+    "action": "Existing first review freshly read; focused scoring check found no verified settlement/material correction. Preserve145.98provisional and all four comparisons; no duplicate review.",
+    "older_pending": "No earlier archived slate found in current notebook tree."
+  },
+  "scoring_reference": {
+    "url": "https://www.nfl.com/schedules/2026/by-week/week-6",
+    "current_full_read_success": false,
+    "retained_full_read": {
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at_utc": "2026-10-21T10:18:33.783Z",
+      "successful_full_classic_read": true,
+      "requirements": "$50,000; QB,2RB,3WR,TE,FLEX(RB/WR/TE),DST; at least2games; fullPPR and yardage bonuses; DST excludes offense-surrendered points but counts specified kicks/conversions."
+    },
+    "note": "No scoring-rule change established; current body not successfully reverified."
+  },
+  "confounders": {
+    "origin": "agent_chosen",
+    "operator_input": "No new player guidance in this pass. Research priorities chosen from retained unresolved questions; prior praise did not determine retention. Preserve earlier prompted/mixed attribution.",
+    "agent_label": "Codex",
+    "exact_runtime_model_id": null,
+    "model_change_observed": null,
+    "tool_change": "Firecrawl credit exhaustion blocked all fresh requests. Continued public research via web search; no purchase or new integration. Direct official CSV fetch returned Site Unavailable; exact rules body returned generic shell.",
+    "tiber_capabilities": "Fresh capability response withholds ROP/TTS/Forecast; no qualified retained output accessed on this route. Does not establish outputs nonexistent.",
+    "tiber_evidence_used": false,
+    "private_rosters_used": false,
+    "producers_executed": false,
+    "independent_review": false,
+    "tokens": null,
+    "currency_cost": null
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "label": "Jets Wednesday injury report",
+      "url": "https://www.newyorkjets.com/news/jets-injury-report-week-7-vs-dolphins-wednesday-10-21-2026",
+      "retrieved_at": "2026-10-22T10:41:23.199Z",
+      "publication_at": null,
+      "published_display": "Oct21,2026 at04:00PM; timezone not printed",
+      "scope": "Hall quad DNP Wednesday; no final game designation.",
+      "retrieved_at_toronto": "2026-10-22T06:41:23.199-04:00",
+      "retrieval_note": "Actual inspection/receipt completion clock in this pass; publication clock remains separate."
+    },
+    {
+      "id": "S2",
+      "label": "Jets Wednesday team notebook",
+      "url": "https://www.newyorkjets.com/news/adonai-mitchell-dylan-parham-return-to-practice-for-jets-10-21-2026",
+      "retrieved_at": "2026-10-22T10:41:23.199Z",
+      "publication_at": null,
+      "published_display": "Oct21,2026 at04:01PM; timezone not printed",
+      "scope": "Braelon recent rushing/receiving work; Hall still rehabilitating. Not a Hall-out announcement.",
+      "retrieved_at_toronto": "2026-10-22T06:41:23.199-04:00",
+      "retrieval_note": "Actual inspection/receipt completion clock in this pass; publication clock remains separate."
+    },
+    {
+      "id": "S3",
+      "label": "Giants starting quarterback announcement",
+      "url": "https://www.giants.com/news/j-j-mccarthy-to-start-quarterback-new-york-giants-week-7-houston-texans-john-harbaugh-jameis-winston",
+      "retrieved_at": "2026-10-22T10:41:23.199Z",
+      "publication_at": null,
+      "published_display": "Oct21,2026 at07:43PM; timezone not printed",
+      "scope": "McCarthy starts, Winston backup; same offensive concepts, some play mix differences. Relief quarter not a full-game baseline.",
+      "retrieved_at_toronto": "2026-10-22T06:41:23.199-04:00",
+      "retrieval_note": "Actual inspection/receipt completion clock in this pass; publication clock remains separate."
+    },
+    {
+      "id": "S4",
+      "label": "SPAGS reported prices and estimates",
+      "url": "https://splashplaypodcast.com/dfs/nfl/players/",
+      "retrieved_at": "2026-10-22T10:41:23.199Z",
+      "publication_at": null,
+      "published_display": "PublishedOct20,2026; numbersasofOct20 11:53PM ET",
+      "scope": "Same coherent Week7 DK main snapshot re-inspected; all nine selected salaries, positions, opponents and estimates. No fresh model publication inferred.",
+      "retrieved_at_toronto": "2026-10-22T06:41:23.199-04:00",
+      "retrieval_note": "Actual inspection/receipt completion clock in this pass; publication clock remains separate."
+    },
+    {
+      "id": "P1",
+      "label": "Immutable Wednesday lineup and source receipts",
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2e951cf9d88a23a1ea5b1dc6b2dff8a323ccfe88/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-21.md",
+      "retrieved_at": "2026-10-22T10:42:57.483Z",
+      "publication_at": null,
+      "scope": "Retained role evidence, original IDs/prices and prospective expectations; not a fresh external retrieval.",
+      "retrieved_at_toronto": "2026-10-22T06:42:57.483-04:00",
+      "retrieval_note": "Actual inspection/receipt completion clock in this pass; publication clock remains separate."
+    },
+    {
+      "id": "P2",
+      "label": "Retained official salary export",
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2e951cf9d88a23a1ea5b1dc6b2dff8a323ccfe88/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-21-draftkings-155198.csv",
+      "retrieved_at": "2026-10-22T10:42:57.483Z",
+      "publication_at": null,
+      "scope": "Archived Oct21 group155198 export re-read. IDs/slot eligibility inherited from this snapshot, not reverified against a live official pool today.",
+      "retrieved_at_toronto": "2026-10-22T06:42:57.483-04:00",
+      "retrieval_note": "Actual inspection/receipt completion clock in this pass; publication clock remains separate."
+    },
+    {
+      "id": "S5",
+      "label": "Titans official Wednesday injury report",
+      "url": "https://www.tennesseetitans.com/team/injury-report/",
+      "retrieved_at": "2026-10-22T10:42:57.483Z",
+      "publication_at": null,
+      "scope": "Wednesday columns inspected this pass; exact publication/update instant unknown. Spears NIR/rest DNP is not injury absence; Graham LP and Delpit DNP are not final game statuses.",
+      "retrieved_at_toronto": "2026-10-22T06:42:57.483-04:00",
+      "retrieval_note": "Actual inspection/receipt completion clock in this pass; publication clock remains separate."
+    },
+    {
+      "id": "S6",
+      "label": "Official Week7 schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+      "retrieved_at": "2026-10-22T10:42:57.483Z",
+      "publication_at": null,
+      "scope": "Inspected this pass; Sunday Oct25 early/late windows agree with retained slate. Current complete platform pool not obtained.",
+      "retrieved_at_toronto": "2026-10-22T06:42:57.483-04:00",
+      "retrieval_note": "Actual inspection/receipt completion clock in this pass; publication clock remains separate."
+    },
+    {
+      "id": "S7",
+      "label": "Official Week6 schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-6",
+      "retrieved_at": "2026-10-22T10:42:57.483Z",
+      "publication_at": null,
+      "scope": "Prior slate completed; no new platform settlement or material stat correction established.",
+      "retrieved_at_toronto": "2026-10-22T06:42:57.483-04:00",
+      "retrieval_note": "Actual inspection/receipt completion clock in this pass; publication clock remains separate."
+    },
+    {
+      "id": "S8",
+      "label": "DraftKings rules access attempt",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-10-22T10:41:23.199Z",
+      "publication_at": null,
+      "scope": "Current open rendered generic shell only; exact rules body not reverified. Use retained Oct21 full read explicitly.",
+      "retrieved_at_toronto": "2026-10-22T06:41:23.199-04:00",
+      "retrieval_note": "Actual inspection/receipt completion clock in this pass; publication clock remains separate."
+    }
+  ]
+}

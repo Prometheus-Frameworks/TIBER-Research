@@ -1,0 +1,1170 @@
+{
+  "record_type": "postgame_comparison",
+  "id": "2026-w08-2026-11-02-review",
+  "notebook_convention": "Conversational notebook; Codex evaluation, not independent review or governed Research run.",
+  "recorded_at_utc": "2026-11-02T11:52:55.452Z",
+  "recorded_at_toronto": "2026-11-02T06:52:55.452-05:00",
+  "season": 2026,
+  "week": 8,
+  "slate_date": "2026-11-01",
+  "draft_group_id": "153728",
+  "status": "provisional",
+  "scoring_status": "provisional",
+  "scored_at": "2026-11-02T11:52:55.452Z",
+  "finality": "All eleven included Sunday games are FINAL on NFL schedule. Scores are reproducible DraftKings-rule reconstructions from inspected public stats, not verified settled platform points. Stat corrections may follow.",
+  "correction_of": null,
+  "freeze_reference": {
+    "id": "2026-w08-20261101T155633Z-freeze",
+    "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/8268a3002eef31f3e4e06f6d2410b5111e59eb2d/docs/weekly-dfs/codex/2026/week-08/freeze/20261101T155513Z.json",
+    "frozen_at": "2026-11-01T15:56:33.550Z",
+    "evidence_cutoff": "2026-11-01T15:55:13.856Z",
+    "selection_binding": {
+      "method": "exact immutable JSON candidate plus verified slot/player/ID/salary/game equality",
+      "commit": "888e3278eba8b86558efeab76041d7d4e89a5467",
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.json",
+      "blob_sha": "fd392f89bdb8648119d0fb28c021f4544c62e26c"
+    },
+    "salary_binding": {
+      "original_snapshot": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31-draftkings-153728.csv",
+      "current_official_check": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2c37adf21dcaa14c68691c37b534fe422498f34f/docs/weekly-dfs/codex/2026/week-08/freeze/20261101T155513Z-salary-check.csv",
+      "verification": "Fresh562row/11game officialexport matches selected original prices/positions/IDs/games; no pool or status changes versus morning. Blank status is not medical clearance."
+    },
+    "expectation_binding": {
+      "packet": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2c37adf21dcaa14c68691c37b534fe422498f34f/docs/weekly-dfs/codex/2026/week-08/freeze/20261101T155513Z-expectations.json",
+      "packet_commit": "2c37adf21dcaa14c68691c37b534fe422498f34f",
+      "ids": [
+        "2026-w08-1028-brown-role",
+        "2026-w08-1028-cooper-role",
+        "2026-w08-1028-taylor-role",
+        "2026-w08-1028-kcc-role",
+        "2026-w08-1031-patriots-availability"
+      ],
+      "originals": [
+        {
+          "ids": [
+            "2026-w08-1028-brown-role",
+            "2026-w08-1028-cooper-role",
+            "2026-w08-1028-taylor-role",
+            "2026-w08-1028-kcc-role"
+          ],
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d81c103e9fd568776327e45a5af3b3485c768f0b/docs/weekly-dfs/codex/journal/20261028T101856Z.json"
+        },
+        {
+          "ids": [
+            "2026-w08-1031-patriots-availability"
+          ],
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/8677ade6b38f6402d9b1f21f160ad051b852afdd/docs/weekly-dfs/codex/journal/20261031T105411Z.json"
+        }
+      ]
+    },
+    "authorship": "Shared final — Claude + Codex; exact selection jointly endorsed"
+  },
+  "postdeadline_selection_changes": 0,
+  "scoring_method": {
+    "type": "reconstructed_from_public_box_scores_and_scoring_plays",
+    "rules_url": "https://www.draftkings.com/help/rules/1",
+    "offense_formula": "0.04*pass_yards + 4*pass_td - interceptions_thrown + 0.1*(rush_yards+rec_yards) + receptions + 6*(rush_td+rec_td+return_td+offensive_fumble_recovery_td) - fumbles_lost + 2*two_point + 3*(pass_yards>=300) + 3*(rush_yards>=100) + 3*(rec_yards>=100)",
+    "dst_formula": "sacks + 2*(interceptions+fumble_recoveries+safeties+blocked_kicks+conversion_returns) + 6*return_touchdowns + PA_band",
+    "points_allowed_bands": {
+      "0": 10,
+      "1-6": 7,
+      "7-13": 4,
+      "14-20": 1,
+      "21-27": 0,
+      "28-34": -1,
+      "35+": -4
+    },
+    "zero_categories": "Complete offense/fumble/return tables and scoring summaries inspected. Unlisted scoring categories for selected players are zero; absence of routes/snaps is unknown, not zero. Individual gross passing yards used; failed conversions do not score.",
+    "point_allowance_note": "Opponent kickoff/punt return TDs and PATs count; offensive-turnover TD exclusions require scoring-play evidence. LV38 all count against Jets, including Laube kickoff TD. Miami19 all count against NE."
+  },
+  "player_scores": [
+    {
+      "player": "Josh Allen",
+      "stats": {
+        "pass_yards": 289,
+        "pass_td": 2,
+        "interceptions_thrown": 1,
+        "rush_att": 7,
+        "rush_yards": 30,
+        "rush_td": 1
+      },
+      "actual_points": 27.56,
+      "calculation": "289*.04 + 2*4 - 1 + 30*.1 + 6 = 27.56; no 300-yard bonus; failed conversion earns zero.",
+      "source_ids": [
+        "box401873026",
+        "game401873026",
+        "rules"
+      ]
+    },
+    {
+      "player": "Bucky Irving",
+      "stats": {
+        "rush_att": 27,
+        "rush_yards": 170,
+        "rush_td": 1,
+        "receptions": 0,
+        "rec_yards": 0,
+        "targets": 0,
+        "fumbles_lost": 1
+      },
+      "actual_points": 25,
+      "calculation": "170*.1 + 6 + 3 rushing bonus - 1 lost fumble = 25.00.",
+      "source_ids": [
+        "box401873025",
+        "game401873025",
+        "rules"
+      ]
+    },
+    {
+      "player": "Chase Brown",
+      "stats": {
+        "rush_att": 12,
+        "rush_yards": 55,
+        "rush_td": 0,
+        "receptions": 8,
+        "rec_yards": 46,
+        "rec_td": 0,
+        "targets": 9,
+        "fumbles_lost": 1
+      },
+      "actual_points": 17.1,
+      "calculation": "55*.1 + 8 + 46*.1 - 1 lost fumble = 17.10.",
+      "source_ids": [
+        "box401873031",
+        "game401873031",
+        "rules"
+      ]
+    },
+    {
+      "player": "Jameson Williams",
+      "stats": {
+        "receptions": 4,
+        "rec_yards": 70,
+        "rec_td": 1,
+        "targets": 6,
+        "fumbles_lost": 0
+      },
+      "actual_points": 17,
+      "calculation": "4 + 70*.1 + 6 = 17.00.",
+      "source_ids": [
+        "box401873030",
+        "game401873030",
+        "rules"
+      ]
+    },
+    {
+      "player": "Omar Cooper Jr.",
+      "stats": {
+        "receptions": 0,
+        "rec_yards": 0,
+        "rec_td": 0,
+        "targets": 0,
+        "fumbles_lost": 0
+      },
+      "actual_points": 0,
+      "calculation": "Zero recorded offensive scoring stats; NBC explicitly reports zero targets, matching absent ESPN line and blank official game log. Not inferred inactive.",
+      "source_ids": [
+        "box401873029",
+        "game401873029",
+        "cooper",
+        "nbccooper",
+        "jetsinactive",
+        "rules"
+      ]
+    },
+    {
+      "player": "Zay Flowers",
+      "stats": {
+        "receptions": 0,
+        "rec_yards": 0,
+        "rec_td": 0,
+        "targets": 5,
+        "fumbles_lost": 0
+      },
+      "actual_points": 0,
+      "calculation": "0 catches/0 yards on 5 targets, no other scoring event = 0.00.",
+      "source_ids": [
+        "box401873026",
+        "game401873026",
+        "lamar",
+        "rules"
+      ]
+    },
+    {
+      "player": "Mason Taylor",
+      "stats": {
+        "receptions": 3,
+        "rec_yards": 19,
+        "rec_td": 0,
+        "targets": 5,
+        "fumbles_lost": 0
+      },
+      "actual_points": 4.9,
+      "calculation": "3 + 19*.1 = 4.90.",
+      "source_ids": [
+        "box401873029",
+        "game401873029",
+        "rules"
+      ]
+    },
+    {
+      "player": "KC Concepcion Jr.",
+      "stats": {
+        "receptions": 3,
+        "rec_yards": 37,
+        "rec_td": 0,
+        "targets": 4,
+        "fumbles_lost": 0,
+        "punt_return_yards": 21,
+        "return_td": 0
+      },
+      "actual_points": 6.7,
+      "calculation": "3 + 37*.1 = 6.70; 21 punt-return yards do not score in Classic.",
+      "source_ids": [
+        "box401873027",
+        "game401873027",
+        "rules"
+      ]
+    },
+    {
+      "player": "Patriots",
+      "stats": {
+        "sacks": 5,
+        "interceptions": 1,
+        "fumble_recoveries": 0,
+        "return_touchdowns": 0,
+        "safeties": 0,
+        "blocked_kicks": 0,
+        "two_point_or_extra_point_returns": 0,
+        "points_allowed": 19,
+        "points_allowed_fantasy": 1
+      },
+      "actual_points": 8,
+      "calculation": "5 sacks + 2 interception + 1 for 19 PA = 8.00. Miami's two passing TDs, PAT and two FGs all count; failed 2pt earns nothing. Missed 43-yard FG was wide left, not blocked.",
+      "source_ids": [
+        "box401873034",
+        "game401873034",
+        "pbpne",
+        "rules"
+      ]
+    },
+    {
+      "player": "Jets",
+      "stats": {
+        "sacks": 1,
+        "interceptions": 0,
+        "fumble_recoveries": 0,
+        "return_touchdowns": 0,
+        "safeties": 0,
+        "blocked_kicks": 0,
+        "two_point_or_extra_point_returns": 0,
+        "points_allowed": 38,
+        "points_allowed_fantasy": -4
+      },
+      "actual_points": -3,
+      "calculation": "1 sack - 4 for 38 PA = -3.00. Laube's kickoff-return TD and PAT count against DST; none of LV's points are excluded offensive-turnover scores.",
+      "source_ids": [
+        "box401873029",
+        "game401873029",
+        "cbsjets",
+        "rules"
+      ]
+    }
+  ],
+  "lineup_comparisons": [
+    {
+      "id": "2026-w08-2026-10-26-daily",
+      "original_status": "partial",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0e3980042bfc74ef55fa7a33c53306be9a396a5f/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-26.md",
+      "original_salary_total": 0,
+      "original_salary_remaining": 50000,
+      "original_projected_total": null,
+      "actual_total": null,
+      "partial_selected_subtotal": null,
+      "picks": []
+    },
+    {
+      "id": "2026-w08-2026-10-27-daily",
+      "original_status": "partial",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/31f5412475d93737d293bd06dada518a15c28c28/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-27.md",
+      "original_salary_total": 24900,
+      "original_salary_remaining": 25100,
+      "original_projected_total": null,
+      "actual_total": null,
+      "partial_selected_subtotal": 69.56,
+      "picks": [
+        {
+          "slot": "QB",
+          "player": "Josh Allen",
+          "original_salary": 7700,
+          "original_projected_points": 22.5,
+          "actual_points": 27.56
+        },
+        {
+          "slot": "RB",
+          "player": "Bucky Irving",
+          "original_salary": 6400,
+          "original_projected_points": 11.9,
+          "actual_points": 25
+        },
+        {
+          "slot": "WR",
+          "player": "Jameson Williams",
+          "original_salary": 6000,
+          "original_projected_points": 11.9,
+          "actual_points": 17
+        },
+        {
+          "slot": "WR",
+          "player": "Omar Cooper Jr.",
+          "original_salary": 4800,
+          "original_projected_points": null,
+          "actual_points": 0
+        }
+      ]
+    },
+    {
+      "id": "2026-w08-2026-10-28-daily",
+      "original_status": "complete",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/5afc63ae9519af75cc8281dd3c395490bc9eab5c/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-28.md",
+      "original_salary_total": 49200,
+      "original_salary_remaining": 800,
+      "original_projected_total": null,
+      "actual_total": 95.26,
+      "partial_selected_subtotal": null,
+      "picks": [
+        {
+          "slot": "QB",
+          "player": "Josh Allen",
+          "original_salary": 7700,
+          "original_projected_points": null,
+          "actual_points": 27.56
+        },
+        {
+          "slot": "RB",
+          "player": "Bucky Irving",
+          "original_salary": 6400,
+          "original_projected_points": null,
+          "actual_points": 25
+        },
+        {
+          "slot": "RB",
+          "player": "Chase Brown",
+          "original_salary": 6300,
+          "original_projected_points": null,
+          "actual_points": 17.1
+        },
+        {
+          "slot": "WR",
+          "player": "Jameson Williams",
+          "original_salary": 6000,
+          "original_projected_points": null,
+          "actual_points": 17
+        },
+        {
+          "slot": "WR",
+          "player": "Omar Cooper Jr.",
+          "original_salary": 4800,
+          "original_projected_points": null,
+          "actual_points": 0
+        },
+        {
+          "slot": "WR",
+          "player": "Zay Flowers",
+          "original_salary": 7200,
+          "original_projected_points": null,
+          "actual_points": 0
+        },
+        {
+          "slot": "TE",
+          "player": "Mason Taylor",
+          "original_salary": 3300,
+          "original_projected_points": null,
+          "actual_points": 4.9
+        },
+        {
+          "slot": "FLEX",
+          "player": "KC Concepcion Jr.",
+          "original_salary": 4700,
+          "original_projected_points": null,
+          "actual_points": 6.7
+        },
+        {
+          "slot": "DST",
+          "player": "Jets",
+          "original_salary": 2800,
+          "original_projected_points": null,
+          "actual_points": -3
+        }
+      ]
+    },
+    {
+      "id": "2026-w08-2026-10-29-daily",
+      "original_status": "complete",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/e3e67556f20eb547f5ab34dff215594d65583e8c/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-29.md",
+      "original_salary_total": 49200,
+      "original_salary_remaining": 800,
+      "original_projected_total": null,
+      "actual_total": 95.26,
+      "partial_selected_subtotal": null,
+      "picks": [
+        {
+          "slot": "QB",
+          "player": "Josh Allen",
+          "original_salary": 7700,
+          "original_projected_points": null,
+          "actual_points": 27.56
+        },
+        {
+          "slot": "RB",
+          "player": "Bucky Irving",
+          "original_salary": 6400,
+          "original_projected_points": null,
+          "actual_points": 25
+        },
+        {
+          "slot": "RB",
+          "player": "Chase Brown",
+          "original_salary": 6300,
+          "original_projected_points": null,
+          "actual_points": 17.1
+        },
+        {
+          "slot": "WR",
+          "player": "Jameson Williams",
+          "original_salary": 6000,
+          "original_projected_points": null,
+          "actual_points": 17
+        },
+        {
+          "slot": "WR",
+          "player": "Omar Cooper Jr.",
+          "original_salary": 4800,
+          "original_projected_points": null,
+          "actual_points": 0
+        },
+        {
+          "slot": "WR",
+          "player": "Zay Flowers",
+          "original_salary": 7200,
+          "original_projected_points": null,
+          "actual_points": 0
+        },
+        {
+          "slot": "TE",
+          "player": "Mason Taylor",
+          "original_salary": 3300,
+          "original_projected_points": null,
+          "actual_points": 4.9
+        },
+        {
+          "slot": "FLEX",
+          "player": "KC Concepcion Jr.",
+          "original_salary": 4700,
+          "original_projected_points": null,
+          "actual_points": 6.7
+        },
+        {
+          "slot": "DST",
+          "player": "Jets",
+          "original_salary": 2800,
+          "original_projected_points": null,
+          "actual_points": -3
+        }
+      ]
+    },
+    {
+      "id": "2026-w08-2026-10-30-daily",
+      "original_status": "complete",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/ab029d8b28deb519519d24861fd35cb58dc6b3c4/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-30.md",
+      "original_salary_total": 49200,
+      "original_salary_remaining": 800,
+      "original_projected_total": null,
+      "actual_total": 95.26,
+      "partial_selected_subtotal": null,
+      "picks": [
+        {
+          "slot": "QB",
+          "player": "Josh Allen",
+          "original_salary": 7700,
+          "original_projected_points": null,
+          "actual_points": 27.56
+        },
+        {
+          "slot": "RB",
+          "player": "Bucky Irving",
+          "original_salary": 6400,
+          "original_projected_points": null,
+          "actual_points": 25
+        },
+        {
+          "slot": "RB",
+          "player": "Chase Brown",
+          "original_salary": 6300,
+          "original_projected_points": null,
+          "actual_points": 17.1
+        },
+        {
+          "slot": "WR",
+          "player": "Jameson Williams",
+          "original_salary": 6000,
+          "original_projected_points": null,
+          "actual_points": 17
+        },
+        {
+          "slot": "WR",
+          "player": "Omar Cooper Jr.",
+          "original_salary": 4800,
+          "original_projected_points": null,
+          "actual_points": 0
+        },
+        {
+          "slot": "WR",
+          "player": "Zay Flowers",
+          "original_salary": 7200,
+          "original_projected_points": null,
+          "actual_points": 0
+        },
+        {
+          "slot": "TE",
+          "player": "Mason Taylor",
+          "original_salary": 3300,
+          "original_projected_points": null,
+          "actual_points": 4.9
+        },
+        {
+          "slot": "FLEX",
+          "player": "KC Concepcion Jr.",
+          "original_salary": 4700,
+          "original_projected_points": null,
+          "actual_points": 6.7
+        },
+        {
+          "slot": "DST",
+          "player": "Jets",
+          "original_salary": 2800,
+          "original_projected_points": null,
+          "actual_points": -3
+        }
+      ]
+    },
+    {
+      "id": "2026-w08-2026-10-31-daily",
+      "original_status": "complete",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/888e3278eba8b86558efeab76041d7d4e89a5467/docs/weekly-dfs/codex/2026/week-08/daily/2026-10-31.md",
+      "original_salary_total": 50000,
+      "original_salary_remaining": 0,
+      "original_projected_total": null,
+      "actual_total": 106.26,
+      "partial_selected_subtotal": null,
+      "picks": [
+        {
+          "slot": "QB",
+          "player": "Josh Allen",
+          "original_salary": 7700,
+          "original_projected_points": null,
+          "actual_points": 27.56
+        },
+        {
+          "slot": "RB",
+          "player": "Bucky Irving",
+          "original_salary": 6400,
+          "original_projected_points": null,
+          "actual_points": 25
+        },
+        {
+          "slot": "RB",
+          "player": "Chase Brown",
+          "original_salary": 6300,
+          "original_projected_points": null,
+          "actual_points": 17.1
+        },
+        {
+          "slot": "WR",
+          "player": "Jameson Williams",
+          "original_salary": 6000,
+          "original_projected_points": null,
+          "actual_points": 17
+        },
+        {
+          "slot": "WR",
+          "player": "Omar Cooper Jr.",
+          "original_salary": 4800,
+          "original_projected_points": null,
+          "actual_points": 0
+        },
+        {
+          "slot": "WR",
+          "player": "Zay Flowers",
+          "original_salary": 7200,
+          "original_projected_points": null,
+          "actual_points": 0
+        },
+        {
+          "slot": "TE",
+          "player": "Mason Taylor",
+          "original_salary": 3300,
+          "original_projected_points": null,
+          "actual_points": 4.9
+        },
+        {
+          "slot": "FLEX",
+          "player": "KC Concepcion Jr.",
+          "original_salary": 4700,
+          "original_projected_points": null,
+          "actual_points": 6.7
+        },
+        {
+          "slot": "DST",
+          "player": "Patriots",
+          "original_salary": 3600,
+          "original_projected_points": null,
+          "actual_points": 8
+        }
+      ]
+    },
+    {
+      "id": "2026-w08-2026-11-01-daily",
+      "original_status": "complete",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6569b9b38b0ae1dd56e1e43671c6a6c6e70bfc9d/docs/weekly-dfs/codex/2026/week-08/daily/2026-11-01.md",
+      "original_salary_total": 50000,
+      "original_salary_remaining": 0,
+      "original_projected_total": null,
+      "actual_total": 106.26,
+      "partial_selected_subtotal": null,
+      "picks": [
+        {
+          "slot": "QB",
+          "player": "Josh Allen",
+          "original_salary": 7700,
+          "original_projected_points": null,
+          "actual_points": 27.56
+        },
+        {
+          "slot": "RB",
+          "player": "Bucky Irving",
+          "original_salary": 6400,
+          "original_projected_points": null,
+          "actual_points": 25
+        },
+        {
+          "slot": "RB",
+          "player": "Chase Brown",
+          "original_salary": 6300,
+          "original_projected_points": null,
+          "actual_points": 17.1
+        },
+        {
+          "slot": "WR",
+          "player": "Jameson Williams",
+          "original_salary": 6000,
+          "original_projected_points": null,
+          "actual_points": 17
+        },
+        {
+          "slot": "WR",
+          "player": "Omar Cooper Jr.",
+          "original_salary": 4800,
+          "original_projected_points": null,
+          "actual_points": 0
+        },
+        {
+          "slot": "WR",
+          "player": "Zay Flowers",
+          "original_salary": 7200,
+          "original_projected_points": null,
+          "actual_points": 0
+        },
+        {
+          "slot": "TE",
+          "player": "Mason Taylor",
+          "original_salary": 3300,
+          "original_projected_points": null,
+          "actual_points": 4.9
+        },
+        {
+          "slot": "FLEX",
+          "player": "KC Concepcion Jr.",
+          "original_salary": 4700,
+          "original_projected_points": null,
+          "actual_points": 6.7
+        },
+        {
+          "slot": "DST",
+          "player": "Patriots",
+          "original_salary": 3600,
+          "original_projected_points": null,
+          "actual_points": 8
+        }
+      ]
+    },
+    {
+      "id": "2026-w08-20261101T155633Z-freeze",
+      "original_status": "complete",
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/8268a3002eef31f3e4e06f6d2410b5111e59eb2d/docs/weekly-dfs/codex/2026/week-08/freeze/20261101T155513Z.md",
+      "original_salary_total": 50000,
+      "original_salary_remaining": 0,
+      "original_projected_total": null,
+      "actual_total": 106.26,
+      "partial_selected_subtotal": null,
+      "picks": [
+        {
+          "slot": "QB",
+          "player": "Josh Allen",
+          "original_salary": 7700,
+          "original_projected_points": null,
+          "actual_points": 27.56
+        },
+        {
+          "slot": "RB",
+          "player": "Bucky Irving",
+          "original_salary": 6400,
+          "original_projected_points": null,
+          "actual_points": 25
+        },
+        {
+          "slot": "RB",
+          "player": "Chase Brown",
+          "original_salary": 6300,
+          "original_projected_points": null,
+          "actual_points": 17.1
+        },
+        {
+          "slot": "WR",
+          "player": "Jameson Williams",
+          "original_salary": 6000,
+          "original_projected_points": null,
+          "actual_points": 17
+        },
+        {
+          "slot": "WR",
+          "player": "Omar Cooper Jr.",
+          "original_salary": 4800,
+          "original_projected_points": null,
+          "actual_points": 0
+        },
+        {
+          "slot": "WR",
+          "player": "Zay Flowers",
+          "original_salary": 7200,
+          "original_projected_points": null,
+          "actual_points": 0
+        },
+        {
+          "slot": "TE",
+          "player": "Mason Taylor",
+          "original_salary": 3300,
+          "original_projected_points": null,
+          "actual_points": 4.9
+        },
+        {
+          "slot": "FLEX",
+          "player": "KC Concepcion Jr.",
+          "original_salary": 4700,
+          "original_projected_points": null,
+          "actual_points": 6.7
+        },
+        {
+          "slot": "DST",
+          "player": "Patriots",
+          "original_salary": 3600,
+          "original_projected_points": null,
+          "actual_points": 8
+        }
+      ]
+    }
+  ],
+  "external_original_comparison": {
+    "claude_original_v1": "excluded under operator amendment; absent due to handoff gap, no retrospective reconstruction or score",
+    "claude_original_points": null,
+    "claude_revision": "Actual substantive revision and exact-version endorsement retained; not a separate blind original."
+  },
+  "revision_contributions": [
+    {
+      "from": "2026-w08-2026-10-30-daily",
+      "to": "2026-w08-2026-10-31-daily",
+      "out": "Jets",
+      "in": "Patriots",
+      "original_out_salary": 2800,
+      "original_in_salary": 3600,
+      "salary_delta": 800,
+      "out_points": -3,
+      "in_points": 8,
+      "points_delta": 11,
+      "classification": "new_evidence",
+      "reason": "Confirmed Jets defensive absences vs healthier listed NE front and Miami Proctor OUT. Coverage and own-offense risks retained."
+    }
+  ],
+  "unchanged_decisions": "Oct29/30 hold first complete nine:0 score delta. Nov1 daily/freeze hold Oct31 nine:0 delta. Grok questions and actual author exchange produced qualified holds, not new selections.",
+  "outcomes": [
+    {
+      "id": "2026-w08-review-20261102-1",
+      "expectation_id": "2026-w08-1028-brown-role",
+      "expectation": "Retains a material rushing role with receiving involvement, without an exclusive goal-line role.",
+      "opportunity_assessment": "supported: Brown led listed Bengals RB carries 12 to Perine's 4 and drew 9 targets/8 catches. Receiving involvement held; exclusive goal-line work was not claimed.",
+      "conditions_assessment": "Cincinnati threw 48 passes in an overtime game; Perine remained involved. Red-zone touch distribution and routes not independently retrieved.",
+      "score_explanation": "17.10 from 55 rushing yards, 8 catches/46 receiving yards minus 1 lost fumble; no TD or yardage bonus.",
+      "cutoff_judgment": "Retaining a dual rushing/receiving role was supported. Strong team scoring did not ensure a Brown touchdown, and overtime affected opportunity.",
+      "source_urls": [
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873031",
+        "https://www.espn.com/nfl/game/_/gameId/401873031"
+      ],
+      "status": "provisional"
+    },
+    {
+      "id": "2026-w08-review-20261102-2",
+      "expectation_id": "2026-w08-1028-cooper-role",
+      "expectation": "Remains a receiving participant with designed opportunities, but full-time route allocation is not established.",
+      "opportunity_assessment": "contradicted for receiving opportunities: zero targets/catches. Routes and snaps unassessable; absence from a receiving table does not mean inactive.",
+      "conditions_assessment": "Jets attempted 32 passes; Wilson 12 targets and Mitchell 9, Taylor 5. Official inactive list does not list Cooper. NBC explicitly confirms no targets; official log has blank Week8 stats.",
+      "score_explanation": "0.00. The Cooper/Taylor pair produced only 4.90 despite 33 Jets points; team environment did not secure individual distribution.",
+      "cutoff_judgment": "Known target competition was a real risk. The receiving-participant expectation failed; two prior 100-yard games were insufficient to establish dependable opportunity. Do not invent a route or injury cause.",
+      "source_urls": [
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
+        "https://www.newyorkjets.com/team/players-roster/omar-cooper-jr/logs/",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/cooper-jr-s-final-statline-0-0-0-on-0-targets",
+        "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026"
+      ],
+      "status": "provisional"
+    },
+    {
+      "id": "2026-w08-review-20261102-3",
+      "expectation_id": "2026-w08-1028-taylor-role",
+      "expectation": "Retains some receiving involvement at the low TE salary, without requiring repeated multi-TD scoring.",
+      "opportunity_assessment": "supported narrow receiving-involvement claim: 5 targets, 3 catches, 19 yards. Routes/blocking share remain unassessable.",
+      "conditions_assessment": "Hall was inactive; Braelon had 21 carries but just 2 targets. This differs from Week7 and establishes no automatic transfer of checkdowns to Taylor.",
+      "score_explanation": "4.90 entirely catches/yards; no TD. Five targets did not repeat Week7's two-TD efficiency.",
+      "cutoff_judgment": "Hold did not require repeating touchdowns, but the low absolute receiving production hurt. Neither Hall absence nor teammate scoring predicts Taylor's role causally.",
+      "source_urls": [
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
+        "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026"
+      ],
+      "status": "provisional"
+    },
+    {
+      "id": "2026-w08-review-20261102-4",
+      "expectation_id": "2026-w08-1028-kcc-role",
+      "expectation": "Retains a central Browns receiving role despite a limited passing environment.",
+      "opportunity_assessment": "contradicted central target-allocation claim: Concepcion 4 of 40 listed targets (41 team attempts), versus Fannin 12 and Boston 11. Routes not retrieved.",
+      "conditions_assessment": "Browns passed for 326 gross yards but scored only 6 points, surrendered 8 sacks and lost 2 fumbles. Low points did not imply low gross passing yards.",
+      "score_explanation": "6.70 from 3 catches/37 yards, no TD. Punt-return yards add nothing without a return TD.",
+      "cutoff_judgment": "Expected central receiving share did not persist. Prior shares were provisional; Fannin/Boston competition warranted more weight. This is one game's redistribution, not a permanent role verdict.",
+      "source_urls": [
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873027",
+        "https://www.espn.com/nfl/game/_/gameId/401873027"
+      ],
+      "status": "provisional"
+    },
+    {
+      "id": "2026-w08-review-20261102-5",
+      "expectation_id": "2026-w08-1031-patriots-availability",
+      "expectation": "DaQuan Jones and Dre'Mont Jones are expected to be available participants while Miami tackle Kadyn Proctor is unavailable; this supports the replacement's healthier-front premise, without predicting sacks or fantasy points.",
+      "opportunity_assessment": "supported availability participation: Dre'Mont and DaQuan Jones both have defensive tackle-stat entries; exact snap counts not retrieved.",
+      "conditions_assessment": "supported absence condition: Proctor officially inactive. Patriots recorded 5 sacks. Team-writer analysis reports 45% Willis pressure but continued zone weakness; causality from Proctor absence and named defenders is not isolated.",
+      "score_explanation": "8.00 vs Jets -3.00, +11.00 at +$800. Five sacks, one interception and 19 counted PA. Weather's independent contribution cannot be established.",
+      "cutoff_judgment": "Health/protection premise had support at cutoff and observed conditions held. Positive DST delta does not erase the valid coverage counterargument, establish predictive skill, or prove the causal mechanism.",
+      "source_urls": [
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873034",
+        "https://www.patriots.com/news/week-8-inactives-patriots-at-dolphins",
+        "https://www.patriots.com/news/game-observations-8-takeaways-from-the-patriots-comeback-win-over-the-dolphins-in-week-8"
+      ],
+      "status": "provisional"
+    }
+  ],
+  "late_observations": [
+    {
+      "subject": "Baltimore QB continuity",
+      "observation": "NFL reports Jackson's right thumb injury on first offensive snap, surgery/IR plan; Huntley then hurt toe. Fagnano finished most passing. Flowers0/5 targets; this is a postfreeze condition change, not a pregame justification.",
+      "source_urls": [
+        "https://www.nfl.com/news/ravens-qb-lamar-jackson-suffers-right-thumb-injury-bills",
+        "https://www.espn.com/nfl/boxscore/_/gameId/401873026"
+      ]
+    },
+    {
+      "subject": "Official inactive release after actual freeze",
+      "observation": "Hall official inactive publication11:30EST and Proctor14:55EST were after10:56:33freeze. No changes are permitted even though Hall announcement preceded hard12:30cutoff.",
+      "source_urls": [
+        "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026",
+        "https://www.patriots.com/news/week-8-inactives-patriots-at-dolphins"
+      ]
+    }
+  ],
+  "weekly_scorecard": [
+    "1. Final106.26 vs first complete Codex draft95.26: +11.00. Projection-only unavailable (no coherent exact-pool projection snapshot). Claude originalv1 excluded/score unavailable.",
+    "2. G-W08-Q1/Q2/Q3 changed no selection; direct roster-change delta0. Their qualified holds are retained; agreement is not independent football evidence.",
+    "3. Oct27 qualitative operator calls favored Flowers/BAL-BUF and faded Wilson; known exposure retained, no causal contribution estimate. No final override or explicit acceptance received. Frozen override_delta:null retained; formal S4 unavailable, no reconstructed operator override baseline.",
+    "4. Codexv1, Grok questions, both authors' replies/substantive exchange and timely shared freeze completed. Claude originalv1 excluded due to operator handoff gap. Grok skipped inputs/search-summary-only evidence and inconsistent original clock remain limits.",
+    "5. Remember Patriots-vs-Jets debate: retained NE choice outscored Jets by11, but primary postgame analysis still describes zone weakness. Score favors the replacement in this game; the broader matchup dispute is not settled by one result."
+  ],
+  "older_pending_slates": {
+    "week6": {
+      "freeze_points": 145.98,
+      "status": "provisional",
+      "reference": "docs/weekly-dfs/codex/2026/week-06/reviews/2026-10-19.json"
+    },
+    "week7": {
+      "freeze_points": 114.22,
+      "status": "provisional",
+      "reference": "docs/weekly-dfs/codex/2026/week-07/reviews/2026-10-26.json"
+    },
+    "check": "Fresh Week7 Jets box agrees with inspected key archived inputs. Correction-page read exposed support UI only; search established no settled DK source or material correction. No assertion of exhaustive correction coverage."
+  },
+  "data_limitations": [
+    "Official NFL Jets stats page exposed only LV tables (duplicated), not NYJ. ESPN full box, official Cooper log and NBC zero-target report used; blank log alone was not treated as zero.",
+    "Official Jets gamebook PDF scrape failed after waiting; no participation/snaps/routes inferred from unavailable PDF. Historical zero-target is supported independently.",
+    "Patriots writer's Kyle Williams TD yardage conflicts internally (43 vs48); scoring summary has43 and selected DST calculation is unaffected. Writer's pressure/coverage measures are attributed, not independently reproduced.",
+    "Team passing totals can be net of sacks on ESPN; individual gross yards control. LV target total differs across displays25/26; no selected score depends on that denominator.",
+    "Week8 original estimates remain null. No hindsight optimum, ROI, percentile or universal skill claim."
+  ],
+  "sources": [
+    {
+      "id": "src0",
+      "label": "src0",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-8",
+      "retrieved_at": "2026-11-02T11:47:42.837Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "src1",
+      "label": "src1",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+      "retrieved_at": "2026-11-02T11:47:42.021Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "rules",
+      "label": "src2",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-11-02T11:47:42.946Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "box401873026",
+      "label": "box401873026",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873026",
+      "retrieved_at": "2026-11-02T11:48:15.930Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "game401873026",
+      "label": "game401873026",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873026",
+      "retrieved_at": "2026-11-02T11:48:38.585Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "box401873025",
+      "label": "box401873025",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873025",
+      "retrieved_at": "2026-11-02T11:48:16.005Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "game401873025",
+      "label": "game401873025",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873025",
+      "retrieved_at": "2026-11-02T11:48:38.473Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "box401873031",
+      "label": "box401873031",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873031",
+      "retrieved_at": "2026-11-02T11:48:15.532Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "game401873031",
+      "label": "game401873031",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873031",
+      "retrieved_at": "2026-11-02T11:48:38.318Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "box401873030",
+      "label": "box401873030",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873030",
+      "retrieved_at": "2026-11-02T11:48:16.421Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "game401873030",
+      "label": "game401873030",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873030",
+      "retrieved_at": "2026-11-02T11:48:38.464Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "box401873029",
+      "label": "box401873029",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873029",
+      "retrieved_at": "2026-11-02T11:48:16.244Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "game401873029",
+      "label": "game401873029",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873029",
+      "retrieved_at": "2026-11-02T11:48:38.347Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "cooper",
+      "label": "cooper",
+      "url": "https://www.newyorkjets.com/team/players-roster/omar-cooper-jr/logs/",
+      "retrieved_at": "2026-11-02T11:48:58.975Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "nbccooper",
+      "label": "nbccooper",
+      "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/cooper-jr-s-final-statline-0-0-0-on-0-targets",
+      "retrieved_at": "2026-11-02T11:52:16.245Z",
+      "publication_at": "2026-11-01T22:13:22.023Z",
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "jetsinactive",
+      "label": "jetsinactive",
+      "url": "https://www.newyorkjets.com/news/jets-vs-raiders-nfl-game-inactives-11-1-2026",
+      "retrieved_at": "2026-11-02T11:48:59.215Z",
+      "publication_at": "2026-11-01T11:30:00-05:00",
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "lamar",
+      "label": "lamar",
+      "url": "https://www.nfl.com/news/ravens-qb-lamar-jackson-suffers-right-thumb-injury-bills",
+      "retrieved_at": "2026-11-02T11:49:00.540Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "box401873027",
+      "label": "box401873027",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873027",
+      "retrieved_at": "2026-11-02T11:48:16.013Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "game401873027",
+      "label": "game401873027",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873027",
+      "retrieved_at": "2026-11-02T11:48:38.389Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "box401873034",
+      "label": "box401873034",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873034",
+      "retrieved_at": "2026-11-02T11:48:15.962Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "game401873034",
+      "label": "game401873034",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873034",
+      "retrieved_at": "2026-11-02T11:48:38.644Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "pbpne",
+      "label": "pbpne",
+      "url": "https://www.espn.com/nfl/playbyplay/_/gameId/401873034",
+      "retrieved_at": "2026-11-02T11:49:15.883Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "cbsjets",
+      "label": "cbsjets",
+      "url": "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261101_LV@NYJ/",
+      "retrieved_at": "2026-11-02T11:49:17.824Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "neinactive",
+      "label": "neinactive",
+      "url": "https://www.patriots.com/news/week-8-inactives-patriots-at-dolphins",
+      "retrieved_at": "2026-11-02T11:48:59.006Z",
+      "publication_at": "2026-11-01T14:55:00-05:00",
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "neobservations",
+      "label": "neobservations",
+      "url": "https://www.patriots.com/news/game-observations-8-takeaways-from-the-patriots-comeback-win-over-the-dolphins-in-week-8",
+      "retrieved_at": "2026-11-02T11:50:32.533Z",
+      "publication_at": "2026-11-01T21:27:00-05:00",
+      "scope": "Attributed team-writer analysis, not an independently retrieved tracking dataset; box totals control discrepancies."
+    },
+    {
+      "id": "prices",
+      "label": "prices",
+      "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php",
+      "retrieved_at": "2026-11-02T11:49:00.299Z",
+      "publication_at": null,
+      "scope": "Inspected Week8/tonight Showdown; not Week9 prices."
+    },
+    {
+      "id": "projection",
+      "label": "projection",
+      "url": "https://fantasysportsedge.com/nfl/projections",
+      "retrieved_at": "2026-11-02T11:48:59.626Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "more1",
+      "label": "more1",
+      "url": "https://www.draftkings.com/lobby#/NFL",
+      "retrieved_at": "2026-11-02T11:48:08.994Z",
+      "publication_at": null,
+      "scope": "DraftKings public lobby redirected to account creation; no login or transaction."
+    },
+    {
+      "id": "oldjets",
+      "label": "oldjets",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873015",
+      "retrieved_at": "2026-11-02T11:50:33.304Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    },
+    {
+      "id": "corrections",
+      "label": "corrections",
+      "url": "https://fantasy.espn.com/football/statcorrections",
+      "retrieved_at": "2026-11-02T11:51:00.650Z",
+      "publication_at": null,
+      "scope": "No correction table exposed, only support UI; not evidence corrections are absent."
+    },
+    {
+      "id": "kcbox",
+      "label": "kcbox",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873033",
+      "retrieved_at": "2026-11-02T11:50:34.868Z",
+      "publication_at": null,
+      "scope": "Full source page inspected; retrieval time distinct from publication. No settled platform scoring certification."
+    }
+  ],
+  "conclusion": "Final106.26; first complete95.26; all+11 due to Jets→Patriots. Brown/Taylor narrow receiving roles and NE availability supported; Cooper receiving opportunity and Concepcion central target share contradicted. Flowers outcome was affected by unanticipated in-game QB injuries. Later information/more revision opportunities confound final-v1 comparison."
+}

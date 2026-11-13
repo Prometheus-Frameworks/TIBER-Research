@@ -1,0 +1,442 @@
+{
+  "record_type": "daily_hypothetical_lineup",
+  "notebook_convention": "Conversational DFS notebook; same-author review; not a governed Research contract or independent review",
+  "id": "2026-w07-20261019T113232Z-daily",
+  "kind": "daily",
+  "status": "complete",
+  "edition": 2,
+  "frozen": false,
+  "recorded_at_utc": "2026-10-19T11:32:32.073Z",
+  "recorded_at_toronto": "2026-10-19T07:32:32.073-04:00",
+  "evidence_cutoff_utc": "2026-10-19T11:32:32.073Z",
+  "season": 2026,
+  "week": 7,
+  "platform": "DraftKings",
+  "slate_date": "2026-10-25",
+  "slate_label": "Sunday main, draft group 155198",
+  "draft_group_id": "155198",
+  "official_pool_verified": true,
+  "official_salary_export_verified": true,
+  "salary_basis": "official_export",
+  "salary_cap": 50000,
+  "salary_total": 49100,
+  "salary_remaining": 900,
+  "projected_total": null,
+  "actual_total": null,
+  "projection": null,
+  "projection_gap": "No qualified provider/scoring/model-as-of snapshot established. New Shark Snip page was used to discover the official group only; its sportsbook clock is not a model timestamp. Earlier dfsroto forecast remains rejected. No DK historical FPPG used as projection.",
+  "picks": [
+    {
+      "slot": "QB",
+      "position": "QB",
+      "player": "C.J. Stroud",
+      "team": "HOU",
+      "opponent": "NYG",
+      "home": true,
+      "salary": 5700,
+      "draftkings_player_id": "44556892",
+      "eligible_slots": [
+        "QB"
+      ],
+      "game_info": "NYG@HOU 10/25/2026 01:00PM ET",
+      "official_export_status": null,
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Choose Stroud at $5,700 after the official team recap documents 312 yards and three TDs in London. Pair him with Noel at a modest combined cost; last week's efficiency is not a projection.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198"
+    },
+    {
+      "slot": "RB",
+      "position": "RB",
+      "player": "Chuba Hubbard",
+      "team": "CAR",
+      "opponent": "TB",
+      "home": true,
+      "salary": 6700,
+      "draftkings_player_id": "44556964",
+      "eligible_slots": [
+        "RB",
+        "FLEX"
+      ],
+      "game_info": "TB@CAR 10/25/2026 01:00PM ET",
+      "official_export_status": null,
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Pay $6,700 for Hubbard's recent rushing workload: 28 carries for 120 yards in Week 6. Keep touchdown and receiving expectations separate from that one-game role evidence.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198"
+    },
+    {
+      "slot": "RB",
+      "position": "RB",
+      "player": "Braelon Allen",
+      "team": "NYJ",
+      "opponent": "MIA",
+      "home": true,
+      "salary": 5900,
+      "draftkings_player_id": "44556978",
+      "eligible_slots": [
+        "RB",
+        "FLEX"
+      ],
+      "game_info": "MIA@NYJ 10/25/2026 01:00PM ET",
+      "official_export_status": null,
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Retain Allen's 17-carry, two-catch role while the new official export flags Hall OUT. This is conditional on Hall's actual Week 7 availability; the export is not the Friday injury report.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198"
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Puka Nacua",
+      "team": "LAR",
+      "opponent": "LV",
+      "home": false,
+      "salary": 8400,
+      "draftkings_player_id": "44557184",
+      "eligible_slots": [
+        "WR",
+        "FLEX"
+      ],
+      "game_info": "LAR@LV 10/25/2026 04:25PM ET",
+      "official_export_status": null,
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Keep Puka as the one Rams player in this build, at the newly verified $8,400. Seven Week 6 targets keep opportunity on the board; a rebound is a judgment, not a guaranteed outcome.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198"
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Malik Nabers",
+      "team": "NYG",
+      "opponent": "HOU",
+      "home": false,
+      "salary": 6800,
+      "draftkings_player_id": "44557202",
+      "eligible_slots": [
+        "WR",
+        "FLEX"
+      ],
+      "game_info": "NYG@HOU 10/25/2026 01:00PM ET",
+      "official_export_status": null,
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Keep one Giants pass catcher for his 15 Week 6 targets. McCarthy's relief performance does not establish a full-game passing baseline; quarterback/protection uncertainty remains.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198"
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Chris Godwin Jr.",
+      "team": "TB",
+      "opponent": "CAR",
+      "home": false,
+      "salary": 4300,
+      "draftkings_player_id": "44557250",
+      "eligible_slots": [
+        "WR",
+        "FLEX"
+      ],
+      "game_info": "TB@CAR 10/25/2026 01:00PM ET",
+      "official_export_status": null,
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Use Godwin as a $4,300 WR with eight Week 6 targets. The backup-QB environment limits confidence; this is salary relief with observed involvement.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198"
+    },
+    {
+      "slot": "TE",
+      "position": "TE",
+      "player": "Sam LaPorta",
+      "team": "DET",
+      "opponent": "GB",
+      "home": true,
+      "salary": 4800,
+      "draftkings_player_id": "44557574",
+      "eligible_slots": [
+        "TE",
+        "FLEX"
+      ],
+      "game_info": "GB@DET 10/25/2026 04:25PM ET",
+      "official_export_status": null,
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Replace the $5,300 Likely candidate with $4,800 LaPorta to reduce shared Giants risk. Detroit's last game before its bye produced five catches and 88 yards for LaPorta; those results do not set next week's expectation.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198"
+    },
+    {
+      "slot": "FLEX",
+      "position": "WR",
+      "player": "Jaylin Noel",
+      "team": "HOU",
+      "opponent": "NYG",
+      "home": true,
+      "salary": 3900,
+      "draftkings_player_id": "44557262",
+      "eligible_slots": [
+        "WR",
+        "FLEX"
+      ],
+      "game_info": "NYG@HOU 10/25/2026 01:00PM ET",
+      "official_export_status": null,
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Use Noel's $3,900 FLEX price to pair with Stroud. The team confirms four catches for 107 yards and a TD in London; explosive production on only four receptions makes this the most fragile receiving-volume assumption.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198"
+    },
+    {
+      "slot": "DST",
+      "position": "DST",
+      "player": "Titans",
+      "team": "TEN",
+      "opponent": "CLE",
+      "home": true,
+      "salary": 2600,
+      "draftkings_player_id": "44557811",
+      "eligible_slots": [
+        "DST"
+      ],
+      "game_info": "CLE@TEN 10/25/2026 01:00PM ET",
+      "official_export_status": null,
+      "projected_points": null,
+      "actual_points": null,
+      "rationale": "Choose Tennessee's $2,600 DST slot as budget relief against Cleveland, whose Week 6 offense scored 13. This is not a claim of a dominant defense or a predictable turnover total.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198"
+    }
+  ],
+  "previous_snapshot": {
+    "id": "2026-w07-2026-10-19-daily",
+    "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/1179a3f1a6e8fa0e8acda7d2b923698fb19426c7/docs/weekly-dfs/codex/2026/week-07/daily/2026-10-19.json",
+    "note": "Preserve the 6:52AM partial board. This follow-up is prompted by a football question and new source discovery; not a retry overwriting the daily record."
+  },
+  "revisions": [
+    {
+      "slot": "TE",
+      "from": "Isaiah Likely",
+      "to": "Sam LaPorta",
+      "salary_delta": -500,
+      "classification": "changed_interpretation",
+      "reason": "At $5,300 versus LaPorta $4,800, retain only Nabers from the unsettled Giants passing game. McCarthy relief production is insufficient to assume both receiving lines repeat. This is risk/budget judgment, not a proven player-specific QB effect."
+    }
+  ],
+  "additions": [
+    {
+      "slot": "QB",
+      "player": "C.J. Stroud",
+      "salary": 5700,
+      "classification": "new_evidence",
+      "reason": "Choose Stroud at $5,700 after the official team recap documents 312 yards and three TDs in London. Pair him with Noel at a modest combined cost; last week's efficiency is not a projection."
+    },
+    {
+      "slot": "RB",
+      "player": "Chuba Hubbard",
+      "salary": 6700,
+      "classification": "new_evidence",
+      "reason": "Pay $6,700 for Hubbard's recent rushing workload: 28 carries for 120 yards in Week 6. Keep touchdown and receiving expectations separate from that one-game role evidence."
+    },
+    {
+      "slot": "RB",
+      "player": "Braelon Allen",
+      "salary": 5900,
+      "classification": "new_evidence",
+      "reason": "Retain Allen's 17-carry, two-catch role while the new official export flags Hall OUT. This is conditional on Hall's actual Week 7 availability; the export is not the Friday injury report."
+    },
+    {
+      "slot": "WR",
+      "player": "Chris Godwin Jr.",
+      "salary": 4300,
+      "classification": "new_evidence",
+      "reason": "Use Godwin as a $4,300 WR with eight Week 6 targets. The backup-QB environment limits confidence; this is salary relief with observed involvement."
+    },
+    {
+      "slot": "FLEX",
+      "player": "Jaylin Noel",
+      "salary": 3900,
+      "classification": "new_evidence",
+      "reason": "Use Noel's $3,900 FLEX price to pair with Stroud. The team confirms four catches for 107 yards and a TD in London; explosive production on only four receptions makes this the most fragile receiving-volume assumption."
+    },
+    {
+      "slot": "DST",
+      "player": "Titans",
+      "salary": 2600,
+      "classification": "new_evidence",
+      "reason": "Choose Tennessee's $2,600 DST slot as budget relief against Cleveland, whose Week 6 offense scored 13. This is not a claim of a dominant defense or a predictable turnover total."
+    }
+  ],
+  "important_unchanged": [
+    "Puka Nacua",
+    "Malik Nabers"
+  ],
+  "source_qualification_change": {
+    "classification": "constraint_or_source_correction",
+    "description": "A newly discovered official export resolves the full ten-game pool, exact slots, new IDs and prices. Earlier three reported prices match. The prior partial record retains its original verification status."
+  },
+  "quarterback_assessment": {
+    "observations": [
+      "McCarthy entered with NYG trailing 34-10 in the fourth quarter.",
+      "Official gamebook in the morning review records11-of21,243passingyards,oneTD,oneINT and26rushingyards.",
+      "Harbaugh praised the relief performance but described the circumstances as desperation; his observed Sunday comments leave Week7 starter undecided.",
+      "Harbaugh says the plays were mostly the actual no-huddle offense for that circumstance."
+    ],
+    "judgment": "Encouraging evidence that McCarthy can move the offense, but 21 relief attempts under a large deficit do not establish ordinary full-game volume, efficiency or receiver allocation. Nabers retains a volume case; Likely stays on watchlist rather than pairing both at current prices.",
+    "unassessable": [
+      "Saints coverage/shell or pressure changes were not charted; do not assert they played prevent defense.",
+      "No validated McCarthy-specific target preference or receiver upgrade/downgrade quantified.",
+      "No official Week7 starting announcement established in inspected remarks."
+    ],
+    "source_ids": [
+      "N2"
+    ],
+    "prior_game_evidence_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/1179a3f1a6e8fa0e8acda7d2b923698fb19426c7/docs/weekly-dfs/codex/2026/week-06/reviews/2026-10-19.json"
+  },
+  "strongest_counterargument": "The Stroud-Noel/Nabers game linkage still concentrates three offensive slots in one game, and Noel's four-catch explosive day may overstate dependable volume. LaPorta can lose targets to Detroit's other weapons; removing Likely could discard a sustained role. Allen's lead-back premise fails if Hall returns.",
+  "unresolved_assumptions": [
+    "Final Week7 availability remains pending for all selections; absence of a status flag is not a medical clearance.",
+    "Hall's OUT marker is current platform metadata, not a verified Friday Week7 designation; Allen is conditional.",
+    "Giants starter, tackle availability and Theo Johnson's role unresolved.",
+    "Noel's route/target share and competition after the Harrison addition not established by the four-catch box score.",
+    "Tennessee is selected for salary and opponent context; no defensive superiority or turnover forecast claimed.",
+    "No full-pool optimizer or calibrated point/confidence forecast used."
+  ],
+  "what_would_change_view": [
+    "Official Week7 availability changes Allen or another selected player's role.",
+    "Giants QB/protection or Johnson reports strengthen or weaken Nabers/Likely at these prices.",
+    "A substantiated alternative receiving role challenges Noel's thin-volume upside case.",
+    "An official pool change is recorded explicitly rather than silently switching slate."
+  ],
+  "slate": {
+    "included_games": [
+      "CIN@BAL 10/25/2026 01:00PM ET",
+      "CLE@TEN 10/25/2026 01:00PM ET",
+      "DEN@ARI 10/25/2026 04:05PM ET",
+      "GB@DET 10/25/2026 04:25PM ET",
+      "IND@MIN 10/25/2026 01:00PM ET",
+      "LAR@LV 10/25/2026 04:25PM ET",
+      "MIA@NYJ 10/25/2026 01:00PM ET",
+      "NYG@HOU 10/25/2026 01:00PM ET",
+      "SF@ATL 10/25/2026 01:00PM ET",
+      "TB@CAR 10/25/2026 01:00PM ET"
+    ],
+    "player_rows": 513,
+    "earliest_kickoff_utc": "2026-10-25T17:00:00Z",
+    "earliest_kickoff_toronto": "2026-10-25T13:00:00-04:00",
+    "platform_change_from_expected": false,
+    "excluded_windows": [
+      "NE@CHI Thursday October 22 20:15 EDT",
+      "PIT@NO Paris Sunday October 25 09:30 EDT",
+      "KC@SEA Sunday October 25 20:20 EDT",
+      "DAL@PHI Monday October 26 20:15 EDT"
+    ]
+  },
+  "freeze": {
+    "existing_valid_freeze": false,
+    "deadline_utc": "2026-10-25T16:00:00Z",
+    "deadline_toronto": "2026-10-25T12:00:00-04:00",
+    "this_record_is_freeze": false
+  },
+  "validation": {
+    "nine_required_slots": true,
+    "unique_players": true,
+    "all_slots_in_official_export": true,
+    "original_salary_sum": 49100,
+    "cap_remaining": 900,
+    "at_least_two_games": true,
+    "chosen_export_status_flags": [],
+    "final_inactives_verified": false
+  },
+  "salary_capture": {
+    "path": "20261019T113232Z-draftkings-155198.csv",
+    "sha256": "166ad63ec481cd418095feef47088ef7870371e6b7f526d8b79db1cd74c9f059",
+    "basis": "UTF-8 Firecrawl rawHtml CSV representation with CRLF normalized to LF and BOM retained; not authenticated raw HTTP bytes.",
+    "source_id": "N1"
+  },
+  "scoring_reference": {
+    "url": "https://www.draftkings.com/help/rules/1",
+    "last_successful_full_read_utc": "2026-10-19T10:50:00.673Z",
+    "current_refetch_note": "Follow-up fetch returned page chrome instead of NFL table. Reuse explicitly timed successful same-day full NFL Classic read, also archived in the morning review. No rule change observed.",
+    "requirements": "$50,000; QB,2RB,3WR,TE,FLEX(RB/WR/TE),DST; at least two NFL games; full PPR/yardage bonuses per platform rules."
+  },
+  "confounders": {
+    "operator_input": "After the initial board, operator requested today's provisional team and challenged keeping both Giants given McCarthy's relief performance while trailing. The follow-up reassessment is operator prompted, not autonomous daily adaptation.",
+    "evidence_access_change": "Public source search found an attributable draft group, enabling official CSV retrieval; no new integration or producer.",
+    "agent_label": "Codex",
+    "exact_runtime_model_id": null,
+    "model_change_observed": null,
+    "independent_review": false,
+    "tiber_evidence_used": false,
+    "private_rosters_used": false,
+    "producers_executed": false,
+    "tokens": null,
+    "currency_cost": null
+  },
+  "sources": [
+    {
+      "id": "N1",
+      "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=21&draftGroupId=155198",
+      "retrieved_at_utc": "2026-10-19T11:27:54.794Z",
+      "retrieved_at_toronto": "2026-10-19T07:27:54.794-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "note": "No publication/update instant established."
+    },
+    {
+      "id": "N2",
+      "url": "https://www.giants.com/news/postgame-quotes-10-18-coach-john-harbaugh-qb-jameis-winston-qb-j-j-mccarthy",
+      "retrieved_at_utc": "2026-10-19T11:28:04.508Z",
+      "retrieved_at_toronto": "2026-10-19T07:28:04.508-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "note": "October 18 postgame transcript; displayed 1 AM is inconsistent with a postgame transcript and not used as an availability receipt."
+    },
+    {
+      "id": "N3",
+      "url": "https://www.houstontexans.com/news/cj-stroud-franchise-record-london-texans-jaguars-week-6",
+      "retrieved_at_utc": "2026-10-19T11:29:49.421Z",
+      "retrieved_at_toronto": "2026-10-19T07:29:49.421-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "note": "Page displays Oct18 1:53PM; publication timezone not printed."
+    },
+    {
+      "id": "N4",
+      "url": "https://www.detroitlions.com/news/recap-lions-at-cardinals-goff-gibbs-laporta",
+      "retrieved_at_utc": "2026-10-19T11:29:44.361Z",
+      "retrieved_at_toronto": "2026-10-19T07:29:44.361-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "note": "Page displays Oct11 7:50PM; Week5 evidence, with Week6 bye."
+    },
+    {
+      "id": "N5",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-7",
+      "retrieved_at_utc": "2026-10-19T11:30:10.355Z",
+      "retrieved_at_toronto": "2026-10-19T07:30:10.355-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "note": "No publication/update instant established."
+    },
+    {
+      "id": "N6",
+      "url": "https://desk.sharksnip.com/picks/dfs/nfl",
+      "retrieved_at_utc": "2026-10-19T11:28:00.192Z",
+      "retrieved_at_toronto": "2026-10-19T07:28:00.192-04:00",
+      "published_at": null,
+      "updated_at": null,
+      "note": "Used to discover draft group155198. Sportsbook as-of clock is not a projection-model timestamp. No projections adopted."
+    }
+  ],
+  "retained_prior_evidence": {
+    "archive_commit": "1179a3f1a6e8fa0e8acda7d2b923698fb19426c7",
+    "review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/1179a3f1a6e8fa0e8acda7d2b923698fb19426c7/docs/weekly-dfs/codex/2026/week-06/reviews/2026-10-19.json",
+    "uses": [
+      "Hubbard28carries120yards",
+      "Braelon17carries2catches",
+      "Puka7targets",
+      "Nabers15targets",
+      "Godwin8targets",
+      "Cleveland13points"
+    ],
+    "note": "Existing inspected gamebook/box-score observations are prior-game evidence, not newly published Week7 reports."
+  }
+}
