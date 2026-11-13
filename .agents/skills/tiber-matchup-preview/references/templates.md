@@ -2,6 +2,26 @@
 
 Copy or adapt these templates for the particular host and assignment. Use real source locators and timestamps; explicitly mark unknown or unavailable values. The templates are not schemas that certify facts or activate a TIBER Research run.
 
+## Execution record
+
+```text
+Author / session or context / start time and timezone:
+Skill repository revision / SKILL.md and required references actually read:
+Entry mode: automatic selection / explicit skill request / direct file read / unknown
+Observed discovery, selection or file-read events / original trace locators:
+Unavailable execution evidence / independence or carryover limits:
+Original selection-log locator / saved version or digest / time saved:
+Original pregame-record locator / saved version or digest:
+```
+
+Record only observed events. A self-authored receipt or well-formatted preview does
+not prove invocation; a skill listed as enabled does not prove its selection for
+this task. Directly reading and applying the files is valid methodology use, but
+must not be relabeled automatic selection. Preserve a separately saved original
+selection log before the main question-specific retrieval where supported. Mark
+missing timestamps or traces unknown; never backfill them from a later probe.
+Keep private trace details in a permitted private location when publishing.
+
 ## Question-selection log
 
 Complete the original entry after the baseline and **before** collecting the main question-specific evidence. A retrospective log must say it is reconstructed.
@@ -60,6 +80,13 @@ Status: supported / mixed / unresolved / superseded
 ```
 
 For film, include game, quarter, clock or play identifier, source, viewing angle and sample selection. Repeat claim/source fields as needed. Status and confidence describe evidential support, not probabilities of future results.
+
+For a failed or incomplete source read, retain the exact attempted URL, observed
+failure or missing field, attempt time (or known interval, otherwise unknown),
+fallback source and the narrower claim it supports. Include the claim operands
+or a brief permissible supporting passage for mutable sources; a URL alone does
+not preserve the evidence. A later successful read cannot reconstruct the earlier
+failure or prove the earlier page contents.
 
 ## Reader-facing preview
 

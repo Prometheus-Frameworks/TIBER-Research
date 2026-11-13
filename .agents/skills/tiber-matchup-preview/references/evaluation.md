@@ -35,6 +35,12 @@ Deferred in this reconstruction: **neutral pace**, because compatible situation 
 
 ## Future contrasting cases
 
+The [first published Cardinals-at-Cowboys evaluation](../../../../docs/evaluations/matchup-preview/2026-w08-ari-at-dal.md)
+assesses a manual record against the merged requirements. It documents useful
+research behavior, one situational-to-aggregate scope error and incomplete
+execution provenance. It is not an automatic-selection test or a controlled
+comparison, and it does not replace the retained Buffalo–Baltimore baseline.
+
 Use at least one stable-personnel game and one game with limited or conflicting evidence, in addition to the existing material-lineup-change pilot. Compare a simple fixed-outline preview and a skill-guided preview for the same game, cutoff, accessible source set and time budget. Where available, prepare them in separate fresh contexts with no shared draft, question choices or session memory; preserve both separately. Counterbalance order across cases if they cannot run independently. Record the author/context, order, source access, timing and any carryover. If isolation is unavailable, explicitly disclose the confound and do not claim the comparison or its time difference is independent. A fresh reviewer may assess both outputs against their original sources; do not provide a preferred answer in advance or treat repeated use of one source as independent evidence.
 
 Record, for each case:
