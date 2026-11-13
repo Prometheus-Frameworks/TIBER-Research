@@ -1,0 +1,69 @@
+{
+  "format_prepared_at": "2026-10-31T19:28:46.926160Z",
+  "base_candidate": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+  "captures": [
+    {
+      "path": "retained/issue-body.md",
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/61",
+      "source_created_at": "2026-10-26T13:27:40Z",
+      "source_updated_at": "2026-10-26T21:40:02Z",
+      "retrieved_at": "2026-10-31T19:25:38.802Z",
+      "sha256": "4a03002d42e5812cbf348f339821f7acb24426a20c206d8050d975fedb37a304",
+      "encoding": "UTF-8 exact API-returned body, no added newline"
+    },
+    {
+      "path": "retained/issuecomment-6427990021.md",
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/61#issuecomment-6427990021",
+      "source_created_at": "2026-10-26T21:40:02Z",
+      "source_updated_at": "2026-10-26T21:40:02Z",
+      "retrieved_at": "2026-10-31T19:25:38.802Z",
+      "sha256": "b238e6a2ab2ccdd1136108a6f944c274b30c91d524ac42f74c2ae6d7a00e4263",
+      "encoding": "UTF-8 exact API-returned body, no added newline"
+    }
+  ],
+  "mapping": [
+    {
+      "source_heading": "## Question and evidence cutoff",
+      "common_section": 2,
+      "source_block_sha256": "b921d5380b28681e6c99607cfbf57701faed5bbfc2932516d7746ad148d1c9ce"
+    },
+    {
+      "source_heading": "## Initial comparison",
+      "common_section": 4,
+      "source_block_sha256": "797c21b071d155fb4fe778327ae7845e8853b15506433b4fe7b1a0f72ceee4ac"
+    },
+    {
+      "source_heading": "## Definition checks before comparisons",
+      "common_section": 6,
+      "source_block_sha256": "8757804a60df009e6afbb8a41fa9a3e12abb17bd478fbb61d65ea32028bfed08"
+    },
+    {
+      "source_heading": "## Prospective tests: next two actual team games",
+      "common_section": 7,
+      "source_block_sha256": "0b124be44704243038e1b4d163cebadf0bdc9428cbfce599da117beba58dce8b"
+    },
+    {
+      "source_heading": "## Existing cases to reuse",
+      "common_section": 8,
+      "source_block_sha256": "b7e8644fb54e659467004cb3b4aa6adff645957cde4217b5eb2c8f1e2465230b"
+    },
+    {
+      "source_heading": "## Completion and boundaries",
+      "common_section": 7,
+      "source_block_sha256": "0249975055f61831ee4d8a265bf30cc80b7bcc55093a3dbd2216e8e74bd00ce2"
+    }
+  ],
+  "verification": {
+    "all_source_section_blocks_retained": true,
+    "source_body_bytes_retained": true,
+    "original_question_ids_and_windows_unchanged": true,
+    "new_research_performed": false,
+    "independent_review": "pending"
+  },
+  "gaps": [
+    "Null evidence_cutoff means no exact timestamp was supplied; source date-level clocks remain in prose and are not silently sharpened.",
+    "Source-level publication/retrieval and metric gaps remain as originally disclosed.",
+    "Exact owner and final evidence deadline remain unknown where not supplied."
+  ],
+  "capture_clock_semantics": "For issue/comment bundles, retrieved_at is the observed start of the sequential issue + all-comments retrieval, not an exact response-completion timestamp. Later raw-comment metadata reads only supply missing creation/update clocks; body equality is verified. Linked file retrieved_at is the observed time after its fetch completed."
+}

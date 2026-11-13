@@ -1,0 +1,58 @@
+{
+  "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/15#issuecomment-5376323502",
+  "source_created_at": "2026-08-21T23:08:46Z",
+  "source_updated_at": "2026-08-21T23:08:46Z",
+  "retrieved_at": "2026-10-31T19:27:58.063Z",
+  "source_body_sha256": "494099be146080172122e450c7de35297c8b6f442e2b007f7dea443c45ae592b",
+  "capture_sha256": "494099be146080172122e450c7de35297c8b6f442e2b007f7dea443c45ae592b",
+  "capture_scope": "Exact returned Markdown body",
+  "changes": [],
+  "original_publication_bytes_authenticated": false,
+  "source_blob_ref": null,
+  "mapping": [
+    {
+      "source_heading": "## Answer first",
+      "prepared_section": 1
+    },
+    {
+      "source_heading": "## Census scope and latest surfaced heads",
+      "prepared_section": 8
+    },
+    {
+      "source_heading": "## R0 \u2014 doctrine and ownership reconciliation",
+      "prepared_section": 3
+    },
+    {
+      "source_heading": "## R1 \u2014 context contribution matrix",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## Cross-system invariants: fields the compiler must never flatten away",
+      "prepared_section": 5
+    },
+    {
+      "source_heading": "## Preferred packet architecture",
+      "prepared_section": 5
+    },
+    {
+      "source_heading": "## Dependency graph",
+      "prepared_section": 5
+    },
+    {
+      "source_heading": "## Main blockers / contradictions",
+      "prepared_section": 6
+    },
+    {
+      "source_heading": "## Proposed issue fan-out \u2014 dependency ordered, NOT OPENED",
+      "prepared_section": 7
+    },
+    {
+      "source_heading": "## Recommended smallest honest R2",
+      "prepared_section": 7
+    },
+    {
+      "source_heading": "## R0/R1 terminal assessment",
+      "prepared_section": 7
+    }
+  ]
+}

@@ -17,7 +17,8 @@
     "preflight:check": "npm run build --silent && node dist/src/cli.js preflight . preflight/opportunity-clusters-2026-v0/preflight.json && node dist/src/cli.js preflight . preflight/tunsil-absence-shock-v0/preflight.json",
     "preflight:ready": "npm run build --silent && node dist/src/cli.js preflight . preflight/opportunity-clusters-2026-v0/preflight.json --require-ready",
     "agent-entry:check": "npm run build --silent && node dist/src/cli.js agent-entry . fixtures/agent-entry/example-minimal.json && node dist/src/cli.js agent-entry . fixtures/agent-entry/example-football-minimal.json && node dist/src/cli.js agent-entry . fixtures/agent-entry/example-ragged.json",
-    "check": "npm run typecheck && npm test && npm run fixture:check && npm run preflight:check && npm run agent-entry:check"
+    "game-studies:check": "npm run build --silent && node --test scripts/game-studies.test.mjs && node scripts/check-game-studies.mjs",
+    "check": "npm run typecheck && npm test && npm run fixture:check && npm run preflight:check && npm run agent-entry:check && npm run game-studies:check"
   },
   "dependencies": {
     "ajv": "8.17.1",

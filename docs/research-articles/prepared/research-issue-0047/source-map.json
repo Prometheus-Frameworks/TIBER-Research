@@ -1,0 +1,406 @@
+{
+  "prepared_at": "2026-10-31T19:30:11.552299Z",
+  "issue": 47,
+  "source_state": "open",
+  "body_api_sha256": "7c125550cd5fcb49198b4085a97b3f20cf9af4a987f30b2eb028628b869786ab",
+  "source_updated_at": "2026-10-27T11:43:30Z",
+  "editions": [
+    {
+      "edition": "body",
+      "path": "docs/research-articles/prepared/research-issue-0047/body.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/47",
+      "source_created_at": "2026-10-22T20:20:52Z",
+      "source_updated_at": "2026-10-27T11:43:30Z",
+      "retrieved_at": "2026-10-31T19:25:37.719Z",
+      "source_sha256": "7c125550cd5fcb49198b4085a97b3f20cf9af4a987f30b2eb028628b869786ab",
+      "retained_path": "retained/body.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Michael Wilson — role, efficiency and touchdown-opportunity watch",
+          "section": 1,
+          "sha256": "2a5af24bb1d8ac1b8303f14088c99093f84e6d140f104cda9d23b322fd8b3761"
+        },
+        {
+          "source_block": 2,
+          "heading": "Question origin and initial assessment",
+          "section": 2,
+          "sha256": "72b8fc3a5176721d4a521c46b4eddc029be557c7547549732f627f12b8e7625b"
+        },
+        {
+          "source_block": 3,
+          "heading": "2025 baseline — volume arrived before the touchdown surge",
+          "section": 3,
+          "sha256": "34a8f0de23e247670d177d5c85836d7f77d4d6a2d2fce004d770ed1ba970da4b"
+        },
+        {
+          "source_block": 4,
+          "heading": "What the Puka comparison actually establishes",
+          "section": 3,
+          "sha256": "bd13a70eef967921dfe60b4806276fda3de3a01c2e7224250f3b0bb8c5d40985"
+        },
+        {
+          "source_block": 5,
+          "heading": "2026 receiving and target-share ledger",
+          "section": 4,
+          "sha256": "70610fb59a0c4cb7add656d45fa76221b6f18f2da77cdbb3143f113869bf7a76"
+        },
+        {
+          "source_block": 6,
+          "heading": "Harrison's departure and the actual surrounding offense",
+          "section": 4,
+          "sha256": "2f121a011c16e9b430248ffb2cd733da081728326dcfe597ea1d24512c06f31d"
+        },
+        {
+          "source_block": 7,
+          "heading": "Prospective hypotheses",
+          "section": 2,
+          "sha256": "ae7f2357f7fe183d433d4de7d5d701eaf79369933a54bc013855f1b913f88722"
+        },
+        {
+          "source_block": 8,
+          "heading": "Touchdown test",
+          "section": 4,
+          "sha256": "a51226e20cc866d9985314c0d4a19c042b5a79b060cf2dd2ecd51cd602501a2f"
+        },
+        {
+          "source_block": 9,
+          "heading": "Follow-up record and checkpoints",
+          "section": 7,
+          "sha256": "5f89205e986c82ef283045642003b457ac7e330f5bad3d389cd889ca3537ddc9"
+        },
+        {
+          "source_block": 10,
+          "heading": "Source register",
+          "section": 8,
+          "sha256": "1a627dd5fc83e513b69f96d2d2098df9a14cad38a1b91a02230326a5e1b03c5a"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    },
+    {
+      "edition": "comment-6350475746",
+      "disposition": "coordination_receipt_retained_not_article",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/47#issuecomment-6350475746",
+      "source_sha256": "92c8a254f273224b1bc98ee5af8f6219f08720d9a11ff215ca30131868f95fdc",
+      "source_created_at": "2026-10-22T20:22:35Z",
+      "source_updated_at": "2026-10-22T20:22:35Z",
+      "retrieved_at": "2026-10-31T19:25:37.719Z"
+    },
+    {
+      "edition": "update-6350614837",
+      "path": "docs/research-articles/prepared/research-issue-0047/update-6350614837.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/47#issuecomment-6350614837",
+      "source_created_at": "2026-10-22T20:29:07Z",
+      "source_updated_at": "2026-10-22T20:29:07Z",
+      "retrieved_at": "2026-10-31T19:25:37.719Z",
+      "source_sha256": "4a0f9a6a46b00f3f367d4ed0a038563e773d33b66505dded01edf847a6aef43e",
+      "retained_path": "retained/update-6350614837.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Context update — Love's health and intended receiving role",
+          "section": 1,
+          "sha256": "ef9a1058a3d859fb806fee36cec07c7d1f056820aca8f749cdeafa03b29d2c6c"
+        },
+        {
+          "source_block": 2,
+          "heading": "What LaFleur actually said",
+          "section": 4,
+          "sha256": "8b98cc2a10e34c43dcf256c668506f4423ee3486ca46606c4b6a5ff780ce743a"
+        },
+        {
+          "source_block": 3,
+          "heading": "Availability as actually verified",
+          "section": 4,
+          "sha256": "23d2d2000c3c3117c1c414a87364e77625ced38b9c3f85fca7a09c21f3b90a2c"
+        },
+        {
+          "source_block": 4,
+          "heading": "Implication and next test",
+          "section": 7,
+          "sha256": "4e843daea53cc0ec1e964f751c3188d055a791408dcfaf52012747da77faf99e"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    },
+    {
+      "edition": "update-6350862200",
+      "path": "docs/research-articles/prepared/research-issue-0047/update-6350862200.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/47#issuecomment-6350862200",
+      "source_created_at": "2026-10-22T20:42:06Z",
+      "source_updated_at": "2026-10-22T20:42:06Z",
+      "retrieved_at": "2026-10-31T19:25:37.719Z",
+      "source_sha256": "c5437457c6fbeadec1814cd4e4cdb54cb744da9930227af976a5effa96662041",
+      "retained_path": "retained/update-6350862200.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "QB context — Brissett accuracy, sacks and the Beck question",
+          "section": 1,
+          "sha256": "bd7017a11622cd8ed9f0503002c76c50a9359b786d2729c9246edc16b2b8148e"
+        },
+        {
+          "source_block": 2,
+          "heading": "Verified passing baseline",
+          "section": 3,
+          "sha256": "9160ed920dde99f8293dd0e201d5108b39ab9edba3066cededfdd38a03b64a54"
+        },
+        {
+          "source_block": 3,
+          "heading": "Accuracy beyond completion percentage",
+          "section": 4,
+          "sha256": "df063e20c777e89c5b12d3625b6e7fdd398f30157efc80a85dd70ff0320a0c4e"
+        },
+        {
+          "source_block": 4,
+          "heading": "What is established about the quarterback job",
+          "section": 4,
+          "sha256": "5e9e72add6ffa97bf563100c87854406cdd73d775e6a9f404be16265343f4a69"
+        },
+        {
+          "source_block": 5,
+          "heading": "Beck's promising sample and current readiness limits",
+          "section": 6,
+          "sha256": "803029ffc1943d4ec24389f3bda5640283554efb0a4e7fb62dfbcee3b9a87592"
+        },
+        {
+          "source_block": 6,
+          "heading": "Wilson-study interpretation and next observations",
+          "section": 7,
+          "sha256": "316b631481b7c9dbd3bdb1819d41cbc5f1164842d8f36c643755d32c7f7514ca"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    },
+    {
+      "edition": "update-6351704283",
+      "path": "docs/research-articles/prepared/research-issue-0047/update-6351704283.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/47#issuecomment-6351704283",
+      "source_created_at": "2026-10-22T21:28:00Z",
+      "source_updated_at": "2026-10-22T21:28:00Z",
+      "retrieved_at": "2026-10-31T19:25:37.719Z",
+      "source_sha256": "93c97d8a577985c6ae96818fd45b7888ccb2157b063c4e0dc5a3d5500bfa65c8",
+      "retained_path": "retained/update-6351704283.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Personnel investigation — route participation fell; exact 13-personnel WR counts remain open",
+          "section": 1,
+          "sha256": "36b3aa946d02e40e755e97c73fef782f2ae6421c8e61870c7a78e575814427bb"
+        },
+        {
+          "source_block": 2,
+          "heading": "Disposition",
+          "section": 5,
+          "sha256": "88c26f083f1a27d640264e2f808621fcff426656e8bac0092507829964f8bb99"
+        },
+        {
+          "source_block": 3,
+          "heading": "Route-volume evidence",
+          "section": 4,
+          "sha256": "95497550b647cb69bd8e2b678d80b62edc646c14401d6a71a5351e75b7bca498"
+        },
+        {
+          "source_block": 4,
+          "heading": "Personnel counts: what is and is not verified",
+          "section": 4,
+          "sha256": "e4a392c08ef296391e49d8e3d6cb400080eaea16aebed14301f1e5ab01f68b6f"
+        },
+        {
+          "source_block": 5,
+          "heading": "Who was the lone WR?",
+          "section": 4,
+          "sha256": "fa679e8f6594e6658d13521b2f7c5ec2f78365f8af9a53f1b22519debbba1785"
+        },
+        {
+          "source_block": 6,
+          "heading": "Route composition is a different question",
+          "section": 2,
+          "sha256": "022fa6d7db2d1f793ab351bad2b77d570f3bf000aaa07d8797611fdf7b52bca0"
+        },
+        {
+          "source_block": 7,
+          "heading": "Puka analogy and source attribution",
+          "section": 8,
+          "sha256": "2c14b98c05541b5849bc862679223fd315a7a0ab95b39909db74b79f12316f2c"
+        },
+        {
+          "source_block": 8,
+          "heading": "Next discriminating evidence within the existing case",
+          "section": 7,
+          "sha256": "8a3582565a380680b46c88bd3374d112ce9d0cdea87ac4ce39ccb02d83551558"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    },
+    {
+      "edition": "update-6351977020",
+      "path": "docs/research-articles/prepared/research-issue-0047/update-6351977020.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/47#issuecomment-6351977020",
+      "source_created_at": "2026-10-22T21:43:40Z",
+      "source_updated_at": "2026-10-22T21:43:40Z",
+      "retrieved_at": "2026-10-31T19:25:37.719Z",
+      "source_sha256": "11ced53198fb4924eb8b5a8f268c8ecab90a970862bfb1726c2762aadd713dca",
+      "retained_path": "retained/update-6351977020.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "X-lead follow-up — Wilson retained the reported 13-personnel passing role",
+          "section": 1,
+          "sha256": "9f9663f69ea5173908725569f119b6fca58d2bbcfacfeb3e6f06036821ca6782"
+        },
+        {
+          "source_block": 2,
+          "heading": "The key original reply",
+          "section": 4,
+          "sha256": "2bf39e37c06b47c453521a333212fa6592a814acaddd0268cf11f2c4e55009fa"
+        },
+        {
+          "source_block": 3,
+          "heading": "Which other leads were confirmed?",
+          "section": 4,
+          "sha256": "a0550b3495882fd18ad408ecd8164b0bb66d2c73877fe124a0cb061652062560"
+        },
+        {
+          "source_block": 4,
+          "heading": "What changes in the case?",
+          "section": 5,
+          "sha256": "656c3d72550cb29fcacb236862fc8e7c78d3901bcc6f1dbeea0953de4cbe8842"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    },
+    {
+      "edition": "update-6352115267",
+      "path": "docs/research-articles/prepared/research-issue-0047/update-6352115267.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/47#issuecomment-6352115267",
+      "source_created_at": "2026-10-22T21:51:58Z",
+      "source_updated_at": "2026-10-22T21:51:58Z",
+      "retrieved_at": "2026-10-31T19:25:37.719Z",
+      "source_sha256": "dfc03a7444e531e341905cd5e93b560bd48e35d83706aaa30f5d6a4f6f6efa38",
+      "retained_path": "retained/update-6352115267.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Research checkpoint — missing witnesses before a final judgment",
+          "section": 1,
+          "sha256": "c38b51a0b68cb8af5d867ec93f2b4c1d5a8423e1b0bf9825f6fc7ba67d2fd976"
+        },
+        {
+          "source_block": 2,
+          "heading": "Known opponents, unmeasured matchup context",
+          "section": 4,
+          "sha256": "26e418a8bda0e782a716fcff60e3757dd99b4603f3819bd7e01f9e350e14cad0"
+        },
+        {
+          "source_block": 3,
+          "heading": "Material missing-witness register",
+          "section": 6,
+          "sha256": "07bca6032cec1bd264485d575d0a6f204da2ffbd366ff0ec339fb75c8c98cffc"
+        },
+        {
+          "source_block": 4,
+          "heading": "Where this leaves the hypotheses",
+          "section": 5,
+          "sha256": "210330eab5647762722547732f197549909df24fd291bee4844978ebd0f6f295"
+        },
+        {
+          "source_block": 5,
+          "heading": "Next tool",
+          "section": 7,
+          "sha256": "fc70faa4e61b720d20fdbe2980ab09b124982412b0bcb0fc9b37de8d1ccb9e43"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    },
+    {
+      "edition": "update-6417265640",
+      "path": "docs/research-articles/prepared/research-issue-0047/update-6417265640.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/47#issuecomment-6417265640",
+      "source_created_at": "2026-10-26T13:32:01Z",
+      "source_updated_at": "2026-10-26T13:32:01Z",
+      "retrieved_at": "2026-10-31T19:25:37.719Z",
+      "source_sha256": "b5e25ca06e81078f7f1d4ecb76d83039551651126da3414eb1ad1d29f2c3d4b5",
+      "retained_path": "retained/update-6417265640.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "October 26 — Week 7 update: Wilson's share stayed modest in a McBride-led passing game",
+          "section": 1,
+          "sha256": "bf037683391c58eda0aca6fc3d613aa634d9697e4320b9771a6d6976bd4ec3f4"
+        },
+        {
+          "source_block": 2,
+          "heading": "Reconciled current game",
+          "section": 4,
+          "sha256": "d15f23f9e541b78c6da5f24c352ee8ae3f88adebfc5cc55beb8f949414b4dd52"
+        },
+        {
+          "source_block": 3,
+          "heading": "Why Heath's percentages differ",
+          "section": 4,
+          "sha256": "c5790bc2dc72a8c37d07a2267c1523003fbdcd45a5e39c3c24a80dcbed5edc12"
+        },
+        {
+          "source_block": 4,
+          "heading": "What changes in H1–H4",
+          "section": 5,
+          "sha256": "ccde92b7b36856dbfc6fa6b85bc3f8b915088f82e6d5a2752e746e19794d730a"
+        },
+        {
+          "source_block": 5,
+          "heading": "Next discriminating observations",
+          "section": 7,
+          "sha256": "f5183319768e2bfbdb38d9f1ecbc07cc8a87ca3f577d657c3900ffd5c810c4f0"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    },
+    {
+      "edition": "update-6441040381",
+      "path": "docs/research-articles/prepared/research-issue-0047/update-6441040381.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/47#issuecomment-6441040381",
+      "source_created_at": "2026-10-27T11:43:30Z",
+      "source_updated_at": "2026-10-27T11:43:30Z",
+      "retrieved_at": "2026-10-31T19:25:37.719Z",
+      "source_sha256": "c4851a9dd27f1d62969a16a7f5c838e7b829daa586cc1d46011c593ac24408af",
+      "retained_path": "retained/update-6441040381.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "October 27 — availability and participation update after the Denver checkpoint",
+          "section": 1,
+          "sha256": "6f52d92374fb9598862aff18afc856bf693541ec333b7e26462b064e6adad86c"
+        },
+        {
+          "source_block": 2,
+          "heading": "New official evidence",
+          "section": 4,
+          "sha256": "797a13f730724a576cbe999cd88f0c51f8e3bd90389e70d610ce30638e4ce243"
+        },
+        {
+          "source_block": 3,
+          "heading": "Role and touchdown opportunity remain distinct",
+          "section": 4,
+          "sha256": "1e9f7ffe8a88005a5993d3ceff640114f48ca817f196801d667a61fe3ae731a4"
+        },
+        {
+          "source_block": 4,
+          "heading": "Hypotheses, strongest alternative and next test",
+          "section": 7,
+          "sha256": "50fdadb3164a278b7ae5f944a853a54388e22f3398543c11978dad0869e31c29"
+        },
+        {
+          "source_block": 5,
+          "heading": "Source clocks",
+          "section": 8,
+          "sha256": "f59796e1b3eb5a6437ac1109e1937178979dd72afe0c2ae2f527f5fabaceab92"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    }
+  ],
+  "fidelity": "Every source section mapped intact; heading depth only changed. Question IDs/measurements/windows retained. Unknown values not synthesized. Historical external-review receipts are source claims, not new acceptance.",
+  "format_review": "self-check; independent review pending"
+}

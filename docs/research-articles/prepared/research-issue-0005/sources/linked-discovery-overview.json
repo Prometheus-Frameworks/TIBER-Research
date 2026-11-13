@@ -1,0 +1,49 @@
+{
+  "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f/docs/discovery/open-availability-witness-2026-08-13/README.md",
+  "source_created_at": null,
+  "source_updated_at": null,
+  "retrieved_at": "2026-10-31T19:26:44.614Z",
+  "source_body_sha256": "f48d0fa07139e377cbd2e091dbbca8b0a38c993399b2e5fe230bd69eec7d61bc",
+  "capture_sha256": "1814ce69f17a9b9ca95eb0a342fabbf70976b63fc0499dfa186c1b06a92a1f7d",
+  "capture_scope": "Transformed public-safe Markdown body; see changes",
+  "changes": [
+    "Historical default credential literal omitted under preparation privacy boundary.",
+    "Repository-relative links expanded to exact-ref source URLs"
+  ],
+  "original_publication_bytes_authenticated": false,
+  "source_blob_ref": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+  "mapping": [
+    {
+      "source_heading": "## Custody and authority boundary",
+      "prepared_section": 8
+    },
+    {
+      "source_heading": "## Headline findings (these change the issue's premise)",
+      "prepared_section": 1
+    },
+    {
+      "source_heading": "## W1 \u2014 historical contract (summary)",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## W2 \u2014 upstream ownership and precedent (summary)",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## W3 \u2014 candidate matrix (summary)",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## Implications for W4\u2013W6 (preliminary, for operator discussion)",
+      "prepared_section": 5
+    },
+    {
+      "source_heading": "## Owner-routed open questions",
+      "prepared_section": 6
+    },
+    {
+      "source_heading": "## Candidate discovery disposition \u2014 operator decision required",
+      "prepared_section": 7
+    }
+  ]
+}

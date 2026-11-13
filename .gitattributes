@@ -14,3 +14,6 @@
 /fixtures/synthetic-complete/** -text !eol
 /preflight/** -text !eol
 /runs/** -text !eol
+
+# Preserve exact captured issue/amendment bytes, including CRLF on Windows.
+/docs/game-studies/**/retained/** -text !eol

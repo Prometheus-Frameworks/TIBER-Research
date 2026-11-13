@@ -1,0 +1,80 @@
+{
+  "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/75",
+  "source_updated_at": "2026-10-31T19:12:03Z",
+  "retrieved_at": "2026-10-31T19:25:37.325Z",
+  "captured_body_sha256": "c6b5e11136dae024dd8eac9279aa95b1745e572b35446a3ae2e9c2214e1ae727",
+  "capture_scope": "Current normalized API issue body UTF-8 and normalized metadata; all comments fetched (none). Not original publication or external-page archive.",
+  "source_line_ranges_by_outer_section": {
+    "1": [
+      [
+        1,
+        12
+      ]
+    ],
+    "2": [
+      [
+        170,
+        212
+      ]
+    ],
+    "3": [
+      [
+        13,
+        27
+      ],
+      [
+        28,
+        49
+      ]
+    ],
+    "4": [
+      [
+        84,
+        169
+      ]
+    ],
+    "5": [
+      [
+        50,
+        75
+      ]
+    ],
+    "6": [
+      [
+        239,
+        257
+      ]
+    ],
+    "7": [
+      [
+        76,
+        83
+      ]
+    ],
+    "8": [
+      [
+        213,
+        238
+      ],
+      [
+        258,
+        259
+      ]
+    ]
+  },
+  "source_line_coverage": "every source line exactly once; heading depth only changed outside fenced logs",
+  "question_ids_preserved": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4a",
+    "Q4b",
+    "Q5a",
+    "Q5b"
+  ],
+  "original_unchanged": true,
+  "format_preparation": "prepared_for_review",
+  "research_completion": "not_changed",
+  "independent_review": "pending",
+  "base_sha": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f"
+}

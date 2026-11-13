@@ -1,0 +1,52 @@
+{
+  "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/10#issuecomment-5316923330",
+  "source_created_at": "2026-08-17T14:02:52Z",
+  "source_updated_at": "2026-08-17T14:02:52Z",
+  "retrieved_at": "2026-10-31T19:27:55.211Z",
+  "source_body_sha256": "b29f6230df6dd9e7b8ecb8d4c9506503f4b082f5238eea8f89c61ff0fcabb65d",
+  "capture_sha256": "ff10d456920ce847d5994207cd8a8254034b91c836d0ecfdea7032611f1997c1",
+  "capture_scope": "Transformed public-safe Markdown body; see changes",
+  "changes": [
+    "Personal roster/context fixture paragraph omitted; workspace name generalized. Original hash covers source read, not redacted capture."
+  ],
+  "original_publication_bytes_authenticated": false,
+  "source_blob_ref": null,
+  "mapping": [
+    {
+      "source_heading": "### Experimental conditions",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "### Personal input boundary",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "### Architectural finding: the tree is the map, not the mission",
+      "prepared_section": 5
+    },
+    {
+      "source_heading": "### UX finding: governance belongs behind the conversational surface",
+      "prepared_section": 5
+    },
+    {
+      "source_heading": "### Artifact-handoff finding",
+      "prepared_section": 5
+    },
+    {
+      "source_heading": "### Memory / portability finding",
+      "prepared_section": 5
+    },
+    {
+      "source_heading": "### Next missing primitive: small agent persistence/retrieval surface",
+      "prepared_section": 7
+    },
+    {
+      "source_heading": "### Follow-up protocol corrections suggested by User Zero",
+      "prepared_section": 7
+    },
+    {
+      "source_heading": "### Revised interpretation of #10",
+      "prepared_section": 5
+    }
+  ]
+}

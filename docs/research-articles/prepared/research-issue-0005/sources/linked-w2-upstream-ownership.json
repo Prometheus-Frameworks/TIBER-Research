@@ -1,0 +1,44 @@
+{
+  "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f/docs/discovery/open-availability-witness-2026-08-13/w2-upstream-ownership.md",
+  "source_created_at": null,
+  "source_updated_at": null,
+  "retrieved_at": "2026-10-31T19:27:04.516Z",
+  "source_body_sha256": "b73b618dad2877a4d4b47c7a3715082784294774f5b2c77a99c83a80af243b4a",
+  "capture_sha256": "f76bb2ddbc89e38a43b2a4bc39e90493f52f79a451845fbf700a4afd046201fd",
+  "capture_scope": "Transformed public-safe Markdown body; see changes",
+  "changes": [
+    "Repository-relative links expanded to exact-ref source URLs"
+  ],
+  "original_publication_bytes_authenticated": false,
+  "source_blob_ref": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+  "mapping": [
+    {
+      "source_heading": "## 1. Repository map \u2014 who owns which availability-adjacent surface",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## 2. Depth-chart precedent \u2014 observed, with corrections",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## 3. Other ESPN-derived precedent",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## 4. Contribution norms",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## 5. Limits of the observed record",
+      "prepared_section": 6
+    },
+    {
+      "source_heading": "## 6. Upstream reliability model \u2014 source death and breakage handling",
+      "prepared_section": 5
+    },
+    {
+      "source_heading": "## Primary sources",
+      "prepared_section": 8
+    }
+  ]
+}

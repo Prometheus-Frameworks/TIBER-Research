@@ -1,0 +1,30 @@
+{
+  "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/15#issuecomment-5446705869",
+  "source_created_at": "2026-08-28T00:08:49Z",
+  "source_updated_at": "2026-08-28T00:08:49Z",
+  "retrieved_at": "2026-10-31T19:27:58.063Z",
+  "source_body_sha256": "e6276024204093b93656e150448c849f753364954489267b160f2529aa500e75",
+  "capture_sha256": "e6276024204093b93656e150448c849f753364954489267b160f2529aa500e75",
+  "capture_scope": "Exact returned Markdown body",
+  "changes": [],
+  "original_publication_bytes_authenticated": false,
+  "source_blob_ref": null,
+  "mapping": [
+    {
+      "source_heading": "### Contribution to the R2 contract family",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "### Proposed field fixtures for R2 reconciliation",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "### Perturbations worth preserving",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "### Required deterministic failures",
+      "prepared_section": 6
+    }
+  ]
+}

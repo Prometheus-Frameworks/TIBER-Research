@@ -1,0 +1,65 @@
+{
+  "format_prepared_at": "2026-10-31T19:28:46.926160Z",
+  "base_candidate": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+  "captures": [
+    {
+      "path": "retained/issue-body.md",
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/67",
+      "source_created_at": "2026-10-26T22:05:46Z",
+      "source_updated_at": "2026-10-26T22:05:54Z",
+      "retrieved_at": "2026-10-31T19:25:42.136Z",
+      "sha256": "2a2a5b0336053ed1f1a9dd1461486a356353cc848388ee7e20d9b78053e35b7a",
+      "encoding": "UTF-8 exact API-returned body, no added newline"
+    }
+  ],
+  "mapping": [
+    {
+      "source_heading": "## Research question and cutoff",
+      "common_section": 2,
+      "source_block_sha256": "76db1c9ae6bb40d2535c4c5fdf2a875463cf66ffa35d5943ece32b828298af9f"
+    },
+    {
+      "source_heading": "## What we know about the Taylor scenario",
+      "common_section": 3,
+      "source_block_sha256": "0a4ca01d0378a0c244cd5c0c3609e801ad902c32e25efe0f4bd036ef6bf5484e"
+    },
+    {
+      "source_heading": "## McGowan's NFL usage: Weeks 1–7",
+      "common_section": 4,
+      "source_block_sha256": "0fe62733d6a12ed320c06694f9cb6e3a74300e666cc524220bf5dad22fcd6b03"
+    },
+    {
+      "source_heading": "## Player profile and TIBER-Rookies prior",
+      "common_section": 3,
+      "source_block_sha256": "9fc7392be2e00cc9dc109b2fd736f242e3949396687fcadff9a596a558509883"
+    },
+    {
+      "source_heading": "## Scenario map and fantasy interpretation",
+      "common_section": 5,
+      "source_block_sha256": "ac3f47491b3d58e9535833a9fd26307fd049f4c4d9533114bfeb306b6e1c895d"
+    },
+    {
+      "source_heading": "## Availability and actionable framing",
+      "common_section": 5,
+      "source_block_sha256": "48c4046adb16718f7cc5d839d4a3ca1c9fe60b37dae49487b3a0539ed209cf4c"
+    },
+    {
+      "source_heading": "## Research checkpoints",
+      "common_section": 7,
+      "source_block_sha256": "e57fbd682e245e547535f261fb7134928b183c924f552e941a48abcaff2dde80"
+    }
+  ],
+  "verification": {
+    "all_source_section_blocks_retained": true,
+    "source_body_bytes_retained": true,
+    "original_question_ids_and_windows_unchanged": true,
+    "new_research_performed": false,
+    "independent_review": "pending"
+  },
+  "gaps": [
+    "Null evidence_cutoff means no exact timestamp was supplied; source date-level clocks remain in prose and are not silently sharpened.",
+    "Source-level publication/retrieval and metric gaps remain as originally disclosed.",
+    "Exact owner and final evidence deadline remain unknown where not supplied."
+  ],
+  "capture_clock_semantics": "For issue/comment bundles, retrieved_at is the observed start of the sequential issue + all-comments retrieval, not an exact response-completion timestamp. Later raw-comment metadata reads only supply missing creation/update clocks; body equality is verified. Linked file retrieved_at is the observed time after its fetch completed."
+}

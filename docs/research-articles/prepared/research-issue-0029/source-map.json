@@ -1,0 +1,210 @@
+{
+  "prepared_at": "2026-10-31T19:30:49.229705Z",
+  "format_check": "All source spans accounted for exactly once; see block_mapping",
+  "sources": [
+    {
+      "edition": "body-original-framing",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/29",
+      "source_created_at": "2026-10-07T10:00:02Z",
+      "source_updated_at": "2026-10-24T00:20:25Z",
+      "retrieved_at": "2026-10-31T19:25:33.821Z",
+      "source_sha256": "f0ecdd0900b67463188d6ff1e86a612cd26b097079c294569de95fb2e320a507",
+      "source_characters": 5836,
+      "source_path": "retained/body-original-framing.md",
+      "prepared_path": "body-original-framing-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "> **October 7, 2026 update:** The original research framing is retained below. The appended **Architecture synthesis v0** records the later discussion of domain compression, the web-and-lenses visualization, and a bounded “Lean for football” verifier. This remains a research/design record, not an adopted contract or implementation authorization.",
+          "outer_section": 1,
+          "sha256": "a4e8233bb5b63ddaa9c4961cf00f386aa6f83da30f433d64042ef172407cce0b"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "## Motivation",
+          "outer_section": 3,
+          "sha256": "110c37605ab783f68add845e7f706b156cce1d03be6736bdbf122e48c83cc2e4"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "## Core model",
+          "outer_section": 2,
+          "sha256": "f6ea86d2ba7be83a791907e4dbee8f1369b0ebd4894f029d4bc6d078c2f178f4"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "## What this would mean for TIBER",
+          "outer_section": 4,
+          "sha256": "a93366686ba3d673f4bdde7a38df3a38cce5f0ba55b4c9757f7e0577517f326f"
+        },
+        {
+          "block": 5,
+          "original_heading_or_lead": "### 1. Interpretation before prediction",
+          "outer_section": 5,
+          "sha256": "0ed2401c006139542fe12830e89d59f73a3a357aa291a06fb4540602b797ca0f"
+        },
+        {
+          "block": 6,
+          "original_heading_or_lead": "### 2. Separate state claims from outcome claims",
+          "outer_section": 4,
+          "sha256": "c3c4a3e0e59e923cbad2793fc8454366d491f17de6a31d8a35407b7fa284acd8"
+        },
+        {
+          "block": 7,
+          "original_heading_or_lead": "### 3. Preserve uncertainty as information",
+          "outer_section": 4,
+          "sha256": "7d84a553390b20684b6029769881b27b1851995ecb794b819d11c17114b7b5d4"
+        },
+        {
+          "block": 8,
+          "original_heading_or_lead": "### 4. Evaluate probabilistically",
+          "outer_section": 4,
+          "sha256": "fbd6bb367ff2b89e9de444776c9c428c3f23ff2ea3d2fb6a88caa6a4ac9dce8a"
+        },
+        {
+          "block": 9,
+          "original_heading_or_lead": "### 5. Treat evidence as belief-changing",
+          "outer_section": 4,
+          "sha256": "3fd8e9d2208e641f5d4d71db150c9d9e818ebfe0498f42652b54d24d38f0a1ba"
+        },
+        {
+          "block": 10,
+          "original_heading_or_lead": "### 6. Preserve operator agency",
+          "outer_section": 4,
+          "sha256": "0bc166eca34e8770e83b6443fdd0d928e7f667328faa96367a401ff786f97dc2"
+        },
+        {
+          "block": 11,
+          "original_heading_or_lead": "## Why this matters",
+          "outer_section": 4,
+          "sha256": "116926b6499d19e244671023d6a6d8318ca0183d71e0b51c19f2e37bf0f419f2"
+        },
+        {
+          "block": 12,
+          "original_heading_or_lead": "## Proposed next work",
+          "outer_section": 7,
+          "sha256": "8db1adb11cdccdf4408d51ffd7b20cdf4c742ee5446593f1223338d39bc99c8f"
+        },
+        {
+          "block": 13,
+          "original_heading_or_lead": "## Guardrails",
+          "outer_section": 7,
+          "sha256": "506360bc7c2e8897b1cde3141f0ef9ce4e6e0d583c9ea405d2e4f19016f8d9d7"
+        },
+        {
+          "block": 14,
+          "original_heading_or_lead": "## Desired outcome",
+          "outer_section": 5,
+          "sha256": "e50010dfb15968c0371177eb6ce10369b8dc62702bcde3ae6e34c85336902a35"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    },
+    {
+      "edition": "body-synthesis-2026-10-07",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/29",
+      "source_created_at": null,
+      "source_updated_at": "2026-10-24T00:20:25Z",
+      "retrieved_at": "2026-10-31T19:25:33.821Z",
+      "source_sha256": "a8f03d30227f3e410309241544ad1d80097f75bb67865d5396b464eca47a42ac",
+      "source_characters": 24382,
+      "source_path": "retained/body-synthesis-2026-10-07.md",
+      "prepared_path": "body-synthesis-2026-10-07-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## Architecture synthesis v0",
+          "outer_section": 1,
+          "sha256": "ffebccc7124b0f440109cabd5a3d6f4b3ed9de357e4b80dff18f79e13175dc2f"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "### A. The central distinction: reality, evidence, representation",
+          "outer_section": 4,
+          "sha256": "e006f6fa1da1d6813fbacbf55bb0e89e37764e08e55d8aff2c51f77d8bc2bcc9"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "### B. The picture: a web, observed through compressed lenses",
+          "outer_section": 4,
+          "sha256": "2f754c9962eb7c8155075317d9037596981526f94dbf9798a566eeb1380c5c4a"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "### C. Compression is question-specific, not a universal football score",
+          "outer_section": 2,
+          "sha256": "cf7cba086f274b8133612a030ba26719ae98ce101455b2c720a925705ed848fa"
+        },
+        {
+          "block": 5,
+          "original_heading_or_lead": "### D. The targets-only example: preserve the insight, tighten the analogy",
+          "outer_section": 4,
+          "sha256": "3de481c63fc379328ccaba7f115efe8c9c8eac63cbb9d9ab6849ddfcd6cbfff8"
+        },
+        {
+          "block": 6,
+          "original_heading_or_lead": "### E. “Lean for football”: a bounded verifier, not a truth oracle",
+          "outer_section": 4,
+          "sha256": "27b3025daf12ae98a40f6185a586fde9f67ed2dafa34d945106b3cabc9bae205"
+        },
+        {
+          "block": 7,
+          "original_heading_or_lead": "### F. Typed claims: no silent changes of epistemic status",
+          "outer_section": 1,
+          "sha256": "4ec056cd5e7f11754e427f8703be343c2baa23629f6b17732415f68bf85d5f75"
+        },
+        {
+          "block": 8,
+          "original_heading_or_lead": "### G. A checkable example and explicit negative cases",
+          "outer_section": 4,
+          "sha256": "1949195edf80e670bd6bb68dd46f1b4193843ed14dcedf16d82d5f7348cbb9d1"
+        },
+        {
+          "block": 9,
+          "original_heading_or_lead": "### H. Three evaluations, not one green badge",
+          "outer_section": 4,
+          "sha256": "94b987e819699eb9d5cf6af44d3744493a78a861ce375e157fe583bfe5fb23bd"
+        },
+        {
+          "block": 10,
+          "original_heading_or_lead": "### I. Reconcile with existing owners; do not create parallel architecture",
+          "outer_section": 3,
+          "sha256": "7c41c19c26d9aed9222cfd2e1cbd462ddafc53d9384c466b255c6603646a7ebe"
+        },
+        {
+          "block": 11,
+          "original_heading_or_lead": "### J. Durable research summaries, not just durable chats",
+          "outer_section": 4,
+          "sha256": "4df04fa9b55b4898c80432616c45e41153c06b4fddb0f7ba541a38f607a3d35a"
+        },
+        {
+          "block": 12,
+          "original_heading_or_lead": "### K. Smallest proposed next step and stop boundary",
+          "outer_section": 7,
+          "sha256": "dc9980ece76859399085c37d88e07ae0ac79d2434248ef7ad1a12a7cafdb36f6"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    },
+    {
+      "edition": "update-6377434180",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/29#issuecomment-6377434180",
+      "source_created_at": "2026-10-24T00:20:25Z",
+      "source_updated_at": "2026-10-24T00:20:25Z",
+      "retrieved_at": "2026-10-31T19:25:33.821Z",
+      "source_sha256": "b187bfd18012bb67760e85f24d4cfdaf10ff1e3de4c0596a5219020404a4443c",
+      "source_characters": 859,
+      "source_path": "retained/update-6377434180.md",
+      "prepared_path": "update-6377434180-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "Universe D follow-up is now recorded in [Research #50](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/50) and [draft design PR #51](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/51). It carries forward this issue's reality/evidence/representation/distribution distinctions into an explicitly invented passing subgame and preserves links to OL Context #28 and Unit State #30.",
+          "outer_section": 1,
+          "sha256": "b187bfd18012bb67760e85f24d4cfdaf10ff1e3de4c0596a5219020404a4443c"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    }
+  ]
+}

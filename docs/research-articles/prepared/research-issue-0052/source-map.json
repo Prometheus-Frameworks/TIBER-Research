@@ -1,0 +1,115 @@
+{
+  "prepared_at": "2026-10-31T19:30:11.552299Z",
+  "issue": 52,
+  "source_state": "open",
+  "body_api_sha256": "b388c79f555ea51a9c0efba29a1b1f4c990cf289a2f1344e2b98e233b1b98508",
+  "source_updated_at": "2026-10-26T11:18:58Z",
+  "editions": [
+    {
+      "edition": "body",
+      "path": "docs/research-articles/prepared/research-issue-0052/body.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/52",
+      "source_created_at": "2026-10-24T00:46:40Z",
+      "source_updated_at": "2026-10-26T11:18:58Z",
+      "retrieved_at": "2026-10-31T19:25:40.532Z",
+      "source_sha256": "b388c79f555ea51a9c0efba29a1b1f4c990cf289a2f1344e2b98e233b1b98508",
+      "retained_path": "retained/body.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Research question",
+          "section": 1,
+          "sha256": "50f5a692c4417e9927a8ecf2b4da6aba1dabe07b5b2f75c75c7968ebee4cb53d"
+        },
+        {
+          "source_block": 2,
+          "heading": "Pregame evidence and working interpretation",
+          "section": 4,
+          "sha256": "07044486a89156d9de9e34bccd1e70ad9df48a9e9d3944244fe26caa977cc04d"
+        },
+        {
+          "source_block": 3,
+          "heading": "College record and TIBER-Rookies coverage",
+          "section": 3,
+          "sha256": "ca7c89bba50760b1a340b67871c5dd0e2bee49acc8c6152f1df29b7adc847d1c"
+        },
+        {
+          "source_block": 4,
+          "heading": "Branch A — Puka plays",
+          "section": 2,
+          "sha256": "9497006091596c7e8790c67407b9b880cfa1949bcd8252029087e14cd512c44b"
+        },
+        {
+          "source_block": 5,
+          "heading": "Branch B — Puka does not play",
+          "section": 2,
+          "sha256": "84078e4bacd386a46633df4008bfe5fe67a8e91fdd48d4fc374d8a90fe1ea9af"
+        },
+        {
+          "source_block": 6,
+          "heading": "Shared postgame review",
+          "section": 7,
+          "sha256": "9023e0f50c743a2cb7dfd48504d44c6d9c82c4485899a29c054e6745fcd5f74d"
+        },
+        {
+          "source_block": 7,
+          "heading": "Sources",
+          "section": 8,
+          "sha256": "bc9e9f3a5449a6e0f1203e4e2f303694ae7f8af28a071b23eb2dc848b4b50e1a"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    },
+    {
+      "edition": "update-6414730618",
+      "path": "docs/research-articles/prepared/research-issue-0052/update-6414730618.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/52#issuecomment-6414730618",
+      "source_created_at": "2026-10-26T11:18:58Z",
+      "source_updated_at": "2026-10-26T11:18:58Z",
+      "retrieved_at": "2026-10-31T19:25:40.532Z",
+      "source_sha256": "e029d4a8cd670dff4b9f9e9121c32b3a629ee57b69d7bd9340de2bf1f96b316e",
+      "retained_path": "retained/update-6414730618.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Week 7 postgame answers — October 26, 2026",
+          "section": 1,
+          "sha256": "92e898afa8ca4e9e57fb2fc08da4a816090af87f0f55f5afc0b2b1bf84358a7e"
+        },
+        {
+          "source_block": 2,
+          "heading": "Branch A answers",
+          "section": 4,
+          "sha256": "ac7090f69339a86038e4dc77b5892f9652de84eaac83565b9e971802fcf17e48"
+        },
+        {
+          "source_block": 3,
+          "heading": "Branch B — Puka does not play",
+          "section": 2,
+          "sha256": "dc8169d06f88b0603b4bc4ada9411becb589e1b874a8af3f90e072c964ae0807"
+        },
+        {
+          "source_block": 4,
+          "heading": "Shared review and comparison with Week 3",
+          "section": 5,
+          "sha256": "b1bdc92296ac5659056b748641f9af536a8fff200d3235f8b9a266ec8c010829"
+        },
+        {
+          "source_block": 5,
+          "heading": "Remaining evidence questions",
+          "section": 6,
+          "sha256": "d965948300ef16ad4c06796902b3f97b17124a349bc8508cee48a9ba3d4ee441"
+        },
+        {
+          "source_block": 6,
+          "heading": "Sources",
+          "section": 8,
+          "sha256": "15a107076a700352ad747c63872c78a60817e6c59e46fd55ce1ab07fbbead3e7"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    }
+  ],
+  "fidelity": "Every source section mapped intact; heading depth only changed. Question IDs/measurements/windows retained. Unknown values not synthesized. Historical external-review receipts are source claims, not new acceptance.",
+  "format_review": "self-check; independent review pending"
+}

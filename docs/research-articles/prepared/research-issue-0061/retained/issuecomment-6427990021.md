@@ -1,0 +1,3 @@
+### Focused follow-up: Rico Dowdle contingency
+
+We opened [#66](https://github.com/Prometheus-Frameworks/TIBER-Research/issues/66) to test a separate question: how much of Pittsburgh's lead-back role Dowdle might inherit if Warren were unavailable, and whether his receiving, prior starter workload and standalone value justify S-tier handcuff consideration. It links the Week 7 split here to a 2025 starter-absence comparison and records the uncertainty around transferring that role to Pittsburgh. Continue the healthy-pair comparison in this issue; use #66 for the contingency thesis.

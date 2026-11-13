@@ -1,0 +1,60 @@
+{
+  "format_prepared_at": "2026-10-31T19:28:46.926160Z",
+  "base_candidate": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+  "captures": [
+    {
+      "path": "retained/issue-body.md",
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/63",
+      "source_created_at": "2026-10-26T13:30:52Z",
+      "source_updated_at": "2026-10-26T13:30:52Z",
+      "retrieved_at": "2026-10-31T19:25:40.108Z",
+      "sha256": "693147162bedb5410c4159f276ce938a58a9f3f992448a200bd24fb5adef8b58",
+      "encoding": "UTF-8 exact API-returned body, no added newline"
+    }
+  ],
+  "mapping": [
+    {
+      "source_heading": "## Question and cutoff",
+      "common_section": 2,
+      "source_block_sha256": "c8a15a29a88fb31e5d80698188a4a190ff5062bb17fe66c845e0c0bb5d27089e"
+    },
+    {
+      "source_heading": "## Reconciled rushing baseline",
+      "common_section": 3,
+      "source_block_sha256": "971069b529c35f88a777cec19d0bb416a7e1526908d1955db4a053bc17b06192"
+    },
+    {
+      "source_heading": "## Week 7 mechanism: eight carries are not eight called runs",
+      "common_section": 4,
+      "source_block_sha256": "cd9b5ba955eda8b1831b47c7eda5d8ebe37f74b15b06d4c1b43ff25c21172f10"
+    },
+    {
+      "source_heading": "## Competing explanations",
+      "common_section": 5,
+      "source_block_sha256": "17648cfcb32dec800ab83edf0892c7e2090d087b1a01c1a670ac364dcd84bd32"
+    },
+    {
+      "source_heading": "## Prospective next-game and ROS tracking",
+      "common_section": 7,
+      "source_block_sha256": "5b563df4f357566b4a3ddb8d2c2894cb83a4667f0c94bfacc376a908a176b92a"
+    },
+    {
+      "source_heading": "## Follow-up record",
+      "common_section": 7,
+      "source_block_sha256": "f15f9270b66526da9240f88e511127ad13e0db56e4796575ccbded6989d4a7c2"
+    }
+  ],
+  "verification": {
+    "all_source_section_blocks_retained": true,
+    "source_body_bytes_retained": true,
+    "original_question_ids_and_windows_unchanged": true,
+    "new_research_performed": false,
+    "independent_review": "pending"
+  },
+  "gaps": [
+    "Null evidence_cutoff means no exact timestamp was supplied; source date-level clocks remain in prose and are not silently sharpened.",
+    "Source-level publication/retrieval and metric gaps remain as originally disclosed.",
+    "Exact owner and final evidence deadline remain unknown where not supplied."
+  ],
+  "capture_clock_semantics": "For issue/comment bundles, retrieved_at is the observed start of the sequential issue + all-comments retrieval, not an exact response-completion timestamp. Later raw-comment metadata reads only supply missing creation/update clocks; body equality is verified. Linked file retrieved_at is the observed time after its fetch completed."
+}

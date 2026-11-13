@@ -1,0 +1,145 @@
+{
+  "prepared_at": "2026-10-31T19:30:11.552299Z",
+  "issue": 56,
+  "source_state": "open",
+  "body_api_sha256": "dd8a7c93374dc928ed6e4032551f28f4e5b2a7210c3b11081696d06bf0264e80",
+  "source_updated_at": "2026-10-31T17:24:29Z",
+  "editions": [
+    {
+      "edition": "body",
+      "path": "docs/research-articles/prepared/research-issue-0056/body.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/56",
+      "source_created_at": "2026-10-24T18:02:04Z",
+      "source_updated_at": "2026-10-31T17:24:29Z",
+      "retrieved_at": "2026-10-31T19:25:42.697Z",
+      "source_sha256": "dd8a7c93374dc928ed6e4032551f28f4e5b2a7210c3b11081696d06bf0264e80",
+      "retained_path": "retained/body.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Question and scope",
+          "section": 1,
+          "sha256": "30f7aa7c3f9bf6046603db4c01f125be89c57d022559938872bdc63263231d5e"
+        },
+        {
+          "source_block": 2,
+          "heading": "Verified pregame baseline",
+          "section": 3,
+          "sha256": "ff315d3f951f36e63be62f7abf7a0ce4496986d04b9d586fe96203cebb844cb0"
+        },
+        {
+          "source_block": 3,
+          "heading": "Health and role access",
+          "section": 4,
+          "sha256": "e366b2c31b4b271f87debba15cc13a755f124db14cad976f818d10e0036ef772"
+        },
+        {
+          "source_block": 4,
+          "heading": "Production entering the bye",
+          "section": 4,
+          "sha256": "fba5e97a0fa2d397924eaf4307e6094dff4f61437c6adc6f790a35dc85ef4edf"
+        },
+        {
+          "source_block": 5,
+          "heading": "Passing environment",
+          "section": 4,
+          "sha256": "de11c842ba0bf179ec5845da1867708ef4d794b3b368114d1ab0fdd3e0a4c02f"
+        },
+        {
+          "source_block": 6,
+          "heading": "Four player questions",
+          "section": 2,
+          "sha256": "17014e9349f342aa7fb3be277ad17287cea4f554ff2ea9ccd3ce3c6c6be2e600"
+        },
+        {
+          "source_block": 7,
+          "heading": "Bell: preserve the erased-play evidence accurately",
+          "section": 4,
+          "sha256": "be108ee6873f5d1fe8d9150fdd254854ec3fa930d6cf09cf5d27946321a7c1ac"
+        },
+        {
+          "source_block": 8,
+          "heading": "TIBER-Rookies connection",
+          "section": 8,
+          "sha256": "8d90d81d130be3c086d3b55898fdad72eb15955558f5a192ed2a466f5a5969f8"
+        },
+        {
+          "source_block": 9,
+          "heading": "Week 7 observation sheet and remaining work",
+          "section": 7,
+          "sha256": "e85aa1049186c5087bebd51c18850d556c9fa802f7103a5b0d9c9d74887cc359"
+        },
+        {
+          "source_block": 10,
+          "heading": "Sources",
+          "section": 8,
+          "sha256": "25c04a153355b7d0ff96c1605427b9f9a4161fb7a5472c35879e3fa7a331c2c0"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    },
+    {
+      "edition": "update-6546709227",
+      "path": "docs/research-articles/prepared/research-issue-0056/update-6546709227.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/56#issuecomment-6546709227",
+      "source_created_at": "2026-10-31T17:24:29Z",
+      "source_updated_at": "2026-10-31T17:24:29Z",
+      "retrieved_at": "2026-10-31T19:25:42.697Z",
+      "source_sha256": "730761e8695dfd54d6b7e8385705520ac2f410b8d261289c9d1a0af6b8c3de75",
+      "retained_path": "retained/update-6546709227.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Week 7 postgame receiving-role audit — October 31, 2026",
+          "section": 1,
+          "sha256": "28f9af33621a2508c61971db8f7a3277460602744dd8daab51a9e8856b5d7725"
+        },
+        {
+          "source_block": 2,
+          "heading": "1. Reconciled outcomes and a common opportunity denominator",
+          "section": 4,
+          "sha256": "8ad0fcc0f8bc55367e3f4d34b87885f95cedb465a4106cf40f292152baec9235"
+        },
+        {
+          "source_block": 3,
+          "heading": "2. Route evidence was found; exact participation remains disputed",
+          "section": 4,
+          "sha256": "98e98656ca8f388407110235a1872704d183d5d439aa2af940efeba5ee92b7f8"
+        },
+        {
+          "source_block": 4,
+          "heading": "3. What changed from the last pre-bye game?",
+          "section": 5,
+          "sha256": "2ca33a1b79696de749e681e8624aa816e581f48d73b5ac57c1c7a0e642bbdc00"
+        },
+        {
+          "source_block": 5,
+          "heading": "4. Deployment, situations and film leads",
+          "section": 4,
+          "sha256": "e096653ef77214af8e64f07a70aebf4493e1025e847ec969991973390c5b7485"
+        },
+        {
+          "source_block": 6,
+          "heading": "5. Alternative explanations and unresolved measurements",
+          "section": 6,
+          "sha256": "e324237adc1fbbce89498460e0e32f0f01f8c5ff26b93e32bb69a991634b53b5"
+        },
+        {
+          "source_block": 7,
+          "heading": "6. Prospective next test",
+          "section": 7,
+          "sha256": "83be4d3c0de29d931f3a0938d299615324a37368e53a6da1cf61be330f5bd824"
+        },
+        {
+          "source_block": 8,
+          "heading": "Sources",
+          "section": 8,
+          "sha256": "c54a7414e84530d55a738035e7a32b3c49805504654daf966e27b4b6c75945e4"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    }
+  ],
+  "fidelity": "Every source section mapped intact; heading depth only changed. Question IDs/measurements/windows retained. Unknown values not synthesized. Historical external-review receipts are source claims, not new acceptance.",
+  "format_review": "self-check; independent review pending"
+}

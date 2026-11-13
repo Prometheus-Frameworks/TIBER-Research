@@ -25,3 +25,13 @@ jobs:
       - run: python3 -m zipfile -e docs/preparation/kicker-dst-streaming-2026-10-26/week08-input-readiness.zip /tmp/tiber-kdst-week08-replay
       - run: python3 /tmp/tiber-kdst-week08-replay/public-inputs/validate_inputs.py
       - run: python3 /tmp/tiber-kdst-week08-replay/verify_publication.py
+
+  universe-d-001:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20.19.0
+      - run: node --test experiments/universe-d/001-target-allocation/test.mjs

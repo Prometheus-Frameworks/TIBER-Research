@@ -1,0 +1,26 @@
+{
+  "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/15#issuecomment-5448184223",
+  "source_created_at": "2026-08-28T03:53:03Z",
+  "source_updated_at": "2026-08-28T03:53:03Z",
+  "retrieved_at": "2026-10-31T19:27:58.063Z",
+  "source_body_sha256": "9ae74a24c060ffa448bbd9691a28744801b8d2d8f6d4cdb38e8ca1a5bee9dc79",
+  "capture_sha256": "9ae74a24c060ffa448bbd9691a28744801b8d2d8f6d4cdb38e8ca1a5bee9dc79",
+  "capture_scope": "Exact returned Markdown body",
+  "changes": [],
+  "original_publication_bytes_authenticated": false,
+  "source_blob_ref": null,
+  "mapping": [
+    {
+      "source_heading": "### Provider-state contribution",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "### Mandatory public/private isolation fixture",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "### R2 placement implication",
+      "prepared_section": 7
+    }
+  ]
+}
