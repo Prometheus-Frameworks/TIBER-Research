@@ -1,0 +1,142 @@
+{
+  "prepared_at": "2026-10-31T19:30:49.229705Z",
+  "format_check": "All source spans accounted for exactly once; see block_mapping",
+  "sources": [
+    {
+      "edition": "notebook-original-1b08358",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/1b08358ab302e4cec9dd7de648057cf628dcabfc/docs/studies/mhj-career-2026w4/README.md",
+      "source_created_at": null,
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-31T19:30:33.099Z",
+      "source_sha256": "2bbdd9ffe5bd5e2df83ec33a70bee3587cec6f1b6d4a3e02c199d6a7a7cadae7",
+      "source_characters": 14082,
+      "source_path": "retained/notebook-original-1b08358.md",
+      "prepared_path": "notebook-original-1b08358-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "# Marvin Harrison Jr.: prospect-to-NFL translation through 2026 Week 4",
+          "outer_section": 4,
+          "sha256": "ce13f2d76b0a5c2d658c5afc958b9fcfd5c30d2d24068bc1d554adaf6ed25b1f"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "## Checkpoint and source qualification",
+          "outer_section": 1,
+          "sha256": "b44e6dadef2809d675b9e0f20e03cd5f19c5caa5487ae1526e00368b6c785c87"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "## Prospect baseline",
+          "outer_section": 3,
+          "sha256": "2a7adfea1baefdb6942e5b7914015986f791e9bade8706158dd36c5e81d3b88f"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "## Career timeline and matched windows",
+          "outer_section": 2,
+          "sha256": "73ef27e4ffce9ef9531e50c0c1c19bd3ef446ea0195b0d3ddc1895ec5814482f"
+        },
+        {
+          "block": 5,
+          "original_heading_or_lead": "## Decomposing totals and conversion",
+          "outer_section": 4,
+          "sha256": "00a4e94ee4c508472448f9a250e423c9033bf5db73ebe12d8eab90676cd39382"
+        },
+        {
+          "block": 6,
+          "original_heading_or_lead": "## Comparison cohort",
+          "outer_section": 2,
+          "sha256": "014a4092fb7c0249e5b96a33cd8f466a445302ac8153dae7ad22cb18cc9917b9"
+        },
+        {
+          "block": 7,
+          "original_heading_or_lead": "## Evidence versus explanations",
+          "outer_section": 4,
+          "sha256": "4cfff99548d3c2e776b8964e71b762e89e3b82feb744d8c3fd980f6fd1079a65"
+        },
+        {
+          "block": 8,
+          "original_heading_or_lead": "## What follows from this candidate",
+          "outer_section": 5,
+          "sha256": "6b4960fbb232fbc25525c5be2c486dd9933b498ce22e0847dfb91bb73d5d3373"
+        },
+        {
+          "block": 9,
+          "original_heading_or_lead": "## Reproduction and review",
+          "outer_section": 8,
+          "sha256": "c0ae7b721a80988a06c7b2d71a960f4b8335955d00455e9b93d1065912ff5a3d"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    },
+    {
+      "edition": "notebook",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/f53a9bb3c0e0fd111b598b9822b132b67a4d0050/docs/studies/mhj-career-2026w4/README.md",
+      "source_created_at": null,
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-31T19:27:01.239Z",
+      "source_sha256": "59c9e75afe82afc9eb8c163186405005b2df68dcb2263f7af3751fbecdcb01f0",
+      "source_characters": 14418,
+      "source_path": "retained/notebook.md",
+      "prepared_path": "notebook-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "# Marvin Harrison Jr.: prospect-to-NFL translation through 2026 Week 4",
+          "outer_section": 4,
+          "sha256": "ce13f2d76b0a5c2d658c5afc958b9fcfd5c30d2d24068bc1d554adaf6ed25b1f"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "## Checkpoint and source qualification",
+          "outer_section": 1,
+          "sha256": "b44e6dadef2809d675b9e0f20e03cd5f19c5caa5487ae1526e00368b6c785c87"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "## Prospect baseline",
+          "outer_section": 3,
+          "sha256": "2a7adfea1baefdb6942e5b7914015986f791e9bade8706158dd36c5e81d3b88f"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "## Career timeline and matched windows",
+          "outer_section": 2,
+          "sha256": "73ef27e4ffce9ef9531e50c0c1c19bd3ef446ea0195b0d3ddc1895ec5814482f"
+        },
+        {
+          "block": 5,
+          "original_heading_or_lead": "## Decomposing totals and conversion",
+          "outer_section": 4,
+          "sha256": "601c35d04bb39dd12b27480ad67633d04fae8128aece56264fb3ef6d94f68dce"
+        },
+        {
+          "block": 6,
+          "original_heading_or_lead": "## Comparison cohort",
+          "outer_section": 2,
+          "sha256": "014a4092fb7c0249e5b96a33cd8f466a445302ac8153dae7ad22cb18cc9917b9"
+        },
+        {
+          "block": 7,
+          "original_heading_or_lead": "## Evidence versus explanations",
+          "outer_section": 4,
+          "sha256": "4cfff99548d3c2e776b8964e71b762e89e3b82feb744d8c3fd980f6fd1079a65"
+        },
+        {
+          "block": 8,
+          "original_heading_or_lead": "## What follows from this candidate",
+          "outer_section": 5,
+          "sha256": "6b4960fbb232fbc25525c5be2c486dd9933b498ce22e0847dfb91bb73d5d3373"
+        },
+        {
+          "block": 9,
+          "original_heading_or_lead": "## Reproduction and review",
+          "outer_section": 8,
+          "sha256": "c0ae7b721a80988a06c7b2d71a960f4b8335955d00455e9b93d1065912ff5a3d"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "prepared_at": "2026-10-31T19:30:49.229705Z",
+  "format_check": "All source spans accounted for exactly once; see block_mapping",
+  "sources": [
+    {
+      "edition": "body",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/34",
+      "source_created_at": "2026-10-10T16:52:49Z",
+      "source_updated_at": "2026-10-10T16:52:49Z",
+      "retrieved_at": "2026-10-31T19:25:40.092Z",
+      "source_sha256": "c78e2d3462309eb05a0a67c29c4c4de415202bbece7f1cf947438d4ded0080ef",
+      "source_characters": 21439,
+      "source_path": "retained/body.md",
+      "prepared_path": "body-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## Status and operator request",
+          "outer_section": 2,
+          "sha256": "6072504a79675f76447c4e21a7938f23be0aea8f881d3c3306b2e6dd902353b3"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "## 1. Question and motivation",
+          "outer_section": 3,
+          "sha256": "6d4b0a2ceb74d900557befee0aa662fd04bb61bb588ad766c1180abaab96e453"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "## 2. Proposed representation — a profile, not one number",
+          "outer_section": 4,
+          "sha256": "c690540e882a0336915f1d7f8ec77745169a6a9c670fa6b699952e8d4a75c3f6"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "## 3. Bounded first study: WR separation creation",
+          "outer_section": 4,
+          "sha256": "e09695444ba957c0dedb481cbe66756f70a260fa3456b42183ad24da81c73929"
+        },
+        {
+          "block": 5,
+          "original_heading_or_lead": "### Primary question",
+          "outer_section": 2,
+          "sha256": "bb89691f060a6ef809776fee5ad875d87d7bda09773f5efcb327c6fb8bf697d5"
+        },
+        {
+          "block": 6,
+          "original_heading_or_lead": "### Define the task before selecting a formula",
+          "outer_section": 4,
+          "sha256": "3909fc83c0379984ad7f2bcf7734c7c48ce2db4dc84eb95ff091159899a225e4"
+        },
+        {
+          "block": 7,
+          "original_heading_or_lead": "### Avoid adjusting away the trait",
+          "outer_section": 4,
+          "sha256": "b0dedc9a5546adde60a014ebcebbb703dad9380ee3c594e1f9778ed9b056ffa3"
+        },
+        {
+          "block": 8,
+          "original_heading_or_lead": "## 4. Candidate modeling approach — to compare, not implement now",
+          "outer_section": 4,
+          "sha256": "fd26865789e09129130506e61b31513e1181ffe6925d4f8332606ef582cc0455"
+        },
+        {
+          "block": 9,
+          "original_heading_or_lead": "## 5. Evidence readiness is the first gate",
+          "outer_section": 4,
+          "sha256": "0c0a16f70a1a2f33a1c12d8f25cf9200b1c499e00238e94810fd995c76c30b1a"
+        },
+        {
+          "block": 10,
+          "original_heading_or_lead": "## 6. Validation and falsification design",
+          "outer_section": 4,
+          "sha256": "3fd779200ef44f31d2d6b46b37365a958e8eb3ac2b75d8f9ef5d8359dbcf2bca"
+        },
+        {
+          "block": 11,
+          "original_heading_or_lead": "## 7. Reconcile existing work and ownership",
+          "outer_section": 7,
+          "sha256": "d34f816dd6f48e8e9b02d5528193425f107457f59f8dddab99fd4675b0bb70ca"
+        },
+        {
+          "block": 12,
+          "original_heading_or_lead": "## 8. External methodology reading leads",
+          "outer_section": 4,
+          "sha256": "44fa8825579dc6758e197e4f02a025d4764125e09b55bc0db5116fa2983e94bd"
+        },
+        {
+          "block": 13,
+          "original_heading_or_lead": "## 9. Eventual TIBER Team representation — specification only",
+          "outer_section": 4,
+          "sha256": "dedf0126079dcd5fc9850e9e1dd4df64504ff9df31c22f943fb0aef9768f8bf6"
+        },
+        {
+          "block": 14,
+          "original_heading_or_lead": "## 10. Codex handoff — start here",
+          "outer_section": 7,
+          "sha256": "d487059bca5774bcd1e4a7b7fb576f8676561f89f364f829f5e3e6a0849ee1f5"
+        },
+        {
+          "block": 15,
+          "original_heading_or_lead": "### Completion checklist for that first packet",
+          "outer_section": 7,
+          "sha256": "6284fd455e19d941aae6f5433c660736556645931990f475879fa7bf246eda24"
+        },
+        {
+          "block": 16,
+          "original_heading_or_lead": "### Copyable Codex pickup prompt",
+          "outer_section": 7,
+          "sha256": "943937346e72a84645aad16af012b76528c852d9e7112cf2d43643956533e5f1"
+        },
+        {
+          "block": 17,
+          "original_heading_or_lead": "## Publication record and hard boundary",
+          "outer_section": 8,
+          "sha256": "1e23505920220f430c4d9cee4a83a03f73bac35a8bc10717dfa42b56d1e9648d"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    }
+  ]
+}

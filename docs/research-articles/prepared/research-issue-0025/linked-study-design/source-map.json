@@ -1,0 +1,92 @@
+{
+  "prepared_at": "2026-10-31T19:30:49.229705Z",
+  "format_check": "All source spans accounted for exactly once; see block_mapping",
+  "sources": [
+    {
+      "edition": "notebook",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/da72dba139139d4f49ce8994ce7ccdd682051e14/docs/preparation/kicker-dst-streaming-2026-10-01/study-design.md",
+      "source_created_at": null,
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-31T19:26:59.548Z",
+      "source_sha256": "0071a9b0aa370ded3614c8283b9c83fbbf33e1c927618a173b55d2566a02f176",
+      "source_characters": 23023,
+      "source_path": "retained/notebook.md",
+      "prepared_path": "notebook-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "# Separate kicker and DST study designs",
+          "outer_section": 2,
+          "sha256": "d239891f7ab7f980cf4160ad8c1636b71f22296be690eba50fdda064e63fd930"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "## Status and estimand",
+          "outer_section": 2,
+          "sha256": "08234883e3d0cbd91a22ec14bc6513014799dd4072eef7d7644478121e350534"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "## Common protocol",
+          "outer_section": 4,
+          "sha256": "3837ba586fdb63dcba61074852a54faa8208114cb295b13ca57bf88cc222371e"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "### Unit, inclusion and windows",
+          "outer_section": 2,
+          "sha256": "187612a0c873ef6c41192980de935948c0fb4b10e42a0a587cc8c34a6f18b348"
+        },
+        {
+          "block": 5,
+          "original_heading_or_lead": "### Cutoffs and source versions",
+          "outer_section": 2,
+          "sha256": "32ec0f17772be4c9b7bb6751e8f687ff26af380ce3a20ec066b6ec81aeed0854"
+        },
+        {
+          "block": 6,
+          "original_heading_or_lead": "### Candidate availability and costs",
+          "outer_section": 4,
+          "sha256": "fcc99d0b8de2f7a8af69218595303a59e95901a1efaaf841b1faa16908ad0cca"
+        },
+        {
+          "block": 7,
+          "original_heading_or_lead": "### Scoring profiles",
+          "outer_section": 4,
+          "sha256": "7780a81212a9434e37bd48be4948f4c0955750e2d9b0d6ee27157117982f3252"
+        },
+        {
+          "block": 8,
+          "original_heading_or_lead": "### Common baselines and comparison discipline",
+          "outer_section": 3,
+          "sha256": "3d7c6960a6bf567f2b27778cf8a2cd143f9a912f621535db713e45e5171b998f"
+        },
+        {
+          "block": 9,
+          "original_heading_or_lead": "## DST study",
+          "outer_section": 4,
+          "sha256": "bb7cb4107b16c6ccf38a6405071ad5cd5deb2c8a1688302b62f40c223ae9aae5"
+        },
+        {
+          "block": 10,
+          "original_heading_or_lead": "## Kicker study",
+          "outer_section": 4,
+          "sha256": "c505385ee14d07cb8fce6ebb4d5b6f2269a647db810230732d855e8e929d42b3"
+        },
+        {
+          "block": 11,
+          "original_heading_or_lead": "## Evaluation and interpretation",
+          "outer_section": 5,
+          "sha256": "0b44f7475467abf218c134aba59da6a49057a1cbc92f12d9959d8b99cde705da"
+        },
+        {
+          "block": 12,
+          "original_heading_or_lead": "## Proposed report row",
+          "outer_section": 4,
+          "sha256": "f3ed0a62b6574d7c03326d6d2b8526082881c29f14e22ac4c73f5b8bff5e4be2"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    }
+  ]
+}

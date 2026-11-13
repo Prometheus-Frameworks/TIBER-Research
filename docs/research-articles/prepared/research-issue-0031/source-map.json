@@ -1,0 +1,56 @@
+{
+  "prepared_at": "2026-10-31T19:30:49.229705Z",
+  "format_check": "All source spans accounted for exactly once; see block_mapping",
+  "sources": [
+    {
+      "edition": "body",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/31",
+      "source_created_at": "2026-10-08T22:50:23Z",
+      "source_updated_at": "2026-10-08T22:50:23Z",
+      "retrieved_at": "2026-10-31T19:25:36.400Z",
+      "source_sha256": "ef48169cbaa043a9ce32d470f28c4af03ecc5001d43dc5d5a281dc6d57d8b6c2",
+      "source_characters": 13373,
+      "source_path": "retained/body.md",
+      "prepared_path": "body-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## Purpose and authorization",
+          "outer_section": 2,
+          "sha256": "3867be3d02c3d09091539014d2e069b2101c381804cc44727c9107d7618d4e37"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "## Reconciliation completed October 8",
+          "outer_section": 1,
+          "sha256": "fc925659b52fb04407d7475951398ab0ce7dd512e5d132d737761dc13b1fe640"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "### Exact references and documentary pins",
+          "outer_section": 8,
+          "sha256": "fd7f9b0136639fca53ae1f765d4b6301dde62dd437739bf4e45eab7a376f8d5c"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "## Checkpoint outline v0",
+          "outer_section": 1,
+          "sha256": "e6ea6afb65be04d731ffece06ac4daedbf684839c8f3c3c4f73291c2d2a5bb94"
+        },
+        {
+          "block": 5,
+          "original_heading_or_lead": "## Smallest next steps — proposed, not dispatched",
+          "outer_section": 7,
+          "sha256": "2b98e1d1f1e698bb5119c6e4fd69e53d903cafc1494047d0a0700e29481cf337"
+        },
+        {
+          "block": 6,
+          "original_heading_or_lead": "## Boundaries and completion",
+          "outer_section": 7,
+          "sha256": "91c0f978885eef5908a27866bbe7b473351e0b33062360f70b365669291c7f53"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    }
+  ]
+}

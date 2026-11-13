@@ -1,0 +1,36 @@
+{
+  "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f/docs/discovery/open-availability-witness-2026-08-13/w5-dual-layer-architecture.md",
+  "source_created_at": null,
+  "source_updated_at": null,
+  "retrieved_at": "2026-10-31T19:27:07.002Z",
+  "source_body_sha256": "eedf9302675688bd9ea06e7c11d1aa1a4cbff0012640438b047d380b3c18fe63",
+  "capture_sha256": "7b83a06a4cdb5c62d34ceb444d13f9dfe2f10f6d98d47181e7118216e4b42b46",
+  "capture_scope": "Transformed public-safe Markdown body; see changes",
+  "changes": [
+    "Repository-relative links expanded to exact-ref source URLs"
+  ],
+  "original_publication_bytes_authenticated": false,
+  "source_blob_ref": "791dbbd0ee7ff8d7aedc690cdf3727d8384d1d8f",
+  "mapping": [
+    {
+      "source_heading": "## The layers",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## Boundary statements",
+      "prepared_section": 5
+    },
+    {
+      "source_heading": "## The \"MSF\" label \u2014 deliberately unresolved here",
+      "prepared_section": 6
+    },
+    {
+      "source_heading": "## Failure modes the split contains",
+      "prepared_section": 6
+    },
+    {
+      "source_heading": "## Explicitly out of scope for W5",
+      "prepared_section": 7
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "prepared_at": "2026-10-31T19:30:49.229705Z",
+  "format_check": "All source spans accounted for exactly once; see block_mapping",
+  "sources": [
+    {
+      "edition": "body",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/25",
+      "source_created_at": "2026-10-01T16:07:43Z",
+      "source_updated_at": "2026-10-26T12:56:23Z",
+      "retrieved_at": "2026-10-31T19:25:28.724Z",
+      "source_sha256": "0d3bd710645a61a9ac987c078868f452306af0103373db784c2d4e6b1410afa4",
+      "source_characters": 12367,
+      "source_path": "retained/body.md",
+      "prepared_path": "body-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## Operator request · October 1, 2026",
+          "outer_section": 2,
+          "sha256": "b2bdf1c4b74e7a6e997447de4e89c52952d985f75c3f14f9599e65f03e8cd283"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "## Bounded task and lifecycle",
+          "outer_section": 4,
+          "sha256": "daad7df84a72db283c9da6f735b095bddc8906373f9420a7d38890f01e9e9ec9"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "## Primary question",
+          "outer_section": 2,
+          "sha256": "e678ebaa32019cd0274ffd38e8ddabd4b3646f207f7bebd06ffd114622770b4c"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "## Reconcile before building",
+          "outer_section": 3,
+          "sha256": "c17483f7184e6a6159eb1571f89bad8267b8c8baa3f5a24c32461f1799b793ad"
+        },
+        {
+          "block": 5,
+          "original_heading_or_lead": "## Candidate mechanisms—not accepted features",
+          "outer_section": 3,
+          "sha256": "b91cfef23288d743a39e68ebb3efa926a73ba83d9f71f30ea670c72e3a3f29ae"
+        },
+        {
+          "block": 6,
+          "original_heading_or_lead": "## Availability and decision cutoffs",
+          "outer_section": 2,
+          "sha256": "56dbd16d47d2c932af69128b42f8b48807c30a24cedb51c008280d3e9b8bbffc"
+        },
+        {
+          "block": 7,
+          "original_heading_or_lead": "## Baselines and evaluation design",
+          "outer_section": 3,
+          "sha256": "6447eae81e1b0f65cced244272ad13a6556d8cb28ff2c44121a553bc6a2bdbd7"
+        },
+        {
+          "block": 8,
+          "original_heading_or_lead": "## Case study 01 — Carolina Week 1 → Week 2 (added October 1, 2026)",
+          "outer_section": 4,
+          "sha256": "a69dbeb286a5b70be30c375a702045231fcac63fa653bef9002aee725fdbc036"
+        },
+        {
+          "block": 9,
+          "original_heading_or_lead": "### Research question and evidence reconstruction",
+          "outer_section": 2,
+          "sha256": "5ce1994e3415434edd993e1df7e44af28ec3124eecfda4b8504bfd986e7c24e6"
+        },
+        {
+          "block": 10,
+          "original_heading_or_lead": "### Separate diagnostic analysis from an as-of replay",
+          "outer_section": 4,
+          "sha256": "82e8d75ac324ffff594aefe9c931798eacbef4ee88e4029492998c72751222a1"
+        },
+        {
+          "block": 11,
+          "original_heading_or_lead": "### Scoring, availability and generalization",
+          "outer_section": 4,
+          "sha256": "f96e91fc6585ab5df72425ad32346f972e8843d3cbc23da182e0654fab64a58d"
+        },
+        {
+          "block": 12,
+          "original_heading_or_lead": "## Deliverables and stopping point",
+          "outer_section": 7,
+          "sha256": "fb2296876ded65a2ec89e6be194cf8d6b055c3e2adaee94d28aa1253d59d329a"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    },
+    {
+      "edition": "update-6071032293",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/25#issuecomment-6071032293",
+      "source_created_at": "2026-10-08T23:24:55Z",
+      "source_updated_at": "2026-10-08T23:24:55Z",
+      "retrieved_at": "2026-10-31T19:25:28.724Z",
+      "source_sha256": "a359bbd202007a811e684fc1b06266d5e724ba6d563bf5eeed4d6cf2c36c5c53",
+      "source_characters": 4589,
+      "source_path": "retained/update-6071032293.md",
+      "prepared_path": "update-6071032293-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## Case study 02 — Dallas DST vs Tampa Bay, Week 5: pregame checkpoint",
+          "outer_section": 1,
+          "sha256": "88d560d2086194e50a1150b37f8e2a4c05415ffede905fc4d72e5463abe1b284"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "### Decision context",
+          "outer_section": 3,
+          "sha256": "63020d28a5ea5dafb622815072206f6781ee4481afbc17750536146da3289505"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "### Pregame observations and counterevidence",
+          "outer_section": 4,
+          "sha256": "ddeb583d42a45fac0c1263a78941e51530560b3c8f795a1875c7c3e43430f04e"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "### Resume investigation",
+          "outer_section": 7,
+          "sha256": "467aacc4a1255fab1818f6ff1a35841aa1290a28ecd823308135264f8317dcec"
+        },
+        {
+          "block": 5,
+          "original_heading_or_lead": "### Two-case continuity",
+          "outer_section": 4,
+          "sha256": "0973871166e3f811fdcd0b64d54bc872a7ffcf40b18865a7a7a120fbaa8e8df0"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    },
+    {
+      "edition": "update-6071075003",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/25#issuecomment-6071075003",
+      "source_created_at": "2026-10-08T23:28:36Z",
+      "source_updated_at": "2026-10-08T23:28:36Z",
+      "retrieved_at": "2026-10-31T19:25:28.724Z",
+      "source_sha256": "1f4d95bc11096a3b7ba2e1aafa8ed19fa888d730c32be1643459bcbf014532f6",
+      "source_characters": 4187,
+      "source_path": "retained/update-6071075003.md",
+      "prepared_path": "update-6071075003-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## Unit State connection — Dallas and Carolina investigation",
+          "outer_section": 4,
+          "sha256": "734609b1d22facb639312abeeb2a6b331c16b9e929c2af2ed42dc8210b9df615"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "### How qualified Unit State evidence could have helped tonight",
+          "outer_section": 4,
+          "sha256": "f9f18ae84f7accc1ff75dabd1b3b88afae95bbaae4bb5cdef740a1744c31df55"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "### Carolina connection",
+          "outer_section": 4,
+          "sha256": "1721b1f8d7bff02cbea268bfcf70801f2b69dabc72f6c2c29713ac4646536ee2"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "### What remains to be demonstrated",
+          "outer_section": 4,
+          "sha256": "9a64059a87665f9112397a311a7d8fc2efaa02d1843175c11a154cec6adbfe32"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    },
+    {
+      "edition": "update-6079983136",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/25#issuecomment-6079983136",
+      "source_created_at": "2026-10-09T11:30:09Z",
+      "source_updated_at": "2026-10-09T11:30:09Z",
+      "retrieved_at": "2026-10-31T19:25:28.724Z",
+      "source_sha256": "26df555e16c1d092559b1ef0d0cb05f8c8ab09f59aeb98103b40dd0a25cb0347",
+      "source_characters": 4230,
+      "source_path": "retained/update-6079983136.md",
+      "prepared_path": "update-6079983136-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## Dallas W5 — first postgame checkpoint, October 9, 2026",
+          "outer_section": 1,
+          "sha256": "046b7bcabdecbc81fb511b6198fa9b6de5395cbf3c42af7fb6a626ad9b13c657"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "### Operator report and partial viewing observations",
+          "outer_section": 4,
+          "sha256": "5a7985ee02ebc82a7545f4f5b5438565e43de2874ddae6ab6eae95d6f87ab0c2"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "### Public postgame facts inspected October 9",
+          "outer_section": 4,
+          "sha256": "fc9be75fcd73adcdafd7c27236e9587d47b474aa8e11ab7a0a15160586d1b91e"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "### Initial interpretation and questions to resume",
+          "outer_section": 7,
+          "sha256": "2bd67a41c9803713c2bfe2bca0baafec8cbfa33942f9a82bcb8918f8128a55a9"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    },
+    {
+      "edition": "update-6080343958",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/25#issuecomment-6080343958",
+      "source_created_at": "2026-10-09T11:55:02Z",
+      "source_updated_at": "2026-10-09T11:55:02Z",
+      "retrieved_at": "2026-10-31T19:25:28.724Z",
+      "source_sha256": "bdc38664d387ed1a92db588eb88ee04a24e7c448645bf1fffe2c41cd1f2a4388",
+      "source_characters": 11584,
+      "source_path": "retained/update-6080343958.md",
+      "prepared_path": "update-6080343958-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## Dallas W5 postgame reconstruction — October 9, 2026",
+          "outer_section": 4,
+          "sha256": "a86ad2302e27f62329378196a27ba13e61b8b8fde585f04406c73f5ee8bcdd67"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "### Continuity and evidence scope",
+          "outer_section": 2,
+          "sha256": "4d40cc6fc5a157728e065eaacdba67b280a8af2569f76d86bb2d44b31e4b1c35"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "### Credited events and points allowed",
+          "outer_section": 4,
+          "sha256": "7817cbd16edf6e0fe4b3d299fd433c71a255df9abfb1d3cfcaed71e77965b31b"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "### Explicit fantasy profile and calculation",
+          "outer_section": 4,
+          "sha256": "9b942f863bc19835b2e7ceea4aa021aa951bad0fbd88c0ae9d608f5a49d0c5f0"
+        },
+        {
+          "block": 5,
+          "original_heading_or_lead": "### Game context and competing explanations",
+          "outer_section": 3,
+          "sha256": "c7e2665ba211550961c761e7aa42df280992731e49ce585f77d3e5cac1c2ec29"
+        },
+        {
+          "block": 6,
+          "original_heading_or_lead": "### Pregame decision and alternatives — no hindsight rewrite",
+          "outer_section": 3,
+          "sha256": "e760a3a5fccf16d3ae2f91f5b7393214b99856b91ec80d833cf34c4d456fa387"
+        },
+        {
+          "block": 7,
+          "original_heading_or_lead": "### Unit State: how it could improve the decision record",
+          "outer_section": 4,
+          "sha256": "e7434e82c30ed92db8d56d6417e810231d41f0f0cdec68b8406bcd3200ee8ba3"
+        },
+        {
+          "block": 8,
+          "original_heading_or_lead": "### Two-case record and stopping point",
+          "outer_section": 7,
+          "sha256": "62d28140e1c8738cf9d0b98860a6ab70d591923e6c3e6b509ba1342395eaaa78"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    },
+    {
+      "edition": "update-6110649901",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/25#issuecomment-6110649901",
+      "source_created_at": "2026-10-11T15:34:15Z",
+      "source_updated_at": "2026-10-11T15:34:15Z",
+      "retrieved_at": "2026-10-31T19:25:28.724Z",
+      "source_sha256": "dae04119a0da6d1081198cd8490b1d77a5eb85c457b6ef9826ea9f882a51ebe2",
+      "source_characters": 7397,
+      "source_path": "retained/update-6110649901.md",
+      "prepared_path": "update-6110649901-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## Week 5 prospective DST additions — Atlanta, Chicago and Houston",
+          "outer_section": 4,
+          "sha256": "922630b46b55689de2ee01f6afec4cb3733b2da863fa686ec03ac147e2ea99c8"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "### Selected cases and questions",
+          "outer_section": 2,
+          "sha256": "5c96dc5db6b50e8afc8d8f0bb38088b8b27e6c07e4f0fa4465adb4c7a84e5934"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "### Pregame judgments, separate from observations",
+          "outer_section": 4,
+          "sha256": "ca8f73eac22d6333439bec2da079987ec272bc3cb4e1553ff0dd523647bf253e"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "### Postgame handoff and scoring",
+          "outer_section": 7,
+          "sha256": "3f87a71aa8f2ce525290460c05fb50dfaf74ac4d97c4d93269c519db3caa377c"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    },
+    {
+      "edition": "update-6416534085",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/25#issuecomment-6416534085",
+      "source_created_at": "2026-10-26T12:56:23Z",
+      "source_updated_at": "2026-10-26T12:56:23Z",
+      "retrieved_at": "2026-10-31T19:25:28.724Z",
+      "source_sha256": "f79761be8e686529e8639c8e140e3132f329f73499c763ef2fd7201050a79b73",
+      "source_characters": 3126,
+      "source_path": "retained/update-6416534085.md",
+      "prepared_path": "update-6416534085-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## Published Week 8 input packet and execution requirements",
+          "outer_section": 4,
+          "sha256": "4a65d6ad1ba48b24c3cfde586516aa1682cd585ec14c9c55a92052e29ef5ee38"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "### What we can run now",
+          "outer_section": 4,
+          "sha256": "fa13370901b03661f35deaf0b6a639800f3e6b92fcf33eee98d9051cd04189c2"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "### What must be completed before a real model run",
+          "outer_section": 7,
+          "sha256": "e916ba6e1654e1d84d7a9f20f3f1094382cfa54a1fe9eb83a440a2b0a6ee83ec"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    }
+  ]
+}

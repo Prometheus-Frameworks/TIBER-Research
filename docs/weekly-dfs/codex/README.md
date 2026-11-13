@@ -1,5 +1,7 @@
 # TIBER weekly DFS notebook
 
+> **Navigation refreshed November 13, 2026:** The archive now spans Weeks 6–10. Read the [publication correction](PUBLICATION_CORRECTIONS_2026-11-13.md) for stale pool-label text in the latest retained JSON. The [November 13 Week 10 record](2026/week-10/daily/2026-11-13.md) is the latest dated candidate in this publication, not a final freeze. Use the dated notebooks and complete [display feed](site-feed.json) for later state; the older index notes below retain their historical context. After PR #43 merges, continuing notebook updates use a successor documentation branch/PR under the existing publication procedure.
+
 > **Season study — from the Week 8 slate (November 1, 2026):** Read [SEASON_STUDY_V1.md](SEASON_STUDY_V1.md) with the collaboration protocol. It adds the fixed season questions, an optional operator seat, a smaller Claude reply round, a projection-only baseline and a five-line weekly scorecard. Earlier records stay unchanged.
 
 > **Week 8 handoff update — October 25, 2026:** Use the [collaboration protocol](COLLABORATION_V1.md) and [handoff template](HANDOFF_TEMPLATE.md) to apply the [completed pilot review](2026/week-07/collaboration/20261025T132034Z-pilot-handoff-review.md). The [Week 7 freeze receipt](https://github.com/Prometheus-Frameworks/TIBER-Research/pull/43#issuecomment-6399077833) records a Codex-authored fallback with Grok's question pass complete and the substantive Claude/Codex exchange missing. Preserve that record and apply the handoff improvements prospectively.
@@ -25,6 +27,10 @@ are outside the experiment.
 | Season / week | Slate | Pregame record | Lineup data | Results |
 |---|---|---|---|---|
 | 2026 / Week 6 | DraftKings Sunday main, October 18 | [Draft, self-review and final lineup](2026/week-06.md) | [JSON](2026/week-06.json) | [Provisional October19 comparison](2026/week-06/reviews/2026-10-19.md) |
+| 2026 / Week 7 | DraftKings Sunday main, October 25 | [Codex fallback freeze](2026/week-07/freeze/20261025T144553Z.md) | [JSON](2026/week-07/freeze/20261025T144553Z.json) | [October26 review](2026/week-07/reviews/2026-10-26.md) |
+| 2026 / Week 8 | DraftKings Sunday main, November 1 | [Shared final freeze](2026/week-08/freeze/20261101T155513Z.md) | [JSON](2026/week-08/freeze/20261101T155513Z.json) | [November2 review](2026/week-08/reviews/2026-11-02.md) |
+| 2026 / Week 9 | DraftKings Sunday main, November 8 | [Final freeze](2026/week-09/freeze/20261108T161644Z.md) | [JSON](2026/week-09/freeze/20261108T161644Z.json) | [Provisional November9 review](2026/week-09/reviews/20261109T113011Z.md) |
+| 2026 / Week 10 | DraftKings Sunday main, November 15 | [November13 candidate; not frozen](2026/week-10/daily/2026-11-13.md) | [JSON](2026/week-10/daily/2026-11-13.json) | Pending |
 
 ## A weekly entry
 

@@ -1,0 +1,92 @@
+{
+  "prepared_at": "2026-10-31T19:30:49.229705Z",
+  "format_check": "All source spans accounted for exactly once; see block_mapping",
+  "sources": [
+    {
+      "edition": "body",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/37",
+      "source_created_at": "2026-10-13T16:57:47Z",
+      "source_updated_at": "2026-10-13T16:57:47Z",
+      "retrieved_at": "2026-10-31T19:25:42.905Z",
+      "source_sha256": "1be2abd1989e5c2e000b97b3b52a7da882c6a61fd019d87751ad2a42d3e79e72",
+      "source_characters": 13226,
+      "source_path": "retained/body.md",
+      "prepared_path": "body-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## Status and authority",
+          "outer_section": 1,
+          "sha256": "907da78dc96de6f315f9f55a706814cf0b889c98d51fd8b8cf4c36cce1536c50"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "## Research question",
+          "outer_section": 2,
+          "sha256": "ac6c0873ca73ddd03b523e3300f2d99fba24f5f5955f0b107df62a96f1d12336"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "## Operator-nominated seed cases",
+          "outer_section": 3,
+          "sha256": "12e897b565617d15b045b5aab3ad45313a1ba3d2c823bacfc4df121fb0369926"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "## Proposed scope and clocks",
+          "outer_section": 2,
+          "sha256": "cbcf31106751f4950cdfd104e78dec3141ea4cc26c9d80600212d0893c6a71c0"
+        },
+        {
+          "block": 5,
+          "original_heading_or_lead": "## Draft-price evidence and existing work",
+          "outer_section": 4,
+          "sha256": "133656d8a02dfe25b7542848f5a06276f164d9d5f8ba91a88c7ec6d4d8812b23"
+        },
+        {
+          "block": 6,
+          "original_heading_or_lead": "## Measurement plan",
+          "outer_section": 4,
+          "sha256": "7408c25a23e8a0b06dd7cee50cf8bda6bf25577df1488c00e7cef1e6dfda812c"
+        },
+        {
+          "block": 7,
+          "original_heading_or_lead": "### Delivered outcomes",
+          "outer_section": 4,
+          "sha256": "22bb85e9a2ffa9e6e1da649c3232f5c7fe027442daab96219505adfc07b7bacb"
+        },
+        {
+          "block": 8,
+          "original_heading_or_lead": "### Relative-to-price comparison",
+          "outer_section": 4,
+          "sha256": "ada961b0b8d2bfe5a1fb842ad63f1b347b021f642a03bdbcf402b02e37e73e84"
+        },
+        {
+          "block": 9,
+          "original_heading_or_lead": "## Explanatory hypotheses and counterexamples",
+          "outer_section": 2,
+          "sha256": "a22dec7102c32d8b6072001ca38776fba7cb5b2dc858b11e6ac222a8a0fd6099"
+        },
+        {
+          "block": 10,
+          "original_heading_or_lead": "## Evidence ownership and partial coverage",
+          "outer_section": 7,
+          "sha256": "f7bff342ff68465304a408b02b7eb12d3a3e7cd28718b7f8d0b9aa0501ae6af0"
+        },
+        {
+          "block": 11,
+          "original_heading_or_lead": "## Proposed deliverables after separate activation",
+          "outer_section": 7,
+          "sha256": "c1912ad8e4e0755b9d1311cbe7f79abd1e6dbcd6cdf1a03af94ae49c8a0f317a"
+        },
+        {
+          "block": 12,
+          "original_heading_or_lead": "## Acceptance criteria",
+          "outer_section": 7,
+          "sha256": "419a1aa6e4c632157c5507ee689feace92a162bda14a937cd8f97f6452443e9a"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    }
+  ]
+}

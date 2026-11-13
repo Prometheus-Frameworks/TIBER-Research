@@ -1,0 +1,114 @@
+{
+  "prepared_at": "2026-10-31T19:30:11.552299Z",
+  "issue": 42,
+  "source_state": "open",
+  "body_api_sha256": "19e6a6a75075a00a8aba8550f4b1fcb4e3e4054da8f7a00d0ba0c8149371f861",
+  "source_updated_at": "2026-10-17T14:30:03Z",
+  "editions": [
+    {
+      "edition": "body",
+      "path": "docs/research-articles/prepared/research-issue-0042/body.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/42",
+      "source_created_at": "2026-10-17T14:26:09Z",
+      "source_updated_at": "2026-10-17T14:30:03Z",
+      "retrieved_at": "2026-10-31T19:25:34.314Z",
+      "source_sha256": "19e6a6a75075a00a8aba8550f4b1fcb4e3e4054da8f7a00d0ba0c8149371f861",
+      "retained_path": "retained/body.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Week 6 matchup analysis with Codex + TIBER",
+          "section": 1,
+          "sha256": "497731fe0bfcc774845137b8bfd0367c6bd445df26e9b18b2c7e57a3d4d67f4d"
+        },
+        {
+          "source_block": 2,
+          "heading": "Assessment overview",
+          "section": 5,
+          "sha256": "02621d4a3d8ed4009fec67dc9da767061a8fbed896e6ffe84001e4fe18632878"
+        },
+        {
+          "source_block": 3,
+          "heading": "Boston / Vele",
+          "section": 4,
+          "sha256": "294be8cf0ab5b4995304efe1e06a20fa9e206496b06ce5def529deeaad91aef1"
+        },
+        {
+          "source_block": 4,
+          "heading": "Boston / Metcalf",
+          "section": 4,
+          "sha256": "de7e840dffda2386d9e73475d8ad0089bd64c20c7a5aa6217852df877dca7e00"
+        },
+        {
+          "source_block": 5,
+          "heading": "Pitts / Freiermuth",
+          "section": 4,
+          "sha256": "8f832634e82a7f17d53f08ac77d932579eb4349672e69cf20ecd2e04878e7b7f"
+        },
+        {
+          "source_block": 6,
+          "heading": "Credits and sources",
+          "section": 8,
+          "sha256": "69ee4c9a8a130d14b9a33c8020e728c0d4a2bdaa9423fdf76e08cc08d287f557"
+        },
+        {
+          "source_block": 7,
+          "heading": "Postgame review",
+          "section": 7,
+          "sha256": "64b70acf15e00749264f1b8a554c7407de7603b92f7d841ee455b49ae468f49d"
+        },
+        {
+          "source_block": 8,
+          "heading": "MCP research-context follow-up",
+          "section": 8,
+          "sha256": "74a80d775ad4aaf7e45c197e4045da9bafd3dbfeaf1e7439dad0f3267a21b5a9"
+        },
+        {
+          "source_block": 9,
+          "heading": "X thread draft — not published",
+          "section": 8,
+          "sha256": "ffbb7f37792847c17e95997f58753fcabb2a40577d141c1c4d0fe6bfde91658a"
+        },
+        {
+          "source_block": 10,
+          "heading": "Post 1",
+          "section": 8,
+          "sha256": "fb7fc66c2fda7eae6574b741931416a5768b5fee72627ecfc0a081bb30bd37ca"
+        },
+        {
+          "source_block": 11,
+          "heading": "Post 2",
+          "section": 8,
+          "sha256": "62a42ed89f9b7927ef7d7eb24b8aa9aaa8fa1d8375f13e429711b45e72ef7e5c"
+        },
+        {
+          "source_block": 12,
+          "heading": "Post 3",
+          "section": 8,
+          "sha256": "e5da849676f52a65e24dace77449ad7fc4db02314b57b2b5c908bcfe9dd702da"
+        },
+        {
+          "source_block": 13,
+          "heading": "Post 4",
+          "section": 8,
+          "sha256": "e0232584a1a6dac281ac125f6b1f220c309cc8ca0b8aad7a0d3cd398265901b7"
+        },
+        {
+          "source_block": 14,
+          "heading": "Post 5",
+          "section": 8,
+          "sha256": "3b2f126dd1f742134ab432e5f51f821f924967d72a2f3eee819ef98695d2c3ab"
+        },
+        {
+          "source_block": 15,
+          "heading": "Reusable analysis format",
+          "section": 8,
+          "sha256": "1941907166a055568536fe953ee7b77cc0aaa915af5e54c3b370d330c38278ed"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    }
+  ],
+  "fidelity": "Every source section mapped intact; heading depth only changed. Question IDs/measurements/windows retained. Unknown values not synthesized. Historical external-review receipts are source claims, not new acceptance.",
+  "format_review": "self-check; independent review pending"
+}

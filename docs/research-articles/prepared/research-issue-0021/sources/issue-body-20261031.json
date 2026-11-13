@@ -1,0 +1,50 @@
+{
+  "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/21",
+  "source_created_at": "2026-09-01T00:59:19Z",
+  "source_updated_at": "2026-09-01T01:25:41Z",
+  "retrieved_at": "2026-10-31T19:25:38.296Z",
+  "source_body_sha256": "c3a913fde0f445f436ba5b41d1ec429d8eb4f4ce5122415492d473ccf0b17b05",
+  "capture_sha256": "c3a913fde0f445f436ba5b41d1ec429d8eb4f4ce5122415492d473ccf0b17b05",
+  "capture_scope": "Exact returned Markdown body",
+  "changes": [],
+  "original_publication_bytes_authenticated": false,
+  "source_blob_ref": null,
+  "mapping": [
+    {
+      "source_heading": "## Answer first",
+      "prepared_section": 1
+    },
+    {
+      "source_heading": "## Evidence and attribution boundary",
+      "prepared_section": 8
+    },
+    {
+      "source_heading": "## Initial evidence set \u2014 pre-routine Steward packets",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## Provisional workbench trace",
+      "prepared_section": 5
+    },
+    {
+      "source_heading": "## Research hypotheses",
+      "prepared_section": 3
+    },
+    {
+      "source_heading": "## Relationship to Harness",
+      "prepared_section": 6
+    },
+    {
+      "source_heading": "## Future evaluation boundary",
+      "prepared_section": 7
+    },
+    {
+      "source_heading": "## Acceptance criteria",
+      "prepared_section": 7
+    },
+    {
+      "source_heading": "## Terminal decisions",
+      "prepared_section": 7
+    }
+  ]
+}

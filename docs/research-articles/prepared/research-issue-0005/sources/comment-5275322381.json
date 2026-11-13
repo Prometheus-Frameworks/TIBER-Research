@@ -1,0 +1,26 @@
+{
+  "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/5#issuecomment-5275322381",
+  "source_created_at": "2026-08-13T02:44:56Z",
+  "source_updated_at": "2026-08-13T02:44:56Z",
+  "retrieved_at": "2026-10-31T19:27:54.699Z",
+  "source_body_sha256": "bbc6bafa89e2c3d94452ed7c790948dbc80913edb8819d939f187bd391e837f4",
+  "capture_sha256": "bbc6bafa89e2c3d94452ed7c790948dbc80913edb8819d939f187bd391e837f4",
+  "capture_scope": "Exact returned Markdown body",
+  "changes": [],
+  "original_publication_bytes_authenticated": false,
+  "source_blob_ref": null,
+  "mapping": [
+    {
+      "source_heading": "### Longer-horizon community model",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "### Why an upstream contribution matters",
+      "prepared_section": 5
+    },
+    {
+      "source_heading": "### Boundary",
+      "prepared_section": 6
+    }
+  ]
+}

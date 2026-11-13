@@ -1,0 +1,154 @@
+{
+  "prepared_at": "2026-10-31T19:30:49.229705Z",
+  "format_check": "All source spans accounted for exactly once; see block_mapping",
+  "sources": [
+    {
+      "edition": "body",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/28",
+      "source_created_at": "2026-10-04T23:32:14Z",
+      "source_updated_at": "2026-10-05T01:11:17Z",
+      "retrieved_at": "2026-10-31T19:25:31.455Z",
+      "source_sha256": "3f441516fb0c95e36a32dde74fdac3ff35f45e949084295a3b7b6740c633402a",
+      "source_characters": 12243,
+      "source_path": "retained/body.md",
+      "prepared_path": "body-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## Status and authority",
+          "outer_section": 1,
+          "sha256": "febd33efae88fb5731a912d63b3eceb8c750705aa1a896dcc5c6545a5af8c2be"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "## Purpose and ownership",
+          "outer_section": 7,
+          "sha256": "2fdf29df1e476c751558f942abd99bd02f85fa1a913b6c09665b263d01a58600"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "## Reconcile existing work",
+          "outer_section": 3,
+          "sha256": "b9b95e58b81aea8ce451fec77f4dc2aac324904fb841f26818b26dbe774c86e8"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "## Candidate metric definitions",
+          "outer_section": 4,
+          "sha256": "37579dc5b35e36544da0510f19f013cb70b29a708930ed08c41bb8d2c57fe8d1"
+        },
+        {
+          "block": 5,
+          "original_heading_or_lead": "### Rushing environment",
+          "outer_section": 4,
+          "sha256": "ecfcd317996c692607e2bb044e1ca5ba68e0f24e4adf763b60b1b2446149ff50"
+        },
+        {
+          "block": 6,
+          "original_heading_or_lead": "### Pass-protection outcomes",
+          "outer_section": 4,
+          "sha256": "db148346dbf0fe88e1d621ef72b6b4c4bc569a54335aacab49badbdfcf385034"
+        },
+        {
+          "block": 7,
+          "original_heading_or_lead": "## Opponent adjustment and windows",
+          "outer_section": 2,
+          "sha256": "699959f4f00bd5de0ccdf95a0a08fdfa172496e7974fa5a977a0ca7351e418b9"
+        },
+        {
+          "block": 8,
+          "original_heading_or_lead": "## Hypotheses and test-design requirements",
+          "outer_section": 2,
+          "sha256": "eb2a4f110929489994f85e033b7e9df228c3b5778b73db6625911d989c2e019f"
+        },
+        {
+          "block": 9,
+          "original_heading_or_lead": "## Required design handoff and acceptance criteria",
+          "outer_section": 7,
+          "sha256": "fbeca5fd2d7dd090b488d25f2596791ebf4185d41c7c13fe0cd51eb615bf7a53"
+        },
+        {
+          "block": 10,
+          "original_heading_or_lead": "## Decision",
+          "outer_section": 4,
+          "sha256": "845c747f604e9e33022f30d17d49c04de7ab88c6f7cbb9d52cf1efb8e582e760"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    },
+    {
+      "edition": "update-5986419259",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/28#issuecomment-5986419259",
+      "source_created_at": "2026-10-05T01:11:17Z",
+      "source_updated_at": "2026-10-05T01:11:17Z",
+      "retrieved_at": "2026-10-31T19:25:31.455Z",
+      "source_sha256": "df514a1798c5ed8e664df27985250bc5b097fde05683fcf6f1ef3574932ed938",
+      "source_characters": 36389,
+      "source_path": "retained/update-5986419259.md",
+      "prepared_path": "update-5986419259-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## Completed read-only field readiness and test design packet",
+          "outer_section": 1,
+          "sha256": "42f3e6ee1b5fecab77b30c0f94b7fc15aeb9feb863b7d9871fd7187430f64ff9"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "# OL Context field readiness and test design",
+          "outer_section": 4,
+          "sha256": "68afcf5567d3485567822c3c0c4e0a34e610e7cad854bfc885e411e7f9e37ca5"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "## Inspected state and evidence limits",
+          "outer_section": 6,
+          "sha256": "9bfe153be6b507d390d800bc2dd2fc183d57b126bc28307bd71ac16d5a7654cb"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "## Field readiness matrix",
+          "outer_section": 4,
+          "sha256": "68fc543c7ae323c46dc5b3090eeaf4186fe58ae451c1fb701d864f946ccc9d90"
+        },
+        {
+          "block": 5,
+          "original_heading_or_lead": "## Identity coverage clocks and rights",
+          "outer_section": 6,
+          "sha256": "e7067cb9947ee927095b27c657019e010aaf0394439ab5a6884693dad4dd7c55"
+        },
+        {
+          "block": 6,
+          "original_heading_or_lead": "## Proposed deterministic metric definitions",
+          "outer_section": 4,
+          "sha256": "426172480313cf02a7944fd97178bc6d8bd2d38feb7772a5862867c6053b32f1"
+        },
+        {
+          "block": 7,
+          "original_heading_or_lead": "## Focused positive and negative test design",
+          "outer_section": 4,
+          "sha256": "bc811285e9070895a055c02ed5713633fa117ef2deb81ee874652996ddc52e7e"
+        },
+        {
+          "block": 8,
+          "original_heading_or_lead": "## Hypothesis design and falsification",
+          "outer_section": 2,
+          "sha256": "62abf89323973b1373dccc8792f47f8a0b5f4a19a570541451984bad68cd829f"
+        },
+        {
+          "block": 9,
+          "original_heading_or_lead": "## Smallest later implementation proposal",
+          "outer_section": 4,
+          "sha256": "5c1806d4fda5bc2e9a8dc164946e11ecdf135acee8c80f239ec404afafa866f9"
+        },
+        {
+          "block": 10,
+          "original_heading_or_lead": "## Sources and verification record",
+          "outer_section": 8,
+          "sha256": "af5c77d832936b4ff378c292865326718aad5c368d9ef47bf478a88abe0fb322"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    }
+  ]
+}

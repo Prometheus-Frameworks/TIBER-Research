@@ -1,0 +1,98 @@
+{
+  "prepared_at": "2026-10-31T19:30:49.229705Z",
+  "format_check": "All source spans accounted for exactly once; see block_mapping",
+  "sources": [
+    {
+      "edition": "body",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/32",
+      "source_created_at": "2026-10-09T15:14:21Z",
+      "source_updated_at": "2026-10-09T15:14:21Z",
+      "retrieved_at": "2026-10-31T19:25:37.714Z",
+      "source_sha256": "2893d687aec9f584c3643a3e8346e246f20f81f74045e92faa62bb877b5be111",
+      "source_characters": 14794,
+      "source_path": "retained/body.md",
+      "prepared_path": "body-formatted-2026-10-31.md",
+      "block_mapping": [
+        {
+          "block": 1,
+          "original_heading_or_lead": "## Status and scope",
+          "outer_section": 2,
+          "sha256": "6cd767f37bddacd36110b6430a094250e95862d62833c7d33c361a0aab7d98d3"
+        },
+        {
+          "block": 2,
+          "original_heading_or_lead": "## Verified reading and corrections",
+          "outer_section": 4,
+          "sha256": "0af7999f41db503d18b06a0302b55ee0c20535f80b543343d33d50ded60f0673"
+        },
+        {
+          "block": 3,
+          "original_heading_or_lead": "### 1. Study contracts: approved obligations versus produced artifacts",
+          "outer_section": 4,
+          "sha256": "df9412de2cf3e43c2407758646a93612736f92afd28dc1445624030057ee9774"
+        },
+        {
+          "block": 4,
+          "original_heading_or_lead": "### 2. Obligations: safe actions can still leave required work undone",
+          "outer_section": 4,
+          "sha256": "3248868fa300e54e46a0d08c5bbaeb326b01b2d0638ef3fa886e17319b2937dd"
+        },
+        {
+          "block": 5,
+          "original_heading_or_lead": "### 3. Persistent memory: measure actual exposure and genuine dependence",
+          "outer_section": 4,
+          "sha256": "33cf64fbf18f5a97644fbeff685906fc65065dabecb1f4f89ce4a416097a4b2f"
+        },
+        {
+          "block": 6,
+          "original_heading_or_lead": "### 4. Typed decisions: protect values and their interpretation",
+          "outer_section": 5,
+          "sha256": "e7291546ddc8b2086573c3ed117347b29b4197aa3e2a2226378bec138a76951c"
+        },
+        {
+          "block": 7,
+          "original_heading_or_lead": "### 5. OnTrack: warnings need calibrated costs before intervention",
+          "outer_section": 4,
+          "sha256": "5e5c6bcf7c48764e3715a476b0bbdeb62bb85beeae8dbb3ae7815ba0c2b132c1"
+        },
+        {
+          "block": 8,
+          "original_heading_or_lead": "## Reconcile existing work first",
+          "outer_section": 3,
+          "sha256": "83fadc7402710a5dfeac08d3a6cc636aa7d86d30c0faee32170853ade2497728"
+        },
+        {
+          "block": 9,
+          "original_heading_or_lead": "### Existing omission checks, not an empty starting point",
+          "outer_section": 3,
+          "sha256": "0f2b0a5d2f9d2ad24ebcd6f02de7048f3f21973da8b43da4d1cc58d264f9f831"
+        },
+        {
+          "block": 10,
+          "original_heading_or_lead": "## Smallest next research proposal — NOT ACTIVATED",
+          "outer_section": 7,
+          "sha256": "ed88f2aafe59da8d499d7185d4a1eb13e6bb7c50147c5c7589961662c9bd25f6"
+        },
+        {
+          "block": 11,
+          "original_heading_or_lead": "### Later evaluation, separately authorized",
+          "outer_section": 4,
+          "sha256": "ce2ef77c134f7af467737eb93e6a9399fd1a978ca133345a03c4768eff441a91"
+        },
+        {
+          "block": 12,
+          "original_heading_or_lead": "## Open questions and priorities",
+          "outer_section": 2,
+          "sha256": "369efb1499a10219b767c7b6ca6317ee287c4e12e4ff8e01edcf041c5966d84a"
+        },
+        {
+          "block": 13,
+          "original_heading_or_lead": "## Completion and publication receipt",
+          "outer_section": 8,
+          "sha256": "e884e0e5e74b5413a924de8c41a522d12dcb2afc3c2ba5ad6d7b1d31e808ccde"
+        }
+      ],
+      "capture_limit": "Current source text only; original publication bytes and external source pages not authenticated."
+    }
+  ]
+}

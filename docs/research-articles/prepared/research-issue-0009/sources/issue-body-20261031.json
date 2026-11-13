@@ -1,0 +1,66 @@
+{
+  "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/9",
+  "source_created_at": "2026-08-15T12:54:21Z",
+  "source_updated_at": "2026-08-15T12:54:21Z",
+  "retrieved_at": "2026-10-31T19:25:26.107Z",
+  "source_body_sha256": "12239310161664d6aa6c1a0c2466f5439fbc2662bb67e3f453368536f6285fe2",
+  "capture_sha256": "12239310161664d6aa6c1a0c2466f5439fbc2662bb67e3f453368536f6285fe2",
+  "capture_scope": "Exact returned Markdown body",
+  "changes": [],
+  "original_publication_bytes_authenticated": false,
+  "source_blob_ref": null,
+  "mapping": [
+    {
+      "source_heading": "## Status and authority",
+      "prepared_section": 8
+    },
+    {
+      "source_heading": "## Core idea",
+      "prepared_section": 1
+    },
+    {
+      "source_heading": "## Seed prospective tree \u2014 Jeremiyah Love",
+      "prepared_section": 3
+    },
+    {
+      "source_heading": "## Why a sub-1,000-yard Love season would remain informative",
+      "prepared_section": 5
+    },
+    {
+      "source_heading": "## Outcome and process dimensions",
+      "prepared_section": 5
+    },
+    {
+      "source_heading": "## Paired pilot design",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## Candidate architecture primitive \u2014 `CausalThesisLineageV0`",
+      "prepared_section": 4
+    },
+    {
+      "source_heading": "## Relationship to existing TIBER work",
+      "prepared_section": 8
+    },
+    {
+      "source_heading": "## Proposed ownership boundary",
+      "prepared_section": 7
+    },
+    {
+      "source_heading": "## Required design deliverable for a later authorized task",
+      "prepared_section": 7
+    },
+    {
+      "source_heading": "## Hard boundaries",
+      "prepared_section": 6
+    },
+    {
+      "source_heading": "## Acceptance criteria",
+      "prepared_section": 7
+    },
+    {
+      "source_heading": "## Candidate terminal decisions for a later design task",
+      "prepared_section": 7
+    }
+  ]
+}

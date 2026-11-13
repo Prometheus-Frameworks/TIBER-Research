@@ -1,0 +1,109 @@
+{
+  "prepared_at": "2026-10-31T19:30:11.552299Z",
+  "issue": 55,
+  "source_state": "open",
+  "body_api_sha256": "4244384213a6e0b944cb6913846d01255e1412d50e57c31c280b5f3afdcd4391",
+  "source_updated_at": "2026-10-26T22:26:57Z",
+  "editions": [
+    {
+      "edition": "body",
+      "path": "docs/research-articles/prepared/research-issue-0055/body.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/55",
+      "source_created_at": "2026-10-24T14:51:44Z",
+      "source_updated_at": "2026-10-26T22:26:57Z",
+      "retrieved_at": "2026-10-31T19:25:41.968Z",
+      "source_sha256": "4244384213a6e0b944cb6913846d01255e1412d50e57c31c280b5f3afdcd4391",
+      "retained_path": "retained/body.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Research question",
+          "section": 1,
+          "sha256": "e9b2e11c13e4d892f1d2dce6bcea49e61e8e25a4f6ea92b3609d8b0c4acf3d8a"
+        },
+        {
+          "source_block": 2,
+          "heading": "Verified Week 7 context",
+          "section": 4,
+          "sha256": "ffe0b48a896a5aa47c320d45fdb774fd95fcb9d11d2cee8526ec182804670838"
+        },
+        {
+          "source_block": 3,
+          "heading": "What already exists in TIBER",
+          "section": 8,
+          "sha256": "36fb81bc8e3715bf7c00f6bc420da413a92d1b078b8f3cda3be868e8bf6dfc40"
+        },
+        {
+          "source_block": 4,
+          "heading": "October 24 follow-up: target qualification merged",
+          "section": 8,
+          "sha256": "2f81e02c90230273252fd292c715839870d4ee6ee780c35cfe63ac7cdf13cbb5"
+        },
+        {
+          "source_block": 5,
+          "heading": "Player profile: why the X-receiver idea is grounded",
+          "section": 4,
+          "sha256": "01a785d86c531e1f829ec40f109ffaac209c7a84556b30dd979884f8d05b4851"
+        },
+        {
+          "source_block": 6,
+          "heading": "Early Mayfield connection: evidence and limits",
+          "section": 3,
+          "sha256": "49d54375c15631dae985262cb9a48f2d9a1b4ab9d20f4ec00c04910cde72b668"
+        },
+        {
+          "source_block": 7,
+          "heading": "Questions we want Week 7 to answer",
+          "section": 2,
+          "sha256": "9b579ca10aa1a1063841ef2c4365c120d475a4999823ade2e21a99e0b327be95"
+        },
+        {
+          "source_block": 8,
+          "heading": "Evidence plan and postgame readout",
+          "section": 7,
+          "sha256": "d140def9c4e99c5dd8ae1986333a72927afed22a319fcd87256b461937f8190d"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    },
+    {
+      "edition": "update-6428812290",
+      "path": "docs/research-articles/prepared/research-issue-0055/update-6428812290.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/55#issuecomment-6428812290",
+      "source_created_at": "2026-10-26T22:26:57Z",
+      "source_updated_at": "2026-10-26T22:26:57Z",
+      "retrieved_at": "2026-10-31T19:25:41.968Z",
+      "source_sha256": "4b1195b853397292ee31cf22ec0458931826795ad77accffbb5d3ae50374751b",
+      "retained_path": "retained/update-6428812290.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Week 7 postgame readout — October 26, 2026",
+          "section": 1,
+          "sha256": "b0b8d414085d283236d0246b7f521c3f017f03e5004d5d32dc1edaad65436dc7"
+        },
+        {
+          "source_block": 2,
+          "heading": "What the zero misses",
+          "section": 4,
+          "sha256": "cd2f458b68bb8d69c1ee7144db161c83acfb192c1951f1a6f27781cbdf57f99d"
+        },
+        {
+          "source_block": 3,
+          "heading": "Role and game environment",
+          "section": 4,
+          "sha256": "32c446da0f83a7b32411edf67f487011dc71abbd0aef9297f0bcbd6a3058da4e"
+        },
+        {
+          "source_block": 4,
+          "heading": "Assessment and next observation",
+          "section": 5,
+          "sha256": "1569d784e6973d21d33240e0aeb9876dc380f3d231d3b51a27af33d470add68b"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    }
+  ],
+  "fidelity": "Every source section mapped intact; heading depth only changed. Question IDs/measurements/windows retained. Unknown values not synthesized. Historical external-review receipts are source claims, not new acceptance.",
+  "format_review": "self-check; independent review pending"
+}

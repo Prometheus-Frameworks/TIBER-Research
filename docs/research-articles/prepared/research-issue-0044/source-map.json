@@ -1,0 +1,163 @@
+{
+  "prepared_at": "2026-10-31T19:30:11.552299Z",
+  "issue": 44,
+  "source_state": "open",
+  "body_api_sha256": "585c1a92b7a06f019a2241718b1e418f1b7be7e871fabc381a7ff7f930360a4b",
+  "source_updated_at": "2026-10-26T13:37:40Z",
+  "editions": [
+    {
+      "edition": "body",
+      "path": "docs/research-articles/prepared/research-issue-0044/body.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/44",
+      "source_created_at": "2026-10-20T02:05:51Z",
+      "source_updated_at": "2026-10-26T13:37:40Z",
+      "retrieved_at": "2026-10-31T19:25:35.188Z",
+      "source_sha256": "585c1a92b7a06f019a2241718b1e418f1b7be7e871fabc381a7ff7f930360a4b",
+      "retained_path": "retained/body.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "Week 6 evidence → Week 7 utilization research",
+          "section": 1,
+          "sha256": "b6b9bcaab98b9d882b61eb5794650e174cab4f9a84a14a0414ec3d4357258a58"
+        },
+        {
+          "source_block": 2,
+          "heading": "What can inform decisions now",
+          "section": 5,
+          "sha256": "ee15cc89b65483af35ea3c3bf8362a53b0ca59473e60eb2a1486083130fe46bf"
+        },
+        {
+          "source_block": 3,
+          "heading": "Compact evidence table",
+          "section": 4,
+          "sha256": "1d4afc6f7d6826b8ebffc3094341198d036b1e3b81264946eb9aa31497f4c049"
+        },
+        {
+          "source_block": 4,
+          "heading": "Corrections and stronger wording",
+          "section": 4,
+          "sha256": "15a3e8b635a0cded67649d10697cc58c0585f6e6cdb9dfd31afb36222a6b2131"
+        },
+        {
+          "source_block": 5,
+          "heading": "Weekly histories and eight conditional assessments",
+          "section": 4,
+          "sha256": "e2a95de3ad66123bb3c6ee4adf3c872f96bba26886b2e90a81e7d10c5a5a8765"
+        },
+        {
+          "source_block": 6,
+          "heading": "Germie Bernard · `UTIL-2026-W06-BERNARD`",
+          "section": 4,
+          "sha256": "3cff74b00c8d407b9e327ce37a90187b68fc17fe7adaab6b9bd1dd704d597cd1"
+        },
+        {
+          "source_block": 7,
+          "heading": "Jalen Coker · `UTIL-2026-W06-COKER`",
+          "section": 4,
+          "sha256": "c9866c6d7e798224aef0de6d0757a22c3699bed829261cabb31805062854444a"
+        },
+        {
+          "source_block": 8,
+          "heading": "Woody Marks · `UTIL-2026-W06-MARKS`",
+          "section": 4,
+          "sha256": "c0452c6a6601a8a381895978d6e082806b6f9481a9499887b0b806d453c25b86"
+        },
+        {
+          "source_block": 9,
+          "heading": "Braelon Allen · `UTIL-2026-W06-ALLEN`",
+          "section": 4,
+          "sha256": "19cf2afa0504f0f661e065162a39b1bdd1681118c58d01c7b17aa511979b6f80"
+        },
+        {
+          "source_block": 10,
+          "heading": "Parker Washington · `UTIL-2026-W06-PWASHINGTON`",
+          "section": 4,
+          "sha256": "01579b7fb6c7bbbf50852e5c4139f7394fb8e80f1104ab9b29156707e79b3ed3"
+        },
+        {
+          "source_block": 11,
+          "heading": "DeVonta Smith · `UTIL-2026-W06-DSMITH`",
+          "section": 4,
+          "sha256": "3d031a27a12d1937197930caaeca0c22a334df50c319dc8d70a868d7137bae06"
+        },
+        {
+          "source_block": 12,
+          "heading": "Zay Flowers · `UTIL-2026-W06-FLOWERS`",
+          "section": 4,
+          "sha256": "b9885eece2f0c15deff80336898b53b01215ee8a8a6f7cfd6a90cb24c0ef1375"
+        },
+        {
+          "source_block": 13,
+          "heading": "Dalton Kincaid · `UTIL-2026-W06-KINCAID`",
+          "section": 4,
+          "sha256": "00661e701c6fbf9105fd2318e3fccf3780d9033f162f94b4fa3c0005f0aa75cf"
+        },
+        {
+          "source_block": 14,
+          "heading": "The predeclared future review",
+          "section": 7,
+          "sha256": "8953a338655b3767761ce2c074b19d939783aa6b5e7d5a0da5b43d9cfd326355"
+        },
+        {
+          "source_block": 15,
+          "heading": "Challenge appendix · preserve unsuccessful reasoning",
+          "section": 5,
+          "sha256": "b2249998ff0ae56b67169634d7b70e7ba63d96900bfd7ff3007c83fdd275966f"
+        },
+        {
+          "source_block": 16,
+          "heading": "Evidence use, disagreements and review",
+          "section": 8,
+          "sha256": "0a13fcd382e6ce4194a7c1b2841465082ce84416c6d585034b7599762794dc2e"
+        },
+        {
+          "source_block": 17,
+          "heading": "Original frozen packet and publication boundary",
+          "section": 8,
+          "sha256": "d90e225b17c83b07333c12942a37e8682a9ca028fa8582642d27f83d09a6d6bd"
+        },
+        {
+          "source_block": 18,
+          "heading": "Additional source references",
+          "section": 8,
+          "sha256": "6f256a843af9f7c4df1ef6959fca2c69ffac848698928c4cee9c43e057ef4236"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    },
+    {
+      "edition": "update-6417385863",
+      "path": "docs/research-articles/prepared/research-issue-0044/update-6417385863.md",
+      "source_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/issues/44#issuecomment-6417385863",
+      "source_created_at": "2026-10-26T13:37:40Z",
+      "source_updated_at": "2026-10-26T13:37:40Z",
+      "retrieved_at": "2026-10-31T19:25:35.188Z",
+      "source_sha256": "0d0c2b010452cdf3268dba3eafa0778323e8019137d137f80e9ede1428331012",
+      "retained_path": "retained/update-6417385863.md",
+      "section_mapping": [
+        {
+          "source_block": 1,
+          "heading": "October 26 — bounded Week 7 follow-up: Woody Marks' rushing lead held; receiving extension did not",
+          "section": 1,
+          "sha256": "fd3ce4d11d42df4b783b6240e6f947351d93bcf8bc938315ae9e524c79ab2e74"
+        },
+        {
+          "source_block": 2,
+          "heading": "Measured components",
+          "section": 4,
+          "sha256": "c602b80c6b718904f7faac1d36dac79d62ebe0af082c26c9dbee2e9c00026ad1"
+        },
+        {
+          "source_block": 3,
+          "heading": "Independent research interpretation",
+          "section": 5,
+          "sha256": "ec52b9a1dd86ae8fa9d4e90b0ceb499eb49b5b36e81d70457083e17b248bd712"
+        }
+      ],
+      "original_body_preserved_except_heading_depth_in_format_copy": true
+    }
+  ],
+  "fidelity": "Every source section mapped intact; heading depth only changed. Question IDs/measurements/windows retained. Unknown values not synthesized. Historical external-review receipts are source claims, not new acceptance.",
+  "format_review": "self-check; independent review pending"
+}
