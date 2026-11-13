@@ -247,7 +247,7 @@
     }
   ],
   "closeout": {
-    "status": "draft",
+    "status": "ready_for_review",
     "pr_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/115",
     "report_record_ref": "final-closeout-20261103T134525Z"
   },
