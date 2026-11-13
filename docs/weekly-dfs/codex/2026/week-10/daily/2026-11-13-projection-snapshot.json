@@ -1,0 +1,92 @@
+{
+  "projection": {
+    "provider": "FullTime Fantasy / FFToolbox",
+    "model": "Week10 DraftKings Main Slate, displayed rounded player projections",
+    "as_of": "2026-11-12T01:22:00Z",
+    "source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+    "observed_at": "2026-11-13T11:38:53.022Z",
+    "publication_display": "Projections updated Wed 8:22 PM ET · Week10",
+    "as_of_basis": "WednesdayNov11 20:22ET interpreted as01:22UTC Nov12; page display, not independently verified provider update log",
+    "scoring_basis": "Provider labels DraftKings FLEX/main, not Showdown; historical AvgPointsPerGame from official CSV excluded.",
+    "observation_note": "Fresh read still displays Wed8:22PM ET; same snapshot values, not a newly updated provider model."
+  },
+  "selected": [
+    {
+      "player": "Patrick Mahomes II",
+      "salary": 6000,
+      "projected_points": 20
+    },
+    {
+      "player": "Christian McCaffrey",
+      "salary": 8500,
+      "projected_points": 26.9
+    },
+    {
+      "player": "James Cook III",
+      "salary": 7400,
+      "projected_points": 21.5
+    },
+    {
+      "player": "Rashee Rice",
+      "salary": 6100,
+      "projected_points": 19.1
+    },
+    {
+      "player": "KC Concepcion Jr.",
+      "salary": 4800,
+      "projected_points": 16.5
+    },
+    {
+      "player": "Tank Dell",
+      "salary": 3900,
+      "projected_points": 9.3
+    },
+    {
+      "player": "Tyler Warren",
+      "salary": 4400,
+      "projected_points": 12
+    },
+    {
+      "player": "Travis Kelce",
+      "salary": 4700,
+      "projected_points": 13.8
+    },
+    {
+      "player": "Los Angeles Rams",
+      "salary": 3800,
+      "projected_points": 7.9
+    }
+  ],
+  "projected_total": 147,
+  "pool_delta": {
+    "previous_rows": 512,
+    "current_rows": 514,
+    "added": [
+      [
+        "RB",
+        "Kendre Miller (44905364)",
+        "Kendre Miller",
+        "44905364",
+        "RB/FLEX",
+        "4000",
+        "SF@DAL 11/15/2026 04:25PM ET",
+        "DAL",
+        "6.6",
+        ""
+      ],
+      [
+        "RB",
+        "Damon Bankston (44905366)",
+        "Damon Bankston",
+        "44905366",
+        "RB/FLEX",
+        "4000",
+        "MIN@GB 11/15/2026 01:00PM ET",
+        "MIN",
+        "0",
+        ""
+      ]
+    ],
+    "removed": []
+  }
+}
