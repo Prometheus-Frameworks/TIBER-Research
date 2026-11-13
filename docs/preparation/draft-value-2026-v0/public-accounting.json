@@ -1,0 +1,157 @@
+{
+  "artifact": "public_descriptive_accounting_candidate_v0",
+  "consumer_activated": false,
+  "market_join_performed": false,
+  "not_official_league_score": true,
+  "observations": [
+    {
+      "carries": 0,
+      "fumble_recovery_tds": 0.0,
+      "fumbles_lost_total": 0,
+      "game_id": "2026_01_GB_MIN",
+      "name": "Christian Watson",
+      "native_player_id": "00-0038124",
+      "passing_2pt_conversions": 0.0,
+      "passing_interceptions": 0.0,
+      "passing_tds": 0.0,
+      "passing_yards": 0.0,
+      "position": "WR",
+      "receiving_2pt_conversions": 0.0,
+      "receiving_tds": 2,
+      "receiving_yards": 147,
+      "receptions": 6,
+      "rushing_2pt_conversions": 0.0,
+      "rushing_tds": 0,
+      "rushing_yards": 0,
+      "season": 2026,
+      "season_type": "REG",
+      "source_ppr": 32.7,
+      "special_teams_tds": 0.0,
+      "targets": 8,
+      "team": "GB",
+      "team_credited_targets": 40,
+      "week": 1
+    },
+    {
+      "carries": 0,
+      "fumble_recovery_tds": 0.0,
+      "fumbles_lost_total": 0,
+      "game_id": "2026_01_GB_MIN",
+      "name": "Matthew Golden",
+      "native_player_id": "00-0040667",
+      "passing_2pt_conversions": 0.0,
+      "passing_interceptions": 0.0,
+      "passing_tds": 0.0,
+      "passing_yards": 0.0,
+      "position": "WR",
+      "receiving_2pt_conversions": 0.0,
+      "receiving_tds": 0,
+      "receiving_yards": 95,
+      "receptions": 6,
+      "rushing_2pt_conversions": 0.0,
+      "rushing_tds": 0,
+      "rushing_yards": 0,
+      "season": 2026,
+      "season_type": "REG",
+      "source_ppr": 15.5,
+      "special_teams_tds": 0.0,
+      "targets": 12,
+      "team": "GB",
+      "team_credited_targets": 40,
+      "week": 1
+    }
+  ],
+  "scoring": {
+    "fumble_recovery_tds": 6,
+    "fumbles_lost_total": -2,
+    "passing_2pt_conversions": 2,
+    "passing_interceptions": -2,
+    "passing_tds": 4,
+    "passing_yards": 0.04,
+    "receiving_2pt_conversions": 2,
+    "receiving_tds": 6,
+    "receiving_yards": 0.1,
+    "receptions": 1,
+    "rushing_2pt_conversions": 2,
+    "rushing_tds": 6,
+    "rushing_yards": 0.1,
+    "special_teams_tds": 6
+  },
+  "scoring_other_categories": 0,
+  "source": {
+    "attribution": "nflverse contributors",
+    "correction_status": "provisional",
+    "finality": "unknown",
+    "license": "CC BY 4.0",
+    "license_record": "https://github.com/Prometheus-Frameworks/TIBER-Data/blob/0d9f82a8d0225602faea4887adf314983ee25a3a/data/raw/weekly_boxscore/2026_w01_20260914/LICENSE.md",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "no_endorsement_implied": true,
+    "original_source_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
+    "player_csv_sha256": "7bf9b616d9f86a5357093b5af6bf1fa7138c1d4cb46cab4c2765fef852c30bc4",
+    "receipt_url": "https://github.com/Prometheus-Frameworks/TIBER-Data/blob/0d9f82a8d0225602faea4887adf314983ee25a3a/data/raw/weekly_boxscore/2026_w01_20260914/receipt.json",
+    "retained_player_csv": "https://github.com/Prometheus-Frameworks/TIBER-Data/blob/0d9f82a8d0225602faea4887adf314983ee25a3a/data/raw/weekly_boxscore/2026_w01_20260914/player.csv",
+    "retrieval_completed_at": "2026-09-14T13:16:31.975939+00:00",
+    "retrieval_started_at": "2026-09-14T13:15:37.871272+00:00",
+    "field_mapping": {
+      "native_player_id": "player.csv.player_id",
+      "name": "player.csv.player_display_name",
+      "source_ppr": "player.csv.fantasy_points_ppr",
+      "other_player_fields": "same-named player.csv column",
+      "team_credited_targets": "team.csv.targets, exact join on season, season_type, week, game_id, team"
+    },
+    "team_support": {
+      "retained_team_csv": "https://github.com/Prometheus-Frameworks/TIBER-Data/blob/0d9f82a8d0225602faea4887adf314983ee25a3a/data/raw/weekly_boxscore/2026_w01_20260914/team.csv",
+      "receipt_url": "https://github.com/Prometheus-Frameworks/TIBER-Data/blob/0d9f82a8d0225602faea4887adf314983ee25a3a/data/raw/weekly_boxscore/2026_w01_20260914/receipt.json",
+      "original_source_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_week_2026.csv",
+      "sha256": "ec35c7154c2a2232676c10ed94a7ca8b6ec7d531671b05a45b59970c12adfc6c",
+      "byte_count": 14021,
+      "retrieval_started_at": "2026-09-14T13:16:32.031723+00:00",
+      "retrieval_completed_at": "2026-09-14T13:16:46.680495+00:00"
+    },
+    "schedule_support": {
+      "retained_schedule_csv": "https://github.com/Prometheus-Frameworks/TIBER-Data/blob/0d9f82a8d0225602faea4887adf314983ee25a3a/data/raw/weekly_schedule/e3cff05a9fdaa416e9896e3250bfe81ae23419fe29b8827320a868199a7974fb/games.csv",
+      "receipt_url": "https://github.com/Prometheus-Frameworks/TIBER-Data/blob/0d9f82a8d0225602faea4887adf314983ee25a3a/data/raw/weekly_schedule/e3cff05a9fdaa416e9896e3250bfe81ae23419fe29b8827320a868199a7974fb/receipt.json",
+      "original_source_url": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+      "sha256": "e3cff05a9fdaa416e9896e3250bfe81ae23419fe29b8827320a868199a7974fb",
+      "byte_count": 2177810,
+      "retrieval_started_at": "2026-09-14T15:40:33.779412+00:00",
+      "retrieval_completed_at": "2026-09-14T15:40:47.503455+00:00",
+      "filter": {
+        "season": 2026,
+        "game_type": "REG",
+        "week": 1
+      },
+      "finality": "not established by schedule membership or populated scores"
+    }
+  },
+  "source_admitted": false,
+  "status": "manual_partial_candidate_public_review_recorded",
+  "window": {
+    "season": 2026,
+    "season_type": "REG",
+    "weeks": [
+      1
+    ]
+  },
+  "coverage": {
+    "player_source_rows": 1041,
+    "team_source_rows": 30,
+    "scheduled_games": 16,
+    "player_source_games": 15,
+    "team_source_games": 15,
+    "missing_game_ids": [
+      "2026_01_DEN_KC"
+    ],
+    "unexpected_game_ids": [],
+    "player_rows_missing_native_player_id": 1,
+    "selected_rows_missing_identity_or_scoring_operands": 0,
+    "complete_player_population_or_appearance_coverage_established": false
+  },
+  "public_review": {
+    "original_head": "c231cd8825f3e42b18996ca50550631485618412",
+    "initial_review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/38#pullrequestreview-5550806048",
+    "final_exact_head_receipt": "See PR #38 review discussion after the provenance repair.",
+    "scope": "Public retained-source fidelity, selected scoring, missingness and descriptive-method limits; not full draft-value acceptance.",
+    "market_payloads_or_private_correspondence_reauthenticated": false
+  }
+}
