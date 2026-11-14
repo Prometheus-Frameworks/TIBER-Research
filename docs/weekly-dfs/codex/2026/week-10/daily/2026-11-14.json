@@ -1,0 +1,1687 @@
+{
+  "record_type": "daily",
+  "id": "2026-w10-2026-11-14-daily",
+  "author": "Codex",
+  "recorded_at_utc": "2026-11-14T11:47:40.076Z",
+  "recorded_at_toronto": "2026-11-14T06:47:40.076-05:00",
+  "evidence_cutoff": "2026-11-14T11:47:40.076Z",
+  "season": 2026,
+  "week": 10,
+  "slate_date": "2026-11-15",
+  "platform": "DraftKings",
+  "slate_label": "NFL Sunday main — official group156416, ten afternoon games",
+  "draft_group_id": "156416",
+  "slate_coverage": "Official export514 rows/unique IDs; refresh of already verified pool",
+  "games": [
+    "KC@ATL",
+    "HOU@CLE",
+    "MIN@GB",
+    "JAX@TEN",
+    "MIA@IND",
+    "CAR@NO",
+    "BUF@NYJ",
+    "SEA@LV",
+    "LAR@ARI",
+    "SF@DAL"
+  ],
+  "games_status": "Official export ten fixtures, corroborated by NFL schedule",
+  "earliest_candidate_kickoff": "2026-11-15T18:00:00Z",
+  "deadline_utc": "2026-11-15T17:30:00Z",
+  "deadline_toronto": "2026-11-15T12:30:00-05:00",
+  "deadline_rule": "Archive strictly BEFORE cutoff or first included kickoff if earlier",
+  "excluded_windows": [
+    "Thursday WAS@NYG",
+    "Sunday09:30Munich NE@DET",
+    "SundaynightPIT@CIN",
+    "MondayLAC@BAL"
+  ],
+  "salary_cap": 50000,
+  "salary_total": 49600,
+  "salary_remaining": 400,
+  "salary_basis": "official_export",
+  "pool_status": "official_pool_verified_at_retrieval",
+  "official_pool_verified": true,
+  "status": "complete",
+  "frozen": false,
+  "picks": [
+    {
+      "slot": "QB",
+      "position": "QB",
+      "player": "Patrick Mahomes II",
+      "team": "KC",
+      "opponent": "ATL",
+      "home": false,
+      "salary": 6000,
+      "rationale": "Friday full/no designation for knee/right elbow supports participation. Keep $6,000 passing choice; Moore OUT and actual throwing effectiveness remain risks.",
+      "source_ids": [
+        "official",
+        "kc"
+      ],
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=156416",
+      "official_player_id": "44850798",
+      "projected_points": 20,
+      "actual_points": null,
+      "salary_receipt": "QB,Patrick Mahomes (44850798),Patrick Mahomes,44850798,QB,6000,KC@ATL 11/15/2026 01:00PM ET,KC,19.1,",
+      "kickoff_reported": "Sun 1:00PM",
+      "salary_verified_at": "2026-11-14T11:42:08.884Z",
+      "official_name": "Patrick Mahomes",
+      "roster_eligibility": "QB",
+      "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+      "platform_status": ""
+    },
+    {
+      "slot": "RB",
+      "position": "RB",
+      "player": "Christian McCaffrey",
+      "team": "SF",
+      "opponent": "DAL",
+      "home": false,
+      "salary": 8500,
+      "rationale": "Full Thursday/Friday after rest day; retain rushing/receiving involvement. Deebo returns, Allen has a role, and Trent Williams shoulder question challenges protection; no target-transfer boost assumed.",
+      "source_ids": [
+        "official",
+        "sfArticle"
+      ],
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=156416",
+      "official_player_id": "44850858",
+      "projected_points": 26.9,
+      "actual_points": null,
+      "salary_receipt": "RB,Christian McCaffrey (44850858),Christian McCaffrey,44850858,RB/FLEX,8500,SF@DAL 11/15/2026 04:25PM ET,SF,21,",
+      "kickoff_reported": "Sun 4:25PM",
+      "salary_verified_at": "2026-11-14T11:42:08.884Z",
+      "official_name": "Christian McCaffrey",
+      "roster_eligibility": "RB/FLEX",
+      "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+      "platform_status": ""
+    },
+    {
+      "slot": "RB",
+      "position": "RB",
+      "player": "James Cook III",
+      "team": "BUF",
+      "opponent": "NYJ",
+      "home": false,
+      "salary": 7400,
+      "rationale": "Retain documented Buffalo rushing lead; no Cook injury row today. Prior one-target game limits receiving floor; do not forecast another31 carries.",
+      "source_ids": [
+        "official",
+        "buf"
+      ],
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=156416",
+      "official_player_id": "44850866",
+      "projected_points": 21.5,
+      "actual_points": null,
+      "salary_receipt": "RB,James Cook III (44850866),James Cook III,44850866,RB/FLEX,7400,BUF@NYJ 11/15/2026 01:00PM ET,BUF,20.3,",
+      "kickoff_reported": "Sun 1:00PM",
+      "salary_verified_at": "2026-11-14T11:42:08.884Z",
+      "official_name": "James Cook III",
+      "roster_eligibility": "RB/FLEX",
+      "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+      "platform_status": ""
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Rashee Rice",
+      "team": "KC",
+      "opponent": "ATL",
+      "home": false,
+      "salary": 6100,
+      "rationale": "Friday full/no designation alongside Worthy full. Retain receiving involvement; Downs/Worthy competition and incomplete route participation remain a countercase.",
+      "source_ids": [
+        "official",
+        "kc"
+      ],
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=156416",
+      "official_player_id": "44851120",
+      "projected_points": 19.1,
+      "actual_points": null,
+      "salary_receipt": "WR,Rashee Rice (44851120),Rashee Rice,44851120,WR/FLEX,6100,KC@ATL 11/15/2026 01:00PM ET,KC,11,",
+      "kickoff_reported": "Sun 1:00PM",
+      "salary_verified_at": "2026-11-14T11:42:08.884Z",
+      "official_name": "Rashee Rice",
+      "roster_eligibility": "WR/FLEX",
+      "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+      "platform_status": ""
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "KC Concepcion Jr.",
+      "team": "CLE",
+      "opponent": "HOU",
+      "home": true,
+      "salary": 4800,
+      "rationale": "Keep $4,800 over Boston $5,200, who returned LP but remains questionable. Meaningful participation is the thesis; neither Boston absence nor Watson uplift assumed.",
+      "source_ids": [
+        "official",
+        "cle",
+        "hou"
+      ],
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=156416",
+      "official_player_id": "44851152",
+      "projected_points": 16.5,
+      "actual_points": null,
+      "salary_receipt": "WR,KC Concepcion Jr. (44851152),KC Concepcion Jr.,44851152,WR/FLEX,4800,HOU@CLE 11/15/2026 01:00PM ET,CLE,10.3,",
+      "kickoff_reported": "Sun 1:00PM",
+      "salary_verified_at": "2026-11-14T11:42:08.884Z",
+      "official_name": "KC Concepcion Jr.",
+      "roster_eligibility": "WR/FLEX",
+      "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+      "platform_status": ""
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Tank Dell",
+      "team": "HOU",
+      "opponent": "CLE",
+      "home": false,
+      "salary": 3900,
+      "projected_points": 9.3,
+      "actual_points": null,
+      "official_player_id": "44851180",
+      "rationale": "Full/no designation with Harrison now OUT. Hold $3,900 outside rotation value without assigning all vacated routes; long-play dependence and target-count conflict remain.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=156416",
+      "salary_receipt": "WR,Tank Dell (44851180),Tank Dell,44851180,WR/FLEX,3900,HOU@CLE 11/15/2026 01:00PM ET,HOU,14.5,",
+      "salary_verified_at": "2026-11-14T11:42:08.884Z",
+      "official_name": "Tank Dell",
+      "roster_eligibility": "WR/FLEX",
+      "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+      "platform_status": "",
+      "source_ids": [
+        "official",
+        "hou"
+      ]
+    },
+    {
+      "slot": "TE",
+      "position": "TE",
+      "player": "Tyler Warren",
+      "team": "IND",
+      "opponent": "MIA",
+      "home": true,
+      "salary": 4400,
+      "rationale": "Retain receiving role after personnel changes. Alie-Cox OUT/Mallory questionable may alter TE distribution, but Travis OUT threatens protection; no guaranteed workload increase.",
+      "source_ids": [
+        "official",
+        "ind"
+      ],
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=156416",
+      "official_player_id": "44851490",
+      "projected_points": 12,
+      "actual_points": null,
+      "salary_receipt": "TE,Tyler Warren (44851490),Tyler Warren,44851490,TE/FLEX,4400,MIA@IND 11/15/2026 01:00PM ET,IND,12,",
+      "kickoff_reported": "Sun 1:00PM",
+      "salary_verified_at": "2026-11-14T11:42:08.884Z",
+      "official_name": "Tyler Warren",
+      "roster_eligibility": "TE/FLEX",
+      "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+      "platform_status": ""
+    },
+    {
+      "slot": "FLEX",
+      "position": "TE",
+      "player": "Travis Kelce",
+      "team": "KC",
+      "opponent": "ATL",
+      "home": false,
+      "salary": 4700,
+      "rationale": "Friday full/no designation. Prefer documented receiving involvement over Sadiq rotation, accepting $16,800 in three KC picks and Downs/Worthy competition.",
+      "projected_points": 13.8,
+      "actual_points": null,
+      "official_name": "Travis Kelce",
+      "official_player_id": "44851488",
+      "roster_eligibility": "TE/FLEX",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=156416",
+      "salary_receipt": "TE,Travis Kelce (44851488),Travis Kelce,44851488,TE/FLEX,4700,KC@ATL 11/15/2026 01:00PM ET,KC,12.8,",
+      "salary_verified_at": "2026-11-14T11:42:08.884Z",
+      "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+      "platform_status": "",
+      "source_ids": [
+        "official",
+        "kc"
+      ]
+    },
+    {
+      "slot": "DST",
+      "position": "DST",
+      "player": "Los Angeles Rams",
+      "team": "LAR",
+      "opponent": "ARI",
+      "home": false,
+      "salary": 3800,
+      "rationale": "Conditional hold: Garrett, McDuffie and Curl questionable; Arizona Froholdt/Gaines OUT counterbalance protection risk. Mixed Garrett knee/rest DNP does not establish absence. Weakest availability assumption.",
+      "source_ids": [
+        "official",
+        "rams",
+        "ari"
+      ],
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=156416",
+      "official_player_id": "44851701",
+      "projected_points": 7.9,
+      "actual_points": null,
+      "salary_receipt": "DST,Rams (44851701),Rams,44851701,DST,3800,LAR@ARI 11/15/2026 04:05PM ET,LAR,5.4,",
+      "kickoff_reported": "Sun 4:05PM",
+      "salary_verified_at": "2026-11-14T11:42:08.884Z",
+      "official_name": "Rams",
+      "roster_eligibility": "DST",
+      "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+      "platform_status": ""
+    }
+  ],
+  "projected_total": 147,
+  "projection": {
+    "provider": "FullTime Fantasy / FFToolbox",
+    "model": "Week10 DraftKings Main Slate, displayed rounded player projections",
+    "as_of": "2026-11-13T19:09:00Z",
+    "source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+    "observed_at": "2026-11-14T11:42:12.308Z",
+    "publication_display": "Projections updated Fri 2:09 PM ET · Week10",
+    "as_of_basis": "Friday Nov13 14:09ET interpreted as19:09UTC; displayed provider clock, not independent update log",
+    "scoring_basis": "Provider labels DraftKings FLEX/main, not Showdown; historical AvgPointsPerGame from official CSV excluded.",
+    "observation_note": "Provider display clock advanced, but all nine rounded estimates remain unchanged. This does not establish that every player was recalculated."
+  },
+  "actual_total": null,
+  "previous_snapshot_id": "2026-w10-2026-11-13-daily",
+  "previous_snapshot_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a9a5a1050c6bb56d9932ff939d1c6c4f7b51a604/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-13.json",
+  "revision_classification": "unchanged",
+  "revisions": [],
+  "changed_picks": [],
+  "important_unchanged": [
+    "Friday full/no designation for knee/right elbow supports participation. Keep $6,000 passing choice; Moore OUT and actual throwing effectiveness remain risks.",
+    "Full Thursday/Friday after rest day; retain rushing/receiving involvement. Deebo returns, Allen has a role, and Trent Williams shoulder question challenges protection; no target-transfer boost assumed.",
+    "Retain documented Buffalo rushing lead; no Cook injury row today. Prior one-target game limits receiving floor; do not forecast another31 carries.",
+    "Friday full/no designation alongside Worthy full. Retain receiving involvement; Downs/Worthy competition and incomplete route participation remain a countercase.",
+    "Keep $4,800 over Boston $5,200, who returned LP but remains questionable. Meaningful participation is the thesis; neither Boston absence nor Watson uplift assumed.",
+    "Full/no designation with Harrison now OUT. Hold $3,900 outside rotation value without assigning all vacated routes; long-play dependence and target-count conflict remain.",
+    "Retain receiving role after personnel changes. Alie-Cox OUT/Mallory questionable may alter TE distribution, but Travis OUT threatens protection; no guaranteed workload increase.",
+    "Friday full/no designation. Prefer documented receiving involvement over Sadiq rotation, accepting $16,800 in three KC picks and Downs/Worthy competition.",
+    "Conditional hold: Garrett, McDuffie and Curl questionable; Arizona Froholdt/Gaines OUT counterbalance protection risk. Mixed Garrett knee/rest DNP does not establish absence. Weakest availability assumption."
+  ],
+  "summary": "Retain nine at $49,600/$400 after Friday final reports. Offensive availability improves; Rams three questionable defenders keep DST conditional. Not frozen or exactly jointly endorsed.",
+  "counterargument": "Rams front/coverage may be diminished despite Arizona protection losses. KC three-player $16,800 concentration depends on one passer and contested targets; full practice does not settle roles or effectiveness.",
+  "unresolved_assumptions": [
+    "Rams three questionable defenders and Sunday participation; their inactives may arrive after the experiment cutoff.",
+    "KC $16,800 passing concentration, Moore OUT protection and Downs/Worthy/Rice/Kelce allocation.",
+    "Dell rotation and ESPN9/PFF8 target coverage conflict; Harrison OUT does not quantify route gain.",
+    "Boston may play; Concepcion receiving share with Watson remains uncertain.",
+    "Warren absolute opportunity/protection and Cook receiving floor; no designation is not a workload guarantee."
+  ],
+  "change_triggers": [
+    "Material Sunday activation/limitation before freeze; bind exact nine and retained expectations BEFORE Nov15 17:30UTC.",
+    "Credible loss of Garrett/more Rams coverage prompts DST reassessment with full budget and opponent protection evidence; do not wait past cutoff for late inactives.",
+    "Retain any actual Claude response and exact dispositions; no original restart or routine new Grok pass.",
+    "After freeze append observations only, even for late news that would have changed a pick."
+  ],
+  "alternatives": [
+    {
+      "candidate": "Texans DST for Rams",
+      "salary_delta": -400,
+      "salary_total": 49200,
+      "salary_remaining": 800,
+      "model_total": 147.8,
+      "disposition": "decline for now",
+      "reason": "Model edge0.8, but Hunter OUT, Anderson questionable and Al-Shaair OUT weaken Houston. Also adds DST against selected CLE receiver and a third HOU@CLE selection."
+    },
+    {
+      "candidate": "Higbee for Kelce",
+      "salary_delta": -500,
+      "salary_total": 49100,
+      "salary_remaining": 900,
+      "model_total": 144,
+      "disposition": "decline",
+      "reason": "Reduces KC exposure to12,100. Ferguson OUT helps, but Parkinson full/no designation and Davis Allen questionable preserve competition; Higbee illness LP. No verified route advantage."
+    },
+    {
+      "candidate": "Boston for Concepcion",
+      "salary_delta": 400,
+      "salary_total": 50000,
+      "salary_remaining": 0,
+      "model_total": 142.7,
+      "disposition": "decline",
+      "reason": "Improved LP but still questionable. No role evidence outweighs Concepcion and the lower coherent model estimate; perfect spend is unnecessary."
+    }
+  ],
+  "sources": [
+    {
+      "id": "prior",
+      "label": "prior",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-9",
+      "retrieved_at": "2026-11-14T11:42:11.509Z",
+      "retrieved_at_toronto": "2026-11-14T06:42:11.509-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Week9 Sunday games are final. Existing Nov9 comparison remains provisional; no newly verified settled platform total or material correction obtained. All earlier complete lineups already have provisional totals."
+    },
+    {
+      "id": "schedule",
+      "label": "schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+      "retrieved_at": "2026-11-14T11:42:12.191Z",
+      "retrieved_at_toronto": "2026-11-14T06:42:12.191-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "NFL Week10 Nov15 schedule corroborates the same ten official afternoon fixtures. Earliest 13:00 Toronto/18:00 UTC. Thursday, Munich09:30, Sunday night and Monday excluded."
+    },
+    {
+      "id": "rules",
+      "label": "rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-11-14T11:42:10.010Z",
+      "retrieved_at_toronto": "2026-11-14T06:42:10.010-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "NFL Classic $50,000, QB/2RB/3WR/TE/FLEX(RB,WR,TE)/DST, at least two games. Exact PPR/yardage/bonuses, lost fumble -1 and DST events/points-allowed treatment inspected; no rule change observed."
+    },
+    {
+      "id": "official",
+      "label": "official",
+      "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=156416",
+      "retrieved_at": "2026-11-14T11:42:08.884Z",
+      "retrieved_at_toronto": "2026-11-14T06:42:08.884-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Official group156416 CSV has 514 rows/unique IDs and ten unchanged games. All nine original selected IDs, salaries, roster eligibility and fixtures match. No additions/removals versus Nov13; status changes and one unselected team/game change retained. Historical AvgPointsPerGame is not a forecast."
+    },
+    {
+      "id": "kc",
+      "label": "kc",
+      "url": "https://www.chiefs.com/news/week-10-injury-report-chiefs-vs-falcons-2026",
+      "retrieved_at": "2026-11-14T11:42:09.747Z",
+      "retrieved_at_toronto": "2026-11-14T06:42:09.747-05:00",
+      "publication_at": null,
+      "publication_display": "Published Nov13 14:31; updated Nov13 14:30; displayed timezone unverified, order inconsistent",
+      "scope": "Friday Mahomes(knee/right elbow), Rice(knee), Kelce(ankle), Worthy(hamstring) full with no game designation. Jaylon Moore OUT. Kenneth Walker newly groin DNP/questionable. These facts do not resolve passing allocation or effectiveness."
+    },
+    {
+      "id": "hou",
+      "label": "hou",
+      "url": "https://www.houstontexans.com/news/week-10-injury-report-texans-at-browns",
+      "retrieved_at": "2026-11-14T11:42:10.276Z",
+      "retrieved_at_toronto": "2026-11-14T06:42:10.276-05:00",
+      "publication_at": null,
+      "publication_display": "Published Nov11 16:33; updated Nov13 14:55; displayed timezone unverified",
+      "scope": "Friday Dell FP with no designation; Harrison OUT. Marks FP/no designation, Montgomery FP/questionable. Houston Hunter OUT, Anderson DNP/questionable, Al-Shaair OUT challenge the cheaper Texans DST alternative. Opposing Boston LP/questionable; Fannin/Jenkins FP/no designation."
+    },
+    {
+      "id": "sf",
+      "label": "sf",
+      "url": "https://www.49ers.com/team/injury-report/",
+      "retrieved_at": "2026-11-14T11:42:09.140Z",
+      "retrieved_at_toronto": "2026-11-14T06:42:09.140-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Friday CMC full/no designation. Generic table lists Trent Williams NIR-rest; dated Friday article instead identifies new shoulder injury, so article governs that injury explanation."
+    },
+    {
+      "id": "sfArticle",
+      "label": "sfArticle",
+      "url": "https://www.49ers.com/news/evans-out-williams-and-greenlaw-questionable-deebo-returns-ahead-of-cowboys-practice-report-sfvsdal",
+      "retrieved_at": "2026-11-14T11:43:09.124Z",
+      "retrieved_at_toronto": "2026-11-14T06:43:09.124-05:00",
+      "publication_at": null,
+      "publication_display": "Nov13 16:11; displayed timezone unverified",
+      "scope": "Nov13 dated article: CMC full Thu/Fri with no designation; Deebo full/no designation, Evans OUT; Allen completed three practices and coach says he will have a role. Trent Williams questionable after shoulder injury Thursday and Friday DNP. No automatic target allocation inferred."
+    },
+    {
+      "id": "ind",
+      "label": "ind",
+      "url": "https://www.colts.com/team/injury-report/",
+      "retrieved_at": "2026-11-14T11:42:09.053Z",
+      "retrieved_at_toronto": "2026-11-14T06:42:09.053-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Friday Alie-Cox and tackle Jalen Travis OUT, Mallory LP/questionable. Warren not listed: no reported designation found, not a complete medical certification or guaranteed route expansion."
+    },
+    {
+      "id": "buf",
+      "label": "buf",
+      "url": "https://www.buffalobills.com/team/injury-report/",
+      "retrieved_at": "2026-11-14T11:43:09.250Z",
+      "retrieved_at_toronto": "2026-11-14T06:43:09.250-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Current BUF@NYJ Friday table has no James Cook row. Absence from injury table and blank CSV status do not prove Sunday active; no new reported Cook limitation found."
+    },
+    {
+      "id": "cle",
+      "label": "cle",
+      "url": "https://www.clevelandbrowns.com/team/injury-report/",
+      "retrieved_at": "2026-11-14T11:43:08.537Z",
+      "retrieved_at_toronto": "2026-11-14T06:43:08.537-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Boston LP/questionable corroborated by Cleveland; Concepcion not listed, Jenkins FP/no designation. Boston may play; no presumed vacated-target windfall."
+    },
+    {
+      "id": "rams",
+      "label": "rams",
+      "url": "https://www.therams.com/team/injury-report/",
+      "retrieved_at": "2026-11-14T11:42:09.227Z",
+      "retrieved_at_toronto": "2026-11-14T06:42:09.227-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Current Friday table: Garrett knee/NIR-rest DNP/questionable; McDuffie back and Curl toe LP/questionable. This resolves the missing Thursday/Friday coverage, not final availability. Garrett mixed injury/rest wording does not by itself prove deterioration. Rams Avila/Ferguson OUT; Higbee illness LP/no designation, Parkinson FP/no designation, Allen LP/questionable."
+    },
+    {
+      "id": "ari",
+      "label": "ari",
+      "url": "https://www.azcardinals.com/team/injury-report/",
+      "retrieved_at": "2026-11-14T11:42:09.957Z",
+      "retrieved_at_toronto": "2026-11-14T06:42:09.957-05:00",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Current Arizona report independently corroborates Rams final designations. Froholdt concussion and Gaines ankle OUT, Jayden Williams knee questionable. Opponent protection losses counterbalance Rams availability risk; no sack/turnover forecast."
+    },
+    {
+      "id": "model",
+      "label": "model",
+      "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+      "retrieved_at": "2026-11-14T11:42:12.308Z",
+      "retrieved_at_toronto": "2026-11-14T06:42:12.308-05:00",
+      "publication_at": "2026-11-13T19:09:00Z",
+      "publication_display": "Projections updated Fri 2:09 PM ET · Week10",
+      "scope": "Main dgi156416 page now displays Fri14:09ET Week10 (interpreted Nov13 19:09UTC). Selected nine still total147.0, identical rounded values despite changed displayed update clock. 193 unique dropdown rows inspected; no complete projection export or optimum established."
+    }
+  ],
+  "collaboration": {
+    "cycle": "2026-week-10",
+    "round": 1,
+    "final_editor": "Codex",
+    "codex_v1_ready": "ready",
+    "claude_v1_ready": "ready_with_recorded_corrections",
+    "grok_questions_ready": "ready",
+    "codex_response": "complete",
+    "claude_response": "complete_received_and_verified",
+    "collaboration_ready": "actual_exchange_and_editor_dispositions_complete; distinct preferred nines remain",
+    "joint_endorsement": false,
+    "shared_final": false,
+    "final_frozen": "not_final",
+    "next_handoff": "Existing Nov12 version2 packet W10-PRACTICE-KC / W10-PRACTICE-CLE-HOU remains unanswered in fresh PR43 read. No new v1/Grok loop needed. Today's Friday-source delta is separate new context on successor PR. Codex exact final edit/expectation binding remains due before Sunday17:30UTC.",
+    "new_delta_jointly_endorsed": false,
+    "current_delta_author": "Codex",
+    "claude_influence": "Actual earlierDellselectionandKelcepreference; no newClaudeNov12contribution fabricated.",
+    "grok_coverage": "Actualoriginalquestionpasspredatesthesepractice/modelinputs.",
+    "current_delta_jointly_endorsed": false,
+    "latest_claude_response": "Nov10 substantive response retained; no later reply observed"
+  },
+  "input_records": {
+    "codex_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a4fd4194bc744ad83c8f68e9e4d45de53aefcf28/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-10.json",
+    "claude_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T123500Z-claude-v1.json",
+    "grok_questions": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2a14ddad633a36fc49aa7d288cba5ca4d689b538/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T133502Z-grok-questions-verbatim.md",
+    "codex_response": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/967778b0e9e8fb371aba9e7d9c3d811c895b096e/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T133808Z-codex-grok-response.json",
+    "claude_response": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/94a4ac9159abba6588d55a0d3008e00192fd5492/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T142258Z-claude-grok-response.json",
+    "source_receipts": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/94a4ac9159abba6588d55a0d3008e00192fd5492/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T145845Z-integration-sources.json",
+    "original_expectations": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20a2131d1363b0c14ca4c56883cb710c2541f851/docs/weekly-dfs/codex/journal/20261110T113619Z.json"
+  },
+  "retained_expectation_references": [
+    {
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20a2131d1363b0c14ca4c56883cb710c2541f851/docs/weekly-dfs/codex/journal/20261110T113619Z.md",
+      "ids": [
+        "2026-w10-1110-cook-rushing-role",
+        "2026-w10-1110-rams-front-condition"
+      ]
+    },
+    {
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6a676cf09f25acfb86013a6a963b9e3439da0c3d/docs/weekly-dfs/codex/journal/20261110T150023Z.md",
+      "ids": [
+        "2026-w10-1110-rice-route-condition"
+      ]
+    },
+    {
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9ae416975f4aa91f6e281c7a3fa6b80b546a870d/docs/weekly-dfs/codex/journal/20261111T111733Z.md",
+      "ids": [
+        "2026-w10-1111-dell-rotation",
+        "2026-w10-1111-warren-post-trades"
+      ]
+    },
+    {
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/acbb902bc2a8e939ef4fa4a8a95e824f63188f6d/docs/weekly-dfs/codex/journal/20261112T112725Z.md",
+      "ids": [
+        "2026-w10-1112-concepcion-participation",
+        "2026-w10-1112-kelce-receiving-condition"
+      ]
+    }
+  ],
+  "expectations_new": [],
+  "scoring_recovery": {
+    "checked_at": "2026-11-14T11:47:40.076Z",
+    "prior_slate": "2026-11-08",
+    "completed": true,
+    "existing_review": "docs/weekly-dfs/codex/2026/week-09/reviews/20261109T113011Z.json",
+    "final_total": 89.08,
+    "status": "provisional",
+    "new_material_correction": null,
+    "older_complete_lineups_missing_scores": [],
+    "note": "Fresh NFL Week9 schedule shows final games. Nov9 first comparison read from current main; all complete earlier lineups have provisional totals. No new settled platform total or material correction verified; no new review/finality promotion."
+  },
+  "validation": {
+    "nine_slots": true,
+    "nine_unique_ids": true,
+    "salary_cap": true,
+    "salary_total": 49600,
+    "remaining": 400,
+    "distinct_games": 6,
+    "official_salary_and_position_matches": 9,
+    "official_export_rows": 514,
+    "official_unique_ids": 514,
+    "games_match": true,
+    "projection_sum": 147,
+    "projection_provider_count": 1,
+    "medical_clearance": "Sunday actives not certified"
+  },
+  "pool_change": {
+    "previous_rows": 514,
+    "current_rows": 514,
+    "added": [],
+    "removed": [],
+    "changed": [
+      {
+        "id": "44850856",
+        "before": [
+          "RB",
+          "Kenneth Walker III (44850856)",
+          "Kenneth Walker III",
+          "44850856",
+          "RB/FLEX",
+          "9200",
+          "KC@ATL 11/15/2026 01:00PM ET",
+          "KC",
+          "26.4",
+          ""
+        ],
+        "after": [
+          "RB",
+          "Kenneth Walker III (44850856)",
+          "Kenneth Walker III",
+          "44850856",
+          "RB/FLEX",
+          "9200",
+          "KC@ATL 11/15/2026 01:00PM ET",
+          "KC",
+          "26.4",
+          "Q"
+        ]
+      },
+      {
+        "id": "44850872",
+        "before": [
+          "RB",
+          "Bhayshul Tuten (44850872)",
+          "Bhayshul Tuten",
+          "44850872",
+          "RB/FLEX",
+          "6600",
+          "JAX@TEN 11/15/2026 01:00PM ET",
+          "JAX",
+          "16.3",
+          "Q"
+        ],
+        "after": [
+          "RB",
+          "Bhayshul Tuten (44850872)",
+          "Bhayshul Tuten",
+          "44850872",
+          "RB/FLEX",
+          "6600",
+          "JAX@TEN 11/15/2026 01:00PM ET",
+          "JAX",
+          "16.3",
+          ""
+        ]
+      },
+      {
+        "id": "44851116",
+        "before": [
+          "WR",
+          "George Pickens (44851116)",
+          "George Pickens",
+          "44851116",
+          "WR/FLEX",
+          "6300",
+          "SF@DAL 11/15/2026 04:25PM ET",
+          "DAL",
+          "13.4",
+          "Q"
+        ],
+        "after": [
+          "WR",
+          "George Pickens (44851116)",
+          "George Pickens",
+          "44851116",
+          "WR/FLEX",
+          "6300",
+          "SF@DAL 11/15/2026 04:25PM ET",
+          "DAL",
+          "13.4",
+          ""
+        ]
+      },
+      {
+        "id": "44850876",
+        "before": [
+          "RB",
+          "Tony Pollard (44850876)",
+          "Tony Pollard",
+          "44850876",
+          "RB/FLEX",
+          "6000",
+          "JAX@TEN 11/15/2026 01:00PM ET",
+          "TEN",
+          "15.3",
+          "Q"
+        ],
+        "after": [
+          "RB",
+          "Tony Pollard (44850876)",
+          "Tony Pollard",
+          "44850876",
+          "RB/FLEX",
+          "6000",
+          "JAX@TEN 11/15/2026 01:00PM ET",
+          "TEN",
+          "15.3",
+          ""
+        ]
+      },
+      {
+        "id": "44851122",
+        "before": [
+          "WR",
+          "Mike Evans (44851122)",
+          "Mike Evans",
+          "44851122",
+          "WR/FLEX",
+          "6000",
+          "SF@DAL 11/15/2026 04:25PM ET",
+          "SF",
+          "15.3",
+          "Q"
+        ],
+        "after": [
+          "WR",
+          "Mike Evans (44851122)",
+          "Mike Evans",
+          "44851122",
+          "WR/FLEX",
+          "6000",
+          "SF@DAL 11/15/2026 04:25PM ET",
+          "SF",
+          "15.3",
+          "OUT"
+        ]
+      },
+      {
+        "id": "44850882",
+        "before": [
+          "RB",
+          "Woody Marks (44850882)",
+          "Woody Marks",
+          "44850882",
+          "RB/FLEX",
+          "5700",
+          "HOU@CLE 11/15/2026 01:00PM ET",
+          "HOU",
+          "8.9",
+          "Q"
+        ],
+        "after": [
+          "RB",
+          "Woody Marks (44850882)",
+          "Woody Marks",
+          "44850882",
+          "RB/FLEX",
+          "5700",
+          "HOU@CLE 11/15/2026 01:00PM ET",
+          "HOU",
+          "8.9",
+          ""
+        ]
+      },
+      {
+        "id": "44851128",
+        "before": [
+          "WR",
+          "Deebo Samuel Sr. (44851128)",
+          "Deebo Samuel Sr.",
+          "44851128",
+          "WR/FLEX",
+          "5500",
+          "SF@DAL 11/15/2026 04:25PM ET",
+          "SF",
+          "12.3",
+          "Q"
+        ],
+        "after": [
+          "WR",
+          "Deebo Samuel Sr. (44851128)",
+          "Deebo Samuel Sr.",
+          "44851128",
+          "WR/FLEX",
+          "5500",
+          "SF@DAL 11/15/2026 04:25PM ET",
+          "SF",
+          "12.3",
+          ""
+        ]
+      },
+      {
+        "id": "44850803",
+        "before": [
+          "QB",
+          "Kyler Murray (44850803)",
+          "Kyler Murray",
+          "44850803",
+          "QB",
+          "5400",
+          "MIN@GB 11/15/2026 01:00PM ET",
+          "MIN",
+          "12.8",
+          "D"
+        ],
+        "after": [
+          "QB",
+          "Kyler Murray (44850803)",
+          "Kyler Murray",
+          "44850803",
+          "QB",
+          "5400",
+          "MIN@GB 11/15/2026 01:00PM ET",
+          "MIN",
+          "12.8",
+          "OUT"
+        ]
+      },
+      {
+        "id": "44851138",
+        "before": [
+          "WR",
+          "Carnell Tate (44851138)",
+          "Carnell Tate",
+          "44851138",
+          "WR/FLEX",
+          "5200",
+          "JAX@TEN 11/15/2026 01:00PM ET",
+          "TEN",
+          "11.8",
+          "Q"
+        ],
+        "after": [
+          "WR",
+          "Carnell Tate (44851138)",
+          "Carnell Tate",
+          "44851138",
+          "WR/FLEX",
+          "5200",
+          "JAX@TEN 11/15/2026 01:00PM ET",
+          "TEN",
+          "11.8",
+          "OUT"
+        ]
+      },
+      {
+        "id": "44850908",
+        "before": [
+          "RB",
+          "Chris Rodriguez Jr. (44850908)",
+          "Chris Rodriguez Jr.",
+          "44850908",
+          "RB/FLEX",
+          "5100",
+          "JAX@TEN 11/15/2026 01:00PM ET",
+          "JAX",
+          "6.8",
+          "Q"
+        ],
+        "after": [
+          "RB",
+          "Chris Rodriguez Jr. (44850908)",
+          "Chris Rodriguez Jr.",
+          "44850908",
+          "RB/FLEX",
+          "5100",
+          "JAX@TEN 11/15/2026 01:00PM ET",
+          "JAX",
+          "6.8",
+          ""
+        ]
+      },
+      {
+        "id": "44851482",
+        "before": [
+          "TE",
+          "Dalton Kincaid (44851482)",
+          "Dalton Kincaid",
+          "44851482",
+          "TE/FLEX",
+          "5100",
+          "BUF@NYJ 11/15/2026 01:00PM ET",
+          "BUF",
+          "11.1",
+          "Q"
+        ],
+        "after": [
+          "TE",
+          "Dalton Kincaid (44851482)",
+          "Dalton Kincaid",
+          "44851482",
+          "TE/FLEX",
+          "5100",
+          "BUF@NYJ 11/15/2026 01:00PM ET",
+          "BUF",
+          "11.1",
+          ""
+        ]
+      },
+      {
+        "id": "44850807",
+        "before": [
+          "QB",
+          "Drew Lock (44850807)",
+          "Drew Lock",
+          "44850807",
+          "QB",
+          "5000",
+          "SEA@LV 11/15/2026 04:05PM ET",
+          "SEA",
+          "15.6",
+          "Q"
+        ],
+        "after": [
+          "QB",
+          "Drew Lock (44850807)",
+          "Drew Lock",
+          "44850807",
+          "QB",
+          "5000",
+          "SEA@LV 11/15/2026 04:05PM ET",
+          "SEA",
+          "15.6",
+          ""
+        ]
+      },
+      {
+        "id": "44851148",
+        "before": [
+          "WR",
+          "Adonai Mitchell (44851148)",
+          "Adonai Mitchell",
+          "44851148",
+          "WR/FLEX",
+          "4900",
+          "BUF@NYJ 11/15/2026 01:00PM ET",
+          "NYJ",
+          "10.3",
+          ""
+        ],
+        "after": [
+          "WR",
+          "Adonai Mitchell (44851148)",
+          "Adonai Mitchell",
+          "44851148",
+          "WR/FLEX",
+          "4900",
+          "BUF@NYJ 11/15/2026 01:00PM ET",
+          "NYJ",
+          "10.3",
+          "Q"
+        ]
+      },
+      {
+        "id": "44851486",
+        "before": [
+          "TE",
+          "Harold Fannin Jr. (44851486)",
+          "Harold Fannin Jr.",
+          "44851486",
+          "TE/FLEX",
+          "4900",
+          "HOU@CLE 11/15/2026 01:00PM ET",
+          "CLE",
+          "11.9",
+          "Q"
+        ],
+        "after": [
+          "TE",
+          "Harold Fannin Jr. (44851486)",
+          "Harold Fannin Jr.",
+          "44851486",
+          "TE/FLEX",
+          "4900",
+          "HOU@CLE 11/15/2026 01:00PM ET",
+          "CLE",
+          "11.9",
+          ""
+        ]
+      },
+      {
+        "id": "44851154",
+        "before": [
+          "WR",
+          "Jordan Addison (44851154)",
+          "Jordan Addison",
+          "44851154",
+          "WR/FLEX",
+          "4800",
+          "MIN@GB 11/15/2026 01:00PM ET",
+          "MIN",
+          "7.7",
+          ""
+        ],
+        "after": [
+          "WR",
+          "Jordan Addison (44851154)",
+          "Jordan Addison",
+          "44851154",
+          "WR/FLEX",
+          "4800",
+          "MIN@GB 11/15/2026 01:00PM ET",
+          "MIN",
+          "7.7",
+          "Q"
+        ]
+      },
+      {
+        "id": "44850812",
+        "before": [
+          "QB",
+          "Carson Wentz (44850812)",
+          "Carson Wentz",
+          "44850812",
+          "QB",
+          "4700",
+          "MIN@GB 11/15/2026 01:00PM ET",
+          "MIN",
+          "8.6",
+          "Q"
+        ],
+        "after": [
+          "QB",
+          "Carson Wentz (44850812)",
+          "Carson Wentz",
+          "44850812",
+          "QB",
+          "4700",
+          "MIN@GB 11/15/2026 01:00PM ET",
+          "MIN",
+          "8.6",
+          ""
+        ]
+      },
+      {
+        "id": "44850926",
+        "before": [
+          "RB",
+          "Bam Knight (44850926)",
+          "Bam Knight",
+          "44850926",
+          "RB/FLEX",
+          "4700",
+          "LAR@ARI 11/15/2026 04:05PM ET",
+          "ARI",
+          "3.3",
+          "Q"
+        ],
+        "after": [
+          "RB",
+          "Bam Knight (44850926)",
+          "Bam Knight",
+          "44850926",
+          "RB/FLEX",
+          "4700",
+          "LAR@ARI 11/15/2026 04:05PM ET",
+          "ARI",
+          "3.3",
+          ""
+        ]
+      },
+      {
+        "id": "44851492",
+        "before": [
+          "TE",
+          "T.J. Hockenson (44851492)",
+          "T.J. Hockenson",
+          "44851492",
+          "TE/FLEX",
+          "4300",
+          "MIN@GB 11/15/2026 01:00PM ET",
+          "MIN",
+          "11.1",
+          "Q"
+        ],
+        "after": [
+          "TE",
+          "T.J. Hockenson (44851492)",
+          "T.J. Hockenson",
+          "44851492",
+          "TE/FLEX",
+          "4300",
+          "MIN@GB 11/15/2026 01:00PM ET",
+          "MIN",
+          "11.1",
+          "OUT"
+        ]
+      },
+      {
+        "id": "44851170",
+        "before": [
+          "WR",
+          "Jakobi Meyers (44851170)",
+          "Jakobi Meyers",
+          "44851170",
+          "WR/FLEX",
+          "4200",
+          "JAX@TEN 11/15/2026 01:00PM ET",
+          "JAX",
+          "9.5",
+          "Q"
+        ],
+        "after": [
+          "WR",
+          "Jakobi Meyers (44851170)",
+          "Jakobi Meyers",
+          "44851170",
+          "WR/FLEX",
+          "4200",
+          "JAX@TEN 11/15/2026 01:00PM ET",
+          "JAX",
+          "9.5",
+          ""
+        ]
+      },
+      {
+        "id": "44851172",
+        "before": [
+          "WR",
+          "Marvin Harrison Jr. (44851172)",
+          "Marvin Harrison Jr.",
+          "44851172",
+          "WR/FLEX",
+          "4200",
+          "HOU@CLE 11/15/2026 01:00PM ET",
+          "HOU",
+          "5.4",
+          "Q"
+        ],
+        "after": [
+          "WR",
+          "Marvin Harrison Jr. (44851172)",
+          "Marvin Harrison Jr.",
+          "44851172",
+          "WR/FLEX",
+          "4200",
+          "HOU@CLE 11/15/2026 01:00PM ET",
+          "HOU",
+          "5.4",
+          "OUT"
+        ]
+      },
+      {
+        "id": "44851494",
+        "before": [
+          "TE",
+          "Tyler Higbee (44851494)",
+          "Tyler Higbee",
+          "44851494",
+          "TE/FLEX",
+          "4200",
+          "LAR@ARI 11/15/2026 04:05PM ET",
+          "LAR",
+          "6.7",
+          "Q"
+        ],
+        "after": [
+          "TE",
+          "Tyler Higbee (44851494)",
+          "Tyler Higbee",
+          "44851494",
+          "TE/FLEX",
+          "4200",
+          "LAR@ARI 11/15/2026 04:05PM ET",
+          "LAR",
+          "6.7",
+          ""
+        ]
+      },
+      {
+        "id": "44850974",
+        "before": [
+          "RB",
+          "Michael Burton (44850974)",
+          "Michael Burton",
+          "44850974",
+          "RB/FLEX",
+          "4000",
+          "HOU@CLE 11/15/2026 01:00PM ET",
+          "CLE",
+          "0",
+          "Q"
+        ],
+        "after": [
+          "RB",
+          "Michael Burton (44850974)",
+          "Michael Burton",
+          "44850974",
+          "RB/FLEX",
+          "4000",
+          "HOU@CLE 11/15/2026 01:00PM ET",
+          "CLE",
+          "0",
+          "OUT"
+        ]
+      },
+      {
+        "id": "44851008",
+        "before": [
+          "RB",
+          "Chris Collier (44851008)",
+          "Chris Collier",
+          "44851008",
+          "RB/FLEX",
+          "4000",
+          "SEA@LV 11/15/2026 04:05PM ET",
+          "LV",
+          "0",
+          "IR"
+        ],
+        "after": [
+          "RB",
+          "Chris Collier (44851008)",
+          "Chris Collier",
+          "44851008",
+          "RB/FLEX",
+          "4000",
+          "SEA@LV 11/15/2026 04:05PM ET",
+          "LV",
+          "0",
+          "Q"
+        ]
+      },
+      {
+        "id": "44851034",
+        "before": [
+          "RB",
+          "CJ Donaldson (44851034)",
+          "CJ Donaldson",
+          "44851034",
+          "RB/FLEX",
+          "4000",
+          "CAR@NO 11/15/2026 01:00PM ET",
+          "NO",
+          "1.7",
+          "Q"
+        ],
+        "after": [
+          "RB",
+          "CJ Donaldson (44851034)",
+          "CJ Donaldson",
+          "44851034",
+          "RB/FLEX",
+          "4000",
+          "CAR@NO 11/15/2026 01:00PM ET",
+          "NO",
+          "1.7",
+          "OUT"
+        ]
+      },
+      {
+        "id": "44851182",
+        "before": [
+          "WR",
+          "Savion Williams (44851182)",
+          "Savion Williams",
+          "44851182",
+          "WR/FLEX",
+          "3900",
+          "MIN@GB 11/15/2026 01:00PM ET",
+          "GB",
+          "8.1",
+          "Q"
+        ],
+        "after": [
+          "WR",
+          "Savion Williams (44851182)",
+          "Savion Williams",
+          "44851182",
+          "WR/FLEX",
+          "3900",
+          "MIN@GB 11/15/2026 01:00PM ET",
+          "GB",
+          "8.1",
+          ""
+        ]
+      },
+      {
+        "id": "44851210",
+        "before": [
+          "WR",
+          "Jauan Jennings (44851210)",
+          "Jauan Jennings",
+          "44851210",
+          "WR/FLEX",
+          "3300",
+          "MIN@GB 11/15/2026 01:00PM ET",
+          "MIN",
+          "1.9",
+          "Q"
+        ],
+        "after": [
+          "WR",
+          "Jauan Jennings (44851210)",
+          "Jauan Jennings",
+          "44851210",
+          "WR/FLEX",
+          "3300",
+          "MIN@GB 11/15/2026 01:00PM ET",
+          "MIN",
+          "1.9",
+          "OUT"
+        ]
+      },
+      {
+        "id": "44851218",
+        "before": [
+          "WR",
+          "Chris Bell (44851218)",
+          "Chris Bell",
+          "44851218",
+          "WR/FLEX",
+          "3200",
+          "MIA@IND 11/15/2026 01:00PM ET",
+          "MIA",
+          "3.7",
+          "Q"
+        ],
+        "after": [
+          "WR",
+          "Chris Bell (44851218)",
+          "Chris Bell",
+          "44851218",
+          "WR/FLEX",
+          "3200",
+          "MIA@IND 11/15/2026 01:00PM ET",
+          "MIA",
+          "3.7",
+          "D"
+        ]
+      },
+      {
+        "id": "44851232",
+        "before": [
+          "WR",
+          "Zachariah Branch (44851232)",
+          "Zachariah Branch",
+          "44851232",
+          "WR/FLEX",
+          "3000",
+          "KC@ATL 11/15/2026 01:00PM ET",
+          "ATL",
+          "2.2",
+          "D"
+        ],
+        "after": [
+          "WR",
+          "Zachariah Branch (44851232)",
+          "Zachariah Branch",
+          "44851232",
+          "WR/FLEX",
+          "3000",
+          "KC@ATL 11/15/2026 01:00PM ET",
+          "ATL",
+          "2.2",
+          "OUT"
+        ]
+      },
+      {
+        "id": "44851280",
+        "before": [
+          "WR",
+          "KaVontae Turpin (44851280)",
+          "KaVontae Turpin",
+          "44851280",
+          "WR/FLEX",
+          "3000",
+          "SF@DAL 11/15/2026 04:25PM ET",
+          "DAL",
+          "2.3",
+          "Q"
+        ],
+        "after": [
+          "WR",
+          "KaVontae Turpin (44851280)",
+          "KaVontae Turpin",
+          "44851280",
+          "WR/FLEX",
+          "3000",
+          "SF@DAL 11/15/2026 04:25PM ET",
+          "DAL",
+          "2.3",
+          ""
+        ]
+      },
+      {
+        "id": "44851282",
+        "before": [
+          "WR",
+          "Jonathan Mingo (44851282)",
+          "Jonathan Mingo",
+          "44851282",
+          "WR/FLEX",
+          "3000",
+          "SF@DAL 11/15/2026 04:25PM ET",
+          "DAL",
+          "1",
+          "Q"
+        ],
+        "after": [
+          "WR",
+          "Jonathan Mingo (44851282)",
+          "Jonathan Mingo",
+          "44851282",
+          "WR/FLEX",
+          "3000",
+          "SF@DAL 11/15/2026 04:25PM ET",
+          "DAL",
+          "1",
+          "OUT"
+        ]
+      },
+      {
+        "id": "44851330",
+        "before": [
+          "WR",
+          "Nikko Remigio (44851330)",
+          "Nikko Remigio",
+          "44851330",
+          "WR/FLEX",
+          "3000",
+          "KC@ATL 11/15/2026 01:00PM ET",
+          "KC",
+          "-0.1",
+          ""
+        ],
+        "after": [
+          "WR",
+          "Nikko Remigio (44851330)",
+          "Nikko Remigio",
+          "44851330",
+          "WR/FLEX",
+          "3000",
+          "HOU@CLE 11/15/2026 01:00PM ET",
+          "HOU",
+          "-0.1",
+          ""
+        ]
+      },
+      {
+        "id": "44851348",
+        "before": [
+          "WR",
+          "Dont'e Thornton Jr. (44851348)",
+          "Dont'e Thornton Jr.",
+          "44851348",
+          "WR/FLEX",
+          "3000",
+          "SEA@LV 11/15/2026 04:05PM ET",
+          "LV",
+          "0",
+          ""
+        ],
+        "after": [
+          "WR",
+          "Dont'e Thornton Jr. (44851348)",
+          "Dont'e Thornton Jr.",
+          "44851348",
+          "WR/FLEX",
+          "3000",
+          "SEA@LV 11/15/2026 04:05PM ET",
+          "LV",
+          "0",
+          "Q"
+        ]
+      },
+      {
+        "id": "44851370",
+        "before": [
+          "WR",
+          "Jared Wayne (44851370)",
+          "Jared Wayne",
+          "44851370",
+          "WR/FLEX",
+          "3000",
+          "MIA@IND 11/15/2026 01:00PM ET",
+          "MIA",
+          "1.5",
+          "Q"
+        ],
+        "after": [
+          "WR",
+          "Jared Wayne (44851370)",
+          "Jared Wayne",
+          "44851370",
+          "WR/FLEX",
+          "3000",
+          "MIA@IND 11/15/2026 01:00PM ET",
+          "MIA",
+          "1.5",
+          "OUT"
+        ]
+      },
+      {
+        "id": "44851518",
+        "before": [
+          "TE",
+          "Colby Parkinson (44851518)",
+          "Colby Parkinson",
+          "44851518",
+          "TE/FLEX",
+          "3000",
+          "LAR@ARI 11/15/2026 04:05PM ET",
+          "LAR",
+          "5.1",
+          "Q"
+        ],
+        "after": [
+          "TE",
+          "Colby Parkinson (44851518)",
+          "Colby Parkinson",
+          "44851518",
+          "TE/FLEX",
+          "3000",
+          "LAR@ARI 11/15/2026 04:05PM ET",
+          "LAR",
+          "5.1",
+          ""
+        ]
+      },
+      {
+        "id": "44851554",
+        "before": [
+          "TE",
+          "Brevin Jordan (44851554)",
+          "Brevin Jordan",
+          "44851554",
+          "TE/FLEX",
+          "2500",
+          "HOU@CLE 11/15/2026 01:00PM ET",
+          "HOU",
+          "0.5",
+          "Q"
+        ],
+        "after": [
+          "TE",
+          "Brevin Jordan (44851554)",
+          "Brevin Jordan",
+          "44851554",
+          "TE/FLEX",
+          "2500",
+          "HOU@CLE 11/15/2026 01:00PM ET",
+          "HOU",
+          "0.5",
+          "OUT"
+        ]
+      },
+      {
+        "id": "44851576",
+        "before": [
+          "TE",
+          "Josh Whyle (44851576)",
+          "Josh Whyle",
+          "44851576",
+          "TE/FLEX",
+          "2500",
+          "MIN@GB 11/15/2026 01:00PM ET",
+          "GB",
+          "0",
+          "Q"
+        ],
+        "after": [
+          "TE",
+          "Josh Whyle (44851576)",
+          "Josh Whyle",
+          "44851576",
+          "TE/FLEX",
+          "2500",
+          "MIN@GB 11/15/2026 01:00PM ET",
+          "GB",
+          "0",
+          "OUT"
+        ]
+      },
+      {
+        "id": "44851596",
+        "before": [
+          "TE",
+          "Will Mallory (44851596)",
+          "Will Mallory",
+          "44851596",
+          "TE/FLEX",
+          "2500",
+          "MIA@IND 11/15/2026 01:00PM ET",
+          "IND",
+          "1.3",
+          ""
+        ],
+        "after": [
+          "TE",
+          "Will Mallory (44851596)",
+          "Will Mallory",
+          "44851596",
+          "TE/FLEX",
+          "2500",
+          "MIA@IND 11/15/2026 01:00PM ET",
+          "IND",
+          "1.3",
+          "Q"
+        ]
+      },
+      {
+        "id": "44851598",
+        "before": [
+          "TE",
+          "Mo Alie-Cox (44851598)",
+          "Mo Alie-Cox",
+          "44851598",
+          "TE/FLEX",
+          "2500",
+          "MIA@IND 11/15/2026 01:00PM ET",
+          "IND",
+          "1.5",
+          "Q"
+        ],
+        "after": [
+          "TE",
+          "Mo Alie-Cox (44851598)",
+          "Mo Alie-Cox",
+          "44851598",
+          "TE/FLEX",
+          "2500",
+          "MIA@IND 11/15/2026 01:00PM ET",
+          "IND",
+          "1.5",
+          "OUT"
+        ]
+      },
+      {
+        "id": "44851626",
+        "before": [
+          "TE",
+          "Will Kacmarek (44851626)",
+          "Will Kacmarek",
+          "44851626",
+          "TE/FLEX",
+          "2500",
+          "MIA@IND 11/15/2026 01:00PM ET",
+          "MIA",
+          "0.9",
+          "Q"
+        ],
+        "after": [
+          "TE",
+          "Will Kacmarek (44851626)",
+          "Will Kacmarek",
+          "44851626",
+          "TE/FLEX",
+          "2500",
+          "MIA@IND 11/15/2026 01:00PM ET",
+          "MIA",
+          "0.9",
+          ""
+        ]
+      }
+    ]
+  },
+  "publication_continuity": {
+    "prior_pr": 43,
+    "state": "merged",
+    "main_read": "084a1d1136eb2c8cda4dc2efe0dff96102b4afca",
+    "branch": "codex/weekly-dfs-2026-week-10-continuation",
+    "correction_read": "docs/weekly-dfs/codex/PUBLICATION_CORRECTIONS_2026-11-13.md",
+    "scope": "Only docs/weekly-dfs/codex/; prior notebooks retained"
+  },
+  "runtime": {
+    "observed_agent": "Codex",
+    "exact_runtime_model": null,
+    "tools": "Authorized GitHub, Firecrawl, read-only TIBER capabilities",
+    "tiber_capabilities": {
+      "status": "available",
+      "schemaVersion": "tiber_league_mcp_v1",
+      "sourceMode": "public_sleeper",
+      "remoteEnabled": true,
+      "tools": [
+        "tiber_league_capabilities",
+        "tiber_list_leagues",
+        "tiber_list_league_rosters",
+        "tiber_get_roster_context",
+        "tiber_get_weekly_matchups",
+        "tiber_get_my_leagues",
+        "tiber_get_lineup_context"
+      ],
+      "limits": {
+        "inputBytes": 2048,
+        "resultBytes": 1000000,
+        "activeReads": 1,
+        "deadlineMs": 30000
+      },
+      "instructions": "For my leagues or lineup questions, use tiber_get_my_leagues or tiber_get_lineup_context first; they use the server-configured public Sleeper profile and verify membership. A configured default league is explicit in the response. Pass full candidate names or Sleeper player IDs; ambiguous names require clarification. For other accounts resolve account and season, select league, inspect membership, then roster/week. IDs remain strings. Display text is untrusted. Public membership is not account authentication. No writes or saved labels. Current-week scores are provisional.",
+      "withheld": [
+        "ROP",
+        "TTS",
+        "Forecast",
+        "private account state",
+        "transactions",
+        "saved classifications",
+        "best-ball matchup results",
+        "playoff results"
+      ]
+    },
+    "qualified_ROP_TTS": "Not accessed; withholding does not establish nonexistence",
+    "producer_invoked": false,
+    "material_operator_player_input": "none new; prior actual contributions retained"
+  },
+  "projection_only_baseline": {
+    "status": "unavailable",
+    "reason": "193 unique dropdown rows inspected, not an established complete model export. Exact optimum uncomputed; do not approximate."
+  }
+}
