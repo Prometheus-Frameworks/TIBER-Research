@@ -1,0 +1,68 @@
+{
+  "projection": {
+    "provider": "FullTime Fantasy / FFToolbox",
+    "model": "Week10 DraftKings Main Slate, displayed rounded player projections",
+    "as_of": "2026-11-14T23:51:00Z",
+    "source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+    "observed_at": "2026-11-15T11:57:13.440Z",
+    "publication_display": "Projections updated Sat6:51PM ET · Week10",
+    "as_of_basis": "Saturday Nov14 18:51ET interpreted as23:51UTC; displayed clock, not independent update log",
+    "scoring_basis": "Provider labels DraftKings FLEX/main, not Showdown; historical AvgPointsPerGame from official CSV excluded.",
+    "observation_note": "Current coherent nine156.6; prior nine under this later model149.5 (Dell9.3→11.8). Original prior147.0 remains immutable. Johnson20.9 versus Kelce13.8 is an attributed model difference, not an observed gain."
+  },
+  "picks": [
+    {
+      "player": "Patrick Mahomes II",
+      "salary": 6000,
+      "projected_points": 20
+    },
+    {
+      "player": "Christian McCaffrey",
+      "salary": 8500,
+      "projected_points": 26.9
+    },
+    {
+      "player": "James Cook III",
+      "salary": 7400,
+      "projected_points": 21.5
+    },
+    {
+      "player": "Rashee Rice",
+      "salary": 6100,
+      "projected_points": 19.1
+    },
+    {
+      "player": "KC Concepcion Jr.",
+      "salary": 4800,
+      "projected_points": 16.5
+    },
+    {
+      "player": "Tank Dell",
+      "salary": 3900,
+      "projected_points": 11.8
+    },
+    {
+      "player": "Tyler Warren",
+      "salary": 4400,
+      "projected_points": 12
+    },
+    {
+      "player": "Emmett Johnson",
+      "salary": 4700,
+      "projected_points": 20.9
+    },
+    {
+      "player": "Los Angeles Rams",
+      "salary": 3800,
+      "projected_points": 7.9
+    }
+  ],
+  "comparison": {
+    "previous_nine_under_new_model": 149.5,
+    "new_nine_under_new_model": 156.6,
+    "difference": 7.1,
+    "prior_original_model": 147,
+    "scope": "Later comparison only, not backfill or predicted actual improvement"
+  },
+  "complete_pool_verified": false
+}

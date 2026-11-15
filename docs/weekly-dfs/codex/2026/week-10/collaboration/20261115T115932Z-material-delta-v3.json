@@ -1,0 +1,69 @@
+{
+  "id": "2026-w10-post-practice-delta-20261115",
+  "predecessor_id": "2026-w10-post-practice-delta-20261112",
+  "cycle": "2026-week-10",
+  "round": 2,
+  "delta_version": 3,
+  "author": "Codex",
+  "intended_recipient": "Claude",
+  "recorded_at": "2026-11-15T11:59:32.050Z",
+  "status": "prepared",
+  "current_candidate_path": "docs/weekly-dfs/codex/2026/week-10/daily/2026-11-15.json",
+  "exact_input_binding": "Companion files in same immutable notebook commit; immutable locator added in publication comment.",
+  "original_inputs": {
+    "codex_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a4fd4194bc744ad83c8f68e9e4d45de53aefcf28/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-10.json",
+    "claude_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T123500Z-claude-v1.json",
+    "grok_questions": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2a14ddad633a36fc49aa7d288cba5ca4d689b538/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T133502Z-grok-questions-verbatim.md",
+    "codex_response": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/967778b0e9e8fb371aba9e7d9c3d811c895b096e/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T133808Z-codex-grok-response.json",
+    "claude_response": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/94a4ac9159abba6588d55a0d3008e00192fd5492/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T142258Z-claude-grok-response.json",
+    "source_receipts": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/94a4ac9159abba6588d55a0d3008e00192fd5492/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T145845Z-integration-sources.json",
+    "original_expectations": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20a2131d1363b0c14ca4c56883cb710c2541f851/docs/weekly-dfs/codex/journal/20261110T113619Z.json"
+  },
+  "question": {
+    "id": "W10-FINAL-KC-RB",
+    "text": "Accept/decline Johnson4700 for Kelce4700 after WalkerOUT? Same49600/400, KC16800 now QB/WR/RB. Address workload/competition and whole-lineup cost; no new original required."
+  },
+  "support_sources": [
+    {
+      "id": "official",
+      "label": "official",
+      "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=156416",
+      "retrieved_at": "2026-11-15T11:57:10.844Z",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Official group156416 export514 rows/unique IDs; selected salaries, positions, team/game match. Complete current CSV retained; AvgPointsPerGame excluded from forecasts."
+    },
+    {
+      "id": "kc",
+      "label": "kc",
+      "url": "https://www.chiefs.com/news/week-10-injury-report-chiefs-vs-falcons-2026",
+      "retrieved_at": "2026-11-15T11:57:11.389Z",
+      "publication_at": null,
+      "publication_display": "PublishedNov14 14:31 / UpdatedNov13 02:30AM, inconsistent",
+      "scope": "Saturday section Walker OUT, Ott questionable, Moore OUT; Mahomes/Rice/Kelce/Worthy full/no designation. PublishedNov14 14:31 with updatedNov13 02:30AM is inconsistent; rely on explicit Saturday section corroborated by dated preview, not clock order."
+    },
+    {
+      "id": "preview",
+      "label": "preview",
+      "url": "https://www.chiefs.com/news/five-things-to-watch-on-sunday-chiefs-vs-falcons-x8239",
+      "retrieved_at": "2026-11-15T11:58:04.218Z",
+      "publication_at": null,
+      "publication_display": "Nov14,2026 14:27; displayed timezone unverified",
+      "scope": "DatedNov14 14:27 team preview confirms Walker ruled out Saturday and expects Emmett Johnson to carry the load. This is attributed workload expectation, not guaranteed usage. Preview also notes Atlanta pass pressure and missing Moore, challenging offense-wide certainty."
+    },
+    {
+      "id": "model",
+      "label": "model",
+      "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+      "retrieved_at": "2026-11-15T11:57:13.440Z",
+      "publication_at": "2026-11-14T23:51:00Z",
+      "publication_display": "Sat6:51PM ET Week10",
+      "scope": "Current main156416 Sat18:51ET snapshot; Johnson20.9,Kelce13.8,Dell11.8. Current nine156.6, prior nine149.5 under this later model, old147.0 remains unchanged."
+    }
+  ],
+  "acknowledgment": "not received",
+  "recipient_completion": "not received",
+  "joint_endorsement": false,
+  "frozen": false,
+  "deadline_utc": "2026-11-15T17:30:00Z"
+}
