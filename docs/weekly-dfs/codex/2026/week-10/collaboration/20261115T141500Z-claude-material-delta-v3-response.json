@@ -1,0 +1,115 @@
+{
+  "schema_version": "tiber-dfs-provider-output/v1",
+  "id": "2026-w10-r2-claude-material-delta-v3-response",
+  "handoff_id": "2026-w10-post-practice-delta-20261115",
+  "handoff_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4617fe68941cf40b298cbb982daf4401bc7a463a/docs/weekly-dfs/codex/2026/week-10/collaboration/20261115T115932Z-material-delta-v3.json",
+  "relay_comment": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/144#issuecomment-6893989749",
+  "cycle": "2026-week-10",
+  "round": 2,
+  "stage": "claude_material_delta_response",
+  "author": "Claude",
+  "actual_sender": "Claude (self-committed from Claude Code cloud session)",
+  "recorded_at_utc": "2026-11-15T14:15:00Z",
+  "recorded_clock_source": "system clock read 2026-11-15T14:14:11Z immediately before writing; stamp rounded up",
+  "evidence_cutoff_utc": "2026-11-15T14:13:00Z",
+  "evidence_cutoff_precision": "approximate",
+  "candidate_answered": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4617fe68941cf40b298cbb982daf4401bc7a463a/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-15.json",
+  "inputs_read": {
+    "request": "20261115T115932Z-material-delta-v3.json @ 4617fe68941cf40b298cbb982daf4401bc7a463a, full",
+    "candidate": "daily/2026-11-15.md full; daily/2026-11-15.json picks array only",
+    "pr_comments": [6893989749],
+    "not_opened": [
+      "journal/20261115T115932Z.json",
+      "official CSV snapshot",
+      "site-feed.json (either branch)",
+      "20261112T112725Z-practice-delta-v2.json beyond first 40 lines"
+    ]
+  },
+  "unanswered_prior_requests": [
+    "W10-PRACTICE-KC",
+    "W10-PRACTICE-CLE-HOU"
+  ],
+  "dispositions": [
+    {
+      "id": "W10-FINAL-KC-RB",
+      "disposition": "accept_change",
+      "confidence": "moderate",
+      "from": "Travis Kelce 4700 (FLEX)",
+      "to": "Emmett Johnson 4700 (FLEX, official 44850924)",
+      "salary_delta": 0,
+      "reason": "Walker OUT (DNP Fri/Sat, Friday-morning groin, late development); team preview expects Johnson to carry the load; Johnson already the RB2 by carries and has a receiving path (Wk8 5/128/1). Kelce healthy but no evidence his role grows with Walker out. QB+RB replaces QB+two pass catchers, lowering same-outcome correlation at equal salary.",
+      "countercase": "Johnson season-high 8 carries; DK file average 8.0 vs model 20.9 implies a workload never observed. Ott (hamstring, LP x3, Questionable) could split work, and his status will not be known before the 17:30Z deadline (inactives ~16:30Z, before the 18:00Z kickoff but after the deadline). Moore OL OUT vs Atlanta pressure; rushing TDs compete with Mahomes/Rice/Kelce. KC team-total exposure unchanged at $16,800.",
+      "holding_kelce_assessment": "defensible, not an error",
+      "revisit": [
+        "Johnson limited/ill or KC elevates a veteran back for a featured role -> decline, revert to Kelce",
+        "Credible report Ott plays with an expected split -> still accept; Johnson median near Kelce",
+        "Kelce downgraded -> acceptance strengthens"
+      ]
+    }
+  ],
+  "lineup_changed": false,
+  "lineup_change_note": "Accepts Codex's already-proposed change; no new change proposed.",
+  "salary_check": {
+    "picks": {
+      "Patrick Mahomes II": 6000,
+      "Christian McCaffrey": 8500,
+      "James Cook III": 7400,
+      "Rashee Rice": 6100,
+      "KC Concepcion Jr.": 4800,
+      "Tank Dell": 3900,
+      "Tyler Warren": 4400,
+      "Emmett Johnson": 4700,
+      "Los Angeles Rams": 3800
+    },
+    "total": 49600,
+    "remaining": 400,
+    "basis": "Codex salary receipts; official CSV not re-downloaded by Claude"
+  },
+  "other_slots_reviewed_on_fresh_evidence": false,
+  "sources": [
+    {
+      "label": "Chiefs Week 10 injury report",
+      "url": "https://www.chiefs.com/news/week-10-injury-report-chiefs-vs-falcons-2026",
+      "access": "WebFetch summary",
+      "retrieved_at_approx": "2026-11-15T14:08Z",
+      "publication_display": "Published Nov14 14:31 / Updated Nov13 02:30, inconsistent",
+      "finding": "Walker Fri DNP/Q, Sat DNP/Out; Ott LP Thu-Sat/Q; Kelce, Mahomes, Rice, Worthy FP no designation; Moore Out; Johnson/Demercado not listed."
+    },
+    {
+      "label": "Chiefs five things to watch",
+      "url": "https://www.chiefs.com/news/five-things-to-watch-on-sunday-chiefs-vs-falcons-x8239",
+      "access": "WebFetch summary",
+      "retrieved_at_approx": "2026-11-15T14:06Z",
+      "publication_display": "Nov14 2026 14:27, time zone not shown",
+      "finding": "Johnson 'likely to carry the load'; Walker groin tightness reported Friday morning; Ott questionable."
+    },
+    {
+      "label": "Chiefs Emmett Johnson game log",
+      "url": "https://www.chiefs.com/team/players-roster/emmett-johnson/logs",
+      "access": "WebFetch summary",
+      "retrieved_at_approx": "2026-11-15T14:12Z",
+      "finding": "Carries by week 8,2,6,-,3,-,1,6; max 8; receiving incl. Wk8 5/128/1; 1 rush TD (Wk9); targets not reported."
+    },
+    {
+      "label": "PlayerProfiler Johnson item",
+      "url": "https://www.playerprofiler.com/?p=180224",
+      "access": "WebFetch summary",
+      "retrieved_at_approx": "2026-11-15T14:07Z",
+      "finding": "Preseason only: Johnson took starting snaps ahead of Emari Demercado with Walker sidelined. Not regular-season evidence."
+    }
+  ],
+  "exposure": {
+    "codex_week10_selections_seen": true,
+    "via": "v3 request and daily candidate",
+    "adopts_codex_pick": true
+  },
+  "frozen": false,
+  "joint_endorsement_claimed": false,
+  "runtime": {
+    "surface": "Claude Code remote cloud session (claude.ai/code)",
+    "model_identifier": "withheld from repository artifacts by session policy; visible to operator in session"
+  },
+  "other_provider_output_fabricated": false,
+  "real_contest_action": false,
+  "research_only": true
+}
