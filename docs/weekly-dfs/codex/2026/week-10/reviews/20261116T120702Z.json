@@ -1,0 +1,1603 @@
+{
+  "schema_version": "tiber-dfs-review/v1",
+  "id": "2026-w10-review-20261116T120702Z",
+  "recorded_at": "2026-11-16T12:07:02Z",
+  "recorded_at_toronto": "2026-11-16T07:07:02.000-05:00",
+  "scored_at": "2026-11-16T12:07:02Z",
+  "status": "provisional",
+  "season": 2026,
+  "week": 10,
+  "slate_date": "2026-11-15",
+  "platform": "DraftKings",
+  "predecessor": null,
+  "scope": "First Week10 postgame comparison of every archived complete daily/author draft and exact final; partial board retained unassessable.",
+  "finality": "Official NFL gamebooks mark games final. These are reproducible DraftKings calculations, not retrieved platform-settled scores; stat corrections remain possible.",
+  "freeze": {
+    "id": "2026-w10-final-20261115T163039Z",
+    "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/88752e288a2957ac7a994b105dc53caed43a5d47/docs/weekly-dfs/codex/2026/week-10/freeze/20261115T163039Z.json",
+    "recorded_at": "2026-11-15T16:30:39.515Z",
+    "deadline": "2026-11-15T17:30:00Z",
+    "lineup_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4617fe68941cf40b298cbb982daf4401bc7a463a/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-15.json",
+    "original_salary_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4617fe68941cf40b298cbb982daf4401bc7a463a/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-15-draftkings-156416.csv",
+    "salary_total": 49600,
+    "salary_remaining": 400,
+    "original_projection_total": 156.6,
+    "selection_changed": false
+  },
+  "expectations_binding": {
+    "packet_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/82bf0501df9db5d3c937ca5302a062090b92a5b2/docs/weekly-dfs/codex/2026/week-10/freeze/20261115T162821Z-evidence.json",
+    "expectations": [
+      {
+        "id": "2026-w10-1110-cook-rushing-role",
+        "subject": "James Cook III",
+        "statement": "Retain the leading Buffalo rushing role if active; do not expect another 31 carries or a receiving floor.",
+        "support": "31 Week9 carries versus Davis2/Johnson1; one receiving target.",
+        "uncertainty": "Game script, short week and goal-line/QB allocation can change volume.",
+        "challenge": "A shared or reduced rushing role, or injury restriction, challenges the selection.",
+        "observe": "Compare carries/targets and team volume, actual active status; snaps/routes only if verified.",
+        "source_urls": [
+          "https://www.espn.com/nfl/boxscore/_/gameId/401873051"
+        ],
+        "recorded_at": "2026-11-10T11:36:19.215Z",
+        "original_notebook_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20a2131d1363b0c14ca4c56883cb710c2541f851/docs/weekly-dfs/codex/journal/20261110T113619Z.json"
+      },
+      {
+        "id": "2026-w10-1110-rams-front-condition",
+        "subject": "Los Angeles Rams DST",
+        "statement": "Garrett continues participating after his verified return if available; current opponent QB/center/WR problems are conditions to recheck, not a turnover forecast.",
+        "support": "Primary report35/58snaps and6pressures/27rushes in return; MichaelWilsonseasonOUT, Minshewtests/Froholdtprotocol.",
+        "uncertainty": "Rams own offensive injuries and McDuffie uncertainty; rookieQBnotconfirmed, normalfullworkloadnotassumed.",
+        "challenge": "Garrett setback/restriction, Arizona protection/starter resolution or further Rams coverage loss before cutoff.",
+        "observe": "Verify active participation and available snaps/pressure; separate sacks/turnovers/TDs/PA after games.",
+        "source_urls": [
+          "https://www.therams.com/news/weight-off-my-shoulders-myles-garrett-delivers-three-sack-performance-vs-commanders-in-return-from-knee-surgery",
+          "https://www.therams.com/news/rams-injury-updates-puka-nacua-likely-going-on-injured-reserve-after-sustaining-mcl-pcl-sprain-and-turf-toe-against-commanders-latest-on-steve-avila-and-trent-mcduffie",
+          "https://www.azcardinals.com/news/quarterback-in-flux-after-gardner-minshew-banged-up-arm-injury-carson-beck",
+          "https://www.azcardinals.com/news/michael-wilson-sidelined-for-season-with-neck-injury"
+        ],
+        "recorded_at": "2026-11-10T11:36:19.215Z",
+        "original_notebook_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20a2131d1363b0c14ca4c56883cb710c2541f851/docs/weekly-dfs/codex/journal/20261110T113619Z.json"
+      },
+      {
+        "id": "2026-w10-1110-rice-route-condition",
+        "subject": "Rashee Rice",
+        "statement": "Continued meaningful receiving involvement is required to support the $6,100 selection; a Worthy absence is not assumed to increase Rice's routes.",
+        "support": "Seven retained Week9 targets, but PFF below67% route participation in each of last two games and Armstrong taking five of six late post-injury plays.",
+        "uncertainty": "Worthy designation and Week10 rotation/route allocation; Mahomes elbow.",
+        "challenge": "Current participation/role reporting or game route involvement shows Rice losing opportunities; separate QB performance from receiver deployment.",
+        "observe": "Postgame targets and qualified route participation if accessible; missing routes remain unassessable, not inferred from catches.",
+        "source_urls": [
+          "https://www.pff.com/news/fantasy-football-takeaways-week-9"
+        ],
+        "recorded_at": "2026-11-10T15:00:23.742Z",
+        "original_notebook_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6a676cf09f25acfb86013a6a963b9e3439da0c3d/docs/weekly-dfs/codex/journal/20261110T150023Z.json"
+      },
+      {
+        "id": "2026-w10-1111-dell-rotation",
+        "subject": "Tank Dell",
+        "statement": "Continue meaningful receiving participation in the outside rotation if active; no full-time role or repeat63-yard score expected.",
+        "support": "ESPN9targets/4-105-TD; PFF33snaps/22routes/55%routes, but8targets in its chart.",
+        "uncertainty": "Outside rotation and target-source coverage; high target rate may recede.",
+        "challenge": "Dated rotation evidence or game participation shows a minor role, even if a touchdown masks it.",
+        "observe": "Qualified snaps/routes and targets relative to Houston passing opportunity; separately report coverage and explosive-play points.",
+        "source_urls": [
+          "https://www.espn.com/nfl/boxscore/_/gameId/401873046",
+          "https://www.pff.com/news/fantasy-football-takeaways-week-9"
+        ],
+        "recorded_at": "2026-11-11T11:17:33.909Z",
+        "original_notebook_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9ae416975f4aa91f6e281c7a3fa6b80b546a870d/docs/weekly-dfs/codex/journal/20261111T111733Z.json"
+      },
+      {
+        "id": "2026-w10-1111-warren-post-trades",
+        "subject": "Tyler Warren",
+        "statement": "Remain a meaningful Colts receiving participant despite offensive personnel turnover; no guaranteed gain from departed WRs.",
+        "support": "Retained7targets plus officialAllen/Downs departures; Nelson also traded.",
+        "uncertainty": "Replacement receiver allocation, protection and absolute team passing volume.",
+        "challenge": "Lower route participation or team pass opportunity after protection changes; targets do not automatically transfer.",
+        "observe": "Targets/routes if available, team attempts/yards and protection evidence separately from touchdowns.",
+        "source_urls": [
+          "https://www.colts.com/news/colts-acquire-2027-fourth-round-fifth-round-pick-from-kansas-city-chiefs-in-exchange-for-wide-receiver-josh-downs-2027-seventh-round-pick",
+          "https://www.colts.com/news/colts-trade-wr-keenan-allen-to-san-francisco-49ers-for-2027-sixth-round-nfl-draft-pick"
+        ],
+        "recorded_at": "2026-11-11T11:17:33.909Z",
+        "original_notebook_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9ae416975f4aa91f6e281c7a3fa6b80b546a870d/docs/weekly-dfs/codex/journal/20261111T111733Z.json"
+      },
+      {
+        "id": "2026-w10-1112-concepcion-participation",
+        "subject": "KC Concepcion Jr.",
+        "statement": "Remain a meaningful Browns receiving participant with Watson starting, rather than needing a repeat64-yard touchdown.",
+        "support": "RetainedsixWeek9targets; officialWeek10pool andprimaryWatsonstarterconfirmed; replacingBostonDNP doesnotassignhiswork.",
+        "uncertainty": "QBallocation,one-gamesample,Bostonrecovery; no verifiedfuturetargetshare.",
+        "challenge": "Reducedrouteinvolvementorlowabsoluteopportunity undermineschoice evenifTDscores.",
+        "observe": "Targetsandteamattempts,qualifiedroutesifaccessible; separateQBconditionsandexplosiveplays.",
+        "source_urls": [
+          "https://www.espn.com/nfl/boxscore/_/gameId/401873039",
+          "https://www.clevelandbrowns.com/news/deshaun-watson-set-to-start-week-10-against-the-texans",
+          "https://www.clevelandbrowns.com/team/injury-report/"
+        ],
+        "recorded_at": "2026-11-12T11:27:25.565Z",
+        "original_notebook_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/acbb902bc2a8e939ef4fa4a8a95e824f63188f6d/docs/weekly-dfs/codex/journal/20261112T112725Z.json"
+      },
+      {
+        "id": "2026-w10-1115-johnson-lead-opportunity",
+        "subject": "Emmett Johnson",
+        "statement": "With Walker ruled out, Johnson is expected to receive meaningful lead rushing opportunity if active; no exclusive backfield or fixed touch floor assumed.",
+        "support": "Primary Saturday report rules Walker OUT; dated team preview expects Johnson to carry the load.",
+        "uncertainty": "Ott questionable, replacement execution/protection and game script; reporter expectation not a coach usage guarantee.",
+        "challenge": "Other backs dominate opportunity or Johnson is materially limited/inactive.",
+        "observe": "Official carries/targets and team rushing distribution; snap/route shares only if available, otherwise unknown.",
+        "source_urls": [
+          "https://www.chiefs.com/news/week-10-injury-report-chiefs-vs-falcons-2026",
+          "https://www.chiefs.com/news/five-things-to-watch-on-sunday-chiefs-vs-falcons-x8239"
+        ],
+        "recorded_at": "2026-11-15T11:59:32.050Z",
+        "original_notebook_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4617fe68941cf40b298cbb982daf4401bc7a463a/docs/weekly-dfs/codex/journal/20261115T115932Z.json"
+      }
+    ]
+  },
+  "rules": {
+    "source_url": "https://www.draftkings.com/help/rules/1",
+    "offense": "0.04*passing_yards +4*passing_td -interceptions +0.1*rushing_yards +6*rushing_td +receptions +0.1*receiving_yards +6*receiving_td -lost_fumbles +2*successful_two_point_conversions +6*return_td +6*offensive_fumble_recovery_td +3 each for passing>=300, rushing>=100, receiving>=100.",
+    "dst": "sacks +2*interceptions +2*fumble_recoveries +6*defensive_or_special_teams_td +2*safeties +2*blocked_kicks +2*conversion_returns +PA bracket.",
+    "points_allowed_brackets": {
+      "0": 10,
+      "1-6": 7,
+      "7-13": 4,
+      "14-20": 1,
+      "21-27": 0,
+      "28-34": -1,
+      "35+": -4
+    },
+    "points_allowed_note": "Exclude opposing defensive turnover TDs; extra points count. Rams six from two field goals; Houston27 all offensive scores/field goals. No exclusion needed in these games."
+  },
+  "player_scores": [
+    {
+      "player": "Patrick Mahomes II",
+      "stats": {
+        "passing_yards": 348,
+        "passing_td": 5,
+        "interceptions": 0,
+        "rush_attempts": 2,
+        "rushing_yards": 15,
+        "rushing_td": 0,
+        "targets": 0,
+        "receptions": 0,
+        "receiving_yards": 0,
+        "receiving_td": 0,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 3,
+      "points": 38.42,
+      "status": "provisional",
+      "source_url": "https://static.www.nfl.com/image/upload/v1794826122/gamecenter/ab582f5b-4feb-11f1-abca-2c54536568a9.pdf"
+    },
+    {
+      "player": "Emmett Johnson",
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 22,
+        "rushing_yards": 101,
+        "rushing_td": 0,
+        "targets": 7,
+        "receptions": 6,
+        "receiving_yards": 70,
+        "receiving_td": 2,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 3,
+      "points": 38.1,
+      "status": "provisional",
+      "source_url": "https://static.www.nfl.com/image/upload/v1794826122/gamecenter/ab582f5b-4feb-11f1-abca-2c54536568a9.pdf"
+    },
+    {
+      "player": "Rashee Rice",
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 0,
+        "rushing_yards": 0,
+        "rushing_td": 0,
+        "targets": 6,
+        "receptions": 5,
+        "receiving_yards": 82,
+        "receiving_td": 0,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 0,
+      "points": 13.2,
+      "status": "provisional",
+      "source_url": "https://static.www.nfl.com/image/upload/v1794826122/gamecenter/ab582f5b-4feb-11f1-abca-2c54536568a9.pdf"
+    },
+    {
+      "player": "Travis Kelce",
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 0,
+        "rushing_yards": 0,
+        "rushing_td": 0,
+        "targets": 2,
+        "receptions": 2,
+        "receiving_yards": 30,
+        "receiving_td": 0,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 0,
+      "points": 5,
+      "status": "provisional",
+      "source_url": "https://static.www.nfl.com/image/upload/v1794826122/gamecenter/ab582f5b-4feb-11f1-abca-2c54536568a9.pdf"
+    },
+    {
+      "player": "Christian McCaffrey",
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 13,
+        "rushing_yards": 62,
+        "rushing_td": 1,
+        "targets": 4,
+        "receptions": 4,
+        "receiving_yards": 161,
+        "receiving_td": 2,
+        "lost_fumbles": 0,
+        "two_point_conversions": 1,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 3,
+      "points": 49.3,
+      "status": "provisional",
+      "source_url": "https://static.www.nfl.com/image/upload/v1794829724/gamecenter/ab78a748-4feb-11f1-abca-2c54536568a9.pdf"
+    },
+    {
+      "player": "Dak Prescott",
+      "stats": {
+        "passing_yards": 343,
+        "passing_td": 5,
+        "interceptions": 1,
+        "rush_attempts": 4,
+        "rushing_yards": 7,
+        "rushing_td": 0,
+        "targets": 0,
+        "receptions": 0,
+        "receiving_yards": 0,
+        "receiving_td": 0,
+        "lost_fumbles": 0,
+        "two_point_conversions": 1,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 3,
+      "points": 38.42,
+      "status": "provisional",
+      "source_url": "https://static.www.nfl.com/image/upload/v1794829724/gamecenter/ab78a748-4feb-11f1-abca-2c54536568a9.pdf"
+    },
+    {
+      "player": "CeeDee Lamb",
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 0,
+        "rushing_yards": 0,
+        "rushing_td": 0,
+        "targets": 13,
+        "receptions": 7,
+        "receiving_yards": 72,
+        "receiving_td": 1,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 0,
+      "points": 20.2,
+      "status": "provisional",
+      "source_url": "https://static.www.nfl.com/image/upload/v1794829724/gamecenter/ab78a748-4feb-11f1-abca-2c54536568a9.pdf"
+    },
+    {
+      "player": "Keenan Allen",
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 0,
+        "rushing_yards": 0,
+        "rushing_td": 0,
+        "targets": 7,
+        "receptions": 5,
+        "receiving_yards": 61,
+        "receiving_td": 0,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 0,
+      "points": 11.1,
+      "status": "provisional",
+      "source_url": "https://static.www.nfl.com/image/upload/v1794829724/gamecenter/ab78a748-4feb-11f1-abca-2c54536568a9.pdf"
+    },
+    {
+      "player": "Jordan Watkins",
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 0,
+        "rushing_yards": 0,
+        "rushing_td": 0,
+        "targets": 3,
+        "receptions": 2,
+        "receiving_yards": 49,
+        "receiving_td": 0,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 0,
+      "points": 6.9,
+      "status": "provisional",
+      "source_url": "https://static.www.nfl.com/image/upload/v1794829724/gamecenter/ab78a748-4feb-11f1-abca-2c54536568a9.pdf"
+    },
+    {
+      "player": "Woody Marks",
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 12,
+        "rushing_yards": 50,
+        "rushing_td": 0,
+        "targets": 1,
+        "receptions": 1,
+        "receiving_yards": 15,
+        "receiving_td": 0,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 0,
+      "points": 7.5,
+      "status": "provisional",
+      "source_url": "https://static.www.nfl.com/image/upload/v1794829724/gamecenter/ab583279-4feb-11f1-abca-2c54536568a9.pdf"
+    },
+    {
+      "player": "Tank Dell",
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 1,
+        "rushing_yards": 0,
+        "rushing_td": 0,
+        "targets": 4,
+        "receptions": 3,
+        "receiving_yards": 21,
+        "receiving_td": 0,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 0,
+      "points": 5.1,
+      "status": "provisional",
+      "source_url": "https://static.www.nfl.com/image/upload/v1794829724/gamecenter/ab583279-4feb-11f1-abca-2c54536568a9.pdf"
+    },
+    {
+      "player": "KC Concepcion Jr.",
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 1,
+        "rushing_yards": 6,
+        "rushing_td": 1,
+        "targets": 8,
+        "receptions": 3,
+        "receiving_yards": 21,
+        "receiving_td": 0,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 0,
+      "points": 11.7,
+      "status": "provisional",
+      "source_url": "https://static.www.nfl.com/image/upload/v1794829724/gamecenter/ab583279-4feb-11f1-abca-2c54536568a9.pdf"
+    },
+    {
+      "player": "Denzel Boston",
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 0,
+        "rushing_yards": 0,
+        "rushing_td": 0,
+        "targets": 2,
+        "receptions": 1,
+        "receiving_yards": 16,
+        "receiving_td": 0,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 0,
+      "points": 2.6,
+      "status": "provisional",
+      "source_url": "https://static.www.nfl.com/image/upload/v1794829724/gamecenter/ab583279-4feb-11f1-abca-2c54536568a9.pdf"
+    },
+    {
+      "player": "James Cook III",
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 18,
+        "rushing_yards": 157,
+        "rushing_td": 1,
+        "targets": 1,
+        "receptions": 0,
+        "receiving_yards": 0,
+        "receiving_td": 0,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 3,
+      "points": 24.7,
+      "status": "provisional",
+      "source_url": "https://static.www.nfl.com/image/upload/v1794829722/gamecenter/ab789ac9-4feb-11f1-abca-2c54536568a9.pdf"
+    },
+    {
+      "player": "Kenyon Sadiq",
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 0,
+        "rushing_yards": 0,
+        "rushing_td": 0,
+        "targets": 2,
+        "receptions": 1,
+        "receiving_yards": 3,
+        "receiving_td": 0,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 0,
+      "points": 1.3,
+      "status": "provisional",
+      "source_url": "https://static.www.nfl.com/image/upload/v1794829722/gamecenter/ab789ac9-4feb-11f1-abca-2c54536568a9.pdf"
+    },
+    {
+      "player": "Tyler Warren",
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 1,
+        "rushing_yards": 3,
+        "rushing_td": 0,
+        "targets": 3,
+        "receptions": 2,
+        "receiving_yards": 1,
+        "receiving_td": 0,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 0,
+      "points": 2.4,
+      "status": "provisional",
+      "source_url": "https://static.www.nfl.com/image/upload/v1794829723/gamecenter/ab789365-4feb-11f1-abca-2c54536568a9.pdf"
+    },
+    {
+      "player": "Konata Mumpfield",
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 0,
+        "rushing_yards": 0,
+        "rushing_td": 0,
+        "targets": 4,
+        "receptions": 3,
+        "receiving_yards": 81,
+        "receiving_td": 0,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 0,
+      "points": 11.1,
+      "status": "provisional",
+      "source_url": "https://static.www.nfl.com/image/upload/v1794829725/gamecenter/ab78a133-4feb-11f1-abca-2c54536568a9.pdf"
+    },
+    {
+      "player": "Kaleb Johnson",
+      "stats": {
+        "passing_yards": 0,
+        "passing_td": 0,
+        "interceptions": 0,
+        "rush_attempts": 10,
+        "rushing_yards": 42,
+        "rushing_td": 0,
+        "targets": 0,
+        "receptions": 0,
+        "receiving_yards": 0,
+        "receiving_td": 0,
+        "lost_fumbles": 0,
+        "two_point_conversions": 0,
+        "return_td": 0,
+        "offensive_fumble_recovery_td": 0
+      },
+      "bonuses": 0,
+      "points": 4.2,
+      "status": "provisional",
+      "source_url": "https://static.www.nfl.com/image/upload/v1794829721/gamecenter/ab788967-4feb-11f1-abca-2c54536568a9.pdf"
+    },
+    {
+      "player": "Los Angeles Rams",
+      "stats": {
+        "sacks": 5,
+        "interceptions": 2,
+        "points_allowed": 6,
+        "fumble_recoveries": 0,
+        "defensive_return_td": 0,
+        "special_teams_td": 0,
+        "safeties": 0,
+        "blocked_kicks": 0,
+        "conversion_returns": 0
+      },
+      "points_allowed_points": 7,
+      "points": 16,
+      "status": "provisional",
+      "source_url": "https://static.www.nfl.com/image/upload/v1794829725/gamecenter/ab78a133-4feb-11f1-abca-2c54536568a9.pdf"
+    },
+    {
+      "player": "Houston Texans",
+      "stats": {
+        "sacks": 4,
+        "interceptions": 1,
+        "points_allowed": 27,
+        "fumble_recoveries": 0,
+        "defensive_return_td": 0,
+        "special_teams_td": 0,
+        "safeties": 0,
+        "blocked_kicks": 0,
+        "conversion_returns": 0
+      },
+      "points_allowed_points": 0,
+      "points": 6,
+      "status": "provisional",
+      "source_url": "https://static.www.nfl.com/image/upload/v1794829724/gamecenter/ab583279-4feb-11f1-abca-2c54536568a9.pdf"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "2026-w10-2026-11-09-daily",
+      "status": "partial",
+      "kind": "daily",
+      "original_salary_total": 0,
+      "points": null,
+      "picks": [],
+      "immutable_archive": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0709d595c3908b6e078726a6526ac06ad88a99e5/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-09.md"
+    },
+    {
+      "id": "2026-w10-2026-11-10-daily",
+      "status": "complete",
+      "kind": "daily",
+      "original_salary_total": 49300,
+      "points": 159.02,
+      "picks": [
+        {
+          "player": "Patrick Mahomes II",
+          "slot": "QB",
+          "original_salary": 6000,
+          "points": 38.42
+        },
+        {
+          "player": "Christian McCaffrey",
+          "slot": "RB",
+          "original_salary": 8500,
+          "points": 49.3
+        },
+        {
+          "player": "James Cook III",
+          "slot": "RB",
+          "original_salary": 7400,
+          "points": 24.7
+        },
+        {
+          "player": "Rashee Rice",
+          "slot": "WR",
+          "original_salary": 6100,
+          "points": 13.2
+        },
+        {
+          "player": "Denzel Boston",
+          "slot": "WR",
+          "original_salary": 5200,
+          "points": 2.6
+        },
+        {
+          "player": "Keenan Allen",
+          "slot": "WR",
+          "original_salary": 5100,
+          "points": 11.1
+        },
+        {
+          "player": "Tyler Warren",
+          "slot": "TE",
+          "original_salary": 4400,
+          "points": 2.4
+        },
+        {
+          "player": "Kenyon Sadiq",
+          "slot": "FLEX",
+          "original_salary": 2800,
+          "points": 1.3
+        },
+        {
+          "player": "Los Angeles Rams",
+          "slot": "DST",
+          "original_salary": 3800,
+          "points": 16
+        }
+      ],
+      "immutable_archive": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a4fd4194bc744ad83c8f68e9e4d45de53aefcf28/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-10.md"
+    },
+    {
+      "id": "2026-w10-r1-claude-v1",
+      "status": "complete",
+      "kind": "daily",
+      "original_salary_total": 49900,
+      "points": 148.62,
+      "picks": [
+        {
+          "player": "Dak Prescott",
+          "slot": "QB",
+          "original_salary": 6400,
+          "points": 38.42
+        },
+        {
+          "player": "Christian McCaffrey",
+          "slot": "RB",
+          "original_salary": 8500,
+          "points": 49.3
+        },
+        {
+          "player": "Kaleb Johnson",
+          "slot": "RB",
+          "original_salary": 4600,
+          "points": 4.2
+        },
+        {
+          "player": "CeeDee Lamb",
+          "slot": "WR",
+          "original_salary": 8800,
+          "points": 20.2
+        },
+        {
+          "player": "Konata Mumpfield",
+          "slot": "WR",
+          "original_salary": 4000,
+          "points": 11.1
+        },
+        {
+          "player": "Jordan Watkins",
+          "slot": "WR",
+          "original_salary": 3800,
+          "points": 6.9
+        },
+        {
+          "player": "Travis Kelce",
+          "slot": "TE",
+          "original_salary": 4700,
+          "points": 5
+        },
+        {
+          "player": "Woody Marks",
+          "slot": "FLEX",
+          "original_salary": 5700,
+          "points": 7.5
+        },
+        {
+          "player": "Houston Texans",
+          "slot": "DST",
+          "original_salary": 3400,
+          "points": 6
+        }
+      ],
+      "immutable_archive": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T123500Z-claude-v1.md"
+    },
+    {
+      "id": "2026-w10-r1-claude-revision-20261110T142258Z",
+      "status": "complete",
+      "kind": "daily",
+      "original_salary_total": 49800,
+      "points": 142.62,
+      "picks": [
+        {
+          "player": "Dak Prescott",
+          "slot": "QB",
+          "original_salary": 6400,
+          "points": 38.42
+        },
+        {
+          "player": "Christian McCaffrey",
+          "slot": "RB",
+          "original_salary": 8500,
+          "points": 49.3
+        },
+        {
+          "player": "Kaleb Johnson",
+          "slot": "RB",
+          "original_salary": 4600,
+          "points": 4.2
+        },
+        {
+          "player": "CeeDee Lamb",
+          "slot": "WR",
+          "original_salary": 8800,
+          "points": 20.2
+        },
+        {
+          "player": "Tank Dell",
+          "slot": "WR",
+          "original_salary": 3900,
+          "points": 5.1
+        },
+        {
+          "player": "Jordan Watkins",
+          "slot": "WR",
+          "original_salary": 3800,
+          "points": 6.9
+        },
+        {
+          "player": "Travis Kelce",
+          "slot": "TE",
+          "original_salary": 4700,
+          "points": 5
+        },
+        {
+          "player": "Woody Marks",
+          "slot": "FLEX",
+          "original_salary": 5700,
+          "points": 7.5
+        },
+        {
+          "player": "Houston Texans",
+          "slot": "DST",
+          "original_salary": 3400,
+          "points": 6
+        }
+      ],
+      "immutable_archive": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/94a4ac9159abba6588d55a0d3008e00192fd5492/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T142258Z-claude-grok-response.md"
+    },
+    {
+      "id": "2026-w10-editor-integration-20261110T150023Z",
+      "status": "complete",
+      "kind": "daily",
+      "original_salary_total": 49300,
+      "points": 159.02,
+      "picks": [
+        {
+          "player": "Patrick Mahomes II",
+          "slot": "QB",
+          "original_salary": 6000,
+          "points": 38.42
+        },
+        {
+          "player": "Christian McCaffrey",
+          "slot": "RB",
+          "original_salary": 8500,
+          "points": 49.3
+        },
+        {
+          "player": "James Cook III",
+          "slot": "RB",
+          "original_salary": 7400,
+          "points": 24.7
+        },
+        {
+          "player": "Rashee Rice",
+          "slot": "WR",
+          "original_salary": 6100,
+          "points": 13.2
+        },
+        {
+          "player": "Denzel Boston",
+          "slot": "WR",
+          "original_salary": 5200,
+          "points": 2.6
+        },
+        {
+          "player": "Keenan Allen",
+          "slot": "WR",
+          "original_salary": 5100,
+          "points": 11.1
+        },
+        {
+          "player": "Tyler Warren",
+          "slot": "TE",
+          "original_salary": 4400,
+          "points": 2.4
+        },
+        {
+          "player": "Kenyon Sadiq",
+          "slot": "FLEX",
+          "original_salary": 2800,
+          "points": 1.3
+        },
+        {
+          "player": "Los Angeles Rams",
+          "slot": "DST",
+          "original_salary": 3800,
+          "points": 16
+        }
+      ],
+      "immutable_archive": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6a676cf09f25acfb86013a6a963b9e3439da0c3d/docs/weekly-dfs/codex/2026/week-10/daily/20261110T150023Z-editor-integration.md"
+    },
+    {
+      "id": "2026-w10-2026-11-11-daily",
+      "status": "complete",
+      "kind": "daily",
+      "original_salary_total": 48100,
+      "points": 153.02,
+      "picks": [
+        {
+          "player": "Patrick Mahomes II",
+          "slot": "QB",
+          "original_salary": 6000,
+          "points": 38.42
+        },
+        {
+          "player": "Christian McCaffrey",
+          "slot": "RB",
+          "original_salary": 8500,
+          "points": 49.3
+        },
+        {
+          "player": "James Cook III",
+          "slot": "RB",
+          "original_salary": 7400,
+          "points": 24.7
+        },
+        {
+          "player": "Rashee Rice",
+          "slot": "WR",
+          "original_salary": 6100,
+          "points": 13.2
+        },
+        {
+          "player": "Denzel Boston",
+          "slot": "WR",
+          "original_salary": 5200,
+          "points": 2.6
+        },
+        {
+          "player": "Tank Dell",
+          "slot": "WR",
+          "original_salary": 3900,
+          "points": 5.1
+        },
+        {
+          "player": "Tyler Warren",
+          "slot": "TE",
+          "original_salary": 4400,
+          "points": 2.4
+        },
+        {
+          "player": "Kenyon Sadiq",
+          "slot": "FLEX",
+          "original_salary": 2800,
+          "points": 1.3
+        },
+        {
+          "player": "Los Angeles Rams",
+          "slot": "DST",
+          "original_salary": 3800,
+          "points": 16
+        }
+      ],
+      "immutable_archive": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9ae416975f4aa91f6e281c7a3fa6b80b546a870d/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-11.md"
+    },
+    {
+      "id": "2026-w10-2026-11-12-daily",
+      "status": "complete",
+      "kind": "daily",
+      "original_salary_total": 49600,
+      "points": 165.82,
+      "picks": [
+        {
+          "player": "Patrick Mahomes II",
+          "slot": "QB",
+          "original_salary": 6000,
+          "points": 38.42
+        },
+        {
+          "player": "Christian McCaffrey",
+          "slot": "RB",
+          "original_salary": 8500,
+          "points": 49.3
+        },
+        {
+          "player": "James Cook III",
+          "slot": "RB",
+          "original_salary": 7400,
+          "points": 24.7
+        },
+        {
+          "player": "Rashee Rice",
+          "slot": "WR",
+          "original_salary": 6100,
+          "points": 13.2
+        },
+        {
+          "player": "KC Concepcion Jr.",
+          "slot": "WR",
+          "original_salary": 4800,
+          "points": 11.7
+        },
+        {
+          "player": "Tank Dell",
+          "slot": "WR",
+          "original_salary": 3900,
+          "points": 5.1
+        },
+        {
+          "player": "Tyler Warren",
+          "slot": "TE",
+          "original_salary": 4400,
+          "points": 2.4
+        },
+        {
+          "player": "Travis Kelce",
+          "slot": "FLEX",
+          "original_salary": 4700,
+          "points": 5
+        },
+        {
+          "player": "Los Angeles Rams",
+          "slot": "DST",
+          "original_salary": 3800,
+          "points": 16
+        }
+      ],
+      "immutable_archive": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/acbb902bc2a8e939ef4fa4a8a95e824f63188f6d/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-12.md"
+    },
+    {
+      "id": "2026-w10-2026-11-13-daily",
+      "status": "complete",
+      "kind": "daily",
+      "original_salary_total": 49600,
+      "points": 165.82,
+      "picks": [
+        {
+          "player": "Patrick Mahomes II",
+          "slot": "QB",
+          "original_salary": 6000,
+          "points": 38.42
+        },
+        {
+          "player": "Christian McCaffrey",
+          "slot": "RB",
+          "original_salary": 8500,
+          "points": 49.3
+        },
+        {
+          "player": "James Cook III",
+          "slot": "RB",
+          "original_salary": 7400,
+          "points": 24.7
+        },
+        {
+          "player": "Rashee Rice",
+          "slot": "WR",
+          "original_salary": 6100,
+          "points": 13.2
+        },
+        {
+          "player": "KC Concepcion Jr.",
+          "slot": "WR",
+          "original_salary": 4800,
+          "points": 11.7
+        },
+        {
+          "player": "Tank Dell",
+          "slot": "WR",
+          "original_salary": 3900,
+          "points": 5.1
+        },
+        {
+          "player": "Tyler Warren",
+          "slot": "TE",
+          "original_salary": 4400,
+          "points": 2.4
+        },
+        {
+          "player": "Travis Kelce",
+          "slot": "FLEX",
+          "original_salary": 4700,
+          "points": 5
+        },
+        {
+          "player": "Los Angeles Rams",
+          "slot": "DST",
+          "original_salary": 3800,
+          "points": 16
+        }
+      ],
+      "immutable_archive": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a9a5a1050c6bb56d9932ff939d1c6c4f7b51a604/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-13.md"
+    },
+    {
+      "id": "2026-w10-2026-11-14-daily",
+      "status": "complete",
+      "kind": "daily",
+      "original_salary_total": 49600,
+      "points": 165.82,
+      "picks": [
+        {
+          "player": "Patrick Mahomes II",
+          "slot": "QB",
+          "original_salary": 6000,
+          "points": 38.42
+        },
+        {
+          "player": "Christian McCaffrey",
+          "slot": "RB",
+          "original_salary": 8500,
+          "points": 49.3
+        },
+        {
+          "player": "James Cook III",
+          "slot": "RB",
+          "original_salary": 7400,
+          "points": 24.7
+        },
+        {
+          "player": "Rashee Rice",
+          "slot": "WR",
+          "original_salary": 6100,
+          "points": 13.2
+        },
+        {
+          "player": "KC Concepcion Jr.",
+          "slot": "WR",
+          "original_salary": 4800,
+          "points": 11.7
+        },
+        {
+          "player": "Tank Dell",
+          "slot": "WR",
+          "original_salary": 3900,
+          "points": 5.1
+        },
+        {
+          "player": "Tyler Warren",
+          "slot": "TE",
+          "original_salary": 4400,
+          "points": 2.4
+        },
+        {
+          "player": "Travis Kelce",
+          "slot": "FLEX",
+          "original_salary": 4700,
+          "points": 5
+        },
+        {
+          "player": "Los Angeles Rams",
+          "slot": "DST",
+          "original_salary": 3800,
+          "points": 16
+        }
+      ],
+      "immutable_archive": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/53f48c6cc775f9644e22b18d95c8e8e59a18c699/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-14.md"
+    },
+    {
+      "id": "2026-w10-2026-11-15-daily",
+      "status": "complete",
+      "kind": "daily",
+      "original_salary_total": 49600,
+      "points": 198.92,
+      "picks": [
+        {
+          "player": "Patrick Mahomes II",
+          "slot": "QB",
+          "original_salary": 6000,
+          "points": 38.42
+        },
+        {
+          "player": "Christian McCaffrey",
+          "slot": "RB",
+          "original_salary": 8500,
+          "points": 49.3
+        },
+        {
+          "player": "James Cook III",
+          "slot": "RB",
+          "original_salary": 7400,
+          "points": 24.7
+        },
+        {
+          "player": "Rashee Rice",
+          "slot": "WR",
+          "original_salary": 6100,
+          "points": 13.2
+        },
+        {
+          "player": "KC Concepcion Jr.",
+          "slot": "WR",
+          "original_salary": 4800,
+          "points": 11.7
+        },
+        {
+          "player": "Tank Dell",
+          "slot": "WR",
+          "original_salary": 3900,
+          "points": 5.1
+        },
+        {
+          "player": "Tyler Warren",
+          "slot": "TE",
+          "original_salary": 4400,
+          "points": 2.4
+        },
+        {
+          "player": "Emmett Johnson",
+          "slot": "FLEX",
+          "original_salary": 4700,
+          "points": 38.1
+        },
+        {
+          "player": "Los Angeles Rams",
+          "slot": "DST",
+          "original_salary": 3800,
+          "points": 16
+        }
+      ],
+      "immutable_archive": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4617fe68941cf40b298cbb982daf4401bc7a463a/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-15.md"
+    },
+    {
+      "id": "2026-w10-final-20261115T163039Z",
+      "status": "complete",
+      "kind": "freeze",
+      "original_salary_total": 49600,
+      "points": 198.92,
+      "picks": [
+        {
+          "player": "Patrick Mahomes II",
+          "slot": "QB",
+          "original_salary": 6000,
+          "points": 38.42
+        },
+        {
+          "player": "Christian McCaffrey",
+          "slot": "RB",
+          "original_salary": 8500,
+          "points": 49.3
+        },
+        {
+          "player": "James Cook III",
+          "slot": "RB",
+          "original_salary": 7400,
+          "points": 24.7
+        },
+        {
+          "player": "Rashee Rice",
+          "slot": "WR",
+          "original_salary": 6100,
+          "points": 13.2
+        },
+        {
+          "player": "KC Concepcion Jr.",
+          "slot": "WR",
+          "original_salary": 4800,
+          "points": 11.7
+        },
+        {
+          "player": "Tank Dell",
+          "slot": "WR",
+          "original_salary": 3900,
+          "points": 5.1
+        },
+        {
+          "player": "Tyler Warren",
+          "slot": "TE",
+          "original_salary": 4400,
+          "points": 2.4
+        },
+        {
+          "player": "Emmett Johnson",
+          "slot": "FLEX",
+          "original_salary": 4700,
+          "points": 38.1
+        },
+        {
+          "player": "Los Angeles Rams",
+          "slot": "DST",
+          "original_salary": 3800,
+          "points": 16
+        }
+      ],
+      "immutable_archive": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/88752e288a2957ac7a994b105dc53caed43a5d47/docs/weekly-dfs/codex/2026/week-10/freeze/20261115T163039Z.md"
+    }
+  ],
+  "revision_contributions": [
+    {
+      "date": "2026-11-10",
+      "author": "Claude",
+      "from": "Konata Mumpfield",
+      "to": "Tank Dell",
+      "salary_delta": -100,
+      "classification": "constraint_or_source_correction",
+      "points_delta": -6,
+      "reason": "Corrected season-line mistaken for Week9; Grok G-W10-Q4 directly prompted correction. Better evidence did not guarantee more points."
+    },
+    {
+      "date": "2026-11-11",
+      "author": "Codex",
+      "from": "Keenan Allen",
+      "to": "Tank Dell",
+      "salary_delta": -1200,
+      "classification": "new_evidence",
+      "points_delta": -6,
+      "reason": "Allen's trade changed original Colts role premise; retained original price/team fields and score actual SF performance. Dell influenced by Claude; no isolated model credit."
+    },
+    {
+      "date": "2026-11-12",
+      "author": "Codex",
+      "from": "Denzel Boston",
+      "to": "KC Concepcion Jr.",
+      "salary_delta": -400,
+      "classification": "new_evidence",
+      "points_delta": 9.1,
+      "reason": "Practice/participation and starter evidence; Boston absence was not assumed."
+    },
+    {
+      "date": "2026-11-12",
+      "author": "Codex",
+      "from": "Kenyon Sadiq",
+      "to": "Travis Kelce",
+      "salary_delta": 1900,
+      "classification": "new_evidence",
+      "points_delta": 3.7,
+      "reason": "Practice/funding integration. Grok G-W10-Q7 challenged thin FLEX role; this is not isolated causal attribution to Grok."
+    },
+    {
+      "date": "2026-11-15",
+      "author": "Codex with Claude swap acceptance",
+      "from": "Travis Kelce",
+      "to": "Emmett Johnson",
+      "salary_delta": 0,
+      "classification": "new_evidence",
+      "points_delta": 33.1,
+      "reason": "Walker ruled out; team preview expected Johnson lead. Kelce in-game injury is an outcome confounder."
+    }
+  ],
+  "expectation_outcomes": [
+    {
+      "id": "2026-w10-outcome-2026-w10-1110-cook-rushing-role",
+      "expectation_id": "2026-w10-1110-cook-rushing-role",
+      "expectation": "Retain the leading Buffalo rushing role if active; do not expect another 31 carries or a receiving floor.",
+      "expectation_recorded_at": "2026-11-10T11:36:19.215Z",
+      "expectation_notebook_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20a2131d1363b0c14ca4c56883cb710c2541f851/docs/weekly-dfs/codex/journal/20261110T113619Z.json",
+      "assessment": "supported",
+      "opportunity_assessment": "18 of32 team carries; next RB Davis3. Cook35 snaps (61%), one target, no catch. Leading rushing role persisted; a receiving floor did not.",
+      "conditions_assessment": "Active; game script and Allen's two rushing TDs affected allocation.",
+      "score_explanation": "157 rushing yards included a74-yard run; rushing TD and100-yard bonus produced24.70.",
+      "cutoff_judgment": "Retaining the rushing lead was supported at cutoff; efficiency and long-run outcome cannot validate a receiving-floor claim.",
+      "status": "provisional",
+      "source_urls": [
+        "https://static.www.nfl.com/image/upload/v1794829722/gamecenter/ab789ac9-4feb-11f1-abca-2c54536568a9.pdf"
+      ]
+    },
+    {
+      "id": "2026-w10-outcome-2026-w10-1110-rams-front-condition",
+      "expectation_id": "2026-w10-1110-rams-front-condition",
+      "expectation": "Garrett continues participating after his verified return if available; current opponent QB/center/WR problems are conditions to recheck, not a turnover forecast.",
+      "expectation_recorded_at": "2026-11-10T11:36:19.215Z",
+      "expectation_notebook_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20a2131d1363b0c14ca4c56883cb710c2541f851/docs/weekly-dfs/codex/journal/20261110T113619Z.json",
+      "assessment": "supported",
+      "opportunity_assessment": "Garrett17 defensive snaps (49%); McDuffie and Curl30 each (86%); all started. Qualified pressure counts unavailable.",
+      "conditions_assessment": "Carson Beck started; Froholdt, Gaines and Jayden Williams inactive. Participation condition held, not a full-workload guarantee.",
+      "score_explanation": "Five sacks, two interceptions and six points allowed produced16.00; no defensive/return TD.",
+      "cutoff_judgment": "Conditional front/opponent assessment was defensible; causal contribution of each absence and pressure is unassessable.",
+      "status": "provisional",
+      "source_urls": [
+        "https://static.www.nfl.com/image/upload/v1794829725/gamecenter/ab78a133-4feb-11f1-abca-2c54536568a9.pdf"
+      ]
+    },
+    {
+      "id": "2026-w10-outcome-2026-w10-1110-rice-route-condition",
+      "expectation_id": "2026-w10-1110-rice-route-condition",
+      "expectation": "Continued meaningful receiving involvement is required to support the $6,100 selection; a Worthy absence is not assumed to increase Rice's routes.",
+      "expectation_recorded_at": "2026-11-10T15:00:23.742Z",
+      "expectation_notebook_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6a676cf09f25acfb86013a6a963b9e3439da0c3d/docs/weekly-dfs/codex/journal/20261110T150023Z.json",
+      "assessment": "partly_supported",
+      "opportunity_assessment": "Rice30 offensive snaps (46%), six targets,5-82. Receiving involvement remained, but routes unavailable and low participation remains a concern.",
+      "conditions_assessment": "Mahomes played and threw five TDs; Rice caught none. No new injury explanation established.",
+      "score_explanation": "13.20 from catches/yards; none of Mahomes's five TDs transferred to Rice.",
+      "cutoff_judgment": "Hold was conditional and plausible, but output does not resolve the retained route concern. Routes remain unassessable.",
+      "status": "provisional",
+      "source_urls": [
+        "https://static.www.nfl.com/image/upload/v1794826122/gamecenter/ab582f5b-4feb-11f1-abca-2c54536568a9.pdf"
+      ]
+    },
+    {
+      "id": "2026-w10-outcome-2026-w10-1111-dell-rotation",
+      "expectation_id": "2026-w10-1111-dell-rotation",
+      "expectation": "Continue meaningful receiving participation in the outside rotation if active; no full-time role or repeat63-yard score expected.",
+      "expectation_recorded_at": "2026-11-11T11:17:33.909Z",
+      "expectation_notebook_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9ae416975f4aa91f6e281c7a3fa6b80b546a870d/docs/weekly-dfs/codex/journal/20261111T111733Z.json",
+      "assessment": "partly_supported",
+      "opportunity_assessment": "Dell33 snaps (49%), four targets in38 team attempts,3-21; Hutchinson51 snaps (76%) and nine targets. Rotation persisted; routes/outside alignment unassessable.",
+      "conditions_assessment": "Historical8-versus9 Week9 target conflict retained; neither full-time work nor another explosive score was promised.",
+      "score_explanation": "5.10 versus Allen11.10: replacement lost6.00. Allen now SF31 snaps (48%), seven targets,5-61.",
+      "cutoff_judgment": "A low-cost rotation case was reasonable after Allen trade, but the target-rate risk materialized. The correction did not deliver a point improvement.",
+      "status": "provisional",
+      "source_urls": [
+        "https://static.www.nfl.com/image/upload/v1794829724/gamecenter/ab583279-4feb-11f1-abca-2c54536568a9.pdf"
+      ]
+    },
+    {
+      "id": "2026-w10-outcome-2026-w10-1111-warren-post-trades",
+      "expectation_id": "2026-w10-1111-warren-post-trades",
+      "expectation": "Remain a meaningful Colts receiving participant despite offensive personnel turnover; no guaranteed gain from departed WRs.",
+      "expectation_recorded_at": "2026-11-11T11:17:33.909Z",
+      "expectation_notebook_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9ae416975f4aa91f6e281c7a3fa6b80b546a870d/docs/weekly-dfs/codex/journal/20261111T111733Z.json",
+      "assessment": "challenged",
+      "opportunity_assessment": "Warren51 snaps (86%) but three targets in22 attempts and2-1 receiving, plus one rush for3. Reduced absolute receiving opportunity challenged the premise.",
+      "conditions_assessment": "Colts passing produced108 gross yards. Raimann left and was ruled out in-game; protection causality and routes remain unassessable.",
+      "score_explanation": "2.40; high snaps and vacated receivers did not yield receiving production.",
+      "cutoff_judgment": "Original record explicitly warned targets need not transfer. Keeping Warren remained exposed to team-volume/protection risk; this miss is retained.",
+      "status": "provisional",
+      "source_urls": [
+        "https://static.www.nfl.com/image/upload/v1794829723/gamecenter/ab789365-4feb-11f1-abca-2c54536568a9.pdf"
+      ]
+    },
+    {
+      "id": "2026-w10-outcome-2026-w10-1112-concepcion-participation",
+      "expectation_id": "2026-w10-1112-concepcion-participation",
+      "expectation": "Remain a meaningful Browns receiving participant with Watson starting, rather than needing a repeat64-yard touchdown.",
+      "expectation_recorded_at": "2026-11-12T11:27:25.565Z",
+      "expectation_notebook_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/acbb902bc2a8e939ef4fa4a8a95e824f63188f6d/docs/weekly-dfs/codex/journal/20261112T112725Z.json",
+      "assessment": "supported",
+      "opportunity_assessment": "Concepcion54 snaps (79%), eight targets in40 attempts,3-21; Boston58 snaps (85%), two targets,1-16. Both participated.",
+      "conditions_assessment": "Watson started,312 gross passing yards, zero passing TDs; Boston was not absent.",
+      "score_explanation": "11.70 includes6-yard rushing TD; receiving work alone5.10. Replacement gained9.10 versus Boston.",
+      "cutoff_judgment": "Receiving opportunity condition held, but the rushing TD—not a proven Watson receiving uplift—drove most of the point advantage.",
+      "status": "provisional",
+      "source_urls": [
+        "https://static.www.nfl.com/image/upload/v1794829724/gamecenter/ab583279-4feb-11f1-abca-2c54536568a9.pdf"
+      ]
+    },
+    {
+      "id": "2026-w10-outcome-2026-w10-1115-johnson-lead-opportunity",
+      "expectation_id": "2026-w10-1115-johnson-lead-opportunity",
+      "expectation": "With Walker ruled out, Johnson is expected to receive meaningful lead rushing opportunity if active; no exclusive backfield or fixed touch floor assumed.",
+      "expectation_recorded_at": "2026-11-15T11:59:32.050Z",
+      "expectation_notebook_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4617fe68941cf40b298cbb982daf4401bc7a463a/docs/weekly-dfs/codex/journal/20261115T115932Z.json",
+      "assessment": "supported",
+      "opportunity_assessment": "Johnson22 of27 team carries,57 snaps (88%), seven targets and6-70. Carter two carries; Walker and Ott did not play.",
+      "conditions_assessment": "Walker absence condition held. Ott nonparticipation is a postgame observation, not information retrospectively available at freeze.",
+      "score_explanation": "101 rushing yards with bonus plus two receiving TDs produced38.10. Kelce5.00; swap+33.10. Kelce in-game injury/return and20 snaps (31%) confound comparison.",
+      "cutoff_judgment": "Lead-opportunity selection was supported by pre-cutoff team evidence and realized usage; exact workload/TDs were not forecast. One result does not prove universal RB-over-TE superiority.",
+      "status": "provisional",
+      "source_urls": [
+        "https://static.www.nfl.com/image/upload/v1794826122/gamecenter/ab582f5b-4feb-11f1-abca-2c54536568a9.pdf"
+      ]
+    }
+  ],
+  "calculation_notes": [
+    "All selected lost_fumbles=0 and individual return TDs=0. Emmett's out-of-bounds fumble is not lost.",
+    "CMC successful two-point reception adds2; Dak successful two-point run adds2.",
+    "Dak's -4 own-fumble-recovery yards appear in fumble table, not credited receiving yards; not subtracted from his DK score. Last-play lost fumble credited to Steele, not Dak.",
+    "Allen's original IND team label and $5100 stay immutable; actual points are his SF game on same main slate.",
+    "No points assigned to Nov9 partial board; ten complete versions scored, including repeated holds and both authors."
+  ],
+  "season_questions": {
+    "S1": {
+      "first_complete": 159.02,
+      "claude_original": 148.62,
+      "final": 198.92,
+      "final_minus_first": 39.9,
+      "projection_only": null,
+      "projection_only_reason": "Freeze did not retain a complete coherent projection pool; do not approximate hindsight optimum."
+    },
+    "S2": {
+      "new_evidence_codex_swaps": 4,
+      "new_evidence_net": 39.9,
+      "changed_interpretation_selection_changes": 0,
+      "claude_constraint_correction_net": -6,
+      "limits": "Paired changes/funding, repeated players and small single-week sample prevent independent causal inference."
+    },
+    "S3": {
+      "direct_question": "G-W10-Q4",
+      "direct_claude_change_delta": -6,
+      "other_influence": "G-W10-Q7 scrutiny preceded funded Kelce adoption (+3.70), with new practice evidence. No new Grok pass or independent causal credit inferred."
+    },
+    "S4": {
+      "operator_seat": "absent",
+      "blind_calls": "none observed",
+      "overrides": "none",
+      "delta": 0,
+      "comparable_candidate": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4617fe68941cf40b298cbb982daf4401bc7a463a/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-15.md",
+      "reason": "Exact retained Nov15 morning candidate unchanged in freeze."
+    },
+    "S5": {
+      "cycle": "2026-week-10",
+      "round": 2,
+      "codex_v1_ready": "ready; original retained",
+      "claude_v1_ready": "ready; exposure, source-window and clock corrections retained",
+      "grok_questions_ready": "ready; actual G-W10-Q1–Q8, original inputs only; runtime unknown",
+      "collaboration_ready": "ready; actual round1 author responses and editor exchange, later Dell adoption; current Claude acceptsJohnson and Codex dispositions retained in evidence packet",
+      "final_frozen": "complete_before_deadline",
+      "shared_final": true,
+      "joint_endorsement": false,
+      "claude_latest_scope": "AcceptJohnsonforKelceonly; other8notfreshlyreviewed; no blanketendorsement",
+      "missing_contributions": [
+        "W10-PRACTICE-KC and W10-PRACTICE-CLE-HOU Nov12 requests unanswered byClaude. No post-trade/newGrokscope inferred."
+      ],
+      "disagreements": [
+        "Kelceholddefensible accordingClaude; CodexprefersJohnson.",
+        "Correct 16:30UTC after17:30UTC claim: it is one hour BEFORE. Afternoon inactive lists unpopulated at observed read, not impossible before cutoff.",
+        "Do not adopt Claude55-65%share,12-20+range or model20.9-as-optimistic interpretation as measured/calibrated forecast. Avg8.0 is historical and cannot establish a point distribution.",
+        "Old KC construction was QB plus TWO passcatchers, not three passcatchers. New QB/WR/RB still16800 and same-offense failure risk; no quantified correlation improvement.",
+        "OfficialCSV places Demercado HOU, not KC; undatedpreseasonitem not current KC competition evidence. Ott/NateCarter currentpool; roles unverified."
+      ],
+      "next_action": "Later replies observations/outcomes only, no scored-selection change."
+    }
+  },
+  "disagreement_record": "Codex chose Johnson over defensible Kelce hold; Claude accepted the exact swap, not all nine. Johnson scored33.10 more, with Kelce's in-game injury a confounder. The pregame lead-opportunity argument was supported; a single outcome does not validate every premise.",
+  "additional_failures": [
+    "Claude four SF/DAL players benefited unevenly despite86 combined game points: Watkins6.90. High total did not ensure each role.",
+    "Kaleb Johnson10 carries42 yards,25% snaps and no receiving scored4.20; backfield certainty was unwarranted.",
+    "Marks30 snaps (45%), exited injured,7.50. In-game availability differs from pregame role reasoning.",
+    "Claude's factual Mumpfield correction was warranted even though original Mumpfield11.10 outscored Dell5.10."
+  ],
+  "prior_recovery": {
+    "weeks": "6–9",
+    "existing_status": "Previously complete provisional comparisons; no complete lineup score still null in feed.",
+    "bounded_recheck": "Week9 Seattle DST10 rechecked against ESPN; no material correction observed. Other previous players not comprehensively reverified; prior statuses preserved."
+  },
+  "sources": [
+    {
+      "id": "gamebook-chiefs-at-falcons",
+      "label": "NFL final gamebook: chiefs-at-falcons",
+      "url": "https://static.www.nfl.com/image/upload/v1794826122/gamecenter/ab582f5b-4feb-11f1-abca-2c54536568a9.pdf",
+      "retrieved_at": "2026-11-16T11:58:25.545Z",
+      "retrieved_at_toronto": "2026-11-16T06:58:25.545-05:00",
+      "publication_at": null,
+      "scope": "Nov15 final game statistics, scoring, participation and snap counts; publication/stat-correction clock unknown."
+    },
+    {
+      "id": "gamebook-49ers-at-cowboys",
+      "label": "NFL final gamebook: 49ers-at-cowboys",
+      "url": "https://static.www.nfl.com/image/upload/v1794829724/gamecenter/ab78a748-4feb-11f1-abca-2c54536568a9.pdf",
+      "retrieved_at": "2026-11-16T11:58:06.324Z",
+      "retrieved_at_toronto": "2026-11-16T06:58:06.324-05:00",
+      "publication_at": null,
+      "scope": "Nov15 final game statistics, scoring, participation and snap counts; publication/stat-correction clock unknown."
+    },
+    {
+      "id": "gamebook-texans-at-browns",
+      "label": "NFL final gamebook: texans-at-browns",
+      "url": "https://static.www.nfl.com/image/upload/v1794829724/gamecenter/ab583279-4feb-11f1-abca-2c54536568a9.pdf",
+      "retrieved_at": "2026-11-16T11:58:06.687Z",
+      "retrieved_at_toronto": "2026-11-16T06:58:06.687-05:00",
+      "publication_at": null,
+      "scope": "Nov15 final game statistics, scoring, participation and snap counts; publication/stat-correction clock unknown."
+    },
+    {
+      "id": "gamebook-bills-at-jets",
+      "label": "NFL final gamebook: bills-at-jets",
+      "url": "https://static.www.nfl.com/image/upload/v1794829722/gamecenter/ab789ac9-4feb-11f1-abca-2c54536568a9.pdf",
+      "retrieved_at": "2026-11-16T11:58:06.307Z",
+      "retrieved_at_toronto": "2026-11-16T06:58:06.307-05:00",
+      "publication_at": null,
+      "scope": "Nov15 final game statistics, scoring, participation and snap counts; publication/stat-correction clock unknown."
+    },
+    {
+      "id": "gamebook-dolphins-at-colts",
+      "label": "NFL final gamebook: dolphins-at-colts",
+      "url": "https://static.www.nfl.com/image/upload/v1794829723/gamecenter/ab789365-4feb-11f1-abca-2c54536568a9.pdf",
+      "retrieved_at": "2026-11-16T11:58:26.927Z",
+      "retrieved_at_toronto": "2026-11-16T06:58:26.927-05:00",
+      "publication_at": null,
+      "scope": "Nov15 final game statistics, scoring, participation and snap counts; publication/stat-correction clock unknown."
+    },
+    {
+      "id": "gamebook-rams-at-cardinals",
+      "label": "NFL final gamebook: rams-at-cardinals",
+      "url": "https://static.www.nfl.com/image/upload/v1794829725/gamecenter/ab78a133-4feb-11f1-abca-2c54536568a9.pdf",
+      "retrieved_at": "2026-11-16T11:58:36.128Z",
+      "retrieved_at_toronto": "2026-11-16T06:58:36.128-05:00",
+      "publication_at": null,
+      "scope": "Nov15 final game statistics, scoring, participation and snap counts; publication/stat-correction clock unknown."
+    },
+    {
+      "id": "gamebook-vikings-at-packers",
+      "label": "NFL final gamebook: vikings-at-packers",
+      "url": "https://static.www.nfl.com/image/upload/v1794829721/gamecenter/ab788967-4feb-11f1-abca-2c54536568a9.pdf",
+      "retrieved_at": "2026-11-16T11:58:06.482Z",
+      "retrieved_at_toronto": "2026-11-16T06:58:06.482-05:00",
+      "publication_at": null,
+      "scope": "Nov15 final game statistics, scoring, participation and snap counts; publication/stat-correction clock unknown."
+    },
+    {
+      "id": "rules",
+      "label": "rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-11-16T11:56:55.070Z",
+      "retrieved_at_toronto": "2026-11-16T06:56:55.070-05:00",
+      "publication_at": null,
+      "scope": "NFL Classic roster and exact offense/bonus/DST scoring."
+    },
+    {
+      "id": "week10schedule",
+      "label": "week10schedule",
+      "url": "https://www.nfl.com/schedules/2026/reg10/",
+      "retrieved_at": "2026-11-16T11:56:56.915Z",
+      "retrieved_at_toronto": "2026-11-16T06:56:56.915-05:00",
+      "publication_at": null,
+      "scope": "All ten included Sunday afternoon Week10 games final; excluded Monday game does not block main-slate review."
+    },
+    {
+      "id": "week9recovery",
+      "label": "week9recovery",
+      "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873048",
+      "retrieved_at": "2026-11-16T12:00:08.999Z",
+      "retrieved_at_toronto": "2026-11-16T07:00:08.999-05:00",
+      "publication_at": null,
+      "scope": "Bounded check: SEA 3 sacks, no takeaways or return TD, 3 PA gives10, matching existing Week9 review; not all earlier scores reverified."
+    }
+  ],
+  "runtime": {
+    "agent": "Codex",
+    "exact_model_runtime": null,
+    "cost": null,
+    "tools_observed": [
+      "GitHub",
+      "Firecrawl",
+      "clock",
+      "TIBER capability metadata"
+    ],
+    "tiber": "Current retained ROP/TTS/Forecast routes withheld; no qualified retained evidence used. Withholding does not establish nonexistence. No private league reads or producers."
+  },
+  "limits": [
+    "No ROI, percentile, universal skill claim, significance test or hindsight optimum.",
+    "Pregame picks, salary snapshots, estimates, clocks and expectations remain unchanged.",
+    "Historical sources, prior source conflicts, exposure/clock corrections and incomplete endorsement scope retained."
+  ]
+}

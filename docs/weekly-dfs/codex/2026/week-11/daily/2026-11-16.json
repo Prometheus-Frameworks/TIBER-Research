@@ -1,0 +1,281 @@
+{
+  "schema_version": "tiber-dfs-notebook/v1",
+  "id": "2026-w11-2026-11-16-daily",
+  "date": "2026-11-16",
+  "recorded_at": "2026-11-16T12:07:02Z",
+  "recorded_at_toronto": "2026-11-16T07:07:02-05:00",
+  "time_precision": "observed",
+  "order": 1,
+  "label": "Week11 partial — new prices unverified",
+  "kind": "daily",
+  "status": "partial",
+  "season": 2026,
+  "week": 11,
+  "slate_date": "2026-11-22",
+  "slate_label": "Expected NFL Sunday afternoon main, November22 — official pool unverified",
+  "platform": "DraftKings",
+  "salary_cap": 50000,
+  "salary_total": 0,
+  "salary_remaining": 50000,
+  "projected_total": null,
+  "actual_total": null,
+  "frozen": false,
+  "official_pool_verified": false,
+  "price_status": "unpriced / official_pool_unverified",
+  "projection": null,
+  "picks": [],
+  "research_board": [
+    {
+      "player": "Emmett Johnson",
+      "team": "KC",
+      "position": "RB",
+      "opponent": "ARI",
+      "salary": null,
+      "projected_points": null,
+      "question": "Does the lead opportunity persist with the Week11 backfield available?",
+      "observation": "Week10:22 of27 team carries,57 snaps/88%,seven targets. Walker and Ott did not play.",
+      "judgment": "Worth investigating, conditional on new availability and price; no carryover of38.10 points or $4700.",
+      "challenge": "Walker/Ott return or materially shared usage; Week11 status not yet established.",
+      "source_urls": [
+        "https://static.www.nfl.com/image/upload/v1794826122/gamecenter/ab582f5b-4feb-11f1-abca-2c54536568a9.pdf"
+      ]
+    },
+    {
+      "player": "James Cook III",
+      "team": "BUF",
+      "position": "RB",
+      "opponent": "MIA",
+      "salary": null,
+      "projected_points": null,
+      "question": "Does the new price fairly account for a rushing lead with a weak receiving floor?",
+      "observation": "Week10:18 carries157 yards, including74-yard run; one target, zero receptions.",
+      "judgment": "Keep role on board, compare alternatives once priced. Do not extrapolate long-run efficiency.",
+      "challenge": "Price increase without receiving support or changed availability.",
+      "source_urls": [
+        "https://static.www.nfl.com/image/upload/v1794829722/gamecenter/ab789ac9-4feb-11f1-abca-2c54536568a9.pdf"
+      ]
+    },
+    {
+      "player": "George Pickens",
+      "team": "DAL",
+      "position": "WR",
+      "opponent": "TEN",
+      "salary": null,
+      "projected_points": null,
+      "question": "How should Dallas exposure be allocated between Pickens, Lamb and Prescott?",
+      "observation": "Pickens18 targets11-145-threeTD,74 snaps/89%; Lamb13 targets7-72-TD,72 snaps/87%.",
+      "judgment": "New candidate beyond frozen nine, supported by opportunity; threeTDs and86-point game are not repeat expectations.",
+      "challenge": "Current price, target competition, coverage and availability could favor Lamb, a single receiver, or no Dallas stack.",
+      "source_urls": [
+        "https://static.www.nfl.com/image/upload/v1794829724/gamecenter/ab78a748-4feb-11f1-abca-2c54536568a9.pdf"
+      ]
+    },
+    {
+      "player": "Rashee Rice",
+      "team": "KC",
+      "position": "WR",
+      "opponent": "ARI",
+      "salary": null,
+      "projected_points": null,
+      "question": "Can measured route involvement support pairing Rice with Mahomes at new prices?",
+      "observation": "Week10 six targets5-82,30 snaps/46%; Mahomes348 yards/fiveTDs, none to Rice.",
+      "judgment": "Keep QB/WR construction under review rather than carrying over a stack automatically.",
+      "challenge": "Qualified route data and Week11 receiver rotation are unresolved; team passing success alone does not establish Rice role.",
+      "source_urls": [
+        "https://static.www.nfl.com/image/upload/v1794826122/gamecenter/ab582f5b-4feb-11f1-abca-2c54536568a9.pdf"
+      ]
+    }
+  ],
+  "summary": "Unpriced Week11 board: Johnson backfield availability, Cook's receiving limitation, Pickens versus Lamb allocation, and Rice routes. No verified Week11 priced selections; $50,000 unallocated. Codex first complete v1 remains blocked.",
+  "counterargument": "Week10 touchdowns and explosive gains can distort next-week expectations. Current salaries, official slate admission, availability and coherent projections are unverified.",
+  "revisions": [],
+  "revision_classification": "constraint_or_source_correction",
+  "revision_note": "New weekly slate boundary; no within-week picks changed. Week10 freeze stays immutable; old salaries and off-slate teams cannot be carried forward.",
+  "previous_snapshot_id": null,
+  "previous_snapshot_reference": null,
+  "previous_cycle_final": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/88752e288a2957ac7a994b105dc53caed43a5d47/docs/weekly-dfs/codex/2026/week-10/freeze/20261115T163039Z.md",
+  "slate": {
+    "identity_status": "NFL schedule verified; DK main pool unverified",
+    "draft_group_id": null,
+    "earliest_kickoff": "2026-11-22T18:00:00Z",
+    "deadline": "2026-11-22T17:30:00Z",
+    "deadline_toronto": "2026-11-22T12:30:00-05:00",
+    "rule": "Archive BEFORE12:30Toronto or BEFORE first included kickoff if earlier.",
+    "expected_games": [
+      {
+        "game": "MIA@BUF",
+        "kickoff": "2026-11-22T18:00:00Z"
+      },
+      {
+        "game": "BAL@CAR",
+        "kickoff": "2026-11-22T18:00:00Z"
+      },
+      {
+        "game": "NO@CHI",
+        "kickoff": "2026-11-22T18:00:00Z"
+      },
+      {
+        "game": "TEN@DAL",
+        "kickoff": "2026-11-22T18:00:00Z"
+      },
+      {
+        "game": "TB@DET",
+        "kickoff": "2026-11-22T18:00:00Z"
+      },
+      {
+        "game": "ARI@KC",
+        "kickoff": "2026-11-22T18:00:00Z"
+      },
+      {
+        "game": "PIT@PHI",
+        "kickoff": "2026-11-22T18:00:00Z"
+      },
+      {
+        "game": "NYJ@LAC",
+        "kickoff": "2026-11-22T21:05:00Z"
+      },
+      {
+        "game": "JAX@NYG",
+        "kickoff": "2026-11-22T21:25:00Z"
+      },
+      {
+        "game": "LV@DEN",
+        "kickoff": "2026-11-22T21:25:00Z"
+      }
+    ],
+    "excluded": [
+      {
+        "game": "IND@HOU",
+        "reason": "ThursdayNovember19"
+      },
+      {
+        "game": "MIN@SF",
+        "reason": "SundaynightNovember22, MexicoCity"
+      },
+      {
+        "game": "CIN@WAS",
+        "reason": "MondayNovember23"
+      }
+    ],
+    "byes": [
+      "ATL",
+      "CLE",
+      "GB",
+      "LAR",
+      "NE",
+      "SEA"
+    ],
+    "coverage_limit": "No official DK slate membership certified."
+  },
+  "constraints": {
+    "roster": "QB,RB,RB,WR,WR,WR,TE,FLEX(RB/WR/TE),DST; at least two games.",
+    "complete_lineup_verified": false,
+    "budget_note": "Zero allocated is an empty selection array, not zero-priced players.",
+    "important_unchanged_picks": [],
+    "unknowns": [
+      "Week11 official draft group, eligible prices and IDs",
+      "Current availability/roles",
+      "One coherent projection snapshot"
+    ],
+    "change_triggers": [
+      "Dated Week11 price rows with eligible game/position permit first complete v1.",
+      "Backfield status changes Johnson case; receiver rotation/routes and Dallas salary allocation change construction."
+    ]
+  },
+  "sources": [
+    {
+      "id": "schedule",
+      "label": "NFL Week11 schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-11",
+      "retrieved_at": "2026-11-16T11:57:11.629Z",
+      "publication_at": null,
+      "scope": "2026 Week11 November22 ten afternoon fixtures; SNF in Mexico City excluded, Thursday/Monday excluded; NFL schedule is not official DK admission."
+    },
+    {
+      "id": "prices",
+      "label": "FantasyPros salary changes",
+      "url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+      "retrieved_at": "2026-11-16T11:57:30.880Z",
+      "publication_at": null,
+      "scope": "Still Week10 matchups at observed read; not acceptable Week11 salaries."
+    },
+    {
+      "id": "gamebook-chiefs-at-falcons",
+      "label": "NFL final gamebook: chiefs-at-falcons",
+      "url": "https://static.www.nfl.com/image/upload/v1794826122/gamecenter/ab582f5b-4feb-11f1-abca-2c54536568a9.pdf",
+      "retrieved_at": "2026-11-16T11:58:25.545Z",
+      "retrieved_at_toronto": "2026-11-16T06:58:25.545-05:00",
+      "publication_at": null,
+      "scope": "Nov15 final game statistics, scoring, participation and snap counts; publication/stat-correction clock unknown."
+    },
+    {
+      "id": "gamebook-49ers-at-cowboys",
+      "label": "NFL final gamebook: 49ers-at-cowboys",
+      "url": "https://static.www.nfl.com/image/upload/v1794829724/gamecenter/ab78a748-4feb-11f1-abca-2c54536568a9.pdf",
+      "retrieved_at": "2026-11-16T11:58:06.324Z",
+      "retrieved_at_toronto": "2026-11-16T06:58:06.324-05:00",
+      "publication_at": null,
+      "scope": "Nov15 final game statistics, scoring, participation and snap counts; publication/stat-correction clock unknown."
+    },
+    {
+      "id": "gamebook-bills-at-jets",
+      "label": "NFL final gamebook: bills-at-jets",
+      "url": "https://static.www.nfl.com/image/upload/v1794829722/gamecenter/ab789ac9-4feb-11f1-abca-2c54536568a9.pdf",
+      "retrieved_at": "2026-11-16T11:58:06.307Z",
+      "retrieved_at_toronto": "2026-11-16T06:58:06.307-05:00",
+      "publication_at": null,
+      "scope": "Nov15 final game statistics, scoring, participation and snap counts; publication/stat-correction clock unknown."
+    },
+    {
+      "id": "rules",
+      "label": "rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-11-16T11:56:55.070Z",
+      "retrieved_at_toronto": "2026-11-16T06:56:55.070-05:00",
+      "publication_at": null,
+      "scope": "NFL Classic roster and exact offense/bonus/DST scoring."
+    }
+  ],
+  "source_failures": [
+    "DraftKings lobby exposed registration rather than an accessible pool; no login or transaction attempted.",
+    "Draftgroups API read returned SPO117 bad request; this does not prove the slate unpublished.",
+    "FantasyPros salary page still reflected Week10. A returned FantasyFootballers Week11 article was dated2025 and excluded.",
+    "An alternate NFL reg11 URL returned Week10; use the inspected by-week/week-11 URL.",
+    "No complete projection model used; do not backfill forecasts."
+  ],
+  "collaboration": {
+    "cycle": "2026-week-11",
+    "round": 1,
+    "author": "Codex",
+    "posted_by": "Codex",
+    "codex_v1_ready": "blocked — no complete priced candidate",
+    "claude_v1_ready": "not observed for this cycle",
+    "grok_questions_ready": "not started for this cycle",
+    "collaboration_ready": "blocked",
+    "final_frozen": "not frozen",
+    "next_handoff": "No new provider task today. Retain a complete priced Codex v1 before announcing readiness; do not restart Week10 originals or count partial board as ready.",
+    "exposure": "Week10 author drafts and outcomes were inspected. No Week11 Claude draft observed; no claim of blindness about prior research."
+  },
+  "confounders": {
+    "origin": "agent_chosen",
+    "operator_input": "Standing daily research assignment; no new player-specific instruction this pass.",
+    "runtime": {
+      "agent": "Codex",
+      "exact_model_runtime": null,
+      "cost": null,
+      "tools_observed": [
+        "GitHub",
+        "Firecrawl",
+        "clock",
+        "TIBER capability metadata"
+      ],
+      "tiber": "Current retained ROP/TTS/Forecast routes withheld; no qualified retained evidence used. Withholding does not establish nonexistence. No private league reads or producers."
+    }
+  },
+  "carry_forward": [
+    "Test role applicability anew: lead carries supported Johnson but two receiving TDs are not a floor.",
+    "Preserve failed changes: Dell cost6 points versus Allen despite corrected information; do not prefer a correction only because it scored well.",
+    "Assess Warren team passing opportunity separately from snap share and vacated targets.",
+    "High game total did not guarantee Watkins's role; compare whole-lineup concentration once prices exist."
+  ]
+}
