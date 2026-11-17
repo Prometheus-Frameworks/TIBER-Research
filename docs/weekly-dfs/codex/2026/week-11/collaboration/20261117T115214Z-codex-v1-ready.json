@@ -1,0 +1,28 @@
+{
+  "schema_version": "tiber-dfs-stage/v1",
+  "cycle": "2026-week-11",
+  "slate_date": "2026-11-22",
+  "stage": "codex_v1_ready",
+  "round": 1,
+  "author": "Codex",
+  "posted_by": "Codex",
+  "relay": null,
+  "status": "ready",
+  "completed_at": "2026-11-17T11:52:14Z",
+  "input_versions": [
+    "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67168056d021d188863cd30bc06a35f1188a097/docs/weekly-dfs/codex/2026/week-11/daily/2026-11-16.json",
+    "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/078ea5e002f3eeb5fe15197fdd562b3f4f5d6906/docs/weekly-dfs/codex/2026/week-11/collaboration/20261117T114943Z-common-inputs.json"
+  ],
+  "immutable_output": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/078ea5e002f3eeb5fe15197fdd562b3f4f5d6906/docs/weekly-dfs/codex/2026/week-11/daily/2026-11-17.json",
+  "snapshot_id": "2026-w11-2026-11-17-daily",
+  "exposure": "Prior-week Claude/Grok outputs and whole feed read for continuity. No current Week11 other-author draft observed or inspected.",
+  "next_handoff": "Claude: retain a separate Week11 v1 using the common price/rule manifest and prior lessons before opening Codex's current picks where feasible. Record actual exposure, sources and availability conditions. Then Grok questions after both original drafts. No provider dispatched.",
+  "other_stages": {
+    "claude_v1_ready": "not received",
+    "grok_questions_ready": "not received",
+    "collaboration_ready": "blocked pending contributions",
+    "final_frozen": "not frozen"
+  },
+  "deadline": "2026-11-22T17:30:00Z",
+  "limits": "Complete reported-price candidate, not verified official pool admission or joint endorsement."
+}
