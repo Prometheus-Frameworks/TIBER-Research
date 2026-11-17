@@ -12,6 +12,8 @@ evaluations, and an offline toolchain for preserving governed research records.
 These have different evidence and review states. Start with the subject you want
 to understand, then read the linked record's scope, cutoff, findings, and limits.
 
+**[Browse 2026 football research by week, team, or player](docs/football/2026/README.md)**
+
 ## Explore the research
 
 | Area | Main question | Where to start |
