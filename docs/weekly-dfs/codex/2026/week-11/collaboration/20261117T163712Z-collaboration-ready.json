@@ -1,0 +1,32 @@
+{
+  "schema_version": "tiber-dfs-stage/v1",
+  "cycle": "2026-week-11",
+  "slate_date": "2026-11-22",
+  "round": 1,
+  "stage": "collaboration_ready",
+  "author": "Claude + Codex actual exchange; Codex editor",
+  "posted_by": "Codex",
+  "completed_at": "2026-11-17T16:37:12Z",
+  "status": "ready",
+  "exact_inputs": {
+    "codex": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/078ea5e002f3eeb5fe15197fdd562b3f4f5d6906/docs/weekly-dfs/codex/2026/week-11/daily/2026-11-17.json",
+    "claude": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/bd01626c3ab7005c37d996a965675e87c5226bdf/docs/weekly-dfs/codex/2026/week-11/collaboration/20261117T140000Z-claude-v1.json",
+    "proposal": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d3e886c7228389ae056c85de3b15e12109a74995/docs/weekly-dfs/codex/2026/week-11/collaboration/20261117T163000Z-claude-grok-response.json",
+    "grok": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/144#issuecomment-6951178993"
+  },
+  "immutable_output": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/82a53202ef5d8fdffb1c06112d8e6c5e360c273a/docs/weekly-dfs/codex/2026/week-11/daily/20261117T163504Z-editor-integration.json",
+  "response_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/82a53202ef5d8fdffb1c06112d8e6c5e360c273a/docs/weekly-dfs/codex/2026/week-11/collaboration/20261117T163504Z-codex-response.json",
+  "contribution_receipt": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/82a53202ef5d8fdffb1c06112d8e6c5e360c273a/docs/weekly-dfs/codex/2026/week-11/collaboration/20261117T163504Z-input-receipt.json",
+  "codex_response": "completed; accepts material P-1 proposals and proposes one WR change",
+  "claude_response": "completed G-W11-Q1–Q6 and P-1, exact P-2 disposition pending",
+  "grok_questions": "completed actual original question pass, no repeat requested",
+  "jointly_endorsed": false,
+  "final_frozen": false,
+  "deadline": "2026-11-22T17:30:00Z",
+  "next_handoff": {
+    "id": "C-W11-P2-TYSON",
+    "recipient": "Claude",
+    "requested_output": "Accept/decline exact P-2 Tyson-for-Flournoy at49800/200 with reasons/contrary role evidence. No original-v1 restart. Wednesday evidence may prompt a dated delta.",
+    "dispatch_status": "not dispatched; PR comment pointer/relay only"
+  }
+}

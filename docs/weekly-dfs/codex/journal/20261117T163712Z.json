@@ -1,0 +1,244 @@
+{
+  "schema_version": "tiber-dfs-journal/v1",
+  "entries": [
+    {
+      "schema_version": "tiber-dfs-journal-entry/v1",
+      "id": "2026-w11-exchange-20261117T163712Z",
+      "snapshot_ids": [
+        "2026-w11-editor-integration-20261117T163504Z"
+      ],
+      "kind": "interactive_research",
+      "recorded_at": "2026-11-17T16:37:12Z",
+      "recorded_at_toronto": "2026-11-17T11:37:12.000-05:00",
+      "research_at": "2026-11-17T16:35:04Z",
+      "origin": "mixed",
+      "origin_note": "Operator relayed an actual Claude proposal. Codex chose evidence checks and the Tyson counterproposal; Claude and Grok contributions are attributed. No new operator pick instruction.",
+      "title": "Actual author exchange: Williams direction, Johnson exit and Tyson counterproposal",
+      "question": "Can Claude P-1 improve the working lineup while reducing concentration and replacing unsupported lead-workload assumptions?",
+      "why_it_matters": "The exchange changes four Codex slots and removes the expensive conditional Johnson role while making exact remaining disagreements visible.",
+      "findings": [
+        "Full Chiefs Wire article attributes a planned short absence and expected Walker return; this is reporting, not official Week11 clearance.",
+        "Official DAL book: Williams 16 of20 team carries and70% snaps. Flournoy81% snaps exceeds Tyson71%; Flournoy had one first-half target ofseven, Tyson four of13.",
+        "CBS box verifies Ayomanor ten targets/5-79 with a50-yard gain and Meyers six targets/3-34. Tate report attributes Saleh's hopeful return; two prior missedgames, not a new Week10 injury.",
+        "Primary Eagles November10 review verifies seven sacks against Milton. November16 team preview discusses pressure and plans for Milton; older no-named-starter text should not be repeated as current certainty.",
+        "All nine selected Week11 reported salaries/positions/matchups rechecked. No official pool/IDs or coherent projections verified."
+      ],
+      "interpretation": [
+        "Accept Claude's Williams/LaPorta funding direction and Pittsburgh defense. A run-game path is not a hedge against Dallas offense failing.",
+        "Exit Johnson now, rather than requiring a future FP report before acting on contrary evidence. DNP alone would not establish a renewed lead role.",
+        "Counterpropose Tyson for Flournoy: lower cost and less Dallas exposure with current target evidence. One game is not a durable target floor; more Flournoy snaps is retained contrary evidence.",
+        "Hold Dak/Pickens/Cook without claiming leading-script or blowout splits that were not inspected. Ayomanor and Meyers remain thin/conditional choices."
+      ],
+      "alternatives": [
+        "Claude P-1 unchanged: $49,900/$100; four Dallas players $26,100, five TEN-DAL slots $29,800.",
+        "P-2: Tyson for Flournoy, $49,800/$200; three Dallas $20,800, four TEN-DAL $24,500.",
+        "Codex original Helm/PIT package at $49,700 remains an unadopted comparison; no new Helm role study establishes superiority.",
+        "Returning Johnson for Williams would save $1,300, but requires supported workload evidence, not preference for more salary."
+      ],
+      "uncertainty": [
+        "Official DraftKings pool/IDs and Sunday actives.",
+        "Titans Tate/Robinson and Ayomanor's continuing role.",
+        "Tyson repeat opportunity, Cook's multi-game blowout usage and qualified receiver routes.",
+        "Pittsburgh health and Eagles QB/receiver/protection changes after the bye.",
+        "Claude exact P-2 disposition remains pending; no joint endorsement."
+      ],
+      "lineup_effect": "Four changes from Codex v1: Johnson→Williams +1300, Rice→Ayomanor −2400, Freiermuth→Meyers +600, Dallas→Pittsburgh +400. Net−100 to49800/200. Relative to Claude P-1: Flournoy→Tyson −100. Six games. No freeze.",
+      "change_triggers": [
+        "CredibleWalkerabsence/materialrestrictionANDJohnsonlead evidence canreopenJohnson; notDNPalone.",
+        "TitansTate/Robinsonpractice/role changesAyomanorcase; investigate fundedreplacementratherthanautomaticDike.",
+        "Tysonroleparticipation decline,FlournoyretainedroleorbetterWRcomparison canchangeWR3.",
+        "PHIQB/protection/receiver changes orPITdefensestatuscanchangeDST."
+      ],
+      "carry_forward": [
+        "Question-driven revision should compare opportunity, price and concentration together; consensus adds no football evidence.",
+        "An unavailability-dependent expensive RB can be removed on credible contrary reporting before final practice clearance; later evidence can reopen it.",
+        "Preserve dated clocks and attribution corrections rather than rewriting earlier drafts. Existing Week10 scoring remains provisional unchanged; this was not a scoring audit."
+      ],
+      "sources": [
+        {
+          "id": "prices",
+          "label": "prices",
+          "url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "retrieved_at": "2026-11-17T16:35:04Z",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Week11 reported rows for all nine, positions, opponents and Sunday kickoff; not official pool.",
+          "retrieval_note": "Receipt clock recorded after this bounded pass's actual completed reads; source publication is separate."
+        },
+        {
+          "id": "dallas",
+          "label": "dallas",
+          "url": "https://static.www.nfl.com/image/upload/v1794829724/gamecenter/ab78a748-4feb-11f1-abca-2c54536568a9.pdf",
+          "retrieved_at": "2026-11-17T16:35:04Z",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Official Week10 book: Javonte16/20 team carries, 58snaps70%, 11 first-half carries; Pickens18targets, ten first-half; Flournoy7targets, one first-half, 67snaps81%; Dallas five sacks and46allowed.",
+          "retrieval_note": "Receipt clock recorded after this bounded pass's actual completed reads; source publication is separate."
+        },
+        {
+          "id": "tyson",
+          "label": "tyson",
+          "url": "https://static.www.nfl.com/image/upload/v1794829721/gamecenter/ab789769-4feb-11f1-abca-2c54536568a9.pdf",
+          "retrieved_at": "2026-11-17T16:35:04Z",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "Official Week10 book: Tyson13targets11-80; four first-half targets2-28;45snaps71%. Snap share not routes.",
+          "retrieval_note": "Receipt clock recorded after this bounded pass's actual completed reads; source publication is separate."
+        },
+        {
+          "id": "walker",
+          "label": "walker",
+          "url": "https://chiefswire.usatoday.com/story/sports/nfl/chiefs/2026/11/16/kenneth-walker-injury-good-news-positive-update-kansas-city-chiefs-nfl-week-11/92820694007/",
+          "retrieved_at": "2026-11-17T16:35:04Z",
+          "publication_at": "2026-11-17T03:46:00Z",
+          "publication_display": null,
+          "scope": "Full inspected article attributes expected Week11 return to Schefter; not a practice designation or clearance.",
+          "retrieval_note": "Receipt clock recorded after this bounded pass's actual completed reads; source publication is separate."
+        },
+        {
+          "id": "phi",
+          "label": "phi",
+          "url": "https://northeasttimes.com/?p=166359",
+          "retrieved_at": "2026-11-17T16:35:04Z",
+          "publication_at": "2026-11-11T15:00:00Z",
+          "publication_display": null,
+          "scope": "Secondary November11 article, modifiedNov13, describes HurtsIR and prior QB/protection history; not a current starter announcement.",
+          "retrieval_note": "Receipt clock recorded after this bounded pass's actual completed reads; source publication is separate."
+        },
+        {
+          "id": "ten",
+          "label": "ten",
+          "url": "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261115_JAC@TEN/",
+          "retrieved_at": "2026-11-17T16:35:04Z",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "CBS Week10 box: Ayomanor10targets5-79 including50-yard gain; Meyers6targets3-34; Pollard9carries/9targets8-66,22seasonreceptions. Tate scratched, Robinson ankle evaluation.",
+          "retrieval_note": "Receipt clock recorded after this bounded pass's actual completed reads; source publication is separate."
+        },
+        {
+          "id": "phiPrimary",
+          "label": "phiPrimary",
+          "url": "https://www.philadelphiaeagles.com/news/aaa-official-review-what-did-the-eagles-joe-milton-learn-from-the-qb-s-first-start-giants-nfl-week-9-2026",
+          "retrieved_at": "2026-11-17T16:35:04Z",
+          "publication_at": null,
+          "publication_display": "Nov10,2026 05:00AM; zone not explicitly printed",
+          "scope": "Primary November10 review verifies Milton18/34,169yards,seven sacks,9rushes64yards and then-unknown Week11 starter; dated scope retained.",
+          "retrieval_note": "Receipt clock recorded after this bounded pass's actual completed reads; source publication is separate."
+        },
+        {
+          "id": "tate",
+          "label": "tate",
+          "url": "https://www.cbssports.com/fantasy/football/news/titans-carnell-tate-expected-back-for-week-11/",
+          "retrieved_at": "2026-11-17T16:35:04Z",
+          "publication_at": "2026-11-16T14:23:00Z",
+          "publication_display": null,
+          "scope": "Full RotoWire/CBS report attributes Saleh hopeful return, prior two missedgames and no Week10 practice; availability remains prospective.",
+          "retrieval_note": "Receipt clock recorded after this bounded pass's actual completed reads; source publication is separate."
+        },
+        {
+          "id": "schedule",
+          "label": "schedule",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-11",
+          "retrieved_at": "2026-11-17T16:35:04Z",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "NFL Week11 November22 fixtures rechecked; six selected afternoon games, earliest18UTC; officialDKpool unverified.",
+          "retrieval_note": "Receipt clock recorded after this bounded pass's actual completed reads; source publication is separate."
+        },
+        {
+          "id": "phiLatest",
+          "label": "phiLatest",
+          "url": "https://www.philadelphiaeagles.com/news/eagles-sign-zach-ertz-make-several-roster-moves-as-team-is-back-from-the-bye",
+          "retrieved_at": "2026-11-17T16:35:04Z",
+          "publication_at": null,
+          "publication_display": "Nov16,2026 04:00PM; zone not explicitly printed",
+          "scope": "Primary November16 preview discusses pressure/Watt and plans to place Milton in favorable situations; stronger current indication of Milton plan, not a formal game designation. AddsErtz/OT Ojukwu; adjustments can help offense.",
+          "retrieval_note": "Receipt clock recorded after this bounded pass's actual completed reads; source publication is separate."
+        },
+        {
+          "id": "rules",
+          "label": "rules",
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-17T16:35:04Z",
+          "publication_at": null,
+          "publication_display": null,
+          "scope": "NFLClassic nine slots,50000cap,at leasttwo games and exact scoring inspected; experimental12:30deadline remains stricter than platform lock.",
+          "retrieval_note": "Receipt clock recorded after this bounded pass's actual completed reads; source publication is separate."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w11-editor-integration-20261117T163504Z",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/82a53202ef5d8fdffb1c06112d8e6c5e360c273a/docs/weekly-dfs/codex/2026/week-11/daily/20261117T163504Z-editor-integration.json"
+        }
+      ],
+      "expectations": [
+        {
+          "id": "2026-w11-williams-run-role-20261117T163712Z",
+          "subject": "Javonte Williams",
+          "statement": "Working expectation: remains Dallas's leading rushing option; no promise of a touchdown or receiving floor.",
+          "support": "16 of20 team carries,58snaps/70%,11 first-half carries in the official Week10 book.",
+          "uncertainty": "One game, game script and the opposing pass stack may limit upside.",
+          "challenge": "A changed backfield role, health issue or materially reduced carry share challenges the selection.",
+          "observe": "Week11 RB carries and offensive snaps; separate game script and touchdowns from opportunity.",
+          "source_urls": [
+            "https://static.www.nfl.com/image/upload/v1794829724/gamecenter/ab78a748-4feb-11f1-abca-2c54536568a9.pdf"
+          ],
+          "recorded_at": "2026-11-17T16:37:12Z"
+        },
+        {
+          "id": "2026-w11-ayomanor-condition-20261117T163712Z",
+          "subject": "Elic Ayomanor",
+          "statement": "Working selection requires meaningful receiving involvement despite possible Tate/Robinson returns; no guaranteed ten-target workload.",
+          "support": "Ten Week10 targets,5-79 while Tate was inactive; current hopeful Tate return report.",
+          "uncertainty": "Week10 opportunity may depend on missing teammates;50yards on one play.",
+          "challenge": "Tate/Robinson returning to substantial work with Ayomanor losing participation challenges the cheap-role premise.",
+          "observe": "Week11 availability, targets and snaps/routes where supported, separated from long-play yardage.",
+          "source_urls": [
+            "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261115_JAC@TEN/",
+            "https://www.cbssports.com/fantasy/football/news/titans-carnell-tate-expected-back-for-week-11/"
+          ],
+          "recorded_at": "2026-11-17T16:37:12Z"
+        },
+        {
+          "id": "2026-w11-pit-pressure-condition-20261117T163712Z",
+          "subject": "Pittsburgh DST",
+          "statement": "Working case relies on pressuring an Eagles offense with observed protection difficulty, not on a shutout or a specified sack count.",
+          "support": "Milton seven prior sacks in the team's review; November16 preview explicitly discusses Pittsburgh pressure.",
+          "uncertainty": "Bye adjustments, Barkley, receiver returns and Steelers offensive weakness can overturn the matchup.",
+          "challenge": "Stronger protection or an altered QB/receiver plan can reduce the pressure rationale.",
+          "observe": "QB/start context, sacks, turnovers and points allowed; distinguish defensive pressure from short-field points.",
+          "source_urls": [
+            "https://www.philadelphiaeagles.com/news/aaa-official-review-what-did-the-eagles-joe-milton-learn-from-the-qb-s-first-start-giants-nfl-week-9-2026",
+            "https://www.philadelphiaeagles.com/news/eagles-sign-zach-ertz-make-several-roster-moves-as-team-is-back-from-the-bye"
+          ],
+          "recorded_at": "2026-11-17T16:37:12Z"
+        },
+        {
+          "id": "2026-w11-cook-rushing-role-20261117T163712Z",
+          "subject": "James Cook III",
+          "statement": "Working expectation is continued rushing leadership; receiving and late-game work are not assumed secure.",
+          "support": "Retained morning notebook records18carries and one target, including74-yard TD run.",
+          "uncertainty": "No current multi-game blowout split inspected; efficiency can regress.",
+          "challenge": "Reduced carry share or early removal would challenge opportunity, separately from efficiency.",
+          "observe": "Week11 RB carry distribution, targets and late-game usage if game state supports assessment.",
+          "source_urls": [
+            "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/078ea5e002f3eeb5fe15197fdd562b3f4f5d6906/docs/weekly-dfs/codex/2026/week-11/daily/2026-11-17.json"
+          ],
+          "recorded_at": "2026-11-17T16:37:12Z"
+        }
+      ],
+      "outcomes": [],
+      "retained_expectation_refs": [
+        {
+          "id": "2026-w11-pickens-role-1117",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/ed581e4a7a40f8f3a9adf5acfb08776038345d36/docs/weekly-dfs/codex/journal/20261117T115214Z.json"
+        },
+        {
+          "id": "2026-w11-tyson-role-1117",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/ed581e4a7a40f8f3a9adf5acfb08776038345d36/docs/weekly-dfs/codex/journal/20261117T115214Z.json"
+        }
+      ]
+    }
+  ]
+}
