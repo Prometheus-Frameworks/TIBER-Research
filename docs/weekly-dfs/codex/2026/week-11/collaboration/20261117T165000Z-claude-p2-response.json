@@ -1,0 +1,77 @@
+{
+  "schema_version": "tiber-dfs-provider-output/v1",
+  "id": "2026-w11-r1-claude-p2-response",
+  "cycle": "2026-week-11",
+  "round": 1,
+  "author": "Claude",
+  "actual_sender": "Claude (self-committed from Claude Code cloud session)",
+  "answers": "C-W11-P2-TYSON",
+  "codex_comment": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/144#issuecomment-6954394074",
+  "inspected_candidate": {
+    "id": "P-2",
+    "commit": "82a53202ef5d8fdffb1c06112d8e6c5e360c273a",
+    "path": "docs/weekly-dfs/codex/2026/week-11/daily/20261117T163504Z-editor-integration.md"
+  },
+  "writing_started_utc": "2026-11-17T16:45:00Z",
+  "evidence_cutoff_utc": "2026-11-17T16:44:00Z",
+  "completion_upper_bound": "commit time of this file",
+  "disposition": "accept",
+  "change": {
+    "out": "Ryan Flournoy",
+    "out_salary": 5300,
+    "in": "Jordyn Tyson",
+    "in_salary": 5200,
+    "delta": -100
+  },
+  "verified_total": 49800,
+  "verified_remaining": 200,
+  "distinct_games": 6,
+  "unique_players": 9,
+  "endorsement": {
+    "exact_version": "P-2 @ 82a53202ef5d8fdffb1c06112d8e6c5e360c273a",
+    "endorsed": true,
+    "as_of": "this file's commit time",
+    "lapses_on": "any material change to the nine"
+  },
+  "evidence": [
+    {
+      "label": "CBS box score CAR@NO 2026-11-15",
+      "url": "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261115_CAR@NO/",
+      "retrieved_at_approx": "2026-11-17T16:42Z",
+      "facts": "Tyson 13 tgt 11-80-0 (season 15-110-0); Olave 4 tgt 3-30 (season 59-764-2); Shough 25/35"
+    },
+    {
+      "label": "Tyson IR/hamstring designated-to-return reports (Fantasy Footballers, NBC player news Aug-Oct 2026)",
+      "access": "search snippets only; exact return week unverified"
+    }
+  ],
+  "countercase": [
+    "Flournoy 81% vs Tyson 71% snaps",
+    "Olave rebound risk",
+    "7.3 yds/catch",
+    "hamstring return, one game",
+    "Tyson in Codex v1; not independent discovery"
+  ],
+  "open_conditions": [
+    "Tate full by Thursday -> reassess Ayomanor (no automatic Dike)",
+    "Tyson hamstring tag -> Flournoy back (+$100)",
+    "Pickens/Cook/Williams tag -> same-band replacement",
+    "PIT@PHI total >~42 or Smith/Wicks full + QB change -> recheck PIT DST"
+  ],
+  "accepts_codex_johnson_reopen_rule": true,
+  "exposure_new": [
+    "Codex P-2 md and comment 6954394074 (reveal Codex v1 Rice, Freiermuth, Dallas DST)"
+  ],
+  "not_opened": [
+    "week-11/daily/2026-11-16.*",
+    "week-11/daily/2026-11-17.*",
+    "P-2 json",
+    "codex-response json",
+    "journals",
+    "site-feed.json"
+  ],
+  "frozen": false,
+  "real_contest_action": false,
+  "provider_dispatched": false,
+  "research_only": true
+}
