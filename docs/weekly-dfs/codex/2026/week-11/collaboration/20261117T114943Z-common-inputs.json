@@ -1,0 +1,108 @@
+{
+  "cycle": "2026-week-11",
+  "round": 1,
+  "recorded_at": "2026-11-17T11:49:43Z",
+  "slate": {
+    "identity_status": "NFL schedule verified; DK main pool unverified",
+    "draft_group_id": null,
+    "earliest_kickoff": "2026-11-22T18:00:00Z",
+    "deadline": "2026-11-22T17:30:00Z",
+    "deadline_toronto": "2026-11-22T12:30:00-05:00",
+    "rule": "Archive BEFORE12:30Toronto or BEFORE first included kickoff if earlier.",
+    "expected_games": [
+      {
+        "game": "MIA@BUF",
+        "kickoff": "2026-11-22T18:00:00Z"
+      },
+      {
+        "game": "BAL@CAR",
+        "kickoff": "2026-11-22T18:00:00Z"
+      },
+      {
+        "game": "NO@CHI",
+        "kickoff": "2026-11-22T18:00:00Z"
+      },
+      {
+        "game": "TEN@DAL",
+        "kickoff": "2026-11-22T18:00:00Z"
+      },
+      {
+        "game": "TB@DET",
+        "kickoff": "2026-11-22T18:00:00Z"
+      },
+      {
+        "game": "ARI@KC",
+        "kickoff": "2026-11-22T18:00:00Z"
+      },
+      {
+        "game": "PIT@PHI",
+        "kickoff": "2026-11-22T18:00:00Z"
+      },
+      {
+        "game": "NYJ@LAC",
+        "kickoff": "2026-11-22T21:05:00Z"
+      },
+      {
+        "game": "JAX@NYG",
+        "kickoff": "2026-11-22T21:25:00Z"
+      },
+      {
+        "game": "LV@DEN",
+        "kickoff": "2026-11-22T21:25:00Z"
+      }
+    ],
+    "excluded": [
+      {
+        "game": "IND@HOU",
+        "reason": "ThursdayNovember19"
+      },
+      {
+        "game": "MIN@SF",
+        "reason": "SundaynightNovember22, MexicoCity"
+      },
+      {
+        "game": "CIN@WAS",
+        "reason": "MondayNovember23"
+      }
+    ],
+    "byes": [
+      "ATL",
+      "CLE",
+      "GB",
+      "LAR",
+      "NE",
+      "SEA"
+    ],
+    "coverage_limit": "No official DK slate membership certified."
+  },
+  "rules_url": "https://www.draftkings.com/help/rules/1",
+  "prices_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+  "prices_retrieved_at": "2026-11-17T11:48:30Z",
+  "publication_at": null,
+  "coverage": "Selected and alternative reported rows, not a complete official pool. Contains Codex candidates unmarked; disclose this exposure.",
+  "rows": [
+    "| 58 | [Emmett Johnson](https://www.fantasypros.com/nfl/players/emmett-johnson.php \"Open player card for Emmett Johnson\")(KC - RB) | Sun 1:00PM | ARI | $6,000 | $4,700 | +1,300 |",
+    "| - | [Roman Wilson](https://www.fantasypros.com/nfl/players/roman-wilson-wr.php \"Open player card for Roman Wilson\")(PIT - WR) | Sun 1:00PM | @PHI | $3,900 | $3,000 | +900 |",
+    "| - | [Kansas City Chiefs](https://www.fantasypros.com/nfl/players/kansas-city-defense.php \"Open player card for Kansas City Chiefs\")(KC - DST) | Sun 1:00PM | ARI | $4,000 | $3,200 | +800 |",
+    "| - | [Los Angeles Chargers](https://www.fantasypros.com/nfl/players/los-angeles-chargers-defense.php \"Open player card for Los Angeles Chargers\")(LAC - DST) | Sun 4:05PM | NYJ | $3,000 | $2,300 | +700 |",
+    "| - | [Dallas Cowboys](https://www.fantasypros.com/nfl/players/dallas-defense.php \"Open player card for Dallas Cowboys\")(DAL - DST) | Sun 1:00PM | TEN | $2,900 | $2,300 | +600 |",
+    "| 5 | [Patrick Mahomes II](https://www.fantasypros.com/nfl/players/patrick-mahomes.php \"Open player card for Patrick Mahomes II\")(KC - QB) | Sun 1:00PM | ARI | $6,500 | $6,000 | +500 |",
+    "| 8 | [James Cook III](https://www.fantasypros.com/nfl/players/james-cook.php \"Open player card for James Cook III\")(BUF - RB) | Sun 1:00PM | MIA | $7,900 | $7,400 | +500 |",
+    "| 30 | [George Pickens](https://www.fantasypros.com/nfl/players/george-pickens.php \"Open player card for George Pickens\")(DAL - WR) | Sun 1:00PM | TEN | $6,800 | $6,300 | +500 |",
+    "| 7 | [Dak Prescott](https://www.fantasypros.com/nfl/players/dak-prescott.php \"Open player card for Dak Prescott\")(DAL - QB) | Sun 1:00PM | TEN | $6,700 | $6,400 | +300 |",
+    "| 170 | [Gunnar Helm](https://www.fantasypros.com/nfl/players/gunnar-helm.php \"Open player card for Gunnar Helm\")(TEN - TE) | Sun 1:00PM | @DAL | $3,300 | $3,000 | +300 |",
+    "| 108 | [Pat Freiermuth](https://www.fantasypros.com/nfl/players/pat-freiermuth.php \"Open player card for Pat Freiermuth\")(PIT - TE) | Sun 1:00PM | @PHI | $3,900 | $3,700 | +200 |",
+    "| 69 | [Jordyn Tyson](https://www.fantasypros.com/nfl/players/jordyn-tyson.php \"Open player card for Jordyn Tyson\")(NO - WR) | Sun 1:00PM | @CHI | $5,200 | $5,000 | +200 |",
+    "| 6 | [CeeDee Lamb](https://www.fantasypros.com/nfl/players/ceedee-lamb.php \"Open player card for CeeDee Lamb\")(DAL - WR) | Sun 1:00PM | TEN | $8,800 | $8,800 | 0 |",
+    "| 54 | [Rashee Rice](https://www.fantasypros.com/nfl/players/rashee-rice.php \"Open player card for Rashee Rice\")(KC - WR) | Sun 1:00PM | ARI | $6,100 | $6,100 | 0 |",
+    "| 73 | [Sam LaPorta](https://www.fantasypros.com/nfl/players/sam-laporta.php \"Open player card for Sam LaPorta\")(DET - TE) | Sun 1:00PM | TB | $4,400 | $4,600 | -200 |",
+    "| 71 | [Dalton Kincaid](https://www.fantasypros.com/nfl/players/dalton-kincaid.php \"Open player card for Dalton Kincaid\")(BUF - TE) | Sun 1:00PM | MIA | $4,800 | $5,100 | -300 |"
+  ],
+  "lessons": [
+    "Test role applicability anew: lead carries supported Johnson but two receiving TDs are not a floor.",
+    "Preserve failed changes: Dell cost6 points versus Allen despite corrected information; do not prefer a correction only because it scored well.",
+    "Assess Warren team passing opportunity separately from snap share and vacated targets.",
+    "High game total did not guarantee Watkins's role; compare whole-lineup concentration once prices exist."
+  ],
+  "projection": null
+}
