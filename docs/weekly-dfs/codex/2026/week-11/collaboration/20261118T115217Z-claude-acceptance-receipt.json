@@ -1,0 +1,26 @@
+{
+  "schema_version": "tiber-dfs-provider-receipt/v1",
+  "cycle": "2026-week-11",
+  "round": 1,
+  "stage": "collaboration_ready",
+  "status": "ready",
+  "recorded_at": "2026-11-18T11:52:17Z",
+  "recorded_at_toronto": "2026-11-18T06:52:17-05:00",
+  "author": "Claude",
+  "retained_by": "Codex",
+  "posted_by": "Claude session viaoperatorGitHubaccount",
+  "comment": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/144#issuecomment-6954497612",
+  "exact_input": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/82a53202ef5d8fdffb1c06112d8e6c5e360c273a/docs/weekly-dfs/codex/2026/week-11/daily/20261117T163504Z-editor-integration.json",
+  "immutable_output": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/da3a051e8df9d2889cc5c4e8484defaccb81238c/docs/weekly-dfs/codex/2026/week-11/collaboration/20261117T165000Z-claude-p2-response.json",
+  "completed_at_upper_bound": "2026-11-17T16:41:57Z",
+  "correction_commit": "7111ed75a476a55606fdb1d816633926419561d2",
+  "correction_completion_upper_bound": "2026-11-17T16:42:11Z",
+  "clock_integrity": "Written16:45/evidence16:44/retrievalapprox16:42after16:41:57commit; correctionwritten16:43after16:42:11commit. Preserveerrors; exactretrievalunknown. Commitboundsnotretrievalclocks.",
+  "codex_endorsement": {
+    "at": "2026-11-18T11:52:17Z",
+    "input": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/82a53202ef5d8fdffb1c06112d8e6c5e360c273a/docs/weekly-dfs/codex/2026/week-11/daily/20261117T163504Z-editor-integration.json",
+    "disposition": "endorse unchanged exactP2selection"
+  },
+  "next_action": "No routineClaude/Grokreply. Reopen dateddelta on materialpractice/role/selectionchange; exactendorsementdoesnottransfer to changednine.",
+  "final_frozen": false
+}
