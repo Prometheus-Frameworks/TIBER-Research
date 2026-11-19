@@ -1,9 +1,9 @@
 {
   "schema_version": "tiber-dfs-site/v1",
-  "updated_at": "2026-11-18T11:55:50Z",
+  "updated_at": "2026-11-19T11:12:52Z",
   "title": "TIBER DFS Research Arena",
   "timezone": "America/Toronto",
-  "next_scheduled_date": "2026-11-19",
+  "next_scheduled_date": "2026-11-20",
   "research_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/144",
   "protocol_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/codex/weekly-dfs-2026-week-06/docs/weekly-dfs/codex/EXPERIMENT.md",
   "snapshots": [
@@ -11822,9 +11822,592 @@
         ]
       },
       "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/cda901f8217aa0a94beb1010d69ef696d1fb194c/docs/weekly-dfs/codex/2026/week-11/daily/2026-11-18.md"
+    },
+    {
+      "schema_version": "tiber-dfs-notebook/v1",
+      "id": "2026-w11-2026-11-19-daily",
+      "date": "2026-11-19",
+      "recorded_at": "2026-11-19T11:10:08Z",
+      "recorded_at_toronto": "2026-11-19T06:10:08-05:00",
+      "time_precision": "observed",
+      "order": 1,
+      "label": "Shared P-2 held — Thursday availability check",
+      "kind": "daily",
+      "status": "complete",
+      "season": 2026,
+      "week": 11,
+      "slate_date": "2026-11-22",
+      "slate_label": "Expected NFL Sunday afternoon main, November 22 — official pool unverified",
+      "platform": "DraftKings",
+      "salary_cap": 50000,
+      "salary_total": 49800,
+      "salary_remaining": 200,
+      "projected_total": null,
+      "actual_total": null,
+      "frozen": false,
+      "official_pool_verified": false,
+      "price_status": "reported_prices / official_pool_unverified",
+      "projection": null,
+      "picks": [
+        {
+          "slot": "QB",
+          "position": "QB",
+          "player": "Dak Prescott",
+          "team": "DAL",
+          "opponent": "TEN",
+          "home": true,
+          "salary": 6700,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Retain the Dak/Pickens pairing; no Wednesday injury entry for Dak. Prior game-book passing concentration supports the pair, but a Dallas lead can reduce attempts.",
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "salary_receipt": "| 6 | [Dak Prescott](https://www.fantasypros.com/nfl/players/dak-prescott.php \"Open player card for Dak Prescott\")(DAL - QB) | Sun 1:00PM | TEN | $6,700 | $6,400 | +300 |",
+          "salary_verified_at": "2026-11-19T11:10:08Z",
+          "official_player_id": null
+        },
+        {
+          "slot": "RB",
+          "position": "RB",
+          "player": "James Cook III",
+          "team": "BUF",
+          "opponent": "MIA",
+          "home": true,
+          "salary": 7900,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Retain the rushing lead, without treating the prior long TD as a floor. Cook absent from Wednesday report; Bills held a walk-through and Davis was limited. No Sunday clearance or extra Cook touches inferred.",
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "salary_receipt": "| 11 | [James Cook III](https://www.fantasypros.com/nfl/players/james-cook.php \"Open player card for James Cook III\")(BUF - RB) | Sun 1:00PM | MIA | $7,900 | $7,400 | +500 |",
+          "salary_verified_at": "2026-11-19T11:10:08Z",
+          "official_player_id": null
+        },
+        {
+          "slot": "RB",
+          "position": "RB",
+          "player": "Javonte Williams",
+          "team": "DAL",
+          "opponent": "TEN",
+          "home": true,
+          "salary": 7300,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Retain Claude's lead-back direction. Williams absent from Wednesday injury report; Ferguson DNP is not assumed to transfer targets or TDs. Pollard's case improves only conditionally if Spears remains unavailable.",
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "salary_receipt": "| 23 | [Javonte Williams](https://www.fantasypros.com/nfl/players/javonte-williams.php \"Open player card for Javonte Williams\")(DAL - RB) | Sun 1:00PM | TEN | $7,300 | $7,500 | -200 |",
+          "salary_verified_at": "2026-11-19T11:10:08Z",
+          "official_player_id": null
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "George Pickens",
+          "team": "DAL",
+          "opponent": "TEN",
+          "home": true,
+          "salary": 6800,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Retain the previously documented target/snap role, not a repeat of three TDs. Pickens absent from Wednesday report; Dallas concentration remains a whole-lineup risk.",
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "salary_receipt": "| 34 | [George Pickens](https://www.fantasypros.com/nfl/players/george-pickens.php \"Open player card for George Pickens\")(DAL - WR) | Sun 1:00PM | TEN | $6,800 | $6,300 | +500 |",
+          "salary_verified_at": "2026-11-19T11:10:08Z",
+          "official_player_id": null
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "Jordyn Tyson",
+          "team": "NO",
+          "opponent": "CHI",
+          "home": false,
+          "salary": 5200,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Hold the documented Week 10 opportunity provisionally. New chest LP is distinct from the earlier hamstring history; worsening participation or an indicated workload restriction would reopen the funded Flournoy comparison.",
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "salary_receipt": "| 61 | [Jordyn Tyson](https://www.fantasypros.com/nfl/players/jordyn-tyson.php \"Open player card for Jordyn Tyson\")(NO - WR) | Sun 1:00PM | @CHI | $5,200 | $5,000 | +200 |",
+          "salary_verified_at": "2026-11-19T11:10:08Z",
+          "official_player_id": null
+        },
+        {
+          "slot": "WR",
+          "position": "WR",
+          "player": "Elic Ayomanor",
+          "team": "TEN",
+          "opponent": "DAL",
+          "home": false,
+          "salary": 3700,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Hold at $3,700 with less security: Tate shoulder LP and coach expects more Restrepo involvement. No automatic Dike/Restrepo swap without evidence that their future role is preferable.",
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "salary_receipt": "| 126 | [Elic Ayomanor](https://www.fantasypros.com/nfl/players/elic-ayomanor.php \"Open player card for Elic Ayomanor\")(TEN - WR) | Sun 1:00PM | @DAL | $3,700 | $3,200 | +500 |",
+          "salary_verified_at": "2026-11-19T11:10:08Z",
+          "official_player_id": null
+        },
+        {
+          "slot": "TE",
+          "position": "TE",
+          "player": "Sam LaPorta",
+          "team": "DET",
+          "opponent": "TB",
+          "home": true,
+          "salary": 4400,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Retain the funding selection. LaPorta absent from Wednesday report; Mayfield DNP is a game-environment uncertainty, not a LaPorta target forecast. Kincaid's DNP does not validate this choice retrospectively.",
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "salary_receipt": "| 71 | [Sam LaPorta](https://www.fantasypros.com/nfl/players/sam-laporta.php \"Open player card for Sam LaPorta\")(DET - TE) | Sun 1:00PM | TB | $4,400 | $4,600 | -200 |",
+          "salary_verified_at": "2026-11-19T11:10:08Z",
+          "official_player_id": null
+        },
+        {
+          "slot": "FLEX",
+          "position": "WR",
+          "player": "Jakobi Meyers",
+          "team": "JAX",
+          "opponent": "NYG",
+          "home": false,
+          "salary": 4500,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Hold despite ankle LP; the ankle was already reported last week. Prior participation supports the receiving FLEX, but target-count conflict and JAX line injuries remain. Sunday clearance is unverified.",
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "salary_receipt": "| 87 | [Jakobi Meyers](https://www.fantasypros.com/nfl/players/jakobi-meyers.php \"Open player card for Jakobi Meyers\")(JAC - WR) | Sun 4:25PM | @NYG | $4,500 | $4,200 | +300 |",
+          "salary_verified_at": "2026-11-19T11:10:08Z",
+          "official_player_id": null
+        },
+        {
+          "slot": "DST",
+          "position": "DST",
+          "player": "Pittsburgh Steelers",
+          "team": "PIT",
+          "opponent": "PHI",
+          "home": false,
+          "salary": 3300,
+          "projected_points": null,
+          "actual_points": null,
+          "rationale": "Hold conditionally: Herbig injury DNP weakens pressure assumptions, while Watt/Heyward rest DNP is not the same signal. Smith/Wicks LP and Barkley FP improve possible Philadelphia support; starting QB and final defensive availability remain unresolved.",
+          "salary_source_url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "salary_receipt": "| - | [Pittsburgh Steelers](https://www.fantasypros.com/nfl/players/pittsburgh-defense.php \"Open player card for Pittsburgh Steelers\")(PIT - DST) | Sun 1:00PM | @PHI | $3,300 | $2,800 | +500 |",
+          "salary_verified_at": "2026-11-19T11:10:08Z",
+          "official_player_id": null
+        }
+      ],
+      "research_board": [],
+      "summary": "Codex retains the exact Claude-endorsed P-2 nine: $49,800 spent, $200 left. Wednesday reports add Tyson chest LP, Meyers ankle LP, Tate shoulder LP, and Pittsburgh/Philadelphia availability cautions. No new author response or selection change. Today's evidence and prose are Codex-authored; not frozen.",
+      "counterargument": "Two selected receivers are limited, Ayomanor faces Tate's possible return and a larger Restrepo role, and Pittsburgh's pressure case faces Herbig's injury plus possible Philadelphia receiver returns. Dallas still costs $20,800 across three players; TEN–DAL costs $24,500. One Wednesday report cannot resolve Sunday participation.",
+      "revisions": [],
+      "revision_classification": "unchanged",
+      "revision_note": "No picks or original salaries changed. New availability evidence qualifies the hold; earlier source clocks and selection history are preserved.",
+      "previous_snapshot_id": "2026-w11-2026-11-18-daily",
+      "previous_snapshot_reference": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/cda901f8217aa0a94beb1010d69ef696d1fb194c/docs/weekly-dfs/codex/2026/week-11/daily/2026-11-18.json",
+      "previous_cycle_final": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/88752e288a2957ac7a994b105dc53caed43a5d47/docs/weekly-dfs/codex/2026/week-10/freeze/20261115T163039Z.md",
+      "slate": {
+        "identity_status": "NFL schedule verified; DK main pool unverified",
+        "draft_group_id": null,
+        "earliest_kickoff": "2026-11-22T18:00:00Z",
+        "deadline": "2026-11-22T17:30:00Z",
+        "deadline_toronto": "2026-11-22T12:30:00-05:00",
+        "rule": "Archive BEFORE Sunday 12:30 p.m. America/Toronto, or BEFORE first included kickoff if earlier.",
+        "expected_games": [
+          {
+            "game": "MIA@BUF",
+            "kickoff": "2026-11-22T18:00:00Z"
+          },
+          {
+            "game": "BAL@CAR",
+            "kickoff": "2026-11-22T18:00:00Z"
+          },
+          {
+            "game": "NO@CHI",
+            "kickoff": "2026-11-22T18:00:00Z"
+          },
+          {
+            "game": "TEN@DAL",
+            "kickoff": "2026-11-22T18:00:00Z"
+          },
+          {
+            "game": "TB@DET",
+            "kickoff": "2026-11-22T18:00:00Z"
+          },
+          {
+            "game": "ARI@KC",
+            "kickoff": "2026-11-22T18:00:00Z"
+          },
+          {
+            "game": "PIT@PHI",
+            "kickoff": "2026-11-22T18:00:00Z"
+          },
+          {
+            "game": "NYJ@LAC",
+            "kickoff": "2026-11-22T21:05:00Z"
+          },
+          {
+            "game": "JAX@NYG",
+            "kickoff": "2026-11-22T21:25:00Z"
+          },
+          {
+            "game": "LV@DEN",
+            "kickoff": "2026-11-22T21:25:00Z"
+          }
+        ],
+        "excluded": [
+          {
+            "game": "IND@HOU",
+            "reason": "ThursdayNovember19"
+          },
+          {
+            "game": "MIN@SF",
+            "reason": "SundaynightNovember22, MexicoCity"
+          },
+          {
+            "game": "CIN@WAS",
+            "reason": "MondayNovember23"
+          }
+        ],
+        "byes": [
+          "ATL",
+          "CLE",
+          "GB",
+          "LAR",
+          "NE",
+          "SEA"
+        ],
+        "coverage_limit": "No official DK slate membership certified."
+      },
+      "constraints": {
+        "roster": "QB,RB,RB,WR,WR,WR,TE,FLEX(RB/WR/TE),DST; at least two games.",
+        "complete_lineup_verified": true,
+        "budget_note": "Nine unique reported-price selections, required slots, six scheduled afternoon games, $49,800 spent and $200 left. This is structural verification, not official DK admission.",
+        "important_unchanged_picks": [
+          "Dak Prescott",
+          "James Cook III",
+          "Javonte Williams",
+          "George Pickens",
+          "Jordyn Tyson",
+          "Elic Ayomanor",
+          "Sam LaPorta",
+          "Jakobi Meyers",
+          "Pittsburgh Steelers"
+        ],
+        "unknowns": [
+          "Official DK main pool, group ID and player IDs",
+          "Thursday/Friday participation and Sunday game status",
+          "Tyson chest effect on actual routes/snaps",
+          "Tate/Restrepo/Ridley allocation",
+          "Philadelphia starter and receiver availability; Herbig participation",
+          "Meyers five-versus-six historical targets",
+          "Coherent main-slate projection snapshot"
+        ],
+        "change_triggers": [
+          "Tyson worsening participation or an explicit chest-related workload restriction prompts comparison with Flournoy; one LP alone does not force exit.",
+          "Meyers worsening ankle participation or a workload restriction requires a funded FLEX alternative.",
+          "Tate's progression plus credible role redistribution, rather than Tate's mere return, reopens Ayomanor/Dike/Restrepo.",
+          "Herbig availability and Philadelphia QB/receiver/protection changes reopen the defense comparison.",
+          "Spears final availability and supported Pollard workload could reopen Williams/Pollard; DNP is not OUT.",
+          "Official slate or eligibility mismatch requires an explicit correction."
+        ],
+        "official_eligibility_verified": false
+      },
+      "sources": [
+        {
+          "id": "titansWed",
+          "label": "titansWed",
+          "url": "https://www.tennesseetitans.com/news/week-11-injury-report-titans-at-cowboys",
+          "scope": "Tate shoulder LP; Spears knee DNP. DAL Ferguson knee/ankle DNP; Prescott, Pickens and Williams absent from this report. Thursday/Friday and game-status columns empty.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "Nov 18, 2026 02:30 PM; timezone unspecified",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "saintsWed",
+          "label": "saintsWed",
+          "url": "https://www.neworleanssaints.com/news/injury-report-chicago-bears-vs-new-orleans-saints-2026-nfl-week-11-wednesday",
+          "scope": "Tyson chest LP, not a hamstring listing. Saints Fuaga, McCoy and Richards DNP. Bears did not practice: their participation report is estimated.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "Nov 18, 2026 03:49 PM; timezone unspecified",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "eaglesWed",
+          "label": "eaglesWed",
+          "url": "https://www.philadelphiaeagles.com/news/steelers-vs-eagles-injury-report-2026-nfl-week-11-salute-to-service",
+          "scope": "Smith hamstring and Wicks ankle LP; Barkley hamstring and McKee rib FP. Coach optimism and player self-report are not final clearance or a named starting QB.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "Nov 18, 2026 05:59 PM; timezone unspecified",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "steelersWed",
+          "label": "steelersWed",
+          "url": "https://www.steelers.com/news/week-11-injury-report-eagles",
+          "scope": "Herbig hip/ribs DNP; Watt and Heyward rest DNP; Queen hand LP. McCormick placed on IR. Rest and injury absences are distinguished.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "Nov 18, 2026 05:25 PM; timezone unspecified",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "billsReport",
+          "label": "billsReport",
+          "url": "https://www.buffalobills.com/team/injury-report/",
+          "scope": "Cook absent; Ray Davis hamstring LP, Ty Johnson knee FP and Kincaid thumb/ankle DNP in Wednesday column. No Sunday clearance inferred.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "unknown",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "billsContext",
+          "label": "billsContext",
+          "url": "https://www.buffalobills.com/news/one-game-at-a-time-the-bills-look-to-continue-extend-five-game-winning-streak-in-week-11",
+          "scope": "Team confirms Wednesday walk-through; participation labels describe this lighter session, not a full practice.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "Nov 18, 2026 05:25 PM; timezone unspecified",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "lionsReport",
+          "label": "lionsReport",
+          "url": "https://www.detroitlions.com/team/injury-report/",
+          "scope": "LaPorta absent; TB Mayfield foot/right thumb DNP. No final game designation, and no inference of a LaPorta target increase.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "unknown",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "jagsReport",
+          "label": "jagsReport",
+          "url": "https://www.jaguars.com/team/injury-report/",
+          "scope": "Meyers ankle LP; Hainsey knee DNP, Monheim ankle LP. Thursday/Friday and final status not populated.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "unknown",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "jagsPrior",
+          "label": "jagsPrior",
+          "url": "https://www.jaguars.com/news/friday-quick-hits-bates-davis-won-t-play-against-titans-sunday",
+          "scope": "Prior November 13 report already listed Meyers ankle without game status; today's ankle entry is not proof of a new injury. Historical availability does not clear Week 11.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "Nov 13, 2026; exact display clock not retained",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "restrepo",
+          "label": "restrepo",
+          "url": "https://www.tennesseetitans.com/news/wr-xavier-restrepo-ready-for-whatever-the-titans-ask-him-to-do",
+          "scope": "Coach looks forward to more Restrepo involvement after three catches for 31 yards; no promised snaps/routes or replacement depth-chart allocation.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "Nov 18, 2026 02:34 PM; timezone unspecified",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "prices",
+          "label": "prices",
+          "url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "scope": "Live maxAge0 Week 11 rows reverify every selected salary, position and Sunday opponent; Flournoy $5,300 and Pollard $6,500 also inspected. Reported prices only.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "unknown",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "modelScope",
+          "label": "modelScope",
+          "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php",
+          "scope": "Public page defaults to IND–HOU Showdown despite listing a 10-game main option; no coherent nine-player main-slate model snapshot retrieved. Export link is a third-party export, not official DK pool verification.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "Projections display Wed 4:15 PM ET, Week 11; default Showdown",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "rules",
+          "label": "rules",
+          "url": "https://www.draftkings.com/help/rules/nfl/classic",
+          "scope": "Fresh official Classic rules: $50,000; QB,2RB,3WR,TE,FLEX,DST; at least two games. PPR, yardage/TDs, bonuses and DST points-allowed treatment inspected.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "unknown",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "schedule",
+          "label": "schedule",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-11",
+          "scope": "Ten November 22 afternoon games unchanged, first 1 PM ET; exclude Thursday IND–HOU, Sunday-night MIN–SF in Mexico City and Monday CIN–WAS. NFL schedule is not DK pool admission.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "unknown",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "dkAccess",
+          "label": "dkAccess",
+          "url": "https://www.draftkings.com/lobby#/NFL",
+          "scope": "Read-only public lobby redirects to account registration; stopped there. No official export or draft-group ID retrieved; not evidence that slate is unpublished.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "unknown",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "week10Complete",
+          "label": "week10Complete",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+          "scope": "All previous Sunday games display FINAL, including SF 46–DAL 40 and KC 35–ATL 13.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "unknown",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "scoringCheck",
+          "label": "scoringCheck",
+          "url": "https://dknetwork.draftkings.com/2026/11/16/draftkings-nfl-millionaire-winning-lineup-breakdown-for-week-10/",
+          "scope": "Still reports Dak 38.02 against archived official-book calculation 38.42. No material correction evidence found; retain November 18 discrepancy review and provisional archived scores.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "Nov 16, 2026",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        }
+      ],
+      "source_failures": [
+        "Official DK lobby led to registration, so no official pool/IDs retrieved.",
+        "FFToolbox default source is Thursday Showdown; neither its export nor those projections qualify as a verified Sunday main model snapshot.",
+        "Thursday/Friday reports were not yet populated in inspected tables. No continuous monitoring claimed."
+      ],
+      "collaboration": {
+        "cycle": "2026-week-11",
+        "round": 1,
+        "author": "Claude + Codex substantive exchange; Codex final editor",
+        "codex_v1_ready": "ready",
+        "claude_v1_ready": "ready; preserved atbd01626c",
+        "grok_questions_ready": "ready; actual6951178993 archivedreceipt",
+        "collaboration_ready": "ready; actualexchange and exactP2acceptance",
+        "final_frozen": "pending beforeNov22 17:30UTC",
+        "jointly_endorsed": true,
+        "input_versions": {
+          "codex": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/078ea5e002f3eeb5fe15197fdd562b3f4f5d6906/docs/weekly-dfs/codex/2026/week-11/daily/2026-11-17.json",
+          "claude": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/bd01626c3ab7005c37d996a965675e87c5226bdf/docs/weekly-dfs/codex/2026/week-11/collaboration/20261117T140000Z-claude-v1.json",
+          "proposal": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d3e886c7228389ae056c85de3b15e12109a74995/docs/weekly-dfs/codex/2026/week-11/collaboration/20261117T163000Z-claude-grok-response.json",
+          "grok": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/144#issuecomment-6951178993"
+        },
+        "next_handoff": "No new starting draft or routine Grok pass needed. No new Claude reply in fresh all-page PR discussions. Before freeze, reopen a dated delta if health/role evidence changes a selection; seek Claude's disposition of the exact changed nine, without extending the deadline.",
+        "exposure": "Codex read bothoriginals,GrokactualpostandClaudeactualP1beforeintegration; noindependenceclaimed. OperatorrelayedactualClaudecontribution.",
+        "endorsement_scope": "Claude and Codex endorsed the exact original P-2 nine/salaries. This Thursday investigation and new qualification text are Codex's, not an attributed fresh Claude endorsement.",
+        "claude_acceptance": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/da3a051e8df9d2889cc5c4e8484defaccb81238c/docs/weekly-dfs/codex/2026/week-11/collaboration/20261117T165000Z-claude-p2-response.json",
+        "codex_endorsement": {
+          "at": "2026-11-18T11:52:17Z",
+          "input": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/82a53202ef5d8fdffb1c06112d8e6c5e360c273a/docs/weekly-dfs/codex/2026/week-11/daily/20261117T163504Z-editor-integration.json",
+          "disposition": "endorse unchanged exactP2selection"
+        }
+      },
+      "confounders": {
+        "operator_input": "Standing Arena assignment and actual prior Claude/Grok exchange; no new player guidance in this pass.",
+        "model": "Codex; exact runtime/model version unknown",
+        "tools": "Current league capabilities inspected: ROP, TTS and Forecast routes withheld. No qualified retained output accessed through available routes; withholding does not establish nonexistence. Public search and live Firecrawl reads used."
+      },
+      "carry_forward": [
+        "Test role applicability anew: lead carries supported Johnson but two receiving TDs are not a floor.",
+        "Preserve failed changes: Dell cost6 points versus Allen despite corrected information; do not prefer a correction only because it scored well.",
+        "Assess Warren team passing opportunity separately from snap share and vacated targets.",
+        "High game total did not guarantee Watkins's role; compare whole-lineup concentration once prices exist."
+      ],
+      "alternatives": [
+        {
+          "player": "Ryan Flournoy",
+          "position": "WR",
+          "salary": 5300,
+          "replaces": "Jordyn Tyson",
+          "salary_delta": 100,
+          "total_if_substituted": 49900,
+          "remainder": 100,
+          "disposition": "hold in reserve",
+          "reason": "Affordable response to meaningful Tyson restriction. Reintroduces Dallas's fourth player ($26,100 DAL; $29,800 TEN–DAL) and previously documented trailing-script concern; not preferred solely because Tyson logged one LP.",
+          "salary_receipt": "| 82 | [Ryan Flournoy](https://www.fantasypros.com/nfl/players/ryan-flournoy.php \"Open player card for Ryan Flournoy\")(DAL - WR) | Sun 1:00PM | TEN | $5,300 | $5,300 | 0 |"
+        },
+        {
+          "player": "Tony Pollard",
+          "position": "RB",
+          "salary": 6500,
+          "replaces": "Javonte Williams",
+          "salary_delta": -800,
+          "total_if_substituted": 49000,
+          "remainder": 1000,
+          "disposition": "decline today; reopen on role evidence",
+          "reason": "Spears knee DNP is new support for investigating Pollard, not proof of his absence. Existing reception-outlier concern remains. DAL falls to $13,500; TEN–DAL $23,700, still four players in that game. No unsupported workload or point gain asserted.",
+          "salary_receipt": "| 32 | [Tony Pollard](https://www.fantasypros.com/nfl/players/tony-pollard.php \"Open player card for Tony Pollard\")(TEN - RB) | Sun 1:00PM | @DAL | $6,500 | $6,000 | +500 |"
+        }
+      ],
+      "research_board_status": "Complete working shared candidate; exact P-2 selection endorsed by both authors, today's investigation authored by Codex; not frozen.",
+      "prior_scoring": {
+        "status": "provisional unchanged",
+        "week10_final": 198.92,
+        "check": "Primary NFL schedule confirms prior Sunday complete. Complete earlier lineups already scored; partial records remain intentionally null. DK article's Dak discrepancy persists against November 18 game-book review. No supported material correction, no new finality claim.",
+        "review_reference": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/cda901f8217aa0a94beb1010d69ef696d1fb194c/docs/weekly-dfs/codex/2026/week-10/reviews/20261118T115217Z-score-discrepancy.json"
+      },
+      "important_unchanged_picks": [
+        "Dak Prescott",
+        "James Cook III",
+        "Javonte Williams",
+        "George Pickens",
+        "Jordyn Tyson",
+        "Elic Ayomanor",
+        "Sam LaPorta",
+        "Jakobi Meyers",
+        "Pittsburgh Steelers"
+      ],
+      "whole_lineup": {
+        "distinct_games": 6,
+        "DAL_salary": 20800,
+        "TEN_DAL_salary": 24500,
+        "claude_P1_DAL_salary": 26100,
+        "claude_P1_TEN_DAL_salary": 29800,
+        "difference_from_P1": {
+          "from": "Ryan Flournoy",
+          "to": "Jordyn Tyson",
+          "salary_delta": -100
+        },
+        "comparison_to_claude_original": [
+          {
+            "from": "Tony Pollard",
+            "to": "Javonte Williams",
+            "salary_delta": 800
+          },
+          {
+            "from": "Dalton Kincaid",
+            "to": "Sam LaPorta",
+            "salary_delta": -400
+          },
+          {
+            "from": "Ryan Flournoy",
+            "to": "Jordyn Tyson",
+            "salary_delta": -100
+          }
+        ]
+      },
+      "expectation_packet": {
+        "path": "docs/weekly-dfs/codex/journal/20261119T111008Z.json",
+        "new_expectation_ids": [
+          "2026-w11-tyson-health-role-20261119T111008Z"
+        ],
+        "retained_expectations_note": "Earlier role/condition packets remain immutable. This daily run does not freeze or backdate expectations."
+      },
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c940a79221091fa83515dca3549a85a187275d85/docs/weekly-dfs/codex/2026/week-11/daily/2026-11-19.md"
     }
   ],
-  "archive_commit": "cda901f8217aa0a94beb1010d69ef696d1fb194c",
+  "archive_commit": "c940a79221091fa83515dca3549a85a187275d85",
   "journal": [
     {
       "kind": "later_annotation",
@@ -24178,6 +24761,304 @@
       ],
       "expectation_note": "OriginalAyomanor expectationmentionspossibleRobinsonreturn; nowIRsupersedes thatcondition prospectively. Preserve originalexpectation; add newqualificationhere, notbackdated.",
       "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/cda901f8217aa0a94beb1010d69ef696d1fb194c/docs/weekly-dfs/codex/journal/20261118T115217Z.md"
+    },
+    {
+      "schema_version": "tiber-dfs-journal/v1",
+      "id": "2026-w11-20261119T111008Z-availability-hold",
+      "snapshot_ids": [
+        "2026-w11-2026-11-19-daily"
+      ],
+      "kind": "scheduled_research",
+      "recorded_at": "2026-11-19T11:10:08Z",
+      "recorded_at_toronto": "2026-11-19T06:10:08-05:00",
+      "research_at": "2026-11-19T11:10:08Z",
+      "origin": "agent_chosen",
+      "origin_note": "Codex chose availability, receiving allocation and affordable alternatives under the standing assignment. Retains actual Claude/Grok influence from the existing exchange; today's investigation is Codex-authored.",
+      "title": "Thursday: retain P-2 with chest, ankle and pressure qualifications",
+      "question": "Do Wednesday availability and allocation reports overturn the agreed nine, and what funded alternatives deserve attention?",
+      "why_it_matters": "Two selected receivers are limited; Titan receiving competition and Pittsburgh pressure personnel affect several slots without proving a replacement is better.",
+      "findings": [
+        "Tyson chest LP and Meyers ankle LP are actual Wednesday entries; the latter ankle condition also appeared in the prior week's report.",
+        "Tate shoulder LP; Spears knee DNP. Saleh anticipates more Restrepo participation without committing to a snap/route allocation.",
+        "Herbig hip/ribs DNP differs from Watt/Heyward rest. Philadelphia Smith/Wicks LP, Barkley/McKee FP; no starting-QB announcement or Sunday clearance inferred.",
+        "Prescott, Pickens, Williams, Cook and LaPorta absent from inspected reports. Buffalo's session was a walk-through; absence from a list is not Sunday clearance.",
+        "All nine reported salary/position/opponent rows match. Sunday expected afternoon membership unchanged. No official pool export or coherent main model retrieved.",
+        "Prior Sunday complete; existing provisional scoring and Dak discrepancy retained without unsupported correction."
+      ],
+      "interpretation": [
+        "Hold all nine. One midweek participation entry is insufficient by itself to reverse previously documented role evidence.",
+        "Restrepo's coach-backed opportunity deserves more weight than promotion alone, while still falling short of a reason to choose him over Ayomanor.",
+        "Pittsburgh's original pressure rationale is weaker conditionally, not invalidated; final personnel can materially change the choice."
+      ],
+      "alternatives": [
+        {
+          "player": "Ryan Flournoy",
+          "position": "WR",
+          "salary": 5300,
+          "replaces": "Jordyn Tyson",
+          "salary_delta": 100,
+          "total_if_substituted": 49900,
+          "remainder": 100,
+          "disposition": "hold in reserve",
+          "reason": "Affordable response to meaningful Tyson restriction. Reintroduces Dallas's fourth player ($26,100 DAL; $29,800 TEN–DAL) and previously documented trailing-script concern; not preferred solely because Tyson logged one LP.",
+          "salary_receipt": "| 82 | [Ryan Flournoy](https://www.fantasypros.com/nfl/players/ryan-flournoy.php \"Open player card for Ryan Flournoy\")(DAL - WR) | Sun 1:00PM | TEN | $5,300 | $5,300 | 0 |"
+        },
+        {
+          "player": "Tony Pollard",
+          "position": "RB",
+          "salary": 6500,
+          "replaces": "Javonte Williams",
+          "salary_delta": -800,
+          "total_if_substituted": 49000,
+          "remainder": 1000,
+          "disposition": "decline today; reopen on role evidence",
+          "reason": "Spears knee DNP is new support for investigating Pollard, not proof of his absence. Existing reception-outlier concern remains. DAL falls to $13,500; TEN–DAL $23,700, still four players in that game. No unsupported workload or point gain asserted.",
+          "salary_receipt": "| 32 | [Tony Pollard](https://www.fantasypros.com/nfl/players/tony-pollard.php \"Open player card for Tony Pollard\")(TEN - RB) | Sun 1:00PM | @DAL | $6,500 | $6,000 | +500 |"
+        }
+      ],
+      "uncertainty": [
+        "Official DK main pool, group ID and player IDs",
+        "Thursday/Friday participation and Sunday game status",
+        "Tyson chest effect on actual routes/snaps",
+        "Tate/Restrepo/Ridley allocation",
+        "Philadelphia starter and receiver availability; Herbig participation",
+        "Meyers five-versus-six historical targets",
+        "Coherent main-slate projection snapshot"
+      ],
+      "lineup_effect": "Unchanged exact P-2: $49,800 / $200; six games; Dallas three players $20,800, TEN–DAL four players $24,500. Not frozen.",
+      "change_triggers": [
+        "Tyson worsening participation or an explicit chest-related workload restriction prompts comparison with Flournoy; one LP alone does not force exit.",
+        "Meyers worsening ankle participation or a workload restriction requires a funded FLEX alternative.",
+        "Tate's progression plus credible role redistribution, rather than Tate's mere return, reopens Ayomanor/Dike/Restrepo.",
+        "Herbig availability and Philadelphia QB/receiver/protection changes reopen the defense comparison.",
+        "Spears final availability and supported Pollard workload could reopen Williams/Pollard; DNP is not OUT.",
+        "Official slate or eligibility mismatch requires an explicit correction."
+      ],
+      "carry_forward": [
+        "Distinguish injury DNP, rest DNP, limited participation and estimated/walk-through reports.",
+        "An existing ankle listing is not proof of new deterioration; a coach's plan for more involvement is not a full-time role guarantee.",
+        "Fund replacements as a whole lineup: Flournoy fits but increases Dallas concentration; Pollard saves money while retaining game concentration.",
+        "No repeat v1, unlimited question loop, invented provider participation or retrospective endorsement."
+      ],
+      "sources": [
+        {
+          "id": "titansWed",
+          "label": "titansWed",
+          "url": "https://www.tennesseetitans.com/news/week-11-injury-report-titans-at-cowboys",
+          "scope": "Tate shoulder LP; Spears knee DNP. DAL Ferguson knee/ankle DNP; Prescott, Pickens and Williams absent from this report. Thursday/Friday and game-status columns empty.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "Nov 18, 2026 02:30 PM; timezone unspecified",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "saintsWed",
+          "label": "saintsWed",
+          "url": "https://www.neworleanssaints.com/news/injury-report-chicago-bears-vs-new-orleans-saints-2026-nfl-week-11-wednesday",
+          "scope": "Tyson chest LP, not a hamstring listing. Saints Fuaga, McCoy and Richards DNP. Bears did not practice: their participation report is estimated.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "Nov 18, 2026 03:49 PM; timezone unspecified",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "eaglesWed",
+          "label": "eaglesWed",
+          "url": "https://www.philadelphiaeagles.com/news/steelers-vs-eagles-injury-report-2026-nfl-week-11-salute-to-service",
+          "scope": "Smith hamstring and Wicks ankle LP; Barkley hamstring and McKee rib FP. Coach optimism and player self-report are not final clearance or a named starting QB.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "Nov 18, 2026 05:59 PM; timezone unspecified",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "steelersWed",
+          "label": "steelersWed",
+          "url": "https://www.steelers.com/news/week-11-injury-report-eagles",
+          "scope": "Herbig hip/ribs DNP; Watt and Heyward rest DNP; Queen hand LP. McCormick placed on IR. Rest and injury absences are distinguished.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "Nov 18, 2026 05:25 PM; timezone unspecified",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "billsReport",
+          "label": "billsReport",
+          "url": "https://www.buffalobills.com/team/injury-report/",
+          "scope": "Cook absent; Ray Davis hamstring LP, Ty Johnson knee FP and Kincaid thumb/ankle DNP in Wednesday column. No Sunday clearance inferred.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "unknown",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "billsContext",
+          "label": "billsContext",
+          "url": "https://www.buffalobills.com/news/one-game-at-a-time-the-bills-look-to-continue-extend-five-game-winning-streak-in-week-11",
+          "scope": "Team confirms Wednesday walk-through; participation labels describe this lighter session, not a full practice.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "Nov 18, 2026 05:25 PM; timezone unspecified",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "lionsReport",
+          "label": "lionsReport",
+          "url": "https://www.detroitlions.com/team/injury-report/",
+          "scope": "LaPorta absent; TB Mayfield foot/right thumb DNP. No final game designation, and no inference of a LaPorta target increase.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "unknown",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "jagsReport",
+          "label": "jagsReport",
+          "url": "https://www.jaguars.com/team/injury-report/",
+          "scope": "Meyers ankle LP; Hainsey knee DNP, Monheim ankle LP. Thursday/Friday and final status not populated.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "unknown",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "jagsPrior",
+          "label": "jagsPrior",
+          "url": "https://www.jaguars.com/news/friday-quick-hits-bates-davis-won-t-play-against-titans-sunday",
+          "scope": "Prior November 13 report already listed Meyers ankle without game status; today's ankle entry is not proof of a new injury. Historical availability does not clear Week 11.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "Nov 13, 2026; exact display clock not retained",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "restrepo",
+          "label": "restrepo",
+          "url": "https://www.tennesseetitans.com/news/wr-xavier-restrepo-ready-for-whatever-the-titans-ask-him-to-do",
+          "scope": "Coach looks forward to more Restrepo involvement after three catches for 31 yards; no promised snaps/routes or replacement depth-chart allocation.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "Nov 18, 2026 02:34 PM; timezone unspecified",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "prices",
+          "label": "prices",
+          "url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "scope": "Live maxAge0 Week 11 rows reverify every selected salary, position and Sunday opponent; Flournoy $5,300 and Pollard $6,500 also inspected. Reported prices only.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "unknown",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "modelScope",
+          "label": "modelScope",
+          "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php",
+          "scope": "Public page defaults to IND–HOU Showdown despite listing a 10-game main option; no coherent nine-player main-slate model snapshot retrieved. Export link is a third-party export, not official DK pool verification.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "Projections display Wed 4:15 PM ET, Week 11; default Showdown",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "rules",
+          "label": "rules",
+          "url": "https://www.draftkings.com/help/rules/nfl/classic",
+          "scope": "Fresh official Classic rules: $50,000; QB,2RB,3WR,TE,FLEX,DST; at least two games. PPR, yardage/TDs, bonuses and DST points-allowed treatment inspected.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "unknown",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "schedule",
+          "label": "schedule",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-11",
+          "scope": "Ten November 22 afternoon games unchanged, first 1 PM ET; exclude Thursday IND–HOU, Sunday-night MIN–SF in Mexico City and Monday CIN–WAS. NFL schedule is not DK pool admission.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "unknown",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "dkAccess",
+          "label": "dkAccess",
+          "url": "https://www.draftkings.com/lobby#/NFL",
+          "scope": "Read-only public lobby redirects to account registration; stopped there. No official export or draft-group ID retrieved; not evidence that slate is unpublished.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "unknown",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "week10Complete",
+          "label": "week10Complete",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+          "scope": "All previous Sunday games display FINAL, including SF 46–DAL 40 and KC 35–ATL 13.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "unknown",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        },
+        {
+          "id": "scoringCheck",
+          "label": "scoringCheck",
+          "url": "https://dknetwork.draftkings.com/2026/11/16/draftkings-nfl-millionaire-winning-lineup-breakdown-for-week-10/",
+          "scope": "Still reports Dak 38.02 against archived official-book calculation 38.42. No material correction evidence found; retain November 18 discrepancy review and provisional archived scores.",
+          "retrieved_at": "2026-11-19T11:10:08Z",
+          "publication_at": null,
+          "publication_display": "Nov 16, 2026",
+          "retrieval_note": "Observed completion receipt after this pass's successful reads; individual request start/end clocks unavailable. This is not publication time."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w11-2026-11-18-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/cda901f8217aa0a94beb1010d69ef696d1fb194c/docs/weekly-dfs/codex/2026/week-11/daily/2026-11-18.json"
+        },
+        {
+          "snapshot_id": "2026-w11-2026-11-19-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c940a79221091fa83515dca3549a85a187275d85/docs/weekly-dfs/codex/2026/week-11/daily/2026-11-19.json"
+        }
+      ],
+      "current_lineup_record_path": "docs/weekly-dfs/codex/2026/week-11/daily/2026-11-19.json",
+      "retained_expectation_refs": [
+        {
+          "id": "2026-w11-williams-run-role-20261117T163712Z",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7d17110ebb6d7906965dd45037dd7c32a87865ca/docs/weekly-dfs/codex/journal/20261117T163712Z.json"
+        },
+        {
+          "id": "2026-w11-ayomanor-condition-20261117T163712Z",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7d17110ebb6d7906965dd45037dd7c32a87865ca/docs/weekly-dfs/codex/journal/20261117T163712Z.json"
+        },
+        {
+          "id": "2026-w11-pit-pressure-condition-20261117T163712Z",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7d17110ebb6d7906965dd45037dd7c32a87865ca/docs/weekly-dfs/codex/journal/20261117T163712Z.json"
+        },
+        {
+          "id": "2026-w11-cook-rushing-role-20261117T163712Z",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7d17110ebb6d7906965dd45037dd7c32a87865ca/docs/weekly-dfs/codex/journal/20261117T163712Z.json"
+        }
+      ],
+      "expectations": [
+        {
+          "id": "2026-w11-tyson-health-role-20261119T111008Z",
+          "subject": "Jordyn Tyson",
+          "statement": "The provisional hold assumes the chest limitation will not materially restrict the passing-down opportunity underlying the selection; being active alone will not establish that this condition held.",
+          "support": "Prior archived Week 10 target/snap role; current Saints report lists chest LP rather than an absence.",
+          "uncertainty": "One-game role sample, Olave competition, and no Thursday/Friday status or workload guidance.",
+          "challenge": "Worsening participation or an explicit restriction would undermine the hold before freeze; a reduced game role may contradict the condition afterward.",
+          "observe": "Compare final injury status, available snap/route participation and targets with the cited prior role, separating health evidence from game script. If causal health evidence is absent, cause remains unassessable.",
+          "source_urls": [
+            "https://www.neworleanssaints.com/news/injury-report-chicago-bears-vs-new-orleans-saints-2026-nfl-week-11-wednesday",
+            "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/cda901f8217aa0a94beb1010d69ef696d1fb194c/docs/weekly-dfs/codex/2026/week-11/daily/2026-11-18.json"
+          ],
+          "recorded_at": "2026-11-19T11:10:08Z"
+        }
+      ],
+      "outcomes": [],
+      "archive_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c940a79221091fa83515dca3549a85a187275d85/docs/weekly-dfs/codex/journal/20261119T111008Z.md"
     }
   ],
   "arena": {
