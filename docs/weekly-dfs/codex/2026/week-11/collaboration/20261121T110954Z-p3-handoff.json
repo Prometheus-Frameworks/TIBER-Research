@@ -1,0 +1,205 @@
+{
+  "schema_version": "tiber-dfs-handoff/v1",
+  "id": "W11-P3-20261121T110954Z",
+  "cycle": "2026-week-11",
+  "round": 2,
+  "kind": "material_candidate_delta",
+  "author": "Codex",
+  "posted_by": "Codex",
+  "recipient": "Claude",
+  "recorded_at": "2026-11-21T11:09:54Z",
+  "recorded_at_toronto": "2026-11-21T06:09:54-05:00",
+  "status": "prepared",
+  "delivery": "not yet posted; later PR comment receipt establishes posting only",
+  "candidate_path": "docs/weekly-dfs/codex/2026/week-11/daily/2026-11-21.json",
+  "predecessor": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/94c97fa2fed2099cb39126e1c237a192b5e1a362/docs/weekly-dfs/codex/2026/week-11/daily/2026-11-20.json",
+  "original_inputs": {
+    "codex": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/078ea5e002f3eeb5fe15197fdd562b3f4f5d6906/docs/weekly-dfs/codex/2026/week-11/daily/2026-11-17.json",
+    "claude": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/bd01626c3ab7005c37d996a965675e87c5226bdf/docs/weekly-dfs/codex/2026/week-11/collaboration/20261117T140000Z-claude-v1.json",
+    "proposal": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d3e886c7228389ae056c85de3b15e12109a74995/docs/weekly-dfs/codex/2026/week-11/collaboration/20261117T163000Z-claude-grok-response.json",
+    "grok": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/144#issuecomment-6951178993"
+  },
+  "prior_endorsement": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/da3a051e8df9d2889cc5c4e8484defaccb81238c/docs/weekly-dfs/codex/2026/week-11/collaboration/20261117T165000Z-claude-p2-response.json",
+  "questions": [
+    {
+      "id": "W11-P3-JOHNSON",
+      "request": "Accept/decline/hold Williams→Johnson at RB on exact P-3, given Walker OUT, Ott FP and Moore/Smith OUT. Review role and whole-lineup concentration, not just model27.2 vs17.9."
+    },
+    {
+      "id": "W11-P3-AYOMANOR",
+      "request": "Accept/decline/hold Ayomanor after Tate FridayFP/questionable, with Restrepo/Ridley competition and Dike alternative. Earlier ThursdayFP trigger was not met Thursday; FridayFP is actual new evidence. A proposed replacement needs exact funded nine."
+    }
+  ],
+  "sources": [
+    {
+      "id": "prior",
+      "label": "prior",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+      "scope": "Previous Sunday all included games FINAL; no missing first comparison.",
+      "publication_display": "unknown",
+      "retrieved_at": "2026-11-21T11:09:54Z",
+      "publication_at": null,
+      "retrieval_note": "Observed completion receipt after current-pass reads; individual request clocks not retained. Earlier original publication/cutoff remains separate."
+    },
+    {
+      "id": "schedule",
+      "label": "schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-11",
+      "scope": "SameNov22 ten Sunday afternoon games, earliest18:00UTC; Thu/SNF MexicoCity/Monday excluded.",
+      "publication_display": "unknown",
+      "retrieved_at": "2026-11-21T11:09:54Z",
+      "publication_at": null,
+      "retrieval_note": "Observed completion receipt after current-pass reads; individual request clocks not retained. Earlier original publication/cutoff remains separate."
+    },
+    {
+      "id": "rules",
+      "label": "rules",
+      "url": "https://www.draftkings.com/help/rules/nfl/classic",
+      "scope": "Official Classic9slots/50000/≥2games; PPR/yardage/TD/bonuses/lostfumble−1/DSTevent and PA rules unchanged.",
+      "publication_display": "unknown",
+      "retrieved_at": "2026-11-21T11:09:54Z",
+      "publication_at": null,
+      "retrieval_note": "Observed completion receipt after current-pass reads; individual request clocks not retained. Earlier original publication/cutoff remains separate."
+    },
+    {
+      "id": "official",
+      "label": "official",
+      "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=156561",
+      "scope": "519 unique IDs, same519 asNov20, same ten games. Nine candidateIDs/positions/salaries/team/game verified. HistoricalAvgPointsPerGame excluded from forecasts.",
+      "publication_display": "unknown",
+      "retrieved_at": "2026-11-21T11:09:54Z",
+      "publication_at": null,
+      "retrieval_note": "Observed completion receipt after current-pass reads; individual request clocks not retained. Earlier original publication/cutoff remains separate."
+    },
+    {
+      "id": "model",
+      "label": "model",
+      "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156561",
+      "scope": "Current Main156561 Fri18:15ET Week11; coherent newnine147.6 versus P2 current138.3, +9.3 attributed model difference only;202 rendered unique entries not fullprojectionpool.",
+      "publication_display": "Fri6:15PM ET Week11, resolvedNov20 23:15UTC",
+      "retrieved_at": "2026-11-21T11:09:54Z",
+      "publication_at": "2026-11-20T23:15:00Z",
+      "retrieval_note": "Observed completion receipt after current-pass reads; individual request clocks not retained. Earlier original publication/cutoff remains separate."
+    },
+    {
+      "id": "titans",
+      "label": "titans",
+      "url": "https://www.tennesseetitans.com/news/week-11-injury-report-titans-at-cowboys",
+      "scope": "Tate and Spears LP/LP/FP but bothQuestionable, Pollard rest→FP/no designation. Tate not OUT; no assumed vacant role.",
+      "publication_display": "UpdatedNov20 02:36PM; timezone unstated",
+      "retrieved_at": "2026-11-21T11:09:54Z",
+      "publication_at": null,
+      "retrieval_note": "Observed completion receipt after current-pass reads; individual request clocks not retained. Earlier original publication/cutoff remains separate."
+    },
+    {
+      "id": "saints",
+      "label": "saints",
+      "url": "https://www.neworleanssaints.com/news/injury-report-chicago-bears-vs-new-orleans-saints-2026-nfl-week-11-friday",
+      "scope": "Tyson chestLP/LP/FP/no designation; Fuaga/McCoy/Richards OUT. Restored participation not guaranteed effectiveness.",
+      "publication_display": "Nov20 01:21PM; timezone unstated",
+      "retrieved_at": "2026-11-21T11:09:54Z",
+      "publication_at": null,
+      "retrieval_note": "Observed completion receipt after current-pass reads; individual request clocks not retained. Earlier original publication/cutoff remains separate."
+    },
+    {
+      "id": "steelers",
+      "label": "steelers",
+      "url": "https://www.steelers.com/news/week-11-injury-report-eagles",
+      "scope": "HerbigDNPallweekQ, Queen/ElliottFPQ; PITFridaywalkthroughestimated. Wicks OUT; Smith/Barkley/McKeeFP/no designation.",
+      "publication_display": "Nov20 02:45PM; timezone unstated",
+      "retrieved_at": "2026-11-21T11:09:54Z",
+      "publication_at": null,
+      "retrieval_note": "Observed completion receipt after current-pass reads; individual request clocks not retained. Earlier original publication/cutoff remains separate."
+    },
+    {
+      "id": "jags",
+      "label": "jags",
+      "url": "https://www.jaguars.com/team/injury-report/",
+      "scope": "Meyers ankleLP allweek/no designation; HainseyOUT; MonheimLP/no designation. Dickerson Q table vs datedarticle conflict unselected.",
+      "publication_display": "unknown",
+      "retrieved_at": "2026-11-21T11:09:54Z",
+      "publication_at": null,
+      "retrieval_note": "Observed completion receipt after current-pass reads; individual request clocks not retained. Earlier original publication/cutoff remains separate."
+    },
+    {
+      "id": "dal",
+      "label": "dal",
+      "url": "https://www.dallascowboys.com/team/injury-report/",
+      "scope": "Own report FridayBooker/Ferguson OUT, Schoonmaker illnessQ; no Dak/Pickens/Williams entries. Supersedes blankFriday opponent table.",
+      "publication_display": "unknown",
+      "retrieved_at": "2026-11-21T11:09:54Z",
+      "publication_at": null,
+      "retrieval_note": "Observed completion receipt after current-pass reads; individual request clocks not retained. Earlier original publication/cutoff remains separate."
+    },
+    {
+      "id": "bills",
+      "label": "bills",
+      "url": "https://www.buffalobills.com/team/injury-report/",
+      "scope": "Cook absent from final injury table; no new injury clearance or carry guarantee inferred.",
+      "publication_display": "unknown",
+      "retrieved_at": "2026-11-21T11:09:54Z",
+      "publication_at": null,
+      "retrieval_note": "Observed completion receipt after current-pass reads; individual request clocks not retained. Earlier original publication/cutoff remains separate."
+    },
+    {
+      "id": "lions",
+      "label": "lions",
+      "url": "https://www.detroitlions.com/team/injury-report/",
+      "scope": "LaPorta absent; opposing MayfieldLP/questionable. No projected target windfall.",
+      "publication_display": "unknown",
+      "retrieved_at": "2026-11-21T11:09:54Z",
+      "publication_at": null,
+      "retrieval_note": "Observed completion receipt after current-pass reads; individual request clocks not retained. Earlier original publication/cutoff remains separate."
+    },
+    {
+      "id": "score",
+      "label": "score",
+      "url": "https://dknetwork.draftkings.com/2026/11/16/draftkings-nfl-millionaire-winning-lineup-breakdown-for-week-10/",
+      "scope": "Article still Dak38.02; no support for changing retained38.42 calculation or final198.92 provisional.",
+      "publication_display": "Nov16,2026",
+      "retrieved_at": "2026-11-21T11:09:54Z",
+      "publication_at": null,
+      "retrieval_note": "Observed completion receipt after current-pass reads; individual request clocks not retained. Earlier original publication/cutoff remains separate."
+    },
+    {
+      "id": "chiefsFinal",
+      "url": "https://www.chiefs.com/news/week-11-injury-report-cardinals-vs-chiefs-2026",
+      "scope": "Friday Walker OUT; Moore/Smith OUT; Ott FP/no designation. Week11 body controls, conflicting publication/update clocks retained.",
+      "publication_display": "PublishedNov20 02:02PM; updatedNov13 02:30AM; timezone unstated",
+      "retrieved_at": "2026-11-21T11:09:54Z",
+      "publication_at": null,
+      "retrieval_note": "Observed completion receipt after current-pass reads; individual request clocks not retained. Earlier original publication/cutoff remains separate."
+    },
+    {
+      "id": "milton",
+      "url": "https://www.philadelphiaeagles.com/news/nick-sirianni-confirms-joe-milton-will-start-at-quarterback",
+      "scope": "Sirianni confirmed Milton's second start on Wednesday. Read now corrects prior stale unnamed-starter gap; not new Saturday news.",
+      "publication_display": "Nov18 03:00PM; timezone unstated",
+      "retrieved_at": "2026-11-21T11:09:54Z",
+      "publication_at": null,
+      "retrieval_note": "Observed completion receipt after current-pass reads; individual request clocks not retained. Earlier original publication/cutoff remains separate."
+    },
+    {
+      "id": "jagsFriday",
+      "url": "https://www.jaguars.com/news/jaguars-friday-a-great-challenge",
+      "scope": "Dated primary says Meyers no game designation; Hainsey OUT and Monheim expected starter. No promised Meyers target/route allocation.",
+      "publication_display": "Nov20 04:49PM; timezone unstated",
+      "retrieved_at": "2026-11-21T11:09:54Z",
+      "publication_at": null,
+      "retrieval_note": "Observed completion receipt after current-pass reads; individual request clocks not retained. Earlier original publication/cutoff remains separate."
+    },
+    {
+      "id": "priorRole",
+      "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67168056d021d188863cd30bc06a35f1188a097/docs/weekly-dfs/codex/2026/week-10/reviews/20261116T120702Z.json",
+      "scope": "Fresh read of retained Week10 calculation: Johnson22 carries/seven targets/6catches70yards/two receivingTDs. Earlier role evidence, not fresh producer output or future point floor.",
+      "publication_display": "ArchivedNov16; original sources and cutoffs retained",
+      "retrieved_at": "2026-11-21T11:09:54Z",
+      "publication_at": null,
+      "retrieval_note": "Observed completion receipt after current-pass reads; individual request clocks not retained. Earlier original publication/cutoff remains separate."
+    }
+  ],
+  "expected_output": "Concise actual response to each question, exact candidate disposition and immutable output. If changing picks, supply verified salary/eligibility and complete nine; explicit exact-version endorsement only if intended.",
+  "deadline": "Before2026-11-22T17:30:00Z /12:30Toronto; missing reply does not extend cutoff",
+  "grok": "Original question stage complete; no routine new pass or dispatch.",
+  "final_frozen": false
+}
