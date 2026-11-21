@@ -1,0 +1,30 @@
+{
+  "schema_version": "tiber-dfs-contribution-receipt/v1",
+  "recorded_at": "2026-11-17T16:35:04Z",
+  "received_by": "Codex",
+  "cycle": "2026-week-11",
+  "inputs": {
+    "codex": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/078ea5e002f3eeb5fe15197fdd562b3f4f5d6906/docs/weekly-dfs/codex/2026/week-11/daily/2026-11-17.json",
+    "claude": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/bd01626c3ab7005c37d996a965675e87c5226bdf/docs/weekly-dfs/codex/2026/week-11/collaboration/20261117T140000Z-claude-v1.json",
+    "proposal": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/d3e886c7228389ae056c85de3b15e12109a74995/docs/weekly-dfs/codex/2026/week-11/collaboration/20261117T163000Z-claude-grok-response.json",
+    "grok": "https://github.com/Prometheus-Frameworks/TIBER-Research/pull/144#issuecomment-6951178993"
+  },
+  "claude_response_commit": "d3e886c7228389ae056c85de3b15e12109a74995",
+  "claude_posted_at": "2026-11-17T16:28:45Z",
+  "grok": {
+    "author": "Grok Bot",
+    "posted_by": "Prometheus-Frameworks via observed grok-by-xai GitHub App",
+    "posted_at": "2026-11-17T14:38:07Z",
+    "stated_completion": "2026-11-17 approximately14:40Z",
+    "clock_conflict": "Post precedes stated approximate completion; preserved without backdating.",
+    "exact_runtime_model": null
+  },
+  "original_claude": {
+    "stated_decision": "2026-11-17T14:00:00Z",
+    "commit_clock": "2026-11-17T13:59:28Z",
+    "post_clock": "2026-11-17T13:59:42Z",
+    "exposure_correction": "Four curated-row matches including Cook, acknowledged in actual response."
+  },
+  "copy_policy": "Provider content copied verbatim; receipts are later observations, not original-generation clocks.",
+  "frozen": false
+}

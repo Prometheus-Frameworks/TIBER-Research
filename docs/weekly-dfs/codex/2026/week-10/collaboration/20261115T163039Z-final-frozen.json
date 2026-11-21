@@ -1,0 +1,78 @@
+{
+  "schema_version": "tiber-dfs-collaboration/v1",
+  "id": "2026-w10-final-frozen",
+  "cycle": "2026-week-10",
+  "slate_date": "2026-11-15",
+  "round": 2,
+  "stage": "final_frozen",
+  "status": "ready",
+  "actual_author": "Codex final editor with actual Claude revision contributions and Grok questions",
+  "posted_by": "Codex through authorized GitHub connection",
+  "completed_at": "2026-11-15T16:31:15.945Z",
+  "freeze_at": "2026-11-15T16:30:39.515Z",
+  "deadline_utc": "2026-11-15T17:30:00Z",
+  "input_versions": {
+    "codex_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a4fd4194bc744ad83c8f68e9e4d45de53aefcf28/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-10.json",
+    "claude_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T123500Z-claude-v1.json",
+    "grok_questions": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2a14ddad633a36fc49aa7d288cba5ca4d689b538/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T133502Z-grok-questions-verbatim.md",
+    "codex_response": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/967778b0e9e8fb371aba9e7d9c3d811c895b096e/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T133808Z-codex-grok-response.json",
+    "claude_response": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/94a4ac9159abba6588d55a0d3008e00192fd5492/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T142258Z-claude-grok-response.json",
+    "source_receipts": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/94a4ac9159abba6588d55a0d3008e00192fd5492/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T145845Z-integration-sources.json",
+    "original_expectations": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20a2131d1363b0c14ca4c56883cb710c2541f851/docs/weekly-dfs/codex/journal/20261110T113619Z.json",
+    "latest_daily": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4617fe68941cf40b298cbb982daf4401bc7a463a/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-15.json",
+    "claude_latest": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/82bf0501df9db5d3c937ca5302a062090b92a5b2/docs/weekly-dfs/codex/2026/week-10/collaboration/20261115T141500Z-claude-material-delta-v3-response.json",
+    "claude_external": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0ffff5ccc20bdd032103edccdf26f1a032048002/docs/weekly-dfs/codex/2026/week-10/collaboration/20261115T141500Z-claude-material-delta-v3-response.json",
+    "evidence_packet": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/82bf0501df9db5d3c937ca5302a062090b92a5b2/docs/weekly-dfs/codex/2026/week-10/freeze/20261115T162821Z-evidence.json",
+    "round1_editor": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6a676cf09f25acfb86013a6a963b9e3439da0c3d/docs/weekly-dfs/codex/2026/week-10/daily/20261110T150023Z-editor-integration.json"
+  },
+  "immutable_output": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/88752e288a2957ac7a994b105dc53caed43a5d47/docs/weekly-dfs/codex/2026/week-10/freeze/20261115T163039Z.json",
+  "immutable_journal": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/88752e288a2957ac7a994b105dc53caed43a5d47/docs/weekly-dfs/codex/journal/20261115T163039Z.json",
+  "expectation_ids": [
+    "2026-w10-1110-cook-rushing-role",
+    "2026-w10-1110-rams-front-condition",
+    "2026-w10-1110-rice-route-condition",
+    "2026-w10-1111-dell-rotation",
+    "2026-w10-1111-warren-post-trades",
+    "2026-w10-1112-concepcion-participation",
+    "2026-w10-1115-johnson-lead-opportunity"
+  ],
+  "expectation_packet": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/82bf0501df9db5d3c937ca5302a062090b92a5b2/docs/weekly-dfs/codex/2026/week-10/freeze/20261115T162821Z-evidence.json",
+  "selected_lineup": {
+    "immutable_file": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4617fe68941cf40b298cbb982daf4401bc7a463a/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-15.json",
+    "json_pointer": "/picks",
+    "selection": "Exact morning nine, official IDs, roster slots, original salaries and original rationale retained; no pick changed",
+    "original_salary_snapshot": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4617fe68941cf40b298cbb982daf4401bc7a463a/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-15-draftkings-156416.csv",
+    "current_revalidation": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/82bf0501df9db5d3c937ca5302a062090b92a5b2/docs/weekly-dfs/codex/2026/week-10/freeze/20261115T162821Z-draftkings-156416.csv",
+    "current_retrieved_at": "2026-11-15T16:25:58.796Z",
+    "official_csv_blob_note": "Full CSV retained; historical AvgPointsPerGame never a projection"
+  },
+  "salary_total": 49600,
+  "salary_remaining": 400,
+  "shared_final": true,
+  "joint_endorsement": false,
+  "collaboration": {
+    "cycle": "2026-week-10",
+    "round": 2,
+    "codex_v1_ready": "ready; original retained",
+    "claude_v1_ready": "ready; exposure, source-window and clock corrections retained",
+    "grok_questions_ready": "ready; actual G-W10-Q1–Q8, original inputs only; runtime unknown",
+    "collaboration_ready": "ready; actual round1 author responses and editor exchange, later Dell adoption; current Claude acceptsJohnson and Codex dispositions retained in evidence packet",
+    "final_frozen": "complete_before_deadline",
+    "shared_final": true,
+    "joint_endorsement": false,
+    "claude_latest_scope": "AcceptJohnsonforKelceonly; other8notfreshlyreviewed; no blanketendorsement",
+    "missing_contributions": [
+      "W10-PRACTICE-KC and W10-PRACTICE-CLE-HOU Nov12 requests unanswered byClaude. No post-trade/newGrokscope inferred."
+    ],
+    "disagreements": [
+      "Kelceholddefensible accordingClaude; CodexprefersJohnson.",
+      "Correct 16:30UTC after17:30UTC claim: it is one hour BEFORE. Afternoon inactive lists unpopulated at observed read, not impossible before cutoff.",
+      "Do not adopt Claude55-65%share,12-20+range or model20.9-as-optimistic interpretation as measured/calibrated forecast. Avg8.0 is historical and cannot establish a point distribution.",
+      "Old KC construction was QB plus TWO passcatchers, not three passcatchers. New QB/WR/RB still16800 and same-offense failure risk; no quantified correlation improvement.",
+      "OfficialCSV places Demercado HOU, not KC; undatedpreseasonitem not current KC competition evidence. Ott/NateCarter currentpool; roles unverified."
+    ],
+    "next_action": "Later replies observations/outcomes only, no scored-selection change."
+  },
+  "next_action": "Later observations/results only. No scored-selection change.",
+  "archive_commit": "88752e288a2957ac7a994b105dc53caed43a5d47"
+}

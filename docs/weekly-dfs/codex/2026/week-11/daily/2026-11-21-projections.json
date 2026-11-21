@@ -1,0 +1,68 @@
+{
+  "schema_version": "tiber-external-model-observation/v1",
+  "recorded_at": "2026-11-21T11:09:54Z",
+  "projection": {
+    "provider": "FullTime Fantasy / FFToolbox",
+    "model": "FullTime Fantasy weekly DraftKings projections; version unknown",
+    "as_of": "2026-11-20T23:15:00Z",
+    "as_of_display": "Fri 6:15 PM ET · Week 11",
+    "as_of_note": "November20 date resolved from Friday of target Week11; exact news ingestion/version unknown.",
+    "source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156561",
+    "observed_at": "2026-11-21T11:09:54Z",
+    "annotation_at": "2026-11-21T11:09:54Z",
+    "scoring_basis": "Provider labels DraftKings Main Slate (10 games), group156561. Rounded displayed estimates; not Codex forecasts.",
+    "coverage": "All nine match current main group156561 model; 202 unique rendered entries, not certified complete519-player model pool."
+  },
+  "selected": [
+    {
+      "player": "Dak Prescott",
+      "salary": 6700,
+      "points": 29
+    },
+    {
+      "player": "James Cook III",
+      "salary": 7900,
+      "points": 21.5
+    },
+    {
+      "player": "Emmett Johnson",
+      "salary": 6000,
+      "points": 27.2
+    },
+    {
+      "player": "George Pickens",
+      "salary": 6800,
+      "points": 20.4
+    },
+    {
+      "player": "Jordyn Tyson",
+      "salary": 5200,
+      "points": 8.7
+    },
+    {
+      "player": "Elic Ayomanor",
+      "salary": 3700,
+      "points": 9
+    },
+    {
+      "player": "Sam LaPorta",
+      "salary": 4400,
+      "points": 14
+    },
+    {
+      "player": "Jakobi Meyers",
+      "salary": 4500,
+      "points": 12
+    },
+    {
+      "player": "Pittsburgh Steelers",
+      "salary": 3300,
+      "points": 5.8
+    }
+  ],
+  "total": 147.6,
+  "current_P2_total": 138.3,
+  "current_model_delta": 9.3,
+  "complete_projection_pool_verified": false,
+  "projection_only_optimum": null
+}

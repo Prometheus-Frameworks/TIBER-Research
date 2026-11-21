@@ -1,0 +1,605 @@
+{
+  "record_type": "freeze",
+  "id": "2026-w10-final-20261115T163039Z",
+  "author": "Claude + Codex substantive exchange; Codex final editor",
+  "final_editor": "Codex",
+  "label": "Shared final — Claude + Codex",
+  "recorded_at_utc": "2026-11-15T16:30:39.515Z",
+  "recorded_at_toronto": "2026-11-15T11:30:39.515-05:00",
+  "freeze_at_utc": "2026-11-15T16:30:39.515Z",
+  "evidence_cutoff": "2026-11-15T16:30:39.515Z",
+  "season": 2026,
+  "week": 10,
+  "slate_date": "2026-11-15",
+  "platform": "DraftKings",
+  "slate_label": "NFL Sunday main — official group156416, ten afternoon games",
+  "draft_group_id": "156416",
+  "games": [
+    "KC@ATL",
+    "HOU@CLE",
+    "MIN@GB",
+    "JAX@TEN",
+    "MIA@IND",
+    "CAR@NO",
+    "BUF@NYJ",
+    "SEA@LV",
+    "LAR@ARI",
+    "SF@DAL"
+  ],
+  "earliest_kickoff": "2026-11-15T18:00:00Z",
+  "excluded_windows": [
+    "Thursday WAS@NYG",
+    "Sunday09:30Munich NE@DET",
+    "SundaynightPIT@CIN",
+    "MondayLAC@BAL"
+  ],
+  "deadline_utc": "2026-11-15T17:30:00Z",
+  "deadline_toronto": "2026-11-15T12:30:00-05:00",
+  "deadline_rule": "Archive strictly BEFORE cutoff or first included kickoff if earlier",
+  "status": "complete",
+  "frozen": true,
+  "salary_cap": 50000,
+  "salary_total": 49600,
+  "salary_remaining": 400,
+  "official_pool_verified": true,
+  "pool_status": "official_pool_verified_at_retrieval; actives not certified",
+  "picks": [
+    {
+      "slot": "QB",
+      "position": "QB",
+      "player": "Patrick Mahomes II",
+      "team": "KC",
+      "opponent": "ATL",
+      "home": false,
+      "salary": 6000,
+      "rationale": "Current report retains Mahomes full/no designation; Moore OUT and Walker OUT do not prove a passing windfall. Keep $6,000 passer with Rice.",
+      "source_ids": [
+        "official",
+        "kc"
+      ],
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=156416",
+      "official_player_id": "44850798",
+      "projected_points": 20,
+      "actual_points": null,
+      "salary_receipt": "QB,Patrick Mahomes (44850798),Patrick Mahomes,44850798,QB,6000,KC@ATL 11/15/2026 01:00PM ET,KC,19.1,",
+      "kickoff_reported": "Sun 1:00PM",
+      "salary_verified_at": "2026-11-15T11:57:10.844Z",
+      "official_name": "Patrick Mahomes",
+      "roster_eligibility": "QB",
+      "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+      "platform_status": ""
+    },
+    {
+      "slot": "RB",
+      "position": "RB",
+      "player": "Christian McCaffrey",
+      "team": "SF",
+      "opponent": "DAL",
+      "home": false,
+      "salary": 8500,
+      "rationale": "Current SF table: full Thursday/Friday after rest day, no designation. Retain previous rushing/receiving case without assuming vacated receiver targets.",
+      "source_ids": [
+        "official",
+        "sfArticle"
+      ],
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=156416",
+      "official_player_id": "44850858",
+      "projected_points": 26.9,
+      "actual_points": null,
+      "salary_receipt": "RB,Christian McCaffrey (44850858),Christian McCaffrey,44850858,RB/FLEX,8500,SF@DAL 11/15/2026 04:25PM ET,SF,21,",
+      "kickoff_reported": "Sun 4:25PM",
+      "salary_verified_at": "2026-11-15T11:57:10.844Z",
+      "official_name": "Christian McCaffrey",
+      "roster_eligibility": "RB/FLEX",
+      "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+      "platform_status": ""
+    },
+    {
+      "slot": "RB",
+      "position": "RB",
+      "player": "James Cook III",
+      "team": "BUF",
+      "opponent": "NYJ",
+      "home": false,
+      "salary": 7400,
+      "rationale": "Retain archived Buffalo rushing-lead case; no fresh Cook-specific role evidence inspected. Prior one-target game limits receiving-floor claim.",
+      "source_ids": [
+        "official",
+        "buf"
+      ],
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=156416",
+      "official_player_id": "44850866",
+      "projected_points": 21.5,
+      "actual_points": null,
+      "salary_receipt": "RB,James Cook III (44850866),James Cook III,44850866,RB/FLEX,7400,BUF@NYJ 11/15/2026 01:00PM ET,BUF,20.3,",
+      "kickoff_reported": "Sun 1:00PM",
+      "salary_verified_at": "2026-11-15T11:57:10.844Z",
+      "official_name": "James Cook III",
+      "roster_eligibility": "RB/FLEX",
+      "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+      "platform_status": ""
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Rashee Rice",
+      "team": "KC",
+      "opponent": "ATL",
+      "home": false,
+      "salary": 6100,
+      "rationale": "Current KC report full/no designation with Worthy full. Keep involvement; Downs/Worthy target competition remains.",
+      "source_ids": [
+        "official",
+        "kc"
+      ],
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=156416",
+      "official_player_id": "44851120",
+      "projected_points": 19.1,
+      "actual_points": null,
+      "salary_receipt": "WR,Rashee Rice (44851120),Rashee Rice,44851120,WR/FLEX,6100,KC@ATL 11/15/2026 01:00PM ET,KC,11,",
+      "kickoff_reported": "Sun 1:00PM",
+      "salary_verified_at": "2026-11-15T11:57:10.844Z",
+      "official_name": "Rashee Rice",
+      "roster_eligibility": "WR/FLEX",
+      "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+      "platform_status": ""
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "KC Concepcion Jr.",
+      "team": "CLE",
+      "opponent": "HOU",
+      "home": true,
+      "salary": 4800,
+      "rationale": "Boston still LP/questionable; retain Concepcion at $4,800 without assuming Boston OUT or Watson receiver uplift.",
+      "source_ids": [
+        "official",
+        "cle",
+        "hou"
+      ],
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=156416",
+      "official_player_id": "44851152",
+      "projected_points": 16.5,
+      "actual_points": null,
+      "salary_receipt": "WR,KC Concepcion Jr. (44851152),KC Concepcion Jr.,44851152,WR/FLEX,4800,HOU@CLE 11/15/2026 01:00PM ET,CLE,10.3,",
+      "kickoff_reported": "Sun 1:00PM",
+      "salary_verified_at": "2026-11-15T11:57:10.844Z",
+      "official_name": "KC Concepcion Jr.",
+      "roster_eligibility": "WR/FLEX",
+      "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+      "platform_status": ""
+    },
+    {
+      "slot": "WR",
+      "position": "WR",
+      "player": "Tank Dell",
+      "team": "HOU",
+      "opponent": "CLE",
+      "home": false,
+      "salary": 3900,
+      "projected_points": 11.8,
+      "actual_points": null,
+      "official_player_id": "44851180",
+      "rationale": "Dell still full/no designation and Harrison OUT. Keep outside rotation value; no full-time role inferred. New external estimate11.8 is distinct from observed routes.",
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=156416",
+      "salary_receipt": "WR,Tank Dell (44851180),Tank Dell,44851180,WR/FLEX,3900,HOU@CLE 11/15/2026 01:00PM ET,HOU,14.5,",
+      "salary_verified_at": "2026-11-15T11:57:10.844Z",
+      "official_name": "Tank Dell",
+      "roster_eligibility": "WR/FLEX",
+      "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+      "platform_status": "",
+      "source_ids": [
+        "official",
+        "hou"
+      ]
+    },
+    {
+      "slot": "TE",
+      "position": "TE",
+      "player": "Tyler Warren",
+      "team": "IND",
+      "opponent": "MIA",
+      "home": true,
+      "salary": 4400,
+      "rationale": "Warren retained on prior receiving involvement. Current Colts table Alie-Cox/Travis OUT; competition loss can coexist with protection problems.",
+      "source_ids": [
+        "official",
+        "ind"
+      ],
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=156416",
+      "official_player_id": "44851490",
+      "projected_points": 12,
+      "actual_points": null,
+      "salary_receipt": "TE,Tyler Warren (44851490),Tyler Warren,44851490,TE/FLEX,4400,MIA@IND 11/15/2026 01:00PM ET,IND,12,",
+      "kickoff_reported": "Sun 1:00PM",
+      "salary_verified_at": "2026-11-15T11:57:10.844Z",
+      "official_name": "Tyler Warren",
+      "roster_eligibility": "TE/FLEX",
+      "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+      "platform_status": ""
+    },
+    {
+      "slot": "FLEX",
+      "position": "RB",
+      "player": "Emmett Johnson",
+      "official_name": "Emmett Johnson",
+      "official_player_id": "44850924",
+      "team": "KC",
+      "opponent": "ATL",
+      "home": false,
+      "salary": 4700,
+      "roster_eligibility": "RB/FLEX",
+      "actual_points": null,
+      "rationale": "Walker ruled OUT Saturday; dated team preview expects Johnson to carry the load. Prefer newly supported rushing opportunity to Kelce at equal salary, without assuming all vacated touches. Ott remains questionable; protection and rookie execution uncertain.",
+      "source_ids": [
+        "official",
+        "kc",
+        "preview"
+      ],
+      "salary_receipt": "RB,Emmett Johnson (44850924),Emmett Johnson,44850924,RB/FLEX,4700,KC@ATL 11/15/2026 01:00PM ET,KC,8,",
+      "salary_verified_at": "2026-11-15T11:57:10.844Z",
+      "platform_status": "",
+      "projected_points": 20.9,
+      "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416"
+    },
+    {
+      "slot": "DST",
+      "position": "DST",
+      "player": "Los Angeles Rams",
+      "team": "LAR",
+      "opponent": "ARI",
+      "home": false,
+      "salary": 3800,
+      "rationale": "Current Rams and Arizona tables still Garrett/McDuffie/Curl questionable, Froholdt/Gaines OUT. Keep conditional matchup/front choice; no Sunday-active certification.",
+      "source_ids": [
+        "official",
+        "rams",
+        "ari"
+      ],
+      "salary_source_url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=156416",
+      "official_player_id": "44851701",
+      "projected_points": 7.9,
+      "actual_points": null,
+      "salary_receipt": "DST,Rams (44851701),Rams,44851701,DST,3800,LAR@ARI 11/15/2026 04:05PM ET,LAR,5.4,",
+      "kickoff_reported": "Sun 4:05PM",
+      "salary_verified_at": "2026-11-15T11:57:10.844Z",
+      "official_name": "Rams",
+      "roster_eligibility": "DST",
+      "projection_source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+      "platform_status": ""
+    }
+  ],
+  "selected_lineup_binding": {
+    "immutable_file": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4617fe68941cf40b298cbb982daf4401bc7a463a/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-15.json",
+    "json_pointer": "/picks",
+    "selection": "Exact morning nine, official IDs, roster slots, original salaries and original rationale retained; no pick changed",
+    "original_salary_snapshot": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4617fe68941cf40b298cbb982daf4401bc7a463a/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-15-draftkings-156416.csv",
+    "current_revalidation": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/82bf0501df9db5d3c937ca5302a062090b92a5b2/docs/weekly-dfs/codex/2026/week-10/freeze/20261115T162821Z-draftkings-156416.csv",
+    "current_retrieved_at": "2026-11-15T16:25:58.796Z",
+    "official_csv_blob_note": "Full CSV retained; historical AvgPointsPerGame never a projection"
+  },
+  "previous_snapshot_id": "2026-w10-2026-11-15-daily",
+  "previous_snapshot_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4617fe68941cf40b298cbb982daf4401bc7a463a/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-15.json",
+  "revision_classification": "unchanged",
+  "revisions": [],
+  "changed_picks": [],
+  "important_unchanged": [
+    "Johnson4700 retains expected lead opportunity after WalkerOUT; Claude accepts this exact swap, not whole-nine fresh endorsement. Ott uncertainty and limited prior volume remain.",
+    "Mahomes/Rice $12,100 retained on FP/no designation; routes/effectiveness not guaranteed. KC QB/WR/RB total $16,800; rushing TD competition and offense-wide failure remain.",
+    "Cookleadingrushcase retained; current noinjuryrow is not active certification, Brown doubtful challenges protection.",
+    "CMC FP/no designation; new SF receiving personnel do not imply vacated targets.",
+    "Concepcion held even if Boston plays; Dell retained meaningful outside rotation without full-time assumption.",
+    "Warren retained; Mallory nowOUT joinsAlieCox/TravisOUT, but route/target expansion not automatic.",
+    "Rams retained despiteGarrett/McDuffie/CurlQ; ARIFroholdt/GainesOUT counterbalance, no turnover promise."
+  ],
+  "summary": "Freeze unchanged from Nov15 morning: $49,600/$400, seven original prospective expectations bound. Shared actual Claude/Codex exchange and Grok pass retained; final editor Codex. Claude accepts Johnson-for-Kelce only; no exact-version whole-lineup joint endorsement.",
+  "counterargument": "Johnson's expected lead is team-reporter analysis, not a fixed workload. Ott is questionable, Moore is OUT, and rushing TDs compete with Mahomes/Rice points. Rams three questionable defenders remain the weakest availability condition.",
+  "unresolved_assumptions": [
+    "Sunday afternoon active lists still not populated in inspected NFL roundup at 2026-11-15T16:30:18.698Z; absence not clearance.",
+    "Johnson role reporter expectation and prior max8carries, OttQ, MooreOUT; no fixedshare/pointfloor.",
+    "Rams threeQdefenders and late-game actives unavailable; future news cannot change final.",
+    "Delltarget-source8vs9 conflict/rotation, Bostonmayplay, KCDowns/Worthycompetition, Coltsabsolutevolume/protection."
+  ],
+  "change_triggers": [
+    "None for scored selection after this freeze. Append late availability/news/results only."
+  ],
+  "expectation_binding": {
+    "packet_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/82bf0501df9db5d3c937ca5302a062090b92a5b2/docs/weekly-dfs/codex/2026/week-10/freeze/20261115T162821Z-evidence.json",
+    "expectation_ids": [
+      "2026-w10-1110-cook-rushing-role",
+      "2026-w10-1110-rams-front-condition",
+      "2026-w10-1110-rice-route-condition",
+      "2026-w10-1111-dell-rotation",
+      "2026-w10-1111-warren-post-trades",
+      "2026-w10-1112-concepcion-participation",
+      "2026-w10-1115-johnson-lead-opportunity"
+    ],
+    "originals": [
+      {
+        "id": "2026-w10-1110-cook-rushing-role",
+        "recorded_at": "2026-11-10T11:36:19.215Z",
+        "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20a2131d1363b0c14ca4c56883cb710c2541f851/docs/weekly-dfs/codex/journal/20261110T113619Z.json"
+      },
+      {
+        "id": "2026-w10-1110-rams-front-condition",
+        "recorded_at": "2026-11-10T11:36:19.215Z",
+        "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20a2131d1363b0c14ca4c56883cb710c2541f851/docs/weekly-dfs/codex/journal/20261110T113619Z.json"
+      },
+      {
+        "id": "2026-w10-1110-rice-route-condition",
+        "recorded_at": "2026-11-10T15:00:23.742Z",
+        "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6a676cf09f25acfb86013a6a963b9e3439da0c3d/docs/weekly-dfs/codex/journal/20261110T150023Z.json"
+      },
+      {
+        "id": "2026-w10-1111-dell-rotation",
+        "recorded_at": "2026-11-11T11:17:33.909Z",
+        "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9ae416975f4aa91f6e281c7a3fa6b80b546a870d/docs/weekly-dfs/codex/journal/20261111T111733Z.json"
+      },
+      {
+        "id": "2026-w10-1111-warren-post-trades",
+        "recorded_at": "2026-11-11T11:17:33.909Z",
+        "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9ae416975f4aa91f6e281c7a3fa6b80b546a870d/docs/weekly-dfs/codex/journal/20261111T111733Z.json"
+      },
+      {
+        "id": "2026-w10-1112-concepcion-participation",
+        "recorded_at": "2026-11-12T11:27:25.565Z",
+        "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/acbb902bc2a8e939ef4fa4a8a95e824f63188f6d/docs/weekly-dfs/codex/journal/20261112T112725Z.json"
+      },
+      {
+        "id": "2026-w10-1115-johnson-lead-opportunity",
+        "recorded_at": "2026-11-15T11:59:32.050Z",
+        "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4617fe68941cf40b298cbb982daf4401bc7a463a/docs/weekly-dfs/codex/journal/20261115T115932Z.json"
+      }
+    ],
+    "retired_not_bound": [
+      "2026-w10-1112-kelce-receiving-condition",
+      "2026-w10-1110-boston-receiving-role",
+      "2026-w10-1110-sadiq-receiving-role",
+      "2026-w10-1110-sadiq-personnel-condition",
+      "2026-w10-1110-colts-passing-opportunity"
+    ],
+    "note": "Seven original clocks preserved. Removed-player/pair claims remain historical; no reconstruction."
+  },
+  "sources": [
+    {
+      "id": "kc",
+      "label": "kc",
+      "url": "https://www.chiefs.com/news/week-10-injury-report-chiefs-vs-falcons-2026",
+      "retrieved_at": "2026-11-15T16:25:59.869Z",
+      "publication_at": null,
+      "publication_display": "PublishedNov14 14:31 /UpdatedNov13 02:30AM inconsistent",
+      "scope": "Saturday Walker OUT; Ott questionable; Mahomes/Rice/Kelce/Worthy FP/no designation, Moore OUT. PublishedNov14/updatedNov13 inconsistent; Saturday body corroborated dated preview."
+    },
+    {
+      "id": "preview",
+      "label": "preview",
+      "url": "https://www.chiefs.com/news/five-things-to-watch-on-sunday-chiefs-vs-falcons-x8239",
+      "retrieved_at": "2026-11-15T16:25:59.153Z",
+      "publication_at": null,
+      "publication_display": "Nov14 2026 14:27 timezone not shown",
+      "scope": "Nov14 team writer expects Johnson lead work; attributed expectation, not fixed workload. Atlanta pressure and Moore absence retained."
+    },
+    {
+      "id": "buf",
+      "label": "buf",
+      "url": "https://www.buffalobills.com/team/injury-report/",
+      "retrieved_at": "2026-11-15T16:25:59.203Z",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Current BUF@NYJ table has no Cook row; Brown doubtful, Dawkins/McGovern FP/no designation. No Cook active certification or new workload guarantee."
+    },
+    {
+      "id": "hou",
+      "label": "hou",
+      "url": "https://www.houstontexans.com/news/week-10-injury-report-texans-at-browns",
+      "retrieved_at": "2026-11-15T16:25:59.262Z",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Dell FP/no designation,Harrison OUT; Hunter/Al-ShaairOUT,AndersonQ,MontgomeryQ. Practice report does not prove actives."
+    },
+    {
+      "id": "cle",
+      "label": "cle",
+      "url": "https://www.clevelandbrowns.com/team/injury-report/",
+      "retrieved_at": "2026-11-15T16:25:59.661Z",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Boston LP/Q,Fannin/JenkinsFP/no designation; Concepcion absent, not active certification."
+    },
+    {
+      "id": "rams",
+      "label": "rams",
+      "url": "https://www.therams.com/team/injury-report/",
+      "retrieved_at": "2026-11-15T16:25:59.215Z",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Garrett knee/rest DNP Q; McDuffie back/Curltoe LPQ. Late-game actives unknown."
+    },
+    {
+      "id": "ari",
+      "label": "ari",
+      "url": "https://www.azcardinals.com/team/injury-report/",
+      "retrieved_at": "2026-11-15T16:25:59.415Z",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Froholdt/GainesOUT,JaydenWilliamsQ; Rams Q statuses corroborated."
+    },
+    {
+      "id": "sf",
+      "label": "sf",
+      "url": "https://www.49ers.com/team/injury-report/",
+      "retrieved_at": "2026-11-15T16:25:59.298Z",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "CMC Thu/FriFP/no designation after rest. Generic Williamsrest label conflicts prior dated shoulder report; no new medical interpretation."
+    },
+    {
+      "id": "ind",
+      "label": "ind",
+      "url": "https://www.colts.com/team/injury-report/",
+      "retrieved_at": "2026-11-15T16:25:59.154Z",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Alie-Cox/TravisOUT; Mallory now OUT compared morning Q. No Warren listed; no guarantee vacated work transfers."
+    },
+    {
+      "id": "official",
+      "label": "official",
+      "url": "https://www.draftkings.com/lineup/getavailableplayerscsv?draftGroupId=156416",
+      "retrieved_at": "2026-11-15T16:25:58.796Z",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "514 rows, uniqueIDs; ten same afternoon fixtures; nine selected salaries/positions/IDs/team/game verified. Blank status not active proof."
+    },
+    {
+      "id": "schedule",
+      "label": "schedule",
+      "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+      "retrieved_at": "2026-11-15T16:26:00.746Z",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Week10 Nov15 tenafternoon fixtures earliest18:00UTC; excluded Munich/Thu/SNF/MNF."
+    },
+    {
+      "id": "rules",
+      "label": "rules",
+      "url": "https://www.draftkings.com/help/rules/1",
+      "retrieved_at": "2026-11-15T16:26:00.026Z",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "NFLClassic50000, ninepositions,>=2games; exact PPR/TD/yardage/bonuses/lostfumble-1/DSTPA inspected."
+    },
+    {
+      "id": "model",
+      "label": "model",
+      "url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+      "retrieved_at": "2026-11-15T16:27:01.145Z",
+      "publication_at": null,
+      "publication_display": "Sun4:57AMET Week10",
+      "scope": "Main156416Sun04:57ET(Nov15 09:57Z),193uniquedropdownrows; same selectedrounded156.6, no completeprojectionpool/optimum certified."
+    },
+    {
+      "id": "modelcsv",
+      "label": "modelcsv",
+      "url": "https://fftoolbox.fulltimefantasy.com/football/ExportToCSV.cfm?type=dk&dgi=156416",
+      "retrieved_at": "2026-11-15T16:27:15.699Z",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Export endpoint no players found; projection-only optimum unavailable."
+    },
+    {
+      "id": "johnsonlog",
+      "label": "johnsonlog",
+      "url": "https://www.chiefs.com/team/players-roster/emmett-johnson/logs",
+      "retrieved_at": "2026-11-15T16:27:16.742Z",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Regularseason26carries111yards1TD, max8carries. Wk8onecarry5receptions128yd1TD; targets unavailable."
+    },
+    {
+      "id": "inactives",
+      "label": "inactives",
+      "url": "https://www.nfl.com/news/nfl-week-10-inactives-players-ruled-out-sunday-2026-season",
+      "retrieved_at": "2026-11-15T16:27:17.947Z",
+      "publication_at": null,
+      "publication_display": null,
+      "scope": "Only excluded Munich lists populated at retrieval; no afternoon inactive certification. 16:30UTC precedes17:30UTC cutoff; old response after assertion incorrect."
+    }
+  ],
+  "evidence_packet": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/82bf0501df9db5d3c937ca5302a062090b92a5b2/docs/weekly-dfs/codex/2026/week-10/freeze/20261115T162821Z-evidence.json",
+  "projection": {
+    "provider": "FullTime Fantasy / FFToolbox",
+    "model": "Week10 DraftKings Main Slate, displayed rounded player projections",
+    "as_of": "2026-11-15T09:57:00Z",
+    "source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+    "observed_at": "2026-11-15T16:27:01.145Z",
+    "publication_display": "Sun4:57AMET Week10",
+    "as_of_basis": "Displayed Sunday04:57ET interpreted asNov15 09:57UTC; providerclocknot independently audited",
+    "scoring_basis": "Provider labels DraftKings FLEX/main, not Showdown; historical AvgPointsPerGame from official CSV excluded.",
+    "observation_note": "Current rounded selected values156.6 match morning but displayedupdateclockadvanced. New snapshot retained in immutable evidence packet; prior147.0 and156.6 unchanged."
+  },
+  "projected_total": 156.6,
+  "actual_total": null,
+  "projection_only_baseline": {
+    "status": "unavailable",
+    "reason": "193 dropdown rows not certified full official514row projectioncoverage; export again returned no players. No optimum approximated."
+  },
+  "input_records": {
+    "codex_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a4fd4194bc744ad83c8f68e9e4d45de53aefcf28/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-10.json",
+    "claude_v1": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T123500Z-claude-v1.json",
+    "grok_questions": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/2a14ddad633a36fc49aa7d288cba5ca4d689b538/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T133502Z-grok-questions-verbatim.md",
+    "codex_response": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/967778b0e9e8fb371aba9e7d9c3d811c895b096e/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T133808Z-codex-grok-response.json",
+    "claude_response": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/94a4ac9159abba6588d55a0d3008e00192fd5492/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T142258Z-claude-grok-response.json",
+    "source_receipts": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/94a4ac9159abba6588d55a0d3008e00192fd5492/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T145845Z-integration-sources.json",
+    "original_expectations": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20a2131d1363b0c14ca4c56883cb710c2541f851/docs/weekly-dfs/codex/journal/20261110T113619Z.json",
+    "latest_daily": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4617fe68941cf40b298cbb982daf4401bc7a463a/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-15.json",
+    "claude_latest": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/82bf0501df9db5d3c937ca5302a062090b92a5b2/docs/weekly-dfs/codex/2026/week-10/collaboration/20261115T141500Z-claude-material-delta-v3-response.json",
+    "claude_external": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0ffff5ccc20bdd032103edccdf26f1a032048002/docs/weekly-dfs/codex/2026/week-10/collaboration/20261115T141500Z-claude-material-delta-v3-response.json",
+    "evidence_packet": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/82bf0501df9db5d3c937ca5302a062090b92a5b2/docs/weekly-dfs/codex/2026/week-10/freeze/20261115T162821Z-evidence.json",
+    "round1_editor": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6a676cf09f25acfb86013a6a963b9e3439da0c3d/docs/weekly-dfs/codex/2026/week-10/daily/20261110T150023Z-editor-integration.json"
+  },
+  "collaboration": {
+    "cycle": "2026-week-10",
+    "round": 2,
+    "codex_v1_ready": "ready; original retained",
+    "claude_v1_ready": "ready; exposure, source-window and clock corrections retained",
+    "grok_questions_ready": "ready; actual G-W10-Q1–Q8, original inputs only; runtime unknown",
+    "collaboration_ready": "ready; actual round1 author responses and editor exchange, later Dell adoption; current Claude acceptsJohnson and Codex dispositions retained in evidence packet",
+    "final_frozen": "complete_before_deadline",
+    "shared_final": true,
+    "joint_endorsement": false,
+    "claude_latest_scope": "AcceptJohnsonforKelceonly; other8notfreshlyreviewed; no blanketendorsement",
+    "missing_contributions": [
+      "W10-PRACTICE-KC and W10-PRACTICE-CLE-HOU Nov12 requests unanswered byClaude. No post-trade/newGrokscope inferred."
+    ],
+    "disagreements": [
+      "Kelceholddefensible accordingClaude; CodexprefersJohnson.",
+      "Correct 16:30UTC after17:30UTC claim: it is one hour BEFORE. Afternoon inactive lists unpopulated at observed read, not impossible before cutoff.",
+      "Do not adopt Claude55-65%share,12-20+range or model20.9-as-optimistic interpretation as measured/calibrated forecast. Avg8.0 is historical and cannot establish a point distribution.",
+      "Old KC construction was QB plus TWO passcatchers, not three passcatchers. New QB/WR/RB still16800 and same-offense failure risk; no quantified correlation improvement.",
+      "OfficialCSV places Demercado HOU, not KC; undatedpreseasonitem not current KC competition evidence. Ott/NateCarter currentpool; roles unverified."
+    ],
+    "next_action": "Later replies observations/outcomes only, no scored-selection change."
+  },
+  "operator_seat": {
+    "blind_calls": "absent",
+    "acceptance": "not_received",
+    "override": "none_received",
+    "participation": "absent",
+    "pre_override_candidate": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4617fe68941cf40b298cbb982daf4401bc7a463a/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-15.json",
+    "override_salary_or_pick_delta": 0,
+    "note": "No player-specific operator instruction; actual handoff relay is a process confounder. Scored override delta evaluated after results."
+  },
+  "runtime": {
+    "agent": "Codex",
+    "model": "gpt-6.1-sol (runtime instruction)",
+    "previous_run_model": null,
+    "cost": null
+  },
+  "confounders": [
+    "Later officialpool/practice/tradeinformation versusoriginaldrafts; current observedmodelgpt-6.1-sol, previous exactrunmodelunknown.",
+    "Joe relayed actualClauderesponse; provider subscriptions notverified. No newdispatch/watcher."
+  ],
+  "validation": {
+    "nine_slots": true,
+    "unique_official_ids": 9,
+    "distinct_games": 6,
+    "total": 49600,
+    "remaining": 400,
+    "selected_salary_position_game_match": true,
+    "official_actives_verified": false,
+    "source_receipts": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/82bf0501df9db5d3c937ca5302a062090b92a5b2/docs/weekly-dfs/codex/2026/week-10/freeze/20261115T162821Z-evidence.json",
+    "self_review": true
+  },
+  "temporal_integrity": "Once this complete freeze is archived, later news/inactives/contributions cannot change the scored nine even before kickoff. Append observations/results only.",
+  "scoring_status": "pregame_pending",
+  "scoring_recovery": "PriorWeek9comparison89.08 remainsprovisional; this finalrun makesno newscoringfinalityclaim.",
+  "research_only": true,
+  "last_availability_observation": {
+    "url": "https://www.nfl.com/news/nfl-week-10-inactives-players-ruled-out-sunday-2026-season",
+    "retrieved_at": "2026-11-15T16:30:18.698Z",
+    "scope": "Re-read after16:30UTC; sameonlyMunichlists, afternoonlistsunpopulated. Not a clearance.",
+    "body": "Skip to main content\n\n_NFL.com keeps you up to date with the inactive reports for every Sunday game in Week 10 of the 2026 NFL season._\n\n_Fans can stream live local and primetime games on mobile with [NFL+](https://id.nfl.com/select-subscription?p=gc-al&campaign=nfl-nfl-np-iw-edi-3007808)._\n\n## MUNICH GAME\n\n[![](https://static.www.nfl.com/f_auto,h_40,dpr_2.0,q_auto,w_40/league/api/clubs/logos/NE)\\\\\n\\\\\nNew England Patriots\\\\\n\\\\\n5-4](https://www.nfl.com/teams/new-england-patriots)\n\nVS.\n\n[![](https://static.www.nfl.com/f_auto,h_40,dpr_2.0,q_auto,w_40/league/api/clubs/logos/DET)\\\\\n\\\\\nDetroit Lions\\\\\n\\\\\n6-2](https://www.nfl.com/teams/detroit-lions)\n\n- **WHERE:** FC Bayern Munich Stadium (Munich, Germany)\n- **WHEN:** [9:30 a.m. ET](https://www.nfl.com/games/patriots-at-lions-2026-reg-10) \\| [FOX, FOX One, NFL+](https://www.nfl.com/ways-to-watch/by-week/week-10#patriots-at-lions-2026-reg-10)\n\n### PATRIOTS\n\n- CB Carlton Davis\n- FS Brenden Schooler\n- OT Dametrious Crownover\n- OT Walter Rouse\n- C Ben Brown\n- QB Behren Morton (emergency third QB)\n\n### LIONS\n\n- CB Keith Abney II\n- EDGE Ahmed Hassanein\n- C Cade Mays\n- LB Amen Ogbongbemiga\n- CB D.J. Reed\n- DL Mekhi Wingo\n\n## EARLY GAMES\n\n[![](https://static.www.nfl.com/f_auto,h_40,dpr_2.0,q_auto,w_40/league/api/clubs/logos/KC)\\\\\n\\\\\nKansas City Chiefs\\\\\n\\\\\n6-2](https://www.nfl.com/teams/kansas-city-chiefs)\n\nAT\n\n[![](https://static.www.nfl.com/f_auto,h_40,dpr_2.0,q_auto,w_40/league/api/clubs/logos/ATL)\\\\\n\\\\\nAtlanta Falcons\\\\\n\\\\\n3-6](https://www.nfl.com/teams/atlanta-falcons)\n\n- **WHERE:** Mercedes-Benz Stadium (Atlanta)\n- **WHEN:** [1:00 p.m. ET](https://www.nfl.com/games/chiefs-at-falcons-2026-reg-10) \\| [CBS](https://www.nfl.com/ways-to-watch/by-week/week-10#chiefs-at-falcons-2026-reg-10)\n\n[![](https://static.www.nfl.com/f_auto,h_40,dpr_2.0,q_auto,w_40/league/api/clubs/logos/HOU)\\\\\n\\\\\nHouston Texans\\\\\n\\\\\n3-5](https://www.nfl.com/teams/houston-texans)\n\nAT\n\n[![](https://static.www.nfl.com/f_auto,h_40,dpr_2.0,q_auto,w_40/league/api/clubs/logos/CLE)\\\\\n\\\\\nCleveland Browns\\\\\n\\\\\n5-4](https://www.nfl.com/teams/cleveland-browns)\n\n- **WHERE:** Huntington Bank Field (Cleveland)\n- **WHEN:** [1:00 p.m. ET](https://www.nfl.com/games/texans-at-browns-2026-reg-10) \\| [FOX](https://www.nfl.com/ways-to-watch/by-week/week-10#texans-at-browns-2026-reg-10)\n\n[![](https://static.www.nfl.com/f_auto,h_40,dpr_2.0,q_auto,w_40/league/api/clubs/logos/MIN)\\\\\n\\\\\nMinnesota Vikings\\\\\n\\\\\nX-X](https://www.nfl.com/teams/minnesota-vikings)\n\nAT\n\n[![](https://static.www.nfl.com/f_auto,h_40,dpr_2.0,q_auto,w_40/league/api/clubs/logos/GB)\\\\\n\\\\\nGreen Bay Packers\\\\\n\\\\\n6-3](https://www.nfl.com/teams/green-bay-packers)\n\n- **WHERE:** Lambeau Field (Green Bay, Wis.)\n- **WHEN:** [1:00 p.m. ET](https://www.nfl.com/games/vikings-at-packers-2026-reg-10) \\| [FOX, FOX One, NFL+](https://www.nfl.com/ways-to-watch/by-week/week-10#vikings-at-packers-2026-reg-10)\n\n[![](https://static.www.nfl.com/f_auto,h_40,dpr_2.0,q_auto,w_40/league/api/clubs/logos/MIA)\\\\\n\\\\\nMiami Dolphins\\\\\n\\\\\n1-7](https://www.nfl.com/teams/miami-dolphins)\n\nAT\n\n[![](https://static.www.nfl.com/f_auto,h_40,dpr_2.0,q_auto,w_40/league/api/clubs/logos/IND)\\\\\n\\\\\nIndianapolis Colts\\\\\n\\\\\n2-7](https://www.nfl.com/teams/indianapolis-colts)\n\n- **WHERE:** Lucas Oil Stadium (Indianapolis)\n- **WHEN:** [1:00 p.m. ET](https://www.nfl.com/games/dolphins-at-colts-2026-reg-10) \\| [CBS](https://www.nfl.com/ways-to-watch/by-week/week-10#dolphins-at-colts-2026-reg-10)\n\n[![](https://static.www.nfl.com/f_auto,h_40,dpr_2.0,q_auto,w_40/league/api/clubs/logos/CAR)\\\\\n\\\\\nCarolina Panthers\\\\\n\\\\\n3-5](https://www.nfl.com/teams/carolina-panthers)\n\nAT\n\n[![](https://static.www.nfl.com/f_auto,h_40,dpr_2.0,q_auto,w_40/league/api/clubs/logos/NO)\\\\\n\\\\\nNew Orleans Saints\\\\\n\\\\\n3-5](https://www.nfl.com/teams/new-orleans-saints)\n\n- **WHERE:** Caesars Superdome (New Orleans)\n- **WHEN:** [1:00 p.m. ET](https://www.nfl.com/games/panthers-at-saints-2026-reg-10) \\| [FOX](https://www.nfl.com/ways-to-watch/by-week/week-10#panthers-at-saints-2026-reg-10)\n\n[![](https://static.www.nfl.com/f_auto,h_40,dpr_2.0,q_auto,w_40/league/api/clubs/logos/BUF)\\\\\n\\\\\nBuffalo Bills\\\\\n\\\\\n6-1](https://www.nfl.com/teams/buffalo-bills)\n\nAT\n\n[![](https://static.www.nfl.com/f_auto,h_40,dpr_2.0,q_auto,w_40/league/api/clubs/logos/NYJ)\\\\\n\\\\\nNew York Jets\\\\\n\\\\\n2-7](https://www.nfl.com/teams/new-york-jets)\n\n- **WHERE:** MetLife Stadium (East Rutherford, N.J.)\n- **WHEN:** [1:00 p.m. ET](https://www.nfl.com/games/bills-at-jets-2026-reg-10) \\| [CBS](https://www.nfl.com/ways-to-watch/by-week/week-10#bills-at-jets-2026-reg-10)\n\n[![](https://static.www.nfl.com/f_auto,h_40,dpr_2.0,q_auto,w_40/league/api/clubs/logos/JAX)\\\\\n\\\\\nJacksonville Jaguars\\\\\n\\\\\n6-2](https://www.nfl.com/teams/jacksonville-jaguars)\n\nAT\n\n[![](https://static.www.nfl.com/f_auto,h_40,dpr_2.0,q_auto,w_40/league/api/clubs/logos/TEN)\\\\\n\\\\\nTennessee Titans\\\\\n\\\\\n1-7](https://www.nfl.com/teams/tennessee-titans)\n\n- **WHERE:** Nissan Stadium (Nashville, Tenn.)\n- **WHEN:** [1:00 p.m. ET](https://www.nfl.com/games/jaguars-at-titans-2026-reg-10) \\| [FOX](https://www.nfl.com/ways-to-watch/by-week/week-10#jaguars-at-titans-2026-reg-10)\n\n## LATE GAMES\n\n[![](https://static.www.nfl.com/f_auto,h_40,dpr_2.0,q_auto,w_40/league/api/clubs/logos/LA)\\\\\n\\\\\nLos Angeles Rams\\\\\n\\\\\n5-4](https://www.nfl.com/teams/los-angeles-rams)\n\nAT\n\n[![](https://static.www.nfl.com/f_auto,h_40,dpr_2.0,q_auto,w_40/league/api/clubs/logos/AZ)\\\\\n\\\\\nArizona Cardinals\\\\\n\\\\\n3-6](https://www.nfl.com/teams/arizona-cardinals)\n\n- **WHERE:** State Farm Stadium (Glendale, Ariz.)\n- **WHEN:** [4:05 p.m. ET](https://www.nfl.com/games/rams-at-cardinals-2026-reg-10) \\| [CBS, Paramount+, NFL+](https://www.nfl.com/ways-to-watch/by-week/week-10#rams-at-cardinals-2026-reg-10)\n\n[![](https://static.www.nfl.com/f_auto,h_40,dpr_2.0,q_auto,w_40/league/api/clubs/logos/SEA)\\\\\n\\\\\nSeattle Seahawks\\\\\n\\\\\n5-4](https://www.nfl.com/teams/seattle-seahawks)\n\nAT\n\n[![](https://static.www.nfl.com/f_auto,h_40,dpr_2.0,q_auto,w_40/league/api/clubs/logos/LV)\\\\\n\\\\\nLas Vegas Raiders\\\\\n\\\\\n4-5](https://www.nfl.com/teams/las-vegas-raiders)\n\n- **WHERE:** Allegiant Stadium (Las Vegas)\n- **WHEN:** [4:05 p.m. ET](https://www.nfl.com/games/seahawks-at-raiders-2026-reg-10) \\| [CBS](https://www.nfl.com/ways-to-watch/by-week/week-10#seahawks-at-raiders-2026-reg-10)\n\n[![](https://static.www.nfl.com/f_auto,h_40,dpr_2.0,q_auto,w_40/league/api/clubs/logos/SF)\\\\\n\\\\\nSan Francisco 49ers\\\\\n\\\\\n7-1](https://www.nfl.com/teams/san-francisco-49ers)\n\nAT\n\n[![](https://static.www.nfl.com/f_auto,h_40,dpr_2.0,q_auto,w_40/league/api/clubs/logos/DAL)\\\\\n\\\\\nDallas Cowboys\\\\\n\\\\\n4-5](https://www.nfl.com/teams/dallas-cowboys)\n\n- **WHERE:** AT&T Stadium (Arlington, Texas)\n- **WHEN:** [4:25 p.m. ET](https://www.nfl.com/games/49ers-at-cowboys-2026-reg-10) \\| [FOX, FOX One, NFL+](https://www.nfl.com/ways-to-watch/by-week/week-10#49ers-at-cowboys-2026-reg-10)\n\n## SUNDAY NIGHT FOOTBALL\n\n[![](https://static.www.nfl.com/f_auto,h_40,dpr_2.0,q_auto,w_40/league/api/clubs/logos/PIT)\\\\\n\\\\\nPittsburgh Steelers\\\\\n\\\\\n6-2](https://www.nfl.com/teams/pittsburgh-steelers)\n\nAT\n\n[![](https://static.www.nfl.com/f_auto,h_40,dpr_2.0,q_auto,w_40/league/api/clubs/logos/CIN)\\\\\n\\\\\nCincinnati Bengals\\\\\n\\\\\n6-2](https://www.nfl.com/teams/cincinnati-bengals)\n\n- **WHERE:** Paycor Stadium (Cincinnati)\n- **WHEN:** [8:20 p.m. ET](https://www.nfl.com/games/steelers-at-bengals-2026-reg-10) \\| [NBC, Peacock, NFL+](https://www.nfl.com/ways-to-watch/by-week/week-10#steelers-at-bengals-2026-reg-10)"
+  }
+}

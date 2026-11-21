@@ -1,0 +1,443 @@
+{
+  "schema_version": "tiber-dfs-journal/v1",
+  "entries": [
+    {
+      "recorded_at": "2026-11-16T12:10:14Z",
+      "recorded_at_toronto": "2026-11-16T07:10:14.000-05:00",
+      "research_at": "2026-11-16T12:07:02Z",
+      "origin": "agent_chosen",
+      "origin_note": "Standing operator assignment; Codex chose bounded role/outcome questions. Prior actual Claude and Grok contributions assessed without new dispatch or new player guidance.",
+      "archive_url": null,
+      "expectations": [],
+      "id": "2026-w10-outcome-review-20261116T121014Z",
+      "snapshot_ids": [
+        "2026-w10-2026-11-09-daily",
+        "2026-w10-2026-11-10-daily",
+        "2026-w10-r1-claude-v1",
+        "2026-w10-r1-claude-revision-20261110T142258Z",
+        "2026-w10-editor-integration-20261110T150023Z",
+        "2026-w10-2026-11-11-daily",
+        "2026-w10-2026-11-12-daily",
+        "2026-w10-2026-11-13-daily",
+        "2026-w10-2026-11-14-daily",
+        "2026-w10-2026-11-15-daily",
+        "2026-w10-final-20261115T163039Z"
+      ],
+      "kind": "outcome_review",
+      "title": "Week10 provisional scoring and seven prospective expectation reviews",
+      "question": "Which archived revisions changed points, and which role/availability expectations actually held?",
+      "why_it_matters": "Separate evidence quality and opportunity from touchdowns, injury outcomes and retrospective explanations.",
+      "findings": [
+        "All ten included main-slate games final; calculated final198.92 versus first complete159.02 and Claude original148.62.",
+        "Johnson-for-Kelce+33.10; Allen-to-Dell−6.00; Boston-to-Concepcion+9.10; Sadiq-to-Kelce+3.70.",
+        "Claude's Mumpfield-to-Dell factual correction lost6.00 while fixing the erroneous Week9 premise.",
+        "Johnson22 carries/seven targets supported lead role; Warren three targets/two catches for one yard challenged receiving expectations despite86%snaps.",
+        "Rice46%snaps and Dell49%snaps retain participation uncertainty; qualified routes unavailable.",
+        "Week6–9 already have complete provisional comparisons; bounded Week9 Seattle10 check matched, no material correction observed."
+      ],
+      "interpretation": [
+        "Final gain does not establish improved reasoning or universal agent skill; selection changes share funding and evidence dependencies.",
+        "Lead work justified Johnson at cutoff; two receiving TDs were not predicted. Kelce injury confounds the realized swap delta.",
+        "Concepcion opportunity was supported, but a rushing TD drove most of his score advantage.",
+        "No invented pregame expectations; only seven bound IDs evaluated."
+      ],
+      "alternatives": [
+        "Keep Kelce: final165.82 on same other eight; defensible pregame, injury-affected outcome.",
+        "Keep Allen: actual11.10 versus Dell5.10; changed team invalidated old role premise, not his main-slate existence."
+      ],
+      "uncertainty": [
+        "Reconstructed scores are provisional, not platform settlement; stat corrections possible.",
+        "Missing routes/pressure attribution and in-game injury counterfactuals remain unassessable.",
+        "Original Claude self-estimate, clock/source corrections and restricted endorsement remain as recorded."
+      ],
+      "lineup_effect": "No selection changed. Original salaries/projections retained; all ten complete versions scored; one partial unassessable.",
+      "change_triggers": [
+        "A verified material statistical/platform correction produces a new dated review with predecessor; never replace pregame records."
+      ],
+      "carry_forward": [
+        "Test role applicability anew: lead carries supported Johnson but two receiving TDs are not a floor.",
+        "Preserve failed changes: Dell cost6 points versus Allen despite corrected information; do not prefer a correction only because it scored well.",
+        "Assess Warren team passing opportunity separately from snap share and vacated targets.",
+        "High game total did not guarantee Watkins's role; compare whole-lineup concentration once prices exist."
+      ],
+      "sources": [
+        {
+          "id": "gamebook-chiefs-at-falcons",
+          "label": "NFL final gamebook: chiefs-at-falcons",
+          "url": "https://static.www.nfl.com/image/upload/v1794826122/gamecenter/ab582f5b-4feb-11f1-abca-2c54536568a9.pdf",
+          "retrieved_at": "2026-11-16T11:58:25.545Z",
+          "retrieved_at_toronto": "2026-11-16T06:58:25.545-05:00",
+          "publication_at": null,
+          "scope": "Nov15 final game statistics, scoring, participation and snap counts; publication/stat-correction clock unknown."
+        },
+        {
+          "id": "gamebook-49ers-at-cowboys",
+          "label": "NFL final gamebook: 49ers-at-cowboys",
+          "url": "https://static.www.nfl.com/image/upload/v1794829724/gamecenter/ab78a748-4feb-11f1-abca-2c54536568a9.pdf",
+          "retrieved_at": "2026-11-16T11:58:06.324Z",
+          "retrieved_at_toronto": "2026-11-16T06:58:06.324-05:00",
+          "publication_at": null,
+          "scope": "Nov15 final game statistics, scoring, participation and snap counts; publication/stat-correction clock unknown."
+        },
+        {
+          "id": "gamebook-texans-at-browns",
+          "label": "NFL final gamebook: texans-at-browns",
+          "url": "https://static.www.nfl.com/image/upload/v1794829724/gamecenter/ab583279-4feb-11f1-abca-2c54536568a9.pdf",
+          "retrieved_at": "2026-11-16T11:58:06.687Z",
+          "retrieved_at_toronto": "2026-11-16T06:58:06.687-05:00",
+          "publication_at": null,
+          "scope": "Nov15 final game statistics, scoring, participation and snap counts; publication/stat-correction clock unknown."
+        },
+        {
+          "id": "gamebook-bills-at-jets",
+          "label": "NFL final gamebook: bills-at-jets",
+          "url": "https://static.www.nfl.com/image/upload/v1794829722/gamecenter/ab789ac9-4feb-11f1-abca-2c54536568a9.pdf",
+          "retrieved_at": "2026-11-16T11:58:06.307Z",
+          "retrieved_at_toronto": "2026-11-16T06:58:06.307-05:00",
+          "publication_at": null,
+          "scope": "Nov15 final game statistics, scoring, participation and snap counts; publication/stat-correction clock unknown."
+        },
+        {
+          "id": "gamebook-dolphins-at-colts",
+          "label": "NFL final gamebook: dolphins-at-colts",
+          "url": "https://static.www.nfl.com/image/upload/v1794829723/gamecenter/ab789365-4feb-11f1-abca-2c54536568a9.pdf",
+          "retrieved_at": "2026-11-16T11:58:26.927Z",
+          "retrieved_at_toronto": "2026-11-16T06:58:26.927-05:00",
+          "publication_at": null,
+          "scope": "Nov15 final game statistics, scoring, participation and snap counts; publication/stat-correction clock unknown."
+        },
+        {
+          "id": "gamebook-rams-at-cardinals",
+          "label": "NFL final gamebook: rams-at-cardinals",
+          "url": "https://static.www.nfl.com/image/upload/v1794829725/gamecenter/ab78a133-4feb-11f1-abca-2c54536568a9.pdf",
+          "retrieved_at": "2026-11-16T11:58:36.128Z",
+          "retrieved_at_toronto": "2026-11-16T06:58:36.128-05:00",
+          "publication_at": null,
+          "scope": "Nov15 final game statistics, scoring, participation and snap counts; publication/stat-correction clock unknown."
+        },
+        {
+          "id": "gamebook-vikings-at-packers",
+          "label": "NFL final gamebook: vikings-at-packers",
+          "url": "https://static.www.nfl.com/image/upload/v1794829721/gamecenter/ab788967-4feb-11f1-abca-2c54536568a9.pdf",
+          "retrieved_at": "2026-11-16T11:58:06.482Z",
+          "retrieved_at_toronto": "2026-11-16T06:58:06.482-05:00",
+          "publication_at": null,
+          "scope": "Nov15 final game statistics, scoring, participation and snap counts; publication/stat-correction clock unknown."
+        },
+        {
+          "id": "rules",
+          "label": "rules",
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-16T11:56:55.070Z",
+          "retrieved_at_toronto": "2026-11-16T06:56:55.070-05:00",
+          "publication_at": null,
+          "scope": "NFL Classic roster and exact offense/bonus/DST scoring."
+        },
+        {
+          "id": "week10schedule",
+          "label": "week10schedule",
+          "url": "https://www.nfl.com/schedules/2026/reg10/",
+          "retrieved_at": "2026-11-16T11:56:56.915Z",
+          "retrieved_at_toronto": "2026-11-16T06:56:56.915-05:00",
+          "publication_at": null,
+          "scope": "All ten included Sunday afternoon Week10 games final; excluded Monday game does not block main-slate review."
+        },
+        {
+          "id": "week9recovery",
+          "label": "week9recovery",
+          "url": "https://www.espn.com/nfl/boxscore/_/gameId/401873048",
+          "retrieved_at": "2026-11-16T12:00:08.999Z",
+          "retrieved_at_toronto": "2026-11-16T07:00:08.999-05:00",
+          "publication_at": null,
+          "scope": "Bounded check: SEA 3 sacks, no takeaways or return TD, 3 PA gives10, matching existing Week9 review; not all earlier scores reverified."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w10-2026-11-09-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/0709d595c3908b6e078726a6526ac06ad88a99e5/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-09.json"
+        },
+        {
+          "snapshot_id": "2026-w10-2026-11-10-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a4fd4194bc744ad83c8f68e9e4d45de53aefcf28/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-10.json"
+        },
+        {
+          "snapshot_id": "2026-w10-r1-claude-v1",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/667c4cbc9d5c1126374f11c51d542b695a54b465/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T123500Z-claude-v1.json"
+        },
+        {
+          "snapshot_id": "2026-w10-r1-claude-revision-20261110T142258Z",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/94a4ac9159abba6588d55a0d3008e00192fd5492/docs/weekly-dfs/codex/2026/week-10/collaboration/20261110T142258Z-claude-grok-response.json"
+        },
+        {
+          "snapshot_id": "2026-w10-editor-integration-20261110T150023Z",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6a676cf09f25acfb86013a6a963b9e3439da0c3d/docs/weekly-dfs/codex/2026/week-10/daily/20261110T150023Z-editor-integration.json"
+        },
+        {
+          "snapshot_id": "2026-w10-2026-11-11-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9ae416975f4aa91f6e281c7a3fa6b80b546a870d/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-11.json"
+        },
+        {
+          "snapshot_id": "2026-w10-2026-11-12-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/acbb902bc2a8e939ef4fa4a8a95e824f63188f6d/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-12.json"
+        },
+        {
+          "snapshot_id": "2026-w10-2026-11-13-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/a9a5a1050c6bb56d9932ff939d1c6c4f7b51a604/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-13.json"
+        },
+        {
+          "snapshot_id": "2026-w10-2026-11-14-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/53f48c6cc775f9644e22b18d95c8e8e59a18c699/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-14.json"
+        },
+        {
+          "snapshot_id": "2026-w10-2026-11-15-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4617fe68941cf40b298cbb982daf4401bc7a463a/docs/weekly-dfs/codex/2026/week-10/daily/2026-11-15.json"
+        },
+        {
+          "snapshot_id": "2026-w10-final-20261115T163039Z",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/88752e288a2957ac7a994b105dc53caed43a5d47/docs/weekly-dfs/codex/2026/week-10/freeze/20261115T163039Z.json"
+        }
+      ],
+      "review_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67168056d021d188863cd30bc06a35f1188a097/docs/weekly-dfs/codex/2026/week-10/reviews/20261116T120702Z.json",
+      "outcomes": [
+        {
+          "id": "2026-w10-outcome-2026-w10-1110-cook-rushing-role",
+          "expectation_id": "2026-w10-1110-cook-rushing-role",
+          "expectation": "Retain the leading Buffalo rushing role if active; do not expect another 31 carries or a receiving floor.",
+          "expectation_recorded_at": "2026-11-10T11:36:19.215Z",
+          "expectation_notebook_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20a2131d1363b0c14ca4c56883cb710c2541f851/docs/weekly-dfs/codex/journal/20261110T113619Z.json",
+          "assessment": "supported",
+          "opportunity_assessment": "18 of32 team carries; next RB Davis3. Cook35 snaps (61%), one target, no catch. Leading rushing role persisted; a receiving floor did not.",
+          "conditions_assessment": "Active; game script and Allen's two rushing TDs affected allocation.",
+          "score_explanation": "157 rushing yards included a74-yard run; rushing TD and100-yard bonus produced24.70.",
+          "cutoff_judgment": "Retaining the rushing lead was supported at cutoff; efficiency and long-run outcome cannot validate a receiving-floor claim.",
+          "status": "provisional",
+          "source_urls": [
+            "https://static.www.nfl.com/image/upload/v1794829722/gamecenter/ab789ac9-4feb-11f1-abca-2c54536568a9.pdf"
+          ]
+        },
+        {
+          "id": "2026-w10-outcome-2026-w10-1110-rams-front-condition",
+          "expectation_id": "2026-w10-1110-rams-front-condition",
+          "expectation": "Garrett continues participating after his verified return if available; current opponent QB/center/WR problems are conditions to recheck, not a turnover forecast.",
+          "expectation_recorded_at": "2026-11-10T11:36:19.215Z",
+          "expectation_notebook_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/20a2131d1363b0c14ca4c56883cb710c2541f851/docs/weekly-dfs/codex/journal/20261110T113619Z.json",
+          "assessment": "supported",
+          "opportunity_assessment": "Garrett17 defensive snaps (49%); McDuffie and Curl30 each (86%); all started. Qualified pressure counts unavailable.",
+          "conditions_assessment": "Carson Beck started; Froholdt, Gaines and Jayden Williams inactive. Participation condition held, not a full-workload guarantee.",
+          "score_explanation": "Five sacks, two interceptions and six points allowed produced16.00; no defensive/return TD.",
+          "cutoff_judgment": "Conditional front/opponent assessment was defensible; causal contribution of each absence and pressure is unassessable.",
+          "status": "provisional",
+          "source_urls": [
+            "https://static.www.nfl.com/image/upload/v1794829725/gamecenter/ab78a133-4feb-11f1-abca-2c54536568a9.pdf"
+          ]
+        },
+        {
+          "id": "2026-w10-outcome-2026-w10-1110-rice-route-condition",
+          "expectation_id": "2026-w10-1110-rice-route-condition",
+          "expectation": "Continued meaningful receiving involvement is required to support the $6,100 selection; a Worthy absence is not assumed to increase Rice's routes.",
+          "expectation_recorded_at": "2026-11-10T15:00:23.742Z",
+          "expectation_notebook_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/6a676cf09f25acfb86013a6a963b9e3439da0c3d/docs/weekly-dfs/codex/journal/20261110T150023Z.json",
+          "assessment": "partly_supported",
+          "opportunity_assessment": "Rice30 offensive snaps (46%), six targets,5-82. Receiving involvement remained, but routes unavailable and low participation remains a concern.",
+          "conditions_assessment": "Mahomes played and threw five TDs; Rice caught none. No new injury explanation established.",
+          "score_explanation": "13.20 from catches/yards; none of Mahomes's five TDs transferred to Rice.",
+          "cutoff_judgment": "Hold was conditional and plausible, but output does not resolve the retained route concern. Routes remain unassessable.",
+          "status": "provisional",
+          "source_urls": [
+            "https://static.www.nfl.com/image/upload/v1794826122/gamecenter/ab582f5b-4feb-11f1-abca-2c54536568a9.pdf"
+          ]
+        },
+        {
+          "id": "2026-w10-outcome-2026-w10-1111-dell-rotation",
+          "expectation_id": "2026-w10-1111-dell-rotation",
+          "expectation": "Continue meaningful receiving participation in the outside rotation if active; no full-time role or repeat63-yard score expected.",
+          "expectation_recorded_at": "2026-11-11T11:17:33.909Z",
+          "expectation_notebook_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9ae416975f4aa91f6e281c7a3fa6b80b546a870d/docs/weekly-dfs/codex/journal/20261111T111733Z.json",
+          "assessment": "partly_supported",
+          "opportunity_assessment": "Dell33 snaps (49%), four targets in38 team attempts,3-21; Hutchinson51 snaps (76%) and nine targets. Rotation persisted; routes/outside alignment unassessable.",
+          "conditions_assessment": "Historical8-versus9 Week9 target conflict retained; neither full-time work nor another explosive score was promised.",
+          "score_explanation": "5.10 versus Allen11.10: replacement lost6.00. Allen now SF31 snaps (48%), seven targets,5-61.",
+          "cutoff_judgment": "A low-cost rotation case was reasonable after Allen trade, but the target-rate risk materialized. The correction did not deliver a point improvement.",
+          "status": "provisional",
+          "source_urls": [
+            "https://static.www.nfl.com/image/upload/v1794829724/gamecenter/ab583279-4feb-11f1-abca-2c54536568a9.pdf"
+          ]
+        },
+        {
+          "id": "2026-w10-outcome-2026-w10-1111-warren-post-trades",
+          "expectation_id": "2026-w10-1111-warren-post-trades",
+          "expectation": "Remain a meaningful Colts receiving participant despite offensive personnel turnover; no guaranteed gain from departed WRs.",
+          "expectation_recorded_at": "2026-11-11T11:17:33.909Z",
+          "expectation_notebook_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/9ae416975f4aa91f6e281c7a3fa6b80b546a870d/docs/weekly-dfs/codex/journal/20261111T111733Z.json",
+          "assessment": "challenged",
+          "opportunity_assessment": "Warren51 snaps (86%) but three targets in22 attempts and2-1 receiving, plus one rush for3. Reduced absolute receiving opportunity challenged the premise.",
+          "conditions_assessment": "Colts passing produced108 gross yards. Raimann left and was ruled out in-game; protection causality and routes remain unassessable.",
+          "score_explanation": "2.40; high snaps and vacated receivers did not yield receiving production.",
+          "cutoff_judgment": "Original record explicitly warned targets need not transfer. Keeping Warren remained exposed to team-volume/protection risk; this miss is retained.",
+          "status": "provisional",
+          "source_urls": [
+            "https://static.www.nfl.com/image/upload/v1794829723/gamecenter/ab789365-4feb-11f1-abca-2c54536568a9.pdf"
+          ]
+        },
+        {
+          "id": "2026-w10-outcome-2026-w10-1112-concepcion-participation",
+          "expectation_id": "2026-w10-1112-concepcion-participation",
+          "expectation": "Remain a meaningful Browns receiving participant with Watson starting, rather than needing a repeat64-yard touchdown.",
+          "expectation_recorded_at": "2026-11-12T11:27:25.565Z",
+          "expectation_notebook_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/acbb902bc2a8e939ef4fa4a8a95e824f63188f6d/docs/weekly-dfs/codex/journal/20261112T112725Z.json",
+          "assessment": "supported",
+          "opportunity_assessment": "Concepcion54 snaps (79%), eight targets in40 attempts,3-21; Boston58 snaps (85%), two targets,1-16. Both participated.",
+          "conditions_assessment": "Watson started,312 gross passing yards, zero passing TDs; Boston was not absent.",
+          "score_explanation": "11.70 includes6-yard rushing TD; receiving work alone5.10. Replacement gained9.10 versus Boston.",
+          "cutoff_judgment": "Receiving opportunity condition held, but the rushing TD—not a proven Watson receiving uplift—drove most of the point advantage.",
+          "status": "provisional",
+          "source_urls": [
+            "https://static.www.nfl.com/image/upload/v1794829724/gamecenter/ab583279-4feb-11f1-abca-2c54536568a9.pdf"
+          ]
+        },
+        {
+          "id": "2026-w10-outcome-2026-w10-1115-johnson-lead-opportunity",
+          "expectation_id": "2026-w10-1115-johnson-lead-opportunity",
+          "expectation": "With Walker ruled out, Johnson is expected to receive meaningful lead rushing opportunity if active; no exclusive backfield or fixed touch floor assumed.",
+          "expectation_recorded_at": "2026-11-15T11:59:32.050Z",
+          "expectation_notebook_url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/4617fe68941cf40b298cbb982daf4401bc7a463a/docs/weekly-dfs/codex/journal/20261115T115932Z.json",
+          "assessment": "supported",
+          "opportunity_assessment": "Johnson22 of27 team carries,57 snaps (88%), seven targets and6-70. Carter two carries; Walker and Ott did not play.",
+          "conditions_assessment": "Walker absence condition held. Ott nonparticipation is a postgame observation, not information retrospectively available at freeze.",
+          "score_explanation": "101 rushing yards with bonus plus two receiving TDs produced38.10. Kelce5.00; swap+33.10. Kelce in-game injury/return and20 snaps (31%) confound comparison.",
+          "cutoff_judgment": "Lead-opportunity selection was supported by pre-cutoff team evidence and realized usage; exact workload/TDs were not forecast. One result does not prove universal RB-over-TE superiority.",
+          "status": "provisional",
+          "source_urls": [
+            "https://static.www.nfl.com/image/upload/v1794826122/gamecenter/ab582f5b-4feb-11f1-abca-2c54536568a9.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "recorded_at": "2026-11-16T12:10:14Z",
+      "recorded_at_toronto": "2026-11-16T07:10:14.000-05:00",
+      "research_at": "2026-11-16T12:07:02Z",
+      "origin": "agent_chosen",
+      "origin_note": "Standing operator assignment; Codex chose bounded role/outcome questions. Prior actual Claude and Grok contributions assessed without new dispatch or new player guidance.",
+      "archive_url": null,
+      "expectations": [],
+      "id": "2026-w11-research-20261116T121014Z",
+      "snapshot_ids": [
+        "2026-w11-2026-11-16-daily"
+      ],
+      "kind": "scheduled_research",
+      "title": "Week11 unpriced board: role persistence and Dallas allocation",
+      "question": "Which Week10 role observations deserve investigation for the new Sunday slate without importing old prices?",
+      "why_it_matters": "A new eligible pool excludes several frozen picks; a correct player story cannot establish a legal salary-cap lineup.",
+      "findings": [
+        "Emmett Johnson: Week10:22 of27 team carries,57 snaps/88%,seven targets. Walker and Ott did not play.",
+        "James Cook III: Week10:18 carries157 yards, including74-yard run; one target, zero receptions.",
+        "George Pickens: Pickens18 targets11-145-threeTD,74 snaps/89%; Lamb13 targets7-72-TD,72 snaps/87%.",
+        "Rashee Rice: Week10 six targets5-82,30 snaps/46%; Mahomes348 yards/fiveTDs, none to Rice.",
+        "NFL November22 schedule lists ten afternoon games, earliest13:00Toronto; official DK group remains unverified.",
+        "Inspected FantasyPros salaries still show Week10 matchups; no valid Week11 prices retained."
+      ],
+      "interpretation": [
+        "Worth investigating, conditional on new availability and price; no carryover of38.10 points or $4700.",
+        "Keep role on board, compare alternatives once priced. Do not extrapolate long-run efficiency.",
+        "New candidate beyond frozen nine, supported by opportunity; threeTDs and86-point game are not repeat expectations.",
+        "Keep QB/WR construction under review rather than carrying over a stack automatically."
+      ],
+      "alternatives": [
+        "Compare Pickens/Lamb/Dak allocation and concentration after current salaries exist.",
+        "Compare Johnson to Cook and other backs once new status/price evidence is available; neither is selected yet."
+      ],
+      "uncertainty": [
+        "Week11 official draft group, eligible prices and IDs",
+        "Current availability/roles",
+        "One coherent projection snapshot"
+      ],
+      "lineup_effect": "Partial board only, picks[], $0 allocated/$50,000 remaining; no complete v1 and no ready-stage notification.",
+      "change_triggers": [
+        "Dated Week11 price rows with eligible game/position permit first complete v1.",
+        "Backfield status changes Johnson case; receiver rotation/routes and Dallas salary allocation change construction."
+      ],
+      "carry_forward": [
+        "Test role applicability anew: lead carries supported Johnson but two receiving TDs are not a floor.",
+        "Preserve failed changes: Dell cost6 points versus Allen despite corrected information; do not prefer a correction only because it scored well.",
+        "Assess Warren team passing opportunity separately from snap share and vacated targets.",
+        "High game total did not guarantee Watkins's role; compare whole-lineup concentration once prices exist."
+      ],
+      "sources": [
+        {
+          "id": "schedule",
+          "label": "NFL Week11 schedule",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-11",
+          "retrieved_at": "2026-11-16T11:57:11.629Z",
+          "publication_at": null,
+          "scope": "2026 Week11 November22 ten afternoon fixtures; SNF in Mexico City excluded, Thursday/Monday excluded; NFL schedule is not official DK admission."
+        },
+        {
+          "id": "prices",
+          "label": "FantasyPros salary changes",
+          "url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "retrieved_at": "2026-11-16T11:57:30.880Z",
+          "publication_at": null,
+          "scope": "Still Week10 matchups at observed read; not acceptable Week11 salaries."
+        },
+        {
+          "id": "gamebook-chiefs-at-falcons",
+          "label": "NFL final gamebook: chiefs-at-falcons",
+          "url": "https://static.www.nfl.com/image/upload/v1794826122/gamecenter/ab582f5b-4feb-11f1-abca-2c54536568a9.pdf",
+          "retrieved_at": "2026-11-16T11:58:25.545Z",
+          "retrieved_at_toronto": "2026-11-16T06:58:25.545-05:00",
+          "publication_at": null,
+          "scope": "Nov15 final game statistics, scoring, participation and snap counts; publication/stat-correction clock unknown."
+        },
+        {
+          "id": "gamebook-49ers-at-cowboys",
+          "label": "NFL final gamebook: 49ers-at-cowboys",
+          "url": "https://static.www.nfl.com/image/upload/v1794829724/gamecenter/ab78a748-4feb-11f1-abca-2c54536568a9.pdf",
+          "retrieved_at": "2026-11-16T11:58:06.324Z",
+          "retrieved_at_toronto": "2026-11-16T06:58:06.324-05:00",
+          "publication_at": null,
+          "scope": "Nov15 final game statistics, scoring, participation and snap counts; publication/stat-correction clock unknown."
+        },
+        {
+          "id": "gamebook-bills-at-jets",
+          "label": "NFL final gamebook: bills-at-jets",
+          "url": "https://static.www.nfl.com/image/upload/v1794829722/gamecenter/ab789ac9-4feb-11f1-abca-2c54536568a9.pdf",
+          "retrieved_at": "2026-11-16T11:58:06.307Z",
+          "retrieved_at_toronto": "2026-11-16T06:58:06.307-05:00",
+          "publication_at": null,
+          "scope": "Nov15 final game statistics, scoring, participation and snap counts; publication/stat-correction clock unknown."
+        },
+        {
+          "id": "rules",
+          "label": "rules",
+          "url": "https://www.draftkings.com/help/rules/1",
+          "retrieved_at": "2026-11-16T11:56:55.070Z",
+          "retrieved_at_toronto": "2026-11-16T06:56:55.070-05:00",
+          "publication_at": null,
+          "scope": "NFL Classic roster and exact offense/bonus/DST scoring."
+        }
+      ],
+      "lineup_records": [
+        {
+          "snapshot_id": "2026-w11-2026-11-16-daily",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/c67168056d021d188863cd30bc06a35f1188a097/docs/weekly-dfs/codex/2026/week-11/daily/2026-11-16.json"
+        }
+      ],
+      "outcomes": [],
+      "collaboration": {
+        "cycle": "2026-week-11",
+        "round": 1,
+        "author": "Codex",
+        "posted_by": "Codex",
+        "codex_v1_ready": "blocked — no complete priced candidate",
+        "claude_v1_ready": "not observed for this cycle",
+        "grok_questions_ready": "not started for this cycle",
+        "collaboration_ready": "blocked",
+        "final_frozen": "not frozen",
+        "next_handoff": "No new provider task today. Retain a complete priced Codex v1 before announcing readiness; do not restart Week10 originals or count partial board as ready.",
+        "exposure": "Week10 author drafts and outcomes were inspected. No Week11 Claude draft observed; no claim of blindness about prior research."
+      }
+    }
+  ]
+}

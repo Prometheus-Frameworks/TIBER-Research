@@ -1,0 +1,113 @@
+{
+  "schema_version": "tiber-external-model-observation/v1",
+  "recorded_at": "2026-11-20T11:29:06Z",
+  "projection": {
+    "provider": "FullTime Fantasy / FFToolbox",
+    "model": "FullTime Fantasy weekly DraftKings projections; version unknown",
+    "as_of": "2026-11-19T23:15:00Z",
+    "as_of_display": "Thu 6:15 PM ET · Week 11",
+    "as_of_note": "November19 date resolved from Thursday of target Week11; exact provider revision identifier and news ingestion unknown.",
+    "source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156561",
+    "observed_at": "2026-11-20T11:29:06Z",
+    "annotation_at": "2026-11-20T11:29:06Z",
+    "scoring_basis": "Provider labels DraftKings Main Slate (10 games), group156561. Rounded displayed estimates; not Codex forecasts.",
+    "coverage": "All nine selected player/salary/team/game matches; 200 unique rendered player entries, not certified complete519-player projection coverage."
+  },
+  "selected": [
+    {
+      "player": "Dak Prescott",
+      "position": "QB",
+      "salary": 6700,
+      "points": 29
+    },
+    {
+      "player": "James Cook III",
+      "position": "RB",
+      "salary": 7900,
+      "points": 21.5
+    },
+    {
+      "player": "Javonte Williams",
+      "position": "RB",
+      "salary": 7300,
+      "points": 17.9
+    },
+    {
+      "player": "George Pickens",
+      "position": "WR",
+      "salary": 6800,
+      "points": 20.4
+    },
+    {
+      "player": "Jordyn Tyson",
+      "position": "WR",
+      "salary": 5200,
+      "points": 8.7
+    },
+    {
+      "player": "Elic Ayomanor",
+      "position": "WR",
+      "salary": 3700,
+      "points": 9
+    },
+    {
+      "player": "Sam LaPorta",
+      "position": "TE",
+      "salary": 4400,
+      "points": 14
+    },
+    {
+      "player": "Jakobi Meyers",
+      "position": "WR",
+      "salary": 4500,
+      "points": 12
+    },
+    {
+      "player": "Pittsburgh Steelers",
+      "position": "DST",
+      "salary": 3300,
+      "points": 5.8
+    }
+  ],
+  "total": 138.3,
+  "alternatives": [
+    {
+      "player": "Tony Pollard",
+      "salary": 6500,
+      "replaces": "Javonte Williams",
+      "salary_delta": -800,
+      "total_if_substituted": 49000,
+      "remainder": 1000,
+      "projected_points": 23.2,
+      "model_delta": 5.3,
+      "disposition": "decline today",
+      "reason": "Model prefers Pollard23.2 vs Williams17.9. Spears returning LP undercuts the absence-based workload thesis; Pollard DNP is rest, not injury deterioration. Preserve original receiving-outlier concern."
+    },
+    {
+      "player": "Chimere Dike",
+      "salary": 3500,
+      "replaces": "Elic Ayomanor",
+      "salary_delta": -200,
+      "total_if_substituted": 49600,
+      "remainder": 400,
+      "projected_points": 12.3,
+      "model_delta": 3.3,
+      "disposition": "decline today",
+      "reason": "Model prefers Dike12.3 vs Ayomanor9.0; retained route counts comparable but attributed targets3 vs10 favor Ayomanor's observed involvement. Tate LP does not establish which receiver loses work."
+    },
+    {
+      "player": "Ryan Flournoy",
+      "salary": 5300,
+      "replaces": "Jordyn Tyson",
+      "salary_delta": 100,
+      "total_if_substituted": 49900,
+      "remainder": 100,
+      "projected_points": 12.2,
+      "model_delta": 3.5,
+      "disposition": "reserve if meaningful Tyson restriction",
+      "reason": "Model prefers Flournoy12.2 vs Tyson8.7. Costs100 more, restores fourth DAL player ($26,100 DAL; $29,800 TEN–DAL), and prior trailing-script concern remains."
+    }
+  ],
+  "complete_projection_pool_verified": false,
+  "projection_only_optimum": null
+}

@@ -1,0 +1,229 @@
+{
+  "schema_version": "tiber-dfs-provider-output/v1",
+  "id": "2026-w11-r1-claude-v1",
+  "handoff": "2026-week-11 round 1 codex_v1_ready next_handoff (PR43 comment 6947294705)",
+  "cycle": "2026-week-11",
+  "slate_date": "2026-11-22",
+  "round": 1,
+  "stage": "claude_v1_ready",
+  "author": "Claude",
+  "actual_sender": "Claude (self-committed from Claude Code cloud session)",
+  "input_manifest": {
+    "file": "docs/weekly-dfs/codex/2026/week-11/collaboration/20261117T114943Z-common-inputs.json",
+    "commit": "078ea5e002f3eeb5fe15197fdd562b3f4f5d6906",
+    "blob_sha": "04a169e45c1883b231145f76d68b588279486ab8",
+    "read_from_pr_head": "b38f1e69c73cd8ed2e84cf96ba5a6e5abcba53d8"
+  },
+  "decision_at_utc": "2026-11-17T14:00:00Z",
+  "decision_at_toronto": "2026-11-17T09:00:00-05:00",
+  "evidence_cutoff_utc": "2026-11-17T13:55:00Z",
+  "evidence_cutoff_precision": "approximate, within a few minutes",
+  "official_pool_verified": false,
+  "official_player_ids": null,
+  "salary_basis": "reported_prices",
+  "frozen": false,
+  "picks": [
+    {
+      "slot": "QB",
+      "player": "Dak Prescott",
+      "team": "DAL",
+      "opponent_reported": "TEN",
+      "salary": 6700,
+      "salary_in_manifest_curated_rows": true
+    },
+    {
+      "slot": "RB",
+      "player": "James Cook III",
+      "team": "BUF",
+      "opponent_reported": "MIA",
+      "salary": 7900,
+      "salary_in_manifest_curated_rows": false
+    },
+    {
+      "slot": "RB",
+      "player": "Tony Pollard",
+      "team": "TEN",
+      "opponent_reported": "@DAL",
+      "salary": 6500,
+      "salary_in_manifest_curated_rows": false
+    },
+    {
+      "slot": "WR",
+      "player": "George Pickens",
+      "team": "DAL",
+      "opponent_reported": "TEN",
+      "salary": 6800,
+      "salary_in_manifest_curated_rows": true
+    },
+    {
+      "slot": "WR",
+      "player": "Ryan Flournoy",
+      "team": "DAL",
+      "opponent_reported": "TEN",
+      "salary": 5300,
+      "salary_in_manifest_curated_rows": false
+    },
+    {
+      "slot": "WR",
+      "player": "Elic Ayomanor",
+      "team": "TEN",
+      "opponent_reported": "@DAL",
+      "salary": 3700,
+      "salary_in_manifest_curated_rows": false
+    },
+    {
+      "slot": "TE",
+      "player": "Dalton Kincaid",
+      "team": "BUF",
+      "opponent_reported": "MIA",
+      "salary": 4800,
+      "salary_in_manifest_curated_rows": true
+    },
+    {
+      "slot": "FLEX",
+      "player": "Jakobi Meyers",
+      "team": "JAX",
+      "opponent_reported": "@NYG",
+      "salary": 4500,
+      "salary_in_manifest_curated_rows": false
+    },
+    {
+      "slot": "DST",
+      "player": "Pittsburgh Steelers",
+      "team": "PIT",
+      "opponent_reported": "@PHI",
+      "salary": 3300,
+      "salary_in_manifest_curated_rows": false
+    }
+  ],
+  "salary_total": 49500,
+  "salary_remaining": 500,
+  "distinct_games": 4,
+  "games": {
+    "TEN@DAL": 5,
+    "MIA@BUF": 2,
+    "JAX@NYG": 1,
+    "PIT@PHI": 1
+  },
+  "salary_note": "Prescott/Pickens/Kincaid match manifest curated rows; other six from Claude's own ~13:20-13:45Z FantasyPros Week 11 retrieval via page summaries; not in repository snapshot; re-verify against official pool.",
+  "projection": {
+    "total": null,
+    "player_estimates": null,
+    "note": "Null per manifest; no point forecast built."
+  },
+  "market_used": {
+    "source": "Covers, lines as of 11-16, updated 2026-11-16 21:41 ET",
+    "TEN@DAL": {
+      "spread": "DAL -9.5",
+      "total": 53.5
+    },
+    "MIA@BUF": {
+      "spread": "BUF -16.5",
+      "total": 46.5
+    },
+    "JAX@NYG": {
+      "spread": "JAX -6.5",
+      "total": 46.5
+    },
+    "PIT@PHI": {
+      "spread": "PIT -4.5",
+      "total": 38.5
+    }
+  },
+  "thesis": "TEN@DAL (53.5, DAL -9.5) five-player game stack: Prescott (51 att W10) + Pickens (18 tgt) + Flournoy (7 tgt) chosen over Lamb to fund TE/FLEX; TEN bring-back via Pollard receiving role (8/9 tgt) and Ayomanor (10 tgt) with Tate and Robinson hurt; Cook (18-157-1) + Kincaid on BUF -16.5; Meyers price-fit FLEX; PIT DST vs unnamed PHI QB after Hurts IR in 38.5 total.",
+  "strongest_counterargument": "Five of nine fail together if TEN@DAL underdelivers or DAL runs out a blowout; Kincaid and Meyers thin target evidence; Tate/Robinson return would cut Ayomanor; PIT offense poor and PHI QB unknown; Pickens hamstring history.",
+  "change_triggers": [
+    "Tate/Robinson full practice -> reassess Ayomanor",
+    "Pickens limited/questionable -> Lamb or two-player DAL stack",
+    "TEN@DAL total below ~50 -> cut DAL to QB + one WR",
+    "Walker ruled out again -> reassess Emmett Johnson vs Pollard",
+    "PHI names veteran or total above ~42 -> reassess PIT DST vs KC/BUF",
+    "Cook or Kincaid limited -> same-band replacement",
+    "Official pool price/position differs -> reprice in dated delta"
+  ],
+  "lessons_applied": [
+    "Avoided Emmett Johnson: W10 role was Walker-absence; Walker expected back",
+    "Ayomanor/Pollard on targets plus script, not only vacated targets",
+    "Flournoy flagged as high-total-does-not-guarantee-role exposure"
+  ],
+  "sources": [
+    {
+      "label": "FantasyPros DK salary changes Week 11",
+      "url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+      "retrieved_at_approx": "2026-11-17T13:20Z-13:45Z",
+      "publication_at": null,
+      "access": "page summaries, five slices"
+    },
+    {
+      "label": "Covers Week 11 odds",
+      "url": "https://www.covers.com/nfl/week-11-odds-opening-lines-2026",
+      "retrieved_at_approx": "2026-11-17T13:25Z",
+      "source_updated_display": "Nov 16 2026 9:41 PM ET; lines as of 11-16",
+      "access": "page summary; LV@DEN spread inconsistent"
+    },
+    {
+      "label": "CBS Week 10 scoreboard",
+      "url": "https://www.cbssports.com/nfl/scoreboard/2026/regular/10/",
+      "retrieved_at_approx": "2026-11-17T13:40Z"
+    },
+    {
+      "label": "CBS box scores BUF@NYJ, JAC@TEN, SF@DAL, PIT@CIN (2026-11-15)",
+      "url": "https://www.cbssports.com/nfl/gametracker/boxscore/",
+      "retrieved_at_approx": "2026-11-17T13:42Z-13:55Z",
+      "access": "first ~100k chars only; DAL receiving truncated"
+    },
+    {
+      "label": "Fantasy Footballers Pickens news",
+      "url": "https://www.thefantasyfootballers.com/news/646864/george-pickens-status-for-week-10-remains-uncertain/",
+      "publication_at": "2026-11-10T00:16 (zone unstated)"
+    },
+    {
+      "label": "Yahoo Week 10 injury roundup",
+      "url": "https://sports.yahoo.com/articles/nfl-week-10-injury-roundup-063534882.html",
+      "publication_at": "2026-11-17T06:35Z"
+    },
+    {
+      "label": "Walker/Emmett Johnson Week 10 reports; Northeast Times Eagles QB",
+      "url": null,
+      "access": "search snippets only"
+    }
+  ],
+  "rejected_sources": [
+    "Multiple 2023-2025 pages returned by searches (Yahoo 2023 injury list, Cowboys-Raiders 2025, Bills-Dolphins 2025, Newsweek preseason Walker)"
+  ],
+  "exposure": {
+    "read": [
+      "PR43 comment 6947294705 (Codex v1 $49,900/$100, no names; challenges: Johnson backfield availability, thin FLEX receiving, Dallas concentration/defense risk)",
+      "week-11 common-inputs json (16 curated rows containing Codex candidates unmarked)",
+      "week-11 codex-v1-ready receipt json (no picks)",
+      "PR43 and PR144 metadata/bodies",
+      "own Week 10 v1 md/json and v1-ready receipt (format)"
+    ],
+    "seen_not_opened": [
+      "week-11 filename listing on PR144 branch"
+    ],
+    "not_opened": [
+      "week-11/daily/2026-11-16.*",
+      "week-11/daily/2026-11-17.*",
+      "week-11 journal",
+      "site-feed.json"
+    ],
+    "codex_week11_selections_knowingly_seen": false,
+    "partial_exposure_via_challenge_text": true,
+    "partial_exposure_via_curated_rows": true,
+    "own_picks_in_curated_rows": [
+      "Dak Prescott",
+      "George Pickens",
+      "Dalton Kincaid"
+    ],
+    "blind_baseline": false
+  },
+  "runtime": {
+    "surface": "Claude Code remote cloud session (claude.ai/code)",
+    "model_identifier": "withheld from repository artifacts by session policy; visible to operator in session"
+  },
+  "next_handoff": "Grok questions on both immutable originals plus separately dated context. Not dispatched by Claude.",
+  "other_provider_output_fabricated": false,
+  "real_contest_action": false,
+  "research_only": true
+}

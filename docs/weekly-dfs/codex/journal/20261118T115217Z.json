@@ -1,0 +1,185 @@
+{
+  "schema_version": "tiber-dfs-journal/v1",
+  "entries": [
+    {
+      "schema_version": "tiber-dfs-journal-entry/v1",
+      "id": "2026-w11-research-20261118T115217Z",
+      "snapshot_ids": [
+        "2026-w11-2026-11-18-daily"
+      ],
+      "kind": "scheduled_research",
+      "recorded_at": "2026-11-18T11:52:17Z",
+      "recorded_at_toronto": "2026-11-18T06:52:17-05:00",
+      "research_at": "2026-11-18T11:52:17Z",
+      "origin": "mixed",
+      "origin_note": "Agent-chosen boundedquestions; realClaudeacceptance relayed and independentlyread. No newoperatorpicks.",
+      "title": "Robinson IR and alternative roles support P-2 hold",
+      "question": "Does RobinsonIR justify retaining Ayomanor over cheaper alternatives while Tate mayreturn?",
+      "why_it_matters": "Receivingrole and allocation across fourTEN-DALplayers.",
+      "findings": [
+        "Robinson ankle IR, Restrepo promoted after3-31; no guaranteed receiving allocation.",
+        "Tate hopeful return; coach wants Ridley more involved after four snaps.",
+        "Attributed secondary Week10: Ayomanor37/42routes10targets; Dike35/42routes3targets, both54/57snaps. Restrepo19snaps11routes. Meyers5targets conflicts with retainedCBS6.",
+        "Live Firecrawl maxAge0 Week11 rows match allnine. Dike3500,Restrepo3000. Search cache sameURL Week10 rejected.",
+        "Primary confirms activation before Nov8Cleveland, resolving Claude return-window gap; not Week11 medicalclearance.",
+        "Rendered report no current participation rows; latestnewsNov17. No clearance inferred.",
+        "Nine slots,50000,atleasttwo games; PPR/yardage/TDs/bonuses and DSTpointsallowed/exclusions checked.",
+        "TenSundayafternoon fixtures unchanged; Nov22 earliest13:00Toronto. Thursday,SundaynightMexicoCity,Monday excluded; officialDKpool notcertified.",
+        "Dak38.02 article vs reconstructed38.42; Mahomes38.42/Johnson38.1 agree.",
+        "Fresh first8of21pages: Dak343passyards5TD1INT,7rushyards,successful2ptrun reproduces38.42; notfullaudit."
+      ],
+      "interpretation": [
+        "Retain Ayomanor over Dike and Restrepo on current involvement, without promising repeat volume.",
+        "Retain the remaining eight. This was a focused pass, not a full league or medical audit.",
+        "Claude's acceptance and Codex's explicit endorsement establish participation for exact P-2; agreement adds no football evidence."
+      ],
+      "alternatives": [
+        "Chimere Dike $3500: 35routes/three targets versus Ayomanor37/ten; future allocation unresolved.",
+        "Xavier Restrepo $3000: Promotion and three catches do not establish future participation."
+      ],
+      "uncertainty": [
+        "OfficialDKgroup/IDs/admission",
+        "Wednesdaypractice notyet observed inearlypass",
+        "Meyers five vs six targets",
+        "Coherentprojections/Sundayactives"
+      ],
+      "lineup_effect": "No selection changes: $49,800 spent, $200 left, six games. Dallas $20,800; TEN–DAL $24,500. Not frozen.",
+      "change_triggers": [
+        "Tate/Ridley/Restrepo participation materially reduces Ayomanor; no automaticDike.",
+        "Tyson hamstring/coreplayerhealth changes require funded dateddelta.",
+        "PHIQB/protection/receiver orPITdefensive availability changes pressurecase.",
+        "Officialpool mismatch requires explicitcorrection."
+      ],
+      "carry_forward": [
+        "RecheckactualWed–Fripractice; DNPnotOUT andmissingreportnotclearance.",
+        "TatereturndoesnotautomaticallyremoveAyomanor; assesswholeWRrotation.",
+        "PreserveMeyers5vs6targets andDak38.02articlevs38.42officialcalculation conflicts.",
+        "No v1restart orroutineGrokloop; exactendorsement lapseson materialselectionchange."
+      ],
+      "sources": [
+        {
+          "id": "titansIR",
+          "label": "titansIR",
+          "url": "https://www.tennesseetitans.com/news/titans-promote-wr-xavier-restrepo-to-53-man-roster-place-wr-wan-dale-robinson-on-injured-reserveroster-moves",
+          "scope": "Robinson ankle IR, Restrepo promoted after3-31; no guaranteed receiving allocation.",
+          "retrieved_at": "2026-11-18T11:52:17Z",
+          "publication_at": null,
+          "publication_display": "Nov17 03:06PM; zone unknown",
+          "retrieval_note": "Observed end-of-pass receipt clock after reads completed between11:49:08Z and11:52:17Z; not publication."
+        },
+        {
+          "id": "titansCoach",
+          "label": "titansCoach",
+          "url": "https://www.tennesseetitans.com/news/hot-topics-from-titans-hc-robert-saleh-s-zoom-call-on-monday-x6105",
+          "scope": "Tate hopeful return; coach wants Ridley more involved after four snaps.",
+          "retrieved_at": "2026-11-18T11:52:17Z",
+          "publication_at": null,
+          "publication_display": "Nov16 09:33AM; zone unknown",
+          "retrieval_note": "Observed end-of-pass receipt clock after reads completed between11:49:08Z and11:52:17Z; not publication."
+        },
+        {
+          "id": "usage",
+          "label": "usage",
+          "url": "https://www.rotowire.com/football/article/nfl-box-score-breakdown-week-10-recap-usage-stats-146792",
+          "scope": "Attributed secondary Week10: Ayomanor37/42routes10targets; Dike35/42routes3targets, both54/57snaps. Restrepo19snaps11routes. Meyers5targets conflicts with retainedCBS6.",
+          "retrieved_at": "2026-11-18T11:52:17Z",
+          "publication_at": null,
+          "publication_display": "unknown",
+          "retrieval_note": "Observed end-of-pass receipt clock after reads completed between11:49:08Z and11:52:17Z; not publication."
+        },
+        {
+          "id": "prices",
+          "label": "prices",
+          "url": "https://www.fantasypros.com/daily-fantasy/nfl/draftkings-salary-changes.php",
+          "scope": "Live Firecrawl maxAge0 Week11 rows match allnine. Dike3500,Restrepo3000. Search cache sameURL Week10 rejected.",
+          "retrieved_at": "2026-11-18T11:52:17Z",
+          "publication_at": null,
+          "publication_display": "unknown",
+          "retrieval_note": "Observed end-of-pass receipt clock after reads completed between11:49:08Z and11:52:17Z; not publication."
+        },
+        {
+          "id": "tysonReturn",
+          "label": "tysonReturn",
+          "url": "https://www.neworleanssaints.com/news/morning-break-saints-welcome-back-kelvin-banks-jr-and-jordyn-tyson-ahead-of-browns-matchup-new-orleans-news-headlines-11-8-2026",
+          "scope": "Primary confirms activation before Nov8Cleveland, resolving Claude return-window gap; not Week11 medicalclearance.",
+          "retrieved_at": "2026-11-18T11:52:17Z",
+          "publication_at": null,
+          "publication_display": "Nov8 08:00AM; zone unknown",
+          "retrieval_note": "Observed end-of-pass receipt clock after reads completed between11:49:08Z and11:52:17Z; not publication."
+        },
+        {
+          "id": "saintsStatus",
+          "label": "saintsStatus",
+          "url": "https://www.neworleanssaints.com/team/injury-report/",
+          "scope": "Rendered report no current participation rows; latestnewsNov17. No clearance inferred.",
+          "retrieved_at": "2026-11-18T11:52:17Z",
+          "publication_at": null,
+          "publication_display": "unknown",
+          "retrieval_note": "Observed end-of-pass receipt clock after reads completed between11:49:08Z and11:52:17Z; not publication."
+        },
+        {
+          "id": "rules",
+          "label": "rules",
+          "url": "https://www.draftkings.com/help/rules/nfl/classic",
+          "scope": "Nine slots,50000,atleasttwo games; PPR/yardage/TDs/bonuses and DSTpointsallowed/exclusions checked.",
+          "retrieved_at": "2026-11-18T11:52:17Z",
+          "publication_at": null,
+          "publication_display": "unknown",
+          "retrieval_note": "Observed end-of-pass receipt clock after reads completed between11:49:08Z and11:52:17Z; not publication."
+        },
+        {
+          "id": "schedule",
+          "label": "schedule",
+          "url": "https://www.nfl.com/schedules/2026/by-week/week-11",
+          "scope": "TenSundayafternoon fixtures unchanged; Nov22 earliest13:00Toronto. Thursday,SundaynightMexicoCity,Monday excluded; officialDKpool notcertified.",
+          "retrieved_at": "2026-11-18T11:52:17Z",
+          "publication_at": null,
+          "publication_display": "unknown",
+          "retrieval_note": "Observed end-of-pass receipt clock after reads completed between11:49:08Z and11:52:17Z; not publication."
+        },
+        {
+          "id": "dkArticle",
+          "label": "dkArticle",
+          "url": "https://dknetwork.draftkings.com/2026/11/16/draftkings-nfl-millionaire-winning-lineup-breakdown-for-week-10/",
+          "scope": "Dak38.02 article vs reconstructed38.42; Mahomes38.42/Johnson38.1 agree.",
+          "retrieved_at": "2026-11-18T11:52:17Z",
+          "publication_at": null,
+          "publication_display": "Nov16,2026",
+          "retrieval_note": "Observed end-of-pass receipt clock after reads completed between11:49:08Z and11:52:17Z; not publication."
+        },
+        {
+          "id": "dalBook",
+          "label": "dalBook",
+          "url": "https://static.www.nfl.com/image/upload/v1794829724/gamecenter/ab78a748-4feb-11f1-abca-2c54536568a9.pdf",
+          "scope": "Fresh first8of21pages: Dak343passyards5TD1INT,7rushyards,successful2ptrun reproduces38.42; notfullaudit.",
+          "retrieved_at": "2026-11-18T11:52:17Z",
+          "publication_at": null,
+          "publication_display": "unknown",
+          "retrieval_note": "Observed end-of-pass receipt clock after reads completed between11:49:08Z and11:52:17Z; not publication."
+        }
+      ],
+      "lineup_records": [],
+      "expectations": [],
+      "outcomes": [],
+      "retained_expectation_refs": [
+        {
+          "id": "2026-w11-williams-run-role-20261117T163712Z",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7d17110ebb6d7906965dd45037dd7c32a87865ca/docs/weekly-dfs/codex/journal/20261117T163712Z.json"
+        },
+        {
+          "id": "2026-w11-ayomanor-condition-20261117T163712Z",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7d17110ebb6d7906965dd45037dd7c32a87865ca/docs/weekly-dfs/codex/journal/20261117T163712Z.json"
+        },
+        {
+          "id": "2026-w11-pit-pressure-condition-20261117T163712Z",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7d17110ebb6d7906965dd45037dd7c32a87865ca/docs/weekly-dfs/codex/journal/20261117T163712Z.json"
+        },
+        {
+          "id": "2026-w11-cook-rushing-role-20261117T163712Z",
+          "url": "https://github.com/Prometheus-Frameworks/TIBER-Research/blob/7d17110ebb6d7906965dd45037dd7c32a87865ca/docs/weekly-dfs/codex/journal/20261117T163712Z.json"
+        }
+      ],
+      "expectation_note": "OriginalAyomanor expectationmentionspossibleRobinsonreturn; nowIRsupersedes thatcondition prospectively. Preserve originalexpectation; add newqualificationhere, notbackdated."
+    }
+  ]
+}

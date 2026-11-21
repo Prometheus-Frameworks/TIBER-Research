@@ -1,0 +1,1424 @@
+{
+  "projection": {
+    "provider": "FullTime Fantasy / FFToolbox",
+    "model": "Week10 DraftKings Main Slate, displayed rounded player projections",
+    "as_of": "2026-11-13T19:09:00Z",
+    "source_url": "https://fftoolbox.fulltimefantasy.com/football/draftkings-fulltimefantasy-scores.php?dgi=156416",
+    "observed_at": "2026-11-14T11:42:12.308Z",
+    "publication_display": "Projections updated Fri 2:09 PM ET · Week10",
+    "as_of_basis": "Friday Nov13 14:09ET interpreted as19:09UTC; displayed provider clock, not independent update log",
+    "scoring_basis": "Provider labels DraftKings FLEX/main, not Showdown; historical AvgPointsPerGame from official CSV excluded.",
+    "observation_note": "Provider display clock advanced, but all nine rounded estimates remain unchanged. This does not establish that every player was recalculated."
+  },
+  "observed_dropdown_rows": 193,
+  "selected": [
+    {
+      "player": "Patrick Mahomes II",
+      "official_name": "Patrick Mahomes",
+      "salary": 6000,
+      "projected_points": 20
+    },
+    {
+      "player": "Christian McCaffrey",
+      "official_name": "Christian McCaffrey",
+      "salary": 8500,
+      "projected_points": 26.9
+    },
+    {
+      "player": "James Cook III",
+      "official_name": "James Cook III",
+      "salary": 7400,
+      "projected_points": 21.5
+    },
+    {
+      "player": "Rashee Rice",
+      "official_name": "Rashee Rice",
+      "salary": 6100,
+      "projected_points": 19.1
+    },
+    {
+      "player": "KC Concepcion Jr.",
+      "official_name": "KC Concepcion Jr.",
+      "salary": 4800,
+      "projected_points": 16.5
+    },
+    {
+      "player": "Tank Dell",
+      "official_name": "Tank Dell",
+      "salary": 3900,
+      "projected_points": 9.3
+    },
+    {
+      "player": "Tyler Warren",
+      "official_name": "Tyler Warren",
+      "salary": 4400,
+      "projected_points": 12
+    },
+    {
+      "player": "Travis Kelce",
+      "official_name": "Travis Kelce",
+      "salary": 4700,
+      "projected_points": 13.8
+    },
+    {
+      "player": "Los Angeles Rams",
+      "official_name": "Rams",
+      "salary": 3800,
+      "projected_points": 7.9
+    }
+  ],
+  "all_observed_dropdown_rows": [
+    {
+      "position": "WR",
+      "player": "Jaxon Smith-Njigba",
+      "team": "SEA @ LVR",
+      "salary": 9300,
+      "points": 32.1
+    },
+    {
+      "position": "RB",
+      "player": "Kenneth Walker III",
+      "team": "KC @ ATL",
+      "salary": 9200,
+      "points": 25
+    },
+    {
+      "position": "WR",
+      "player": "CeeDee Lamb",
+      "team": "DAL vs SF",
+      "salary": 8800,
+      "points": 27.1
+    },
+    {
+      "position": "RB",
+      "player": "Christian McCaffrey",
+      "team": "SF @ DAL",
+      "salary": 8500,
+      "points": 26.9
+    },
+    {
+      "position": "RB",
+      "player": "Bijan Robinson",
+      "team": "ATL vs KC",
+      "salary": 8200,
+      "points": 30.2
+    },
+    {
+      "position": "RB",
+      "player": "Jonathan Taylor",
+      "team": "IND vs MIA",
+      "salary": 7800,
+      "points": 15.4
+    },
+    {
+      "position": "WR",
+      "player": "Christian Watson",
+      "team": "GB vs MIN",
+      "salary": 7700,
+      "points": 17.7
+    },
+    {
+      "position": "TE",
+      "player": "Brock Bowers",
+      "team": "LVR vs SEA",
+      "salary": 7600,
+      "points": 15.6
+    },
+    {
+      "position": "QB",
+      "player": "Josh Allen",
+      "team": "BUF @ NYJ",
+      "salary": 7500,
+      "points": 26.9
+    },
+    {
+      "position": "RB",
+      "player": "Javonte Williams",
+      "team": "DAL vs SF",
+      "salary": 7500,
+      "points": 16.6
+    },
+    {
+      "position": "RB",
+      "player": "James Cook III",
+      "team": "BUF @ NYJ",
+      "salary": 7400,
+      "points": 21.5
+    },
+    {
+      "position": "WR",
+      "player": "Matthew Golden",
+      "team": "GB vs MIN",
+      "salary": 7300,
+      "points": 14.6
+    },
+    {
+      "position": "RB",
+      "player": "Chuba Hubbard",
+      "team": "CAR @ NO",
+      "salary": 7200,
+      "points": 26.5
+    },
+    {
+      "position": "RB",
+      "player": "Kyren Williams",
+      "team": "LAR @ ARI",
+      "salary": 7100,
+      "points": 20
+    },
+    {
+      "position": "TE",
+      "player": "Trey McBride",
+      "team": "ARI vs LAR",
+      "salary": 7100,
+      "points": 15.1
+    },
+    {
+      "position": "QB",
+      "player": "Brock Purdy",
+      "team": "SF @ DAL",
+      "salary": 7000,
+      "points": 20.6
+    },
+    {
+      "position": "WR",
+      "player": "Chris Olave",
+      "team": "NO vs CAR",
+      "salary": 7000,
+      "points": 20
+    },
+    {
+      "position": "WR",
+      "player": "Nico Collins",
+      "team": "HOU @ CLE",
+      "salary": 6900,
+      "points": 18.5
+    },
+    {
+      "position": "WR",
+      "player": "Justin Jefferson",
+      "team": "MIN @ GB",
+      "salary": 6800,
+      "points": 18.5
+    },
+    {
+      "position": "WR",
+      "player": "Tetairoa McMillan",
+      "team": "CAR @ NO",
+      "salary": 6700,
+      "points": 18
+    },
+    {
+      "position": "QB",
+      "player": "Trevor Lawrence",
+      "team": "JAX @ TEN",
+      "salary": 6600,
+      "points": 24.2
+    },
+    {
+      "position": "WR",
+      "player": "Drake London",
+      "team": "ATL vs KC",
+      "salary": 6600,
+      "points": 16.7
+    },
+    {
+      "position": "RB",
+      "player": "Bhayshul Tuten",
+      "team": "JAX @ TEN",
+      "salary": 6600,
+      "points": 13.1
+    },
+    {
+      "position": "TE",
+      "player": "George Kittle",
+      "team": "SF @ DAL",
+      "salary": 6500,
+      "points": 18.9
+    },
+    {
+      "position": "QB",
+      "player": "Jordan Love",
+      "team": "GB vs MIN",
+      "salary": 6500,
+      "points": 18.2
+    },
+    {
+      "position": "QB",
+      "player": "Dak Prescott",
+      "team": "DAL vs SF",
+      "salary": 6400,
+      "points": 19.8
+    },
+    {
+      "position": "WR",
+      "player": "Parker Washington",
+      "team": "JAX @ TEN",
+      "salary": 6200,
+      "points": 21.2
+    },
+    {
+      "position": "QB",
+      "player": "Matthew Stafford",
+      "team": "LAR @ ARI",
+      "salary": 6200,
+      "points": 13.3
+    },
+    {
+      "position": "WR",
+      "player": "Rashee Rice",
+      "team": "KC @ ATL",
+      "salary": 6100,
+      "points": 19.1
+    },
+    {
+      "position": "QB",
+      "player": "Patrick Mahomes",
+      "team": "KC @ ATL",
+      "salary": 6000,
+      "points": 20
+    },
+    {
+      "position": "RB",
+      "player": "Tony Pollard",
+      "team": "TEN vs JAX",
+      "salary": 6000,
+      "points": 13.1
+    },
+    {
+      "position": "QB",
+      "player": "C.J. Stroud",
+      "team": "HOU @ CLE",
+      "salary": 5900,
+      "points": 20.7
+    },
+    {
+      "position": "RB",
+      "player": "Breece Hall",
+      "team": "NYJ vs BUF",
+      "salary": 5900,
+      "points": 12.7
+    },
+    {
+      "position": "RB",
+      "player": "Ollie Gordon II",
+      "team": "MIA @ IND",
+      "salary": 5800,
+      "points": 21.4
+    },
+    {
+      "position": "QB",
+      "player": "Bryce Young",
+      "team": "CAR @ NO",
+      "salary": 5800,
+      "points": 20.7
+    },
+    {
+      "position": "WR",
+      "player": "DJ Moore",
+      "team": "BUF @ NYJ",
+      "salary": 5800,
+      "points": 16.4
+    },
+    {
+      "position": "RB",
+      "player": "Woody Marks",
+      "team": "HOU @ CLE",
+      "salary": 5700,
+      "points": 13.9
+    },
+    {
+      "position": "WR",
+      "player": "Jalen Coker",
+      "team": "CAR @ NO",
+      "salary": 5700,
+      "points": 12.6
+    },
+    {
+      "position": "QB",
+      "player": "Tyler Shough",
+      "team": "NO vs CAR",
+      "salary": 5600,
+      "points": 20.6
+    },
+    {
+      "position": "RB",
+      "player": "Zach Charbonnet",
+      "team": "SEA @ LVR",
+      "salary": 5600,
+      "points": 16.2
+    },
+    {
+      "position": "RB",
+      "player": "Aaron Jones Sr.",
+      "team": "MIN @ GB",
+      "salary": 5600,
+      "points": 12.1
+    },
+    {
+      "position": "RB",
+      "player": "Quinshon Judkins",
+      "team": "CLE vs HOU",
+      "salary": 5500,
+      "points": 11.5
+    },
+    {
+      "position": "RB",
+      "player": "Ashton Jeanty",
+      "team": "LVR vs SEA",
+      "salary": 5400,
+      "points": 12.5
+    },
+    {
+      "position": "WR",
+      "player": "Omar Cooper Jr.",
+      "team": "NYJ vs BUF",
+      "salary": 5400,
+      "points": 11.5
+    },
+    {
+      "position": "RB",
+      "player": "Braelon Allen",
+      "team": "NYJ vs BUF",
+      "salary": 5400,
+      "points": 8.7
+    },
+    {
+      "position": "QB",
+      "player": "Kirk Cousins",
+      "team": "MIN @ GB",
+      "salary": 5300,
+      "points": 14.2
+    },
+    {
+      "position": "WR",
+      "player": "Ryan Flournoy",
+      "team": "DAL vs SF",
+      "salary": 5300,
+      "points": 9.8
+    },
+    {
+      "position": "RB",
+      "player": "Jordan Mason",
+      "team": "MIN @ GB",
+      "salary": 5300,
+      "points": 8.4
+    },
+    {
+      "position": "WR",
+      "player": "Khalil Shakir",
+      "team": "BUF @ NYJ",
+      "salary": 5300,
+      "points": 8.3
+    },
+    {
+      "position": "RB",
+      "player": "Seth McGowan",
+      "team": "IND vs MIA",
+      "salary": 5300,
+      "points": 3.7
+    },
+    {
+      "position": "WR",
+      "player": "Denzel Boston",
+      "team": "CLE vs HOU",
+      "salary": 5200,
+      "points": 12.2
+    },
+    {
+      "position": "RB",
+      "player": "Tyler Allgeier",
+      "team": "ARI vs LAR",
+      "salary": 5200,
+      "points": 6.8
+    },
+    {
+      "position": "RB",
+      "player": "Blake Corum",
+      "team": "LAR @ ARI",
+      "salary": 5100,
+      "points": 15.4
+    },
+    {
+      "position": "QB",
+      "player": "Deshaun Watson",
+      "team": "CLE vs HOU",
+      "salary": 5100,
+      "points": 14.6
+    },
+    {
+      "position": "RB",
+      "player": "Jadarian Price",
+      "team": "SEA @ LVR",
+      "salary": 5100,
+      "points": 13.6
+    },
+    {
+      "position": "TE",
+      "player": "Dalton Kincaid",
+      "team": "BUF @ NYJ",
+      "salary": 5100,
+      "points": 13.2
+    },
+    {
+      "position": "WR",
+      "player": "Tre Tucker",
+      "team": "LVR vs SEA",
+      "salary": 5100,
+      "points": 7.5
+    },
+    {
+      "position": "RB",
+      "player": "Chris Rodriguez Jr.",
+      "team": "JAX @ TEN",
+      "salary": 5100,
+      "points": 7.4
+    },
+    {
+      "position": "WR",
+      "player": "Keenan Allen",
+      "team": "SF @ DAL",
+      "salary": 5100,
+      "points": 1.8
+    },
+    {
+      "position": "QB",
+      "player": "Drew Lock",
+      "team": "SEA @ LVR",
+      "salary": 5000,
+      "points": 18.4
+    },
+    {
+      "position": "TE",
+      "player": "Tucker Kraft",
+      "team": "GB vs MIN",
+      "salary": 5000,
+      "points": 14.1
+    },
+    {
+      "position": "RB",
+      "player": "Alvin Kamara",
+      "team": "NO vs CAR",
+      "salary": 5000,
+      "points": 12.3
+    },
+    {
+      "position": "WR",
+      "player": "Jordyn Tyson",
+      "team": "NO vs CAR",
+      "salary": 5000,
+      "points": 8.2
+    },
+    {
+      "position": "RB",
+      "player": "Dylan Sampson",
+      "team": "CLE vs HOU",
+      "salary": 5000,
+      "points": 7.8
+    },
+    {
+      "position": "RB",
+      "player": "Kaelon Black",
+      "team": "SF @ DAL",
+      "salary": 5000,
+      "points": 7
+    },
+    {
+      "position": "QB",
+      "player": "Daniel Jones",
+      "team": "IND vs MIA",
+      "salary": 4900,
+      "points": 13.4
+    },
+    {
+      "position": "TE",
+      "player": "Harold Fannin Jr.",
+      "team": "CLE vs HOU",
+      "salary": 4900,
+      "points": 12.1
+    },
+    {
+      "position": "QB",
+      "player": "Michael Penix Jr.",
+      "team": "ATL vs KC",
+      "salary": 4900,
+      "points": 11.7
+    },
+    {
+      "position": "WR",
+      "player": "Devaughn Vele",
+      "team": "NO vs CAR",
+      "salary": 4900,
+      "points": 9.3
+    },
+    {
+      "position": "WR",
+      "player": "Adonai Mitchell",
+      "team": "NYJ vs BUF",
+      "salary": 4900,
+      "points": 8.5
+    },
+    {
+      "position": "RB",
+      "player": "Ty Johnson",
+      "team": "BUF @ NYJ",
+      "salary": 4900,
+      "points": 4.5
+    },
+    {
+      "position": "WR",
+      "player": "KC Concepcion Jr.",
+      "team": "CLE vs HOU",
+      "salary": 4800,
+      "points": 16.5
+    },
+    {
+      "position": "QB",
+      "player": "Geno Smith",
+      "team": "NYJ vs BUF",
+      "salary": 4800,
+      "points": 16
+    },
+    {
+      "position": "QB",
+      "player": "Cam Ward",
+      "team": "TEN vs JAX",
+      "salary": 4800,
+      "points": 11.2
+    },
+    {
+      "position": "WR",
+      "player": "Jordan Addison",
+      "team": "MIN @ GB",
+      "salary": 4800,
+      "points": 10.8
+    },
+    {
+      "position": "TE",
+      "player": "Travis Kelce",
+      "team": "KC @ ATL",
+      "salary": 4700,
+      "points": 13.8
+    },
+    {
+      "position": "WR",
+      "player": "Malik Washington",
+      "team": "MIA @ IND",
+      "salary": 4700,
+      "points": 13.1
+    },
+    {
+      "position": "WR",
+      "player": "Josh Downs",
+      "team": "KC @ ATL",
+      "salary": 4700,
+      "points": 9.8
+    },
+    {
+      "position": "RB",
+      "player": "Emmett Johnson",
+      "team": "KC @ ATL",
+      "salary": 4700,
+      "points": 8
+    },
+    {
+      "position": "WR",
+      "player": "Keon Coleman",
+      "team": "BUF @ NYJ",
+      "salary": 4600,
+      "points": 8.6
+    },
+    {
+      "position": "RB",
+      "player": "Kaleb Johnson",
+      "team": "GB vs MIN",
+      "salary": 4600,
+      "points": 6.5
+    },
+    {
+      "position": "RB",
+      "player": "Tyjae Spears",
+      "team": "TEN vs JAX",
+      "salary": 4600,
+      "points": 2.2
+    },
+    {
+      "position": "WR",
+      "player": "Wan'Dale Robinson",
+      "team": "TEN vs JAX",
+      "salary": 4500,
+      "points": 11.3
+    },
+    {
+      "position": "RB",
+      "player": "Audric Estime",
+      "team": "NO vs CAR",
+      "salary": 4500,
+      "points": 10.5
+    },
+    {
+      "position": "WR",
+      "player": "Demarcus Robinson",
+      "team": "SF @ DAL",
+      "salary": 4500,
+      "points": 8.6
+    },
+    {
+      "position": "WR",
+      "player": "Caleb Douglas",
+      "team": "MIA @ IND",
+      "salary": 4400,
+      "points": 14.4
+    },
+    {
+      "position": "TE",
+      "player": "Tyler Warren",
+      "team": "IND vs MIA",
+      "salary": 4400,
+      "points": 12
+    },
+    {
+      "position": "RB",
+      "player": "Ray Davis",
+      "team": "BUF @ NYJ",
+      "salary": 4400,
+      "points": 2.6
+    },
+    {
+      "position": "RB",
+      "player": "Pierre Strong Jr.",
+      "team": "GB vs MIN",
+      "salary": 4300,
+      "points": 9.1
+    },
+    {
+      "position": "WR",
+      "player": "Xavier Worthy",
+      "team": "KC @ ATL",
+      "salary": 4300,
+      "points": 6.4
+    },
+    {
+      "position": "RB",
+      "player": "Kaytron Allen",
+      "team": "MIA @ IND",
+      "salary": 4300,
+      "points": 0.9
+    },
+    {
+      "position": "WR",
+      "player": "Jakobi Meyers",
+      "team": "JAX @ TEN",
+      "salary": 4200,
+      "points": 14.7
+    },
+    {
+      "position": "QB",
+      "player": "Carson Beck",
+      "team": "ARI vs LAR",
+      "salary": 4200,
+      "points": 11.6
+    },
+    {
+      "position": "TE",
+      "player": "Tyler Higbee",
+      "team": "LAR @ ARI",
+      "salary": 4200,
+      "points": 10.8
+    },
+    {
+      "position": "RB",
+      "player": "Emari Demercado",
+      "team": "HOU @ CLE",
+      "salary": 4200,
+      "points": 1.9
+    },
+    {
+      "position": "RB",
+      "player": "Khalil Herbert",
+      "team": "ATL vs KC",
+      "salary": 4200,
+      "points": 0.4
+    },
+    {
+      "position": "TE",
+      "player": "Brenton Strange",
+      "team": "JAX @ TEN",
+      "salary": 4100,
+      "points": 9.7
+    },
+    {
+      "position": "QB",
+      "player": "Kyle McCord",
+      "team": "MIA @ IND",
+      "salary": 4000,
+      "points": 15.2
+    },
+    {
+      "position": "TE",
+      "player": "Juwan Johnson",
+      "team": "NO vs CAR",
+      "salary": 4000,
+      "points": 9.4
+    },
+    {
+      "position": "WR",
+      "player": "Konata Mumpfield",
+      "team": "LAR @ ARI",
+      "salary": 4000,
+      "points": 7.6
+    },
+    {
+      "position": "WR",
+      "player": "Xavier Hutchinson",
+      "team": "HOU @ CLE",
+      "salary": 4000,
+      "points": 6.7
+    },
+    {
+      "position": "RB",
+      "player": "Jerome Ford",
+      "team": "ARI vs LAR",
+      "salary": 4000,
+      "points": 6
+    },
+    {
+      "position": "DEF",
+      "player": "Jaguars",
+      "team": "JAX @ TEN",
+      "salary": 4000,
+      "points": 5.8
+    },
+    {
+      "position": "RB",
+      "player": "Isaiah Davis",
+      "team": "NYJ vs BUF",
+      "salary": 4000,
+      "points": 5
+    },
+    {
+      "position": "RB",
+      "player": "Israel Abanikanda",
+      "team": "DAL vs SF",
+      "salary": 4000,
+      "points": 2.1
+    },
+    {
+      "position": "RB",
+      "player": "Jordan James",
+      "team": "SF @ DAL",
+      "salary": 4000,
+      "points": 1.9
+    },
+    {
+      "position": "RB",
+      "player": "Kyle Juszczyk",
+      "team": "SF @ DAL",
+      "salary": 4000,
+      "points": 1.7
+    },
+    {
+      "position": "RB",
+      "player": "Zamir White",
+      "team": "NO vs CAR",
+      "salary": 4000,
+      "points": 1.5
+    },
+    {
+      "position": "RB",
+      "player": "Ameer Abdullah",
+      "team": "JAX @ TEN",
+      "salary": 4000,
+      "points": 1.4
+    },
+    {
+      "position": "RB",
+      "player": "LeQuint Allen Jr.",
+      "team": "JAX @ TEN",
+      "salary": 4000,
+      "points": 0.8
+    },
+    {
+      "position": "RB",
+      "player": "Trevor Etienne",
+      "team": "CAR @ NO",
+      "salary": 4000,
+      "points": 0.8
+    },
+    {
+      "position": "WR",
+      "player": "Tank Dell",
+      "team": "HOU @ CLE",
+      "salary": 3900,
+      "points": 9.3
+    },
+    {
+      "position": "TE",
+      "player": "AJ Barner",
+      "team": "SEA @ LVR",
+      "salary": 3900,
+      "points": 5.2
+    },
+    {
+      "position": "WR",
+      "player": "Savion Williams",
+      "team": "GB vs MIN",
+      "salary": 3900,
+      "points": 4.5
+    },
+    {
+      "position": "TE",
+      "player": "Kyle Pitts Sr.",
+      "team": "ATL vs KC",
+      "salary": 3800,
+      "points": 9.5
+    },
+    {
+      "position": "DEF",
+      "player": "Rams",
+      "team": "LAR @ ARI",
+      "salary": 3800,
+      "points": 7.9
+    },
+    {
+      "position": "WR",
+      "player": "Kayshon Boutte",
+      "team": "HOU @ CLE",
+      "salary": 3800,
+      "points": 6.6
+    },
+    {
+      "position": "WR",
+      "player": "Jordan Watkins",
+      "team": "SF @ DAL",
+      "salary": 3800,
+      "points": 4.9
+    },
+    {
+      "position": "WR",
+      "player": "Tutu Atwell",
+      "team": "LAR @ ARI",
+      "salary": 3700,
+      "points": 11.6
+    },
+    {
+      "position": "WR",
+      "player": "Brian Thomas Jr.",
+      "team": "JAX @ TEN",
+      "salary": 3700,
+      "points": 9.7
+    },
+    {
+      "position": "TE",
+      "player": "Darren Waller",
+      "team": "CAR @ NO",
+      "salary": 3600,
+      "points": 9.3
+    },
+    {
+      "position": "WR",
+      "player": "Cooper Kupp",
+      "team": "SEA @ LVR",
+      "salary": 3600,
+      "points": 8.7
+    },
+    {
+      "position": "DEF",
+      "player": "49ers",
+      "team": "SF @ DAL",
+      "salary": 3600,
+      "points": 4.9
+    },
+    {
+      "position": "WR",
+      "player": "Jahan Dotson",
+      "team": "ATL vs KC",
+      "salary": 3600,
+      "points": 4.4
+    },
+    {
+      "position": "WR",
+      "player": "Brandin Cooks",
+      "team": "SF @ DAL",
+      "salary": 3500,
+      "points": 8.8
+    },
+    {
+      "position": "DEF",
+      "player": "Bills",
+      "team": "BUF @ NYJ",
+      "salary": 3500,
+      "points": 5.7
+    },
+    {
+      "position": "WR",
+      "player": "Calvin Ridley",
+      "team": "TEN vs JAX",
+      "salary": 3500,
+      "points": 2.3
+    },
+    {
+      "position": "WR",
+      "player": "Jalen Royals",
+      "team": "KC @ ATL",
+      "salary": 3500,
+      "points": 2.3
+    },
+    {
+      "position": "TE",
+      "player": "Dalton Schultz",
+      "team": "HOU @ CLE",
+      "salary": 3400,
+      "points": 10
+    },
+    {
+      "position": "DEF",
+      "player": "Texans",
+      "team": "HOU @ CLE",
+      "salary": 3400,
+      "points": 8.7
+    },
+    {
+      "position": "WR",
+      "player": "Reggie Virgil",
+      "team": "ARI vs LAR",
+      "salary": 3400,
+      "points": 4.9
+    },
+    {
+      "position": "WR",
+      "player": "Jacob Cowing",
+      "team": "SF @ DAL",
+      "salary": 3400,
+      "points": 3.7
+    },
+    {
+      "position": "TE",
+      "player": "Greg Dulcich",
+      "team": "MIA @ IND",
+      "salary": 3300,
+      "points": 10.2
+    },
+    {
+      "position": "DEF",
+      "player": "Seahawks",
+      "team": "SEA @ LVR",
+      "salary": 3300,
+      "points": 8
+    },
+    {
+      "position": "WR",
+      "player": "Josh Cameron",
+      "team": "JAX @ TEN",
+      "salary": 3300,
+      "points": 6.1
+    },
+    {
+      "position": "TE",
+      "player": "Brevyn Spann-Ford",
+      "team": "DAL vs SF",
+      "salary": 3200,
+      "points": 7
+    },
+    {
+      "position": "DEF",
+      "player": "Chiefs",
+      "team": "KC @ ATL",
+      "salary": 3200,
+      "points": 6.1
+    },
+    {
+      "position": "WR",
+      "player": "John Metchie III",
+      "team": "CAR @ NO",
+      "salary": 3200,
+      "points": 4.5
+    },
+    {
+      "position": "WR",
+      "player": "Elic Ayomanor",
+      "team": "TEN vs JAX",
+      "salary": 3200,
+      "points": 2.3
+    },
+    {
+      "position": "TE",
+      "player": "Michael Mayer",
+      "team": "LVR vs SEA",
+      "salary": 3100,
+      "points": 8.5
+    },
+    {
+      "position": "DEF",
+      "player": "Panthers",
+      "team": "CAR @ NO",
+      "salary": 3100,
+      "points": 6.7
+    },
+    {
+      "position": "WR",
+      "player": "Tory Horton",
+      "team": "SEA @ LVR",
+      "salary": 3100,
+      "points": 6.4
+    },
+    {
+      "position": "WR",
+      "player": "Ashton Dulin",
+      "team": "IND vs MIA",
+      "salary": 3100,
+      "points": 4.8
+    },
+    {
+      "position": "WR",
+      "player": "Jalen Nailor",
+      "team": "LVR vs SEA",
+      "salary": 3100,
+      "points": 3.5
+    },
+    {
+      "position": "WR",
+      "player": "Travis Hunter",
+      "team": "JAX @ TEN",
+      "salary": 3100,
+      "points": 2.6
+    },
+    {
+      "position": "WR",
+      "player": "Laquon Treadwell",
+      "team": "IND vs MIA",
+      "salary": 3000,
+      "points": 8.3
+    },
+    {
+      "position": "WR",
+      "player": "Deion Burks",
+      "team": "IND vs MIA",
+      "salary": 3000,
+      "points": 7.6
+    },
+    {
+      "position": "TE",
+      "player": "Gunnar Helm",
+      "team": "TEN vs JAX",
+      "salary": 3000,
+      "points": 7.4
+    },
+    {
+      "position": "WR",
+      "player": "Jerry Jeudy",
+      "team": "CLE vs HOU",
+      "salary": 3000,
+      "points": 6.8
+    },
+    {
+      "position": "WR",
+      "player": "Devin Duvernay",
+      "team": "ARI vs LAR",
+      "salary": 3000,
+      "points": 6.5
+    },
+    {
+      "position": "DEF",
+      "player": "Colts",
+      "team": "IND vs MIA",
+      "salary": 3000,
+      "points": 6
+    },
+    {
+      "position": "TE",
+      "player": "Colby Parkinson",
+      "team": "LAR @ ARI",
+      "salary": 3000,
+      "points": 5.2
+    },
+    {
+      "position": "WR",
+      "player": "Nick Westbrook-Ikhine",
+      "team": "IND vs MIA",
+      "salary": 3000,
+      "points": 4.9
+    },
+    {
+      "position": "WR",
+      "player": "Anthony Gould",
+      "team": "IND vs MIA",
+      "salary": 3000,
+      "points": 4.7
+    },
+    {
+      "position": "WR",
+      "player": "Chimere Dike",
+      "team": "TEN vs JAX",
+      "salary": 3000,
+      "points": 4.6
+    },
+    {
+      "position": "WR",
+      "player": "CJ Daniels",
+      "team": "LAR @ ARI",
+      "salary": 3000,
+      "points": 4.5
+    },
+    {
+      "position": "WR",
+      "player": "Simi Fehoko",
+      "team": "ARI vs LAR",
+      "salary": 3000,
+      "points": 4.5
+    },
+    {
+      "position": "WR",
+      "player": "Tai Felton",
+      "team": "MIN @ GB",
+      "salary": 3000,
+      "points": 4.3
+    },
+    {
+      "position": "WR",
+      "player": "Zay Jones",
+      "team": "ARI vs LAR",
+      "salary": 3000,
+      "points": 4.3
+    },
+    {
+      "position": "WR",
+      "player": "Jack Bech",
+      "team": "LVR vs SEA",
+      "salary": 3000,
+      "points": 3.6
+    },
+    {
+      "position": "WR",
+      "player": "Cyrus Allen",
+      "team": "KC @ ATL",
+      "salary": 3000,
+      "points": 2.7
+    },
+    {
+      "position": "WR",
+      "player": "Bryce Lance",
+      "team": "NO vs CAR",
+      "salary": 3000,
+      "points": 2.4
+    },
+    {
+      "position": "WR",
+      "player": "Malik McClain",
+      "team": "NYJ vs BUF",
+      "salary": 3000,
+      "points": 2.3
+    },
+    {
+      "position": "WR",
+      "player": "Xavier Smith",
+      "team": "LAR @ ARI",
+      "salary": 3000,
+      "points": 2.2
+    },
+    {
+      "position": "WR",
+      "player": "Myles Price",
+      "team": "MIN @ GB",
+      "salary": 3000,
+      "points": 2
+    },
+    {
+      "position": "WR",
+      "player": "Olamide Zaccheaus",
+      "team": "ATL vs KC",
+      "salary": 3000,
+      "points": 2
+    },
+    {
+      "position": "TE",
+      "player": "Mason Taylor",
+      "team": "NYJ vs BUF",
+      "salary": 2900,
+      "points": 6.7
+    },
+    {
+      "position": "DEF",
+      "player": "Packers",
+      "team": "GB vs MIN",
+      "salary": 2900,
+      "points": 6.4
+    },
+    {
+      "position": "TE",
+      "player": "Tommy Tremble",
+      "team": "CAR @ NO",
+      "salary": 2900,
+      "points": 5.6
+    },
+    {
+      "position": "TE",
+      "player": "Kenyon Sadiq",
+      "team": "NYJ vs BUF",
+      "salary": 2800,
+      "points": 7.4
+    },
+    {
+      "position": "DEF",
+      "player": "Vikings",
+      "team": "MIN @ GB",
+      "salary": 2800,
+      "points": 5.4
+    },
+    {
+      "position": "TE",
+      "player": "Noah Fant",
+      "team": "NO vs CAR",
+      "salary": 2800,
+      "points": 5.1
+    },
+    {
+      "position": "DEF",
+      "player": "Saints",
+      "team": "NO vs CAR",
+      "salary": 2700,
+      "points": 5.8
+    },
+    {
+      "position": "TE",
+      "player": "Noah Gray",
+      "team": "KC @ ATL",
+      "salary": 2700,
+      "points": 1.8
+    },
+    {
+      "position": "TE",
+      "player": "Davis Allen",
+      "team": "LAR @ ARI",
+      "salary": 2700,
+      "points": 1.7
+    },
+    {
+      "position": "DEF",
+      "player": "Dolphins",
+      "team": "MIA @ IND",
+      "salary": 2600,
+      "points": 4.8
+    },
+    {
+      "position": "TE",
+      "player": "Dawson Knox",
+      "team": "BUF @ NYJ",
+      "salary": 2600,
+      "points": 4.3
+    },
+    {
+      "position": "TE",
+      "player": "Nate Boerkircher",
+      "team": "JAX @ TEN",
+      "salary": 2600,
+      "points": 2
+    },
+    {
+      "position": "TE",
+      "player": "Elijah Higgins",
+      "team": "ARI vs LAR",
+      "salary": 2500,
+      "points": 7
+    },
+    {
+      "position": "DEF",
+      "player": "Browns",
+      "team": "CLE vs HOU",
+      "salary": 2500,
+      "points": 5.3
+    },
+    {
+      "position": "DEF",
+      "player": "Falcons",
+      "team": "ATL vs KC",
+      "salary": 2500,
+      "points": 5.1
+    },
+    {
+      "position": "TE",
+      "player": "Keleki Latu",
+      "team": "BUF @ NYJ",
+      "salary": 2500,
+      "points": 3.6
+    },
+    {
+      "position": "TE",
+      "player": "Mitchell Evans",
+      "team": "CAR @ NO",
+      "salary": 2500,
+      "points": 2.9
+    },
+    {
+      "position": "TE",
+      "player": "Daniel Bellinger",
+      "team": "TEN vs JAX",
+      "salary": 2500,
+      "points": 2.4
+    },
+    {
+      "position": "TE",
+      "player": "Foster Moreau",
+      "team": "HOU @ CLE",
+      "salary": 2500,
+      "points": 2.1
+    },
+    {
+      "position": "TE",
+      "player": "Gavin Bartholomew",
+      "team": "MIN @ GB",
+      "salary": 2500,
+      "points": 2
+    },
+    {
+      "position": "TE",
+      "player": "Austin Hooper",
+      "team": "ATL vs KC",
+      "salary": 2500,
+      "points": 1.9
+    },
+    {
+      "position": "TE",
+      "player": "Luke Farrell",
+      "team": "SF @ DAL",
+      "salary": 2500,
+      "points": 1.9
+    },
+    {
+      "position": "DEF",
+      "player": "Raiders",
+      "team": "LVR vs SEA",
+      "salary": 2400,
+      "points": 6.2
+    },
+    {
+      "position": "DEF",
+      "player": "Cowboys",
+      "team": "DAL vs SF",
+      "salary": 2300,
+      "points": 5.5
+    },
+    {
+      "position": "DEF",
+      "player": "Cardinals",
+      "team": "ARI vs LAR",
+      "salary": 2200,
+      "points": 3.9
+    },
+    {
+      "position": "DEF",
+      "player": "Jets",
+      "team": "NYJ vs BUF",
+      "salary": 2100,
+      "points": 4.1
+    },
+    {
+      "position": "DEF",
+      "player": "Titans",
+      "team": "TEN vs JAX",
+      "salary": 2000,
+      "points": 4.7
+    }
+  ],
+  "complete_export_verified": false
+}
