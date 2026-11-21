@@ -23,6 +23,8 @@ This is a curated starting map, not an exhaustive research inventory.
 | [Shared infrastructure](#shared-infrastructure) | Where are the contracts, custody rules, commands and publishing resources? |
 | [Prepared-article collection](#prepared-article-collection) | Where are historical format-preparation copies and their source, edition and review mappings across all three areas? |
 
+[Browse the research issue directory](research-directory.md) or [explore football by season, team and player](football/2026/README.md).
+
 ## Agentic research
 
 This area studies research behavior and the environment around an agent: context,
